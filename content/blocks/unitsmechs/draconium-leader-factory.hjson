@@ -1,0 +1,20 @@
+name: Draconium Leader Factory
+description: Makes Draconium Leaders. A Powerful Unit. Do not underestimate it.
+type: UnitFactory
+unitType: draconium-leader
+size: 2
+produceTime: 60
+consumes: {
+  power: 0.5
+  items: {
+    items: [
+      refined-draconium/50
+      tungsten-ingot/50
+    ]
+  }
+}
+category: units
+research: revenant-factory
+requirements: [refined-draconium/90
+thorium/20
+tungsten-ingot/70]

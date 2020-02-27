@@ -1,0 +1,19 @@
+type: SingleTypeGenerator
+name: Shine Generator Mk. ???
+description: Magically produces power from copper. Don't ask.
+size: 2
+hasPower: true
+hasItems: true
+itemDuration: 69420
+powerProduction: 9999999999999999
+consumes: {
+  items: {
+    items: [
+      copper/1
+    ]
+    optional: true
+  }
+}
+requirements: []
+category: power
+research: duo

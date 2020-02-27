@@ -1,0 +1,12 @@
+name: Draconium Wall
+description: The most durable wall. It has the capability to deflect bullets.
+type: DeflectorWall
+health: 10000
+size: 1
+hitTime: 10
+maxDamageDeflect: 1000
+requirements: [
+  draconium/6
+]
+category: defense
+research: surge-wall

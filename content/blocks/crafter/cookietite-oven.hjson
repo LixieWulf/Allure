@@ -1,0 +1,37 @@
+type: GenericSmelter
+name: Cookietite Oven
+description: Bakes cookietite. And by bake, I definitely mean refine. Definitely.
+size: 2
+hasPower: true
+hasLiquids: true
+hasItems: true
+liquidCapacity: 24
+craftTime: 90
+flameColor: C9A58F
+craftEffect: lava
+updateEffect: fire
+consumes: {
+  power: 0.7
+  items: {
+    items: [
+      cookienite/3
+      titanium/1
+    ]
+  }
+  liquid: {
+    liquid: water
+    amount: 0.133333333
+    timePeriod: 90
+  }
+}
+requirements: [
+  amethyst-gem/10
+  titanium/30
+  thorium/20
+  lead/70
+]
+category: crafting
+research: alloy-smelter
+idleSound: machine
+idleSoundVolume: 0.5
+outputItem: cookienite-baked/1

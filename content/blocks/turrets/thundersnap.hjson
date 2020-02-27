@@ -1,0 +1,34 @@
+name: Thundersnap
+description: Casts powerfull, long bolts of lightning at enemies.
+size: 5
+range: 800
+reload: 60
+shootSound: shotgun
+shootCone: 15
+rotateSpeed: 0.5
+powerUse: 5
+targetAir: true
+targetGround: true
+heatColor: 00fffb
+recoil: 5
+cooldown: 0.0133333333
+restitution: 0.0133333333
+chargeTime: 50
+chargeMaxDelay: 30
+chargeEffects: 15
+chargeEffect: lightningShoot
+chargeBeginEffect: lancerLaserChargeBegin
+shootEffect: lancerLaserShoot
+smokeEffect: lancerLaserShootSmoke
+requirements: [
+  copper/700
+  lead/600
+  silicon/900
+  titanium/250
+  thorium/450
+  surge-alloy/750
+  bluewolframite/700
+  draconium/300
+]
+category: turret
+research: railgun

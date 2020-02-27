@@ -1,0 +1,21 @@
+name: Stream Factory
+description: Makes advanced flight units called streams.
+type: UnitFactory
+unitType: stream
+size: 4
+produceTime: 60
+consumes: {
+  power: 0.5
+  items: {
+    items: [
+      silicon/10
+      coal/20
+      titanium/30
+    ]
+  }
+}
+category: units
+research: revenant-factory
+requirements: [titanium/90
+silicon/20
+titanium/70]

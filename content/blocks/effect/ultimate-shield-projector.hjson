@@ -1,0 +1,31 @@
+type: ForceProjector
+name: Enhanced Force Projector
+description: Using Blue-Wolframite electronics to produce a shield and then maginified heavility by Amethysts creates an extremely powerful force shield within a casing of simular size of a normal shield projector.
+size: 3
+health: 10000
+radius: 260
+phaseRangeBoost: 112
+speedBoost: 10
+speedBoostPhase: 10
+breakage: 2400000
+cooldownNormal: 1.2
+cooldownLiquid: 1
+consumes: {
+  power: 3
+  items: {
+    items: [
+      cookienite/3
+    ]
+    booster: true
+    optional: true
+  }
+}
+requirements: [
+  lead/250
+  titanium/50
+  silicon/250
+  amethyst-gem/150
+  bluewolframite/100
+]
+category: effect
+research: force-projector

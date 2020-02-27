@@ -1,0 +1,72 @@
+name: Quantum Pulse Generator
+description:
+  '''
+  Effects on quantum physics from phase fabric is magnified by amethysts and then pulsed outwards to slow enemies.
+  Particle shifting at quantum levels also makes it deal a little damage, and large enemies seem to take a little more damage than small ones.
+  As a side effect, it also appears to weaken enemies as well.
+  
+  Has no effect on blocks, but will still try anyways.
+  
+  Jesus Christ I wrote an entire paragraph.
+  '''
+type: ItemTurret
+reload: 600
+recoil: 0
+rotatespeed: 0
+shootCone: 360
+range: 400
+heatColor: ffea00
+cooldown: 0.015
+size: 2
+shots: 400
+inaccuracy: 360
+targetAir: true
+targetGround: true
+ammoUseEffect: padlaunch
+maxAmmo: 20
+ammo: {
+  phase-fabric: {
+    type: BasicBulletType
+    bulletSprite: exotic-mod-qpg-wave
+    collidesTiles: false
+    speed: 8
+    bulletHeight: 8
+    bulletWidth: 16
+    drawSize: 0
+    hitSize: 16
+    pierce: true
+    hitTiles: false
+    lifetime: 60
+    knockback: 0
+    ammoMultiplier: 4
+    damage: 1
+    hitEffect: ballfire
+    despawnEffect: none
+    shootEffect: none
+    smokeEffect: none
+    incendChance: 0
+    status: {
+      name: shifting
+      speedMultiplier: 0.5
+      damageMultiplier: 0.9
+      armorMultiplier: 0.9
+      damage: 0.015
+      color: f7e623
+      effect: overdriven
+    }
+  }
+}
+requirements: [
+  copper/400
+  lead/400
+  titanium/400
+  thorium/450
+  surge-alloy/40
+  graphite/400
+  silicon/350
+  phase-fabric/700
+  amethyst-gem/700
+]
+category: turret
+research: railgun
+shootSound: buttonClick

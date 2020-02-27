@@ -1,0 +1,6 @@
+type: material
+name: Draconium
+description: A hot material thats extreamly warm to the touch. Also has a massive ammount of stored energy. Weaponize it.
+hardness: 9
+cost: 6
+color: "960000"

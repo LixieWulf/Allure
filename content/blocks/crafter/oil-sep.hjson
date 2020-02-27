@@ -1,0 +1,43 @@
+type: Separator
+name: Oil Seperator
+size: 4
+solid: true
+hasPower: true
+hasLiquids: true
+hasItems: true
+itemCapacity: 200
+liquidCapacity: 200
+
+craftTime: 1000.0
+
+requirements: [
+    lead/300
+    graphite/275
+    titanium/275
+    surge-alloy/100
+    phase-fabric/30
+    plastanium/30
+]
+
+consumes: {
+    power: 6.0
+    liquid: {
+        liquid: oil
+        amount: 0.9
+    }
+}
+
+results: [
+   draconium/1
+    amethyst/1
+    wolframite/1
+    cookienite/1
+    silver/1
+    thorium/2
+    titanium/2
+    copper/2
+    lead/2
+]
+
+category: crafting
+research: separator

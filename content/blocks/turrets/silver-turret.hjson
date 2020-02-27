@@ -1,0 +1,24 @@
+type: DoubleTurret
+name: Silver Turret Mk. ???
+description: a unknown powerful turret
+health: 200
+size: 1
+reload: 4
+range: 100
+ammoUseEffect: shellEjectSmall
+inaccuracy: 30
+rotatespeed: 12
+ammo: {
+  copper: {
+    speed: 9999999
+    damage: 1.0e19
+    bulletWidth: 7
+    bulletHeight: 9
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 10
+  }
+}
+requirements: []
+category: turret
+research: duo

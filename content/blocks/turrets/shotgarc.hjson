@@ -1,0 +1,27 @@
+name: Shotgun Arc
+description: Like an Arc, but shoots multiple lightning bolts.
+size: 1
+range: 150
+reload: 80
+shootSound: spark
+shootCone: 40
+shots: 50
+shootType: arc
+rotateSpeed: 100
+powerUse: 1
+targetAir: true
+targetGround: true
+heatColor: ff0000
+shootEffect: lightningShoot
+recoil: 1
+cooldown: 0.02
+restitution: 0.02
+recoil: 1
+requirements: [
+  copper/1
+  lead/1
+]
+type: PowerTurret
+health: 99999
+category: turret
+research: arc

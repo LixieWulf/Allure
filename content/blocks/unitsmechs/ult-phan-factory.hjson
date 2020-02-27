@@ -1,0 +1,21 @@
+name: Ultimate Phantom Factory
+description: Produces Phantom Drones designed to build much faster.
+type: UnitFactory
+unitType: ult-phan
+size: 2
+produceTime: 800
+consumes: {
+  power: 0.5
+  items: {
+    items: [
+     titanium/20
+     silicon/20
+     tungsten-ingot/20
+    ]
+  }
+}
+category: units
+research: revenant-factory
+requirements: [tungsten-ingot/90
+titanium/20
+thorium/70]

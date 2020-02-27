@@ -1,0 +1,31 @@
+type: GenericSmelter
+name: Phase Forge
+description: Forges Phase Fabric at a faster pace than the weaver
+liquidCapacity: 50
+size: 3
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 120
+craftEffect: pulverizeRedder
+updateEffect: pulverizeRed
+consumes: {
+  power: 0.7
+  items: {
+    items: [
+      thorium/2
+      sand/2
+    ]
+  }
+}
+requirements: [
+  thorium/20
+  titanium/40
+  copper/50
+  lead/50
+]
+category: crafting
+research: phase-weaver
+idleSound: message
+idleSoundVolume: 0.5
+outputItem: phase-fabric/4

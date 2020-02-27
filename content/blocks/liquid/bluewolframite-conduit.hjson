@@ -1,0 +1,14 @@
+type: Conduit
+name: Blue-Wolframite Conduit
+description: Accelerates fluid flow with electromagnets.
+leakResistance: 0.5
+health: 250
+requirements: [
+  bluewolframite/3
+  surge-alloy/1
+  metaglass/3
+]
+liquidCapacity: 40
+liquidPressure: 1.2
+category: liquid
+research: plated-conduit

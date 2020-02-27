@@ -1,0 +1,20 @@
+type: SolidPump
+name: Amethyst Water Extractor
+description: Extracts water by using Amethyst and other materials to build a powerless pump.
+health: 10000
+result: water
+hasPower: false
+hasLiquids: true
+size: 3
+pumpAmount: 24
+requirements: [
+  amethyst-gem/20
+  surge-alloy/20
+  titanium/50
+  copper/100
+]
+category: production
+idleSound: drill
+idleSoundVolume: 0.1
+research: water-extractor
+liquidCapacity: 250

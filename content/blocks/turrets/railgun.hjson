@@ -1,0 +1,133 @@
+type: ItemTurret
+name: Railgun
+description: Blue Wolfranite's electromagnetic properties allow for the creation of this powerful railgun.
+targetAir: true
+targetGround: true
+health: 14500
+size: 4
+outlineIcon: false
+heatColor: 91E0EA
+cooldown: 0.016
+restitution: 0.016
+inaccuracy: 10
+reload: 120
+shots: 1
+recoil: 4
+ammoUseEffect: shellEjectBig
+shootEffect: hitLancer
+shootSound: laser
+shootCone: 25
+rotateSpeed: 0.25
+maxAmmo: 12
+range: 800
+ammo: {
+  draconium: {
+    speed: 10
+    damage: 700
+    bulletSprite: exotic-mod-railbolt
+    bulletWidth: 16
+    bulletHeight: 21
+    bulletShrink: 0
+    lifetime: 88
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    status: melting
+    homingRange: 160
+    homingPower: 0.01
+    frontColor: f53b11
+    backColor: d92800
+    hitEffect: pulverizeMedium
+    despawnEffect: pulverizeMedium
+    fragVelocityMin: 0.9
+    fragVelocityMax: 1.1
+    fragBullets: 5
+    fragBullet: {
+      speed: 10
+      damage: 700
+      bulletSprite: exotic-mod-railbolt
+      bulletShrink: 0
+      bulletWidth: 10.666666666666666666
+      bulletHeight: 14
+      hitEffect: pulverizeRed
+      despawnEffect: pulverizeRed
+      lifetime: 44
+      status: melting
+      homingRange: 160
+      homingPower: 0.01
+      frontColor: f53b11
+      backColor: d92800
+      fragVelocityMin: 0.9
+      fragVelocityMax: 1.1
+      fragBullets: 5
+      fragBullet: {
+        speed: 10
+        damage: 700
+        bulletSprite: exotic-mod-railbolt
+        bulletShrink: 0
+        bulletWidth: 5.33333333
+        bulletHeight: 7
+        lifetime: 44
+        hitEffect: shootBig
+        despawnEffect: shootBig
+        status: melting
+        homingRange: 160
+        homingPower: 0.01
+        frontColor: f53b11
+        backColor: d92800
+      }
+    }
+  }
+  amethyst-gem: {
+    speed: 8
+    damage: 175
+    bulletSprite: exotic-mod-railbolt
+    bulletShrink: 0
+    pierce: true
+    bulletWidth: 16
+    bulletHeight: 21
+    lifetime: 110
+    hitEffect: shootBig
+    despawnEffect: shootBig
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    status: freezing
+    homingRange: 160
+    homingPower: 0.002
+    ammoMultiplier: 3
+    frontColor: b966cc
+    backColor: 8e479e
+  }
+  bluewolframite: {
+    speed: 9
+    damage: 500
+    bulletShrink: 0
+    bulletSprite: exotic-mod-railbolt
+    bulletWidth: 16
+    bulletHeight: 21
+    lifetime: 116
+    hitEffect: padlaunch
+    despawnEffect: padlaunch
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    status: burning
+    homingRange: 160
+    homingPower: 0.01
+    splashDamage: 1000
+    splashDamageRadius: 100
+    ammoMultiplier: 2
+    frontColor: 40ccff
+    backColor: 1397F0
+  }
+}
+requirements: [
+  copper/500
+  lead/400
+  silicon/600
+  titanium/100
+  thorium/200
+  surge-alloy/300
+  bluewolframite/275
+]
+category: turret
+research: spectre
+shootSound: corexplode

@@ -1,0 +1,21 @@
+name: Shadow Conqueror Factory
+description: Makes powerful assault units.
+type: UnitFactory
+unitType: shadow-conqueror
+size: 2
+produceTime: 60
+consumes: {
+  power: 0.5
+  items: {
+    items: [
+      shadow/100
+      refined-draconium/100
+      tungsten-ingot/100
+    ]
+  }
+}
+category: units
+research: shadow-kind-factory-mk2
+requirements: [shadow/100
+refined-draconium/200
+tungsten-ingot/300]

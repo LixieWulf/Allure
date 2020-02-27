@@ -1,0 +1,20 @@
+{
+    "type": "MassDriver",
+    "name": "Ultimate Mass Driver",
+    "description": "The ultimate item transport block, a better mass driver",
+    "health": 5000,
+    "requirements": [
+        {"item": "lead", "amount": 300},
+        {"item": "titanium", "amount": 300},
+        {"item": "thorium", "amount": 200},
+        {"item": "silicon", "amount": 250},
+        {"item": "shadow", "amount":50}
+    ],
+    "size": 4,
+    "itemCapacity": 500,
+    "reloadTime": 120,
+    "range": 600,
+    "consumes": {"power": 2.5},
+    "category": "distribution",
+    "research": "mass-driver"
+}

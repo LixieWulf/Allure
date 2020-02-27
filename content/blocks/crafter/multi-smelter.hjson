@@ -1,0 +1,31 @@
+type: GenericSmelter
+name: Silicon Multi-Forge
+description: an improved version of the Silicon Smelter to give more for what you use.
+liquidCapacity: 50
+size: 3
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 40
+craftEffect: pulverize
+updateEffect: plasticburn
+consumes: {
+  power: 0.7
+  items: {
+    items: [
+      coal/1
+      sand/2
+    ]
+  }
+}
+requirements: [
+  silicon/50
+  copper/40
+  graphite/30
+  titanium/20
+]
+category: crafting
+research: silicon-smelter
+idleSound: place
+idleSoundVolume: 0.5
+outputItem: silicon/4

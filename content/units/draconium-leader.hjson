@@ -1,0 +1,40 @@
+{
+	"type": "groundUnit",
+	"name": "Draconium Leader",
+	"description": "The Leader of the Draconium Army.",
+	"maxVelocity": 1,
+	"speed": 0.12,
+	"drag": 0.4,
+	"range": 15,
+	"targetDistance": 15,
+	"mass": 8640,
+	"hitsize": 20,
+	"rotatespeed": 0.03,
+	"health": 155552,
+	"weapon": {
+		"name": "Dragons's Bite",
+		"length": 4
+                "recoil": 50,
+                "shake": 10,
+                "innacuracy": 10,
+                "shots": 4,
+                "spacing": 0,
+                "shotDelay": 3,
+                "shootSound": "shootBig",
+                "ejectEffect": "shellEjectBig",
+		"width": 4,
+		"reload": 30,
+		"alternate": true,
+		"bullet":{
+		  "damage": 19250,
+		  "speed": 25,
+	          "knockback": 1500,
+		  "bulletWidth": 19,
+		  "bulletHeight": 27,
+		  "splashDamageRadius": 80,
+		  "splashDamage": 6000,
+                  "shootEffect": "shootBig",
+		  "lifetime": 12
+		}
+	}
+}

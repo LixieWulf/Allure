@@ -1,0 +1,51 @@
+type: flyingUnit
+name: Hellfire
+description:
+  '''
+  The most powerful ship ever to fly in an atmosphere. Can take down the most advanced bases if not prepared for.
+  
+  WARNING: THIS SHIP IS EXTREMELY DANGEROUS. LAUNCHING BEFORE AN ATTACK FROM THE HELLFIRE IS STRONGLY SUGGESTED.
+  '''
+flying: true
+maxVelocity: 1
+speed: 0.1
+drag: 0.5
+range: 240
+attackLength: 280
+mass: 10000
+hitsize: 15
+health: 250000000
+retreatPercent: 0.1
+weaponOffsetY: 13
+engineOffset: 36
+engineSize: 7
+weapon: {
+  name: shipboard-railgun
+  width: 0
+  length: 9
+  reload: 30
+  recoil: 0.1
+  inaccuracy: 0
+  shots: 1
+  spacing: 0
+  shotDelay: 30
+  shootSound: shootBig
+  ejectEffect: shellEjectBig
+  alternate: false
+  bullet: {
+    bulletSprite: exotic-mod-railbolt
+    damage: 100000
+    frontColor: 234dad
+    backColor: 0a2666
+    speed: 16
+    knockback: 1500
+    bulletWidth: 16
+    bulletHeight: 50
+    splashDamageRadius: 100
+    splashDamage: 25000
+    shootEffect: shootBig
+    lifetime: 200
+    hitTiles: true
+    collidesTiles: true
+    }
+ }

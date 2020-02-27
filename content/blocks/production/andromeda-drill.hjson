@@ -1,0 +1,17 @@
+name: Andromeda Drill
+description: A Powerful Drill made from Amethyst
+type: Drill
+size: 3
+tier: 10
+drillTime: 0.1
+requirements: [
+  amethyst-gem/50
+  thorium/40
+  titanium/30
+  lead/20
+  copper/10
+]
+category: production
+idleSound: build
+idleSoundVolume: 0.05
+research: electrum-drill

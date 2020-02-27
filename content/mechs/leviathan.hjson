@@ -1,0 +1,39 @@
+name: Leviathan
+description: A gigantic ship with great destructive power. A Carrier Dropship This is the testing phase for the unit creation
+type: Mech
+flying: true
+speed: 0.6
+maxSpeed: 1
+drag: 0.25
+hitsize: 53
+mass: 10
+health: 15000
+engineSize: 9
+engineOffset: 22
+engineColor: ad66d4
+rotatespeed: 0.1
+buildPower: 10
+miningPower: 200
+mineSpeed: 40
+itemCapacity: 10000
+drillPower: 10
+weaponOffsetX: 5.24
+weaponOffsetY: 12
+weapon: {
+  name: leviathan-cannon
+  bulletWidth: 16
+  bulletHeight: 16
+  ejectEffect: shellEjectBig
+  length: 12
+  width: 5.24
+  lifetime: 250
+  range: 250
+  reload: 11
+  recoil: 1
+  shots: 1
+  alternate: true
+  velocityRnd: 0.05
+  ejectEffect: none
+  bullet: standardThoriumBig
+  shootSound: shootBig
+}

@@ -1,0 +1,13 @@
+name: Fearless Mech Pad
+description: Allows transformation into the most powerful ship.
+type: MechPad
+mech: fearless
+size: 8
+consumes: {
+  power: 2.1
+}
+requirements: [
+  copper/1
+]
+category: upgrade
+research: doomsday-mech-pad

@@ -1,0 +1,113 @@
+type: DoubleTurret
+name: "God Scatter"
+description: "A Cancer for anything in the skies."
+targetAir: true
+targetGround: false
+health: 19500
+heatColor: ffce2b
+size: 4
+inaccuracy: 3
+reload: 1
+shots: 8
+shotWidth: 4
+xRand: 4
+recoil: 10
+ammoUseEffect: shellEjectBig
+shootCone: 25
+maxAmmo: 50
+rotateSpeed: 0.25
+range: 369
+ammo: {
+  draconium: {
+    speed: 11
+    hitTiles: false
+    collidesTiles: false
+    damage: 600
+    bulletSprite: missile
+    bulletWidth: 16
+    bulletHeight: 21
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    lifetime: 60
+    status: burning
+    ammoMultiplier: 2
+    bulletShrink: 0
+    frontColor: f53b11
+    backColor: d92800
+    fragVelocityMin: 0.9
+    fragVelocityMax: 1.1
+    fragBullets: 5
+    fragBullet: {
+      speed: 11
+      hitTiles: false
+      collidesTiles: false
+      damage: 200
+      bulletSprite: missile
+      bulletWidth: 16
+      bulletHeight: 21
+      shootEffect: shootBig
+      bulletShrink: 0
+      smokeEffect: shootBigSmoke
+      status: burning
+      hitEffect: flakExplosion
+      splashDamage: 1000
+      splashDamageRadius: 100
+      lifetime: 60
+      frontColor: f53b11
+      backColor: d92800
+    }
+  }
+  bluewolframite: {
+    speed: 10
+    hitTiles: false
+    collidesTiles: false
+    damage: 500
+    bulletSprite: missile
+    bulletWidth: 16
+    bulletHeight: 21
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    bulletShrink: 0
+    status: burning
+    hitEffect: flakExplosion
+    splashDamage: 1000
+    splashDamageRadius: 100
+    lifetime: 90
+    ammoMultiplier: 3
+    frontColor: 40ccff
+    backColor: 1397F0
+  }
+  amethyst-gem: {
+    speed: 9
+    hitTiles: false
+    collidesTiles: false
+    damage: 145
+    bulletSprite: missile
+    pierce: true
+    bulletWidth: 16
+    bulletHeight: 21
+    shootEffect: shootBig
+    bulletShrink: 0
+    ammoMultiplier: 4
+    smokeEffect: shootBigSmoke
+    status: freezing
+    frontColor: b966cc
+    backColor: 8e479e
+    lifetime: 60
+  }
+}
+requirements: [
+  titanium/400
+  copper/1200
+  lead/500
+  graphite/550
+  thorium/500
+  plastanium/105
+  surge-alloy/400
+  amethyst-gem/400
+  bluewolframite/1000
+  draconium/950
+]
+category: turret
+research: scatter
+shootSound: bigshot

@@ -1,0 +1,33 @@
+name: Andromeda Falls
+description: The Rare Gem Amethyst is found here
+loadout: basicFoundation
+startingItems: [
+  copper/500
+  lead/500
+]
+conditionWave: 10
+launchPeriod: 10
+requirements: [
+  {
+    type: Launched
+    zone: Andromeda_Falls
+  }
+  {
+    type: Unlock
+    block: andromeda-drill
+  }
+  {
+    type: Unlock
+    block: amethyst-refiner
+  }
+]
+resources: [
+  copper
+  silver
+  lead
+  coal
+  sand
+  amethyst
+  titanium
+  wolframite
+]

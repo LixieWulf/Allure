@@ -1,0 +1,138 @@
+type: DoubleTurret
+name: Draconium Railgun
+description: Blue Wolfranite's electromagnetic properties and Draconium's inate stored energy allow for the creation of an even more powerful railgun.
+targetAir: true
+targetGround: true
+health: 19000
+size: 4
+shotWidth: 4
+outlineIcon: false
+heatColor: FF7300
+cooldown: 0.024
+restitution: 0.024
+inaccuracy: 10
+reload: 60
+shots: 1
+maxAmmo: 24
+recoil: 4
+ammoUseEffect: shellEjectBig
+shootEffect: hitMeltdown
+shootSound: laser
+shootCone: 25
+rotateSpeed: 0.25
+range: 800
+ammo: {
+  draconium: {
+    speed: 13
+    damage: 20000
+    bulletSprite: exotic-mod-railbolt
+    bulletWidth: 16
+    bulletHeight: 21
+    lifetime: 74
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    status: melting
+    homingRange: 160
+    homingPower: 0.01
+    splashDamage: 10000
+    splashDamageRadius: 258
+    ammoMultiplier: 2
+    frontColor: f53b11
+    bulletShrink: 0
+    backColor: d92800
+    hitEffect: pulverizeMedium
+    despawnEffect: pulverizeMedium
+    fragVelocityMin: 0.9
+    fragVelocityMax: 1.1
+    fragBullets: 5
+    fragBullet: {
+      speed: 13
+      damage: 1000
+      bulletSprite: exotic-mod-railbolt
+      bulletWidth: 10.6666666666666666666666666666
+      bulletHeight: 14
+      hitEffect: pulverizeRed
+      despawnEffect: pulverizeRed
+      lifetime: 37
+      status: melting
+      homingRange: 160
+      homingPower: 0.01
+      bulletShrink: 0
+      frontColor: f53b11
+      backColor: d92800
+      fragVelocityMin: 0.9
+      fragVelocityMax: 1.1
+      fragBullets: 5
+      fragBullet: {
+        speed: 13
+        damage: 1000
+        bulletSprite: exotic-mod-railbolt
+        bulletWidth: 5.3333333333333333333333333333333
+        bulletHeight: 7
+        lifetime: 37
+        hitEffect: shootBig
+        despawnEffect: shootBig
+        status: melting
+        homingRange: 160
+        homingPower: 0.01
+        bulletShrink: 0
+        frontColor: f53b11
+        backColor: d92800
+      }
+    }
+  }
+  amethyst-gem: {
+    speed: 9
+    damage: 250
+    bulletSprite: exotic-mod-railbolt
+    pierce: true
+    bulletWidth: 16
+    bulletHeight: 21
+    lifetime: 107
+    hitEffect: shootBig
+    bulletShrink: 0
+    despawnEffect: shootBig
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    status: freezing
+    homingRange: 160
+    homingPower: 0.002
+    ammoMultiplier: 4
+    frontColor: b966cc
+    backColor: 8e479e
+  }
+  bluewolframite: {
+    speed: 11
+    damage: 750
+    bulletWidth: 16
+    bulletSprite: exotic-mod-railbolt
+    bulletHeight: 21
+    lifetime: 109
+    bulletShrink: 0
+    hitEffect: padlaunch
+    despawnEffect: padlaunch
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    status: burning
+    homingRange: 160
+    homingPower: 0.01
+    splashDamage: 1000
+    splashDamageRadius: 100
+    ammoMultiplier: 3
+    frontColor: 40ccff
+    backColor: 1397F0
+  }
+}
+requirements: [
+  copper/700
+  lead/600
+  silicon/800
+  titanium/200
+  thorium/400
+  surge-alloy/500
+  bluewolframite/475
+  draconium/900
+]
+category: turret
+research: railgun
+shootSound: corexplode

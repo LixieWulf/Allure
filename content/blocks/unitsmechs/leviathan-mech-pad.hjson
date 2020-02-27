@@ -1,0 +1,12 @@
+name: Leviathan Mech Pad
+description: Transform into a Armored Class Carrier
+type: MechPad
+mech: leviathan
+size: 4
+consumes: {
+  power: 0.7
+}
+category: upgrade
+research: omega-mech-pad
+requirements: [amethyst-gem/100
+titanium/100]

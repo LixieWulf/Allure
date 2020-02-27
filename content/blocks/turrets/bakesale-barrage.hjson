@@ -1,0 +1,89 @@
+name: Bakesale Barrage
+description:
+  '''
+  Made with Cookietite, so it fires at maximum speed.
+  [red]No but seriously, there is no point in boosting this. It will have no effect.
+  '''
+type: ItemTurret
+health: 9001
+hasLiquid: false
+reload: 1
+heatColor: FEB380
+shots: 2
+shootCone: 20
+shootShake: 0.5
+inaccuracy: 15
+recoil: 3
+size: 3
+xRand: 9
+range: 600
+restitution: 0.05
+cooldown: 0.05
+shootEffect: shootBig
+shootSound: missile
+maxAmmo: 600
+ammo: {
+  cookienite: {
+    bulletType: MissileBulletType
+    trailColor: C9A58F
+    bulletSprite: exotic-mod-cookietitemissile
+    frontColor: B28768
+    backColor: C9A58F
+    bulletWidth: 12
+    bulletHeight: 12
+    hitSize: 16
+    bulletShrink: 0
+    hitSound: artillery
+    drag: -10
+    speed: 9
+    damage: 2000
+    splashDamage: 1700
+    splashDamageRadius: 32
+    ammoMultiplier: 60
+    homingRange: 360
+    homingPower: 0.01
+    lifetime: 300
+    hitEffect: blockExplosion
+    despawnEffect: blockExplosion
+    weaveScale: 8
+    weaveMagnitude: 8
+  }
+  cookienite-baked: {
+    bulletType: MissileBulletType
+    trailColor: B28768
+    bulletSprite: exotic-mod-cookietitemissile
+    frontColor: 8F665B
+    backColor: B28768
+    bulletWidth: 12
+    bulletHeight: 12
+    hitSize: 16
+    bulletShrink: 0
+    hitSound: artillery
+    drag: -15
+    speed: 10
+    damage: 2750
+    splashDamage: 2550
+    splashDamageRadius: 48
+    ammoMultiplier: 75
+    homingRange: 360
+    homingPower: 0.01
+    lifetime: 300
+    hitEffect: blockExplosion
+    despawnEffect: blockExplosion
+    weaveScale: 8
+    weaveMagnitude: 8
+  }
+}
+requirements: [
+  copper/1000
+  lead/1000
+  silicon/800
+  titanium/800
+  thorium/700
+  surge-alloy/100
+  amethyst-gem/150
+  bluewolframite/100
+  cookienite-baked/900
+]
+category: turret
+research: swarmer

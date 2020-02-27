@@ -1,0 +1,27 @@
+name: exotic-mod
+displayName: "[gold]Exotic [red]Mod"
+author:
+  '''
+  [red]K103908 
+  (Hjsoner and student scripter) 
+  [blue]Blue[green]Wolf[red][Gaming]
+  [blue](Mapper, [green]Spriter, [red]Novice Hjsoner)
+  [purple]Andromeda 
+  (Mapper)
+  [#FCC21B]Meep 
+  (Spriter and Hjsoner)
+  '''
+description:
+  '''
+  We got together over the Mindustry Discord to bring you this exotic mod. Adds in a few things we thought would be fun.
+  [red]New Weapons Incoming.
+  [cyan]Update Log:
+  Oil Seperator
+  New:
+    Hellfire
+  Under Developement:
+    Fearless
+  [green]More to come!
+  '''
+version: 2.153-5
+minGameVersion: 103

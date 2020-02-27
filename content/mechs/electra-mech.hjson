@@ -1,0 +1,17 @@
+name: Electra
+description: An unnaturally elongated mech. Spews messy lightning all over your enemies.
+speed: 5
+boostSpeed: 2.1
+buildPower: 10
+engineColor: "666495"
+flying: true
+health: 1.0e34
+weaponOffsetX: 4
+weapon: {
+  name: chrome-blaster
+  length: 1.5
+  reload: 1
+  alternate: false
+  bullet: lightning
+  damage: 9999999999999
+}

@@ -1,0 +1,33 @@
+type: GenericSmelter
+name: Surge-Forge
+description: A more powerful Surge Forge, focused on giving you more for the resources you use.
+size: 4
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 120
+craftEffect: pulverizeRedder
+updateEffect: hitMeltdown
+consumes: {
+  power: 0.7
+  items: {
+    items: [
+      copper/3
+      lead/4
+      titanium/2
+      silicon/3
+    ]
+  }
+}
+requirements: [
+  surge-alloy/10
+  titanium/50
+  thorium/30
+  copper/100
+  lead/100
+]
+category: crafting
+research: amethyst-refiner
+idleSound: beam
+idleSoundVolume: 0.1
+outputItem: surge-alloy/4

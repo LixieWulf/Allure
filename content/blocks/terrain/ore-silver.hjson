@@ -1,0 +1,2 @@
+type: OreBlock
+itemDrop: silver

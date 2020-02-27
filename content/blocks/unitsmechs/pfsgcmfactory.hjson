@@ -1,0 +1,30 @@
+type: UnitFactory
+name: PFSGCM Factory
+description: Quickly produces PFSGCMs with minimal resources.
+unitType: pfsgcm
+maxSpawn: 12
+produceTime: 20
+consumes: {
+  power: {
+    usage: 0.6
+    capacity: 72
+  }
+  items: {
+    items: [
+      coal/6
+      amethyst-gem/1
+      cookienite/1
+    ]
+  }
+}
+size: 3
+requirements: [
+  plastanium/75
+  titanium/200
+  lead/200
+  silicon/250
+  cookienite-baked/100
+  amethyst-gem/100
+]
+category: units
+research: ghoul-factory

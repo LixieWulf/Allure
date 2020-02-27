@@ -1,0 +1,10 @@
+type: resource
+name: Raw Amethyst
+description:
+  '''
+  A material capable of absorbing large amounts of heat.
+  Always feels cold.
+  '''
+hardness: 7
+cost: 2
+color: be00ed

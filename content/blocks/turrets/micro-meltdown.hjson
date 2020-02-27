@@ -1,0 +1,30 @@
+type: LaserTurret
+name: Micro-Meltdown
+description: Thanks to technology, we have created a more compact Mini-Meltdown
+targetAir: true
+targetGround: true
+hasPower: true
+shootType: meltdownLaser
+powerUse: 15
+health: 3800
+size: 1
+inaccuracy: 5
+reload: 0.01
+recoil: 5
+ammoUseEffect: shellEjectBig
+shootCone: 30
+rotateSpeed: 100
+chargeTime: 15
+chargeEffects: 5
+chargeMaxDelay: 4
+shootDuration: 110
+canOverdrive: true
+range: 190
+requirements: [
+  surge-alloy/5
+  titanium/10
+  thorium/10
+]
+category: turret
+research: mini-meltdown
+shootSound: laserbig

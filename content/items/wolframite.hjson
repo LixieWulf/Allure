@@ -1,0 +1,6 @@
+type: resource
+name: Unrefined Wolframite
+description: A powerful material.. weaponize it. (Well, refine it first, and then weaponize it.)
+hardness: 8
+cost: 4
+color: 6c90bd

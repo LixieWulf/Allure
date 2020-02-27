@@ -1,0 +1,56 @@
+type: FlyingUnit
+name: PFSGCM
+description:
+  '''
+  The Persistant Fast Self-Guided Cluster Missile will fly towards enemies that come within close range of it and burst into many smaller missiles. Uses amethyst lenses for laser guidance and cookietite for speed.
+  
+  Inspired by [red]Kartoffel[]'s cool little missile unit things.
+  '''
+health: 400
+speed: 2.5
+range: 200
+attackLength: 60
+rotatespeed: 60
+baseRotateSpeed: 60
+retreatPercent: 0
+shootCone: 6.9
+flying: true
+drag: 0.01
+mass: 0.3141592
+engineOffset: 6
+engineColor: b6c6fd
+weapon: {
+  shots: 50
+  inaccuracy: 10
+  shake: 3
+  width: 0
+  length: 0
+  shootSound: reallybigexplosion
+  reload: 0
+  bullet: {
+    type: MissileBulletType
+    trailColor: b6c6fd
+    pierce: true
+    bulletWidth: 3
+    bulletHeight: 5
+    bulletShrink: 0
+    lifetime: 120
+    killShooter: true
+    knockback: 20
+    speed: 2
+    damage: 1500
+    splashDamage: 1450
+    splashDamageRadius: 60
+    incendChance: 100
+    incendSpread: 20
+    incendAmmount: 69
+    hitShake: 1
+    weaveScale: 8
+    weaveMag: 8
+    hitSound: explosionbig
+    hitEffect: shootBig
+    homingPower: 0.01
+    homingRange: 40
+    despawnEffect: blockExplosion
+  }
+}

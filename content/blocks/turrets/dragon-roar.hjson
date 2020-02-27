@@ -1,0 +1,79 @@
+type: DoubleTurret
+name: The Dragons Roar
+description: A unique Spectre... Build it.. watch it fire.
+targetAir: true
+targetGround: true
+health: 195000
+size: 8
+shotWidth: 8
+inaccuracy: 5
+reload: 1
+shots: 10
+recoil: 3
+shootEffect: shootBig
+ammoUseEffect: shellEjectBig
+shootCone: 25
+rotateSpeed: 1000
+range: 1600
+maxAmmo: 100
+ammo: {
+  draconium: {
+    bulletSprite: exotic-mod-dragonbolt
+    type: MissileBulletType
+    trailColor: C93A3A
+    speed: 12
+    damage: 10000
+    splashDamage: 9000
+    splashDamageRadius: 32
+    bulletWidth: 24
+    bulletHeight: 24
+    bulletShrink: 0
+    lifetime: 1200
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    status: melting
+    homingRange: 480
+    homingPower: 90
+    ammoMultiplier: 5
+    hitShake: 1
+    frontColor: C93A3A
+    backColor: 590707
+    fragBullets: 10
+    fragBullet: {
+      bulletSprite: exotic-mod-dragonbolt
+      lifetime: 600
+      damage: 5000
+      splashDamage: 4500
+      splashDamageRadius: 32
+      type: MissileBulletType
+      trailColor: C93A3A
+      speed: 8
+      bulletWidth: 8
+      bulletHeight: 8
+      bulletShrink: 0
+      homingPower: 90
+      homingRange: 90
+      splashDamageRadius: 200
+      splashDamage: 100
+      hitShake: 0.5
+      frontColor: C93A3A
+      backColor: 590707
+    }
+  }
+}
+requirements: [
+  titanium/1600
+  lead/1200
+  copper/1200
+  graphite/1550
+  thorium/1500
+  plastanium/1105
+  surge-alloy/1400
+  amethyst-gem/1400
+  bluewolframite/1800
+  draconium/1950
+  shadow/1200
+]
+category: turret
+research: spectre
+shootSound: boom

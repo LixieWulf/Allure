@@ -1,0 +1,14 @@
+{
+    "type": "Floor",
+    "name": "Magma",
+	"speedMultiplier": 0.5,
+	"drownTime":300,
+	"walkEffect":"burning",
+	"drownUpdateEffect":"melting",
+	"status":"burning",
+	"liquidDrop":"slag",
+	"isLiquid":true,
+	"variants":3,
+	"playerUnminable":1,
+	"attributes": { "array": [ 100, 0, 0, 0 ] }
+}

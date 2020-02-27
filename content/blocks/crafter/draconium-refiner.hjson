@@ -1,0 +1,31 @@
+type: GenericSmelter
+name: Draconium Refiner
+description: Takes Draconium and refines it into a square Gem.
+size: 2
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 96
+flameColor: 6e0808
+craftEffect: hitMeltdown
+updateEffect: redgeneratespark
+consumes: {
+  power: 0.7
+  items: {
+    items: [
+      draconium/2
+    ]
+  }
+}
+requirements: [
+  titanium/20
+  thorium/20
+  surge-alloy/10
+  amethyst-gem/20
+  bluewolframite/50
+]
+category: crafting
+research: alloy-smelter
+idleSound: fire
+idleSoundVolume: 1
+outputItem: refined-draconium/1

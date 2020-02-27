@@ -1,0 +1,24 @@
+name: Ultimate Draug Factory
+description: Makes the Ultimate Draug Miner units. Do not get these killed, as they are expensive.
+type: UnitFactory
+unitType: ultimate-draug
+size: 2
+produceTime: 520
+consumes: {
+  power: 10.20
+  items: {
+    items: [
+      silicon/10
+      lead/10
+      draconium/5
+    ]
+  }
+}
+category: units
+research: chrome-wraith-factory
+requirements: [
+  draconium/25
+  silicon/40
+  graphite/30
+  thorium/20
+]

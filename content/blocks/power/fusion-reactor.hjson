@@ -1,0 +1,31 @@
+type: ImpactReactor
+name: "[cyan]Fusion Reactor"
+description: With the pinnacle of Blue-Wolframite electronic technology, hydrogen atoms can be ripped from water with a ton of power to be used in nuclear fusion. The Draconium casing is durable enough to contain the small star being sustained inside.
+itemDuration: 360
+liquidCapacity: 200
+size: 5
+hasLiquids: true
+powerProduction: 650.0
+plasmas: 4
+plasma1: b00c9a
+explosionColor: b00c9a
+consumes: {
+  power: 16.7
+  liquid: {
+    liquid: water
+    amount: 0.5
+  }
+}
+requirements: [
+  surge-alloy/750
+  draconium/100
+  silicon/1000
+  lead/1250
+  titanium/700
+  plastanium/450
+  bluewolframite/1000
+]
+category: power
+activeSound: beam
+activeSoundVolume: 0.5
+research: impact-reactor

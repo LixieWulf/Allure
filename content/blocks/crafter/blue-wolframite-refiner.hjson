@@ -1,0 +1,32 @@
+type: GenericSmelter
+name: Blue Wolframite Refiner
+description: a refiner capable of refining Wolframite into Blue Wolframite
+size: 2
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 52
+flameColor: 0000FF
+craftEffect: hitLancer
+updateEffect: purify
+consumes: {
+  power: 0.7
+  items: {
+    items: [
+      wolframite/2
+      titanium/2
+      silicon/2
+    ]
+  }
+}
+requirements: [
+  amethyst-gem/10
+  titanium/40
+  thorium/40
+  lead/50
+]
+category: crafting
+research: alloy-smelter
+idleSound: fire
+idleSoundVolume: 1
+outputItem: bluewolframite/1

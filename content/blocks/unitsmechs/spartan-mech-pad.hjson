@@ -1,0 +1,14 @@
+name: Spartan Mech Pad
+description: Transform into a heavily armored ship
+type: MechPad
+mech: the-spartan
+size: 4
+consumes: {
+  power: 0.7
+}
+category: upgrade
+research: electra-mech-pad
+requirements: [amethyst-gem/100
+bluewolframite/100
+draconium/100
+shadow/100]

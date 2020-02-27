@@ -1,0 +1,35 @@
+type: MinerDrone
+name: Ultimate Draug Miner
+description: Ultimate Draug Miner can mine every in-game material
+maxVelocity: 70
+speed: 3
+flying: true
+health: 100
+engineOffset: 2.0
+engineSize: 3 
+rotateSpeed: 3
+attackLength: 240
+range: 160
+mass: 60
+toMine:[
+  draconium
+  thorium
+  titanium
+  wolframite
+  amethyst
+  copper
+  lead
+  cookienite
+]
+drillPower:10.0
+itemCapacity: 69
+range:10
+minePower: 10.0
+weapon: {
+  name: draug-miner-lancer
+  length: 10.0
+  damage: 20.0
+  reload: 8.0
+  alternate: true
+  bullet: lancerLaser
+}

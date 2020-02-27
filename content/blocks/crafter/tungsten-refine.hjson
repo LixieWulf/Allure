@@ -1,0 +1,30 @@
+type: GenericSmelter
+name: Wolframite Refiner
+description: a refiner capable of refining Wolframite into Tungsten
+size: 3
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 52
+flameColor: 0000FF
+craftEffect: hitFuse
+updateEffect: hitLancer
+consumes: {
+  power: 0.7
+  items: {
+    items: [
+     wolframite/4
+    ]
+  }
+}
+requirements: [
+  amethyst-gem/20
+  titanium/20
+  thorium/60
+  lead/60
+]
+category: crafting
+research: amethyst-refiner
+idleSound: build
+idleSoundVolume: 0.5
+outputItem:  tungsten-ingot/2
