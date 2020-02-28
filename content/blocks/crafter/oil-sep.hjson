@@ -5,8 +5,7 @@ solid: true
 hasPower: true
 hasLiquids: true
 hasItems: true
-itemCapacity: 200
-liquidCapacity: 200
+liquidCapacity: 34
 craftTime: 34
 requirements: [
     lead/300
