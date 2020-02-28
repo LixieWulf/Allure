@@ -4,6 +4,7 @@ speedMultiplier: 0.5
 drownTime:300
 walkEffect:burning
 drownUpdateEffect: melting
+variants: 1
 status: {
   name: welp
   speedMultiplier: 0.7
