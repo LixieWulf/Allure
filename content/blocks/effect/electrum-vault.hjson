@@ -1,0 +1,10 @@
+name: Electrum Vault
+description: Shocking way of storing items.
+type: Vault
+itemCapacity: 1.0e24
+hasItems: true
+health: 9999999999999
+size: 3
+requirements: []
+category: effect
+research: vault

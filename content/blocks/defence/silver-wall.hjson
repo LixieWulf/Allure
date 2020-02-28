@@ -1,0 +1,8 @@
+name: Silver Wall
+description: the power of a thousand suns...
+type: Wall
+health: 1.0e35
+size: 2
+requirements: []
+category: defense
+research: copper-wall
