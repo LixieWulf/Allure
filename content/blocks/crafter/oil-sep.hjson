@@ -28,12 +28,12 @@ consumes: {
 
 results: [
     draconium/2
-    amethyst/2
-    wolframite/2
-    cookienite/2
-    thorium/3
-    titanium/4
-    copper/4
+    amethyst/3
+    wolframite/3
+    cookienite/3
+    thorium/4
+    titanium/5
+    copper/5
     lead/5
 ]
 
