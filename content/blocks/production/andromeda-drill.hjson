@@ -16,4 +16,4 @@ requirements: [
 category: production
 idleSound: build
 idleSoundVolume: 0.05
-research: electrum-drill
+research: surge-drill

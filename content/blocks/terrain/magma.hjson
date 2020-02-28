@@ -5,6 +5,7 @@ drownTime:300
 walkEffect:burning
 drownUpdateEffect: melting
 status: {
+  name: welp
   speedMultiplier: 0.7
   armorMultiplier: 0.5
   damageMultiplier: 1.25
