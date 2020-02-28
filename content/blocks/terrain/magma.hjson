@@ -1,14 +1,20 @@
-{
-    "type": "Floor",
-    "name": "Magma",
-	"speedMultiplier": 0.5,
-	"drownTime":300,
-	"walkEffect":"burning",
-	"drownUpdateEffect":"melting",
-	"status":"burning",
-	"liquidDrop":"slag",
-	"isLiquid":true,
-	"variants":3,
-	"playerUnminable":1,
-	"attributes": { "array": [ 100, 0, 0, 0 ] }
+type: Floor
+name: Magma
+speedMultiplier: 0.5
+drownTime:300
+walkEffect:burning
+drownUpdateEffect: melting
+status: {
+  speedMultiplier: 0.7
+  armorMultiplier: 0.5
+  damageMultiplier: 1.25
+  damage: 10
+  color: f09800
+  effect: melting
+}
+liquidDrop:slag
+isLiquid:true
+playerUnminable:1
+attributes: {
+  array: [ 100, 0, 0, 0 ]
 }
