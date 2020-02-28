@@ -7,7 +7,7 @@ hasLiquids: true
 hasItems: true
 liquidCapacity: 34
 craftTime: 34
-spinnerSpeed: 9
+spinnerSpeed: -9
 requirements: [
     lead/300
     graphite/275
