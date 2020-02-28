@@ -4,6 +4,8 @@ type: Drill
 size: 3
 tier: 7
 drillTime: 5
+drawRim: true
+heatColor: F6FFB2
 requirements: [
   surge-alloy/50
   titanium/50

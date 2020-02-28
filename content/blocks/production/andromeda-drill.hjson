@@ -4,6 +4,8 @@ type: Drill
 size: 3
 tier: 10
 drillTime: 0.1
+drawRim: true
+heatColor: E47AFF
 requirements: [
   amethyst-gem/50
   thorium/40
