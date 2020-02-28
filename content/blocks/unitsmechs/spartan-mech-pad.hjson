@@ -7,10 +7,8 @@ consumes: {
   power: 0.7
 }
 category: upgrade
-research: glave-ship-pad
-requirements: [
-  amethyst-gem/100
-  bluewolframite/100
-  draconium/100
-  shadow/100
-]
+research: electra-mech-pad
+requirements: [amethyst-gem/100
+bluewolframite/100
+draconium/100
+shadow/100]
