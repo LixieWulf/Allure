@@ -9,6 +9,7 @@ drownUpdateEffect: melting
 variants: 0
 cacheLayer: tar
 statusDuration: 240
+blendGroup: air
 status: {
   name: welp
   speedMultiplier: 0.7
