@@ -8,6 +8,7 @@ updateEffect: lava
 drownUpdateEffect: melting
 variants: 0
 cacheLayer: tar
+statusDuration: 240
 status: {
   name: welp
   speedMultiplier: 0.7
