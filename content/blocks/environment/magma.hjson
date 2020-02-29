@@ -4,7 +4,7 @@ speedMultiplier: 0.5
 damageTaken: 30
 drownTime:300
 walkEffect:burning
-updateEffect: lava
+updateEffect: fire
 drownUpdateEffect: melting
 variants: 0
 cacheLayer: tar
@@ -18,9 +18,8 @@ status: {
   color: f09800
   effect: melting
 }
-liquidDrop:slag
-isLiquid:true
-playerUnminable:1
+liquidDrop: slag
+isLiquid: true
 attributes: {
   array: [ 25, 0, 0, 0.02 ]
 }
