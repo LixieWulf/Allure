@@ -1,7 +1,7 @@
 type: genericCrafter
 name: Plastanium Forge
 description: A more advanced Plastanium Compresser that produces Plastanium more efficently.
-craftTime: 60
+craftTime: 30
 size: 3
 hasPower: true
 hasLiquids: true
@@ -14,7 +14,8 @@ consumes: {
   }
   liquid: {
     liquid: oil
-    amount: 0.35
+    amount: 0.70
+    timePeriod: 30
   }
 }
 requirements: [
