@@ -12,7 +12,10 @@ consumes: {
     ]
   }
   liquid: {
-    oil/25
+    liquid: [
+      liquid: oil
+      amount: 20
+    ]
   }
 }
 requirements: [
