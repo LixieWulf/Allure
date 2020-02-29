@@ -25,7 +25,7 @@ requirements: [
   bluewolframite/50
 ]
 category: crafting
-research: alloy-smelter
+research: blue-wolframite-refiner
 idleSound: fire
 idleSoundVolume: 1
 outputItem: refined-draconium/1

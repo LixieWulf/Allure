@@ -31,7 +31,7 @@ requirements: [
   lead/70
 ]
 category: crafting
-research: alloy-smelter
+research: amethyst-refiner
 idleSound: machine
 idleSoundVolume: 0.5
 outputItem: cookienite-baked/1

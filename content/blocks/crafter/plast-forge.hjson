@@ -1,0 +1,22 @@
+type: genericCrafter
+name: Plastanium Forge
+description: A more advanced Plastanium Compresser that produces Plastanium more efficently.
+craftTime: 60
+size: 3
+hasPower: true
+hasLiquids: true
+consumes: {
+  items: {
+    items: [
+      titanium/3
+    ]
+  }
+  liquid: {
+    oil/25
+  }
+}
+requirements: [
+]
+category: crafting
+outputItem: plastanium/2
+research: amethyst-refiner
