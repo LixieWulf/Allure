@@ -5,6 +5,7 @@ craftTime: 60
 size: 3
 hasPower: true
 hasLiquids: true
+liquidCapacity: 84
 consumes: {
   items: {
     items: [
@@ -13,7 +14,7 @@ consumes: {
   }
   liquid: {
     liquid: oil
-    amount: 20
+    amount: 0.35
   }
 }
 requirements: [

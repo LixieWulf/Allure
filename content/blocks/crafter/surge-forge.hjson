@@ -27,7 +27,7 @@ requirements: [
   lead/100
 ]
 category: crafting
-research: amethyst-refiner
+research: plast-forge
 idleSound: beam
 idleSoundVolume: 0.1
 outputItem: surge-alloy/4
