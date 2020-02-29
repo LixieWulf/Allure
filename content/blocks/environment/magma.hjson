@@ -6,7 +6,7 @@ drownTime:300
 walkEffect:burning
 updateEffect: lava
 drownUpdateEffect: melting
-variants: 1
+variants: 0
 cacheLayer: tar
 status: {
   name: welp
