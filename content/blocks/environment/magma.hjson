@@ -1,10 +1,13 @@
 type: Floor
 name: Magma
 speedMultiplier: 0.5
+damageTaken: 30
 drownTime:300
 walkEffect:burning
+updateEffect: lava
 drownUpdateEffect: melting
 variants: 1
+cacheLayer: tar
 status: {
   name: welp
   speedMultiplier: 0.7

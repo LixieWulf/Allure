@@ -17,7 +17,7 @@ shootCone: 6.9
 flying: true
 drag: 0.01
 mass: 0.3141592
-engineOffset: 6
+engineOffset: 8
 engineColor: b6c6fd
 weapon: {
   shots: 50
