@@ -17,6 +17,7 @@ consumes: {
     amount: 0.70
     timePeriod: 30
   }
+  power: 3.75
 }
 requirements: [
 ]

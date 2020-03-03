@@ -10,7 +10,7 @@ flameColor: 6e0808
 craftEffect: hitMeltdown
 updateEffect: redgeneratespark
 consumes: {
-  power: 0.7
+  power: 4.4
   items: {
     items: [
       draconium/2

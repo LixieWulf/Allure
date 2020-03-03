@@ -10,7 +10,7 @@ craftTime: 120
 craftEffect: pulverizeRedder
 updateEffect: pulverizeRed
 consumes: {
-  power: 0.7
+  power: 12
   items: {
     items: [
       thorium/2

@@ -10,7 +10,7 @@ flameColor: 0000FF
 craftEffect: hitFuse
 updateEffect: hitLancer
 consumes: {
-  power: 0.7
+  power: 2.6
   items: {
     items: [
      wolframite/4

@@ -9,7 +9,7 @@ craftTime: 120
 craftEffect: pulverizeRedder
 updateEffect: hitMeltdown
 consumes: {
-  power: 0.7
+  power: 6
   items: {
     items: [
       copper/3

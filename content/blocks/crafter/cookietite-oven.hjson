@@ -11,7 +11,7 @@ flameColor: C9A58F
 craftEffect: lava
 updateEffect: fire
 consumes: {
-  power: 0.7
+  power: 2.1
   items: {
     items: [
       cookienite/3

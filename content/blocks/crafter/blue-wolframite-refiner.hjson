@@ -10,7 +10,7 @@ flameColor: 0000FF
 craftEffect: hitLancer
 updateEffect: purify
 consumes: {
-  power: 0.7
+  power: 2.1
   items: {
     items: [
       wolframite/2

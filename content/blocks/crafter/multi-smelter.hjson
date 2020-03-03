@@ -10,7 +10,7 @@ craftTime: 40
 craftEffect: pulverize
 updateEffect: plasticburn
 consumes: {
-  power: 0.7
+  power: 2.45
   items: {
     items: [
       coal/1
