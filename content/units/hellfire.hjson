@@ -13,7 +13,7 @@ drag: 0.5
 range: 240
 attackLength: 280
 mass: 10000
-hitsize: 15
+hitsize: 45
 health: 250000000
 retreatPercent: 0.1
 weaponOffsetY: 13
