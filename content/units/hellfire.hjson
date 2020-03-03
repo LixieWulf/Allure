@@ -19,6 +19,7 @@ retreatPercent: 0.1
 weaponOffsetY: 13
 engineOffset: 36
 engineSize: 7
+retreatPercent: 0
 weapon: {
   name: shipboard-railgun
   width: 0
