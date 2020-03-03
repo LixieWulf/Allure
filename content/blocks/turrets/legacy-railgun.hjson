@@ -11,7 +11,7 @@ heatColor: FF7300
 cooldown: 0.024
 restitution: 0.024
 inaccuracy: 10
-reload: 60
+reload: 30
 shots: 1
 maxAmmo: 24
 recoil: 4

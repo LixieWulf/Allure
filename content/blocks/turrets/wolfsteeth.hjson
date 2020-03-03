@@ -7,7 +7,7 @@ health: 10000000
 heatColor: 00FFFF
 size: 8
 inaccuracy: 10
-reload: 30
+reload: 15
 shots: 1
 xRand: 22
 recoil: 3

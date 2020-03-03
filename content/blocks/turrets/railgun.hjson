@@ -10,7 +10,7 @@ heatColor: 91E0EA
 cooldown: 0.016
 restitution: 0.016
 inaccuracy: 10
-reload: 120
+reload: 60
 shots: 1
 recoil: 4
 ammoUseEffect: shellEjectBig
