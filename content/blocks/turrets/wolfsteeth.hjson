@@ -17,6 +17,7 @@ shootCone: 25
 maxAmmo: 48
 rotateSpeed: 0.25
 range: 1200
+outlineIcon: false
 ammo: {
   draconium: {
     speed: 11
