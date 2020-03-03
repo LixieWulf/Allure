@@ -14,7 +14,7 @@ consumes: {
   items: {
     items: [
       thorium/2
-      sand/2
+      sand/5
     ]
   }
 }
