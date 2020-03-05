@@ -5,7 +5,6 @@ targetAir: true
 targetGround: true
 health: 10000000
 heatColor: 00FFFF
-outlineIcon: false
 size: 8
 inaccuracy: 10
 reload: 15
