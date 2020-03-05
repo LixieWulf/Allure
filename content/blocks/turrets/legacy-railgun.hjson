@@ -7,7 +7,7 @@ health: 19000
 size: 4
 shotWidth: 4
 outlineIcon: false
-heatColor: ffa914
+heatColor: ff0000
 cooldown: 0.04
 restitution: 0.04
 inaccuracy: 10
