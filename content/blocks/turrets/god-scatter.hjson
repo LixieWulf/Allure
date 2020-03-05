@@ -1,6 +1,6 @@
 type: DoubleTurret
-name: "God Scatter"
-description: "A Cancer for anything in the skies."
+name: God Scatter
+description: Cancer for anything in the skies.
 targetAir: true
 targetGround: false
 health: 19500
@@ -23,7 +23,7 @@ ammo: {
     hitTiles: false
     collidesTiles: false
     damage: 600
-    bulletSprite: big-scat
+    bulletSprite: exotic-mod-big-scat
     bulletWidth: 16
     bulletHeight: 21
     shootEffect: shootBig
@@ -42,7 +42,7 @@ ammo: {
       hitTiles: false
       collidesTiles: false
       damage: 200
-      bulletSprite: big-scat
+      bulletSprite: exotic-mod-big-scat
       bulletWidth: 16
       bulletHeight: 21
       shootEffect: shootBig
@@ -62,7 +62,7 @@ ammo: {
     hitTiles: false
     collidesTiles: false
     damage: 500
-    bulletSprite: big-scat
+    bulletSprite: exotic-mod-big-scat
     bulletWidth: 16
     bulletHeight: 21
     shootEffect: shootBig
@@ -82,7 +82,7 @@ ammo: {
     hitTiles: false
     collidesTiles: false
     damage: 145
-    bulletSprite: big-scat
+    bulletSprite: exotic-mod-big-scat
     pierce: true
     bulletWidth: 16
     bulletHeight: 21
