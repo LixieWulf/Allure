@@ -7,12 +7,12 @@ health: 14500
 size: 4
 outlineIcon: false
 heatColor: 91E0EA
-cooldown: 0.016
-restitution: 0.016
+cooldown: 0.08
+restitution: 0.08
 inaccuracy: 10
 reload: 60
 shots: 1
-recoil: 4
+recoil: 6
 ammoUseEffect: shellEjectBig
 shootEffect: hitLancer
 shootSound: laser
