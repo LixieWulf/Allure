@@ -25,8 +25,8 @@ ammo: {
     speed: 10
     damage: 700
     bulletSprite: exotic-mod-railbolt
-    bulletWidth: 20
-    bulletHeight: 60
+    bulletWidth: 14
+    bulletHeight: 42
     bulletShrink: 0
     lifetime: 88
     shootEffect: shootBig
@@ -46,8 +46,8 @@ ammo: {
       damage: 700
       bulletSprite: exotic-mod-railbolt
       bulletShrink: 0
-      bulletWidth: 15
-      bulletHeight: 45
+      bulletWidth: 7
+      bulletHeight: 21
       hitEffect: pulverizeRed
       despawnEffect: pulverizeRed
       lifetime: 44
@@ -64,8 +64,8 @@ ammo: {
         damage: 700
         bulletSprite: exotic-mod-railbolt
         bulletShrink: 0
-        bulletWidth: 5
-        bulletHeight: 15
+        bulletWidth: 3.5
+        bulletHeight: 10.5
         lifetime: 44
         hitEffect: shootBig
         despawnEffect: shootBig
@@ -102,8 +102,8 @@ ammo: {
     damage: 500
     bulletShrink: 0
     bulletSprite: exotic-mod-railbolt
-    bulletWidth: 24
-    bulletHeight: 80
+    bulletWidth: 16
+    bulletHeight: 48
     lifetime: 116
     hitEffect: padlaunch
     despawnEffect: padlaunch

@@ -89,7 +89,7 @@ ammo: {
     damage: 100000
     bulletSprite: exotic-mod-railbolt
     bulletWidth: 24
-    bulletHeight: 80
+    bulletHeight: 68
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
     bulletShrink: 0
@@ -124,8 +124,8 @@ ammo: {
     damage: 25000
     bulletSprite: exotic-mod-railbolt
     pierce: true
-    bulletWidth: 12
-    bulletHeight: 36
+    bulletWidth: 16
+    bulletHeight: 52
     shootEffect: shootBig
     bulletShrink: 0
     ammoMultiplier: 5
