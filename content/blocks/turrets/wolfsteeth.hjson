@@ -5,6 +5,7 @@ targetAir: true
 targetGround: true
 health: 10000000
 heatColor: 00FFFF
+outlineIcon: false
 size: 8
 inaccuracy: 10
 reload: 15
@@ -25,8 +26,8 @@ ammo: {
     speed: 11
     damage: 30000
     bulletSprite: exotic-mod-railbolt
-    bulletWidth: 16
-    bulletHeight: 50
+    bulletWidth: 20
+    bulletHeight: 60
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
     lifetime: 128
@@ -45,8 +46,8 @@ ammo: {
       speed: 11
       damage: 1000
       bulletSprite: exotic-mod-railbolt
-      bulletWidth: 16
-      bulletHeight: 21
+      bulletWidth: 15
+      bulletHeight: 45
       shootEffect: shootBig
       bulletShrink: 0
       smokeEffect: shootBigSmoke
@@ -66,8 +67,8 @@ ammo: {
         speed: 11
         damage: 1000
         bulletSprite: exotic-mod-railbolt
-        bulletWidth: 16
-        bulletHeight: 21
+        bulletWidth: 5
+        bulletHeight: 15
         shootEffect: shootBig
         bulletShrink: 0
         smokeEffect: shootBigSmoke
@@ -87,8 +88,8 @@ ammo: {
     speed: 10
     damage: 100000
     bulletSprite: exotic-mod-railbolt
-    bulletWidth: 16
-    bulletHeight: 50
+    bulletWidth: 24
+    bulletHeight: 80
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
     bulletShrink: 0
@@ -123,8 +124,8 @@ ammo: {
     damage: 25000
     bulletSprite: exotic-mod-railbolt
     pierce: true
-    bulletWidth: 16
-    bulletHeight: 21
+    bulletWidth: 12
+    bulletHeight: 36
     shootEffect: shootBig
     bulletShrink: 0
     ammoMultiplier: 5
