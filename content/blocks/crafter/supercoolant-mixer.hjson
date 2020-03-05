@@ -7,7 +7,7 @@ hasLiquid: true
 hasPower: true
 outputLiquid: supercoolant/24
 consumes: {
-  power: something
+  power: 1.75
   items: {
     items: [
       amethyst/1
