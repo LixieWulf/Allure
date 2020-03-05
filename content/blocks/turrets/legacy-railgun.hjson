@@ -8,8 +8,8 @@ size: 4
 shotWidth: 4
 outlineIcon: false
 heatColor: ffa914
-cooldown: 0.04
-restitution: 0.04
+cooldown: 0.01
+restitution: 0.02
 inaccuracy: 10
 reload: 30
 shots: 1

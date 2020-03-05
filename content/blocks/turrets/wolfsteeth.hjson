@@ -17,8 +17,8 @@ shootCone: 25
 maxAmmo: 48
 rotateSpeed: 0.25
 range: 1200
-cooldown: 0.02
-restitution: 0.02
+cooldown: 0.005
+restitution: 0.01
 outlineIcon: false
 ammo: {
   draconium: {

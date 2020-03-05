@@ -7,8 +7,8 @@ health: 14500
 size: 4
 outlineIcon: false
 heatColor: 91E0EA
-cooldown: 0.08
-restitution: 0.08
+cooldown: 0.02
+restitution: 0.04
 inaccuracy: 10
 reload: 60
 shots: 1
