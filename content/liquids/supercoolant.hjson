@@ -1,9 +1,9 @@
-name: Super Coolant
-description: A type of coolant made from pure cyrofluid made in a extreamly cold mixer. Has greater heat absorption than Cryofluid itself.
+name: "[#fbbdff]Supercoolant"
+description: An extreme coolant made from Cyrofluid and Amethyst powder. Has greater heat absorption than Cryofluid itself.
 temperature: 0.015
 flammability: 0
 viscosity: 0.55
 heatCapacity: 3
 explosiveness: 0
 effect: freezing
-color: bdf5ff
+color: fbbdff
