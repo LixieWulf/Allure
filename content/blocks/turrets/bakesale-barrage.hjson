@@ -4,19 +4,18 @@ description:
   Made with Cookietite, so it fires at maximum speed.
   [red]No but seriously, there is no point in boosting this. It will have no effect.
   '''
-type: DoubleTurret
+type: ItemTurret
 health: 9001
 hasLiquid: false
 reload: 1
 heatColor: FEB380
-shots: 3
+shots: 2
 shootCone: 20
 shootShake: 0.5
 inaccuracy: 15
 recoil: 3
 size: 3
-shotWidth: 4.5
-xRand: 4.5
+xRand: 9
 range: 600
 restitution: 0.05
 cooldown: 0.05
