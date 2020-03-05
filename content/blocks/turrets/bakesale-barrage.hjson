@@ -9,7 +9,7 @@ health: 9001
 hasLiquid: false
 reload: 1
 heatColor: FEB380
-shots: 2
+shots: 4
 shootCone: 20
 shootShake: 0.5
 inaccuracy: 15
