@@ -2,21 +2,22 @@ type: GenericCrafter
 name: "[#fbbdff]Supercoolant[] Mixer"
 description: "Adds fine amethyst power to already cold Cryofluid to create [#fbbdff]Supercoolant[]."
 size: 3
-craftTime: 120
+craftTime: 180
 hasLiquid: true
 hasPower: true
-outputLiquid: supercoolant/24
+liquidCapacity: 40
+outputLiquid: supercoolant/36
 consumes: {
   power: 1.75
   items: {
     items: [
-      amethyst/1
+      amethyst/3
     ]
   }
   liquid: {
     liquid: cryofluid
     amount: 0.2
-    timePeriod: 120
+    timePeriod: 180
   }
 }
 requirements: [
