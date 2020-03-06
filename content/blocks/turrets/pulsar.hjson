@@ -23,13 +23,13 @@ ammo: {
     bulletSprite: exotic-mod-qpg-wave
     backColor: 000000
     frontColor: 474747
-    speed: 18
+    speed: 12
     bulletHeight: 8
     bulletWidth: 16
     drawSize: 0
     hitSize: 16
     pierce: true
-    lifetime: 30
+    lifetime: 60
     knockback: 0
     ammoMultiplier: 2
     damage: 500
