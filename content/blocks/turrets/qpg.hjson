@@ -19,6 +19,7 @@ heatColor: ffea00
 cooldown: 0.015
 size: 2
 shots: 400
+spread: 0
 inaccuracy: 360
 targetAir: true
 targetGround: true

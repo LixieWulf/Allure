@@ -13,6 +13,7 @@ shots: 4
 shootCone: 20
 shootShake: 0.5
 inaccuracy: 15
+spread: 0
 recoil: 3
 size: 3
 xRand: 9

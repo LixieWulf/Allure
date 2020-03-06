@@ -11,6 +11,7 @@ heatColor: ffa914
 cooldown: 0.01
 restitution: 0.02
 inaccuracy: 10
+spread: 0
 reload: 30
 shots: 1
 maxAmmo: 24

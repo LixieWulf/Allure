@@ -6,7 +6,8 @@ targetGround: false
 health: 19500
 heatColor: ffce2b
 size: 4
-inaccuracy: 3
+inaccuracy: 8
+spread: 0
 reload: 1
 shots: 8
 shotWidth: 4

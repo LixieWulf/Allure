@@ -14,6 +14,7 @@ restitution: 0.015
 size: 3
 shots: 150
 inaccuracy: 25
+spread: 0
 targetAir: true
 targetGround: true
 maxAmmo: 20
