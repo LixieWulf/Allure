@@ -1,0 +1,68 @@
+name: Shadow Pulsar
+description:
+  '''
+  An enhanced Quantum Point Generator. Pulses waves of destructive Shadow energy instead of quantum sorcery.
+  '''
+type: ItemTurret
+reload: 420
+recoil: 2
+shootCone: 360
+range: 400
+heatColor: 000000
+cooldown: 0.015
+restitution: 0.015
+size: 2
+shots: 150
+inaccuracy: 25
+targetAir: true
+targetGround: true
+maxAmmo: 20
+ammo: {
+  shadow: {
+    type: BasicBulletType
+    bulletSprite: exotic-mod-qpg-wave
+    backColor: 000000
+    frontColor: 474747
+    speed: 18
+    bulletHeight: 8
+    bulletWidth: 16
+    drawSize: 0
+    hitSize: 16
+    pierce: true
+    lifetime: 30
+    knockback: 0
+    ammoMultiplier: 2
+    damage: 500
+    hitEffect: pulverize
+    despawnEffect: none
+    shootEffect: none
+    smokeEffect: none
+    incendChance: 0
+    status: {
+      name: shadowenergy
+      speedMultiplier: 0.9
+      damageMultiplier: 0.6
+      armorMultiplier: 0.6
+      damage: 100
+      color: 000000
+      effect: none
+    }
+  }
+}
+requirements: [
+  copper/700
+  lead/750
+  titanium/800
+  thorium/900
+  surge-alloy/100
+  graphite/600
+  silicon/550
+  phase-fabric/650
+  amethyst-gem/950
+  bluewolframite/850
+  draconium/700
+  shadow/500
+]
+category: turret
+research: qpg
+shootSound: release
