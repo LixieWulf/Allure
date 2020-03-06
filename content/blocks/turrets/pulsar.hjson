@@ -4,7 +4,7 @@ description:
   An enhanced Quantum Point Generator. Pulses waves of destructive Shadow energy instead of quantum sorcery.
   '''
 type: ItemTurret
-reload: 420
+reload: 480
 recoil: 2
 shootCone: 30
 range: 400
@@ -25,7 +25,7 @@ ammo: {
     backColor: 000000
     frontColor: 474747
     speed: 12
-    bulletHeight: 8
+    bulletHeight: 48
     bulletWidth: 16
     drawSize: 0
     hitSize: 16

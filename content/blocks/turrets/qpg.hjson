@@ -31,7 +31,7 @@ ammo: {
     bulletSprite: exotic-mod-qpg-wave
     collidesTiles: false
     speed: 8
-    bulletHeight: 8
+    bulletHeight: 48
     bulletWidth: 16
     drawSize: 0
     hitSize: 16
