@@ -11,7 +11,7 @@ range: 400
 heatColor: 000000
 cooldown: 0.015
 restitution: 0.015
-size: 2
+size: 3
 shots: 150
 inaccuracy: 25
 targetAir: true
