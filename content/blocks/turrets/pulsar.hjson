@@ -2,6 +2,7 @@ name: Shadow Pulsar
 description:
   '''
   An enhanced Quantum Point Generator. Pulses waves of destructive Shadow energy instead of quantum sorcery.
+  Heavily weakens enemies.
   '''
 type: ItemTurret
 reload: 480
@@ -41,9 +42,9 @@ ammo: {
     incendChance: 0
     status: {
       name: shadowenergy
-      speedMultiplier: 0.9
+      speedMultiplier: 1
       damageMultiplier: 0.6
-      armorMultiplier: 0.6
+      armorMultiplier: 0.2
       damage: 100
       color: 000000
       effect: none
