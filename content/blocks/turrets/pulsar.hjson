@@ -6,7 +6,7 @@ description:
 type: ItemTurret
 reload: 420
 recoil: 2
-shootCone: 360
+shootCone: 30
 range: 400
 heatColor: 000000
 cooldown: 0.015
