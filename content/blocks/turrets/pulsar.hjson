@@ -13,7 +13,7 @@ heatColor: 000000
 cooldown: 0.015
 restitution: 0.015
 size: 3
-shots: 150
+shots: 400
 inaccuracy: 25
 spread: 0
 targetAir: true
@@ -27,14 +27,14 @@ ammo: {
     frontColor: 474747
     speed: 12
     bulletHeight: 48
-    bulletWidth: 16
+    bulletWidth: 8
     drawSize: 0
     hitSize: 16
     pierce: true
     lifetime: 60
     knockback: 0
     ammoMultiplier: 2
-    damage: 500
+    damage: 1000
     hitEffect: pulverize
     despawnEffect: none
     shootEffect: none
@@ -45,7 +45,7 @@ ammo: {
       speedMultiplier: 1
       damageMultiplier: 0.6
       armorMultiplier: 0.2
-      damage: 100
+      damage: 250
       color: 000000
       effect: none
     }

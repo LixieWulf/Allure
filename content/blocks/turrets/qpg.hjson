@@ -32,7 +32,7 @@ ammo: {
     collidesTiles: false
     speed: 8
     bulletHeight: 48
-    bulletWidth: 16
+    bulletWidth: 8
     drawSize: 0
     hitSize: 16
     pierce: true
