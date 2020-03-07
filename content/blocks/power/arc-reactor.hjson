@@ -11,8 +11,8 @@ plasma1: b00c9a
 explosionColor: b00c9a
 consumes: {
   power: 100.0
-  items {
-    items [
+  items: {
+    items: [
     shadow/1
     ]
   }
