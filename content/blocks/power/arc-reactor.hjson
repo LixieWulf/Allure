@@ -1,0 +1,30 @@
+type: ImpactReactor
+name: "[green]Arc Reactor"
+description: The ultimate reactor. Uses shadow to generate massive amounts of power. Requires supercoolant to run as well.
+itemDuration: 600
+liquidCapacity: 1000
+size: 8
+hasLiquids: true
+powerProduction: 1000000
+plasmas: 4
+plasma1: b00c9a
+explosionColor: b00c9a
+consumes: {
+  power: 100.0
+  items {
+    items [
+    shadow/1
+    ]
+  }
+  liquid: {
+    liquid: supercoolant
+    amount: 10.0
+  }
+}
+requirements: [
+  copper/1
+]
+category: power
+activeSound: beam
+activeSoundVolume: 0.5
+research: fusion-reactor
