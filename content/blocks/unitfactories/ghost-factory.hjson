@@ -1,9 +1,9 @@
 name: Ghost Factory
-description: Makes advanced building drone to repair buildings.
+description: Producess enhanced repair drones.
 type: UnitFactory
 unitType: ghost
-size: 4
-produceTime: 60
+size: 3
+produceTime: 4000
 consumes: {
   power: 0.5
   items: {
@@ -17,6 +17,8 @@ consumes: {
 }
 category: units
 research: revenant-factory
-requirements: [bluewolframite/90
-draconium/20
-titanium/70]
+requirements: [
+  bluewolframite/90
+  draconium/20
+  titanium/70
+]

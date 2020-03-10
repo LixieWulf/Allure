@@ -1,28 +1,28 @@
-{
-	"type": "spirit",
-	"name": "Ghost",
-	"description": "a stronger spirit repair drone.",
-	"speed": 0.5,
-    "mass": 2,
-    "drag": 0.35,
-	"flying": true,
-	"rotateWeapon": true,
-	"health": 2500,
-	"engineColor": "7575c8",
-	"engineOffset": 12,
-	"range": 90,
-	"shootCone": 30,
-	"attackLength": 40,
-	 weapon: {
-           "name": "Spirit Healer",
-           "length": 1.5,
-           "reload": 10,
-           "width": 0.5
-           "alternate": "true",
-           "recoil": 2,
-            bullet: {
-               "type": "HealBulletType"
-               "healPercent": 50,
-              }
-         }
+type: RepairDrone
+name: Ghost
+description: A stronger spirit repair drone.
+speed: 2
+mass: 0.5
+drag: 0.1
+flying: true
+rotateWeapon: true
+health: 2500
+engineColor: 7575c8
+engineOffset: 12
+range: 90
+shootCone: 30
+attackLength: 40
+weapon: {
+  name: ghostregenerator
+  length: 1.5
+  reload: 1
+  width: 0.5
+  alternate: true
+  recoil: 2
+  bullet: {
+    type: HealBulletType
+    speed: 4
+    lifetime: 90
+    healPercent: 1.66666667
+  }
 }
