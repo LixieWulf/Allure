@@ -1,0 +1,21 @@
+name: Solar Flare
+description: A cousin of the meltdown. Focused more on burning enemies than damaging blocks.
+size: 4
+range: 500
+reload: 80
+shootSound: laserbig
+activeSound:beam
+activeSoundVolume: 2
+powerUse: 15
+rotatespeed: 0.5
+shootCone: 35
+targetAir: true
+targetGround: true
+heatColor: e3b464
+recoil: 5
+cooldown: 0.0133333333
+restitution: 0.0133333333
+requirements: [
+]
+category: turret
+research: meltdown
