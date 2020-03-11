@@ -7,7 +7,7 @@ thundersnap.shootType = extend(BasicBulletType, {
     init(b){
         if (b == null) return;
         const amount = 4 + Math.floor(Math.random() * 6)
-        const damagePerOne = this.damage / amount;
+        const damagePerOne = this.damage;
         for (var i = 0; i != amount; ++i) {
             Lightning.create(b.getTeam(), Pal.lancerLaser, damagePerOne, b.x, b.y, b.rot(), 500 + Math.floor(Math.random() * 100));
         };
@@ -15,6 +15,6 @@ thundersnap.shootType = extend(BasicBulletType, {
 });
 
 thundersnap.shootType.lifetime = 30;
-thundersnap.shootType.damage = 5000;
+thundersnap.shootType.damage = 15000;
 thundersnap.shootType.despawnEffect = Fx.none;
 thundersnap.shootType.hitEffect = Fx.hitLancer;
