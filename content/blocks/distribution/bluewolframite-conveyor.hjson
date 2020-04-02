@@ -1,6 +1,6 @@
 type: Conveyor
-name: Blue-Wolframite Conveyer
-description: A conveyer made faster with powerful magnets.
+name: Blue-Wolframite Conveyor
+description: A conveyor made faster with powerful magnets.
 health: 550
 requirements: [
   copper/1
