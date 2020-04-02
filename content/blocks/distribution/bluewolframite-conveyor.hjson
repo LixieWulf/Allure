@@ -1,7 +1,7 @@
 type: Conveyor
-name: Blue-Wolframite Conveyer
-description: A conveyer made faster with electromagnets.
-health: 230
+name: Blue-Wolframite Conveyor
+description: A conveyor made faster with powerful magnets.
+health: 550
 requirements: [
   copper/1
   lead/1
@@ -12,5 +12,5 @@ requirements: [
 category: distribution
 idleSound: beam
 idleSoundVolume: 0.001
-speed: 0.288
+speed: 0.360
 research: armored-conveyor
