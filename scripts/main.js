@@ -1,2 +1,2 @@
 require("blocks/thundersnap")
-require("blocks/solarflare")
+require("blocks/bluewolframite-conduit")
