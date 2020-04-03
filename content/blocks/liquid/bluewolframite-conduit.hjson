@@ -1,6 +1,6 @@
 name: Blue-Wolframite Conduit
 description: Accelerates fluid flow with powerful magnets (somehow). If the pipe is broke, it is heavily prone to leaking. 
-leakResistance: 0
+leakResistance: 0.1
 health: 250
 requirements: [
   bluewolframite/3
