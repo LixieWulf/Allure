@@ -22,7 +22,7 @@ restitution: 0.05
 cooldown: 0.05
 shootEffect: shootBig
 shootSound: missile
-maxAmmo: 600
+maxAmmo: 90
 ammo: {
   cookienite: {
     bulletType: MissileBulletType
@@ -40,7 +40,7 @@ ammo: {
     damage: 1000
     splashDamage: 7000
     splashDamageRadius: 64
-    ammoMultiplier: 60
+    ammoMultiplier: 20
     homingRange: 360
     homingPower: 0.01
     lifetime: 300
@@ -65,7 +65,7 @@ ammo: {
     damage: 1000
     splashDamage: 1000
     splashDamageRadius: 128
-    ammoMultiplier: 75
+    ammoMultiplier: 30
     homingRange: 360
     homingPower: 0.01
     lifetime: 300
