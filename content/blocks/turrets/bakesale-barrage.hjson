@@ -12,8 +12,8 @@ heatColor: FEB380
 shots: 7
 shootCone: 20
 shootShake: 0.5
-inaccuracy: 15
-spread: 0
+inaccuracy: 1.5
+spread: 5
 recoil: 3
 size: 3
 xRand: 9
