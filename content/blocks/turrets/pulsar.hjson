@@ -13,9 +13,9 @@ heatColor: 000000
 cooldown: 0.015
 restitution: 0.015
 size: 3
-shots: 400
-inaccuracy: 25
-spread: 0
+shots: 500
+inaccuracy: 0
+spread: 0.05
 targetAir: true
 targetGround: true
 maxAmmo: 20
