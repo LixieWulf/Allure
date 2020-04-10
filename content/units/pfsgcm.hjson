@@ -3,7 +3,7 @@ name: PFSGCM
 description:
   '''
   The Persistant Fast Self-Guided Cluster Missile will fly towards enemies that come within close range of it and burst into many smaller missiles. Uses amethyst lenses for laser guidance and cookietite for speed.
-  
+
   Inspired by [red]Kartoffel[]'s cool little missile unit things.
   '''
 health: 400

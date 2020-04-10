@@ -5,7 +5,7 @@ unitType: ultimate-draug
 size: 2
 produceTime: 520
 consumes: {
-  power: 10.20
+  power: 10.2
   items: {
     items: [
       silicon/10

@@ -9,18 +9,19 @@ consumes: {
 category: upgrade
 research: glaive-ship-pad
 requirements: [
-copper/5000
-lead/5000
-metaglass/5000
-titanium/5000
-graphite/5000
-silicon/5000
-thorium/5000
-plastanium/5000
-phase-fabric/5000
-surge-alloy/5000
-cookienite-baked/5000
-amethyst-gem/5000
-bluewolframite/5000
-draconium/5000
-shadow/5000]
+  copper/5000
+  lead/5000
+  metaglass/5000
+  titanium/5000
+  graphite/5000
+  silicon/5000
+  thorium/5000
+  plastanium/5000
+  phase-fabric/5000
+  surge-alloy/5000
+  cookienite-baked/5000
+  amethyst-gem/5000
+  bluewolframite/5000
+  draconium/5000
+  shadow/5000
+]

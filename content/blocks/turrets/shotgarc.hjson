@@ -16,7 +16,6 @@ shootEffect: lightningShoot
 recoil: 1
 cooldown: 0.02
 restitution: 0.02
-recoil: 1
 requirements: [
   copper/1
   lead/1

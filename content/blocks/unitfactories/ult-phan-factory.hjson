@@ -8,14 +8,16 @@ consumes: {
   power: 0.5
   items: {
     items: [
-     titanium/20
-     silicon/20
-     tungsten-ingot/20
+      titanium/20
+      silicon/20
+      tungsten-ingot/20
     ]
   }
 }
 category: units
 research: revenant-factory
-requirements: [tungsten-ingot/90
-titanium/20
-thorium/70]
+requirements: [
+  tungsten-ingot/90
+  titanium/20
+  thorium/70
+]

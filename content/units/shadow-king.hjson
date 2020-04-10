@@ -1,51 +1,49 @@
-{
-	"type": "Revenant",
-	"name": "Shadow King",
-	"description": "A massive, heavily armored airship. It will rule the battlefield.",
-	"health": 111333666999000,
-	"hitsize": 54,
-	"flying": true,
-	"speed": 0.02,
-	"range": 30,
-	"attackLength": 50,
-	"rotatespeed": 0.01,
-	"baseRotateSpeed": 0.04,
-	"shootCone": 120,
-	"mass": 35,
-	"rotateWeapon": true,
-	"drag": 0.03,
-	"maxVelocity": 0.4,
-	"retreatPercent": 0,
-	"engineOffset": 28,
-	"engineSize": 6,
-	"weapon": {
-		"name": "Shadows Ruling",
-		"length": 1.5,
-		"reload": 200,
-		"alternate": true,
-		"bullet":{
-                   "type": "FlakBulletType",
-                   "lifetime": 1000,
-                   "speed": 10,
-                   "splashDamageRadius": 200,
-                   "splashDamage": 9000,
-                   "homingPower": 90,
-                   "homingRange": 90,
-                   "frontColor": "537FA3FF",
-                   "backColor": "385872FF",
-                   "fragBullets": 10,
-                   "fragBullet": {
-                   "lifetime": 10,
-                   "damage":9000,
-                   "type": "MissileBulletType",
-                   "speed": 10,
-                   "homingPower": 90,
-	           "homingRange": 90,
-                   "lightining":10,
-                   "lightningLength":50,
-	           "lightningDamage": 9000
-                   "hitShake":5
-                   }
-           }
-      }
+type: Revenant
+name: Shadow King
+description: A massive, heavily armored airship. It will rule the battlefield.
+health: 111333666999000
+hitsize: 54
+flying: true
+speed: 0.02
+range: 30
+attackLength: 50
+rotatespeed: 0.01
+baseRotateSpeed: 0.04
+shootCone: 120
+mass: 35
+rotateWeapon: true
+drag: 0.03
+maxVelocity: 0.4
+retreatPercent: 0
+engineOffset: 28
+engineSize: 6
+weapon: {
+  name: Shadows Ruling
+  length: 1.5
+  reload: 200
+  alternate: true
+  bullet: {
+    type: FlakBulletType
+    lifetime: 1000
+    speed: 10
+    splashDamageRadius: 200
+    splashDamage: 9000
+    homingPower: 90
+    homingRange: 90
+    frontColor: 537FA3FF
+    backColor: 385872FF
+    fragBullets: 10
+    fragBullet: {
+      lifetime: 10
+      damage: 9000
+      type: MissileBulletType
+      speed: 10
+      homingPower: 90
+      homingRange: 90
+      lightining: 10
+      lightningLength: 50
+      lightningDamage: 9000
+      hitShake: 5
+    }
+  }
 }

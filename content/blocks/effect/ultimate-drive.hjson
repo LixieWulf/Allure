@@ -1,23 +1,23 @@
 type: OverdriveProjector
-  name: Shadow Drive Projector
-  description:
-    '''
-    Fuses Shadow and Cookietite to make this ultimate drive.
-    
-    [red]WARNING: USAGE WITH WOLF'S TEETH WILL DESTROY EARDRUMS, FPS, PC, AND GAME!
-    '''
-  size: 3
-  health: 2000000
-  range: 520
-  speedBoost: 99999
-  phaseRangeBoost: 80
-  speedBoostPhase: 999999
-  category: effect
-  requirements: [
-    shadow/3000
-    cookienite-baked/2000
-  ]
-  consumes: {
+name: Shadow Drive Projector
+description:
+  '''
+  Fuses Shadow and Cookietite to make this ultimate drive.
+
+  [red]WARNING: USAGE WITH WOLF'S TEETH WILL DESTROY EARDRUMS, FPS, PC, AND GAME!
+  '''
+size: 3
+health: 2000000
+range: 520
+speedBoost: 99999
+phaseRangeBoost: 80
+speedBoostPhase: 999999
+category: effect
+requirements: [
+  shadow/3000
+  cookienite-baked/2000
+]
+consumes: {
   power: 5
   items: {
     items: [
@@ -27,4 +27,4 @@ type: OverdriveProjector
     optional: true
   }
 }
-  research: cookiedrive
+research: cookiedrive

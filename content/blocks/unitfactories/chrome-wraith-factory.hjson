@@ -14,6 +14,8 @@ consumes: {
 }
 category: units
 research: revenant-factory
-requirements: [electrum/90
-copper/20
-titanium/70]
+requirements: [
+  electrum/90
+  copper/20
+  titanium/70
+]

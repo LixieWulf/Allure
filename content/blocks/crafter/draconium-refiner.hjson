@@ -6,7 +6,7 @@ hasPower: true
 hasLiquids: false
 hasItems: true
 craftTime: 96
-flameColor: 6e0808
+flameColor: Infinity
 craftEffect: hitMeltdown
 updateEffect: redgeneratespark
 consumes: {

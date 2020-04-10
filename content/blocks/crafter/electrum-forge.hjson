@@ -20,8 +20,10 @@ consumes: {
     amount: 0.7
   }
 }
-requirements: [silver/20
-copper/30]
+requirements: [
+  silver/20
+  copper/30
+]
 category: crafting
 research: phase-forge
 idleSound: respawning

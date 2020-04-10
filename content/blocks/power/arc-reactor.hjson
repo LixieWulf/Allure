@@ -10,15 +10,15 @@ plasmas: 4
 plasma1: b00c9a
 explosionColor: b00c9a
 consumes: {
-  power: 100.0
+  power: 100
   items: {
     items: [
-    shadow/1
+      shadow/1
     ]
   }
   liquid: {
     liquid: supercoolant
-    amount: 10.0
+    amount: 10
   }
 }
 requirements: [

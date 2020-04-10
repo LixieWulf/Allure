@@ -18,7 +18,7 @@ maxAmmo: 24
 recoil: 6
 ammoUseEffect: shellEjectBig
 shootEffect: hitMeltdown
-shootSound: laser
+shootSound: corexplode
 shootCone: 25
 rotateSpeed: 0.25
 range: 800
@@ -136,4 +136,3 @@ requirements: [
 ]
 category: turret
 research: railgun
-shootSound: corexplode

@@ -5,13 +5,13 @@ maxVelocity: 70
 speed: 3
 flying: true
 health: 100
-engineOffset: 2.0
-engineSize: 3 
+engineOffset: 2
+engineSize: 3
 rotateSpeed: 3
 attackLength: 240
-range: 160
+range: 10
 mass: 60
-toMine:[
+toMine: [
   draconium
   thorium
   titanium
@@ -21,15 +21,14 @@ toMine:[
   lead
   cookienite
 ]
-drillPower:10.0
+drillPower: 10
 itemCapacity: 69
-range:10
-minePower: 10.0
+minePower: 10
 weapon: {
   name: draug-miner-lancer
-  length: 10.0
-  damage: 20.0
-  reload: 8.0
+  length: 10
+  damage: 20
+  reload: 8
   alternate: true
   bullet: lancerLaser
 }

@@ -8,5 +8,7 @@ consumes: {
 }
 category: upgrade
 research: omega-mech-pad
-requirements: [amethyst-gem/100
-titanium/100]
+requirements: [
+  amethyst-gem/100
+  titanium/100
+]

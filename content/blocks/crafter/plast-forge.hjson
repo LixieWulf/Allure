@@ -14,13 +14,12 @@ consumes: {
   }
   liquid: {
     liquid: oil
-    amount: 0.70
+    amount: 0.7
     timePeriod: 30
   }
   power: 3.75
 }
-requirements: [
-]
+requirements: []
 category: crafting
 outputItem: plastanium/2
 research: amethyst-refiner

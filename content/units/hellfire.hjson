@@ -3,7 +3,7 @@ name: Hellfire
 description:
   '''
   The most powerful ship ever to fly in an atmosphere. Can take down the most advanced bases if not prepared for.
-  
+
   WARNING: THIS SHIP IS EXTREMELY DANGEROUS. LAUNCHING BEFORE AN ATTACK FROM THE HELLFIRE IS STRONGLY SUGGESTED.
   '''
 flying: true
@@ -15,11 +15,10 @@ attackLength: 280
 mass: 10000
 hitsize: 45
 health: 250000000
-retreatPercent: 0.1
+retreatPercent: 0
 weaponOffsetY: 13
 engineOffset: 36
 engineSize: 7
-retreatPercent: 0
 weapon: {
   name: shipboard-railgun
   width: 0
@@ -48,5 +47,5 @@ weapon: {
     lifetime: 200
     hitTiles: true
     collidesTiles: true
-    }
- }
+  }
+}

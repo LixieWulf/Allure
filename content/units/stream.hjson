@@ -1,30 +1,28 @@
-{
-	"type": "flyingUnit",
-	"name": "Streamers",
-	"description": "Conquerors of Heaven and Earth",
-	"maxVelocity": 70,
-	"speed": 0.29,
-	"flying": true,
-	"health": 1900,
-	"engineOffset": 2.0,
-	"range": 100,
-	"weaponOffsetY": 7,                             
-	"engineSize": 3, 
-	"rotateSpeed": 3,
-	"shootCone": 1,
-	"mass": 1500,
-	"targetAir": true,
-	"rotateWeapon": true,
-	"weapon": {
-		"name": "Javelin",
-		"shots":15,
-		"speed":1,
-		"length": 0.9,
-		"damage": 10000.0,
-		"reload": 85.0,
-		"homingPower": 90,
-		"homingRadius": 100,
-		"alternate": true,
-		"bullet": "missileJavelin"
-	}
+type: flyingUnit
+name: Streamers
+description: Conquerors of Heaven and Earth
+maxVelocity: 70
+speed: 0.29
+flying: true
+health: 1900
+engineOffset: 2
+range: 100
+weaponOffsetY: 7
+engineSize: 3
+rotateSpeed: 3
+shootCone: 1
+mass: 1500
+targetAir: true
+rotateWeapon: true
+weapon: {
+  name: Javelin
+  shots: 15
+  speed: 1
+  length: 0.9
+  damage: 10000
+  reload: 85
+  homingPower: 90
+  homingRadius: 100
+  alternate: true
+  bullet: missileJavelin
 }

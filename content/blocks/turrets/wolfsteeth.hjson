@@ -115,8 +115,8 @@ ammo: {
       hitEffect: hitMeltdown
       frontColor: 40ccff
       backColor: 1397F0
-      lightining : 10
-      lightningLength : 50
+      lightining: 10
+      lightningLength: 50
     }
   }
   amethyst-gem: {

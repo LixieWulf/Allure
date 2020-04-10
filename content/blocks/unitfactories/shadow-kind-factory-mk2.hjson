@@ -15,6 +15,8 @@ consumes: {
 }
 category: units
 research: shadow-kind-factory
-requirements: [shadow/180
-bluewolframite/40
-refined-draconium/140]
+requirements: [
+  shadow/180
+  bluewolframite/40
+  refined-draconium/140
+]

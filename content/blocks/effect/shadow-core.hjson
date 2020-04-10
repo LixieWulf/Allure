@@ -4,7 +4,7 @@ type: CoreBlock
 breakable: true
 health: 45000
 itemCapacity: 100000
-size: 1,
+size: 1
 category: effect
 buildVisibility: shown
 research: duo

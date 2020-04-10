@@ -16,6 +16,8 @@ consumes: {
 }
 category: units
 research: revenant-factory
-requirements: [titanium/90
-silicon/20
-titanium/70]
+requirements: [
+  titanium/90
+  silicon/20
+  titanium/70
+]

@@ -2,8 +2,8 @@ type: Floor
 name: Magma
 speedMultiplier: 0.5
 damageTaken: 30
-drownTime:300
-walkEffect:burning
+drownTime: 300
+walkEffect: burning
 updateEffect: fire
 drownUpdateEffect: melting
 variants: 0
@@ -22,5 +22,10 @@ status: {
 liquidDrop: slag
 isLiquid: true
 attributes: {
-  array: [ 25, 0, 0, 0.02 ]
+  array: [
+    25
+    0
+    0
+    0.02
+  ]
 }

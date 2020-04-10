@@ -8,19 +8,21 @@ consumes: {
 }
 category: upgrade
 research: zeus-mech-pad
-requirements: [copper/10000
-lead/10000
-titanium/10000
-thorium/10000
-surge-alloy/10000
-plastanium/10000
-phase-fabric/10000
-graphite/10000
-silicon/10000
-metaglass/10000
-cookienite-baked/10000
-tungsten-ingot/10000
-draconium/10000
-bluewolframite/10000
-shadow/10000
-amethyst-gem/10000]
+requirements: [
+  copper/10000
+  lead/10000
+  titanium/10000
+  thorium/10000
+  surge-alloy/10000
+  plastanium/10000
+  phase-fabric/10000
+  graphite/10000
+  silicon/10000
+  metaglass/10000
+  cookienite-baked/10000
+  tungsten-ingot/10000
+  draconium/10000
+  bluewolframite/10000
+  shadow/10000
+  amethyst-gem/10000
+]

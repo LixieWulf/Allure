@@ -8,4 +8,6 @@ consumes: {
 }
 category: upgrade
 research: leviathan-mech-pad
-requirements: [electrum/20]
+requirements: [
+  electrum/20
+]

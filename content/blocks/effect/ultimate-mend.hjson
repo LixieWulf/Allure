@@ -7,8 +7,7 @@ range: 240
 phaseRangeBoost: 80
 reload: 60
 itemCapacity: 30
-phase: #720874
-color: #17C50B
+phase: color: #17C50B
 healPercent: 100
 consumes: {
   power: 2.5

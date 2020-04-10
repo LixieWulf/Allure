@@ -12,5 +12,5 @@ requirements: [
 category: distribution
 idleSound: beam
 idleSoundVolume: 0.001
-speed: 0.360
+speed: 0.36
 research: armored-conveyor

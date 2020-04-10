@@ -8,7 +8,9 @@ consumes: {
 }
 category: upgrade
 research: electra-mech-pad
-requirements: [amethyst-gem/100
-bluewolframite/100
-draconium/100
-shadow/100]
+requirements: [
+  amethyst-gem/100
+  bluewolframite/100
+  draconium/100
+  shadow/100
+]

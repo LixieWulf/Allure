@@ -16,7 +16,7 @@ shots: 1
 recoil: 6
 ammoUseEffect: shellEjectBig
 shootEffect: hitLancer
-shootSound: laser
+shootSound: corexplode
 shootCone: 25
 rotateSpeed: 0.25
 maxAmmo: 12
@@ -131,4 +131,3 @@ requirements: [
 ]
 category: turret
 research: spectre
-shootSound: corexplode

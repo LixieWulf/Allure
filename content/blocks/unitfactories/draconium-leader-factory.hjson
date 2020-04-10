@@ -15,6 +15,8 @@ consumes: {
 }
 category: units
 research: revenant-factory
-requirements: [refined-draconium/90
-thorium/20
-tungsten-ingot/70]
+requirements: [
+  refined-draconium/90
+  thorium/20
+  tungsten-ingot/70
+]

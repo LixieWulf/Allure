@@ -1,19 +1,17 @@
-{
-	"name": "Shadow Kind",
-	"type": "HoverUnit",
-	"description": "A unit made from the mysterious shadow ore.. it fires a powerful laser.",
-	"speed": 6,
-        "drag": 0.6,
-	"engineColor": "302f2f",
-	"flying": true,
-	"health": 6000,
-	"weaponOffsetX": 4,
-	"weapon": {
-	    "name": "missile-blaster",
-        "bullet": "lancerLaser",
-        "reload": 9,
-        "damage": 1500,
-        "frontColor": "ff0000",
-        "backColor": "ff0000",
-    }
+name: Shadow Kind
+type: HoverUnit
+description: A unit made from the mysterious shadow ore.. it fires a powerful laser.
+speed: 6
+drag: 0.6
+engineColor: 302f2f
+flying: true
+health: 6000
+weaponOffsetX: 4
+weapon: {
+  name: missile-blaster
+  bullet: lancerLaser
+  reload: 9
+  damage: 1500
+  frontColor: ff0000
+  backColor: ff0000
 }

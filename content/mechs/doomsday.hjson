@@ -32,8 +32,8 @@ weapon: {
     speed: 5
     lifetime: 400
     damage: 1000
-    homingPower: 120,
-    homingRange: 800,
+    homingPower: 120
+    homingRange: 800
     fragVelocityMin: 0.9
     fragVelocityMax: 1.1
     fragBullets: 10

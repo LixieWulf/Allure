@@ -16,6 +16,8 @@ consumes: {
 }
 category: units
 research: shadow-kind-factory-mk2
-requirements: [shadow/100
-refined-draconium/200
-tungsten-ingot/300]
+requirements: [
+  shadow/100
+  refined-draconium/200
+  tungsten-ingot/300
+]

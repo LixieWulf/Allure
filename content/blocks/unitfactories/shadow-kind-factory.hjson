@@ -15,6 +15,8 @@ consumes: {
 }
 category: units
 research: revenant-factory
-requirements: [shadow/90
-copper/20
-titanium/70]
+requirements: [
+  shadow/90
+  copper/20
+  titanium/70
+]

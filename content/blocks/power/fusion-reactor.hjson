@@ -5,7 +5,7 @@ itemDuration: 360
 liquidCapacity: 200
 size: 5
 hasLiquids: true
-powerProduction: 650.0
+powerProduction: 650
 plasmas: 4
 plasma1: b00c9a
 explosionColor: b00c9a

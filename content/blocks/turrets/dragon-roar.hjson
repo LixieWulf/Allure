@@ -45,8 +45,8 @@ ammo: {
       bulletSprite: exotic-mod-dragonbolt
       lifetime: 600
       damage: 5000
-      splashDamage: 4500
-      splashDamageRadius: 32
+      splashDamage: 100
+      splashDamageRadius: 200
       type: MissileBulletType
       trailColor: C93A3A
       speed: 8
@@ -55,8 +55,6 @@ ammo: {
       bulletShrink: 0
       homingPower: 90
       homingRange: 90
-      splashDamageRadius: 200
-      splashDamage: 100
       hitShake: 0.5
       frontColor: C93A3A
       backColor: 590707

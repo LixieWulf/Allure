@@ -5,8 +5,10 @@ unitType: hellfire
 size: 8
 produceTime: 360
 consumes: {
-  power: 6000.0
+  power: 6000
 }
 category: units
 research: revenant-factory
-requirements: [copper/1]
+requirements: [
+  copper/1
+]

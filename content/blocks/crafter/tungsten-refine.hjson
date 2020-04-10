@@ -13,7 +13,7 @@ consumes: {
   power: 2.6
   items: {
     items: [
-     wolframite/4
+      wolframite/4
     ]
   }
 }
@@ -27,4 +27,4 @@ category: crafting
 research: blue-wolframite-refiner
 idleSound: build
 idleSoundVolume: 0.5
-outputItem:  tungsten-ingot/2
+outputItem: tungsten-ingot/2
