@@ -1,4 +1,5 @@
 name: Shadow Kind
+type: Mech
 description: A mech made from the mysterious shadow ore.. it fires a powerful laser.
 speed: 6
 drag: 0.6
@@ -11,7 +12,7 @@ engineSize: 1.7
 weapon: {
   name: shadow-laser
   length: 4
-  width: 2
+  width: 0
   recoil: 3
   alternate: false
   bullet: lancerLaser

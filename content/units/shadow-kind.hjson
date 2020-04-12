@@ -14,7 +14,7 @@ attackLength: 155
 weapon: {
   name: shadow-laser
   length: 4
-  width: 2
+  width: 0
   recoil: 3
   alternate: false
   bullet: lancerLaser
