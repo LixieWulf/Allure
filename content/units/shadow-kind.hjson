@@ -7,16 +7,16 @@ engineColor: 000000
 flying: true
 health: 6000
 weaponOffsetY: 2
-engineOffset: 7
-engineSize: 1.3
-shootCone: 5
+engineOffset: 8
+engineSize: 1.7
+shootCone: 60
 attackLength: 155
 weapon: {
   name: shadow-laser
   length: 4
   width: 2
   recoil: 3
-  alternate: true
+  alternate: false
   bullet: lancerLaser
   reload: 8
   shootSound: laser

@@ -2,18 +2,19 @@ name: Shadow Kind
 description: A mech made from the mysterious shadow ore.. it fires a powerful laser.
 speed: 6
 drag: 0.6
-buildPower: 14
-drillPower: 10
-mineSpeed: 10
-engineColor: 302f2f
+engineColor: 000000
 flying: true
 health: 6000
-weaponOffsetX: 4
+weaponOffsetY: 2
+engineOffset: 8
+engineSize: 1.7
 weapon: {
-  name: missile-blaster
+  name: shadow-laser
+  length: 4
+  width: 2
+  recoil: 3
+  alternate: false
   bullet: lancerLaser
-  reload: 9
-  damage: 1500
-  frontColor: ff0000
-  backColor: ff0000
+  reload: 8
+  shootSound: laser
 }
