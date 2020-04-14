@@ -1,20 +1,19 @@
-name: Solar Flare
-description: A cousin of the meltdown. Focused more on burning enemies than damaging blocks.
+name: "[#ffec6e]Solar Flare"
+description: A cousin of the Meltdown. Focused more on burning down units than damaging blocks. Fires a little slower than an avarage Meltdown.
 size: 4
 health: 3400
 range: 500
-reload: 80
+reload: 120
 shootSound: laserbig
 activeSound: beam
 activeSoundVolume: 2
-inaccuracy: 1
 powerUse: 15
 rotatespeed: 0.5
 shootCone: 10
 shootShake: 1.5
 targetAir: true
 targetGround: true
-heatColor: e3b464
+heatColor: ffec6e
 recoil: 4
 shootDuration: 220
 firingMoveFract: 0.5
