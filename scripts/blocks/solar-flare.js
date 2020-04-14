@@ -10,6 +10,7 @@ var strokes = [2, 1.5, 1, 0.3];
 var lenscales = [1, 1.12, 1.15, 1.17];
 var length = 560;
 var spread = 2;
+var shots = 3;
 
 solarflare.shootType = extend(BasicBulletType, {
     update(b){
@@ -41,20 +42,17 @@ solarflare.shootType = extend(BasicBulletType, {
     draw(b){
         baseLen = (length) * b.fout();
 
-        Lines.lineAngle(b.x,b.y,b.rot(),baseLen);
-        Lines.lineAngle(b.x + 8, b.y - 2, b.rot() - spread,baseLen);
-        Lines.lineAngle(b.x - 8, b.y - 2, b.rot() + spread,baseLen);
-        for(var s = 0; s < colors.length; s++){
-            Draw.color(tmpColor.set(colors[s]).mul(1+Mathf.absin(Time.time(),1,0.1)));
-            for(var e = -1; 0 < 2; e++){
-                var shootAngle = e * spread;
-                for(var i = 0; i < tscales.length; i++){
-                    Tmp.v1.trns(b.rot()+180,(lenscales[i]-1)*35);
-                    Lines.stroke((4+Mathf.absin(Time.time(),0.8,1.5))*b.fout()*strokes[s]*tscales[i]);
-                    Lines.lineAngle(b.x+Tmp.v1.x,b.y+Tmp.v1.y,b.rot() + shootAngle,baseLen*lenscales[i],CapStyle.none);
+        for(var s = 0; s < 4; s++){
+            Draw.color(tmpColor.set(colors[s]).mul(1.0 + Mathf.absin(Time.time(), 1.0, 0.1)));
+            for(var i = 0; i < 4; i++){
+                for(var v = 0; v < shots; v++){
+                    var shootAngle = (v - shots / 2) * spread;
+                    Tmp.v1.trns(b.rot() + shootAngle + 180.0, (lenscales[i] - 1.0) * 55.0);
+                    Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
+                    Lines.lineAngle(b.x + Tmp.v1.x, b.y + Tmp.v1.y, b.rot() + shootAngle, baseLen * lenscales[i], CapStyle.none);
                 }
             }
-        }
+        };
         Draw.reset();
     }
 });
