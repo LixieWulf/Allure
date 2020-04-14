@@ -17,8 +17,8 @@ solarflare.shootType = extend(BasicBulletType, {
         if (b.timer.get(1, 5)){
             //Look in damage.java for how this works, it's simular to lightning.
             Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x, b.y, b.rot(), length + 35, true);
-            Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x + 8, b.y - 2, b.rot() +  spread, length + 35, true);
-            Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x - 8, b.y - 2, b.rot() -  spread, length + 35, true);
+            Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x + 8, b.y - 2, b.rot() -  spread, length + 35, true);
+            Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x - 8, b.y - 2, b.rot() +  spread, length + 35, true);
         }
         Effects.shake(1, 1, b.x, b.y);
     },
@@ -51,9 +51,9 @@ solarflare.shootType = extend(BasicBulletType, {
                 Lines.stroke((4+Mathf.absin(Time.time(),0.8,1.5))*b.fout()*strokes[s]*tscales[i]);
                 Lines.lineAngle(b.x+Tmp.v1.x,b.y+Tmp.v1.y,b.rot(),baseLen*lenscales[i],CapStyle.none);
                 Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5))* b.fout() * strokes[s] * tscales[i]);
-                Lines.lineAngle(b.x + Tmp.v1.x + 8, b.y + Tmp.v1.y - 2,b.rot()+spread, baseLen * lenscales[i], CapStyle.none);
+                Lines.lineAngle(b.x + Tmp.v1.x + 8, b.y + Tmp.v1.y - 2,b.rot() - spread, baseLen * lenscales[i], CapStyle.none);
                 Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
-                Lines.lineAngle(b.x + Tmp.v1.x - 8, b.y + Tmp.v1.y - 2, b.rot()-spread, baseLen * lenscales[i], CapStyle.none);
+                Lines.lineAngle(b.x + Tmp.v1.x - 8, b.y + Tmp.v1.y - 2, b.rot() + spread, baseLen * lenscales[i], CapStyle.none);
             }
         }
         Draw.reset();
