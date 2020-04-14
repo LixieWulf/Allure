@@ -18,8 +18,8 @@ solarflare.shootType = extend(BasicBulletType, {
         if (b.timer.get(1, 5)){
             //Look in damage.java for how this works, it's simular to lightning.
             Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x, b.y, b.rot(), length, true);
-            /*Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x, b.y, b.rot() +  8, length, true);
-            Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x, b.y, b.rot() -  8, length, true);*/
+            Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x, b.y, b.rot() +  8, length, true);
+            Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x, b.y, b.rot() -  8, length, true);
         }
         Effects.shake(1, 1, b.x, b.y);
     },
@@ -51,12 +51,12 @@ solarflare.shootType = extend(BasicBulletType, {
                 Tmp.v1.trns(b.rot()+180,(lenscales[i]-1)*35);
                 Lines.stroke((4+Mathf.absin(Time.time(),0.8,1.5))*b.fout()*strokes[s]*tscales[i]);
                 Lines.lineAngle(b.x+Tmp.v1.x,b.y+Tmp.v1.y,b.rot(),baseLen*lenscales[i],CapStyle.none);
-                /*Tmp.v2.trns(b.rot() + 188, (lenscales[i] - 1) * 35);
+                Tmp.v2.trns(b.rot() + 188, (lenscales[i] - 1) * 35);
                 Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5))* b.fout() * strokes[s] * tscales[i]);
                 Lines.lineAngle(b.x + Tmp.v2.x, b.y + Tmp.v2.y,b.rot(), baseLen * lenscales[i], CapStyle.none);
                 Tmp.v3.trns(b.rot() + 173, (lenscales[i] - 1) * 35);
                 Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
-                Lines.lineAngle(b.x + Tmp.v3.x, b.y + Tmp.v3.y, b.rot(), baseLen * lenscales[i], CapStyle.none);*/
+                Lines.lineAngle(b.x + Tmp.v3.x, b.y + Tmp.v3.y, b.rot(), baseLen * lenscales[i], CapStyle.none);
             }
         }
         Draw.reset();
@@ -75,5 +75,5 @@ solarflare.shootType.speed = 69420;
 corn = new StatusEffect("the-sun-is-a-deadly-laser");
 corn.damage = 500;
 corn.effect = Fx.burning;
-corn.armorMultiplier = 0.6;
+corn.armorMultiplier = 0.2;
 solarflare.shootType.status = corn
