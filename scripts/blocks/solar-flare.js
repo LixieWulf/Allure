@@ -22,6 +22,8 @@ solarflare.shootType = extend(BasicBulletType, {
         if (b.timer.get(1, 5)){
             //Look in damage.java for how this works, it's simular to lightning.
             Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x, b.y, b.rot(), length, true);
+            Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x, b.y, b.rot() +  8, smol, true);
+            Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x, b.y, b.rot() -  8, smol, true);
         }
         Effects.shake(1, 1, b.x, b.y);
     },
@@ -48,19 +50,19 @@ solarflare.shootType = extend(BasicBulletType, {
             }
         }
         Lines.lineAngle(b.x, b.y, b.rot() + 8,smolLen);
-        for(var s = 0; s < colors.smol; s++){
-            Draw.color(tmpColorfish.set(colors[s]).mul(1 + Mathf.absin(Time.time(), 1,0.1)));
-            for(var i = 0; i < halfscales.smol; i++){
-                Tmp.v2.trns(b.rot() + 188, (halflenscales[i] - 1) * 35);
+        for(var q = 0; q < colors.smol; q++){
+            Draw.color(tmpColorfish.set(colors[q]).mul(1 + Mathf.absin(Time.time(), 1,0.1)));
+            for(var l = 0; l < halfscales.smol; l++){
+                Tmp.v2.trns(b.rot() + 188, (halflenscales[l] - 1) * 35);
                 Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5))* b.fout() * halfstrokes[s] * halfscales[i]);
                 Lines.lineAngle(b.x + Tmp.v2.x, b.y + Tmp.v2.y,b.rot(), smolLen * halflenscales[i], CapStyle.none);
             }
         }
         Lines.lineAngle(b.x, b.y, b.rot() - 8,smolLen);
-        for(var s = 0; s < colors.smol; s++){
-            Draw.color(tmpColoregg.set(colors[s]).mul(1 + Mathf.absin(Time.time(), 1, 0.1)));
-            for(var i = 0; i < tscales.smol; i++){
-                Tmp.v3.trns(b.rot() + 173, (halflenscales[i] - 1) * 35);
+        for(var f = 0; f < colors.smol; f++){
+            Draw.color(tmpColoregg.set(colors[f]).mul(1 + Mathf.absin(Time.time(), 1, 0.1)));
+            for(var a = 0; a < tscales.smol; a++){
+                Tmp.v3.trns(b.rot() + 173, (halflenscales[a] - 1) * 35);
                 Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * halfstrokes[s] * tscales[i]);
                 Lines.lineAngle(b.x + Tmp.v3.x, b.y + Tmp.v3.y, b.rot(), smolLen * halflenscales[i], CapStyle.none);
             }
