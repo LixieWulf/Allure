@@ -42,17 +42,17 @@ solarflare.shootType = extend(BasicBulletType, {
                 Lines.lineAngle(b.x+Tmp.v1.x,b.y+Tmp.v1.y,b.rot(),baseLen*lenscales[i],CapStyle.none);
             }
         }
-        Lines.lineAngle(b.x,b.y,b.rot()+15,shortLen);
-        Lines.lineAngle(b.x,b.y,b.rot()-15,shortLen);
+        Lines.lineAngle(b.x,b.y,b.rot()+5,shortLen);
+        Lines.lineAngle(b.x,b.y,b.rot()-5,shortLen);
         for(var s = 0; s < colors.length; s++){
             Draw.color(tmpColor.set(colors[s]).mul(1+Mathf.absin(Time.time(),1,0.1)));
             for(var i = 0; i < tscales.shortlength; i++){
-                Tmp.v1.trns(b.rot()+165,(lenscales[i]-1)*35);
+                Tmp.v2.trns(b.rot()+185,(lenscales[i]-1)*35);
                 Lines.stroke((4+Mathf.absin(Time.time(),0.8,1.5))*b.fout()*strokes[s]*tscales[i]);
-                Lines.lineAngle(b.x+Tmp.v1.x,b.y+Tmp.v1.y,b.rot(),shortLen*lenscales[i],CapStyle.none);
-                Tmp.v1.trns(b.rot()+195,(lenscales[i]-1)*35);
+                Lines.lineAngle(b.x+Tmp.v2.x,b.y+Tmp.v2.y,b.rot(),shortLen*lenscales[i],CapStyle.none);
+                Tmp.v3.trns(b.rot()+175,(lenscales[i]-1)*35);
                 Lines.stroke((4+Mathf.absin(Time.time(),0.8,1.5))*b.fout()*strokes[s]*tscales[i]);
-                Lines.lineAngle(b.x+Tmp.v1.x,b.y+Tmp.v1.y,b.rot(),shortLen*lenscales[i],CapStyle.none);
+                Lines.lineAngle(b.x+Tmp.v3.x,b.y+Tmp.v3.y,b.rot(),shortLen*lenscales[i],CapStyle.none);
             }
         }
         Draw.reset();
