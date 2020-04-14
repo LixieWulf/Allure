@@ -68,6 +68,7 @@ solarflare.shootType.lifetime = 16;
 solarflare.shootType.drawSize = 420;
 solarflare.shootType.pierce = true;
 solarflare.shootType.speed = 69420;
+solarflare.shootType.collides = false;
 
 corn = new StatusEffect("the-sun-is-a-deadly-laser");
 corn.damage = 11570;
