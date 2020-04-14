@@ -7,13 +7,13 @@ solarflare.shootType = extend(BasicBulletType, {
     update: function(b){
         const vec = new Vec2();
         const lasers = 3;
-        const spread = 2;
-        const spacing = 8;
+        const spread = [-2, 0, 2];
+        const spacing = [-8,0,8];
         
         if(b.timer.get(1, 5)){
-            for(var i = 0; i < lasers; i++){
-                var angleB = (i - lasers / 2) * spread;
-                vec.trns(b.rot() - 90, (i - (lasers / 2)) * spacing);
+            for(var v = 0; v < lasers; v++){
+                var angleB = spread[v];
+                vec.trns(b.rot - 90, spacing[v])
                 Damage.collideLine(b, b.getTeam(), this.hitEffect, b.x + vec.x, b.y + vec.y, b.rot() - angleB, 340.0, true);
             }
         };
@@ -41,8 +41,8 @@ solarflare.shootType = extend(BasicBulletType, {
         var lenscales = [1, 1.12, 1.15, 1.17];
         var tmpColor = new Color();
         var lasers = 3;
-        var spread = 2;
-        var spacing = 8;
+        const spread = [-2, 0, 2];
+        const spacing = [-8,0,8];
         var length = 560;
         const vec = new Vec2();
         
@@ -52,8 +52,8 @@ solarflare.shootType = extend(BasicBulletType, {
             Draw.color(tmpColor.set(colors[s]).mul(1.0 + Mathf.absin(Time.time(), 1.0, 0.3)));
             for(var i = 0; i < 4; i++){
                 for(var v = 0; v < lasers; v++){
-                    vec.trns(b.rot() - 90, (v - (lasers / 2)) * spacing);
-                    var angleB = (v - lasers / 2) * spread;
+                    trns(b.rot - 90, spacing[v])
+                    var angleB = spread[v];
                     Tmp.v1.trns(b.rot() + angleB + 180.0, (lenscales[i] - 1.0) * 55.0);
                     Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
                     Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() - angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
