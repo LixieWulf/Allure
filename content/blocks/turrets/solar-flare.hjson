@@ -7,6 +7,9 @@ reload: 80
 shootSound: laserbig
 activeSound: beam
 activeSoundVolume: 2
+shots: 3
+spread: 8
+inaccuracy: 1
 powerUse: 15
 rotatespeed: 0.5
 shootCone: 10
