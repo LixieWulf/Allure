@@ -50,7 +50,7 @@ solarflare.shootType = extend(BasicBulletType, {
             }
         }
         Lines.lineAngle(b.x, b.y, b.rot() + 5,shortLen);
-        for(var s = 0; s < colors.length; s++){
+        for(var s = 0; s < colors.shortLen; s++){
             Draw.color(tmpColor.set(colors[s]).mul(1 + Mathf.absin(Time.time(), 1,0.1)));
             for(var i = 0; i < tscales.shortlength; i++){
                 Tmp.v2.trns(b.rot() + 185, (lenscales[i] - 1) * 35);
@@ -59,9 +59,9 @@ solarflare.shootType = extend(BasicBulletType, {
             }
         }
         Lines.lineAngle(b.x, b.y, b.rot() - 5,shortLen);
-        for(var s = 0; s < colors.length; s++){
+        for(var s = 0; s < colors.shortLen; s++){
             Draw.color(tmpColor.set(colors[s]).mul(1 + Mathf.absin(Time.time(), 1, 0.1)));
-            for(var i = 0; i < tscales.length; i++){
+            for(var i = 0; i < tscales.shortLen; i++){
                 Tmp.v3.trns(b.rot() + 175, (lenscales[i] - 1) * 35);
                 Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
                 Lines.lineAngle(b.x + Tmp.v3.x, b.y + Tmp.v3.y, b.rot(), shortLen * lenscales[i], CapStyle.none);
