@@ -62,7 +62,7 @@ solarflare.shootType = extend(BasicBulletType, {
 
 solarflare.shootType.hitEffect = Fx.hitMeltdown;
 solarflare.shootType.despawnEffect = Fx.none;
-solarflare.shootType.damage = 2.5;
+solarflare.shootType.damage = 5000;
 solarflare.shootType.hitSize = 4;
 solarflare.shootType.lifetime = 16;
 solarflare.shootType.drawSize = 420;
@@ -72,5 +72,5 @@ solarflare.shootType.speed = 69420;
 corn = new StatusEffect("the-sun-is-a-deadly-laser");
 corn.damage = 11570;
 corn.effect = Fx.burning;
-corn.armorMultiplier = 0.2;
+corn.armorMultiplier = 0.1;
 solarflare.shootType.status = corn
