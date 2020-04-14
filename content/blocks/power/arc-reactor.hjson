@@ -7,8 +7,7 @@ size: 8
 hasLiquids: true
 powerProduction: 1000000
 plasmas: 4
-plasma1: 666666
-plasma2: 3b3b3b
+plasma1: b00c9a
 explosionColor: b00c9a
 consumes: {
   power: 100
