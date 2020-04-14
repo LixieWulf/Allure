@@ -9,7 +9,7 @@ var tscales = [1, 0.7, 0.5, 0.2];
 var strokes = [2, 1.5, 1, 0.3];
 var lenscales = [1, 1.12, 1.15, 1.17];
 var length = 560;
-var spread = 2;
+var spread = 8;
 var inaccuracy = 2;
 var shots = 3;
 
@@ -51,7 +51,7 @@ solarflare.shootType = extend(BasicBulletType, {
                     var shootSpread = (v - 1) * spread
                     Tmp.v1.trns(b.rot() + shootAngle + 180.0, (lenscales[i] - 1.0) * 55.0);
                     Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
-                    Lines.lineAngle(b.x + Tmp.v1.x + shootSpread, b.y + Tmp.v1.y, b.rot() + shootAngle, baseLen * lenscales[i], CapStyle.none);
+                    Lines.lineAngle(b.x + Tmp.v1.x + shootSpread, b.y + Tmp.v1.y, b.rot() - shootAngle, baseLen * lenscales[i], CapStyle.none);
                 }
             }
         };
