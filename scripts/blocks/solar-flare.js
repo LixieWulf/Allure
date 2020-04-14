@@ -13,7 +13,7 @@ solarflare.shootType = extend(BasicBulletType, {
         if(b.timer.get(1, 5)){
             for(var i = 0; i < lasers; i++){
                 var angleB = (i - lasers / 2) * spread;
-                vec.trns(b.rot() - 90, (v - (lasers / 2)) * spacing);
+                vec.trns(b.rot() - 90, (i - (lasers / 2)) * spacing);
                 Damage.collideLine(b, b.getTeam(), this.hitEffect, b.x + vec.x, b.y + vec.y, b.rot() - angleB, 340.0, true);
             }
         };
