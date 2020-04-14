@@ -11,7 +11,7 @@ var tscales = [1, 0.7, 0.5, 0.2];
 var strokes = [2, 1.5, 1, 0.3];
 var lenscales = [1, 1.12, 1.15, 1.17];
 var length = 560;
-var shortlength = 280;
+var smol = 280;
 
 solarflare.shootType = extend(BasicBulletType, {
     update(b){
@@ -33,7 +33,7 @@ solarflare.shootType = extend(BasicBulletType, {
     },
     draw(b){
         baseLen = (length) * b.fout();
-        shortLen = (shortlength) * b.fout();
+        smolLen = (smol) * b.fout();
 
         Lines.lineAngle(b.x,b.y,b.rot(),baseLen);
         for(var s = 0; s < colors.length; s++){
@@ -44,22 +44,22 @@ solarflare.shootType = extend(BasicBulletType, {
                 Lines.lineAngle(b.x+Tmp.v1.x,b.y+Tmp.v1.y,b.rot(),baseLen*lenscales[i],CapStyle.none);
             }
         }
-        Lines.lineAngle(b.x, b.y, b.rot() + 8,shortLen);
-        for(var s = 0; s < colors.shortlength; s++){
+        Lines.lineAngle(b.x, b.y, b.rot() + 8,smolLen);
+        for(var s = 0; s < colors.smol; s++){
             Draw.color(tmpColorfish.set(colors[s]).mul(1 + Mathf.absin(Time.time(), 1,0.1)));
-            for(var i = 0; i < tscales.shortlength; i++){
+            for(var i = 0; i < tscales.smol; i++){
                 Tmp.v2.trns(b.rot() + 188, (lenscales[i] - 1) * 35);
                 Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5))* b.fout() * strokes[s] * tscales[i]);
-                Lines.lineAngle(b.x + Tmp.v2.x, b.y + Tmp.v2.y,b.rot(), shortLen * lenscales[i], CapStyle.none);
+                Lines.lineAngle(b.x + Tmp.v2.x, b.y + Tmp.v2.y,b.rot(), smolLen * lenscales[i], CapStyle.none);
             }
         }
-        Lines.lineAngle(b.x, b.y, b.rot() - 8,shortLen);
-        for(var s = 0; s < colors.shortlength; s++){
+        Lines.lineAngle(b.x, b.y, b.rot() - 8,smolLen);
+        for(var s = 0; s < colors.smol; s++){
             Draw.color(tmpColoregg.set(colors[s]).mul(1 + Mathf.absin(Time.time(), 1, 0.1)));
-            for(var i = 0; i < tscales.shortlength; i++){
+            for(var i = 0; i < tscales.smol; i++){
                 Tmp.v3.trns(b.rot() + 173, (lenscales[i] - 1) * 35);
                 Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
-                Lines.lineAngle(b.x + Tmp.v3.x, b.y + Tmp.v3.y, b.rot(), shortLen * lenscales[i], CapStyle.none);
+                Lines.lineAngle(b.x + Tmp.v3.x, b.y + Tmp.v3.y, b.rot(), smolLen * lenscales[i], CapStyle.none);
             }
         }
         Draw.reset();
