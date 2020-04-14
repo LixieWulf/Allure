@@ -9,15 +9,16 @@ var tscales = [1, 0.7, 0.5, 0.2];
 var strokes = [2, 1.5, 1, 0.3];
 var lenscales = [1, 1.12, 1.15, 1.17];
 var length = 560;
+var spread = 4;
 
 solarflare.shootType = extend(BasicBulletType, {
     update(b){
         if (b == null) return;
         if (b.timer.get(1, 5)){
             //Look in damage.java for how this works, it's simular to lightning.
-            Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x, b.y, b.rot(), length, true);
-            Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x, b.y, b.rot() +  8, length, true);
-            Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x, b.y, b.rot() -  8, length, true);
+            Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x, b.y, b.rot(), length + 35, true);
+            Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x, b.y, b.rot() +  spread, length + 35, true);
+            Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x, b.y, b.rot() -  spread, length + 35, true);
         }
         Effects.shake(1, 1, b.x, b.y);
     },
@@ -49,12 +50,10 @@ solarflare.shootType = extend(BasicBulletType, {
                 Tmp.v1.trns(b.rot()+180,(lenscales[i]-1)*35);
                 Lines.stroke((4+Mathf.absin(Time.time(),0.8,1.5))*b.fout()*strokes[s]*tscales[i]);
                 Lines.lineAngle(b.x+Tmp.v1.x,b.y+Tmp.v1.y,b.rot(),baseLen*lenscales[i],CapStyle.none);
-                //Tmp.v2.trns(b.rot() + 188, (lenscales[i] - 1) * 35);
                 Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5))* b.fout() * strokes[s] * tscales[i]);
-                Lines.lineAngle(b.x + Tmp.v1.x, b.y + Tmp.v1.y,b.rot()+8, baseLen * lenscales[i], CapStyle.none);
-                //Tmp.v3.trns(b.rot() + 173, (lenscales[i] - 1) * 35);
+                Lines.lineAngle(b.x + Tmp.v1.x, b.y + Tmp.v1.y,b.rot()+spread, baseLen * lenscales[i], CapStyle.none);
                 Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
-                Lines.lineAngle(b.x + Tmp.v1.x, b.y + Tmp.v1.y, b.rot()-8, baseLen * lenscales[i], CapStyle.none);
+                Lines.lineAngle(b.x + Tmp.v1.x, b.y + Tmp.v1.y, b.rot()-spread, baseLen * lenscales[i], CapStyle.none);
             }
         }
         Draw.reset();
@@ -63,7 +62,7 @@ solarflare.shootType = extend(BasicBulletType, {
 
 solarflare.shootType.hitEffect = Fx.hitMeltdown;
 solarflare.shootType.despawnEffect = Fx.none;
-solarflare.shootType.damage = 1;
+solarflare.shootType.damage = 2.5;
 solarflare.shootType.hitSize = 4;
 solarflare.shootType.lifetime = 16;
 solarflare.shootType.drawSize = 420;
