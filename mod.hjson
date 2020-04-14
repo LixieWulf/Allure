@@ -7,7 +7,7 @@ author:
   [blue]Blue[#002990]Wolf[#001F6E][Gaming]
   [blue](Mapper, [#002990]Spriter, [#001F6E]Hjsoner)[]
   [purple]Andromeda 
-  (Mapper, Recruited MEEP)
+  (Mapper)
   [#FCC21B]Meep of Faith
   (Spriter, Hjsoner, Slowly
   decending into scripting hell)
@@ -28,5 +28,5 @@ description:
     Arc Reactor
   [green]More to come!
   '''
-version: 2.174-4
+version: 2.175
 minGameVersion: 103
