@@ -8,8 +8,11 @@ var tmpColorfish = new Color();
 var tmpColoregg = new Color();
 var colors = [Color.valueOf("e6c04555"), Color.valueOf("f7d95eaa"), Color.valueOf("ffec6e"), Color.white];
 var tscales = [1, 0.7, 0.5, 0.2];
+var halfscales = [0.5, 0.35, 0.25, 0.1];
 var strokes = [2, 1.5, 1, 0.3];
+var halfstrokes = [1, 0.75, 0.5, 0.15];
 var lenscales = [1, 1.12, 1.15, 1.17];
+var halflenscales = [0.5, 0.56, 0.575, 0.585];
 var length = 560;
 var smol = 280;
 
@@ -47,19 +50,19 @@ solarflare.shootType = extend(BasicBulletType, {
         Lines.lineAngle(b.x, b.y, b.rot() + 8,smolLen);
         for(var s = 0; s < colors.smol; s++){
             Draw.color(tmpColorfish.set(colors[s]).mul(1 + Mathf.absin(Time.time(), 1,0.1)));
-            for(var i = 0; i < tscales.smol; i++){
-                Tmp.v2.trns(b.rot() + 188, (lenscales[i] - 1) * 35);
-                Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5))* b.fout() * strokes[s] * tscales[i]);
-                Lines.lineAngle(b.x + Tmp.v2.x, b.y + Tmp.v2.y,b.rot(), smolLen * lenscales[i], CapStyle.none);
+            for(var i = 0; i < halfscales.smol; i++){
+                Tmp.v2.trns(b.rot() + 188, (halflenscales[i] - 1) * 35);
+                Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5))* b.fout() * halfstrokes[s] * halfscales[i]);
+                Lines.lineAngle(b.x + Tmp.v2.x, b.y + Tmp.v2.y,b.rot(), smolLen * halflenscales[i], CapStyle.none);
             }
         }
         Lines.lineAngle(b.x, b.y, b.rot() - 8,smolLen);
         for(var s = 0; s < colors.smol; s++){
             Draw.color(tmpColoregg.set(colors[s]).mul(1 + Mathf.absin(Time.time(), 1, 0.1)));
             for(var i = 0; i < tscales.smol; i++){
-                Tmp.v3.trns(b.rot() + 173, (lenscales[i] - 1) * 35);
-                Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
-                Lines.lineAngle(b.x + Tmp.v3.x, b.y + Tmp.v3.y, b.rot(), smolLen * lenscales[i], CapStyle.none);
+                Tmp.v3.trns(b.rot() + 173, (halflenscales[i] - 1) * 35);
+                Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * halfstrokes[s] * tscales[i]);
+                Lines.lineAngle(b.x + Tmp.v3.x, b.y + Tmp.v3.y, b.rot(), smolLen * halflenscales[i], CapStyle.none);
             }
         }
         Draw.reset();
