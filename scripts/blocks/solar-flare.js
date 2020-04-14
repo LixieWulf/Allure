@@ -52,7 +52,7 @@ solarflare.shootType = extend(BasicBulletType, {
             Draw.color(tmpColor.set(colors[s]).mul(1.0 + Mathf.absin(Time.time(), 1.0, 0.3)));
             for(var i = 0; i < 4; i++){
                 for(var v = 0; v < lasers; v++){
-                    trns(b.rot - 90, spacing[v])
+                    vec.trns(b.rot - 90, spacing[v])
                     var angleB = spread[v];
                     Tmp.v1.trns(b.rot() + angleB + 180.0, (lenscales[i] - 1.0) * 55.0);
                     Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
