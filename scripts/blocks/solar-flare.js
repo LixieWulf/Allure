@@ -70,7 +70,7 @@ solarflare.shootType.pierce = true;
 solarflare.shootType.speed = 69420;
 
 corn = new StatusEffect("the-sun-is-a-deadly-laser");
-corn.damage = 500;
+corn.damage = 11570;
 corn.effect = Fx.burning;
 corn.armorMultiplier = 0.2;
 solarflare.shootType.status = corn
