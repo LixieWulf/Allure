@@ -8,7 +8,7 @@ solarflare.shootType = extend(BasicBulletType, {
         const vec = new Vec2();
         const lasers = 3;
         const spread = [-2, 0, 2];
-        const spacing = [-4,4,12];
+        const spacing = [-8,0,8];
         
         if(b.timer.get(1, 5)){
             for(var v = 0; v < lasers; v++){
@@ -42,7 +42,7 @@ solarflare.shootType = extend(BasicBulletType, {
         var tmpColor = new Color();
         var lasers = 3;
         const spread = [-2, 0, 2];
-        const spacing = [-4,4,12];
+        const spacing = [-8,0,8];
         var length = 560;
         const vec = new Vec2();
         
