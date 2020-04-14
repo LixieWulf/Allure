@@ -44,10 +44,10 @@ solarflare.shootType = extend(BasicBulletType, {
         Lines.lineAngle(b.x,b.y,b.rot(),baseLen);
         Lines.lineAngle(b.x + 8, b.y - 2, b.rot() - spread,baseLen);
         Lines.lineAngle(b.x - 8, b.y - 2, b.rot() + spread,baseLen);
-        for(var e = -1; 0 <= 1; e++)
-            var shootAngle = e * spread
-            for(var s = 0; s < colors.length; s++){
-                Draw.color(tmpColor.set(colors[s]).mul(1+Mathf.absin(Time.time(),1,0.1)));
+        for(var s = 0; s < colors.length; s++){
+            Draw.color(tmpColor.set(colors[s]).mul(1+Mathf.absin(Time.time(),1,0.1)));
+            for(var e = -1; 0 <= 1; e++){
+                var shootAngle = e * spread;
                 for(var i = 0; i < tscales.length; i++){
                     Tmp.v1.trns(b.rot()+180,(lenscales[i]-1)*35);
                     Lines.stroke((4+Mathf.absin(Time.time(),0.8,1.5))*b.fout()*strokes[s]*tscales[i]);
