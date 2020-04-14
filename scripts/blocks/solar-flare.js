@@ -1,29 +1,22 @@
-//Large amounts of code copied from laser-interceptor.js from younggam/more-powerful-units.
 const solarflare = new LaserTurret("solar-flare");
 
 solarflare.consumes.add(new ConsumeLiquidFilter(boolf(liquid=>liquid.temperature<=0.5&&liquid.flammability<0.1),/*amount per tick*/2.5)).update(false);
 solarflare.coolantMultiplier = 0.2;
 
-var tmpColor = new Color();
-var colors = [Color.valueOf("e6c04555"), Color.valueOf("f7d95eaa"), Color.valueOf("ffec6e"), Color.white];
-var tscales = [1, 0.7, 0.5, 0.2];
-var strokes = [2, 1.5, 1, 0.3];
-var lenscales = [1, 1.12, 1.15, 1.17];
-var length = 560;
-var spread = 8;
-var inaccuracy = 2;
-var shots = 3;
-
 solarflare.shootType = extend(BasicBulletType, {
-    update(b){
-        if (b == null) return;
-        if (b.timer.get(1, 5)){
-            //Look in damage.java for how this works, it's simular to lightning.
-            Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x, b.y, b.rot(), length + 35, true);
-            Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x + 8, b.y - 2, b.rot() -  spread, length + 56, true);
-            Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x - 8, b.y - 2, b.rot() +  spread, length + 56, true);
-        }
-        Effects.shake(1, 1, b.x, b.y);
+    update: function(b){
+        const vec = new Vec2();
+        const lasers = 3;
+        const spread = 2;
+        const spacing = 8;
+        
+        if(b.timer.get(1, 5)){
+            for(var i = 0; i < lasers; i++){
+                var angleB = (i - lasers / 2) * spread;
+                vec.trns(b.rot() - 90, (i - lasers / 2) * spacing);
+                Damage.collideLine(b, b.getTeam(), this.hitEffect, b.x + vec.x, b.y + vec.y, b.rot() + angleB, 340.0, true);
+            }
+        };
     },
     hit(b,hitx,hity){
         Effects.effect(this.hitEffect,Color.valueOf("f7d95e"),hitx!=null?hitx:b.x,hity!=null?hity:b.y);
@@ -41,18 +34,29 @@ solarflare.shootType = extend(BasicBulletType, {
             Fire.create(Vars.world.tileWorld(hitx + Mathf.range(5), hity + Mathf.range(5)));
         }
     },
-    draw(b){
+    draw: function(b){
+        var colors = [Color.valueOf("e6c04555"), Color.valueOf("f7d95eaa"), Color.valueOf("ffec6e"), Color.white];
+        var tscales = [1, 0.7, 0.5, 0.2];
+        var strokes = [2, 1.5, 1, 0.3];
+        var lenscales = [1, 1.12, 1.15, 1.17];
+        var tmpColor = new Color();
+        var lasers = 3;
+        var spread = 2;
+        var spacing = 8;
+        var length = 560;
+        const vec = new Vec2();
+        
         baseLen = (length) * b.fout();
-
+        
         for(var s = 0; s < 4; s++){
-            Draw.color(tmpColor.set(colors[s]).mul(1.0 + Mathf.absin(Time.time(), 1.0, 0.1)));
+            Draw.color(tmpColor.set(colors[s]).mul(1.0 + Mathf.absin(Time.time(), 1.0, 0.3)));
             for(var i = 0; i < 4; i++){
-                for(var v = 0; v < shots; v++){
-                    var shootAngle = (v - shots / 2) * inaccuracy;
-                    var shootSpread = (v - 1) * spread
-                    Tmp.v1.trns(b.rot() + shootAngle + 180.0, (lenscales[i] - 1.0) * 55.0);
+                for(var v = 0; v < lasers; v++){
+                    vec.trns(b.rot() - 90, (v - lasers / 2) * spacing);
+                    var angleB = (v - lasers / 2) * spread;
+                    Tmp.v1.trns(b.rot() + angleB + 180.0, (lenscales[i] - 1.0) * 55.0);
                     Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
-                    Lines.lineAngle(b.x + Tmp.v1.x + shootSpread, b.y + Tmp.v1.y, b.rot() - shootAngle, baseLen * lenscales[i], CapStyle.none);
+                    Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() + angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
                 }
             }
         };
