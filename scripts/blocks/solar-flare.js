@@ -18,8 +18,8 @@ solarflare.shootType = extend(BasicBulletType, {
         if (b.timer.get(1, 5)){
             //Look in damage.java for how this works, it's simular to lightning.
             Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x, b.y, b.rot(), length, true);
-            Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x, b.y, b.rot() +  8, smol, true);
-            Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x, b.y, b.rot() -  8, smol, true);
+            Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x, b.y, b.rot() +  8, length, true);
+            Damage.collideLine(b, b.getTeam(), Fx.hitMeltdown, b.x, b.y, b.rot() -  8, length, true);
         }
         Effects.shake(1, 1, b.x, b.y);
     },
