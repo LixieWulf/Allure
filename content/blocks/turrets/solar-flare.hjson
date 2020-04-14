@@ -13,7 +13,7 @@ shootCone: 10
 shootShake: 1.5
 targetAir: true
 targetGround: true
-heatColor: ffec6e
+heatColor: ffff00
 recoil: 4
 shootDuration: 220
 firingMoveFract: 0.5
