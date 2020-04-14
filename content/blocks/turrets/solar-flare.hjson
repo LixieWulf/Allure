@@ -4,8 +4,6 @@ size: 4
 health: 3400
 range: 500
 reload: 80
-shots: 3
-spread: 7
 shootSound: laserbig
 activeSound: beam
 activeSoundVolume: 2

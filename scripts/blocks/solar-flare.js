@@ -30,6 +30,7 @@ solarflare.shootType = extend(BasicBulletType, {
     },
     draw(b){
         baseLen = (length) * b.fout();
+        shortLen = (length * 7.5) * b.fout();
 
         Lines.lineAngle(b.x,b.y,b.rot(),baseLen);
         for(var s = 0; s < colors.length; s++){
@@ -38,6 +39,19 @@ solarflare.shootType = extend(BasicBulletType, {
                 Tmp.v1.trns(b.rot()+180,(lenscales[i]-1)*35);
                 Lines.stroke((4+Mathf.absin(Time.time(),0.8,1.5))*b.fout()*strokes[s]*tscales[i]);
                 Lines.lineAngle(b.x+Tmp.v1.x,b.y+Tmp.v1.y,b.rot(),baseLen*lenscales[i],CapStyle.none);
+            }
+        }
+        Lines.lineAngle(b.x,b.y,b.rot()+15,shortLen);
+        Lines.lineAngle(b.x,b.y,b.rot()-15,shortLen);
+        for(var s = 0; s < colors.length; s++){
+            Draw.color(tmpColor.set(colors[s]).mul(1+Mathf.absin(Time.time(),1,0.1)));
+            for(var i = 0; i < tscales.length/2; i++){
+                Tmp.v1.trns(b.rot()+165,(lenscales[i]-1)*35);
+                Lines.stroke((4+Mathf.absin(Time.time(),0.8,1.5))*b.fout()*strokes[s]*tscales[i]);
+                Lines.lineAngle(b.x+Tmp.v1.x,b.y+Tmp.v1.y,b.rot(),shortLen*lenscales[i],CapStyle.none);
+                Tmp.v1.trns(b.rot()+195,(lenscales[i]-1)*35);
+                Lines.stroke((4+Mathf.absin(Time.time(),0.8,1.5))*b.fout()*strokes[s]*tscales[i]);
+                Lines.lineAngle(b.x+Tmp.v1.x,b.y+Tmp.v1.y,b.rot(),shortLen*lenscales[i],CapStyle.none);
             }
         }
         Draw.reset();
