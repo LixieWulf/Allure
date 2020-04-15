@@ -14,7 +14,7 @@ var lasers = 5;
 
 //The number of values in the next 4 arrays is the number of beams you have. First values in each go to the first beam, second values go to the second, etc.
 //Beam angles in degrees
-const spread = [0, 5, 5, 10, 10];
+const spread = [0, 10, -10, 20, -20];
 //Shift beam left or right. Negative is left, 0 is middle.
 const spacing = [0, 0 ,0, 0, 0];
 //Shift beam foward or backward. Negative is backward, 0 is middle. Note that it counts from the start of the widest section.
@@ -26,11 +26,11 @@ var length = [80, 65, 65, 50, 50];
 //Width of each section of the beam from thickest to thinnest
 var tscales = [1, 0.7, 0.5, 0.2];
 //Overall width of each color
-var strokes = [9, 6.75, 4.5, 1.35];
+var strokes = [6, 4.5, 3, 0.9];
 //Determines how far back each section in the start should be pulled
 var pullscales = [1, 1.06, 1.1, 1.14];
 //Determines how far each section of the end should extend past the main thickest section
-var lenscales = [1, 1.16, 1.23, 1.27];
+var lenscales = [1, 1.16, 1.27, 1.39];
 
 var tmpColor = new Color();
 const vec = new Vec2();
