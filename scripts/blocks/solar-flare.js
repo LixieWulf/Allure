@@ -8,7 +8,7 @@ solarflare.shootType = extend(BasicBulletType, {
         const vec = new Vec2();
         const lasers = 3;
         const spread = [2, 0, -2];
-        const spacing = [-8.125,0,8.125];
+        const spacing = [-8.375,0,8.375];
         const position = [1, 3, 1];
         var length = 560;
         
@@ -48,7 +48,7 @@ solarflare.shootType = extend(BasicBulletType, {
         //laser blast angles
         const spread = [2, 0, -2];
         //space between lasers
-        const spacing = [-8.125,0,8.125];
+        const spacing = [-8.375,0,8.375];
         const position = [1, 3, 1];
         var length = 560;
         const vec = new Vec2();
