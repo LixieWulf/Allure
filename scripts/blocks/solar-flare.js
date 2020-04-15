@@ -3,20 +3,28 @@ const solarflare = new LaserTurret("solar-flare");
 solarflare.consumes.add(new ConsumeLiquidFilter(boolf(liquid=>liquid.temperature<=0.5&&liquid.flammability<0.1),/*amount per tick*/2.5)).update(false);
 solarflare.coolantMultiplier = 0.2;
 
+var length = 560;
+var colors = [Color.valueOf("e6c04555"), Color.valueOf("f7d95eaa"), Color.valueOf("ffec6e"), Color.white];
+var tscales = [1, 0.7, 0.5, 0.2];
+var strokes = [2, 1.5, 1, 0.3];
+var lenscales = [1, 1.12, 1.15, 1.17];
+var tmpColor = new Color();
+var lasers = 5;
+//laser blast angles
+const spread = [2, 1, 0, -1, -2];
+//space between lasers
+const spacing = [-8.375, -4.1875,0, 4.1875, 8.375];
+const position = [1, 1.5, 3, 1.5, 1];
+var length = [560, 280, 560, 280, 560];
+const vec = new Vec2();
+
 solarflare.shootType = extend(BasicBulletType, {
     update: function(b){
-        const vec = new Vec2();
-        const lasers = 3;
-        const spread = [2, 0, -2];
-        const spacing = [-8.375,0,8.375];
-        const position = [1, 3, 1];
-        var length = 560;
-        
         if(b.timer.get(1, 5)){
             for(var v = 0; v < lasers; v++){
                 vec.trns(b.rot() - 90, spacing[v], position[v]);
                 var angleB = spread[v];
-                Damage.collideLine(b, b.getTeam(), this.hitEffect, b.x + vec.x, b.y + vec.y, b.rot() + angleB, length + 64, true);
+                Damage.collideLine(b, b.getTeam(), this.hitEffect, b.x + vec.x, b.y + vec.y, b.rot() + angleB, length[v] + length[v]/8.75, true);
             }
         };
     },
@@ -39,21 +47,7 @@ solarflare.shootType = extend(BasicBulletType, {
         }
     },
     draw: function(b){
-        var colors = [Color.valueOf("e6c04555"), Color.valueOf("f7d95eaa"), Color.valueOf("ffec6e"), Color.white];
-        var tscales = [1, 0.7, 0.5, 0.2];
-        var strokes = [2, 1.5, 1, 0.3];
-        var lenscales = [1, 1.12, 1.15, 1.17];
-        var tmpColor = new Color();
-        var lasers = 3;
-        //laser blast angles
-        const spread = [2, 0, -2];
-        //space between lasers
-        const spacing = [-8.375,0,8.375];
-        const position = [1, 3, 1];
-        var length = 560;
-        const vec = new Vec2();
         
-        baseLen = (length) * b.fout();
         
         for(var s = 0; s < 4; s++){
             Draw.color(tmpColor.set(colors[s]).mul(1.0 + Mathf.absin(Time.time(), 1.0, 0.3)));
@@ -61,6 +55,7 @@ solarflare.shootType = extend(BasicBulletType, {
                 for(var v = 0; v < lasers; v++){
                     vec.trns(b.rot() - 90, spacing[v], position[v]);
                     var angleB = spread[v];
+                    var baseLen = length[v] * b.fout();
                     Tmp.v1.trns(b.rot() + angleB + 180.0, (lenscales[i] - 1.0) * 55.0);
                     Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
                     Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() + angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
