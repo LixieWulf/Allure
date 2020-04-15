@@ -20,9 +20,13 @@ const position = [1, 1.5, 3, 1.5, 1, -13, -13];
 var length = [560, 280, 560, 280, 560, 24, 24];
 
 //Stuff you probably shouldn't edit.
+//I think this is ???
 var tscales = [1, 0.7, 0.5, 0.2];
+//I think this is thickness
 var strokes = [2, 1.5, 1, 0.3];
+//I think this is ???
 var lenscales = [1, 1.12, 1.15, 1.17];
+
 var tmpColor = new Color();
 const vec = new Vec2();
 
