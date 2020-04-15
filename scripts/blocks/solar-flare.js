@@ -3,12 +3,14 @@ const solarflare = new LaserTurret("solar-flare");
 solarflare.consumes.add(new ConsumeLiquidFilter(boolf(liquid=>liquid.temperature<=0.5&&liquid.flammability<0.1),/*amount per tick*/2.5)).update(false);
 solarflare.coolantMultiplier = 0.2;
 
-var length = 560;
-var colors = [Color.valueOf("e6c04555"), Color.valueOf("f7d95eaa"), Color.valueOf("ffec6e"), Color.white];
+
 var tscales = [1, 0.7, 0.5, 0.2];
 var strokes = [2, 1.5, 1, 0.3];
 var lenscales = [1, 1.12, 1.15, 1.17];
 var tmpColor = new Color();
+
+//4 colors from outside in.
+var colors = [Color.valueOf("e6c04555"), Color.valueOf("f7d95eaa"), Color.valueOf("ffec6e"), Color.white];
 //Number of lasers
 var lasers = 7;
 //Laser blast angles
