@@ -98,7 +98,7 @@ galaxyEdge.shootType = extend(BasicBulletType, {
 
 galaxyEdge.shootType.hitEffect = Fx.hitMeltdown;
 galaxyEdge.shootType.despawnEffect = Fx.none;
-galaxyEdge.shootType.damage = 1000000;
+galaxyEdge.shootType.damage = 6942069;
 galaxyEdge.shootType.hitSize = 4;
 galaxyEdge.shootType.lifetime = 16;
 galaxyEdge.shootType.drawSize = 420;
