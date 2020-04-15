@@ -16,11 +16,11 @@ var lasers = 5;
 //Beam angles in degrees
 const spread = [0, 10, -10, 20, -20];
 //Shift beam left or right. Negative is left, 0 is middle.
-const spacing = [0, -2 ,2, -4, 4];
+const spacing = [0, 2 ,-2, 4, -4];
 //Shift beam foward or backward. Negative is backward, 0 is middle. Note that it counts from the start of the widest section.
 const position = [0, 0, 0, 0 ,0];
 //Length of beam. Uses same 8 per tile rule.
-var length = [96, 88, 88, 80, 80];
+var length = [160, 152, 152, 144, 144];
 
 //Stuff you probably shouldn't edit unless you know what you're doing.
 //Width of each section of the beam from thickest to thinnest

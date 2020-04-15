@@ -6,7 +6,7 @@ Fires short beams of star material that obliterate everything.
 '''
 size: 4
 health: 3800
-range: 80
+range: 160
 reload: 480
 shootSound: laserbig
 activeSound: beam
