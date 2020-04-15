@@ -8,7 +8,7 @@ MEEP went mad with power so it has a few extra beams.
 size: 4
 health: 3400
 range: 500
-reload: 120
+reload: 300
 shootSound: laserbig
 activeSound: beam
 activeSoundVolume: 2
@@ -21,7 +21,7 @@ targetGround: true
 heatColor: ffff00
 recoil: 4
 shootDuration: 220
-rotatespeed: 10
+rotatespeed: 5
 firingMoveFract: 0.5
 requirements: [
 ]

@@ -94,7 +94,7 @@ solarflare.shootType = extend(BasicBulletType, {
 
 solarflare.shootType.hitEffect = Fx.hitMeltdown;
 solarflare.shootType.despawnEffect = Fx.none;
-solarflare.shootType.damage = 5000;
+solarflare.shootType.damage = 10000;
 solarflare.shootType.hitSize = 4;
 solarflare.shootType.lifetime = 16;
 solarflare.shootType.drawSize = 420;
@@ -104,7 +104,7 @@ solarflare.shootType.speed = 0.001;
 //make the beam inflict a status effect. Remove if you don't want a status effect applied.
 corn = new StatusEffect("the-sun-is-a-deadly-laser");
 //damage per tick like usual
-corn.damage = 16667;
+corn.damage = 40000;
 corn.effect = Fx.burning;
 corn.armorMultiplier = 0.1;
 solarflare.shootType.status = corn
