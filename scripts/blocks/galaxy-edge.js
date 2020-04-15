@@ -55,7 +55,7 @@ galaxyEdge.shootType = extend(BasicBulletType, {
         //Uncomment the following 3 lines to have incend. Chance is 0 to 1. Copy/past the Fire.create line multiple times to create more fire at once.
         if(Mathf.chance(0.9)){
             for(var a = 0; a < 69; a++){
-                Fire.create(Vars.world.tileWorld(hitx + Mathf.range(16), hity + Mathf.range(16)));
+                Fire.create(Vars.world.tileWorld(hitx + Mathf.range(80), hity + Mathf.range(80)));
             }
         }
     },
