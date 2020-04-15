@@ -16,7 +16,7 @@ const spread = [2, 1, 0, -1, -2, 135, -135];
 //Shift beam left or right. Negative is left.
 const spacing = [-8.375, -4.1875,0, 4.1875, 8.375, -13, 13];
 //Shift beam foward or backward. Negative is backward.
-const position = [1, 1.5, 3, 1.5, 1, -36, -36];
+const position = [1, 1.5, 3, 1.5, 1, -40, -40];
 //Length of beam. Uses same 8 per tile rule
 var length = [560, 280, 560, 280, 560, 16, 16];
 const vec = new Vec2();
