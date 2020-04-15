@@ -9,13 +9,16 @@ var tscales = [1, 0.7, 0.5, 0.2];
 var strokes = [2, 1.5, 1, 0.3];
 var lenscales = [1, 1.12, 1.15, 1.17];
 var tmpColor = new Color();
-var lasers = 5;
-//laser blast angles
-const spread = [2, 1, 0, -1, -2];
-//space between lasers
-const spacing = [-8.375, -4.1875,0, 4.1875, 8.375];
-const position = [1, 1.5, 3, 1.5, 1];
-var length = [560, 280, 560, 280, 560];
+//Number of lasers
+var lasers = 7;
+//Laser blast angles
+const spread = [2, 1, 0, -1, -2, 135, -135];
+//Shift beam left or right. Negative is left.
+const spacing = [-8.375, -4.1875,0, 4.1875, 8.375, -5, 5];
+//Shift beam foward or backward. Negative is backward.
+const position = [1, 1.5, 3, 1.5, 1, -24, -24];
+//Length of beam. Uses same 8 per tile rule
+var length = [560, 280, 560, 280, 560, 48, 48];
 const vec = new Vec2();
 
 solarflare.shootType = extend(BasicBulletType, {
