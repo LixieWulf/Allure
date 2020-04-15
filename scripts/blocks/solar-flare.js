@@ -11,9 +11,9 @@ var lasers = 7;
 
 //The number of values in the next 4 arrays is the number of beams you have. First values in each go to the first beam, second values go to the second, etc.
 //Beam angles in degrees
-const spread = [2, 1, 0, -1, -2, 135, -135];
+const spread = [2, 1.3, 0, -1.3, -2, 135, -135];
 //Shift beam left or right. Negative is left, 0 is middle.
-const spacing = [-8.375, -4.1875,0, 4.1875, 8.375, -14.375, 14.375];
+const spacing = [-8.375, -4.25, 0, 4.25, 8.375, -14.375, 14.375];
 //Shift beam foward or backward. Negative is backward, 0 is middle. Note that it counts from the start of the widest section.
 const position = [1, 1.5, 3, 1.5, 1, -13, -13];
 //Length of beam. Uses same 8 per tile rule
@@ -65,6 +65,12 @@ solarflare.shootType = extend(BasicBulletType, {
             Draw.color(tmpColor.set(colors[s]).mul(1.0 + Mathf.absin(Time.time(), 1.0, 0.3)));
             for(var i = 0; i < 4; i++){
                 for(var v = 0; v < lasers; v++){
+                    if(v = 2){
+                        strokes = [4, 3, 2, 0.6];
+                    }
+                    else{
+                        strokes = [2, 1.5, 1, 0.3];
+                    }
                     vec.trns(b.rot() - 90, spacing[v], position[v]);
                     var angleB = spread[v];
                     var baseLen = length[v] * b.fout();
@@ -85,8 +91,7 @@ solarflare.shootType.hitSize = 4;
 solarflare.shootType.lifetime = 16;
 solarflare.shootType.drawSize = 420;
 solarflare.shootType.pierce = true;
-//Don't actually know if the speed is important. I have it because I think the turrets will try to lead their target, which doesn't quite work when you're literally shooting instant lasers.
-solarflare.shootType.speed = 69420;
+solarflare.shootType.speed = 0.001;
 
 //make the beam inflict a status effect. Remove if you don't want a status effect applied.
 corn = new StatusEffect("the-sun-is-a-deadly-laser");
