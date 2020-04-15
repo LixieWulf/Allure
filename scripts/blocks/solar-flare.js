@@ -14,9 +14,9 @@ var lasers = 7;
 //Laser blast angles
 const spread = [2, 1, 0, -1, -2, 135, -135];
 //Shift beam left or right. Negative is left.
-const spacing = [-8.375, -4.1875,0, 4.1875, 8.375, -5, 5];
+const spacing = [-8.375, -4.1875,0, 4.1875, 8.375, -10, 10];
 //Shift beam foward or backward. Negative is backward.
-const position = [1, 1.5, 3, 1.5, 1, -24, -24];
+const position = [1, 1.5, 3, 1.5, 1, -48, -48];
 //Length of beam. Uses same 8 per tile rule
 var length = [560, 280, 560, 280, 560, 48, 48];
 const vec = new Vec2();
