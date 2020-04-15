@@ -7,23 +7,23 @@ var fluidCostMultiplier = 5;
 //4 colors from outside in. Normal meltdown laser has trasnparrency 55 -> aa -> ff (no transparrency) -> ff(no transparrency)
 var colors = [Color.valueOf("e6c04555"), Color.valueOf("f7d95eaa"), Color.valueOf("ffec6e"), Color.white];
 //Number of lasers
-var lasers = 5;
+var lasers = 9;
 
 //The number of values in the next 4 arrays is the number of beams you have. First values in each go to the first beam, second values go to the second, etc.
 //Beam angles in degrees
-const spread = [2, 1.3, -1.3, -2, 0];
+const spread = [5, 3, 1, 1, -3, -5, 2, 0, -2];
 //Shift beam left or right. Negative is left, 0 is middle.
-const spacing = [-8.375, -4.25, 4.25, 8.375, 0];
+const spacing = [-8.375, -8.375, -8.375, 8.375, 8.375, 8.375, 0, 0, 0];
 //Shift beam foward or backward. Negative is backward, 0 is middle. Note that it counts from the start of the widest section.
-const position = [1, 1.5, 1.5, 1, 3];
+const position = [1, 1, 1, 1, 1, 1, 3, 3, 3];
 //Length of beam. Uses same 8 per tile rule
-var length = [560, 280, 280, 560, 560];
+var length = [520, 520, 520, 520, 520, 520, 560, 560, 560];
 
 //Stuff you probably shouldn't edit.
 //I think this is ???
 var tscales = [1, 0.7, 0.5, 0.2];
 //I think this is thickness
-var strokes = [4, 3, 2, 0.6];
+var strokes = [2.5, 1.875, 1.25, 0.375];
 //I think this is ???
 var lenscales = [1, 1.12, 1.15, 1.17];
 
@@ -68,8 +68,8 @@ solarflare.shootType = extend(BasicBulletType, {
         for(var s = 0; s < 4; s++){
             Draw.color(tmpColor.set(colors[s]).mul(1.0 + Mathf.absin(Time.time(), 1.0, 0.3)));
             for(var i = 0; i < 4; i++){
-                for(var v = 0; v < lasers - 1; v++){
-                    strokes = [4, 3, 2, 0.6];
+                for(var v = 0; v < lasers - 3; v++){
+                    strokes = [2.5, 1.875, 1.25, 0.375];
                     vec.trns(b.rot() - 90, spacing[v], position[v]);
                     var angleB = spread[v];
                     var baseLen = length[v] * b.fout();
@@ -77,13 +77,15 @@ solarflare.shootType = extend(BasicBulletType, {
                     Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
                     Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() + angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
                 }
-                strokes = [6, 4.5, 3, 0.9];
-                vec.trns(b.rot() - 90, spacing[4], position[4]);
-                var angleB = spread[4];
-                var baseLen = length[4] * b.fout();
-                Tmp.v1.trns(b.rot() + angleB + 180.0, (lenscales[i] - 1.0) * 55.0);
-                Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
-                Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() + angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
+                for(var r = lasers - 3; r < lasers; r++){
+                    strokes = [3.75, 2.8125, 1.875, 0.5625];
+                    vec.trns(b.rot() - 90, spacing[r], position[r]);
+                    var angleB = spread[r];
+                    var baseLen = length[r] * b.fout();
+                    Tmp.v1.trns(b.rot() + angleB + 180.0, (lenscales[i] - 1.0) * 55.0);
+                    Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
+                    Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() + angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
+                }
             }
         };
         Draw.reset();
