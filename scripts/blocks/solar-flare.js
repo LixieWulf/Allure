@@ -9,6 +9,7 @@ solarflare.shootType = extend(BasicBulletType, {
         const lasers = 3;
         const spread = [2, 0, -2];
         const spacing = [-8,0,8];
+        var length = 560;
         
         baseLen = (length) * b.fout();
         
