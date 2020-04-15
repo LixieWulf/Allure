@@ -11,20 +11,20 @@ solarflare.shootType = extend(BasicBulletType, {
         const spacing = [-8,0,8];
         var length = 560;
         
-        baseLen = (length) * b.fout();
-        
         if(b.timer.get(1, 5)){
             for(var v = 0; v < lasers; v++){
-                vec.trns(b.rot - 90, spacing[v]);
+                vec.trns(b.rot() - 90, spacing[v]);
                 var angleB = spread[v];
-                Damage.collideLine(b, b.getTeam(), this.hitEffect, b.x + vec.x, b.y + vec.y, b.rot() + angleB, baseLen, true);
+                Damage.collideLine(b, b.getTeam(), this.hitEffect, b.x + vec.x, b.y + vec.y, b.rot() + angleB, length + 64, true);
             }
         };
     },
     hit(b,hitx,hity){
         Effects.effect(this.hitEffect,Color.valueOf("f7d95e"),hitx!=null?hitx:b.x,hity!=null?hity:b.y);
         if(Mathf.chance(0.8)){
-            //DECUPLE BURNY BURN MWAHAHAHAHAHA
+            //DODECUPLE BURNY BURN MWAHAHAHAHAHA
+            Fire.create(Vars.world.tileWorld(hitx + Mathf.range(5), hity + Mathf.range(5)));
+            Fire.create(Vars.world.tileWorld(hitx + Mathf.range(5), hity + Mathf.range(5)));
             Fire.create(Vars.world.tileWorld(hitx + Mathf.range(5), hity + Mathf.range(5)));
             Fire.create(Vars.world.tileWorld(hitx + Mathf.range(5), hity + Mathf.range(5)));
             Fire.create(Vars.world.tileWorld(hitx + Mathf.range(5), hity + Mathf.range(5)));
@@ -57,7 +57,7 @@ solarflare.shootType = extend(BasicBulletType, {
             Draw.color(tmpColor.set(colors[s]).mul(1.0 + Mathf.absin(Time.time(), 1.0, 0.3)));
             for(var i = 0; i < 4; i++){
                 for(var v = 0; v < lasers; v++){
-                    vec.trns(b.rot - 90, spacing[v]);
+                    vec.trns(b.rot() - 90, spacing[v]);
                     var angleB = spread[v];
                     Tmp.v1.trns(b.rot() + angleB + 180.0, (lenscales[i] - 1.0) * 55.0);
                     Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
