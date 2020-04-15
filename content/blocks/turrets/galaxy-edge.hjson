@@ -2,6 +2,7 @@ name: "[#f152ff]Galaxy's Edge"
 description:
 '''
 Fires short beams of star material that obliterate everything.
+[red]Note: May set everything on fire.
 '''
 size: 4
 health: 3800
