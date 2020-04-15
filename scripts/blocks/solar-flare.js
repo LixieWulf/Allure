@@ -36,7 +36,7 @@ solarflare.coolantMultiplier = 1 / fluidCostMultiplier;
 solarflare.shootType = extend(BasicBulletType, {
     update: function(b){
         if(b.timer.get(1, 5)){
-            for(var v = 0; v < lasers1; v++){
+            for(var v = 0; v < lasers; v++){
                 vec.trns(b.rot() - 90, spacing[v], position[v]);
                 var angleB = spread[v];
                 Damage.collideLine(b, b.getTeam(), this.hitEffect, b.x + vec.x, b.y + vec.y, b.rot() + angleB, length[v] + length[v]/8.75, true);
