@@ -7,7 +7,7 @@ var fluidCostMultiplier = 5;
 //4 colors from outside in. Normal meltdown laser has trasnparrency 55 -> aa -> ff (no transparrency) -> ff(no transparrency)
 var colors = [Color.valueOf("e6c04555"), Color.valueOf("f7d95eaa"), Color.valueOf("ffec6e"), Color.white];
 //Number of lasers
-var lasers = 7;
+var lasers = 5;
 
 //The number of values in the next 4 arrays is the number of beams you have. First values in each go to the first beam, second values go to the second, etc.
 //Beam angles in degrees
@@ -36,7 +36,7 @@ solarflare.coolantMultiplier = 1 / fluidCostMultiplier;
 solarflare.shootType = extend(BasicBulletType, {
     update: function(b){
         if(b.timer.get(1, 5)){
-            for(var v = 0; v < lasers; v++){
+            for(var v = 0; v < lasers1; v++){
                 vec.trns(b.rot() - 90, spacing[v], position[v]);
                 var angleB = spread[v];
                 Damage.collideLine(b, b.getTeam(), this.hitEffect, b.x + vec.x, b.y + vec.y, b.rot() + angleB, length[v] + length[v]/8.75, true);
