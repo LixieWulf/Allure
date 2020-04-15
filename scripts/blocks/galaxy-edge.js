@@ -2,7 +2,7 @@
 const galaxyEdge = new LaserTurret("galaxy-edge");
 
 //Normally takes 30/sec to cool. Change this to multiply that amount.
-var fluidCostMultiplier = 6;
+var fluidCostMultiplier = 8;
 
 //Editable stuff for custom laser.
 //4 colors from outside in. Normal meltdown laser has trasnparrency 55 -> aa -> ff (no transparrency) -> ff(no transparrency)

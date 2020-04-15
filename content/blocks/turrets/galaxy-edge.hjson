@@ -1,12 +1,12 @@
 name: "[#f152ff]Galaxy's Edge"
 description:
 '''
-Fires shorter beams that obliterate anything they touch.
+Fires short beams of star material that obliterate everything.
 '''
 size: 4
 health: 3800
-range: 500
-reload: 300
+range: 64
+reload: 480
 shootSound: laserbig
 activeSound: beam
 activeSoundVolume: 2
