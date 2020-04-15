@@ -1,27 +1,33 @@
 const solarflare = new LaserTurret("solar-flare");
 
-solarflare.consumes.add(new ConsumeLiquidFilter(boolf(liquid=>liquid.temperature<=0.5&&liquid.flammability<0.1),/*amount per tick*/2.5)).update(false);
-solarflare.coolantMultiplier = 0.2;
+//Normally takes 30/sec to cool. Change this to multiply that amount.
+var fluidCostMultiplier = 5;
 
+//Editable stuff for custom laser.
+//4 colors from outside in. Normal meltdown laser has trasnparrency 55 -> aa -> ff (no transparrency) -> ff(no transparrency)
+var colors = [Color.valueOf("e6c04555"), Color.valueOf("f7d95eaa"), Color.valueOf("ffec6e"), Color.white];
+//Number of lasers
+var lasers = 7;
 
+//The number of values in the next 4 arrays is the number of beams you have. First values in each go to the first beam, second values go to the second, etc.
+//Beam angles in degrees
+const spread = [2, 1, 0, -1, -2, 135, -135];
+//Shift beam left or right. Negative is left, 0 is middle.
+const spacing = [-8.375, -4.1875,0, 4.1875, 8.375, -14.375, 14.375];
+//Shift beam foward or backward. Negative is backward, 0 is middle. Note that it counts from the start of the widest section.
+const position = [1, 1.5, 3, 1.5, 1, -13, -13];
+//Length of beam. Uses same 8 per tile rule
+var length = [560, 280, 560, 280, 560, 24, 24];
+
+//Stuff you probably shouldn't edit.
 var tscales = [1, 0.7, 0.5, 0.2];
 var strokes = [2, 1.5, 1, 0.3];
 var lenscales = [1, 1.12, 1.15, 1.17];
 var tmpColor = new Color();
-
-//4 colors from outside in.
-var colors = [Color.valueOf("e6c04555"), Color.valueOf("f7d95eaa"), Color.valueOf("ffec6e"), Color.white];
-//Number of lasers
-var lasers = 7;
-//Laser blast angles
-const spread = [2, 1, 0, -1, -2, 135, -135];
-//Shift beam left or right. Negative is left.
-const spacing = [-8.375, -4.1875,0, 4.1875, 8.375, -14.375, 14.375];
-//Shift beam foward or backward. Negative is backward.
-const position = [1, 1.5, 3, 1.5, 1, -13, -13];
-//Length of beam. Uses same 8 per tile rule
-var length = [560, 280, 560, 280, 560, 24, 24];
 const vec = new Vec2();
+
+solarflare.consumes.add(new ConsumeLiquidFilter(boolf(liquid=>liquid.temperature<=0.5&&liquid.flammability<0.1), 0.5 * fluidCostMultiplier)).update(false);
+solarflare.coolantMultiplier = 1 / fluidCostMultiplier;
 
 solarflare.shootType = extend(BasicBulletType, {
     update: function(b){
@@ -35,6 +41,7 @@ solarflare.shootType = extend(BasicBulletType, {
     },
     hit(b,hitx,hity){
         Effects.effect(this.hitEffect,Color.valueOf("f7d95e"),hitx!=null?hitx:b.x,hity!=null?hity:b.y);
+        //Uncomment the following 3 lines to have incend. Chance is 0 to 1. Copy/past the Fire.create line multiple times to create more fire at once.
         if(Mathf.chance(0.8)){
             //DODECUPLE BURNY BURN MWAHAHAHAHAHA
             Fire.create(Vars.world.tileWorld(hitx + Mathf.range(5), hity + Mathf.range(5)));
@@ -78,9 +85,12 @@ solarflare.shootType.hitSize = 4;
 solarflare.shootType.lifetime = 16;
 solarflare.shootType.drawSize = 420;
 solarflare.shootType.pierce = true;
+//Don't actually know if the speed is important. I have it because I think the turrets will try to lead their target, which doesn't quite work when you're literally shooting instant lasers.
 solarflare.shootType.speed = 69420;
 
+//make the beam inflict a status effect. Remove if you don't want a status effect applied.
 corn = new StatusEffect("the-sun-is-a-deadly-laser");
+//damage per tick like usual
 corn.damage = 16667;
 corn.effect = Fx.burning;
 corn.armorMultiplier = 0.1;
