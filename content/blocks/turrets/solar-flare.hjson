@@ -1,5 +1,10 @@
 name: "[#ffec6e]Solar Flare"
-description: A cousin of the Meltdown. Heavily damages blocks and inflicts a status effect that completely melts units. Fires a little slower than an avarage Meltdown.
+description:
+'''
+A cousin of the Meltdown. Heavily damages blocks and inflicts a status effect that completely melts units. Fires a little slower than an avarage Meltdown.
+
+MEEP went mad with power so it has a few extra beams.
+'''
 size: 4
 health: 3400
 range: 500
