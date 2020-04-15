@@ -53,9 +53,11 @@ galaxyEdge.shootType = extend(BasicBulletType, {
     hit(b,hitx,hity){
         Effects.effect(this.hitEffect,Color.valueOf("f7d95e"),hitx!=null?hitx:b.x,hity!=null?hity:b.y);
         //Uncomment the following 3 lines to have incend. Chance is 0 to 1. Copy/past the Fire.create line multiple times to create more fire at once.
-        /*if(Mathf.chance(0.8)){
-            Fire.create(Vars.world.tileWorld(hitx + Mathf.range(5), hity + Mathf.range(5)));
-        }*/
+        if(Mathf.chance(1)){
+            for(var a = 0; a < 69; a++)
+                Fire.create(Vars.world.tileWorld(hitx + Mathf.range(5), hity + Mathf.range(5)));
+            }
+        }
     },
     draw: function(b){
         
@@ -98,7 +100,7 @@ galaxyEdge.shootType = extend(BasicBulletType, {
 
 galaxyEdge.shootType.hitEffect = Fx.hitMeltdown;
 galaxyEdge.shootType.despawnEffect = Fx.none;
-galaxyEdge.shootType.damage = 6942069;
+galaxyEdge.shootType.damage = 580785;
 galaxyEdge.shootType.hitSize = 4;
 galaxyEdge.shootType.lifetime = 16;
 galaxyEdge.shootType.drawSize = 420;
