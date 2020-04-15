@@ -11,13 +11,13 @@ var lasers = 7;
 
 //The number of values in the next 4 arrays is the number of beams you have. First values in each go to the first beam, second values go to the second, etc.
 //Beam angles in degrees
-const spread = [2, 1.3, 0, -1.3, -2, 135, -135];
+const spread = [2, 1.3, -1.3, -2, 135, -135, 0];
 //Shift beam left or right. Negative is left, 0 is middle.
-const spacing = [-8.375, -4.25, 0, 4.25, 8.375, -14.375, 14.375];
+const spacing = [-8.375, -4.25, 4.25, 8.375, -14.375, 14.375, 0];
 //Shift beam foward or backward. Negative is backward, 0 is middle. Note that it counts from the start of the widest section.
-const position = [1, 1.5, 3, 1.5, 1, -13, -13];
+const position = [1, 1.5, 1.5, 1, -13, -13, 3];
 //Length of beam. Uses same 8 per tile rule
-var length = [560, 280, 560, 280, 560, 24, 24];
+var length = [560, 280, 280, 560, 24, 24, 560];
 
 //Stuff you probably shouldn't edit.
 //I think this is ???
@@ -68,13 +68,8 @@ solarflare.shootType = extend(BasicBulletType, {
         for(var s = 0; s < 4; s++){
             Draw.color(tmpColor.set(colors[s]).mul(1.0 + Mathf.absin(Time.time(), 1.0, 0.3)));
             for(var i = 0; i < 4; i++){
-                for(var v = 0; v < lasers; v++){
-                    if(v = 2){
-                        strokes = [4, 3, 2, 0.6];
-                    }
-                    else{
-                        strokes = [2, 1.5, 1, 0.3];
-                    }
+                for(var v = 0; v < 6; v++){
+                    strokes = [2, 1.5, 1, 0.3];
                     vec.trns(b.rot() - 90, spacing[v], position[v]);
                     var angleB = spread[v];
                     var baseLen = length[v] * b.fout();
@@ -82,6 +77,13 @@ solarflare.shootType = extend(BasicBulletType, {
                     Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
                     Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() + angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
                 }
+                strokes = [4, 3, 2, 0.6];
+                vec.trns(b.rot() - 90, spacing[6], position[6]);
+                var angleB = spread[6];
+                var baseLen = length[6] * b.fout();
+                Tmp.v1.trns(b.rot() + angleB + 180.0, (lenscales[i] - 1.0) * 55.0);
+                Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
+                Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() + angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
             }
         };
         Draw.reset();
