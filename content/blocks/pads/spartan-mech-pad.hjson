@@ -7,7 +7,7 @@ consumes: {
   power: 0.7
 }
 category: upgrade
-research: electra-mech-pad
+research: leviathan-mech-pad
 requirements: [
   amethyst-gem/100
   bluewolframite/100

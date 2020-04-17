@@ -24,7 +24,6 @@ requirements: [
 ]
 resources: [
   copper
-  silver
   lead
   coal
   sand

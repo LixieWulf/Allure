@@ -15,7 +15,7 @@ consumes: {
   }
 }
 category: units
-research: chrome-wraith-factory
+research: revenant-factory
 requirements: [
   draconium/25
   silicon/40
