@@ -6,7 +6,7 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
   generateIcons: function(){
     return [
       Core.atlas.find("exotic-mod-wolfsteeth-base-icon"),
-      Core.atlas.find("exotic-mod-wolfsteeth-roar-icon")
+      Core.atlas.find("exotic-mod-wolfsteeth-icon")
     ];
   },
 });
