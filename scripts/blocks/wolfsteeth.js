@@ -8,5 +8,5 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
       Core.atlas.find("wolfsteeth-base-icon"),
       Core.atlas.find("wolfsteeth-roar-icon")
     ];
-  }
+  },
 });
