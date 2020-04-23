@@ -22,7 +22,7 @@ var length = [160];
 
 //Stuff you probably shouldn't edit unless you know what you're doing.
 //Width of each section of the beam from thickest to thinnest
-var tscales = [1, 1, 1, 0.7, 0.7, 0.7, 0.5, 0.5, 0.5, 0.2];
+var tscales = [1, 0.9, 0.8, 0.7, 0.633333333, 0.566666666, 0.5, 0.4, 0.3, 0.2];
 //Overall width of each color
 var strokes = [/*edge*/6, 5.5, 5, /*2*/4.5, 4, 3.5 /*3*/3, 2.3, 1.6, /*mid*/0.9];
 //Determines how far back each section in the start should be pulled
