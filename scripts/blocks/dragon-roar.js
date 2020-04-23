@@ -5,8 +5,8 @@ const dwago = extendContent(DoubleTurret, "dragon-roar", {
   },
   generateIcons: function(){
 		return [
-			Core.atlas.find("dragon-roar-base-icon"),
-			Core.atlas.find("dragon-roar-icon")
+			Core.atlas.find("exotic-mod-dragon-roar-base-icon"),
+			Core.atlas.find("exotic-mod-dragon-roar-icon")
 		];
 	},
 });
