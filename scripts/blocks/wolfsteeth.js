@@ -177,9 +177,9 @@ pB.lifetime = 156;
 
 const itemfunc = name => Vars.content.getByName(ContentType.item, name);
 
-const egg = itemfunc("draconium");
-const puprock = itemfunc("bluewolframite");
-const jem = itemfunc("amethyst-gem");
+const egg = itemfunc("exotic-mod-draconium");
+const puprock = itemfunc("exotic-mod-bluewolframite");
+const jem = itemfunc("exotic-mod-amethyst-gem");
 
 cutefluffydoggo.ammo(
   egg, drB,
