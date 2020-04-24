@@ -6,7 +6,7 @@ var fluidCostMultiplier = 8;
 
 //Editable stuff for custom laser.
 //4 colors from outside in. Normal meltdown laser has trasnparrency 55 -> aa -> ff (no transparrency) -> ff(no transparrency)
-var colors = [/*edge*/Color.valueOf("c90fd955"), Color.valueOf("10bbde55"), Color.valueOf("db410d55"), /*2*/Color.valueOf("d228e0aa"), Color.valueOf("24cef0aa"), Color.valueOf("e65727aa"), /*3*/Color.valueOf("f152ff"), Color.valueOf("3ddfff"), Color.valueOf("ed683b"), /*mid*/Color.white];
+var colors = [Color.valueOf("c90fd955"), Color.valueOf("10bbde55"), Color.valueOf("db410d55"), Color.valueOf("d228e0aa"), Color.valueOf("24cef0aa"), Color.valueOf("e65727aa"), Color.valueOf("f152ff"), Color.valueOf("3ddfff"), Color.valueOf("ed683b"), Color.white];
 //Number of beams
 var lasers = 1;
 
@@ -24,11 +24,11 @@ var length = [160];
 //Width of each section of the beam from thickest to thinnest
 var tscales = [1, 0.9, 0.8, 0.7, 0.633333333, 0.566666666, 0.5, 0.4, 0.3, 0.2];
 //Overall width of each color
-var strokes = [/*edge*/6, 5.5, 5, /*2*/4.5, 4, 3.5 /*3*/3, 2.3, 1.6, /*mid*/0.9];
+var strokes = [6, 5.5, 5, 4.5, 4, 3.5 3, 2.3, 1.6, 0.9];
 //Determines how far back each section in the start should be pulled
-var pullscales = [/*edge*/1, 1.02, 1.04, /*2*/1.06, 1.0733333333, 1.08666666, /*3*/1.1, 1.1133333333, 1.12666666, /*mid*/1.14];
+var pullscales = [1, 1.02, 1.04, 1.06, 1.0733333333, 1.08666666, 1.1, 1.1133333333, 1.12666666, 1.14];
 //Determines how far each section of the end should extend past the main thickest section
-var lenscales = [/*edge*/1, 1.0533333333, 1.10666666, /*2*/1.16, 1.2, 1.24,/*3*/1.28, 1.32, 1.36, /*mid*/1.4];
+var lenscales = [1, 1.0533333333, 1.10666666, 1.16, 1.2, 1.24,1.28, 1.32, 1.36, 1.4];
 
 var tmpColor = new Color();
 const vec = new Vec2();
@@ -39,21 +39,19 @@ galaxyEdge.coolantMultiplier = 1 / fluidCostMultiplier;
 galaxyEdge.shootType = extend(BasicBulletType, {
   update: function(b){
     if(b.timer.get(1, 5)){
-      for(var v = 0; v < lasers; v++){
-        vec.trns(b.rot() - 90, spacing[v], position[v]);
-        Tmp.v1.trns(b.rot() + angleB + 180.0, (pullscales[4] - 1.0) * 55.0);
-        var angleB = spread[v];
-        var baseLen = length[v] * b.fout();
-        Damage.collideLine(b, b.getTeam(), this.hitEffect, b.x + vec.x, b.y + vec.y, b.rot() + angleB, length[v] + length[v]/8, true);
-      }
+      vec.trns(b.rot() - 90, 0, 0);
+      Tmp.v1.trns(b.rot() + angleB + 180.0, (pullscales[4] - 1.0) * 55.0);
+      var angleB = 0;
+      var baseLen = 160 * b.fout();
+      Damage.collideLine(b, b.getTeam(), this.hitEffect, b.x + vec.x, b.y + vec.y, b.rot() + angleB, 180, true);
     };
   },
   hit(b,hitx,hity){
-    Effects.effect(this.hitEffect,Color.valueOf("f7d95e"),hitx!=null?hitx:b.x,hity!=null?hity:b.y);
+    Effects.effect(this.hitEffect,Color.valueOf("f152ff"),hitx!=null?hitx:b.x,hity!=null?hity:b.y);
     //Uncomment the following 3 lines to have incend. Chance is 0 to 1. Copy/past the Fire.create line multiple times to create more fire at once.
     if(Mathf.chance(0.9)){
       for(var a = 0; a < 69; a++){
-          Fire.create(Vars.world.tileWorld(hitx + Mathf.range(80), hity + Mathf.range(80)));
+          Fire.create(Vars.world.tileWorld(hitx + Mathf.range(24), hity + Mathf.range(24)));
       }
     }
   },
@@ -61,10 +59,10 @@ galaxyEdge.shootType = extend(BasicBulletType, {
     for(var s = 0; s < 10; s++){
       Draw.color(tmpColor.set(colors[s]).shiftHue(Time.time()));
       for(var i = 0; i < 10; i++){
-        vec.trns(b.rot() - 90, spacing[0], position[0]);
+        vec.trns(b.rot() - 90, 0, 0);
         Tmp.v1.trns(b.rot() + angleB + 180.0, (pullscales[i] - 1.0) * 55.0);
-        var angleB = spread[0];
-        var baseLen = length[0] * b.fout();
+        var angleB = 0;
+        var baseLen = 160 * b.fout();
         Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
         Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() + angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
       }
