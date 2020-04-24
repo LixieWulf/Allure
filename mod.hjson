@@ -9,8 +9,7 @@ author:
   [purple]Andromeda 
   (Mapper)
   [#FCC21B]Meep of Faith
-  (Spriter, Hjsoner, [#5c0606]Slowly
-  decending into scripting hell[#FCC21B])
+  (Spriter, Hjsoner, [#5c0606]Lost in scripting hell[#FCC21B])
   '''
 description:
   '''
@@ -28,5 +27,5 @@ description:
     Arc Reactor
   [green]More to come!
   '''
-version: 2.184-8
+version: 2.184-9
 minGameVersion: 103
