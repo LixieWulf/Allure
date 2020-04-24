@@ -8,7 +8,7 @@ var fluidCostMultiplier = 8;
 //4 colors from outside in. Normal meltdown laser has trasnparrency 55 -> aa -> ff (no transparrency) -> ff(no transparrency)
 var colors = [/*edge*/Color.valueOf("c90fd955"), Color.valueOf("10bbde55"), Color.valueOf("db410d55"), /*2*/Color.valueOf("d228e0aa"), Color.valueOf("24cef0aa"), Color.valueOf("e65727aa"), /*3*/Color.valueOf("f152ff"), Color.valueOf("3ddfff"), Color.valueOf("ed683b"), /*mid*/Color.white];
 //Number of beams
-var lasers = 5;
+var lasers = 1;
 
 //The number of values in the next 4 arrays is the number of beams you have. First values in each go to the first beam, second values go to the second, etc.
 //Beam angles in degrees
