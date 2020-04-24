@@ -39,11 +39,13 @@ galaxyEdge.coolantMultiplier = 1 / fluidCostMultiplier;
 galaxyEdge.shootType = extend(BasicBulletType, {
   update: function(b){
     if(b.timer.get(1, 5)){
-      vec.trns(b.rot() - 90, 0, 0);
-      Tmp.v1.trns(b.rot() + angleB + 180.0, (pullscales[4] - 1.0) * 55.0);
-      var angleB = 0;
-      var baseLen = 160 * b.fout();
-      Damage.collideLine(b, b.getTeam(), this.hitEffect, b.x + vec.x, b.y + vec.y, b.rot() + angleB, 180, true);
+      for(var v = 0; v < lasers; v++){
+        vec.trns(b.rot() - 90, spacing[v], position[v]);
+        Tmp.v1.trns(b.rot() + angleB + 180.0, (pullscales[4] - 1.0) * 55.0);
+        var angleB = spread[v];
+        var baseLen = length[v] * b.fout();
+        Damage.collideLine(b, b.getTeam(), this.hitEffect, b.x + vec.x, b.y + vec.y, b.rot() + angleB, length[v] + length[v]/8.75, true);
+      }
     };
   },
   hit(b,hitx,hity){
@@ -56,15 +58,16 @@ galaxyEdge.shootType = extend(BasicBulletType, {
     }
   },
   draw: function(b){
-    for(var s = 0; s < 10; s++){
+    for(var s = 0; s < colors.length; s++){
       Draw.color(tmpColor.set(colors[s]).shiftHue(Time.time()));
-      for(var i = 0; i < 10; i++){
-        vec.trns(b.rot() - 90, 0, 0);
-        Tmp.v1.trns(b.rot() + angleB + 180.0, (pullscales[i] - 1.0) * 55.0);
-        var angleB = 0;
-        var baseLen = 160 * b.fout();
-        Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
-        Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() + angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
+      for(var i = 0; i < tscales.length; i++){
+        for(var v = 0; v < lasers - 3; v++){
+          vec.trns(b.rot() - 90, spacing[v], position[v]);
+          var angleB = spread[v];
+          var baseLen = length[v] * b.fout();
+          Tmp.v1.trns(b.rot() + angleB + 180.0, (pullscales[i] - 1.0) * 55.0);
+          Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
+          Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() + angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
       }
     };
     Draw.reset();
