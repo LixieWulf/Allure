@@ -181,11 +181,11 @@ const egg = itemfunc("draconium");
 const puprock = itemfunc("bluewolframite");
 const jem = itemfunc("amethyst-gem");
 
-cutefluffydoggo.ammo{
+cutefluffydoggo.ammo(
   egg, drB,
   puprock, doB,
   jem, pB
-};
+);
 cutefluffydoggo.shootShake = 3;
 cutefluffydoggo.recoil = 6;
 cutefluffydoggo.shootEffect = Fx.lightningShoot;
