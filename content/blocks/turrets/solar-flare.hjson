@@ -9,8 +9,8 @@ size: 4
 health: 3400
 range: 500
 reload: 300
-shootSound: laserbig
-activeSound: beam
+shootSound: thesunisadeadlylaserlol
+activeSound: flare
 activeSoundVolume: 2
 powerUse: 200
 rotatespeed: 0.5

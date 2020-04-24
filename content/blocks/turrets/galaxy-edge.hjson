@@ -8,8 +8,8 @@ size: 4
 health: 3800
 range: 160
 reload: 480
-shootSound: laserbig
-activeSound: beam
+shootSound: quazar
+activeSound: cosmos
 activeSoundVolume: 2
 powerUse: 1500
 rotatespeed: 0.5
