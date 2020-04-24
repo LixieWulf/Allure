@@ -21,15 +21,32 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
 		const dst = entity.dst(predict.x, predict.y);
 		const maxTraveled = type.lifetime * type.speed);
 		
-    if(entity.shots == 1){var i = -23}
-    if(entity.shots == 2){var i = -5}
-    if(entity.shots == 3){var i = 5}
-    if(entity.shots == 4){var i = 23}
+    	
+		if(entity.shots == 1){
+      var i = -23
+    };
+    if(entity.shots == 2){
+      var i = -5
+    };
+    if(entity.shots == 3){
+      var i = 5
+    };
+    if(entity.shots == 4){
+      var i = 23
+    };
     
-    if(entity.shots == 1){var i = -8}
-    if(entity.shots == 2){var i = 24}
-    if(entity.shots == 3){var i = 24}
-    if(entity.shots == 4){var i = -8}
+    if(entity.shots == 1){
+      var i = -8
+    };
+    if(entity.shots == 2){
+      var i = 24
+    };
+    if(entity.shots == 3){
+      var i = 24
+    };
+    if(entity.shots == 4){
+      var i = -8
+    };
 		
 		tr3.trns(entity.rotation - 90, i, b - entity.recoil);
     
@@ -38,21 +55,39 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
 		this.effects(tile);
 		this.useAmmo(tile);
     
-    if(entity,shots == 4){entity.shots = 0}
+    if(entity,shots == 4){
+      entity.shots = 0
+    };
 	},
   effects: function(tile){
 		const tr3 = new Vec2();
 		entity = tile.ent();
 		
-		if(entity.shots == 1){var i = -23}
-    if(entity.shots == 2){var i = -5}
-    if(entity.shots == 3){var i = 5}
-    if(entity.shots == 4){var i = 23}
+		if(entity.shots == 1){
+      var i = -23
+    };
+    if(entity.shots == 2){
+      var i = -5
+    };
+    if(entity.shots == 3){
+      var i = 5
+    };
+    if(entity.shots == 4){
+      var i = 23
+    };
     
-    if(entity.shots == 1){var i = -8}
-    if(entity.shots == 2){var i = 24}
-    if(entity.shots == 3){var i = 24}
-    if(entity.shots == 4){var i = -8}
+    if(entity.shots == 1){
+      var i = -8
+    };
+    if(entity.shots == 2){
+      var i = 24
+    };
+    if(entity.shots == 3){
+      var i = 24
+    };
+    if(entity.shots == 4){
+      var i = -8
+    };
 		
 		tr3.trns(entity.rotation - 90, i, b - entity.recoil);
     
