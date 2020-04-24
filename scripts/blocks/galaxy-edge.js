@@ -37,42 +37,42 @@ galaxyEdge.consumes.add(new ConsumeLiquidFilter(boolf(liquid=>liquid.temperature
 galaxyEdge.coolantMultiplier = 1 / fluidCostMultiplier;
 
 galaxyEdge.shootType = extend(BasicBulletType, {
-  update: function(b){
-    if(b.timer.get(1, 5)){
-      for(var v = 0; v < lasers; v++){
-        vec.trns(b.rot() - 90, spacing[v], position[v]);
-        Tmp.v1.trns(b.rot() + angleB + 180.0, (pullscales[4] - 1.0) * 55.0);
-        var angleB = spread[v];
-        var baseLen = length[v] * b.fout();
-        Damage.collideLine(b, b.getTeam(), this.hitEffect, b.x + vec.x, b.y + vec.y, b.rot() + angleB, length[v] + length[v]/8.75, true);
-      }
-    };
-  },
-  hit(b,hitx,hity){
-    Effects.effect(this.hitEffect,Color.valueOf("f152ff"),hitx!=null?hitx:b.x,hity!=null?hity:b.y);
-    //Uncomment the following 3 lines to have incend. Chance is 0 to 1. Copy/past the Fire.create line multiple times to create more fire at once.
-    if(Mathf.chance(0.9)){
-      for(var a = 0; a < 69; a++){
-          Fire.create(Vars.world.tileWorld(hitx + Mathf.range(24), hity + Mathf.range(24)));
-      }
-    }
-  },
-  draw: function(b){
-    for(var s = 0; s < colors.length; s++){
-      Draw.color(tmpColor.set(colors[s]).shiftHue(Time.time()));
-      for(var i = 0; i < tscales.length; i++){
-        for(var v = 0; v < lasers - 3; v++){
-          vec.trns(b.rot() - 90, spacing[v], position[v]);
-          var angleB = spread[v];
-          var baseLen = length[v] * b.fout();
-          Tmp.v1.trns(b.rot() + angleB + 180.0, (pullscales[i] - 1.0) * 55.0);
-          Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
-          Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() + angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
+    update: function(b){
+        if(b.timer.get(1, 5)){
+            for(var v = 0; v < lasers; v++){
+                vec.trns(b.rot() - 90, spacing[v], position[v]);
+                Tmp.v1.trns(b.rot() + angleB + 180.0, (pullscales[4] - 1.0) * 55.0);
+                var angleB = spread[v];
+                var baseLen = length[v] * b.fout();
+                Damage.collideLine(b, b.getTeam(), this.hitEffect, b.x + vec.x, b.y + vec.y, b.rot() + angleB, length[v] + length[v]/8.75, true);
+            }
+        };
+    },
+    hit(b,hitx,hity){
+        Effects.effect(this.hitEffect,Color.valueOf("f152ff"),hitx!=null?hitx:b.x,hity!=null?hity:b.y);
+        //Uncomment the following 3 lines to have incend. Chance is 0 to 1. Copy/past the Fire.create line multiple times to create more fire at once.
+        if(Mathf.chance(0.9)){
+            for(var a = 0; a < 69; a++){
+                Fire.create(Vars.world.tileWorld(hitx + Mathf.range(24), hity + Mathf.range(24)));
+            }
         }
-      }
-    };
-    Draw.reset();
-  }
+    },
+    draw: function(b){
+        for(var s = 0; s < colors.length; s++){
+            Draw.color(tmpColor.set(colors[s]).shiftHue(Time.time()));
+            for(var i = 0; i < tscales.length; i++){
+                for(var v = 0; v < lasers - 3; v++){
+                    vec.trns(b.rot() - 90, spacing[v], position[v]);
+                    var angleB = spread[v];
+                    var baseLen = length[v] * b.fout();
+                    Tmp.v1.trns(b.rot() + angleB + 180.0, (pullscales[i] - 1.0) * 55.0);
+                    Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
+                    Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() + angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
+                }
+            }
+        };
+        Draw.reset();
+    }
 });
 
 galaxyEdge.shootType.hitEffect = Fx.hitMeltdown;
