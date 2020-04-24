@@ -176,9 +176,9 @@ pB.backColor = Color.valueOf("8e479e");
 pB.lifetime = 156;
 
 cutefluffydoggo.ammo{
-  Items.draconium, Bullets.drB,
-  Items.bluewolframite, Bullets.doB,
-  Items.amethyst-gem, Bullets.pB
+  Items.draconium, drB,
+  Items.bluewolframite, doB,
+  Items.amethyst-gem, pB
 };
 cutefluffydoggo.shootShake = 3;
 cutefluffydoggo.recoil = 6;
