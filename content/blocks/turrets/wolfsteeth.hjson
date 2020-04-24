@@ -9,10 +9,8 @@ inaccuracy: 10
 spread: 0
 reload: 15
 shots: 1
-xRand: 22
-recoil: 6
+xRand: 0
 ammoUseEffect: shellEjectBig
-shootEffect: lightningShoot
 shootCone: 25
 maxAmmo: 48
 rotateSpeed: 0.25
@@ -20,124 +18,6 @@ range: 1200
 cooldown: 0.005
 restitution: 0.01
 outlineIcon: false
-ammo: {
-  draconium: {
-    speed: 11
-    damage: 30000
-    bulletSprite: exotic-mod-railbolt
-    bulletWidth: 20
-    bulletHeight: 60
-    shootEffect: shootBig
-    smokeEffect: shootBigSmoke
-    lifetime: 128
-    status: melting
-    hitEffect: hitMeltdown
-    homingRange: 480
-    homingPower: 0.01
-    ammoMultiplier: 3
-    bulletShrink: 0
-    frontColor: f53b11
-    backColor: d92800
-    fragVelocityMin: 0.9
-    fragVelocityMax: 1.1
-    fragBullets: 5
-    fragBullet: {
-      speed: 11
-      damage: 1000
-      bulletSprite: exotic-mod-railbolt
-      bulletWidth: 15
-      bulletHeight: 45
-      shootEffect: shootBig
-      bulletShrink: 0
-      smokeEffect: shootBigSmoke
-      homingRange: 480
-      homingPower: 0.01
-      status: melting
-      hitEffect: hitMeltdown
-      splashDamage: 1000
-      splashDamageRadius: 100
-      lifetime: 64
-      frontColor: f53b11
-      backColor: d92800
-      fragVelocityMin: 0.9
-      fragVelocityMax: 1.1
-      fragBullets: 5
-      fragBullet: {
-        speed: 11
-        damage: 1000
-        bulletSprite: exotic-mod-railbolt
-        bulletWidth: 5
-        bulletHeight: 15
-        shootEffect: shootBig
-        bulletShrink: 0
-        smokeEffect: shootBigSmoke
-        homingRange: 480
-        homingPower: 0.01
-        status: melting
-        hitEffect: hitMeltdown
-        splashDamage: 1000
-        splashDamageRadius: 100
-        lifetime: 64
-        frontColor: f53b11
-        backColor: d92800
-      }
-    }
-  }
-  bluewolframite: {
-    speed: 10
-    damage: 100000
-    bulletSprite: exotic-mod-railbolt
-    bulletWidth: 24
-    bulletHeight: 68
-    shootEffect: shootBig
-    smokeEffect: shootBigSmoke
-    bulletShrink: 0
-    status: burning
-    homingRange: 480
-    homingPower: 0.01
-    hitEffect: padlaunch
-    splashDamage: 25000
-    splashDamageRadius: 100
-    lifetime: 180
-    ammoMultiplier: 4
-    frontColor: 40ccff
-    backColor: 1397F0
-    fragVelocityMin: 0.9
-    fragVelocityMax: 1.1
-    fragBullets: 100
-    fragBullet: {
-      speed: 5.5
-      damage: 1000
-      bulletWidth: 6
-      bulletHeight: 10
-      lifetime: 10
-      hitEffect: hitMeltdown
-      frontColor: 40ccff
-      backColor: 1397F0
-      lightining: 10
-      lightningLength: 50
-    }
-  }
-  amethyst-gem: {
-    speed: 9
-    damage: 25000
-    bulletSprite: exotic-mod-railbolt
-    pierce: true
-    bulletWidth: 16
-    bulletHeight: 52
-    shootEffect: shootBig
-    bulletShrink: 0
-    ammoMultiplier: 5
-    smokeEffect: shootBigSmoke
-    status: freezing
-    hitEffect: shootBig
-    homingRange: 480
-    homingPower: 0.002
-    frontColor: b966cc
-    backColor: 8e479e
-    lifetime: 156
-  }
-}
 requirements: [
   titanium/2500
   copper/10000
@@ -152,5 +32,4 @@ requirements: [
   shadow/1500
 ]
 category: turret
-research: railgun
-shootSound: corexplode
+research: legacy-railgun
