@@ -175,9 +175,11 @@ pB.frontColor = Color.valueOf("b966cc");
 pB.backColor = Color.valueOf("8e479e");
 pB.lifetime = 156;
 
-const egg = Vars.content.getByName(ContentType.item, "exotic-mod-draconium");
-const puprock = Vars.content.getByName(ContentType.item, "exotic-mod-bluewolframite");
-const jem = Vars.content.getByName(ContentType.item, "exotic-mod-amethyst-gem");
+const itemfunc = name => Vars.content.getByName(ContentType.item, name);
+
+const egg = itemfunc("draconium")
+const puprock = itemfunc("bluewolframite")
+const jem = itemfunc("amethyst-gem")
 
 cutefluffydoggo.ammo{
   egg, drB,
