@@ -22,8 +22,8 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
 		const maxTraveled = type.lifetime * type.speed);
 		
     const i = entity.shots % 4;
-    var shift = [-23, -5, 5, -23];
-    var setback = [-8, 24, 24, -8];
+    const shift = [-23, -5, 5, -23];
+    const setback = [-8, 24, 24, -8];
     
 		tr3.trns(entity.rotation - 90, shift[i], setback[i] - entity.recoil);
     
@@ -37,8 +37,8 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
 		entity = tile.ent();
 		
 		const i = entity.shots % 4;
-    var shift = [-23, -5, 5, -23];
-    var setback = [-8, 24, 24, -8];
+    const shift = [-23, -5, 5, -23];
+    const setback = [-8, 24, 24, -8];
 		
 		tr3.trns(entity.rotation - 90, shift[i], setback[i] - entity.recoil);
     
