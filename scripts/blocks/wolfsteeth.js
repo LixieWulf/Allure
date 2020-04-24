@@ -21,75 +21,26 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
 		const dst = entity.dst(predict.x, predict.y);
 		const maxTraveled = type.lifetime * type.speed);
 		
-    	
-		if(entity.shots == 1){
-      var i = -23
-    };
-    if(entity.shots == 2){
-      var i = -5
-    };
-    if(entity.shots == 3){
-      var i = 5
-    };
-    if(entity.shots == 4){
-      var i = 23
-    };
+    const i = entity.shots % 4;
+    var shift = [-23, -5, 5, -23];
+    var setback = [-8, 24, 24, -8];
     
-    if(entity.shots == 1){
-      var i = -8
-    };
-    if(entity.shots == 2){
-      var i = 24
-    };
-    if(entity.shots == 3){
-      var i = 24
-    };
-    if(entity.shots == 4){
-      var i = -8
-    };
-		
-		tr3.trns(entity.rotation - 90, i, b - entity.recoil);
+		tr3.trns(entity.rotation - 90, shift[i], setback[i] - entity.recoil);
     
     Bullet.create(ammo, tile.entity, tile.getTeam(), tile.drawx() + tr3.x, tile.drawy() + tr3.y, entity.rotation + Mathf.range(this.inaccuracy + type.inaccuracy), type.speed, (dst / maxTraveled));
 
 		this.effects(tile);
 		this.useAmmo(tile);
-    
-    if(entity,shots == 4){
-      entity.shots = 0
-    };
 	},
   effects: function(tile){
 		const tr3 = new Vec2();
 		entity = tile.ent();
 		
-		if(entity.shots == 1){
-      var i = -23
-    };
-    if(entity.shots == 2){
-      var i = -5
-    };
-    if(entity.shots == 3){
-      var i = 5
-    };
-    if(entity.shots == 4){
-      var i = 23
-    };
-    
-    if(entity.shots == 1){
-      var i = -8
-    };
-    if(entity.shots == 2){
-      var i = 24
-    };
-    if(entity.shots == 3){
-      var i = 24
-    };
-    if(entity.shots == 4){
-      var i = -8
-    };
+		const i = entity.shots % 4;
+    var shift = [-23, -5, 5, -23];
+    var setback = [-8, 24, 24, -8];
 		
-		tr3.trns(entity.rotation - 90, i, b - entity.recoil);
+		tr3.trns(entity.rotation - 90, shift[i], setback[i] - entity.recoil);
     
 		const shootEffectB = this.shootEffect == Fx.none ? this.peekAmmo(tile).shootEffect : this.shootEffect;
 		const smokeEffectB = this.smokeEffect == Fx.none ? this.peekAmmo(tile).smokeEffect : this.smokeEffect;
