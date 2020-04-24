@@ -19,7 +19,7 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
 		const type = this.peekAmmo(tile);
 		const predict = Predict.intercept(tile, entity.target, type.speed);
 		const dst = entity.dst(predict.x, predict.y);
-		const maxTraveled = type.lifetime * type.speed);
+		const maxTraveled = type.lifetime * type.speed;
 		
     const i = entity.shots % 4;
     const shift = [-23, -5, 5, -23];
