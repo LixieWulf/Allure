@@ -17,7 +17,7 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
 		entity.heat = 1;
 		
 		const type = this.peekAmmo(tile);
-		const predict = Predict.intercept(tile, entity.target, type.speed));
+		const predict = Predict.intercept(tile, entity.target, type.speed);
 		const dst = entity.dst(predict.x, predict.y);
 		const maxTraveled = type.lifetime * type.speed);
 		
@@ -177,9 +177,9 @@ pB.lifetime = 156;
 
 const itemfunc = name => Vars.content.getByName(ContentType.item, name);
 
-const egg = itemfunc("draconium")
-const puprock = itemfunc("bluewolframite")
-const jem = itemfunc("amethyst-gem")
+const egg = itemfunc("draconium");
+const puprock = itemfunc("bluewolframite");
+const jem = itemfunc("amethyst-gem");
 
 cutefluffydoggo.ammo{
   egg, drB,
