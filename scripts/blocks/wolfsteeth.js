@@ -1,5 +1,3 @@
-const elib = require("effectlib");
-
 const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
   load(){
     this.super$load() 
