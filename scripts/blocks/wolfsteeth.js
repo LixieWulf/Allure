@@ -189,4 +189,4 @@ cutefluffydoggo.shootShake = 3;
 cutefluffydoggo.recoil = 6;
 cutefluffydoggo.shootEffect = Fx.lightningShoot;
 cutefluffydoggo.smokeEffect = Fx.shootPyraFlame;
-cutefluffydoggo.shootSound = corexplode;
+cutefluffydoggo.shootSound = Sounds.corexplode;
