@@ -181,11 +181,10 @@ const egg = itemfunc("exotic-mod-draconium");
 const puprock = itemfunc("exotic-mod-bluewolframite");
 const jem = itemfunc("exotic-mod-amethyst-gem");
 
-cutefluffydoggo.ammo(
-  egg, this.drB,
-  puprock, this.doB,
-  jem, this.pB
-);
+cutefluffydoggo.ammo.egg = drB;
+cutefluffydoggo.ammo.puprock = doB;
+cutefluffydoggo.ammo.jem = pB;
+
 cutefluffydoggo.shootShake = 3;
 cutefluffydoggo.recoil = 6;
 cutefluffydoggo.shootEffect = Fx.lightningShoot;
