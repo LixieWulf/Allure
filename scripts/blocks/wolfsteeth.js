@@ -175,7 +175,7 @@ pB.frontColor = Color.valueOf("b966cc");
 pB.backColor = Color.valueOf("8e479e");
 pB.lifetime = 156;
 
-const itemfunc = name => Vars.content.getByName(ContentType.item, name);
+const itemfunc = name => return Vars.content.getByName(ContentType.item, name);
 
 const egg = itemfunc("exotic-mod-draconium");
 const puprock = itemfunc("exotic-mod-bluewolframite");
