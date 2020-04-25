@@ -1,62 +1,3 @@
-const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
-  load(){
-    this.super$load() 
-    this.baseRegion = Core.atlas.find(this.name + "-base");
-  },
-  generateIcons: function(){
-    return [
-      Core.atlas.find("exotic-mod-wolfsteeth-base-icon"),
-      Core.atlas.find("exotic-mod-wolfsteeth-icon")
-    ];
-  },
-  shoot: function(tile, ammo){
-		const tr3 = new Vec2();
-		entity = tile.ent();
-		entity.shots++;
-		entity.recoil = this.recoil;
-		entity.heat = 1;
-		
-		const type = this.peekAmmo(tile);
-		const predict = Predict.intercept(tile, entity.target, type.speed);
-		const dst = entity.dst(predict.x, predict.y);
-		const maxTraveled = type.lifetime * type.speed;
-		
-    const i = entity.shots % 4;
-    const shift = [-23, -5, 5, -23];
-    const setback = [-8, 24, 24, -8];
-    
-		tr3.trns(entity.rotation - 90, shift[i], setback[i] - entity.recoil);
-    
-    Bullet.create(ammo, tile.entity, tile.getTeam(), tile.drawx() + tr3.x, tile.drawy() + tr3.y, entity.rotation + Mathf.range(this.inaccuracy + type.inaccuracy), type.speed, (dst / maxTraveled));
-
-		this.effects(tile);
-		this.useAmmo(tile);
-	},
-  effects: function(tile){
-		const tr3 = new Vec2();
-		entity = tile.ent();
-		
-		const i = entity.shots % 4;
-    const shift = [-23, -5, 5, -23];
-    const setback = [-8, 24, 24, -8];
-		
-		tr3.trns(entity.rotation - 90, shift[i], setback[i] - entity.recoil);
-    
-		const shootEffectB = this.shootEffect == Fx.none ? this.peekAmmo(tile).shootEffect : this.shootEffect;
-		const smokeEffectB = this.smokeEffect == Fx.none ? this.peekAmmo(tile).smokeEffect : this.smokeEffect;
-
-		Effects.effect(shootEffectB, tile.drawx() + tr3.x, tile.drawy() + tr3.y, entity.rotation);
-		Effects.effect(smokeEffectB, tile.drawx() + tr3.x, tile.drawy() + tr3.y, entity.rotation);
-		this.shootSound.at(tile, Mathf.random(0.9, 1.1));
-
-		if(this.shootShake > 0){
-		Effects.shake(this.shootShake, this.shootShake, tile.entity);
-		};
-
-		entity.recoil = this.recoil;
-	}
-});
-
 const drFF = extend(BasicBulletType,{});
 drFF.speed = 11;
 drFF.damage = 1000;
@@ -175,15 +116,72 @@ pB.frontColor = Color.valueOf("b966cc");
 pB.backColor = Color.valueOf("8e479e");
 pB.lifetime = 156;
 
-const itemfunc = name => Vars.content.getByName(ContentType.item, name) ;
+const itemfunc = name => Vars.content.getByName(ContentType.item, name);
 
-const egg = itemfunc("exotic-mod-draconium");
-const puprock = itemfunc("exotic-mod-bluewolframite");
-const jem = itemfunc("exotic-mod-amethyst-gem");
+const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
+  load(){
+    this.super$load() 
+    this.baseRegion = Core.atlas.find(this.name + "-base");
+  },
+  generateIcons: function(){
+    return [
+      Core.atlas.find("exotic-mod-wolfsteeth-base-icon"),
+      Core.atlas.find("exotic-mod-wolfsteeth-icon")
+    ];
+  },
+  shoot: function(tile, ammo){
+		const tr3 = new Vec2();
+		entity = tile.ent();
+		entity.shots++;
+		entity.recoil = this.recoil;
+		entity.heat = 1;
+		
+		const type = this.peekAmmo(tile);
+		const predict = Predict.intercept(tile, entity.target, type.speed);
+		const dst = entity.dst(predict.x, predict.y);
+		const maxTraveled = type.lifetime * type.speed;
+		
+    const i = entity.shots % 4;
+    const shift = [-23, -5, 5, -23];
+    const setback = [-8, 24, 24, -8];
+    
+		tr3.trns(entity.rotation - 90, shift[i], setback[i] - entity.recoil);
+    
+    Bullet.create(ammo, tile.entity, tile.getTeam(), tile.drawx() + tr3.x, tile.drawy() + tr3.y, entity.rotation + Mathf.range(this.inaccuracy + type.inaccuracy), type.speed, (dst / maxTraveled));
 
-cutefluffydoggo.ammo.egg = drB;
-cutefluffydoggo.ammo.puprock = doB;
-cutefluffydoggo.ammo.jem = pB;
+		this.effects(tile);
+		this.useAmmo(tile);
+	},
+  effects: function(tile){
+		const tr3 = new Vec2();
+		entity = tile.ent();
+		
+		const i = entity.shots % 4;
+    const shift = [-23, -5, 5, -23];
+    const setback = [-8, 24, 24, -8];
+		
+		tr3.trns(entity.rotation - 90, shift[i], setback[i] - entity.recoil);
+    
+		const shootEffectB = this.shootEffect == Fx.none ? this.peekAmmo(tile).shootEffect : this.shootEffect;
+		const smokeEffectB = this.smokeEffect == Fx.none ? this.peekAmmo(tile).smokeEffect : this.smokeEffect;
+
+		Effects.effect(shootEffectB, tile.drawx() + tr3.x, tile.drawy() + tr3.y, entity.rotation);
+		Effects.effect(smokeEffectB, tile.drawx() + tr3.x, tile.drawy() + tr3.y, entity.rotation);
+		this.shootSound.at(tile, Mathf.random(0.9, 1.1));
+
+		if(this.shootShake > 0){
+		Effects.shake(this.shootShake, this.shootShake, tile.entity);
+		};
+
+		entity.recoil = this.recoil;
+	},
+  init(){
+    this.super$init();
+    this.ammo(itemfunc("exotic-mod-amethyst-gem", drB));
+    this.ammo(itemfunc("exotic-mod-bluewolframite", doB));
+    this.ammo(itemfunc("exotic-mod-draconium", pB));
+  }
+});
 
 cutefluffydoggo.shootShake = 3;
 cutefluffydoggo.recoil = 6;
