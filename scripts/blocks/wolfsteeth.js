@@ -116,8 +116,6 @@ pB.frontColor = Color.valueOf("b966cc");
 pB.backColor = Color.valueOf("8e479e");
 pB.lifetime = 156;
 
-const itemfunc = name => Vars.content.getByName(ContentType.item, name);
-
 const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
   load(){
     this.super$load() 
@@ -176,10 +174,10 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
 		entity.recoil = this.recoil;
 	},
   init(){
+    this.ammo(Vars.content.getByName(ContentType.item,"exotic-mod-amethyst-gem"),drB);
+    this.ammo(Vars.content.getByName(ContentType.item,"exotic-mod-bluewolframite"),doB);
+    this.ammo(Vars.content.getByName(ContentType.item,"exotic-mod-draconium"),pB);
     this.super$init();
-    this.ammo(itemfunc("exotic-mod-amethyst-gem", drB));
-    this.ammo(itemfunc("exotic-mod-bluewolframite", doB));
-    this.ammo(itemfunc("exotic-mod-draconium", pB));
   }
 });
 
