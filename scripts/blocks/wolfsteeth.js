@@ -155,8 +155,8 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
 		entity = tile.ent();
 		
 		const i = entity.shots % 4;
-    const shift = [-23, -5, 5, -23];
-    const setback = [-8, 24, 24, -8];
+    const shift = [-23, -5, 5, 23];
+    const setback = [32, 64, 64, 32];
 		
 		tr3.trns(entity.rotation - 90, shift[i], setback[i] - entity.recoil);
     
@@ -174,9 +174,7 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
 		entity.recoil = this.recoil;
 	},
   init(){
-    this.ammo(Vars.content.getByName(ContentType.item,"exotic-mod-amethyst-gem"),drB);
-    this.ammo(Vars.content.getByName(ContentType.item,"exotic-mod-bluewolframite"),doB);
-    this.ammo(Vars.content.getByName(ContentType.item,"exotic-mod-draconium"),pB);
+    this.ammo(Vars.content.getByName(ContentType.item,"exotic-mod-amethyst-gem"),drB, Vars.content.getByName(ContentType.item,"exotic-mod-bluewolframite"),doB, Vars.content.getByName(ContentType.item,"exotic-mod-draconium"), pB);
     this.super$init();
   }
 });
