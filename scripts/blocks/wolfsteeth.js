@@ -1,5 +1,5 @@
 const drFF = extend(BasicBulletType,{});
-drFF.speed = 11;
+drFF.speed = 10;
 drFF.damage = 1000;
 drFF.bulletSprite = "exotic-mod-railbolt";
 drFF.bulletWidth = 5;
@@ -7,18 +7,18 @@ drFF.bulletHeight = 15;
 drFF.shootEffect = Fx.shootBig;
 drFF.bulletShrink = 0;
 drFF.smokeEffect = Fx.shootBigSmoke;
-drFF.homingRange = 480;
+drFF.homingRange = 128;
 drFF.homingPower = 0.01;
 drFF.status = StatusEffects.melting;
 drFF.hitEffect = Fx.hitMeltdown;
 drFF.splashDamage = 1000;
 drFF.splashDamageRadius = 100;
-drFF.lifetime = 64;
+drFF.lifetime = 128;
 drFF.frontColor = Color.valueOf("f53b11");
 drFF.backColor = Color.valueOf("d92800");
 
 const drF = extend(BasicBulletType,{});
-drF.speed = 11;
+drF.speed = 10;
 drF.damage = 1000;
 drF.bulletSprite = "exotic-mod-railbolt";
 drF.bulletWidth = 15;
@@ -26,7 +26,7 @@ drF.bulletHeight = 45;
 drF.shootEffect = Fx.shootBig;
 drF.bulletShrink = 0;
 drF.smokeEffect = Fx.shootBigSmoke;
-drF.homingRange = 480;
+drF.homingRange = 128;
 drF.homingPower = 0.01;
 drF.status = StatusEffects.melting;
 drF.hitEffect = Fx.hitMeltdown;
@@ -41,17 +41,17 @@ drF.fragBullets = 5;
 drF.fragBullet = drFF;
 
 const drB = extend(BasicBulletType,{});
-drB.speed = 11;
+drB.speed = 10;
 drB.damage = 30000;
 drB.bulletSprite = "exotic-mod-railbolt";
 drB.bulletWidth = 20;
 drB.bulletHeight = 60;
 drB.shootEffect = Fx.shootBig;
 drB.smokeEffect = Fx.shootBigSmoke;
-drB.lifetime = 128;
+drB.lifetime = 32;
 drB.status = StatusEffects.melting;
 drB.hitEffect = Fx.hitMeltdown;
-drB.homingRange = 480;
+drB.homingRange = 128;
 drB.homingPower = 0.01;
 drB.ammoMultiplier = 3;
 drB.bulletShrink = 0;
@@ -74,7 +74,7 @@ doL.lightining = 10;
 doL.lightningLength = 50;
 
 const doB = extend(BasicBulletType,{});
-doB.speed = 10;
+doB.speed = 9;
 doB.damage = 100000;
 doB.bulletSprite = "exotic-mod-railbolt";
 doB.bulletWidth = 24;
@@ -83,12 +83,12 @@ doB.shootEffect = Fx.shootBig;
 doB.smokeEffect = Fx.shootBigSmoke;
 doB.bulletShrink = 0;
 doB.status = StatusEffects.burning;
-doB.homingRange = 480;
+doB.homingRange = 128;
 doB.homingPower = 0.01;
 doB.hitEffect = Fx.padlaunch;
 doB.splashDamage = 25000;
 doB.splashDamageRadius = 100;
-doB.lifetime = 180;
+doB.lifetime = 176;
 doB.ammoMultiplier = 4;
 doB.frontColor = Color.valueOf("40ccff");
 doB.backColor = Color.valueOf("1397F0");
@@ -98,7 +98,7 @@ doB.fragBullets = 100;
 doB.fragBullet = doL;
 
 const pB = extend(BasicBulletType,{});
-pB.speed = 19;
+pB.speed = 8;
 pB.damage = 25000;
 pB.bulletSprite = "exotic-mod-railbolt";
 pB.pierce = true;
@@ -110,11 +110,11 @@ pB.ammoMultiplier = 5;
 pB.smokeEffect = Fx.shootBigSmoke;
 pB.status = StatusEffects.freezing;
 pB.hitEffect = Fx.shootBig;
-pB.homingRange = 480;
+pB.homingRange = 128;
 pB.homingPower = 0.002;
 pB.frontColor = Color.valueOf("b966cc");
 pB.backColor = Color.valueOf("8e479e");
-pB.lifetime = 156;
+pB.lifetime = 176;
 
 const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
   load(){
@@ -140,8 +140,8 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
 		const maxTraveled = type.lifetime * type.speed;
 		
     const i = entity.shots % 4;
-    const shift = [-23, -5, 5, -23];
-    const setback = [-8, 24, 24, -8];
+    const shift = [-23, -5, 5, 23];
+    const setback = [32, 64, 64, 32];
     
 		tr3.trns(entity.rotation - 90, shift[i], setback[i] - entity.recoil);
     
@@ -174,7 +174,7 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
 		entity.recoil = this.recoil;
 	},
   init(){
-    this.ammo(Vars.content.getByName(ContentType.item,"exotic-mod-amethyst-gem"),drB, Vars.content.getByName(ContentType.item,"exotic-mod-bluewolframite"),doB, Vars.content.getByName(ContentType.item,"exotic-mod-draconium"), pB);
+    this.ammo(Vars.content.getByName(ContentType.item,"exotic-mod-amethyst-gem"),pB Vars.content.getByName(ContentType.item,"exotic-mod-bluewolframite"),doB, Vars.content.getByName(ContentType.item,"exotic-mod-draconium"), drB);
     this.super$init();
   }
 });

@@ -21,19 +21,19 @@ shootEffect: hitMeltdown
 shootSound: corexplode
 shootCone: 25
 rotateSpeed: 0.25
-range: 800
+range: 1000
 ammo: {
   draconium: {
-    speed: 13
+    speed: 9
     damage: 20000
     bulletSprite: exotic-mod-railbolt
     bulletWidth: 14
     bulletHeight: 42
-    lifetime: 74
+    lifetime: 112
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
     status: melting
-    homingRange: 160
+    homingRange: 128
     homingPower: 0.01
     splashDamage: 10000
     splashDamageRadius: 258
@@ -47,16 +47,16 @@ ammo: {
     fragVelocityMax: 1.1
     fragBullets: 5
     fragBullet: {
-      speed: 13
+      speed: 9
       damage: 1000
       bulletSprite: exotic-mod-railbolt
       bulletWidth: 7
       bulletHeight: 21
       hitEffect: pulverizeRed
       despawnEffect: pulverizeRed
-      lifetime: 37
+      lifetime: 56
       status: melting
-      homingRange: 160
+      homingRange: 128
       homingPower: 0.01
       bulletShrink: 0
       frontColor: f53b11
@@ -65,16 +65,16 @@ ammo: {
       fragVelocityMax: 1.1
       fragBullets: 5
       fragBullet: {
-        speed: 13
+        speed: 9
         damage: 1000
         bulletSprite: exotic-mod-railbolt
         bulletWidth: 3.5
         bulletHeight: 10.5
-        lifetime: 37
+        lifetime: 28
         hitEffect: shootBig
         despawnEffect: shootBig
         status: melting
-        homingRange: 160
+        homingRange: 128
         homingPower: 0.01
         bulletShrink: 0
         frontColor: f53b11
@@ -83,39 +83,39 @@ ammo: {
     }
   }
   amethyst-gem: {
-    speed: 9
+    speed: 7
     damage: 250
     bulletSprite: exotic-mod-railbolt
     pierce: true
     bulletWidth: 12
     bulletHeight: 36
-    lifetime: 107
+    lifetime: 120
     hitEffect: shootBig
     bulletShrink: 0
     despawnEffect: shootBig
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
     status: freezing
-    homingRange: 160
+    homingRange: 128
     homingPower: 0.002
     ammoMultiplier: 4
     frontColor: b966cc
     backColor: 8e479e
   }
   bluewolframite: {
-    speed: 11
+    speed: 8
     damage: 750
     bulletSprite: exotic-mod-railbolt
     bulletWidth: 16
     bulletHeight: 48
-    lifetime: 109
+    lifetime: 120
     bulletShrink: 0
     hitEffect: padlaunch
     despawnEffect: padlaunch
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
     status: burning
-    homingRange: 160
+    homingRange: 128
     homingPower: 0.01
     splashDamage: 1000
     splashDamageRadius: 100
