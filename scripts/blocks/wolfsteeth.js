@@ -175,16 +175,16 @@ pB.frontColor = Color.valueOf("b966cc");
 pB.backColor = Color.valueOf("8e479e");
 pB.lifetime = 156;
 
-const itemfunc = name => Vars.content.getByName(ContentType.item, name);
+const itemfunc = name => Vars.content.getByName(ContentType.item, name) ;
 
 const egg = itemfunc("exotic-mod-draconium");
 const puprock = itemfunc("exotic-mod-bluewolframite");
 const jem = itemfunc("exotic-mod-amethyst-gem");
 
 cutefluffydoggo.ammo(
-  egg, drB,
-  puprock, doB,
-  jem, pB
+  egg, this.drB,
+  puprock, this.doB,
+  jem, this.pB
 );
 cutefluffydoggo.shootShake = 3;
 cutefluffydoggo.recoil = 6;
