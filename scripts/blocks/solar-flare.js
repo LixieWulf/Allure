@@ -32,34 +32,6 @@ var lenscales = [1, 1.12, 1.15, 1.17];
 var tmpColor = new Color();
 const vec = new Vec2();
 
-const beam = newEffect(60, e => {
-  for(var s = 0; s < 4; s++){
-    Draw.blend(Blending.additive);
-    Draw.color(tmpColor.set(colors[s]).mul(1.0 + Mathf.absin(Time.time(), 1.0, 0.3)));
-    for(var i = 0; i < 4; i++){
-      for(var v = 0; v < lasers - 3; v++){
-        strokes = [2.5, 1.875, 1.25, 0.375];
-        vec.trns(e.rot() - 90, spacing[v], position[v]);
-        var angleB = spread[v];
-        var baseLen = length[v] * e.fout();
-        Tmp.v1.trns(e.rot() + angleB + 180.0, (pullscales[i] - 1.0) * 55.0);
-        Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * e.fout() * strokes[s] * tscales[i]);
-        Lines.lineAngle(e.x + Tmp.v1.x + vec.x, e.y + Tmp.v1.y + vec.y, e.rot() + angleB, baseLen * e.fout() * lenscales[i], CapStyle.none);
-      }
-      for(var r = lasers - 3; r < lasers; r++){
-        strokes = [3.75, 2.8125, 1.875, 0.5625];
-        vec.trns(e.rot() - 90, spacing[r], position[r]);
-        var angleB = spread[r];
-        var baseLen = length[r] * e.fout();
-        Tmp.v1.trns(e.rot() + angleB + 180.0, (pullscales[i] - 1.0) * 55.0);
-        Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * e.fout() * strokes[s] * tscales[i]);
-        Lines.lineAngle(e.x + Tmp.v1.x + vec.x, e.y + Tmp.v1.y + vec.y, e.rot() + angleB, baseLen * e.fout() * lenscales[i], CapStyle.none);
-      }
-    }
-    Draw.blend();
-  }
-});
-
 solarflare.consumes.add(new ConsumeLiquidFilter(boolf(liquid=>liquid.temperature<=0.5&&liquid.flammability<0.1), 0.5 * fluidCostMultiplier)).update(false);
 solarflare.coolantMultiplier = 1 / fluidCostMultiplier;
 
@@ -85,7 +57,30 @@ solarflare.shootType = extend(BasicBulletType, {
     }
   },
   draw: function(b){
-    Effects.effect(beam, this.x, this.y, this.rotation);
+    
+    for(var s = 0; s < 4; s++){
+      Draw.color(tmpColor.set(colors[s]).mul(1.0 + Mathf.absin(Time.time(), 1.0, 0.3)));
+      for(var i = 0; i < 4; i++){
+        for(var v = 0; v < lasers - 3; v++){
+          strokes = [2.5, 1.875, 1.25, 0.375];
+          vec.trns(b.rot() - 90, spacing[v], position[v]);
+          var angleB = spread[v];
+          var baseLen = length[v] * b.fout();
+          Tmp.v1.trns(b.rot() + angleB + 180.0, (pullscales[i] - 1.0) * 55.0);
+          Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
+          Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() + angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
+        }
+        for(var r = lasers - 3; r < lasers; r++){
+          strokes = [3.75, 2.8125, 1.875, 0.5625];
+          vec.trns(b.rot() - 90, spacing[r], position[r]);
+          var angleB = spread[r];
+          var baseLen = length[r] * b.fout();
+          Tmp.v1.trns(b.rot() + angleB + 180.0, (pullscales[i] - 1.0) * 55.0);
+          Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
+          Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() + angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
+        }
+      }
+    };
     Draw.reset();
   }
 });
