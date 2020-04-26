@@ -59,6 +59,7 @@ solarflare.shootType = extend(BasicBulletType, {
   draw: function(b){
     
     for(var s = 0; s < 4; s++){
+      Draw.blend(Blending.additive);
       Draw.color(tmpColor.set(colors[s]).mul(1.0 + Mathf.absin(Time.time(), 1.0, 0.3)));
       for(var i = 0; i < 4; i++){
         for(var v = 0; v < lasers - 3; v++){
@@ -80,6 +81,7 @@ solarflare.shootType = extend(BasicBulletType, {
           Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() + angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
         }
       }
+      Draw.blend();
     };
     Draw.reset();
   }
