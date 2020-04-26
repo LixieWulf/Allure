@@ -5,7 +5,7 @@ A cousin of the Meltdown. Heavily damages blocks and inflicts a status effect th
 
 MEEP went mad with power so it has a few extra beams.
 '''
-size: 4
+size: 8
 health: 3400
 range: 500
 reload: 300

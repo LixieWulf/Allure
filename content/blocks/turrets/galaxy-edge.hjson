@@ -4,7 +4,7 @@ description:
 Fires short beams of star material that obliterate everything.
 [red]Note: May set everything on fire.
 '''
-size: 4
+size: 8
 health: 3800
 range: 160
 reload: 480
