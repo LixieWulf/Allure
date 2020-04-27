@@ -4,8 +4,7 @@ const bluewolframiteConduit = extendContent(Conduit, "bluewolframite-conduit", {
     for(var i = 0; i < this.topRegions.length; i++){
       this.topRegions[i] = Core.atlas.find(this.name + "-top-" + i);
       this.botRegions[i] = Core.atlas.find(this.name + "-bottom-" + i);
-    }
-    
+    },
     //I'm not gonna bother making it not called rainbow.
     for(i = 0; i < 8; i++){
       this.pulseReg0[i] = Core.atlas.find("bluewolframite-rainbow-0-" + i);
@@ -17,14 +16,14 @@ const bluewolframiteConduit = extendContent(Conduit, "bluewolframite-conduit", {
       this.pulseReg6[i] = Core.atlas.find("bluewolframite-rainbow-6-" + i);
     }
     this.pulseRegAll = [pulseReg0, pulseReg1, pulseReg2, pulseReg3, pulseReg4, pulseReg5, pulseReg6]
-  }
+  },
   onProximityUpdate(Tile tile){
     this.super$onProximityUpdate(tile);
 
     ConduitEntity entity = tile.ent();
     var bits = buildBlending(tile, tile.rotation(), null, true);
     entity.blendbits = bits[0];
-  }
+  },
   drawLayer: function(tile){
 		//const tr2 = new Vec2();
 		
