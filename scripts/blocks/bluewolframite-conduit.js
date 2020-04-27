@@ -15,7 +15,6 @@ const bluewolframiteConduit = extendContent(Conduit, "bluewolframite-conduit", {
       this.pulseReg5[i] = Core.atlas.find(this.name + "rainbow-5-" + i);
       this.pulseReg6[i] = Core.atlas.find(this.name + "rainbow-6-" + i);
     }
-    this.pulseRegAll = [pulseReg0, pulseReg1, pulseReg2, pulseReg3, pulseReg4, pulseReg5, pulseReg6]
   },
   drawLayer: function(tile){
 		//const tr2 = new Vec2();
@@ -26,11 +25,56 @@ const bluewolframiteConduit = extendContent(Conduit, "bluewolframite-conduit", {
 		this.tr.trns(condRotation, 0);
 
 		Draw.rect(this.topRegions, tile.drawx() + this.tr.x, tile.drawy() + this.tr.y, condRotation - 90);
-
-		for(var h = 0; h < 6; h++){
-			Draw.color(Color.valueOf("91FFFF").shiftSaturation((Time.time() * 5) + (h * 17)));
-			Draw.rect(this.pulseRegAll[bits[0]][h], tile.drawx() + this.tr.x, tile.drawy() + this.tr.y, condRotation - 90);
-			Draw.color();
-		}
+    
+    Draw.color(Color.valueOf("91FFFF").shiftSaturation((Time.time() * 5) + (h * 17)));
+    
+    if(this.bits[0] == 0){
+      for(var h = 0; h < 6; h++){
+        Draw.rect(this.pulseReg0[h], tile.drawx() + this.tr.x, tile.drawy() + this.tr.y, condRotation - 90);
+        Draw.color();
+      }
+    }
+    if(this.bits[0] == 1){
+      for(var h = 0; h < 6; h++){
+        Draw.rect(this.pulseReg1[h], tile.drawx() + this.tr.x, tile.drawy() + this.tr.y, condRotation - 90);
+        Draw.color();
+      }
+    }
+    if(this.bits[0] == 2){
+      for(var h = 0; h < 6; h++){
+        Draw.rect(this.pulseReg2[h], tile.drawx() + this.tr.x, tile.drawy() + this.tr.y, condRotation - 90);
+        Draw.color();
+      }
+    }
+    if(this.bits[0] == 3){
+      for(var h = 0; h < 6; h++){
+        Draw.rect(this.pulseReg3[h], tile.drawx() + this.tr.x, tile.drawy() + this.tr.y, condRotation - 90);
+        Draw.color();
+      }
+    }
+    if(this.bits[0] == 4){
+      for(var h = 0; h < 6; h++){
+        Draw.rect(this.pulseReg4[h], tile.drawx() + this.tr.x, tile.drawy() + this.tr.y, condRotation - 90);
+        Draw.color();
+      }
+    }
+    if(this.bits[0] == 5){
+      for(var h = 0; h < 6; h++){
+        Draw.rect(this.pulseReg5[h], tile.drawx() + this.tr.x, tile.drawy() + this.tr.y, condRotation - 90);
+        Draw.color();
+      }
+    }
+    if(this.bits[0] == 6){
+      for(var h = 0; h < 6; h++){
+        Draw.rect(this.pulseReg6[h], tile.drawx() + this.tr.x, tile.drawy() + this.tr.y, condRotation - 90);
+        Draw.color();
+      }
+    }
+    if(this.bits[0] == 7){
+      for(var h = 0; h < 6; h++){
+        Draw.rect(this.pulseReg7[h], tile.drawx() + this.tr.x, tile.drawy() + this.tr.y, condRotation - 90);
+        Draw.color();
+      }
+    }
 	}
 });
