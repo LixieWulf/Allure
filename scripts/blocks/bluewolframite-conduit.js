@@ -17,7 +17,7 @@ const bluewolframiteConduit = extendContent(Conduit, "bluewolframite-conduit", {
     }
     this.pulseRegAll = [pulseReg0, pulseReg1, pulseReg2, pulseReg3, pulseReg4, pulseReg5, pulseReg6]
   },
-  onProximityUpdate(Tile tile){
+  onProximityUpdate(tile){
     this.super$onProximityUpdate(tile);
 
     ConduitEntity entity = tile.ent();
