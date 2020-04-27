@@ -15,6 +15,7 @@ const bluewolframiteConduit = extendContent(Conduit, "bluewolframite-conduit", {
       this.pulseReg5[i] = Core.atlas.find(this.name + "-rainbow-5-" + i);
       this.pulseReg6[i] = Core.atlas.find(this.name + "-rainbow-6-" + i);
     }
+    this.pulseRegAll = [pulseReg0, pulseReg1, pulseReg2, pulseReg3, pulseReg4, pulseReg5, pulseReg6]
   },
   drawLayer: function(tile){
 		//const tr2 = new Vec2();
@@ -26,9 +27,14 @@ const bluewolframiteConduit = extendContent(Conduit, "bluewolframite-conduit", {
 
 		Draw.rect(this.topRegions, tile.drawx() + this.tr.x, tile.drawy() + this.tr.y, condRotation - 90);
     
-    Draw.color(Color.valueOf("91FFFF").shiftSaturation((Time.time() * 5) + (h * 17)));
+    for(var h = 0; h < 6; h++){
+			Draw.color(Color.valueOf("91FFFF").shiftSaturation((Time.time() * 5) + (h * 17)));
+			Draw.rect(this.pulseRegAll[bits[0]][h], tile.drawx() + this.tr.x, tile.drawy() + this.tr.y, entity.rotation - 90);
+			Draw.color();
+		}
     
-    if(this.bits[0] == 0){
+    
+    /*if(this.bits[0] == 0){
       for(var h = 0; h < 8; h++){
         Draw.rect(this.pulseReg0[h], tile.drawx() + this.tr.x, tile.drawy() + this.tr.y, condRotation - 90);
         Draw.color();
@@ -75,6 +81,17 @@ const bluewolframiteConduit = extendContent(Conduit, "bluewolframite-conduit", {
         Draw.rect(this.pulseReg7[h], tile.drawx() + this.tr.x, tile.drawy() + this.tr.y, condRotation - 90);
         Draw.color();
       }
-    }
+    }*/
 	}
 });
+
+bluewolframiteConduit.update = true;
+bluewolframiteConduit.pulseReg0 = [];
+bluewolframiteConduit.pulseReg1 = [];
+bluewolframiteConduit.pulseReg2 = [];
+bluewolframiteConduit.pulseReg3 = [];
+bluewolframiteConduit.pulseReg4 = [];
+bluewolframiteConduit.pulseReg5 = [];
+bluewolframiteConduit.pulseReg6 = [];
+bluewolframiteConduit.pulseReg7 = [];
+bluewolframiteConduit.pulseRegAll = [];
