@@ -17,13 +17,6 @@ const bluewolframiteConduit = extendContent(Conduit, "bluewolframite-conduit", {
     }
     this.pulseRegAll = [pulseReg0, pulseReg1, pulseReg2, pulseReg3, pulseReg4, pulseReg5, pulseReg6]
   },
-  onProximityUpdate(tile){
-    this.super$onProximityUpdate(tile);
-
-    ConduitEntity entity = tile.ent();
-    var bits = buildBlending(tile, tile.rotation(), null, true);
-    entity.blendbits = bits[0];
-  },
   drawLayer: function(tile){
 		//const tr2 = new Vec2();
 		
