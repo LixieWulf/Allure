@@ -4,7 +4,7 @@ const bluewolframiteConduit = extendContent(Conduit, "bluewolframite-conduit", {
     for(var i = 0; i < this.topRegions.length; i++){
       this.topRegions[i] = Core.atlas.find(this.name + "-top-" + i);
       this.botRegions[i] = Core.atlas.find(this.name + "-bottom-" + i);
-    },
+    }
     //I'm not gonna bother making it not called rainbow.
     for(i = 0; i < 8; i++){
       this.pulseReg0[i] = Core.atlas.find("bluewolframite-rainbow-0-" + i);
