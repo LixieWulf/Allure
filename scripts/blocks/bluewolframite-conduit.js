@@ -7,13 +7,13 @@ const bluewolframiteConduit = extendContent(Conduit, "bluewolframite-conduit", {
     }
     //I'm not gonna bother making it not called rainbow.
     for(var i = 0; i < 8; i++){
-      this.pulseReg0[i] = Core.atlas.find("bluewolframite-rainbow-0-" + i);
-      this.pulseReg1[i] = Core.atlas.find("bluewolframite-rainbow-1-" + i);
-      this.pulseReg2[i] = Core.atlas.find("bluewolframite-rainbow-2-" + i);
-      this.pulseReg3[i] = Core.atlas.find("bluewolframite-rainbow-3-" + i);
-      this.pulseReg4[i] = Core.atlas.find("bluewolframite-rainbow-4-" + i);
-      this.pulseReg5[i] = Core.atlas.find("bluewolframite-rainbow-5-" + i);
-      this.pulseReg6[i] = Core.atlas.find("bluewolframite-rainbow-6-" + i);
+      this.pulseReg0[i] = Core.atlas.find(this.name + "rainbow-0-" + i);
+      this.pulseReg1[i] = Core.atlas.find(this.name + "rainbow-1-" + i);
+      this.pulseReg2[i] = Core.atlas.find(this.name + "rainbow-2-" + i);
+      this.pulseReg3[i] = Core.atlas.find(this.name + "rainbow-3-" + i);
+      this.pulseReg4[i] = Core.atlas.find(this.name + "rainbow-4-" + i);
+      this.pulseReg5[i] = Core.atlas.find(this.name + "rainbow-5-" + i);
+      this.pulseReg6[i] = Core.atlas.find(this.name + "rainbow-6-" + i);
     }
     this.pulseRegAll = [pulseReg0, pulseReg1, pulseReg2, pulseReg3, pulseReg4, pulseReg5, pulseReg6]
   },
