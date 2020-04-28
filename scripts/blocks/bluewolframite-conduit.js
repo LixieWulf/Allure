@@ -28,7 +28,7 @@ const bluewolframiteConduit = extendContent(Conduit, "bluewolframite-conduit", {
     
     for(var h = 0; h < 8; h++){
 			Draw.color(Color.valueOf("91FFFF").shiftSaturation((Time.time() * 5) + (h * 17)));
-			Draw.rect(this.pulseRegAll[somethingidk][h], tile.drawx(), tile.drawy(), rotation);
+			Draw.rect(this.pulseRegAll[entity.blendbits][h], tile.drawx(), tile.drawy(), rotation);
 			Draw.color();
 		}
 	}
