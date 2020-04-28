@@ -23,7 +23,7 @@ const bluewolframiteConduit = extendContent(Conduit, "bluewolframite-conduit", {
 		entity = tile.ent();
     rotation = tile.rotation() * 90;
     
-    somethingidk = 0;
+    somethingidk = this.super$draw(tile).bits[0];
     
     for(var h = 0; h < 8; h++){
 			Draw.color(Color.valueOf("91FFFF").shiftSaturation((Time.time() * 5) + (h * 17)));
