@@ -1,5 +1,3 @@
-const solarflare = new LaserTurret("solar-flare");
-
 //Normally takes 30/sec to cool. Change this to multiply that amount.
 var fluidCostMultiplier = 5;
 
@@ -34,6 +32,36 @@ const vec = new Vec2();
 
 solarflare.consumes.add(new ConsumeLiquidFilter(boolf(liquid=>liquid.temperature<=0.5&&liquid.flammability<0.1), 0.5 * fluidCostMultiplier)).update(false);
 solarflare.coolantMultiplier = 1 / fluidCostMultiplier;
+
+const theSun = newEffect(60, e => {
+  const sunRegion = Core.atlas.find("exotic-mod-solar-flare-sun");
+  
+  Draw.blend(Blending.additive);
+	Draw.color(Color.valueOf("722a18"), Color.valueOf("36080230"), e.fin());
+	Draw.rect(lightRegion, e.x, e.y, 270);
+	Draw.blend();
+});
+const sunshine = newEffect(20, e => {
+  
+  Draw.color(Color.valueOf("fff200"), Color.white, e.fin());
+  Lines.stroke(e.fout() * 8);
+  Lines.circle(e.x, e.y, e.fin() * 18); //draw a circle whose radius goes from 0 to 100
+});
+
+const solarflare = new LaserTurret("solar-flare", {
+  drawLayer(){
+    this.super$drawLayer();
+    
+    vec.trns(entity.rotation, 0, -9.5 - entity.recoil);
+    Effects.effect(theSun, entity.x, entity.y + vec.y, 270);
+  },
+  updateShooting(){
+    this.super$updateShooting();
+    
+    vec.trns(entity.rotation, 0, -9.5 - entity.recoil);
+    Effects.effect(sunshine, entity.x, entity.y + vec.y, 270);
+  }
+});
 
 solarflare.shootType = extend(BasicBulletType, {
   update: function(b){
