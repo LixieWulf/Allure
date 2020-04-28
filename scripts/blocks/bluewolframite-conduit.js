@@ -24,8 +24,6 @@ const bluewolframiteConduit = extendContent(Conduit, "bluewolframite-conduit", {
     entity = tile.ent();
     rotation = tile.rotation() * 90;
     
-    somethingidk = entity.blendbits;
-    
     for(var h = 0; h < 8; h++){
 			Draw.color(Color.valueOf("91FFFF").shiftSaturation((Time.time() * 8) + (h * 17)));
 			Draw.rect(this.pulseRegAll[entity.blendbits][h], tile.drawx(), tile.drawy(), rotation);
@@ -41,5 +39,4 @@ bluewolframiteConduit.pulseReg3 = [];
 bluewolframiteConduit.pulseReg4 = [];
 bluewolframiteConduit.pulseReg5 = [];
 bluewolframiteConduit.pulseReg6 = [];
-bluewolframiteConduit.pulseReg7 = [];
 bluewolframiteConduit.pulseRegAll = [];
