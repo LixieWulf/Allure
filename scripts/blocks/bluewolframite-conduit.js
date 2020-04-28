@@ -18,27 +18,27 @@ const bluewolframiteConduit = extendContent(Conduit, "bluewolframite-conduit", {
     this.pulseRegAll = [this.pulseReg0, this.pulseReg1, this.pulseReg2, this.pulseReg3, this.pulseReg4, this.pulseReg5, this.pulseReg6]
   },
   onProximityUpdate(tile){
-    this.super$onProximityUpdate
+    this.super$onProximityUpdate();
   },
   draw(tile){
     entity = tile.ent();
-    this.rotation = tile.rotation() * 90;
+    var rotation = tile.rotation() * 90;
 
     Draw.colorl(0.34f);
-    Draw.rect(botRegions[entity.blendbits], tile.drawx(), tile.drawy(), this.rotation);
+    Draw.rect(botRegions[entity.blendbits], tile.drawx(), tile.drawy(), rotation);
 
     Draw.color(tile.entity.liquids.current().color);
     Draw.alpha(entity.smoothLiquid);
-    Draw.rect(botRegions[entity.blendbits], tile.drawx(), tile.drawy(), this.rotation);
+    Draw.rect(botRegions[entity.blendbits], tile.drawx(), tile.drawy(), rotation);
     Draw.color();
 
-    Draw.rect(topRegions[entity.blendbits], tile.drawx(), tile.drawy(), this.rotation);
+    Draw.rect(topRegions[entity.blendbits], tile.drawx(), tile.drawy(), rotation);
     
     somethingidk = entity.blendbits;
     
     for(var h = 0; h < 8; h++){
 			Draw.color(Color.valueOf("91FFFF").shiftSaturation((Time.time() * 5) + (h * 17)));
-			Draw.rect(this.pulseRegAll[somethingidk][h], tile.drawx(), tile.drawy(), this.rotation);
+			Draw.rect(this.pulseRegAll[somethingidk][h], tile.drawx(), tile.drawy(), rotation);
 			Draw.color();
 		}
 	}
