@@ -22,23 +22,23 @@ const bluewolframiteConduit = extendContent(Conduit, "bluewolframite-conduit", {
   },
   draw(tile){
     entity = tile.ent();
-    var rotation = tile.rotation() * 90;
+    this.rotation = tile.rotation() * 90;
 
     Draw.colorl(0.34f);
-    Draw.rect(botRegions[entity.blendbits], tile.drawx(), tile.drawy(), rotation);
+    Draw.rect(botRegions[entity.blendbits], tile.drawx(), tile.drawy(), this.rotation);
 
     Draw.color(tile.entity.liquids.current().color);
     Draw.alpha(entity.smoothLiquid);
-    Draw.rect(botRegions[entity.blendbits], tile.drawx(), tile.drawy(), rotation);
+    Draw.rect(botRegions[entity.blendbits], tile.drawx(), tile.drawy(), this.rotation);
     Draw.color();
 
-    Draw.rect(topRegions[entity.blendbits], tile.drawx(), tile.drawy(), rotation);
+    Draw.rect(topRegions[entity.blendbits], tile.drawx(), tile.drawy(), this.rotation);
     
     somethingidk = entity.blendbits;
     
     for(var h = 0; h < 8; h++){
 			Draw.color(Color.valueOf("91FFFF").shiftSaturation((Time.time() * 5) + (h * 17)));
-			Draw.rect(this.pulseRegAll[somethingidk][h], tile.drawx(), tile.drawy(), rotation);
+			Draw.rect(this.pulseRegAll[somethingidk][h], tile.drawx(), tile.drawy(), this.rotation);
 			Draw.color();
 		}
 	}
