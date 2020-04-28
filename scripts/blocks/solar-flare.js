@@ -30,9 +30,6 @@ var lenscales = [1, 1.12, 1.15, 1.17];
 var tmpColor = new Color();
 const vec = new Vec2();
 
-solarflare.consumes.add(new ConsumeLiquidFilter(boolf(liquid=>liquid.temperature<=0.5&&liquid.flammability<0.1), 0.5 * fluidCostMultiplier)).update(false);
-solarflare.coolantMultiplier = 1 / fluidCostMultiplier;
-
 const theSun = newEffect(60, e => {
   const sunRegion = Core.atlas.find("exotic-mod-solar-flare-sun");
   
@@ -62,6 +59,9 @@ const solarflare = new LaserTurret("solar-flare", {
     Effects.effect(sunshine, entity.x, entity.y + vec.y, 270);
   }
 });
+
+solarflare.consumes.add(new ConsumeLiquidFilter(boolf(liquid=>liquid.temperature<=0.5&&liquid.flammability<0.1), 0.5 * fluidCostMultiplier)).update(false);
+solarflare.coolantMultiplier = 1 / fluidCostMultiplier;
 
 solarflare.shootType = extend(BasicBulletType, {
   update: function(b){
