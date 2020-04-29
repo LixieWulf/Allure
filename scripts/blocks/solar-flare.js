@@ -45,7 +45,7 @@ const sunshine = newEffect(20, e => {
   Lines.circle(e.x, e.y, e.fin() * 18); //draw a circle whose radius goes from 0 to 100
 });
 
-const solarflare = new LaserTurret("solar-flare", {
+const solarflare = extendContent(LaserTurret, "solar-flare", {
   drawLayer(tile){
     this.super$drawLayer(tile);
     
