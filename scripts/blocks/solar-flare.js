@@ -54,7 +54,7 @@ const solarflare = extendContent(LaserTurret, "solar-flare", {
     vec.trns(entity.rotation, 0, -38 - entity.recoil);
     Effects.effect(theSun, entity.x, entity.y + vec.y, 270);
   },
-  shoot(tile){
+  shoot(tile, type){
     this.super$shoot(tile, type);
     
     entity = tile.ent();
