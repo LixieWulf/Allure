@@ -39,7 +39,7 @@ const theSun = newEffect(30, e => {
 	Draw.blend();
 });
 const sunlight = newEffect(30, e => {
-  Draw.blend(Blending.additive);
+  Draw.blend(Blending.additive);]
   Draw.color(Color.valueOf("fff2009B"), Color.valueOf("ffffa39B"), e.fin());
   Lines.stroke(e.fout() * 8);
   Lines.circle(e.x, e.y, e.fin() * 18);
