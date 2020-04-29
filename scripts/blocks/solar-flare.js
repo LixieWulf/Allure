@@ -49,11 +49,15 @@ const solarflare = new LaserTurret("solar-flare", {
   drawLayer(tile){
     this.super$drawLayer(tile);
     
+    entity = tile.ent();
+    
     vec.trns(entity.rotation, 0, -9.5 - entity.recoil);
     Effects.effect(theSun, entity.x, entity.y + vec.y, 270);
   },
   updateShooting(tile){
     this.super$updateShooting(tile);
+    
+    entity = tile.ent();
     
     vec.trns(entity.rotation, 0, -9.5 - entity.recoil);
     Effects.effect(sunshine, entity.x, entity.y + vec.y, 270);
