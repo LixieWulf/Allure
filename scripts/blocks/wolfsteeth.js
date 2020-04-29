@@ -174,8 +174,9 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
 		entity.recoil = this.recoil;
 	},
   init(){
-    this.ammo(Vars.content.getByName(ContentType.item,"exotic-mod-amethyst-gem"),pB, Vars.content.getByName(ContentType.item,"exotic-mod-bluewolframite"), doB, Vars.content.getByName(ContentType.item,"exotic-mod-draconium"), drB);
     this.super$init();
+    
+    this.ammo(Vars.content.getByName(ContentType.item,"exotic-mod-amethyst-gem"),pB, Vars.content.getByName(ContentType.item,"exotic-mod-bluewolframite"), doB, Vars.content.getByName(ContentType.item,"exotic-mod-draconium"), drB);
   }
 });
 
