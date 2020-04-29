@@ -35,7 +35,7 @@ const theSun = newEffect(60, e => {
   
   Draw.blend(Blending.additive);
 	Draw.color(Color.valueOf("722a18"), Color.valueOf("36080230"), e.fin());
-	Draw.rect(lightRegion, e.x, e.y, 270);
+	Draw.rect(sunRegion, e.x, e.y, 270);
 	Draw.blend();
 });
 const sunshine = newEffect(20, e => {
