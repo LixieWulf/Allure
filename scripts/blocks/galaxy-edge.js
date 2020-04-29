@@ -100,9 +100,17 @@ galaxyEdge.shootType = extend(BasicBulletType, {
 
 galaxyEdge.shootType.hitEffect = Fx.hitMeltdown;
 galaxyEdge.shootType.despawnEffect = Fx.none;
-galaxyEdge.shootType.damage = 580785;
+galaxyEdge.shootType.damage = 5807850;
 galaxyEdge.shootType.hitSize = 4;
 galaxyEdge.shootType.lifetime = 16;
 galaxyEdge.shootType.drawSize = 420;
 galaxyEdge.shootType.pierce = true;
 galaxyEdge.shootType.speed = 0.001;
+
+//make the beam inflict a status effect. Remove if you don't want a status effect applied.
+damg = new StatusEffect("the-sun-is-a-deadly-laser");
+//damage per tick like usual
+damg.damage = 580785;
+damg.effect = Fx.burning;
+damg.armorMultiplier = 0.1;
+solarflare.shootType.status = damg
