@@ -132,4 +132,4 @@ corn = new StatusEffect("the-sun-is-a-deadly-laser");
 corn.damage = 40000;
 corn.effect = Fx.burning;
 corn.armorMultiplier = 0.1;
-solarflare.shootType.status = corn
+solarflare.shootType.status = corn;

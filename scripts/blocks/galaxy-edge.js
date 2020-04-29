@@ -113,4 +113,4 @@ damg = new StatusEffect("the-sun-is-a-deadly-laser");
 damg.damage = 580785;
 damg.effect = Fx.burning;
 damg.armorMultiplier = 0.1;
-solarflare.shootType.status = damg
+solarflare.shootType.status = damg;
