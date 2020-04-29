@@ -57,11 +57,9 @@ const solarflare = extendContent(LaserTurret, "solar-flare", {
     
     entity = tile.ent();
     
-    if(entity.bullet != null){
-      //if(entity.timer.get(1, 10)){
+    if(entity.bulletLife > 0 && entity.bullet != null){
       vec.trns(entity.rotation - 90, 0, -9.5 - entity.recoil);
       Effects.effect(theSun, entity.x + vec.x, entity.y + vec.y, 270);
-      //}
     }
   }
 });
