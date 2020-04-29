@@ -40,7 +40,7 @@ const theSun = newEffect(60, e => {
 });
 const sunshine = newEffect(20, e => {
   
-  Draw.color(Color.valueOf("fff200"), Color.valueOf("ffffa3"), e.fin());
+  Draw.color(Color.valueOf("fff2009B"), Color.valueOf("ffffa39B"), e.fin());
   Lines.stroke(e.fout() * 8);
   Lines.circle(e.x, e.y, e.fin() * 18); //draw a circle whose radius goes from 0 to 100
 });
