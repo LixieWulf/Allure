@@ -71,7 +71,7 @@ solarflare.consumes.add(new ConsumeLiquidFilter(boolf(liquid=>liquid.temperature
 solarflare.coolantMultiplier = 1 / fluidCostMultiplier;
 
 solarflare.shootType = extend(BasicBulletType, {
-  update(b){
+  update: function(b){
     if(b.timer.get(1, 5)){
         for(var v = 0; v < lasers; v++){
             vec.trns(b.rot() - 90, spacing[v], position[v]);
@@ -91,7 +91,7 @@ solarflare.shootType = extend(BasicBulletType, {
       }
     }
   },
-  draw(b){
+  draw: function(b){
     
     for(var s = 0; s < 4; s++){
       Draw.color(tmpColor.set(colors[s]).mul(1.0 + Mathf.absin(Time.time(), 1.0, 0.3)));
