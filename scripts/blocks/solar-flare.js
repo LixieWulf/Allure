@@ -38,6 +38,7 @@ const theSun = newEffect(30, e => {
 	Draw.rect(sunRegion, e.x, e.y, 270);
 	Draw.blend();
 });
+
 const sunlight = newEffect(15, e => {
   Draw.blend(Blending.additive);
   Draw.color(Color.valueOf("fff2009B"), Color.valueOf("ffffa39B"), e.fin());
@@ -57,13 +58,16 @@ const solarflare = extendContent(LaserTurret, "solar-flare", {
     Draw.rect(sunSunYee, entity.x + vec.x, entity.y + vec.y, 270);
     Effects.effect(theSun, entity.x + vec.x, entity.y + vec.y, 270);
   },
-  updateShooting(tile){
-    this.super$updateShooting(tile);
+  update(tile){
+    this.super$update(tile);
     
     entity = tile.ent();
     
     vec.trns(entity.rotation - 90, 0, -9.5 - entity.recoil);
-    Effects.effect(sunlight, entity.x + vec.x, entity.y + vec.y, 270);
+    
+    if(entity.timer.get(1, 10)){
+      Effects.effect(sunlight, entity.x + vec.x, entity.y + vec.y, 270);
+    }
   }
 });
 
