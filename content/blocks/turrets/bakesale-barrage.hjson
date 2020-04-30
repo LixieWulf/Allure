@@ -26,7 +26,7 @@ shootSound: missile
 maxAmmo: 90
 ammo: {
   cookienite: {
-    bulletType: MissileBulletType
+    type: MissileBulletType
     trailColor: C9A58F
     bulletSprite: exotic-mod-cookietitemissile
     frontColor: B28768
@@ -51,7 +51,7 @@ ammo: {
     weaveMagnitude: 8
   }
   cookienite-baked: {
-    bulletType: MissileBulletType
+    type: MissileBulletType
     trailColor: B28768
     bulletSprite: exotic-mod-cookietitemissile
     frontColor: 8F665B

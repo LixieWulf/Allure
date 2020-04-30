@@ -18,13 +18,9 @@ weaponOffsetX: 5.24
 weaponOffsetY: 12
 weapon: {
   name: leviathan-cannon
-  bulletWidth: 16
-  bulletHeight: 16
   ejectEffect: none
   length: 12
   width: 5.24
-  lifetime: 250
-  range: 250
   reload: 11
   recoil: 1
   shots: 1

@@ -14,7 +14,7 @@ weapon: {
   length: 1.5
   reload: 10
   width: 0.5
-  alternate: "true"
+  alternate: true
   recoil: 2
   bullet: {
     type: HealBulletType

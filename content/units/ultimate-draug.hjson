@@ -27,7 +27,6 @@ minePower: 10
 weapon: {
   name: draug-miner-lancer
   length: 10
-  damage: 20
   reload: 8
   alternate: true
   bullet: lancerLaser

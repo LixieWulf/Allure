@@ -7,7 +7,6 @@ speed: 0.02
 maxSpeed: 0.04
 mass: 35
 drag: 0.03
-retreatPercent: 0
 engineOffset: 28
 engineSize: 6
 weapon: {
@@ -39,7 +38,7 @@ weapon: {
       lifetime: 300
       shootEffect: shootBig
       smokeEffect: shootBigSmoke
-      effects: burning
+      effect: burning
       homingRange: 69420
       homingPower: 0.25
       frontColor: d92800
@@ -55,15 +54,13 @@ weapon: {
         lifetime: 300
         shootEffect: shootBig
         smokeEffect: shootBigSmoke
-        effects: burning
+        effect: burning
         homingRange: 69420
         homingPower: 0.25
         frontColor: d92800
         backColor: d92800
       }
     }
-    bulletWidth: 10
-    bulletHeight: 18
     shootEffect: shootBig
   }
 }

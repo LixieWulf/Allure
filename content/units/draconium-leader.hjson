@@ -14,7 +14,7 @@ weapon: {
   length: 4
   recoil: 50
   shake: 10
-  innacuracy: 10
+  inaccuracy: 10
   shots: 4
   spacing: 0
   shotDelay: 3

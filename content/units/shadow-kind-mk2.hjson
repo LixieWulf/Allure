@@ -10,7 +10,4 @@ weapon: {
   width: 4
   bullet: lancerLaser
   reload: 0.01
-  damage: 3000
-  frontColor: ff0000
-  backColor: ff0000
 }

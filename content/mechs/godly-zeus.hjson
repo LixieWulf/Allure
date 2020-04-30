@@ -32,7 +32,6 @@ weapon: {
       homingRange: 90
       lightining: 20
       lightningLength: 50
-      lightningDamage: 90000
       hitShake: 5
     }
   }

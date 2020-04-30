@@ -28,7 +28,7 @@ ammo: {
     bulletHeight: 21
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
-    effects: burning
+    effect: burning
     homingRange: 99
     homingPower: 99
     ammoMultiplier: 20
@@ -42,7 +42,7 @@ ammo: {
     bulletHeight: 21
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
-    effects: burning
+    effect: burning
     ammoMultiplier: 20
     frontColor: 91c3ff
     backColor: 91c3ff
@@ -54,11 +54,11 @@ ammo: {
     bulletHeight: 21
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
-    effects: freezing
+    effect: freezing
     ammoMultiplier: 10
     frontColor: 91c3ff
     backColor: 91c3ff
-    Lifetime: 200
+    lifetime: 200
   }
 }
 requirements: [
