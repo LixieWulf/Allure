@@ -108,7 +108,7 @@ galaxyEdge.shootType.pierce = true;
 galaxyEdge.shootType.speed = 0.001;
 
 //make the beam inflict a status effect. Remove if you don't want a status effect applied.
-damg = new StatusEffect("the-sun-is-a-deadly-laser");
+damg = new StatusEffect("the-power-of-the-cosmos");
 //damage per tick like usual
 damg.damage = 580785;
 damg.effect = Fx.burning;
