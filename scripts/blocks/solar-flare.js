@@ -42,7 +42,7 @@ const sunshine = newEffect(60, e => {
   Draw.blend(Blending.additive);
   Draw.color(Color.valueOf("fff2009B"), Color.valueOf("ffffa39B"), e.fin());
   Lines.stroke(e.fout() * 8);
-  Lines.circle(e.x, e.y, e.fin() * 18);
+  Lines.circle(e.x, e.y, e.fin() * 12.5);
   Draw.blend();
 });
 
