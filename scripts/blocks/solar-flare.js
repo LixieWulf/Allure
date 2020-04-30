@@ -30,7 +30,7 @@ var lenscales = [1, 1.12, 1.15, 1.17];
 var tmpColor = new Color();
 const vec = new Vec2();
 
-const theSun = newEffect(60, e => {
+const theSun = newEffect(15, e => {
   const sunRegion = Core.atlas.find("exotic-mod-solar-flare-sun");
   
   Draw.blend(Blending.additive);
@@ -38,10 +38,10 @@ const theSun = newEffect(60, e => {
 	Draw.rect(sunRegion, e.x, e.y, 270);
 	Draw.blend();
 });
-const sunshine = newEffect(60, e => {
+const sunshine = newEffect(15, e=> {
   Draw.blend(Blending.additive);
   Draw.color(Color.valueOf("fff2009B"), Color.valueOf("ffffa39B"), e.fin());
-  Lines.stroke(e.fout() * 8);
+  Lines.stroke(e.fout() * 4);
   Lines.circle(e.x, e.y, e.fin() * 12.5);
   Draw.blend();
 });
@@ -50,14 +50,17 @@ const solarflare = extendContent(LaserTurret, "solar-flare", {
   drawLayer(tile){
     this.super$drawLayer(tile);
     const sunSunYee = Core.atlas.find("exotic-mod-solar-flare-sun");
+    this.tiem = 0;
     
     entity = tile.ent();
+    randX = Mathf.range(-1.0, 1.0);
+    randY = Mathf.range(-1.0, 1.0);
     
     vec.trns(entity.rotation - 90, 0, -9.5 - entity.recoil);
     Draw.rect(sunSunYee, entity.x + vec.x, entity.y + vec.y, 0);
-    Effects.effect(theSun, entity.x + vec.x, entity.y + vec.y, 0);
+    Effects.effect(theSun, entity.x + vec.x + randX, entity.y + vec.y + randY, 0);
     if(entity.timer.get(1, 15)){
-      Effects.effect(sunshine, entity.x + vec.x, entity.y + vec.y, 0);
+      Effects.effect(sunshine, entity.x + vec.x + randX, entity.y + vec.y + randY, 0);
     };
   }
 });

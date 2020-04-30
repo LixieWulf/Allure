@@ -113,4 +113,4 @@ damg = new StatusEffect("the-power-of-the-cosmos");
 damg.damage = 580785;
 damg.effect = Fx.burning;
 damg.armorMultiplier = 0.1;
-solarflare.shootType.status = damg;
+galaxyEdge.shootType.status = damg;
