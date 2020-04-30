@@ -39,63 +39,63 @@ galaxyEdge.consumes.add(new ConsumeLiquidFilter(boolf(liquid=>liquid.temperature
 galaxyEdge.coolantMultiplier = 1 / fluidCostMultiplier;
 
 galaxyEdge.shootType = extend(BasicBulletType, {
-    update: function(b){
-        if(b.timer.get(1, 5)){
-            for(var v = 0; v < lasers; v++){
-                vec.trns(b.rot() - 90, spacing[v], position[v]);
-                Tmp.v1.trns(b.rot() + angleB + 180.0, (pullscales[4] - 1.0) * 55.0);
-                var angleB = spread[v];
-                var baseLen = length[v] * b.fout();
-                Damage.collideLine(b, b.getTeam(), this.hitEffect, b.x + vec.x, b.y + vec.y, b.rot() + angleB, length[v] + length[v]/8, true);
-            }
-        };
-    },
-    hit(b,hitx,hity){
-        Effects.effect(this.hitEffect,Color.valueOf("f7d95e"),hitx!=null?hitx:b.x,hity!=null?hity:b.y);
-        //Uncomment the following 3 lines to have incend. Chance is 0 to 1. Copy/past the Fire.create line multiple times to create more fire at once.
-        if(Mathf.chance(0.9)){
-            for(var a = 0; a < 69; a++){
-                Damage.createIncend(hitx, hity, 64, 10);
-            }
-        }
-    },
-    draw: function(b){
-        
-        for(var s = 0; s < 4; s++){
-            Draw.color(tmpColor.set(colors3[s]).mul(1.0 + Mathf.absin(Time.time(), 1.0, 0.3)).shiftHue(Time.time() * 1.5));
-            for(var i = 0; i < 4; i++){
-                for(var v = 3; v < 5; v++){
-                    vec.trns(b.rot() - 90, spacing[v], position[v]);
-                    Tmp.v1.trns(b.rot() + angleB + 180.0, (pullscales[i] - 1.0) * 55.0);
-                    var angleB = spread[v];
-                    var baseLen = length[v] * b.fout();
-                    Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
-                    Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() + angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
-                }
-            }
-            Draw.color(tmpColor.set(colors2[s]).mul(1.0 + Mathf.absin(Time.time(), 1.0, 0.3)).shiftHue(Time.time() * 1.5));
-            for(var i = 0; i < 4; i++){
-                for(var v = 1; v < 3; v++){
-                    vec.trns(b.rot() - 90, spacing[v], position[v]);
-                    Tmp.v1.trns(b.rot() + angleB + 180.0, (pullscales[i] - 1.0) * 55.0);
-                    var angleB = spread[v];
-                    var baseLen = length[v] * b.fout();
-                    Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
-                    Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() + angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
-                }
-            }
-            Draw.color(tmpColor.set(colors1[s]).mul(1.0 + Mathf.absin(Time.time(), 1.0, 0.3)).shiftHue(Time.time() * 1.5));
-            for(var i = 0; i < 4; i++){
-                vec.trns(b.rot() - 90, spacing[0], position[0]);
-                Tmp.v1.trns(b.rot() + angleB + 180.0, (pullscales[i] - 1.0) * 55.0);
-                var angleB = spread[0];
-                var baseLen = length[0] * b.fout();
-                Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
-                Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() + angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
-            }
-        };
-        Draw.reset();
+  update: function(b){
+    if(b.timer.get(1, 5)){
+      for(var v = 0; v < lasers; v++){
+        vec.trns(b.rot() - 90, spacing[v], position[v]);
+        Tmp.v1.trns(b.rot() + angleB + 180.0, (pullscales[4] - 1.0) * 55.0);
+        var angleB = spread[v];
+        var baseLen = length[v] * b.fout();
+        Damage.collideLine(b, b.getTeam(), this.hitEffect, b.x + vec.x, b.y + vec.y, b.rot() + angleB, length[v] + length[v]/8, true);
+      }
+  };
+  },
+  hit(b,hitx,hity){
+      if(hitx != null && hity != null){
+    Effects.effect(this.hitEffect, Color.valueOf("ffffffaa"), hitx, hity);
+    if(Mathf.chance(0.8)){
+      for(ohno = 0; ohno < 69; ohno++) {
+        Damage.createIncend(hitx, hity, 12, 3);
+      }
     }
+  }
+  },
+  draw: function(b){
+    for(var s = 0; s < 4; s++){
+      Draw.color(tmpColor.set(colors3[s]).mul(1.0 + Mathf.absin(Time.time(), 1.0, 0.3)).shiftHue(Time.time() * 1.5));
+      for(var i = 0; i < 4; i++){
+        for(var v = 3; v < 5; v++){
+          vec.trns(b.rot() - 90, spacing[v], position[v]);
+          Tmp.v1.trns(b.rot() + angleB + 180.0, (pullscales[i] - 1.0) * 55.0);
+          var angleB = spread[v];
+          var baseLen = length[v] * b.fout();
+          Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
+            Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() + angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
+        }
+      }
+      Draw.color(tmpColor.set(colors2[s]).mul(1.0 + Mathf.absin(Time.time(), 1.0, 0.3)).shiftHue(Time.time() * 1.5));
+      for(var i = 0; i < 4; i++){
+        for(var v = 1; v < 3; v++){
+          vec.trns(b.rot() - 90, spacing[v], position[v]);
+          Tmp.v1.trns(b.rot() + angleB + 180.0, (pullscales[i] - 1.0) * 55.0);
+          var angleB = spread[v];
+          var baseLen = length[v] * b.fout();
+          Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
+          Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() + angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
+        }
+      }
+      Draw.color(tmpColor.set(colors1[s]).mul(1.0 + Mathf.absin(Time.time(), 1.0, 0.3)).shiftHue(Time.time() * 1.5));
+      for(var i = 0; i < 4; i++){
+        vec.trns(b.rot() - 90, spacing[0], position[0]);
+        Tmp.v1.trns(b.rot() + angleB + 180.0, (pullscales[i] - 1.0) * 55.0);
+        var angleB = spread[0];
+        var baseLen = length[0] * b.fout();
+        Lines.stroke((4 + Mathf.absin(Time.time(), 0.8, 1.5)) * b.fout() * strokes[s] * tscales[i]);
+        Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() + angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
+      }
+    };
+    Draw.reset();
+  }
 });
 
 galaxyEdge.shootType.hitEffect = Fx.hitMeltdown;

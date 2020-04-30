@@ -71,21 +71,22 @@ solarflare.coolantMultiplier = 1 / fluidCostMultiplier;
 solarflare.shootType = extend(BasicBulletType, {
   update: function(b){
     if(b.timer.get(1, 5)){
-        for(var v = 0; v < lasers; v++){
-            vec.trns(b.rot() - 90, spacing[v], position[v]);
-            Tmp.v1.trns(b.rot() + angleB + 180.0, (pullscales[4] - 1.0) * 55.0);
-            var angleB = spread[v];
-            var baseLen = length[v] * b.fout();
-            Damage.collideLine(b, b.getTeam(), this.hitEffect, b.x + vec.x, b.y + vec.y, b.rot() + angleB, length[v] + length[v]/8.75, true);
-        }
+      for(var v = 0; v < lasers; v++){
+        vec.trns(b.rot() - 90, spacing[v], position[v]);
+        Tmp.v1.trns(b.rot() + angleB + 180.0, (pullscales[4] - 1.0) * 55.0);
+        var angleB = spread[v];
+        var baseLen = length[v] * b.fout();
+        Damage.collideLine(b, b.getTeam(), this.hitEffect, b.x + vec.x, b.y + vec.y, b.rot() + angleB, length[v] + length[v]/8.75, true);
+      }
     };
   },
   hit(b,hitx,hity){
-    Effects.effect(this.hitEffect,Color.valueOf("f7d95e"),hitx!=null?hitx:b.x,hity!=null?hity:b.y);
-    //Uncomment the following 3 lines to have incend. Chance is 0 to 1. Copy/past the Fire.create line multiple times to create more fire at once.
-    if(Mathf.chance(0.8)){
-      for(ohno = 0; ohno < 69; ohno++) {
-        Damage.createIncend(hitx, hity, 12, 3);
+    if(hitx != null && hity != null){
+			Effects.effect(this.hitEffect, Color.valueOf("ffec6eaa"), hitx, hity);
+			if(Mathf.chance(0.8)){
+        for(ohno = 0; ohno < 69; ohno++) {
+          Damage.createIncend(hitx, hity, 12, 3);
+        }
       }
     }
   },
