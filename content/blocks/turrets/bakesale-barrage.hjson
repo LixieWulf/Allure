@@ -6,7 +6,8 @@ description:
   '''
 type: ItemTurret
 health: 9001
-hasLiquid: false
+consumes: {
+}
 reload: 1
 heatColor: FEB380
 shots: 7

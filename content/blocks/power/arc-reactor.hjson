@@ -9,7 +9,6 @@ powerProduction: 1000000
 plasmas: 4
 plasma1: 666666
 plasma2: 3b3b3b
-explosionColor: 000000
 consumes: {
   power: 100
   items: {

@@ -13,7 +13,7 @@ xRand: 0
 ammoUseEffect: shellEjectBig
 shootCone: 25
 maxAmmo: 48
-rotateSpeed: 0.25
+rotatespeed: 0.25
 range: 1200
 cooldown: 0.005
 restitution: 0.01

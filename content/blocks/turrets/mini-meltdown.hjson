@@ -13,12 +13,8 @@ reload: 0.012
 recoil: 3
 ammoUseEffect: shellEjectBig
 shootCone: 24
-rotateSpeed: 100
-chargeTime: 15
-chargeEffects: 5
-chargeMaxDelay: 4
-shootDuration: 165
-canOverdrive: true
+shootDuration: 220
+firingMoveFract: 0.5
 range: 190
 requirements: [
   surge-alloy/10

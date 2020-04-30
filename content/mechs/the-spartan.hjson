@@ -4,16 +4,9 @@ health: 30000
 hitsize: 54
 flying: true
 speed: 0.02
-range: 76
-attackLength: 50
-rotatespeed: 0.01
-baseRotateSpeed: 0.04
-shootCone: 120
 mass: 35
-rotateWeapon: true
 drag: 0.03
-maxVelocity: 0.4
-retreatPercent: 0
+maxSpeed: 0.4
 engineOffset: 28
 engineSize: 6
 weapon: {

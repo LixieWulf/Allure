@@ -7,7 +7,8 @@ flying: true
 health: 100
 engineOffset: 2
 engineSize: 3
-rotateSpeed: 3
+baseRotateSpeed: 1
+rotatespeed: 3
 attackLength: 240
 range: 10
 mass: 60
@@ -21,7 +22,6 @@ toMine: [
   lead
   cookienite
 ]
-drillPower: 10
 itemCapacity: 69
 minePower: 10
 weapon: {

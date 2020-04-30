@@ -18,9 +18,9 @@ maxAmmo: 24
 recoil: 6
 ammoUseEffect: shellEjectBig
 shootEffect: hitMeltdown
-shootSound: corexplode
+shootSound: shotgun
 shootCone: 25
-rotateSpeed: 0.25
+rotatespeed: 0.25
 range: 1000
 ammo: {
   draconium: {

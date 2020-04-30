@@ -3,7 +3,6 @@ type: FlyingUnit
 description: A unit made from the mysterious shadow ore.. it fires a powerful laser.
 speed: 6
 drag: 0.6
-engineColor: 000000
 flying: true
 health: 6000
 weaponOffsetY: 2

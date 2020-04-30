@@ -16,9 +16,9 @@ shots: 1
 recoil: 6
 ammoUseEffect: shellEjectBig
 shootEffect: hitLancer
-shootSound: corexplode
+shootSound: shotgun
 shootCone: 25
-rotateSpeed: 0.25
+rotatespeed: 0.25
 maxAmmo: 12
 range: 800
 ammo: {

@@ -1,6 +1,5 @@
 name: Leviathan
 description: A gigantic ship with great destructive power. A Carrier Dropship This is the testing phase for the unit creation
-type: Mech
 flying: true
 speed: 0.6
 maxSpeed: 1
@@ -11,12 +10,10 @@ health: 15000
 engineSize: 9
 engineOffset: 22
 engineColor: ad66d4
-rotatespeed: 0.1
 buildPower: 10
-miningPower: 200
+drillPower: 200
 mineSpeed: 40
 itemCapacity: 10000
-drillPower: 10
 weaponOffsetX: 5.24
 weaponOffsetY: 12
 weapon: {

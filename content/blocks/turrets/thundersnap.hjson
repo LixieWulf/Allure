@@ -5,7 +5,7 @@ range: 800
 reload: 60
 shootSound: shotgun
 shootCone: 15
-rotateSpeed: 0.5
+rotatespeed: 0.5
 powerUse: 5
 targetAir: true
 targetGround: true

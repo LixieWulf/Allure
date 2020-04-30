@@ -7,7 +7,6 @@ drag: 0.1
 flying: true
 rotateWeapon: true
 health: 2500
-engineColor: 7575c8
 engineOffset: 12
 range: 90
 shootCone: 30

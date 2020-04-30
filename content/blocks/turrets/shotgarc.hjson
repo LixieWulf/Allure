@@ -7,7 +7,7 @@ shootSound: spark
 shootCone: 40
 shots: 50
 shootType: arc
-rotateSpeed: 100
+rotatespeed: 100
 powerUse: 1
 targetAir: true
 targetGround: true

@@ -16,7 +16,7 @@ recoil: 10
 ammoUseEffect: shellEjectBig
 shootCone: 25
 maxAmmo: 50
-rotateSpeed: 0.25
+rotatespeed: 0.25
 range: 369
 ammo: {
   draconium: {

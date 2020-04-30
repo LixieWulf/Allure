@@ -9,13 +9,14 @@ engineOffset: 2
 range: 100
 weaponOffsetY: 7
 engineSize: 3
+baseRotateSpeed: 1
 rotateSpeed: 3
+rotatespeed: 3
 shootCone: 1
 mass: 1500
 targetAir: true
 rotateWeapon: true
 weapon: {
-  name: Javelin
   shots: 15
   speed: 1
   length: 0.9

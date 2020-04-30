@@ -18,7 +18,7 @@ retreatPercent: 0
 engineOffset: 28
 engineSize: 6
 weapon: {
-  name: Shadows Ruling
+  name: shadowscepter
   length: 1.5
   reload: 200
   alternate: true

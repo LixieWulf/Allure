@@ -13,7 +13,7 @@ recoil: 3
 shootEffect: shootBig
 ammoUseEffect: shellEjectBig
 shootCone: 25
-rotateSpeed: 1000
+rotatespeed: 1000
 range: 1600
 maxAmmo: 100
 outlineIcon: false

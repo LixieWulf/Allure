@@ -5,13 +5,12 @@ maxVelocity: 1
 speed: 0.12
 drag: 0.4
 range: 15
-targetDistance: 15
 mass: 8640
 hitsize: 20
 rotatespeed: 0.03
 health: 155552
 weapon: {
-  name: Dragons's Bite
+  name: nom
   length: 4
   recoil: 50
   shake: 10

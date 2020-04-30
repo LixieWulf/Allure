@@ -11,7 +11,7 @@ shots: 9
 recoil: 10
 ammoUseEffect: shellEjectBig
 shootCone: 25
-rotateSpeed: 1000
+rotatespeed: 1000
 range: 346
 consumes: {
   liquid: {

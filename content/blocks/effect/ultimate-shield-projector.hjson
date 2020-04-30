@@ -4,9 +4,7 @@ description: Using Blue-Wolframite electronics to produce a shield and then magi
 size: 3
 health: 10000
 radius: 260
-phaseRangeBoost: 112
-speedBoost: 10
-speedBoostPhase: 10
+phaseRadiusBoost: 112
 breakage: 2400000
 cooldownNormal: 1.2
 cooldownLiquid: 1

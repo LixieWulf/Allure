@@ -18,7 +18,6 @@ flying: true
 drag: 0.01
 mass: 0.3141592
 engineOffset: 8
-engineColor: b6c6fd
 weapon: {
   shots: 50
   inaccuracy: 10

@@ -3,12 +3,11 @@ type: HoverUnit
 description: A unit made from the mysterious shadow ore.. it fires a powerful laser. This version is upgraded to have pactically no reload.
 speed: 6
 drag: 0.6
-engineColor: 302f2f
 flying: true
 health: 12000
-weaponOffsetX: 4
 weapon: {
   name: missile-blaster
+  width: 4
   bullet: lancerLaser
   reload: 0.01
   damage: 3000

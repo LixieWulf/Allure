@@ -9,7 +9,6 @@ powerProduction: 650
 plasmas: 4
 plasma1: 94efff
 plasma2: 45e3ff
-explosionColor: 94efff
 consumes: {
   power: 16.7
   liquid: {
