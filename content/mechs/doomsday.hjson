@@ -38,7 +38,7 @@ weapon: {
       lifetime: 300
       shootEffect: shootBig
       smokeEffect: shootBigSmoke
-      effect: burning
+      status: burning
       homingRange: 69420
       homingPower: 0.25
       frontColor: d92800
@@ -54,7 +54,7 @@ weapon: {
         lifetime: 300
         shootEffect: shootBig
         smokeEffect: shootBigSmoke
-        effect: burning
+        status: burning
         homingRange: 69420
         homingPower: 0.25
         frontColor: d92800

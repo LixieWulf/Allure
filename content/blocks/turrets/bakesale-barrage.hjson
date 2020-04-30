@@ -48,7 +48,7 @@ ammo: {
     hitEffect: blockExplosion
     despawnEffect: blockExplosion
     weaveScale: 8
-    weaveMagnitude: 8
+    weaveMage: 8
   }
   cookienite-baked: {
     type: MissileBulletType
@@ -73,7 +73,7 @@ ammo: {
     hitEffect: blockExplosion
     despawnEffect: blockExplosion
     weaveScale: 8
-    weaveMagnitude: 8
+    weaveMag: 8
   }
 }
 requirements: [

@@ -42,7 +42,7 @@ weapon: {
     splashDamageRadius: 60
     incendChance: 100
     incendSpread: 20
-    incendAmmount: 69
+    incendAmount: 69
     hitShake: 1
     weaveScale: 8
     weaveMag: 8
