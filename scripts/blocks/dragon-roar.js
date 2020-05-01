@@ -8,5 +8,5 @@ const dwago = extendContent(DoubleTurret, "dragon-roar", {
 			Core.atlas.find("exotic-mod-dragon-roar-base-icon"),
 			Core.atlas.find("exotic-mod-dragon-roar-icon")
 		];
-	},
+	}
 });
