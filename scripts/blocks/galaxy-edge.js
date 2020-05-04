@@ -48,17 +48,17 @@ galaxyEdge.shootType = extend(BasicBulletType, {
         var baseLen = length[v] * b.fout();
         Damage.collideLine(b, b.getTeam(), this.hitEffect, b.x + vec.x, b.y + vec.y, b.rot() + angleB, length[v] + length[v]/8, true);
       }
-  };
+    };
   },
   hit(b,hitx,hity){
-      if(hitx != null && hity != null){
-    Effects.effect(this.hitEffect, Color.valueOf("ffffffaa"), hitx, hity);
-    if(Mathf.chance(0.8)){
-      for(ohno = 0; ohno < 69; ohno++) {
-        Damage.createIncend(hitx, hity, 12, 3);
+    if(hitx != null && hity != null){
+      Effects.effect(this.hitEffect, Color.valueOf("ffffffaa"), hitx, hity);
+      if(Mathf.chance(0.8)){
+        for(ohno = 0; ohno < 69; ohno++) {
+          Damage.createIncend(hitx, hity, 12, 3);
+        }
       }
     }
-  }
   },
   draw: function(b){
     for(var s = 0; s < 4; s++){
@@ -70,7 +70,7 @@ galaxyEdge.shootType = extend(BasicBulletType, {
           var angleB = spread[v];
           var baseLen = length[v] * b.fout();
           Lines.stroke((4 + Mathf.absin(Time.time() + (2 * s), 1.9, 1.3)) * b.fout() * strokes[s] * tscales[i]);
-            Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() + angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
+          Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() + angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
         }
       }
       Draw.color(tmpColor.set(colors2[s]).mul(1.0 + Mathf.absin(Time.time(), 1.0, 0.3)).shiftHue(Time.time() * 1.5));
@@ -80,7 +80,7 @@ galaxyEdge.shootType = extend(BasicBulletType, {
           Tmp.v1.trns(b.rot() + angleB + 180.0, (pullscales[i] - 1.0) * 55.0);
           var angleB = spread[v];
           var baseLen = length[v] * b.fout();
-          Lines.stroke(4 + Mathf.absin(Time.time() + (2 * s), 1.9, 1.3)) * b.fout() * strokes[s] * tscales[i]);
+          Lines.stroke((4 + Mathf.absin(Time.time() + (2 * s), 1.9, 1.3)) * b.fout() * strokes[s] * tscales[i]);
           Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() + angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
         }
       }
@@ -90,7 +90,7 @@ galaxyEdge.shootType = extend(BasicBulletType, {
         Tmp.v1.trns(b.rot() + angleB + 180.0, (pullscales[i] - 1.0) * 55.0);
         var angleB = spread[0];
         var baseLen = length[0] * b.fout();
-        Lines.stroke(4 + Mathf.absin(Time.time() + (2 * s), 1.9, 1.3)) * b.fout() * strokes[s] * tscales[i]);
+        Lines.stroke((4 + Mathf.absin(Time.time() + (2 * s), 1.9, 1.3)) * b.fout() * strokes[s] * tscales[i]);
         Lines.lineAngle(b.x + Tmp.v1.x + vec.x, b.y + Tmp.v1.y + vec.y, b.rot() + angleB, baseLen * b.fout() * lenscales[i], CapStyle.none);
       }
     };
