@@ -194,9 +194,9 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
     const yes = new Vec2();
     entity = tile.ent();
     
-    yes.trns(entity.rotation, 0, -entity.recoil);
+    yes.trns(entity.rotation, -entity.recoil);
     for(var l = 0; l < 4; l ++){
-      Draw.color(this.heatColor, entity.heat);
+      Draw.color(this.heatColor, this.barrelHeatCooldowns[l]);
       Draw.blend(Blending.additive);
       Draw.rect(this.barrelHeatRegions[l], tile.drawx() + yes.x, tile.drawy() + yes.y, entity.rotation - 90);
       Draw.blend();
