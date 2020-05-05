@@ -21,21 +21,37 @@ const levi = extendContent(Mech, "leviathan", {
     if(player.timer.get(Player.timerAbility, 900)){
 			for(var i = 0; i < 4; i ++){
         wr = UnitTypes.wraith.create(player.getTeam());
+        wr.setSpawner(player);
+        wr.set(player.drawx() + Mathf.range(4), player.drawy() + Mathf.range(4));
+        wr.add();
+        wr.velocity().y = 5;
         EventType.UnitCreateEvent(wr);
       }
 		}
     if(player.timer.get(Player.timerAbility, 1800)){
       for(var i = 0; i < 2; i ++){
         rev = UnitTypes.revenant.create(player.getTeam());
+        rev.setSpawner(player);
+        rev.set(player.drawx() + Mathf.range(4), player.drawy() + Mathf.range(4));
+        rev.add();
+        rev.velocity().y = 5;
         EventType.UnitCreateEvent(rev);
       }
 		}
     if(player.timer.get(Player.timerAbility, 3600)){
 			dra = UnitTypes.draug.create(player.getTeam());
+      dra.setSpawner(player);
+      dra.set(player.drawx() + Mathf.range(4), player.drawy() + Mathf.range(4));
+      dra.add();
+      dra.velocity().y = 5;
       EventType.UnitCreateEvent(dra);
 		}
     if(player.timer.get(Player.timerAbility, 18000)){
 			lic = UnitTypes.lich.create(player.getTeam());
+      lic.setSpawner(player);
+      lic.set(player.drawx() + Mathf.range(4), player.drawy() + Mathf.range(4));
+      lic.add();
+      lic.velocity().y = 5;
       EventType.UnitCreateEvent(lic);
 		}
   }
