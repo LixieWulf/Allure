@@ -209,5 +209,7 @@ cutefluffydoggo.recoil = 6;
 cutefluffydoggo.shootEffect = Fx.lightningShoot;
 cutefluffydoggo.smokeEffect = Fx.shootPyraFlame;
 cutefluffydoggo.shootSound = Sounds.shotgun;
+cutefluffydoggo.heatColor = Color.valueOf("00FFFF");
+cutefluffydoggo.cooldown = 0.005;
 cutefluffydoggo.barrelHeatCooldowns = [];
 cutefluffydoggo.barrelHeatRegions = [];

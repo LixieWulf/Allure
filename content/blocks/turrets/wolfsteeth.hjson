@@ -3,7 +3,6 @@ description: The largest railgun weapon ever invented. Fires rapidly from four r
 targetAir: true
 targetGround: true
 health: 10000000
-heatColor: 00FFFF
 size: 8
 inaccuracy: 10
 spread: 0
@@ -15,7 +14,6 @@ shootCone: 25
 maxAmmo: 48
 rotatespeed: 0.25
 range: 1200
-cooldown: 0.005
 restitution: 0.01
 outlineIcon: false
 requirements: [
