@@ -186,7 +186,7 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
     this.super$update(tile);
     
     for(var e = 0; e < 4; e ++){
-    this.barrelHeatCooldowns[e] = Mathf.lerpDelta(this.barrelHeatCooldowns[e], 0, this.cooldown);
+      this.barrelHeatCooldowns[e] = Mathf.lerpDelta(this.barrelHeatCooldowns[e], 0, this.cooldown);
     }
   },
   drawLayer(tile){
@@ -211,5 +211,5 @@ cutefluffydoggo.smokeEffect = Fx.shootPyraFlame;
 cutefluffydoggo.shootSound = Sounds.shotgun;
 cutefluffydoggo.heatColor = Color.valueOf("00FFFF");
 cutefluffydoggo.cooldown = 0.005;
-cutefluffydoggo.barrelHeatCooldowns = [];
+cutefluffydoggo.barrelHeatCooldowns = [0, 0, 0, 0];
 cutefluffydoggo.barrelHeatRegions = [];
