@@ -215,5 +215,5 @@ cutefluffydoggo.cooldown = 0.005;
 cutefluffydoggo.barrelHeatCooldowns = [0, 0, 0, 0];
 cutefluffydoggo.barrelHeatRegions = [];
 
-aaa = extend(Turret.TurretEntity), {});
+aaa = extend(Turret.TurretEntity, {});
 cutefluffydoggo.entityType = prov(() => aaa);
