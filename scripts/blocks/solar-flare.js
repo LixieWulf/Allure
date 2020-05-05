@@ -55,11 +55,11 @@ const solarflare = extendContent(LaserTurret, "solar-flare", {
     randX = Mathf.range(-1.0, 1.0);
     randY = Mathf.range(-1.0, 1.0);
     
-    vec.trns(entity.rotation - 90, 0, -9.5 - entity.recoil);
+    vec.trns(entity.rotation - 90, 0 + randX, -9.5 - entity.recoil + randY);
     Draw.rect(sunSunYee, entity.x + vec.x, entity.y + vec.y, 0);
-    Effects.effect(theSun, entity.x + vec.x + randX, entity.y + vec.y + randY, 0);
+    Effects.effect(theSun, entity.x + vec.x, entity.y + vec.y, 0);
     if(entity.timer.get(1, 15)){
-      Effects.effect(sunshine, entity.x + vec.x + randX, entity.y + vec.y + randY, 0);
+      Effects.effect(sunshine, entity.x + vec.x, entity.y + vec.y, 0);
     };
   }
 });
