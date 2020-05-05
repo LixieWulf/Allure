@@ -61,6 +61,6 @@ levi.weaponOffsetX = 5.24;
 levi.weaponOffsetY = 12;
 levi.weapon = levicannon;
 
-const levipad = extendContent(MechPad, "overseerpad", {});
+const levipad = extendContent(MechPad, "leviathan-mech-pad", {});
 
-becomeChaos.mech = levi;
+levipad.mech = levi;
