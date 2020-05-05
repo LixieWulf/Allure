@@ -116,7 +116,7 @@ pB.frontColor = Color.valueOf("b966cc");
 pB.backColor = Color.valueOf("8e479e");
 pB.lifetime = 176;
 
-const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
+const cutefluffydoggo = extendContent(DoubleTurret, "wolfsteeth", {
   load(){
     this.super$load();
     this.baseRegion = Core.atlas.find(this.name + "-base");
@@ -132,7 +132,7 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
   },
   shoot: function(tile, ammo){
 		const tr3 = new Vec2();
-		entity = tile.ent();
+		const entity = tile.ent();
 		entity.shots++;
 		entity.recoil = this.recoil;
 		entity.heat = 1;
@@ -157,7 +157,7 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
 	},
   effects: function(tile){
 		const tr3 = new Vec2();
-		entity = tile.ent();
+		const entity = tile.ent();
 		
 		const i = entity.shots % 4;
     const shift = [-23, -5, 5, 23];
@@ -192,7 +192,7 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
   drawLayer(tile){
     this.super$drawLayer(tile);
     const yes = new Vec2();
-    entity = tile.ent();
+    const entity = tile.ent();
     
     yes.trns(entity.rotation, -entity.recoil);
     for(var l = 0; l < 4; l ++){
@@ -214,3 +214,9 @@ cutefluffydoggo.heatColor = Color.valueOf("00FFFF");
 cutefluffydoggo.cooldown = 0.005;
 cutefluffydoggo.barrelHeatCooldowns = [0, 0, 0, 0];
 cutefluffydoggo.barrelHeatRegions = [];
+
+cutefluffydoggo.entityType = prov(() => {
+    const entity = extend(TurretEntity, {});
+
+    return entity;
+});
