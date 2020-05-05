@@ -18,33 +18,22 @@ const levi = extendContent(Mech, "leviathan", {
   updateAlt(player){
     this.super$updateAlt(player);
     
-    if(player.timer.get(Player.timerAbility, 900)){
-			for(var i = 0; i < 4; i ++){
+    if(player.timer.get(3, 120)){
+			for(var i = 0; i < 2; i ++){
         wr = UnitTypes.wraith.create(player.getTeam());
         wr.set(player.x + Mathf.range(4), player.y + Mathf.range(4));
         wr.add();
-        //useContent(tile, UnitTypes.wraith);
       }
 		}
-    if(player.timer.get(Player.timerAbility, 1800)){
-      for(var i = 0; i < 2; i ++){
-        rev = UnitTypes.revenant.create(player.getTeam());
-        rev.set(player.x + Mathf.range(4), player.y + Mathf.range(4));
-        rev.add();
-        //useContent(tile, UnitTypes.revenant);
-      }
+    if(player.timer.get(4, 600)){
+      rev = UnitTypes.revenant.create(player.getTeam());
+      rev.set(player.x + Mathf.range(4), player.y + Mathf.range(4));
+      rev.add();
 		}
-    if(player.timer.get(Player.timerAbility, 3600)){
-			dra = UnitTypes.draug.create(player.getTeam());
-      dra.set(player.x + Mathf.range(4), player.y + Mathf.range(4));
-      dra.add();
-      //useContent(tile, UnitTypes.draug);
-		}
-    if(player.timer.get(Player.timerAbility, 18000)){
-			lic = UnitTypes.lich.create(player.getTeam());
-      lic.set(player.x + Mathf.range(4), player.y + Mathf.range(4));
-      lic.add();
-      //useContent(tile, UnitTypes.lich);
+    if(player.timer.get(5, 1800)){
+			mis = Vars.content.getByName(ContentType.unit,"exotic-mod-pfsgcm").create(player.getTeam());
+      mis.set(player.x + Mathf.range(4), player.y + Mathf.range(4));
+      mis.add();
 		}
   }
 });
