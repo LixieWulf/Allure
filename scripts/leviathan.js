@@ -21,7 +21,7 @@ const levi = extendContent(Mech, "leviathan", {
     if(player.timer.get(Player.timerAbility, 900)){
 			for(var i = 0; i < 4; i ++){
         wr = UnitTypes.wraith.create(player.getTeam());
-        wr.set(player.drawx() + Mathf.range(4), player.drawy() + Mathf.range(4));
+        wr.set(player.x + Mathf.range(4), player.y + Mathf.range(4));
         wr.add();
         //useContent(tile, UnitTypes.wraith);
       }
@@ -29,20 +29,20 @@ const levi = extendContent(Mech, "leviathan", {
     if(player.timer.get(Player.timerAbility, 1800)){
       for(var i = 0; i < 2; i ++){
         rev = UnitTypes.revenant.create(player.getTeam());
-        rev.set(player.drawx() + Mathf.range(4), player.drawy() + Mathf.range(4));
+        rev.set(player.x + Mathf.range(4), player.y + Mathf.range(4));
         rev.add();
         //useContent(tile, UnitTypes.revenant);
       }
 		}
     if(player.timer.get(Player.timerAbility, 3600)){
 			dra = UnitTypes.draug.create(player.getTeam());
-      dra.set(player.drawx() + Mathf.range(4), player.drawy() + Mathf.range(4));
+      dra.set(player.x + Mathf.range(4), player.y + Mathf.range(4));
       dra.add();
       //useContent(tile, UnitTypes.draug);
 		}
     if(player.timer.get(Player.timerAbility, 18000)){
 			lic = UnitTypes.lich.create(player.getTeam());
-      lic.set(player.drawx() + Mathf.range(4), player.drawy() + Mathf.range(4));
+      lic.set(player.x + Mathf.range(4), player.y + Mathf.range(4));
       lic.add();
       //useContent(tile, UnitTypes.lich);
 		}
