@@ -118,8 +118,11 @@ pB.lifetime = 176;
 
 const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
   load(){
-    this.super$load() 
+    this.super$load();
     this.baseRegion = Core.atlas.find(this.name + "-base");
+    for(var h = 0; h < 4; h ++){
+      this.barrelHeatRegions[h] = Core.atlas.find("exotic-mod-wolfsteeth-heat-" + h);
+    }
   },
   generateIcons: function(){
     return [
@@ -142,6 +145,8 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
     const i = entity.shots % 4;
     const shift = [-23, -5, 5, 23];
     const setback = [32, 64, 64, 32];
+    
+    this.barrelHeatCooldowns[i] = 1;
     
 		tr3.trns(entity.rotation - 90, shift[i], setback[i] - entity.recoil);
     
@@ -176,6 +181,26 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
   init(){
     this.ammo(Vars.content.getByName(ContentType.item,"exotic-mod-amethyst-gem"),pB, Vars.content.getByName(ContentType.item,"exotic-mod-bluewolframite"), doB, Vars.content.getByName(ContentType.item,"exotic-mod-draconium"), drB);
     this.super$init();
+  },
+  update(tile){
+    this.super$update(tile);
+    
+    for(var e = 0; e < 4; e ++){
+    this.barrelHeatCooldowns[e] = Mathf.lerpDelta(this.barrelHeatCooldowns[e], 0, cooldown);
+    }
+  },
+  drawLayer(tile){
+    this.super$drawLayer(tile);
+    const yes = new Vec2();
+    
+    yes.trns(entity.rotation, 0, -entity.recoil);
+    for(var l = 0; l < 4; l ++){
+      Draw.color(heatColor, entity.heat);
+      Draw.blend(Blending.additive);
+      Draw.rect(barrelHeatRegions[l], tile.drawx() + yes.x, tile.drawy() + yes.y, entity.rotation - 90);
+      Draw.blend();
+      Draw.color();
+    }
   }
 });
 
@@ -184,3 +209,5 @@ cutefluffydoggo.recoil = 6;
 cutefluffydoggo.shootEffect = Fx.lightningShoot;
 cutefluffydoggo.smokeEffect = Fx.shootPyraFlame;
 cutefluffydoggo.shootSound = Sounds.shotgun;
+cutefluffydoggo.barrelHeatCooldowns = [];
+cutefluffydoggo.barrelHeatRegions = [];
