@@ -198,7 +198,7 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
     for(var l = 0; l < 4; l ++){
       Draw.color(this.heatColor, entity.heat);
       Draw.blend(Blending.additive);
-      Draw.rect(barrelHeatRegions[l], tile.drawx() + yes.x, tile.drawy() + yes.y, entity.rotation - 90);
+      Draw.rect(this.barrelHeatRegions[l], tile.drawx() + yes.x, tile.drawy() + yes.y, entity.rotation - 90);
       Draw.blend();
       Draw.color();
     }
