@@ -21,22 +21,22 @@ const levi = extendContent(Mech, "leviathan", {
     if(player.timer.get(Player.timerAbility, 900)){
 			for(var i = 0; i < 4; i ++){
         wr = UnitTypes.wraith.create(player.getTeam());
-        Events.fire(new UnitCreateEvent(wr));
+        EventType.UnitCreateEvent(wr);
       }
 		}
     if(player.timer.get(Player.timerAbility, 1800)){
       for(var i = 0; i < 2; i ++){
         rev = UnitTypes.revenant.create(player.getTeam());
-        Events.fire(new UnitCreateEvent(rev));
+        EventType.UnitCreateEvent(rev);
       }
 		}
     if(player.timer.get(Player.timerAbility, 3600)){
 			dra = UnitTypes.draug.create(player.getTeam());
-      Events.fire(new UnitCreateEvent(dra));
+      EventType.UnitCreateEvent(dra);
 		}
     if(player.timer.get(Player.timerAbility, 18000)){
 			lic = UnitTypes.lich.create(player.getTeam());
-      Events.fire(new UnitCreateEvent(lic));
+      EventType.UnitCreateEvent(lic);
 		}
   }
 });
