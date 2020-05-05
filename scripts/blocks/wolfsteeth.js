@@ -186,7 +186,7 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
     this.super$update(tile);
     
     for(var e = 0; e < 4; e ++){
-    this.barrelHeatCooldowns[e] = Mathf.lerpDelta(this.barrelHeatCooldowns[e], 0, cooldown);
+    this.barrelHeatCooldowns[e] = Mathf.lerpDelta(this.barrelHeatCooldowns[e], 0, this.cooldown);
     }
   },
   drawLayer(tile){
@@ -195,7 +195,7 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
     
     yes.trns(entity.rotation, 0, -entity.recoil);
     for(var l = 0; l < 4; l ++){
-      Draw.color(heatColor, entity.heat);
+      Draw.color(this.heatColor, entity.heat);
       Draw.blend(Blending.additive);
       Draw.rect(barrelHeatRegions[l], tile.drawx() + yes.x, tile.drawy() + yes.y, entity.rotation - 90);
       Draw.blend();
