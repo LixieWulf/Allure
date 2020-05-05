@@ -215,8 +215,18 @@ cutefluffydoggo.cooldown = 0.005;
 cutefluffydoggo.barrelHeatCooldowns = [0, 0, 0, 0];
 cutefluffydoggo.barrelHeatRegions = [];
 
-cutefluffydoggo.entityType = prov(() => {
-    const entity = extend(Turret.TurretEntity, {});
-
-    return entity;
-});
+aaa = extend(Turret.TurretEntity), {});
+cutefluffydoggo.entityType = prov(() => {aaa});/*
+  const entity = extend(TileEntity, {
+    ammo = [];
+    totalAmmo = 30;
+    reload = 15;
+    rotation = 90;
+    recoil = 0.0;
+    heat = 0;
+    shots = 0;
+    target = super%TargetTrait; //???
+  });
+  
+  return entity;
+});*/
