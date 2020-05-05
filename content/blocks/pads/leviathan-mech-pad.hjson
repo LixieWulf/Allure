@@ -1,6 +1,5 @@
 name: Leviathan Mech Pad
 description: Transform into a Armored Class Carrier
-type: MechPad
 size: 4
 consumes: {
   power: 0.7
