@@ -192,6 +192,7 @@ const cutefluffydoggo = extendContent(ItemTurret, "wolfsteeth", {
   drawLayer(tile){
     this.super$drawLayer(tile);
     const yes = new Vec2();
+    entity = tile.ent();
     
     yes.trns(entity.rotation, 0, -entity.recoil);
     for(var l = 0; l < 4; l ++){
