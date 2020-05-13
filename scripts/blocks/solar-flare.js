@@ -68,7 +68,7 @@ solarflare.consumes.add(new ConsumeLiquidFilter(boolf(liquid=>liquid.temperature
 solarflare.coolantMultiplier = 1 / fluidCostMultiplier;
 
 solarflare.shootType = extend(BasicBulletType, {
-  update: function(b){
+  update(b){
     if(b.timer.get(1, 5)){
       for(var v = 0; v < lasers; v++){
         vec.trns(b.rot() - 90, spacing[v], position[v]);
@@ -77,7 +77,7 @@ solarflare.shootType = extend(BasicBulletType, {
         var baseLen = length[v] * b.fout();
         Damage.collideLine(b, b.getTeam(), this.hitEffect, b.x + vec.x, b.y + vec.y, b.rot() + angleB, length[v] + length[v]/8.75, true);
       }
-    };
+    }
   },
   hit(b,hitx,hity){
     if(hitx != null && hity != null){
