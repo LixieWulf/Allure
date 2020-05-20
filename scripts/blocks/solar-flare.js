@@ -89,8 +89,7 @@ solarflare.shootType = extend(BasicBulletType, {
       }
     }
   },
-  draw: function(b){
-    
+  draw(b){
     for(var s = 0; s < 4; s++){
       Draw.color(tmpColor.set(colors[s]).mul(1.0 + Mathf.absin(Time.time(), 1.0, 0.3)));
       for(var i = 0; i < 4; i++){
