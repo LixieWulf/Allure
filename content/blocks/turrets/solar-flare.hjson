@@ -13,7 +13,7 @@ shootSound: thesunisadeadlylaserlol
 activeSound: flare
 activeSoundVolume: 2
 powerUse: 200
-rotatespeed: 0.5
+rotatespeed: 1
 shootCone: 10
 shootShake: 1.5
 targetAir: true
@@ -21,7 +21,6 @@ targetGround: true
 heatColor: ffff00
 recoil: 4
 shootDuration: 345
-rotatespeed: 5
 firingMoveFract: 0.5
 requirements: [
 ]
