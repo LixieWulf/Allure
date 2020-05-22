@@ -146,18 +146,7 @@ const poopyDoggo = extendContent(DoubleTurret, "wolfsteeth", {
     const shift = [-23, -5, 5, 23];
     const setback = [28, 60, 60, 28];
     
-    if(entity.shots % 4 == 0){
-      entity.setPoopA(1);
-    }
-    if(entity.shots % 4 == 1){
-      entity.setPoopB(1);
-    }
-    if(entity.shots % 4 == 2){
-      entity.setPoopC(1);
-    }
-    if(entity.shots % 4 == 3){
-      entity.setPoopD(1);
-    }
+    entity.setPoop(i, 1);
     
 		tr3.trns(entity.rotation - 90, shift[i], setback[i] - entity.recoil);
     
@@ -197,10 +186,9 @@ const poopyDoggo = extendContent(DoubleTurret, "wolfsteeth", {
     this.super$update(tile);
     entity = tile.ent();
     
-    entity.setPoopA(Mathf.lerpDelta(entity.getPoopA, 0, this.cooldown));
-    entity.setPoopB(Mathf.lerpDelta(entity.getPoopB, 0, this.cooldown));
-    entity.setPoopC(Mathf.lerpDelta(entity.getPoopC, 0, this.cooldown));
-    entity.setPoopD(Mathf.lerpDelta(entity.getPoopD, 0, this.cooldown));
+    for(i = 0; i < 4; i++){
+      entity.setPoop(i, Mathf.lerpDelta(entity.getPoop(i), 0, this.cooldown));
+    }
   },
   drawLayer(tile){
     this.super$drawLayer(tile);
@@ -209,33 +197,13 @@ const poopyDoggo = extendContent(DoubleTurret, "wolfsteeth", {
     
     yes.trns(entity.rotation, -entity.recoil);
     
-    //A
-    Draw.color(this.heatColor, entity.getPoopA());
-    Draw.blend(Blending.additive);
-    Draw.rect(this.barrelHeatRegions[0], tile.drawx() + yes.x, tile.drawy() + yes.y, entity.rotation - 90);
-    Draw.blend();
-    Draw.color();
-    
-    //B
-    Draw.color(this.heatColor, entity.getPoopB());
-    Draw.blend(Blending.additive);
-    Draw.rect(this.barrelHeatRegions[1], tile.drawx() + yes.x, tile.drawy() + yes.y, entity.rotation - 90);
-    Draw.blend();
-    Draw.color();
-    
-    //C
-    Draw.color(this.heatColor, entity.getPoopC());
-    Draw.blend(Blending.additive);
-    Draw.rect(this.barrelHeatRegions[2], tile.drawx() + yes.x, tile.drawy() + yes.y, entity.rotation - 90);
-    Draw.blend();
-    Draw.color();
-    
-    //D
-    Draw.color(this.heatColor, entity.getPoopD());
-    Draw.blend(Blending.additive);
-    Draw.rect(this.barrelHeatRegions[3], tile.drawx() + yes.x, tile.drawy() + yes.y, entity.rotation - 90);
-    Draw.blend();
-    Draw.color();
+    for(i = 0; i < 4; i++){
+      Draw.color(this.heatColor, entity.getPoop(i));
+      Draw.blend(Blending.additive);
+      Draw.rect(this.barrelHeatRegions[i], tile.drawx() + yes.x, tile.drawy() + yes.y, entity.rotation - 90);
+      Draw.blend();
+      Draw.color();
+    }
   }
 });
 
@@ -250,38 +218,16 @@ poopyDoggo.barrelHeatRegions = [];
 
 poopyDoggo.entityType = prov(() => {
   entity = extendContent(ItemTurret.ItemTurretEntity, poopyDoggo,{
-    setPoopA(a){
-      this._PoopA = a;
+    setPoop(n, v){
+      this._Poop[n] = v;
     },
-		
-    getPoopA(){
-      return this._PoopA;
-    },
-    
-    setPoopB(b){
-      this._PoopB = b;
-    },
-		
-    getPoopB(){
-      return this._PoopB;
-    },
-    
-    setPoopC(c){
-      this._PoopC = c;
-    },
-		
-    getPoopC(){
-      return this._PoopC;
-    },
-    
-    setPoopD(d){
-      this._PoopD = d;
-    },
-		
-    getPoopD(){
-      return this._PoopD;
+    getPoop(n){
+      return this._Poop[n];
     }
   });
+  for(i = 0; i < 4; i++){
+    entity.setPoop(i, 0);
+  }
   
   return entity;
 });
