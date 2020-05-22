@@ -23,7 +23,7 @@ maxAmmo: 12
 range: 800
 ammo: {
   draconium: {
-    speed: 8
+    speed: 9
     damage: 700
     bulletSprite: exotic-mod-railbolt
     bulletWidth: 14
@@ -43,7 +43,7 @@ ammo: {
     fragVelocityMax: 1.1
     fragBullets: 5
     fragBullet: {
-      speed: 8
+      speed: 8.5
       damage: 700
       bulletSprite: exotic-mod-railbolt
       bulletShrink: 0
@@ -51,7 +51,7 @@ ammo: {
       bulletHeight: 21
       hitEffect: pulverizeRed
       despawnEffect: pulverizeRed
-      lifetime: 45
+      lifetime: 50
       status: melting
       homingRange: 128
       homingPower: 0.01
@@ -67,7 +67,7 @@ ammo: {
         bulletShrink: 0
         bulletWidth: 3.5
         bulletHeight: 10.5
-        lifetime: 22.5
+        lifetime: 25
         hitEffect: shootBig
         despawnEffect: shootBig
         status: melting
@@ -79,14 +79,14 @@ ammo: {
     }
   }
   amethyst-gem: {
-    speed: 6
+    speed: 7
     damage: 175
     bulletSprite: exotic-mod-railbolt
     bulletShrink: 0
     pierce: true
     bulletWidth: 12
     bulletHeight: 36
-    lifetime: 120
+    lifetime: 140
     hitEffect: shootBig
     despawnEffect: shootBig
     shootEffect: shootBig
@@ -99,13 +99,13 @@ ammo: {
     backColor: 8e479e
   }
   bluewolframite: {
-    speed: 7
+    speed: 8
     damage: 500
     bulletShrink: 0
     bulletSprite: exotic-mod-railbolt
     bulletWidth: 16
     bulletHeight: 48
-    lifetime: 120
+    lifetime: 100
     hitEffect: padlaunch
     despawnEffect: padlaunch
     shootEffect: shootBig

@@ -29,7 +29,7 @@ ammo: {
     bulletSprite: exotic-mod-railbolt
     bulletWidth: 14
     bulletHeight: 42
-    lifetime: 112
+    lifetime: 115
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
     status: melting
@@ -47,14 +47,14 @@ ammo: {
     fragVelocityMax: 1.1
     fragBullets: 5
     fragBullet: {
-      speed: 9
+      speed: 8.5
       damage: 1000
       bulletSprite: exotic-mod-railbolt
       bulletWidth: 7
       bulletHeight: 21
       hitEffect: pulverizeRed
       despawnEffect: pulverizeRed
-      lifetime: 56
+      lifetime: 65
       status: melting
       homingRange: 128
       homingPower: 0.01
@@ -65,12 +65,12 @@ ammo: {
       fragVelocityMax: 1.1
       fragBullets: 5
       fragBullet: {
-        speed: 9
+        speed: 8
         damage: 1000
         bulletSprite: exotic-mod-railbolt
         bulletWidth: 3.5
         bulletHeight: 10.5
-        lifetime: 28
+        lifetime: 30
         hitEffect: shootBig
         despawnEffect: shootBig
         status: melting
@@ -89,7 +89,7 @@ ammo: {
     pierce: true
     bulletWidth: 12
     bulletHeight: 36
-    lifetime: 120
+    lifetime: 175
     hitEffect: shootBig
     bulletShrink: 0
     despawnEffect: shootBig
@@ -108,7 +108,7 @@ ammo: {
     bulletSprite: exotic-mod-railbolt
     bulletWidth: 16
     bulletHeight: 48
-    lifetime: 120
+    lifetime: 125
     bulletShrink: 0
     hitEffect: padlaunch
     despawnEffect: padlaunch
