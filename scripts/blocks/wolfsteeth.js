@@ -116,7 +116,7 @@ pB.frontColor = Color.valueOf("b966cc");
 pB.backColor = Color.valueOf("8e479e");
 pB.lifetime = 176;
 
-const cutefluffydoggo = extendContent(DoubleTurret, "wolfsteeth", {
+const poopyDoggo = extendContent(DoubleTurret, "wolfsteeth", {
   load(){
     this.super$load();
     this.baseRegion = Core.atlas.find(this.name + "-base");
@@ -130,9 +130,9 @@ const cutefluffydoggo = extendContent(DoubleTurret, "wolfsteeth", {
       Core.atlas.find("exotic-mod-wolfsteeth-icon")
     ];
   },
-  shoot: function(tile, ammo){
+  shoot(tile, ammo){
 		const tr3 = new Vec2();
-		const entity = tile.ent();
+		entity = tile.ent();
 		entity.shots++;
 		entity.recoil = this.recoil;
 		entity.heat = 1;
@@ -144,9 +144,20 @@ const cutefluffydoggo = extendContent(DoubleTurret, "wolfsteeth", {
 		
     const i = entity.shots % 4;
     const shift = [-23, -5, 5, 23];
-    const setback = [32, 64, 64, 32];
+    const setback = [28, 60, 60, 28];
     
-    this.barrelHeatCooldowns[i] = 1;
+    if(entity.shots % 4 == 0){
+      entity.setPoopA(1);
+    }
+    if(entity.shots % 4 == 1){
+      entity.setPoopB(1);
+    }
+    if(entity.shots % 4 == 2){
+      entity.setPoopC(1);
+    }
+    if(entity.shots % 4 == 3){
+      entity.setPoopD(1);
+    }
     
 		tr3.trns(entity.rotation - 90, shift[i], setback[i] - entity.recoil);
     
@@ -157,7 +168,7 @@ const cutefluffydoggo = extendContent(DoubleTurret, "wolfsteeth", {
 	},
   effects: function(tile){
 		const tr3 = new Vec2();
-		const entity = tile.ent();
+		entity = tile.ent();
 		
 		const i = entity.shots % 4;
     const shift = [-23, -5, 5, 23];
@@ -184,35 +195,93 @@ const cutefluffydoggo = extendContent(DoubleTurret, "wolfsteeth", {
   },
   update(tile){
     this.super$update(tile);
+    entity = tile.ent();
     
-    for(var e = 0; e < 4; e ++){
-      this.barrelHeatCooldowns[e] = Mathf.lerpDelta(this.barrelHeatCooldowns[e], 0, this.cooldown);
-    }
+    entity.setPoopA(Mathf.lerpDelta(entity.getPoopA, 0, this.cooldown));
+    entity.setPoopB(Mathf.lerpDelta(entity.getPoopB, 0, this.cooldown));
+    entity.setPoopC(Mathf.lerpDelta(entity.getPoopC, 0, this.cooldown));
+    entity.setPoopD(Mathf.lerpDelta(entity.getPoopD, 0, this.cooldown));
   },
   drawLayer(tile){
     this.super$drawLayer(tile);
     const yes = new Vec2();
-    const entity = tile.ent();
+    entity = tile.ent();
     
     yes.trns(entity.rotation, -entity.recoil);
-    for(var l = 0; l < 4; l ++){
-      Draw.color(this.heatColor, this.barrelHeatCooldowns[l]);
-      Draw.blend(Blending.additive);
-      Draw.rect(this.barrelHeatRegions[l], tile.drawx() + yes.x, tile.drawy() + yes.y, entity.rotation - 90);
-      Draw.blend();
-      Draw.color();
-    }
+    
+    //A
+    Draw.color(this.heatColor, entity.getPoopA());
+    Draw.blend(Blending.additive);
+    Draw.rect(this.barrelHeatRegions[0], tile.drawx() + yes.x, tile.drawy() + yes.y, entity.rotation - 90);
+    Draw.blend();
+    Draw.color();
+    
+    //B
+    Draw.color(this.heatColor, entity.getPoopB());
+    Draw.blend(Blending.additive);
+    Draw.rect(this.barrelHeatRegions[1], tile.drawx() + yes.x, tile.drawy() + yes.y, entity.rotation - 90);
+    Draw.blend();
+    Draw.color();
+    
+    //C
+    Draw.color(this.heatColor, entity.getPoopC());
+    Draw.blend(Blending.additive);
+    Draw.rect(this.barrelHeatRegions[2], tile.drawx() + yes.x, tile.drawy() + yes.y, entity.rotation - 90);
+    Draw.blend();
+    Draw.color();
+    
+    //D
+    Draw.color(this.heatColor, entity.getPoopD());
+    Draw.blend(Blending.additive);
+    Draw.rect(this.barrelHeatRegions[3], tile.drawx() + yes.x, tile.drawy() + yes.y, entity.rotation - 90);
+    Draw.blend();
+    Draw.color();
   }
 });
 
-cutefluffydoggo.shootShake = 3;
-cutefluffydoggo.recoil = 6;
-cutefluffydoggo.shootEffect = Fx.lightningShoot;
-cutefluffydoggo.smokeEffect = Fx.shootPyraFlame;
-cutefluffydoggo.shootSound = Sounds.shotgun;
-cutefluffydoggo.heatColor = Color.valueOf("00FFFF");
-cutefluffydoggo.cooldown = 0.005;
-cutefluffydoggo.barrelHeatCooldowns = [0, 0, 0, 0];
-cutefluffydoggo.barrelHeatRegions = [];
+poopyDoggo.shootShake = 3;
+poopyDoggo.recoil = 6;
+poopyDoggo.shootEffect = Fx.lightningShoot;
+poopyDoggo.smokeEffect = Fx.shootPyraFlame;
+poopyDoggo.shootSound = Sounds.shotgun;
+poopyDoggo.heatColor = Color.valueOf("00FFFF");
+poopyDoggo.cooldown = 0.005;
+poopyDoggo.barrelHeatRegions = [];
 
-cutefluffydoggo.entityType = prov(() => extend(ItemTurret.ItemTurretEntity, {/*funcs*/}));
+poopyDoggo.entityType = prov(() => {
+  entity = extendContent(ItemTurret.ItemTurretEntity, poopyDoggo,{
+    setPoopA(a){
+      this._PoopA = a;
+    },
+		
+    getPoopA(){
+      return this._PoopA;
+    },
+    
+    setPoopB(b){
+      this._PoopB = b;
+    },
+		
+    getPoopB(){
+      return this._PoopB;
+    },
+    
+    setPoopC(c){
+      this._PoopC = c;
+    },
+		
+    getPoopC(){
+      return this._PoopC;
+    },
+    
+    setPoopD(d){
+      this._PoopD = d;
+    },
+		
+    getPoopD(){
+      return this._PoopD;
+    }
+  });
+  
+  return entity;
+});
