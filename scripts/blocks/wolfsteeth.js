@@ -218,11 +218,12 @@ poopyDoggo.barrelHeatRegions = [];
 
 poopyDoggo.entityType = prov(() => {
   entity = extendContent(ItemTurret.ItemTurretEntity, poopyDoggo,{
+    _poop:[],
     setPoop(n, v){
-      this._Poop[n] = v;
+      this._poop[n] = v;
     },
     getPoop(n){
-      return this._Poop[n];
+      return this._poop[n];
     }
   });
   for(i = 0; i < 4; i++){
