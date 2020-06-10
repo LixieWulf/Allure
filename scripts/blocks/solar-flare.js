@@ -51,7 +51,7 @@ const solarflare = extendContent(LaserTurret, "solar-flare", {
     this.super$drawLayer(tile);
     const sunSunYee = Core.atlas.find("exotic-mod-solar-flare-sun");
     
-    entity = tile.ent();
+    const entity = tile.ent();
     randX = Mathf.range(-1.0, 1.0);
     randY = Mathf.range(-1.0, 1.0);
     
