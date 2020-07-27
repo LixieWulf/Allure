@@ -29,8 +29,8 @@ ammo: {
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
     status: burning
-    homingRange: 99
-    homingPower: 99
+    homingRange: 99999
+    homingPower: 99999
     ammoMultiplier: 20
     frontColor: 91c3ff
     backColor: 91c3ff
