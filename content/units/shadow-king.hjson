@@ -28,19 +28,19 @@ weapon: {
     speed: 10
     splashDamageRadius: 200
     splashDamage: 9000
-    homingPower: 90
+    homingPower: 999
     homingRange: 90
     frontColor: 537FA3FF
     backColor: 385872FF
     fragBullets: 10
     fragBullet: {
       lifetime: 10
-      damage: 9000
+      damage: 15000
       type: MissileBulletType
       speed: 10
       homingPower: 90
       homingRange: 90
-      lightining: 10
+      lightining: 20
       lightningLength: 50
       hitShake: 5
     }
