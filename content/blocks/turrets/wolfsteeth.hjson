@@ -27,6 +27,10 @@ ammo: {
   damage: 125525
   lifetime: 360
   bulletSprite: exotic-mod-railbolt
+  bulletWidth: 10
+  bulletHeight: 35
+  frontColor: c8c8ff
+  backColor: ffffff
   splashDamage: 25500
   splashDamageRadius: 15
   fragBullets: 100
