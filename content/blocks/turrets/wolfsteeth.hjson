@@ -1,20 +1,22 @@
+type: burstTurret
 name: Wolf’s Teeth
 description: The largest railgun weapon ever invented. Fires rapidly from four railgun barrels. This railgun is extremely expensive but very good for killing large amounts of high-health enemies or laying waste to any base.
 targetAir: true
 targetGround: true
 health: 10000000
 size: 8
-inaccuracy: 10
+inaccuracy: 0
 spread: 0
-reload: 15
-shots: 1
-xRand: 0
+reload: 60
+shots: 4
 ammoUseEffect: shellEjectBig
 shootCone: 25
-maxAmmo: 48
 rotatespeed: 0.25
 range: 1200
-restitution: 0.01
+ammo: [
+  copper: {
+  bullets.standardCopper
+  }
 outlineIcon: false
 requirements: [
   titanium/2500
