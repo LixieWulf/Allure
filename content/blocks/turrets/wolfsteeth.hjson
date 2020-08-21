@@ -9,7 +9,7 @@ inaccuracy: 0
 spread: 0
 reload: 60
 shots: 4
-xRand: 25
+xRand: 20
 ammoUseEffect: shellEjectBig
 shootCone: 25
 rotatespeed: 0.25
