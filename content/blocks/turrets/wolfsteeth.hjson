@@ -32,10 +32,14 @@ ammo: {
   frontColor: c8c8ff
   backColor: ffffff
   splashDamage: 25500
-  splashDamageRadius: 15
+  splashDamageRadius: 100
   fragBullets: 100
   fragBullet: {
-    bullet: lightning
+    speed: 0
+    lifetime: 0
+    damage: 0
+    lightining: 100
+    lightningLength: 50
     }
   }
 }
