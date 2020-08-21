@@ -15,7 +15,11 @@ rotatespeed: 0.25
 range: 1200
 ammo: [
   copper: {
-  bullets.standardCopper
+  speed: 4
+  damage: 400
+  bulletSprite: exotic-mod-railbolt
+  lifetime: 120
+  ammoMultiplier: 5
   }
 ]
 outlineIcon: false
