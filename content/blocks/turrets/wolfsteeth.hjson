@@ -13,14 +13,24 @@ xRand: 25
 ammoUseEffect: shellEjectBig
 shootCone: 25
 rotatespeed: 0.25
-range: 1200
+range: 8000
 ammo: {
   copper: {
-  speed: 4
+  speed: 10
   damage: 400
   bulletSprite: exotic-mod-railbolt
-  lifetime: 120
+  lifetime: 360
   ammoMultiplier: 5
+  }
+  bluewolframite: {
+  speed: 10
+  damage: 125525
+  lifetime: 360
+  bulletSprite: exotic-mod-railbolt
+  lightning: 25
+  lightningLength: 50
+  splashDamage: 25500
+  splashDamageRadius: 15
   }
 }
 outlineIcon: false
