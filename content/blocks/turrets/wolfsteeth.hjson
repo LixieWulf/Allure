@@ -27,7 +27,7 @@ ammo: {
   damage: 125525
   lifetime: 360
   bulletSprite: exotic-mod-railbolt
-  lightning: 25
+  lightining: 25
   lightningLength: 50
   splashDamage: 25500
   splashDamageRadius: 15
