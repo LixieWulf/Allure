@@ -17,6 +17,7 @@ ammo: [
   copper: {
   bullets.standardCopper
   }
+]
 outlineIcon: false
 requirements: [
   titanium/2500
