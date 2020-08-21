@@ -13,7 +13,7 @@ ammoUseEffect: shellEjectBig
 shootCone: 25
 rotatespeed: 0.25
 range: 1200
-ammo: [
+ammo: {
   copper: {
   speed: 4
   damage: 400
@@ -21,7 +21,7 @@ ammo: [
   lifetime: 120
   ammoMultiplier: 5
   }
-]
+}
 outlineIcon: false
 requirements: [
   titanium/2500
