@@ -1,4 +1,4 @@
-type: surgeWall
+type: SurgeWall
 name: Bluewolframite Wall
 description: "An extremely durable defensive block, capable of releasing electric arcs at a high rate upon hit."
 health: 1552250
