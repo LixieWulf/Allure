@@ -1,0 +1,15 @@
+name: Huge Draconium Wall
+description:
+  '''
+  The most durable wall. It has the capability to deflect bullets.
+  Spans multiple tiles.
+  '''
+type: DeflectorWall
+health: 65000
+size: 2
+maxDamageDeflect: 50000
+requirements: [
+  draconium/100
+]
+category: defense
+research: draconium-wall-medium
