@@ -28,7 +28,7 @@ ammo: {
     bulletWidth: 24
     bulletHeight: 24
     bulletShrink: 0
-    lifetime: 1200
+    lifetime: 120
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
     ammoMultiplier: 5
@@ -47,7 +47,7 @@ draconium: {
     bulletWidth: 24
     bulletHeight: 24
     bulletShrink: 0
-    lifetime: 1200
+    lifetime: 120
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
     status: melting
