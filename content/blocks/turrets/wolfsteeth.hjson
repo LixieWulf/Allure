@@ -18,7 +18,7 @@ ammo: {
   copper: {
   speed: 10
   damage: 400
-  bulletSprite: wolfsteeth-railbolt
+  bulletSprite: exotic-mod-railbolt
   bulletWidth: 4
   bulletHeight: 22
   frontColor: d9b79f
@@ -30,7 +30,7 @@ ammo: {
   speed: 10
   damage: 1253
   lifetime: 360
-  bulletSprite: wolfsteeth-railbolt
+  bulletSprite: exotic-mod-railbolt
   bulletWidth: 10
   bulletHeight: 35
   frontColor: fbfdaf
@@ -54,7 +54,7 @@ ammo: {
   lifetime: 630
   frontColor: ffceb0
   backColor: e38b59
-  bulletSprite: wolfsteeth-railbolt
+  bulletSprite: exotic-mod-railbolt
   splashDamage: 172
   splashDamageRadius: 73
   hitEffect: flakExplosion
@@ -66,7 +66,7 @@ ammo: {
   reloadMultiplier: 0.75
   bulletWidth: 5
   bulletHeight: 25
-  bulletSprite: wolfsteeth-railbolt
+  bulletSprite: exotic-mod-railbolt
   lifetime: 240
   fragBullets: 15
   fragBullet: {
@@ -84,7 +84,7 @@ ammo: {
   lifetime: 270
   splashDamage: 450
   splashDamageRadius: 25
-  bulletSprite: wolfsteeth-railbolt
+  bulletSprite: exotic-mod-railbolt
   }
   pyratite: { 
   damage: 122 
@@ -94,7 +94,7 @@ ammo: {
   reloadMultiplier: 0.75
   bulletWidth: 10
   bulletHeight: 35
-  bulletSprite: wolfsteeth-railbolt
+  bulletSprite: exotic-mod-railbolt
   frontColor: f7d9ae
   backColor: f8ad42
   fragBullets: 45
@@ -107,7 +107,7 @@ ammo: {
   lifetime: 235
   reloadMultiplier: 1.75
   ammoMultiplier: 1
-  bulletSprite: wolfsteeth-railbolt
+  bulletSprite: exotic-mod-railbolt
   bulletWidth: 7
   bulletHeight: 32
   frontColor: d2d2fd
@@ -125,7 +125,7 @@ ammo: {
   hitEffect: hitMeltdown
   splashDamage: 85
   splashDamageRadius: 38
-  bulletSprite: wolfsteeth-railbolt
+  bulletSprite: exotic-mod-railbolt
   bulletWidth: 12
   bulletHeight: 37
   }
@@ -133,7 +133,7 @@ ammo: {
   damage: 25
   speed: 20
   lifetime: 180
-  bulletSprite: wolfsteeth-railbolt
+  bulletSprite: exotic-mod-railbolt
   bulletWidth: 5
   bulletHeight: 27
   fragBullets: 100
@@ -157,7 +157,7 @@ ammo: {
   pierce: true
   bulletWidth: 5
   bulletHeight: 27
-  bulletSprite: wolfsteeth-railbolt
+  bulletSprite: exotic-mod-railbolt
   hitEffect: fire
   status: burning
   frontColor: b699fc
@@ -174,7 +174,7 @@ ammo: {
   bulletHeight: 22
   ammoMultiplier: 8
   pierce: true
-  bulletSprite: wolfsteeth-railbolt
+  bulletSprite: exotic-mod-railbolt
   frontColor: ffffff
   backColor: c2c2c2
   hitEffect: flakExplosion
@@ -200,7 +200,7 @@ ammo: {
   hitEffect: hitLancer
   bulletWidth: 10
   bulletHeight: 37
-  bulletSprite: wolfsteeth-railbolt
+  bulletSprite: exotic-mod-railbolt
   frontColor: 8276a6
   backColor: 686587
   }
@@ -210,7 +210,7 @@ ammo: {
   lifetime: 360
   reloadMultiplier: 0.5
   ammoMultiplier: 5
-  bulletSprite: wolfsteeth-railbolt
+  bulletSprite: exotic-mod-railbolt
   bulletWidth: 6
   bulletHeight: 31
   frontColor: a5d3e0
@@ -221,7 +221,7 @@ ammo: {
   damage: 242
   lifetime: 330
   status: burning
-  bulletSprite: wolfsteeth-railbolt
+  bulletSprite: exotic-mod-railbolt
   bulletWidth: 8
   bulletHeight: 30
   frontColor: 3f3f3f
@@ -235,7 +235,7 @@ ammo: {
   lifetime: 360
   pierce: true
   hitEffect: plasticExplosion
-  bulletSprite: wolfsteeth-railbolt
+  bulletSprite: exotic-mod-railbolt
   bulletWidth: 10
   bulletHeight: 36
   splashDamage: 35
@@ -264,7 +264,7 @@ ammo: {
   lifetime: 360
   reloadMultiplier: 1.5
   ammoMultiplier: 4
-  bulletSprite: wolfsteeth-railbolt
+  bulletSprite: exotic-mod-railbolt
   bulletWidth: 4
   bulletHeight: 22
   frontColor: 999999
