@@ -19,7 +19,24 @@ range: 1600
 maxAmmo: 100
 outlineIcon: false
 ammo: {
-  draconium: {
+  scrap: {
+    bulletSprite: exotic-mod-dragonbolt
+    type: MissileBulletType
+    trailColor: C93A3A
+    speed: 12
+    damage: 125
+    bulletWidth: 24
+    bulletHeight: 24
+    bulletShrink: 0
+    lifetime: 1200
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    ammoMultiplier: 5
+    hitShake: 1
+    frontColor: C93A3A
+    backColor: 590707
+   }
+draconium: {
     bulletSprite: exotic-mod-dragonbolt
     type: MissileBulletType
     trailColor: C93A3A
