@@ -1,0 +1,11 @@
+type: Wall
+name: Insulator Wall
+description: "A wall similar to the bluewolframite wall and built out of the same material. Able to absorb all electricity."
+insulated: true
+health: 1552250
+size: 1
+requirements: [
+  bluewolframite/8
+  ]
+category: defense
+research: surge-wall
