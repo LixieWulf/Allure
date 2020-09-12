@@ -36,6 +36,23 @@ ammo: {
     frontColor: C93A3A
     backColor: 590707
    }
+sand: {
+    bulletSprite: exotic-mod-dragonbolt
+    type: BulletType
+    trailColor: C93A3A
+    speed:12
+    damage:90
+    bulletWidth: 24
+    bulletHeight: 24
+    bulletShrink: 0
+    lifetime: 120
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    ammoMultiplier: 0.2
+    hitShake: 0.5
+    frontColor: C93A3A
+    backColor: 590707
+   }
 draconium: {
     bulletSprite: exotic-mod-dragonbolt
     type: MissileBulletType
