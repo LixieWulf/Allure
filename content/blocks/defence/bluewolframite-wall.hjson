@@ -1,9 +1,8 @@
 type: wall
 name: Bluewolframite Wall
-description: "A very durable wall, capable of releasing electric arcs and absorbing them."
+description: "An extremely durable defensive block, capable of releasing electric arcs at a high rate upon hit."
 health: 1552250
 size: 1
-insulated: true
 lightningChance: 1.0
 requirements: [
   bluewolframite/8
