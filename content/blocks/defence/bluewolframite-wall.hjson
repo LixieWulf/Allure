@@ -1,0 +1,12 @@
+type: wall
+name: Bluewolframite Wall
+description: "A very durable wall, capable of releasing electric arcs and absorbing them."
+health: 1552250
+size: 1
+insulated: true
+lightningChance: 1.0
+requirements: [
+  bluewolframite/8
+  ]
+category: defense
+research: surge-wall
