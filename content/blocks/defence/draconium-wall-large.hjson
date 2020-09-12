@@ -6,7 +6,7 @@ description:
   '''
 type: DeflectorWall
 health: 65000
-size: 2
+size: 3
 maxDamageDeflect: 50000
 requirements: [
   draconium/100
