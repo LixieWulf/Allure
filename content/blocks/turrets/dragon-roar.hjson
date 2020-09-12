@@ -1,3 +1,4 @@
+type: doubleTurret
 name: The Dragons Roar
 description: A unique Spectre... Build it... watch it fire.
 targetAir: true

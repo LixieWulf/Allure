@@ -1,33 +1,284 @@
+type: burstTurret
 name: Wolf’s Teeth
-description: The largest railgun weapon ever invented. Fires rapidly from four railgun barrels. This railgun is extremely expensive but very good for killing large amounts of high-health enemies or laying waste to any base.
+description: The largest railgun weapon ever invented. Fires rapidly from four railgun barrels. This railgun is extremely expensive but very good for killing large amounts of high-health enemies or laying waste to any base. Able to fire any vanilla ammunition.
 targetAir: true
 targetGround: true
-health: 10000000
+health: 15500250
 size: 8
-inaccuracy: 10
+inaccuracy: 0
 spread: 0
-reload: 15
-shots: 1
-xRand: 0
+reload: 60
+shots: 4
+xRand: 20
 ammoUseEffect: shellEjectBig
-shootCone: 25
-maxAmmo: 48
+shootCone: 15
 rotatespeed: 0.25
-range: 1200
-restitution: 0.01
+range: 4000
+ammo: {
+  copper: {
+  speed: 10
+  damage: 400
+  bulletSprite: exotic-mod-railbolt
+  bulletWidth: 4
+  bulletHeight: 22
+  frontColor: d9b79f
+  backColor: d99d73
+  lifetime: 360
+  ammoMultiplier: 5
+  }
+  surge-alloy: {
+  speed: 10
+  damage: 1253
+  lifetime: 360
+  bulletSprite: exotic-mod-railbolt
+  bulletWidth: 10
+  bulletHeight: 35
+  frontColor: fbfdaf
+  backColor: fafd7b
+  splashDamage: 152
+  splashDamageRadius: 23
+  fragBullets: 15
+  fragBullet: {
+    speed: 0
+    lifetime: 0
+    damage: 0
+    lightining: 4
+    lightningLength: 15
+    }
+  }
+  blast-compound: {
+  speed: 4
+  damage: 44
+  ammoMultiplier: 15
+  reloadMultiplier: 60
+  lifetime: 630
+  frontColor: ffceb0
+  backColor: e38b59
+  bulletSprite: exotic-mod-railbolt
+  splashDamage: 172
+  splashDamageRadius: 73
+  hitEffect: flakExplosion
+  }
+  sand: {
+  damage: 120
+  speed: 15
+  ammoMultiplier: 1
+  reloadMultiplier: 0.75
+  bulletWidth: 5
+  bulletHeight: 25
+  bulletSprite: exotic-mod-railbolt
+  lifetime: 240
+  fragBullets: 15
+  fragBullet: {
+    speed: 10
+    lifetime: 30
+    damage: 25
+    bulletWidth: 1
+    bulletHeight: 5
+    }
+  }
+  scrap: {
+  speed: 12
+  damage: 15
+  reloadMultplier: 0.65
+  lifetime: 270
+  splashDamage: 450
+  splashDamageRadius: 25
+  bulletSprite: exotic-mod-railbolt
+  }
+  pyratite: { 
+  damage: 122 
+  speed: 10
+  lifetime: 360
+  ammoMultiplier: 3
+  reloadMultiplier: 0.75
+  bulletWidth: 10
+  bulletHeight: 35
+  bulletSprite: exotic-mod-railbolt
+  frontColor: f7d9ae
+  backColor: f8ad42
+  fragBullets: 45
+  fragBullet: fireball
+  status: burning
+  }
+  titanium: { 
+  damage: 155
+  speed: 17
+  lifetime: 235
+  reloadMultiplier: 1.75
+  ammoMultiplier: 1
+  bulletSprite: exotic-mod-railbolt
+  bulletWidth: 7
+  bulletHeight: 32
+  frontColor: d2d2fd
+  backColor: 8e8efd
+  fragBullets: 100
+  fragBullet: cryoShot
+  fragVelocityMax: 0.2
+  status: freezing
+  }
+  thorium: {
+  damage: 358
+  speed: 7
+  lifetime: 385
+  pierce: true
+  hitEffect: hitMeltdown
+  splashDamage: 85
+  splashDamageRadius: 38
+  bulletSprite: exotic-mod-railbolt
+  bulletWidth: 12
+  bulletHeight: 37
+  }
+  phase-fabric: {
+  damage: 25
+  speed: 20
+  lifetime: 180
+  bulletSprite: exotic-mod-railbolt
+  bulletWidth: 5
+  bulletHeight: 27
+  fragBullets: 100
+  fragBullet: {
+    damage: 1
+    speed: 3
+    pierce: true
+    lifetime: 720
+    knockback: 128
+    hitEffect: none
+    homingPower: 1
+    homingRange: 320
+    bulletWidth: 1
+    bulletHeight: 1
+    }
+  }
+  spore-pod: {
+  damage: 7
+  speed: 4
+  lifetime: 725
+  pierce: true
+  bulletWidth: 5
+  bulletHeight: 27
+  bulletSprite: exotic-mod-railbolt
+  hitEffect: fire
+  status: burning
+  frontColor: b699fc
+  backColor: 763dfc
+  fragBullets: 12
+  fragBullet: fireball
+  fragVelocityMax: 0.1
+  }
+  metaglass: { 
+  damage: 152
+  speed: 11
+  lifetime: 350
+  bulletWidth: 4
+  bulletHeight: 22
+  ammoMultiplier: 8
+  pierce: true
+  bulletSprite: exotic-mod-railbolt
+  frontColor: ffffff
+  backColor: c2c2c2
+  hitEffect: flakExplosion
+  fragBullets: 25
+  fragBullet: {
+    damage: 15
+    speed: 3
+    lifetime: 60
+    pierce: true
+    bulletWidth: 1
+    bulletHeight: 10
+    frontColor: ffffff
+    backColor: c2c2c2
+    }
+  }
+  lead: {
+  damage: 122
+  speed: 6
+  lifetime: 685
+  pierce: true
+  knockback: 256
+  ammoMultiplier: 1
+  hitEffect: hitLancer
+  bulletWidth: 10
+  bulletHeight: 37
+  bulletSprite: exotic-mod-railbolt
+  frontColor: 8276a6
+  backColor: 686587
+  }
+  graphite: {
+  damage: 800
+  speed: 10
+  lifetime: 360
+  reloadMultiplier: 0.5
+  ammoMultiplier: 5
+  bulletSprite: exotic-mod-railbolt
+  bulletWidth: 6
+  bulletHeight: 31
+  frontColor: a5d3e0
+  backColor: 7d9faa
+  }
+  coal: {
+  speed: 9
+  damage: 242
+  lifetime: 330
+  status: burning
+  bulletSprite: exotic-mod-railbolt
+  bulletWidth: 8
+  bulletHeight: 30
+  frontColor: 3f3f3f
+  backColor: 242424
+  fragBullets: 4
+  fragBullet: fireball
+  }
+  plastanium: {
+  speed: 10
+  damage: 225
+  lifetime: 360
+  pierce: true
+  hitEffect: plasticExplosion
+  bulletSprite: exotic-mod-railbolt
+  bulletWidth: 10
+  bulletHeight: 36
+  splashDamage: 35
+  splashDamageRadius: 27
+  frontColor: fffbc7
+  backColor: dedb83
+  fragBullets: 4
+  fragBullet: { 
+    speed: 3
+    damage: 22
+    lifetime: 38
+    splashDamage: 24
+    splashDamageRadius: 18
+    hitEffect: flakExplosion
+    bulletWidth: 3
+    bulletHeight: 5
+    frontColor: fffbc7
+    backColor: dedb83
+    }
+  }
+  silicon: { 
+  damage: 400
+  speed: 10
+  homingPower: 1
+  homingRange: 320
+  lifetime: 360
+  reloadMultiplier: 1.5
+  ammoMultiplier: 4
+  bulletSprite: exotic-mod-railbolt
+  bulletWidth: 4
+  bulletHeight: 22
+  frontColor: 999999
+  backColor: 494949
+  }
+}
 outlineIcon: false
 requirements: [
-  titanium/2500
   copper/10000
-  lead/10000
-  graphite/5000
-  thorium/2500
-  plastanium/1000
-  surge-alloy/2000
-  amethyst-gem/1000
-  bluewolframite/2500
-  draconium/1525
-  shadow/1500
+  lead/7500
+  silicon/5000
+  graphite/4500
+  titanium/3500
+  surge-alloy/750
 ]
 category: turret
-research: legacy-railgun
+research: spectre

@@ -1,7 +1,7 @@
 name: Fearless
 description: The most powerful assault ship. Does three times more damage than the Hellfire, at the cost of health. Can move quickly, but is usually a slow ship.
 health: 150000000
-hitsize: 15
+hitsize: 50
 flying: true
 buildPower: 25
 speed: 0.25
@@ -11,8 +11,8 @@ engineSize: 9
 engineColor: 00ffff
 mass: 25000
 drag: 0.1
-speed: 15
-maxSpeed: 30
+speed: 0.1
+maxVelocity: 8
 weapon: {
   name: fearless-railgun
   alternate: true
