@@ -38,7 +38,7 @@ ammo: {
    }
 sand: {
     bulletSprite: exotic-mod-dragonbolt
-    type: BulletType
+    type: MissileBulletType
     trailColor: C93A3A
     speed:12
     damage:90
