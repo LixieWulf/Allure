@@ -1,0 +1,10 @@
+type: Wall
+name: Large Insulator Wall
+description: "A wall similar to the bluewolframite wall and built out of the same material. Able to absorb all electricity. \nSpans a few tiles."
+health: 6210200
+insulated: true
+requirements: [
+  bluewolframite/32
+  ]
+category: defense
+research: insulator-wall
