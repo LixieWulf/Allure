@@ -27,6 +27,6 @@ consumes: {
   }
 }
 
-outputLiquid: mag-slag/1
+outputLiquid: mag-slag/20
 category: crafting
 research: melter
