@@ -6,7 +6,7 @@ hasPower: true
 hasLiquids: true
 hasItems: true
 liquidCapacity: 34
-craftTime: 345
+craftTime: 50
 spinnerSpeed: -5
 requirements: [
   copper/500
