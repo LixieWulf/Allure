@@ -1,0 +1,41 @@
+type: Separator
+name: Advanced Melter
+size: 4
+solid: true
+hasPower: true
+hasLiquids: true
+hasItems: true
+liquidCapacity: 34
+craftTime: 345
+spinnerSpeed: -5
+requirements: [
+  copper/500
+  lead/300
+  graphite/400
+  titanium/200
+  surge-alloy/100
+  phase-fabric/30
+  plastanium/30
+]
+consumes: {
+  power: 5.4
+  liquid: {
+    liquid: water
+    amount: 5
+    timePeriod: 80
+  }
+}
+results: [
+  thorium/4
+  titanium/6
+  copper/10
+  lead/10
+  coal/10
+  wolframite/2
+  draconium/2
+  amethyst/3
+  cookienite/4
+  shadow/1
+]
+category: crafting
+research: separator
