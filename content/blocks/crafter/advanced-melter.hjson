@@ -19,28 +19,12 @@ requirements: [
 ]
 consumes: {
   power: 5.4
-  liquid: {
-    liquid: water
-    amount: 5
-    timePeriod: 80
-  }
    items: {
     items: [
-      surge-alloy/5
+   surge-alloy/5
+   sand/5
     ]
   }
 }
-results: [
-  thorium/4
-  titanium/6
-  copper/10
-  lead/10
-  coal/10
-  wolframite/2
-  draconium/2
-  amethyst/3
-  cookienite/4
-  shadow/1
-]
 category: crafting
 research: melter
