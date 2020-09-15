@@ -20,7 +20,7 @@ consumes: {
   power: 5.4
   liquid: {
     liquid: mag-slag
-    amount: 3
+    amount: 0.1
     timePeriod: 34
   }
 }
