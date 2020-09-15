@@ -25,15 +25,11 @@ consumes: {
   }
 }
 results: [
-  draconium/2
-  amethyst/3
-  wolframite/3
-  cookienite/3
   thorium/4
-  titanium/5
-  copper/5
-  lead/5
-  shadow/1
+  titanium/6
+  copper/10
+  lead/10
+  coal/10
 ]
 category: crafting
 research: separator
