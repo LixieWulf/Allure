@@ -26,5 +26,8 @@ consumes: {
     ]
   }
 }
+output: {
+    mag-slag/0.8
+}
 category: crafting
 research: melter
