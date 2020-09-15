@@ -19,7 +19,7 @@ requirements: [
 consumes: {
   power: 5.4
   liquid: {
-    liquid: oil
+    liquid: mag-slag
     amount: 3
     timePeriod: 34
   }
