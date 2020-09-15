@@ -2,6 +2,7 @@ type: SurgeWall
 name: Large Bluewolframite Wall
 description: "An extremely durable defensive block, capable of releasing electric arcs at a high rate upon taking damage. \nSpans a few tiles."
 lightningChance: 1.0
+insulated: true
 health: 6210200
 size: 2
 requirements: [
