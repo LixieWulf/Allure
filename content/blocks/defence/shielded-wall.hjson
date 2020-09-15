@@ -23,5 +23,9 @@ requirements: [
   surge-alloy/25
   bluewolframite/15
 ]
+hasItems: false
+itemCapacity: 0
+phaseUseTime: 2147483647
+phaseRadiusBoost: 0
 category: defense
 research: force-projector
