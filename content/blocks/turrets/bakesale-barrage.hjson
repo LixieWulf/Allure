@@ -3,9 +3,10 @@ description:
   '''
   Made with Cookietite, so it fires at maximum speed.
   [red]No but seriously, there is no point in boosting this. It will have no effect.
+  Have fun trying to load enough ammo into this.
   '''
 type: ItemTurret
-health: 9001
+health: 1250
 consumes: {
 }
 reload: 1
@@ -23,6 +24,7 @@ restitution: 0.05
 cooldown: 0.05
 shootEffect: shootBig
 shootSound: missile
+coolantMultiplier: 0
 maxAmmo: 90
 ammo: {
   cookienite: {
@@ -36,14 +38,14 @@ ammo: {
     hitSize: 16
     bulletShrink: 0
     hitSound: artillery
-    drag: -10
-    speed: 9
-    damage: 1000
-    splashDamage: 7000
-    splashDamageRadius: 64
+    drag: -1.5
+    speed: 6
+    damage: 5000
+    splashDamage: 13000
+    splashDamageRadius: 96
     ammoMultiplier: 20
     homingRange: 360
-    homingPower: 0.01
+    homingPower: 1
     lifetime: 300
     hitEffect: blockExplosion
     despawnEffect: blockExplosion
@@ -61,19 +63,104 @@ ammo: {
     hitSize: 16
     bulletShrink: 0
     hitSound: artillery
-    drag: -15
-    speed: 10
-    damage: 1000
-    splashDamage: 1000
-    splashDamageRadius: 128
-    ammoMultiplier: 30
+    drag: -2
+    speed: 8
+    damage: 9000
+    splashDamage: 20000
+    splashDamageRadius: 160
+    ammoMultiplier: 15
     homingRange: 360
-    homingPower: 0.01
+    homingPower: 1
     lifetime: 300
     hitEffect: blockExplosion
     despawnEffect: blockExplosion
     weaveScale: 8
     weaveMag: 8
+  }
+  blast-compound: {
+    type: MissileBulletType
+    bulletSprite: exotic-mod-cookietitemissile
+    bulletWidth: 12
+    bulletHeight: 12
+    hitSize: 16
+    bulletShrink: 0
+    hitSound: artillery
+    drag: -1
+    speed: 7
+    damage: 7000
+    splashDamage: 16000
+    splashDamageRadius: 256
+    ammoMultiplier: 15
+    homingRange: 360
+    homingPower: 1
+    lifetime: 300
+    hitEffect: blockExplosion
+    despawnEffect: blockExplosion
+    weaveScale: 8
+    weaveMag: 8
+  }
+  pyratite: {
+    type: MissileBulletType
+    bulletSprite: exotic-mod-cookietitemissile
+    bulletWidth: 12
+    bulletHeight: 12
+    hitSize: 16
+    bulletShrink: 0
+    hitSound: artillery
+    speed: 6
+    damage: 5000
+    splashDamage: 9000
+    splashDamageRadius: 96
+    ammoMultiplier: 25
+    homingRange: 360
+    homingPower: 1
+    lifetime: 300
+    hitEffect: blockExplosion
+    despawnEffect: blockExplosion
+    weaveScale: 8
+    weaveMag: 8
+    incendAmount: 2048
+    incendSpread: 512
+  }
+  plastanium: {
+    type: MissileBulletType
+    bulletSprite: exotic-mod-cookietitemissile
+    bulletWidth: 12
+    bulletHeight: 12
+    hitSize: 16
+    bulletShrink: 0
+    hitSound: artillery
+    speed: 6.5
+    damage: 1000
+    splashDamage: 2000
+    splashDamageRadius: 256
+    ammoMultiplier: 20
+    lifetime: 300
+    hitEffect: blockExplosion
+    despawnEffect: blockExplosion
+    weaveScale: 8
+    weaveMag: 8
+    pierce: true
+    fragBullets: 8
+    fragVelocityMin: 0.5
+    fragVelocityMax: 1.5
+    fragBullet: {
+      type: MissileBulletType
+      pierce: true
+      bulletSprite: exotic-mod-cookietitemissile
+      bulletWidth: 6
+      bulletHeight: 6
+      hitSize: 8
+      bulletShrink: 0
+      hitSound: artillery
+      speed: 6.5
+      damage: 500
+      lifetime: 30
+      hitEffect: blockExplosion
+      despawnEffect: blockExplosion
+      weaveScale: 8
+      weaveMag: 8
+    }
   }
 }
 requirements: [
