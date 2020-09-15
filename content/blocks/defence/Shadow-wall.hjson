@@ -9,7 +9,7 @@ requirements: [
   shadow/10
   ]
 category: defense
-research: {
+research: 
 draconium-wall-large
 bluewolframite-wall-huge
-}
+
