@@ -29,8 +29,8 @@ weapon: {
     knockback: 1500
     bulletWidth: 19
     bulletHeight: 27
-    splashDamageRadius: 80
-    splashDamage: 15000
+    splashDamageRadius: 20
+    splashDamage: 1500
     shootEffect: shootBig
     lifetime: 12
   }
