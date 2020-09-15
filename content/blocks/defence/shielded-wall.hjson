@@ -8,6 +8,13 @@ radius: 20
 cooldownNormal: 10000.0
 consumes: {
   power: 1.75
+  items: {
+    items: [
+      silicon/1
+    ]
+    booster: false
+    optional: true
+  }
 }
 requirements: [
   lead/75
