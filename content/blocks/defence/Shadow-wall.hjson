@@ -10,6 +10,6 @@ requirements: [
   ]
 category: defense
 research: {
-  draconium-wall-large
-  bluewolframite-wall-huge
- }
+draconium-wall-large
+bluewolframite-wall-huge
+    }
