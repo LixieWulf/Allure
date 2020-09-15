@@ -4,7 +4,7 @@ description: "An extremely advanced power node, able to reach more buildings and
 health: 135240
 laserRange: 8
 maxNodes: 64
-requirements: {
+requirements: [
   lead/10
   silicon/3
   bluewolframite/5
