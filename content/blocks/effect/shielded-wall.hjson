@@ -12,9 +12,9 @@ consumes: {
 requirements: [
   lead/75
   silicon/25
-  titanium: 35
-  surge-alloy: 25
-  bluewolframite: 15
+  titanium/35
+  surge-alloy/25
+  bluewolframite/15
 ]
 category: effect
 research: force-projector
