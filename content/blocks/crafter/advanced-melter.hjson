@@ -1,5 +1,6 @@
 type: GenericSmelter
 name: Advanced Melter
+description: "Produces a very unstable liquid. Handle it with caution. One wrong move and it will erupt. Don't let it leak."
 size: 4
 solid: true
 hasPower: true
@@ -27,6 +28,6 @@ consumes: {
   }
 }
 
-outputLiquid: mag-slag/40
+outputLiquid: mag-slag/100
 category: crafting
 research: melter
