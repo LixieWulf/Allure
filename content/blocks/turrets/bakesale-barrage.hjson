@@ -140,7 +140,7 @@ ammo: {
     bulletShrink: 0
     hitSound: artillery
     speed: 6.5
-    damage: 1000
+    damage: 1500
     splashDamage: 2000
     splashDamageRadius: 256
     ammoMultiplier: 20
@@ -151,8 +151,8 @@ ammo: {
     weaveMag: 8
     pierce: true
     fragBullets: 8
-    fragVelocityMin: 0.5
-    fragVelocityMax: 1.5
+    fragVelocityMin: 0.1
+    fragVelocityMax: 1.9
     fragBullet: {
       type: MissileBulletType
       pierce: true
@@ -166,7 +166,7 @@ ammo: {
       bulletShrink: 0
       hitSound: artillery
       speed: 6.5
-      damage: 500
+      damage: 750
       lifetime: 30
       hitEffect: blockExplosion
       despawnEffect: blockExplosion
