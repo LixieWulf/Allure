@@ -21,5 +21,11 @@ consumes: {
   optional: true
   }
 }
+requirements: [
+  lead/135
+  silicon/55
+  titanium/75
+  bluewolframite/45
+]
 category: effect
 research: overdrive-projector
