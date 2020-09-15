@@ -1,0 +1,20 @@
+type: ForceProjector
+name: Shielded Wall
+description: "A durable wall that emits a small, strong force field. Requires power to operate."
+health: 1550025
+size: 2
+breakage: 3550220
+radius: 20
+cooldownNormal: 10000.0
+consumes: {
+  power: 1.75
+}
+requirements: [
+  lead/75
+  silicon/25
+  titanium: 35
+  surge-alloy: 25
+  bluewolframite: 15
+]
+category: effect
+research: force-projector
