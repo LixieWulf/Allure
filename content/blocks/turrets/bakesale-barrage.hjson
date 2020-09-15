@@ -29,7 +29,7 @@ maxAmmo: 90
 ammo: {
   cookienite: {
     type: MissileBulletType
-    trailColor: C9A58F
+    trailColor: B28768
     bulletSprite: exotic-mod-cookietitemissile
     frontColor: B28768
     backColor: C9A58F
@@ -80,6 +80,9 @@ ammo: {
   blast-compound: {
     type: MissileBulletType
     bulletSprite: exotic-mod-cookietitemissile
+    trailColor: ffd2ae
+    frontColor: ffd2ae
+    backColor: e58956
     bulletWidth: 12
     bulletHeight: 12
     hitSize: 16
@@ -102,6 +105,9 @@ ammo: {
   pyratite: {
     type: MissileBulletType
     bulletSprite: exotic-mod-cookietitemissile
+    trailColor: f8ad42
+    frontColor: f8ad42
+    backColor: f68021
     bulletWidth: 12
     bulletHeight: 12
     hitSize: 16
@@ -125,6 +131,9 @@ ammo: {
   plastanium: {
     type: MissileBulletType
     bulletSprite: exotic-mod-cookietitemissile
+    trailColor: fffac6
+    frontColor: fffac6
+    backColor: d8d97f
     bulletWidth: 12
     bulletHeight: 12
     hitSize: 16
@@ -148,6 +157,9 @@ ammo: {
       type: MissileBulletType
       pierce: true
       bulletSprite: exotic-mod-cookietitemissile
+      trailColor: fffac6
+      frontColor: fffac6
+      backColor: d8d97f
       bulletWidth: 6
       bulletHeight: 6
       hitSize: 8
