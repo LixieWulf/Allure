@@ -6,7 +6,7 @@ description:
   Have fun trying to load enough ammo into this.
   '''
 type: ItemTurret
-health: 1250
+health: 2800
 consumes: {
 }
 reload: 1
