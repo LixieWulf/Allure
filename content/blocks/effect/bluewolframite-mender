@@ -1,0 +1,25 @@
+type: MendProjector
+name: Bluewolframite Mender
+description: "A small bluewolframite mender. Uses advanced electromagnetics to repair damage in nearby structures at a fast rate. Uses silicon for full effect."
+size: 1
+health: 155460
+range: 66
+reload: 60
+healPercent: 45
+consumes: {
+  power: 0.7
+  items: {
+    items: [
+      silicon/1
+    ]
+    booster: true
+    optional: true
+  }
+}
+requirements: [
+  lead/75
+  silicon/50
+  bluewolframite/15
+]
+category: effect
+research: mender
