@@ -8,15 +8,15 @@ range: 30
 mass: 8640
 hitsize: 20
 rotatespeed: 0.03
-health: 10000000
+health: 1000000
 weapon: {
   name: conqureration
   length: 4
   recoil: 50
   shake: 10
   inaccuracy: 10
-  shots: 9
-  spacing: 2
+  shots: 2
+  spacing: 10
   shotDelay: 3
   shootSound: shootBig
   ejectEffect: shellEjectBig
