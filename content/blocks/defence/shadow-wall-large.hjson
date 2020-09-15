@@ -1,0 +1,12 @@
+type: DeflectorWall
+name: Shadow Wall Large
+description: "Made out of the unique element Shadow. The strongest wall. Insulates arcs and reflects bullets fired."
+size: 1
+health: 9720400
+maxDamageDeflect: 200000
+insulated: true
+requirements: [
+  shadow/25
+  ]
+category: defense
+research: shadow-wall
