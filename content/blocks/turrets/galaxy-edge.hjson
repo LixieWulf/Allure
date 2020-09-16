@@ -31,12 +31,10 @@ requirements: [
 ]
 shootType: {
   type: ContinuousLaserBulletType
-  colors: [
-    fa2de555,
-    fa66ebaa,
-    ffa6f6,
-    ffffff
-  ]
+  colors: [fa2de555, fa66ebaa, ffa6f6, ffffff]
+  tscales: [1, 0.7, 0.5, 0.2]
+  strokes: [6, 4.5, 3, 0.9]
+  lenscales: [1, 1.16, 1.27, 1.39]
   length:160
   width: 32
   damage: 5807850
