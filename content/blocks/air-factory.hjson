@@ -1,5 +1,20 @@
 plans: [
   {
+    unit: flare
+    time: 60*15
+    requirements: [
+      silicon/15
+    ]
+  }
+  {
+    unit: mono
+    time: 60*35
+    requirements: [
+      silicon/30
+      lead/15
+    ]
+  }
+  {
     unit: hellfire
     time: 30
     requirements: [
