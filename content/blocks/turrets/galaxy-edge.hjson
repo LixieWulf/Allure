@@ -1,10 +1,12 @@
-type: PowerTurret
 name: "[#f152ff]Galaxy's Edge"
 description:
 '''
 Fires short beams of star material that obliterate everything.
 [red]Note: May set everything on fire.
+
+With 6.0, it's now unscripted :D
 '''
+type: LaserTurret
 size: 8
 health: 3800
 range: 160
