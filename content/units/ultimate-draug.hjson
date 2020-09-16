@@ -1,4 +1,4 @@
-type: MinerDrone
+type: UnitMiner
 name: Ultimate Draug Miner
 description: Ultimate Draug Miner can mine every in-game material
 maxVelocity: 70
