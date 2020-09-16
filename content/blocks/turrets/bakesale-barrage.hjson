@@ -34,8 +34,8 @@ ammo: {
     sprite: exotic-mod-cookietitemissile
     frontColor: B28768
     backColor: C9A58F
-    bulletWidth: 12
-    bulletHeight: 12
+    width: 12
+    height: 12
     hitSize: 16
     bulletShrink: 0
     hitSound: artillery
@@ -59,8 +59,8 @@ ammo: {
     sprite: exotic-mod-cookietitemissile
     frontColor: 8F665B
     backColor: B28768
-    bulletWidth: 12
-    bulletHeight: 12
+    width: 12
+    height: 12
     hitSize: 16
     bulletShrink: 0
     hitSound: artillery
@@ -84,8 +84,8 @@ ammo: {
     trailColor: ffd2ae
     frontColor: ffd2ae
     backColor: e58956
-    bulletWidth: 12
-    bulletHeight: 12
+    width: 12
+    height: 12
     hitSize: 16
     bulletShrink: 0
     hitSound: artillery
@@ -109,8 +109,8 @@ ammo: {
     trailColor: f8ad42
     frontColor: f8ad42
     backColor: f68021
-    bulletWidth: 12
-    bulletHeight: 12
+    width: 12
+    height: 12
     hitSize: 16
     bulletShrink: 0
     hitSound: artillery
@@ -135,8 +135,8 @@ ammo: {
     trailColor: fffac6
     frontColor: fffac6
     backColor: d8d97f
-    bulletWidth: 12
-    bulletHeight: 12
+    width: 12
+    height: 12
     hitSize: 16
     bulletShrink: 0
     hitSound: artillery
@@ -161,8 +161,8 @@ ammo: {
       trailColor: fffac6
       frontColor: fffac6
       backColor: d8d97f
-      bulletWidth: 6
-      bulletHeight: 6
+      width: 6
+      height: 6
       hitSize: 8
       bulletShrink: 0
       hitSound: artillery
