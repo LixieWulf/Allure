@@ -1,0 +1,10 @@
+type: UnitFactory
+name: ModFactory
+description: Afactory for all modded units.
+size: 1
+buildVisibility: shown
+plans: {
+  hellfire
+}
+category: units
+research: core-shard
