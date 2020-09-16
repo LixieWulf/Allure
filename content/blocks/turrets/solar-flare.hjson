@@ -45,6 +45,9 @@ shootType: {
     damage: 40000
     effect: burning
     armorMultiplier: 0.1
+    incendChance: 1
+    incendSpread: 16
+    incendAmount: 64
   }
 }
 category: turret
