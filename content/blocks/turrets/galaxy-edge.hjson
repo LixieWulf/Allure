@@ -15,6 +15,8 @@ powerUse: 1500
 rotatespeed: 0.5
 shootCone: 10
 shootShake: 1.5
+shots: 5
+spread: 10
 targetAir: true
 targetGround: true
 heatColor: f152ff
@@ -24,5 +26,25 @@ rotatespeed: 5
 firingMoveFract: 0.5
 requirements: [
 ]
+shootType: {
+  type: ContinuousLaserBulletType
+  colors: [
+    fa2de555,
+    fa66ebaa,
+    ffa6f6,
+    ffffff
+  ]
+  length:160
+  width: 32
+  damage: 5807850
+  status: {
+    name: gone-reduced-to-atoms
+    damage: 580785
+    effect: burning
+    armorMultiplier: 0.1
+    damageMultiplier: 0.5
+    speedMultiplier: 0.5
+  }
+}
 category: turret
 research: solar-flare
