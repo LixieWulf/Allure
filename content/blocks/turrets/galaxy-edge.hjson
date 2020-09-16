@@ -47,10 +47,10 @@ shootType: {
     armorMultiplier: 0.1
     damageMultiplier: 0.5
     speedMultiplier: 0.5
+    incendChance: 1
+    incendSpread: 128
+    incendAmount: 512
   }
-  incendChance: 1
-  incendSpread: 128
-  incendAmount: 512
 }
 category: turret
 research: solar-flare
