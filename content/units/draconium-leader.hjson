@@ -1,4 +1,4 @@
-type: groundUnit
+type: Mech
 name: Draconium Leader
 description: The Leader of the Draconium Army.
 maxVelocity: 1
