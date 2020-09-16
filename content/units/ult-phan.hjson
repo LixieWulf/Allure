@@ -1,7 +1,6 @@
-type: BuilderDrone
+type: UnitBuilderMiner
 name: Ultimate Phantom Drone
 description: a Buffed up Phantom Builder Drone
-flying: "true"
 drag: 0.01
 speed: 0.45
 maxVelocity: 1.9
