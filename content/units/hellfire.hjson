@@ -9,7 +9,6 @@ description:
 maxVelocity: 1
 speed: 1.0
 flying: true
-rotateWeapon: true
 range: 240
 attackLength: 280
 mass: 10000
