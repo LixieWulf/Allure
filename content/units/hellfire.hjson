@@ -18,6 +18,7 @@ retreatPercent: 2
 engineOffset: 36
 engineSize: 7
 weapons: [{
+  {
   name: wolfsteeth
   rotate: true 
   rotateSpeed: 0.25
@@ -44,6 +45,7 @@ weapons: [{
     shootEffect: shootBig
     lifetime: 200
   }
+  {
     name: wolfsteeth
   rotate: true 
   rotateSpeed: 0.25
