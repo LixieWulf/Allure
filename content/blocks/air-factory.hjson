@@ -16,7 +16,7 @@ plans: [
   }
   {
     unit: hellfire
-    time: 30
+    time: 60*0.5
     requirements: [
       surge-alloy/1
     ]
