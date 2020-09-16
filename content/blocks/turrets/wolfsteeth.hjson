@@ -7,7 +7,7 @@ health: 15500250
 size: 8
 inaccuracy: 0
 spread: 0
-recoilAmount: 64
+recoilAmount: 4
 reloadTime: 60
 burstSpacing: 0
 shots: 4
