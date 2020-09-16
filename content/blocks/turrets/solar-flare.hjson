@@ -31,12 +31,10 @@ requirements: [
 ]
 shootType: {
   type: ContinuousLaserBulletType
-  colors: [
-    e6c04555,
-    f7d95eaa,
-    ffec6e,
-    ffffff
-  ]
+  colors: [e6c04555, f7d95eaa, ffec6e, ffffff]
+  tscales: [1, 0.7, 0.5, 0.2]
+  strokes: [2.5, 1.875, 1.25, 0.375]
+  lenscales: [1, 1.12, 1.15, 1.17]
   length:560
   width: 16
   damage: 10000
