@@ -45,7 +45,8 @@ weapons: [{
     shootEffect: shootBig
     lifetime: 200
   }
-  {
+}
+{
     name: wolfsteeth
   rotate: true 
   rotateSpeed: 0.25
@@ -71,5 +72,6 @@ weapons: [{
     splashDamage: 25000
     shootEffect: shootBig
     lifetime: 200
+    }
   }
 }]
