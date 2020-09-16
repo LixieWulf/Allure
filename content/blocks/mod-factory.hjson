@@ -2,7 +2,7 @@ type: UnitFactory
 name: Mod Factory
 description: Testing mod factory for exotic.
 size: 1
-buildVisibility: shown
+buildVisibility: sandboxOnly
 consumes: {
   power: 0.1
 }
@@ -15,3 +15,4 @@ plans: [
     ]
   }
 ]
+category: units
