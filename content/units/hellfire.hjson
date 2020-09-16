@@ -6,18 +6,15 @@ description:
 
   WARNING: THIS SHIP IS EXTREMELY DANGEROUS. LAUNCHING BEFORE AN ATTACK FROM THE HELLFIRE IS STRONGLY SUGGESTED.
   '''
-flying: true
 maxVelocity: 1
 speed: 0.1
 drag: 0.5
 range: 240
-payloadCapacity: 2048
 attackLength: 280
 mass: 10000
 hitsize: 45
 health: 250000000
-retreatPercent: 0
-weaponOffsetY: 13
+retreatPercent: 2
 engineOffset: 36
 engineSize: 7
 weapon: {
@@ -30,25 +27,21 @@ weapon: {
   recoil: 0.1
   inaccuracy: 0
   shots: 4
-  xRand: 20
-  spacing: 0
   shotDelay: 30
   shootSound: shootBig
   ejectEffect: shellEjectBig
   bullet: {
-    bulletSprite: exotic-mod-railbolt
+    sprite: exotic-mod-railbolt
     damage: 100000
     frontColor: 234dad
     backColor: 0a2666
     speed: 16
     knockback: 1500
-    bulletWidth: 16
-    bulletHeight: 50
+    width: 16
+    height: 50
     splashDamageRadius: 100
     splashDamage: 25000
     shootEffect: shootBig
     lifetime: 200
-    hitTiles: true
-    collidesTiles: true
   }
 }
