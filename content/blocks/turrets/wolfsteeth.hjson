@@ -16,7 +16,7 @@ ammoUseEffect: shellEjectBig
 shootCone: 15
 rotatespeed: 0.25
 range: 4000
-ammo: {
+ammoTypes: {
   copper: {
   speed: 10
   damage: 400
