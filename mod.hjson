@@ -18,3 +18,4 @@ description:
    Advanced Melter and Advanced Separator have been added along with Shadow walls and a blue wolframite overdrive, and soon we will start filling in textures. For now, Enjoy!
   '''
 version: 2.201
+minGameVersion: 105
