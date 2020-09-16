@@ -17,7 +17,7 @@ health: 250000000
 retreatPercent: 2
 engineOffset: 36
 engineSize: 7
-weapons: [{
+weapons: [
   {
   name: wolfsteeth
   rotate: true 
@@ -74,4 +74,4 @@ weapons: [{
     lifetime: 200
     }
   }
-}]
+]
