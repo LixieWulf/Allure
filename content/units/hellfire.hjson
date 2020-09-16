@@ -1,8 +1,8 @@
-type: Unit
+type: UnitPayload
 name: Hellfire
 description:
   '''
-  The most powerful ship ever to fly in an atmosphere. Can take down the most advanced bases if not prepared for.
+  The most powerful ship ever to fly in an atmosphere. Can take down the most advanced bases if not prepared for. Can pick up the largest of blocks.
 
   WARNING: THIS SHIP IS EXTREMELY DANGEROUS. LAUNCHING BEFORE AN ATTACK FROM THE HELLFIRE IS STRONGLY SUGGESTED.
   '''
@@ -11,6 +11,7 @@ maxVelocity: 1
 speed: 0.1
 drag: 0.5
 range: 240
+payloadCapacity: 2048
 attackLength: 280
 mass: 10000
 hitsize: 45
@@ -21,8 +22,10 @@ engineOffset: 36
 engineSize: 7
 weapon: {
   name: wolfsteeth
-  width: 0
-  length: 9
+  rotate: true 
+  rotateSpeed: 0.25
+  x: 0
+  y: 30
   reload: 60
   recoil: 0.1
   inaccuracy: 0
@@ -32,7 +35,6 @@ weapon: {
   shotDelay: 30
   shootSound: shootBig
   ejectEffect: shellEjectBig
-  alternate: false
   bullet: {
     bulletSprite: exotic-mod-railbolt
     damage: 100000
