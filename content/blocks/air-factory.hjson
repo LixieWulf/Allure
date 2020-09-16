@@ -1,0 +1,9 @@
+plans: [
+  {
+    unit: hellfire
+    time: 30
+    requirements: [
+      surge-alloy/1
+    ]
+  }
+]
