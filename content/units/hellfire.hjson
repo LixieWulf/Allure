@@ -20,13 +20,14 @@ weaponOffsetY: 13
 engineOffset: 36
 engineSize: 7
 weapon: {
-  name: shipboard-railgun
+  name: wolfsteeth
   width: 0
   length: 9
-  reload: 30
+  reload: 60
   recoil: 0.1
   inaccuracy: 0
-  shots: 1
+  shots: 4
+  xRand: 20
   spacing: 0
   shotDelay: 30
   shootSound: shootBig
