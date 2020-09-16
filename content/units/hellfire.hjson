@@ -69,4 +69,5 @@ weapons: [{
     splashDamage: 25000
     shootEffect: shootBig
     lifetime: 200
+    }
 }]
