@@ -6,7 +6,7 @@ reload: 80
 shootSound: spark
 shootCone: 40
 shots: 50
-shootType: arc
+shootType: standardCopper
 rotatespeed: 100
 powerUse: 1
 targetAir: true
