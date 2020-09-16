@@ -44,4 +44,29 @@ weapons: [{
     shootEffect: shootBig
     lifetime: 200
   }
+    name: wolfsteeth
+  rotate: true 
+  rotateSpeed: 0.25
+  x: 0
+  y: -80
+  reload: 60
+  recoil: 0.1
+  inaccuracy: 0
+  shots: 4
+  shotDelay: 30
+  shootSound: shootBig
+  ejectEffect: shellEjectBig
+  bullet: {
+    sprite: exotic-mod-railbolt
+    damage: 100000
+    frontColor: 234dad
+    backColor: 0a2666
+    speed: 16
+    knockback: 1500
+    width: 16
+    height: 50
+    splashDamageRadius: 100
+    splashDamage: 25000
+    shootEffect: shootBig
+    lifetime: 200
 }]
