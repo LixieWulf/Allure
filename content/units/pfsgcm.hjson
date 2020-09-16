@@ -1,4 +1,4 @@
-type: FlyingUnit
+type: Unit
 name: PFSGCM
 description:
   '''
