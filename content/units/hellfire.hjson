@@ -12,7 +12,7 @@ flying: true
 range: 240
 attackLength: 280
 mass: 10000
-hitsize: 45
+hitsize: 100
 health: 250000000
 retreatPercent: 2
 engineOffset: 36
