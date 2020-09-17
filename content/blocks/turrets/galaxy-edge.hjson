@@ -37,7 +37,7 @@ shootType: {
   lenscales: [1, 1.16, 1.27, 1.39]
   length:160
   width: 32
-  damage: 5807850
+  damage: 1950000
   status: {
     name: gone-reduced-to-atoms
     damage: 580785
@@ -45,6 +45,29 @@ shootType: {
     armorMultiplier: 0.1
     damageMultiplier: 0.5
     speedMultiplier: 0.5
+  }
+  incendChance: 1
+  incendSpread: 128
+  incendAmount: 512
+  fragBullets: 3
+  fragBullet: {
+    type: LaserBulletType
+    colors: [fa2de566, fa2de5, ffffff]
+    length: 32
+    width: 4
+    sideLength: 8
+    sideWidth: 1
+    sideAngle: 22.5
+    pierce: true
+    damage: 1950000
+    status: {
+      name: gone-reduced-to-atoms-redux
+      damage: 580785
+      effect: burning
+      armorMultiplier: 0.1
+      damageMultiplier: 0.5
+      speedMultiplier: 0.5
+    }
     incendChance: 1
     incendSpread: 128
     incendAmount: 512
