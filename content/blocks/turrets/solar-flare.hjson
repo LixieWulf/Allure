@@ -38,6 +38,7 @@ shootType: {
   length:560
   width: 16
   damage: 10000
+  pierce: true
   status: {
     name: the-sun-is-a-deadly-laser
     damage: 40000
