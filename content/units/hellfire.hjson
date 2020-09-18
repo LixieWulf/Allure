@@ -82,7 +82,7 @@ weapons: [
   reload: 142
   recoil: 0
   shotDelay: 60
-  shootType: {
+  bullet: {
     type: ContinuousLaserBulletType
     length: 315
     width: 8
