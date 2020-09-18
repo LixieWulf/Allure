@@ -88,4 +88,6 @@ weapons: [
     width: 8
     damage: 145750
     colors: [87a3ff, abbeff, cfdaff, ffffff]
+    }
+  }
 ]
