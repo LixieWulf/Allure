@@ -28,7 +28,7 @@ weapons: [
   recoil: 0.1
   inaccuracy: 0
   shots: 4
-  shotDelay: 30
+  shotDelay: 5
   shootSound: shootBig
   ejectEffect: shellEjectBig
   bullet: {
@@ -56,7 +56,7 @@ weapons: [
   recoil: 0.1
   inaccuracy: 0
   shots: 4
-  shotDelay: 30
+  shotDelay: 5
   shootSound: shootBig
   ejectEffect: shellEjectBig
   bullet: {
@@ -74,4 +74,18 @@ weapons: [
     lifetime: 200
     }
   }
+  {
+  name: hellfire-cannon-main
+  x: 0
+  y: 175
+  rotate: false
+  reload: 142
+  recoil: 0
+  shotDelay: 60
+  shootType: {
+    type: ContinuousLaserBulletType
+    length: 315
+    width: 8
+    damage: 145750
+    colors: [87a3ff, abbeff, cfdaff, ffffff]
 ]
