@@ -3,7 +3,7 @@ name: Huge Bluewolframite Wall
 description: "An extremely durable defensive block, capable of releasing electric arcs at a high rate upon taking damage as well as deflecting bullets with a strong magnetic field. \nSpans many tiles."
 size: 3
 health: 13972950
-maxDamageDeflect: 
+maxDamageDeflect: 108000
 lightningChance: 1.0
 requirements: [
   bluewolframite/72
