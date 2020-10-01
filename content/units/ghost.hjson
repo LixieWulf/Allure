@@ -1,4 +1,4 @@
-type: Unit
+type: UnitEntity
 name: Ghost
 description: A stronger spirit repair drone.
 speed: 2
