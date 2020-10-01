@@ -1,4 +1,4 @@
-type: Unit
+type: UnitEntity
 name: Shadow King
 description: A massive, heavily armored airship. It will rule the battlefield.
 health: 111333666999000
