@@ -1,4 +1,4 @@
-type: Unit
+type: MinerBuilderUnit
 name: Ultimate Phantom Drone
 description: a Buffed up Phantom Builder Drone
 drag: 0.01
