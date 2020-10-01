@@ -1,5 +1,5 @@
 name: Shadow Kind
-type: Unit
+type: UnitEntity
 description: A unit made from the mysterious shadow ore.. it fires a powerful laser.
 speed: 6
 drag: 0.6
