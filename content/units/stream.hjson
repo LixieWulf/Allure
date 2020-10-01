@@ -1,5 +1,5 @@
-type: Unit
-name: Streamers
+type: UnitEntity
+name: Streamer
 description: Conquerors of Heaven and Earth
 maxVelocity: 70
 speed: 0.29
