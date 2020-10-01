@@ -14,8 +14,10 @@ author:
 description:
   '''
   We got together over the Mindustry Discord to bring you this exotic mod. Adds in a few things we thought would be fun.
-  [cyan]Update Log:
-   Advanced Melter and Advanced Separator have been added along with Shadow walls and a blue wolframite overdrive, and soon we will start filling in textures. For now, Enjoy!
+  [cyan]Update log:
+    V6 update! Exotic will be going through massive changes as we fix up some things!
+    
+    [red]We really dont suggest using the Mod Factory.
   '''
-version: 2.201
+version: 2.3-v6-pre-alpha-build07
 minGameVersion: 105
