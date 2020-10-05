@@ -84,11 +84,11 @@ weapons: [
   rotateSpeed: 0
   shootCone: 360
   continuous: true
-  lifetime: 240
   recoil: 0
   shotDelay: 60
   bullet: {
     type: ContinuousLaserBulletType
+    lifetime: 240
     length: 315
     width: 8
     damage: 145750
