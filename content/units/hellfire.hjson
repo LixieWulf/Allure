@@ -84,7 +84,7 @@ weapons: [
   rotateSpeed: 0
   shootCone: 360
   continuous: true
-  shootDuration: 240
+  cooldownTime: 240
   recoil: 0
   shotDelay: 60
   bullet: {
