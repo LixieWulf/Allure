@@ -83,6 +83,7 @@ weapons: [
   reload:  360
   rotateSpeed: 0
   shootCone: 360
+  continuous: true
   shootDuration: 240
   recoil: 0
   shotDelay: 60
