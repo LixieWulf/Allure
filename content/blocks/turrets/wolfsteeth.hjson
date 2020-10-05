@@ -14,7 +14,7 @@ shots: 4
 xRand: 20
 ammoUseEffect: shellEjectBig
 shootCone: 15
-rotatespeed: 0.25
+rotateSpeed: 0.25
 range: 4000
 ammoTypes: {
   copper: {
