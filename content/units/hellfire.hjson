@@ -14,7 +14,7 @@ attackLength: 280
 mass: 10000
 hitsize: 100
 health: 250000000
-rotateSpeed: 0.01
+rotateSpeed: 0.25
 retreatPercent: 2
 engineOffset: 36
 engineSize: 7
