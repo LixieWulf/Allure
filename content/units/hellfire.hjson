@@ -90,6 +90,7 @@ weapons: [
     type: ContinuousLaserBulletType
     lifetime: 240
     length: 315
+    drawSize: 460
     width: 8
     damage: 145750
     colors: [87a3ff, abbeff, cfdaff, ffffff]
