@@ -7,7 +7,7 @@ description:
   WARNING: THIS SHIP IS EXTREMELY DANGEROUS. LAUNCHING BEFORE AN ATTACK FROM THE HELLFIRE IS STRONGLY SUGGESTED.
   '''
 maxVelocity: 1
-speed: 0.75
+speed: 0.25
 flying: true
 range: 240
 attackLength: 280
