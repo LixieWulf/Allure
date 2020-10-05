@@ -81,14 +81,12 @@ weapons: [
   y: 175
   rotate: false
   reload:  360
-  rotateSpeed: 0
-  shootCone: 360
+  shootCone: 15
   continuous: true
   recoil: 0
   shotDelay: 60
   bullet: {
     type: ContinuousLaserBulletType
-    lifetime: 240
     length: 315
     drawSize: 460
     width: 8
