@@ -10,9 +10,7 @@ maxVelocity: 1
 speed: 0.25
 flying: true
 range: 240
-attackLength: 280
-mass: 10000
-hitsize: 100
+hitSize: 144
 health: 250000000
 rotateSpeed: 0.1
 retreatPercent: 2
