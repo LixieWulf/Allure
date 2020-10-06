@@ -109,5 +109,6 @@ weapons: [
     lifetime: 16
     drawSize: 400
     damage: 4565
+    }
   }
 ]
