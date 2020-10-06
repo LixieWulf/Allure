@@ -34,8 +34,8 @@ weapons: [
   bullet: {
     sprite: exotic-mod-railbolt
     damage: 100000
-    frontColor: 234dad
-    backColor: 0a2666
+    frontColor: ffffff
+    backColor: 87a3ff
     speed: 16
     knockback: 1500
     width: 16
@@ -63,8 +63,8 @@ weapons: [
   bullet: {
     sprite: exotic-mod-railbolt
     damage: 100000
-    frontColor: 234dad
-    backColor: 0a2666
+    frontColor: ffffff
+    backColor: 87a3ff
     speed: 16
     knockback: 1500
     width: 16
