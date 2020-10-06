@@ -99,7 +99,7 @@ weapons: [
   name: point-defense-cluster
   x: 35
   y: 0
-  range: 80
+  range: 160
   mirror: true
   shots: 6
   reload: 0
