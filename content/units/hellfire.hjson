@@ -26,6 +26,7 @@ weapons: [
   x: 0
   y: 40
   reload: 60
+  xRand: 20
   recoil: 0.1
   inaccuracy: 0
   shots: 4
@@ -54,6 +55,7 @@ weapons: [
   x: 0
   y: -120
   reload: 60
+  xRand: 20
   recoil: 0.1
   inaccuracy: 0
   shots: 4
