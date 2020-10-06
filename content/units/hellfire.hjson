@@ -97,10 +97,9 @@ weapons: [
   }
   {
   name: point-defense-cluster
-  x: 35
+  x: 0
   y: 0
   range: 160
-  mirror: true
   shots: 6
   reload: 0
   inaccuracy: 4
