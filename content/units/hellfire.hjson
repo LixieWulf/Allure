@@ -103,4 +103,5 @@ weapons: [
   reload: 0
   inaccuracy: 4
   bullet: basicFlame
+  }
 ]
