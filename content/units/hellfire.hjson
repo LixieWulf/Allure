@@ -103,6 +103,11 @@ weapons: [
   mirror: true
   reload: 0
   inaccuracy: 4
-  bullet: basicFlame
+  bullet: {
+    type: LaserBulletType
+    hitSize: 4
+    lifetime: 16
+    drawSize: 400
+    damage: 4565
   }
 ]
