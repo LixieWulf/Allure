@@ -1,10 +1,10 @@
 type: ItemTurret
 name: Railgun
-description: Blue Wolfranite's electromagnetic properties allow for the creation of this powerful railgun.
+description: Blue Wolframite's electromagnetic properties allow for the creation of this powerful railgun.
 targetAir: true
 targetGround: true
 health: 14500
-size: 4
+size: 2
 outlineIcon: false
 heatColor: 91E0EA
 cooldown: 0.02
