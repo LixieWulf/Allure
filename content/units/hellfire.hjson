@@ -105,10 +105,11 @@ weapons: [
   inaccuracy: 4
   bullet: {
     type: LaserBulletType
-    hitSize: 4
-    lifetime: 16
-    drawSize: 400
-    damage: 4565
+      damage: 4565
+      sideAngle: 45f
+      sideWidth: 1f
+      sideLength: 70
+      colors: [87a3ff, ffffff]
     }
   }
 ]
