@@ -81,6 +81,7 @@ weapons: [
   y: 175
   rotate: false
   reload:  360
+  shootShake: 15
   shootCone: 15
   continuous: true
   recoil: 0
@@ -99,13 +100,15 @@ weapons: [
   name: point-defense-cluster
   x: 0
   y: 0
-  range: 160
   shots: 6
   reload: 0
   inaccuracy: 4
   bullet: {
     type: LaserBulletType
       damage: 4565
+      lifetime: 16
+      length: 80
+      drawSize: 80
       sideAngle: 45f
       sideWidth: 1f
       sideLength: 70
