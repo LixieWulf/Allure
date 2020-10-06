@@ -101,6 +101,7 @@ weapons: [
   x: 0
   y: 0
   shots: 6
+  rotate: true
   reload: 0
   inaccuracy: 4
   bullet: {
