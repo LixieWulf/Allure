@@ -9,7 +9,7 @@ description:
 speed: 0.25
 flying: true
 range: 240
-hitSize: 144
+hitSize: 288
 health: 250000000
 lowAltitude: true
 rotateSpeed: 0.1
