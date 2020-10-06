@@ -101,6 +101,7 @@ weapons: [
   y: 0
   range: 80
   mirror: true
+  shots: 6
   reload: 0
   inaccuracy: 4
   bullet: {
