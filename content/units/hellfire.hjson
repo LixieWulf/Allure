@@ -21,6 +21,7 @@ weapons: [
   name: wolfsteeth
   rotate: true 
   rotateSpeed: 0.25
+  mirror: false
   x: 0
   y: 40
   reload: 60
@@ -50,6 +51,7 @@ weapons: [
     name: wolfsteeth
   rotate: true 
   rotateSpeed: 0.25
+  mirror: false
   x: 0
   y: -120
   reload: 60
@@ -82,6 +84,7 @@ weapons: [
   rotate: false
   reload:  360
   shootCone: 15
+  mirror: false
   continuous: true
   shootSound: laserbig
   activeSound: beam
