@@ -90,7 +90,7 @@ weapons: [
     length: 315
     lifetime: 300
     drawSize: 460
-    shootEffect: lancerLaserShoot
+    shootEffect: railShoot
     shootShake: 15
     width: 8
     damage: 145750
