@@ -83,6 +83,7 @@ weapons: [
   reload:  360
   shootShake: 15
   shootCone: 15
+  shootEffect: lancerLaserShoot
   continuous: true
   recoil: 0
   shotDelay: 60
