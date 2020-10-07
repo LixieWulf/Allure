@@ -93,7 +93,7 @@ weapons: [
     lifetime: 300
     drawSize: 460
     shootEffect: railShoot
-    shootShake: 15
+    shake: 15
     width: 8
     damage: 145750
     colors: [87a3ff, abbeff, cfdaff, ffffff]
