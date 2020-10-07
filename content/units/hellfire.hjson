@@ -81,9 +81,7 @@ weapons: [
   y: 175
   rotate: false
   reload:  360
-  shootShake: 15
   shootCone: 15
-  shootEffect: lancerLaserShoot
   continuous: true
   recoil: 0
   shotDelay: 60
@@ -92,6 +90,8 @@ weapons: [
     length: 315
     lifetime: 300
     drawSize: 460
+    shootEffect: railShoot
+    shootShake: 15
     width: 8
     damage: 145750
     colors: [87a3ff, abbeff, cfdaff, ffffff]
