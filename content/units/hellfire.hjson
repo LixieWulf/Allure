@@ -98,7 +98,7 @@ weapons: [
     shootEffect: railShoot
     shake: 15
     width: 8
-    damage: 145750
+    damage: 345980
     colors: [87a3ff, abbeff, cfdaff, ffffff]
     }
   }
