@@ -30,12 +30,12 @@ weapons: [
   inaccuracy: 0
   shots: 4
   shotDelay: 5
-  shootEffect: lancerLaserShoot
   shootSound: shootBig
   ejectEffect: shellEjectBig
   bullet: {
     sprite: exotic-mod-railbolt
     damage: 100000
+    shootEffect: lancerLaserShoot
     frontColor: ffffff
     backColor: 87a3ff
     speed: 16
@@ -62,11 +62,11 @@ weapons: [
   shots: 4
   shotDelay: 5
   shootSound: shootBig
-  shootEffect: lancerLaserShoot
   ejectEffect: shellEjectBig
   bullet: {
     sprite: exotic-mod-railbolt
     damage: 100000
+    shootEffect: lancerLaserShoot
     frontColor: ffffff
     backColor: 87a3ff
     speed: 16
@@ -89,12 +89,13 @@ weapons: [
   mirror: false
   continuous: true
   shootSound: laserbig
-  activeSound: beam
+  
   recoil: 0
   shotDelay: 60
   bullet: {
     type: ContinuousLaserBulletType
     length: 315
+    activeSound: beam
     lifetime: 300
     drawSize: 460
     shootEffect: railShoot
