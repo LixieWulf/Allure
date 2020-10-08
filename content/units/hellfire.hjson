@@ -42,8 +42,7 @@ weapons: [
     knockback: 1500
     width: 16
     height: 50
-    splashDamageRadius: 100
-    splashDamage: 25000
+    pierceBuilding: true
     shootEffect: shootBig
     lifetime: 200
     }
@@ -73,8 +72,7 @@ weapons: [
     knockback: 1500
     width: 16
     height: 50
-    splashDamageRadius: 100
-    splashDamage: 25000
+    pierceBuilding: true
     shootEffect: shootBig
     lifetime: 200
     }
