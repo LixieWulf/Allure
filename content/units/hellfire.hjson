@@ -30,6 +30,7 @@ weapons: [
   inaccuracy: 0
   shots: 4
   shotDelay: 5
+  shootEffect: lancerLaserShoot
   shootSound: shootBig
   ejectEffect: shellEjectBig
   bullet: {
@@ -61,6 +62,7 @@ weapons: [
   shots: 4
   shotDelay: 5
   shootSound: shootBig
+  shootEffect: lancerLaserShoot
   ejectEffect: shellEjectBig
   bullet: {
     sprite: exotic-mod-railbolt
