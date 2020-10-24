@@ -124,6 +124,7 @@ ammoTypes: {
     speed: 7
     lifetime: 385
     pierce: true
+    pierceBuilding: true
     hitEffect: hitMeltdown
     splashDamage: 85
     splashDamageRadius: 38
