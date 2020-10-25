@@ -1,0 +1,18 @@
+Type: CoreBlock
+name: "Core: Nexus"
+description: A large and extremely well armored core, able to store large quantities of items.
+health: 25550350
+itemCapacity: 45000
+size: 6
+category: effect
+unitType: gamma
+unitCapModifer: 125
+requirements: [
+  copper/12000
+  lead/11500
+  silicon/7500
+  thorium/5000
+  surge-alloy/3500
+  bluewolframite/1500
+]
+research: core-nucleus
