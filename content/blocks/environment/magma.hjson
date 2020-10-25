@@ -7,6 +7,7 @@ walkEffect: burning
 updateEffect: fire
 drownUpdateEffect: melting
 variants: 0
+wall: dark-metal
 cacheLayer: tar
 statusDuration: 240
 blendGroup: air
