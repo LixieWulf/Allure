@@ -21,4 +21,4 @@ consumes: {
 }
 requirements: []
 category: crafting
-research: cryofluidmixer
+research: cryofluid-mixer
