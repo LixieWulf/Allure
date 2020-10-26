@@ -3,7 +3,7 @@ name: Cookietite Oven
 description: Bakes cookietite. And by bake, I definitely mean refine. Definitely.
 size: 2
 hasPower: true
-hasLiquids: true
+hasLiquids: false
 hasItems: true
 liquidCapacity: 24
 craftTime: 90
@@ -17,11 +17,6 @@ consumes: {
       cookienite/3
       titanium/1
     ]
-  }
-  liquid: {
-    liquid: water
-    amount: 0.133333333
-    timePeriod: 90
   }
 }
 requirements: [
