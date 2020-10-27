@@ -137,7 +137,7 @@ weapons: [
     damage: 522530
     lifetime: 60
     speed: 14
-    length: 42
+    length: 84
     width: 28
   }
 }
