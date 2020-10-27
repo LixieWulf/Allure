@@ -107,20 +107,20 @@ weapons: [
   name: point-defense-cluster
   x: 0
   y: 0
-  shots: 6
+  shots: 15
   rotate: true
-  reload: 0
+  reload: 15
   inaccuracy: 4
   bullet: {
-    type: LaserBulletType
-      damage: 4565
-      lifetime: 16
-      length: 80
-      drawSize: 80
-      sideAngle: 45f
-      sideWidth: 1f
-      sideLength: 70
-      colors: [87a3ff, ffffff]
+    damage: 4565
+    speed: 15
+    lifetime: 15
+    pierce: true
+    pierceBuilding: true
+    height: 10
+    width: 3
+    frontColor: ffffff
+    backColor: 87a3ff
     }
   }
   {
