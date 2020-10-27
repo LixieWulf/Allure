@@ -167,7 +167,7 @@ weapons: [
 {
 name: broadside-cannon
 x: 35
-y: 12
+y: -15
 rotate: true
 reload: 15
 shots: 25
@@ -188,7 +188,7 @@ bullet: {
 {
   name: broadside-cannon
   x: 35 
-  y: -44
+  y: -72
   rotate: true
   reload: 15
   shots: 25
