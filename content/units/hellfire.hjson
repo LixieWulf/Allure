@@ -132,6 +132,7 @@ weapons: [
   burstSpacing: 1
   inaccuracy: 1
   mirror: false
+  shootSound: shootBig
   reload: 10
   bullet: {
     damage: 522530
