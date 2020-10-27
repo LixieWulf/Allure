@@ -15,7 +15,6 @@ consumes: {
   liquid: {
     liquid: oil
     amount: 0.7
-    timePeriod: 30
   }
   power: 3.75
 }
