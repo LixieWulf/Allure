@@ -21,7 +21,6 @@ consumes: {
   liquid: {
     liquid: mag-slag
     amount: 0.2
-    timePeriod: 34
   }
 }
 
