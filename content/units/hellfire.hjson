@@ -172,6 +172,8 @@ bullet: {
   damage: 676550
   speed: 14
   lifetime: 15
+  pierce: true
+  pierceBuilding: true
   height: 28
   width: 18
   homingPower: 5.0
@@ -193,6 +195,8 @@ bullet: {
     damage: 676550
     speed: 14
     lifetime: 15
+    pierce: true
+    pierceBuilding: true
     height: 28
     width: 18
     homingPower: 5.0
