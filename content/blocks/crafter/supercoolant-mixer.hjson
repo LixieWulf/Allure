@@ -16,7 +16,6 @@ consumes: {
   liquid: {
     liquid: cryofluid
     amount: 0.2
-    timePeriod: 180
   }
 }
 requirements: []
