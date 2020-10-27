@@ -106,7 +106,7 @@ weapons: [
   {
   name: point-defense-cluster
   x: 35
-  y: 130
+  y: 110
   shots: 35
   rotate: true
   reload: 5
