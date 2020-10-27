@@ -1,11 +1,6 @@
 type: UnitEntity
 name: Hellfire
-description:
-  '''
-  The most powerful ship ever to fly in an atmosphere. Can take down the most advanced bases if not prepared for.
-
-  WARNING: THIS SHIP IS EXTREMELY DANGEROUS. LAUNCHING BEFORE AN ATTACK FROM THE HELLFIRE IS STRONGLY SUGGESTED.
-  '''
+description: A massive starship, capable of easily destroying the most powerful units and laying waste to any base in its path. Avoid encounters if possible.
 speed: 0.25
 accel: 0.5
 flying: true
