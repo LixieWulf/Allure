@@ -105,16 +105,16 @@ weapons: [
   }
   {
   name: point-defense-cluster
-  x: 0
+  x: 35
   y: 0
-  shots: 15
+  shots: 35
   rotate: true
   reload: 15
-  inaccuracy: 4
+  inaccuracy: 45
   bullet: {
-    damage: 4565
+    damage: 55650
     speed: 15
-    lifetime: 15
+    lifetime: 7
     pierce: true
     pierceBuilding: true
     height: 10
