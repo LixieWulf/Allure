@@ -16,8 +16,8 @@ description:
   We got together over the Mindustry Discord to bring you this exotic mod. Adds in a few things we thought would be fun.
   [cyan]Update log:
     V6 update! Exotic will be going through massive changes as we fix up some things!
-    
+    Core: Nexus added!
     [red]We really dont suggest using the Mod Factory.
   '''
-version: 2.3-v6-pre-alpha-build07
-minGameVersion: 105
+version: 2.3-v6-beta-build142
+minGameVersion: 111
