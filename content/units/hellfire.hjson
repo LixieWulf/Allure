@@ -123,4 +123,22 @@ weapons: [
       colors: [87a3ff, ffffff]
     }
   }
+  {
+  name: hellfire-frontal-cannon
+  x: 0
+  y: 164
+  shots: 3
+  xRand: 30
+  burstSpacing: 1
+  inaccuracy: 1
+  mirror: false
+  reload: 10
+  bullet: {
+    damage: 522530
+    lifetime: 60
+    speed: 14
+    length: 42
+    width: 28
+  }
+}
 ]
