@@ -17,7 +17,8 @@ description:
   [cyan]Update log:
     V6 update! Exotic will be going through massive changes as we fix up some things!
     Core: Nexus added!
-    [red]We really dont suggest using the Mod Factory.
+    Hellfire is under rework, and currently has a placeholder sprite. 
+    [red]We really don't suggest using the Mod Factory or touching the Hellfire unit. 
   '''
-version: 2.3-v6-beta-build142
+version: 2.3-v6-beta-build155
 minGameVersion: 111
