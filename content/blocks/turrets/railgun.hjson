@@ -14,7 +14,7 @@ spread: 0
 reload: 60
 shots: 1
 recoil: 6
-ammoUseEffect: shellEjectBig
+ammoUseEffect: casing3
 shootEffect: hitLancer
 shootSound: shotgun
 shootCone: 25

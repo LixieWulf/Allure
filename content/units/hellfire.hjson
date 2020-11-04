@@ -27,7 +27,7 @@ weapons: [
   shots: 4
   shotDelay: 5
   shootSound: shootBig
-  ejectEffect: shellEjectBig
+  ejectEffect: casing3
   bullet: {
     sprite: exotic-mod-railbolt
     damage: 100000
@@ -57,7 +57,7 @@ weapons: [
   shots: 4
   shotDelay: 5
   shootSound: shootBig
-  ejectEffect: shellEjectBig
+  ejectEffect: casing3
   bullet: {
     sprite: exotic-mod-railbolt
     damage: 100000

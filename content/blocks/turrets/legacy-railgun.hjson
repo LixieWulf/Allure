@@ -16,7 +16,7 @@ reload: 30
 shots: 1
 maxAmmo: 24
 recoil: 6
-ammoUseEffect: shellEjectBig
+ammoUseEffect: casing3
 shootEffect: hitMeltdown
 shootSound: shotgun
 shootCone: 25
