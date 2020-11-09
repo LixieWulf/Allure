@@ -278,7 +278,7 @@ ammoTypes: {
     speed: 11
     lifetime: 330
     reloadMultiplier: 2.5
-    ammoMultiplier: 0.5
+    ammoMultiplier: 1
     sprite: exotic-mod-railbolt
     width: 7
     height: 35
