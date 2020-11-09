@@ -273,6 +273,31 @@ ammoTypes: {
     frontColor: 999999
     backColor: 494949
   }
+  amethyst-gem: {
+    damage: 22550
+    speed: 11
+    lifetime: 330
+    reloadMultiplier: 2.5
+    ammoMultiplier: 0.5
+    sprite: exotic-mod-railbolt
+    width: 7
+    height: 35
+    pierce: true
+    pierceBuilding: true
+    frontColor: fecfff
+    backColor: c75bca
+    fragBullets: 15
+    fragBullet: {
+      damage: 4550
+      speed: 4
+      lifetime: 15
+      pierce: true
+      width: 1
+      height: 15
+      frontColor: fecfff
+      backColor: c75bca
+    }
+  }
 }
 outlineIcon: false
 requirements: [
