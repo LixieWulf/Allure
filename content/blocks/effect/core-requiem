@@ -1,0 +1,18 @@
+name: "Core: Requiem"
+description: The final iteration of the Exotic Mod cores. Virtually indestructible, this core is extremely expensive and advised for launches into the most dangerous sectors.
+type: CoreBlock
+health: 266755300
+itemCapacity: 125400
+size: 8
+category: effect
+requirements: [
+  copper/35250
+  lead/34550
+  silicon/30550
+  thorium/25500
+  bluewolframite/15500
+  refined-draconium/12550
+  amethyst-gem/11550
+  shadow/1100
+]
+research: core-nexus
