@@ -301,12 +301,13 @@ ammoTypes: {
 }
 outlineIcon: false
 requirements: [
-  copper/10000
-  lead/7500
-  silicon/5000
-  graphite/4500
-  titanium/3500
-  surge-alloy/750
+  copper/25000
+  lead/22500
+  silicon/15525
+  graphite/15450
+  thorium/12550
+  surge-alloy/11550
+  bluewolframite/9550
 ]
 category: turret
 research: spectre
