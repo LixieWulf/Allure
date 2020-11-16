@@ -1,4 +1,4 @@
-type: DoubleTurret
+type: ItemTurret
 name: God Scatter
 description: Cancer for anything in the skies.
 targetAir: true
@@ -13,26 +13,25 @@ shots: 8
 shotWidth: 4
 xRand: 4
 recoil: 10
-ammoUseEffect: shellEjectBig
+ammoUseEffect: casing3
 shootCone: 25
 maxAmmo: 50
 rotatespeed: 0.25
 range: 369
-ammo: {
+ammoTypes: {
   draconium: {
     speed: 11
     hitTiles: false
     collidesTiles: false
     damage: 600
-    bulletSprite: exotic-mod-big-scat
-    bulletWidth: 16
-    bulletHeight: 21
+    sprite: exotic-mod-big-scat
+    width: 16
+    height: 21
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
     lifetime: 60
     status: burning
     ammoMultiplier: 2
-    bulletShrink: 0
     frontColor: f53b11
     backColor: d92800
     fragVelocityMin: 0.9
@@ -43,11 +42,10 @@ ammo: {
       hitTiles: false
       collidesTiles: false
       damage: 200
-      bulletSprite: exotic-mod-big-scat
-      bulletWidth: 16
-      bulletHeight: 21
+      sprite: exotic-mod-big-scat
+      width: 16
+      height: 21
       shootEffect: shootBig
-      bulletShrink: 0
       smokeEffect: shootBigSmoke
       status: burning
       hitEffect: flakExplosion
@@ -63,12 +61,11 @@ ammo: {
     hitTiles: false
     collidesTiles: false
     damage: 500
-    bulletSprite: exotic-mod-big-scat
-    bulletWidth: 16
-    bulletHeight: 21
+    sprite: exotic-mod-big-scat
+    width: 16
+    height: 21
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
-    bulletShrink: 0
     status: burning
     hitEffect: flakExplosion
     splashDamage: 1000
@@ -83,12 +80,11 @@ ammo: {
     hitTiles: false
     collidesTiles: false
     damage: 145
-    bulletSprite: exotic-mod-big-scat
+    sprite: exotic-mod-big-scat
     pierce: true
-    bulletWidth: 16
-    bulletHeight: 21
+    width: 16
+    height: 21
     shootEffect: shootBig
-    bulletShrink: 0
     ammoMultiplier: 4
     smokeEffect: shootBigSmoke
     status: freezing
