@@ -4,10 +4,9 @@ description:
   The second most durable wall. It has the capability to deflect bullets.
   Spans multiple tiles.
   '''
-type: DeflectorWall
+type: Wall
 health: 6720400
 size: 2
-maxDamageDeflect: 500
 requirements: [
   draconium/24
 ]
