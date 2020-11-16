@@ -1,9 +1,8 @@
 name: Draconium Wall
 description: The second most durable wall. It has the capability to deflect bullets.
-type: DeflectorWall
+type: Wall
 health:  2652250
 size: 1
-maxDamageDeflect: 2000
 requirements: [
   draconium/6
 ]
