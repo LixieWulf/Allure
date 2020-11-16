@@ -7,7 +7,7 @@ health: 195511050
 size: 8
 shotWidth: 8
 inaccuracy: 5
-spread: 0
+spread: 5
 reload: 1
 shots: 10
 recoil: 3
@@ -15,8 +15,8 @@ shootEffect: shootBig
 ammoUseEffect: casing3
 shootCone: 25
 rotatespeed: 1
-range: 1600
-maxAmmo: 100
+range: 2000
+maxAmmo: 200
 xRand: 20
 outlineIcon: false
 ammoTypes: {
@@ -54,6 +54,40 @@ sand: {
     frontColor: C93A3A
     backColor: 590707
    }
+   copper: {
+     bulletSprite: exotic-mod-dragonbolt
+    type: MissileBulletType
+    trailColor: C93A3A
+    speed: 12
+    damage: 225
+    bulletWidth: 24
+    bulletHeight: 24
+    bulletShrink: 0
+    lifetime: 120
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    ammoMultiplier: 5
+    hitShake: 1
+    frontColor: C93A3A
+    backColor: 590707
+   }
+   lead: {
+     bulletSprite: exotic-mod-dragonbolt
+    type: MissileBulletType
+    trailColor: C93A3A
+    speed: 12
+    damage: 290
+    bulletWidth: 24
+    bulletHeight: 24
+    bulletShrink: 0
+    lifetime: 120
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    ammoMultiplier: 5
+    hitShake: 1
+    frontColor: C93A3A
+    backColor: 590707
+   }
 draconium: {
     bulletSprite: exotic-mod-dragonbolt
     type: MissileBulletType
@@ -79,8 +113,8 @@ draconium: {
     fragBullet: {
       bulletSprite: exotic-mod-dragonbolt
       lifetime: 600
-      damage: 5000
-      splashDamage: 100
+      damage: 93000
+      splashDamage: 9000
       splashDamageRadius: 200
       type: MissileBulletType
       trailColor: C93A3A
@@ -97,16 +131,16 @@ draconium: {
   }
 }
 requirements: [
-  titanium/1600
-  lead/1200
-  copper/1200
-  graphite/1550
-  thorium/1500
-  plastanium/1105
-  surge-alloy/1400
-  amethyst-gem/1400
-  bluewolframite/1800
-  draconium/1950
+  titanium/26000
+  lead/22000
+  copper/22000
+  graphite/15500
+  thorium/25000
+  plastanium/21050
+  surge-alloy/24000
+  amethyst-gem/14000
+  bluewolframite/18000
+  draconium/19500
   shadow/1200
 ]
 category: turret
