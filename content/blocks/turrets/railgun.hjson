@@ -21,14 +21,13 @@ shootCone: 25
 rotatespeed: 0.25
 maxAmmo: 12
 range: 800
-ammo: {
+ammoTypes: {
   draconium: {
     speed: 9
     damage: 700
-    bulletSprite: exotic-mod-railbolt
-    bulletWidth: 14
-    bulletHeight: 42
-    bulletShrink: 0
+    sprite: exotic-mod-railbolt
+    width: 14
+    height: 42
     lifetime: 90
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
@@ -45,10 +44,9 @@ ammo: {
     fragBullet: {
       speed: 8.5
       damage: 700
-      bulletSprite: exotic-mod-railbolt
-      bulletShrink: 0
-      bulletWidth: 7
-      bulletHeight: 21
+      sprite: exotic-mod-railbolt
+      width: 7
+      height: 21
       hitEffect: pulverizeRed
       despawnEffect: pulverizeRed
       lifetime: 50
@@ -63,10 +61,9 @@ ammo: {
       fragBullet: {
         speed: 8
         damage: 700
-        bulletSprite: exotic-mod-railbolt
-        bulletShrink: 0
-        bulletWidth: 3.5
-        bulletHeight: 10.5
+        sprite: exotic-mod-railbolt
+        width: 3.5
+        height: 10.5
         lifetime: 25
         hitEffect: shootBig
         despawnEffect: shootBig
@@ -81,11 +78,10 @@ ammo: {
   amethyst-gem: {
     speed: 7
     damage: 175
-    bulletSprite: exotic-mod-railbolt
-    bulletShrink: 0
+    sprite: exotic-mod-railbolt
     pierce: true
-    bulletWidth: 12
-    bulletHeight: 36
+    width: 12
+    height: 36
     lifetime: 140
     hitEffect: shootBig
     despawnEffect: shootBig
@@ -101,10 +97,9 @@ ammo: {
   bluewolframite: {
     speed: 8
     damage: 500
-    bulletShrink: 0
-    bulletSprite: exotic-mod-railbolt
-    bulletWidth: 16
-    bulletHeight: 48
+    sprite: exotic-mod-railbolt
+    width: 16
+    height: 48
     lifetime: 100
     hitEffect: padlaunch
     despawnEffect: padlaunch
