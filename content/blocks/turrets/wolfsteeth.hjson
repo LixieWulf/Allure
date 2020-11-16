@@ -298,6 +298,25 @@ ammoTypes: {
       backColor: c75bca
     }
   }
+  bluewolframite: {
+    damage: 164550
+    speed: 10
+    lifetime: 360
+    reloadMultiplier: 0.25
+    ammoMultiplier: 1
+    sprite: exotic-mod-railbolt
+    pierce: true
+    pierceBuilding: true
+    lightning: 10
+    lightningLength: 15
+    lightningColor: 87a3ff
+    fragBullets: 25
+    fragBullet: {
+      type: LightningBulletType
+      damage: 265440
+      lightningLength: 17
+    }
+  }
 }
 outlineIcon: false
 requirements: [
