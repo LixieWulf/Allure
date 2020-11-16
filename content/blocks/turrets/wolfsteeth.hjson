@@ -309,6 +309,10 @@ ammoTypes: {
     sprite: exotic-mod-railbolt
     pierce: true
     pierceBuilding: true
+    frontColor: ffffff
+    backColor: 87a3ff
+    width: 11
+    height: 28
     lightning: 10
     lightningLength: 7
     lightningColor: 87a3ff
