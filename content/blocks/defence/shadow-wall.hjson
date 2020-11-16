@@ -1,10 +1,10 @@
-type: DeflectorWall
+type: Wall
 name: Shadow Wall
 description: "Made out of the unique element Shadow. The strongest wall. Insulates arcs and reflects bullets fired."
 size: 1
 health: 3789061
-maxDamageDeflect: 100000
 insulated: true
+lightningChance: 1
 requirements: [
   shadow/10
   ]
