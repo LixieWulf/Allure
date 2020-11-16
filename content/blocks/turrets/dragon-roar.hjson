@@ -12,7 +12,7 @@ reload: 1
 shots: 10
 recoil: 3
 shootEffect: shootBig
-ammoUseEffect: shellEjectBig
+ammoUseEffect: casing3
 shootCone: 25
 rotatespeed: 1
 range: 1600
