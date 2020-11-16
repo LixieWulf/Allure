@@ -22,7 +22,7 @@ shootCone: 15
 rotateSpeed: 0.25
 range: 4000
 consumes: {
-  power: 63
+  power: 6640
 }
 ammoTypes: {
   copper: {
