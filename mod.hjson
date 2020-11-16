@@ -18,7 +18,10 @@ description:
     V6 update! Exotic will be going through massive changes as we fix up some things!
     Core: Nexus added!
     Hellfire is under rework, and currently has a placeholder sprite. 
+    Core: Requiem. Have fun.
+    Pew pew, the turrets do things now!
     [red]We really don't suggest using the Mod Factory or touching the Hellfire unit. 
+    [black]youre welcome for the v2.4 hotfix.
   '''
-version: 2.3-v6-beta-build155
-minGameVersion: 111
+version: 2.4-beta-build247
+minGameVersion: 113
