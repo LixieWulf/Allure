@@ -1,4 +1,4 @@
-type: DoubleTurret
+type: ItemTurret
 name: Draconium Railgun
 description: Blue Wolfranite's electromagnetic properties and Draconium's inate stored energy allow for the creation of an even more powerful railgun.
 targetAir: true
@@ -22,13 +22,13 @@ shootSound: shotgun
 shootCone: 25
 rotatespeed: 0.25
 range: 1000
-ammo: {
+ammoTypes: {
   draconium: {
     speed: 9
     damage: 20000
-    bulletSprite: exotic-mod-railbolt
-    bulletWidth: 14
-    bulletHeight: 42
+    sprite: exotic-mod-railbolt
+    width: 14
+    height: 42
     lifetime: 115
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
@@ -49,16 +49,15 @@ ammo: {
     fragBullet: {
       speed: 8.5
       damage: 1000
-      bulletSprite: exotic-mod-railbolt
-      bulletWidth: 7
-      bulletHeight: 21
+      sprite: exotic-mod-railbolt
+      width: 7
+      height: 21
       hitEffect: pulverizeRed
       despawnEffect: pulverizeRed
       lifetime: 65
       status: melting
       homingRange: 128
       homingPower: 0.01
-      bulletShrink: 0
       frontColor: f53b11
       backColor: d92800
       fragVelocityMin: 0.9
@@ -67,9 +66,9 @@ ammo: {
       fragBullet: {
         speed: 8
         damage: 1000
-        bulletSprite: exotic-mod-railbolt
-        bulletWidth: 3.5
-        bulletHeight: 10.5
+        sprite: exotic-mod-railbolt
+        width: 3.5
+        height: 10.5
         lifetime: 30
         hitEffect: shootBig
         despawnEffect: shootBig
@@ -85,13 +84,12 @@ ammo: {
   amethyst-gem: {
     speed: 7
     damage: 250
-    bulletSprite: exotic-mod-railbolt
+    sprite: exotic-mod-railbolt
     pierce: true
-    bulletWidth: 12
-    bulletHeight: 36
+    width: 12
+    height: 36
     lifetime: 175
     hitEffect: shootBig
-    bulletShrink: 0
     despawnEffect: shootBig
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
@@ -105,11 +103,10 @@ ammo: {
   bluewolframite: {
     speed: 8
     damage: 750
-    bulletSprite: exotic-mod-railbolt
-    bulletWidth: 16
-    bulletHeight: 48
+    sprite: exotic-mod-railbolt
+    width: 16
+    height: 48
     lifetime: 125
-    bulletShrink: 0
     hitEffect: padlaunch
     despawnEffect: padlaunch
     shootEffect: shootBig
