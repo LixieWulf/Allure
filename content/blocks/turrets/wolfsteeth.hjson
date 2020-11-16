@@ -50,9 +50,9 @@ ammoTypes: {
   }
   blast-compound: {
     speed: 4
-    damage: 44
+    damage: 88
     ammoMultiplier: 15
-    reloadMultiplier: 60
+    reloadMultiplier: 25
     lifetime: 630
     frontColor: ffceb0
     backColor: e38b59
@@ -309,7 +309,7 @@ ammoTypes: {
     pierceBuilding: true
     lightning: 10
     lightningLength: 15
-    lightningColor: 87a3ff
+    lightningColor: ff0000
     fragBullets: 25
     fragBullet: {
       type: LightningBulletType
