@@ -10,7 +10,7 @@ spread: 0
 shootSound: railgun
 shootEffect: railShoot
 recoilAmount: 4
-reloadTime: 60
+reloadTime: 133
 burstSpacing: 5
 coolantUsage: 12
 liquidCapacity: 1800
