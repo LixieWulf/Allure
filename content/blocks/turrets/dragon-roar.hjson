@@ -3,7 +3,7 @@ name: The Dragons Roar
 description: A unique Spectre... Build it... watch this world burn to ashes.
 targetAir: true
 targetGround: true
-health: 195000
+health: 195511050
 size: 8
 shotWidth: 8
 inaccuracy: 5
