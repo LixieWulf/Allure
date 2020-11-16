@@ -7,6 +7,8 @@ health: 15500250
 size: 8
 inaccuracy: 0
 spread: 0
+shootSound: railgun
+shootEffect: railShoot
 recoilAmount: 4
 reloadTime: 60
 burstSpacing: 5
@@ -308,8 +310,8 @@ ammoTypes: {
     pierce: true
     pierceBuilding: true
     lightning: 10
-    lightningLength: 15
-    lightningColor: ff0000
+    lightningLength: 7
+    lightningColor: 87a3ff
     fragBullets: 25
     fragBullet: {
       type: LightningBulletType
