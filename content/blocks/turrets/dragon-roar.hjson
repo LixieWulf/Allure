@@ -1,4 +1,4 @@
-type: doubleTurret
+type: ItemTurret
 name: The Dragons Roar
 description: A unique Spectre... Build it... watch this world burn to ashes.
 targetAir: true
@@ -17,6 +17,7 @@ shootCone: 25
 rotatespeed: 1
 range: 1600
 maxAmmo: 100
+xRand: 20
 outlineIcon: false
 ammo: {
   scrap: {
