@@ -19,7 +19,7 @@ range: 1600
 maxAmmo: 100
 xRand: 20
 outlineIcon: false
-ammo: {
+ammoTypes: {
   scrap: {
     bulletSprite: exotic-mod-dragonbolt
     type: MissileBulletType
