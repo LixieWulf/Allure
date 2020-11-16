@@ -14,7 +14,7 @@ reloadTime: 60
 burstSpacing: 5
 coolantUsage: 12
 liquidCapacity: 1800
-coolantMultiplier: 2.4
+coolantMultiplier: 0.25
 shots: 4
 xRand: 20
 ammoUseEffect: casing3
