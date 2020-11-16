@@ -38,19 +38,19 @@ ammoTypes: {
     backColor: 590707
    }
 sand: {
-    bulletSprite: exotic-mod-dragonbolt
+     bulletSprite: exotic-mod-dragonbolt
     type: MissileBulletType
     trailColor: C93A3A
-    speed:12
-    damage:90
+    speed: 12
+    damage: 60
     bulletWidth: 24
     bulletHeight: 24
     bulletShrink: 0
     lifetime: 120
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
-    ammoMultiplier: 0.2
-    hitShake: 0.5
+    ammoMultiplier: 5
+    hitShake: 1
     frontColor: C93A3A
     backColor: 590707
    }
@@ -59,8 +59,8 @@ draconium: {
     type: MissileBulletType
     trailColor: C93A3A
     speed: 12
-    damage: 10000
-    splashDamage: 9000
+    damage: 224550
+    splashDamage: 20000
     splashDamageRadius: 32
     bulletWidth: 24
     bulletHeight: 24
