@@ -1,4 +1,4 @@
-type: DoubleTurret
+type: ItemTurret
 name: Arctic Spectre
 description: A Spectre made out of Blue Wolframite and Draconium along with some Amethyst as the main components.
 targetAir: true
@@ -9,7 +9,7 @@ inaccuracy: 12
 reload: 1
 shots: 9
 recoil: 10
-ammoUseEffect: shellEjectBig
+ammoUseEffect: casing3
 shootCone: 25
 rotatespeed: 1000
 range: 346
@@ -20,12 +20,12 @@ consumes: {
     booster: true
   }
 }
-ammo: {
+ammoTypes: {
   draconium: {
     speed: 8
     damage: 600
-    bulletWidth: 16
-    bulletHeight: 21
+    width: 16
+    height: 21
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
     status: burning
@@ -38,8 +38,8 @@ ammo: {
   bluewolframite: {
     speed: 6
     damage: 400
-    bulletWidth: 16
-    bulletHeight: 21
+    width: 16
+    height: 21
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
     status: burning
@@ -50,8 +50,8 @@ ammo: {
   amethyst-gem: {
     speed: 4
     damage: 200
-    bulletWidth: 16
-    bulletHeight: 21
+    width: 16
+    height: 21
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
     status: freezing
