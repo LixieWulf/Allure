@@ -104,7 +104,7 @@ sand: {
     hitShake: 1
     frontColor: C93A3A
     backColor: 590707
-    fragBullets: 10
+    fragBullets: 40
     fragBullet: {
       bulletSprite: exotic-mod-dragonbolt
       type: LiquidBulletType
