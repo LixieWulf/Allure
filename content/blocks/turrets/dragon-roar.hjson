@@ -104,7 +104,7 @@ sand: {
     hitShake: 1
     frontColor: C93A3A
     backColor: 590707
-    fragBullets: 40
+    fragBullets: 10
     fragBullet: {
       bulletSprite: exotic-mod-dragonbolt
       type: LiquidBulletType
@@ -114,6 +114,7 @@ sand: {
       bulletWidth: 8
       bulletHeight: 8
       bulletShrink: 1
+      lifetime:120
       }
    }
 draconium: {
