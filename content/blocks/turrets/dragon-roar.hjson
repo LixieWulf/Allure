@@ -114,7 +114,12 @@ sand: {
       bulletWidth: 8
       bulletHeight: 8
       bulletShrink: 1
-      lifetime:120
+      lifetime:10
+      effect: burning
+      armorMultiplier: 0.1
+      incendChance: 1
+      incendSpread: 16
+      incendAmount: 64
       }
    }
 draconium: {
