@@ -13,7 +13,7 @@ shots: 10
 recoil: 3
 shootEffect: shootBig
 ammoUseEffect: casing3
-shootCone: 25
+shootCone: 1
 rotatespeed: 1
 range: 2000
 maxAmmo: 200
