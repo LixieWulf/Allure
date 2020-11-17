@@ -322,11 +322,21 @@ ammoTypes: {
     lightning: 10
     lightningLength: 7
     lightningColor: 87a3ff
-    fragBullets: 25
+    fragBullets: 15
     fragBullet: {
-      type: LightningBulletType
-      damage: 265440
-      lightningLength: 17
+      damage: 12550
+      speed: 3
+      lifetime: 720
+      pierce: true
+      pierceBuilding: true
+      homingPower: 2.4
+      homingRange: 720
+      fragBullets: 2
+      fragBullet: {
+        type: LightningBulletType
+        length: 7
+        damage: 122550
+      }
     }
   }
 }
