@@ -326,7 +326,7 @@ ammoTypes: {
     fragBullet: {
       damage: 12550
       speed: 3
-      frontColor: fffff
+      frontColor: ffffff
       backColor: 87a3ff
       lifetime: 720
       pierce: true
