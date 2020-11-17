@@ -19,15 +19,15 @@ spread: 0.05
 targetAir: true
 targetGround: true
 maxAmmo: 20
-ammo: {
+ammoType: {
   shadow: {
     type: BasicBulletType
-    bulletSprite: exotic-mod-qpg-wave
+    sprite: exotic-mod-qpg-wave
     backColor: 000000
     frontColor: 474747
     speed: 12
-    bulletHeight: 48
-    bulletWidth: 8
+    height: 48
+    width: 8
     drawSize: 0
     hitSize: 16
     pierce: true
