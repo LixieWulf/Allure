@@ -323,7 +323,7 @@ ammoTypes: {
     fragBullets: 1
     fragBullet: {
       damage: 12550
-      speed: 3
+      speed: 8
       frontColor: ffffff
       backColor: 87a3ff
       lifetime: 720
