@@ -108,6 +108,7 @@ sand: {
     fragBullet: {
       bulletSprite: exotic-mod-dragonbolt
       type: LiquidBulletType
+      liquid: mag-slag
       trailColor: c93a3a
       speed: 8
       bulletWidth: 8
