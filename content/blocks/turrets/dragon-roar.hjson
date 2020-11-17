@@ -143,25 +143,24 @@ draconium: {
     hitShake: 1
     frontColor: C93A3A
     backColor: 590707
-    fragBullets: 10
+    fragBullets: 100
     fragBullet: {
       bulletSprite: exotic-mod-dragonbolt
-      lifetime: 600
-      damage: 93000
-      splashDamage: 9000
-      splashDamageRadius: 200
-      type: MissileBulletType
-      trailColor: C93A3A
+      type: LiquidBulletType
+      liquid: mag-slag
+      damage: 24000
+      trailColor: c93a3a
       speed: 8
       bulletWidth: 8
       bulletHeight: 8
-      bulletShrink: 0
-      homingPower: 90
-      homingRange: 90
-      hitShake: 0.5
-      frontColor: C93A3A
-      backColor: 590707
-    }
+      bulletShrink: 1
+      lifetime: 0
+      effect: burning
+      armorMultiplier: 0.1
+      incendChance: 1
+      incendSpread: 16
+      incendAmount: 64
+      }
   }
 }
 requirements: [
