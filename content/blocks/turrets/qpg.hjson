@@ -23,16 +23,15 @@ spread: 1
 inaccuracy: 0
 targetAir: true
 targetGround: true
-ammoUseEffect: padlaunch
+ammoUseEffect: casing3
 maxAmmo: 20
 ammo: {
   phase-fabric: {
-    type: BasicBulletType
-    bulletSprite: exotic-mod-qpg-wave
+    sprite: exotic-mod-qpg-wave
     collidesTiles: false
     speed: 8
-    bulletHeight: 48
-    bulletWidth: 8
+    height: 48
+    width: 8
     drawSize: 0
     hitSize: 16
     pierce: true
@@ -46,15 +45,6 @@ ammo: {
     shootEffect: none
     smokeEffect: none
     incendChance: 0
-    status: {
-      name: shifting
-      speedMultiplier: 0.5
-      damageMultiplier: 0.9
-      armorMultiplier: 0.9
-      damage: 0.015
-      color: f7e623
-      effect: overdriven
-    }
   }
 }
 requirements: [
