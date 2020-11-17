@@ -329,7 +329,7 @@ ammoTypes: {
       lifetime: 720
       pierce: true
       pierceBuilding: true
-      homingPower: 2.4
+      homingPower: 0.25
       homingRange: 720
       fragBullets: 1
       fragBullet: {
