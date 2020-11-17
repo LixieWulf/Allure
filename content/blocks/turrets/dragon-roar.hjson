@@ -88,6 +88,32 @@ sand: {
     frontColor: C93A3A
     backColor: 590707
    }
+    metaglass: {
+     bulletSprite: exotic-mod-dragonbolt
+    type: MissileBulletType
+    trailColor: C93A3A
+    speed: 12
+    damage: 290
+    bulletWidth: 24
+    bulletHeight: 24
+    bulletShrink: 0
+    lifetime: 120
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    ammoMultiplier: 5
+    hitShake: 1
+    frontColor: C93A3A
+    backColor: 590707
+    fragBullets: 10
+    fragBullet: {
+      bulletSprite: exotic-mod-dragonbolt
+      type: LiquidBulletType
+      trailColor: c93a3a
+      speed: 8
+      bulletWidth: 8
+      bulletHeight: 8
+      bulletShrink: 1
+   }
 draconium: {
     bulletSprite: exotic-mod-dragonbolt
     type: MissileBulletType
