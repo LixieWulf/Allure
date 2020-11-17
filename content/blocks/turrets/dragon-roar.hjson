@@ -122,6 +122,56 @@ sand: {
       incendAmount: 64
       }
    }
+amethyst-gem: {
+    damage: 143568
+    speed: 10
+    lifetime: 120
+    reloadMultiplier: 0.5
+    ammoMultiplier: 1
+    sprite: exotic-mod-dragonbolt
+    pierce: true
+    pierceBuilding: true
+    frontColor: C93A3A
+    backColor: 590707
+    trailColor: C93A3A
+    bulletWidth: 24
+    bulletHeight: 24
+    bulletShrink: 0
+    homingRange: 480
+    homingPower: 90
+    fragBullets: 10
+    fragBullet: {
+    type: LaserBulletType
+    damage: 12569
+    }
+ }
+bluewolframite: {
+    damage: 164550
+    speed: 10
+    lifetime: 120
+    reloadMultiplier: 0.25
+    ammoMultiplier: 1
+    sprite: exotic-mod-dragonbolt
+    pierce: true
+    pierceBuilding: true
+    frontColor: C93A3A
+    backColor: 590707
+    trailColor: C93A3A
+    bulletWidth: 24
+    bulletHeight: 24
+    bulletShrink: 0
+    homingRange: 480
+    homingPower: 90
+    lightning: 10
+    lightningLength: 7
+    lightningColor: 87a3ff
+    fragBullets: 25
+    fragBullet: {
+      type: LightningBulletType
+      damage: 150987
+      lightningLength: 17
+    }
+  }
 draconium: {
     bulletSprite: exotic-mod-dragonbolt
     type: MissileBulletType
