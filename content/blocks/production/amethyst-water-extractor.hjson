@@ -16,5 +16,5 @@ requirements: [
 category: production
 idleSound: drill
 idleSoundVolume: 0.1
-research: duo
+research: water-extractor
 liquidCapacity: 250
