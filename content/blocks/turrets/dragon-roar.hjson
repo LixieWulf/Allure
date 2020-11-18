@@ -188,6 +188,8 @@ draconium: {
     homingPower: 90
     ammoMultiplier: 5
     hitShake: 1
+    pierce: true
+    pierceBuilding: true
     frontColor: C93A3A
     backColor: 590707
     fragBullets: 100
