@@ -19,7 +19,7 @@ spread: 0.05
 targetAir: true
 targetGround: true
 maxAmmo: 20
-ammoType: {
+ammoTypes: {
   shadow: {
     type: BasicBulletType
     sprite: exotic-mod-qpg-wave
