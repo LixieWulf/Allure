@@ -107,19 +107,15 @@ sand: {
     fragBullets: 10
     fragBullet: {
       bulletSprite: exotic-mod-dragonbolt
-      type: LiquidBulletType
-      liquid: mag-slag
+      type: MissileBulletType
       trailColor: c93a3a
+      damage: 290
       speed: 8
       bulletWidth: 8
       bulletHeight: 8
       bulletShrink: 1
       lifetime:10
-      effect: burning
       armorMultiplier: 0.1
-      incendChance: 1
-      incendSpread: 16
-      incendAmount: 64
       }
    }
 amethyst-gem: {
@@ -143,6 +139,7 @@ amethyst-gem: {
     fragBullet: {
     type: LaserBulletType
     damage: 12569
+    lifetime: 120
     }
  }
 bluewolframite: {
@@ -169,7 +166,7 @@ bluewolframite: {
     fragBullet: {
       type: LightningBulletType
       damage: 150987
-      lightningLength: 17
+      lightningLength: 20
     }
   }
 draconium: {
