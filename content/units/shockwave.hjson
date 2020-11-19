@@ -14,6 +14,7 @@ weapons: [
   name: shockwave-cannon
   inaccuracy: 25
   mirror: false
+  shootSound: shotgun
   shootCone: 25
   x: 0
   y: 12
