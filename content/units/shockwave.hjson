@@ -1,0 +1,23 @@
+type: UnitEntity
+name: Shockwave
+description: The Core: Requiem's unit. Builds structures quickly and is armed with a powerful shotgun.
+health: 25500
+armor: 125
+mineTier: 10
+mineSpeed: 15
+buildSpeed: 17.52
+hitSize: 24
+flying: true
+weapons: {
+  name: shockwave-cannon
+  inaccuracy: 25
+  reload: 5
+  shots: 35
+  bullet: {
+    damage: 35
+    lifetime: 10
+    speed: 12
+    frontColor: 1f1f1f
+    backColor: 000000
+  }
+}
