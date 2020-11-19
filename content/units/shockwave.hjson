@@ -1,4 +1,4 @@
-type: BuilderMinerUnit
+type: LegacyUnit
 name: Shockwave
 description: The Core: Requiem's unit. Builds structures quickly and is armed with a powerful shotgun.
 health: 25500
