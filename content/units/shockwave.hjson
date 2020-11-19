@@ -8,7 +8,8 @@ mineSpeed: 15
 buildSpeed: 17.52
 hitSize: 24
 flying: true
-weapons: {
+weapons: [
+  {
   name: shockwave-cannon
   inaccuracy: 25
   reload: 5
@@ -20,4 +21,5 @@ weapons: {
     frontColor: 1f1f1f
     backColor: 000000
   }
-}
+  }
+]
