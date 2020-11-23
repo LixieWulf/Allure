@@ -1,25 +1,20 @@
+type: PowerTurret
 name: Thundersnap
-description: Casts powerfull, long bolts of lightning at enemies.
-size: 5
-range: 800
-reload: 60
-shootSound: shotgun
+health: 177550
+reloadTime: 35
 shootCone: 15
-rotatespeed: 0.5
-powerUse: 5
-targetAir: true
-targetGround: true
-heatColor: 00fffb
-recoil: 5
-cooldown: 0.0133333333
-restitution: 0.0133333333
-chargeTime: 50
-chargeMaxDelay: 30
-chargeEffects: 15
-chargeEffect: lightningShoot
-chargeBeginEffect: lancerLaserChargeBegin
-shootEffect: lancerLaserShoot
-smokeEffect: lancerLaserShootSmoke
+size: 5
+shots: 4
+consumes: {
+  power: 54
+}
+ammoTypes: [
+{
+  type: LightningBulletType
+  damage: 122550
+  length: 55
+}
+]
 requirements: [
   copper/700
   lead/600
