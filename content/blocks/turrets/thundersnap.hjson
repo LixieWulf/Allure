@@ -8,13 +8,11 @@ shots: 4
 consumes: {
   power: 54
 }
-ammoTypes: [
-{
+shootType: {
   type: LightningBulletType
   damage: 122550
   length: 55
 }
-]
 requirements: [
   copper/700
   lead/600
