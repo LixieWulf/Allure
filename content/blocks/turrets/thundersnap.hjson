@@ -10,8 +10,8 @@ consumes: {
 }
 shootType: {
   type: LightningBulletType
-  damage: 122550
-  length: 55
+  damage: 225440
+  lightningLength: 54
 }
 requirements: [
   copper/700
