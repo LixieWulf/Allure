@@ -1,4 +1,4 @@
-type: UnitEntity
+type: flying
 name: Streamer
 description: Conquerors of Heaven and Earth
 maxVelocity: 70
