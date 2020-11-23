@@ -1,4 +1,4 @@
-type: MechUnit
+type: mech
 name: Shadow Conqueror
 description: The Leader of the Shadow Army.
 maxVelocity: 1
