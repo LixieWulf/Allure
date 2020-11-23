@@ -9,9 +9,37 @@ consumes: {
 plans: [
   {
     unit: hellfire
-    time: 15
+    time: 30
     requirements: [
       bluewolframite/1
+    ]
+  }
+  {
+    unit: draconium-leader
+    time: 30
+    requirements: [
+      draconium/1
+    ]
+  }
+  {
+    unit: ghost
+    time: 30
+    requirements: [
+      titanium/1
+    ]
+  }
+  {
+    unit: pfsgcm
+    time: 30
+    requirements: [
+      coal/1
+    ]
+  }
+  {
+    unit: shadow-conqueror
+    time: 30
+    requirements: [
+      shadow/1
     ]
   }
 ]
