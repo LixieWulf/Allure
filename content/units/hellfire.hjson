@@ -1,4 +1,4 @@
-type: UnitEntity
+type: flying
 name: Hellfire
 description: A massive starship, capable of easily destroying the most powerful units and laying waste to any base in its path. Avoid encounters if possible.
 speed: 0.25
