@@ -1,6 +1,6 @@
 type: ItemTurret
 name: Wolf’s Teeth
-description: The largest railgun weapon ever invented. Fires rapidly from four railgun barrels. This railgun is extremely expensive but very good for killing large amounts of high-health enemies or laying waste to any base. Able to fire any vanilla ammunition.
+description: The largest railgun weapon ever invented. Fires rapidly from four railgun barrels. This railgun is extremely expensive but very good for killing large amounts of high-health enemies or laying waste to any base. Able to fire any vanilla ammunition. Do note that science was not taken into consideration when making this.
 targetAir: true
 targetGround: true
 health: 15500250
