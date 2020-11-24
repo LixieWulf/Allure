@@ -13,7 +13,7 @@ shootType: {
   keepVelocity: true
   length: 27
   width: 22
-  damage: 1557750
+  damage: 15577560
   speed: 8
   lifetime: 550
   drag: 0
