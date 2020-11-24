@@ -12,9 +12,9 @@ shootType: {
   type: ContinuousLaserBulletType
   keepVelocity: true
   length: 27
-  width: 22
+  width: 11
   damage: 32550050
-  speed: 8
+  speed: 5
   lifetime: 550
   drag: 0
   fadeTime: 15
