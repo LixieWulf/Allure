@@ -15,6 +15,7 @@ shootType: {
   width: 11
   damage: 32550050
   speed: 5
+  hitEffect: impactcloud
   lifetime: 550
   drag: 0
   fadeTime: 15
