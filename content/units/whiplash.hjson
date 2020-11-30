@@ -1,0 +1,30 @@
+type: flying
+name: Whiplash
+description: A moderately powerful unit. Boasts a small railgun.
+speed: 4.4
+drag: 0.1
+rotateSpeed: 15.4
+buildSpeed: 14.4
+mineSpeed: 12
+mineTier: 6
+hitSize: 33
+health: 4550
+armor: 12
+weapons: [
+  {
+  name: whiplash-railgun
+  mirror: false
+  x: 0
+  y:4
+  shootCone: 5
+  reload: 148
+  shootSound: railgun
+  bullet: {
+    type: RailBulletType
+    damage: 350
+    pierceDamageFactor: 0.015
+    length: 350
+    hitEffect: hitLancer
+  }
+  }
+]
