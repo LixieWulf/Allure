@@ -5,9 +5,9 @@ size: 14
 health: 155225500
 range: 8192
 recoil: 32
-reload: 1554
-powerUse: 1665
-shootShake: 15
+reload: 6550
+powerUse: 255005
+shootShake: 30
 shootType: {
   type: ContinuousLaserBulletType
   keepVelocity: true
@@ -24,5 +24,14 @@ shootType: {
   lenscales: [1, 1.2, 1.275, 1.325]
   colors: [000000, 4e4e4e, a0a0a0, ffffff]
 }
-buildVisibility: shown
+requirements: [
+  lead/125550
+  silicon/355450
+  surgealloy/35500
+  bluewolframite/125340
+  draconium/115440
+  amethyst-gem/95520
+  cookietite/25450
+  shadow/15520
+]
 research: solar-flare
