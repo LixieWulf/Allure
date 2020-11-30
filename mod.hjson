@@ -18,5 +18,5 @@ description:
     Exotic is now progressing to alpha. Expect fixes left right and center, though more content may not be added.
     WIP final turret, good warning: it's OP.
   '''
-version: alpha build 445
+version: 455 alpha
 minGameVersion: 119
