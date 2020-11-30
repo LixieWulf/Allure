@@ -5,7 +5,7 @@ health: 25550350
 itemCapacity: 45000
 size: 6
 category: effect
-unitType: gamma
+unitType: whiplash
 unitCapModifer: 125
 requirements: [
   copper/12000
