@@ -27,7 +27,7 @@ shootType: {
 requirements: [
   lead/125550
   silicon/355450
-  surgealloy/35500
+  surge-alloy/35500
   bluewolframite/125340
   draconium/115440
   amethyst-gem/95520
