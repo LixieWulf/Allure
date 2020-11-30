@@ -1,0 +1,30 @@
+type: GenericCrafter
+name: Shadow Infuser
+description: Takes a copious amount of advanced materials and combines their properties to create an extremely powerful material.
+health: 125550
+size: 4
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 184
+consumes: {
+  power: 15.4
+  items: {
+    items: [
+    bluewolframite/4
+    draconium/5
+    amethyst-gem/3
+    cookietite/6
+    ]
+  }
+}
+requirements: [
+  lead/150
+  titanium/125
+  silicon/115
+  bluewolframite/50
+  draconium/30
+]
+outputItem: shadow/1
+category: crafting
+research: surge-forge
