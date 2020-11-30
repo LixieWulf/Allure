@@ -14,14 +14,9 @@ author:
 description:
   '''
   We got together over the Mindustry Discord to bring you this exotic mod. Adds in a few things we thought would be fun.
-  [cyan]Update log:
-    V6 update! Exotic will be going through massive changes as we fix up some things!
-    Core: Nexus added!
-    Hellfire is under rework, and currently has a placeholder sprite. 
-    Core: Requiem. Have fun.
-    Pew pew, the turrets do things now!
-    [red]We really don't suggest using the Mod Factory or touching the Hellfire unit. 
-    [black]youre welcome for the v2.4 hotfix.
+  Update log:
+    Exotic is now progressing to alpha. Expect fixes left right and center, though more content may not be added.
+    WIP final turret, good warning: it's OP.
   '''
-version: 2.4-beta-build247
-minGameVersion: 113
+version: alpha build 445
+minGameVersion: 119
