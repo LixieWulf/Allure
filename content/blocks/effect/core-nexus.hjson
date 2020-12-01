@@ -6,7 +6,7 @@ itemCapacity: 45000
 size: 6
 category: effect
 unitType: whiplash
-unitModifer: 125
+unitCapModifer: 125
 requirements: [
   copper/12000
   lead/11500
