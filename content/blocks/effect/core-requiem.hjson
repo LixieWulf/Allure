@@ -4,7 +4,7 @@ type: CoreBlock
 unitType: shockwave
 health: 266755300
 armor: 52250
-unitModifier: 655
+unitCapModifier: 655
 itemCapacity: 125400
 size: 8
 category: effect
