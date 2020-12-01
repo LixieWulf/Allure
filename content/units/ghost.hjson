@@ -19,8 +19,9 @@ weapons: [
   width: 0.5
   recoil: 2
   bullet: {
-    type: HealBulletType
+    type: LaserBoltBulletType
     speed: 4
+    collidesTeam: true
     lifetime: 90
     healPercent: 1.66666667
     }
