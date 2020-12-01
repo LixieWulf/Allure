@@ -17,12 +17,12 @@ weapons: [
   y: 12
   reload: 1
   width: 0.5
-  alternate: true
   recoil: 2
   bullet: {
     type: HealBulletType
     speed: 4
     lifetime: 90
     healPercent: 1.66666667
+    }
   }
 ]
