@@ -1,4 +1,4 @@
-type: LaserTurret
+type: PowerTurret
 name: Prominence
 description: A massive plasma launcher. Fires a single shot that vaporizes almost anything it hits. Extremely expensive. Recommended only for manual firing, due to its slow reload.
 size: 14
