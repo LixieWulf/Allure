@@ -25,7 +25,7 @@ targetAir: true
 targetGround: true
 ammoUseEffect: casing3
 maxAmmo: 20
-ammTypes: {
+ammoTypes: {
   phase-fabric: {
     sprite: exotic-mod-qpg-wave
     collidesTiles: false
