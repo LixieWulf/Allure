@@ -27,7 +27,7 @@ shootSound: missile
 hasLiquid: false
 coolantMultiplier: 0
 maxAmmo: 90
-ammo: {
+ammoTypes: {
   cookienite: {
     type: MissileBulletType
     trailColor: B28768
