@@ -47,14 +47,8 @@ ammoTypes: {
     backColor: fafd7b
     splashDamage: 152
     splashDamageRadius: 23
-    fragBullets: 15
-    fragBullet: {
-      speed: 0
-      lifetime: 0
-      damage: 0
-      lightning: 4
-      lightningLength: 15
-    }
+    lightning: 22
+    lightningLength: 7
   }
   blast-compound: {
     speed: 4
