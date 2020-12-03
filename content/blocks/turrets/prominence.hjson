@@ -11,6 +11,8 @@ shootShake: 30
 shootType: {
   type: ContinuousLaserBulletType
   keepVelocity: true
+  homingPower: 2.4
+  homingRange: 440
   length: 27
   width: 11
   damage: 32550050
@@ -35,3 +37,4 @@ requirements: [
   shadow/15520
 ]
 research: solar-flare
+category: turrets
