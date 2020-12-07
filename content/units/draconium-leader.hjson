@@ -4,23 +4,21 @@ description: The Leader of the Draconium Army.
 maxVelocity: 1
 speed: 0.12
 drag: 0.4
-range: 15
-mass: 8640
-hitsize: 20
-rotatespeed: 0.03
+hitSize: 20
+rotateSpeed: 0.03
 health: 155552
-weapon: {
+weapons: [
+{
   name: nom
-  length: 4
   recoil: 50
   shake: 10
   inaccuracy: 10
+  x: 0
+  y: 4
   shots: 4
-  spacing: 0
   shotDelay: 3
   shootSound: shootBig
-  ejectEffect: shellEjectBig
-  width: 4
+  ejectEffect: casing3
   reload: 30
   alternate: true
   bullet: {
@@ -35,3 +33,4 @@ weapon: {
     lifetime: 12
   }
 }
+]
