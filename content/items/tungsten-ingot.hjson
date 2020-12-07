@@ -1,5 +1,4 @@
-type: material
 name: Tungsten
-description: Wolframite refined into an ingot.
+description: Wolframite refined into an ingot. 
 cost: 6.9
 color: 6c90bd
