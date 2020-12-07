@@ -8,7 +8,6 @@ hasLiquids: true
 hasItems: true
 liquidCapacity: 360
 craftTime: 50
-spinnerSpeed: -5
 requirements: [
   copper/200
   lead/500
