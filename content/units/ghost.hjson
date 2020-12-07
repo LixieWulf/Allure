@@ -28,7 +28,4 @@ weapons: [
   }
 ]
 abilities: [
-{
-  type: ForceFieldAbility
-}
 ]
