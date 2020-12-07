@@ -1,10 +1,9 @@
-type: material
 name: Shadow
 description:
   '''
-  A strange unknown material. Needs a special drill in order be mined.
-  Of course, you would only be reading this if you've already got it before.
+  A strange unknown material, formed by combining other materials and their properties. 
+  Extremely powerful.
   '''
 hardness: 10
-cost: 2
+cost: 54.8
 color: 000000
