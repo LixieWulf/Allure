@@ -2,7 +2,6 @@ type: flying
 name: Ghost
 description: A stronger spirit repair drone.
 speed: 2
-mass: 0.5
 drag: 0.1
 flying: true
 health: 244550
@@ -16,7 +15,6 @@ weapons: [
   x: 0
   y: 12
   reload: 1
-  width: 0.5
   recoil: 2
   bullet: {
     type: LaserBoltBulletType
