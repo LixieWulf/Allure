@@ -24,6 +24,4 @@ requirements: [
 ]
 category: crafting
 research: alloy-smelter
-idleSound: fire
-idleSoundVolume: 1
 outputItem: amethyst-gem/1
