@@ -14,7 +14,5 @@ requirements: [
   copper/100
 ]
 category: production
-idleSound: drill
-idleSoundVolume: 0.1
 research: water-extractor
 liquidCapacity: 250
