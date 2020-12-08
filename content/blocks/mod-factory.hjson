@@ -42,5 +42,13 @@ plans: [
       shadow/1
     ]
   }
+  {
+    unit: medea
+    time: 10
+    requirements: [
+      silicon/10
+      titanium/10
+    ]
+  }
 ]
 category: units
