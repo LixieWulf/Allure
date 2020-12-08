@@ -26,5 +26,7 @@ weapons: [
   }
 ]
 abilities: [
-  UnitSpawnAbility[zenith, spawnTime, 0, 0]
+{
+  type: UnitSpawnAbility[zenith, spawnTime, 0, 0]
+}
   ]
