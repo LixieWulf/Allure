@@ -22,9 +22,9 @@ weapons: [
    y: -20
    recoil: 2
    inaccuracy: 0
-   xRand: 10
+   xRand: 2
    shots: 2
-   shotDelay: 20
+   shotDelay: 4
    shootSound: shootBig
    ejectEffect: casing1
    bullet: {
