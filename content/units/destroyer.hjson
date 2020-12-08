@@ -1,0 +1,41 @@
+type: naval
+name: Destroyer
+description: A bigger ship, more firepower and dual cannons at the cost of a little speed.
+speed: 2
+accel: 0.5
+flying: false
+range: 200
+float: true
+canDrown: false
+hitSize: 32
+health: 2550
+rotateSpeed: 3
+weapons: [
+   {
+   name: double-shot
+   rotate: true
+   rotateSpeed: 10
+   mirror: false
+   reload: 10
+   range: 200
+   x: 0
+   y: -20
+   recoil: 2
+   inaccuracy: 0
+   shots: 2
+   shotDelay: 50
+   shootSound: shootBig
+   ejectEffect: casing1
+   bullet: {
+    damage: 240
+    shootEffect: shootBig
+    speed: 16
+    knockback: 5
+    width: 4
+    height: 8
+    shootEffect: shootBig
+    lifetime: 24
+    }
+   }
+  ]
+research: medea
