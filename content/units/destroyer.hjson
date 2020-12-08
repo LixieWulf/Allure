@@ -22,6 +22,7 @@ weapons: [
    y: -20
    recoil: 2
    inaccuracy: 0
+   xRand: 2
    shots: 2
    shotDelay: 50
    shootSound: shootBig
