@@ -1,0 +1,11 @@
+type: naval
+name: Medea
+description: A small gunboat, very fast but little firepower.
+speed: 12
+accel: 0.5
+flying: false
+range: 240
+float: true
+canDrown: false
+hitSize: 288
+health: 255006800
