@@ -3,6 +3,7 @@ name: Shadow Infuser
 description: Takes a copious amount of advanced materials and combines their properties to create an extremely powerful material.
 health: 125550
 size: 4
+itemCapacity: 20
 hasPower: true
 hasLiquids: false
 hasItems: true
