@@ -14,7 +14,7 @@ weapons: [
    {
    name: single-shot
    rotate: true
-   rotateSpeed: 0.25
+   rotateSpeed: 5
    mirror: false
    reload: 10
    x: 0
