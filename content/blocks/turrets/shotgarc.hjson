@@ -6,7 +6,11 @@ reload: 80
 shootSound: spark
 shootCone: 40
 shots: 50
-shootType: standardCopper
+shootType: {
+  type: LightningBulletType
+  length: 15
+  damage: 20
+}
 rotatespeed: 100
 powerUse: 1
 targetAir: true
@@ -17,10 +21,10 @@ recoil: 1
 cooldown: 0.02
 restitution: 0.02
 requirements: [
-  copper/1
-  lead/1
+  copper/1500
+  lead/525
 ]
 type: PowerTurret
-health: 99999
+health: 250
 category: turret
 research: arc
