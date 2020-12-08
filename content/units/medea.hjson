@@ -10,9 +10,6 @@ canDrown: false
 hitSize: 32
 health: 255
 rotateSpeed: 3
-ability: [
-type: flare-factory
-]
 weapons: [
    {
    name: single-shot
