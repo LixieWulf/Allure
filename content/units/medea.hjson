@@ -22,16 +22,16 @@ weapons: [
    inaccuracy: 0
    shots: 1
    shotDelay: 5
-   shootSound: shootSmall
+   shootSound: shootBig
    ejectEffect: casing1
    bullet: {
     damage: 24
-    shootEffect: shootSmall
+    shootEffect: shootBig
     speed: 16
     knockback: 1500
     width: 4
     height: 8
-    shootEffect: shootSmall
+    shootEffect: shootBig
     lifetime: 24
     }
    }
