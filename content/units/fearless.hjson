@@ -1,0 +1,11 @@
+type: flying
+name: Fearless
+description: A massive support starship. Capable of repairing any damage to blocks almost instantly.
+flying: true
+hitSize: 244
+health: 155455600
+armor: 55440
+speed: 0.5
+accel: 1
+lowAltitude: true
+rotateSpeed: 0.5
