@@ -1,4 +1,4 @@
-type: GenericCrafter
+type: GenericSmelter
 name: Shadow Infuser
 description: Takes a copious amount of advanced materials and combines their properties to create an extremely powerful material.
 health: 125550
