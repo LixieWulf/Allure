@@ -21,7 +21,7 @@ weapons: [
    recoil: 2
    inaccuracy: 0
    shots: 1
-   shotDelay: 5
+   shotDelay: 50
    shootSound: shootBig
    ejectEffect: casing1
    bullet: {
