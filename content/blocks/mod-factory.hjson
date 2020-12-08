@@ -50,5 +50,13 @@ plans: [
       titanium/10
     ]
   }
+   {
+    unit: destroyer
+    time: 20
+    requirements: [
+      silicon/30
+      titanium/20
+    ]
+  }
 ]
 category: units
