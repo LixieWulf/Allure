@@ -9,3 +9,22 @@ speed: 0.5
 accel: 1
 lowAltitude: true
 rotateSpeed: 0.5
+weapons: [
+{
+  name: fearless-lasers
+  x: 22
+  y: 125
+  rotate: false
+  reload: 60
+  shootCone: 30
+  bullet: {
+    type: LaserBulletType
+    damage: 125400
+    healPercent: 48
+    collidesTeam: true
+    length: 248
+    width: 55
+    sideAngle: 10
+  }
+}
+]
