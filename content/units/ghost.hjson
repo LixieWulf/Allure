@@ -25,9 +25,3 @@ weapons: [
     }
   }
 ]
-abilities: {
-  abilities: [
-  type: UnitSpawnAbility
-  unitType: zenith
-]
-  }
