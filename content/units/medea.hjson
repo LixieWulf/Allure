@@ -4,8 +4,8 @@ description: A small gunboat, very fast but little firepower.
 speed: 12
 accel: 0.5
 flying: false
-range: 240
+range: 24
 float: true
 canDrown: false
-hitSize: 288
-health: 255006800
+hitSize: 32
+health: 255
