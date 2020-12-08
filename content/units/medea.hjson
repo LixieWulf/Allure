@@ -28,7 +28,7 @@ weapons: [
     damage: 24
     shootEffect: shootBig
     speed: 16
-    knockback: 1500
+    knockback: 5
     width: 4
     height: 8
     shootEffect: shootBig
