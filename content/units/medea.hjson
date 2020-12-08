@@ -26,7 +26,7 @@ weapons: [
    ejectEffect: casing1
    bullet: {
     damage: 24
-    shootEffect: lancerLaserShoot
+    shootEffect: shootSmall
     speed: 16
     knockback: 1500
     width: 4
@@ -36,3 +36,4 @@ weapons: [
     }
    }
   ]
+research: risso
