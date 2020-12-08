@@ -10,16 +10,16 @@ canDrown: false
 hitSize: 32
 health: 255
 rotateSpeed: 3
-abilities: flare-factory
+ability: flare-factory
 weapons: [
    {
    name: single-shot
    rotate: true
-   rotateSpeed: 5
+   rotateSpeed: 10
    mirror: false
    reload: 10
    x: 0
-   y: -10
+   y: -9
    recoil: 2
    inaccuracy: 0
    shots: 1
