@@ -37,5 +37,31 @@ weapons: [
     lifetime: 24
     }
    }
+   {
+   name: double-shot
+   rotate: true
+   rotateSpeed: 10
+   mirror: false
+   reload: 10
+   range: 200
+   x: 0
+   y: 20
+   recoil: 2
+   inaccuracy: 0
+   shots: 2
+   shotDelay: 50
+   shootSound: shootBig
+   ejectEffect: casing1
+   bullet: {
+    damage: 240
+    shootEffect: shootBig
+    speed: 16
+    knockback: 5
+    width: 4
+    height: 8
+    shootEffect: shootBig
+    lifetime: 24
+    }
+   }
   ]
 research: medea
