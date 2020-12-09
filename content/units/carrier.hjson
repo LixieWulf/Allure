@@ -13,11 +13,6 @@ armor: 64000
 rotateSpeed: 0.1
 abilities: {
    [
-    type: UnitSpawnAbility
-    unit: Horizon
-    spawnTime: 10
-   ]
-   [
    type: force-shield
    health: 100
    ]
