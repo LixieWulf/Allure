@@ -31,6 +31,7 @@ weapons: [
   name: fearless-plasma
   x: 0
   y: 25
+  reload: 440
   rotate: true
   rotateSpeed: 2.25
   shootCone: 20
@@ -42,6 +43,7 @@ weapons: [
     keepVelocity: true
     length: 8
     width: 4
+    drawSize: 14
     fadeTime: 15
     lenscales: [1, 1.2, 1.275, 1.325]
     colors: [03bc74, 44b489, 7cb49f, ffffff]
