@@ -11,10 +11,10 @@ hitSize: 288
 health: 25500880
 armor: 64000
 rotateSpeed: 0.1
-abilities: {
-  [
+abilities: [
+  {
    type:UnitSpawnAbility
    unitType: Horizon
    spawnTime:50
- ]
-}
+ }
+]
