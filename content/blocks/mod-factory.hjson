@@ -70,7 +70,7 @@ plans: [
     time: 180
     requirements: [
       silicon/50
-      tungsten/40
+      tungsten-ingot/40
       
     ]
   }
