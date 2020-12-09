@@ -119,4 +119,111 @@ weapons: [
     lifetime: 24
     }
   }
+    {
+    name: single-shot
+   rotate: true
+   rotateSpeed: 7
+   mirror: false
+   reload: 30
+   range: 240
+   x: 10
+   y: -30
+   recoil: 7
+   inaccuracy: 0
+   xRand: 10
+   shots: 1
+   shotDelay: 0
+   shootSound: shootBig
+   ejectEffect: casing1
+   bullet: {
+    damage: 240
+    shootEffect: shootBig
+    speed: 10
+    knockback: 5
+    width: 4
+    height: 8
+    shootEffect: shootBig
+    lifetime: 24
+    }
+  }
+   {
+    name: single-shot
+   rotate: true
+   rotateSpeed: 7
+   mirror: false
+   reload: 30
+   range: 240
+   x: -10
+   y: -30
+   recoil: 7
+   inaccuracy: 0
+   xRand: 10
+   shots: 1
+   shotDelay: 0
+   shootSound: shootBig
+   ejectEffect: casing1
+   bullet: {
+    damage: 240
+    shootEffect: shootBig
+    speed: 10
+    knockback: 5
+    width: 4
+    height: 8
+    shootEffect: shootBig
+    lifetime: 24
+    }
+  }{
+    name: single-shot
+   rotate: true
+   rotateSpeed: 7
+   mirror: false
+   reload: 30
+   range: 240
+   x: -10
+   y: 30
+   recoil: 7
+   inaccuracy: 0
+   xRand: 10
+   shots: 1
+   shotDelay: 0
+   shootSound: shootBig
+   ejectEffect: casing1
+   bullet: {
+    damage: 240
+    shootEffect: shootBig
+    speed: 10
+    knockback: 5
+    width: 4
+    height: 8
+    shootEffect: shootBig
+    lifetime: 24
+    }
+  }
+  {
+    name: single-shot
+   rotate: true
+   rotateSpeed: 7
+   mirror: false
+   reload: 30
+   range: 240
+   x: 10
+   y: 30
+   recoil: 7
+   inaccuracy: 0
+   xRand: 10
+   shots: 1
+   shotDelay: 0
+   shootSound: shootBig
+   ejectEffect: casing1
+   bullet: {
+    damage: 240
+    shootEffect: shootBig
+    speed: 10
+    knockback: 5
+    width: 4
+    height: 8
+    shootEffect: shootBig
+    lifetime: 24
+    }
+  }
  ]
