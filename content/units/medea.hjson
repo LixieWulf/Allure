@@ -4,7 +4,7 @@ description: A small gunboat, very fast but little firepower.
 speed: 3
 accel: 0.5
 flying: false
-range: 100
+range: 50
 float: true
 canDrown: false
 hitSize: 32
@@ -16,9 +16,10 @@ weapons: [
    rotate: true
    rotateSpeed: 10
    mirror: false
-   reload: 10
+   range: 50
+   reload: 15
    x: 0
-   y: -9
+   y: -7
    recoil: 2
    inaccuracy: 0
    shots: 1
