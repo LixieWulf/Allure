@@ -5,6 +5,7 @@ flying: true
 hitSize: 244
 health: 155455600
 armor: 55440
+buildSpeed: 254.30
 speed: 0.5
 accel: 1
 lowAltitude: true
