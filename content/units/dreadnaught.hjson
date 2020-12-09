@@ -1,6 +1,6 @@
 type: naval
-name: Dreadnaught
-description: Middle Class Ship, More Firepower in exchange for speed. 
+name: New Haven
+description: Middle Class Ship also known as a Cruiser, More Firepower in exchange for speed. 
 speed: 0.5
 accel: 0.5
 flying: false
