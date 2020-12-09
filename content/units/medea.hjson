@@ -1,6 +1,6 @@
 type: naval
 name: Medea
-description: A small gunboat, very fast but little firepower.
+description: A small Frigate, very fast but little firepower.
 speed: 3
 accel: 0.5
 flying: false
