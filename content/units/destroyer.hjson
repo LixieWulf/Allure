@@ -1,6 +1,6 @@
 type: naval
-name: Destroyer
-description: A bigger ship, more firepower and dual cannons at the cost of a little speed.
+name: Akitzuki
+description: A destroyer class ship, fairly fast with light firepower.
 speed: 1
 accel: 0.5
 flying: false
