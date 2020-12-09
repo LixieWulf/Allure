@@ -12,6 +12,8 @@ health: 25500880
 armor: 64000
 rotateSpeed: 0.1
 abilities: {
- abilities: UnitSpawnAbility
- unitType: Horizon
+ abilities: [
+   type:UnitSpawnAbility
+   unitType: Horizon
+  ]
  }
