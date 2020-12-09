@@ -1,0 +1,122 @@
+type: naval
+name: Dreadnaught
+description: Middle Class Ship, More Firepower in exchange for speed. 
+speed: 0.5
+accel: 0.5
+flying: false
+range: 576
+float: true
+canDrown: false
+hitSize: 32
+health: 2550
+rotateSpeed: 3
+weapons: [
+   {
+    name: dreadnaught-cannon
+   rotate: true
+   rotateSpeed: 7
+   mirror: false
+   reload: 60
+   range: 576
+   x: 0
+   y: -40
+   recoil: 7
+   inaccuracy: 0
+   xRand: 10
+   shots: 2
+   shotDelay: 0
+   shootSound: shootBig
+   ejectEffect: casing1
+   bullet: {
+    damage: 2400
+    shootEffect: shootBig
+    speed: 24
+    knockback: 5
+    width: 4
+    height: 8
+    shootEffect: shootBig
+    lifetime: 24
+    }
+  }
+   {
+    name: dreadnaught-cannon
+   rotate: true
+   rotateSpeed: 7
+   mirror: false
+   reload: 60
+   range: 576
+   x: 0
+   y: -20
+   recoil: 7
+   inaccuracy: 0
+   xRand: 10
+   shots: 2
+   shotDelay: 0
+   shootSound: shootBig
+   ejectEffect: casing1
+   bullet: {
+    damage: 2400
+    shootEffect: shootBig
+    speed: 24
+    knockback: 5
+    width: 4
+    height: 8
+    shootEffect: shootBig
+    lifetime: 24
+    }
+  }
+   {
+    name: dreadnaught-cannon
+   rotate: true
+   rotateSpeed: 7
+   mirror: false
+   reload: 60
+   range: 576
+   x: 0
+   y: 40
+   recoil: 7
+   inaccuracy: 0
+   xRand: 10
+   shots: 2
+   shotDelay: 0
+   shootSound: shootBig
+   ejectEffect: casing1
+   bullet: {
+    damage: 2400
+    shootEffect: shootBig
+    speed: 24
+    knockback: 5
+    width: 4
+    height: 8
+    shootEffect: shootBig
+    lifetime: 24
+    }
+  }
+   {
+    name: dreadnaught-cannon
+   rotate: true
+   rotateSpeed: 7
+   mirror: false
+   reload: 60
+   range: 576
+   x: 0
+   y: 20
+   recoil: 7
+   inaccuracy: 0
+   xRand: 10
+   shots: 2
+   shotDelay: 0
+   shootSound: shootBig
+   ejectEffect: casing1
+   bullet: {
+    damage: 2400
+    shootEffect: shootBig
+    speed: 24
+    knockback: 5
+    width: 4
+    height: 8
+    shootEffect: shootBig
+    lifetime: 24
+    }
+  }
+ ]
