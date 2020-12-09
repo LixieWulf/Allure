@@ -44,6 +44,8 @@ weapons: [
     length: 24
     width: 11
     drawSize: 14
+    collidesTeam: true
+    healPercent: 22.8
     fadeTime: 15
     lenscales: [1, 1.2, 1.275, 1.325]
     colors: [03bc74, 44b489, 7cb49f, ffffff]
