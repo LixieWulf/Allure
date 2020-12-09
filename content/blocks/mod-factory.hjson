@@ -58,13 +58,5 @@ plans: [
       titanium/20
     ]
   }
-   {
-    unit: carrier
-    time: 20
-    requirements: [
-      silicon/30
-      titanium/20
-    ]
-  }
 ]
 category: units
