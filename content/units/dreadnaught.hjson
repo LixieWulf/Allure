@@ -8,7 +8,7 @@ range: 576
 float: true
 canDrown: false
 hitSize: 32
-health: 2550
+health: 22550
 rotateSpeed: 3
 weapons: [
    {
