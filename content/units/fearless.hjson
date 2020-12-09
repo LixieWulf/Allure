@@ -27,4 +27,24 @@ weapons: [
     sideAngle: 10
   }
 }
+{
+  name: fearless-plasma
+  x: 0
+  y: 25
+  rotate: true
+  rotateSpeed: 2.25
+  shootCone: 20
+  bullet: {
+    type: ContinuousLaserBulletType
+    damage: 25550
+    lifetime: 35
+    speed: 3.4
+    keepVelocity: true
+    length: 8
+    width: 4
+    fadeTime: 15
+    lenscales: [1, 1.2, 1.275, 1.325]
+    colors: [03bc74, 44b489, 7cb49f, ffffff]
+  }
+}
 ]
