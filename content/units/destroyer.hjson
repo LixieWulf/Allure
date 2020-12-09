@@ -1,7 +1,7 @@
 type: naval
 name: Destroyer
 description: A bigger ship, more firepower and dual cannons at the cost of a little speed.
-speed: 2
+speed: 1
 accel: 0.5
 flying: false
 range: 200
@@ -16,7 +16,7 @@ weapons: [
    rotate: true
    rotateSpeed: 10
    mirror: false
-   reload: 10
+   reload: 30
    range: 200
    x: 0
    y: -20
@@ -43,7 +43,7 @@ weapons: [
    rotate: true
    rotateSpeed: 10
    mirror: false
-   reload: 10
+   reload: 30
    range: 200
    x: 0
    y: 20
