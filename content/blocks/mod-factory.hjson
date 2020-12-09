@@ -65,5 +65,14 @@ plans: [
       bluewolframite/1
     ]
   }
+   {
+    unit: dreadnaught
+    time: 180
+    requirements: [
+      silicon/50
+      tungsten/40
+      
+    ]
+  }
 ]
 category: units
