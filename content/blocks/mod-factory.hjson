@@ -9,7 +9,7 @@ consumes: {
 plans: [
   {
     unit: hellfire
-    time: 30
+    time: 180
     requirements: [
       bluewolframite/1
     ]
@@ -56,6 +56,13 @@ plans: [
     requirements: [
       silicon/30
       titanium/20
+    ]
+  }
+  {
+    unit: fearless
+    time: 180
+    requirements: [
+      bluewolframite/1
     ]
   }
 ]
