@@ -74,5 +74,14 @@ plans: [
       
     ]
   }
+  {
+    unit: battle-cruiser
+    time: 180
+    requirements: [
+      silicon/50
+      tungsten-ingot/40
+      
+    ]
+  }
 ]
 category: units
