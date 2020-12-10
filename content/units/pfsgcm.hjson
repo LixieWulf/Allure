@@ -33,7 +33,6 @@ weapons: [
     reload: 0
     shootCone: 360
     ignoreRotation: true
-    minShootVelocity: 2
     x: 0
     y: 0
     shootY: 8
@@ -44,25 +43,22 @@ weapons: [
       pierce: true
       pierceCap: -1
       pierceBuilding: true
-      keepVelocity: false
       width: 5
       height: 8
       lifetime: 120
       killShooter: true
-      knockback: 20
-      speed: 4
+      knockback: 100
+      speed: 2.5
       damage: 1500
       splashDamage: 1450
       splashDamageRadius: 60
       makeFire: true
       hitShake: 2
       despawnShake: 5
-      weaveScale: 8
-      weaveMag: 5
       hitSound: explosionbig
       hitEffect: shootBig
       homingPower: 0.1
-      homingRange: 60
+      homingRange: 600
       despawnEffect: blockExplosion
       fragBullets: 4
       fragBullet: {
