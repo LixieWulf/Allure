@@ -14,66 +14,6 @@ engineOffset: 180
 engineSize: 25
 weapons: [
   {
-  name: wolfsteeth
-  rotate: true 
-  rotateSpeed: 0.25
-  mirror: false
-  x: 0
-  y: 52
-  reload: 60
-  xRand: 20
-  recoil: 4
-  inaccuracy: 0
-  shots: 4
-  shotDelay: 5
-  shootSound: shootBig
-  ejectEffect: casing3
-  bullet: {
-    sprite: exotic-mod-railbolt
-    damage: 100000
-    shootEffect: lancerLaserShoot
-    frontColor: ffffff
-    backColor: 87a3ff
-    speed: 16
-    knockback: 1500
-    width: 16
-    height: 50
-    pierceBuilding: true
-    shootEffect: shootBig
-    lifetime: 200
-    }
-  }
-  {
-    name: wolfsteeth
-  rotate: true 
-  rotateSpeed: 0.25
-  mirror: false
-  x: 0
-  y: -140
-  reload: 60
-  xRand: 20
-  recoil: 4 
-  inaccuracy: 0
-  shots: 4
-  shotDelay: 5
-  shootSound: shootBig
-  ejectEffect: casing3
-  bullet: {
-    sprite: exotic-mod-railbolt
-    damage: 100000
-    shootEffect: lancerLaserShoot
-    frontColor: ffffff
-    backColor: 87a3ff
-    speed: 16
-    knockback: 1500
-    width: 16
-    height: 50
-    pierceBuilding: true
-    shootEffect: shootBig
-    lifetime: 200
-    }
-  }
-  {
   name: hellfire-cannon-main
   x: 0
   y: 175
@@ -204,6 +144,66 @@ bullet: {
     homingRange: 32
     frontColor: ffffff
     backColor: 87a3ff
+    }
+  }
+   {
+  name: wolfsteeth
+  rotate: true 
+  rotateSpeed: 0.25
+  mirror: false
+  x: 0
+  y: 52
+  reload: 60
+  xRand: 20
+  recoil: 4
+  inaccuracy: 0
+  shots: 4
+  shotDelay: 5
+  shootSound: shootBig
+  ejectEffect: casing3
+  bullet: {
+    sprite: exotic-mod-railbolt
+    damage: 100000
+    shootEffect: lancerLaserShoot
+    frontColor: ffffff
+    backColor: 87a3ff
+    speed: 16
+    knockback: 1500
+    width: 16
+    height: 50
+    pierceBuilding: true
+    shootEffect: shootBig
+    lifetime: 200
+    }
+  }
+  {
+    name: wolfsteeth
+  rotate: true 
+  rotateSpeed: 0.25
+  mirror: false
+  x: 0
+  y: -140
+  reload: 60
+  xRand: 20
+  recoil: 4 
+  inaccuracy: 0
+  shots: 4
+  shotDelay: 5
+  shootSound: shootBig
+  ejectEffect: casing3
+  bullet: {
+    sprite: exotic-mod-railbolt
+    damage: 100000
+    shootEffect: lancerLaserShoot
+    frontColor: ffffff
+    backColor: 87a3ff
+    speed: 16
+    knockback: 1500
+    width: 16
+    height: 50
+    pierceBuilding: true
+    shootEffect: shootBig
+    lifetime: 200
     }
   }
 ]
