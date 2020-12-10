@@ -10,8 +10,8 @@ health: 255006800
 armor: 64055
 lowAltitude: true
 rotateSpeed: 0.1
-engineOffset: 36
-engineSize: 7
+engineOffset: 155
+engineSize: 14
 weapons: [
   {
   name: wolfsteeth
