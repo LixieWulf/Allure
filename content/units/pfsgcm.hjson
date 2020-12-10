@@ -8,9 +8,7 @@ description:
   '''
 health: 400
 speed: 5
-range: 200
-range: 24
-maxRange: 32
+range: 400
 rotatespeed: 60
 baseRotateSpeed: 60
 retreatPercent: 0
@@ -71,6 +69,7 @@ weapons: [
         colors: [8AA3F466, 8AA3F4, ffffff]
         damage: 500
       }
+      range: 5
     }
   }
 ]
