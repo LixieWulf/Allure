@@ -10,6 +10,7 @@ canDrown: false
 hitSize: 32
 health: 32550
 rotateSpeed: 3
+rotateShooting: false
 weapons: [
    {
     name: battle-cruiser-cannon

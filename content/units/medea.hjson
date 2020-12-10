@@ -7,9 +7,14 @@ flying: false
 range: 50
 float: true
 canDrown: false
-hitSize: 32
+hitSize: 9
 health: 255
 rotateSpeed: 3
+rotateShooting: false
+trailX: 2.5
+trailY: -6.75
+trailScl: 1
+trailLength: 50
 weapons: [
    {
    name: single-shot
@@ -19,7 +24,7 @@ weapons: [
    range: 50
    reload: 15
    x: 0
-   y: -7
+   y: 3
    recoil: 2
    inaccuracy: 0
    shots: 1
