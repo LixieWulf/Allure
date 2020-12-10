@@ -6,9 +6,9 @@ description:
 
   Inspired by [red]Kartoffel[]'s cool little missile unit things.
   '''
-health: 400
+health: 250
 speed: 5
-range: 400
+range: 120
 rotatespeed: 60
 baseRotateSpeed: 60
 retreatPercent: 0
@@ -22,7 +22,7 @@ crashDamageMultiplier: 100
 rotateShooting: false
 weapons: [
   {
-    shots: 90
+    shots: 45
     inaccuracy: 360
     shake: 10
     width: 0
@@ -58,7 +58,7 @@ weapons: [
       homingPower: 0.05
       homingRange: 600
       despawnEffect: blockExplosion
-      fragBullets: 4
+      fragBullets: 3
       fragBullet: {
         type: LaserBulletType
         length: 36
@@ -67,7 +67,29 @@ weapons: [
         sideWidth: 9
         sideAngle: 45
         colors: [8AA3F466, 8AA3F4, ffffff]
-        damage: 500
+        damage: 400
+        fragBullets: 3
+        fragBullet: {
+          type: LaserBulletType
+          length: 24
+          width: 8
+          sideLength: 12
+          sideWidth: 6
+          sideAngle: 45
+          colors: [8AA3F466, 8AA3F4, ffffff]
+          damage: 300
+          fragBullets: 3
+          fragBullet: {
+            type: LaserBulletType
+            length: 12
+            width: 4
+            sideLength: 8
+            sideWidth: 3
+            sideAngle: 45
+            colors: [8AA3F466, 8AA3F4, ffffff]
+            damage: 200
+          }
+        }
       }
       range: 5
     }
