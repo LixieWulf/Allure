@@ -19,7 +19,7 @@ weapons: [
   rotateSpeed: 0.25
   mirror: false
   x: 0
-  y: 50
+  y: 51
   reload: 60
   xRand: 20
   recoil: 4
@@ -49,7 +49,7 @@ weapons: [
   rotateSpeed: 0.25
   mirror: false
   x: 0
-  y: -135
+  y: -138
   reload: 60
   xRand: 20
   recoil: 4 
@@ -101,8 +101,8 @@ weapons: [
   }
   {
   name: point-defense-cluster
-  x: 33
-  y: 87
+  x: 31
+  y: 84
   shots: 35
   rotate: true
   reload: 5
@@ -121,8 +121,8 @@ weapons: [
   }
   {
   name: point-defense-cluster
-  x: 33
-  y: -172
+  x: 31
+  y: -173
   shots: 35
   rotate: true
   reload: 5
