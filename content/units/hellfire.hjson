@@ -10,7 +10,7 @@ health: 255006800
 armor: 64055
 lowAltitude: true
 rotateSpeed: 0.1
-engineOffset: 177
+engineOffset: 180
 engineSize: 25
 weapons: [
   {
