@@ -57,7 +57,7 @@ weapons: [
       despawnShake: 5
       hitSound: explosionbig
       hitEffect: shootBig
-      homingPower: 0.1
+      homingPower: 0.05
       homingRange: 600
       despawnEffect: blockExplosion
       fragBullets: 4
