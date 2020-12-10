@@ -7,49 +7,74 @@ description:
   Inspired by [red]Kartoffel[]'s cool little missile unit things.
   '''
 health: 400
-speed: 2.5
+speed: 5
 range: 200
-attackLength: 60
+range: 24
+maxRange: 32
 rotatespeed: 60
 baseRotateSpeed: 60
 retreatPercent: 0
-shootCone: 6.9
 flying: true
 drag: 0.01
-mass: 0.3141592
+accel: 0.05
+rotateSpeed: 3
 engineOffset: 8
-weapon: {
-  shots: 50
-  inaccuracy: 10
-  shake: 3
-  width: 0
-  length: 0
-  shootSound: reallybigexplosion
-  reload: 0
-  bullet: {
-    type: MissileBulletType
-    trailColor: b6c6fd
-    pierce: true
-    bulletWidth: 3
-    bulletHeight: 5
-    bulletShrink: 0
-    lifetime: 120
-    killShooter: true
-    knockback: 20
-    speed: 2
-    damage: 1500
-    splashDamage: 1450
-    splashDamageRadius: 60
-    incendChance: 100
-    incendSpread: 20
-    incendAmount: 69
-    hitShake: 1
-    weaveScale: 8
-    weaveMag: 8
-    hitSound: explosionbig
-    hitEffect: shootBig
-    homingPower: 0.01
-    homingRange: 40
-    despawnEffect: blockExplosion
+fallSpeed: 1
+crashDamageMultiplier: 100
+rotateShooting: false
+weapons: [
+  {
+    shots: 90
+    inaccuracy: 360
+    shake: 10
+    width: 0
+    length: 0
+    shootSound: reallybigexplosion
+    reload: 0
+    shootCone: 360
+    ignoreRotation: true
+    minShootVelocity: 2
+    x: 0
+    y: 0
+    shootY: 8
+    mirror: false
+    bullet: {
+      type: MissileBulletType
+      trailColor: 8AA3F4
+      pierce: true
+      pierceCap: -1
+      pierceBuilding: true
+      keepVelocity: false
+      width: 5
+      height: 8
+      lifetime: 120
+      killShooter: true
+      knockback: 20
+      speed: 4
+      damage: 1500
+      splashDamage: 1450
+      splashDamageRadius: 60
+      makeFire: true
+      hitShake: 2
+      despawnShake: 5
+      weaveScale: 8
+      weaveMag: 5
+      hitSound: explosionbig
+      hitEffect: shootBig
+      homingPower: 0.1
+      homingRange: 60
+      despawnEffect: blockExplosion
+      fragBullets: 4
+      fragBullet: {
+        type: LaserBulletType
+        length: 36
+        width: 12
+        sideLength: 16
+        sideWidth: 9
+        sideAngle: 45
+        colors: [8AA3F466, 8AA3F4, ffffff]
+        damage: 500
+      }
+    }
   }
-}
+]
