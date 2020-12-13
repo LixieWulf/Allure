@@ -22,7 +22,7 @@ size: 3
 range: 600
 restitution: 0.08
 cooldown: 0.08
-shootEffect: shootBig
+shootEffect: shootSmall
 shootSound: missile
 acceptCoolant: false
 coolantMultiplier: 0
@@ -40,19 +40,19 @@ ammoTypes: {
     shrinkX: 0
     shrinkY: 0
     hitSound: artillery
-    drag: -1.5
+    drag: -1
     speed: 6
     damage: 5000
     splashDamage: 13000
     splashDamageRadius: 96
     ammoMultiplier: 20
     homingRange: 360
-    homingPower: 1
+    homingPower: 0.08
     lifetime: 300
     hitEffect: blockExplosion
     despawnEffect: blockExplosion
     weaveScale: 8
-    weaveMag: 8
+    weaveMag: 3
   }
   cookienite-baked: {
     type: MissileBulletType
@@ -73,12 +73,12 @@ ammoTypes: {
     splashDamageRadius: 160
     ammoMultiplier: 15
     homingRange: 360
-    homingPower: 1
+    homingPower: 0.1
     lifetime: 300
     hitEffect: blockExplosion
     despawnEffect: blockExplosion
     weaveScale: 8
-    weaveMag: 8
+    weaveMag: 3
   }
   blast-compound: {
     type: MissileBulletType
@@ -92,19 +92,19 @@ ammoTypes: {
     shrinkX: 0
     shrinkY: 0
     hitSound: artillery
-    drag: -1
+    drag: -1.5
     speed: 7
     damage: 7000
     splashDamage: 16000
     splashDamageRadius: 256
     ammoMultiplier: 15
     homingRange: 360
-    homingPower: 1
+    homingPower: 0.03
     lifetime: 300
     hitEffect: blockExplosion
     despawnEffect: blockExplosion
     weaveScale: 8
-    weaveMag: 8
+    weaveMag: 3
   }
   pyratite: {
     type: MissileBulletType
@@ -124,14 +124,15 @@ ammoTypes: {
     splashDamageRadius: 96
     ammoMultiplier: 25
     homingRange: 360
-    homingPower: 1
+    homingPower: 0.04
     lifetime: 300
     hitEffect: blockExplosion
     despawnEffect: blockExplosion
     weaveScale: 8
-    weaveMag: 8
-    incendAmount: 2048
-    incendSpread: 512
+    weaveMag: 3
+    incendAmount: 128
+    incendSpread: 64
+    makeFire: true
   }
   plastanium: {
     type: MissileBulletType
@@ -145,20 +146,24 @@ ammoTypes: {
     shrinkX: 0
     shrinkY: 0
     hitSound: artillery
+    drag: -4
     speed: 6.5
     damage: 1500
     splashDamage: 2000
     splashDamageRadius: 256
     ammoMultiplier: 20
+    homingRange: 360
+    homingPower: 0.08
     lifetime: 300
     hitEffect: blockExplosion
     despawnEffect: blockExplosion
     weaveScale: 8
-    weaveMag: 8
+    weaveMag: 3
     pierce: true
+    pierceCap: -1
     fragBullets: 8
-    fragVelocityMin: 0.1
-    fragVelocityMax: 1.9
+    fragVelocityMin: 0.5
+    fragVelocityMax: 1.5
     fragBullet: {
       type: MissileBulletType
       pierce: true
@@ -178,7 +183,7 @@ ammoTypes: {
       hitEffect: blockExplosion
       despawnEffect: blockExplosion
       weaveScale: 8
-      weaveMag: 8
+      weaveMag: 2
     }
   }
 }
