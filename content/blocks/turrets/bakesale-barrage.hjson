@@ -1,3 +1,4 @@
+type: ItemTurret
 localizedName: Bakesale Barrage
 description:
   '''
@@ -5,26 +6,25 @@ description:
   [red]No but seriously, there is no point in boosting this. It will have no effect.
   Have fun trying to load enough ammo into this.
   '''
-type: ItemTurret
 health: 56000
 consumes: {
 }
 reloadTime: 1
 heatColor: FEB380
+alternate: true
 shots: 7
+spread: 3
 shootCone: 20
 shootShake: 0.5
 inaccuracy: 1.5
-spread: 5
 recoilAmount: 3
 size: 3
-xRand: 9
 range: 600
-restitution: 0.05
-cooldown: 0.05
+restitution: 0.08
+cooldown: 0.08
 shootEffect: shootBig
 shootSound: missile
-hasLiquids: false
+acceptCoolant: false
 coolantMultiplier: 0
 maxAmmo: 90
 ammoTypes: {
