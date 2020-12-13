@@ -1,5 +1,5 @@
 type: Conveyor
-name: Blue-Wolframite Conveyor
+localizedName: Blue-Wolframite Conveyor
 description: A conveyor made faster with powerful magnets.
 health: 550
 requirements: [
@@ -10,7 +10,7 @@ requirements: [
   bluewolframite/1
 ]
 category: distribution
-idleSound: beam
-idleSoundVolume: 0.001
+ambientSound: beam
+ambientSoundVolume: 0.001
 speed: 0.36
 research: armored-conveyor

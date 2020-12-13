@@ -1,4 +1,4 @@
-name: "[#f152ff]Galaxy's Edge"
+localizedName: "[#f152ff]Galaxy's Edge"
 description:
 '''
 Fires short beams of star material that obliterate everything.
@@ -10,12 +10,12 @@ type: LaserTurret
 size: 8
 health: 3800
 range: 160
-reload: 480
+reloadTime: 480
 shootSound: quazar
-activeSound: cosmos
-activeSoundVolume: 2
+ambientSound: cosmos
+ambientSoundVolume: 2
 powerUse: 1500
-rotatespeed: 0.5
+rotateSpeed: 0.5
 shootCone: 10
 shootShake: 1.5
 shots: 5
@@ -23,9 +23,9 @@ spread: 10
 targetAir: true
 targetGround: true
 heatColor: f152ff
-recoil: 4
+recoilAmount: 4
 shootDuration: 192
-rotatespeed: 5
+rotateSpeed: 5
 firingMoveFract: 0.5
 requirements: [
 ]
@@ -42,7 +42,7 @@ shootType: {
     name: gone-reduced-to-atoms
     damage: 580785
     effect: burning
-    armorMultiplier: 0.1
+    healthMultiplier: 0.1
     damageMultiplier: 0.5
     speedMultiplier: 0.5
   }
@@ -64,7 +64,7 @@ shootType: {
       name: gone-reduced-to-atoms-redux
       damage: 580785
       effect: burning
-      armorMultiplier: 0.1
+      healthMultiplier: 0.1
       damageMultiplier: 0.5
       speedMultiplier: 0.5
     }

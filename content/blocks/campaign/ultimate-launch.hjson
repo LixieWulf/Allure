@@ -1,12 +1,11 @@
 type: LaunchPad
-name: Ultimate Launch Pad
+localizedName: Ultimate Launch Pad
 description: Shadow energy teleports items into space at faster speeds.
 size: 4
 itemCapacity: 14450
-launchTime: 35
+launchTime: 35.0
 hasPower: true
 consumes: {
   power: 34
 }
-buildVisibility: shown
 research: core-shard

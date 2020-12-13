@@ -1,23 +1,23 @@
-name: Shotgun Arc
+localizedName: Shotgun Arc
 description: Like an Arc, but shoots multiple lightning bolts.
 size: 1
 range: 150
-reload: 80
+reloadTime: 80
 shootSound: spark
 shootCone: 40
 shots: 50
 shootType: {
   type: LightningBulletType
-  length: 15
+  lightningLength: 15
   damage: 20
 }
-rotatespeed: 100
+rotateSpeed: 100
 powerUse: 1
 targetAir: true
 targetGround: true
 heatColor: ff0000
 shootEffect: lightningShoot
-recoil: 1
+recoilAmount: 1
 cooldown: 0.02
 restitution: 0.02
 requirements: [

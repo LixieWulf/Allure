@@ -1,5 +1,5 @@
 type: ItemTurret
-name: God Scatter
+localizedName: God Scatter
 description: Cancer for anything in the skies.
 targetAir: true
 targetGround: false
@@ -8,20 +8,19 @@ heatColor: ffce2b
 size: 4
 inaccuracy: 8
 spread: 0
-reload: 1
-shots: 8
-shotWidth: 4
-xRand: 4
-recoil: 10
+reloadTime: 1
+shots: 3
+alternate: true
+spread: 7.5
+recoilAmount: 10
 ammoUseEffect: casing3
 shootCone: 25
 maxAmmo: 50
-rotatespeed: 0.25
+rotateSpeed: 0.25
 range: 369
 ammoTypes: {
   draconium: {
     speed: 11
-    hitTiles: false
     collidesTiles: false
     damage: 600
     sprite: exotic-mod-big-scat
@@ -39,7 +38,6 @@ ammoTypes: {
     fragBullets: 5
     fragBullet: {
       speed: 11
-      hitTiles: false
       collidesTiles: false
       damage: 200
       sprite: exotic-mod-big-scat
@@ -58,7 +56,6 @@ ammoTypes: {
   }
   bluewolframite: {
     speed: 10
-    hitTiles: false
     collidesTiles: false
     damage: 500
     sprite: exotic-mod-big-scat
@@ -77,7 +74,6 @@ ammoTypes: {
   }
   amethyst-gem: {
     speed: 9
-    hitTiles: false
     collidesTiles: false
     damage: 145
     sprite: exotic-mod-big-scat

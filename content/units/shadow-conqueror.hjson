@@ -1,37 +1,35 @@
 type: mech
-name: Shadow Conqueror
+localizedName: Shadow Conqueror
 description: The Leader of the Shadow Army.
-maxVelocity: 1
 speed: 0.12
 drag: 0.4
 range: 30
-mass: 8640
-hitsize: 20
-rotatespeed: 0.03
+hitSize: 20
+rotateSpeed: 0.03
 health: 1000000
-weapon: {
-  name: conqureration
-  length: 4
-  recoil: 50
-  shake: 10
-  inaccuracy: 10
-  shots: 2
-  spacing: 10
-  shotDelay: 3
-  shootSound: shootBig
-  ejectEffect: shellEjectBig
-  width: 4
-  reload: 15
-  alternate: true
-  bullet: {
-    damage: 29500
-    speed: 25
-    knockback: 1500
-    bulletWidth: 19
-    bulletHeight: 27
-    splashDamageRadius: 20
-    splashDamage: 1500
-    shootEffect: shootBig
-    lifetime: 12
+weapons: [
+  {
+    name: conqureration
+    recoil: 50
+    shake: 10
+    inaccuracy: 10
+    shots: 2
+    spacing: 10
+    shotDelay: 3
+    shootSound: shootBig
+    ejectEffect: casing3
+    reload: 15
+    alternate: true
+    bullet: {
+      damage: 29500
+      speed: 25
+      knockback: 1500
+      width: 19
+      height: 27
+      splashDamageRadius: 20
+      splashDamage: 1500
+      shootEffect: shootBig
+      lifetime: 12
+    }
   }
-}
+]

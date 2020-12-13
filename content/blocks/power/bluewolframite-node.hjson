@@ -1,5 +1,5 @@
 type: PowerNode
-name: Bluewolframite Power Node
+localizedName: Bluewolframite Power Node
 description: "An extremely advanced power node, able to reach more buildings and sustain more connections that a normal node. Has extremely strong armor."
 health: 135240
 laserRange: 8

@@ -1,26 +1,26 @@
 type: ItemTurret
-name: Draconium Railgun
+localizedName: Draconium Railgun
 description: Blue Wolfranite's electromagnetic properties and Draconium's inate stored energy allow for the creation of an even more powerful railgun.
 targetAir: true
 targetGround: true
 health: 19000
 size: 4
-shotWidth: 4
 outlineIcon: false
 heatColor: ffa914
 cooldown: 0.01
 restitution: 0.02
 inaccuracy: 10
-spread: 0
-reload: 30
-shots: 1
+spread: 2.5
+reloadTime: 30
+shots: 2
+alternate: true
 maxAmmo: 24
-recoil: 6
+recoilAmount: 6
 ammoUseEffect: casing3
 shootEffect: hitMeltdown
 shootSound: shotgun
 shootCone: 25
-rotatespeed: 0.25
+rotateSpeed: 0.25
 range: 1000
 ammoTypes: {
   draconium: {
@@ -39,7 +39,8 @@ ammoTypes: {
     splashDamageRadius: 258
     ammoMultiplier: 2
     frontColor: f53b11
-    bulletShrink: 0
+    shrinkX: 0
+    shrinkY: 0
     backColor: d92800
     hitEffect: pulverizeMedium
     despawnEffect: pulverizeMedium
@@ -75,7 +76,8 @@ ammoTypes: {
         status: melting
         homingRange: 128
         homingPower: 0.01
-        bulletShrink: 0
+        shrinkX: 0
+        shrinkY: 0
         frontColor: f53b11
         backColor: d92800
       }

@@ -1,22 +1,29 @@
-name: Shadow Kind
+localizedName: Shadow Kind
 type: flying
 description: A unit made from the mysterious shadow ore.. it fires a powerful laser.
 speed: 6
 drag: 0.6
 flying: true
 health: 6000
-weaponOffsetY: 2
 engineOffset: 8
 engineSize: 1.7
-shootCone: 60
-attackLength: 155
-weapon: {
-  name: shadow-laser
-  length: 4
-  width: 0
-  recoil: 3
-  alternate: false
-  bullet: lancerLaser
-  reload: 8
-  shootSound: laser
-}
+weapons: [
+  {
+    name: shadow-laser
+    shootCone: 60
+    recoil: 3
+    alternate: false
+    reload: 8
+    x: 0
+    y: 2
+    mirror: false
+    shootSound: laser
+    bullet: {
+      type: LaserBulletType
+      colors: [00000066, 000000, 7f7f7f]
+      damage: 500
+      collidesAir: true
+      length: 400
+    }
+  }
+]

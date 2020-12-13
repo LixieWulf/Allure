@@ -1,4 +1,4 @@
-name: Quantum Pulse Generator
+localizedName: Quantum Pulse Generator
 description:
   '''
   Effects on quantum physics from phase fabric is magnified by amethysts and then pulsed outwards to slow enemies.
@@ -10,9 +10,9 @@ description:
   Jesus Christ I wrote an entire paragraph.
   '''
 type: ItemTurret
-reload: 600
-recoil: 0
-rotatespeed: 0
+reloadTime: 600
+recoilAmount: 0
+rotateSpeed: 0
 shootCone: 360
 range: 400
 heatColor: ffea00
@@ -35,7 +35,6 @@ ammoTypes: {
     drawSize: 0
     hitSize: 16
     pierce: true
-    hitTiles: false
     lifetime: 60
     knockback: 0
     ammoMultiplier: 4

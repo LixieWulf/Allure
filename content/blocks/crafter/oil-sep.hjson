@@ -1,5 +1,5 @@
 type: Separator
-name: Advanced Separator
+localizedName: Advanced Separator
 size: 4
 solid: true
 hasPower: true

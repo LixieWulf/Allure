@@ -1,5 +1,5 @@
 type: genericCrafter
-name: Plastanium Forge
+localizedName: Plastanium Forge
 description: A more advanced Plastanium Compresser that produces Plastanium more efficently.
 craftTime: 30
 size: 3

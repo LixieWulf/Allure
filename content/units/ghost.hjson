@@ -1,5 +1,5 @@
 type: flying
-name: Ghost
+localizedName: Ghost
 description: A stronger spirit repair drone.
 speed: 2
 drag: 0.1

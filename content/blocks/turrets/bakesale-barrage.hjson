@@ -1,4 +1,4 @@
-name: Bakesale Barrage
+localizedName: Bakesale Barrage
 description:
   '''
   Made with Cookietite, so it fires at maximum speed.
@@ -9,14 +9,14 @@ type: ItemTurret
 health: 56000
 consumes: {
 }
-reload: 1
+reloadTime: 1
 heatColor: FEB380
 shots: 7
 shootCone: 20
 shootShake: 0.5
 inaccuracy: 1.5
 spread: 5
-recoil: 3
+recoilAmount: 3
 size: 3
 xRand: 9
 range: 600
@@ -24,7 +24,7 @@ restitution: 0.05
 cooldown: 0.05
 shootEffect: shootBig
 shootSound: missile
-hasLiquid: false
+hasLiquids: false
 coolantMultiplier: 0
 maxAmmo: 90
 ammoTypes: {
@@ -37,7 +37,8 @@ ammoTypes: {
     width: 12
     height: 12
     hitSize: 16
-    bulletShrink: 0
+    shrinkX: 0
+    shrinkY: 0
     hitSound: artillery
     drag: -1.5
     speed: 6
@@ -62,7 +63,8 @@ ammoTypes: {
     width: 12
     height: 12
     hitSize: 16
-    bulletShrink: 0
+    shrinkX: 0
+    shrinkY: 0
     hitSound: artillery
     drag: -2
     speed: 8
@@ -87,7 +89,8 @@ ammoTypes: {
     width: 12
     height: 12
     hitSize: 16
-    bulletShrink: 0
+    shrinkX: 0
+    shrinkY: 0
     hitSound: artillery
     drag: -1
     speed: 7
@@ -112,7 +115,8 @@ ammoTypes: {
     width: 12
     height: 12
     hitSize: 16
-    bulletShrink: 0
+    shrinkX: 0
+    shrinkY: 0
     hitSound: artillery
     speed: 6
     damage: 5000
@@ -138,7 +142,8 @@ ammoTypes: {
     width: 12
     height: 12
     hitSize: 16
-    bulletShrink: 0
+    shrinkX: 0
+    shrinkY: 0
     hitSound: artillery
     speed: 6.5
     damage: 1500
@@ -157,14 +162,15 @@ ammoTypes: {
     fragBullet: {
       type: MissileBulletType
       pierce: true
-      bulletSprite: exotic-mod-cookietitemissile
+      sprite: exotic-mod-cookietitemissile
       trailColor: fffac6
       frontColor: fffac6
       backColor: d8d97f
       width: 6
       height: 6
       hitSize: 8
-      bulletShrink: 0
+      shrinkX: 0
+      shrinkY: 0
       hitSound: artillery
       speed: 6.5
       damage: 750

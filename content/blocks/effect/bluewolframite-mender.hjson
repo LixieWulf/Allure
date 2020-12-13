@@ -1,5 +1,5 @@
 type: MendProjector
-name: Bluewolframite Mender
+localizedName: Bluewolframite Mender
 description: "A small bluewolframite mender. Uses advanced electromagnetics to repair damage in nearby structures at a fast rate. Uses silicon for full effect."
 size: 1
 health: 155460

@@ -1,5 +1,5 @@
 type: Wall
-name: Shadow Wall Huge
+localizedName: Shadow Wall Huge
 description: "Made out of the unique element Shadow. The strongest wall. Insulates arcs and reflects bullets fired."
 size: 3
 health: 23972950

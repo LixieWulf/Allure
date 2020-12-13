@@ -1,5 +1,5 @@
 type: GenericSmelter
-name: Draconium Refiner
+localizedName: Draconium Refiner
 description: Takes Draconium and refines it into a square Gem.
 size: 2
 hasPower: true
@@ -26,6 +26,6 @@ requirements: [
 ]
 category: crafting
 research: blue-wolframite-refiner
-idleSound: fire
-idleSoundVolume: 1
+ambientSound: fire
+ambientSoundVolume: 1
 outputItem: refined-draconium/1

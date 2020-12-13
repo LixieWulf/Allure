@@ -1,5 +1,5 @@
 type: GenericSmelter
-name: Phase Forge
+localizedName: Phase Forge
 description: Forges Phase Fabric at a faster pace than the weaver
 liquidCapacity: 50
 size: 3
@@ -26,6 +26,6 @@ requirements: [
 ]
 category: crafting
 research: phase-weaver
-idleSound: message
-idleSoundVolume: 0.5
+ambientSound: message
+ambientSoundVolume: 0.5
 outputItem: phase-fabric/4

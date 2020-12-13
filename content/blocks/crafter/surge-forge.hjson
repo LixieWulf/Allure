@@ -1,5 +1,5 @@
 type: GenericSmelter
-name: Surge-Forge
+localizedName: Surge-Forge
 description: A more powerful Surge Forge, focused on giving you more for the resources you use.
 size: 4
 hasPower: true
@@ -28,6 +28,6 @@ requirements: [
 ]
 category: crafting
 research: plast-forge
-idleSound: beam
-idleSoundVolume: 0.1
+ambientSound: beam
+ambientSoundVolume: 0.1
 outputItem: surge-alloy/4

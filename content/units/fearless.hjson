@@ -1,5 +1,5 @@
 type: flying
-name: Fearless
+localizedName: Fearless
 description: A massive support starship. Capable of repairing any damage to blocks almost instantly.
 flying: true
 hitSize: 244
@@ -24,7 +24,6 @@ weapons: [
     healPercent: 48
     collidesTeam: true
     length: 248
-    width: 55
     sideAngle: 10
   }
 }
@@ -43,7 +42,6 @@ weapons: [
     speed: 3.4
     keepVelocity: true
     length: 24
-    width: 11
     drawSize: 14
     collidesTeam: true
     healPercent: 22.8

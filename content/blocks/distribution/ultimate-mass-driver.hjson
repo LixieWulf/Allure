@@ -1,5 +1,5 @@
 type: MassDriver
-name: Ultimate Mass Driver
+localizedName: Ultimate Mass Driver
 description: The ultimate item transport block, a better mass driver
 health: 5000
 requirements: [

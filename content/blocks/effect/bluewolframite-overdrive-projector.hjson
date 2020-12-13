@@ -1,12 +1,11 @@
 type: OverdriveProjector
-name: Bluewolframite Overdrive Projector
+localizedName: Bluewolframite Overdrive Projector
 description: "An extremely advanced overdrive projector. Uses sophisticated electromagnetic pulses to greatly enhance the speed of nearby blocks. Requires silicon input for full effect."
 size: 2
 health: 380550
-reload: 30
 range: 164
-color: 87a3ff
-phase: c0cfff
+baseColor: 87a3ff
+phaseColor: c0cfff
 speedBoost: 6.5
 speedBoostPhase: 2.1
 useTime: 30

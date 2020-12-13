@@ -1,5 +1,5 @@
 type: GenericSmelter
-name: Amethyst Refiner
+localizedName: Amethyst Refiner
 description: Takes Amethyst and refines it into a cut Gem.
 size: 2
 hasPower: true

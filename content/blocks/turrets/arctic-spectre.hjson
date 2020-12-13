@@ -1,17 +1,17 @@
 type: ItemTurret
-name: Arctic Spectre
+localizedName: Arctic Spectre
 description: A Spectre made out of Blue Wolframite and Draconium along with some Amethyst as the main components.
 targetAir: true
 targetGround: true
 health: 19500
 size: 4
 inaccuracy: 12
-reload: 1
+reloadTime: 1
 shots: 9
-recoil: 10
+recoilAmount: 10
 ammoUseEffect: casing3
 shootCone: 25
-rotatespeed: 1000
+rotateSpeed: 1000
 range: 346
 consumes: {
   liquid: {

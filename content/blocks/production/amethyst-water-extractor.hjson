@@ -1,5 +1,5 @@
 type: SolidPump
-name: Amethyst Water Extractor
+localizedName: Amethyst Water Extractor
 description: Extracts water by using Amethyst and other materials to build a powerless pump.
 health: 10000
 result: water

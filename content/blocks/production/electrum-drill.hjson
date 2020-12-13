@@ -1,4 +1,4 @@
-name: Surge Drill
+localizedName: Surge Drill
 description: A Drill made from Surge Alloy. Requires No Power to operate due to its own electrical properties
 type: Drill
 size: 3
@@ -12,6 +12,6 @@ requirements: [
   thorium/20
 ]
 category: production
-idleSound: build
-idleSoundVolume: 0.05
+ambientSound: build
+ambientSoundVolume: 0.05
 research: blast-drill

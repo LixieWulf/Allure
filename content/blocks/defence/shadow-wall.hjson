@@ -1,5 +1,5 @@
 type: Wall
-name: Shadow Wall
+localizedName: Shadow Wall
 description: "Made out of the unique element Shadow. The strongest wall. Insulates arcs and reflects bullets fired."
 size: 1
 health: 3789061
@@ -10,4 +10,3 @@ requirements: [
   ]
 category: defense
 research: draconium-wall-large
-

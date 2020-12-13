@@ -1,4 +1,4 @@
-name: Andromeda Drill
+localizedName: Andromeda Drill
 description: A Powerful Drill made from Amethyst
 type: Drill
 size: 3
@@ -14,6 +14,6 @@ requirements: [
   copper/10
 ]
 category: production
-idleSound: build
-idleSoundVolume: 0.05
+ambientSound: build
+ambientSoundVolume: 0.05
 research: electrum-drill

@@ -1,5 +1,5 @@
 type: PowerTurret
-name: Thundersnap
+localizedName: Thundersnap
 health: 177550
 reloadTime: 35
 shootCone: 15

@@ -1,5 +1,5 @@
 type: GenericSmelter
-name: Blue Wolframite Refiner
+localizedName: Blue Wolframite Refiner
 description: A smelterer capable of refining Wolframite into Blue-Wolframite
 size: 2
 hasPower: true
@@ -27,6 +27,6 @@ requirements: [
 ]
 category: crafting
 research: amethyst-refiner
-idleSound: fire
-idleSoundVolume: 1
+ambientSound: fire
+ambientSoundVolume: 1
 outputItem: bluewolframite/1

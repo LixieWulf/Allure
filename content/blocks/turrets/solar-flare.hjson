@@ -1,4 +1,4 @@
-name: "[#ffec6e]Solar Flare"
+localizedName: "[#ffec6e]Solar Flare"
 description:
 '''
 A cousin of the Meltdown. Heavily damages blocks and inflicts a status effect that completely melts units. Fires a little slower than an avarage Meltdown.
@@ -11,12 +11,12 @@ type: LaserTurret
 size: 8
 health: 3400
 range: 500
-reload: 300
+reloadTime: 300
 shootSound: thesunisadeadlylaserlol
-activeSound: flare
-activeSoundVolume: 2
+ambientSound: flare
+ambientSoundVolume: 2
 powerUse: 200
-rotatespeed: 1
+rotateSpeed: 1
 shootCone: 10
 shootShake: 1.5
 shots: 9
@@ -24,7 +24,7 @@ spread: 2
 targetAir: true
 targetGround: true
 heatColor: ffff00
-recoil: 4
+recoilAmount: 4
 shootDuration: 345
 firingMoveFract: 0.5
 requirements: [
@@ -35,17 +35,18 @@ shootType: {
   tscales: [1, 0.7, 0.5, 0.2]
   strokes: [2.5, 1.875, 1.25, 0.375]
   lenscales: [1, 1.12, 1.15, 1.17]
-  length:560
+  length: 560
   width: 16
   damage: 10000
+  incendChance: 1
+  incendSpread: 16
+  incendAmount: 64
+  makeFire: true
   status: {
     name: the-sun-is-a-deadly-laser
     damage: 40000
     effect: burning
-    armorMultiplier: 0.1
-    incendChance: 1
-    incendSpread: 16
-    incendAmount: 64
+    healthMultiplier: 0.1
   }
 }
 category: turret

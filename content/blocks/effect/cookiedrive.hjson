@@ -1,5 +1,5 @@
 type: OverdriveProjector
-name: Cookiedrive Projector
+localizedName: Cookiedrive Projector
 description: Somehow, that Cookietite can be used to boost stuff. I guess it's filled with mechanical sugar or something.
 size: 2
 health: 200

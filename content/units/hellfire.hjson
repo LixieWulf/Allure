@@ -1,5 +1,5 @@
 type: flying
-name: Hellfire
+localizedName: Hellfire
 description: A massive starship, capable of easily destroying the most powerful units and laying waste to any base in its path. Avoid encounters if possible.
 speed: 0.25
 accel: 0.5
@@ -14,196 +14,191 @@ engineOffset: 180
 engineSize: 25
 weapons: [
   {
-  name: hellfire-cannon-main
-  x: 0
-  y: 175
-  rotate: false
-  reload:  360
-  shootCone: 15
-  mirror: false
-  continuous: true
-  shootSound: laserbig
-  
-  recoil: 0
-  shotDelay: 60
-  bullet: {
-    type: ContinuousLaserBulletType
-    length: 315
-    activeSound: beam
-    lifetime: 300
-    drawSize: 460
-    shootEffect: railShoot
-    shake: 15
-    width: 8
-    damage: 345980
-    colors: [87a3ff, abbeff, cfdaff, ffffff]
+    name: hellfire-cannon-main
+    x: 0
+    y: 175
+    rotate: false
+    reload:  360
+    shootCone: 15
+    mirror: false
+    continuous: true
+    shootSound: beam
+    
+    recoil: 0
+    shotDelay: 60
+    bullet: {
+      type: ContinuousLaserBulletType
+      length: 315
+      lifetime: 300
+      drawSize: 460
+      shootEffect: railShoot
+      shake: 15
+      width: 8
+      damage: 345980
+      colors: [87a3ff, abbeff, cfdaff, ffffff]
     }
   }
   {
-  name: point-defense-cluster
-  x: 31
-  y: 84
-  shots: 35
-  rotate: true
-  reload: 5
-  inaccuracy: 45
-  bullet: {
-    damage: 55650
-    speed: 15
-    lifetime: 7
-    pierce: true
-    pierceBuilding: true
-    height: 10
-    width: 3
-    frontColor: ffffff
-    backColor: 87a3ff
+    name: point-defense-cluster
+    x: 31
+    y: 84
+    shots: 35
+    rotate: true
+    reload: 5
+    inaccuracy: 45
+    bullet: {
+      damage: 55650
+      speed: 15
+      lifetime: 7
+      pierce: true
+      pierceBuilding: true
+      height: 10
+      width: 3
+      frontColor: ffffff
+      backColor: 87a3ff
     }
   }
   {
-  name: point-defense-cluster
-  x: 31
-  y: -173
-  shots: 35
-  rotate: true
-  reload: 5
-  inaccuracy: 45
-  bullet: {
-    damage: 55650
-    speed: 15
-    lifetime: 7
-    pierce: true
-    pierceBuilding: true
-    height: 10
-    width: 3
-    frontColor: ffffff
-    backColor: 87a3ff
+    name: point-defense-cluster
+    x: 31
+    y: -173
+    shots: 35
+    rotate: true
+    reload: 5
+    inaccuracy: 45
+    bullet: {
+      damage: 55650
+      speed: 15
+      lifetime: 7
+      pierce: true
+      pierceBuilding: true
+      height: 10
+      width: 3
+      frontColor: ffffff
+      backColor: 87a3ff
     }
   }
   {
-  name: hellfire-frontal-cannon
-  x: 0
-  y: 155
-  shots: 3
-  xRand: 25
-  burstSpacing: 1
-  inaccuracy: 1
-  mirror: false
-  shootSound: shootBig
-  reload: 10
-  bullet: {
-    damage: 522530
-    lifetime: 60
-    speed: 14
-    height: 55
-    width: 22
-    frontColor: ffffff
-    backColor: 87a3ff
-  }
-}
-{
-name: broadside-cannon
-x: 35
-y: -15
-rotate: true
-reload: 15
-shots: 25
-inaccuracy: 35
-shootSound: shootBig
-bullet: {
-  damage: 676550
-  speed: 14
-  lifetime: 15
-  pierce: true
-  pierceBuilding: true
-  height: 28
-  width: 18
-  homingPower: 5.0
-  homingRange: 32
-  frontColor: ffffff
-  backColor: 87a3ff
-  }
-}
-{
-  name: broadside-cannon
-  x: 35 
-  y: -72
-  rotate: true
-  reload: 15
-  shots: 25
-  inaccuracy: 35
-  shootSound: shootBig
-  bullet: {
-    damage: 676550
-    speed: 14
-    lifetime: 15
-    pierce: true
-    pierceBuilding: true
-    height: 28
-    width: 18
-    homingPower: 5.0
-    homingRange: 32
-    frontColor: ffffff
-    backColor: 87a3ff
+    name: hellfire-frontal-cannon
+    x: 0
+    y: 155
+    shots: 3
+    xRand: 25
+    shotDelay: 1
+    inaccuracy: 1
+    mirror: false
+    shootSound: shootBig
+    reload: 10
+    bullet: {
+      damage: 522530
+      lifetime: 60
+      speed: 14
+      height: 55
+      width: 22
+      frontColor: ffffff
+      backColor: 87a3ff
     }
   }
-   {
-  name: wolfsteeth
-  rotate: true 
-  rotateSpeed: 0.25
-  mirror: false
-  x: 0
-  y: 52
-  reload: 60
-  xRand: 20
-  recoil: 4
-  inaccuracy: 0
-  shots: 4
-  shotDelay: 5
-  shootSound: shootBig
-  ejectEffect: casing3
-  bullet: {
-    sprite: exotic-mod-railbolt
-    damage: 100000
-    shootEffect: lancerLaserShoot
-    frontColor: ffffff
-    backColor: 87a3ff
-    speed: 16
-    knockback: 1500
-    width: 16
-    height: 50
-    pierceBuilding: true
-    shootEffect: shootBig
-    lifetime: 200
+  {
+    name: broadside-cannon
+    x: 35
+    y: -15
+    rotate: true
+    reload: 15
+    shots: 25
+    inaccuracy: 35
+    shootSound: shootBig
+    bullet: {
+      damage: 676550
+      speed: 14
+      lifetime: 15
+      pierce: true
+      pierceBuilding: true
+      homingPower: 5.0
+      homingRange: 32
+      frontColor: ffffff
+      backColor: 87a3ff
+      }
+    }
+  {
+    name: broadside-cannon
+    x: 35 
+    y: -72
+    rotate: true
+    reload: 15
+    shots: 25
+    inaccuracy: 35
+    shootSound: shootBig
+    bullet: {
+      damage: 676550
+      speed: 14
+      lifetime: 15
+      pierce: true
+      pierceBuilding: true
+      height: 28
+      width: 18
+      homingPower: 5.0
+      homingRange: 32
+      frontColor: ffffff
+      backColor: 87a3ff
     }
   }
   {
     name: wolfsteeth
-  rotate: true 
-  rotateSpeed: 0.25
-  mirror: false
-  x: 0
-  y: -140
-  reload: 60
-  xRand: 20
-  recoil: 4 
-  inaccuracy: 0
-  shots: 4
-  shotDelay: 5
-  shootSound: shootBig
-  ejectEffect: casing3
-  bullet: {
-    sprite: exotic-mod-railbolt
-    damage: 100000
-    shootEffect: lancerLaserShoot
-    frontColor: ffffff
-    backColor: 87a3ff
-    speed: 16
-    knockback: 1500
-    width: 16
-    height: 50
-    pierceBuilding: true
-    shootEffect: shootBig
-    lifetime: 200
+    rotate: true 
+    rotateSpeed: 0.25
+    mirror: false
+    x: 0
+    y: 52
+    reload: 60
+    xRand: 20
+    recoil: 4
+    inaccuracy: 0
+    shots: 4
+    shotDelay: 5
+    shootSound: shootBig
+    ejectEffect: casing3
+    bullet: {
+      sprite: exotic-mod-railbolt
+      damage: 100000
+      shootEffect: lancerLaserShoot
+      frontColor: ffffff
+      backColor: 87a3ff
+      speed: 16
+      knockback: 1500
+      width: 16
+      height: 50
+      pierceBuilding: true
+      lifetime: 200
+    }
+  }
+  {
+    name: wolfsteeth
+    rotate: true 
+    rotateSpeed: 0.25
+    mirror: false
+    x: 0
+    y: -140
+    reload: 60
+    xRand: 20
+    recoil: 4 
+    inaccuracy: 0
+    shots: 4
+    shotDelay: 5
+    shootSound: shootBig
+    ejectEffect: casing3
+    bullet: {
+      sprite: exotic-mod-railbolt
+      damage: 100000
+      shootEffect: lancerLaserShoot
+      frontColor: ffffff
+      backColor: 87a3ff
+      speed: 16
+      knockback: 1500
+      width: 16
+      height: 50
+      pierceBuilding: true
+      lifetime: 200
     }
   }
 ]

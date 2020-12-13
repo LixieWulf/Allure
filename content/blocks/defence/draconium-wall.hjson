@@ -1,4 +1,4 @@
-name: Draconium Wall
+localizedName: Draconium Wall
 description: The second most durable wall. It has the capability to deflect bullets.
 type: Wall
 health:  2652250
