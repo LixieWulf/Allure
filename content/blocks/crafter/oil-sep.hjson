@@ -5,7 +5,7 @@ solid: true
 hasPower: true
 hasLiquids: true
 hasItems: true
-liquidCapacity: 300
+liquidCapacity: 3000
 craftTime: 60
 spinnerSpeed: -5
 requirements: [
