@@ -6,7 +6,8 @@ solid: true
 hasPower: true
 hasLiquids: true
 hasItems: true
-liquidCapacity: 360
+liquidCapacity: 36000
+itemCapacity: 1000
 craftTime: 50
 requirements: [
   copper/200
