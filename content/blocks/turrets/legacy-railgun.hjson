@@ -5,7 +5,6 @@ targetAir: true
 targetGround: true
 health: 19000
 size: 4
-outlineIcon: false
 heatColor: ffa914
 cooldown: 0.01
 restitution: 0.02
