@@ -14,7 +14,8 @@ shootEffect: {
   speed: 7
   cone: 15
   lifetime: 35
-  region: square
+  strokeFrom: 30
+  strokeTo: 50
 }
 recoilAmount: 4
 reloadTime: 33
