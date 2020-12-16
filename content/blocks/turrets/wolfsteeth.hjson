@@ -7,7 +7,13 @@ health: 15500250
 size: 8
 inaccuracy: 0
 shootSound: railgun
-shootEffect: test
+shootEffect: {
+  type: ParticleEffect
+  colorFrom: ffffff
+  colorTo: 87a3ff
+  cone: 15
+  lifetime: 120
+}
 recoilAmount: 4
 reloadTime: 33
 coolantUsage: 12
