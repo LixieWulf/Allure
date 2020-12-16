@@ -34,7 +34,6 @@ shootType: {
   incendSpread: 16
   incendAmount: 128
   makeFire: true
-  colors: [d20000, 7e0000, 900000, a50000]
   status: {
     name: burn
     damage: 48000
