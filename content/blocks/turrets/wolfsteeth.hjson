@@ -11,8 +11,9 @@ shootEffect: {
   type: ParticleEffect
   colorFrom: ffffff
   colorTo: 87a3ff
+  speed: 4
   cone: 15
-  lifetime: 120
+  lifetime: 35
 }
 recoilAmount: 4
 reloadTime: 33
