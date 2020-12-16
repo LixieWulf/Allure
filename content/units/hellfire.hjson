@@ -6,8 +6,8 @@ accel: 0.5
 flying: true
 range: 240
 hitSize: 288
-health: 255006800
-armor: 64055
+health: 765500450
+armor: 174550
 lowAltitude: true
 rotateSpeed: 0.1
 engineOffset: 180
