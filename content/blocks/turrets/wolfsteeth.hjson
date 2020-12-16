@@ -7,7 +7,7 @@ health: 15500250
 size: 8
 inaccuracy: 0
 shootSound: railgun
-shootEffect: railShoot
+shootEffect: test
 recoilAmount: 4
 reloadTime: 33
 coolantUsage: 12
