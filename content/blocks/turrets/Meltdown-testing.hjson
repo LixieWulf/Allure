@@ -1,0 +1,51 @@
+localizedName: "Zetsumetsu Entiti"
+description:
+'''
+Destructive force imbued with the power of technology.
+'''
+type: LaserTurret
+size: 8
+health: 345000
+range: 500
+reloadTime: 150
+shootSound: thesunisadeadlylaserlol
+ambientSound: flare
+ambientSoundVolume: 2
+powerUse: 200
+rotateSpeed: 1
+shootCone: 10
+shootShake: 1.5
+shots: 18
+spread: 2
+targetAir: true
+targetGround: true
+heatColor: ffff00
+recoilAmount: 4
+shootDuration: 345
+firingMoveFract: 0.5
+requirements: [
+]
+shootType: {
+  type: ContinuousLaserBulletType
+  length: 560
+  width: 16
+  damage: 10000
+  incendChance: 1
+  incendSpread: 16
+  incendAmount: 128
+  makeFire: true
+  status: {
+    name: burn
+    damage: 48000
+    effect: burning
+    healthMultiplier: 0.1
+  }
+  fragBullets: 3
+  fragBullet: {
+        type: LightningBulletType
+        lightningLength: 7
+        damage: 56650
+      }
+}
+category: turret
+research: meltdown
