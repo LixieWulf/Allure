@@ -34,19 +34,13 @@ shootType: {
   incendSpread: 16
   incendAmount: 128
   makeFire: true
-  colors: [e6c04555, f7d95eaa, ffec6e, ffffff]
+  colors: [a50000, d20000, 7e0000, dd0000]
   status: {
     name: burn
     damage: 48000
     effect: burning
     healthMultiplier: 0.1
   }
-  fragBullets: 3
-  fragBullet: {
-        type: LightningBulletType
-        lightningLength: 7
-        damage: 56650
-      }
 }
 category: turret
 research: meltdown
