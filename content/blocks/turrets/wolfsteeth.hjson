@@ -151,6 +151,7 @@ ammoTypes: {
     fragBullet: {
       damage: 1
       speed: 3
+      absorbable: false
       pierce: true
       lifetime: 720
       knockback: 128
@@ -206,6 +207,7 @@ ammoTypes: {
     speed: 6
     lifetime: 685
     pierce: true
+    absorbable: false
     knockback: 256
     ammoMultiplier: 1
     hitEffect: hitLancer
