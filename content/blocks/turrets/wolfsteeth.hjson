@@ -311,7 +311,7 @@ ammoTypes: {
     speed: 10
     lifetime: 360
     reloadMultiplier: 0.25
-    ammoMultiplier: 1
+    ammoMultiplier: 2
     sprite: exotic-mod-railbolt
     frontColor: ffffff
     backColor: 87a3ff
@@ -337,6 +337,32 @@ ammoTypes: {
         lightningLength: 7
         damage: 56650
       }
+    }
+  }
+  {
+  shadow: {
+    damage: 354550
+    speed: 15
+    lifetime: 240
+    reloadMultiplier: 0.15
+    ammoMultiplier: 1
+    sprite: exotic-mod-railbolt
+    width: 10
+    height: 37
+    frontColor: ffffff
+    backColor: 000000
+    fragBullets: 25
+    fragBullet: {
+      type: ContinuousLaserBulletType
+      damage: 65450
+      keepVelocity: true
+      speed: 3
+      lifetime: 25
+      length: 14
+      width: 7
+      fadeTime: 10
+      lenscales: [1, 1.2, 1.275, 1.325]
+      colors: [000000, 4e4e4e, a0a0a0, ffffff]
     }
   }
 }
