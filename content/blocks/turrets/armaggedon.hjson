@@ -1,6 +1,6 @@
 type: ItemTurret
-localizedName: Arctic Spectre
-description: A Spectre made out of Blue Wolframite and Draconium along with some Amethyst as the main components.
+localizedName: Armaggedon
+description: Spectre's older war veteran brother. Much more powerful, though more expensive.
 targetAir: true
 targetGround: true
 health: 19500
