@@ -339,7 +339,6 @@ ammoTypes: {
       }
     }
   }
-  {
   shadow: {
     damage: 354550
     speed: 15
