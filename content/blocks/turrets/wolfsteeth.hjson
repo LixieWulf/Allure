@@ -353,7 +353,7 @@ ammoTypes: {
     fragBullets: 25
     fragBullet: {
       type: ContinuousLaserBulletType
-      damage: 65450
+      damage: 125440
       keepVelocity: true
       speed: 3
       lifetime: 25
