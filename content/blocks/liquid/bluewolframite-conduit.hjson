@@ -1,14 +1,14 @@
 type: Conduit
-localizedName: Blue-Wolframite Conduit
+localizedName: Bluewolframite Conduit
 description: Accelerates fluid flow with powerful magnets (somehow). If the pipe is broken, it is heavily prone to leaking.
-leaks: false
-health: 250
+leaks: true
+health: 54420
 requirements: [
   bluewolframite/3
   surge-alloy/1
   metaglass/3
 ]
-liquidCapacity: 40
+liquidCapacity: 32
 liquidPressure: 1.2
 category: liquid
 research: plated-conduit
