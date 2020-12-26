@@ -6,9 +6,9 @@ solid: true
 hasPower: true
 hasLiquids: true
 hasItems: true
-liquidCapacity: 36000
-itemCapacity: 1000
-craftTime: 50
+liquidCapacity: 440
+itemCapacity: 30
+craftTime: 60
 requirements: [
   copper/200
   lead/500
@@ -22,8 +22,8 @@ consumes: {
   power: 5.4
    items: {
     items: [
-   surge-alloy/5
-   sand/5
+    wolframite/4
+    surge-alloy/1
     ]
   }
 }
