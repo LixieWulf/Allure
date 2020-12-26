@@ -378,6 +378,7 @@ cookienite-baked: {
   height: 11
   frontColor: e6b657
   backColor: 573401
+  }
 }
 outlineIcon: false
 requirements: [
