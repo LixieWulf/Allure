@@ -6,6 +6,7 @@ targetGround: true
 health: 15500250
 size: 8
 inaccuracy: 0
+maxAmmo: 245
 shootSound: railgun
 shootEffect: {
   type: ParticleEffect
@@ -366,6 +367,17 @@ ammoTypes: {
       colors: [000000, 4e4e4e, a0a0a0, ffffff]
     }
   }
+cookienite-baked: {
+  damage: 1546
+  speed: 5
+  lifetime: 720
+  reloadMultiplier: 60
+  ammoMultiplier: 30
+  sprite: exotic-mod-railbolt
+  width: 2
+  height: 11
+  frontColor: e6b657
+  backColor: 573401
 }
 outlineIcon: false
 requirements: [
