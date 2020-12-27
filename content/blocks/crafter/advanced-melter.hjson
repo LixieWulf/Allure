@@ -1,4 +1,4 @@
-type: GenericSmelter
+type: GenericCrafter
 localizedName: Advanced Melter
 description: "Produces a very unstable liquid. Handle it with caution. One wrong move and it will erupt. Don't let it leak."
 size: 4
