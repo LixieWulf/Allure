@@ -30,7 +30,7 @@ consumes: {
       ]
    }
 }
-
+drawer: drawMixer
 outputLiquid: mag-slag/60
 category: crafting
 research: melter
