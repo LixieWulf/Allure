@@ -1,5 +1,5 @@
-name: "[#fbbdff]Supercoolant"
-description: An extreme coolant made from Cyrofluid and Amethyst powder. Has greater heat absorption than Cryofluid itself.
+name: Supercoolant
+description: An extremely effective coolant. Made by mixing cryofluid and amethyst.
 temperature: 0.015
 flammability: 0
 viscosity: 0.55
