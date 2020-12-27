@@ -1,6 +1,6 @@
 type: Wall
-localizedName: Shadow Wall Large
-description: "Made out of the unique element Shadow. The strongest wall. Insulates arcs and reflects bullets fired."
+localizedName: Large Shadow Wall
+description: "Made out of the unique element known as shadow. The strongest wall. Insulates arcs and reflects bullets fired. \nSpans multiple tiles."
 size: 2
 health: 9720400
 insulated: true
