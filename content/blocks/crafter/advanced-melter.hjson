@@ -2,7 +2,6 @@ type: LiquidConverter
 localizedName: Advanced Melter
 description: "Produces a very unstable liquid. Handle it with caution. One wrong move and it will erupt. Don't let it leak."
 size: 4
-solid: true
 hasPower: true
 hasLiquids: true
 hasItems: true
