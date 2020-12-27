@@ -20,12 +20,17 @@ requirements: [
 ]
 consumes: {
   power: 5.4
-   items: {
-    items: [
-    wolframite/4
-    surge-alloy/1
-    ]
-  }
+    liquids: {
+      liquids: [
+      slag/24
+      ]
+    }
+    items: {
+      items: [
+      wolframite/4
+      surge-alloy/1
+      ]
+   }
 }
 
 outputLiquid: mag-slag/60
