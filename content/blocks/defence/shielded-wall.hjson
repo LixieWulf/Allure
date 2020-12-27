@@ -4,7 +4,8 @@ description: "A durable wall that emits a small, strong force field. Requires po
 health: 1550025
 size: 2
 radius: 20
-cooldownNormal: 10000
+shieldHealth: 344560
+cooldownNormal: 4.4
 consumes: {
   power: 1.75
   items: {
