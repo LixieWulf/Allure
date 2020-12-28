@@ -15,6 +15,7 @@ requirements: [
   copper/10
 ]
 consumes: {
+  power: 4
   liquid: {
     liquid: cryofluid
     amount: 0.3
