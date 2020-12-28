@@ -1,0 +1,32 @@
+type: Drill
+localizedName: Bluewolframite Drill
+description: "A massive drill, capable of mining items at an incredible pace. Able to mine any ore. \nMagnetized slag can be used to optionally hyperdrive the drill."
+health: 45655430
+armor: 27440
+size: 7
+tier: 28
+drillTime: 3.5
+liquidBoostIntensity: 6.4
+drawRim: true
+consumes: {
+  power: 14.8
+  liquid: {
+    liquid: mag-slag
+    amount: 3
+    booster: true
+    optional: true
+  }
+}
+requirements: [
+  copper/2310
+  lead/2540
+  silicon/1540
+  titanium/1330
+  thorium/1660
+  surge-alloy/450
+  bluewolframite/380
+]
+category: production
+research: andromeda-drill
+ambientSound: drill
+ambientSoundVolume: 1.55
