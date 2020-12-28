@@ -4,6 +4,6 @@ description:
   A material capable of absorbing large amounts of heat.
   Always feels cold.
   '''
-hardness: 7
+hardness: 6
 cost: 2
 color: be00ed
