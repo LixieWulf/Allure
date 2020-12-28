@@ -10,3 +10,13 @@ consumes: {
 }
 pumpAmount: 22.8
 liquidCapacity: 15350
+requirements: [
+  copper/2400
+  lead/3450
+  metaglass/1540
+  silicon/2530
+  thorium/3440
+  bluewolframite/650
+]
+category: liquid
+research: bluewolframite-conduit
