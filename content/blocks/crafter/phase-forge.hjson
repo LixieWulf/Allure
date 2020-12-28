@@ -1,20 +1,20 @@
-type: GenericSmelter
+type: GenericCrafter
 localizedName: Phase Forge
-description: Forges Phase Fabric at a faster pace than the weaver
-liquidCapacity: 50
+description: A more effective phase weaver. 
+itemCapacity: 50
 size: 3
 hasPower: true
 hasLiquids: false
 hasItems: true
-craftTime: 120
+craftTime: 150
 craftEffect: pulverizeRedder
 updateEffect: pulverizeRed
 consumes: {
   power: 12
   items: {
     items: [
-      thorium/2
-      sand/5
+      thorium/6
+      sand/15
     ]
   }
 }
@@ -24,6 +24,7 @@ requirements: [
   copper/50
   lead/50
 ]
+drawer: drawWeave
 category: crafting
 research: phase-weaver
 ambientSound: message
