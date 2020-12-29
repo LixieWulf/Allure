@@ -1,15 +1,15 @@
 type: ImpactReactor
-localizedName: "[green]Arc Reactor"
+localizedName: Arc Reactor
 description: The ultimate reactor. Uses shadow to generate massive amounts of power. Requires supercoolant to run as well.
-itemDuration: 600
-liquidCapacity: 1000
+itemDuration: 350
+liquidCapacity: 1400
 size: 8
 hasLiquids: true
-powerProduction: 1000000
+powerProduction: 35430550
 plasma1: 666666
 plasma2: 3b3b3b
 consumes: {
-  power: 100
+  power: 1530
   items: {
     items: [
       shadow/1
@@ -17,7 +17,7 @@ consumes: {
   }
   liquid: {
     liquid: supercoolant
-    amount: 10
+    amount: 5.5
   }
 }
 requirements: [
