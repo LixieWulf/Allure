@@ -8,6 +8,7 @@ consumes: {
   power: 4.4
 }
 pumpAmount: 22.8
+squareSprite: false
 liquidCapacity: 15350
 requirements: [
   copper/2400
