@@ -25,6 +25,7 @@ weapons: [
       damage: 350
       pierceDamageFactor: 0.015
       length: 350
+      updateEffect: railTrail
       hitEffect: hitLancer
     }
   }
