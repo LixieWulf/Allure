@@ -31,6 +31,7 @@ weapons: [
         lifetime: 25
         colorFrom: 87a3ff
         colorTo: 5757c2
+      }
       hitEffect: hitLancer
     }
   }
