@@ -1,13 +1,13 @@
 type: SolarGenerator
 localizedName: Blue Wolframite Solar Panel
-description: Electromagnetic Blue-Wolframite photorecepters allow for the creation of more power in a smaller, more efficient space.
+description: A much more powerful solar panel, capable of harvesting massive power from light.
 size: 2
-health: 12000
-powerProduction: 100.8
+health: 35400
+powerProduction: 38.4
 requirements: [
-  lead/40
-  graphite/60
-  bluewolframite/12
+  lead/380
+  surge-alloy/150
+  bluewolframite/120
 ]
 category: power
 research: solar-panel
