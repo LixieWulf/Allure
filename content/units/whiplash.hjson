@@ -2,6 +2,7 @@ type: flying
 localizedName: Whiplash
 description: A moderately powerful unit. Boasts a small railgun.
 flying: true
+defaultController: BuilderAI
 speed: 4.4
 drag: 0.1
 rotateSpeed: 15.4
