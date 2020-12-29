@@ -5,7 +5,7 @@ health: 1550025
 size: 2
 radius: 20
 shieldHealth: 344560
-cooldownNormal: 4.4
+cooldownNormal: 48.5
 consumes: {
   power: 1.75
   items: {
