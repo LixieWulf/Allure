@@ -32,6 +32,7 @@ weapons: [
         colorFrom: 87a3ff
         colorTo: 5757c2
       }
+      updateEffectSeg: 2
       hitEffect: hitLancer
     }
   }
