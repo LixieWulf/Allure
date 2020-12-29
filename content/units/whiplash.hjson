@@ -25,7 +25,12 @@ weapons: [
       damage: 350
       pierceDamageFactor: 0.015
       length: 350
-      updateEffect: railTrail
+      updateEffect: {
+        type: ParticleEffect
+        cone: 5
+        lifetime: 25
+        colorFrom: 87a3ff
+        colorTo: 5757c2
       hitEffect: hitLancer
     }
   }
