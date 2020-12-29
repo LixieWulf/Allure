@@ -165,7 +165,7 @@ weapons: [
       frontColor: ffffff
       backColor: 87a3ff
       speed: 16
-      knockback: 1500
+      knockback: 1.5
       width: 16
       height: 50
       pierceBuilding: true
@@ -194,7 +194,7 @@ weapons: [
       frontColor: ffffff
       backColor: 87a3ff
       speed: 16
-      knockback: 1500
+      knockback: 1.5
       width: 16
       height: 50
       pierceBuilding: true
