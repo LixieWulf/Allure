@@ -28,6 +28,6 @@ requirements: [
 ]
 category: crafting
 research: plast-forge
-ambientSound: beam
+ambientSound: respawning
 ambientSoundVolume: 0.1
 outputItem: surge-alloy/4
