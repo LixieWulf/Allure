@@ -1,6 +1,6 @@
 type: GenericSmelter
-localizedName: Surge-Forge
-description: A more powerful Surge Forge, focused on giving you more for the resources you use.
+localizedName: Surge Forge
+description: A more powerful alloy smelter, more effective than its smaller counterpart.
 size: 4
 hasPower: true
 hasLiquids: false
@@ -12,10 +12,10 @@ consumes: {
   power: 6
   items: {
     items: [
-      copper/3
-      lead/4
-      titanium/2
-      silicon/3
+      copper/5
+      lead/7
+      titanium/4
+      silicon/5
     ]
   }
 }
