@@ -12,7 +12,7 @@ consumes: {
   power: 14.8
   liquid: {
     liquid: mag-slag
-    amount: 3
+    amount: 0.85
     booster: true
     optional: true
   }
