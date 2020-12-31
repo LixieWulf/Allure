@@ -1,7 +1,7 @@
 name: "Magnetized Slag"
 description: a special liquid made from melted surge alloy and sand.
-temperature: 1000
-flammability: 10
+temperature: 540
+flammability: 1
 viscosity: 0.55
 heatCapacity: 0
 explosiveness: 4
