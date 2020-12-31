@@ -7,6 +7,8 @@ range: 66
 reload: 60
 healPercent: 45
 useTime: 45
+baseColor: 212342
+phaseColor: 6579c9
 consumes: {
   power: 0.7
   items: {
