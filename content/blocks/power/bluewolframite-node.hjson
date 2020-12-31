@@ -4,7 +4,7 @@ description: "An extremely advanced power node, able to reach more buildings and
 health: 135240
 laserRange: 8
 laserColor1: 6579c9
-LaserColor2: 212342
+laserColor2: 212342
 maxNodes: 64
 requirements: [
   lead/10
