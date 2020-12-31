@@ -1,3 +1,4 @@
 type: OreBlock
 itemDrop: wolframite
 mapColor: 7873ba
+hasColor: true
