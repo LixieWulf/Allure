@@ -13,9 +13,9 @@ assignees: ''
 
 ---
 
-**Issue:** *Explain the issue you had here. Please be as descriptive as possible and possibly leave a video or screenshot.*
+**Issue:** *Explain the issue you have here. Please be as descriptive as possible and leave a video or screenshot if possible.*
 
-**Method(s) To Reproduce:** *How you ran across this issue.*
+**Method(s) To Reproduce:** *How you ran across this issue, and how I am supposed to recreate it.*
 
 **All Mods Used:** *Link or put the zip files of all mods other than Exotic Mod used when this issue happened.*
 
