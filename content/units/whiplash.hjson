@@ -18,12 +18,12 @@ weapons: [
     x: 0
     y:4
     shootCone: 5
-    reload: 148
+    reload: 244
     shootSound: railgun
     bullet: {
       type: RailBulletType
-      damage: 350
-      pierceDamageFactor: 0.015
+      damage: 780
+      pierceDamageFactor: 0.0012
       length: 350
       updateEffect: railTrail
       updateEffectSeg: 25
