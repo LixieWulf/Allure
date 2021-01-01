@@ -1,8 +1,8 @@
 type: flying
 localizedName: Shadow King
 description: A massive, heavily armored airship. It will rule the battlefield.
-health: 111333666999000
-hitSize: 54
+health: 2133375950
+hitSize: 108
 flying: true
 speed: 0.02
 range: 30
