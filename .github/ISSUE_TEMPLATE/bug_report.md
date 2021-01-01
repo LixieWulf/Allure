@@ -19,10 +19,10 @@ assignees: ''
 
 **All Mods Used:** *Link or put the zip files of all mods other than Exotic Mod used when this issue happened.*
 
-**Crash Logs:*** If you experienced a crash, put the logs here. Otherwise this line can be left alone.*
+**Crash Logs:** *If you experienced a crash, put the logs here. Otherwise this line can be left alone.*
 
 ---
 
 **Place an X in this box to show you understand.**
 
-- [ ] **I have updated to the newest commit of Exotic Mod and the latest build of Mindustry.**
+- [ ] **I have updated to the newest commit of Exotic Mod and the latest official release build of Mindustry.**
