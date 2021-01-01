@@ -25,4 +25,4 @@ assignees: ''
 
 **Place an X in this box to show you understand.**
 
-- [ ] **I have updated to the newest commit of Exotic Mod and the latest official release build of Mindustry.**
+- [ ] **I have updated to the newest commit of Exotic Mod and the latest official release build of Mindustry to make sure this wasn't already fixed.**
