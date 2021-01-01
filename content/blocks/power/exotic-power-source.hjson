@@ -8,3 +8,4 @@ maxNodes: 255
 laserRange: 15
 powerProduction: 1354450
 buildVisibility: sandboxOnly
+category: power
