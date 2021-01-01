@@ -6,6 +6,8 @@ size: 1
 health: 344550
 maxNodes: 255
 laserRange: 15
+laserColor1: acbbf9
+laserColor2: 6579c9
 powerProduction: 1354450
 buildVisibility: sandboxOnly
 category: power
