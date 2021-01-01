@@ -13,7 +13,7 @@ assignees: ''
 
 ---
 
-**Issue:** *Explain the issue you had here. Please be descriptive as possible and possibly leave a video or screenshot.*
+**Issue:** *Explain the issue you had here. Please be as descriptive as possible and possibly leave a video or screenshot.*
 
 **Method(s) To Reproduce:** *How you ran across this issue.*
 
