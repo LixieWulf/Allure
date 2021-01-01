@@ -28,7 +28,9 @@ ammoUseEffect: casing3
 shootCone: 15
 rotateSpeed: 0.25
 range: 4000
-powerUse: 6640
+consumes: {
+  power: 6640
+}
 ammoTypes: {
   copper: {
     speed: 10
