@@ -22,15 +22,17 @@ weapons: [
     reload: 244
     cooldownTime: 120
     shootSound: railgun
+    shootEffect: lancerLaserShoot
     recoil: 0
     bullet: {
       type: RailBulletType
       damage: 450
+      buildingDamageMultiplier: 0.01
       pierceDamageFactor: 0.0012
       length: 350
       updateEffect: railTrail
+      hitEffect: railHit
       updateEffectSeg: 25
-      hitEffect: hitLancer
     }
   }
 ]
