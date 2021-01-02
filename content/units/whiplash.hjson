@@ -20,6 +20,7 @@ weapons: [
     y: 1.5
     shootCone: 5
     reload: 244
+    cooldownTime: 120
     shootSound: railgun
     bullet: {
       type: RailBulletType
