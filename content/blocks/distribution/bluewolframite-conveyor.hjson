@@ -11,5 +11,5 @@ requirements: [
 ]
 category: distribution
 speed: 0.18
-displaySpeed: 27
+displayedSpeed: 20
 research: armored-conveyor
