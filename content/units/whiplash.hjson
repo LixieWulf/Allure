@@ -8,6 +8,7 @@ rotateSpeed: 15.4
 buildSpeed: 14.4
 mineSpeed: 12
 mineTier: 6
+engineOffset: 8
 hitSize: 33
 health: 4550
 armor: 12
