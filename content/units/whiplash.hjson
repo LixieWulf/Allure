@@ -32,12 +32,3 @@ weapons: [
     }
   }
 ]
-abilities: [
-{
-  type: ForceFieldAbility
-  radius: 400
-  regen: 0.4
-  max: 800
-  cooldown: 30
-}
-]
