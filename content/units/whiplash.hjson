@@ -17,7 +17,7 @@ weapons: [
     name: whiplash-railgun
     mirror: false
     x: 0
-    y:4
+    y: 0
     shootCone: 5
     reload: 244
     shootSound: railgun
