@@ -1,7 +1,7 @@
 type: Conveyor
-localizedName: Blue-Wolframite Conveyor
-description: A conveyor made faster with powerful magnets.
-health: 550
+localizedName: Bluewolframite Conveyor
+description: Achieves high speeds with electromagentic rails. Much faster than a titanium conveyor.
+health: 253540
 requirements: [
   copper/1
   lead/1
@@ -10,7 +10,6 @@ requirements: [
   bluewolframite/1
 ]
 category: distribution
-ambientSound: beam
-ambientSoundVolume: 0.001
-speed: 0.36
+speed: 0.18
+displaySpeed: 27
 research: armored-conveyor
