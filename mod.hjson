@@ -15,8 +15,9 @@ description:
   '''
   We got together over the Mindustry Discord to bring you this exotic mod. Adds in a few things we thought would be fun.
   Update log:
-    Exotic is now progressing to alpha. Expect fixes left right and center, though more content may not be added.
-    WIP final turret, good warning: it's OP.
+    BlueWolf is respriting the mod, so your precious eyes are saved.
+    Exotic is being alpha playtested in attack, so some rebalancing is going on.
+    Oh and hellfire has more armor. good luck :)
   '''
-version: 457 alpha
-minGameVersion: 119
+version: 544 alpha
+minGameVersion: 122
