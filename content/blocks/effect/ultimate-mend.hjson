@@ -1,13 +1,13 @@
 localizedName: Ultimate Mend Projector
-description: The inherent stored energy of the Draconium and electrical properties of Blue-Wolframite are maginified by Amethysts to create an extremely powerful mending field.
+description: The inherent stored energy of the draconium and electrical properties of Bluewolframite are maginified by amethysts to create an extremely powerful mending field.
 type: MendProjector
 health: 30000
 size: 3
 range: 240
 phaseRangeBoost: 80
-reload: 60
+reload: 1
 itemCapacity: 30
-healPercent: 100
+healPercent: 1.5
 consumes: {
   power: 2.5
   items: {
