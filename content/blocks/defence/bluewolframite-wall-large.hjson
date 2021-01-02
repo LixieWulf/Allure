@@ -4,6 +4,7 @@ description: "An extremely durable defensive block, capable of releasing electri
 chanceDeflect: 48000
 health: 6210200
 size: 2
+lightningChance: 1.0
 requirements: [
   bluewolframite/32
   ]
