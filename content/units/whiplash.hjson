@@ -5,7 +5,7 @@ flying: true
 speed: 4.4
 drag: 0.1
 rotateSpeed: 15.4
-buildSpeed: 14.4
+buildSpeed: 7.8
 mineSpeed: 12
 mineTier: 6
 engineOffset: 8
@@ -23,7 +23,7 @@ weapons: [
     shootSound: railgun
     bullet: {
       type: RailBulletType
-      damage: 780
+      damage: 450
       pierceDamageFactor: 0.0012
       length: 350
       updateEffect: railTrail
