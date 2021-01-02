@@ -4,6 +4,7 @@ description: A moderately powerful unit. Boasts a small railgun.
 flying: true
 speed: 4.4
 drag: 0.1
+itemCapacity: 125
 rotateSpeed: 15.4
 buildSpeed: 7.8
 mineSpeed: 12
