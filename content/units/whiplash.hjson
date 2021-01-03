@@ -23,7 +23,6 @@ weapons: [
     reload: 244
     cooldownTime: 120
     shootSound: railgun
-    shootEffect: smokeCloud
     recoil: 0
     bullet: {
       type: RailBulletType
@@ -31,6 +30,7 @@ weapons: [
       buildingDamageMultiplier: 0.01
       pierceDamageFactor: 0.0012
       length: 350
+      shootEffect: smokeCloud
       updateEffect: railTrail
       hitEffect: railHit
       updateEffectSeg: 25
