@@ -7,6 +7,7 @@ armor: 125
 mineTier: 10
 mineSpeed: 15
 buildSpeed: 17.52
+engineOffset: 16
 hitSize: 24
 flying: true
 weapons: [
