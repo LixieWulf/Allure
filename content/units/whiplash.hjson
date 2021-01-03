@@ -20,6 +20,7 @@ weapons: [
     x: 0
     y: 0
     shootCone: 5
+    shootY: 11
     reload: 244
     cooldownTime: 120
     shootSound: railgun
