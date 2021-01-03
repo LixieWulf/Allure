@@ -7,6 +7,7 @@ armor: 15
 mineTier: 10
 mineSpeed: 15
 buildSpeed: 17.52
+itemCapacity: 225
 engineOffset: 14
 engineSize: 4.4
 hitSize: 24
