@@ -14,20 +14,20 @@ flying: true
 weapons: [
   {
   name: shockwave-cannon
-  inaccuracy: 25
+  inaccuracy: 15
+  velocityInaccuracy: 0.4
   mirror: false
   shootSound: shotgun
-  shootCone: 25
+  shootCone: 15
   x: 0
-  y: 12
-  reload: 5
-  shots: 35
+  y: 10
+  reload: 25
+  shots: 25
   bullet: {
-    damage: 35
+    damage: 55
     lifetime: 10
     speed: 12
-    frontColor: 1f1f1f
-    backColor: 000000
+    buildingDamageMultiplier: 0.01
   }
   }
 ]
