@@ -21,10 +21,10 @@ weapons: [
   x: 0
   y: 10
   reload: 35
-  shots: 30
+  shots: 45
   bullet: {
-    damage: 15
-    lifetime: 10
+    damage: 5
+    lifetime: 45
     speed: 12
     buildingDamageMultiplier: 0.01
   }
