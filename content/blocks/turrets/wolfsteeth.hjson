@@ -4,7 +4,7 @@ description: The largest railgun weapon ever invented. Fires rapidly from four r
 targetAir: true
 targetGround: true
 health: 15500250
-size: 8
+size: 10
 inaccuracy: 0
 maxAmmo: 245
 shootSound: railgun
