@@ -23,7 +23,7 @@ weapons: [
   reload: 35
   shots: 30
   bullet: {
-    damage: 55
+    damage: 15
     lifetime: 10
     speed: 12
     buildingDamageMultiplier: 0.01
