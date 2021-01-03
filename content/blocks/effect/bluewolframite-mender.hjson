@@ -4,7 +4,7 @@ description: "A small bluewolframite mender. Uses advanced electromagnetics to r
 size: 1
 health: 155460
 range: 66
-reload: 0
+reload: 1
 healPercent: 0.18
 useTime: 45
 baseColor: 212342
