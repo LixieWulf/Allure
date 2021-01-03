@@ -31,7 +31,14 @@ weapons: [
       buildingDamageMultiplier: 0.01
       pierceDamageFactor: 0.0012
       length: 350
-      shootEffect: smokeCloud
+      shootEffect: {
+        type: ParticleEffect
+        lifetime: 25
+        cone: 5
+        colorFrom: ffd280
+        colorTo: d4816a
+        length: 40
+      }
       updateEffect: railTrail
       hitEffect: railHit
       updateEffectSeg: 25
