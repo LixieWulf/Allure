@@ -21,12 +21,12 @@ weapons: [
   x: 0
   y: 10
   reload: 35
-  shots: 45
   bullet: {
     type: ShrapnelBulletType
-    damage: 45
+    damage: 104
     length: 75
     width: 12
+    toColor: ffd37f
     buildingDamageMultiplier: 0.01
   }
   }
