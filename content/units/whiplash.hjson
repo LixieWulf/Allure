@@ -23,7 +23,7 @@ weapons: [
     reload: 244
     cooldownTime: 120
     shootSound: railgun
-    shootEffect: lancerLaserShoot
+    shootEffect: smokeCloud
     recoil: 0
     bullet: {
       type: RailBulletType
