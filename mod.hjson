@@ -1,15 +1,15 @@
 name: exotic-mod
-displayName: "[gold]Exotic [red]Mod"
+displayName: Exotic Mod
 author:
   '''
-  [red]K103908 
-  (Hjsoner, Mapper, Leader) 
-  [#00004a]B[#000063]l[#000073]ueWo[]l[]f[]
-  [blue](Mapper, Spriter, Hjsoner)[]
-  [purple]Andromeda 
+  K103908 
+  (Hjsoner, Mapper, Owner) 
+  BlueWolf
+  (Main Developer)
+  Andromeda 
   (Mapper)
-  [#FCC21B]Meep of Faith
-  (Spriter, Hjsoner, [#5c0606]Lost in scripting hell[#FCC21B])
+  Meep of Faith
+  (Spriter, Hjsoner, Lost in scripting hell)
   '''
 description:
   '''
@@ -19,5 +19,5 @@ description:
     Exotic is being alpha playtested in attack, so some rebalancing is going on.
     Oh and hellfire has more armor. good luck :)
   '''
-version: 544 alpha
+version: 584 alpha
 minGameVersion: 122
