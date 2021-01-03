@@ -1,9 +1,9 @@
 type: flying
 localizedName: Shockwave
 description: The Core: Requiem's unit. Builds structures quickly and is armed with a powerful shotgun.
-health: 25500
+health: 15460
 speed: 5
-armor: 125
+armor: 15
 mineTier: 10
 mineSpeed: 15
 buildSpeed: 17.52
@@ -20,7 +20,7 @@ weapons: [
   shootCone: 10
   x: 0
   y: 10
-  reload: 25
+  reload: 35
   shots: 30
   bullet: {
     damage: 55
