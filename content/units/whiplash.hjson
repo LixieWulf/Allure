@@ -38,6 +38,7 @@ weapons: [
         colorFrom: ffd280
         colorTo: d4816a
         length: 40
+        particles: 15
       }
       updateEffect: railTrail
       hitEffect: railHit
