@@ -13,7 +13,7 @@ hitSize: 24
 flying: true
 weapons: [
   {
-  name: shockwave-cannon
+  name: shockwave-shotgun
   inaccuracy: 15
   mirror: false
   shootSound: shotgun
@@ -23,9 +23,10 @@ weapons: [
   reload: 35
   shots: 45
   bullet: {
-    damage: 15
-    lifetime: 25
-    speed: 12
+    type: ShrapnelBulletType
+    damage: 45
+    length: 75
+    width: 12
     buildingDamageMultiplier: 0.01
   }
   }
