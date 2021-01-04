@@ -3,7 +3,11 @@ name: Basalt Magnetic Slag
 variants: 3
 liquidDrop: mag-slag
 status: melting
+statusDuration: 160
 cacheLayer: water
 emitLight: true
-lightRadius: 15
-lightColor: e8682745
+lightRadius: 25
+lightColor: e8682720
+attributes: {
+  heat: 1.5
+}
