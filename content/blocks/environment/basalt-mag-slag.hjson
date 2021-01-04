@@ -4,3 +4,6 @@ variants: 3
 liquidDrop: mag-slag
 status: melting
 cacheLayer: water
+emitLight: true
+lightRadius: 55
+lightColor: e86827
