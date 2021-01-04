@@ -7,5 +7,5 @@ speedMultiplier: 0.1
 liquidDrop: mag-slag
 status: melting
 emitLight: true
-lightRadius: 120
+lightRadius: 35
 lightColor: e86827
