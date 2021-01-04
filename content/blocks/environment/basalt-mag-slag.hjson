@@ -1,0 +1,5 @@
+type: ShallowLiquid
+name: Basalt Magnetic Slag
+variants: 3
+liquidDrop: mag-slag
+status: melting
