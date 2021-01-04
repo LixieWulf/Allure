@@ -2,6 +2,7 @@ type: ShallowLiquid
 name: Basalt Magnetic Slag
 variants: 3
 liquidDrop: mag-slag
+liquidMultiplier: 0.1
 status: melting
 statusDuration: 160
 cacheLayer: water
