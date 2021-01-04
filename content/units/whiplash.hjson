@@ -1,6 +1,7 @@
 type: flying
 localizedName: Whiplash
 description: A moderately powerful unit. Boasts a small railgun.
+details: pew
 flying: true
 speed: 4.4
 drag: 0.1
