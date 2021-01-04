@@ -6,9 +6,11 @@ cacheLayer: water
 speedMultiplier: 0.1
 liquidDrop: mag-slag
 status: melting
+statusDuration: 240
 emitLight: true
-lightRadius: 35
-lightColor: e8682784
+lightRadius: 65
+lightColor: e8682735
+drownTime: 75
 attributes: {
   heat: 1.8
 }
