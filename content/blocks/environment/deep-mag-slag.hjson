@@ -8,4 +8,4 @@ liquidDrop: mag-slag
 status: melting
 emitLight: true
 lightRadius: 35
-lightColor: e86827
+lightColor: e8682784
