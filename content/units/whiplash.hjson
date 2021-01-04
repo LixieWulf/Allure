@@ -23,7 +23,7 @@ weapons: [
     shootY: 11
     reload: 244
     cooldownTime: 120
-    shootSound: railgun
+    shootSound: pew_
     recoil: 0
     bullet: {
       type: RailBulletType
