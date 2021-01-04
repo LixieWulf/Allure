@@ -1,7 +1,6 @@
 type: flying
 localizedName: Whiplash
 description: A moderately powerful unit. Boasts a small railgun.
-details: pew
 flying: true
 speed: 4.4
 drag: 0.1
@@ -24,7 +23,7 @@ weapons: [
     shootY: 11
     reload: 244
     cooldownTime: 120
-    shootSound: pew_
+    shootSound: railgun
     recoil: 0
     bullet: {
       type: RailBulletType
