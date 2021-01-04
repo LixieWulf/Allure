@@ -9,9 +9,7 @@ status: melting
 emitLight: true
 lightRadius: 35
 lightColor: e8682784
-attributes: [
-{
-  attribute: heat
+attribute: {
+  type: heat
   amount: 185
 }
-]
