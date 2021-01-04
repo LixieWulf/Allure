@@ -1,0 +1,11 @@
+type: Floor
+name: Magnetized Slag
+variants: 0
+isLiquid: true
+cacheLayer: water
+speedMultiplier: 0.1
+liquidDrop: mag-slag
+status: melting
+emitLight: true
+lightRadius: 120
+lightColor: e86827
