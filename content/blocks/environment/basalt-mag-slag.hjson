@@ -5,7 +5,7 @@ liquidDrop: mag-slag
 liquidMultiplier: 0.1
 status: melting
 statusDuration: 160
-cacheLayer: mud
+cacheLayer: slag
 emitLight: true
 lightRadius: 25
 lightColor: e8682720
