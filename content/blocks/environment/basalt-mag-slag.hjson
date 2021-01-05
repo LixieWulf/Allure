@@ -11,4 +11,5 @@ lightRadius: 25
 lightColor: e8682720
 attributes: {
   heat: 1.5
+  water: -1.0
 }
