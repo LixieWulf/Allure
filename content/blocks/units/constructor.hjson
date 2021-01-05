@@ -9,7 +9,7 @@ consumes: {
 plans: [
   {
     unit: medea
-    time: 60 * 18
+    time: 1080
     requirements: [
       silicon/25
       metaglass/30
@@ -17,7 +17,7 @@ plans: [
   }
   {
     unit: ghost
-    time: 60 * 25
+    time: 1500
     requirements: [
       silicon/40
       lead/35
@@ -26,7 +26,7 @@ plans: [
   }
   {
     unit: pfsgcm
-    time: 60 * 15
+    time: 900
     requirements: [
       silicon/45
       blast-compound/35
@@ -34,7 +34,7 @@ plans: [
   }
   {
     unit: draconium-leader
-    time: 60 * 30
+    time: 1800
     requirements: [
       silicon/50
       lead/45
