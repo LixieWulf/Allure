@@ -1,5 +1,6 @@
 name: "Magnetized Slag"
 description: a very volatile liquid made from melting down wolframite scrap with surge alloy.
+details: "[red]Don't."
 temperature: 5.4
 flammability: 1
 viscosity: 0.55
