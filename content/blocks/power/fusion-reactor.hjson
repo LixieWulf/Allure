@@ -1,6 +1,6 @@
 type: ImpactReactor
 localizedName: Fusion Reactor
-description: With the pinnacle of Bluewolframite electronic technology, hydrogen atoms can be ripped from water with a ton of power to be used in nuclear fusion. The Draconium casing is durable enough to contain the small star being sustained inside.
+description: A deuterium reactor. Pulls hydrogen from water and fuses it to generate a large amount of power.
 itemDuration: 360
 liquidCapacity: 450
 size: 5
@@ -12,7 +12,7 @@ consumes: {
   power: 16.7
   liquid: {
     liquid: water
-    amount: 4.4
+    amount: 7.6
   }
 }
 requirements: [
@@ -22,9 +22,9 @@ requirements: [
   lead/1250
   titanium/700
   plastanium/450
-  bluewolframite/1000
+  bluewolframite/550
 ]
 category: power
-ambientSound: beam
-ambientSoundVolume: 0.5
+ambientSound: pulse
+ambientSoundVolume: 0.2
 research: impact-reactor
