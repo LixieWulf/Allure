@@ -3,7 +3,7 @@ name: Magnetized Slag
 variants: 0
 isLiquid: true
 liquidMultiplier: 0.18
-cacheLayer: water
+cacheLayer: mud
 speedMultiplier: 0.1
 liquidDrop: mag-slag
 status: melting
