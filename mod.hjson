@@ -1,16 +1,6 @@
 name: exotic-mod
 displayName: Exotic Mod
-author:
-  '''
-  K103908 
-  (Hjsoner, Mapper, Owner) 
-  BlueWolf
-  (Main Developer)
-  Andromeda 
-  (Mapper)
-  Meep of Faith
-  (Spriter, Hjsoner, Lost in scripting hell)
-  '''
+author: "K103908, BlueWolf, MEEP Of Faith, AndromedaFallen"
 description:
   '''
   We got together over the Mindustry Discord to bring you this exotic mod. Adds in a few things we thought would be fun.
