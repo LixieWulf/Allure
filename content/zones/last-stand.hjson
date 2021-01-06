@@ -1,4 +1,5 @@
 type: SectorPreset
+name: Last Stand
 planet: serpulo
 sector: 175
 captureWave: 150
