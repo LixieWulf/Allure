@@ -6,7 +6,7 @@ health: 1354600
 itemCapacity: 135
 liquidCapacity: 64
 itemDuration: 770
-powerProduction: 120.8
+powerProduction: 840.4
 consumes: {
   liquid: {
     liquid: supercoolant
