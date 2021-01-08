@@ -3,11 +3,10 @@ localizedName: Fusion Reactor
 description: A deuterium reactor. Pulls hydrogen from water and fuses it to generate a large amount of power.
 liquidCapacity: 980
 size: 5
+baseExplosiveness: 15440
 hasLiquids: true
 warmup: 5
 powerProduction: 650
-explosionRadius: 75
-explosionDamage: 14435500
 plasma1: 94efff
 plasma2: 45e3ff
 consumes: {
