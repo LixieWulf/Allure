@@ -3,17 +3,8 @@ name: Geothermal Reactor
 description: A highly upgraded thermal generator. Uses amethyst to generate a massive differential effect.
 health: 4655600
 size: 4
-hasItems: true
-itemDuration: 330
 powerProduction: 44.6
 floating: true
-consumes: {
-  items: {
-    items: [
-      amethyst-gem/1
-    ]
-  }
-}
 ambientSound: hum
 ambientSoundVolume: 0.4
 requirements: [
