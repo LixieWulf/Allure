@@ -4,6 +4,7 @@ description: A highly upgraded thermal generator. Uses amethyst to generate a ma
 health: 4655600
 size: 4
 powerProduction: 44.6
+generateEffect: redgeneratespark
 floating: true
 ambientSound: hum
 ambientSoundVolume: 0.4
