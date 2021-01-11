@@ -1,0 +1,86 @@
+type: LiquidTurret
+localizedName: "Riptide"
+description: A upgraded Tsunami able to handle the heat of launching magnetized slag. 
+health: 4000
+targetAir: true
+targetGround: true
+size: 4
+range: 414
+reloadTime: 15
+shootCone: 5
+ammoUseEffect: none
+shootEffect: shootLiquid
+rotateSpeed: 10
+recoilAmmount: 0
+shootSound: bang
+shots: 1
+inaccuracy: 10
+ammoTypes: {
+     water: {
+      type: liquidBulletType
+      liquid: water
+      lifetime: 69
+      speed: 6
+      knockback: 3.4
+      puddleSize: 16
+      drag: 0.02
+      ammoMultiplier: 0.8
+      statusDuration: 12
+      damage: 0.4
+   }
+    slag: {
+            type: liquidBulletType
+            liquid: slag
+            lifetime: 69
+            speed: 6
+            knockback: 4
+            puddleSize: 16
+            damage: 2214.5
+            drag: 0.002
+            ammoMultiplier: 0.8
+            statusDuration: 120
+            status: melting
+    }
+    oil: {
+            type: liquidBulletType
+            liquid: oil
+            lifetime: 69
+            speed: 6
+            knockback: 3.4
+            puddleSize: 16
+            drag: 0.002
+            ammoMultiplier: 0.8
+            statusDuration: 120
+            damage: 1225.3
+            status: tarred
+    }
+    cryofluid: {
+            type: liquidBulletType
+            liquid: cryofluid
+            lifetime: 69
+            speed: 6
+            knockback: 4
+            puddleSize: 16
+            drag: 0.002
+            ammoMultiplier: 0.8
+            statusDuration: 120
+            damage: 2234.4
+            status: freezing
+     }
+     mag-slag: {
+            type: liquidBulletType
+            liquid: mag-slag
+            lifetime: 69
+            speed: 6
+            knockback: 4
+            puddleSize: 32
+            damage: 3333.4
+            drag: 0.002
+            ammoMultiplier: 0.8
+            statusDuration: 120
+            status: melting
+  }
+category: turret
+research: tsunami
+requirements: [
+   ]
