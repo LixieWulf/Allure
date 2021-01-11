@@ -15,6 +15,7 @@ recoilAmmount: 0
 shots: 2
 alternate: true
 inaccuracy: 10
+spread: 16
 ammoTypes: {
   water: {
     type: liquidBulletType
