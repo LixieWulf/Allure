@@ -79,6 +79,7 @@ ammoTypes: {
             ammoMultiplier: 0.8
             statusDuration: 120
             status: melting
+           }
   }
 category: turret
 research: tsunami
