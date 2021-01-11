@@ -23,7 +23,7 @@ ammoTypes: {
         speed: 6
         knockback: 3.4
         puddleSize: 16
-        orbSize: 16
+        orbSize: 10
         drag: 0.02
         ammoMultiplier: 0.8
         statusDuration: 12
@@ -36,7 +36,7 @@ ammoTypes: {
             speed: 6
             knockback: 4
             puddleSize: 16
-            orbSize: 16
+            orbSize: 10
             damage: 2214.5
             drag: 0.002
             ammoMultiplier: 0.8
@@ -49,7 +49,7 @@ ammoTypes: {
             lifetime: 69
             speed: 6
             knockback: 3.4
-            orbSize: 16
+            orbSize: 10
             puddleSize: 16
             drag: 0.002
             ammoMultiplier: 0.8
@@ -64,7 +64,7 @@ ammoTypes: {
             speed: 6
             knockback: 4
             puddleSize: 16
-            orbSize: 16
+            orbSize: 10
             drag: 0.002
             ammoMultiplier: 0.8
             statusDuration: 120
@@ -78,7 +78,7 @@ ammoTypes: {
             speed: 6
             knockback: 4
             puddleSize: 32
-            orbSize: 16
+            orbSize: 10
             damage: 3333.4
             drag: 0.002
             ammoMultiplier: 0.8
