@@ -13,7 +13,7 @@ shootEffect: shootLiquid
 rotateSpeed: 10
 recoilAmmount: 0
 shots: 2
-spacing: 10
+alternate: true
 inaccuracy: 10
 ammoTypes: {
   water: {
