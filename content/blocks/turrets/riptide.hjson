@@ -6,12 +6,12 @@ targetAir: true
 targetGround: true
 size: 6
 range: 414
-reloadTime: 1.8
+reloadTime: 1
 shootCone: 5
 ammoUseEffect: none
 shootEffect: shootLiquid
 rotateSpeed: 10
-recoilAmmount: 0
+recoilAmount: 0
 shots: 2
 alternate: true
 inaccuracy: 10
