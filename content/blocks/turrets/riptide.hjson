@@ -7,7 +7,6 @@ targetGround: true
 size: 6
 range: 414
 reloadTime: 2,5
-shootCone: 5
 ammoUseEffect: none
 shootEffect: shootLiquid
 rotateSpeed: 10
@@ -17,17 +16,17 @@ shots: 1
 inaccuracy: 10
 ammoTypes: {
      water: {
-      type: liquidBulletType
-      liquid: water
-      lifetime: 69
-      speed: 6
-      knockback: 3.4
-      puddleSize: 16
-      orbSize: 16
-      drag: 0.02
-      ammoMultiplier: 0.8
-      statusDuration: 12
-      damage: 0.4
+        type: liquidBulletType
+        liquid: water
+        lifetime: 69
+        speed: 6
+        knockback: 3.4
+        puddleSize: 16
+        orbSize: 16
+        drag: 0.02
+        ammoMultiplier: 0.8
+        statusDuration: 12
+        damage: 0.4
    }
     slag: {
             type: liquidBulletType
