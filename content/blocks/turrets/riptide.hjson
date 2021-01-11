@@ -6,7 +6,7 @@ targetAir: true
 targetGround: true
 size: 4
 range: 414
-reloadTime: 15
+reloadTime: 5
 shootCone: 5
 ammoUseEffect: none
 shootEffect: shootLiquid
@@ -23,6 +23,8 @@ ammoTypes: {
       speed: 6
       knockback: 3.4
       puddleSize: 16
+      length: 24
+      width: 24
       drag: 0.02
       ammoMultiplier: 0.8
       statusDuration: 12
@@ -35,6 +37,8 @@ ammoTypes: {
             speed: 6
             knockback: 4
             puddleSize: 16
+            length: 24
+            width: 24
             damage: 2214.5
             drag: 0.002
             ammoMultiplier: 0.8
@@ -47,6 +51,8 @@ ammoTypes: {
             lifetime: 69
             speed: 6
             knockback: 3.4
+            length: 24
+            width: 24
             puddleSize: 16
             drag: 0.002
             ammoMultiplier: 0.8
@@ -61,6 +67,8 @@ ammoTypes: {
             speed: 6
             knockback: 4
             puddleSize: 16
+            length: 24
+            width: 24
             drag: 0.002
             ammoMultiplier: 0.8
             statusDuration: 120
@@ -74,6 +82,8 @@ ammoTypes: {
             speed: 6
             knockback: 4
             puddleSize: 32
+            length: 24
+            width: 24
             damage: 3333.4
             drag: 0.002
             ammoMultiplier: 0.8
