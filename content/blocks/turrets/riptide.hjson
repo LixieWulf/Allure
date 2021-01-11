@@ -12,7 +12,6 @@ ammoUseEffect: none
 shootEffect: shootLiquid
 rotateSpeed: 10
 recoilAmmount: 0
-shootSound: spray
 shots: 1
 inaccuracy: 10
 ammoTypes: {
@@ -32,7 +31,7 @@ ammoTypes: {
   slag: {
     type: liquidBulletType
     liquid: slag
-    lifetime: 70
+    lifetime: 7
     speed: 6
     knockback: 4
     puddleSize: 16
