@@ -12,19 +12,19 @@ ammoUseEffect: none
 shootEffect: shootLiquid
 rotateSpeed: 10
 recoilAmmount: 0
-shootSound: bang
+shootSound: spray
 shots: 1
 inaccuracy: 10
 ammoTypes: {
   water: {
     type: liquidBulletType
     liquid: water
-    lifetime: 69
+    lifetime: 70
     speed: 6
     knockback: 17.5
     puddleSize: 16
-    orbSize: 10
-    drag: 0.02
+    orbSize: 6
+    drag: 0.002
     ammoMultiplier: 4
     statusDuration: 12
     damage: 125
@@ -32,11 +32,11 @@ ammoTypes: {
   slag: {
     type: liquidBulletType
     liquid: slag
-    lifetime: 69
+    lifetime: 70
     speed: 6
     knockback: 4
     puddleSize: 16
-    orbSize: 10
+    orbSize: 6
     damage: 2250
     drag: 0.002
     ammoMultiplier: 4
@@ -46,10 +46,10 @@ ammoTypes: {
   oil: {
     type: liquidBulletType
     liquid: oil
-    lifetime: 69
+    lifetime: 70
     speed: 6
     knockback: 3.4
-    orbSize: 10
+    orbSize: 6
     puddleSize: 16
     drag: 0.002
     ammoMultiplier: 4
@@ -60,25 +60,39 @@ ammoTypes: {
   cryofluid: {
     type: liquidBulletType
     liquid: cryofluid
-    lifetime: 69
+    lifetime: 70
     speed: 6
     knockback: 4
     puddleSize: 16
-    orbSize: 10
+    orbSize: 6
     drag: 0.002
     ammoMultiplier: 4
     statusDuration: 120
     damage: 2240
     status: freezing
   }
+  supercoolant: {
+    type: LiquidBulletType
+    liquid: supercoolant
+    lifetime: 70
+    speed: 6
+    knockback: 4
+    puddleSize: 44
+    orbSize: 6
+    damage: 2550
+    drag: 0.002
+    ammoMultiplier: 4
+    statusDuration: 180
+    status: freezing
+  }
   mag-slag: {
     type: liquidBulletType
     liquid: mag-slag
-    lifetime: 69
+    lifetime: 70
     speed: 6
     knockback: 4
     puddleSize: 32
-    orbSize: 10
+    orbSize: 6
     damage: 3450
     drag: 0.002
     ammoMultiplier: 4
