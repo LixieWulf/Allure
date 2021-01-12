@@ -19,6 +19,7 @@ shootEffect: {
   length: 108
   lifetime: 120
 }
+shootSound: laserBig
 shootType: {
   type: ContinuousLaserBulletType
   keepVelocity: true
