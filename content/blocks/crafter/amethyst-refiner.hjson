@@ -1,6 +1,6 @@
 type: GenericSmelter
 localizedName: Amethyst Refiner
-description: Takes Amethyst and refines it into a cut Gem.
+description: Cuts amethyst into fine crystals for use in advanced cooling.
 size: 2
 hasPower: true
 hasLiquids: false
