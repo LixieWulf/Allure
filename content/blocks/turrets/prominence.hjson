@@ -16,8 +16,8 @@ shootEffect: {
   particles: 15
   colorFrom: ffffff
   colorTo: 000000
-  length: 45
-  lifetime: 150
+  length: 108
+  lifetime: 120
 }
 shootType: {
   type: ContinuousLaserBulletType
