@@ -1,22 +1,19 @@
 type: ItemTurret
 localizedName: Railgun
-description: Blue Wolframite's electromagnetic properties allow for the creation of this powerful railgun.
+description: Propels projectiles at high speeds with electromagnetic rails. Useful for taking down armored units.
 targetAir: true
 targetGround: true
 health: 14500
-size: 2
-outlineIcon: false
-heatColor: 91E0EA
-cooldown: 0.02
+size: 4
+coolodown: 110
 restitution: 0.04
-inaccuracy: 10
 spread: 0
-reloadTime: 60
+reloadTime: 130
 shots: 1
 recoilAmount: 6
 ammoUseEffect: casing3
 shootEffect: hitLancer
-shootSound: shotgun
+shootSound: railgun
 shootCone: 25
 rotateSpeed: 3.8
 maxAmmo: 12
@@ -32,8 +29,6 @@ ammoTypes: {
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
     status: melting
-    homingRange: 128
-    homingPower: 0.01
     frontColor: f53b11
     backColor: d92800
     hitEffect: pulverizeMedium
@@ -51,8 +46,6 @@ ammoTypes: {
       despawnEffect: pulverizeRed
       lifetime: 50
       status: melting
-      homingRange: 128
-      homingPower: 0.01
       frontColor: f53b11
       backColor: d92800
       fragVelocityMin: 0.9
@@ -68,8 +61,6 @@ ammoTypes: {
         hitEffect: shootBig
         despawnEffect: shootBig
         status: melting
-        homingRange: 128
-        homingPower: 0.01
         frontColor: f53b11
         backColor: d92800
       }
@@ -88,8 +79,6 @@ ammoTypes: {
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
     status: freezing
-    homingRange: 128
-    homingPower: 0.002
     ammoMultiplier: 3
     frontColor: b966cc
     backColor: 8e479e
@@ -101,15 +90,10 @@ ammoTypes: {
     width: 16
     height: 48
     lifetime: 100
-    hitEffect: padlaunch
-    despawnEffect: padlaunch
+    hitEffect: flakExplosion
+    despawnEffect: flakExplosion
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
-    status: burning
-    homingRange: 128
-    homingPower: 0.01
-    splashDamage: 1000
-    splashDamageRadius: 100
     ammoMultiplier: 2
     frontColor: 40ccff
     backColor: 1397F0
