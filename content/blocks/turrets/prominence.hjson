@@ -17,9 +17,9 @@ shootEffect: {
   colorFrom: ffffff
   colorTo: 000000
   length: 108
-  lifetime: 120
+  lifetime: 45
 }
-shootSound: laserBig
+shootSound: laserbig
 shootType: {
   type: ContinuousLaserBulletType
   keepVelocity: true
