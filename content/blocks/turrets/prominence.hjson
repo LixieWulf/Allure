@@ -8,6 +8,15 @@ recoilAmount: 32
 reloadTime: 644
 powerUse: 255005
 shootShake: 30
+shootEffect: {
+  type: ParticleEffect
+  cone: 17
+  particles: 15
+  colorFrom: ffffff
+  colorTo: 000000
+  length: 1
+  lifetime: 150
+}
 shootType: {
   type: ContinuousLaserBulletType
   keepVelocity: true
