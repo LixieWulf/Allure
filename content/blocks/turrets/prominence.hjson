@@ -1,11 +1,11 @@
 type: PowerTurret
 localizedName: Prominence
-description: A massive plasma launcher. Fires a single shot that vaporizes almost anything it hits. Extremely expensive. Recommended only for manual firing, due to its slow reload.
+description: Fires large plasma bolts that vapourize nearly anything they hit.
 size: 14
 health: 155225500
 range: 8192
 recoilAmount: 32
-reloadTime: 6550
+reloadTime: 644
 powerUse: 255005
 shootShake: 30
 shootType: {
@@ -13,7 +13,7 @@ shootType: {
   keepVelocity: true
   length: 27
   width: 11
-  damage: 32550050
+  damage: 57434500
   speed: 5
   hitEffect: impactcloud
   lifetime: 550
