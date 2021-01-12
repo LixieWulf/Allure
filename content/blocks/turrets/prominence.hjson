@@ -4,7 +4,7 @@ description: Fires large plasma bolts that vapourize nearly anything they hit.
 size: 16
 health: 155225500
 range: 7004
-recoilAmount: 32
+recoilAmount: 14
 reloadTime: 644
 powerUse: 255005
 shootShake: 30
