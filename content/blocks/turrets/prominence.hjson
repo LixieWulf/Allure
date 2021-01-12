@@ -5,7 +5,7 @@ size: 16
 health: 155225500
 range: 7004
 recoilAmount: 14
-reloadTime: 644
+reloadTime: 1250
 powerUse: 255005
 shootShake: 30
 shootEffect: {
