@@ -1,7 +1,7 @@
 type: PowerTurret
 localizedName: Prominence
 description: Fires large plasma bolts that vapourize nearly anything they hit.
-size: 14
+size: 16
 health: 155225500
 range: 8192
 recoilAmount: 32
