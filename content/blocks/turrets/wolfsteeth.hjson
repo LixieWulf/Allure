@@ -12,7 +12,6 @@ shootEffect: {
   type: ParticleEffect
   colorFrom: ffffff
   colorTo: 87a3ff
-  speed: 7
   cone: 15
   lifetime: 35
 }
