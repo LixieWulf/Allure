@@ -5,7 +5,7 @@ targetAir: true
 targetGround: true
 health: 14500
 size: 4
-cooldown: 110
+cooldown: 0.01
 restitution: 0.04
 spread: 0
 reloadTime: 130
