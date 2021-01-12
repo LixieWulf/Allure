@@ -7,5 +7,5 @@ viscosity: 0.55
 heatCapacity: 0
 explosiveness: 4
 effect: melting
-color: e86827
+color: ff7d3c
 research: wolframite
