@@ -3,7 +3,7 @@ name: Bug report
 about: Report an issue about the mod.
 title: Bug Report
 labels: bug
-assignees: https://github.com/BlueWolf3682/
+assignees: @BlueWolf3682
 ---
 
 **OS:** *The operating system used, such as iOS or Windows.*
