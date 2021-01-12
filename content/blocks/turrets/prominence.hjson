@@ -3,7 +3,7 @@ localizedName: Prominence
 description: Fires large plasma bolts that vapourize nearly anything they hit.
 size: 16
 health: 155225500
-range: 8192
+range: 7004
 recoilAmount: 32
 reloadTime: 644
 powerUse: 255005
@@ -11,10 +11,12 @@ shootShake: 30
 shootEffect: {
   type: ParticleEffect
   cone: 17
+  sizeFrom: 15
+  sizeTo: 0
   particles: 15
   colorFrom: ffffff
   colorTo: 000000
-  length: 1
+  length: 14
   lifetime: 150
 }
 shootType: {
