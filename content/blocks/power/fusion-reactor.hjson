@@ -4,7 +4,6 @@ description: A deuterium reactor. Pulls hydrogen from water and fuses it to gene
 liquidCapacity: 980
 size: 5
 hasLiquids: true
-warmup: 5
 powerProduction: 650
 plasma1: 94efff
 plasma2: 45e3ff
