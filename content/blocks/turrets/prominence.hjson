@@ -16,7 +16,7 @@ shootEffect: {
   particles: 15
   colorFrom: ffffff
   colorTo: 000000
-  length: 14
+  length: 45
   lifetime: 150
 }
 shootType: {
