@@ -10,7 +10,7 @@ restitution: 0.04
 spread: 0
 reloadTime: 130
 shots: 1
-recoilAmount: 6
+recoilAmount: 2
 ammoUseEffect: casing3
 shootEffect: hitLancer
 shootSound: railgun
