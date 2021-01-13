@@ -23,12 +23,13 @@ weapons: [
     reload: 30
     alternate: false
     bullet: {
+      type: LaserBoltBulletType
       damage: 1840
       speed: 10
       width: 4
       height: 16
       shootEffect: shootBig
-      lifetime: 12
+      lifetime: 20
       collidesTeam: true
       healPercent: 12
     }
