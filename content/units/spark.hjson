@@ -4,7 +4,7 @@ description: A small unit that can heal nearby buildings and attack hostiles.
 speed: 0.12
 drag: 0.4
 hitSize: 20
-rotateSpeed: 0.03
+rotateSpeed: 8.4
 health: 15550
 weapons: [
   {
