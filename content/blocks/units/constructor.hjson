@@ -33,7 +33,7 @@ plans: [
     ]
   }
   {
-    unit: draconium-leader
+    unit: spark
     time: 1800
     requirements: [
       silicon/50
