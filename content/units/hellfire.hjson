@@ -115,6 +115,8 @@ weapons: [
       lifetime: 35
       pierce: true
       pierceBuilding: true
+      height: 28
+      width: 18
       homingPower: 5.0
       homingRange: 32
       frontColor: ffffff
