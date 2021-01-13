@@ -1,9 +1,9 @@
 type: mech
 localizedName: Spark
 description: A small unit that can heal nearby buildings and attack hostiles.
-speed: 1.45
+speed: 0.88
 drag: 0.4
-hitSize: 12
+hitSize: 18
 rotateSpeed: 8.4
 health: 15550
 armor: 25
@@ -15,7 +15,7 @@ weapons: [
     shake: 10
     inaccuracy: 10
     x: 8
-    y: 0
+    y: 4
     shots: 1
     shotDelay: 3
     shootSound: lasershoot
