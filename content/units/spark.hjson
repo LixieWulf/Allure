@@ -15,7 +15,7 @@ weapons: [
     shake: 10
     inaccuracy: 10
     x: 8
-    y: 3
+    y: 2
     shots: 1
     shotDelay: 3
     shootSound: lasershoot
