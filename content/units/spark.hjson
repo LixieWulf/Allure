@@ -9,14 +9,14 @@ health: 15550
 weapons: [
   {
     name: spark-weapon
-    recoil: 50
+    recoil: 2
     shake: 10
     inaccuracy: 10
     x: 8
-    y: 0
+    y: 2
     shots: 1
     shotDelay: 3
-    shootSound: shootBig
+    shootSound: lasershoot
     ejectEffect: casing3
     reload: 30
     alternate: false
