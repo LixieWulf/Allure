@@ -6,6 +6,7 @@ drag: 0.4
 hitSize: 20
 rotateSpeed: 8.4
 health: 15550
+armor: 25
 weapons: [
   {
     name: spark-weapon
