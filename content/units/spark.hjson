@@ -1,0 +1,34 @@
+type: mech
+localizedName: Spark
+description: A small unit that can heal nearby buildings and attack hostiles.
+speed: 0.12
+drag: 0.4
+hitSize: 20
+rotateSpeed: 0.03
+health: 15550
+weapons: [
+  {
+    name: spark-weapon
+    recoil: 50
+    shake: 10
+    inaccuracy: 10
+    x: 8
+    y: 0
+    shots: 1
+    shotDelay: 3
+    shootSound: shootBig
+    ejectEffect: casing3
+    reload: 30
+    alternate: false
+    bullet: {
+      damage: 1840
+      speed: 10
+      width: 4
+      height: 16
+      shootEffect: shootBig
+      lifetime: 12
+      collidesTeam: true
+      healPercent: 12
+    }
+  }
+]
