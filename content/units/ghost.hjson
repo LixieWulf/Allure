@@ -20,6 +20,8 @@ weapons: [
     type: LaserBoltBulletType
     damage: 650
     speed: 6
+    frontColor: 6f7fe8
+    backColor: 5757c2
     collidesTeam: true
     lifetime: 45
     healPercent: 4
