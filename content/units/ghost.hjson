@@ -1,27 +1,29 @@
 type: flying
 localizedName: Ghost
-description: A stronger spirit repair drone.
+description: A well fleshed out flying unit that can both heal units and attack hostiles.
 speed: 2
 drag: 0.1
 flying: true
-health: 244550
+health: 12550
+armor: 14
 engineOffset: 12
 weapons: [
 {
-  name: ghostregenerator
-  shootCone: 30
+  name: ghost-weapon
+  shootCone: 15
   rotate: true
-  mirror: false
-  x: 0
-  y: 12
-  reload: 1
+  mirror: true
+  x: 2
+  y: 8
+  reload: 5
   recoil: 2
   bullet: {
     type: LaserBoltBulletType
-    speed: 4
+    damage: 1550
+    speed: 6
     collidesTeam: true
-    lifetime: 90
-    healPercent: 1.66666667
+    lifetime: 75
+    healPercent: 4
     }
   }
 ]
