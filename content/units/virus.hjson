@@ -14,10 +14,8 @@ rotateShooting: false
 weapons: [
 {
   shots: 1
-  inaccuracy: 360
   shake: 10
   shootSound: explosionBig
-  reload: 0
   shootCone: 360
   ignoreRotation: true
   x: 0
