@@ -11,6 +11,7 @@ drag: 0.01
 accel: 0.05
 rotateSpeed: 3
 engineOffset: 8
+engineSize: 5
 rotateShooting: false
 weapons: [
 {
