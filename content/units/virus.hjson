@@ -16,6 +16,7 @@ weapons: [
 {
   shots: 1
   shake: 10
+  reload: 60
   shootSound: explosionBig
   shootCone: 360
   ignoreRotation: true
