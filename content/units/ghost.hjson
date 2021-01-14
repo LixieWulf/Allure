@@ -6,23 +6,22 @@ drag: 0.1
 flying: true
 health: 12550
 armor: 14
-engineOffset: 12
+engineOffset: 8
 weapons: [
 {
   name: ghost-weapon
   shootCone: 15
-  rotate: true
   mirror: true
   x: 2
-  y: 8
+  y: 7
   reload: 5
   recoil: 2
   bullet: {
     type: LaserBoltBulletType
-    damage: 1550
+    damage: 650
     speed: 6
     collidesTeam: true
-    lifetime: 75
+    lifetime: 45
     healPercent: 4
     }
   }
