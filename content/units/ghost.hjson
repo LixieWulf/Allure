@@ -13,7 +13,7 @@ weapons: [
   shootCone: 15
   mirror: true
   x: 2
-  y: 7
+  y: 6
   reload: 5
   recoil: 2
   bullet: {
