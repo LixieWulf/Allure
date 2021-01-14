@@ -1,6 +1,6 @@
 type: flying
 localizedName: Virus
-description: A basic chassis and thruster pack with high explosives strapped on.
+description: A basic chassis and thruster pack with high explosives strapped on the bottom.
 health: 10050
 speed: 5
 rotateSpeed: 60
@@ -18,9 +18,10 @@ weapons: [
   shootSound: explosionBig
   shootCone: 360
   ignoreRotation: true
+  killShooter: true
   x: 0
   y: 0
-  mirror: false
+  mirror: false 
   bullet: {
     type: BombBulletType
     lifetime: 0
