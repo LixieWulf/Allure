@@ -25,7 +25,7 @@ plans: [
     ]
   }
   {
-    unit: pfsgcm
+    unit: virus
     time: 900
     requirements: [
       silicon/45
