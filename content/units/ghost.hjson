@@ -6,6 +6,9 @@ drag: 0.1
 flying: true
 health: 12550
 armor: 14
+buildSpeed: 2.7
+mineSpeed: 4
+mineTier: 5
 engineOffset: 8
 weapons: [
 {
@@ -18,7 +21,7 @@ weapons: [
   recoil: 2
   bullet: {
     type: LaserBoltBulletType
-    damage: 650
+    damage: 240
     speed: 6
     frontColor: 6f7fe8
     backColor: 5757c2
