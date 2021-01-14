@@ -11,12 +11,6 @@ weapons: [
 {
   name: ghost-weapon
   shootCone: 15
-  shootEffect: {
-    type: ParticleEffect
-    sizeTo: 8
-    colorFrom: ffffff
-    colorTo: 6f7fe8
-  }
   mirror: true
   x: 2
   y: 6
@@ -31,18 +25,6 @@ weapons: [
     collidesTeam: true
     lifetime: 45
     healPercent: 4
-    hitEffect: {
-      type: ParticleEffect
-      sizeTo: 8
-      colorFrom: ffffff
-      colorTo: 6f7fe8
-    }
-    despawnEffect: {
-      type: ParticleEffect
-      sizeTo: 8
-      colorFrom: ffffff
-      colorTo: 6f7fe8
-    }
   }
 }
 ]
