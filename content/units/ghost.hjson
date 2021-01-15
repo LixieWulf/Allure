@@ -6,6 +6,9 @@ drag: 0.1
 flying: true
 health: 12550
 armor: 14
+t
+rotateShooting: true
+faceTarget: true
 buildSpeed: 2.7
 mineSpeed: 4
 mineTier: 5
