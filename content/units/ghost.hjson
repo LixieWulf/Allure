@@ -4,6 +4,7 @@ description: A well fleshed out flying unit that can both heal units and attack 
 speed: 2
 drag: 0.1
 flying: true
+hitSize: 18
 health: 12550
 armor: 14
 rotateShooting: true
