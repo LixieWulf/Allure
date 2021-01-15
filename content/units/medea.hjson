@@ -1,12 +1,12 @@
 type: naval
 localizedName: Medea
-description: A small Frigate, very fast but little firepower.
+description: A fast naval unit that leeches health from hostile units.
 speed: 3
 accel: 0.5
-range: 50
-hitSize: 9
-health: 255
-rotateSpeed: 3
+hitSize: 16
+health: 17550
+armor: 18
+rotateSpeed: 6
 rotateShooting: false
 trailX: 2.5
 trailY: -6.75
@@ -14,26 +14,27 @@ trailScl: 1
 trailLength: 50
 weapons: [
   {
-    name: single-shot
+    name: medea-weapon
     rotate: true
     rotateSpeed: 10
     mirror: false
-    reload: 15
+    reload: 10
     x: 0
-    y: 3
+    y: 5
     recoil: 2
     inaccuracy: 0
     shots: 1
     shotDelay: 50
-    shootSound: shootBig
-    ejectEffect: casing1
+    shootSound: sap
+    ejectEffect: none
     bullet: {
-      damage: 24
-      shootEffect: shootBig
-      speed: 16
-      knockback: 5
-      lifetime: 24
-      maxRange: 50
+      type: SapBulletType
+      damage: 650
+      length: 250
+      sapStrength: 0.75
+      shootEffect: shootLiquid
+      color: bf92f9
+      knockback: 0
     }
   }
 ]
