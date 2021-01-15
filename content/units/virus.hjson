@@ -33,6 +33,7 @@ weapons: [
     killShooter: true
     hittable: false
     despawnEffect: impactcloud
+    maxRange: 8
   }
 }
 ]
