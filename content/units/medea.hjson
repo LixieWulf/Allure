@@ -17,7 +17,7 @@ weapons: [
     name: medea-weapon
     rotate: true
     rotateSpeed: 10
-    mirror: false
+    mirror: true
     reload: 10
     x: 2
     y: 4
