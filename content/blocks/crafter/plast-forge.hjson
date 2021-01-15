@@ -19,6 +19,7 @@ consumes: {
   }
   power: 3.75
 }
+craftEffect: smokeCloud
 requirements: [
   copper/250
   lead/175
