@@ -3,7 +3,7 @@ localizedName: Medea
 description: A fast naval unit that leeches health from hostile units.
 speed: 3
 accel: 0.5
-hitSize: 16
+hitSize: 18
 health: 17550
 armor: 18
 rotateSpeed: 6
