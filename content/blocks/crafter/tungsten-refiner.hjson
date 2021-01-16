@@ -1,6 +1,6 @@
 type: GenericSmelter
-localizedName: Tungsten Refinery
-description: A smelter capable of refining Wolframite into Tungsten
+localizedName: Tungsten Refiner
+description: Extracts tungsten from wolframite scrap for use in units.
 size: 3
 hasPower: true
 hasLiquids: false
@@ -13,7 +13,7 @@ consumes: {
   power: 2.6
   items: {
     items: [
-      wolframite/4
+      wolframite/3
     ]
   }
 }
@@ -27,4 +27,4 @@ category: crafting
 research: blue-wolframite-refiner
 ambientSound: build
 ambientSoundVolume: 0.5
-outputItem: tungsten-ingot/2
+outputItem: tungsten/2
