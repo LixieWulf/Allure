@@ -13,8 +13,8 @@ rotateShooting: false
 weapons: [
 {
   name: medea-weapon
-  x: 16
-  y: 16
+  x: 4
+  y: 2
   reload: 10
   rotate: true
   ejectEffect: none
@@ -26,12 +26,13 @@ weapons: [
     sapStrength: 0.85
     shootEffect: shootLiquid
     knockback: 3
+    color: bf92f9
   }
 }
 {
   name: akitzuki-weapon
   x: 0
-  y: -40
+  y: -32
   mirror: false
   rotate: true
   reload: 120
