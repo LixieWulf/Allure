@@ -51,4 +51,6 @@ weapons: [
     status: sapped
     statusDuration: 1080
   }
+}
+]
 research: medea
