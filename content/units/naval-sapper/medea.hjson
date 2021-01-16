@@ -38,4 +38,10 @@ weapons: [
     }
   }
 ]
-research: risso
+research: {
+  parent: risso
+  requirements: [
+    silicon/13550
+    metaglass/12450
+  ]
+}
