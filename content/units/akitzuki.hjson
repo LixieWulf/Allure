@@ -13,8 +13,8 @@ rotateShooting: false
 weapons: [
 {
   name: medea-weapon
-  x: 4
-  y: 2
+  x: 6
+  y: 8
   reload: 10
   rotate: true
   ejectEffect: none
