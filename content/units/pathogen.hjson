@@ -45,7 +45,7 @@ weapons: [
       colorTo: a63d3d
       sizeFrom: 20
       length: 108
-      lifetime: 90
+      lifetime: 15
     }
   }
 }
@@ -78,7 +78,7 @@ weapons: [
       colorTo: a63d3d
       sizeFrom: 20
       length: 108
-      lifetime: 90
+      lifetime: 15
     }
   }
 }
