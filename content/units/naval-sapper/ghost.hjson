@@ -1,5 +1,5 @@
 type: naval
-localizedName: Akitzuki
+localizedName: Ghost
 description: Leeches health from enemies and destroys structures with a long ranged artillery cannon.
 speed: 1
 accel: 0.5
@@ -12,7 +12,7 @@ rotateSpeed: 3
 rotateShooting: false
 weapons: [
 {
-  name: medea-weapon
+  name: spirit-weapon
   x: 5
   y: 7
   reload: 10
@@ -31,7 +31,7 @@ weapons: [
   }
 }
 {
-  name: akitzuki-weapon
+  name: ghost-weapon
   x: 0
   y: -24
   mirror: false
@@ -58,7 +58,7 @@ weapons: [
 }
 ]
 research: {
-  parent: medea
+  parent: spirit
   requirements: [
     silicon/76550
     lead/76550
