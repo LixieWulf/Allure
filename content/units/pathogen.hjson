@@ -13,6 +13,7 @@ targetAir: false
 engineOffset: 40
 engineSize: 9.5
 circleTarget: true
+rotateShooting: false
 weapons: [
 {
   name: pathogen-bomber
@@ -20,6 +21,7 @@ weapons: [
   y: 12
   reload: 120
   alternate: false
+  shootSound: plasmadrop
   bullet: {
     type: BombBulletType
     splashDamage: 11550
@@ -38,6 +40,7 @@ weapons: [
   y: -12
   reload: 120
   alternate: false
+  shootSound: plasmadrop
   bullet: {
     type: BombBulletType
     splashDamage: 11550
@@ -55,11 +58,13 @@ weapons: [
   x: 0
   y: 16
   reload: 45
+  rotate: true
   mirror: false
   shots: 3
   spacing: 4
   shotDelay: 4
   recoil: 1.5
+  shootSoun: missile
   bullet: {
     type: MissileBulletType
     damage: 5660
