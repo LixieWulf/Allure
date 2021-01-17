@@ -105,6 +105,7 @@ weapons: [
     backColor: a63d3d
     hitEffect: flakExplosion
     despawnEffect: flakExplosion
+    trailColor: a63d3d
   }
 }
 ]
