@@ -12,7 +12,7 @@ consumes: {
 }
 plans: [
   {
-    unit: medea
+    unit: spirit
     time: 2160
     requirements: [
       silicon/250
@@ -20,7 +20,7 @@ plans: [
     ]
   }
   {
-    unit: ghost
+    unit: reckless
     time: 3000
     requirements: [
       silicon/400
