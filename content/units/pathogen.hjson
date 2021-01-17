@@ -43,9 +43,9 @@ weapons: [
       cone: 360
       colorFrom: e65555
       colorTo: a63d3d
-      sizeFrom: 20
+      sizeFrom: 15
       length: 108
-      lifetime: 15
+      lifetime: 45
     }
   }
 }
@@ -76,9 +76,9 @@ weapons: [
       cone: 360
       colorFrom: e65555
       colorTo: a63d3d
-      sizeFrom: 20
+      sizeFrom:15
       length: 108
-      lifetime: 15
+      lifetime: 45
     }
   }
 }
