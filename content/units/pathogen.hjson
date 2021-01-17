@@ -5,10 +5,11 @@ flying: true
 health: 135400
 armor: 55
 hitSize: 73
-speed: 3.1
-accel: 0.5
+speed: 1.4
+accel: 0.05
 drag: 0.02
-engineOffset: 45
+targetAir: false
+engineOffset: 40
 engineSize: 10.8
 circleTarget: true
 weapons: [
@@ -16,7 +17,6 @@ weapons: [
   name: pathogen-bomber
   x: 16
   y: 12
-  targetAir: false
   reload: 120
   alternate: false
   bullet: {
