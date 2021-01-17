@@ -2,6 +2,7 @@ type: flying
 localizedName: Pathogen
 description: Drops large bombs and fires clusters of missiles at hostile targets.
 flying: true
+lowAltitude: true
 health: 135400
 armor: 55
 hitSize: 73
