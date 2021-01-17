@@ -10,7 +10,7 @@ accel: 0.05
 drag: 0.02
 targetAir: false
 engineOffset: 40
-engineSize: 10.8
+engineSize: 9.5
 circleTarget: true
 weapons: [
 {
@@ -27,6 +27,43 @@ weapons: [
     height: 18
     lifetime: 60
     maxRange: 40
+    frontColor: e65555
+    backColor: a63d3d
+  }
+}
+{
+  name: pathogen-bomber
+  x: 20
+  y: -12
+  reload: 120
+  alternate: false
+  bullet: {
+    type: BombBulletType
+    splashDamage: 11550
+    splashDamageRadius: 55
+    width: 12
+    height: 18
+    lifetime: 60
+    maxRange: 40
+    frontColor: e65555
+    backColor: a63d3d
+  }
+}
+{
+  name: pathogen-missiles
+  x: 0
+  y: 24
+  reload: 45
+  shots: 3
+  spread: 4
+  recoil: 1.5
+  bullet: {
+    type: MissileBulletType
+    damage: 5660
+    speed: 5
+    lifetime: 60
+    splashDamage: 4550
+    splashDamageRadius: 25
     frontColor: e65555
     backColor: a63d3d
   }
