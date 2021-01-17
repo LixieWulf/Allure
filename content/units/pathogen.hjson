@@ -56,13 +56,14 @@ weapons: [
   reload: 45
   shots: 3
   spread: 4
+  burstSpacing: 4
   recoil: 1.5
   bullet: {
     type: MissileBulletType
     damage: 5660
     speed: 5
     lifetime: 60
-    splashDamage: 4550
+    splashDamage: 2550
     splashDamageRadius: 25
     frontColor: e65555
     backColor: a63d3d
