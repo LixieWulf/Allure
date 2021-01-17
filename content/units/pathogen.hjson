@@ -1,0 +1,29 @@
+type: flying
+localizedName: Pathogen
+description: Drops large bombs and fires clusters of missiles at hostile targets.
+health: 135400
+armor: 55
+hitSize: 73
+speed: 1.4
+accel: 0.05
+engineOffset: 45
+engineSize: 10.8
+weapons: [
+{
+  name: pathogen-bomber
+  x: 16
+  y: 16
+  reload: 120
+  alternate: false
+  bullet: {
+    type: BombBulletType
+    splashDamage: 11550
+    splashDamageRadius: 55
+    width: 24
+    height: 36
+    lifetime: 60
+    maxRange: 40
+  }
+}
+]
+research: virus
