@@ -19,9 +19,11 @@ weapons: [
   name: pathogen-bomber
   x: 16
   y: 12
+  minShootVelocity: 0.2
   reload: 120
   shootCone: 360
   alternate: false
+  ejectEffect: none
   shootSound: plasmadrop
   bullet: {
     type: BombBulletType
@@ -33,16 +35,29 @@ weapons: [
     maxRange: 40
     frontColor: e65555
     backColor: a63d3d
+    shootEffect: none
+    despawnEffect: {
+      type: ParticleEffect
+      particles: 24
+      cone: 360
+      colorFrom: e65555
+      colorTo: a63d3d
+      sizeFrom: 20
+      length: 108
+      lifetime: 90
+    }
   }
 }
 {
   name: pathogen-bomber
   x: 20
   y: -12
+  minShootVelocity: 0.2
   reload: 120
   shootCone: 360
   alternate: false
   shootSound: plasmadrop
+  ejectEffect: none
   bullet: {
     type: BombBulletType
     splashDamage: 11550
@@ -53,6 +68,17 @@ weapons: [
     maxRange: 40
     frontColor: e65555
     backColor: a63d3d
+    shootEffect: none
+    despawnEffect: {
+      type: ParticleEffect
+      particles: 24
+      cone: 360
+      colorFrom: e65555
+      colorTo: a63d3d
+      sizeFrom: 20
+      length: 108
+      lifetime: 90
+    }
   }
 }
 {
@@ -76,6 +102,8 @@ weapons: [
     splashDamageRadius: 25
     frontColor: e65555
     backColor: a63d3d
+    hitEffect: flakExplosion
+    despawnEffect: flakExplosion
   }
 }
 ]
