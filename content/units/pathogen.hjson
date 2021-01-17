@@ -56,7 +56,7 @@ weapons: [
   reload: 45
   shots: 3
   spread: 4
-  burstSpacing: 4
+  shotDelay: 4
   recoil: 1.5
   bullet: {
     type: MissileBulletType
