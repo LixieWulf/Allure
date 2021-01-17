@@ -1,5 +1,5 @@
 type: naval
-localizedName: Medea
+localizedName: Spirit
 description: A fast naval unit that leeches health from hostile units.
 speed: 3
 accel: 0.5
@@ -14,7 +14,7 @@ trailScl: 1
 trailLength: 50
 weapons: [
   {
-    name: medea-weapon
+    name: spirit-weapon
     rotate: true
     rotateSpeed: 10
     mirror: true
@@ -39,7 +39,7 @@ weapons: [
   }
 ]
 research: {
-  parent: risso
+  parent: constructor
   requirements: [
     silicon/13550
     metaglass/12450
