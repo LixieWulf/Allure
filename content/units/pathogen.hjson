@@ -53,10 +53,11 @@ weapons: [
 {
   name: pathogen-missiles
   x: 0
-  y: 24
+  y: 16
   reload: 45
+  mirror: false
   shots: 3
-  spread: 4
+  spacing: 4
   shotDelay: 4
   recoil: 1.5
   bullet: {
