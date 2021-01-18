@@ -10,7 +10,7 @@ consumes: {
     items: {
       items: [
         silicon/1550
-        amethyst/750
+        amethyst-gem/750
       ]
     }
   liquid: {
