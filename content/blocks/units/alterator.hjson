@@ -1,0 +1,15 @@
+type: Reconstructor
+name: Alterator
+description: Upgrades inputted units to their second tier.
+size: 8
+health: 15465540
+consumes: {
+  power: 4.8
+}
+upgrades: [
+{
+  unitType: ghost
+  requirements: spirit
+}
+]
+buildVisibility: shown
