@@ -39,7 +39,6 @@ weapons: [
         colorTo: d4816a
         length: 40
         particles: 15
-        region: railgun
       }
       updateEffect: railTrail
       hitEffect: railHit
