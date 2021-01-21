@@ -36,9 +36,9 @@ weapons: [
       width: 8
       damage: 345980
       colors: [a488eb, 84f591, f2e879, ff9c59]
-      lenscales: [1, 1.25, 1.35, 1.45]
-      tscales: [1, 1.25, 1.35, 1.45]
-      scales: [1, 1.25, 1.35, 1.45]
+      lenscales: [1.15, 1.25, 1.35, 1.45]
+      tscales: [1.15, 1.25, 1.35, 1.45]
+      scales: [1.15, 1.25, 1.35, 1.45]
     }
   }
   {
