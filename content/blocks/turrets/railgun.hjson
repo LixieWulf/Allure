@@ -3,12 +3,11 @@ localizedName: Railgun
 description: Propels projectiles at high speeds with electromagnetic rails. Useful for taking down armored units.
 targetAir: true
 targetGround: true
-health: 14500
+health: 165400
 size: 4
-cooldown: 0.01
+cooldown: 0.1
 restitution: 0.04
-spread: 0
-reloadTime: 130
+reloadTime: 90
 shots: 1
 recoilAmount: 2
 ammoUseEffect: casing3
@@ -20,12 +19,12 @@ maxAmmo: 12
 range: 800
 ammoTypes: {
   draconium: {
-    speed: 9
+    speed: 16
     damage: 540
     sprite: exotic-mod-railbolt
     width: 14
     height: 42
-    lifetime: 90
+    lifetime: 45
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
     status: melting
@@ -48,14 +47,14 @@ ammoTypes: {
     }
   }
   surge-alloy: {
-    speed: 7
+    speed: 14
     damage: 450
     sprite: exotic-mod-railbolt
     pierce: true
     pierceCap: 5
     width: 12
     height: 36
-    lifetime: 140
+    lifetime: 60
     hitEffect: shootBig
     despawnEffect: shootBig
     shootEffect: shootBig
@@ -66,7 +65,7 @@ ammoTypes: {
     frontColor: e8d174
   }
   bluewolframite: {
-    speed: 8
+    speed: 16
     damage: 500
     sprite: exotic-mod-railbolt
     pierce: true
@@ -74,7 +73,7 @@ ammoTypes: {
     pierceCap: 4
     width: 16
     height: 48
-    lifetime: 100
+    lifetime: 60
     hitEffect: flakExplosion
     despawnEffect: flakExplosion
     shootEffect: shootBig
