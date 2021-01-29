@@ -21,7 +21,7 @@ range: 800
 ammoTypes: {
   draconium: {
     speed: 9
-    damage: 700
+    damage: 540
     sprite: exotic-mod-railbolt
     width: 14
     height: 42
@@ -29,48 +29,30 @@ ammoTypes: {
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
     status: melting
-    frontColor: f53b11
-    backColor: d92800
+    frontColor: e65555
+    backColor: a63d3d
     hitEffect: pulverizeMedium
     despawnEffect: pulverizeMedium
     fragVelocityMin: 0.9
     fragVelocityMax: 1.1
+    fragCone: 25
     fragBullets: 5
     fragBullet: {
-      speed: 8.5
-      damage: 700
-      sprite: exotic-mod-railbolt
-      width: 7
-      height: 21
-      hitEffect: pulverizeRed
-      despawnEffect: pulverizeRed
-      lifetime: 50
-      status: melting
-      frontColor: f53b11
-      backColor: d92800
-      fragVelocityMin: 0.9
-      fragVelocityMax: 1.1
-      fragBullets: 5
-      fragBullet: {
-        speed: 8
-        damage: 700
-        sprite: exotic-mod-railbolt
-        width: 3.5
-        height: 10.5
-        lifetime: 25
-        hitEffect: shootBig
-        despawnEffect: shootBig
-        status: melting
-        frontColor: f53b11
-        backColor: d92800
-      }
+      damage: 65
+      speed: 8
+      lifetime: 25
+      width: 1
+      height: 10
+      frontColor: e65555
+      backColor: a63d3d
     }
   }
-  amethyst-gem: {
+  surge-alloy: {
     speed: 7
-    damage: 175
+    damage: 450
     sprite: exotic-mod-railbolt
     pierce: true
+    pierceCap: 5
     width: 12
     height: 36
     lifetime: 140
@@ -87,6 +69,9 @@ ammoTypes: {
     speed: 8
     damage: 500
     sprite: exotic-mod-railbolt
+    pierce: true
+    pierceBuilding: true
+    pierceCap: 4
     width: 16
     height: 48
     lifetime: 100
