@@ -16,15 +16,15 @@ shootSound: railgun
 shootCone: 25
 rotateSpeed: 3.8
 maxAmmo: 12
-range: 800
+range: 480
 ammoTypes: {
   draconium: {
     speed: 16
-    damage: 540
+    damage: 750
     sprite: exotic-mod-railbolt
     width: 14
     height: 42
-    lifetime: 45
+    lifetime: 30
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
     status: melting
@@ -47,14 +47,15 @@ ammoTypes: {
     }
   }
   surge-alloy: {
-    speed: 14
+    speed: 16
     damage: 450
     sprite: exotic-mod-railbolt
     pierce: true
-    pierceCap: 5
+    pierceBuilding: true
+    pierceCap: 2
     width: 12
     height: 36
-    lifetime: 60
+    lifetime: 45
     hitEffect: shootBig
     despawnEffect: shootBig
     shootEffect: shootBig
@@ -66,14 +67,14 @@ ammoTypes: {
   }
   bluewolframite: {
     speed: 16
-    damage: 500
+    damage: 950
     sprite: exotic-mod-railbolt
     pierce: true
     pierceBuilding: true
     pierceCap: 4
     width: 16
     height: 48
-    lifetime: 60
+    lifetime: 45
     hitEffect: flakExplosion
     despawnEffect: flakExplosion
     shootEffect: shootBig
@@ -84,13 +85,12 @@ ammoTypes: {
   }
 }
 requirements: [
-  copper/500
-  lead/400
+  copper/1000
+  lead/770
   silicon/600
   titanium/100
   thorium/200
   surge-alloy/300
-  bluewolframite/275
 ]
 category: turret
 research: spectre
