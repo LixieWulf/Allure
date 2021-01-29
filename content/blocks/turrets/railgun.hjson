@@ -62,8 +62,8 @@ ammoTypes: {
     smokeEffect: shootBigSmoke
     status: freezing
     ammoMultiplier: 3
-    frontColor: b966cc
-    backColor: 8e479e
+    backColor: f2e879
+    frontColor: e8d174
   }
   bluewolframite: {
     speed: 8
@@ -80,8 +80,8 @@ ammoTypes: {
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
     ammoMultiplier: 2
-    frontColor: 40ccff
-    backColor: 1397F0
+    frontColor: ffffff
+    backColor: 8ca4f5
   }
 }
 requirements: [
