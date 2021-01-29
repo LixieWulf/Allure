@@ -16,7 +16,7 @@ shootSound: railgun
 shootCone: 25
 rotateSpeed: 3.8
 maxAmmo: 12
-range: 480
+range: 720
 ammoTypes: {
   draconium: {
     speed: 16
@@ -24,7 +24,7 @@ ammoTypes: {
     sprite: exotic-mod-railbolt
     width: 14
     height: 42
-    lifetime: 30
+    lifetime: 35
     shootEffect: shootBig
     smokeEffect: shootBigSmoke
     status: melting
