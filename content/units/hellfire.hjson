@@ -5,7 +5,8 @@ details: "One of the last intact remnants of a long lost civilization. Powerful,
 speed: 0.4
 accel: 0.5
 flying: true
-range: 240
+range: 200
+circleTarget: true
 hitSize: 288
 health: 765500450
 armor: 344530
