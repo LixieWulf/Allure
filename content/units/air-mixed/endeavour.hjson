@@ -73,5 +73,77 @@ weapons: [
       }
     }
   }
+  {
+    name: reckless-weapon
+    x: 20
+    y: 30
+    reload: 45
+    shootCone: 10
+    shootSound: lasershoot
+    bullet: {
+      type: LaserBoltBulletType
+      damage: 650
+      speed: 6
+      lifetime: 45
+      collidesTeam: true
+      healPercent: 8
+      frontColor: 6f7fe8
+      backColor: 5757c2
+    }
+  }
+  {
+    name: reckless-weapon
+    x: 24
+    y: 15
+    reload: 45
+    shootCone: 10
+    shootSound: lasershoot
+    bullet: {
+      type: LaserBoltBulletType
+      damage: 650
+      speed: 6
+      lifetime: 45
+      collidesTeam: true
+      healPercent: 8
+      frontColor: 6f7fe8
+      backColor: 5757c2
+    }
+  }
+    {
+    name: reckless-weapon
+    x: 24
+    y: -15
+    reload: 45
+    shootCone: 10
+    shootSound: lasershoot
+    bullet: {
+      type: LaserBoltBulletType
+      damage: 650
+      speed: 6
+      lifetime: 45
+      collidesTeam: true
+      healPercent: 8
+      frontColor: 6f7fe8
+      backColor: 5757c2
+    }
+  }
+  {
+    name: reckless-weapon
+    x: 20
+    y: -30
+    reload: 45
+    shootCone: 10
+    shootSound: lasershoot
+    bullet: {
+      type: LaserBoltBulletType
+      damage: 650
+      speed: 6
+      lifetime: 45
+      collidesTeam: true
+      healPercent: 8
+      frontColor: 6f7fe8
+      backColor: 5757c2
+    }
+  }
 ]
 research: reckless
