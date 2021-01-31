@@ -13,6 +13,7 @@ buildSpeed: 2.7
 mineSpeed: 4
 mineTier: 5
 engineOffset: 8
+canHeal: true
 weapons: [
 {
   name: reckless-weapon
