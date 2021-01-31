@@ -13,13 +13,13 @@ mineTier: 6
 mineSpeed: 8.5
 canHeal: true
 lowAltitude: true
-engineOffset: 30
+engineOffset: 32
 engineSize: 8.5
 weapons: [
   {
     name: endeavour-laser
     x: 0
-    y: 30
+    y: 24
     mirror: false
     reload: 180
     shootCone: 5
@@ -28,7 +28,7 @@ weapons: [
     shootStatusDuration: 45
     bullet: {
       type: LaserBulletType
-      damage: 1550
+      damage: 4550
       length: 500
       width: 55
       lifetime: 60
