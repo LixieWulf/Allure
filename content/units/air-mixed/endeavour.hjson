@@ -58,6 +58,16 @@ weapons: [
             colorFrom: 6f7fe8
             colorTo: fffffff
           }
+          {
+            type: ParticleEffect
+            length: 0
+            lifetime: 45
+            sizeFrom: 0
+            sizeTo: 7.5
+            particles: 1
+            colorFrom: 6f7fe8
+            colorTo: ffffff
+          }
         ]
       }
     }
