@@ -1,0 +1,36 @@
+type: flying
+localizedName: Endeavour
+description: A multipurpose unit that can heal buildings and destroy hostiles with a laser cannon.
+flying: true
+health: 165440
+armor: 40
+hitSize: 90
+speed: 1.5
+accel: 0.2
+drag: 0.05
+buildSpeed: 4.5
+mineTier: 6
+mineSpeed: 8.5
+canHeal: true
+lowAltitude: true
+engineOffset: 45
+engineSize: 8.5
+weapons: [
+  {
+    name: endeavour-laser
+    x: 0
+    y: 40
+    mirror: false
+    reload: 180
+    shootCone: 5
+    bullet: {
+      type: LaserBulletType
+      damage: 1550
+      length: 500
+      width: 55
+      lifetime: 60
+      firstShotDelay: 120
+    }
+  }
+]
+research: reckless
