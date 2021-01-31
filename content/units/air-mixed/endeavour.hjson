@@ -23,7 +23,9 @@ weapons: [
     mirror: false
     reload: 180
     shootCone: 5
-    firstShotDelay: 120
+    firstShotDelay: 45
+    shootStatus: unmoving
+    shootStatusDuration: 45
     bullet: {
       type: LaserBulletType
       damage: 1550
