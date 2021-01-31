@@ -91,7 +91,7 @@ weapons: [
       healPercent: 8
       frontColor: 6f7fe8
       backColor: 5757c2
-      shootEffect: exotic-mod-blue-heal
+      shootEffect: blue-heal
     }
   }
   {
