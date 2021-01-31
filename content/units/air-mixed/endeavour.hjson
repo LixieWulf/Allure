@@ -75,9 +75,11 @@ weapons: [
   }
   {
     name: reckless-weapon
-    x: 20
-    y: 30
-    reload: 45
+    x: 16
+    y: 24
+    rotate: true
+    reload: 35
+    recoil: 2
     shootCone: 10
     shootSound: lasershoot
     bullet: {
@@ -93,9 +95,11 @@ weapons: [
   }
   {
     name: reckless-weapon
-    x: 24
-    y: 15
-    reload: 45
+    x: 20
+    y: 10
+    rotate: true
+    reload: 35
+    recoil: 2
     shootCone: 10
     shootSound: lasershoot
     bullet: {
@@ -111,9 +115,11 @@ weapons: [
   }
     {
     name: reckless-weapon
-    x: 24
-    y: -15
-    reload: 45
+    x: 20
+    y: -10
+    rotate: true
+    reload: 35
+    recoil: 2
     shootCone: 10
     shootSound: lasershoot
     bullet: {
@@ -129,9 +135,11 @@ weapons: [
   }
   {
     name: reckless-weapon
-    x: 20
-    y: -30
-    reload: 45
+    x: 16
+    y: -24
+    rotate: true
+    reload: 35
+    recoil: 2
     shootCone: 10
     shootSound: lasershoot
     bullet: {
