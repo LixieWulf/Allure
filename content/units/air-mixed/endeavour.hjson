@@ -23,13 +23,13 @@ weapons: [
     mirror: false
     reload: 180
     shootCone: 5
+    firstShotDelay: 120
     bullet: {
       type: LaserBulletType
       damage: 1550
       length: 500
       width: 55
       lifetime: 60
-      firstShotDelay: 120
     }
   }
 ]
