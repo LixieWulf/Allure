@@ -36,11 +36,11 @@ weapons: [
       lifetime: 60
       shootEffect: {
         type: ParticleEffect
-        length: -10
-        baseLength: 10
+        length: -25
+        baseLength: 25
         particles: 25
         sizeFrom: 0
-        sizeTo: 4
+        sizeTo: 6
         lifetime: 45
         colorFrom: 6f7fe8
         colorTo: ffffff
