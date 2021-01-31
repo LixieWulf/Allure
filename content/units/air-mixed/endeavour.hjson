@@ -19,7 +19,7 @@ weapons: [
   {
     name: endeavour-laser
     x: 0
-    y: 24
+    y: 20
     mirror: false
     reload: 180
     shootCone: 5
