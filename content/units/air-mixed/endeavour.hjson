@@ -8,6 +8,7 @@ hitSize: 60
 speed: 1.5
 accel: 0.2
 drag: 0.05
+rotateSpeed: 15
 buildSpeed: 4.5
 mineTier: 6
 mineSpeed: 8.5
