@@ -4,7 +4,7 @@ description: A multipurpose unit that can heal buildings and destroy hostiles wi
 flying: true
 health: 165440
 armor: 40
-hitSize: 90
+hitSize: 70
 speed: 1.5
 accel: 0.2
 drag: 0.05
@@ -13,13 +13,13 @@ mineTier: 6
 mineSpeed: 8.5
 canHeal: true
 lowAltitude: true
-engineOffset: 45
+engineOffset: 30
 engineSize: 8.5
 weapons: [
   {
     name: endeavour-laser
     x: 0
-    y: 40
+    y: 30
     mirror: false
     reload: 180
     shootCone: 5
