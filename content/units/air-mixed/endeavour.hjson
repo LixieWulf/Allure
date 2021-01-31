@@ -25,7 +25,7 @@ weapons: [
     shootCone: 5
     firstShotDelay: 45
     shootStatus: unmoving
-    shootStatusDuration: 45
+    shootStatusDuration: 60
     shootSound: laserblast
     chargeSound: lasercharge2
     bullet: {
