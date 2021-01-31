@@ -34,6 +34,16 @@ weapons: [
       length: 500
       width: 55
       lifetime: 60
+      shootEffect: {
+        type: ParticleEffect
+        length: -50
+        particles: 25
+        sizeFrom: 0
+        sizeTo: 10
+        lifetime: 45
+        colorFrom: 6f7fe8
+        colorTo: ffffff
+      }
     }
   }
 ]
