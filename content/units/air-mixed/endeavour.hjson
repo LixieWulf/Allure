@@ -4,7 +4,7 @@ description: A multipurpose unit that can heal buildings and destroy hostiles wi
 flying: true
 health: 165440
 armor: 40
-hitSize: 70
+hitSize: 60
 speed: 1.5
 accel: 0.2
 drag: 0.05
