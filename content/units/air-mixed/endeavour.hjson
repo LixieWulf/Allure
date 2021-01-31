@@ -91,7 +91,16 @@ weapons: [
       healPercent: 8
       frontColor: 6f7fe8
       backColor: 5757c2
-      shootEffect: blue-heal
+      shootEffect: {
+        type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 10
+        colorFrom: 6f7fe8
+        colorTo: 6f7fe8
+        lifetime: 15
+        strokeFrom: 1
+        strokeTo: 0
+      }
     }
   }
   {
