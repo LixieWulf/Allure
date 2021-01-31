@@ -91,7 +91,27 @@ weapons: [
       healPercent: 8
       frontColor: 6f7fe8
       backColor: 5757c2
-      shootEffect: {
+      smokeEffect: {
+        type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 8
+        colorFrom: 6f7fe8
+        colorTo: 6f7fe8
+        lifetime: 10
+        strokeFrom: 1
+        strokeTo: 0
+      }
+      hitEffect: {
+        type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 8
+        colorFrom: 6f7fe8
+        colorTo: 6f7fe8
+        lifetime: 10
+        strokeFrom: 1
+        strokeTo: 0
+      }
+      despawnEffect: {
         type: WaveEffect
         sizeFrom: 0
         sizeTo: 8
