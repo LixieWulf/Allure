@@ -26,6 +26,8 @@ weapons: [
     firstShotDelay: 45
     shootStatus: unmoving
     shootStatusDuration: 45
+    shootSound: laserblast
+    chargeSound: lasercharge2
     bullet: {
       type: LaserBulletType
       damage: 4550
