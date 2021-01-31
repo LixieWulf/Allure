@@ -21,7 +21,7 @@ consumes: {
 upgrades: [
   [spirit, ghost]
   [virus, pathogen]
+  [reckless, endeavour]
 ]
-buildVisibility: shown
+buildVisibility: sandboxOnly
 category: units
-research: constructor
