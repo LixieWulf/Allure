@@ -47,6 +47,8 @@ weapons: [
         lifetime: 30
         length: 0
         particles: 1
+        colorFrom: ffd37f
+        colorTo: ffd37f
         region: exotic-mod-diamond-thin
       }
       hitEffect: railHit
