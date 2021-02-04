@@ -55,7 +55,7 @@ weapons: [
           length: 75
           lifetime: 30
           particles: 12
-          sizeFrom: 4
+          sizeFrom: 10
           sizeTo: 0
           colorFrom: 7e4242
           colorTo: 7e4242
@@ -103,7 +103,7 @@ weapons: [
           length: 75
           lifetime: 30
           particles: 12
-          sizeFrom: 4
+          sizeFrom: 10
           sizeTo: 0
           colorFrom: 7e4242
           colorTo: 7e4242
