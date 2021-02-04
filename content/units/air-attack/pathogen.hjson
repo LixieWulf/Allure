@@ -29,7 +29,7 @@ weapons: [
   bullet: {
     type: BombBulletType
     splashDamage: 11550
-    splashDamageRadius: 55
+    splashDamageRadius: 75
     width: 12
     height: 18
     lifetime: 60
@@ -38,14 +38,29 @@ weapons: [
     backColor: a63d3d
     shootEffect: none
     despawnEffect: {
-      type: ParticleEffect
-      particles: 24
-      cone: 360
-      colorFrom: e65555
-      colorTo: a63d3d
-      sizeFrom: 15
-      length: 108
-      lifetime: 45
+      type: MultiEffect
+      effects: [
+        {
+          type: WaveEffect
+          lifetime: 30
+          sizeFrom: 0
+          sizeTo: 150
+          strokeFrom: 5
+          strokeTo: 0
+          colorFrom: ffffff
+          colorTo: e65555
+        }
+        {
+          type: ParticleEffect
+          length: 75
+          lifetime: 30
+          particles: 12
+          sizeFrom: 4
+          sizeTo: 0
+          colorFrom: 7e4242
+          colorTo: 7e4242
+        }
+      ]
     }
   }
 }
@@ -62,7 +77,7 @@ weapons: [
   bullet: {
     type: BombBulletType
     splashDamage: 11550
-    splashDamageRadius: 55
+    splashDamageRadius: 75
     width: 12
     height: 18
     lifetime: 60
@@ -96,16 +111,17 @@ weapons: [
   shootSound: missile
   bullet: {
     type: MissileBulletType
-    damage: 5660
+    damage: 2870
     speed: 5
     lifetime: 60
-    splashDamage: 2550
+    splashDamage: 1850
     splashDamageRadius: 25
     frontColor: e65555
     backColor: a63d3d
     hitEffect: flakExplosion
     despawnEffect: flakExplosion
     trailColor: a63d3d
+    collidesGround: false
   }
 }
 ]
