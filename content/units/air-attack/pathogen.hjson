@@ -86,14 +86,29 @@ weapons: [
     backColor: a63d3d
     shootEffect: none
     despawnEffect: {
-      type: ParticleEffect
-      particles: 24
-      cone: 360
-      colorFrom: e65555
-      colorTo: a63d3d
-      sizeFrom:15
-      length: 108
-      lifetime: 45
+      type: MultiEffect
+      effects: [
+        {
+          type: WaveEffect
+          lifetime: 30
+          sizeFrom: 0
+          sizeTo: 150
+          strokeFrom: 5
+          strokeTo: 0
+          colorFrom: ffffff
+          colorTo: e65555
+        }
+        {
+          type: ParticleEffect
+          length: 75
+          lifetime: 30
+          particles: 12
+          sizeFrom: 4
+          sizeTo: 0
+          colorFrom: 7e4242
+          colorTo: 7e4242
+        }
+      ]
     }
   }
 }
