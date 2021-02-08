@@ -40,7 +40,15 @@ weapons: [
         length: 40
         particles: 15
       }
-      updateEffect: railTrail
+      updateEffect: {
+        type: ParticleEffect
+        particles: 1
+        lifetime: 25
+        sizeFrom: 16
+        sizeTo: 0
+        length: 0
+        region: exotic-mod-diamond-thin
+      }
       hitEffect: railHit
       updateEffectSeg: 25
     }
