@@ -47,7 +47,7 @@ weapons: [
         sizeFrom: 16
         sizeTo: 0
         length: 0
-        region: exotic-mod-diamond-thin
+        region: exotic-mod-diamond-wide
       }
       hitEffect: railHit
       updateEffectSeg: 25
