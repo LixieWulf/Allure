@@ -4,6 +4,8 @@ description: Places temporary landmines. Has different effects based on ammuniti
 health: 135400
 size: 3
 range: 855
+targetAir: true
+targetGround: true
 reload: 190
 recoil: 2
 restitution: 0.01
