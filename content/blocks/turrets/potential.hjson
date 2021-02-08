@@ -17,13 +17,16 @@ ammoTypes: {
     splashDamage: 500
     splashDamageRadius: 160
     lifetime: 3000
-    drag: 0.2
+    drag: 0.01
     speed: 4
     hittable: false
     sprite: exotic-mod-mine
     frontColor: ffd2ae
     backColor: e58956
+    width: 16
+    height: 16
   }
 }
 buildVisibility: sandboxOnly
+category: turret
 research: ripple
