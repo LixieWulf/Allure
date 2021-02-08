@@ -1,0 +1,27 @@
+type: ItemTurret
+name: Potential
+description: Places temporary landmines. Has different effects based on ammunition.
+health: 135400
+size: 3
+range: 855
+reload: 190
+recoil: 2
+restitution: 0.01
+shootSound: artillery
+ammoPerShot: 70
+maxAmmo: 140
+ammoTypes: {
+  blast-compound: {
+    splashDamage: 500
+    splashDamageRadius: 160
+    lifetime: 3000
+    drag: 0.2
+    speed: 4
+    hittable: false
+    sprite: exotic-mod-mine
+    frontColor: ffd2ae
+    backColor: e58956
+  }
+}
+buildVisibility: sandboxOnly
+research: ripple
