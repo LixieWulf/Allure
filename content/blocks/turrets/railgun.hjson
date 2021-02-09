@@ -16,73 +16,47 @@ shootSound: railgun
 shootCone: 25
 rotateSpeed: 3.8
 maxAmmo: 36
-ammoPerShot: 2
+ammoPerShot: 8
 range: 720
 ammoTypes: {
-  draconium: {
-    speed: 16
-    damage: 950
-    sprite: exotic-mod-railbolt
-    width: 14
-    height: 42
-    lifetime: 35
-    shootEffect: shootBig
-    smokeEffect: shootBigSmoke
-    status: melting
-    frontColor: e65555
-    backColor: a63d3d
-    hitEffect: pulverizeMedium
-    despawnEffect: pulverizeMedium
-    fragVelocityMin: 0.9
-    fragVelocityMax: 1.1
-    fragCone: 25
-    fragBullets: 5
-    fragBullet: {
-      damage: 75
-      speed: 8
-      lifetime: 25
-      width: 1
-      height: 10
-      frontColor: e65555
-      backColor: a63d3d
-    }
-  }
   surge-alloy: {
-    speed: 16
-    damage: 650
-    sprite: exotic-mod-railbolt
-    pierce: true
-    pierceBuilding: true
-    pierceCap: 2
-    width: 12
-    height: 36
-    lifetime: 45
-    hitEffect: shootBig
-    despawnEffect: shootBig
-    shootEffect: shootBig
-    smokeEffect: shootBigSmoke
-    status: freezing
-    ammoMultiplier: 3
-    backColor: f2e879
-    frontColor: e8d174
+    type: RailBulletType
+    damage: 1500
+    length: 720
+    ammoMultiplier: 1
+    pierceDamageFactor: 0.35
+    updateEffect: {
+      type: ParticleEffect
+      lifetime: 35
+      particles: 1
+      length: 0
+      sizeFrom: 24
+      sizeTo: 0
+      colorFrom: f3e979
+      colorTo: f3e979
+      region: exotic-mod-diamond-wide
+    }
+    hitEffect: railHit
+    updateEffectSeg: 75
   }
   bluewolframite: {
-    speed: 16
-    damage: 1250
-    sprite: exotic-mod-railbolt
-    pierce: true
-    pierceBuilding: true
-    pierceCap: 4
-    width: 16
-    height: 48
-    lifetime: 45
-    hitEffect: flakExplosion
-    despawnEffect: flakExplosion
-    shootEffect: shootBig
-    smokeEffect: shootBigSmoke
-    ammoMultiplier: 2
-    frontColor: ffffff
-    backColor: 8ca4f5
+    type: RailBulletType
+    damage: 15400
+    length: 720
+    pierceDamageFactor: 0.25
+    updateEffect: {
+      type: ParticleEffect
+      lifetime: 35
+      particles: 1
+      length: 0
+      sizeFrom: 24
+      sizeTo: 0
+      colorFrom: 6f7fe8
+      colorTo: 6f7fe8
+      region: exotic-mod-diamond-wide
+    }
+    hitEffect: railHit
+    updateEffectSeg: 75
   }
 }
 requirements: [
