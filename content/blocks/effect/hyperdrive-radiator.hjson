@@ -1,0 +1,31 @@
+type: OverdriveProjector
+localizedName: Hyperdrive Radiator
+description: Projects a field capable of highly boosting structures. Requires material input and coolant to operate.
+size: 3
+health: 1554430
+range: 210
+speedBoost: 9.5
+baseColor: 993622
+category: effect
+requirements: [
+  lead/350
+  silicon/300
+  thorium/450
+  bluewolframite/250
+  cookienite-baked/150
+]
+consumes: {
+  power: 5
+  items: {
+    items: [
+      silicon/1
+      cookienite-baked/1
+      bluewolframite/1
+    ]
+  }
+  liquid: {
+    liquid: cryofluid
+    amount: 0.35
+  }
+}
+research: bluewolframite-overdrive-projector
