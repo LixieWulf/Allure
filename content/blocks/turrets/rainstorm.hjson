@@ -19,3 +19,4 @@ shootType: {
   tscales: [1, 0.8, 0.6, 0.4, 0.2, 0]
   strokes: [1.5, 1.25, 1, 0.75, 0.5, 0.25]
 }
+buildVisibility: sandboxOnly
