@@ -1,0 +1,21 @@
+type: LaserTurret
+name: Rainstorm
+descrption: Charges and fires a persistent multicoloured beam at hostile targets.
+size: 10
+health: 54330050
+range: 877
+reloadTime: 260
+shootCone: 25
+powerUse: 180
+shootDuration: 440
+shootType: {
+  type: ContinuousLaserBulletType
+  damage: 2576550
+  length: 877
+  width: 32
+  drawSize: 877
+  colors: [e6555525, ff9c5935, f2e87945, 84f59155, 8ca4f565, a488eb75]
+  lenscales: [1, 0.85, 0.65, 0.45, 0.25, 0.05]
+  tscales: [1, 0.8, 0.6, 0.4, 0.2, 0]
+  strokes: [1.5, 1.25, 1, 0.75, 0.5, 0.25]
+}
