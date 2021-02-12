@@ -4,7 +4,7 @@ descrption: Charges and fires a persistent multicoloured beam at hostile targets
 size: 10
 health: 54330050
 range: 877
-reloadTime: 260
+reloadTime: 160
 shootCone: 25
 powerUse: 180
 shootDuration: 440
@@ -20,3 +20,4 @@ shootType: {
   strokes: [1.5, 1.25, 1, 0.75, 0.5, 0.25]
 }
 buildVisibility: sandboxOnly
+category: turret
