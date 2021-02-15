@@ -33,7 +33,7 @@ ammoTypes: {
   slag: {
     type: liquidBulletType
     liquid: slag
-    lifetime: 7
+    lifetime: 70
     speed: 6
     knockback: 4
     puddleSize: 16
