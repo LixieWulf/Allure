@@ -12,8 +12,7 @@ health: 3800
 range: 160
 reloadTime: 480
 shootSound: quazar
-ambientSound: cosmos
-ambientSoundVolume: 2
+loopSound: cosmos
 powerUse: 1500
 rotateSpeed: 0.5
 shootCone: 10
