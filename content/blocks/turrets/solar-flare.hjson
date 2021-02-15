@@ -13,8 +13,7 @@ health: 3400
 range: 500
 reloadTime: 300
 shootSound: thesunisadeadlylaserlol
-ambientSound: flare
-ambientSoundVolume: 2
+loopSound: flare
 powerUse: 200
 rotateSpeed: 1
 shootCone: 10
