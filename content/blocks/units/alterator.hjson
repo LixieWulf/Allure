@@ -22,6 +22,7 @@ upgrades: [
   [spirit, ghost]
   [virus, pathogen]
   [reckless, endeavour]
+  [spark, ember]
 ]
 buildVisibility: sandboxOnly
 category: units
