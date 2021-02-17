@@ -11,6 +11,7 @@ mechFrontSway: 0.5
 weapons: [
   {
     name: spark-weapon
+    top: false
     recoil: 2
     shake: 10
     inaccuracy: 10
