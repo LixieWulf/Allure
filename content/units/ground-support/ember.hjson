@@ -13,7 +13,7 @@ singleTarget: true
 weapons: [
   {
     name: ember-weapon
-    x: 18
+    x: 16
     y: 0
     shootY: 12
     shots: 2
