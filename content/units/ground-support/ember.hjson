@@ -1,0 +1,49 @@
+type: mech
+name: Ember
+description: Heals nearby blocks with cannons and missiles. Able to build.
+health: 175600
+armor: 75
+speed: 1.2
+buildSpeed: 1.4
+rotateSpeed: 2.4
+commandLimit: 6
+weapons: [
+  {
+    name: ember-weapon
+    x: 32
+    y: 0
+    shots: 2
+    reload: 35
+    recoil: 4
+    top: false
+    bullet: {
+      damage: 0
+      speed: 7
+      lifetime: 25
+      pierce: true
+      pierceBuilding: true
+      pierceCap: 6
+      collidesTeam: true
+      healPercent: 16
+      frontColor: ffffff
+      backColor: 98ffa9
+    }
+  }
+  {
+    name: heal-weapon-mount
+    x: 8
+    y: -6
+    rotate: true
+    recoil: 3
+    reload: 15
+    bullet: {
+      type: MissileBulletType
+      damage: 0
+      speed: 5
+      lifetime: 30
+      collidesTeam: true
+      healPercent: 4
+      splashDamageRadius: 18
+    }
+  }
+]
