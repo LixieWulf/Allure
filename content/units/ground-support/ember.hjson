@@ -38,7 +38,7 @@ weapons: [
     }
   }
   {
-    name: reckless-weapon
+    name: heal-weapon-mount
     x: 9
     y: -4
     rotate: true
