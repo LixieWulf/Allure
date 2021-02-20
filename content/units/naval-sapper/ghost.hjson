@@ -6,7 +6,7 @@ accel: 0.5
 flying: false
 range: 200
 hitSize: 60
-health: 155660
+health: 67500
 armor: 45
 rotateSpeed: 3
 rotateShooting: false
@@ -22,7 +22,7 @@ weapons: [
   recoil: 2
   bullet: {
     type: SapBulletType
-    damage: 1550
+    damage: 750
     length: 400
     sapStrength: 0.85
     shootEffect: shootLiquid
@@ -44,7 +44,7 @@ weapons: [
   bullet: {
     type: ArtilleryBulletType
     speed: 4
-    splashDamage: 15530
+    splashDamage: 850
     splashDamageRadius: 55
     width: 18
     height: 24
@@ -57,11 +57,4 @@ weapons: [
   }
 }
 ]
-research: {
-  parent: spirit
-  requirements: [
-    silicon/76550
-    lead/76550
-    metaglass/45530
-  ]
-}
+research: spirit
