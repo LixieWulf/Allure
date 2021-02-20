@@ -15,7 +15,7 @@ weapons: [
     recoil: 2
     inaccuracy: 10
     shots: 10
-    x: 16
+    x: 10
     y: 0
     shootY: 8
     shootSound: flame
