@@ -2,7 +2,7 @@ type: Reconstructor
 name: Alterator
 description: Upgrades inputted units to their second tier.
 size: 8
-health: 15465540
+health: 45600
 constructTime: 13550
 liquidCapacity: 60
 consumes: {
@@ -10,7 +10,9 @@ consumes: {
     items: {
       items: [
         silicon/1550
-        amethyst-gem/750
+        thorium/1250
+        plastanium/1100
+        cookienite-baked/750
       ]
     }
   liquid: {
@@ -24,5 +26,12 @@ upgrades: [
   [reckless, endeavour]
   [spark, ember]
 ]
-buildVisibility: sandboxOnly
+requirements: [
+  lead/3500
+  silicon/2500
+  thorium/2250
+  plastanium/2000
+  surge-alloy/1000
+]
 category: units
+research: constructor
