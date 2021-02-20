@@ -13,6 +13,7 @@ consumes: {
         thorium/1250
         plastanium/1100
         cookienite-baked/750
+        amethyst-gem/650
       ]
     }
   liquid: {
