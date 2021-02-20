@@ -65,3 +65,18 @@ weapons: [
     }
   }
 ]
+abilities: [
+  {
+    type: "mindustry.entities.abilities.RepairFieldAbility"
+    range: 160
+    amount: 250
+    reload: 30
+  }
+  {
+    type: "mindustry.entities.abilities.ForceFieldAbility"
+    radius: 160
+    regen: 10
+    max: 15500
+    cooldown: 120
+  }
+]
