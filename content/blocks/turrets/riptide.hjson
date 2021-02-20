@@ -117,5 +117,4 @@ ammoTypes: {
 }
 category: turret
 research: tsunami
-requirements: [
-   ]
+buildVisibility: sandboxOnly
