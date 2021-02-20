@@ -12,8 +12,7 @@ Authors:
 ---
 
 We got together over Discord to bring you this interesting and overpowered mod. We hope you enjoy it!
-Exotic is progressing to alpha, BlueWolf has FINALLY completed adding most blocks, and units are up next on the bucket list. 
-Current changes: still respriting and UNITS!
+The first 6.0 release is here. Much of the content is unfinished or needs refining. 
 
 ---
 
