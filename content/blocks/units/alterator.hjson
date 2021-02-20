@@ -13,7 +13,6 @@ consumes: {
         thorium/1250
         plastanium/1100
         cookienite-baked/750
-        amethyst-gem/650
       ]
     }
   liquid: {
@@ -33,6 +32,7 @@ requirements: [
   thorium/2250
   plastanium/2000
   surge-alloy/1000
+  amethyst-gem/950
 ]
 category: units
 research: constructor
