@@ -2,12 +2,13 @@ type: flying
 localizedName: Virus
 description: A basic chassis and thruster pack with high explosives strapped on the bottom.
 hitSize: 18
-health: 9150
+health: 1150
 range: 32
 speed: 5
 rotateSpeed: 60
 baseRotateSpeed: 60
 flying: true
+circleTarget: true
 drag: 0.01
 accel: 0.05
 rotateSpeed: 3
@@ -28,7 +29,7 @@ weapons: [
   bullet: {
     type: BombBulletType
     lifetime: 0
-    splashDamage: 25400
+    splashDamage: 650
     splashDamageRadius: 180
     killShooter: true
     hittable: false

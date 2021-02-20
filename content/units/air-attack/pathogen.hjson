@@ -4,8 +4,8 @@ description: Drops large bombs and fires clusters of missiles at hostile targets
 flying: true
 lowAltitude: true
 rotateSpeed: 2.5
-health: 135400
-armor: 55
+health: 56400
+armor: 25
 hitSize: 73
 speed: 1.4
 accel: 0.05
@@ -28,7 +28,7 @@ weapons: [
   shootSound: plasmadrop
   bullet: {
     type: BombBulletType
-    splashDamage: 11550
+    splashDamage: 870
     splashDamageRadius: 75
     width: 12
     height: 18
@@ -76,7 +76,7 @@ weapons: [
   ejectEffect: none
   bullet: {
     type: BombBulletType
-    splashDamage: 11550
+    splashDamage: 870
     splashDamageRadius: 75
     width: 12
     height: 18
