@@ -1,6 +1,7 @@
 type: flying
 localizedName: Shockwave
-description: The Core: Requiem's unit. Builds structures quickly and is armed with a powerful shotgun.
+description: Guardian of the Requiem core. Builds structures quickly and defends the core with a powerful shotgun.
+controller: BuilderAI
 health: 15460
 speed: 5
 armor: 15

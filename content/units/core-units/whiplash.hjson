@@ -1,6 +1,7 @@
 type: flying
 localizedName: Whiplash
-description: A moderately powerful unit. Boasts a small railgun.
+description: Guardian of the Nexus core. Builds structures moderately quickly and defends the core with a small railgun.
+controller: BuilderAI
 flying: true
 speed: 4.4
 drag: 0.1
@@ -47,6 +48,8 @@ weapons: [
         sizeFrom: 16
         sizeTo: 0
         length: 0
+        colorFrom: ffd37f
+        colorTo: ffd37f
         region: exotic-mod-diamond-wide
       }
       hitEffect: railHit
