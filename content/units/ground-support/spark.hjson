@@ -13,19 +13,18 @@ weapons: [
     name: spark-weapon
     top: false
     recoil: 2
-    shake: 10
     inaccuracy: 10
     shots: 10
-    x: 8
+    x: 16
     y: 0
     shootY: 8
-    shootSound: lasershoot
+    shootSound: flame
     ejectEffect: none
     reload: 15
     bullet: {
       damage: 0
-      speed: 8
-      lifetime: 5
+      speed: 4
+      lifetime: 15
       width: 0.01
       height: 0.01
       collidesTeam: true
