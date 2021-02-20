@@ -17,15 +17,15 @@ weapons: [
     inaccuracy: 10
     shots: 10
     x: 8
-    y: 2.5
-    shotDelay: 3
+    y: 0
+    shootY: 8
     shootSound: lasershoot
     ejectEffect: none
     reload: 15
     bullet: {
       damage: 0
       speed: 8
-      lifetime: 15
+      lifetime: 5
       width: 0.01
       height: 0.01
       collidesTeam: true
