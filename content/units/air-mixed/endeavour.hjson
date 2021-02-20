@@ -1,8 +1,9 @@
 type: flying
 localizedName: Endeavour
 description: A multipurpose unit that can heal buildings and destroy hostiles with a laser cannon.
+controller: BuilderAI
 flying: true
-health: 165440
+health: 54300
 armor: 40
 hitSize: 60
 speed: 1.5
@@ -31,7 +32,7 @@ weapons: [
     chargeSound: lasercharge2
     bullet: {
       type: LaserBulletType
-      damage: 4550
+      damage: 1200
       length: 500
       width: 55
       lifetime: 60
@@ -84,7 +85,7 @@ weapons: [
     shootSound: lasershoot
     bullet: {
       type: LaserBoltBulletType
-      damage: 650
+      damage: 340
       speed: 6
       lifetime: 45
       collidesTeam: true
@@ -134,7 +135,7 @@ weapons: [
     shootSound: lasershoot
     bullet: {
       type: LaserBoltBulletType
-      damage: 650
+      damage: 340
       speed: 6
       lifetime: 45
       collidesTeam: true
@@ -184,7 +185,7 @@ weapons: [
     shootSound: lasershoot
     bullet: {
       type: LaserBoltBulletType
-      damage: 650
+      damage: 340
       speed: 6
       lifetime: 45
       collidesTeam: true
@@ -234,7 +235,7 @@ weapons: [
     shootSound: lasershoot
     bullet: {
       type: LaserBoltBulletType
-      damage: 650
+      damage: 340
       speed: 6
       lifetime: 45
       collidesTeam: true
