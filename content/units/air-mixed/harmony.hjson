@@ -1,0 +1,28 @@
+type: payload
+localizedName: Harmony
+description: Spawns fortress units and heals buildings with laser cannons. Protects itself with a powerful railgun.
+flying: true
+hitSize: 45
+health: 175000
+armor: 45
+speed: 1.4
+accel: 0.03
+drag: 0.004
+lowAltitude: true
+weapons: [
+  {
+    name: harmony-laser
+    x: 4
+    y: 32
+    recoil: 6
+    reload: 40
+    top: false
+    bullet: {
+      type: LaserBulletType
+      damage: 1840
+      lifetime: 35
+      width: 16
+      length: 250
+    }
+  }
+]
