@@ -9,6 +9,7 @@ speed: 1.4
 accel: 0.03
 drag: 0.004
 lowAltitude: true
+payloadCapacity: 2622
 weapons: [
   {
     name: harmony-laser
