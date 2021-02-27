@@ -1,29 +1,90 @@
 type: payload
 localizedName: Harmony
 description: Spawns fortress units and heals buildings with laser cannons. Protects itself with a powerful railgun.
+controller: BuilderAI
+buildSpeed: 6.1
 flying: true
-hitSize: 45
+hitSize: 68
 health: 175000
 armor: 45
-speed: 1.4
+speed: 1.1
+rotateSpeed: 0.85
 accel: 0.03
-drag: 0.004
+drag: 0.05
 lowAltitude: true
 payloadCapacity: 2622
+engineOffset: 44
+engineSize: 10
 weapons: [
   {
     name: harmony-laser
-    x: 4
+    x: 11
     y: 32
-    recoil: 6
+    recoil: 3
     reload: 40
     top: false
+    shootSound: laser
     bullet: {
       type: LaserBulletType
       damage: 1840
       lifetime: 35
       width: 16
       length: 250
+      collidesTeam: true
+      healPercent: 10
+    }
+  }
+  {
+    name: harmony-weapon
+    x: 0
+    y: 0
+    recoil: 6
+    reload: 140
+    rotate: true
+    rotateSpeed: 2.5
+    shootY: 16
+    mirror: false
+    shootSound: railgun
+    bullet: {
+      type: RailBulletType
+      damage: 5980
+      length: 650
+      pierceDamageFactor: 0.35
+      shootEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            sizeFrom: 50
+            lifetime: 35
+            colorFrom: 8ca4f5
+            colorTo: 8ca4f5
+            region: exotic-mod-diamond-thin
+          }
+          {
+            type: WaveEffect
+            lifetime: 20
+            sizeTo: 25
+            colorFrom: 8ca4f5
+            colorTo: 8ca4f5
+            strokeFrom: 6
+            strokeTo: 0
+          }
+        ]
+      }
+      updateEffect: {
+        type: ParticleEffect
+        particles: 1
+        length: 0
+        sizeFrom: 20
+        lifetime: 35
+        colorFrom: 8ca4f5
+        colorTo: 8ca4f5
+        region: exotic-mod-diamond-wide
+      }
+      updateEffectSeg: 75
     }
   }
 ]
