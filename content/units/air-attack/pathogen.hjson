@@ -126,10 +126,10 @@ weapons: [
   shootSound: missile
   bullet: {
     type: MissileBulletType
-    damage: 2870
+    damage: 280
     speed: 5
     lifetime: 60
-    splashDamage: 1850
+    splashDamage: 150
     splashDamageRadius: 25
     frontColor: e65555
     backColor: a63d3d
