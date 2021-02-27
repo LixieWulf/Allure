@@ -20,6 +20,7 @@ weapons: [
     name: harmony-laser
     x: 11
     y: 32
+    shootY: 8
     recoil: 3
     reload: 40
     top: false
@@ -65,7 +66,7 @@ weapons: [
           }
           {
             type: WaveEffect
-            lifetime: 20
+            lifetime: 12
             sizeTo: 25
             colorFrom: 8ca4f5
             colorTo: 8ca4f5
