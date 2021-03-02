@@ -73,6 +73,6 @@ abilities: [
     amount: 100
     max: 250
     reload: 150
-    radius: 45
+    range: 45
   }
 ]
