@@ -1,0 +1,43 @@
+type: naval
+name: Wraith
+description: Steals health from hostile targets while bombarding them with multiple artillery turrets. Slowly heals nearby friendly units.
+hitSize: 65
+health: 196000
+armor: 70
+speed: 1.4
+rotateSpeed: 0.65
+weapons: [
+  {
+    name: spirit-weapon
+    x: 48
+    y: 24
+    rotate: true
+    recoil: 3
+    reload: 15
+    shootSound: sap
+    ejectEffect: none
+    bullet: {
+      type: SapBulletType
+      damage: 750
+      length: 300
+      sapStrength: 0.45
+      shootEffect: shootLiquid
+      hitEffect: hitLiquid
+      color: bf92f9
+      knockback: -7
+    }
+  }
+]
+abilities: [
+  {
+    type: StatusFieldAbility
+    duration: 300
+    reload: 300
+    range: 160
+    effect: {
+      name: sap-heal
+      damage: -3
+      effect: wet
+    }
+  }
+]
