@@ -52,7 +52,7 @@ abilities: [
     type: "mindustry.entities.abilities.RepairFieldAbility"
     amount: 150
     reload: 90
-    radius: 45
+    range: 45
   }
 ]
 research: constructor
