@@ -28,7 +28,7 @@ weapons: [
     ejectEffect: none
     bullet: {
       type: SapBulletType
-      damage: 450
+      damage: 65
       length: 250
       sapStrength: 0.55
       shootEffect: shootLiquid
