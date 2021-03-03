@@ -27,12 +27,12 @@ weapons: [
     shootSound: laser
     bullet: {
       type: LaserBulletType
-      damage: 1840
+      damage: 450
       lifetime: 35
       width: 16
       length: 250
       collidesTeam: true
-      healPercent: 10
+      healPercent: 17
     }
   }
   {
@@ -48,7 +48,7 @@ weapons: [
     shootSound: railgun
     bullet: {
       type: RailBulletType
-      damage: 5980
+      damage: 7800
       length: 650
       pierceDamageFactor: 0.35
       shootEffect: {
