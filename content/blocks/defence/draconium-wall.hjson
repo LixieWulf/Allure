@@ -1,10 +1,15 @@
 localizedName: Draconium Wall
-description: The second most durable wall. It has the capability to deflect bullets.
+description: Insulates against lightning and lasers. Deflects bullets with a phase coating.
 type: Wall
-health:  2652250
+health: 2100
 size: 1
+chanceDeflect: 850
+insulated: true
+absorbLasers: true
+schematicPriority: 10
 requirements: [
-  draconium/6
+  draconium/9
+  phase-fabric/3
 ]
 category: defense
 research: bluewolframite-wall-huge
