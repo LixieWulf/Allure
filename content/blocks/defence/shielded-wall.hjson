@@ -1,10 +1,10 @@
 type: ForceProjector
 localizedName: Shielded Wall
 description: "A durable wall that emits a small, strong force field. Requires power to operate."
-health: 1550025
+health: 4600
 size: 2
 radius: 20
-shieldHealth: 344560
+shieldHealth: 11000
 cooldownNormal: 48.5
 consumes: {
   power: 1.75
