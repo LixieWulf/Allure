@@ -3,7 +3,7 @@ description: Insulates against lightning and lasers. Deflects bullets with a pha
 type: Wall
 health: 2100
 size: 1
-chanceDeflect: 850
+chanceDeflect: 870
 insulated: true
 absorbLasers: true
 schematicPriority: 10
