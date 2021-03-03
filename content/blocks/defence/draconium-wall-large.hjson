@@ -9,7 +9,7 @@ chanceDeflect: 870
 schematicPriority: 10
 requirements: [
   draconium/36
-  phase-frabric/12
+  phase-fabric/12
 ]
 category: defense
 research: draconium-wall
