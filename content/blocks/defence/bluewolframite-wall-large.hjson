@@ -1,10 +1,11 @@
 type: Wall
 localizedName: Large Bluewolframite Wall
 description: "An extremely durable defensive block, capable of releasing electric arcs at a high rate upon taking damage as well as reflecting bullets with a strong magnetic field. \nSpans a few tiles."
-chanceDeflect: 48000
-health: 6210200
+chanceDeflect: 550
+health: 15000
 size: 2
-lightningChance: 1.0
+lightningChance: 0.15
+lightningDamage: 450
 requirements: [
   bluewolframite/32
   ]
