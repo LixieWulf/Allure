@@ -1,14 +1,14 @@
 localizedName: Huge Draconium Wall
-description:
-  '''
-  The most durable wall of Draconium. It has the capability to deflect bullets.
-  Spans multiple tiles.
-  '''
+description: "Insulates against lightning and lasers. Deflects bullets with a phase coating.\nSpans a large amount of tiles."
 type: Wall
-health: 15972950
+health: 18900
 size: 3
+insulated: true
+absorbLasers: true
+schematicPriority: 10
 requirements: [
-  draconium/100
+  draconium/81
+  phase-fabric/27
 ]
 category: defense
 research: draconium-wall-large
