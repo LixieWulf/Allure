@@ -5,6 +5,7 @@ health: 18900
 size: 3
 insulated: true
 absorbLasers: true
+chanceDeflect: 870
 schematicPriority: 10
 requirements: [
   draconium/81
