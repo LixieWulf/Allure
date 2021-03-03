@@ -1,12 +1,11 @@
 type: Wall
 localizedName: Large Shadow Wall
-description: "Made out of the unique element known as shadow. The strongest wall. Insulates arcs and reflects bullets fired. \nSpans multiple tiles."
+description: "A nearly indestructible defensive block, reinforced with bluewolframite.\nSpans multiple tiles."
 size: 2
-health: 9720400
-insulated: true
-lightningChance: 1
+health: 34160
 requirements: [
-  shadow/25
+  shadow/48
+  bluewolframite/24
   ]
 category: defense
 research: shadow-wall
