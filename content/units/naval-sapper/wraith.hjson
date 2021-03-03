@@ -20,7 +20,7 @@ weapons: [
       type: SapBulletType
       damage: 200
       length: 300
-      sapStrength: 0.45
+      sapStrength: 0.5
       shootEffect: shootLiquid
       hitEffect: hitLiquid
       color: bf92f9
@@ -40,7 +40,7 @@ weapons: [
       type: SapBulletType
       damage: 650
       length: 300
-      sapStrength: 0.45
+      sapStrength: 0.85
       shootEffect: shootLiquid
       hitEffect: hitLiquid
       color: bf92f9
