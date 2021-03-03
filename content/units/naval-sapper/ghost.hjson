@@ -15,16 +15,16 @@ weapons: [
   name: spirit-weapon
   x: 5
   y: 7
-  reload: 10
+  reload: 5
   rotate: true
   ejectEffect: none
   shootSound: sap
   recoil: 2
   bullet: {
     type: SapBulletType
-    damage: 750
+    damage: 110
     length: 400
-    sapStrength: 0.85
+    sapStrength: 0.45
     shootEffect: shootLiquid
     knockback: -5
     color: bf92f9
