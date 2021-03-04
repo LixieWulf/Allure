@@ -61,9 +61,9 @@ weapons: [
     shootSound: artillery
     bullet: {
       type: ArtilleryBulletType
+      damage: 1100
       speed: 4.5
       lifetime: 120
-      keepVelocity: false
       splashDamage: 450
       splashDamageRadius: 96
       width: 35
