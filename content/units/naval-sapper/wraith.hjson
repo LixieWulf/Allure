@@ -6,6 +6,7 @@ health: 196000
 armor: 70
 speed: 1.4
 rotateSpeed: 1.4
+rotateShooting: false
 weapons: [
   {
     name: spirit-weapon
