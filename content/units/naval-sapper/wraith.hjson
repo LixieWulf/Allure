@@ -47,6 +47,50 @@ weapons: [
       knockback: -7
     }
   }
+  {
+    name: wraith-cannon
+    x: 0
+    y: -6
+    rotate: true
+    rotateSpeed: 1.5
+    mirror: false
+    reload: 120
+    recoil: 4
+    shootY: 24
+    shootCone: 5
+    shootSound: artillery
+    bullet: {
+      type: ArtilleryBulletType
+      speed: 4.5
+      lifetime: 120
+      keepVelocity: false
+      splashDamage: 450
+      splashDamageRadius: 96
+      width: 35
+      height: 35
+      frontColor: bf92f9
+      backColor: 6d56bf
+      despawnEffect: sapExplosion
+      fragLifeMin: 0.2
+      fragBullets: 12
+      fragCone: 35
+      fragBullet: {
+        type: ArtilleryBulletType
+        lifetime: 100
+        speed: 3
+        keepVelocity: false
+        collides: true
+        collidesTiles: true
+        width: 20
+        height: 20
+        frontColor: bf92f9
+        backColor: 6d56bf
+        splashDamage: 180
+        splashDamageRadius: 46
+        despawnEffect: sapExplosion
+      }
+    }
+  }
 ]
 abilities: [
   {
