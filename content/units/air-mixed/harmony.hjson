@@ -89,3 +89,19 @@ weapons: [
     }
   }
 ]
+abilities: [
+  {
+    type: UnitSpawnAbility
+    unit: fortress
+    spawnX: 30
+    spawnY: 0
+    spawnTime: 1440
+  }
+  {
+    type: UnitSpawnAbility
+    unit: fortress
+    spawnX: -30
+    spawnY: 0
+    spawnTime: 1440
+  }
+]
