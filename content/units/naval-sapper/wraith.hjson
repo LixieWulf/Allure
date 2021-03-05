@@ -49,13 +49,38 @@ weapons: [
     }
   }
   {
+    name: wraith-weapon
+    x: 17
+    y: -32
+    rotate: true
+    rotateSpeed: 2.4
+    reload: 25
+    recoil: 2
+    shootY: 8
+    shootSound: artillery
+    bullet: {
+      type: ArtilleryBulletType
+      splashDamage: 240
+      splashDamageRadius: 28
+      collides: true
+      collidesTiles: true
+      lifetime: 65
+      speed: 3.2
+      width: 18
+      height: 18
+      frontColor: bf92f9
+      backColor: 6d56bf
+      despawnEffect: sapExplosion
+    }
+  }
+  {
     name: wraith-cannon
     x: 0
     y: -6
     rotate: true
     rotateSpeed: 1.5
     mirror: false
-    reload: 120
+    reload: 175
     recoil: 4
     shootY: 24
     shootCone: 5
@@ -64,7 +89,7 @@ weapons: [
       type: ArtilleryBulletType
       damage: 1100
       speed: 4.5
-      lifetime: 120
+      lifetime: 78
       splashDamage: 450
       splashDamageRadius: 96
       width: 35
