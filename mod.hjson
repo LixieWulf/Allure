@@ -11,4 +11,4 @@ description:
     Units are being added, and with the release of 125.1, abilities and cleanup are also here.
   '''
 version: 0.05 Alpha
-minGameVersion: 125.1
+minGameVersion: 126
