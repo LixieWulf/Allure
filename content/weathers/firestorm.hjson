@@ -1,4 +1,3 @@
-type: ParticleWeather
 color: ffdd55
 particleRegion: particle
 sizeMax: 15
