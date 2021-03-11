@@ -1,0 +1,15 @@
+localizedName: Epicenter
+description: Fires a single shot that implodes, then explodes on hit.
+type: ItemTurret
+reloadTime: 190
+recoilAmount: 3
+shootCone: 30
+range: 400
+size: 4
+targetAir: true
+targetGround: true
+shootSound: bang
+ammoTypes: {
+  bluewolframite: standardThoriumBig
+}
+buildVisibility: sandboxOnly
