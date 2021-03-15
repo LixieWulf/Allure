@@ -1,0 +1,14 @@
+type: flying
+localizedName: Disease
+description: A large bomber that attacks hostile targets with four short range laser weapons. Generates lightning while moving.
+flying: true
+health: 165000
+armor: 75
+speed: 1.8
+drag: 0.001
+accel: 0.01
+hitSize: 64
+engineOffset: 32
+engineSize: 10
+rotateShooting: false
+weapons: []
