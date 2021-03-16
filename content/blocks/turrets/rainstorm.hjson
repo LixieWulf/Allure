@@ -5,11 +5,11 @@ details: Does not work properly with bloom enabled.
 size: 10
 health: 54330050
 range: 877
-reloadTime: 180
+reloadTime: 45
 shootCone: 25
 rotateSpeed: 1.5
 powerUse: 18500
-shootDuration: 250
+shootDuration: 300
 chargeTime: 120
 chargeBeginEffect: {
   type: MultiEffect
@@ -200,7 +200,91 @@ shootType: {
   drawSize: 877
   colors: [e6555525, ff9c5935, f2e87945, 84f59155, 8ca4f565, a488eb75]
   strokes: [1.5, 1.25, 1, 0.75, 0.5, 0.25]
+  hitEffect: {
+    type: MultiEffect
+    effects: [
+      {
+        type: ParticleEffect
+        particles: 1
+        line: true
+        length: 12
+        lifetime: 5
+        strokeFrom: 1
+        strokeTo: 1
+        lenFrom: 5
+        lenTo: 5
+        colorFrom: e65555
+        colorTo: e65555
+      }
+      {
+        type: ParticleEffect
+        particles: 1
+        line: true
+        length: 12
+        lifetime: 5
+        strokeFrom: 1
+        strokeTo: 1
+        lenFrom: 5
+        lenTo: 5
+        colorFrom: ff9c59
+        colorTo: ff9c59
+      }
+      {
+        type: ParticleEffect
+        particles: 1
+        line: true
+        length: 12
+        lifetime: 5
+        strokeFrom: 1
+        strokeTo: 1
+        lenFrom: 5
+        lenTo: 5
+        colorFrom: f2e879
+        colorTo: f2e879
+      }
+      {
+        type: ParticleEffect
+        particles: 1
+        line: true
+        length: 12
+        lifetime: 5
+        strokeFrom: 1
+        strokeTo: 1
+        lenFrom: 5
+        lenTo: 5
+        colorFrom: 84f591
+        colorTo: 84f591
+      }
+      {
+        type: ParticleEffect
+        particles: 1
+        line: true
+        length: 12
+        lifetime: 5
+        strokeFrom: 1
+        strokeTo: 1
+        lenFrom: 5
+        lenTo: 5
+        colorFrom: 8ca4f5
+        colorTo: 8ca4f5
+      }
+      {
+        type: ParticleEffect
+        particles: 1
+        line: true
+        length: 12
+        lifetime: 5
+        strokeFrom: 1
+        strokeTo: 1
+        lenFrom: 5
+        lenTo: 5
+        colorFrom: a488eb
+        colorTo: a488eb
+      }
+    ]
+  }
 }
+coolantMultiplier: 3.2
 liquidCapacity: 3500
 buildVisibility: sandboxOnly
 category: turret
