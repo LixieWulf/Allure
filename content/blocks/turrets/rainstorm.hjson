@@ -3,12 +3,12 @@ name: Rainstorm
 description: Charges and fires a persistent multicoloured beam at hostile targets.
 details: Does not work properly with bloom enabled.
 size: 10
-health: 54330050
+health: 228000
 range: 877
 reloadTime: 45
 shootCone: 25
 rotateSpeed: 1.5
-powerUse: 18500
+powerUse: 12500
 shootDuration: 300
 chargeTime: 120
 chargeBeginEffect: {
@@ -194,7 +194,7 @@ chargeBeginEffect: {
 chargeEffect: none
 shootType: {
   type: ContinuousLaserBulletType
-  damage: 52576550
+  damage: 11000
   length: 877
   width: 32
   drawSize: 877
@@ -207,12 +207,12 @@ shootType: {
         type: ParticleEffect
         particles: 1
         line: true
-        length: 12
+        length: 24
         lifetime: 5
-        strokeFrom: 1
-        strokeTo: 1
-        lenFrom: 5
-        lenTo: 5
+        strokeFrom: 2
+        strokeTo: 2
+        lenFrom: 10
+        lenTo: 10
         colorFrom: e65555
         colorTo: e65555
       }
@@ -220,12 +220,12 @@ shootType: {
         type: ParticleEffect
         particles: 1
         line: true
-        length: 12
+        length: 24
         lifetime: 5
-        strokeFrom: 1
-        strokeTo: 1
-        lenFrom: 5
-        lenTo: 5
+        strokeFrom: 2
+        strokeTo: 2
+        lenFrom: 10
+        lenTo: 10
         colorFrom: ff9c59
         colorTo: ff9c59
       }
@@ -233,12 +233,12 @@ shootType: {
         type: ParticleEffect
         particles: 1
         line: true
-        length: 12
+        length: 24
         lifetime: 5
-        strokeFrom: 1
-        strokeTo: 1
-        lenFrom: 5
-        lenTo: 5
+        strokeFrom: 2
+        strokeTo: 2
+        lenFrom: 10
+        lenTo: 10
         colorFrom: f2e879
         colorTo: f2e879
       }
@@ -246,12 +246,12 @@ shootType: {
         type: ParticleEffect
         particles: 1
         line: true
-        length: 12
+        length: 24
         lifetime: 5
-        strokeFrom: 1
-        strokeTo: 1
-        lenFrom: 5
-        lenTo: 5
+        strokeFrom: 2
+        strokeTo: 2
+        lenFrom: 10
+        lenTo: 10
         colorFrom: 84f591
         colorTo: 84f591
       }
@@ -259,12 +259,12 @@ shootType: {
         type: ParticleEffect
         particles: 1
         line: true
-        length: 12
+        length: 24
         lifetime: 5
-        strokeFrom: 1
-        strokeTo: 1
-        lenFrom: 5
-        lenTo: 5
+        strokeFrom: 2
+        strokeTo: 2
+        lenFrom: 10
+        lenTo: 10
         colorFrom: 8ca4f5
         colorTo: 8ca4f5
       }
@@ -272,19 +272,19 @@ shootType: {
         type: ParticleEffect
         particles: 1
         line: true
-        length: 12
+        length: 24
         lifetime: 5
-        strokeFrom: 1
-        strokeTo: 1
-        lenFrom: 5
-        lenTo: 5
+        strokeFrom: 2
+        strokeTo: 2
+        lenFrom: 10
+        lenTo: 10
         colorFrom: a488eb
         colorTo: a488eb
       }
     ]
   }
 }
-coolantMultiplier: 3.2
+coolantMultiplier: 6.5
 liquidCapacity: 3500
 buildVisibility: sandboxOnly
 category: turret
