@@ -8,7 +8,7 @@ range: 877
 reloadTime: 45
 shootCone: 25
 rotateSpeed: 1.5
-powerUse: 12500
+powerUse: 4500
 shootDuration: 300
 chargeTime: 120
 heatColor: ffffff
@@ -287,5 +287,17 @@ shootType: {
 }
 coolantMultiplier: 6.5
 liquidCapacity: 3500
-buildVisibility: sandboxOnly
+requirements: [
+  copper/55000
+  lead/65000
+  graphite/35000
+  silicon/40000
+  titanium/30000
+  thorium/25000
+  surge-alloy/10000
+  phase-fabric/12000
+  amethyst-gem/9500
+  bluewolframite/8500
+  shadow/2500
+]
 category: turret
