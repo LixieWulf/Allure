@@ -11,6 +11,7 @@ rotateSpeed: 1.5
 powerUse: 12500
 shootDuration: 300
 chargeTime: 120
+heatColor: ffffff
 chargeBeginEffect: {
   type: MultiEffect
   lifetime: 120
