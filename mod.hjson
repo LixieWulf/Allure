@@ -13,4 +13,4 @@ description:
   Note: Reconstructors will break the game's UI because of the resource costs, there isn't anything I (BlueWolf) can do about it.
   '''
 version: 0.05 Alpha
-minGameVersion: 126.1
+minGameVersion: 126.2
