@@ -1,20 +1,31 @@
 type: ParticleWeather
+useWindVector: true
 particleRegion: exotic-mod-line
 color: 73d187
 drawNoise: true
 noiseColor: 61ad7e
 sizeMin: 10
 sizeMax: 40
-minAlpha: 0.2
-maxAlpha: 0.5
+minAlpha: 0
+maxAlpha: 0.05
 sound: wind
-soundVol: 0.65
+soundVol: 0.25
+baseSpeed: 1.4
 status: {
   name: healing-wind
   damage: -4
   healthMultiplier: 1.4
   damageMultiplier: 0.7
   speedMultiplier: 1.2
-  effect: hitLaser
-  effectChance: 0.009
+  effect: {
+    type: WaveEffect
+    lifetime: 10
+    sizeFrom: 5
+    sizeTo: 0
+    strokeFrom: 1
+    strokeTo: 0
+    colorFrom: 73d187
+    colorTo: 73d187
+  }
+  effectChance: 0.05
 }
