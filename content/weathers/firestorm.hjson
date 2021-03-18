@@ -9,6 +9,9 @@ status: burning
 useWindVector: true
 drawNoise: true
 opacityMultiplier: 0.75
+baseSpeed: 6.1
+sound: fire
+soundVol: 0.65
 force: 0.5
 attrs: {
   heat: 1.4
