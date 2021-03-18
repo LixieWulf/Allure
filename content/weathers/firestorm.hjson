@@ -1,7 +1,8 @@
 type: ParticleWeather
-color: ffdd55
+color: ffbb44
+noiseColor: 5e1a00
 particleRegion: particle
-sizeMax: 15
+sizeMax: 25
 sizeMin: 1
 density: 3000
 status: burning
@@ -9,3 +10,8 @@ useWindVector: true
 drawNoise: true
 opacityMultiplier: 0.75
 force: 0.5
+attrs: {
+  heat: 1.4
+  water: -0.5
+  spores: -0.9
+}
