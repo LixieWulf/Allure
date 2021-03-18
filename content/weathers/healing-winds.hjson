@@ -13,6 +13,7 @@ soundVol: 0.25
 baseSpeed: 1.4
 status: {
   name: healing-wind
+  localizedName: Healing Wind
   color: 73d187
   damage: -4
   healthMultiplier: 1.4
