@@ -1,0 +1,20 @@
+type: ParticleWeather
+particleRegion: exotic-mod-line
+color: 73d187
+drawNoise: true
+noiseColor: 61ad7e
+sizeMin: 10
+sizeMax: 40
+minAlpha: 0.2
+maxAlpha: 0.5
+sound: wind
+soundVol: 0.65
+status: {
+  name: healing-wind
+  damage: -4
+  healthMultiplier: 1.4
+  damageMultiplier: 0.7
+  speedMultiplier: 1.2
+  effect: hitLaser
+  effectChance: 0.009
+}
