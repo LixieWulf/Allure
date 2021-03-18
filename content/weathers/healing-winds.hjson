@@ -19,6 +19,7 @@ status: {
   speedMultiplier: 1.2
   effect: {
     type: WaveEffect
+    color: 73d187
     lifetime: 10
     sizeFrom: 5
     sizeTo: 0
