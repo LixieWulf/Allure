@@ -13,13 +13,13 @@ soundVol: 0.25
 baseSpeed: 1.4
 status: {
   name: healing-wind
+  color: 73d187
   damage: -4
   healthMultiplier: 1.4
   damageMultiplier: 0.7
   speedMultiplier: 1.2
   effect: {
     type: WaveEffect
-    color: 73d187
     lifetime: 10
     sizeFrom: 5
     sizeTo: 0
