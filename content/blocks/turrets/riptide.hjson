@@ -1,7 +1,8 @@
 type: LiquidTurret
 localizedName: "Riptide"
 description: Sprays liquids at enemies at a much higher rate than a tsunami. 
-health: 13544600
+health: 15000
+rotateSpeed: 5
 targetAir: true
 targetGround: true
 size: 6
