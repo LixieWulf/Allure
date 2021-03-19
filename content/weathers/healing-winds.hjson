@@ -1,28 +1,30 @@
 type: ParticleWeather
 useWindVector: true
-particleRegion: exotic-mod-line
+particleRegion: circle
+opacityMultiplier: 0.3
 color: 73d187
 drawNoise: true
 noiseColor: 61ad7e
-sizeMin: 10
-sizeMax: 40
+sizeMin: 5
+sizeMax: 20
 minAlpha: 0
-maxAlpha: 0.05
+maxAlpha: 0.5
 sound: wind
 soundVol: 0.25
 baseSpeed: 1.4
+density: 4500
 status: {
   name: healing-wind
   localizedName: Healing Wind
   color: 73d187
   damage: -4
-  healthMultiplier: 1.4
-  damageMultiplier: 0.7
-  speedMultiplier: 1.2
+  healthMultiplier: 1.6
+  damageMultiplier: 0.35
+  speedMultiplier: 1.35
   effect: {
     type: WaveEffect
-    lifetime: 10
-    sizeFrom: 5
+    lifetime: 12
+    sizeFrom: 2
     sizeTo: 0
     strokeFrom: 1
     strokeTo: 0
