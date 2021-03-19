@@ -2,14 +2,14 @@ type: Pump
 localizedName: Bluewolframite Pump
 description: "A massive electromagnetic pump. Can pump enough fluid to feed entire colonies. Heavily armored. \nDoubles as a tank."
 size: 5
-health: 5626180
+health: 3600
 hasPower: true
 consumes: {
-  power: 4.4
+  power: 5.1
 }
-pumpAmount: 22.8
+pumpAmount: 12.4
 squareSprite: false
-liquidCapacity: 15350
+liquidCapacity: 25000
 requirements: [
   copper/2400
   lead/3450
