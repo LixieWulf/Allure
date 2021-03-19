@@ -1,7 +1,6 @@
 type: ThermalGenerator
 name: Geothermal Differentiator
 description: A highly upgraded thermal generator. Uses amethyst to generate a massive differential effect for power.
-health: 4655600
 size: 4
 powerProduction: 44.6
 generateEffect: redgeneratespark
