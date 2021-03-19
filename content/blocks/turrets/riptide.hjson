@@ -101,6 +101,7 @@ ammoTypes: {
     statusDuration: 600
     status: {
       name: vapourizing3
+      localizedName: Vapourizing
       damage: 150
       speedMultiplier: 0.85
       effectChance: 0.075
