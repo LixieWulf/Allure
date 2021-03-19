@@ -40,12 +40,6 @@ shootType: {
   incendSpread: 16
   incendAmount: 64
   makeFire: true
-  status: {
-    name: the-sun-is-a-deadly-laser
-    damage: 40000
-    effect: burning
-    healthMultiplier: 0.1
-  }
 }
 category: turret
 research: meltdown
