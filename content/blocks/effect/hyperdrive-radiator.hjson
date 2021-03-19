@@ -2,7 +2,7 @@ type: OverdriveProjector
 localizedName: Hyperdrive Radiator
 description: Projects a field capable of highly boosting structures. Requires material input and coolant to operate.
 size: 3
-health: 1554430
+health: 1080
 range: 210
 speedBoost: 9.5
 baseColor: 993622
