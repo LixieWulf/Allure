@@ -6,6 +6,7 @@ speed: 0.9
 flying: true
 lowAltitude: true
 health: 480000
+armor: 125
 engineOffset: 46
 engineSize: 9
 weapons: []
