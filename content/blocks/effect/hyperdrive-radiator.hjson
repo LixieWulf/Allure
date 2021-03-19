@@ -5,7 +5,7 @@ size: 3
 health: 1080
 range: 210
 speedBoost: 9.5
-baseColor: 993622
+baseColor: e65555
 category: effect
 hasBoost: false
 requirements: [
