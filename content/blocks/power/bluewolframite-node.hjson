@@ -1,11 +1,11 @@
 type: PowerNode
 localizedName: Bluewolframite Power Node
-description: "An extremely advanced power node, able to reach more buildings and sustain more connections that a normal node. Has extremely strong armor."
-health: 135240
+description: "An extremely advanced power node, able to reach more buildings and sustain more connections that a normal node. Has moderately strong armor."
+health: 540
 laserRange: 8
 laserColor1: acbbf9
 laserColor2: 6579c9
-maxNodes: 64
+maxNodes: 35
 requirements: [
   lead/10
   silicon/3
