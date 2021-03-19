@@ -2,9 +2,9 @@ localizedName: "Core: Requiem"
 description: The final iteration of the Exotic Mod cores. Virtually indestructible, this core is extremely expensive and advised for launches into the most dangerous sectors.
 type: CoreBlock
 unitType: shockwave
-health: 266755300
-unitCapModifier: 655
-itemCapacity: 125400
+health: 345000
+unitCapModifier: 125
+itemCapacity: 125000
 size: 8
 category: effect
 requirements: [

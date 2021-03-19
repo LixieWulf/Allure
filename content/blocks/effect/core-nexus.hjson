@@ -1,12 +1,12 @@
 Type: CoreBlock
 localizedName: "Core: Nexus"
 description: A large and extremely well armored core, able to store large quantities of items.
-health: 25550350
+health: 26000
 itemCapacity: 45000
 size: 6
 category: effect
 unitType: whiplash
-unitCapModifier: 125
+unitCapModifier: 48
 requirements: [
   copper/12000
   lead/11500

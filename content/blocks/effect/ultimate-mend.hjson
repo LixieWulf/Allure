@@ -1,7 +1,7 @@
 localizedName: Ultimate Mend Projector
-description: The inherent stored energy of the draconium and electrical properties of Bluewolframite are maginified by amethysts to create an extremely powerful mending field.
+description: Projects a powerful multidimensional field to repair blocks at high speeds from great distances.
 type: MendProjector
-health: 30000
+health: 1080
 size: 3
 range: 240
 phaseRangeBoost: 80

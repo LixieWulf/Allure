@@ -1,8 +1,9 @@
 type: ForceProjector
-localizedName: Enhanced Force Projector
-description: Using Blue-Wolframite electronics to produce a shield and then maginified heavility by Amethysts creates an extremely powerful force shield within a casing of simular size of a normal shield projector.
+localizedName: Force Barricade
+description: Projects a large, powerful force field to protect nearby structures.
 size: 3
-health: 10000
+health: 1080
+shieldHealth: 15000
 radius: 260
 phaseRadiusBoost: 112
 cooldownNormal: 0.1
