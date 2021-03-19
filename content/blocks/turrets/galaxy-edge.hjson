@@ -36,14 +36,6 @@ shootType: {
   length:160
   width: 32
   damage: 1950000
-  status: {
-    name: gone-reduced-to-atoms
-    damage: 580785
-    effect: burning
-    healthMultiplier: 0.1
-    damageMultiplier: 0.5
-    speedMultiplier: 0.5
-  }
   incendChance: 1
   incendSpread: 128
   incendAmount: 512
@@ -58,14 +50,6 @@ shootType: {
     sideAngle: 22.5
     pierce: true
     damage: 1950000
-    status: {
-      name: gone-reduced-to-atoms-redux
-      damage: 580785
-      effect: burning
-      healthMultiplier: 0.1
-      damageMultiplier: 0.5
-      speedMultiplier: 0.5
-    }
     incendChance: 1
     incendSpread: 128
     incendAmount: 512
