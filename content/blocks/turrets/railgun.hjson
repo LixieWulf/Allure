@@ -3,7 +3,7 @@ localizedName: Railgun
 description: Propels projectiles at high speeds with electromagnetic rails. Useful for taking down armored units.
 targetAir: true
 targetGround: true
-health: 15400
+health: 4500
 size: 4
 cooldown: 0.1
 restitution: 0.04
