@@ -8,7 +8,6 @@ speed: 5
 rotateSpeed: 60
 baseRotateSpeed: 60
 flying: true
-circleTarget: true
 drag: 0.01
 accel: 0.05
 rotateSpeed: 3
@@ -17,7 +16,8 @@ engineSize: 5
 rotateShooting: false
 weapons: [
 {
-  shots: 1
+  shots: 2
+  shotDelay: 1
   shake: 10
   reload: 60
   shootSound: explosionBig
@@ -29,7 +29,7 @@ weapons: [
   bullet: {
     type: BombBulletType
     lifetime: 0
-    splashDamage: 650
+    splashDamage: 1250
     splashDamageRadius: 180
     killShooter: true
     hittable: false
