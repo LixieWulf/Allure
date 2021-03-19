@@ -3,10 +3,91 @@ type: payload
 description: Deploys a large amount of ground attack units. Can pick up small payloads.
 hitSize: 70
 speed: 0.9
+accel: 0.1
+drag: 0.01
+rotateSpeed: 0.9
 flying: true
 lowAltitude: true
 health: 480000
 armor: 125
-engineOffset: 46
+buildSpeed: 3.4
+buildBeamOffset: 34
+payloadCapacity: 580
+engineOffset: 48
 engineSize: 9
-weapons: []
+weapons: [
+  {
+    name: vengeance-laser
+    x: 0
+    y: 0
+    reload: 180
+    continuous: true
+    shootY: 44
+    shootSound: beam
+    shootStatus: slow
+    shootStatusDuration: 240
+    bullet: {
+      type: ContinuousLaserBulletType
+      damage: 780
+      lifetime: 240
+      length: 180
+      width: 12
+      collidesTeam: true
+      healPercent: 3
+      hitEffect: hitMeltdown
+      hitColor: 5757c2
+      colors: [5757c235, 6f7fe865, 8091ff90, ffffff]
+    }
+  }
+]
+abilities: [
+  {
+    type: UnitSpawnAbility
+    unit: scepter
+    spawnX: 0
+    spawnY: -4
+    spawnTime: 13500
+  }
+  {
+    type: UnitSpawnAbility
+    unit: dagger
+    spawnX: 14
+    spawnY: 18
+    spawnTime: 880
+  }
+  {
+    type: UnitSpawnAbility
+    unit: dagger
+    spawnX: -14
+    spawnY: 18
+    spawnTime: 880
+  }
+  {
+    type: UnitSpawnAbility
+    unit: dagger
+    spawnX: 13
+    spawnY: -27
+    spawnTime: 880
+  }
+  {
+    type: UnitSpawnAbility
+    unit: dagger
+    spawnX: -13
+    spawnY: -27
+    spawnTime: 880
+  }
+  {
+    type: UnitSpawnAbility
+    unit: mace
+    spawnX: 26
+    spawnY: -10
+    spawnTime: 1280
+  }
+  {
+    type: UnitSpawnAbility
+    unit: mace
+    spawnX: -26
+    spawnY: -10
+    spawnTime: 1280
+  }
+]
