@@ -44,13 +44,6 @@ ammoTypes: {
     shootEffect: none
     smokeEffect: none
     incendChance: 0
-    status: {
-      name: nein
-      effect: hitYellowLaser
-      speedMultiplier: 0.1
-      reloadMultiplier: 0.1
-      damageMultiplier: 0.75
-    }
   }
 }
 requirements: [
