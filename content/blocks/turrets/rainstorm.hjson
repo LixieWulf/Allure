@@ -51,8 +51,6 @@ chargeBeginEffect: {
       lifetime: 120
       length: -30
       baseLength: 30
-
-
       particles: 50
       sizeFrom: 0
       sizeTo: 3
@@ -63,7 +61,6 @@ chargeBeginEffect: {
       lifetime: 120
       length: -20
       baseLength: 20
-      lifetime: 120
       particles: 50
       sizeFrom: 0
       sizeTo: 3
