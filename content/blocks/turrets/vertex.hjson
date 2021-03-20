@@ -3,6 +3,7 @@ localizedName: Vertex
 description: Slashes enemies with three sharp blades. Inflicts a strong debuff.
 size: 8
 health: 356000
+range: 40
 powerUse: 9.2
 reloadTime: 15
 shots: 3
