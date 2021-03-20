@@ -33,4 +33,5 @@ shootType: {
     }
   }
 }
+category: turret
 buildVisibility: sandboxOnly
