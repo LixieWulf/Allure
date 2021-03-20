@@ -3,18 +3,16 @@ localizedName: Vertex
 description: Slashes enemies with three sharp blades. Inflicts a strong debuff.
 size: 8
 health: 356000
-range: 40
-recoil: -40
+range: 80
+recoilAmount: -40
+restitution: 0.2
 powerUse: 9.2
 reloadTime: 15
-shots: 3
-shotDelay: 1
-spacing: 20
-coolantMultiplier: 0.1
 shootType: {
   type: ShrapnelBulletType
-  damage: 275000
+  damage: 564000
   length: 40
+  width: 0.01
   serrations: 0
   toColor: ffffff
   status: {
@@ -33,6 +31,6 @@ shootType: {
     }
   }
 }
+research: meltdown
 category: turret
 buildVisibility: sandboxOnly
-research: meltdown
