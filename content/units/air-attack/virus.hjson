@@ -20,7 +20,7 @@ weapons: [
   shotDelay: 1
   shake: 10
   reload: 60
-  shootSound: explosionBig
+  shootSound: explosion
   shootCone: 360
   ignoreRotation: true
   x: 0
@@ -33,7 +33,54 @@ weapons: [
     splashDamageRadius: 180
     killShooter: true
     hittable: false
-    despawnEffect: impactcloud
+    despawnEffect: {
+      type: MultiEffect
+      effects: [
+        {
+          type: WaveEffect
+          lifetime: 15
+          sizeFrom: 0
+          sizeTo: 180
+          colorFrom: ffffff
+          colorTo: e6555525
+          strokeFrom: 6
+          strokeTo: 0
+        }
+        {
+          type: ParticleEffect
+          line: true
+          particles: 20
+          lifetime: 30
+          length: 240
+          strokeFrom: 16
+          strokeTo: 0
+          lenFrom: 18
+          lenTo: 0
+          colorFrom: ffacac
+          colorTo: a63d3d
+        }
+        {
+          type: ParticleEffect
+          particles: 30
+          length: 360
+          lifetime: 40
+          sizeFrom: 8
+          sizeTo: 0
+          colorFrom: 656565
+          colorTo: 65656500
+        }
+        {
+          type: ParticleEffect
+          particles: 30
+          length: 240
+          lifetime: 40
+          sizeFrom: 16
+          sizeTo: 0
+          colorFrom: 656565
+          colorTo: 65656500
+        }
+      ]
+    }
     maxRange: 32
     collidesAir: true
   }
