@@ -16,7 +16,7 @@ The first 6.0 release is here. Much of the content is unfinished or needs refini
 
 ---
 
-Discord:
+Discord: [this dingus link](https://discord.gg/M3hm5z6nm6)
 
   BlueWolf: BlueWolf#3682
 
