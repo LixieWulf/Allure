@@ -4,9 +4,121 @@ description: Fires a massive railgun bolt after charging. Good for sniping, but 
 size: 8
 health: 185000
 range: 980
+canOverdrive: false
 rotateSpeed: 0.9
 shootLength: 0
-chargeTime: 180
+reloadTime: 240
+recoilAmount: 14
+restitution: 0.04
+chargeTime: 160
+chargeEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      particles: 1
+      lifetime: 40
+      length: 0
+      sizeFrom: 32
+      sizeTo: 32
+      colorFrom: ffffff00
+      region: exotic-mod-aurora-0
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      lifetime: 80
+      length: 0
+      sizeFrom: 32
+      sizeTo: 32
+      colorFrom: ffffff00
+      region: exotic-mod-aurora-0
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      lifetime: 120
+      length: 0
+      sizeFrom: 32
+      sizeTo: 32
+      colorFrom: ffffff00
+      region: exotic-mod-aurora-0
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      lifetime: 155
+      length: 0
+      sizeFrom: 32
+      sizeTo: 32
+      colorFrom: ffffff00
+      region: exotic-mod-aurora-0
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      lifetime: 80
+      length: 0
+      sizeFrom: 32
+      sizeTo: 32
+      colorFrom: ffffff00
+      region: exotic-mod-aurora-1
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      lifetime: 120
+      length: 0
+      sizeFrom: 32
+      sizeTo: 32
+      colorFrom: ffffff00
+      region: exotic-mod-aurora-1
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      lifetime: 155
+      length: 0
+      sizeFrom: 32
+      sizeTo: 32
+      colorFrom: ffffff00
+      region: exotic-mod-aurora-1
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      lifetime: 120
+      length: 0
+      sizeFrom: 32
+      sizeTo: 32
+      colorFrom: ffffff00
+      region: exotic-mod-aurora-2
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      lifetime: 155
+      length: 0
+      sizeFrom: 32
+      sizeTo: 32
+      colorFrom: ffffff00
+      region: exotic-mod-aurora-2
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      lifetime: 155
+      length: 0
+      sizeFrom: 32
+      sizeTo: 32
+      colorFrom: ffffff00
+      region: exotic-mod-aurora-3
+    }
+  ]
+}
+consumes: {
+  power: 185.2
+}
 ammoPerShot: 18
 ammoTypes: {
   bluewolframite: {
@@ -14,6 +126,19 @@ ammoTypes: {
     damage: 375000
     length: 980
     pierceDamageFactor: 0.75
+    updateEffectSeg: 180
+    updateEffect: {
+      type: ParticleEffect
+      particles: 1
+      lifetime: 30
+      length: 0
+      sizeFrom: 60
+      colorFrom: 6f7fe8
+      colorTo: 6f7fe8
+      region: exotic-mod-diamond-wide
+    }
   }
 }
+acceptCoolant: false
 buildVisibility: sandboxOnly
+category: turret
