@@ -7,6 +7,7 @@ range: 980
 canOverdrive: false
 rotateSpeed: 0.9
 shootLength: 0
+shootSound: railgun
 reloadTime: 240
 recoilAmount: 14
 restitution: 0.04
