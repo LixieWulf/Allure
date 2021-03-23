@@ -14,6 +14,7 @@ restitution: 0.04
 chargeTime: 160
 chargeEffect: {
   type: MultiEffect
+  layer: 65
   effects: [
     {
       type: ParticleEffect
@@ -22,7 +23,8 @@ chargeEffect: {
       length: 0
       sizeFrom: 32
       sizeTo: 32
-      colorFrom: ffffff00
+      colorFrom: 9daeff00
+      colorTo: 9daeff
       region: exotic-mod-aurora-0
     }
     {
@@ -32,7 +34,8 @@ chargeEffect: {
       length: 0
       sizeFrom: 32
       sizeTo: 32
-      colorFrom: ffffff00
+      colorFrom: 9daeff00
+      colorTo: 9daeff
       region: exotic-mod-aurora-0
     }
     {
@@ -42,7 +45,8 @@ chargeEffect: {
       length: 0
       sizeFrom: 32
       sizeTo: 32
-      colorFrom: ffffff00
+      colorFrom: 9daeff00
+      colorTo: 9daeff
       region: exotic-mod-aurora-0
     }
     {
@@ -52,7 +56,8 @@ chargeEffect: {
       length: 0
       sizeFrom: 32
       sizeTo: 32
-      colorFrom: ffffff00
+      colorFrom: 9daeff00
+      colorTo: 9daeff
       region: exotic-mod-aurora-0
     }
     {
@@ -62,7 +67,8 @@ chargeEffect: {
       length: 0
       sizeFrom: 32
       sizeTo: 32
-      colorFrom: ffffff00
+      colorFrom: 9daeff00
+      colorTo: 9daeff
       region: exotic-mod-aurora-1
     }
     {
@@ -72,7 +78,8 @@ chargeEffect: {
       length: 0
       sizeFrom: 32
       sizeTo: 32
-      colorFrom: ffffff00
+      colorFrom: 9daeff00
+      colorTo: 9daeff
       region: exotic-mod-aurora-1
     }
     {
@@ -82,7 +89,8 @@ chargeEffect: {
       length: 0
       sizeFrom: 32
       sizeTo: 32
-      colorFrom: ffffff00
+      colorFrom: 9daeff00
+      colorTo: 9daeff
       region: exotic-mod-aurora-1
     }
     {
@@ -92,7 +100,8 @@ chargeEffect: {
       length: 0
       sizeFrom: 32
       sizeTo: 32
-      colorFrom: ffffff00
+      colorFrom: 9daeff00
+      colorTo: 9daeff
       region: exotic-mod-aurora-2
     }
     {
@@ -102,7 +111,8 @@ chargeEffect: {
       length: 0
       sizeFrom: 32
       sizeTo: 32
-      colorFrom: ffffff00
+      colorFrom: 9daeff00
+      colorTo: 9daeff
       region: exotic-mod-aurora-2
     }
     {
@@ -112,7 +122,8 @@ chargeEffect: {
       length: 0
       sizeFrom: 32
       sizeTo: 32
-      colorFrom: ffffff00
+      colorFrom: 9daeff00
+      colorTo: 9daeff
       region: exotic-mod-aurora-3
     }
   ]

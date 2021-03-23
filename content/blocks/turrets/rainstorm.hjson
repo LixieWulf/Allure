@@ -14,6 +14,7 @@ chargeTime: 120
 heatColor: ffffff
 chargeBeginEffect: {
   type: MultiEffect
+  layer: 71
   lifetime: 120
   effects: [
     {
