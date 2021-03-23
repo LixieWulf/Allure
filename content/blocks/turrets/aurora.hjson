@@ -1,0 +1,19 @@
+type: ItemTurret
+localizedName: Aurora
+description: Fires a massive railgun bolt after charging. Good for sniping, but terrible at close range.
+size: 8
+health: 185000
+range: 980
+rotateSpeed: 0.9
+shootLength: 0
+chargeTime: 180
+ammoPerShot: 18
+ammoTypes: {
+  bluewolframite: {
+    type: RailBulletType
+    damage: 375000
+    length: 980
+    pierceDamageFactor: 0.75
+  }
+}
+buildVisibility: sandboxOnly
