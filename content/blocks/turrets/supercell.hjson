@@ -1,0 +1,18 @@
+type: ItemTurret
+localizedName: Supercell
+description: Fires small, armor piercing rounds at a high rate.
+size: 8
+range: 600
+health: 256000
+reloadTime: 15
+recoilAmount: 4
+rotateSpeed: 2.9
+ammoTypes: {
+  amethyst: {
+    damage: 85
+    splashDamage: 120
+    splashDamageRadius: 19
+    speed: 8
+    lifetime: 75
+  }
+}
