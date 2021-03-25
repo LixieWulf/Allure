@@ -2,6 +2,16 @@ type: legs
 localizedName: Blaze
 description: Fires alternating laser blasts to heal targets. Defends itself with a force field and an artillery weapon.
 hitSize: 48
+hovering: true
+groundLayer: 75
+visualElevation: 0.7
 health: 550000
 armor: 175
-speed: 1.6
+speed: 0.8
+legCount: 7
+legLength: 64
+legBaseOffset: 20
+legExtension: -18
+legSpeed: 0.01
+maxStretch: 1.25
+allowLegStep: true
