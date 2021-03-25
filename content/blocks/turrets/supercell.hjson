@@ -6,13 +6,46 @@ range: 600
 health: 256000
 reloadTime: 15
 recoilAmount: 4
+inaccuracy: 5
+shots: 2
+xRand: 8
 rotateSpeed: 2.9
 ammoTypes: {
-  amethyst: {
-    damage: 85
-    splashDamage: 120
+  amethyst-gem: {
+    damage: 460
+    splashDamage: 550
     splashDamageRadius: 19
     speed: 8
     lifetime: 75
+    width: 12
+    height: 20
+    hitEffect: flakExplosion
+    frontColor: ffffff
+    backColor: a56be8
+    fragBullets: 10
+    fragBullet: {
+      damage: 240
+      speed: 4
+      lifetime: 15
+      frontColor: ffffff
+      backColor: a56be8
+    }
+  }
+  bluewolframite: {
+    damage: 780
+    splashDamage: 600
+    splashDamageRadius: 21
+    speed: 8
+    lifetime: 75
+    width: 12
+    height: 20
+    frontColor: ffffff
+    backColor: 8ca4f5
+    lightning: 12
+    lightningDamage: 250
+    lightningColor: 8ca4f5
+    lightningLength: 15
   }
 }
+buildVisibility: sandboxOnly
+category: turret
