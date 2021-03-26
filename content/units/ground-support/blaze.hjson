@@ -10,6 +10,9 @@ health: 550000
 armor: 175
 speed: 0.8
 rotateSpeed: 1.8
+buildSpeed: 6.1
+mineSpeed: 10.8
+mineTier: 6
 legCount: 7
 legLength: 100
 legBaseOffset: 20
@@ -29,13 +32,15 @@ weapons: [
     shootSound: laser
     bullet: {
       type: LaserBulletType
-      damage: 0
+      damage: 0.000000001
       lifetime: 60
       length: 650
       width: 32
       collidesTeam: true
       healPercent: 75
       largeHit: true
+      sideAngle: 0
+      sideWidth: 0
       colors: [98ffa950, 98ffa9, ffffff]
       lightningSpacing: 25
       lightningDelay: 0.2
