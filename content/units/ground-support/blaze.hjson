@@ -9,9 +9,9 @@ health: 550000
 armor: 175
 speed: 0.8
 legCount: 7
-legLength: 64
+legLength: 100
 legBaseOffset: 20
-legExtension: -18
+legExtension: -10
 legSpeed: 0.01
 maxStretch: 1.25
 allowLegStep: true
