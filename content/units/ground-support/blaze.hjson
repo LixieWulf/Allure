@@ -18,6 +18,9 @@ legLength: 100
 legBaseOffset: 20
 legExtension: -10
 legSpeed: 0.01
+legSplashDamage: 110
+legSplashRange: 72
+rippleScale: 6
 maxStretch: 1.25
 allowLegStep: true
 weapons: [
