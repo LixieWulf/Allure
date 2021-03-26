@@ -1,13 +1,15 @@
 type: legs
 localizedName: Blaze
-description: Fires alternating laser blasts to heal targets. Defends itself with a force field and an artillery weapon.
+description: Fires alternating laser blasts to heal targets and deal moderate damage to hostile targets. Defends itself with a force field.
 hitSize: 48
 hovering: true
+drawShields: false
 groundLayer: 75
 visualElevation: 0.7
 health: 550000
 armor: 175
 speed: 0.8
+rotateSpeed: 1.8
 legCount: 7
 legLength: 100
 legBaseOffset: 20
@@ -15,3 +17,47 @@ legExtension: -10
 legSpeed: 0.01
 maxStretch: 1.25
 allowLegStep: true
+weapons: [
+  {
+    name: blaze-weapon
+    top: false
+    x: 29
+    y: 0
+    reload: 90
+    recoil: 8
+    shootY: 24
+    shootSound: laser
+    bullet: {
+      type: LaserBulletType
+      damage: 0
+      lifetime: 60
+      length: 650
+      width: 32
+      collidesTeam: true
+      healPercent: 75
+      largeHit: true
+      colors: [98ffa950, 98ffa9, ffffff]
+      lightningSpacing: 25
+      lightningDelay: 0.2
+      lightningDamage: 150
+      lightningLength: 15
+      lightningLengthRand: 12
+      lightningColor: 98ffa9
+    }
+  }
+]
+abilities: [
+  {
+    type: RepairFieldAbility
+    range: 120
+    amount: 1250
+    reload: 70
+  }
+  {
+    type: ForceFieldAbility
+    radius: 160
+    regen: 50
+    max: 100000
+    cooldown: 360
+  }
+]
