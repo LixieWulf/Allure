@@ -1,0 +1,8 @@
+type: flying
+localizedName: Maliase
+description: Bombs hostile targets while setting fires with a laser and slicing anything in front if it. Generates lightning while moving.
+hitSize: 60
+health: 480000
+armor: 120
+speed: 1.7
+rotateSpeed: 0.7
