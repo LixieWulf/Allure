@@ -17,7 +17,7 @@ weapons: [
   {
     name: maliase-blade
     x: 0
-    y: 35
+    y: 36
     mirror: false
     top: false
     reload: 45
