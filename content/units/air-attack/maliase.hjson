@@ -96,6 +96,7 @@ weapons: [
       spin: 1.5
       shrinkX: 0.4
       shrinkY: 0.4
+      maxRange: 16
       hitSound: plasmaboom
       hitEffect: none
       despawnEffect: {
