@@ -34,6 +34,19 @@ weapons: [
       drawSize: 110
       width: 4
       colors: [e6555520, e6555540, e6555580, ffffff]
+      hitEffect: {
+        type: ParticleEffect
+        line: true
+        particles: 6
+        lifetime: 15
+        length: 10
+        strokeFrom: 0.5
+        strokeTo: 0
+        lenFrom: 2.5
+        lenTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+      }
     }
   }
   {
@@ -55,6 +68,19 @@ weapons: [
       drawSize: 110
       width: 4
       colors: [e6555520, e6555540, e6555580, ffffff]
+      hitEffect: {
+        type: ParticleEffect
+        line: true
+        particles: 6
+        lifetime: 15
+        length: 10
+        strokeFrom: 0.5
+        strokeTo: 0
+        lenFrom: 2.5
+        lenTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+      }
     }
   }
   {
