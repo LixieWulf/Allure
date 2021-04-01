@@ -1,0 +1,12 @@
+type: naval
+localizedName: Banshee
+description: Drains enemy health and pulls in enemy units with multiple sapper lasers. Destroys structures with artillery weapons. Capable of flight.
+hitSize: 70
+health: 520000
+armor: 150
+buildSpeed: 2.5
+buildBeamOffset: 50
+canBoost: true
+riseSpeed: 0.001
+fallSpeed: 0.0001
+boostMultiplier: 0.2
