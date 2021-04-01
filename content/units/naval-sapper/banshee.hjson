@@ -60,8 +60,8 @@ weapons: [
   }
   {
     name: banshee-weapon
-    y: 0
-    x: 28
+    y: -8.5
+    x: 34
     rotate: true
     rotateSpeed: 4.5
     recoil: 3
