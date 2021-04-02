@@ -56,15 +56,15 @@ weapons: [
       hitEffect: {
         type: ParticleEffect
         line: true
-        particles: 6
+        particles: 8
         lifetime: 15
         length: 20
-        strokeFrom: 1
+        strokeFrom: 2
         strokeTo: 0
-        lenFrom: 5
+        lenFrom: 8
         lenTo: 0
         colorFrom: e65555
-        colorTo: e65555
+        colorTo: e6555550
       }
     }
   }
