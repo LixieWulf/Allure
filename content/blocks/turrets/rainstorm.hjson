@@ -7,6 +7,8 @@ health: 228000
 range: 877
 reloadTime: 45
 shootCone: 25
+shootSound: laserbig
+loopSound: beam
 rotateSpeed: 1.5
 powerUse: 4500
 shootDuration: 300
@@ -203,79 +205,79 @@ shootType: {
         type: ParticleEffect
         particles: 1
         line: true
-        length: 24
-        lifetime: 5
+        length: 30
+        lifetime: 15
         strokeFrom: 2
-        strokeTo: 2
+        strokeTo: 1
         lenFrom: 10
-        lenTo: 10
+        lenTo: 0
         colorFrom: e65555
-        colorTo: e65555
+        colorTo: e6555550
       }
       {
         type: ParticleEffect
         particles: 1
         line: true
-        length: 24
-        lifetime: 5
+        length: 30
+        lifetime: 15
         strokeFrom: 2
-        strokeTo: 2
+        strokeTo: 1
         lenFrom: 10
-        lenTo: 10
+        lenTo: 0
         colorFrom: ff9c59
-        colorTo: ff9c59
+        colorTo: ff9c5950
       }
       {
         type: ParticleEffect
         particles: 1
         line: true
-        length: 24
-        lifetime: 5
+        length: 30
+        lifetime: 15
         strokeFrom: 2
-        strokeTo: 2
+        strokeTo: 1
         lenFrom: 10
-        lenTo: 10
+        lenTo: 0
         colorFrom: f2e879
-        colorTo: f2e879
+        colorTo: f2e87950
       }
       {
         type: ParticleEffect
         particles: 1
         line: true
-        length: 24
-        lifetime: 5
+        length: 30
+        lifetime: 15
         strokeFrom: 2
-        strokeTo: 2
+        strokeTo: 1
         lenFrom: 10
-        lenTo: 10
+        lenTo: 0
         colorFrom: 84f591
-        colorTo: 84f591
+        colorTo: 84f59150
       }
       {
         type: ParticleEffect
         particles: 1
         line: true
-        length: 24
-        lifetime: 5
+        length: 30
+        lifetime: 15
         strokeFrom: 2
-        strokeTo: 2
+        strokeTo: 1
         lenFrom: 10
-        lenTo: 10
+        lenTo: 0
         colorFrom: 8ca4f5
-        colorTo: 8ca4f5
+        colorTo: 8ca4f550
       }
       {
         type: ParticleEffect
         particles: 1
         line: true
-        length: 24
-        lifetime: 5
+        length: 30
+        lifetime: 15
         strokeFrom: 2
-        strokeTo: 2
+        strokeTo: 1
         lenFrom: 10
-        lenTo: 10
+        lenTo: 0
         colorFrom: a488eb
-        colorTo: a488eb
+        colorTo: a488eb50
       }
     ]
   }
