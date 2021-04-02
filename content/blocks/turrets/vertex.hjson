@@ -4,14 +4,14 @@ description: Slashes enemies with three sharp blades. Inflicts a strong debuff.
 size: 8
 health: 356000
 range: 80
-recoilAmount: -40
+recoilAmount: -50
 restitution: 0.2
 powerUse: 9.2
 reloadTime: 15
 shootType: {
   type: ShrapnelBulletType
   damage: 564000
-  length: 40
+  length: 50
   width: 0.01
   serrations: 0
   toColor: ffffff
