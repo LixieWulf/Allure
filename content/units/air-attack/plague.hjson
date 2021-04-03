@@ -9,6 +9,7 @@ speed: 2
 engineOffset: 56
 engineSize: 9.3
 circleTarget: true
+lightRadius: 120
 weapons: [
   {
     name: plague-ram
@@ -19,7 +20,7 @@ weapons: [
     reload: 40
     bullet: {
       type: RailBulletType
-      damage: 76000
+      damage: 20000
       pierceDamageFactor: 0
       length: 210
       recoil: -80
