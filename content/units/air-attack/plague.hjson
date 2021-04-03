@@ -2,11 +2,53 @@ type: flying
 localizedName: Plague
 description: Destroys targets by dashing forward and impaling them with its bladed design.
 flying: true
-hitSize: 70
+hitSize: 90
 health: 975000
 armor: 345
 speed: 2
-drag: 3
-accel: 3.5
-rotateSpeed: 12
+engineOffset: 56
+engineSize: 9.3
 circleTarget: true
+weapons: [
+  {
+    name: plague-ram
+    x: 0
+    y: 0
+    mirror: false
+    shootSound: none
+    reload: 40
+    bullet: {
+      type: RailBulletType
+      damage: 76000
+      pierceDamageFactor: 0
+      length: 210
+      recoil: -80
+      shootEffect: none
+      smokeEffect: none
+    }
+  }
+]
+abilities: [
+  {
+    type: MoveLightningAbility
+    minSpeed: 0
+    maxSpeed: 0
+    damage: 2500
+    chance: 1
+    length: 1
+    color: 00000000
+    shootSound: none
+    shootEffect: {
+      type: ParticleEffect
+      layer: 99
+      particles: 1
+      sizeFrom: 62.5
+      sizeTo: 62.5
+      length: 0.01
+      lifetime: 15
+      region: exotic-mod-plague-effect
+      colorFrom: fffffff50
+      colorTo: ffffff00
+    }
+  }
+]
