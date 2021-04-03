@@ -1,0 +1,12 @@
+type: flying
+localizedName: Plague
+description: Destroys targets by dashing forward and impaling them with its bladed design.
+flying: true
+hitSize: 70
+health: 975000
+armor: 345
+speed: 2
+drag: 3
+accel: 3.5
+rotateSpeed: 12
+circleTarget: true
