@@ -1,14 +1,17 @@
 type: payload
 localizedName: Fearless
-description: Destroys hostile targets with massive laser and railgun cannons. Emits a powerful shockwave that locks down enemy units. Able to pick up medium-sized payloads.
+description: Emits a powerful shockwave that locks down enemy units. Defends itself with a massive laser cannon. Able to pick up medium-sized payloads. Builds structures incredibly fast.
 flying: true
-payloadCapacity: 256
+controller: repairAI
+payloadCapacity: 1024
 health: 1005000
 armor: 300
-hitSize: 70
+hitSize: 110
 speed: 1.5
 drag: 0.1
 rotateSpeed: 1.5
+buildSpeed: 25.7
+buildBeamOffset: 26
 engineOffset: 48
 engineSize: 10
 lightRadius: 120
@@ -21,6 +24,7 @@ weapons: [
     y: 0
     reload: 480
     shootCone: 360
+    shootSound: plasmaboom
     bullet: {
       damage: 0
       speed: 0
@@ -31,11 +35,19 @@ weapons: [
       pierceBuilding: true
       hittable: false
       absorbable: false
-      sprite: exotic-mod-qpg-wave
-      width: 20
-      height: 20
+      shootEffect: none
+      smokeEffect: {
+        type: WaveEffect
+        lifetime: 15
+        sizeFrom: 0
+        sizeTo: 240
+        strokeFrom: 4
+        strokeTo: 0
+        colorTo: 8ca4f550
+      }
       despawnEffect: none
       hitEffect: none
+      maxRange: 240
       statusDuration: 90
       status: {
         name: emp
@@ -55,6 +67,41 @@ weapons: [
           lenTo: 5
           colorTo: ffffff00
         }
+      }
+    }
+  }
+  {
+    name: fearless-laser
+    x: 0
+    y: 0
+    reload: 240
+    mirror: false
+    continuous: true
+    shootSound: beam
+    shootY: 36
+    bullet: {
+      type: ContinuousLaserBulletType
+      damage: 12000
+      collidesTeam: true
+      healPercent: 4.5
+      length: 360
+      drawSize: 400
+      lifetime: 35
+      width: 16
+      colors: [5757c235, 6f7fe865, 8091ff90, ffffff]
+      fadeTime: 20
+      hitEffect: {
+        type: ParticleEffect
+        line: true
+        particles: 8
+        lifetime: 15
+        length: 30
+        lenFrom: 12
+        lenTo: 0
+        strokeFrom: 2
+        strokeTo: 1
+        colorFrom: 8091ff
+        colorTo: 8091ff50
       }
     }
   }
