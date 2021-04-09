@@ -1,0 +1,72 @@
+type: legs
+localizedName: Wildfire
+description: Heals anything nearby with a passive regeneration field and massive laser cannons. Generates a floating green sphere that fires multiple projectiles.
+hitSize: 60
+allowLegStep: true
+visualElevation: 75
+groundLayer: 75
+health: 1350000
+armor: 415
+speed: 0.6
+weapons: [
+  {
+    name: wildfire-sphere
+    x: 0
+    y: 0
+    reload: 160
+    rotate: true
+    mirror: false
+    continuous: true
+    shootSound: beam
+    shootY: 26
+    bullet: {
+      type: ContinuousLaserBulletType
+      damage: 25000
+      collidesTeam: true
+      healPercent: 4.5
+      length: 480
+      drawSize: 520
+      lifetime: 310
+      width: 18
+      colors: [84f59150, a5f5af70, cef5d290, ffffff]
+      hitEffect: {
+        type: ParticleEffect
+        line: true
+        particles: 8
+        lifetime: 15
+        length: 45
+        lenFrom: 20
+        lenTo: 0
+        strokeFrom: 3
+        strokeTo: 1.5
+        colorFrom: 84f591
+        colorTo: 84f59150
+      }
+    }
+  }
+]
+abilities: [
+  {
+    type: StatusFieldAbility
+    activeEffect: {
+      type: ParticleEffect
+      lifetime: 12
+      length: 0
+      sizeFrom: 25
+      sizeTo: 0
+      particles: 1
+      colorFrom: 84f591
+      colorTo: 84f59175
+      region: particle
+    }
+    effect: {
+      name: regeneration
+      localizedName: Regeneration
+      damage: -7
+      effect: hitLaser
+    }
+    range: 85
+    reload: 1
+    duration: 5
+  }
+]
