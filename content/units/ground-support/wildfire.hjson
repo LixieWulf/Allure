@@ -2,6 +2,7 @@ type: legs
 localizedName: Wildfire
 description: Heals anything nearby with a passive regeneration field and massive laser cannons. Generates a floating green sphere that fires multiple projectiles.
 hitSize: 60
+hovering: true
 drawShields: false
 allowLegStep: true
 visualElevation: 0.8
@@ -10,6 +11,7 @@ health: 1350000
 armor: 415
 speed: 0.6
 rotateSpeed: 1.6
+buildSpeed: 13
 legCount: 9
 legLength: 140
 legBaseOffset: 15
@@ -124,6 +126,19 @@ weapons: [
           length: 0
           sizeFrom: 12
           sizeTo: 12
+          particles: 1
+          colorFrom: 84f591
+          colorTo: 84f59100
+          region: particle
+        }
+        hitEffect: none
+        despawnEffect: {
+          type: WaveEffect
+          lifetime: 30
+          sizeFrom: 0
+          sizeTo: 30
+          strokeFrom: 15
+          strokeTo: 0
           particles: 1
           colorFrom: 84f591
           colorTo: 84f59100
