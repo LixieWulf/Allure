@@ -2,6 +2,7 @@ type: legs
 localizedName: Wildfire
 description: Heals anything nearby with a passive regeneration field and massive laser cannons. Generates a floating green sphere that fires multiple projectiles.
 hitSize: 60
+drawShields: false
 allowLegStep: true
 visualElevation: 0.8
 groundLayer: 75
@@ -33,8 +34,8 @@ weapons: [
       damage: 1250
       collidesTeam: true
       healPercent: 4.5
-      length: 480
-      drawSize: 520
+      length: 360
+      drawSize: 360
       lifetime: 310
       width: 18
       colors: [84f59150, a5f5af70, cef5d290, ffffff]
@@ -160,6 +161,28 @@ weapons: [
       }
     }
   }
+  {
+    name: wildfire-cannon
+    top: false
+    x: 37
+    y: 0
+    reload: 180
+    recoil: 12
+    shootY: 20
+    shots: 2
+    shotDelay: 12
+    shootSound: laser
+    bullet: {
+      type: LaserBulletType
+      damage: 0.0000001
+      collidesTeam: true
+      healPercent: 65
+      length: 560
+      lifetime: 45
+      width: 70
+      colors: [98ffa950, 98ffa9, ffffff]
+    }
+  }
 ]
 abilities: [
   {
@@ -184,5 +207,12 @@ abilities: [
     range: 85
     reload: 1
     duration: 5
+  }
+  {
+    type: ForceFieldAbility
+    radius: 160
+    regen: 120
+    max: 250000
+    cooldown: 400
   }
 ]
