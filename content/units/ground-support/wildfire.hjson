@@ -59,13 +59,14 @@ weapons: [
     y: 0
     rotate: true
     reload: 160
-    shootSound: plasmaboom
+    shootSound: plasmadrop
     bullet: {
       type: MissileBulletType
       damage: 2250
       splashDamage: 240
       splashDamageRadius: 16
       speed: 4
+      hitSound: plasmaboom
       lifetime: 90
       sprite: particle
       width: 25
@@ -87,6 +88,19 @@ weapons: [
         colorTo: 84f59100
         region: particle
       }
+      hitEffect: none
+      despawnEffect: {
+        type: WaveEffect
+        lifetime: 30
+        sizeFrom: 0
+        sizeTo: 45
+        strokeFrom: 15
+        strokeTo: 0
+        particles: 1
+        colorFrom: 84f591
+        colorTo: 84f59100
+        region: particle
+      }
       fragBullets: 6
       fragVelocityMax: 1
       fragVelocityMin: 1
@@ -95,6 +109,7 @@ weapons: [
         speed: 5
         lifetime: 35
         drag: 0.1
+        hitSound: plasmaboom
         sprite: particle
         frontColor: 84f591
         backColor: 00000000
@@ -106,8 +121,8 @@ weapons: [
           type: ParticleEffect
           lifetime: 15
           length: 0
-          sizeFrom: 25
-          sizeTo: 25
+          sizeFrom: 12
+          sizeTo: 12
           particles: 1
           colorFrom: 84f591
           colorTo: 84f59100
@@ -116,7 +131,7 @@ weapons: [
         fragBullets: 4
         fragVelocityMin: 1
         fragBullet: {
-          damage: 500
+          damage: 720
           speed: 8
           lifetime: 100
           homingPower: 1
@@ -125,6 +140,7 @@ weapons: [
           width: 20
           height: 20
           sprite: exotic-mod-sword
+          shrinkY: 0
           frontColor: ffffff
           backColor: 84f591
           hitEffect: hitMeltHeal
