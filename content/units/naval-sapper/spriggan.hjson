@@ -1,171 +1,70 @@
 type: naval
-localizedName: Beheamoth
-description: Middle Class Ship also known as a Cruiser, More Firepower in exchange for speed. 
-speed: 0.5
-accel: 0.5
-flying: false
-range: 576
-hitSize: 32
-health: 32550
-rotateSpeed: 3
+localizedName: Spriggan
+description: Attacks hostile targets with sapping lasers and massive electrical weapons. Emits a massive sap laser burst to pull in nearby units and confuse them. Heavily armored.
+hitSize: 90
+health: 1100000
+armor: 560
+speed: 0.8
+rotateSpeed: 0.8
 rotateShooting: false
 weapons: [
   {
-    name: battle-cruiser-cannon
-    rotate: true
-    rotateSpeed: 7
-    mirror: false
-    reload: 60
+    name: spriggan-core
     x: 0
-    y: -60
-    recoil: 7
-    inaccuracy: 0
-    xRand: 10
-    shots: 2
-    shotDelay: 0
-    shootSound: shootBig
-    ejectEffect: casing1
+    y: 0
+    reload: 240
+    shootCone: 360
+    shotDelay: 1
+    inaccuracy: 360
+    shots: 72
+    ignoreRotation: true
+    shootSound: sap
     bullet: {
-      damage: 3400
-      shootEffect: shootBig
-      speed: 24
-      knockback: 5
-      width: 4
-      height: 8
-      lifetime: 24
-      maxRange: 576
+      type: SapBulletType
+      damage: 240
+      length: 240
+      width: 1.5
+      knockback: -25
+      color: bf92f9
+      status: {
+        name: confused
+        localizedName: Confused
+        reloadMultiplier: 0.5
+        speedMultiplier: -1
+        effect: sapped
+      }
+      hitEffect: none
+      despawnEffect: none
+      smokeEffect: none
+      shootEffect: {
+        type: WaveEffect
+        lifetime: 90
+        sizeFrom: 240
+        sizeTo: 0
+        strokeFrom: 0
+        strokeTo: 15
+        colorFrom: bf92f950
+        colorTo: bf92f9
+      }
     }
   }
   {
-    name: battle-cruiser-cannon
+    name: spriggan-weapon
+    x: 24
+    y: -16
+    shootY: 8
+    reload: 45
+    recoil: 3.4
     rotate: true
-    rotateSpeed: 7
-    mirror: false
-    reload: 60
-    x: 0
-    y: -30
-    recoil: 7
-    inaccuracy: 0
-    xRand: 10
-    shots: 2
-    shotDelay: 0
-    shootSound: shootBig
-    ejectEffect: casing1
-    bullet: {
-      damage: 3400
-      shootEffect: shootBig
-      speed: 24
-      knockback: 5
-      width: 4
-      height: 8
-      lifetime: 24
-      maxRange: 576
-    }
-  }
-  {
-    name: battle-cruiser-cannon
-    rotate: true
-    rotateSpeed: 7
-    mirror: false
-    reload: 60
-    x: 0
-    y: 60
-    recoil: 7
-    inaccuracy: 0
-    xRand: 10
-    shots: 2
-    shotDelay: 0
-    shootSound: shootBig
-    ejectEffect: casing1
-    bullet: {
-      damage: 3400
-      shootEffect: shootBig
-      speed: 24
-      knockback: 5
-      width: 4
-      height: 8
-      lifetime: 24
-      maxRange: 576
-    }
-  }
-  {
-    name: battle-cruiser-cannon
-    rotate: true
-    rotateSpeed: 7
-    mirror: false
-    reload: 60
-    x: 0
-    y: 30
-    recoil: 7
-    inaccuracy: 0
-    xRand: 10
-    shots: 2
-    shotDelay: 0
-    shootSound: shootBig
-    ejectEffect: casing1
-    bullet: {
-      damage: 3400
-      shootEffect: shootBig
-      speed: 24
-      knockback: 5
-      width: 4
-      height: 8
-      lifetime: 24
-      maxRange: 576
-    }
-  }
-  {
-    name: missile-launcher
-    rotate: true
-    rotateSpeed: 7
-    mirror: false
-    reload: 90
-    x: 0
-    y: 45
-    recoil: 7
-    inaccuracy: 0
-    xRand: 10
+    rotateSpeed: 4
     shots: 3
-    shotDelay: 0
-    shootSound: shootBig
-    ejectEffect: casing1
+    xRand: 4
+    shootSound: spark
     bullet: {
-      type: MissileBulletType
-      damage: 3400
-      shootEffect: shootBig
-      speed: 30
-      knockback: 5
-      width: 4
-      height: 8
-      lifetime: 30
-      maxRange: 900
-    }
-  }
-  {
-    name: missile-launcher
-    rotate: true
-    rotateSpeed: 7
-    mirror: false
-    reload: 90
-    x: 0
-    y: -45
-    recoil: 7
-    inaccuracy: 0
-    xRand: 10
-    shots: 3
-    shotDelay: 0
-    shootSound: shootBig
-    ejectEffect: casing1
-    bullet: {
-      type: MissileBulletType
-      damage: 3400
-      shootEffect: shootBig
-      speed: 30
-      knockback: 5
-      width: 4
-      height: 8
-      lifetime: 30
-      maxRange: 900
+      type: LightningBulletType
+      damage: 1250
+      length: 200
+      lightningColor: bf92f9
     }
   }
 ]
