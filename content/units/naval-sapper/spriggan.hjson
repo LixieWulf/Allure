@@ -50,8 +50,8 @@ weapons: [
   }
   {
     name: spriggan-weapon
-    x: 24
-    y: -16
+    x: 32
+    y: -25.25
     shootY: 8
     reload: 45
     recoil: 3.4
@@ -65,6 +65,44 @@ weapons: [
       damage: 1250
       length: 200
       lightningColor: bf92f9
+    }
+  }
+  {
+    name: banshee-weapon
+    x: 22
+    y: 31
+    rotate: true
+    rotateSpeed: 4
+    reload: 25
+    recoil: 3
+    shootSound: sap
+    bullet: {
+      type: SapBulletType
+      damage: 780
+      length: 360
+      width: 1.4
+      sapStrength: 0.75
+      color: bf92f9
+      shootEffect: shootLiquid
+      hitEffect: hitLiquid
+    }
+  }
+  {
+    name: spirit-weapon
+    x: 8
+    y: 54.75
+    rotate: true
+    recoil: 2
+    reload: 10
+    shootSound: sap
+    bullet: {
+      type: SapBulletType
+      damage: 250
+      length: 260
+      sapStrength: 0.55
+      color: bf92f9
+      shootEffect: shootLiquid
+      hitEffect: hitLiquid
     }
   }
 ]
