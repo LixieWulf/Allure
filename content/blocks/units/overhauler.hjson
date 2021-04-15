@@ -2,11 +2,26 @@ type: Reconstructor
 name: Overhauler
 description: Upgrades inputted units to their fifth tier.
 size: 14
+constructTime: 93600
+liquidCapacity: 2500
 consumes: {
-  power: 72.5
+  power: 2450
+  items: {
+    items: [
+      silicon/28000
+      titanium/20000
+      thorium/20000
+      plastanium/15000
+      surge-alloy/12500
+      cookienite-baked/7000
+      tungsten/5000
+      bluewolframite/4500
+      draconium/2000
+    ]
+  }
   liquid: {
     liquid: supercoolant
-    amount: 8.1
+    amount: 3.3
   }
 }
 upgrades: [
@@ -15,4 +30,15 @@ upgrades: [
   [vengeance, fearless]
   [blaze, wildfire]
 ]
-buildVisibility: shown
+requirements: [
+  copper/46000
+  lead/50000
+  silicon/35000
+  thorium/35000
+  phase-fabric/30000
+  surge-alloy/25000
+  amethyst-gem/15000
+  bluewolframite/14500
+  draconium/10000
+]
+category: units
