@@ -1,0 +1,17 @@
+type: Reconstructor
+name: Overhauler
+description: Upgrades inputted units to their fifth tier.
+size: 14
+consumes: {
+  power: 72.5
+  liquid: {
+    liquid: supercoolant
+    amount: 8.1
+  }
+}
+upgrades: [
+  [banshee, spriggan]
+  [maliase, plague]
+  [vengeance, fearless]
+  [blaze, wildfire]
+]
