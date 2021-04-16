@@ -3,3 +3,5 @@ localizedName: Crystal Dunes
 variants: 3
 wall: crystal-wall
 itemDrop: amethyst
+playerUnmineable: true
+lowPriority: true
