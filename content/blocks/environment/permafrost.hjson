@@ -1,0 +1,14 @@
+type: Floor
+localizedName: Permafrost
+speedMultiplier: 0.4
+liquidDrop: cryofluid
+liquidMultiplier: 0.02
+updateEffect: {
+  type: ParticleEffect
+  length: 0
+  baseLength: 4
+  lifetime: 15
+  particles: 1
+  region: exotic-mod-snowflake
+}
+status: freezing
