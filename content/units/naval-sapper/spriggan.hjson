@@ -98,7 +98,8 @@ weapons: [
     bullet: {
       type: SapBulletType
       damage: 250
-      length: 260
+      lightningLength: 260
+      lightningLengthRand: 50
       sapStrength: 0.55
       color: bf92f9
       shootEffect: shootLiquid
