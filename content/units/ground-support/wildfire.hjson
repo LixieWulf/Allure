@@ -99,10 +99,8 @@ weapons: [
         sizeTo: 45
         strokeFrom: 15
         strokeTo: 0
-        particles: 1
         colorFrom: 84f591
         colorTo: 84f59100
-        region: particle
       }
       fragBullets: 6
       fragVelocityMax: 1
@@ -139,10 +137,8 @@ weapons: [
           sizeTo: 30
           strokeFrom: 15
           strokeTo: 0
-          particles: 1
           colorFrom: 84f591
           colorTo: 84f59100
-          region: particle
         }
         fragBullets: 4
         fragVelocityMin: 1
