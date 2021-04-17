@@ -63,8 +63,8 @@ weapons: [
     bullet: {
       type: LightningBulletType
       damage: 1250
-      lightningLength: 200
-      lightningLengthRand: 50
+      lightningLength: 30
+      lightningLengthRand: 15
       lightningColor: bf92f9
     }
   }
