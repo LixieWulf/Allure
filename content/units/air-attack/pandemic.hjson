@@ -3,11 +3,59 @@ localizedName: Pandemic
 description: Attacks hostile targets with a barrage of lasers, bombs, and flying swords. Defends itself with a strong sword.
 health: 2350000
 armor: 650
-hitSize: 100
+hitSize: 140
 flying: true
-speed: 2.6
-rotateSpeed: 2.6
-accel: 0.2
-drag: 0.03
+speed: 1.5
+rotateSpeed: 1
+accel: 0.01
+drag: 0.005
 engineOffset: 56
 engineSize: 15
+weapons: [
+  {
+    name: pandemic-cannon
+    top: false
+    mirror: false
+    x: 0
+    y: 45
+    recoil: 12
+    reload: 120
+    shootY: 16
+    shootSound: artillery
+    bullet: {
+      damage: 2250
+      speed: 5
+      lifetime: 90
+      drag: 0.05
+      pierce: true
+      pierceBuilding: true
+      homingPower: 5
+      homingRange: 300
+      homingDelay: 85
+      sprite: exotic-mod-sword
+      width: 30
+      height: 60
+      frontColor: ffffff
+      backColor: e65555
+      shrinkY: 0
+      despawnEffect: none
+      fragBullets: 1
+      fragCone: 0
+      fragBullet: {
+        type: RailBulletType
+        damage: 2250
+        length: 300
+        pierceDamageFactor: 0
+        updateEffectSeg: 100
+        updateEffect: {
+          type: ParticleEffect
+          particles: 1
+          length: 0.01
+          lifetime: 15
+          sizeFrom: 30
+          region: exotic-mod-sword-back
+        }
+      }
+    }
+  }
+]
