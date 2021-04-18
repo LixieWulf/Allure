@@ -1,0 +1,13 @@
+type: flying
+localizedName: Pandemic
+description: Attacks hostile targets with a barrage of lasers, bombs, and flying swords. Defends itself with a strong sword.
+health: 2350000
+armor: 650
+hitSize: 100
+flying: true
+speed: 2.6
+rotateSpeed: 2.6
+accel: 0.2
+drag: 0.03
+engineOffset: 56
+engineSize: 15
