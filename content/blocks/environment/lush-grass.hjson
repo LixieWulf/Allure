@@ -5,13 +5,14 @@ status: {
   localizedName: Prolific Growth
   damage: -2.5
   speedMultiplier: 0.85
+  effectChance: 0.05
   effect: {
     type: ParticleEffect
     length: 0
     particles: 1
     lifetime: 180
-    sizeFrom: 4
-    sizeTo: 4
+    sizeFrom: 2
+    sizeTo: 2
     colorFrom: 44a64e
     colorTo: 0b611f00
     region: exotic-mod-heal
