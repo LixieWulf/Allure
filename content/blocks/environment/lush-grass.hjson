@@ -1,0 +1,20 @@
+type: Floor
+localizedName: Lush Grass
+status: {
+  name: prolific-growth
+  localizedName: Prolific Growth
+  damage: -2.5
+  speedMultiplier: 0.85
+  effect: {
+    type: ParticleEffect
+    length: 0
+    particles: 1
+    lifetime: 180
+    sizeFrom: 4
+    sizeTo: 4
+    colorFrom: 44a64e
+    colorTo: 0b611f00
+    region: exotic-mod-heal
+  }
+}
+statusDuration: 160
