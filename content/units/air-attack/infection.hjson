@@ -1,0 +1,13 @@
+type: flying
+localizedName: Infection
+description: The leader of the rebel attack forces. Known for causing the end of multiple civilizations, including the one that birthed it.
+flying: true
+hitSize: 320
+health: 32000000
+armor: 1750
+speed: 1.2
+rotateSpeed: 4
+accel: 0.1
+drag: 0.005
+engineOffset: 320
+engineSize: 20
