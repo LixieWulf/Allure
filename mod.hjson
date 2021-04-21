@@ -6,9 +6,11 @@ author: '''
   '''
 description:
   '''
+  WARNING: Not supported on low-end devices.
+  
   We got together over the Mindustry Discord to bring you this exotic mod. Adds in a few things we thought would be fun.
   Update log:
-    suffering
+    you should have run when you could have.
 
   Note: Reconstructors will break the game's UI because of the resource costs, there isn't anything I (BlueWolf) can do about it.
 
@@ -16,5 +18,5 @@ description:
   
   A lot of work goes into Exotic, so if you want to show some support or like the content give the mod a star on GitHub!
   '''
-version: 0.2 Alpha
+version: 0.3 Alpha
 minGameVersion: 126.2
