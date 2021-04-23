@@ -2,8 +2,9 @@ type: flying
 localizedName: Outbreak
 description: Attacks units by dashing forward and stabbing them.
 flying: true
-health: 150
+health: 75
 speed: 3.4
+rotateSpeed: 20
 circleTarget: true
 weapons: [
   {
@@ -17,7 +18,7 @@ weapons: [
       type: RailBulletType
       damage: 20
       pierceDamageFactor: 0
-      length: 140
+      length: 80
       recoil: -40
       shootEffect: none
       smokeEffect: none
