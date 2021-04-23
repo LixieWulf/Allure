@@ -4,11 +4,62 @@ description: A medium sized, cheap turret used for early defenses.
 size: 2
 health: 650
 reload: 25
-range: 100
+range: 140
 targetGround: true
 targetAir: true
 shots: 2
-spacing: 6
+spread: 5.5
+alternate: true
 ammoTypes: {
-  copper: standardCopper
+  scrap: {
+    damage: 5
+    speed: 3
+    lifetime: 45
+    reloadMultiplier: 0.65
+    ammoMultiplier: 3
+    splashDamage: 5
+    splashDamageRadius: 12
+    height: 8
+    width: 6
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    hitEffect: flakExplosion
+  }
+  lead: {
+    damage: 15
+    speed: 2.5
+    lifetime: 50
+    reloadMultiplier: 0.45
+    height: 8
+    width: 6
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+  }
+  silicon: {
+    damage: 7
+    speed: 3.2
+    lifetime: 45
+    reloadMultiplier: 1.5
+    ammoMultiplier: 4
+    height: 8
+    width: 6
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    homingPower: 0.1
+  }
+  thorium: {
+    damage: 17
+    speed: 3
+    lifetime: 60
+    ammoMultiplier: 3
+    height: 10
+    width: 8
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+  }
 }
+requirements: [
+  copper/105
+]
+category: turret
+research: duo
