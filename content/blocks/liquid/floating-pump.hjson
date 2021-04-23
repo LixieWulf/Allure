@@ -1,0 +1,19 @@
+type: Pump
+localizedName: Floating Pump
+description: Pumps liquids at a slow rate. Can be placed anywhere on deep liquids.
+size: 2
+hasPower: true
+consumes: {
+  power: 0.75
+}
+pumpAmount: 0.15
+squareSprite: false
+placeableLiquid: true
+liquidCapacity: 90
+requirements: [
+  silicon/45
+  metaglass/25
+  thorium/30
+  amethyst-gem/15
+]
+category: liquid
