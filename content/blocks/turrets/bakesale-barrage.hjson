@@ -45,10 +45,10 @@ ammoTypes: {
     damage: 5000
     splashDamage: 13000
     splashDamageRadius: 96
-    ammoMultiplier: 20
+    ammoMultiplier: 5
     homingRange: 360
     homingPower: 0.08
-    lifetime: 300
+    lifetime: 120
     hitEffect: blockExplosion
     despawnEffect: blockExplosion
     weaveScale: 8
@@ -71,10 +71,10 @@ ammoTypes: {
     damage: 9000
     splashDamage: 20000
     splashDamageRadius: 160
-    ammoMultiplier: 15
+    ammoMultiplier: 3
     homingRange: 360
     homingPower: 0.1
-    lifetime: 300
+    lifetime: 77
     hitEffect: blockExplosion
     despawnEffect: blockExplosion
     weaveScale: 8
@@ -97,10 +97,10 @@ ammoTypes: {
     damage: 7000
     splashDamage: 16000
     splashDamageRadius: 256
-    ammoMultiplier: 15
+    ammoMultiplier: 3
     homingRange: 360
     homingPower: 0.03
-    lifetime: 300
+    lifetime: 90
     hitEffect: blockExplosion
     despawnEffect: blockExplosion
     weaveScale: 8
@@ -122,10 +122,10 @@ ammoTypes: {
     damage: 5000
     splashDamage: 9000
     splashDamageRadius: 96
-    ammoMultiplier: 25
+    ammoMultiplier: 6
     homingRange: 360
     homingPower: 0.04
-    lifetime: 300
+    lifetime: 120
     hitEffect: blockExplosion
     despawnEffect: blockExplosion
     weaveScale: 8
@@ -151,10 +151,10 @@ ammoTypes: {
     damage: 1500
     splashDamage: 2000
     splashDamageRadius: 256
-    ammoMultiplier: 20
+    ammoMultiplier: 5
     homingRange: 360
     homingPower: 0.08
-    lifetime: 300
+    lifetime: 95
     hitEffect: blockExplosion
     despawnEffect: blockExplosion
     weaveScale: 8
@@ -179,7 +179,7 @@ ammoTypes: {
       hitSound: artillery
       speed: 6.5
       damage: 750
-      lifetime: 30
+      lifetime: 10
       hitEffect: blockExplosion
       despawnEffect: blockExplosion
       weaveScale: 8
