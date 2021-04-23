@@ -1,0 +1,14 @@
+type: ItemTurret
+localizedName: Split
+description: A medium sized, cheap turret used for early defenses.
+size: 2
+health: 650
+reload: 25
+range: 100
+targetGround: true
+targetAir: true
+shots: 2
+spacing: 6
+ammoTypes: {
+  copper: standardCopper
+}
