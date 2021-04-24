@@ -1,0 +1,17 @@
+type: PointDefenseTurret
+localizedName: Cluster
+description: Assists in defense by shooting down weak bullets.
+health: 250
+reloadTime: 12
+bulletDamage: 2
+range: 110
+consumes: {
+  power: 1.5
+}
+requirements: [
+  copper/70
+  lead/50
+  silicon/30
+]
+category: turret
+research: arc
