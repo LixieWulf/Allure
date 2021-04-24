@@ -1,7 +1,49 @@
 type: flying
 localizedName: Victory
 description: Heals buildings slowly with its singular weapon.
+flying: true
 health: 130
 speed: 2.4
 controller: repairAI
-lowAltitude: true
+weapons: [
+  {
+    name: victory-weapon
+    mirror: false
+    x: 0
+    y: 0
+    shootY: 4
+    reload: 12
+    shootSound: lasershoot
+    bullet: {
+      type: LaserBoltBulletType
+      damage: 7
+      speed: 6
+      frontColor: 6f7fe8
+      backColor: 5757c2
+      collidesTeam: true
+      lifetime: 25
+      healPercent: 4
+      smokeEffect: {
+        type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 8
+        colorFrom: 6f7fe8
+        colorTo: 6f7fe8
+        lifetime: 10
+        strokeFrom: 1
+        strokeTo: 0
+      }
+      hitEffect: none
+      despawnEffect: {
+        type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 8
+        colorFrom: 6f7fe8
+        colorTo: 6f7fe8
+        lifetime: 10
+        strokeFrom: 1
+        strokeTo: 0
+      }
+    }
+  }
+]
