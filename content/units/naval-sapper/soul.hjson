@@ -11,11 +11,11 @@ weapons: [
     shootY: 4
     x: 0
     y: 0
-    reload: 7
+    reload: 15
     shootSound: sap
     bullet: {
       type: SapBulletType
-      damage: 7
+      damage: 5
       length: 110
       sapStrength: 0.75
       shootEffect: shootLiquid
