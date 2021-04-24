@@ -4,6 +4,8 @@ description: Heals buildings slowly with its singular weapon.
 flying: true
 health: 130
 speed: 2.4
+accel: 0.25
+drag: 0.01
 controller: repairAI
 weapons: [
   {
@@ -18,6 +20,7 @@ weapons: [
       type: LaserBoltBulletType
       damage: 7
       speed: 6
+      recoil: 0.6
       frontColor: 6f7fe8
       backColor: 5757c2
       collidesTeam: true
