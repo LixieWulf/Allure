@@ -1,0 +1,10 @@
+type: Wall
+localizedName: Large Metaglass Wall
+description: "Protects structures from enemy projectiles. Absorbs laser beams.\nSpans multiple tiles."
+health: 1520
+absorbLasers: true
+category: defense
+research: metaglass-wall
+requirements: [
+  metaglass/24
+]
