@@ -1,0 +1,7 @@
+type: flying
+localizedName: Victory
+description: Heals buildings slowly with its singular weapon.
+health: 130
+speed: 2.4
+controller: repairAI
+lowAltitude: true
