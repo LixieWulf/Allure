@@ -3,3 +3,8 @@ localizedName: Metaglass Wall
 description: Protects structures from enemy projectiles. Absorbs laser beams.
 health: 380
 absorbLasers: true
+category: defense
+research: copper-wall-large
+requirements: [
+  metaglass/6
+]
