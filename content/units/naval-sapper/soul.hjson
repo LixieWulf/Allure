@@ -1,0 +1,27 @@
+type: naval
+localizedName: Soul
+description: Attacks hostile targets with a small sapping weapon.
+health: 200
+speed: 2.1
+weapons: [
+  {
+    name: soul-weapon
+    mirror: false
+    rotate: true
+    shootY: 4
+    x: 0
+    y: 0
+    reload: 7
+    shootSound: sap
+    bullet: {
+      type: SapBulletType
+      damage: 7
+      length: 110
+      sapStrength: 0.75
+      shootEffect: shootLiquid
+      hitEffect: hitLiquid
+      color: bf92f9
+      knockback: -0.5
+    }
+  }
+]
