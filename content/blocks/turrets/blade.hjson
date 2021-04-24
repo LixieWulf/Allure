@@ -3,17 +3,25 @@ localizedName: Blade
 description: Fires a triple-beamed laser salvo at enemies. 
 size: 3
 health: 1600
-range: 220
+range: 160
 rotateSpeed: 3.8
-reload: 160
+reloadTime: 160
+burstSpacing: 3
 shots: 3
-spread: 6
-burstSpacing: 2
+xRand: 5
 powerUse: 10
+recoilAmount: 3
+shootSound: laser
 shootType: {
   type: LaserBulletType
-  length: 200
+  length: 140
   width: 24
-  damage: 65
+  damage: 80
 }
-buildVisibility: sandboxOnly
+category: turret
+requirements: [
+  lead/450
+  graphite/350
+  silicon/300
+  plastanium/150
+]
