@@ -16,7 +16,7 @@ weapons: [
     reload: 25
     bullet: {
       type: RailBulletType
-      damage: 20
+      damage: 10
       pierceDamageFactor: 0
       length: 80
       recoil: -40
