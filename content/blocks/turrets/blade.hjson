@@ -1,0 +1,19 @@
+type: PowerTurret
+localizedName: Blade
+description: Fires a triple-beamed laser salvo at enemies. 
+size: 3
+health: 1600
+range: 220
+rotateSpeed: 3.8
+reload: 160
+shots: 3
+spread: 6
+burstSpacing: 2
+powerUse: 10
+shootType: {
+  type: LaserBulletType
+  length: 200
+  width: 24
+  damage: 65
+}
+buildVisibility: sandboxOnly
