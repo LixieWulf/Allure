@@ -1,0 +1,18 @@
+type: ItemTurret
+localizedName: Stellar
+dezcription: A large antiair turret. Fires small orbs of volatile plasma at enemy air units.
+targetGround: false
+size: 3
+range: 200
+health: 1250
+reload: 45
+recoilAmount: 3
+alternate: true
+shots: 2
+spread: 8
+inaccuracy: 4
+ammoTypes: {
+  copper: standardCopper
+}
+buildVisibility: sandboxOnly
+category: turret
