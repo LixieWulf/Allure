@@ -3,7 +3,6 @@ localizedName: Split
 description: A medium sized, cheap turret used for early defenses.
 size: 2
 health: 650
-reload: 25
 range: 140
 targetGround: true
 targetAir: true
