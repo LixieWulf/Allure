@@ -1,0 +1,190 @@
+type: flying
+localizedName: Hellfire
+description: Trades its own health for more weapons power and armor. Protects itself and nearby units with a powerful shield regeneration field.
+flying: true
+hitSize: 140
+health: 1300000
+armor: 700
+speed: 1.4
+rotateSpeed: 0.7
+drag: 0.05
+accel: 0.05
+engineOffset: 70
+engineSize: 13
+lowAltitude: true
+fallSpeed: 0.005
+lightRadius: 200
+lightColor: 8ca4f5
+buildSpeed: 8.5
+weapons: [
+  {
+    name: hellfire-laser
+    x: 0
+    y: 0
+    mirror: false
+    shootY: 16
+    reload: 300
+    firstShotDelay: 165
+    shootStatus: unmoving
+    shootStatusDuration: 170
+    shots: 2
+    shotDelay: 2
+    shootSound: laserblast
+    bullet: {
+      type: LaserBulletType
+      damage: 6500
+      length: 750
+      width: 120
+      lifetime: 85
+      largeHit: true
+      lightningSpacing: 65
+      lightningDelay: 1.4
+      lightningDamage: 400
+      lightningLength: 25
+      lightningLengthRand: 20
+      lightningColor: 8ca4f5
+    }
+  }
+  {
+    name: hellfire-cannon
+    x: 0
+    y: -51.25
+    shootY: 16
+    rotate: true
+    rotateSpeed: 2.1
+    mirror: false
+    recoil: 10
+    reload: 240
+    shootSound: railgun
+    bullet: {
+      type: RailBulletType
+      damage: 20500
+      length: 550
+      pierceDamageFactor: 0.8
+      shootEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            sizeFrom: 65
+            lifetime: 35
+            colorFrom: 8ca4f5
+            colorTo: 8ca4f5
+            region: exotic-mod-diamond-thin
+          }
+          {
+            type: WaveEffect
+            lifetime: 12
+            sizeTo: 65
+            colorFrom: 8ca4f5
+            colorTo: 8ca4f5
+            strokeFrom: 6
+            strokeTo: 0
+          }
+        ]
+      }
+      updateEffect: {
+        type: ParticleEffect
+        particles: 1
+        length: 0
+        sizeFrom: 30
+        lifetime: 35
+        colorFrom: 8ca4f5
+        colorTo: 8ca4f5
+        region: exotic-mod-diamond-wide
+      }
+      updateEffectSeg: 125
+    }
+  }
+  {
+    name: hellfire-shotgun
+    x: 28
+    y: 5.25
+    shootY: 8
+    rotate: true
+    reload: 10
+    shots: 2
+    spacing: 15
+    shootSound: shotgun
+    bullet: {
+      type: ShrapnelBulletType
+      collidesTeam: true
+      healPercent: 10
+      length: 160
+      damage: 1050
+      width: 12
+      serrations: 0
+      toColor: 8ca4f5
+    }
+  }
+  {
+    name: hellfire-shotgun
+    x: 31.5
+    y: -35
+    shootY: 8
+    rotate: true
+    reload: 25
+    shots: 3
+    spacing: 15
+    shootSound: shotgun
+    bullet: {
+      type: ShrapnelBulletType
+      collidesTeam: true
+      healPercent: 20
+      length: 220
+      damage: 1050
+      width: 12
+      serrations: 0
+      toColor: 8ca4f5
+    }
+  }
+  {
+    name: hellfire-frontal
+    x: 23
+    y: 57
+    top: false
+    reload: 45
+    recoil: 4
+    shootY: 12
+    shootSound: shootBig
+    bullet: {
+      type: ShrapnelBulletType
+      length: 310
+      lifetime: 35
+      damage: 2300
+      width: 18
+      toColor: 8ca4f5
+      serrationWidth: 16
+      serrationSpacing: 20
+    }
+  }
+]
+abilities: [
+  {
+    type: ShieldRegenFieldAbility
+    range: 300
+    amount: 12500
+    max: 45000
+    reload: 360
+    activeEffect: {
+      type: WaveEffect
+      lifetime: 35
+      sizeTo: 300
+      strokeFrom: 5
+      strokeTo: 0
+      colorFrom: 8ca4f5
+      colorTo: 8ca4f550
+    }
+    applyEffect: {
+      type: WaveEffect
+      lifetime: 35
+      sizeTo: 15
+      strokeFrom: 2
+      strokeTo: 0
+      colorFrom: 8ca4f5
+      colorTo: 8ca4f550
+    }
+  }
+]
