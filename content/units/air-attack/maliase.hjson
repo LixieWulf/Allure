@@ -13,6 +13,8 @@ circleTarget: true
 engineOffset: 46
 engineSize: 10
 lowAltitude: true
+lightRadius: 90
+lightColor: e65555
 weapons: [
   {
     name: maliase-blade
@@ -25,7 +27,7 @@ weapons: [
     shootSound: none
     bullet: {
       type: RailBulletType
-      damage: 75000
+      damage: 25000
       pierceDamageFactor: 0
       length: 20
       hitEffect: none
@@ -45,6 +47,7 @@ weapons: [
     continuous: true
     shootSound: beam
     shootY: 16
+    shake: 3
     bullet: {
       type: ContinuousLaserBulletType
       damage: 240
@@ -53,6 +56,7 @@ weapons: [
       drawSize: 240
       width: 13
       colors: [e6555520, e6555540, e6555580, ffffff]
+      lightColor: e65555
       hitEffect: {
         type: ParticleEffect
         line: true
@@ -90,9 +94,11 @@ weapons: [
       splashDamageRadius: 80
       frontColor: ffffff
       backColor: e65555
+      lightColor: e65555
       sprite: large-bomb
       height: 50
       width: 50
+      hitShake: 6
       spin: 1.5
       shrinkX: 0.4
       shrinkY: 0.4

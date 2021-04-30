@@ -13,6 +13,8 @@ engineOffset: 66
 engineSize: 12
 lowAltitude: true
 circleTarget: true
+lightRadius: 120 
+lightColor: e65555
 weapons: [
   {
     name: pandemic-cannon
@@ -24,6 +26,7 @@ weapons: [
     reload: 120
     shootY: 16
     shootSound: artillery
+    shake: 2.5
     bullet: {
       damage: 13500
       speed: 5
@@ -41,6 +44,7 @@ weapons: [
       height: 40
       frontColor: ffffff
       backColor: e65555
+      lightColor: e65555
       shrinkY: 0
       despawnEffect: none
       fragBullets: 1
@@ -71,6 +75,7 @@ weapons: [
     reload: 80
     shootY: 12
     shootSound: artillery
+    shake: 1.5
     bullet: {
       damage: 6500
       speed: 5
@@ -88,6 +93,7 @@ weapons: [
       height: 20
       frontColor: ffffff
       backColor: e65555
+      lightColor: e65555
       shrinkY: 0
       despawnEffect: none
       fragBullets: 1
@@ -118,6 +124,7 @@ weapons: [
     reload: 25
     shootY: 6
     shootSound: artillery
+    shake: 0.75
     bullet: {
       damage: 2600
       speed: 5
@@ -135,6 +142,7 @@ weapons: [
       height: 10
       frontColor: ffffff
       backColor: e65555
+      lightColor: e65555
       shrinkY: 0
       despawnEffect: none
       fragBullets: 1
@@ -178,9 +186,11 @@ weapons: [
       splashDamageRadius: 160
       frontColor: ffffff
       backColor: e65555
+      lightColor: e65555
       sprite: large-bomb
       height: 60
       width: 60
+      hitShake: 8
       spin: 3
       shrinkX: 0.5
       shrinkY: 0.5
@@ -266,6 +276,7 @@ weapons: [
       drawSize: 120
       width: 6
       colors: [e6555520, e6555540, e6555580, ffffff]
+      lightColor: e65555
       hitEffect: {
         type: ParticleEffect
         line: true

@@ -14,6 +14,8 @@ rotateSpeed: 3
 engineOffset: 8
 engineSize: 5
 rotateShooting: false
+lightRadius: 45
+lightColor: e65555
 weapons: [
 {
   shots: 2

@@ -10,6 +10,7 @@ engineOffset: 56
 engineSize: 9.3
 circleTarget: true
 lightRadius: 120
+lightColor: e65555
 weapons: [
   {
     name: plague-ram

@@ -15,6 +15,8 @@ engineOffset: 40
 engineSize: 9.5
 circleTarget: true
 rotateShooting: false
+lightRadius: 65
+lightColor: e65555
 weapons: [
 {
   name: pathogen-bomber
@@ -32,10 +34,13 @@ weapons: [
     splashDamageRadius: 75
     width: 12
     height: 18
+    hitShake: 2
     lifetime: 60
     maxRange: 40
     frontColor: e65555
     backColor: a63d3d
+    lightRadius: 30
+    lightColor: e65555
     shootEffect: none
     despawnEffect: {
       type: MultiEffect
@@ -80,10 +85,13 @@ weapons: [
     splashDamageRadius: 75
     width: 12
     height: 18
+    hitShake: 2
     lifetime: 60
     maxRange: 40
     frontColor: e65555
     backColor: a63d3d
+    lightRadius: 30
+    lightColor: e65555
     shootEffect: none
     despawnEffect: {
       type: MultiEffect
@@ -133,10 +141,12 @@ weapons: [
     splashDamageRadius: 25
     frontColor: e65555
     backColor: a63d3d
+    trailColor: a63d3d
+    lightColor: e65555
     hitEffect: flakExplosion
     despawnEffect: flakExplosion
-    trailColor: a63d3d
     collidesGround: false
+    hitShake: 1.25
   }
 }
 ]

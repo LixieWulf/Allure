@@ -14,6 +14,8 @@ engineSize: 10
 lowAltitude: true
 circleTarget: true
 rotateShooting: false
+lightRadius: 90
+lightColor: e65555
 weapons: [
   {
     name: disease-weapon
@@ -34,6 +36,7 @@ weapons: [
       drawSize: 110
       width: 4
       colors: [e6555520, e6555540, e6555580, ffffff]
+      lightColor: e65555
       hitEffect: {
         type: ParticleEffect
         line: true
@@ -68,6 +71,7 @@ weapons: [
       drawSize: 110
       width: 4
       colors: [e6555520, e6555540, e6555580, ffffff]
+      lightColor: e65555
       hitEffect: {
         type: ParticleEffect
         line: true
@@ -105,8 +109,10 @@ weapons: [
       sprite: large-bomb
       width: 80
       height: 80
+      hitShake: 4
       frontColor: fffffff
       backColor: e65555
+      lightColor: e65555
       shrinkY: 0.6
       shrinkX: 0.6
       spin: 3

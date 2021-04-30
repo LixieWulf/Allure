@@ -6,6 +6,8 @@ health: 75
 speed: 3.4
 rotateSpeed: 20
 circleTarget: true
+lightRadius: 25
+lightColor: e65555
 weapons: [
   {
     name: outbreak-ram
