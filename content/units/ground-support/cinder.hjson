@@ -12,6 +12,8 @@ drawShields: false
 engineOffset: 16
 engineSize: 12
 rotateSpeed: 0.85
+lightRadius: 90
+lightColor: 84f591
 weapons: [
   {
     name: cinder-cannon
@@ -24,6 +26,7 @@ weapons: [
     shootY: 28
     shootSound: bang
     top: false
+    shake: 2
     bullet: {
       damage: 0
       speed: 12
@@ -32,6 +35,7 @@ weapons: [
       width: 18
       frontColor: ffffff
       backColor: 98ffa9
+      lightColor: 84f591
       pierceCap: 14
       pierce: true
       pierceBuilding: true
@@ -49,6 +53,7 @@ weapons: [
     recoil: 3
     shootY: 6
     shootSound: artillery
+    shake: 2
     bullet: {
       type: ArtilleryBulletType
       splashDamage: 120
@@ -61,8 +66,10 @@ weapons: [
       healPercent: 16
       width: 18
       height: 18
+      hitShake: 2
       frontColor: ffffff
       backColor: 98ffa9
+      lightColor: 84f591
       smokeEffect: hitLaser
       hitEffect: hitLaser
       despawnEffect: none
@@ -91,6 +98,7 @@ weapons: [
       frontColor: ffffff
       backColor: 98ffa9
       trailColor: 98ffa9
+      lightColor: 84f591
       weaveMag: 4
       weaveScale: 8
     }

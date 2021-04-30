@@ -23,6 +23,8 @@ legSplashRange: 72
 rippleScale: 6
 maxStretch: 1.25
 allowLegStep: true
+lightRadius: 100
+lightColor: 84f591
 weapons: [
   {
     name: blaze-weapon
@@ -33,6 +35,7 @@ weapons: [
     recoil: 8
     shootY: 24
     shootSound: laser
+    shake: 4
     bullet: {
       type: LaserBulletType
       damage: 0.000000001
@@ -44,7 +47,8 @@ weapons: [
       largeHit: true
       sideAngle: 0
       sideWidth: 0
-      colors: [98ffa950, 98ffa9, ffffff]
+      colors: [98ffa940, 98ffa9, ffffff]
+      lightColor: 84f591
       lightningSpacing: 25
       lightningDelay: 0.2
       lightningDamage: 150

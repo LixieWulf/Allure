@@ -8,6 +8,7 @@ rotateSpeed: 8.4
 health: 5500
 armor: 14
 mechFrontSway: 0.5
+lightColor: 84f591
 weapons: [
   {
     name: spark-weapon
@@ -29,6 +30,7 @@ weapons: [
       height: 0.01
       collidesTeam: true
       healPercent: 2
+      lightColor: 84f591
       hitEffect: hitLaser
       despawnEffect: none
       smokeEffect: {
@@ -49,7 +51,7 @@ weapons: [
 ]
 abilities: [
   {
-    type: "mindustry.entities.abilities.RepairFieldAbility"
+    type: RepairFieldAbility
     amount: 150
     reload: 90
     range: 45

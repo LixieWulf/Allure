@@ -10,6 +10,8 @@ buildSpeed: 1.4
 rotateSpeed: 2.4
 commandLimit: 6
 singleTarget: true
+lightRadius: 75
+lightColor: 84f591
 weapons: [
   {
     name: ember-weapon
@@ -22,6 +24,7 @@ weapons: [
     recoil: 4
     top: false
     shootSound: bang
+    shake: 1.5
     bullet: {
       damage: 0
       speed: 9
@@ -33,6 +36,7 @@ weapons: [
       healPercent: 16
       frontColor: ffffff
       backColor: 98ffa9
+      lightColor: 84f591
       width: 16
       height: 32
     }
@@ -60,6 +64,7 @@ weapons: [
       frontColor: ffffff
       backColor: 98ffa9
       trailColor: 98ffa9
+      lightColor: 84f591
       weaveMag: 4
       weaveScale: 8
     }
@@ -67,13 +72,13 @@ weapons: [
 ]
 abilities: [
   {
-    type: "mindustry.entities.abilities.RepairFieldAbility"
+    type: RepairFieldAbility
     range: 160
     amount: 250
     reload: 30
   }
   {
-    type: "mindustry.entities.abilities.ForceFieldAbility"
+    type: ForceFieldAbility
     radius: 160
     regen: 10
     max: 15500

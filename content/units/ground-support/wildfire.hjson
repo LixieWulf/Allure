@@ -20,6 +20,8 @@ legSplashDamage: 140
 legSplashRange: 65
 rippleScale: 8
 maxStretch: 1.5
+lightRadius: 160
+lightColor: 84f591
 weapons: [
   {
     name: wildfire-sphere
@@ -31,6 +33,7 @@ weapons: [
     continuous: true
     shootSound: beam
     shootY: 26
+    shake: 4
     bullet: {
       type: ContinuousLaserBulletType
       damage: 1250
@@ -41,6 +44,7 @@ weapons: [
       lifetime: 310
       width: 18
       colors: [84f59150, a5f5af70, cef5d290, ffffff]
+      lightColor: 84f591
       hitEffect: {
         type: ParticleEffect
         line: true
@@ -63,6 +67,7 @@ weapons: [
     rotate: true
     reload: 160
     shootSound: plasmadrop
+    shake: 3
     bullet: {
       type: MissileBulletType
       damage: 2250
@@ -74,11 +79,15 @@ weapons: [
       sprite: particle
       width: 25
       height: 25
+      hitShake: 3
       shrinkY: 0
       weaveMag: 3
       weaveScale: 10
       frontColor: 84f591
       backColor: 00000000
+      lightColor: 84f591
+      lightRadius: 30
+      lightOpacity: 0.6
       trailChance: 1
       trailEffect: {
         type: ParticleEffect
@@ -114,8 +123,12 @@ weapons: [
         sprite: particle
         frontColor: 84f591
         backColor: 00000000
+        lightColor: 84f591
+        lightRadius: 20
+        lightOpacity: 0.6
         width: 12
         height: 12
+        hitShake: 2
         shrinkY: 0
         trailChance: 1
         trailEffect: {
@@ -155,6 +168,7 @@ weapons: [
           shrinkY: 0
           frontColor: ffffff
           backColor: 84f591
+          lightColor: 84f591
           hitEffect: hitMeltHeal
           despawnEffect: none
           trailChance: 1
@@ -183,6 +197,7 @@ weapons: [
     shots: 2
     shotDelay: 12
     shootSound: laser
+    shake: 5
     bullet: {
       type: LaserBulletType
       damage: 0.0000001
@@ -192,6 +207,7 @@ weapons: [
       lifetime: 45
       width: 70
       colors: [98ffa950, 98ffa9, ffffff]
+      lightColor: 84f591
     }
   }
 ]
