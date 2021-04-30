@@ -12,6 +12,8 @@ trailX: 2.5
 trailY: -6.75
 trailScl: 1
 trailLength: 50
+lightRadius: 50
+lightColor: a488eb
 weapons: [
   {
     name: spirit-weapon
@@ -33,6 +35,7 @@ weapons: [
       sapStrength: 0.55
       shootEffect: shootLiquid
       color: bf92f9
+      lightColor: a488eb
       knockback: 0
     }
   }

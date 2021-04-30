@@ -7,6 +7,8 @@ armor: 560
 speed: 0.8
 rotateSpeed: 0.8
 rotateShooting: false
+lightRadius: 130
+lightColor: a488eb
 weapons: [
   {
     name: spriggan-core
@@ -26,6 +28,7 @@ weapons: [
       width: 1.5
       knockback: -25
       color: bf92f9
+      lightColor: a488eb
       status: {
         name: confused
         localizedName: Confused
@@ -66,6 +69,7 @@ weapons: [
       lightningLength: 30
       lightningLengthRand: 15
       lightningColor: bf92f9
+      lightColor: a488eb
     }
   }
   {
@@ -77,6 +81,7 @@ weapons: [
     reload: 25
     recoil: 3
     shootSound: sap
+    shake: 1
     bullet: {
       type: SapBulletType
       damage: 780
@@ -84,6 +89,7 @@ weapons: [
       width: 1.4
       sapStrength: 0.75
       color: bf92f9
+      lightColor: a488eb
       shootEffect: shootLiquid
       hitEffect: hitLiquid
     }
@@ -102,6 +108,7 @@ weapons: [
       length: 260
       sapStrength: 0.55
       color: bf92f9
+      lightColor: a488eb
       shootEffect: shootLiquid
       hitEffect: hitLiquid
     }

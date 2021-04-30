@@ -3,6 +3,8 @@ localizedName: Soul
 description: Attacks hostile targets with a small sapping weapon.
 health: 200
 speed: 2.1
+lightRadius: 35
+lightColor: a488eb
 weapons: [
   {
     name: soul-weapon
@@ -21,6 +23,7 @@ weapons: [
       shootEffect: shootLiquid
       hitEffect: hitLiquid
       color: bf92f9
+      lightColor: a488eb
       knockback: -0.5
     }
   }

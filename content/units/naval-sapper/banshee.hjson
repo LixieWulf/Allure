@@ -19,6 +19,8 @@ trailX: 18
 trailY: -46
 trailScl: 4
 trailLength: 60
+lightRadius: 110
+lightColor: a488eb
 weapons: [
   {
     name: spirit-weapon
@@ -35,6 +37,7 @@ weapons: [
       length: 200
       sapStrength: 0.45
       color: bf92f9
+      lightColor: a488eb
       shootEffect: shootLiquid
       hitEffect: hitLiquid
     }
@@ -54,6 +57,7 @@ weapons: [
       length: 235
       sapStrength: 0.65
       color: bf92f9
+      lightColor: a488eb
       shootEffect: shootLiquid
       hitEffect: hitLiquid
     }
@@ -67,6 +71,7 @@ weapons: [
     recoil: 3
     reload: 20
     shootSound: sap
+    shake: 1
     bullet: {
       type: SapBulletType
       damage: 780
@@ -75,6 +80,7 @@ weapons: [
       width: 1
       sapStrength: 0.85
       color: bf92f9
+      lightColor: a488eb
       shootEffect: shootLiquid
       hitEffect: hitLiquid
     }
@@ -88,6 +94,7 @@ weapons: [
     reload: 85
     recoil: 4
     shootSound: artillery
+    shake: 2
     bullet: {
       type: ArtilleryBulletType
       splashDamage: 350
@@ -98,8 +105,10 @@ weapons: [
       speed: 2
       width: 15
       height: 18
+      hitShake: 2
       frontColor: bf92f9
       backColor: 6d56bf
+      lightColor: a488eb
       despawnEffect: sapExplosion
     }
   }

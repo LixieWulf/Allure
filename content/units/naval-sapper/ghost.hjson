@@ -10,6 +10,8 @@ health: 67500
 armor: 45
 rotateSpeed: 3
 rotateShooting: false
+lightRadius: 75
+lightColor: a488eb
 weapons: [
 {
   name: spirit-weapon
@@ -28,6 +30,7 @@ weapons: [
     shootEffect: shootLiquid
     knockback: -5
     color: bf92f9
+    lightColor: a488eb
   }
 }
 {
@@ -41,6 +44,7 @@ weapons: [
   recoil: 5
   rotateSpeed: 0.75
   shootSound: artillery
+  shake: 1
   bullet: {
     type: ArtilleryBulletType
     speed: 4
@@ -48,9 +52,11 @@ weapons: [
     splashDamageRadius: 55
     width: 18
     height: 24
+    hitShake: 2
     despawnEffect: sapExplosion
     frontColor: bf92f9
     backColor: 6d56bf
+    lightColor: a488eb
     lifetime: 180
     status: sapped
     statusDuration: 1080
