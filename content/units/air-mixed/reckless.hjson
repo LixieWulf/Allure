@@ -15,6 +15,7 @@ mineSpeed: 4
 mineTier: 5
 engineOffset: 8
 canHeal: true
+lightColor: 6f7fe8
 weapons: [
 {
   name: reckless-weapon
@@ -33,6 +34,7 @@ weapons: [
     collidesTeam: true
     lifetime: 45
     healPercent: 4
+    lightColor: 6f7fe8
     smokeEffect: {
       type: WaveEffect
       sizeFrom: 0
@@ -69,7 +71,7 @@ weapons: [
 research: constructor
 abilities: [
   {
-    type: "mindustry.entities.abilities.ShieldRegenFieldAbility"
+    type: ShieldRegenFieldAbility
     amount: 100
     max: 250
     reload: 150

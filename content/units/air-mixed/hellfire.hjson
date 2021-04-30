@@ -13,8 +13,8 @@ engineOffset: 70
 engineSize: 13
 lowAltitude: true
 fallSpeed: 0.005
-lightRadius: 200
-lightColor: 8ca4f5
+lightRadius: 170
+lightColor: 6f7fe8
 buildSpeed: 8.5
 weapons: [
   {
@@ -30,6 +30,7 @@ weapons: [
     shots: 2
     shotDelay: 2
     shootSound: laserblast
+    shake: 15
     bullet: {
       type: LaserBulletType
       damage: 6500
@@ -37,6 +38,8 @@ weapons: [
       width: 120
       lifetime: 85
       largeHit: true
+      colors: [6f7fe840, 6f7fe8, ffffff]
+      lightColor: 6f7fe8
       lightningSpacing: 65
       lightningDelay: 1.4
       lightningDamage: 400
@@ -56,11 +59,13 @@ weapons: [
     recoil: 10
     reload: 240
     shootSound: railgun
+    shake: 6
     bullet: {
       type: RailBulletType
       damage: 20500
       length: 550
       pierceDamageFactor: 0.8
+      lightColor: 6f7fe8
       shootEffect: {
         type: MultiEffect
         effects: [
@@ -108,6 +113,7 @@ weapons: [
     shots: 2
     spacing: 15
     shootSound: shotgun
+    shake: 1
     bullet: {
       type: ShrapnelBulletType
       collidesTeam: true
@@ -117,6 +123,7 @@ weapons: [
       width: 12
       serrations: 0
       toColor: 8ca4f5
+      lightColor: 6f7fe8
     }
   }
   {
@@ -129,6 +136,7 @@ weapons: [
     shots: 3
     spacing: 15
     shootSound: shotgun
+    shake: 1
     bullet: {
       type: ShrapnelBulletType
       collidesTeam: true
@@ -138,6 +146,7 @@ weapons: [
       width: 12
       serrations: 0
       toColor: 8ca4f5
+      lightColor: 6f7fe8
     }
   }
   {
@@ -149,6 +158,7 @@ weapons: [
     recoil: 4
     shootY: 12
     shootSound: shootBig
+    shake: 2
     bullet: {
       type: ShrapnelBulletType
       length: 310
@@ -156,6 +166,7 @@ weapons: [
       damage: 2300
       width: 18
       toColor: 8ca4f5
+      lightColor: 6f7fe8
       serrationWidth: 16
       serrationSpacing: 20
     }

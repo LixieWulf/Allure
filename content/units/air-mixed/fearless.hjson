@@ -14,7 +14,8 @@ buildSpeed: 25.7
 buildBeamOffset: 26
 engineOffset: 48
 engineSize: 10
-lightRadius: 120
+lightRadius: 130
+lightColor: 6f7fe8
 lowAltitude: true
 weapons: [
   {
@@ -25,6 +26,7 @@ weapons: [
     reload: 480
     shootCone: 360
     shootSound: plasmaboom
+    shake: 3
     bullet: {
       damage: 0
       speed: 0
@@ -35,6 +37,7 @@ weapons: [
       pierceBuilding: true
       hittable: false
       absorbable: false
+      lightColor: 6f7fe8
       shootEffect: none
       smokeEffect: {
         type: WaveEffect
@@ -79,6 +82,7 @@ weapons: [
     continuous: true
     shootSound: beam
     shootY: 36
+    shake: 5
     bullet: {
       type: ContinuousLaserBulletType
       damage: 12000
@@ -89,6 +93,7 @@ weapons: [
       lifetime: 35
       width: 16
       colors: [5757c235, 6f7fe865, 8091ff90, ffffff]
+      lightColor: 6f7fe8
       fadeTime: 20
       hitEffect: {
         type: ParticleEffect

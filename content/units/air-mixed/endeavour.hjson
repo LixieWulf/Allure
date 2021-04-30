@@ -17,6 +17,8 @@ canHeal: true
 lowAltitude: true
 engineOffset: 32
 engineSize: 8.5
+lightRadius: 80
+lightColor: 6f7fe8
 weapons: [
   {
     name: endeavour-laser
@@ -30,12 +32,15 @@ weapons: [
     shootStatusDuration: 60
     shootSound: laserblast
     chargeSound: lasercharge2
+    shake: 10
     bullet: {
       type: LaserBulletType
       damage: 1200
       length: 500
       width: 55
       lifetime: 60
+      colors: [6f7fe840, 6f7fe8, ffffff]
+      lightColor: 6f7fe8
       shootEffect: {
         type: MultiEffect
           effects: [
@@ -92,6 +97,7 @@ weapons: [
       healPercent: 8
       frontColor: 6f7fe8
       backColor: 5757c2
+      lightColor: 6f7fe8
       smokeEffect: {
         type: WaveEffect
         sizeFrom: 0
@@ -142,6 +148,7 @@ weapons: [
       healPercent: 8
       frontColor: 6f7fe8
       backColor: 5757c2
+      lightColor: 6f7fe8
       smokeEffect: {
         type: WaveEffect
         sizeFrom: 0
@@ -192,6 +199,7 @@ weapons: [
       healPercent: 8
       frontColor: 6f7fe8
       backColor: 5757c2
+      lightColor: 6f7fe8
       smokeEffect: {
         type: WaveEffect
         sizeFrom: 0
@@ -242,6 +250,7 @@ weapons: [
       healPercent: 8
       frontColor: 6f7fe8
       backColor: 5757c2
+      lightColor: 6f7fe8
       smokeEffect: {
         type: WaveEffect
         sizeFrom: 0

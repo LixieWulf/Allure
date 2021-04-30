@@ -15,6 +15,8 @@ lowAltitude: true
 payloadCapacity: 2622
 engineOffset: 44
 engineSize: 10
+lightRadius: 100
+lightColor: 6f7fe8
 weapons: [
   {
     name: harmony-laser
@@ -25,6 +27,7 @@ weapons: [
     reload: 40
     top: false
     shootSound: laser
+    shake: 1
     bullet: {
       type: LaserBulletType
       damage: 450
@@ -33,6 +36,8 @@ weapons: [
       length: 250
       collidesTeam: true
       healPercent: 17
+      colors: [6f7fe840, 6f7fe8, ffffff]
+      lightColor: 6f7fe8
     }
   }
   {
@@ -46,6 +51,7 @@ weapons: [
     shootY: 16
     mirror: false
     shootSound: railgun
+    shake: 4 
     bullet: {
       type: RailBulletType
       damage: 7800

@@ -15,6 +15,8 @@ buildBeamOffset: 34
 payloadCapacity: 580
 engineOffset: 48
 engineSize: 9
+lightRadius: 120
+lightColor: 6f7fe8
 weapons: [
   {
     name: vengeance-laser
@@ -26,6 +28,7 @@ weapons: [
     shootSound: beam
     shootStatus: slow
     shootStatusDuration: 240
+    shake: 2
     bullet: {
       type: ContinuousLaserBulletType
       damage: 780
@@ -34,6 +37,7 @@ weapons: [
       width: 12
       collidesTeam: true
       healPercent: 3
+      lightColor: 6f7fe8
       hitEffect: {
         type: ParticleEffect
         line: true
