@@ -25,7 +25,12 @@ weapons: [
     shootY: 16
     reload: 300
     firstShotDelay: 165
-    shootStatus: unmoving
+    shootStatus: {
+      name: stopped
+      localizedName: Stopped
+      speedMultiplier: 0
+      dragMultiplier: 4
+    }
     shootStatusDuration: 170
     shots: 2
     shotDelay: 2
@@ -46,6 +51,77 @@ weapons: [
       lightningLength: 25
       lightningLengthRand: 20
       lightningColor: 8ca4f5
+      shootEffect: {
+        type: MultiEffect
+        lifetime: 160
+          effects: [
+          {
+            type: ParticleEffect
+            length: -90
+            baseLength: 90
+            particles: 50
+            sizeFrom: 0
+            sizeTo: 4
+            lifetime: 160
+            colorFrom: 6f7fe850
+            colorTo: ffffff
+          }
+          {
+            type: WaveEffect
+            sizeFrom: 60
+            sizeTo: 0
+            lifetime: 160
+            strokeFrom: 0
+            strokeTo: 15
+            colorFrom: 6f7fe850
+            colorTo: 6f7fe8
+          }
+          {
+            type: ParticleEffect
+            length: 45
+            baseLength: 20
+            lifetime: 160
+            sizeFrom: 6.5
+            sizeTo: 0
+            particles: 15
+            colorFrom: 6f7fe8
+            colorTo: 6f7fe800
+          }
+          {
+            type: ParticleEffect
+            lifetime: 160
+            length: 0
+            particles: 1
+            sizeFrom: 0
+            sizeTo: 15
+            colorFrom: 6f7fe850
+            colorTo: 6f7fe8
+          }
+          {
+            type: ParticleEffect
+            lifetime: 160
+            length: 0
+            particles: 1
+            sizeFrom: 0
+            sizeTo: 15
+            colorFrom: ffffff50
+            colorTo: ffffff
+          }
+          {
+            type: ParticleEffect
+            length: 30
+            particles: 15
+            line: true
+            strokeFrom: 4
+            strokeTo: 0
+            lenFrom: 0
+            lenTo: 20
+            lifetime: 160
+            colorFrom: 6f7fe8
+            colorTo: 6f7fe850
+          }
+        ]
+      }
     }
   }
   {
