@@ -1,13 +1,14 @@
-localizedName: Ultimate Mend Projector
+localizedName: Regenerator
 description: Projects a powerful multidimensional field to repair blocks at high speeds from great distances.
 type: MendProjector
-health: 1080
+health: 2250
 size: 3
 range: 240
+phaseBoost: 1.1
 phaseRangeBoost: 80
 reload: 1
 itemCapacity: 30
-healPercent: 1.5
+healPercent: 0.4
 consumes: {
   power: 2.5
   items: {
