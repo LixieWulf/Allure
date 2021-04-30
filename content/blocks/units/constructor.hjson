@@ -29,7 +29,6 @@ plans: [
     requirements: [
       silicon/25
       graphite/20
-      titanium/20
     ]
   }
   {
