@@ -1,0 +1,12 @@
+type: PayloadConveyor
+localizedName: Atlas
+description: Moves massive payloads at a slow rate. Mainly for transporting larger units between reconstructors.
+size: 8
+moveTime: 120
+moveForce: 536
+payloadLimit: 7.2
+requirements: [
+  titanium/200
+  thorium/100
+  bluewolframite/25
+]
