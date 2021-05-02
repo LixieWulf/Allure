@@ -3,7 +3,7 @@ localizedName: Prominence
 description: Fires large plasma bolts that vapourize nearly anything they hit.
 size: 16
 health: 155225500
-range: 7004
+range: 600
 recoilAmount: 14
 reloadTime: 1250
 powerUse: 255005
@@ -25,16 +25,61 @@ shootType: {
   keepVelocity: true
   length: 27
   width: 11
-  damage: 57434500
+  damage: 125000
   speed: 5
-  hitEffect: impactcloud
-  lifetime: 550
+  lifetime: 120
   drag: 0
   fadeTime: 15
   incendAmount: 1
   incendChance: 1
   lenscales: [1, 1.2, 1.275, 1.325]
   colors: [000000, 4e4e4e, a0a0a0, ffffff]
+  lightning: 2
+  lightningCone: 15
+  lightningLength: 25
+  lightningLengthRand: 12
+  lightningColor: 000000
+  lightningDamage: 1250
+  hitEffect: {
+    type: MultiEffect
+    effects: [
+      {
+        type: ParticleEffect
+        particles: 12
+        line: true
+        length: 75
+        lifetime: 30
+        strokeFrom: 4
+        strokeTo: 2
+        lenFrom: 40
+        lenTo: 0
+        colorFrom: 000000
+        colorTo: 00000050
+      }
+      {
+        type: ParticleEffect
+        particles: 4
+        length: 90
+        lifetime: 45
+        sizeFrom: 6
+        sizeTo: 6
+        colorFrom: 000000
+        colorTo: 00000000
+      }
+    ]
+  }
+  fragBullets: 6
+  fragBullet: {
+    type: ShrapnelBulletType
+    length: 40
+    lifetime: 35
+    damage: 5600
+    width: 22
+    fromColor: 000000
+    toColor: 000000
+    serrationWidth: 20
+    serrationSpacing: 10
+  }
 }
 requirements: [
   lead/125550
