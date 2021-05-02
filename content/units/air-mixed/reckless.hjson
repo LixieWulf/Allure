@@ -3,78 +3,79 @@ localizedName: Reckless
 description: Repairs structures automatically and applies shields to allied units..
 controller: RepairAI
 speed: 2
-drag: 0.1
 flying: true
-hitSize: 18
-health: 4500
+hitSize: 25
+health: 600
 armor: 6
 rotateShooting: true
 faceTarget: true
 buildSpeed: 2.7
 mineSpeed: 4
 mineTier: 5
-engineOffset: 8
-canHeal: true
+engineOffset: 12
+engineSize: 2.5
+lowAltitude: true
 lightColor: 6f7fe8
 weapons: [
-{
-  name: reckless-weapon
-  shootCone: 15
-  mirror: true
-  x: 2
-  y: 6
-  reload: 5
-  recoil: 2
-  bullet: {
-    type: LaserBoltBulletType
-    damage: 85
-    speed: 6
-    frontColor: 6f7fe8
-    backColor: 5757c2
-    collidesTeam: true
-    lifetime: 45
-    healPercent: 4
-    lightColor: 6f7fe8
-    smokeEffect: {
-      type: WaveEffect
-      sizeFrom: 0
-      sizeTo: 8
-      colorFrom: 6f7fe8
-      colorTo: 6f7fe8
-      lifetime: 10
-      strokeFrom: 1
-      strokeTo: 0
-    }
-    hitEffect: {
-      type: WaveEffect
-      sizeFrom: 0
-      sizeTo: 8
-      colorFrom: 6f7fe8
-      colorTo: 6f7fe8
-      lifetime: 10
-      strokeFrom: 1
-      strokeTo: 0
-    }
-    despawnEffect: {
-      type: WaveEffect
-      sizeFrom: 0
-      sizeTo: 8
-      colorFrom: 6f7fe8
-      colorTo: 6f7fe8
-      lifetime: 10
-      strokeFrom: 1
-      strokeTo: 0
+  {
+    name: reckless-laser
+    mirror: false
+    x: 0
+    y: 0
+    shootY: 4
+    reload: 120
+    firstShotDelay: 45
+    shootStatus: unmoving
+    shootStatusDuration: 45
+    shootSound: laser
+    shake: 1.4
+    bullet: {
+      type: LaserBulletType
+      length: 140
+      width: 25
+      damage: 75
+      colors: [6f7fe840, 6f7fe8, ffffff]
+      lightColor: 6f7fe8
+      collidesTeam: true
+      healPercent: 8
+      shootEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: ParticleEffect
+            line: true
+            particles: 8
+            length: -20
+            baseLength: 20
+            strokeFrom: 0
+            strokeTo: 1.4
+            lenFrom: 0
+            lenTo: 4
+            colorFrom: 6f7fe8
+            colorTo: ffffff
+          }
+          {
+            type: ParticleEffect
+            length: 0
+            lifetime: 45
+            particles: 1
+            sizeFrom: 0
+            sizeTo: 4
+            colorFrom: 6f7fe8
+            colorTo: ffffff
+          }
+        ]
+      }
     }
   }
-}
 ]
 research: constructor
 abilities: [
   {
     type: ShieldRegenFieldAbility
-    amount: 100
-    max: 250
-    reload: 150
+    amount: 15
+    max: 60
+    reload: 240
     range: 45
   }
 ]
