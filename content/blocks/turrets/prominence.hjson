@@ -23,11 +23,12 @@ shootSound: laserbig
 shootType: {
   type: ContinuousLaserBulletType
   keepVelocity: true
+  pierceCap: 5
   length: 27
   width: 11
   damage: 125000
-  speed: 5
-  lifetime: 120
+  speed: 2.5
+  lifetime: 240
   drag: 0
   fadeTime: 15
   incendAmount: 1
@@ -67,6 +68,16 @@ shootType: {
         colorTo: 00000000
       }
     ]
+  }
+  despawnEffect: {
+    type: WaveEffect
+    lifetime: 15
+    sizeFrom: 0
+    sizeTo: 160
+    strokeFrom: 25
+    strokeTo: 0
+    colorFrom: 000000
+    colorTo: 00000050
   }
   fragBullets: 6
   fragBullet: {
