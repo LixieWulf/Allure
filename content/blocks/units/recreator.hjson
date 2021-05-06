@@ -1,0 +1,37 @@
+type: Reconstructor
+localizedName: Recreator
+description: Upgrades inputted units to their second tier.
+size: 4
+constructTime: 2400
+liquidCapacity: 60
+consumes: {
+  power: 8
+    items: {
+      items: [
+        lead/60
+        silicon/110
+        thorium/50
+      ]
+    }
+  liquid: {
+    liquid: water
+    amount: 0.6
+  }
+}
+upgrades: [
+  [outbreak, virus]
+  [victory, reckless]
+  [flicker, spark]
+  [soul, spirit]
+]
+requirements: [
+  lead/1000
+  titanium/1000
+  silicon/700
+  plastanium/500
+]
+category: units
+research: {
+  parent: constructor
+  objectives: [additive-reconstructor, thorium]
+}
