@@ -1,0 +1,13 @@
+type: flying
+localizedName: Phage
+description: Bombards hostile targets with cluster bombs and a laser beam.
+flying: true
+hitSize: 28
+health: 18000
+armor: 8
+speed: 1.2
+rotateSpeed: 1.2
+accel: 0.02
+drag: 0.02
+engineOffset: 18
+engineSize: 4
