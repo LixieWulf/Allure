@@ -30,7 +30,7 @@ weapons: [
     shootSound: laser
     shake: 1.4
     bullet: {
-      type: LaserBulletType
+      type: ContinousLaserBulletType
       length: 140
       width: 25
       damage: 75
