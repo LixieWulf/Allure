@@ -1,16 +1,14 @@
 type: GenericSmelter
-localizedName: Blue Wolframite Refiner
-description: A smelterer capable of refining Wolframite into Blue-Wolframite
-size: 2
+localizedName: Wolframite Converter
+description: Restores wolframite scrap into bluewolframite.
 hasPower: true
 hasLiquids: false
 hasItems: true
-craftTime: 52
-flameColor: 0000FF
+craftTime: 48
 craftEffect: hitLancer
 updateEffect: purify
 consumes: {
-  power: 2.1
+  power: 4.2
   items: {
     items: [
       wolframite/2
@@ -20,13 +18,13 @@ consumes: {
   }
 }
 requirements: [
-  amethyst-gem/10
-  titanium/40
-  thorium/40
-  lead/50
+  lead/125
+  silicon/150
+  surge-alloy/50
+  amethyst-gem/25
 ]
 category: crafting
 research: amethyst-refiner
-ambientSound: fire
+ambientSound: respawn
 ambientSoundVolume: 1
 outputItem: bluewolframite/1
