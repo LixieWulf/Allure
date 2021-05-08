@@ -1,12 +1,29 @@
 type: GenericSmelter
 localizedName: Wolframite Converter
 description: Restores wolframite scrap into bluewolframite.
+size: 2
 hasPower: true
 hasLiquids: false
 hasItems: true
 craftTime: 48
-craftEffect: hitLancer
-updateEffect: purify
+craftEffect: {
+  type: ParticleEffect
+  length: 6
+  lifetime: 15
+  colorTo: 5261a3
+}
+updateEffect: {
+  type: ParticleEffect
+  length: 0.01
+  particles: 2
+  line: true
+  lifetime: 5
+  lenFrom: 5
+  lenTo: 5
+  strokeFrom: 1
+  strokeTo: 1
+  colorTo: 5261a3
+}
 consumes: {
   power: 4.2
   items: {
