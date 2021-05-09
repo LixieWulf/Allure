@@ -1,12 +1,11 @@
 type: GenericSmelter
 localizedName: Amethyst Refiner
-description: Cuts amethyst into fine crystals for use in advanced cooling.
-size: 2
+description: Cuts amethyst into crystal plates.
+size: 4
 hasPower: true
 hasLiquids: false
 hasItems: true
 craftTime: 120
-flameColor: E573FF
 craftEffect: hitLancer
 updateEffect: purify
 consumes: {
@@ -18,9 +17,10 @@ consumes: {
   }
 }
 requirements: [
-  titanium/20
-  thorium/20
-  surge-alloy/10
+  titanium/120
+  thorium/150
+  surge-alloy/50
+  phase-fabric/25
 ]
 category: crafting
 research: alloy-smelter
