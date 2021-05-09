@@ -6,14 +6,55 @@ hasPower: true
 hasLiquids: false
 hasItems: true
 craftTime: 120
-craftEffect: hitLancer
-updateEffect: purify
+craftEffect: {
+  type: MultiEffect
+  effects: [
+    { 
+      type: ParticleEffect
+      line: true
+      length: 35
+      lifetime: 25
+      particles: 12
+      strokeFrom: 1.2
+      strokeTo: 1.2
+      lenFrom: 8
+      lenTo: 0
+      colorTo: a36ae6
+    }
+    {
+      type: ParticleEffect
+      lifetime: 40
+      length: 30
+      particles: 12
+      colorFrom: 787878
+      colorTo: 78787800
+      sizeFrom: 2
+      sizeTo: 2
+    }
+  ]
+}
+updateEffect: {
+  type: ParticleEffect
+  line: true
+  length: 15
+  lifetime: 8
+  particles: 3
+  strokeFrom: 0.7
+  strokeTo: 0.7
+  lenFrom: 4
+  lenTo: 0
+  colorTo: a36ae6
+}
 consumes: {
   power: 2
   items: {
     items: [
       amethyst/2
     ]
+  }
+  liquid: {
+    liquid: water
+    amount: 0.3
   }
 }
 requirements: [
