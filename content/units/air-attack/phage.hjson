@@ -2,12 +2,81 @@ type: flying
 localizedName: Phage
 description: Bombards hostile targets with cluster bombs and a laser beam.
 flying: true
-hitSize: 28
+hitSize: 35
 health: 18000
 armor: 8
 speed: 1.2
 rotateSpeed: 1.2
+rotateShooting: false
 accel: 0.02
 drag: 0.02
-engineOffset: 18
-engineSize: 4
+lowAltitude: true
+engineOffset: 22
+engineSize: 3.8
+lightColor: e65555
+weapons: [
+  {
+    name: phage-weapon
+    x: 0
+    y: 8.75
+    shootY: 8
+    mirror: false
+    rotate: true
+    rotateSpeed: 4.2
+    recoil: 0
+    reload: 2
+    shootSound: none
+    shake: 1.5
+    bullet: {
+      type: ContinuousLaserBulletType
+      damage: 15
+      lifetime: 4
+      fadeTime: 0
+      length: 150
+      drawSize: 150
+      width: 3
+      colors: [e6555520, e6555570, e65555, ffffff]
+      lightColor: e65555
+      incendChance: 0.1
+      hitEffect: {
+        type: ParticleEffect
+        line: true
+        particles: 1
+        lifetime: 15
+        length: 10
+        strokeFrom: 1
+        strokeTo: 0
+        lenFrom: 4
+        lenTo: 0
+        colorFrom: e65555
+        colorTo: e6555500
+      }
+    }
+  }
+  {
+    name: phage-bombs
+    x: 0
+    y: -8
+    xRand: 12
+    mirror: false
+    shotDelay: 2
+    shots: 8
+    shootCone: 180
+    minShootVelocity: 0.4
+    inaccuracy: 90
+    reload: 80
+    shootSound: bang
+    bullet: {
+      type: BombBulletType
+      splashDamage: 80
+      splashDamageRadius: 40
+      lifetime: 85
+      height: 10
+      width: 8
+      frontColor: ffffff
+      backColor: e65555
+      lightColor: e65555
+      despawnEffect: flakExplosion
+    }
+  }
+]
