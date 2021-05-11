@@ -5,9 +5,57 @@ health: 3200
 size: 4
 rotateSpeed: 3.2
 reloadTime: 170
+recoilAmount: 4
+restitution: 0.02
 range: 320
 ammoTypes: {
-  copper: standardCopper
+  silicon: {
+    type: MissileBulletType
+    damage: 240
+    lifetime: 80
+    drag: -0.03
+    splashDamage: 520
+    splashDamageRadius: 56
+    homingPower: 0.2
+    homingRange: 120
+    sprite: exotic-mod-warhead
+    width: 10
+    height: 20
+    frontColor: 6a6c7a
+    backColor: ffffff
+    trailColor: 6a6c7a
+    weaveMag: 4
+    weaveScale: 8
+  }
+  plastanium: {
+    type: MissileBulletType
+    damage: 300
+    lifetime: 80
+    drag: -0.03
+    splashDamage: 600
+    splashDamageRadius: 40
+    homingPower: 0.1
+    homingRange: 60
+    sprite: exotic-mod-warhead
+    width: 10
+    height: 20
+    frontColor: cedb84
+    backColor: ffffff
+    trailColor: cedb84
+    weaveMag: 4
+    weaveScale: 8
+    fragBullets: 12
+    fragLifeMin: 0.2
+    fragBullet: {
+      damage: 15
+      speed: 2
+      lifetime: 60
+      height: 12
+      width: 9
+      frontColor: eff2ac
+      backColor: cedb84
+    }
+  }
 }
 category: turret
 buildVisibility: sandboxOnly
