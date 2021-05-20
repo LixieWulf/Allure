@@ -1,5 +1,6 @@
 type: ParticleWeather
 localizedName: Permafrost
+baseSpeed: 0.1
 color: bfdfff
 density: 750
 useWindVector: true
@@ -7,10 +8,11 @@ particleRegion: particle
 sizeMin: 35
 sizeMax: 70
 minAlpha: 0.1
-maxAlpha: 0.3
+maxAlpha: 0.2
 drawNoise: true
-noiseColor: bfdfff50
+noiseColor: bfdfff10
 noiseLayers: 4
-noiseAlphaM: 0.4
 noiseScale: 1400
 noisePath: fog
+noiseLayerSclM: 0.5
+noiseLayerAlphaM: 0.1
