@@ -3,14 +3,576 @@ localizedName: Luminance
 description: A massive intergalactic starship. Known for causing the fall of any civilization in her path. Her origins are unknown.
 flying: true
 hitSize: 260
-health: 24000000
-armor: 1750
+health: 9000000
+armor: 1150
 speed: 0.6
 rotateSpeed: 0.6
 accel: 0.02
-drag: 0.02
-engineOffset: 160
-engineSize: 60
+drag: 0.01
+lowAltitude: true
+engineOffset: 150
+engineSize: 24
 fallSpeed: 0.005
 lightColor: ffffff
 lightRadius: 300
+weapons: [
+  {
+    x: 0
+    y: 60
+    reload: 560 
+    shootCone: 20
+    continuous: true
+    firstShotDelay: 200
+    inaccuracy: 180
+    shootSound: pulse
+    shootStatus: {
+      name: no
+      localizedName: missingno
+      dragMultiplier: 10
+      speedMultiplier: 0
+    }
+    shootStatusDuration: 200
+    bullet: {
+      type: ContinuousLaserBulletType
+      damage: 1200
+      length: 850
+      width: 32
+      lifetime: 450
+      colors: [e6555525, ff9c5935, f2e87945, 84f59155, 8ca4f565, a488eb75]
+      strokes: [1.5, 1.25, 1, 0.75, 0.5, 0.25]
+    }
+  }
+  {
+    name: luminance-weapon
+    x: 28
+    y: 72
+    rotate: true
+    rotateSpeed: 5.5
+    reload: 120
+    recoil: 8
+    inaccuracy: 16
+    shots: 4
+    shootSound: shootBig
+    shootY: 12
+    bullet: {
+      type: ContinuousLaserBulletType
+      damage: 2300
+      length: 240
+      width: 8
+      colors: [e6555525, ff9c5935, f2e87945, 84f59155, 8ca4f565, a488eb75]
+      strokes: [1.5, 1.25, 1, 0.75, 0.5, 0.25]
+    }
+  }
+  {
+    x: 0
+    y: 0
+    rotate: true
+    shots: 10
+    shotDelay: 4
+    reload: 120
+    inaccuracy: 15
+    velocityRnd: 0.5
+    shootSound: bang
+    bullet: { 
+      type: MissileBulletType
+      damage: 250
+      splashDamage: 650
+      splashDamageRadius: 28
+      speed: 7
+      lifetime: 80
+      weaveMag: 4
+      weaveScale: 8
+      sprite: particle
+      width: 20
+      height: 20
+      frontColor: e65555
+      backColor: 00000000
+      trailColor: e65555
+      shootEffect: {
+        type: MultiEffect
+        layer: 91
+        effects: [
+          {
+            type: WaveEffect
+            lifetime: 40
+            sizeFrom: 12
+            sizeTo: 40
+            strokeFrom: 4
+            strokeTo: 0
+            colorFrom: e65555
+            colorTo: e6555550
+          }
+          {
+            type: WaveEffect
+            lifetime: 40
+            sizeFrom: 10
+            sizeTo: 40
+            strokeFrom: 4
+            strokeTo: 0
+            colorFrom: ffa666
+            colorTo: ffa66650
+          }
+          {
+            type: WaveEffect
+            lifetime: 40
+            sizeFrom: 8
+            sizeTo: 40
+            strokeFrom: 4
+            strokeTo: 0
+            colorFrom: f0e773
+            colorTo: f0e77350
+          }
+          {
+            type: WaveEffect
+            lifetime: 40
+            sizeFrom: 6
+            sizeTo: 40
+            strokeFrom: 4
+            strokeTo: 0
+            colorFrom: 83f793
+            colorTo: 83f79350
+          }
+          {
+            type: WaveEffect
+            lifetime: 40
+            sizeFrom: 4
+            sizeTo: 40
+            strokeFrom: 4
+            strokeTo: 0
+            colorFrom: 7382f0
+            colorTo: 7382f050
+          }
+          {
+            type: WaveEffect
+            lifetime: 40
+            sizeFrom: 2
+            sizeTo: 40
+            strokeFrom: 4
+            strokeTo: 0
+            colorFrom: a488eb
+            colorTo: a488eb50
+          }
+        ]
+      }
+    }
+  }
+  {
+    x: 0
+    y: 0
+    rotate: true
+    shots: 10
+    shotDelay: 4
+    reload: 120
+    inaccuracy: 15
+    velocityRnd: 0.5
+    shootSound: none
+    bullet: { 
+      type: MissileBulletType
+      damage: 250
+      splashDamage: 650
+      splashDamageRadius: 28
+      speed: 7
+      lifetime: 80
+      weaveMag: 4
+      weaveScale: 8
+      sprite: particle
+      width: 20
+      height: 20
+      frontColor: ffa666
+      backColor: 00000000
+      trailColor: ffa666
+    }
+  }
+  {
+    x: 0
+    y: 0
+    rotate: true
+    shots: 10
+    shotDelay: 4
+    reload: 120
+    inaccuracy: 15
+    velocityRnd: 0.5
+    shootSound: none
+    bullet: { 
+      type: MissileBulletType
+      damage: 250
+      splashDamage: 650
+      splashDamageRadius: 28
+      speed: 7
+      lifetime: 80
+      weaveMag: 4
+      weaveScale: 8
+      sprite: particle
+      width: 20
+      height: 20
+      frontColor: f0e773
+      backColor: 00000000
+      trailColor: f0e773
+    }
+  }
+  {
+    x: 0
+    y: 0
+    rotate: true
+    shots: 10
+    shotDelay: 4
+    reload: 120
+    inaccuracy: 15
+    velocityRnd: 0.5
+    shootSound: none
+    bullet: { 
+      type: MissileBulletType
+      damage: 250
+      splashDamage: 650
+      splashDamageRadius: 28
+      speed: 7
+      lifetime: 80
+      weaveMag: 4
+      weaveScale: 8
+      sprite: particle
+      width: 20
+      height: 20
+      frontColor: 83f793
+      backColor: 00000000
+      trailColor: 83f793
+    }
+  }
+  {
+    x: 0
+    y: 0
+    rotate: true
+    shots: 10
+    shotDelay: 4
+    reload: 120
+    inaccuracy: 15
+    velocityRnd: 0.5
+    shootSound: none
+    bullet: { 
+      type: MissileBulletType
+       damage: 250
+      splashDamage: 650
+      splashDamageRadius: 28
+      speed: 7
+      lifetime: 80
+      weaveMag: 4
+      weaveScale: 8
+      sprite: particle
+      width: 20
+      height: 20
+      frontColor: 7382f0
+      backColor: 00000000
+      trailColor: 7382f0
+    }
+  }
+  {
+    x: 0
+    y: 0
+    rotate: true
+    shots: 10
+    shotDelay: 4
+    reload: 120
+    inaccuracy: 15
+    velocityRnd: 0.5
+    shootSound: none
+    bullet: { 
+      type: MissileBulletType
+      damage: 250
+      splashDamage: 650
+      splashDamageRadius: 28
+      speed: 7
+      lifetime: 80
+      weaveMag: 4
+      weaveScale: 8
+      sprite: particle
+      width: 20
+      height: 20
+      frontColor: a488eb
+      backColor: 00000000
+      trailColor: a488eb
+    }
+  }
+  {
+    name: luminance-railgun
+    x: 0
+    y: -60
+    mirror: false
+    rotate: true
+    rotateSpeed: 1.4
+    reload: 210
+    recoil: 16
+    shootY: 24
+    shootSound: railgun
+    bullet: {
+      type: RailBulletType
+      damage: 15400
+      length: 660
+      pierceDamageFactor: 0.25
+      updateEffectSeg: 75
+      updateEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            lifetime: 30
+            sizeFrom: 28
+            sizeTo: 0
+            region: exotic-mod-diamond-wide
+            colorFrom: e65555
+            colorTo: e65555
+          }
+          {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            lifetime: 30
+            sizeFrom: 24
+            sizeTo: 0
+            region: exotic-mod-diamond-wide
+            colorFrom: ffa666
+            colorTo: ffa666
+          }
+          {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            lifetime: 30
+            sizeFrom: 20
+            sizeTo: 0
+            region: exotic-mod-diamond-wide
+            colorFrom: f0e773
+            colorTo: f0e773
+          }
+          {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            lifetime: 30
+            sizeFrom: 16
+            sizeTo: 0
+            region: exotic-mod-diamond-wide
+            colorFrom: 83f793
+            colorTo: 83f793
+          }
+          {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            lifetime: 30
+            sizeFrom: 12
+            sizeTo: 0
+            region: exotic-mod-diamond-wide
+            colorFrom: 7382f0
+            colorTo: 7382f0
+          }
+          {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            lifetime: 30
+            sizeFrom: 8
+            sizeTo: 0
+            region: exotic-mod-diamond-wide
+            colorFrom: a488eb
+            colorTo: a488eb
+          }
+        ]
+      }
+    }
+  }
+//special ability weapons
+  {
+    x: 0
+    y: 0
+    ignoreRotation: true
+    shootCone: 180
+    mirror: false
+    reload: 1080
+    shots: 72
+    spacing: 60
+    shotDelay: 5
+    bullet: {
+      type: ShrapnelBulletType
+      damage: 1200
+      length: 480
+      width: 42
+      toColor: e65555
+    }
+  } 
+  {
+    x: 0
+    y: 0
+    ignoreRotation: true
+    shootCone: 180
+    mirror: false
+    reload: 1080
+    shots: 72
+    spacing: 50
+    shotDelay: 5
+    bullet: {
+      type: ShrapnelBulletType
+      damage: 1200
+      length: 480
+      width: 42
+      toColor: ffa666
+    }
+  } 
+  {
+    x: 0
+    y: 0
+    ignoreRotation: true
+    shootCone: 180
+    mirror: false
+    reload: 1080
+    shots: 72
+    spacing: 40
+    shotDelay: 5
+    bullet: {
+      type: ShrapnelBulletType
+      damage: 1200
+      length: 480
+      width: 42
+      toColor: f0e773
+    }
+  } 
+  {
+    x: 0
+    y: 0
+    ignoreRotation: true
+    shootCone: 180
+    mirror: false
+    reload: 1080
+    shots: 72
+    spacing: 30
+    shotDelay: 5
+    bullet: {
+      type: ShrapnelBulletType
+      damage: 1200
+      length: 480
+      width: 42
+      toColor: 83f793
+    }
+  } 
+  {
+    x: 0
+    y: 0
+    ignoreRotation: true
+    shootCone: 180
+    mirror: false
+    reload: 1080
+    shots: 72
+    spacing: 20
+    shotDelay: 5
+    bullet: {
+      type: ShrapnelBulletType
+      damage: 1200
+      length: 480
+      width: 42
+      toColor: 7382f0
+    }
+  } 
+  {
+    x: 0
+    y: 0
+    ignoreRotation: true
+    shootCone: 180
+    mirror: false
+    reload: 1080
+    shots: 72
+    spacing: 10
+    shotDelay: 5
+    bullet: {
+      type: ShrapnelBulletType
+      damage: 1200
+      length: 480
+      width: 42
+      toColor: a488eb
+    }
+  } 
+]
+abilities: [
+  {
+    type: StatusFieldAbility
+    effect: none
+    reload: 0
+    activeEffect: {
+      type: MultiEffect
+      layer: 91
+      effects: [
+        {
+          type: ParticleEffect
+          lifetime: 12
+          length: 0
+          sizeFrom: 30
+          sizeTo: 39
+          particles: 1
+          colorFrom: e65555
+          colorTo: e6555500
+          region: particle
+          layer: 91
+        }
+        {
+          type: ParticleEffect
+          lifetime: 12
+          length: 0
+          sizeFrom: 28
+          sizeTo: 28
+          particles: 1
+          colorFrom: ffa666
+          colorTo: ffa66600
+          region: particle
+          layer: 91
+        }
+        {
+          type: ParticleEffect
+          lifetime: 12
+          length: 0
+          sizeFrom: 26
+          sizeTo: 26
+          particles: 1
+          colorFrom: f0e773
+          colorTo: f0e77300
+          region: particle
+          layer: 91
+        }
+        {
+          type: ParticleEffect
+          lifetime: 12
+          length: 0
+          sizeFrom: 24
+          sizeTo: 24
+          particles: 1
+          colorFrom: 83f793
+          colorTo: 83f79300
+          region: particle
+          layer: 91
+        }
+        {
+          type: ParticleEffect
+          lifetime: 12
+          length: 0
+          sizeFrom: 22
+          sizeTo: 22
+          particles: 1
+          colorFrom: 7382f0
+          colorTo: 7382f000
+          region: particle
+          layer: 91
+        }
+        {
+          type: ParticleEffect
+          lifetime: 12
+          length: 0
+          sizeFrom: 20
+          sizeTo: 20
+          particles: 1
+          colorFrom: a488eb
+          colorTo: a488eb00
+          region: particle
+          layer: 91
+        }
+      ]
+    }
+  }
+]
