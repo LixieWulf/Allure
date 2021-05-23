@@ -1,0 +1,22 @@
+type: PowerTurret
+localizedName: Radius
+description: Fires a small laser at ground targets. Requires power.
+targetGround: false
+health: 200
+reloadTime: 35
+range: 90
+shootSound: laser
+heatColor: ff0000
+powerUse: 1
+shootType: {
+  type: LaserBulletType
+  length: 88
+  width: 2
+  damage: 30
+}
+category: turret
+research: duo
+requirements: [
+  copper/35
+  lead/25
+]
