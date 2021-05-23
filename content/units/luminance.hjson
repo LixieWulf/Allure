@@ -27,6 +27,7 @@ weapons: [
     shootSound: pulse
     shootStatus: unmoving
     shootStatusDuration: 200
+    shake: 6
     bullet: {
       type: ContinuousLaserBulletType
       damage: 1200
@@ -36,6 +37,7 @@ weapons: [
       lifetime: 450
       colors: [e6555525, ff9c5935, f2e87945, 84f59155, 8ca4f565, a488eb75]
       strokes: [1.5, 1.25, 1, 0.75, 0.5, 0.25]
+      lightColor: ffffff
       shootEffect: {
         type: MultiEffect
         lifetime: 200
@@ -338,6 +340,7 @@ weapons: [
     shots: 4
     shootSound: shootBig
     shootY: 12
+    shake: 2
     bullet: {
       type: ContinuousLaserBulletType
       damage: 2300
@@ -346,6 +349,97 @@ weapons: [
       width: 8
       colors: [e6555525, ff9c5935, f2e87945, 84f59155, 8ca4f565, a488eb75]
       strokes: [1.5, 1.25, 1, 0.75, 0.5, 0.25]
+      lightColor: ffffff
+      shootEffect: shootBig
+      smokeEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: ParticleEffect
+            particles: 4
+            cone: 20
+            line: true
+            length: 30
+            lifetime: 12
+            strokeFrom: 2
+            strokeTo: 1
+            lenFrom: 8
+            lenTo: 0
+            colorFrom: e65555
+            colorTo: e6555550
+          }
+          {
+            type: ParticleEffect
+            particles: 4
+            cone: 20
+            line: true
+            length: 30
+            lifetime: 12
+            strokeFrom: 2
+            strokeTo: 1
+            lenFrom: 8
+            lenTo: 0
+            colorFrom: ff9c59
+            colorTo: ff9c5950
+          }
+          {
+            type: ParticleEffect
+            particles: 4
+            cone: 20
+            line: true
+            length: 30
+            lifetime: 12
+            strokeFrom: 2
+            strokeTo: 1
+            lenFrom: 8
+            lenTo: 0
+            colorFrom: f2e879
+            colorTo: f2e87950
+          }
+          {
+            type: ParticleEffect
+            particles: 4
+            cone: 20
+            line: true
+            length: 30
+            lifetime: 12
+            strokeFrom: 2
+            strokeTo: 1
+            lenFrom: 8
+            lenTo: 0
+            colorFrom: 84f591
+            colorTo: 84f59150
+          }
+          {
+            type: ParticleEffect
+            particles: 4
+            cone: 20
+            line: true
+            length: 30
+            lifetime: 12
+            strokeFrom: 2
+            strokeTo: 1
+            lenFrom: 8
+            lenTo: 0
+            colorFrom: 8ca4f5
+            colorTo: 8ca4f550
+          }
+          {
+            type: ParticleEffect
+            particles: 4
+            cone: 20
+            line: true
+            length: 30
+            lifetime: 12
+            strokeFrom: 2
+            strokeTo: 1
+            lenFrom: 8
+            lenTo: 0
+            colorFrom: a488eb
+            colorTo: a488eb50
+          }
+        ]
+      }
       hitEffect: {
         type: MultiEffect
         effects: [
@@ -455,6 +549,8 @@ weapons: [
       height: 20
       frontColor: e65555
       backColor: 00000000
+      lightColor: e65555
+      hitShake: 1
       shootEffect: {
         type: MultiEffect
         layer: 91
@@ -569,6 +665,8 @@ weapons: [
       height: 20
       frontColor: ffa666
       backColor: 00000000
+      lightColor: ffa666
+      hitShake: 1
       despawnEffect: none
       hitEffect: {
         type: WaveEffect
@@ -617,6 +715,8 @@ weapons: [
       height: 20
       frontColor: f0e773
       backColor: 00000000
+      lightColor: f0e773
+      hitShake: 1
       despawnEffect: none
       hitEffect: {
         type: WaveEffect
@@ -665,6 +765,8 @@ weapons: [
       height: 20
       frontColor: 83f793
       backColor: 00000000
+      lightColor: 83f793
+      hitShake: 1
       despawnEffect: none
       hitEffect: {
         type: WaveEffect
@@ -713,6 +815,8 @@ weapons: [
       height: 20
       frontColor: 7382f0
       backColor: 00000000
+      lightColor: 7382f0
+      hitShake: 1
       despawnEffect: none
       hitEffect: {
         type: WaveEffect
@@ -761,6 +865,8 @@ weapons: [
       height: 20
       frontColor: a488eb
       backColor: 00000000
+      lightColor: a488eb
+      hitShake: 1
       despawnEffect: none
       hitEffect: {
         type: WaveEffect
@@ -796,6 +902,7 @@ weapons: [
     recoil: 16
     shootY: 24
     shootSound: railgun
+    shake: 4
     bullet: {
       type: RailBulletType
       damage: 15400
@@ -1017,7 +1124,8 @@ weapons: [
     reload: 1080
     shots: 72
     spacing: 60
-    shotDelay: 5
+    shotDelay:  5
+    shootSound: none
     bullet: {
       type: ShrapnelBulletType
       damage: 1200
@@ -1036,6 +1144,7 @@ weapons: [
     shots: 72
     spacing: 50
     shotDelay: 5
+    shootSound: none
     bullet: {
       type: ShrapnelBulletType
       damage: 1200
@@ -1054,6 +1163,7 @@ weapons: [
     shots: 72
     spacing: 40
     shotDelay: 5
+    shootSound: none
     bullet: {
       type: ShrapnelBulletType
       damage: 1200
@@ -1072,6 +1182,7 @@ weapons: [
     shots: 72
     spacing: 30
     shotDelay: 5
+    shootSound: none
     bullet: {
       type: ShrapnelBulletType
       damage: 1200
@@ -1090,6 +1201,7 @@ weapons: [
     shots: 72
     spacing: 20
     shotDelay: 5
+    shootSound: none
     bullet: {
       type: ShrapnelBulletType
       damage: 1200
@@ -1108,6 +1220,7 @@ weapons: [
     shots: 72
     spacing: 10
     shotDelay: 5
+    shootSound: none
     bullet: {
       type: ShrapnelBulletType
       damage: 1200
@@ -1126,7 +1239,7 @@ weapons: [
     shots: 720
     inaccuracy: 180
     shootStatus: disarmed
-    shootSound: none
+    shootSound: explosionbig
     bullet: {
       damage: 0
       pierce: true
@@ -1137,6 +1250,7 @@ weapons: [
       lifetime: 90
       width: 0.01
       height: 0.01
+      lightColor: ffffff
       status: {
         name: vulnerability
         localizedName: Vulnerability
