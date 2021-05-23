@@ -14,14 +14,46 @@ coolantMultiplier: 0.3
 ammoPerShot: 3
 shootSound: railgun
 shootShake: 2.5
-silicon: {
-  type: RailBulletType
-  damage: 240
-  pierceDamageFactor: 0.8
-  length: 250
-  hitEffect: railHit
-  updateEffect: railTrail
-  updateEffectSeg: 50
+ammoTypes: {
+  silicon: {
+    type: RailBulletType
+    damage: 160
+    pierceDamageFactor: 0.8
+    ammoMultiplier: 1
+    reloadMultiplier: 1.4
+    length: 250
+    updateEffect: {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 30
+      sizeFrom: 12
+      sizeTo: 0
+      colorFrom: "6e7080"
+      colorTo: "6e7080"
+      region: exotic-mod-diamond-wide
+    }
+    updateEffectSeg: 50
+  }
+  titanium: {
+    type: RailBulletType
+    damage: 240
+    pierceDamageFactor: 0.8
+    ammoMultiplier: 1
+    length: 250
+    updateEffect: {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 30
+      sizeFrom: 12
+      sizeTo: 0
+      colorFrom: 7382f0
+      colorTo: 7382f0
+      region: exotic-mod-diamond-wide
+    }
+    updateEffectSeg: 50
+  }
 }
 category: turret
 research: 0b-radius
