@@ -19,7 +19,7 @@ chargeBeginEffect: {
   sizeTo: 2
   colorFrom: 7382f0
 }
-chargEffects: 6
+chargeEffects: 6
 chargeEffect: {
   type: ParticleEffect
   particles: 1
