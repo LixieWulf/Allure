@@ -1,0 +1,33 @@
+type: ItemTurret
+localizedName: Pinpoint
+description: A small railgun turret. Fires armor-piercing bolts over medium distances.
+size: 2
+health: 650
+range: 250
+recoilAmount: 3
+reloadTime: 160
+rotateSpeed: 3
+consumes: {
+  power/3
+}
+coolantMultiplier: 0.3
+ammoPerShot: 3
+shootSound: railgun
+shootShake: 2.5
+silicon: {
+  type: RailBulletType
+  damage: 240
+  pierceDamageFactor: 0.8
+  length: 250
+  hitEffect: railHit
+  updateEffect: railTrail
+  updateEffectSeg: 50
+}
+category: turret
+research: b0-radius
+requirements: [
+  copper/125
+  graphite/100
+  silicon/90
+  titanium/80
+]
