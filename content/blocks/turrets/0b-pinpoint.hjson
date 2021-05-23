@@ -24,7 +24,7 @@ silicon: {
   updateEffectSeg: 50
 }
 category: turret
-research: b0-radius
+research: 0b-radius
 requirements: [
   copper/125
   graphite/100
