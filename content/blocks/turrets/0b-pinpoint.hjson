@@ -8,7 +8,7 @@ recoilAmount: 3
 reloadTime: 160
 rotateSpeed: 3
 consumes: {
-  power/3
+  power: 3
 }
 coolantMultiplier: 0.3
 ammoPerShot: 3
