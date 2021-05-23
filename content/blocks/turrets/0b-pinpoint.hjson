@@ -34,6 +34,21 @@ ammoTypes: {
       region: exotic-mod-diamond-wide
     }
     updateEffectSeg: 50
+    pierceEffect: none
+    smokeEffect: {
+      type: ParticleEffect
+      line: true
+      lifetime: 14
+      length: 25
+      cone: 20
+      particles: 8
+      lenFrom: 5
+      lenTo: 1
+      strokeFrom: 1
+      strokeTo: 0
+      colorFrom: ffffff
+      colorTo: "6e7080"
+    }
   }
   titanium: {
     type: RailBulletType
@@ -53,13 +68,27 @@ ammoTypes: {
       region: exotic-mod-diamond-wide
     }
     updateEffectSeg: 50
+    pierceEffect: none
+    smokeEffect: {
+      type: ParticleEffect
+      line: true
+      lifetime: 14
+      length: 25
+      cone: 20
+      particles: 8
+      lenFrom: 5
+      lenTo: 1
+      strokeFrom: 1
+      strokeTo: 0
+      colorFrom: ffffff
+      colorTo: 7382f0
+    }
   }
 }
 category: turret
 research: 0b-radius
 requirements: [
-  copper/125
-  graphite/100
-  silicon/90
-  titanium/80
+  copper/80
+  silicon/60
+  titanium/60
 ]
