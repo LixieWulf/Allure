@@ -1,0 +1,37 @@
+type: PowerTurret
+localizedName: Wavelength
+description: Fires small plasma balls at enemies. Requires power.
+range: 150
+size: 2
+health: 700
+reloadTime: 30
+rotateSpeed: 3
+shots: 2
+spread: 6
+alternate: true
+shootType: {
+  type: MissileBulletType
+  damage: 25
+  splashDamage: 40
+  splashDamageRadius: 28
+  speed: 3
+  lifetime: 50
+  sprite: particle
+  width: 25
+  height: 25
+  frontColor: 7382f0
+  backColor: 00000000
+  weaveScale: 6
+  weaveMag: 5
+  trailChance: 1
+  trailEffect: {
+    type: ParticleEffect
+    length: 0
+    particles: 1
+    lifetime: 15
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+}
