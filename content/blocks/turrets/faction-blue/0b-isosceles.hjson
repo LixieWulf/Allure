@@ -1,0 +1,31 @@
+type: PowerTurret
+localizedName: Isosceles
+description: Fires a large, semi-piercing plasma bolt at enemy units.
+size: 3
+health: 1300
+range: 170
+rotateSpeed: 4
+reloadTime: 200
+recoilAmount: 5
+powerUse: 8
+shootEffect: shootBig
+shootType: {
+  type: ContinuousLaserBulletType
+  damage: 120
+  pierceCap: 4
+  speed: 2
+  lifetime: 85
+  incendChance: 0
+  length: 15
+  width: 6
+  colors: [7382f020, 7382f060, 7382f0, ffffff]
+}
+category: turret
+research: 0b-wavelength
+requirements: [
+  copper/400
+  graphite/300
+  metaglass/200
+  silicon/150
+  phase-fabric/70
+]
