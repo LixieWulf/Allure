@@ -1,0 +1,21 @@
+type: TractorBeamTurret
+localizedName: Division
+description: Slows down and drags in enemy units.
+targetGround: true
+shootLength: 10
+size: 3
+health: 1200
+force: 8
+scaledForce: 2
+damage: 2
+laserWidth: 1
+status: slow
+statusDuration: 5
+category: turret
+research: 0b-pinpoint
+requirements: [
+  lead/250
+  silicon/200
+  titanium/125
+  plastanium/75
+]
