@@ -9,13 +9,16 @@ health: 2600
 range: 210
 shootEffect: none
 smokeEffect: none
-shots: 12
-shotDelay: 5
+shots: 15
+burstSpacing: 8
 reloadTime: 360
+recoilAmount: 0
 shootShake: 8
+shootLength: 0
+shootSound: none
 shootType: {
   damage: 0
-  splashDamage: 40
+  splashDamage: 30
   splashDamageRadius: 210
   collides: false
   collidesTiles: false
@@ -23,13 +26,16 @@ shootType: {
   hittable: false
   absorbable: false
   lifetime: 2.5
-  length: 0.01
+  height: 0.01
   width: 0.01
   lightRadius: 0
   lightning: 1
+  lightningDamage: 24
   lightningLength: 18
   lightningLengthRand: 8
   lightningColor: 7382f0
+  shootEffect: none
+  smokeEffect: none
   hitEffect: none
   despawnEffect: none
   hitShake: 6
