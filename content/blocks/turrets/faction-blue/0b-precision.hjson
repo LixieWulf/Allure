@@ -3,7 +3,7 @@ localizedName: Precision
 description: Fires a constant beam at enemy units. Loses steady fire if insufficiently powered.
 size: 3
 health: 850
-powerUse: 8.8
+powerUse: 12
 rotateSpeed: 3.5
 reloadTime: 5
 recoilAmount: 2
@@ -15,7 +15,8 @@ smokeEffect: none
 shootLength: 8
 shootType: {
   type: ContinuousLaserBulletType
-  damage: 35
+  damage: 28
+  incendChance: 0
   length: 132
   width: 6
   lifetime: 7
