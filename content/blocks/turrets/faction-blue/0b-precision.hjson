@@ -15,7 +15,7 @@ smokeEffect: none
 shootLength: 8
 shootType: {
   type: ContinuousLaserBulletType
-  damage: 15
+  damage: 25
   length: 132
   width: 6
   lifetime: 7
