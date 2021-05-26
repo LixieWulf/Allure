@@ -18,6 +18,7 @@ shootType: {
   damage: 15
   length: 132
   width: 6
+  lifetime: 5
   fadeTime: 0
   colors: [7382f020, 7382f060, 7382f0, ffffff]
   lightColor: 7382f0
