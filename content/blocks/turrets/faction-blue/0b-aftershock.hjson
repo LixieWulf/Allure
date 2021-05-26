@@ -1,0 +1,46 @@
+type: PowerTurret
+localizedName: Aftershock
+description: Generates a massive earthquake that damages nearby enemy ground units. Generates lightning while active.
+targetAir: false
+size: 4
+rotateSpeed: 0
+shootCone: 360
+health: 2600
+range: 210
+shootEffect: none
+smokeEffect: none
+shots: 12
+shotDelay: 5
+reloadTime: 360
+shootShake: 8
+shootType: {
+  damage: 0
+  splashDamage: 40
+  splashDamageRadius: 210
+  collides: false
+  collidesTiles: false
+  collidesAir: false
+  hittable: false
+  absorbable: false
+  lifetime: 2.5
+  length: 0.01
+  width: 0.01
+  lightRadius: 0
+  lightning: 1
+  lightningLength: 18
+  lightningLengthRand: 8
+  lightningColor: 7382f0
+  hitEffect: none
+  despawnEffect: none
+  hitShake: 6
+}
+category: turret
+research: 0b-division
+requirements: [
+  copper/1000
+  lead/900
+  silicon/700
+  titanium/350
+  thorium/250
+  surge-alloy/200
+]
