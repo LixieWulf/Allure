@@ -3,7 +3,7 @@ localizedName: Rail
 description: Transports items slowly, but at a higher rate than a titanium conveyor.
 health: 60
 itemCapacity: 8
-speed: 75
+speed: 0.3
 research: titanium-conveyor
 requirements: [
   metaglass/1
