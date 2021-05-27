@@ -4,20 +4,24 @@ description: Launches high-velocity plasma orbs at air units.
 size: 4
 targetGround: false
 health: 3100
+powerUse: 18
 range: 360
 reloadTime: 300
+recoilAmount: 3
 rotateSpeed: 2.5
 shots: 3
-burstSpacing: 15
-shootLength: 4
+burstSpacing: 10
+shootLength: 0
 shootSound: sap
 shootShake: 0.5
+shootEffect: none
+smokeEffect: none
 shootType: {
   damage: 350
   splashDamage: 150
   splashDamageRadius: 45
-  speed: 12
-  lifetime: 30
+  speed: 9
+  lifetime: 45
   collidesGround: false
   sprite: particle
   width: 30
@@ -27,17 +31,65 @@ shootType: {
   backColor: 00000000
   lightColor: 7382f0
   lightRadius: 30
+  fragBullets: 20
+  fragBullet: {
+    damage: 12
+    collidesGround: false
+    speed: 1.5
+    lifetime: 50
+    homingPower: 0.05
+    homingRange: 40
+    sprite: particle
+    height: 5
+    width: 5
+    frontColor: 7382f0
+    backColor: 00000000
+    trailChance: 1
+    trailEffect: {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 15
+      sizeFrom: 3
+      sizeTo: 0
+      colorFrom: 7382f0
+      colorTo: 7382f0
+      region: particle
+    }
+    hitEffect: none
+    despawnEffect: {
+      type: WaveEffect
+      lifetime: 20
+      sizeFrom: 0
+      sizeTo: 12
+      strokeFrom: 4
+      strokeTo: 0
+      colorFrom: 7382f0
+      colorTo: 7382f0
+    }
+  }
   trailChance: 1
   trailEffect: {
     type: ParticleEffect
     particles: 1
     length: 0
     lifetime: 15
-    sizeFrom: 8
+    sizeFrom: 14
     sizeTo: 0
     colorFrom: 7382f0
     colorTo: 7382f0
     region: particle
+  }
+  despawnEffect: none
+  hitEffect: {
+    type: WaveEffect
+    lifetime: 20
+    sizeFrom: 0
+    sizeTo: 40
+    strokeFrom: 12
+    strokeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
   }
 }
 category: turret
