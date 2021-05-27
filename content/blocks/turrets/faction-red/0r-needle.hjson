@@ -1,0 +1,28 @@
+type: LiquidTurret
+localizedName: Needle
+description: A small sprayer turret for small-scale fire control and slowing enemy units.
+health: 240
+reloadTime: 15
+inaccuracy: 3
+range: 110
+recoilAmount: 0
+liquidCapacity: 5
+shootEffect: shootLiquid
+ammoTypes: {
+  water: {
+    type: LiquidBulletType
+    damage: 0
+    speed: 2
+    lifetime: 60
+    drag: 0.01
+    orbSize: 2
+    puddleSize: 3
+    liquid: water
+  }
+}
+category: turret
+research: duo
+requirements: [
+  copper/45
+  metaglass/20
+]
