@@ -1,0 +1,52 @@
+type: PowerTurret
+localizedName: Linear
+description: Launches high-velocity plasma orbs at air units.
+size: 4
+targetGround: false
+health: 3100
+range: 360
+reloadTime: 300
+rotateSpeed: 2.5
+shots: 3
+burstSpacing: 15
+shootLength: 4
+shootSound: sap
+shootShake: 0.5
+shootType: {
+  damage: 350
+  splashDamage: 150
+  splashDamageRadius: 45
+  speed: 12
+  lifetime: 30
+  collidesGround: false
+  sprite: particle
+  width: 30
+  height: 30
+  shrinkY: 0
+  frontColor: 7382f0
+  backColor: 00000000
+  lightColor: 7382f0
+  lightRadius: 30
+  trailChance: 1
+  trailEffect: {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 15
+    sizeFrom: 8
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+    region: particle
+  }
+}
+category: turret
+research: 0b-isosceles
+requirements: [
+  copper/1200
+  graphite/700
+  silicon/400
+  metaglass/350
+  phase-fabric/250
+  surge-alloy/175
+]
