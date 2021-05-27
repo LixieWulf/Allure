@@ -51,7 +51,7 @@ ammoTypes: {
   }
 }
 category: turret
-research: duo
+research: 0r-knife
 requirements: [
   copper/45
   metaglass/20
