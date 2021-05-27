@@ -3,8 +3,31 @@ localizedName: Rail
 description: Transports items slowly, but at a higher rate than a titanium conveyor.
 health: 60
 itemCapacity: 8
-speed: 0.3
+speed: 0.05
+recharge: 3
 research: titanium-conveyor
+loadEffect: {
+  type: ParticleEffect
+  line: true
+  lifetime: 30
+  length: 8
+  lenFrom: 2
+  lenTo: 0
+  strokeFrom: 0.5
+  strokeTo: 0.5
+  colorTo: 7382f075
+}
+unloadEffect: {
+  type: ParticleEffect
+  line: true
+  lifetime: 30
+  length: 8
+  lenFrom: 2
+  lenTo: 0
+  strokeFrom: 0.5
+  strokeTo: 0.5
+  colorTo: 7382f075
+}
 requirements: [
   metaglass/1
   graphite/1
