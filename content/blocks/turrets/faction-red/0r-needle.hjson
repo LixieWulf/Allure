@@ -2,8 +2,8 @@ type: LiquidTurret
 localizedName: Needle
 description: A small sprayer turret for small-scale fire control and slowing enemy units.
 health: 240
-reloadTime: 15
-inaccuracy: 3
+reloadTime: 8
+inaccuracy: 6
 range: 110
 recoilAmount: 0
 liquidCapacity: 5
@@ -18,6 +18,36 @@ ammoTypes: {
     orbSize: 2
     puddleSize: 3
     liquid: water
+  }
+  oil: {
+    type: LiquidBulletType
+    damage: 0
+    speed: 2
+    lifetime: 60
+    drag: 0.01
+    orbSize: 2
+    puddleSize: 3
+    liquid: oil
+  }
+  cryofluid: {
+    type: LiquidBulletType
+    damage: 0
+    speed: 2
+    lifetime: 60
+    drag: 0.01
+    orbSize: 2
+    puddleSize: 3
+    liquid: cryofluid
+  }
+  slag: {
+    type: LiquidBulletType
+    damage: 1
+    speed: 2
+    lifetime: 60
+    drag: 0.01
+    orbSize: 2
+    puddleSize: 3
+    liquid: slag
   }
 }
 category: turret
