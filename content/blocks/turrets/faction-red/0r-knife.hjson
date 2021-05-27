@@ -2,9 +2,9 @@ type: ItemTurret
 localizedName: Knife
 description: Fires small missiles at enemy units.
 health: 240
-range: 140
+range: 120
 reloadTime: 35
-inaccuracy: 5
+inaccuracy: 10
 velocityInaccuracy: 0.7
 shootEffect: shootSmall
 smokeEffect: shootSmallSmoke
@@ -12,15 +12,53 @@ ammoUseEffect: casing1
 shootSound: missile
 ammoTypes: {
   copper: {
-    damage: 12
+    type: MissileBulletType
+    damage: 16
     speed: 2
     lifetime: 60
+    weaveMag: 3
+    weaveScale: 4
     trailColor: c4a18b
+  }
+  silicon: {
+    type: MissileBulletType
+    damage: 20
+    speed: 2
+    lifetime: 60
+    ammoMultiplier: 4
+    reloadMultiplier: 1.4
+    weaveMag: 3
+    weaveScale: 4
+    frontColor: b0b9bf
+    backColor: "6e7080"
+    trailColor: "6e7080"
+  }
+  pyratite: {
+    type: MissileBulletType
+    damage: 18
+    speed: 2
+    lifetime: 60
+    ammoMultiplier: 4
+    weaveMag: 3
+    weaveScale: 4
+    frontColor: f68021
+    backColor: f8ad42
+    trailColor: f8ad42
+    status: burning
+    makeFire: true
+    incendChance: 0.5
+    despawnEffect: {
+      type: ParticleEffect
+      lifetime: 20
+      length: 12
+      colorFrom: f68021
+      colorTo: f8ad42
+    }
   }
 }
 category: turret
-research: 0r-needle
+research: duo
 requirements: [
-  copper/65
-  lead/50
+  copper/45
+  lead/20
 ]
