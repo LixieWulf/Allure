@@ -1,0 +1,12 @@
+type: StackConveyor
+localizedName: Rail
+description: Transports items slowly, but at a higher rate than a titanium conveyor.
+health: 60
+itemCapacity: 8
+speed: 75
+research: titanium-conveyor
+requirements: [
+  metaglass/1
+  graphite/1
+  titanium/1
+]
