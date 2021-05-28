@@ -45,7 +45,7 @@ research: 0b-division
 requirements: [
   copper/1000
   lead/900
-  silicon/700
+  territe-alloy/450
   titanium/350
   thorium/250
   surge-alloy/200

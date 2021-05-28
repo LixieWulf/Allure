@@ -44,7 +44,7 @@ research: 0b-wavelength
 requirements: [
   copper/200
   lead/200
-  graphite/125
-  silicon/100
+  graphite/175
+  territe-alloy/150
   plastanium/100
 ]

@@ -97,7 +97,7 @@ research: 0b-isosceles
 requirements: [
   copper/1200
   graphite/700
-  silicon/400
+  territe-alloy/400
   metaglass/350
   phase-fabric/250
   surge-alloy/175

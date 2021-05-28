@@ -66,6 +66,6 @@ requirements: [
   copper/400
   graphite/300
   metaglass/200
-  silicon/150
+  territe-alloy/150
   phase-fabric/70
 ]

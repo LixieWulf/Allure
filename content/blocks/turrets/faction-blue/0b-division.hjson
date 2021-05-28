@@ -19,7 +19,7 @@ category: turret
 research: 0b-pinpoint
 requirements: [
   lead/250
-  silicon/200
+  territe-alloy/200
   titanium/125
   plastanium/75
 ]
