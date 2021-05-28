@@ -10,6 +10,7 @@ craftEffect: {
   length: 8
   colorTo: 7382f0
 }
+flameColor: 90a2fc
 consumes: {
   power: 1.25
   items: {
