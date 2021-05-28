@@ -1,0 +1,31 @@
+type: GenericSmelter
+localizedName: Furnace
+description: Melts silicon and lead together to produce territe alloy.
+size: 2
+hasPower: true
+hasItems: true
+craftEffect: {
+  type: ParticleEffect
+  lifetime: 35
+  length: 8
+  colorTo: 7382f0
+}
+consumes: {
+  power: 1.25
+  items: {
+    items: [
+      lead/3
+      silicon/2
+    ]
+  }
+}
+craftTime: 80
+outputItem: territe-alloy/2
+category: crafting
+research: silicon-smelter
+requirements: [
+  copper/40
+  lead/35
+  silicon/20
+  titanium/20
+]
