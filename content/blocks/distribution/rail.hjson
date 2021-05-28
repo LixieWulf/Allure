@@ -31,5 +31,5 @@ unloadEffect: {
 requirements: [
   metaglass/1
   graphite/1
-  titanium/1
+  territe-alloy/1
 ]
