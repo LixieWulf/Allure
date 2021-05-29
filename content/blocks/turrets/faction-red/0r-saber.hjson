@@ -1,0 +1,24 @@
+type: ItemTurret
+localizedName: Saber
+description: Fires blasts of weak shrapnel at enemies. 
+size: 2
+health: 1400
+range: 90
+reloadTime: 25
+shots: 2
+ammoTypes: {
+  anden: {
+    type: ShrapnelBulletType
+    length: 86
+    width: 12
+    damage: 45
+    colorFrom: e65555
+  }
+}
+category: turret
+research: 0r-knife
+requirements: [
+  copper/65
+  lead/60
+  anden/25
+]
