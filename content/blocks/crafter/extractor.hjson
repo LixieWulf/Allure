@@ -10,7 +10,7 @@ consumes: {
     items: [
       scrap/3
     ]
-  ]
+  }
   liquid: {
     liquid: water
     amount: 0.2
