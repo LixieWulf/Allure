@@ -1,0 +1,25 @@
+type: GenericCrafter
+localizedName: Extractor
+description: Extracts anden from scrap remains. Requires water to break down the scrap.
+size: 2
+drawer: drawRotator
+craftTime: 90
+consumes: {
+  power: 1.5
+  items: {
+    items: [
+      scrap/3
+    ]
+  ]
+  liquid: {
+    liquid: water
+    amount: 0.2
+  }
+}
+outputItem: anden/1
+category: crafting
+research: graphite-press
+requirements: [
+  copper/70
+  lead/60
+]
