@@ -1,0 +1,37 @@
+type: ItemTurret
+localizedName: Rapier
+description: Fires volleys of piercing bullets at enemies.
+size: 2
+health: 600
+range: 240
+reloadTime: 30
+shots: 2
+alternate: true
+spread: 7
+shootSound: shootbig
+shootEffect: shootBig
+smokeEffect: shootBigSmoke
+shootShake: 0.5
+ammoUseEffect: casing3Double
+ammoTypes: {
+  anden: {
+    damage: 15
+    splashDamage: 12
+    splashDamageRadius: 18
+    speed: 6
+    lifetime: 40
+    width: 11
+    height: 15
+    frontColor: fd8e8e
+    backColor: ad4244
+    despawnEffect: blastExplosion
+  }
+}
+category: turret
+research: 0r-knife
+requirements: [
+  copper/80
+  graphite/70
+  anden/70
+  titanium/60
+]
