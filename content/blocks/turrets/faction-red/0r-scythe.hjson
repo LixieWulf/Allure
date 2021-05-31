@@ -3,7 +3,7 @@ localizedName: Scythe
 description: Fires artillery at ground targets. Longer range but less accurate than a hail.
 size: 2
 targetAir: false
-range: 210
+range: 240
 health: 500
 inaccuracy: 4
 reloadTime: 70
@@ -12,6 +12,8 @@ velocityInaccuracy: 0.1
 shots: 2
 shootEffect: shootBig
 smokeEffect: shootBigSmoke
+shootSound: artillery
+shootShake: 0.75
 ammoUseEffect: casing2
 ammoTypes: {
   anden: {
@@ -20,13 +22,16 @@ ammoTypes: {
     splashDamage: 33
     splashDamageRadius: 28
     speed: 3
-    lifetime: 70
+    lifetime: 80
     width: 15
     height: 17
+    hitShake: 1.5
     frontColor: fd8e8e
     backColor: ad4244
     despawnEffect: blastExplosion
   }
+  pyratite: artilleryIncendiary
+  blast-compound: artilleryExplosive
 }
 category: turret
 research: 0r-needle
