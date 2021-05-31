@@ -30,8 +30,8 @@ ammoTypes: {
 }
 category: turret
 research: 0r-needle
-requirements: {
+requirements: [
   copper/80
   graphite/70
   anden/55
-}
+]
