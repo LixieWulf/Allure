@@ -1,0 +1,37 @@
+type: ItemTurret
+localizedName: Scythe
+description: Fires artillery at ground targets. Longer range but less accurate than a hail.
+size: 2
+targetAir: false
+range: 210
+health: 500
+inaccuracy: 4
+reloadTime: 70
+recoilAmount: 3
+velocityInaccuracy: 0.1
+shots: 2
+shootEffect: shootBig
+smokeEffect: shootBigSmoke
+ammoUseEffect: casing2
+ammoTypes: {
+  anden: {
+    type: ArtilleryBulletType
+    damage: 30
+    splashDamage: 33
+    splashDamageRadius: 28
+    speed: 3
+    lifetime: 70
+    width: 15
+    height: 17
+    frontColor: fd8e8e
+    backColor: ad4244
+    despawnEffect: blastExplosion
+  }
+}
+category: turret
+research: 0r-needle
+requirements: {
+  copper/80
+  graphite/70
+  anden/55
+}
