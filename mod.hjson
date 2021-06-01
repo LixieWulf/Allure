@@ -1,23 +1,17 @@
 name: exotic-mod
 displayName: Exotic Mod
-author: '''
-  Main Dev: BlueWolf
-  Other Devs: K103908, MEEP Of Faith, AndromedaFallen
-  Contributors: Quezler, VozDuh
-  '''
+author: BlueWolf
 description:
   '''
   WARNING: Not supported on low-end devices.
   
-  We got together over the Mindustry Discord to bring you this exotic mod. Adds in a few things we thought would be fun.
-  Update log:
-    you should have run when you could have.
+  The official HJSON 6.0 example mod. Both a reference point and also playable.
 
-  Note: Reconstructors will break the game's UI because of the resource costs, there isn't anything I (BlueWolf) can do about it.
+  Note: Reconstructors will break the game's UI because of the resource costs, there isn't anything I can do about it.
 
   Discord: https://discord.gg/M3hm5z6nm6
   
   A lot of work goes into Exotic, so if you want to show some support or like the content give the mod a star on GitHub!
   '''
-version: 0.4 Alpha
+version: 0.5 Alpha
 minGameVersion: 126.2
