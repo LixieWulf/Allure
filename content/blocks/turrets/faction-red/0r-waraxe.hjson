@@ -1,0 +1,14 @@
+type: ItemTurret
+localizedName: Waraxe
+description: Sprays a barrage of flames at enemies. 
+size: 3
+health: 1400
+reloadTime: 18
+recoilAmount: 2
+restitution: 0.06
+shots: 6
+ammoTypes: {
+  copper: standardCopper
+}
+category: turret
+buildVisibility: sandboxOnly
