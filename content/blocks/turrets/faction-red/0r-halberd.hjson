@@ -1,6 +1,7 @@
 type: ItemTurret
 localizedName: Halberd
 description: Slashes enemies with three razor-shrap blades. Extremely short ranged.
+outlineIcon: false
 size: 4
 health: 4400
 range: 40
@@ -15,6 +16,7 @@ ammoTypes: {
     type: RailBulletType
     damage: 450
     length: 32
+    ammoMultiplier: 6
     pierceDamageFactor: 0
     pierceEffect: none
   }
