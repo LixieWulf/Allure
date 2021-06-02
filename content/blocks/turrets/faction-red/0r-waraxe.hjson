@@ -3,12 +3,120 @@ localizedName: Waraxe
 description: Sprays a barrage of flames at enemies. 
 size: 3
 health: 1400
-reloadTime: 18
+range: 108
+reloadTime: 15
 recoilAmount: 2
 restitution: 0.06
-shots: 6
+shootSound: flame
 ammoTypes: {
-  copper: standardCopper
+  coal: {
+    damage: 54
+    speed: 6
+    pierce: true
+    pierceBuilding: true
+    ammoMultiplier: 3
+    status: burning
+    makeFire: true
+    lifetime: 18
+    width: 0.01
+    height: 0.01
+    despawnEffect: none
+    hitEffect: {
+      type: ParticleEffect
+      line: true
+      length: 15
+      interp: circleOut
+      cone: 25
+      lifetime: 25
+      strokeFrom: 1
+      strokeTo: 0.5
+      lenFrom: 3
+      lenTo: 0
+      colorFrom: ffdd55
+      colorTo: db401c
+    }
+    smokeEffect: {
+      type: ParticleEffect
+      particles: 30
+      length: 108
+      lifetime: 36
+      interp: circleOut
+      cone: 5
+      colorFrom: ffdd55
+      colorTo: db401c
+      sizeFrom: 4
+      sizeTo: 0.25
+    }
+    shootEffect: {
+      type: ParticleEffect
+      particles: 15
+      length: 48
+      lifetime: 36
+      interp: circleOut
+      cone: 15
+      colorFrom: 7e7e7e
+      colorTo: 464646
+      sizeFrom: 6
+      sizeTo: 0
+    }
+  }
+  pyratite: {
+  damage: 75
+    speed: 6
+    pierce: true
+    pierceBuilding: true
+    ammoMultiplier: 4
+    status: burning
+    makeFire: true
+    lifetime: 18
+    width: 0.01
+    height: 0.01
+    despawnEffect: none
+    hitEffect: {
+      type: ParticleEffect
+      line: true
+      length: 15
+      interp: circleOut
+      cone: 25
+      lifetime: 25
+      strokeFrom: 1
+      strokeTo: 0.5
+      lenFrom: 3
+      lenTo: 0
+      colorFrom: ffb855
+      colorTo: db661c
+    }
+    smokeEffect: {
+      type: ParticleEffect
+      particles: 30
+      length: 108
+      lifetime: 36
+      interp: circleOut
+      cone: 5
+      colorFrom: ffb855
+      colorTo: db661c
+      sizeFrom: 4
+      sizeTo: 0.25
+    }
+    shootEffect: {
+      type: ParticleEffect
+      particles: 15
+      length: 48
+      lifetime: 36
+      interp: circleOut
+      cone: 15
+      colorFrom: 7e7e7e
+      colorTo: 464646
+      sizeFrom: 6
+      sizeTo: 0
+    }
+  }
 }
 category: turret
-buildVisibility: sandboxOnly
+research: 0r-saber
+requirements: [
+  copper/500
+  graphite/450
+  anden/400
+  thorium/250
+]
