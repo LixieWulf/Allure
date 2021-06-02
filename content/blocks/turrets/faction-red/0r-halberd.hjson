@@ -1,0 +1,31 @@
+type: ItemTurret
+localizedName: Halberd
+description: Slashes enemies with three razor-shrap blades. Extremely short ranged.
+size: 4
+health: 4400
+range: 40
+reloadTime: 15
+recoilAmount: -32
+restitution: 2
+shootSound: none
+shootShake: 2
+acceptCoolant: false
+ammoTypes: {
+  blast-compound: {
+    type: RailBulletType
+    damage: 450
+    length: 32
+    pierceDamageFactor: 0
+    pierceEffect: none
+  }
+}
+category: turret
+research: 0r-waraxe
+requirements: [
+  copper/1500
+  lead/1200
+  metaglass/700
+  anden/500
+  thorium/450
+  surge-alloy/300
+]
