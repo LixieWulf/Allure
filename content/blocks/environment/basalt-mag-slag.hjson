@@ -1,10 +1,8 @@
 type: ShallowLiquid
-name: Basalt Magnetic Slag
 variants: 3
 liquidDrop: mag-slag
 liquidMultiplier: 0.1
 status: {
-  name: vapourizing
   damage: 150
   speedMultiplier: 0.85
   effectChance: 0.075

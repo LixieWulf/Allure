@@ -327,7 +327,6 @@ weapons: [
     }
   }
   {
-    name: luminance-weapon
     x: 38.5
     y: 49.25
     rotate: true
@@ -890,7 +889,6 @@ weapons: [
     }
   }
   {
-    name: luminance-railgun
     x: 0
     y: -64.75
     mirror: false
@@ -1250,7 +1248,6 @@ weapons: [
       height: 0.01
       lightColor: ffffff
       status: {
-        name: vulnerability
         healthMultiplier: 0.1
       }
       statusDuration: 45

@@ -17,7 +17,6 @@ lightRadius: 100
 lightColor: 6f7fe8
 weapons: [
   {
-    name: harmony-laser
     x: 11
     y: 32
     shootY: 8
@@ -39,7 +38,6 @@ weapons: [
     }
   }
   {
-    name: harmony-weapon
     x: 0
     y: 0
     recoil: 6

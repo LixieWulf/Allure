@@ -14,7 +14,6 @@ health: 4550
 armor: 12
 weapons: [
   {
-    name: whiplash-railgun
     mirror: false
     x: 0
     y: 0

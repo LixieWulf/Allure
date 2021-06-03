@@ -12,7 +12,6 @@ mechFrontSway: 0.5
 lightColor: 84f591
 weapons: [
   {
-    name: spark-weapon
     top: false
     recoil: 2
     inaccuracy: 10

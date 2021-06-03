@@ -25,7 +25,6 @@ lightRadius: 100
 lightColor: 84f591
 weapons: [
   {
-    name: blaze-weapon
     top: false
     x: 29
     y: 0

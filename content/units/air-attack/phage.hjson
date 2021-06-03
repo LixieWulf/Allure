@@ -14,7 +14,6 @@ engineSize: 3.8
 lightColor: e65555
 weapons: [
   {
-    name: phage-weapon
     x: 0
     y: 8.75
     shootY: 8
@@ -52,7 +51,6 @@ weapons: [
     }
   }
   {
-    name: phage-bombs
     x: 0
     y: -8
     xRand: 12

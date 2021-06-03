@@ -17,7 +17,6 @@ lightColor: 6f7fe8
 lowAltitude: true
 weapons: [
   {
-    name: fearless-shockwave
     ignoreRotation: true
     x: 0
     y: 0
@@ -51,7 +50,6 @@ weapons: [
       maxRange: 240
       statusDuration: 90
       status: {
-        name: emp
         disarm: true
         speedMultiplier: 0
         effectChance: 0.05
@@ -71,7 +69,6 @@ weapons: [
     }
   }
   {
-    name: fearless-laser
     x: 0
     y: 0
     reload: 240

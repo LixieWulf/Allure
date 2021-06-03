@@ -1,5 +1,4 @@
 type: naval
-name: Wraith
 hitSize: 65
 health: 196000
 armor: 70
@@ -10,7 +9,6 @@ lightRadius: 100
 lightColor: a488eb
 weapons: [
   {
-    name: spirit-weapon
     x: 23
     y: 13
     rotate: true
@@ -31,7 +29,6 @@ weapons: [
     }
   }
   {
-    name: spirit-weapon
     x: 32
     y: 4
     rotate: true
@@ -52,7 +49,6 @@ weapons: [
     }
   }
   {
-    name: wraith-weapon
     x: 17
     y: -32
     rotate: true
@@ -80,7 +76,6 @@ weapons: [
     }
   }
   {
-    name: wraith-cannon
     x: 0
     y: -6
     rotate: true
@@ -136,7 +131,6 @@ abilities: [
     reload: 300
     range: 160
     effect: {
-      name: sap-heal
       speedMultiplier: 1
       healthMultiplier: 1
       damageMultiplier: 1

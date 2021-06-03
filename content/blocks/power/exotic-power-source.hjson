@@ -1,5 +1,4 @@
 type: PowerSource
-name: Exotic Power Source
 size: 1
 health: 344550
 maxNodes: 255

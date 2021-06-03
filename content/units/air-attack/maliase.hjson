@@ -15,7 +15,6 @@ lightRadius: 90
 lightColor: e65555
 weapons: [
   {
-    name: maliase-blade
     x: 0
     y: 36
     mirror: false
@@ -34,7 +33,6 @@ weapons: [
     }
   }
   {
-    name: maliase-laser
     x: 0
     y: -18
     mirror: false
@@ -71,7 +69,6 @@ weapons: [
     }
   }
   {
-    name: maliase-bombs
     x: 0
     y: -20
     mirror: false

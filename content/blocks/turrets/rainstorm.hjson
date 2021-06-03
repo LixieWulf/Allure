@@ -1,5 +1,4 @@
 type: LaserTurret
-name: Rainstorm
 size: 10
 health: 228000
 range: 877

@@ -1,5 +1,4 @@
 type: NuclearReactor
-name: Draconium Reactor
 size: 6
 health: 1280
 itemCapacity: 135

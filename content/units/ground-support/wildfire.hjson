@@ -22,7 +22,6 @@ lightRadius: 160
 lightColor: 84f591
 weapons: [
   {
-    name: wildfire-sphere
     x: 0
     y: 0
     reload: 160
@@ -59,7 +58,6 @@ weapons: [
     }
   }
   {
-    name: wildfire-sphere
     x: 0
     y: 0
     rotate: true
@@ -185,7 +183,6 @@ weapons: [
     }
   }
   {
-    name: wildfire-cannon
     top: false
     x: 37
     y: 0
@@ -224,7 +221,6 @@ abilities: [
       region: particle
     }
     effect: {
-      name: regeneration
       damage: -15
       effect: {
         type: ParticleEffect

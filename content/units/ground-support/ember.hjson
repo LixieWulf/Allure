@@ -1,5 +1,4 @@
 type: mech
-name: Ember
 health: 175600
 hitSize: 32
 canDrown: false
@@ -13,7 +12,6 @@ lightRadius: 75
 lightColor: 84f591
 weapons: [
   {
-    name: ember-weapon
     x: 17.5
     y: 0
     shootY: 12
@@ -41,7 +39,6 @@ weapons: [
     }
   }
   {
-    name: heal-weapon-mount
     x: 9
     y: -4
     rotate: true

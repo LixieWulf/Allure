@@ -19,7 +19,6 @@ lightRadius: 80
 lightColor: 6f7fe8
 weapons: [
   {
-    name: endeavour-laser
     x: 0
     y: 20
     mirror: false
@@ -78,7 +77,6 @@ weapons: [
     }
   }
   {
-    name: reckless-weapon
     x: 20
     y: 24
     rotate: true
@@ -129,7 +127,6 @@ weapons: [
     }
   }
   {
-    name: reckless-weapon
     x: 12
     y: 8
     rotate: true
@@ -180,7 +177,6 @@ weapons: [
     }
   }
     {
-    name: reckless-weapon
     x: 12
     y: -8
     rotate: true
@@ -231,7 +227,6 @@ weapons: [
     }
   }
   {
-    name: reckless-weapon
     x: 20
     y: -24
     rotate: true

@@ -16,7 +16,6 @@ noisePath: fog
 noiseLayerSclM: 0.5
 noiseLayerAlphaM: 0.1
 status: {
-  name: permafrost
   damage: 2
   speedMultiplier: 0.5
   healthMultiplier: 0.9

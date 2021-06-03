@@ -1,5 +1,4 @@
 type: ItemTurret
-name: Potential
 health: 2000
 size: 3
 range: 855

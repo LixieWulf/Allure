@@ -9,7 +9,6 @@ lightRadius: 40
 lightColor: 84f591
 weapons: [
   {
-    name: flicker-weapon
     top: false
     x: 3.75
     y: 0

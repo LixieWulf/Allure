@@ -1,5 +1,4 @@
 type: mech
-name: Cinder
 health: 235000
 armor: 105
 hitSize: 56
@@ -15,7 +14,6 @@ lightRadius: 90
 lightColor: 84f591
 weapons: [
   {
-    name: cinder-cannon
     x: 33.5
     y: 0
     reload: 15
@@ -43,7 +41,6 @@ weapons: [
     }
   }
   {
-    name: cinder-weapon
     x: 22.5
     y: -22
     rotate: true
@@ -75,7 +72,6 @@ weapons: [
     }
   }
   {
-    name: heal-weapon-mount
     x: 16 
     y: 0
     rotate: true

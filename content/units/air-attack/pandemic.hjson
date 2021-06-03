@@ -15,7 +15,6 @@ lightRadius: 120
 lightColor: e65555
 weapons: [
   {
-    name: pandemic-cannon
     top: false
     mirror: false
     x: 0
@@ -65,7 +64,6 @@ weapons: [
     }
   }
   {
-    name: pandemic-cannon-1
     top: false
     x: 49.25
     y: -24.25
@@ -114,7 +112,6 @@ weapons: [
     }
   }
   {
-    name: pandemic-cannon-2
     top: false
     x: 58
     y: -29.25
@@ -163,7 +160,6 @@ weapons: [
     }
   }
   {
-    name: pandemic-bombs
     x: 0
     y: -32
     mirror: false
@@ -256,7 +252,6 @@ weapons: [
     }
   }
   {
-    name: disease-weapon
     x: 17.25
     y: 43.5
     rotate: true
@@ -291,7 +286,6 @@ weapons: [
     }
   }
   {
-    name: pandemic-sword
     mirror: false
     x: 0
     y: -20

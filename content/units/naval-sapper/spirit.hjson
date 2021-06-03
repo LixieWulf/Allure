@@ -14,7 +14,6 @@ lightRadius: 50
 lightColor: a488eb
 weapons: [
   {
-    name: spirit-weapon-2
     rotate: true
     mirror: true
     reload: 20
@@ -36,7 +35,6 @@ weapons: [
     }
   }
   {
-    name: soul-weapon
     x: 0
     y: -2.5
     rotate: true

@@ -9,7 +9,6 @@ lightRadius: 130
 lightColor: a488eb
 weapons: [
   {
-    name: spriggan-core
     x: 0
     y: 0
     reload: 240
@@ -28,7 +27,6 @@ weapons: [
       color: bf92f9
       lightColor: a488eb
       status: {
-        name: confused
         reloadMultiplier: 0.5
         speedMultiplier: -1
         effect: sapped
@@ -49,7 +47,6 @@ weapons: [
     }
   }
   {
-    name: spriggan-weapon
     x: 32
     y: -25.25
     shootY: 8
@@ -70,7 +67,6 @@ weapons: [
     }
   }
   {
-    name: banshee-weapon
     x: 22
     y: 31
     rotate: true
@@ -92,7 +88,6 @@ weapons: [
     }
   }
   {
-    name: spirit-weapon
     x: 8
     y: 54.75
     rotate: true

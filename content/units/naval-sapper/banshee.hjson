@@ -21,7 +21,6 @@ lightRadius: 110
 lightColor: a488eb
 weapons: [
   {
-    name: spirit-weapon
     y: 50
     x: 6
     rotate: true
@@ -41,7 +40,6 @@ weapons: [
     }
   }
   {
-    name: spirit-weapon
     y: 20
     x: 31
     rotate: true
@@ -61,7 +59,6 @@ weapons: [
     }
   }
   {
-    name: banshee-weapon
     y: -8.5
     x: 34
     rotate: true
@@ -84,7 +81,6 @@ weapons: [
     }
   }
   {
-    name: wraith-weapon
     x: 34
     y: -36
     rotate: true

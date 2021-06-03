@@ -1,5 +1,4 @@
 type: UnitFactory
-name: Constructor
 size: 2
 consumes: {
   power: 1.2

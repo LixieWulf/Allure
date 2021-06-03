@@ -13,7 +13,6 @@ hitSize: 24
 flying: true
 weapons: [
   {
-  name: shockwave-shotgun
   inaccuracy: 0
   mirror: false
   shootSound: shotgun

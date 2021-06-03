@@ -16,7 +16,6 @@ lowAltitude: true
 lightColor: 6f7fe8
 weapons: [
   {
-    name: reckless-laser
     mirror: false
     x: 0
     y: 0

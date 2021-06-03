@@ -98,7 +98,6 @@ ammoTypes: {
     ammoMultiplier: 4
     statusDuration: 600
     status: {
-      name: vapourizing3
       damage: 150
       show: false
       speedMultiplier: 0.85

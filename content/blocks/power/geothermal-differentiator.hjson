@@ -1,5 +1,4 @@
 type: ThermalGenerator
-name: Geothermal Differentiator
 size: 4
 powerProduction: 44.6
 generateEffect: redgeneratespark

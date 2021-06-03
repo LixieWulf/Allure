@@ -14,7 +14,6 @@ shootType: {
   serrations: 0
   toColor: ffffff
   status: {
-    name: bleeding
     damage: 10
     effect: {
       type: ParticleEffect

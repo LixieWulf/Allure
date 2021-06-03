@@ -1,5 +1,4 @@
 type: LiquidSource
-name: Exotic Liquid Source
 size: 1
 health: 344550
 buildVisibility: sandboxOnly

@@ -16,7 +16,6 @@ lightRadius: 90
 lightColor: e65555
 weapons: [
   {
-    name: disease-weapon
     x: 12
     y: 22
     rotate: true
@@ -51,7 +50,6 @@ weapons: [
     }
   }
   {
-    name: disease-weapon
     x: 32
     y: -22
     rotate: true
@@ -86,7 +84,6 @@ weapons: [
     }
   }
   {
-    name: disease-bombs
     x: 0
     y: -20
     ignoreRotation: true

@@ -11,7 +11,6 @@ lightRadius: 120
 lightColor: e65555
 weapons: [
   {
-    name: plague-ram
     x: 0
     y: 0
     mirror: false

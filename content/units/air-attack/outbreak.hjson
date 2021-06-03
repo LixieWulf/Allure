@@ -8,7 +8,6 @@ lightRadius: 25
 lightColor: e65555
 weapons: [
   {
-    name: outbreak-ram
     x: 0
     y: 0
     mirror: false

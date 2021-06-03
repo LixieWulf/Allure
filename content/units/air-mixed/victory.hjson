@@ -9,7 +9,6 @@ lightRadius: 30
 lightColor: 6f7fe8
 weapons: [
   {
-    name: victory-weapon
     mirror: false
     x: 0
     y: 0

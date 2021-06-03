@@ -5,7 +5,6 @@ lightRadius: 35
 lightColor: a488eb
 weapons: [
   {
-    name: soul-weapon
     mirror: false
     rotate: true
     shootY: 4

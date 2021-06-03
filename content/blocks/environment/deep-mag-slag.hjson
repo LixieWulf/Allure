@@ -1,5 +1,4 @@
 type: Floor
-name: Magnetized Slag
 variants: 0
 isLiquid: true
 liquidMultiplier: 0.18
@@ -7,7 +6,6 @@ cacheLayer: slag
 speedMultiplier: 0.15
 liquidDrop: mag-slag
 status: {
-  name: vapourizing2
   damage: 150
   show: false
   speedMultiplier: 0.85

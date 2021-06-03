@@ -17,7 +17,6 @@ lightRadius: 65
 lightColor: e65555
 weapons: [
 {
-  name: pathogen-bomber
   x: 16
   y: 12
   minShootVelocity: 0.2
@@ -68,7 +67,6 @@ weapons: [
   }
 }
 {
-  name: pathogen-bomber
   x: 20
   y: -12
   minShootVelocity: 0.2
@@ -119,7 +117,6 @@ weapons: [
   }
 }
 {
-  name: pathogen-missiles
   x: 0
   y: 16
   reload: 45
