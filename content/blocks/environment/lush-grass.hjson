@@ -2,7 +2,6 @@ type: Floor
 localizedName: Lush Grass
 status: {
   name: prolific-growth
-  localizedName: Prolific Growth
   damage: -2.5
   speedMultiplier: 0.85
   effectChance: 0.05

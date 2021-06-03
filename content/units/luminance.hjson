@@ -1253,7 +1253,6 @@ weapons: [
       lightColor: ffffff
       status: {
         name: vulnerability
-        localizedName: Vulnerability
         healthMultiplier: 0.1
       }
       statusDuration: 45

@@ -31,7 +31,6 @@ weapons: [
       lightColor: a488eb
       status: {
         name: confused
-        localizedName: Confused
         reloadMultiplier: 0.5
         speedMultiplier: -1
         effect: sapped

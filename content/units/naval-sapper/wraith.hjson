@@ -138,7 +138,6 @@ abilities: [
     range: 160
     effect: {
       name: sap-heal
-      localizedName: Sap Heal
       speedMultiplier: 1
       healthMultiplier: 1
       damageMultiplier: 1

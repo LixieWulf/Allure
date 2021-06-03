@@ -27,7 +27,6 @@ weapons: [
     firstShotDelay: 165
     shootStatus: {
       name: stopped
-      localizedName: Stopped
       speedMultiplier: 0
       dragMultiplier: 4
     }

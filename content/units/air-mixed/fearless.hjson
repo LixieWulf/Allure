@@ -54,7 +54,6 @@ weapons: [
       statusDuration: 90
       status: {
         name: emp
-        localizedName: EMP
         disarm: true
         speedMultiplier: 0
         effectChance: 0.05

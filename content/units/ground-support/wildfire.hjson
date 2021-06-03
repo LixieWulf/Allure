@@ -227,7 +227,6 @@ abilities: [
     }
     effect: {
       name: regeneration
-      localizedName: Regeneration
       damage: -15
       effect: {
         type: ParticleEffect
