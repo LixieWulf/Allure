@@ -1,6 +1,4 @@
 type: ItemTurret
-localizedName: Knife
-description: Fires small missiles at enemy units.
 health: 240
 range: 120
 reloadTime: 35

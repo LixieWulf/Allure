@@ -1,6 +1,4 @@
 type: ItemTurret
-localizedName: Waraxe
-description: Sprays a barrage of flames at enemies. 
 size: 3
 health: 1400
 range: 108

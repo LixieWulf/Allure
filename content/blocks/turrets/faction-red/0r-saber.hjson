@@ -1,6 +1,4 @@
 type: ItemTurret
-localizedName: Saber
-description: Fires blasts of weak shrapnel at enemies. 
 size: 2
 health: 1100
 range: 56

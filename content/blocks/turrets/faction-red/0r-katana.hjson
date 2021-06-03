@@ -1,6 +1,4 @@
 type: ItemTurret
-localizedName: Katana
-description: Barrages enemies with dashing swords.
 size: 3
 health: 1000
 range: 220

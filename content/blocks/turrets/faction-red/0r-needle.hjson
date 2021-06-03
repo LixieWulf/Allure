@@ -1,6 +1,4 @@
 type: LiquidTurret
-localizedName: Needle
-description: A small sprayer turret for small-scale fire control and slowing enemy units.
 health: 240
 reloadTime: 8
 inaccuracy: 6

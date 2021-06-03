@@ -1,6 +1,4 @@
 type: ItemTurret
-localizedName: Rapier
-description: Fires volleys of piercing bullets at enemies.
 size: 2
 health: 600
 range: 150

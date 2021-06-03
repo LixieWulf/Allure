@@ -1,6 +1,4 @@
 type: ItemTurret
-localizedName: Halberd
-description: Slashes enemies with three razor-shrap blades. Extremely short ranged.
 outlineIcon: false
 size: 4
 health: 4400
