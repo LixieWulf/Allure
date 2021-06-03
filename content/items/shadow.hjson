@@ -1,9 +1,3 @@
-name: Shadow
-description:
-  '''
-  A strange unknown material, formed by combining other materials and their properties. 
-  Extremely powerful.
-  '''
 hardness: 10
 cost: 54.8
 color: 000000
