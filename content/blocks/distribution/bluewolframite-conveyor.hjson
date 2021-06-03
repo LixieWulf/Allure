@@ -1,6 +1,4 @@
 type: Conveyor
-localizedName: Bluewolframite Conveyor
-description: Achieves high speeds with electromagnetic rails. Much faster than a titanium conveyor. Uses an extra bluewolframite for armor.
 health: 540
 requirements: [
   copper/1

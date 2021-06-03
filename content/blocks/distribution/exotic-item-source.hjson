@@ -1,7 +1,5 @@
 type: ItemSource
-name: Exotic Item Source
-description: Sandbox only item source with more health.
 size: 1
-health: 344550
+health: 2000000
 buildVisibility: sandboxOnly
 category: distribution
