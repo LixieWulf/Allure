@@ -1,6 +1,4 @@
 type: PowerTurret
-localizedName: Aftershock
-description: Generates a massive earthquake that damages nearby enemy ground units. Generates lightning while active.
 targetAir: false
 size: 4
 rotateSpeed: 0

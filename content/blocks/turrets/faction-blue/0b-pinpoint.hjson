@@ -1,6 +1,4 @@
 type: ItemTurret
-localizedName: Pinpoint
-description: A small railgun turret. Fires armor-piercing bolts over medium distances.
 size: 2
 health: 650
 range: 250

@@ -1,6 +1,4 @@
 type: TractorBeamTurret
-localizedName: Division
-description: Slows down and drags in enemy units.
 targetGround: true
 shootLength: 10
 range: 210
