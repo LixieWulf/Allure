@@ -1,6 +1,4 @@
 type: LiquidConverter
-localizedName: Supercoolant Mixer
-description: "Adds fine amethyst power with cryofluid to create a more effective coolant."
 size: 3
 craftTime: 180
 hasPower: true

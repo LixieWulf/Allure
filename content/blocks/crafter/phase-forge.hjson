@@ -1,6 +1,4 @@
 type: GenericCrafter
-localizedName: Phase Forge
-description: A more effective phase weaver. 
 itemCapacity: 50
 size: 3
 hasPower: true

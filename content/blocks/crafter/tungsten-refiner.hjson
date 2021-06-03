@@ -1,6 +1,4 @@
 type: GenericSmelter
-localizedName: Tungsten Refiner
-description: Extracts tungsten from wolframite scrap for use in units.
 size: 3
 hasPower: true
 hasLiquids: false
