@@ -1,6 +1,4 @@
 type: Reconstructor
-name: Alterator
-description: Upgrades inputted units to their second tier.
 size: 8
 constructTime: 13550
 liquidCapacity: 60

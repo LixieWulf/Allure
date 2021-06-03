@@ -1,6 +1,4 @@
 type: Reconstructor
-localizedName: Converter
-description: Upgrades inputted units to their fourth tier.
 size: 12
 constructTime: 52600
 liquidCapacity: 2400
