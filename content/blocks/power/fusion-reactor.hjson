@@ -1,6 +1,4 @@
 type: ImpactReactor
-localizedName: Fusion Reactor
-description: A deuterium reactor. Pulls hydrogen from water and fuses it to generate a large amount of power.
 liquidCapacity: 980
 size: 5
 hasLiquids: true

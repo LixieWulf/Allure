@@ -1,6 +1,4 @@
 type: ImpactReactor
-localizedName: Arc Reactor
-description: A massive antimatter reactor. Uses incredible amounts of power to convert shadow into antimatter, which then is reacted with matter to generate massive amounts of power. 
 itemDuration: 120
 liquidCapacity: 1400
 size: 8

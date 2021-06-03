@@ -1,9 +1,6 @@
 type: PowerSource
-name: Exotic Power Source
-description: For Exotic Mod power needs in sandbox. Outputs more than a standard source.
-details: Just in case something needs an extra kick.
 size: 1
-health: 344550
+health: 2000000
 maxNodes: 255
 laserRange: 15
 laserColor1: acbbf9
