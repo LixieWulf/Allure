@@ -1,5 +1,4 @@
 type: ParticleWeather
-localizedName: Healing Winds
 useWindVector: true
 particleRegion: circle
 opacityMultiplier: 0.3

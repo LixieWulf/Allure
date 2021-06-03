@@ -1,5 +1,4 @@
 type: ParticleWeather
-localizedName: Firestorm
 color: ffbb44
 noiseColor: 5e1a00
 particleRegion: particle

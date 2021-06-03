@@ -1,5 +1,4 @@
 type: ParticleWeather
-localizedName: Permafrost
 baseSpeed: 0.1
 color: bfdfff
 density: 750
