@@ -1,6 +1,4 @@
 type: Drill
-localizedName: Bluewolframite Drill
-description: "A massive drill, capable of mining items at an incredible pace. Able to mine any ore. \nMagnetized slag can be used to optionally hyperdrive the drill."
 size: 7
 tier: 28
 drillTime: 3.5
