@@ -1,6 +1,4 @@
 type: flying
-localizedName: Victory
-description: Heals buildings slowly with its singular weapon.
 flying: true
 health: 130
 speed: 2.4

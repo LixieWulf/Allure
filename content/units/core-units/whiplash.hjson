@@ -1,6 +1,4 @@
 type: flying
-localizedName: Whiplash
-description: Guardian of the Nexus core. Builds structures moderately quickly and defends the core with a small railgun.
 controller: BuilderAI
 flying: true
 speed: 4.4

@@ -1,6 +1,4 @@
 type: flying
-localizedName: Hellfire
-description: Trades its own health for more weapons power and armor. Protects itself and nearby units with a powerful shield regeneration field.
 flying: true
 hitSize: 140
 health: 1300000

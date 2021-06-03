@@ -1,6 +1,4 @@
 type: mech
-localizedName: Flicker
-description: A tiny support unit capable of slowly healing buildings and units. Does not possess offensive capabilities.
 speed: 0.6
 health: 240
 armor: 2

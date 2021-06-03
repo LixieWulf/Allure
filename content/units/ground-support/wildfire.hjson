@@ -1,6 +1,4 @@
 type: legs
-localizedName: Wildfire
-description: Heals anything nearby with a passive regeneration field and massive laser cannons. Generates a floating green sphere that fires multiple projectiles.
 hitSize: 60
 hovering: true
 drawShields: false

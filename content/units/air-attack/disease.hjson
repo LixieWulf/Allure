@@ -1,6 +1,4 @@
 type: flying
-localizedName: Disease
-description: A large bomber that attacks hostile targets with four short range laser weapons. Generates lightning while moving.
 flying: true
 health: 165000
 armor: 75

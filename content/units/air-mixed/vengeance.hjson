@@ -1,6 +1,4 @@
-localizedName: Vengeance
 type: payload
-description: Deploys a large amount of ground attack units. Can pick up small payloads.
 hitSize: 70
 speed: 0.9
 accel: 0.1

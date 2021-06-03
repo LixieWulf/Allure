@@ -1,6 +1,4 @@
 type: flying
-localizedName: Phage
-description: Bombards hostile targets with cluster bombs and a laser beam.
 flying: true
 hitSize: 35
 health: 18000

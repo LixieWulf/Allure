@@ -1,6 +1,4 @@
 type: naval
-localizedName: Ghost
-description: Leeches health from enemies and destroys structures with a long ranged artillery cannon.
 speed: 1
 accel: 0.5
 flying: false

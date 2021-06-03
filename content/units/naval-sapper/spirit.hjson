@@ -1,6 +1,4 @@
 type: naval
-localizedName: Spirit
-description: A fast naval unit that leeches health from hostile units.
 speed: 1.5
 accel: 0.15
 hitSize: 18

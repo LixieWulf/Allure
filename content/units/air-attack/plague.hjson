@@ -1,6 +1,4 @@
 type: flying
-localizedName: Plague
-description: Destroys targets by dashing forward and impaling them with its bladed design.
 flying: true
 hitSize: 90
 health: 975000

@@ -1,6 +1,4 @@
 type: flying
-localizedName: Luminance
-description: A massive intergalactic starship. Known for causing the fall of any civilization in her path. Her origins are unknown.
 flying: true
 hitSize: 260
 health: 9000000

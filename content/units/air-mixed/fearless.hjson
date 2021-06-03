@@ -1,6 +1,4 @@
 type: payload
-localizedName: Fearless
-description: Emits a powerful shockwave that locks down enemy units. Defends itself with a massive laser cannon. Able to pick up medium-sized payloads. Builds structures incredibly fast.
 flying: true
 controller: repairAI
 payloadCapacity: 1024
