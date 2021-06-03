@@ -14,7 +14,6 @@ inaccuracy: 0
 shootLength: 0
 targetAir: true
 targetGround: true
-ammoUseEffect: casing3
 maxAmmo: 20
 ammoTypes: {
   phase-fabric: {
