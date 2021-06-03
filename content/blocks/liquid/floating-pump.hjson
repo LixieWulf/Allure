@@ -1,6 +1,4 @@
 type: Pump
-localizedName: Floating Pump
-description: Pumps liquids at a slow rate. Can be placed anywhere on deep liquids.
 size: 2
 hasPower: true
 consumes: {
