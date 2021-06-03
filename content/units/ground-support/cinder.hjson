@@ -1,6 +1,5 @@
 type: mech
 name: Cinder
-description: Heals units and buildings. Can deal damage to hostile targets. Produces poly builder units at a slow rate. Capable of flight.
 health: 235000
 armor: 105
 hitSize: 56

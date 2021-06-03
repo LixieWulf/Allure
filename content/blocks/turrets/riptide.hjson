@@ -1,6 +1,4 @@
 type: LiquidTurret
-localizedName: "Riptide"
-description: Sprays liquids at enemies at a much higher rate than a tsunami. 
 health: 15000
 rotateSpeed: 5
 targetAir: true
@@ -101,7 +99,6 @@ ammoTypes: {
     statusDuration: 600
     status: {
       name: vapourizing3
-      localizedName: vapourizing3
       damage: 150
       show: false
       speedMultiplier: 0.85

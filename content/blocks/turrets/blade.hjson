@@ -1,6 +1,4 @@
 type: PowerTurret
-localizedName: Blade
-description: Fires a triple-beamed laser salvo at enemies. 
 size: 3
 health: 1600
 range: 160

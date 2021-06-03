@@ -1,6 +1,4 @@
 type: flying
-localizedName: Shockwave
-description: Guardian of the Requiem core. Builds structures quickly and defends the core with a powerful shotgun.
 controller: BuilderAI
 health: 15460
 speed: 5

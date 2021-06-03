@@ -1,6 +1,4 @@
 type: flying
-localizedName: Endeavour
-description: A multipurpose unit that can heal buildings and destroy hostiles with a laser cannon.
 controller: BuilderAI
 flying: true
 health: 54300

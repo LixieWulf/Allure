@@ -1,6 +1,4 @@
 type: PowerTurret
-localizedName: Wavelength
-description: Fires small plasma balls at enemies. Requires power.
 range: 150
 size: 2
 health: 700

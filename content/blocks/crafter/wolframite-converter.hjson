@@ -1,6 +1,4 @@
 type: GenericSmelter
-localizedName: Wolframite Converter
-description: Restores wolframite scrap into bluewolframite.
 size: 2
 hasPower: true
 hasLiquids: false

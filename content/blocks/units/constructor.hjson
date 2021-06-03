@@ -1,6 +1,5 @@
 type: UnitFactory
 name: Constructor
-description: Produces any one of four selected basic units. 
 size: 2
 consumes: {
   power: 1.2

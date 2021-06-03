@@ -1,6 +1,4 @@
 type: ItemTurret
-localizedName: Scythe
-description: Fires artillery at ground targets. Longer range but less accurate than a hail.
 size: 2
 targetAir: false
 range: 240

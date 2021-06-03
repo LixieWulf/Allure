@@ -1,6 +1,5 @@
 type: NuclearReactor
 name: Draconium Reactor
-description: A highly advanced reactor. Reacts draconium to generate massive amounts of power. Will explode violently if not supplied with sufficient coolant.
 size: 6
 health: 1280
 itemCapacity: 135

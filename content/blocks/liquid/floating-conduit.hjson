@@ -1,6 +1,4 @@
 type: Conduit
-localizedName: Floating Conduit
-description: Pumps a very large amount of liquid. Can be placed anywhere on deep liquids.
 leaks: true
 health: 440
 requirements: [

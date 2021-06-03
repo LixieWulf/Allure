@@ -1,6 +1,4 @@
 type: Conduit
-localizedName: Bluewolframite Conduit
-description: Rapidly pumps liquids with powerful electromagnetic pumps. Able to store a considerable amount of liquid.
 leaks: true
 health: 540
 requirements: [

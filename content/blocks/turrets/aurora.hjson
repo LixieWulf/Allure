@@ -1,6 +1,4 @@
 type: ItemTurret
-localizedName: Aurora
-description: Fires a massive railgun bolt after charging. Good for sniping, but terrible at close range.
 size: 8
 health: 185000
 range: 980

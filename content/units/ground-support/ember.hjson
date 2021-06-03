@@ -1,6 +1,5 @@
 type: mech
 name: Ember
-description: Heals nearby blocks with cannons and missiles. Able to build.
 health: 175600
 hitSize: 32
 canDrown: false

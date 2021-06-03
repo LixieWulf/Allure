@@ -1,6 +1,4 @@
 type: payload
-localizedName: Harmony
-description: Spawns fortress units and heals buildings with laser cannons. Protects itself with a powerful railgun.
 controller: BuilderAI
 buildSpeed: 6.1
 flying: true

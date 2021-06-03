@@ -1,6 +1,4 @@
 type: naval
-localizedName: Spriggan
-description: Attacks hostile targets with sapping lasers and massive electrical weapons. Emits a massive sap laser burst to pull in nearby units and confuse them. Heavily armored.
 hitSize: 90
 health: 1100000
 armor: 560

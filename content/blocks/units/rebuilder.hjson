@@ -1,6 +1,4 @@
 type: Reconstructor
-localizedName: Rebuilder
-description: Upgrades inputted units to their third tier.
 size: 10
 constructTime: 26800
 liquidCapacity: 1200

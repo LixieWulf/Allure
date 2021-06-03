@@ -1,6 +1,4 @@
 type: PowerTurret
-localizedName: Isosceles
-description: Fires a large, semi-piercing plasma bolt at enemy units.
 size: 3
 health: 1300
 range: 170

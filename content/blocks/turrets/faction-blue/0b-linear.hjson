@@ -1,6 +1,4 @@
 type: PowerTurret
-localizedName: Linear
-description: Launches high-velocity plasma orbs at air units.
 size: 4
 targetGround: false
 health: 3100

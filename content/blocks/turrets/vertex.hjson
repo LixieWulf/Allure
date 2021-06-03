@@ -1,6 +1,4 @@
 type: PowerTurret
-localizedName: Vertex
-description: Slashes enemies with three sharp blades. Inflicts a strong debuff.
 size: 8
 health: 356000
 range: 80
@@ -17,7 +15,6 @@ shootType: {
   toColor: ffffff
   status: {
     name: bleeding
-    localizedName: Bleeding
     damage: 10
     effect: {
       type: ParticleEffect

@@ -1,6 +1,4 @@
 type: GenericSmelter
-localizedName: Amethyst Refiner
-description: Cuts amethyst into crystal plates.
 size: 4
 hasPower: true
 hasLiquids: false

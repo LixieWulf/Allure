@@ -1,6 +1,4 @@
 type: naval
-localizedName: Soul
-description: Attacks hostile targets with a small sapping weapon.
 health: 200
 speed: 2.1
 lightRadius: 35

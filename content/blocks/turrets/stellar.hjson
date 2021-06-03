@@ -1,6 +1,4 @@
 type: ItemTurret
-localizedName: Stellar
-description: A large antiair turret. Fires small orbs of volatile plasma at enemy air units.
 targetGround: false
 size: 3
 range: 200

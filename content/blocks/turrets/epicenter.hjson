@@ -1,5 +1,3 @@
-localizedName: Epicenter
-description: Fires a single shot that implodes, then explodes on hit.
 health: 4600
 type: ItemTurret
 reloadTime: 45

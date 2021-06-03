@@ -1,6 +1,4 @@
 type: GenericSmelter
-localizedName: Surge Forge
-description: A more powerful alloy smelter, more effective than its smaller counterpart.
 size: 4
 hasPower: true
 hasLiquids: false

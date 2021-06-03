@@ -1,6 +1,4 @@
 type: Reconstructor
-localizedName: Recreator
-description: Upgrades inputted units to their second tier.
 size: 4
 constructTime: 2400
 liquidCapacity: 60

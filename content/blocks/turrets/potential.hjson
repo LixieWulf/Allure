@@ -1,6 +1,5 @@
 type: ItemTurret
 name: Potential
-description: Places temporary landmines. Has different effects based on ammunition.
 health: 2000
 size: 3
 range: 855

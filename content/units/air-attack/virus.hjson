@@ -1,6 +1,4 @@
 type: flying
-localizedName: Virus
-description: A basic chassis and thruster pack with high explosives strapped on the bottom.
 hitSize: 18
 health: 450
 range: 32

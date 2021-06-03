@@ -1,6 +1,4 @@
 type: PowerTurret
-localizedName: Precision
-description: Fires a constant beam at enemy units. Loses steady fire if insufficiently powered.
 size: 3
 health: 850
 powerUse: 12

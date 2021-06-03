@@ -1,6 +1,4 @@
 type: flying
-localizedName: Pandemic
-description: Attacks hostile targets with a barrage of lasers, bombs, and flying swords. Defends itself with a strong sword. Immune to minor temperature-based status effects.
 health: 2350000
 armor: 650
 hitSize: 140

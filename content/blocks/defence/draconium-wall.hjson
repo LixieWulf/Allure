@@ -1,5 +1,3 @@
-localizedName: Draconium Wall
-description: Insulates against lightning and lasers. Deflects bullets with a phase coating.
 type: Wall
 health: 2100
 size: 1

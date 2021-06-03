@@ -1,6 +1,4 @@
 type: GenericSmelter
-localizedName: Furnace
-description: Melts silicon and lead together to produce territe alloy.
 size: 2
 hasPower: true
 hasItems: true

@@ -1,6 +1,4 @@
 type: ItemTurret
-localizedName: Split
-description: A medium sized, cheap turret used for early defenses.
 size: 2
 health: 650
 range: 140

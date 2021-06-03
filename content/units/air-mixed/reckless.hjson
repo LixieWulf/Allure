@@ -1,6 +1,4 @@
 type: flying
-localizedName: Reckless
-description: Repairs structures automatically and applies shields to allied units..
 controller: RepairAI
 speed: 2
 flying: true

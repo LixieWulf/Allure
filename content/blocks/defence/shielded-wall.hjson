@@ -1,6 +1,4 @@
 type: ForceProjector
-localizedName: Shielded Wall
-description: "A durable wall that emits a small, strong force field. Requires power to operate."
 health: 4600
 size: 2
 radius: 20

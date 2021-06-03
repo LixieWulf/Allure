@@ -1,6 +1,4 @@
 type: GenericCrafter
-localizedName: Extractor
-description: Extracts anden from scrap remains. Requires water to break down the scrap.
 size: 2
 drawer: drawRotator
 craftTime: 90

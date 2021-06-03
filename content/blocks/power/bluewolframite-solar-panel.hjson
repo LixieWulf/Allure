@@ -1,6 +1,4 @@
 type: SolarGenerator
-localizedName: Bluewolframite Solar Panel
-description: A much more powerful solar panel, capable of harvesting massive power from light.
 size: 2
 powerProduction: 15.8
 requirements: [

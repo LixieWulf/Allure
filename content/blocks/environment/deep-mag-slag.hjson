@@ -8,7 +8,6 @@ speedMultiplier: 0.15
 liquidDrop: mag-slag
 status: {
   name: vapourizing2
-  localizedName: vapourizing2
   damage: 150
   show: false
   speedMultiplier: 0.85

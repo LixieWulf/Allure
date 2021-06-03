@@ -1,6 +1,4 @@
 type: GenericSmelter
-localizedName: Cookietite Oven
-description: Bakes cookietite. And by bake, I definitely mean refine. Definitely.
 size: 2
 hasPower: true
 hasLiquids: false

@@ -1,6 +1,5 @@
 type: naval
 name: Wraith
-description: Steals health from hostile targets while bombarding them with multiple artillery turrets. Slowly heals all nearby units, regardless of their identity.
 hitSize: 65
 health: 196000
 armor: 70

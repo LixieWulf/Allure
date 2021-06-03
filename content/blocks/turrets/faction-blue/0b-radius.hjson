@@ -1,6 +1,4 @@
 type: PowerTurret
-localizedName: Radius
-description: Fires a small laser at ground targets. Requires power.
 targetAir: false
 health: 200
 reloadTime: 65

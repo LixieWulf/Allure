@@ -1,5 +1,3 @@
-localizedName: Large Draconium Wall
-description: "Insulates against lightning and lasers. Deflects bullets with a phase coating.\nSpans multiple tiles."
 type: Wall
 health: 8400
 size: 2

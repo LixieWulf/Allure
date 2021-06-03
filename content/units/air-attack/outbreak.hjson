@@ -1,6 +1,4 @@
 type: flying
-localizedName: Outbreak
-description: Attacks units by dashing forward and stabbing them.
 flying: true
 health: 75
 speed: 3.4
