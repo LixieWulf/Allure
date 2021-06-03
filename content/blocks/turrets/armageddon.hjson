@@ -1,6 +1,4 @@
 type: ItemTurret
-localizedName: Armageddon
-description: Spectre's older war veteran brother. Much more powerful, though more expensive.
 targetAir: true
 targetGround: true
 health: 19500

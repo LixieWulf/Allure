@@ -1,6 +1,4 @@
 type: ItemTurret
-localizedName: Railgun
-description: Propels projectiles at high speeds with electromagnetic rails. Useful for taking down armored units.
 targetAir: true
 targetGround: true
 health: 4500

@@ -1,6 +1,4 @@
 type: ItemTurret
-localizedName: Cascade
-description: Fires massive missiles over long distances.
 health: 3200
 size: 4
 rotateSpeed: 3.2

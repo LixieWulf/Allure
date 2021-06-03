@@ -1,6 +1,4 @@
 type: ItemTurret
-localizedName: Supercell
-description: Fires small, armor piercing rounds at a high rate.
 size: 8
 range: 600
 health: 256000

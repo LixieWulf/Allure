@@ -1,7 +1,4 @@
 type: LaserTurret
-name: Rainstorm
-description: Charges and fires a persistent multicoloured beam at hostile targets.
-details: Does not work properly with bloom enabled.
 size: 10
 health: 228000
 range: 877

@@ -1,6 +1,4 @@
 type: PowerTurret
-localizedName: Thundersnap
-details: Big thanks to @VozDuh#7202 for respriting this!
 health: 177550
 reloadTime: 35
 shootCone: 15
