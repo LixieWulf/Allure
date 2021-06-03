@@ -1,6 +1,4 @@
 type: Wall
-localizedName: Shadow Wall
-description: A nearly indestructible defensive block, reinforced with bluewolframite.
 size: 1
 health: 8540
 requirements: [

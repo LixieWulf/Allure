@@ -1,6 +1,4 @@
 type: Wall
-localizedName: Huge Shadow Wall
-description: "A nearly indestructible defensive block, reinforced with bluewolframite.\n Spans a large amount of tiles."
 size: 3
 health: 76860
 requirements: [
