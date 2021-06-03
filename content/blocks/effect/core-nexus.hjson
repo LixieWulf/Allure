@@ -1,6 +1,4 @@
 Type: CoreBlock
-localizedName: "Core: Nexus"
-description: A large and extremely well armored core, able to store large quantities of items.
 health: 26000
 itemCapacity: 45000
 size: 6

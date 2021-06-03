@@ -1,6 +1,4 @@
 type: ForceProjector
-localizedName: Force Barricade
-description: Projects a large, powerful force field to protect nearby structures.
 size: 3
 health: 1080
 shieldHealth: 15000

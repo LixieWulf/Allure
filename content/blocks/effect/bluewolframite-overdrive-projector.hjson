@@ -1,6 +1,4 @@
 type: OverdriveProjector
-localizedName: Bluewolframite Overdrive Projector
-description: Uses sophisticated electromagnetic pulses to greatly enhance the speed of nearby blocks.
 size: 2
 health: 720
 range: 164
