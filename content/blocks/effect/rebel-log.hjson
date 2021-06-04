@@ -1,0 +1,8 @@
+type: MessageBlock
+size: 2
+maxTextLength: 250
+requirements: [
+  graphite/15
+  anden/10
+]
+buildVisibility: editorOnly
