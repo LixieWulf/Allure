@@ -15,8 +15,7 @@ shootType: {
   toColor: ffffff
   status: {
     name: bleeding
-    localizedName: Bleeding
-    damage: 10
+    damage: 25
     effect: {
       type: ParticleEffect
       particles: 1
