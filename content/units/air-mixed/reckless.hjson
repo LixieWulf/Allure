@@ -67,7 +67,6 @@ weapons: [
     }
   }
 ]
-research: constructor
 abilities: [
   {
     type: ShieldRegenFieldAbility
@@ -77,3 +76,7 @@ abilities: [
     range: 45
   }
 ]
+research: {
+  parent: victory
+  objectives: [recreator]
+}
