@@ -1,0 +1,17 @@
+type: flying
+controller: minerAI
+hitSize: 30
+speed: 1.4
+rotateSpeed: 0.8
+buildSpeed: 2.1
+mineSpeed: 12
+drag: 0.08
+accel: 0.09
+health: 16000
+armor: 12
+lowAltitude: true
+engineOffset: 22
+engineSize: 4
+research: {
+  parent: reckless
+}
