@@ -46,7 +46,7 @@ weapons: [
     y: 11.25
     recoil: 1
     reload: 25
-    shootShake: 1
+    shake: 1
     shootSound: shootBig
     bullet: {
       type: ShrapnelBulletType
