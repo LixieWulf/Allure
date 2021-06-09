@@ -1,10 +1,10 @@
 type: ImpactReactor
-liquidCapacity: 980
+liquidCapacity: 1650
 size: 5
 hasLiquids: true
 powerProduction: 650
-plasma1: 94efff
-plasma2: 45e3ff
+plasma1: 5a58c4
+plasma2: 7382f0
 consumes: {
   power: 44.8
   liquid: {
