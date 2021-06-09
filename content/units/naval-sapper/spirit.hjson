@@ -63,4 +63,7 @@ weapons: [
     }
   }
 ]
-research: constructor
+research: {
+  parent: soul
+  objectives: [recreator]
+}
