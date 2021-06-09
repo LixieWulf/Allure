@@ -1,0 +1,20 @@
+type: ForceProjector
+size: 6
+health: 6500
+shieldHealth: 34000
+radius: 260
+phaseRadiusBoost: 56
+cooldownNormal: 12.5
+cooldownLiquid: 21.6
+consumes: {
+  power: 30
+  items: {
+    items: [
+      bluewolframite/1
+    ]
+    booster: true
+    optional: true
+  }
+}
+category: effect
+buildVisibility: sandboxOnly
