@@ -1,13 +1,15 @@
 type: ForceProjector
 size: 6
-health: 6500
+health: 9500
 shieldHealth: 34000
 radius: 260
 phaseRadiusBoost: 56
-cooldownNormal: 12.5
-cooldownLiquid: 21.6
+phaseShieldBoost: 25000
+cooldownNormal: 15.5
+cooldownLiquid: 24.6
+cooldownBrokenBase: 7.6
 consumes: {
-  power: 30
+  power: 90
   items: {
     items: [
       bluewolframite/1
@@ -17,4 +19,13 @@ consumes: {
   }
 }
 category: effect
-buildVisibility: sandboxOnly
+research: force-projector
+requirements: [
+  copper/3500
+  lead/4000
+  territe-alloy/3250
+  plastanium/3000
+  surge-alloy/2500
+  amethyst-gem/2000
+]
+ambientSoundVolume: 0.5
