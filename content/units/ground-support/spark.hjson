@@ -58,4 +58,7 @@ abilities: [
     range: 45
   }
 ]
-research: constructor
+research: {
+  parent: flicker
+  objectives: [recreator]
+}
