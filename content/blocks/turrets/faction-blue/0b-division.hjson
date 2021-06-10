@@ -11,7 +11,7 @@ laserWidth: 1
 statusDuration: 10
 status: slow
 consumes: {
-  power: 3.2
+  power: 6.6
 }
 category: turret
 research: 0b-pinpoint
