@@ -2,6 +2,7 @@ type: PowerTurret
 targetAir: false
 size: 4
 rotateSpeed: 0
+powerUse: 10
 shootCone: 360
 health: 2600
 range: 210
