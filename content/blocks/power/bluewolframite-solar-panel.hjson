@@ -1,10 +1,11 @@
 type: SolarGenerator
-size: 2
+size: 8
 powerProduction: 15.8
 requirements: [
-  lead/380
+  lead/400
+  territe-alloy/200
   surge-alloy/150
-  bluewolframite/120
+  bluewolframite/100
 ]
 category: power
 research: solar-panel
