@@ -9,7 +9,7 @@ cooldownNormal: 15.5
 cooldownLiquid: 24.6
 cooldownBrokenBase: 7.6
 consumes: {
-  power: 90
+  power: 145
   items: {
     items: [
       bluewolframite/1
