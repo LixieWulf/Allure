@@ -1,0 +1,28 @@
+type: MendProjector
+size: 2
+health: 440
+range: 64
+reload: 45
+healPercent: 15
+useTime: 240
+baseColor: 7382f0
+phaseColor: 90a2fc
+phaseBoost: 0
+phaseRangeBoost: 60
+consumes: {
+  power: 1.8
+  items: {
+    items: [
+      territe-alloy/1
+    ]
+    booster: true
+    optional: true
+  }
+}
+requirements: [
+  lead/175
+  territe-alloy/100
+  titanium/75
+]
+category: effect
+research: mend-projector
