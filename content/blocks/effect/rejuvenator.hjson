@@ -1,14 +1,14 @@
 type: MendProjector
 size: 2
 health: 440
-range: 64
-reload: 45
+range: 32
+reload: 120
 healPercent: 15
 useTime: 240
 baseColor: 7382f0
 phaseColor: 90a2fc
 phaseBoost: 0
-phaseRangeBoost: 60
+phaseRangeBoost: 20
 consumes: {
   power: 1.8
   items: {
