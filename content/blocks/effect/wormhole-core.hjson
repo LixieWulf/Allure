@@ -1,0 +1,17 @@
+type: LightBlock
+size: 4
+health: 1200
+baseExplosiveness: 25
+configurable: false
+radius: 120
+brightness: 0.5
+consumes: {
+  power: -6
+}
+category: effect
+requirements: [
+  territe-alloy/100
+  thorium/75
+  forge-plating/30
+]
+buildVisibility: editorOnly
