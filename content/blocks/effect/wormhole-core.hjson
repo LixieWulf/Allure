@@ -3,11 +3,9 @@ size: 4
 health: 1200
 baseExplosiveness: 25
 configurable: false
-radius: 120
+hasPower: false
+radius: 90
 brightness: 0.5
-consumes: {
-  power: -6
-}
 category: effect
 requirements: [
   territe-alloy/100
