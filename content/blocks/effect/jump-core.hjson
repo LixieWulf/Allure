@@ -1,0 +1,15 @@
+type: LightBlock
+size: 4
+health: 1200
+baseExplosiveness: 25
+configurable: false
+hasPower: false
+radius: 90
+brightness: 0.5
+category: effect
+requirements: [
+  anden/100
+  thorium/75
+  forge-plating/30
+]
+buildVisibility: editorOnly
