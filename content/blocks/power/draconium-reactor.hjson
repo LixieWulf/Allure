@@ -1,14 +1,14 @@
 type: NuclearReactor
 size: 6
-health: 1280
+health: 2500
 itemCapacity: 135
 liquidCapacity: 64
 itemDuration: 770
-powerProduction: 1540.6
+powerProduction: 840
 consumes: {
   liquid: {
     liquid: supercoolant
-    amount: 0.04
+    amount: 0.16
   }
   items: {
     items: [
