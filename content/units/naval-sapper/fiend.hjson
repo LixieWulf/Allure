@@ -1,0 +1,63 @@
+type: naval
+hitSize: 25
+health: 16000
+armor: 12
+speed: 0.8
+rotateSpeed: 1.8
+rotateShooting: false
+trailX: 4
+trailY: -16
+trailScl: 1
+trailLength: 50
+lightColor: a488eb
+weapons: [
+  {
+    name: fiend-weapon
+    x: 0
+    y: 4.5
+    mirror: false
+    rotate: true
+    rotateSpeed: 4
+    reload: 50
+    recoil: 4
+    ejectEffect: casing2
+    shootSound: artillery
+    shake: 1
+    bullet: {
+      type: ArtilleryBulletType
+      damage: 40
+      splashDamage: 180
+      splashDamageRadius: 48
+      speed: 2.5
+      lifetime: 100
+      frontColor: bf92f9
+      backColor: 6d56bf
+      lightColor: a488eb
+      width: 15
+      height: 17
+      despawnEffect: sapExplosion
+      hitShake: 2
+    }
+  }
+  {
+    x: 0
+    y: 0
+    shootCone: 360
+    reload: 240
+    mirror: false
+    shots: 45
+    spacing: 8
+    shotDelay: 1
+    shootSound: none
+    bullet: {
+      type: SapBulletType
+      length: 150
+      damage: 80
+      sapStrength: 1
+      color: bf92f9
+      lightColor: a488eb
+      shootEffect: none
+      smokeEffect: none
+    }
+  }
+]
