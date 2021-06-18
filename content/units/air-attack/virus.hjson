@@ -2,9 +2,9 @@ type: flying
 hitSize: 18
 health: 450
 range: 32
-speed: 5
+speed: 3.5
 flying: true
-drag: 0.01
+drag: 0.02
 accel: 0.05
 rotateSpeed: 3
 engineOffset: 12
