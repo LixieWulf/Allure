@@ -1,0 +1,15 @@
+type: BurnerGenerator
+size: 4
+powerProduction: 10.5
+itemDuration: 20
+minItemEfficiency: 0.4
+minLiquidEfficiency: 0.6
+category: power
+research: combustion-generator
+requirements: [
+  copper/250
+  lead/200
+  territe-alloy/200
+  thorium/150
+  amethyst-gem/50
+]
