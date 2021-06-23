@@ -1,0 +1,9 @@
+type: Wall
+health: 490
+baseExplosiveness: 15
+flashHit: true
+category: defense
+research: copper-wall
+requirements: [
+  anden/12
+]

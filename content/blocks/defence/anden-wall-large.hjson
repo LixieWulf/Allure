@@ -1,0 +1,10 @@
+type: Wall
+health: 1960
+size: 2
+baseExplosiveness: 25
+flashHit: true
+category: defense
+research: anden-wall
+requirements: [
+  anden/48
+]
