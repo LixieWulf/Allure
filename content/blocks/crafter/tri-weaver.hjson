@@ -1,0 +1,77 @@
+type: GenericCrafter
+itemCapacity: 70
+size: 5
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 170
+craftEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      line: true
+      particles: 8
+      lifetime: 45
+      length: 25
+      lenFrom: 4
+      lenTo: 0
+      strokeFrom: 1.2
+      strokeTo: 0
+      colorFrom: ffd280
+      colorTo: ffd28050
+    }
+    {
+      type: ParticleEffect
+      line: true
+      particles: 12
+      lifetime: 20
+      length: 35
+      lenFrom: 8
+      lenTo: 0
+      strokeFrom: 2.2
+      strokeTo: 0
+      colorFrom: ffd280
+      colorTo: ffd28050
+    }
+  ]
+}
+updateEffect: {
+  type: ParticleEffect
+  line: true
+  particles: 6
+  lifetime: 35
+  length: 17
+  lenFrom: 3
+  lenTo: 0
+  strokeFrom: 1
+  strokeTo: 0
+  colorFrom: ffd280
+  colorTo: ffd28050
+}
+consumes: {
+  power: 20
+  items: {
+    items: [
+      thorium/20
+      sand/35
+    ]
+  }
+  liquid: {
+    liquid: cryofluid
+    amount: 0.4
+  }
+}
+requirements: [
+  copper/300
+  lead/300
+  territe-alloy/400
+  thorium/200
+  amethyst-gem/50
+]
+drawer: drawWeave
+category: crafting
+research: phase-weaver
+ambientSound: techloop
+ambientSoundVolume: 0.5
+outputItem: phase-fabric/7
