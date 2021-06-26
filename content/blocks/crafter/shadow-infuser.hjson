@@ -27,4 +27,15 @@ requirements: [
 ]
 outputItem: shadow/1
 category: crafting
-research: surge-forge
+research: {
+  parent: refinery
+  objectives: [
+    tri-weaver,
+    amethyst-refiner, 
+    wolframite-converter, 
+    extractor, 
+    furnace, 
+    cookietite-oven,
+    tungsten-refiner
+  ]
+}
