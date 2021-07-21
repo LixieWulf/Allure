@@ -4,7 +4,8 @@ health: 440
 requirements: [
   graphite/2
   metaglass/4
-  amethyst/2
+  ladera/2
+  amethyst-gem/1
 ]
 liquidCapacity: 20
 liquidPressure: 4.4
