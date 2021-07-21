@@ -6,12 +6,12 @@ phaseBoost: 1.1
 phaseRangeBoost: 80
 reload: 1
 itemCapacity: 30
-healPercent: 0.4
+healPercent: 0.6
 consumes: {
   power: 2.5
   items: {
     items: [
-      cookienite/3
+      baenite/3
     ]
     booster: true
     optional: true
@@ -22,6 +22,7 @@ requirements: [
   titanium/500
   silicon/600
   draconium/900
+  baenite/500
   amethyst-gem/300
   bluewolframite/600
 ]
