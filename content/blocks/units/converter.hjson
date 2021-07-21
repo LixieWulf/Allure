@@ -10,7 +10,7 @@ consumes: {
         graphite/6500
         titanium/5000
         thorium/4000
-        cookienite-baked/2500
+        baenite/2500
         tungsten/2000
         bluewolframite/1000
       ]
@@ -32,7 +32,7 @@ requirements: [
   thorium/8000
   phase-fabric/7000
   surge-alloy/6000
-  cookienite-baked/4000
+  baenite/4000
   amethyst-gem/2500
   tungsten/2000
   bluewolframite/1500
