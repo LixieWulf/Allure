@@ -11,14 +11,14 @@ requirements: [
   silicon/300
   thorium/450
   bluewolframite/250
-  cookienite-baked/150
+  baenite/150
 ]
 consumes: {
   power: 10.5
   items: {
     items: [
       silicon/1
-      cookienite-baked/1
+      baenite/1
       bluewolframite/1
     ]
   }
