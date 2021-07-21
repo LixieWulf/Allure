@@ -12,7 +12,7 @@ consumes: {
   power: 6.2
   items: {
     items: [
-    cookienite/1
+    baenite/1
   ]
   booster: true
   optional: true
