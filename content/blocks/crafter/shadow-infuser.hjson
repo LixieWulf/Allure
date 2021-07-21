@@ -1,5 +1,5 @@
-type: GenericSmelter
-health: 125550
+type: GenericCrafter
+drawer: drawSmelter
 size: 4
 itemCapacity: 20
 hasPower: true
@@ -14,12 +14,12 @@ consumes: {
     bluewolframite/4
     draconium/5
     amethyst-gem/3
-    cookienite/6
+    baenite/6
     ]
   }
 }
 requirements: [
-  lead/150
+  lead/350
   titanium/125
   silicon/115
   bluewolframite/50
@@ -34,8 +34,7 @@ research: {
     amethyst-refiner, 
     wolframite-converter, 
     extractor, 
-    furnace, 
-    cookietite-oven,
+    furnace,
     tungsten-refiner
   ]
 }
