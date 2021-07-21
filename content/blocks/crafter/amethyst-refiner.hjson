@@ -1,4 +1,5 @@
-type: GenericSmelter
+type: GenericCrafter
+drawer: drawSmelter
 size: 4
 hasPower: true
 hasLiquids: false
@@ -47,7 +48,7 @@ consumes: {
   power: 2
   items: {
     items: [
-      amethyst/2
+      ladera/2
     ]
   }
   liquid: {
