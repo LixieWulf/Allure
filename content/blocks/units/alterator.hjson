@@ -9,7 +9,7 @@ consumes: {
         silicon/1550
         thorium/1250
         plastanium/1100
-        cookienite-baked/750
+        baenite/750
       ]
     }
   liquid: {
