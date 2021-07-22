@@ -1,6 +1,6 @@
 type: Liquid
 viscosity: 0.5
-heatCapacity: 0.4
+heatCapacity: 0.6
 color: 46b084
 effect: {
   name: healing-flood
