@@ -1,0 +1,9 @@
+type: Floor
+speedMultiplier: 0.3
+drownTime: 180
+variants: 0
+statusDuration: 60
+cacheLayer: water
+isLiquid: true
+liquidDrop: liquid-baenara
+liquidMultiplier: 1.3

@@ -1,0 +1,7 @@
+type: Floor
+speedMultiplier: 0.6
+variants: 0
+statusDuration: 60
+cacheLayer: water
+liquidDtop: liquid-baenara
+liquidMultiplier: 1.3

@@ -1,0 +1,6 @@
+type: Floor
+itemDrop: sand
+attributes: {
+  oil: 0.4
+  water: 0.7
+}
