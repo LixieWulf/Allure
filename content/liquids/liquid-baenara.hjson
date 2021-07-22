@@ -1,6 +1,5 @@
 type: Liquid
 viscosity: 0.5
-temperature: 90
 heatCapacity: 0.4
 color: 46b084
 effect: {
