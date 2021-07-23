@@ -16,6 +16,12 @@ consumes: {
   }
 }
 category: crafting
+research: {
+  parent: cryofluid-mixer
+  objectives: [
+    baenite
+  ]
+}
 requirements: [
   lead/120
   titanium/90
