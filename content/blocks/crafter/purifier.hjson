@@ -1,0 +1,23 @@
+type: GenericCrafter
+size: 3
+hasLiquids: true
+liquidCapacity: 30
+craftTime: 35
+craftEffect: heal
+updateEffect: hitLaser
+drawer: drawMixer
+outputItem: baenite/1
+outputLiquid: water/10
+consumes: {
+  power: 1.2
+  liquid: {
+    liquid: liquid-baenara
+    amount: 0.4
+  }
+}
+category: crafting
+requirements: [
+  lead/120
+  titanium/90
+  thorium/90
+]
