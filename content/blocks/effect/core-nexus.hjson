@@ -5,6 +5,7 @@ size: 6
 category: effect
 unitType: whiplash
 unitCapModifier: 48
+thrusterLength: 15
 requirements: [
   copper/12000
   lead/11500
