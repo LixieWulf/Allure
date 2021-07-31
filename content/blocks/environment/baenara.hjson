@@ -4,3 +4,4 @@ variants: 0
 statusDuration: 60
 cacheLayer: water
 liquidDrop: liquid-baenara
+isLiquid: true
