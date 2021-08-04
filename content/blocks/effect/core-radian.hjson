@@ -1,0 +1,17 @@
+type: CoreBlock
+size: 6
+health: 400000
+itemCapacity: 10000
+unitCapModifier: 18
+unitType: intensity
+thrusterLength: 14
+category: effect
+requirements: [
+  copper/18000
+  lead/17000
+  silicon/8000
+  thorium/8000
+  surge-alloy/6000
+  baenite/4000
+]
+research: core-nexus
