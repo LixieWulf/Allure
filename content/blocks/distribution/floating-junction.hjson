@@ -1,0 +1,11 @@
+type: Junction
+requiresWater: true
+health: 80
+speed: 12
+capacity: 8
+requirements: [
+  metaglass/3
+  ladera/2
+] 
+category: distribution
+research: junction

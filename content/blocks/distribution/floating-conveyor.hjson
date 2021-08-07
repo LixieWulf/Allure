@@ -1,0 +1,14 @@
+type: Conveyor
+requiresWater: true
+hasShadow: false
+health: 80
+speed: 0.1
+capacity: 8
+itemSpace: 0.2
+displayedSpeed: 12
+requirements: [
+  metaglass/2
+  ladera/1
+]
+category: distribution
+research: titanium-conveyor

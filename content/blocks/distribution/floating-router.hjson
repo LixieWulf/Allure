@@ -1,0 +1,9 @@
+type: Router 
+requiresWater: true
+health: 80
+requirements: [
+  metaglass/4
+  ladera/3
+] 
+category: distribution
+research: router
