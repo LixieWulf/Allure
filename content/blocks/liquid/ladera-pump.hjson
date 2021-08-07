@@ -1,0 +1,10 @@
+type: Pump
+requiresWater: true
+health: 65
+pumpAmount: 0.075
+category: liquid
+research: mechanical-pump
+requirements: [
+  metaglass/10
+  ladera/15
+]
