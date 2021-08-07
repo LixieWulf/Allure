@@ -1,3 +1,4 @@
 type: ShallowLiquid
 liquidDrop: liquid-baenara
+isLiquid: true
 cacheLayer: water
