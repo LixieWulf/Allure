@@ -1,0 +1,70 @@
+type: flying
+flying: true
+health: 11000
+armor: 140
+speed: 3.2
+drag: 0.03
+accel: 0.1
+rotateSpeed: 5.5
+targetAir: false
+drawCell: false
+drawShields: false
+deathExplosionEffect: none
+deathSound: none
+lightRadius: 0
+weapons: [
+  {
+    x: 0
+    reload: 210
+    shootSound: none
+    bullet: {
+      collidesAir: false
+      damage: 700
+      buildingDamageMultiplier: 1.6
+      pierceBuilding: true
+      absorbable: false
+      lifetime: 45
+      speed: 6
+      shrinkY: 0
+      sprite: exotic-mod-torpedo
+      frontColor: 808080
+      backColor: 00000000
+      lightRadius: 0
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      width: 14
+      height: 14
+      trailInterval: 5
+      trailRotation: true
+      trailEffect: {
+        type: ParticleEffect
+        region: exotic-mod-torpedo-effect
+        lightOpacity: 0
+        particles: 1
+        cone: 0
+        lifetime: 140
+        length: 48
+        interp: pow10Out
+        sizeFrom: 12
+        colorFrom: 808080
+        colorTo: 808080
+      }
+    }
+  }
+  {
+    reload: 1080
+    shootSound: none
+    useAmmo: false
+    bullet: {
+      damage: 0
+      lifetime: 0
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      maxRange: 600
+    }
+  }
+]
