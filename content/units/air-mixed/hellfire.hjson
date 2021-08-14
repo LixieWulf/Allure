@@ -1,7 +1,7 @@
 type: flying
 flying: true
 hitSize: 140
-health: 1300000
+health: 1400000
 armor: 700
 speed: 1.4
 rotateSpeed: 0.7
@@ -13,7 +13,12 @@ lowAltitude: true
 fallSpeed: 0.005
 lightRadius: 170
 lightColor: 6f7fe8
-buildSpeed: 8.5
+buildSpeed: 12.4
+ammoType: {
+  type: PowerAmmoType
+  totalPower: 1500000
+}
+commandRadius: 240
 weapons: [
   {
     name: hellfire-laser
@@ -35,7 +40,7 @@ weapons: [
     shake: 15
     bullet: {
       type: LaserBulletType
-      damage: 6500
+      damage: 7000
       length: 750
       width: 120
       lifetime: 85
@@ -135,7 +140,7 @@ weapons: [
     shake: 6
     bullet: {
       type: RailBulletType
-      damage: 20500
+      damage: 21000
       length: 550
       pierceDamageFactor: 0.8
       lightColor: 6f7fe8
@@ -192,7 +197,7 @@ weapons: [
       collidesTeam: true
       healPercent: 10
       length: 160
-      damage: 1050
+      damage: 1200
       width: 12
       serrations: 0
       toColor: 8ca4f5
@@ -215,7 +220,7 @@ weapons: [
       collidesTeam: true
       healPercent: 20
       length: 220
-      damage: 1050
+      damage: 1200
       width: 12
       serrations: 0
       toColor: 8ca4f5
@@ -236,7 +241,7 @@ weapons: [
       type: ShrapnelBulletType
       length: 310
       lifetime: 35
-      damage: 2300
+      damage: 2400
       width: 18
       toColor: 8ca4f5
       lightColor: 6f7fe8
@@ -251,20 +256,20 @@ abilities: [
     range: 300
     amount: 12500
     max: 45000
-    reload: 360
+    reload: 480
     activeEffect: {
       type: WaveEffect
       lifetime: 35
       sizeTo: 300
       strokeFrom: 5
-      strokeTo: 0
+      strokeTo: 2
       colorFrom: 8ca4f5
       colorTo: 8ca4f550
     }
     applyEffect: {
       type: WaveEffect
       lifetime: 35
-      sizeTo: 15
+      sizeTo: 40
       strokeFrom: 2
       strokeTo: 0
       colorFrom: 8ca4f5
@@ -272,3 +277,83 @@ abilities: [
     }
   }
 ]
+fallEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      particles: 2
+      line: true
+      lifetime: 15
+      length: 0.01
+      lenFrom: 30
+      lenTo: 30
+      strokeFrom: 3
+      strokeTo: 0
+      colorTo: 6f7fe850
+    }
+    {
+      type: ParticleEffect
+      particles: 12
+      line: true
+      lifetime: 45
+      length: 40
+      lenFrom: 7
+      lenTo: 0
+      strokeFrom: 1.5
+      strokeTo: 0.75
+      colorTo: 6f7fe850
+    } 
+  ]
+}
+deathExplosionEffect: {
+  type: MultiEffect
+  lifetime: 520
+  effects: [
+    {
+      type: ParticleEffect
+      particles: 200
+      length: 250
+      baseLength: 40
+      lifetime: 520
+      interp: circleOut
+      sizeFrom: 24
+      sizeTo: 0
+      colorFrom: 7382f0
+      colorTo: 7382f075
+    }
+    {
+      type: ParticleEffect
+      lightOpacity: 0
+      particles: 100
+      length: 200
+      lifetime: 520
+      interp: circleOut
+      sizeFrom: 32
+      sizeTo: 0
+      colorFrom: 787878
+      colorTo: 78787875
+    }
+    {
+      type: ParticleEffect
+      particles: 35
+      line: true
+      lifetime: 180
+      length: 450
+      lenFrom: 25
+      lenTo: 0
+      strokeFrom: 20
+      strokeTo: 0
+      colorTo: 6f7fe8
+    } 
+    {
+      type: WaveEffect
+      lifetime: 90
+      sizeFrom: 0
+      sizeTo: 300
+      strokeFrom: 25
+      strokeTo: 0
+      colorTo: 7382f050
+    }
+  ]
+}
