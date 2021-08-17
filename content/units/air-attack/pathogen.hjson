@@ -1,151 +1,69 @@
 type: flying
 flying: true
-lowAltitude: true
 rotateSpeed: 2.5
-health: 56400
-armor: 25
+health: 45000
+armor: 12
 hitSize: 73
-speed: 1.4
-accel: 0.05
-drag: 0.02
+speed: 2.6
+accel: 0.02
+drag: 0.01
 targetAir: false
-engineOffset: 40
-engineSize: 9.5
+engineOffset: 8
+engineSize: 8.5
 circleTarget: true
 rotateShooting: false
+omniMovement: true
 lightRadius: 65
 lightColor: e65555
+immunities: [
+  freezing, 
+  tarred, 
+  electrified
+]
 weapons: [
-{
-  name: pathogen-bomber
-  x: 16
-  y: 12
-  minShootVelocity: 0.2
-  reload: 120
-  shootCone: 360
-  alternate: false
-  ejectEffect: none
-  shootSound: plasmadrop
-  bullet: {
-    type: BombBulletType
-    splashDamage: 870
-    splashDamageRadius: 75
-    width: 12
-    height: 18
-    hitShake: 2
-    lifetime: 60
-    maxRange: 40
-    frontColor: e65555
-    backColor: a63d3d
-    lightRadius: 30
-    lightColor: e65555
-    shootEffect: none
-    despawnEffect: {
-      type: MultiEffect
-      effects: [
-        {
-          type: WaveEffect
-          lifetime: 30
-          sizeFrom: 0
-          sizeTo: 50
-          strokeFrom: 10
-          strokeTo: 0
-          colorFrom: ffffff
-          colorTo: e65555
-        }
-        {
-          type: ParticleEffect
-          length: 75
-          lifetime: 60
-          particles: 12
-          sizeFrom: 4
-          sizeTo: 0
-          colorFrom: "7e4242"
-          colorTo: "7e4242"
-        }
-      ]
+  {
+    x: 0
+    reload: 1080
+    shootSound: none
+    bullet: {
+      damage: 0
+      lifetime: 0
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
     }
   }
-}
-{
-  name: pathogen-bomber
-  x: 20
-  y: -12
-  minShootVelocity: 0.2
-  reload: 120
-  shootCone: 360
-  alternate: false
-  shootSound: plasmadrop
-  ejectEffect: none
-  bullet: {
-    type: BombBulletType
-    splashDamage: 870
-    splashDamageRadius: 75
+]
+abilities: [
+  {
+    type: MoveLightningAbility
+    offset: -16
     width: 12
-    height: 18
-    hitShake: 2
-    lifetime: 60
-    maxRange: 40
-    frontColor: e65555
-    backColor: a63d3d
-    lightRadius: 30
-    lightColor: e65555
-    shootEffect: none
-    despawnEffect: {
-      type: MultiEffect
-      effects: [
-        {
-          type: WaveEffect
-          lifetime: 30
-          sizeFrom: 0
-          sizeTo: 60
-          strokeFrom: 10
-          strokeTo: 0
-          colorFrom: ffffff
-          colorTo: e65555
-        }
-        {
-          type: ParticleEffect
-          length: 75
-          lifetime: 60
-          particles: 12
-          sizeFrom: 4
-          sizeTo: 0
-          colorFrom: "7e4242"
-          colorTo: "7e4242"
-        }
-      ]
+    minSpeed: 2.4
+    maxSpeed: 2.4
+    chance: 1
+    length: 0
+    damage: 0
+    shootSound: none
+    shootEffect: {
+      type: ParticleEffect
+      cone: 0
+      length: -30
+      lifetime: 45
+      line: true
+      lenFrom: 6
+      lenTo: 3
+      strokeFrom: 2
+      strokeTo: 0
+      colorTo: e65555
+    }
+    bullet: {
+      type: RailBulletType
+      length: 40
+      damage: 125
+      pierceDamageFactor: 0
     }
   }
-}
-{
-  name: pathogen-missiles
-  x: 0
-  y: 16
-  reload: 45
-  rotate: true
-  mirror: false
-  shots: 3
-  spacing: 4
-  shotDelay: 4
-  recoil: 1.5
-  shootSound: missile
-  bullet: {
-    type: MissileBulletType
-    damage: 280
-    speed: 5
-    lifetime: 60
-    splashDamage: 150
-    splashDamageRadius: 25
-    frontColor: e65555
-    backColor: a63d3d
-    trailColor: a63d3d
-    lightColor: e65555
-    hitEffect: flakExplosion
-    despawnEffect: flakExplosion
-    collidesGround: false
-    hitShake: 1.25
-  }
-}
 ]
 research: virus
