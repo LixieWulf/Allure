@@ -24,4 +24,4 @@ consumes: {
 category: production
 ambientSound: build
 ambientSoundVolume: 0.05
-research: electrum-drill
+research: temporal-drill
