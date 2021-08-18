@@ -33,6 +33,7 @@ shootType: {
   incendChance: 1
   lenscales: [1, 1.2, 1.275, 1.325]
   colors: [000000, 4e4e4e, a0a0a0, ffffff]
+  reflectable: false
   lightning: 2
   lightningCone: 15
   lightningLength: 25
