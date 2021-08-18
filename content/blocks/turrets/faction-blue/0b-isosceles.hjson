@@ -33,6 +33,7 @@ shootType: {
   length: 15
   width: 6
   colors: [7382f020, 7382f060, 7382f0, ffffff]
+  reflectable: false
   lightColor: 7382f0
   hitEffect: {
     type: ParticleEffect
