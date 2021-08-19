@@ -8,7 +8,6 @@ range: 0
 reloadTime: 1081
 rotateSpeed: 0
 shootLength: 0
-reloadTime: 45
 canOverdrive: false
 acceptCoolant: false
 recoilAmount: 0
