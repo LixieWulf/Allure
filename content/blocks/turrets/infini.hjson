@@ -181,6 +181,7 @@ ammoTypes: {
           height: 0.01
           despawnEffect: none
           hitEffect: none
+          lightRadius: 0
         }
       }
       despawnEffect: {
@@ -231,7 +232,7 @@ ammoTypes: {
             sizeTo: 0
             colorTo: ffffff75
           }
-         {
+          {
             type: ParticleEffect
             length: 320
             particles: 70
@@ -290,6 +291,7 @@ ammoTypes: {
         lightningDamage: 12500
         lightningLength: 35
         lightningColor: ffffff
+        lightRadius: 0
       }
       lightning: 1
       lightningLength: 2
@@ -442,5 +444,5 @@ ammoTypes: {
       }
     }
   }
-}
+category: turret
 buildVisibility: sandboxOnly
