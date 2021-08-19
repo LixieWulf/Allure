@@ -1,0 +1,446 @@
+type: ItemTurret
+size: 16
+health: 540000
+shootCone: 360
+baseExplosiveness: 185
+maxAmmo: 180
+range: 0
+rotateSpeed: 0
+shootLength: 0
+reloadTime: 45
+canOverdrive: false
+acceptCoolant: false
+recoilAmount: 0
+shootSound: none
+shootEffect: {
+  type: MultiEffect
+  lifetime: 1080
+  effects: [
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 1080
+      region: exotic-mod-infini-main
+      sizeFrom: 64
+      sizeTo: 64
+      layer: 105
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 180
+      region: exotic-mod-infini-c-0
+      sizeFrom: 64
+      sizeTo: 64
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 300
+      region: exotic-mod-infini-c-1
+      sizeFrom: 64
+      sizeTo: 64
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 420
+      region: exotic-mod-infini-c-2
+      sizeFrom: 64
+      sizeTo: 64
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 560
+      region: exotic-mod-infini-0-icon
+      sizeFrom: 64
+      sizeTo: 64
+      colorFrom: 2c2d38
+      colorTo: 2c2d38
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 570
+      region: exotic-mod-infini-1-icon
+      sizeFrom: 64
+      sizeTo: 64
+      colorFrom: 2c2d38
+      colorTo: 2c2d38
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 580
+      region: exotic-mod-infini-2-icon
+      sizeFrom: 64
+      sizeTo: 64
+      colorFrom: 2c2d38
+      colorTo: 2c2d38
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 590
+      region: exotic-mod-infini-3-icon
+      sizeFrom: 64
+      sizeTo: 64
+      colorFrom: 2c2d38
+      colorTo: 2c2d38
+    }
+  ]
+}
+ammoPerShot: 180
+ammoTypes: {
+  shadow: {
+    damage: 0
+    lifetime: 0
+    speed: 0
+    shootEffect: none
+    smokeEffect: none
+    hitEffect: none
+    despawnEffect: {
+      type: MultiEffect
+      lifetime: 1080
+      effects: [
+        {
+          type: ParticleEffect
+          particles: 1
+          length: 0
+          lifetime: 1080
+          region: circle-shadow
+          sizeFrom: 35
+          sizeTo: 60
+        }
+        {
+          type: WaveEffect
+          lifetime: 840
+          sizeFrom: 0
+          sizeTo: 352
+          strokeFrom: 12
+          strokeTo: 12
+          colorTo: ffffff00
+          interp: pow5Out
+        }
+        {
+           type: ParticleEffect
+           line: true
+           lifetime: 840
+           length: 352
+           particles: 35
+           strokeFrom: 10
+           strokeTo: 10
+           lenFrom: 25
+           lenTo: 0
+           interp: pow5Out
+           colorTo: ffffff00
+        }
+      ]
+    }
+    fragBullets: 1
+    fragBullet: {
+      speed: 0
+      lifetime: 1080
+      splashDamageRadius: 720
+      splashDamage: 1250000
+      collides: false
+      collidesTiles: false
+      absorbable: false
+      hittable: false
+      hitShake: 180
+      width: 0
+      height: 0
+      fragBullets: 1
+      fragBullet: {
+        lifetime: 0
+        speed: 0
+        killShooter: true
+        fragBullets: 720
+        fragVelocityMax: 1
+        fragVelocityMin: 1
+        fragBullet: {
+          speed: 3
+          damage: 18000
+          pierce: true
+          pierceBuilding: true
+          hittable: false
+          absorbable: false
+          reflectable: false
+          knockback: 72
+          lifetime: 240
+          width: 0.01
+          height: 0.01
+          despawnEffect: none
+          hitEffect: none
+        }
+      }
+      despawnEffect: {
+        type: MultiEffect
+        lifetime: 720
+        layer: 140
+        effects: [
+          {
+            type: ParticleEffect
+            lifetime: 260
+            length: 0
+            particles: 1
+            sizeFrom: 2160
+            sizeTo: 2160
+            colorTo: ffffff00
+          }
+          {
+            type: WaveEffect
+            sizeFrom: 0
+            sizeTo: 720
+            strokeFrom: 45
+            strokeTo: 0
+            lifetime: 240
+          }
+          {
+            type: WaveEffect
+            sizeFrom: 0
+            sizeTo: 450
+            strokeFrom: 20
+            strokeTo: 0
+            lifetime: 60
+          }
+          {
+            type: ParticleEffect
+            length: 450
+            particles: 85
+            lifetime: 720
+            sizeFrom: 45
+            sizeTo: 0
+            colorTo: ffffff50
+          }
+          {
+            type: ParticleEffect
+            length: 450
+            particles: 65
+            lifetime: 420
+            sizeFrom: 25
+            sizeTo: 0
+            colorTo: ffffff75
+          }
+         {
+            type: ParticleEffect
+            length: 320
+            particles: 70
+            lifetime: 700
+            sizeFrom: 42
+            sizeTo: 25
+            colorTo: ffffff00
+          }
+          {
+            type: ParticleEffect
+            line: true
+            particles: 35
+            length: 600
+            lifetime: 240
+            lenFrom: 30
+            lenTo: 30
+            strokeFrom: 8
+            strokeTo: 0
+          }
+          {
+            type: ParticleEffect
+            line: true
+            particles: 45
+            length: 720
+            lifetime: 360
+            lenFrom: 40
+            lenTo: 40
+            strokeFrom: 15
+            strokeTo: 0
+          }
+        ]
+      }
+    }
+    lightning: 1
+    lightningLength: 2
+    lightningType: {
+      lifetime: 0
+      damage: 0
+      speed: 0
+      fragBullets: 25
+      fragLifeMin: 0.1
+      fragLifeMax: 10
+      fragVelocityMin: 0.1
+      fragVelocityMax: 1.5
+      fragBullet: {
+        speed: 4
+        lifetime: 60
+        damage: 0
+        width: 0
+        height: 0
+        despawnEffect: none
+        collides: false
+        absorbable: false
+        hittable: false
+        lightning: 1
+        lightningDamage: 12500
+        lightningLength: 35
+        lightningColor: ffffff
+      }
+      lightning: 1
+      lightningLength: 2
+      lightningType: {
+        damage: 0
+        speed: 0
+        lifetime: 0
+        collides: false
+        absorbable: false
+        fragBullets: 1
+        fragBullet: {
+          lifetime: 835
+          speed: 0
+          damage: 0
+          width: 0
+          height: 0
+          collides: false
+          absorbable: false
+          hittable: false
+          despawnEffect: {
+            type: MultiEffect
+            lifetime: 240
+            effects: [
+              {
+                type: WaveEffect
+                lifetime: 240
+                interp: pow5In
+                sizeFrom: 350
+                sizeTo: 30
+                colorFrom: ffffff00
+                strokeFrom: 12
+                strokeTo: 12
+              }
+              {
+                type: ParticleEffect
+                line: true
+                lifetime: 240
+                length: -350
+                baseLength: 350
+                particles: 35
+                strokeFrom: 10
+                strokeTo: 10
+                lenFrom: 0
+                lenTo: 25
+                interp: pow5In
+                colorFrom: ffffff00
+              }
+            ]
+          }
+        }
+        lightning: 1
+        lightningLength: 2
+        lightningType: {
+          speed: 0
+          lifetime: 0
+          hitEffect: none 
+          despawnEffect: none
+          fragBullets: 60
+          fragLifeMax: 25
+          fragBullet: {
+            type: ArtilleryBulletType
+            speed: 0.01
+            lifetime: 40
+            hittable: false
+            collides: false
+            absorbable: false
+            trailChance: 0
+            width: 0
+            height: 0
+            despawnEffect: none
+            hitEffect: none
+            hitSound: none
+            fragBullets: 1
+            fragCone: 0
+            fragBullet: {
+              type: ShrapnelBulletType
+              length: 480
+              lifetime: 80
+              damage: 12500
+              toColor: ffffff
+              hitShake: 5
+            }
+          }
+          lightning: 1
+          lightningLength: 2
+          lightningType: {
+            speed: 0
+            lifetime: 0
+            hitEffect: none 
+            despawnEffect: none
+            fragBullets: 60
+            fragLifeMax: 20
+            fragBullet: {
+              speed: 0.01
+              lifetime: 50
+              collides: false
+              hittable: false
+              absorbable: false
+              reflectable: false
+              despawnEffect: none
+              hitEffect: none
+              fragBullets: 2
+              fragCone: 25
+              fragLifeMin: 0.5
+              fragLifeMax: 1.5
+              fragBullet: {
+                type: EmpBulletType
+                scaleVelocity: true
+                damage: 0
+                hitUnits: false
+                healPercent: 100
+                pierce: true
+                pierceBuilding: true
+                absorbable: false
+                hittable: false
+                reflectable: false
+                speed: 8
+                sprite: exotic-mod-torpedo
+                width: 25
+                height: 25
+                frontColor: ffffff
+                backColor: 00000000
+                hitColor: ffffff
+                shrinkY: 0
+                hitEffect: {
+                  type: WaveEffect
+                  lifetime: 12
+                  sizeFrom: 0
+                  sizeTo: 7
+                  strokeFrom: 1
+                  strokeTo: 0
+                }
+                despawnEffect: none
+                trailInterval: 3
+                trailRotation: true
+                trailEffect: {
+                  type: ParticleEffect
+                  cone: 0
+                  particles: 1
+                  length: 40
+                  lifetime: 90
+                  interp: pow10Out
+                  sizeFrom: 24
+                  region: exotic-mod-torpedo-effect
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+buildVisibility: sandboxOnly
