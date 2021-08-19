@@ -112,6 +112,7 @@ ammoTypes: {
     despawnEffect: {
       type: MultiEffect
       lifetime: 1080
+      clip: 720
       effects: [
         {
           type: ParticleEffect
@@ -189,14 +190,15 @@ ammoTypes: {
         type: MultiEffect
         lifetime: 720
         layer: 140
+        clip: 8192
         effects: [
           {
             type: ParticleEffect
             lifetime: 260
             length: 0
             particles: 1
-            sizeFrom: 2160
-            sizeTo: 2160
+            sizeFrom: 8192
+            sizeTo: 8192
             colorTo: ffffff00
           }
           {
@@ -315,6 +317,7 @@ ammoTypes: {
           despawnEffect: {
             type: MultiEffect
             lifetime: 240
+            clip: 720
             effects: [
               {
                 type: WaveEffect
