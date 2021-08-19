@@ -5,6 +5,7 @@ shootCone: 360
 baseExplosiveness: 185
 maxAmmo: 180
 range: 0
+reloadTime: 1081
 rotateSpeed: 0
 shootLength: 0
 reloadTime: 45
