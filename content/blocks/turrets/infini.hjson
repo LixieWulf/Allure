@@ -133,17 +133,17 @@ ammoTypes: {
           interp: pow5Out
         }
         {
-           type: ParticleEffect
-           line: true
-           lifetime: 840
-           length: 352
-           particles: 35
-           strokeFrom: 10
-           strokeTo: 10
-           lenFrom: 25
-           lenTo: 0
-           interp: pow5Out
-           colorTo: ffffff00
+          type: ParticleEffect
+          line: true
+          lifetime: 840
+          length: 352
+          particles: 35
+          strokeFrom: 10
+          strokeTo: 10
+          lenFrom: 25
+          lenTo: 0
+          interp: pow5Out
+          colorTo: ffffff00
         }
       ]
     }
