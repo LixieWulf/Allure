@@ -445,5 +445,6 @@ ammoTypes: {
       }
     }
   }
+}
 category: turret
 buildVisibility: sandboxOnly
