@@ -1,5 +1,6 @@
 type: LiquidTurret
 placeableLiquid: true
+squareSprite: false
 size: 6
 health: 27000
 reloadTime: 3
