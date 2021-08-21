@@ -3,7 +3,7 @@ flying: true
 rotateSpeed: 2.5
 health: 45000
 armor: 12
-hitSize: 73
+hitSize: 60
 speed: 2.6
 accel: 0.02
 drag: 0.01
