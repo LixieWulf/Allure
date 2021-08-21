@@ -1,0 +1,50 @@
+type: LiquidTurret
+placeableLiquid: true
+size: 6
+health: 27000
+reloadTime: 3
+rotateSpeed: 4.1
+shots: 4
+velocityInaccuracy: 0.25
+inaccuracy: 1
+spread: 0
+range: 720
+shootLength: 12
+shootEffect: shootLiquid
+ammoTypes: {
+  water: {
+    type: LiquidBulletType
+    orbSize: 4
+    damage: 35
+    speed: 12
+    lifetime: 50
+    liquid: water
+  }
+  liquid-baenara: {
+    type: LiquidBulletType
+    orbSize: 4
+    damage: 40
+    speed: 12
+    lifetime: 50
+    liquid: liquid-baenara
+    collidesTeam: true
+    healPercent: 1.5
+  }
+  slag: {
+    type: LiquidBulletType
+    orbSize: 4
+    damage: 150
+    speed: 12
+    lifetime: 50
+    liquid: slag
+  }
+}
+category: turret
+requirements: [
+  metaglass/3500
+  graphite/3000
+  titanium/3000
+  baenite/2700
+  ladera/2500
+  amethyst-gem/1200
+]
