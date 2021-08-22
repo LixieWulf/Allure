@@ -1,6 +1,6 @@
 type: Reconstructor
 size: 8
-constructTime: 13550
+constructTime: 14600
 liquidCapacity: 60
 consumes: {
   power: 4.8
@@ -18,10 +18,10 @@ consumes: {
   }
 }
 upgrades: [
-  [spirit, ghost]
-  [virus, pathogen]
-  [reckless, endeavour]
-  [spark, ember]
+  [fiend, ghost]
+  [phage, pathogen]
+  [excalibur, endeavour]
+  [pyre, ember]
 ]
 requirements: [
   lead/3500
@@ -32,4 +32,7 @@ requirements: [
   amethyst-gem/950
 ]
 category: units
-research: constructor
+research: {
+  parent: recaster
+  objectives: [tetrative-reconstructor]
+}
