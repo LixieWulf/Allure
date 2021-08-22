@@ -5,3 +5,6 @@ attributes: {
 }
 liquidDrop: energia
 liquidMultiplier: 0.07
+emitLight: true
+lightRadius: 25
+lightColor: 3bbeff25
