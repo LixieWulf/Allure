@@ -59,4 +59,7 @@ abilities: [
 ]
 research: {
   parent: spark
+  objectives: [
+    recaster
+  ]
 }
