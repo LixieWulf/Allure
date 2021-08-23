@@ -78,3 +78,9 @@ weapons: [
     }
   }
 ]
+research: {
+  parent: virus
+  objectives: [
+    recaster
+  ]
+}
