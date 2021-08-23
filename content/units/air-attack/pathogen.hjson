@@ -66,4 +66,9 @@ abilities: [
     }
   }
 ]
-research: virus
+research: {
+  parent: phage
+  objectives: [
+    alterator
+  ]
+}
