@@ -1,5 +1,6 @@
 type: flying
 flying: true
+controller: BuilderAI
 hitSize: 15
 health: 560
 speed: 3.8
