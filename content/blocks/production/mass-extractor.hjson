@@ -1,9 +1,10 @@
-type: SolidPump
+type: Fracker
 size: 5
 liquidCapacity: 120
 result: water
 attribute: water
 pumpAmount: 1.2
+itemUseTime: 210
 consumes: {
   power: 11
   items: {
