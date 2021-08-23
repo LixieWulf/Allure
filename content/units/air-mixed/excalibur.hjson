@@ -59,4 +59,7 @@ weapons: [
 ]
 research: {
   parent: reckless
+  objectives: [
+    recaster
+  ]
 }
