@@ -1,5 +1,5 @@
 type: mech
-health: 175600
+health: 75600
 hitSize: 32
 canDrown: false
 armor: 75
@@ -83,3 +83,9 @@ abilities: [
     cooldown: 120
   }
 ]
+research: {
+  parent: pyre
+  objectives: [
+    alterator
+  ]
+}
