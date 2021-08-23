@@ -61,4 +61,9 @@ weapons: [
   }
 }
 ]
-research: spirit
+research: {
+  parent: fiend
+  objectives: [
+    alterator
+  ]
+}
