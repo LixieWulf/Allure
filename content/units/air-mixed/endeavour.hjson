@@ -148,3 +148,9 @@ abilities: [
     }
   }
 ]
+research: {
+  parent: excalibur
+  objectives: [
+    alterator
+  ]
+}
