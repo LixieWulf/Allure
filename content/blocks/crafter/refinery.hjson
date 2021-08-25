@@ -6,7 +6,7 @@ hasLiquids: true
 requiresWater: true
 flameColor: ffceb5
 updateEffectChance: 0.2
-craftTime: 320
+craftTime: 210
 consumes: {
   power: 32
   items: {
