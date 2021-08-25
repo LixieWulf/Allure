@@ -1,7 +1,7 @@
 type: ItemTurret
 size: 8
 range: 600
-health: 256000
+health: 270000
 reloadTime: 15
 recoilAmount: 4
 inaccuracy: 5
@@ -10,7 +10,7 @@ xRand: 8
 rotateSpeed: 2.9
 ammoTypes: {
   amethyst-gem: {
-    damage: 460
+    damage: 720
     splashDamage: 550
     splashDamageRadius: 19
     speed: 8
@@ -22,7 +22,7 @@ ammoTypes: {
     backColor: a56be8
     fragBullets: 10
     fragBullet: {
-      damage: 240
+      damage: 350
       speed: 4
       lifetime: 15
       frontColor: ffffff
@@ -30,7 +30,7 @@ ammoTypes: {
     }
   }
   bluewolframite: {
-    damage: 780
+    damage: 1020
     splashDamage: 600
     splashDamageRadius: 21
     speed: 8
@@ -45,5 +45,15 @@ ammoTypes: {
     lightningLength: 15
   }
 }
-buildVisibility: sandboxOnly
+coolantUsage: 3.2
 category: turret
+requirements: [
+  copper/20000
+  graphite/18000
+  plastanium/18000
+  thorium/16000
+  surge-alloy/9000
+  amethyst-gem/2500
+  draconium/1500
+  shadow/1000
+]

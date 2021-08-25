@@ -1,14 +1,15 @@
 type: PowerTurret
 size: 8
-health: 356000
+health: 510000
 range: 80
+reloadTime: 140
 recoilAmount: -50
 restitution: 0.2
-powerUse: 9.2
-reloadTime: 15
+powerUse: 1288
+shootSound: none
 shootType: {
   type: ShrapnelBulletType
-  damage: 564000
+  damage: 250000
   length: 50
   width: 0.01
   serrations: 0
@@ -21,13 +22,21 @@ shootType: {
       particles: 1
       length: 0
       lifetime: 30
-      sizeFrom: 5
+      sizeFrom: 2
       sizeTo: 0
       colorFrom: e65555
       colorTo: e6555500
     }
   }
 }
-research: meltdown
+coolantUsage: 2.1
+research: 0r-halberd
 category: turret
-buildVisibility: sandboxOnly
+requirements: [
+  copper/25000
+  lead/30000
+  thorium/20000
+  surge-alloy/15000
+  draconium/4500
+  shadow/750
+]

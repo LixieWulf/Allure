@@ -133,7 +133,7 @@ ammoPerShot: 18
 ammoTypes: {
   bluewolframite: {
     type: RailBulletType
-    damage: 375000
+    damage: 315000
     length: 980
     pierceDamageFactor: 0.75
     updateEffectSeg: 180
@@ -150,5 +150,13 @@ ammoTypes: {
   }
 }
 acceptCoolant: false
-buildVisibility: sandboxOnly
 category: turret
+requirements: [
+  graphite/23000
+  silicon/25000
+  titanium/23000
+  plastanium/22000
+  phase-fabric/9000
+  bluewolframite/2500
+  shadow/1150
+]

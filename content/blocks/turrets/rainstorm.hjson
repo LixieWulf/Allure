@@ -2,7 +2,7 @@ type: LaserTurret
 size: 10
 health: 228000
 range: 877
-reloadTime: 45
+reloadTime: 240
 shootCone: 25
 shootSound: laserbig
 loopSound: beam
@@ -279,7 +279,11 @@ shootType: {
     ]
   }
 }
-coolantMultiplier: 6.5
+consumes: {
+  coolant: {
+    amount: 7
+  }
+}
 liquidCapacity: 3500
 requirements: [
   copper/55000
