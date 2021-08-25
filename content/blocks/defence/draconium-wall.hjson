@@ -1,5 +1,5 @@
 type: Wall
-health: 2100
+health: 12000
 size: 1
 chanceDeflect: 870
 insulated: true

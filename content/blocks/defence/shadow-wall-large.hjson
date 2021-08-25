@@ -1,6 +1,6 @@
 type: Wall
 size: 2
-health: 34160
+health: 100000
 requirements: [
   shadow/48
   bluewolframite/24

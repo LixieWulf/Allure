@@ -1,6 +1,6 @@
 type: Wall
 chanceDeflect: 550
-health: 9000
+health: 76000
 size: 2
 lightningChance: 0.15
 lightningDamage: 450
