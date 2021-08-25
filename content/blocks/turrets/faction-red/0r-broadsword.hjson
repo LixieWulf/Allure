@@ -22,7 +22,7 @@ ammoTypes: {
     height: 30
     shrinkY: 0
     sprite: exotic-mod-sword-2
-    fragBullets: 3
+    fragBullets: 1
     fragVelocityMin: 1
     fragVelocityMax: 1
     fragBullet: {
@@ -84,6 +84,7 @@ ammoTypes: {
     }
   }
 }
+coolantUsage: 4.2
 category: turret
 requirements: [
   copper/25000
