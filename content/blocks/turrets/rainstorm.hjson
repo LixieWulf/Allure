@@ -193,6 +193,7 @@ shootType: {
   length: 877
   width: 32
   drawSize: 877
+  layer: 95
   colors: [e6555525, ff9c5935, f2e87945, 84f59155, 8ca4f565, a488eb75]
   strokes: [1.5, 1.25, 1, 0.75, 0.5, 0.25]
   hitEffect: {
