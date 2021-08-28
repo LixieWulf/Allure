@@ -1,5 +1,6 @@
 type: ItemTurret
 size: 8
+liquidCapacity: 350
 range: 600
 health: 270000
 reloadTime: 15
@@ -46,6 +47,7 @@ ammoTypes: {
   }
 }
 coolantUsage: 3.2
+coolantMultiplier: 0.3
 category: turret
 requirements: [
   copper/20000
