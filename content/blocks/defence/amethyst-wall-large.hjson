@@ -1,0 +1,7 @@
+type: Wall
+size: 2
+health: 5800
+category: defense
+requirements: [
+  amethyst-gem/24
+]

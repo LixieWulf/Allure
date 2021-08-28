@@ -1,0 +1,15 @@
+type: MendProjector
+size: 2
+health: 3600
+hasPower: false
+reload: 45
+healPercent: 5
+range: 8
+phaseBoost: 0
+phaseRangeBoost: 0
+phaseColor: 74cf84
+category: defense
+research: baenite-wall
+requirements: [
+  baenite/24
+]

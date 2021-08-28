@@ -1,0 +1,15 @@
+type: LiquidRouter
+health: 1300
+liquidCapacity: 400
+category: defense
+research: {
+  parent: baenite-wall
+  objectives: [
+    liquid-tank
+  ]
+}
+requirements: [
+  metaglass/4
+  baenite/6
+  ladera/3
+]

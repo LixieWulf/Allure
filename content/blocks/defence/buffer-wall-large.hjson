@@ -1,0 +1,14 @@
+type: Battery
+size: 2
+health: 1480
+emptyLightColor: 5a58c4
+fullLightColor: 90a2fc
+consumes: {
+  powerBuffered: 1000
+}
+category: defense
+research: buffer-wall
+requirements: [
+  lead/32
+  territe-alloy/16
+]

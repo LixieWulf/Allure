@@ -1,0 +1,14 @@
+type: MendProjector
+health: 900
+hasPower: false
+reload: 45
+healPercent: 5
+range: 4
+phaseBoost: 0
+phaseRangeBoost: 0
+phaseColor: 74cf84
+category: defense
+research: surge-wall
+requirements: [
+  baenite/6
+]

@@ -1,0 +1,16 @@
+type: MendProjector
+health: 410
+range: 4
+reload: 30
+healPercent: 2.5
+phaseBoost: 0
+phaseRangeBoost: 0
+consumes: {
+  power: 0.15
+}
+category: defense
+research: mender
+requirements: [
+  titanium/4
+  silicon/6
+]
