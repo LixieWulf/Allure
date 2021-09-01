@@ -1,7 +1,9 @@
 type: legs
 hitSize: 60
 drawShields: false
-flying: true
+hovering: true
+visualElevation: 0.9
+groundLayer: 90
 engineOffset: 16
 engineSize: 0
 lowAltitude: true
