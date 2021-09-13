@@ -1,0 +1,67 @@
+type: ItemLiquidGenerator
+size: 6
+canOverdrive: false
+itemDuration: 120
+consumes: {
+  liquid: {
+    liquid: energia
+    amount: 0.35
+  }
+  items: {
+    items: [
+      amethyst-gem/1
+    ]
+  }
+}
+generateEffectRnd: 0
+generateEffect: {
+  type: MultiEffect
+  layer: 35
+  lifetime: 120
+  effects: [
+    {
+      type: ParticleEffect
+      region: exotic-mod-empiron-base
+      lightOpacity: 0
+      particles: 1
+      lifetime: 120
+      length: 0
+      sizeFrom: 24
+      sizeTo: 24
+    }
+    {
+      type: ParticleEffect
+      region: exotic-mod-empiron-rotator-1
+      lightOpacity: 0
+      particles: 1
+      lifetime: 120
+      length: 0
+      sizeFrom: 24
+      sizeTo: 24
+      spin: 3
+    }
+    {
+      type: ParticleEffect
+      region: exotic-mod-empiron-rotator-2
+      lightOpacity: 0
+      particles: 1
+      lifetime: 120
+      length: 0
+      sizeFrom: 24
+      sizeTo: 24
+      spin: -6
+    }
+    {
+      type: ParticleEffect
+      region: exotic-mod-empiron-top
+      lightOpacity: 0
+      particles: 1
+      lifetime: 120
+      length: 0
+      sizeFrom: 24
+      sizeTo: 24
+    }
+  ]
+}
+powerProduction: 25
+buildVisibility: shown
