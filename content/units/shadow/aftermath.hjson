@@ -1,0 +1,914 @@
+type: naval
+health: 2400000
+armor: 1200
+hitSize: 120
+speed: 0.4
+rotateSpeed: 0.6
+drawCell: false
+drawShields: false
+lightRadius: 150
+lightOpacity: 0.11
+trailX: 40
+trailY: -70
+trailScl: 8
+trailLength: 150
+ammoType: {
+  type: ItemAmmoType
+  item: shadow
+  ammoPerItem: 6
+}
+immunities: [
+  wet,
+  burning,
+  melting,
+  electrified,
+  shocked, 
+  tarred, 
+  muddy, 
+  freezing, 
+  blasted,
+  spore-slowed, 
+  sapped,
+  slow
+  corroded, 
+  disarmed
+]
+weapons: [
+  {
+    type: PointDefenseWeapon
+    name: aftermath-weapon
+    controllable: false
+    autoTarget: true
+    targetInterval: 0
+    targetSwitchInterval: 0
+    x: 42.75
+    y: 47
+    beamEffect: none
+    recoil: 0
+    reload: 3
+    rotate: true
+    shootSound: none
+    bullet: {
+      damage: 2500
+      maxRange: 320
+      shootEffect: {
+        type: ParticleEffect
+        lightOpacity: 0
+        particles: 15
+        baseLength: 25
+        length: -25
+        lifetime: 20
+        cone: 15
+        sizeFrom: 2
+        colorFrom: 00000050
+        colorTo: 000000
+      }
+      hitEffect: {
+        type: MultiEffect
+        layer: 110.001
+        effects: [
+          {
+            type: ParticleEffect
+            length: 0
+            lightOpacity: 0
+            sizeInterp: pow10In
+            lifetime: 30
+            particles: 1
+            region: exotic-mod-vapour1
+            sizeFrom: 20
+            sizeTo: 0
+            spin: 8
+            colorFrom: 000000
+            colorTo: 000000
+          }
+          {
+            type: ParticleEffect
+            length: 0
+            lightOpacity: 0
+            sizeInterp: pow10In
+            lifetime: 30
+            particles: 1
+            region: exotic-mod-vapour1
+            sizeFrom: 16
+            sizeTo: 0
+            spin: 12
+            colorFrom: 000000
+            colorTo: 000000
+          }
+          {
+            type: ParticleEffect
+            length: 0
+            lightOpacity: 0
+            sizeInterp: pow10In
+            lifetime: 30
+            particles: 1
+            region: exotic-mod-vapour1
+            sizeFrom: 13
+            sizeTo: 0
+            spin: 6
+            colorFrom: 000000
+            colorTo: 000000
+          }
+          {
+            type: ParticleEffect
+            length: 0
+            lightOpacity: 0
+            sizeInterp: pow10In
+            lifetime: 30
+            particles: 1
+            region: circle-shadow
+            sizeFrom: 30
+            sizeTo: 0
+            colorFrom: 000000
+            colorTo: 000000
+          }
+        ]
+      }
+    }
+  }
+  {
+    type: PointDefenseWeapon
+    name: aftermath-weapon
+    controllable: false
+    autoTarget: true
+    targetInterval: 0
+    targetSwitchInterval: 0
+    x: 44.5
+    y: 19.5
+    beamEffect: none
+    recoil: 0
+    reload: 3
+    rotate: true
+    shootSound: none
+    bullet: {
+      damage: 2500
+      maxRange: 320
+      shootEffect: {
+        type: ParticleEffect
+        lightOpacity: 0
+        particles: 15
+        baseLength: 25
+        length: -25
+        lifetime: 20
+        cone: 15
+        sizeFrom: 2
+        colorFrom: 00000050
+        colorTo: 000000
+      }
+      hitEffect: {
+        type: MultiEffect
+        layer: 110.001
+        effects: [
+          {
+            type: ParticleEffect
+            length: 0
+            lightOpacity: 0
+            sizeInterp: pow10In
+            lifetime: 30
+            particles: 1
+            region: exotic-mod-vapour1
+            sizeFrom: 20
+            sizeTo: 0
+            spin: 8
+            colorFrom: 000000
+            colorTo: 000000
+          }
+          {
+            type: ParticleEffect
+            length: 0
+            lightOpacity: 0
+            sizeInterp: pow10In
+            lifetime: 30
+            particles: 1
+            region: exotic-mod-vapour1
+            sizeFrom: 16
+            sizeTo: 0
+            spin: 12
+            colorFrom: 000000
+            colorTo: 000000
+          }
+          {
+            type: ParticleEffect
+            length: 0
+            lightOpacity: 0
+            sizeInterp: pow10In
+            lifetime: 30
+            particles: 1
+            region: exotic-mod-vapour1
+            sizeFrom: 13
+            sizeTo: 0
+            spin: 6
+            colorFrom: 000000
+            colorTo: 000000
+          }
+          {
+            type: ParticleEffect
+            length: 0
+            lightOpacity: 0
+            sizeInterp: pow10In
+            lifetime: 30
+            particles: 1
+            region: circle-shadow
+            sizeFrom: 30
+            sizeTo: 0
+            colorFrom: 000000
+            colorTo: 000000
+          }
+        ]
+      }
+    }
+  }
+  {
+    name: aftermath-blaster
+    x: 40.25
+    y: -54.25
+    rotate: true
+    rotateSpeed: 4
+    reload: 80
+    shootSound: none
+    shootY: 6
+    recoil: 3
+    bullet: {
+      type: EmpBulletType
+      damage: 3000
+      splashDamage: 5000
+      splashDamageRadius: 90
+      speed: 5
+      lifetime: 80
+      radius: 90
+      powerDamageScl: 10
+      applyEffect: none
+      chainEffect: none
+      hitPowerEffect: none
+      lightOpacity: 0
+      healPercent: 0
+      hitUnits: false
+      sprite: circle-bullet
+      width: 12
+      height: 12
+      shrinkY: 0
+      frontColor: ffffff
+      backColor: 000000
+      despawnEffect: none
+      hitEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: ParticleEffect
+            length: 0
+            lightOpacity: 0
+            sizeInterp: pow10In
+            lifetime: 45
+            particles: 1
+            region: exotic-mod-vapour1
+            sizeFrom: 90
+            sizeTo: 0
+            spin: 8
+            colorFrom: 000000
+            colorTo: 000000
+          }
+          {
+            type: ParticleEffect
+            length: 0
+            lightOpacity: 0
+            sizeInterp: pow10In
+            lifetime: 45
+            particles: 1
+            region: exotic-mod-vapour1
+            sizeFrom: 90
+            sizeTo: 0
+            spin: 16
+            colorFrom: 000000
+            colorTo: 000000
+          }
+          {
+            type: ParticleEffect
+            length: 0
+            lightOpacity: 0
+            sizeInterp: pow10In
+            lifetime: 45
+            particles: 1
+            region: exotic-mod-vapour1
+            sizeFrom: 90
+            sizeTo: 0
+            spin: 11
+            colorFrom: 000000
+            colorTo: 000000
+          }
+          {
+            type: ParticleEffect
+            length: 0
+            lightOpacity: 0
+            sizeInterp: pow10In
+            lifetime: 45
+            particles: 1
+            region: exotic-mod-vapour1
+            sizeFrom: 70
+            sizeTo: 0
+            spin: 12
+            colorFrom: 000000
+            colorTo: 000000
+          }
+          {
+            type: ParticleEffect
+            length: 0
+            lightOpacity: 0
+            sizeInterp: pow10In
+            lifetime: 45
+            particles: 1
+            region: exotic-mod-vapour1
+            sizeFrom: 80
+            sizeTo: 0
+            spin: 6
+            colorFrom: 000000
+            colorTo: 000000
+          }
+          {
+            type: ParticleEffect
+            length: 0
+            lightOpacity: 0
+            sizeInterp: pow10In
+            lifetime: 45
+            particles: 1
+            region: exotic-mod-vapour1
+            sizeFrom: 90
+            sizeTo: 0
+            spin: 7
+            colorFrom: 000000
+            colorTo: 000000
+          }
+          {
+            type: ParticleEffect
+            length: 0
+            lightOpacity: 0
+            sizeInterp: pow10In
+            lifetime: 45
+            particles: 1
+            region: circle-shadow
+            sizeFrom: 140
+            sizeTo: 0
+            colorFrom: 000000
+            colorTo: 000000
+          }
+        ]
+      }
+      trailLength: 20
+      trailWidth: 6
+      trailColor: 000000
+    }
+  } 
+  {
+    x: 0
+    rotate: true
+    mirror: false
+    reload: 480
+    firstShotDelay: 120
+    shootStatus: unmoving
+    shootStatusDuration: 120
+    shootSound: none
+    bullet: {
+      type: BulletType
+      damage: 3000
+      hittable: false
+      absorbable: false
+      reflectable: false
+      speed: 3
+      lifetime: 150
+      lightRadius: 0
+      trailLength: 25
+      trailWidth: 16
+      trailColor: 000000
+      shootEffect: {
+        type: MultiEffect
+        lifetime: 120
+        clip: 8192
+        effects: [
+          {
+            type: ParticleEffect
+            lightOpacity: 0
+            sizeFrom: 0
+            sizeTo: 16
+            length: 0
+            particles: 1
+            lifetime: 120
+            colorFrom: 000000
+            colorTo: 000000
+          }
+          {
+            type: ParticleEffect
+            lightOpacity: 0
+            sizeFrom: 0
+            sizeTo: 60
+            region: exotic-mod-diamond-wide
+            length: 0
+            particles: 1
+            lifetime: 120
+            colorFrom: 000000
+            colorTo: 000000
+            spin: 6
+          }
+          {
+            type: ParticleEffect
+            lightOpacity: 0
+            sizeFrom: 0
+            sizeTo: 60
+            region: exotic-mod-diamond-wide
+            length: 0
+            particles: 1
+            lifetime: 120
+            colorFrom: 000000
+            colorTo: 000000
+            spin: -6
+          }
+          {
+            type: ParticleEffect
+            lightOpacity: 0
+            region: exotic-mod-diamond-wide
+            sizeFrom: 0
+            sizeTo: 40
+            length: 0
+            particles: 1
+            lifetime: 120
+            spin: 6
+          }
+          {
+            type: ParticleEffect
+            lightOpacity: 0
+            region: exotic-mod-diamond-wide
+            sizeFrom: 0
+            sizeTo: 40
+            length: 0
+            particles: 1
+            lifetime: 120
+            spin: -6
+          }
+          {
+            type: ParticleEffect
+            lightOpacity: 0
+            sizeFrom: 0
+            sizeTo: 12
+            length: 0
+            particles: 1
+            lifetime: 120
+          }
+        ]
+      }
+      trailInterval: 30
+      trailRotation: true
+      trailEffect: {
+        type: MultiEffect
+        lifetime: 32
+        layer: 105
+        effects: [
+          {
+            type: ParticleEffect
+            lightOpacity: 0
+            length: 105
+            cone: 0
+            randLength: false
+            sizeFrom: 16
+            sizeTo: 16
+            particles: 1
+            lifetime: 35
+            colorFrom: 000000
+            colorTo: 000000
+          }
+          {
+            type: ParticleEffect
+            lightOpacity: 0
+            length: 105
+            cone: 0
+            randLength: false
+            sizeFrom: 60
+            sizeTo: 60
+            region: exotic-mod-diamond-wide
+            particles: 1
+            lifetime: 35
+            colorFrom: 000000
+            colorTo: 000000
+            spin: 6
+          }
+          {
+            type: ParticleEffect
+            lightOpacity: 0
+            length: 105
+            randLength: false
+            cone: 0
+            sizeFrom: 60
+            sizeTo: 60
+            region: exotic-mod-diamond-wide
+            particles: 1
+            lifetime: 35
+            colorFrom: 000000
+            colorTo: 000000
+            spin: -6
+          }
+          {
+            type: ParticleEffect
+            lightOpacity: 0
+            length: 105
+            cone: 0
+            randLength: false
+            region: exotic-mod-diamond-wide
+            sizeFrom: 40
+            sizeTo: 40
+            particles: 1
+            lifetime: 35
+            spin: 6
+          }
+          {
+            type: ParticleEffect
+            lightOpacity: 0
+            length: 105
+            cone: 0
+            randLength: false
+            region: exotic-mod-diamond-wide
+            sizeFrom: 40
+            sizeTo: 40
+            particles: 1
+            lifetime: 35
+            spin: -6
+          }
+          {
+            type: ParticleEffect
+            lightOpacity: 0
+            length: 105
+            cone: 0
+            randLength: false
+            sizeFrom: 12
+            sizeTo: 12
+            particles: 1
+            lifetime: 35
+          }
+        ]
+      }
+      despawnEffect: none
+      hitEffect: {
+        type: MultiEffect
+        lifetime: 60
+        clip: 8192
+        effects: [
+          {
+            type: ParticleEffect
+            lightOpacity: 0
+            length: 0
+            lifetime: 60
+            region: exotic-mod-vapour1
+            spin: 12
+            sizeFrom: 0
+            sizeTo: 240
+            sizeInterp: pow3Out
+            particles: 1
+            colorFrom: 000000
+            colorTo: 000000
+          }
+          {
+            type: ParticleEffect
+            lightOpacity: 0
+            length: 0
+            lifetime: 60
+            region: exotic-mod-vapour1
+            spin: 6
+            sizeFrom: 0
+            sizeTo: 240
+            sizeInterp: pow3Out
+            particles: 1
+            colorFrom: 000000
+            colorTo: 000000
+          }
+          {
+            type: ParticleEffect
+            lightOpacity: 0
+            length: 0
+            lifetime: 60
+            region: exotic-mod-vapour1
+            spin: 18
+            sizeFrom: 0
+            sizeTo: 240
+            sizeInterp: pow3Out
+            particles: 1
+            colorFrom: 000000
+            colorTo: 000000
+          }
+          {
+            type: ParticleEffect
+            lightOpacity: 0
+            length: 0
+            lifetime: 60
+            region: exotic-mod-vapour1
+            spin: 12
+            sizeFrom: 0
+            sizeTo: 200
+            sizeInterp: pow3Out
+            particles: 1
+            colorFrom: 000000
+            colorTo: 000000
+          }
+          {
+            type: ParticleEffect
+            lightOpacity: 0
+            length: 0
+            lifetime: 60
+            region: exotic-mod-vapour1
+            spin: 18
+            sizeFrom: 0
+            sizeTo: 160
+            sizeInterp: pow3Out
+            particles: 1
+            colorFrom: 000000
+            colorTo: 000000
+          }
+          {
+            type: ParticleEffect
+            lightOpacity: 0
+            length: 0
+            lifetime: 60
+            sizeFrom: 0
+            sizeTo: 450
+            region: circle-shadow
+            sizeInterp: pow3Out
+            particles: 1
+            colorFrom: 000000
+            colorTo: 000000
+          }
+        ]
+      }
+      lightning: 1
+      lightningLength: 2
+      lightningType: {
+        type: BulletType
+        collides: false
+        hittable: false
+        absorbable: false
+        speed: 0
+        lifetime: 60
+        hitEffect: none
+        despawnEffect: {
+          type: MultiEffect
+          lifetime: 360
+          clip: 8192
+          layer: 110.001
+          effects: [
+            {
+              type: ParticleEffect
+              lightOpacity: 0
+              length: 0
+              lifetime: 360
+              region: exotic-mod-vapour1
+              spin: 15
+              sizeFrom: 240
+              sizeTo: 0
+              sizeInterp: pow10In
+              particles: 1
+              colorFrom: 000000
+              colorTo: 000000
+            }
+            {
+              type: ParticleEffect
+              lightOpacity: 0
+              length: 0
+              lifetime: 360
+              region: exotic-mod-vapour1
+              spin: 7
+              sizeFrom: 240
+              sizeTo: 0
+              sizeInterp: pow10In
+              particles: 1
+              colorFrom: 000000
+              colorTo: 000000
+            }
+            {
+              type: ParticleEffect
+              lightOpacity: 0
+              length: 0
+              lifetime: 360
+              region: exotic-mod-vapour1
+              spin: 20
+              sizeFrom: 240
+              sizeTo: 0
+              sizeInterp: pow10In
+              particles: 1
+              colorFrom: 000000
+              colorTo: 000000
+            }
+            {
+              type: ParticleEffect
+              lightOpacity: 0
+              length: 0
+              lifetime: 360
+              region: exotic-mod-vapour1
+              spin: 11
+              sizeFrom: 200
+              sizeTo: 0
+              sizeInterp: pow10In
+              particles: 1
+              colorFrom: 000000
+              colorTo: 000000
+            }
+            {
+              type: ParticleEffect
+              lightOpacity: 0
+              length: 0
+              lifetime: 360
+              region: exotic-mod-vapour1
+              spin: 13
+              sizeFrom: 160
+              sizeTo: 0
+              sizeInterp: pow10In
+              particles: 1
+              colorFrom: 000000
+              colorTo: 000000
+            }
+            {
+              type: ParticleEffect
+              lightOpacity: 0
+              length: 0
+              lifetime: 360
+              sizeFrom: 450
+              sizeTo: 0
+              region: circle-shadow
+              sizeInterp: pow10In
+              particles: 1
+              colorFrom: 000000
+              colorTo: 000000
+            }
+          ]
+        }
+      }
+      fragBullets: 110
+      fragLifeMin: 0.01
+      fragBullet: {
+        type: BulletType
+        speed: 0
+        damage: 0
+        lifetime: 360
+        collides: false
+        absorbable: false
+        hittable: false
+        splashDamage: 2500
+        splashDamageRadius: 240
+        knockback: -50
+        lightRadius: 0
+        hitEffect: none
+        despawnEffect: none
+        keepVelocity: false
+        despawnEffect: {
+          type: ParticleEffect
+          clip: 480
+          lightOpacity: 0
+          layer: 111
+          region: circle-shadow
+          baseLength: 450
+          length: -450
+          sizeInterp: pow5Out
+          interp: pow3In
+          sizeFrom: 0
+          sizeTo: 10
+          colorFrom: 000000
+          colorTo: 000000
+        }
+        fragBullets: 25
+        fragBullet: {
+          type: SapBulletType
+          damage: 0
+          knockback: -50
+          lifetime: 0
+          length: 450
+          width: 0
+          lightColor: 00000000
+          hitEffect: none
+          status: none
+        }
+      }
+    }
+  }
+]
+abilities: [
+  {
+    type: MoveLightningAbility
+    chance: 2
+    minSpeed: -1
+    maxSpeed: 0
+    length: 0
+    shootSound: none
+    shootEffect: {
+      type: ParticleEffect
+      lightOpacity: 0
+      particles: 1
+      region: exotic-mod-a-effect
+      lifetime: 20
+      length: 0.01
+      sizeFrom: 100
+      sizeTo: 100
+      colorFrom: ffffff
+      colorTo: ffffff00
+    }
+  }
+  {
+    type: MoveLightningAbility
+    chance: 0.2
+    minSpeed: -1
+    maxSpeed: 0
+    length: 0
+    shootSound: none
+    shootEffect: {
+      type: MultiEffect
+      lifetime: 400
+      layer: 100
+      effects: [
+        {
+          type: ParticleEffect
+          layer: 101
+          lightOpacity: 0
+          particles: 1
+          lifetime: 400
+          length: 0
+          baseLength: 80
+          sizeFrom: 10
+          sizeTo: 5
+          colorFrom: 000000
+          colorTo: 00000000
+        }
+        {
+          type: ParticleEffect
+          layer: 101
+          lightOpacity: 0
+          particles: 1
+          lifetime: 400
+          length: 0
+          baseLength: 60
+          sizeFrom: 25
+          sizeTo: 18
+          colorFrom: 000000
+          colorTo: 00000000
+        }
+      ]
+    }
+  }
+  {
+    type: ForceFieldAbility
+    max: 200000
+    cooldown: 0
+    regen: 110
+    radius: 200
+  }
+]
+deathSound: none
+deathExplosionEffect: {
+  type: MultiEffect
+  lifetime: 240
+  effects: [
+    {
+      type: ParticleEffect
+      lightOpacity: 0
+      layer: 100
+      line: true
+      lifetime: 120
+      length: -600
+      baseLength: 600
+      strokeFrom: 0
+      strokeTo: 12
+      lenFrom: 0
+      lenTo: 60
+      colorFrom: 000000
+      colorTo: 00000085
+    }
+    {
+      type: ParticleEffect
+      lightOpacity: 0
+      layer: 100
+      region: circle-shadow
+      particles: 1
+      length: 0
+      lifetime: 240
+      interp: swing
+      colorFrom: 000000
+      colorTo: 000000
+      sizeFrom: 360
+      sizeTo: 0
+    }
+    {
+      type: ParticleEffect
+      lightOpacity: 0
+      region: circle-shadow
+      particles: 1
+      length: 0
+      lifetime: 220
+      interp: swing
+      colorFrom: 000000
+      colorTo: 000000
+      sizeFrom: 300
+      sizeTo: 0
+    }
+    {
+      type: WaveEffect
+      lightOpacity: 0
+      sizeFrom: 500
+      sizeTo: 60
+      strokeFrom: 0
+      strokeTo: 20
+      colorFrom: 00000025
+      colorTo: 000000
+    }
+  ]
+}
