@@ -1,4 +1,3 @@
-type: StatusEffect
 damage: -2.5
 speedMultiplier: 0.85
 effectChance: 0.05

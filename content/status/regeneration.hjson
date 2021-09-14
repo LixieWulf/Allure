@@ -1,4 +1,3 @@
-type: StatusEffect
 damage: -15
 effect: {
   type: ParticleEffect

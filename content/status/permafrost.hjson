@@ -1,4 +1,3 @@
-type: StatusEffect
 damage: 2
 speedMultiplier: 0.5
 healthMultiplier: 0.9
