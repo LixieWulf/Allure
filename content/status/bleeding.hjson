@@ -1,0 +1,12 @@
+type: StatusEffect
+damage: 25
+effect: {
+  type: ParticleEffect
+  particles: 1
+  length: 0
+  lifetime: 30
+  sizeFrom: 2
+  sizeTo: 0
+  colorFrom: e65555
+  colorTo: e6555500
+}

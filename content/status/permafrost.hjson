@@ -1,0 +1,21 @@
+type: StatusEffect
+damage: 2
+speedMultiplier: 0.5
+healthMultiplier: 0.9
+buildSpeedMultiplier: 0.75
+transitionDamage: 256
+affinities: [freezing]
+opposites: [burning, melting]
+effectChance: 0.1
+effect: {
+  type: ParticleEffect
+  particles: 1
+  baseLength: 20
+  length: 0
+  lifetime: 25
+  sizeFrom: 2
+  sizeTo: 0
+  colorFrom: bfdfff
+  colorTo: bfdfff50
+  region: exotic-mod-snowflake
+}

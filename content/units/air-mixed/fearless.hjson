@@ -45,27 +45,7 @@ weapons: [
       collides: false
       hittable: false
       absorbable: false
-      status: {
-        name: emp
-        disarm: true
-        speedMultiplier: 0
-        dragMultiplier: 0
-        buildSpeedMultiplier: 0
-        effectChance: 0.03
-        effect: {
-          type: ParticleEffect
-          particles: 2
-          length: 0.01
-          line: true
-          lifetime: 30
-          strokeFrom: 2
-          strokeTo: 0
-          lenFrom: 12
-          lenTo: 12
-          colorTo: 5a58c4
-          sizeInterp: linear
-        }
-      }
+      status: exotic-mod-emp
       statusDuration: 150
       hitEffect: none
       despawnEffect: none
@@ -136,21 +116,7 @@ weapons: [
     firstShotDelay: 210
     cooldownTime: 800
     shootSound: beam
-    shootStatus: {
-      name: overburn
-      speedMultiplier: 0
-      dragMultiplier: 50
-      damage: 250
-      effectChance: 0.15
-      effect: {
-        type: ParticleEffect
-        lifetime: 25
-        length: 16
-        sizeFrom: 2
-        sizeTo: 0
-        colorTo: 5a58c4
-      }
-    }
+    shootStatus: exotic-mod-overburn
     shootStatusDuration: 800
     shootY: 70
     shake: 20

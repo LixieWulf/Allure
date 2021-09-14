@@ -1329,10 +1329,7 @@ abilities: [
     sectorRad: 0.4
     rotateSpeed: 5
     color: e65555
-    status: {
-      name: vulnerability
-      healthMultiplier: 0.1
-    }
+    status: exotic-mod-vulnerability
     statusDuration: 80
   } 
   {

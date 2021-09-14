@@ -134,13 +134,6 @@ abilities: [
     duration: 300
     reload: 300
     range: 160
-    effect: {
-      name: sap-heal
-      speedMultiplier: 1
-      healthMultiplier: 1
-      damageMultiplier: 1
-      damage: -3
-      effect: sapped
-    }
+    effect: exotic-mod-sap-heal
   }
 ]

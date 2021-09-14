@@ -1,0 +1,13 @@
+type: StatusEffect
+damage: -15
+effect: {
+  type: ParticleEffect
+  particles: 1
+  length: 0
+  lifetime: 25
+  sizeFrom: 10
+  sizeTo: 0
+  colorFrom: 98ffa950
+  colorTo: 98ffa9
+  region: exotic-mod-heal
+}

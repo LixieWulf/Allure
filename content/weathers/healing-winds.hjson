@@ -13,22 +13,4 @@ sound: wind
 soundVol: 0.25
 baseSpeed: 1.4
 density: 4500
-status: {
-  name: healing-wind
-  color: 73d187
-  damage: -4
-  healthMultiplier: 1.6
-  damageMultiplier: 0.35
-  speedMultiplier: 1.35
-  effect: {
-    type: WaveEffect
-    lifetime: 12
-    sizeFrom: 2
-    sizeTo: 0
-    strokeFrom: 1
-    strokeTo: 0
-    colorFrom: 73d187
-    colorTo: 73d187
-  }
-  effectChance: 0.05
-}
+status: exotic-mod-healing-wind

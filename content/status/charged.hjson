@@ -1,0 +1,18 @@
+type: StatusEffect
+healthMultiplier: 0.9
+damageMultiplier: 0.85
+reloadMultiplier: 0.95
+speedMultiplier: 0.7
+effect: {
+  type: ParticleEffect
+  particles: 2
+  line: true
+  length: 0.01
+  lifetime: 12
+  colorFrom: ffffff
+  colorTo: bf92f9
+  lenFrom: 10
+  lenTo: 10
+  strokeFrom: 2
+  strokeTo: 0
+}

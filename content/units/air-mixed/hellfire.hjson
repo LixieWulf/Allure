@@ -28,11 +28,7 @@ weapons: [
     shootY: 16
     reload: 300
     firstShotDelay: 165
-    shootStatus: {
-      name: stopped
-      speedMultiplier: 0
-      dragMultiplier: 4
-    }
+    shootStatus: exotic-mod-stopped
     shootStatusDuration: 170
     shots: 2
     shotDelay: 2

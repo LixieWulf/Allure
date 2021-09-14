@@ -1,0 +1,13 @@
+type: StatusEffect
+speedMultiplier: 0
+dragMultiplier: 50
+damage: 250
+effectChance: 0.15
+effect: {
+  type: ParticleEffect
+  lifetime: 25
+  length: 16
+  sizeFrom: 2
+  sizeTo: 0
+  colorTo: 5a58c4
+}

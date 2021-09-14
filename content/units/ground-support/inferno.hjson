@@ -159,9 +159,6 @@ abilities: [
         }
       ]
     }
-    effect: {
-      name: eternal
-      damage: -1200000
-    }
+    effect: exotic-mod-eternal
   }
 ]

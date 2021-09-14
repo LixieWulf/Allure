@@ -1,0 +1,19 @@
+type: StatusEffect
+disarm: true
+speedMultiplier: 0
+dragMultiplier: 0
+buildSpeedMultiplier: 0
+effectChance: 0.03
+effect: {
+  type: ParticleEffect
+  particles: 2
+  length: 0.01
+  line: true
+  lifetime: 30
+  strokeFrom: 2
+  strokeTo: 0
+  lenFrom: 12
+  lenTo: 12
+  colorTo: 5a58c4
+  sizeInterp: linear
+}

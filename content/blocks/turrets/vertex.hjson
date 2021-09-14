@@ -14,20 +14,7 @@ shootType: {
   width: 0.01
   serrations: 0
   toColor: ffffff
-  status: {
-    name: bleeding
-    damage: 25
-    effect: {
-      type: ParticleEffect
-      particles: 1
-      length: 0
-      lifetime: 30
-      sizeFrom: 2
-      sizeTo: 0
-      colorFrom: e65555
-      colorTo: e6555500
-    }
-  }
+  status: exotic-mod-bleeding
 }
 coolantUsage: 2.1
 research: 0r-halberd

@@ -97,23 +97,7 @@ ammoTypes: {
     drag: 0.002
     ammoMultiplier: 4
     statusDuration: 600
-    status: {
-      name: vapourizing3
-      localizedName: vapourizing3
-      damage: 150
-      show: false
-      speedMultiplier: 0.85
-      effectChance: 0.075
-      effect: {
-        type: ParticleEffect
-        particles: 2
-        lifetime: 15
-        length: 4
-        sizeFrom: 2
-        sizeTo: 0
-        colorTo: ffb14a
-      }
-    }
+    status: exotic-mod-vapourizing
   }
 }
 category: turret

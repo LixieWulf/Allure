@@ -2,21 +2,7 @@ type: ShallowLiquid
 variants: 3
 liquidDrop: mag-slag
 liquidMultiplier: 0.1
-status: {
-  name: vapourizing
-  damage: 150
-  speedMultiplier: 0.85
-  effectChance: 0.075
-  effect: {
-    type: ParticleEffect
-    particles: 2
-    lifetime: 15
-    length: 4
-    sizeFrom: 2
-    sizeTo: 0
-    colorTo: ffb14a
-  }
-}
+status: exotic-mod-vapourizing
 statusDuration: 120
 cacheLayer: slag
 emitLight: true

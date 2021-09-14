@@ -5,23 +5,7 @@ liquidMultiplier: 0.18
 cacheLayer: slag
 speedMultiplier: 0.15
 liquidDrop: mag-slag
-status: {
-  name: vapourizing2
-  localizedName: vapourizing2
-  damage: 150
-  show: false
-  speedMultiplier: 0.85
-  effectChance: 0.075
-  effect: {
-    type: ParticleEffect
-    particles: 2
-    lifetime: 15
-    length: 4
-    sizeFrom: 2
-    sizeTo: 0
-    colorTo: ffb14a
-  }
-}
+status: exotic-mod-vapourizing
 statusDuration: 240
 emitLight: true
 lightRadius: 65

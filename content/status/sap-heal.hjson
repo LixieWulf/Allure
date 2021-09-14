@@ -1,0 +1,6 @@
+type: StatusEffect
+speedMultiplier: 1
+healthMultiplier: 1
+damageMultiplier: 1
+damage: -3
+effect: sapped
