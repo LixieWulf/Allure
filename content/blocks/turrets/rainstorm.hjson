@@ -1,24 +1,27 @@
 type: LaserTurret
 size: 10
-health: 228000
+health: 270000
 range: 877
-reloadTime: 240
-shootCone: 25
+reloadTime: 300
 shootSound: laserbig
-loopSound: beam
+loopSound: pulse
+shootLength: 32
 rotateSpeed: 1.5
+recoilAmount: 4
+restitution: 0.08
 powerUse: 4500
-shootDuration: 300
-chargeTime: 120
+shootDuration: 360
+chargeTime: 140
 heatColor: ffffff
+firingMoveFract: 0
 chargeBeginEffect: {
   type: MultiEffect
-  layer: 71
-  lifetime: 120
+  lifetime: 140
+  clip: 4096
   effects: [
     {
       type: ParticleEffect
-      lifetime: 120
+      lifetime: 140
       length: -60
       baseLength: 60
       particles: 50
@@ -28,7 +31,7 @@ chargeBeginEffect: {
     }
     {
       type: ParticleEffect
-      lifetime: 120
+      lifetime: 140
       length: -50
       baseLength: 50
       particles: 50
@@ -38,7 +41,7 @@ chargeBeginEffect: {
     }
     {
       type: ParticleEffect
-      lifetime: 120
+      lifetime: 140
       length: -40
       baseLength: 40
       particles: 50
@@ -48,7 +51,7 @@ chargeBeginEffect: {
     }
     {
       type: ParticleEffect
-      lifetime: 120
+      lifetime: 140
       length: -30
       baseLength: 30
       particles: 50
@@ -58,7 +61,7 @@ chargeBeginEffect: {
     }
     {
       type: ParticleEffect
-      lifetime: 120
+      lifetime: 140
       length: -20
       baseLength: 20
       particles: 50
@@ -68,7 +71,7 @@ chargeBeginEffect: {
     }
     {
       type: ParticleEffect
-      lifetime: 120
+      lifetime: 140
       length: -10
       baseLength: 10
       particles: 50
@@ -78,7 +81,7 @@ chargeBeginEffect: {
     }
     {
       type: WaveEffect
-      lifetime: 120
+      lifetime: 140
       sizeFrom: 60
       sizeTo: 0
       strokeFrom: 4
@@ -87,7 +90,7 @@ chargeBeginEffect: {
     }
     {
       type: WaveEffect
-      lifetime: 120
+      lifetime: 140
       sizeFrom: 58
       sizeTo: 0
       strokeFrom: 4
@@ -96,7 +99,7 @@ chargeBeginEffect: {
     }
     {
       type: WaveEffect
-      lifetime: 120
+      lifetime: 140
       sizeFrom: 56
       sizeTo: 0
       strokeFrom: 4
@@ -105,7 +108,7 @@ chargeBeginEffect: {
     }
     {
       type: WaveEffect
-      lifetime: 120
+      lifetime: 140
       sizeFrom: 54
       sizeTo: 0
       strokeFrom: 4
@@ -114,7 +117,7 @@ chargeBeginEffect: {
     }
     {
       type: WaveEffect
-      lifetime: 120
+      lifetime: 140
       sizeFrom: 52
       sizeTo: 0
       strokeFrom: 4
@@ -123,7 +126,7 @@ chargeBeginEffect: {
     }
     {
       type: WaveEffect
-      lifetime: 120
+      lifetime: 140
       sizeFrom: 50
       sizeTo: 0
       strokeFrom: 4
@@ -134,7 +137,7 @@ chargeBeginEffect: {
       type: ParticleEffect
       particles: 1
       length: 0
-      lifetime: 120
+      lifetime: 140
       sizeFrom: 0
       sizeTo: 8
       colorFrom: e6555515
@@ -143,7 +146,7 @@ chargeBeginEffect: {
       type: ParticleEffect
       particles: 1
       length: 0
-      lifetime: 120
+      lifetime: 140
       sizeFrom: 0
       sizeTo: 7
       colorFrom: ff9c5935
@@ -152,7 +155,7 @@ chargeBeginEffect: {
       type: ParticleEffect
       particles: 1
       length: 0
-      lifetime: 120
+      lifetime: 140
       sizeFrom: 0
       sizeTo: 6
       colorFrom: f2e87955
@@ -161,7 +164,7 @@ chargeBeginEffect: {
       type: ParticleEffect
       particles: 1
       length: 0
-      lifetime: 120
+      lifetime: 140
       sizeFrom: 0
       sizeTo: 5
       colorFrom: 84f59175
@@ -170,7 +173,7 @@ chargeBeginEffect: {
       type: ParticleEffect
       particles: 1
       length: 0
-      lifetime: 120
+      lifetime: 140
       sizeFrom: 0
       sizeTo: 4
       colorFrom: 8ca4f595
@@ -179,23 +182,846 @@ chargeBeginEffect: {
       type: ParticleEffect
       particles: 1
       length: 0
-      lifetime: 120
+      lifetime: 140
       sizeFrom: 0
       sizeTo: 3
       colorFrom: a488eb
+    }
+    {
+      length: 0
+      particles: 1
+      cone: 0
+      baseLength: -32
+      randLength: false
+      lifetime: 140
+      region: exotic-mod-rainstorm-glow
+      colorFrom: ffffff00
+      interp: pow5Out
+      sizeFrom: 40
+      sizeTo: 40
+    }
+    {
+      length: 0
+      particles: 1
+      cone: 0
+      baseLength: -32
+      randLength: false
+      lifetime: 140
+      region: exotic-mod-rainstorm-charge-idle
+      sizeFrom: 40
+      sizeTo: 40
+    }
+    {
+      length: 0
+      particles: 1
+      cone: 0
+      baseLength: -32
+      randLength: false
+      lifetime: 120
+      region: exotic-mod-rainstorm-charge0
+      sizeFrom: 40
+      sizeTo: 40
+      colorFrom: 0c0c12
+      colorTo: 0c0c12
+    }
+    {
+      length: 0
+      particles: 1
+      cone: 0
+      baseLength: -32
+      randLength: false
+      lifetime: 100
+      region: exotic-mod-rainstorm-charge1
+      sizeFrom: 40
+      sizeTo: 40
+      colorFrom: 0c0c12
+      colorTo: 0c0c12
+    }
+    {
+      length: 0
+      particles: 1
+      cone: 0
+      baseLength: -32
+      randLength: false
+      lifetime: 80
+      region: exotic-mod-rainstorm-charge2
+      sizeFrom: 40
+      sizeTo: 40
+      colorFrom: 0c0c12
+      colorTo: 0c0c12
+    }
+    {
+      length: 0
+      particles: 1
+      cone: 0
+      baseLength: -32
+      randLength: false
+      lifetime: 60
+      region: exotic-mod-rainstorm-charge3
+      sizeFrom: 40
+      sizeTo: 40
+      colorFrom: 0c0c12
+      colorTo: 0c0c12
+    }
+    {
+      length: 0
+      particles: 1
+      cone: 0
+      baseLength: -32
+      randLength: false
+      lifetime: 40
+      region: exotic-mod-rainstorm-charge4
+      sizeFrom: 40
+      sizeTo: 40
+      colorFrom: 0c0c12
+      colorTo: 0c0c12
+    }
+    {
+      length: 0
+      particles: 1
+      cone: 0
+      baseLength: -32
+      randLength: false
+      lifetime: 20
+      region: exotic-mod-rainstorm-charge5
+      sizeFrom: 40
+      sizeTo: 40
+      colorFrom: 0c0c12
+      colorTo: 0c0c12
     }
   ]
 }
 chargeEffect: none
 shootType: {
   type: ContinuousLaserBulletType
-  damage: 11000
+  damage: 10000
   length: 877
   width: 32
   drawSize: 877
   layer: 95
   colors: [e6555525, ff9c5935, f2e87945, 84f59155, 8ca4f565, a488eb75]
   strokes: [1.5, 1.25, 1, 0.75, 0.5, 0.25]
+  smokeEffect: none
+  shootEffect: {
+    type: MultiEffect
+    lifetime: 440
+    clip: 4096
+    effects: [
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 360
+        region: exotic-mod-rainstorm-glow
+        sizeFrom: 40
+        sizeTo: 40
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 340
+        region: exotic-mod-rainstorm-charge0
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: e65555
+        colorTo: e65555
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 320
+        region: exotic-mod-rainstorm-charge1
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: ffa763
+        colorTo: ffa763
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 310
+        region: exotic-mod-rainstorm-charge2
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: f2e879
+        colorTo: f2e879
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 300
+        region: exotic-mod-rainstorm-charge3
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 84f58f
+        colorTo: 84f58f
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 290
+        region: exotic-mod-rainstorm-charge4
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 87a3ff
+        colorTo: 87a3ff
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 280
+        region: exotic-mod-rainstorm-charge5
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: be92f7
+        colorTo: be92f7
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 300
+        region: exotic-mod-rainstorm-charge0
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 0c0c12
+        colorTo: 0c0c12
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 290
+        region: exotic-mod-rainstorm-charge1
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 0c0c12
+        colorTo: 0c0c12
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 280
+        region: exotic-mod-rainstorm-charge2
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 0c0c12
+        colorTo: 0c0c12
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 270
+        region: exotic-mod-rainstorm-charge3
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 0c0c12
+        colorTo: 0c0c12
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 260
+        region: exotic-mod-rainstorm-charge4
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 0c0c12
+        colorTo: 0c0c12
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 250
+        region: exotic-mod-rainstorm-charge5
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 0c0c12
+        colorTo: 0c0c12
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 270
+        region: exotic-mod-rainstorm-charge0
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: e65555
+        colorTo: e65555
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 260
+        region: exotic-mod-rainstorm-charge1
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: ffa763
+        colorTo: ffa763
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 250
+        region: exotic-mod-rainstorm-charge2
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: f2e879
+        colorTo: f2e879
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 240
+        region: exotic-mod-rainstorm-charge3
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 84f58f
+        colorTo: 84f58f
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 230
+        region: exotic-mod-rainstorm-charge4
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 87a3ff
+        colorTo: 87a3ff
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 220
+        region: exotic-mod-rainstorm-charge5
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: be92f7
+        colorTo: be92f7
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 240
+        region: exotic-mod-rainstorm-charge0
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 0c0c12
+        colorTo: 0c0c12
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 230
+        region: exotic-mod-rainstorm-charge1
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 0c0c12
+        colorTo: 0c0c12
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 220
+        region: exotic-mod-rainstorm-charge2
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 0c0c12
+        colorTo: 0c0c12
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 210
+        region: exotic-mod-rainstorm-charge3
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 0c0c12
+        colorTo: 0c0c12
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 200
+        region: exotic-mod-rainstorm-charge4
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 0c0c12
+        colorTo: 0c0c12
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 190
+        region: exotic-mod-rainstorm-charge5
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 0c0c12
+        colorTo: 0c0c12
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 210
+        region: exotic-mod-rainstorm-charge0
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: e65555
+        colorTo: e65555
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 200
+        region: exotic-mod-rainstorm-charge1
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: ffa763
+        colorTo: ffa763
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 190
+        region: exotic-mod-rainstorm-charge2
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: f2e879
+        colorTo: f2e879
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 180
+        region: exotic-mod-rainstorm-charge3
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 84f58f
+        colorTo: 84f58f
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 170
+        region: exotic-mod-rainstorm-charge4
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 87a3ff
+        colorTo: 87a3ff
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 160
+        region: exotic-mod-rainstorm-charge5
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: be92f7
+        colorTo: be92f7
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 180
+        region: exotic-mod-rainstorm-charge0
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 0c0c12
+        colorTo: 0c0c12
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 170
+        region: exotic-mod-rainstorm-charge1
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 0c0c12
+        colorTo: 0c0c12
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 160
+        region: exotic-mod-rainstorm-charge2
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 0c0c12
+        colorTo: 0c0c12
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 150
+        region: exotic-mod-rainstorm-charge3
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 0c0c12
+        colorTo: 0c0c12
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 140
+        region: exotic-mod-rainstorm-charge4
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 0c0c12
+        colorTo: 0c0c12
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 130
+        region: exotic-mod-rainstorm-charge5
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 0c0c12
+        colorTo: 0c0c12
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 150
+        region: exotic-mod-rainstorm-charge0
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: e65555
+        colorTo: e65555
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 140
+        region: exotic-mod-rainstorm-charge1
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: ffa763
+        colorTo: ffa763
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 130
+        region: exotic-mod-rainstorm-charge2
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: f2e879
+        colorTo: f2e879
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 120
+        region: exotic-mod-rainstorm-charge3
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 84f58f
+        colorTo: 84f58f
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 110
+        region: exotic-mod-rainstorm-charge4
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 87a3ff
+        colorTo: 87a3ff
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 100
+        region: exotic-mod-rainstorm-charge5
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: be92f7
+        colorTo: be92f7
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 120
+        region: exotic-mod-rainstorm-charge0
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 0c0c12
+        colorTo: 0c0c12
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 110
+        region: exotic-mod-rainstorm-charge1
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 0c0c12
+        colorTo: 0c0c12
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 100
+        region: exotic-mod-rainstorm-charge2
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 0c0c12
+        colorTo: 0c0c12
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 90
+        region: exotic-mod-rainstorm-charge3
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 0c0c12
+        colorTo: 0c0c12
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 80
+        region: exotic-mod-rainstorm-charge4
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 0c0c12
+        colorTo: 0c0c12
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 70
+        region: exotic-mod-rainstorm-charge5
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 0c0c12
+        colorTo: 0c0c12
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 90
+        region: exotic-mod-rainstorm-charge0
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: e65555
+        colorTo: e65555
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 80
+        region: exotic-mod-rainstorm-charge1
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: ffa763
+        colorTo: ffa763
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 70
+        region: exotic-mod-rainstorm-charge2
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: f2e879
+        colorTo: f2e879
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 50
+        region: exotic-mod-rainstorm-charge3
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 84f58f
+        colorTo: 84f58f
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 30
+        region: exotic-mod-rainstorm-charge4
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 87a3ff
+        colorTo: 87a3ff
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        baseLength: -36
+        randLength: false
+        lifetime: 10
+        region: exotic-mod-rainstorm-charge5
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: be92f7
+        colorTo: be92f7
+      }
+    ]
+  }
   hitEffect: {
     type: MultiEffect
     effects: [
@@ -285,6 +1111,7 @@ consumes: {
     amount: 7
   }
 }
+coolantMultiplier: 0.6
 liquidCapacity: 3500
 requirements: [
   copper/55000
