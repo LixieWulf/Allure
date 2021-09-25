@@ -1,11 +1,13 @@
-type: ItemLiquidGenerator
+type: SingleTypeGenerator
 size: 6
 canOverdrive: false
+baseExplosiveness: 70
+liquidCapacity: 60
 itemDuration: 120
 consumes: {
   liquid: {
     liquid: energia
-    amount: 0.35
+    amount: 0.5
   }
   items: {
     items: [
@@ -16,8 +18,9 @@ consumes: {
 generateEffectRnd: 0
 generateEffect: {
   type: MultiEffect
+  clip: 8192
   layer: 35
-  lifetime: 120
+  lifetime: 121
   effects: [
     {
       type: ParticleEffect
@@ -31,6 +34,42 @@ generateEffect: {
     }
     {
       type: ParticleEffect
+      region: exotic-mod-empiron-0
+      lightOpacity: 0
+      particles: 1
+      lifetime: 30
+      length: 0
+      sizeFrom: 24
+      sizeTo: 24
+      colorFrom: 41414a
+      colorTo: 41414a
+    }
+    {
+      type: ParticleEffect
+      region: exotic-mod-empiron-1
+      lightOpacity: 0
+      particles: 1
+      lifetime: 60
+      length: 0
+      sizeFrom: 24
+      sizeTo: 24
+      colorFrom: 41414a
+      colorTo: 41414a
+    }
+    {
+      type: ParticleEffect
+      region: exotic-mod-empiron-2
+      lightOpacity: 0
+      particles: 1
+      lifetime: 90
+      length: 0
+      sizeFrom: 24
+      sizeTo: 24
+      colorFrom: 41414a
+      colorTo: 41414a
+    }
+    {
+      type: ParticleEffect
       region: exotic-mod-empiron-rotator-1
       lightOpacity: 0
       particles: 1
@@ -38,7 +77,7 @@ generateEffect: {
       length: 0
       sizeFrom: 24
       sizeTo: 24
-      spin: 3
+      spin: 6
     }
     {
       type: ParticleEffect
@@ -49,7 +88,7 @@ generateEffect: {
       length: 0
       sizeFrom: 24
       sizeTo: 24
-      spin: -6
+      spin: -12
     }
     {
       type: ParticleEffect
@@ -63,5 +102,74 @@ generateEffect: {
     }
   ]
 }
-powerProduction: 25
-buildVisibility: shown
+destroyEffect: {
+  type: MultiEffect
+  lifetime: 180
+  layer: 135
+  effects: [
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 450
+      lifetime: 160
+      layer: 95
+      region: exotic-mod-empiron-rotator-1
+      spin: 6
+      sizeFrom: 24
+      sizeTo: 36
+      colorTo: ffffff00
+    }
+    {
+      type: ParticleEffect
+      particles: 1
+      length: 700
+      lifetime: 180
+      layer: 95
+      region: exotic-mod-empiron-rotator-2
+      spin: -12
+      sizeFrom: 24
+      sizeTo: 36
+      colorTo: ffffff00
+    }
+    {
+      type: ParticleEffect
+      interp: swingIn
+      lifetime: 180
+      length: 0
+      particles: 2
+      region: circle-shadow
+      sizeFrom: 160
+      sizeTo: 0
+    }
+    {
+      type: WaveEffect
+      lifetime: 40
+      sizeFrom: 0
+      sizeTo: 180
+      strokeFrom: 4
+      strokeTo: 0
+    }
+    {
+      type: ParticleEffect
+      particles: 12
+      line: true
+      lifetime: 160
+      length: -300
+      baseLength: 300
+      lenFrom: 0
+      lenTo: 16
+      strokeFrom: 0
+      strokeTo: 4
+    }
+  ]
+}
+powerProduction: 195
+category: power
+requirements: [
+  titanium/1200
+  metaglass/1100
+  silicon/1000
+  phase-fabric/600
+  baenite/400
+  amethyst-gem/250
+]
