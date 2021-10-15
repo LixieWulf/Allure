@@ -38,4 +38,4 @@ abilities: [
     range: 40
   }
 ]
-research: constructor
+research: assembler
