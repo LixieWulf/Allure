@@ -26,4 +26,4 @@ weapons: [
     }
   }
 ]
-research: constructor
+research: assembler
