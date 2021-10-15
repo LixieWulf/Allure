@@ -30,6 +30,6 @@ requirements: [
 ]
 category: units
 research: {
-  parent: constructor
+  parent: assembler
   objectives: [additive-reconstructor, thorium]
 }
