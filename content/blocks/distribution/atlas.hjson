@@ -2,7 +2,8 @@ type: PayloadConveyor
 size: 8
 moveTime: 120
 moveForce: 536
-payloadLimit: 7.2
+payloadLimit: 8
+category: units
 requirements: [
   titanium/200
   thorium/100
