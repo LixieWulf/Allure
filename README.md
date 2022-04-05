@@ -1,31 +1,73 @@
-# Exotic Mod
-Authors: 
+# please insert some interesting text here
 
-  K103908
+A rather unique HJSON mod created by BlueWolf. Features some things, some more things, and even things that explode in your face. (working on it)
 
-  BlueWolf
+Holy crap it's even used as the modding wiki's example.
 
-  MEEP Of Faith
-
-  AndromedaFallen
+Special thanks to Meep and others for handling the support for many things.
 
 ---
 
-We got together over Discord to bring you this interesting and overpowered mod. We hope you enjoy it!
-The first 6.0 release is here. Much of the content is unfinished or needs refining. 
 
----
 
-Discord: [this dingus link](https://discord.gg/M3hm5z6nm6)
 
-  BlueWolf: BlueWolf#3682
 
-  MEEP Of Faith: MEEP of Faith#7277 
 
-  AndromedaFallen: AndromedaFallen#0001
 
-  K103908: keeps changing his discord username like mad and so it's impossible to list.
 
----
 
-Bring any questions to BlueWolf, as she's been the one actually working on the mod as of recent times.
+
+
+
+
+
+
+
+
+
+
+idk man this is a work of art (if you can call it that) made by someone going insane
+
+talk to insane girl and recieve updates if you care: https://discord.gg/M3hm5z6nm6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+help
