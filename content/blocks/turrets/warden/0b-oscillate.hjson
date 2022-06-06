@@ -1,0 +1,141 @@
+type: PowerTurret
+size: 5
+canOverdrive: false
+acceptCoolant: false
+targetAir: false
+targetGround: false
+shootY: 16
+range: 1400
+health: 1800
+reload: 440
+recoil: 6
+rotateSpeed: 0.5
+restitution: 0.01
+shootSound: none
+shake: 4
+burstSpacing: 5
+spread: 0
+shots: 36
+shootEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      length: 0
+      particles: 1
+      cone: 0
+      lifetime: 35
+      offset: 20
+      region: exotic-mod-shootspike
+      sizeFrom: 40
+      sizeTo: 40
+      colorFrom: 7382f0
+      colorTo: 7382f000
+    }
+    {
+      length: 0
+      particles: 1
+      cone: 0
+      lifetime: 35
+      offset: -20
+      region: exotic-mod-shootspike
+      sizeFrom: 40
+      sizeTo: 40
+      colorFrom: 7382f0
+      colorTo: 7382f000
+    }
+    {
+      length: 0
+      particles: 1
+      cone: 0
+      lifetime: 60
+      sizeFrom: 10
+      sizeTo: 5
+      colorFrom: 7382f0
+      colorTo: 7382f000
+    }
+    {
+      length: 0
+      particles: 1
+      cone: 0
+      lifetime: 45
+      sizeFrom: 7
+      sizeTo: 0
+      colorTo: 7382f0
+    }
+  ]
+}
+smokeEffect: {
+  length: -35
+  baseLength: 35
+  interp: pow3In
+  lifetime: 30
+  line: true
+  particles: 7
+  lenFrom: 0
+  lenTo: 6
+  strokeFrom: 1
+  strokeTo: 1.5
+  colorFrom: 7382f0
+}
+shootType: {
+  type: RailBulletType
+  length: 1400
+  damage: 400
+  collidesAir: false
+  pierceEffect: {
+    type: MultiEffect
+    effects: [
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        lifetime: 25
+        sizeFrom: 36
+        sizeTo: 0
+        colorFrom: 7382f0
+        colorTo: 7382f0
+        region: exotic-mod-diamond-thin
+      }
+      {
+        length: 0
+        particles: 1
+        cone: 0
+        lifetime: 25
+        sizeFrom: 30
+        sizeTo: 0
+        region: exotic-mod-diamond-thin
+      }
+      {
+        length: 40
+        particles: 5
+        line: true
+        lifetime: 35
+        lenFrom: 7
+        lenTo: 0
+        strokeFrom: 3
+        strokeTo: 1.5
+        interp: pow3Out
+        sizeInterp: pow2In
+        colorTo: 7382f050
+      }
+    ]
+  }
+  updateEffectSeg: 2
+  updateEffect: {
+    type: ParticleEffect
+    lifetime: 25
+    line: true
+    length: 0.01
+    particles: 1
+    cone: 0
+    lenFrom: 2
+    lenTo: 2
+    strokeFrom: 8
+    strokeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+}
+category: turret
+buildVisibility: sandboxOnly
+research: 0b-linear

@@ -1,6 +1,6 @@
 type: CoreBlock
 size: 6
-health: 400000
+health: 100000
 itemCapacity: 10000
 unitCapModifier: 18
 unitType: intensity

@@ -1,4 +1,5 @@
-type: OreBlock
+type: OverlayFloor
+variants: 3
 itemDrop: wolframite
 mapColor: 7873ba
 hasColor: true

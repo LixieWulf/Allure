@@ -24,7 +24,45 @@ requirements: [
   plastanium/750
   phase-fabric/650
   amethyst-gem/700
-  bluewolframite/600
+  inseltiene/600
 ]
 category: power
 research: thorium-reactor
+destroyBullet: {
+  type: BulletType
+  speed: 0
+  lifetime: 0
+  damage: 0
+  collides: false
+  absorbable: false
+  hittable: false
+  hitEffect: none
+  despawnEffect: none
+  fragBullets: 5
+  fragVelocityMin: 0.3
+  fragVelocityMax: 1
+  fragLifeMin: 0.3
+  fragBullet: {
+    type: FireBulletType
+    radius: 12
+    speed: 8
+    lifetime: 120
+    velMin: 2.5
+    velMax: 8
+    drag: 0.005
+    hittable: false
+    absorbable: false
+    fragBullets: 4
+    fragRandomSpread: 25
+    fragLifeMin: 0.4
+    fragBullet: {
+      type: FireBulletType
+      absorbable: false
+      hittable: false
+      speed: 6
+      velMin: 4.5
+      velMax: 8
+      lifetime: 35
+    }
+  }
+}

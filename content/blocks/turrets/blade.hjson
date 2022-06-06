@@ -3,12 +3,26 @@ size: 3
 health: 1600
 range: 160
 rotateSpeed: 3.8
-reloadTime: 160
-burstSpacing: 3
-shots: 3
-xRand: 5
-powerUse: 10
-recoilAmount: 3
+reload: 160
+//shoot: {
+//  type: ShootBarrel
+//  shots: 3
+//  shotDelay: 3
+//  barrels: [
+//    {
+//      x: -8
+//    }
+//    {
+//    }
+//    {
+//      x: 8
+//    }
+//  ]
+//}
+consumes: {
+  power: 10
+} 
+recoil: 3
 shootSound: laser
 shootType: {
   type: LaserBulletType

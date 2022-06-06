@@ -1,0 +1,8 @@
+speedMultiplier: 0.65
+healthMultiplier: 0.35
+reloadMultiplier: 0.7
+damageMultiplier: 0.2
+buildSpeedMultiplier: 0.1
+damage: 18
+permanent: true
+show: false

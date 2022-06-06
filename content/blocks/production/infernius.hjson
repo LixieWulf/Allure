@@ -1,0 +1,43 @@
+type: Drill
+size: 8
+warmupSpeed: 0.001
+hardnessDrillMultiplier: 0
+tier: 28
+drawRim: true
+heatColor: ffffff
+drillTime: 128
+rotateSpeed: 7
+liquidBoostIntensity: 1
+liquidCapacity: 30
+drillEffectRnd: 0
+drillEffect: {
+  length: 0
+  layer: 29.7
+  lightOpacity: 0
+  particles: 1
+  lifetime: 140
+  region: exotic-mod-reactor-star
+  sizeFrom: 60
+  sizeTo: 60
+  colorFrom: 00000006
+  colorTo: 00000006
+}
+updateEffectChance: 0.08
+updateEffect: {
+  length: 0
+  layer: 35
+  lightOpacity: 0
+  particles: 1
+  lifetime: 60
+  sizeFrom: 3
+  sizeTo: 0
+  colorFrom: 000000
+  colorTo: 000000
+}
+consumes: {
+  liquid: {
+    liquid: energia
+    amount: 0.6
+  }
+}
+buildVisibility: sandboxOnly

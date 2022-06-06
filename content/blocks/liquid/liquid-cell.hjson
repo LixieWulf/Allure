@@ -1,0 +1,6 @@
+type: LiquidRouter
+liquidCapacity: 150
+requirements: [
+  metaglass/5
+  titanium/2
+]

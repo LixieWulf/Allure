@@ -1,0 +1,7 @@
+type: Wall
+visibleInEditor: false
+research: {
+  root: true
+  name: Healer
+  requiresUnlock: false
+}

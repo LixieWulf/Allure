@@ -12,7 +12,7 @@ consumes: {
   power: 145
   items: {
     items: [
-      bluewolframite/1
+      inseltiene/1
     ]
     booster: true
     optional: true

@@ -5,9 +5,9 @@ health: 4500
 size: 4
 cooldown: 0.1
 restitution: 0.04
-reloadTime: 90
+reload: 90
 shots: 1
-recoilAmount: 2
+recoil: 2
 ammoUseEffect: casing3
 shootEffect: hitLancer
 shootSound: railgun
@@ -37,7 +37,7 @@ ammoTypes: {
     hitEffect: railHit
     updateEffectSeg: 75
   }
-  bluewolframite: {
+  inseltiene: {
     type: RailBulletType
     damage: 15400
     length: 720

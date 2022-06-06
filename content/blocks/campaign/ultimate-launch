@@ -1,9 +1,0 @@
-type: LaunchPad
-size: 4
-itemCapacity: 14450
-launchTime: 35.0
-hasPower: true
-consumes: {
-  power: 34
-}
-research: core-shard

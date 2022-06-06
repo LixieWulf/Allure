@@ -1,0 +1,20 @@
+type: Pump
+size: 5
+health: 3600
+hasPower: true
+consumes: {
+  power: 5.1
+}
+pumpAmount: 2.4
+squareSprite: false
+liquidCapacity: 250
+requirements: [
+  copper/2400
+  lead/3450
+  metaglass/1540
+  silicon/2530
+  thorium/3440
+  inseltiene/650
+]
+category: liquid
+research: inseltiene-conduit

@@ -1,0 +1,147 @@
+type: ItemTurret
+squareSprite: false
+size: 6
+scaledHealth: 500
+heatColor: e65555
+range: 320
+reload: 5
+recoil: 4
+recoilTime: 50
+cooldownTime: 30
+inaccuracy: 4
+rotateSpeed: 4.4
+targetHealing: true
+shoot: {
+  type: ShootAlternate
+  spread: 8
+  barrels: 4
+}
+shootCone: 20
+shootSound: shootBig
+shootEffect: shootBig
+smokeEffect: shootBigSmoke
+ammoUseEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      baseRotation: 90
+      lifetime: 35
+      particles: 1
+      length: -16
+      randLength: false
+      cone: 15
+      offset: 90
+      spin: -1.5
+      region: exotic-mod-standard-case-back
+      sizeFrom: 2
+      sizeTo: 0
+      interp: pow3Out
+      sizeInterp: pow10In
+      colorFrom: ffb3b3
+      colorTo: ad4244
+    }
+    {
+      baseRotation: 90
+      lifetime: 35
+      particles: 1
+      length: 16
+      randLength: false
+      cone: 15
+      offset: -90
+      spin: 1.5
+      region: exotic-mod-standard-case-back
+      sizeFrom: 2
+      sizeTo: 0
+      interp: pow3Out
+      sizeInterp: pow10In
+      colorFrom: ffb3b3
+      colorTo: ad4244
+    }
+  ]
+}
+//coolantUsage: 3 
+coolantMultiplier: 0.4
+ammoTypes: {
+  anden: {
+    speed: 8
+    lifetime: 40
+    damage: 90
+    splashDamage: 50
+    splashDamageRadius: 30
+    width: 10
+    height: 24
+    frontColor: ffb3b3
+    backColor: e65555
+    hitEffect: blastExplosion
+  }
+  pyratite: {
+    ammoMultiplier: 4
+    speed: 8
+    lifetime: 40
+    damage: 120
+    splashDamage: 25
+    splashDamageRadius: 20
+    pierce: true
+    pierceCap: 2
+    width: 10
+    height: 24
+    frontColor: f68021
+    backColor: f8ad42
+    incendChance: 0.75
+    status: burning
+    hitEffect: {
+      type: MultiEffect
+      effects: [
+        hitBulletSmall, 
+        fireHit
+      ]
+    }
+  }
+  thorium: {
+    speed: 8
+    lifetime: 40
+    damage: 150
+    pierce: true
+    pierceCap: 3
+    width: 20
+    height: 24
+  }
+  baenite: {
+    ammoMultiplier: 3
+    speed: 8
+    lifetime: 40
+    damage: 120
+    collidesTeam: true
+    healPercent: 8
+    pierce: true
+    pierceCap: 2
+    width: 10
+    height: 24
+    frontColor: caf7d0
+    backColor: 74cf84
+    hitEffect: hitLaser
+    despawnEffect: hitLaser
+  }
+}
+category: turret
+research: {
+  parent: 0r-rapier
+  objectives: [
+    0r-pike
+  ]
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: 0r-
+}
+requirements: [
+  anden/2000
+  graphite/1000
+  oxide/700
+  thorium/700
+  surge-alloy/500
+  baenite/400
+  amethyst-gem/200
+]
+envEnabled: -1
+envDisabled: 4

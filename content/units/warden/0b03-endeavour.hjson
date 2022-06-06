@@ -1,0 +1,31 @@
+type: flying
+hitSize: 60
+health: 54000
+armor: 20
+flying: true
+targetAir: false
+targetGround: false
+speed: 2.8
+drag: 0.02
+accel: 0.08
+rotateSpeed: 3.1
+buildSpeed: 4.5
+controller: BuilderAI
+lightRadius: 65
+lightColor: 7382f0
+engineColor: 7382f0
+engineOffset: 32
+engineSize: 5
+omniMovement: true
+faceTarget: false
+drawCell: false
+drawBody: false
+outlines: false
+research: {
+  parent: excalibur
+  objectives: [
+    alterator
+  ]
+}
+envEnabled: -1
+envDisabled: 0

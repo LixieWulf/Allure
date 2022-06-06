@@ -12,8 +12,7 @@ consumes: {
       plastanium/15000
       surge-alloy/12500
       baenite/7000
-      tungsten/5000
-      bluewolframite/4500
+      inseltiene/4500
       draconium/2000
     ]
   }
@@ -24,8 +23,6 @@ consumes: {
 }
 upgrades: [
   [banshee, spriggan]
-  [maliase, plague]
-  [vengeance, fearless]
   [blaze, wildfire]
 ]
 requirements: [
@@ -36,7 +33,7 @@ requirements: [
   phase-fabric/30000
   surge-alloy/25000
   amethyst-gem/15000
-  bluewolframite/14500
+  inseltiene/14500
   draconium/10000
 ]
 category: units

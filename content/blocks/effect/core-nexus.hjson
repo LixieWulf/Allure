@@ -2,6 +2,7 @@ Type: CoreBlock
 health: 26000
 itemCapacity: 45000
 size: 6
+hasPower: true
 category: effect
 unitType: whiplash
 unitCapModifier: 48
@@ -12,6 +13,6 @@ requirements: [
   silicon/7500
   thorium/5000
   surge-alloy/3500
-  bluewolframite/1500
+  inseltiene/1500
 ]
 research: core-nucleus

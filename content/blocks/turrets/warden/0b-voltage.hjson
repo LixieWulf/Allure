@@ -1,0 +1,127 @@
+type: PowerTurret
+health: 1000
+range: 960
+targetGround: false
+targetAir: false
+size: 4
+rotateSpeed: 1
+reload: 400
+recoil: 8
+restitution: 0.02
+shootSound: bang
+shake: 2
+shootEffect: {
+  length: 0
+  particles: 1
+  lifetime: 15
+  sizeFrom: 25
+  sizeTo: 25
+  colorFrom: 7382f0
+  colorTo: 7382f000
+  region: exotic-mod-shootspike
+}
+smokeEffect: {
+  length: 45
+  lifetime: 40
+  cone: 20
+  particles: 17
+  interp: pow3Out
+  sizeInterp: pow5In
+  sizeFrom: 3
+  sizeTo: 0
+  colorFrom: 7382f0
+  colorTo: 5a58c4
+}
+shootType: {
+  type: MissileBulletType
+  damage: 35
+  statusDuration: 360
+  absorbable: false
+  hittable: false
+  reflectable: false
+  weaveMag: 2
+  weaveScale: 15
+  homingPower: 0.15
+  homingRange: 40
+  speed: 0.75
+  drag: -0.009
+  lifetime: 300
+  sprite: exotic-mod-rocket
+  width: 25
+  height: 25
+  frontColor: ffffff
+  backColor: 7382f0
+  trailColor: 7382f0
+  trailLength: 10
+  trailWidth: 4
+  trailRotation: true
+  trailInterval: 2
+  trailEffect: {
+    length: -40
+    lifetime: 25
+    particles: 3
+    cone: 15
+    interp: pow5Out
+    sizeInterp: pow3In
+    sizeFrom: 2
+    sizeTo: 0
+    colorTo: 5a58c4
+  }
+  hitSound: spark
+  fragBullets: 1
+  fragBullet: {
+    type: EmpBulletType
+    damage: 25
+    healPercent: -150
+    collides: false
+    absorbable: false
+    hittable: false
+    reflectable: false
+    lifetime: 0
+    width: 0.01
+    height: 0.01
+    radius: 220
+    powerDamageScl: 1
+    powerSclDecrease: -10
+    timeDuration: 360
+    timeIncrease: -10
+    hitUnits: false
+    despawnHit: true
+    hitColor: 7382f0
+    hitEffect: {
+      type: MultiEffect
+      effects: [
+        {
+          length: 0
+          lifetime: 5
+          particles: 1
+          sizeFrom: 220
+          sizeTo: 0
+          sizeInterp: pow10In
+          colorFrom: ffffff
+          colorTo: 7382f0
+        }
+        {
+          type: WaveEffect
+          lifetime: 50
+          sizeFrom: 220
+          sizeTo: 220
+          strokeFrom: 4
+          strokeTo: 0
+          colorFrom: 7382f0
+          colorTo: 7382f0
+        }
+      ]
+    }
+    hitPowerEffect: {
+      type: WaveEffect
+      lifetime: 35
+      sizeFrom: 9
+      sizeTo: 9
+      strokeFrom: 3
+      strokeTo: 0
+      colorTo: 7382f0
+    }
+  }
+}
+buildVisibility: sandboxOnly

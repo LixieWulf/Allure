@@ -1,0 +1,253 @@
+type: flying
+flying: true
+lowAltitude: true
+hitSize: 27
+health: 30000
+armor: 14
+speed: 2.8
+accel: 0.12
+drag: 0.03
+rotateSpeed: 3
+drawCell: false
+drawBody: false
+outlines: false
+envEnabled: -1
+envDisabled: 4
+itemCapacity: 0
+parts: [
+  {
+    type: RegionPart
+    outline: false
+    suffix: -low 
+    //id use -outline but anuke disgusted me
+    layer: 90.01
+  }
+  {
+    type: RegionPart
+    outline: false
+    layer: 90.03
+  }
+  {
+    type: RegionPart
+    outline: false
+    suffix: -top
+    layer: 90.05
+  }
+]
+weapons: [
+  {
+    name: calsaten-weapon0
+    top: false
+    layerOffset: 0.02
+    x: 13.5
+    y: 5.25
+    reload: 12
+    recoil: 2
+    shootSound: shootBig
+    shake: 2
+    inaccuracy: 2
+    shoot: {
+      shots: 2
+      shotDelay: 3
+    }
+    bullet: {
+      speed: 6
+      lifetime: 40
+      damage: 26
+      splashDamage: 15
+      splashDamageRadius: 30
+      height: 25
+      width: 14
+      frontColor: ffb3b3
+      backColor: e65555
+      trailColor: e65555
+      shootEffect: shootBig
+      smokeEffect: shootBigSmoke
+      trailWidth: 3
+      trailLength: 6
+      hitEffect: [
+        {
+          lightOpacity: 0
+          length: 24
+          lifetime: 40
+          particles: 20
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 3
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow2In
+        }
+        {
+          lightOpacity: 0
+          length: 32
+          lifetime: 25
+          particles: 14
+          colorFrom: 9f9f9f
+          colorTo: 787878
+          sizeFrom: 1
+          sizeTo: 0
+          interp: pow5Out
+          sizeInterp: pow3In
+        }
+        {
+          length: 40
+          line: true
+          lifetime: 30
+          particles: 8
+          colorTo: e65555
+          lenFrom: 5
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 1
+          sizeInterp: pow2In
+        }
+        {
+          type: WaveEffect
+          lifetime: 20
+          sizeFrom: 0
+          sizeTo: 25
+          strokeFrom: 2
+          strokeTo: 0
+          colorTo: e65555
+        }
+      ]
+    }
+  }
+  {
+    name: calsaten-weapon1
+    layerOffset: 0.04
+    x: 6.5
+    y: -1.25
+    top: false
+    alternate: false
+    reload: 50
+    inaccuracy: 4
+    shootSound: bang
+    shake: 1
+    bullet: {
+      damage: 22
+      speed: 8
+      lifetime: 40
+      ammoMultiplier: 1
+      width: 15
+      height: 28
+      frontColor: ffc1ba
+      backColor: c94536
+      trailLength: 5
+      trailWidth: 1
+      trailColor: c94536
+      hitEffect: none
+      despawnEffect: none
+      fragBullets: 1
+      fragBullet: {
+        speed: 0
+        lifetime: 150
+        collides: false
+        hittable: false
+        damage: 0
+        sprite: circle-bullet
+        width: 7
+        height: 7
+        shrinkY: 0
+        frontColor: ffc1ba
+        backColor: c94536
+        hitShake: 5
+        hitSound: explosion
+        hitEffect: [
+          {
+            length: 18
+            lifetime: 55
+            particles: 12
+            colorFrom: 787878
+            colorTo: 787878
+            sizeFrom: 4
+            sizeTo: 0
+            interp: pow10Out
+            sizeInterp: pow5In
+          }
+          {
+            length: 25
+            lifetime: 35
+            particles: 6
+            colorFrom: 787878
+            colorTo: 787878
+            sizeFrom: 2
+            sizeTo: 0
+            interp: pow10Out
+            sizeInterp: pow3In
+          }
+          {
+            length: 22
+            lifetime: 30
+            particles: 5
+            colorTo: c94536
+            sizeFrom: 3
+            sizeTo: 0
+            interp: pow3Out
+            sizeInterp: pow5In
+          }
+          {
+            type: WaveEffect
+            lifetime: 20
+            sizeFrom: 0
+            sizeTo: 20
+            strokeFrom: 2
+            strokeTo: 0
+            colorTo: c94536
+          }
+        ]
+        fragBullets: 240
+        fragBullet: {
+          type: RailBulletType
+          length: 20
+          pierceEffect: none
+          damage: 8
+        }
+      }
+    }
+  }
+]
+abilities: [
+  {
+    type: EnergyFieldAbility
+    range: 0
+    effectRadius: 4
+    maxTargets: 0
+    damage: 0
+    color: e65555
+    layer: 90
+    blinkScl: 2
+    blinkSize: 0.25
+    sectors: 0
+    y: -19
+    x: 8
+  }
+  {
+    type: EnergyFieldAbility
+    range: 0
+    effectRadius: 4
+    maxTargets: 0
+    damage: 0
+    color: e65555
+    layer: 90
+    blinkScl: 2
+    blinkSize: 0.25
+    sectors: 0
+    y: -19
+    x: -8
+  }
+  {
+    type: EnergyFieldAbility
+    range: 0
+    effectRadius: 6
+    maxTargets: 0
+    damage: 0
+    color: e65555
+    layer: 90
+    blinkScl: 2
+    blinkSize: 0.25
+    sectors: 0
+    y: -22
+  }
+]

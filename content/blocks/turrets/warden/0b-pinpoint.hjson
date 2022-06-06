@@ -1,0 +1,92 @@
+type: ItemTurret
+size: 2
+health: 650
+range: 250
+recoil: 3
+reload: 160
+rotateSpeed: 3
+consumes: {
+  power: 3
+}
+coolantMultiplier: 0.3
+ammoPerShot: 3
+shootSound: railgun
+shake: 2.5
+ammoTypes: {
+  silicon: {
+    type: RailBulletType
+    damage: 160
+    pierceDamageFactor: 0.8
+    ammoMultiplier: 1
+    reloadMultiplier: 1.4
+    length: 250
+    updateEffect: {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 30
+      sizeFrom: 12
+      sizeTo: 0
+      colorFrom: "6e7080"
+      colorTo: "6e7080"
+      region: exotic-mod-diamond-wide
+    }
+    updateEffectSeg: 50
+    pierceEffect: none
+    smokeEffect: {
+      type: ParticleEffect
+      line: true
+      lifetime: 14
+      length: 25
+      cone: 20
+      particles: 8
+      lenFrom: 5
+      lenTo: 1
+      strokeFrom: 1
+      strokeTo: 0
+      colorFrom: ffffff
+      colorTo: "6e7080"
+    }
+  }
+  territe-alloy: {
+    type: RailBulletType
+    damage: 240
+    pierceDamageFactor: 0.8
+    ammoMultiplier: 1
+    length: 250
+    updateEffect: {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 30
+      sizeFrom: 12
+      sizeTo: 0
+      colorFrom: 7382f0
+      colorTo: 7382f0
+      region: exotic-mod-diamond-wide
+    }
+    updateEffectSeg: 50
+    pierceEffect: none
+    smokeEffect: {
+      type: ParticleEffect
+      line: true
+      lifetime: 14
+      length: 25
+      cone: 20
+      particles: 8
+      lenFrom: 5
+      lenTo: 1
+      strokeFrom: 1
+      strokeTo: 0
+      colorFrom: ffffff
+      colorTo: 7382f0
+    }
+  }
+}
+category: turret
+research: 0b-radius
+requirements: [
+  copper/80
+  silicon/60
+  titanium/60
+]

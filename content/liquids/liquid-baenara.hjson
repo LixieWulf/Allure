@@ -1,21 +1,4 @@
-type: Liquid
 viscosity: 0.5
 heatCapacity: 0.6
 color: 46b084
-effect: {
-  name: healing-flood
-  damage: -0.4
-  speedMultiplier: 0.8
-  damageMultiplier: 1.1
-  reloadMultiplier: 0.5
-  effectChance: 0.01
-  effect: {
-    type: ParticleEffect
-    particles: 1
-    length: 0
-    lifetime: 45
-    sizeFrom: 1
-    colorFrom: 46b084
-    colorTo: 46b084
-  }
-}
+effect: exotic-mod-healing-flood

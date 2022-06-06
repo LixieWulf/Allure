@@ -1,0 +1,723 @@
+type: legs
+hitSize: 48
+hovering: true
+drawShields: false
+groundLayer: 80
+shadowElevationScl: 1.4
+health: 550000
+armor: 175
+speed: 1
+rotateSpeed: 1.8
+baseRotateSpeed: 1.8
+faceTarget: false
+buildSpeed: 6.1
+mineSpeed: 10.8
+mineTier: 6
+legSpeed: 1.8
+legPairOffset: 1
+kinematicScl: 1
+legGroupSize: 2
+legLengthScl: 1
+legLength: 120
+mechStride: 5
+legBaseOffset: 20
+legExtension: 10
+legSpeed: 0.01
+legSplashDamage: 110
+legSplashRange: 72
+rippleScale: 6
+maxStretch: 1.25
+allowLegStep: true
+lightRadius: 100
+lightColor: 84f591
+range: 480
+maxRange: 480
+forceMultiTarget: true
+hideDetails: false
+decals: [
+  {
+    region: exotic-mod-blaze-flare
+    layer: 105
+    color: 83f793
+  }
+]
+weapons: [
+  {
+    name: blaze-eye-hostile
+    layerOffset: 25
+    x: 0
+    y: 10.5
+    rotate: true
+    rotateSpeed: 360
+    shootSound: none
+    mirror: false
+    controllable: false
+    autoTarget: true
+    recoil: 0
+    bullet: {
+      type: BulletType
+      damage: 0
+      speed: 2048
+      lifetime: 4
+      maxRange: 640
+      collides: false
+      hittable: false
+      absorbable: false
+      lightRadius: 0
+      despawnEffect: none 
+      shootEffect: none
+      smokeEffect: none 
+    }
+  }
+  {
+    type: PointDefenseWeapon
+    name: blaze-eye-anti
+    layerOffset: 25
+    x: 30.5
+    y: 8.5
+    rotate: true
+    rotateSpeed: 360
+    shootSound: none
+    controllable: false
+    autoTarget: true
+    targetInterval: 0
+    targetSwitchInterval: 0
+    recoil: 0
+    beamEffect: none
+    bullet: {
+      maxRange: 240
+      damage: 0.000000000000001
+      speed: 90
+      hitEffect: none
+      shootEffect: none
+      smokeEffect: none
+    }
+  }
+  {
+    x: 0
+    y: -12
+    rotate: true
+    rotateSpeed: 360
+    mirror: false
+    reload: 180
+    firstShotDelay: 45
+    shots: 4 
+    shotDelay: 20
+    chargeSound: lasercharge2
+    shootSound: plasmaboom
+    bullet: {
+      speed: 12 
+      lifetime: 90
+      drag: 0.1
+      maxRange: 480
+      sprite: exotic-mod-diamond-bullet
+      width: 40
+      height: 40
+      frontColor: ffffff
+      backColor: 83f793
+      shrinkY: 0
+      trailInterval: 10
+      trailColor: 83f793
+      trailLength: 15
+      trailWidth: 6
+      trailEffect: {
+        type: WaveEffect
+        lifetime: 25
+        sides: 4
+        sizeFrom: 0
+        sizeTo: 20
+        strokeFrom: 3
+        strokeTo: 0
+        colorFrom: 83f793
+        colorTo: 83f793
+      }
+      lightning: 1
+      lightningLength: 2
+      lightningCone: 0
+      lightningType: {
+        type: BulletType
+        collides: false
+        hittable: false
+        absorbable: false
+        keepVelocity: false
+        speed: 0.001
+        homingPower: 100
+        homingRange: 640
+        lifetime: 30
+        trailInterval: 31
+        trailEffect: {
+          type: MultiEffect
+          lifetime: 270
+          layer: 100
+          effects: [
+            {
+              length: 0
+              particles: 1
+              lifetime: 270
+              region: exotic-mod-diamond-bullet-back
+              sizeFrom: 0
+              sizeTo: 20
+              sizeInterp: pow10Out
+              spin: 1.5
+              colorFrom: 83f793
+              colorTo: 83f793
+            }
+            {
+              length: 0
+              particles: 1
+              lifetime: 270
+              region: exotic-mod-diamond-bullet-back
+              sizeFrom: 0
+              sizeTo: 20
+              sizeInterp: pow10Out
+              spin: -1.5
+              colorFrom: 83f793
+              colorTo: 83f793
+            }
+            {
+              length: 0
+              particles: 1
+              lifetime: 270
+              region: exotic-mod-semicircle
+              sizeFrom: 12
+              sizeTo: 12
+              sizeInterp: pow10Out
+              spin: 2
+              colorFrom: 83f793
+              colorTo: 83f793
+            }
+            {
+              length: 0
+              particles: 1
+              lifetime: 270
+              region: exotic-mod-semicircle
+              sizeFrom: 12
+              sizeTo: 12
+              sizeInterp: pow10Out
+              spin: 2.7
+              colorFrom: 83f793
+              colorTo: 83f793
+            }
+            {
+              length: 0
+              particles: 1
+              lifetime: 270
+              region: exotic-mod-semicircle
+              sizeFrom: 12
+              sizeTo: 12
+              sizeInterp: pow10Out
+              spin: 10
+              colorFrom: 83f793
+              colorTo: 83f793
+            }
+          ]
+        }
+        fragBullets: 1
+        fragRandomSpread: 0
+        fragVelocityMin: 1
+        fragVelocityMax: 1
+        fragBullet: {
+          speed: 0.02
+          lifetime: 80
+          collides: false
+          hittable: false
+          absorbable: false
+          layer: 112
+          sprite: exotic-mod-blaze-turret
+          width: 20
+          height: 40
+          shrinkY: 0
+          frontColor: ffffff
+          backColor: 00000000
+          hitSound: bang
+          hitEffect: shootBig
+          despawnEffect: {
+            type: WaveEffect
+            lifetime: 25
+            sides: 4
+            sizeFrom: 0
+            sizeTo: 8
+            strokeFrom: 3
+            strokeTo: 0
+            colorFrom: 83f793
+            colorTo: 83f793
+          }
+          fragBullets: 1
+          fragRandomSpread: 0
+          fragVelocityMin: 1
+          fragVelocityMax: 1
+          fragBullet: {
+            damage: 1200
+            speed: 8
+            lifetime: 60
+            splashDamage: 120
+            splashDamageRadius: 24
+            collidesTeam: true
+            healPercent: 10
+            sprite: circle
+            width: 6
+            height: 6
+            frontColor: 83f793
+            backColor: 00000000
+            shrinkY: 0
+            trailChance: 0
+            trailLength: 10
+            trailWidth: 2
+            trailColor: 83f793
+            trailInterval: 10
+            trailEffect: {
+              type: WaveEffect
+              lifetime: 25
+              sides: 4
+              sizeFrom: 0
+              sizeTo: 15
+              strokeFrom: 2
+              strokeTo: 0
+              colorFrom: 83f793
+              colorTo: 83f793
+            }
+            despawnEffect: none
+            hitEffect: {
+              type: WaveEffect
+              lifetime: 20
+              sides: 4
+              sizeFrom: 0
+              sizeTo: 10
+              strokeFrom: 1
+              strokeTo: 0
+              colorFrom: 83f793
+              colorTo: 83f793
+            }
+          }
+        }
+        lightning: 1
+        lightningLength: 2
+        lightningCone: 0
+        lightningType: {
+          type: BulletType
+          collides: false
+          hittable: false
+          absorbable: false
+          homingPower: 100
+          homingRange: 640
+          speed: 0.001
+          lifetime: 80
+          hitEffect: none
+          despawnEffect: none 
+          fragBullets: 1
+          fragRandomSpread: 0
+          fragVelocityMin: 1
+          fragVelocityMax: 1
+          fragBullet: {
+            speed: 0.02
+            lifetime: 80
+            collides: false
+            hittable: false
+            absorbable: false
+            layer: 112
+            sprite: exotic-mod-blaze-turret
+            width: 20
+            height: 40
+            shrinkY: 0
+            frontColor: ffffff
+            backColor: 00000000
+            hitSound: bang
+            hitEffect: shootBig
+            despawnEffect: {
+              type: WaveEffect
+              lifetime: 25
+              sides: 4
+              sizeFrom: 0
+              sizeTo: 8
+              strokeFrom: 3
+              strokeTo: 0
+              colorFrom: 83f793
+              colorTo: 83f793
+            }
+            fragBullets: 1
+            fragRandomSpread: 0
+            fragVelocityMin: 1
+            fragVelocityMax: 1
+            fragBullet: {
+              damage: 1200
+              speed: 8
+              lifetime: 60
+              splashDamage: 120
+              splashDamageRadius: 24
+              collidesTeam: true
+              healPercent: 10
+              sprite: circle
+              width: 6
+              height: 6
+              frontColor: 83f793
+              backColor: 00000000
+              shrinkY: 0
+              trailChance: 0
+              trailLength: 10
+              trailWidth: 2
+              trailColor: 83f793
+              trailInterval: 10
+              trailEffect: {
+                type: WaveEffect
+                lifetime: 25
+                sides: 4
+                sizeFrom: 0
+                sizeTo: 15
+                strokeFrom: 2
+                strokeTo: 0
+                colorFrom: 83f793
+                colorTo: 83f793
+              }
+              despawnEffect: none
+              hitEffect: {
+                type: WaveEffect
+                lifetime: 20
+                sides: 4
+                sizeFrom: 0
+                sizeTo: 10
+                strokeFrom: 1
+                strokeTo: 0
+                colorFrom: 83f793
+                colorTo: 83f793
+              }
+            }
+          }  
+          lightning: 1
+          lightningLength: 2
+          lightningCone: 0
+          lightningType: {
+            type: BulletType
+            collides: false
+            hittable: false
+            absorbable: false
+            speed: 0.001
+            homingPower: 100
+            homingRange: 640
+            lifetime: 80
+            hitEffect: none
+            despawnEffect: {
+              length: 0
+              particles: 1
+              startDelay: 80
+              lifetime: 25
+              sizeFrom: 25
+              sizeTo: 0
+              sizeInterp: pow3In
+              colorFrom: 83f793
+              colorTo: 83f793
+            }
+            fragBullets: 1
+            fragRandomSpread: 0
+            fragVelocityMin: 1
+            fragVelocityMax: 1
+            fragBullet: {
+              speed: 0.02
+              lifetime: 80
+              collides: false
+              hittable: false
+              absorbable: false
+              layer: 112
+              sprite: exotic-mod-blaze-turret
+              width: 20
+              height: 40
+              shrinkY: 0
+              frontColor: ffffff
+              backColor: 00000000
+              hitSound: bang
+              hitEffect: shootBig
+              despawnEffect: {
+                type: WaveEffect
+                lifetime: 25
+                sides: 4
+                sizeFrom: 0
+                sizeTo: 8
+                strokeFrom: 3
+                strokeTo: 0
+                colorFrom: 83f793
+                colorTo: 83f793
+              }
+              fragBullets: 1
+              fragRandomSpread: 0
+              fragVelocityMin: 1
+              fragVelocityMax: 1
+              fragBullet: {
+                damage: 1200
+                speed: 8
+                lifetime: 60
+                splashDamage: 120
+                splashDamageRadius: 24
+                collidesTeam: true
+                healPercent: 10
+                sprite: circle
+                width: 6
+                height: 6
+                frontColor: 83f793
+                backColor: 00000000
+                shrinkY: 0
+                trailChance: 0
+                trailLength: 10
+                trailWidth: 2
+                trailColor: 83f793
+                trailInterval: 10
+                trailEffect: {
+                  type: WaveEffect
+                  lifetime: 25
+                  sides: 4
+                  sizeFrom: 0
+                  sizeTo: 15
+                  strokeFrom: 2
+                  strokeTo: 0
+                  colorFrom: 83f793
+                  colorTo: 83f793
+                }
+                despawnEffect: none
+                hitEffect: {
+                  type: WaveEffect
+                  lifetime: 20
+                  sides: 4
+                  sizeFrom: 0
+                  sizeTo: 10
+                  strokeFrom: 1
+                  strokeTo: 0
+                  colorFrom: 83f793
+                  colorTo: 83f793
+                }
+              }
+            }  
+          }
+        }
+      }
+    }
+  }
+  {
+    type: RepairBeamWeapon
+    y: 28
+    x: 25
+    rotate: true
+    rotateSpeed: 360
+    shootY: 6
+    repairSpeed: 2.5
+    beamWidth: 0.5
+    pulseRadius: 3
+    pulseStroke: 1
+    bullet: {
+      speed: 12
+      lifetime: 20
+      maxRange: 240
+    }
+  }
+  {
+    type: RepairBeamWeapon
+    y: 28
+    x: 25
+    rotate: true
+    rotateSpeed: 360
+    shootY: 6
+    repairSpeed: 2.5
+    beamWidth: 0.5
+    pulseRadius: 3
+    pulseStroke: 1
+    bullet: {
+      speed: 12
+      lifetime: 20
+      maxRange: 240
+    }
+  }
+  {
+    type: RepairBeamWeapon
+    y: -12
+    x: 0
+    targetBuildings: true
+    rotate: true
+    rotateSpeed: 360
+    shootY: 18
+    repairSpeed: 7.5
+    beamWidth: 1.8
+    pulseRadius: 12
+    pulseStroke: 3
+    bullet: {
+      speed: 12
+      lifetime: 25
+      maxRange: 300
+    }
+  }
+  {
+    x: 0
+    rotate: true
+    rotateSpeed: 360
+    reload: 20
+    controllable: false
+    autoTarget: true
+    targetInterval: 0
+    targetSwitchInterval: 0
+    shootSound: none
+    bullet: {
+      type: PointBulletType
+      speed: 480
+      lifetime: 1
+      damage: 0
+      trailEffect: none
+      shootEffect: none
+      smokeEffect: none
+      collides: false
+      despawnEffect: none
+      hitEffect: none
+      despawnHit: true
+      lightning: 1
+      lightningLength: 2
+      lightningType: {
+        speed: 240
+        lifetime: 1
+        damage: 0
+        backMove: false
+        collides: false
+        despawnHit: true
+        hitEffect: none
+        despawnEffect: none
+        fragBullets: 1
+        fragRandomSpread: 0
+        fragAngle: 180
+        fragVelocityMin: 1
+        fragVelocityMax: 1
+        fragBullet: {
+          damage: 1000
+          speed: 18
+          lifetime: 30
+          collidesTiles: false
+          pierce: true
+          knockback: 20
+          status: exotic-mod-1g-staggered
+          statusDuration: 5
+          sprite: exotic-mod-sdiam
+          width: 30
+          height: 30
+          shrinkY: 0
+          frontColor: 83f793
+          backColor: 83f793
+          trailChance: 0
+          trailLength: 10
+          trailColor: 83f793
+          trailWidth: 6
+          despawnEffect: {
+            lifetime: 25
+            length: 0
+            particles: 1
+            lifetime: 15
+            sizeFrom: 15
+            sizeTo: 0
+            sizeInterp: pow3In
+            colorFrom: 83f793
+            colorTo: 83f793
+          }
+          hitEffect: {
+            type: MultiEffect
+            effects: [
+              {
+                type: WaveEffect
+                lifetime: 25
+                sides: 4
+                sizeFrom: 0
+                sizeTo: 40
+                strokeFrom: 3
+                strokeTo: 0
+                colorFrom: 83f793
+                colorTo: 83f793
+              }
+              {
+                length: 120
+                cone: 15
+                line: true
+                lifetime: 35
+                particles: 25
+                interp: pow3Out
+                sizeInterp: pow2In
+                lenFrom: 16
+                lenTo: 0
+                strokeFrom: 6
+                strokeTo: 0
+                colorFrom: 83f793
+                colorTo: 83f793
+              }
+              {
+                length: 40
+                lifetime: 45
+                particles: 8
+                interp: pow3Out
+                sizeInterp: pow5In
+                useRotation: false
+                offset: 45
+                region: exotic-mod-square
+                sizeFrom: 6
+                sizeTo: 0
+                colorFrom: 83f793
+                colorTo: 83f793
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+]
+abilities: [
+  {
+    type: EnergyFieldAbility
+    range: 0
+    effectRadius: 7
+    maxTargets: 0
+    damage: 0
+    color: 83f793
+    layer: 105
+    blinkScl: 4
+    blinkSize: 0.2
+    sectors: 1
+    sectorRad: 0.5
+    rotateSpeed: 3
+    y: -12
+    x: 0
+  }
+  {
+    type: EnergyFieldAbility
+    range: 0
+    effectRadius: 7
+    maxTargets: 0
+    damage: 0
+    color: 83f793
+    layer: 105
+    blinkScl: 4
+    blinkSize: 0.2
+    sectors: 1
+    sectorRad: 0.5
+    rotateSpeed: 6
+    y: -12
+    x: 0
+  }
+  {
+    type: EnergyFieldAbility
+    range: 0
+    effectRadius: 2
+    maxTargets: 0
+    damage: 0
+    color: 83f793
+    layer: 105
+    blinkScl: 7
+    blinkSize: 0.1
+    sectors: 0
+    y: 28
+    x: 25
+  }
+  {
+    type: EnergyFieldAbility
+    range: 0
+    effectRadius: 2
+    maxTargets: 0
+    damage: 0
+    color: 83f793
+    layer: 105
+    blinkScl: 7
+    blinkSize: 0.1
+    sectors: 0
+    y: 28
+    x: -25
+  }
+]

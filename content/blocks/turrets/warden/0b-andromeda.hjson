@@ -1,0 +1,44 @@
+type: PowerTurret
+size: 8
+liquidCapacity: 600
+health: 450000
+range: 212
+consumes: {
+  power: 0.1
+} 
+rotateSpeed: 2.5
+reload: 120
+recoil: 8
+restitution: 0.02
+shots: 5
+spread: 15
+shootSound: shootBig
+shootType: {
+  type: ContinuousLaserBulletType
+  damage: 5400
+  lifetime: 25
+  fadeTime: 5
+  incendChance: 0
+  status: none
+  length: 180
+  width: 15
+  colors: [7382f020, 7382f060, 7382f0, ffffff]
+  lightColor: 7382f0
+  hitEffect: {
+    type: ParticleEffect
+    particles: 6
+    length: 30
+    lifetime: 15
+    line: true
+    lenFrom: 8
+    lenTo: 0
+    strokeFrom: 2
+    strokeTo: 1
+    colorFrom: 7382f0
+    colorTo: 7382f050
+  }
+}
+coolantUsage: 3.5
+coolantMultiplier: 0.7
+buildVisibility: sandboxOnly
+category: turret

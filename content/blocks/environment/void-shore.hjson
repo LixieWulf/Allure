@@ -1,0 +1,6 @@
+type: ShallowLiquid
+isLiquid: true
+liquidDrop: water
+status: wet
+speedMultiplier: 0.8
+cacheLayer: water

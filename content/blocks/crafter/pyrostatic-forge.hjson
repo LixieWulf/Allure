@@ -1,0 +1,89 @@
+Type: GenericCrafter
+size: 10
+hasLiquids: true
+craftTime: 180
+itemCapacity: 240
+liquidCapacity: 240
+drawer: { 
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawFlame
+      flameRadius: 16
+      flameRadiusIn: 10
+      flameColor: 90a2fc
+    }
+  ]
+}
+consumes: {
+  power: 20
+  liquid: {
+    liquid: cryofluid
+    amount: 0.5
+  }
+  items: { 
+    items: [
+      lead/120
+      silicon/90
+      coal/45
+      blast-compound/30
+    ]
+  }
+}
+updateEffectChance: 0.08
+updateEffect: {
+  length: 6
+  particles: 6
+  lifetime: 45
+  sizeFrom: 3
+  sizeTo: 0
+  interp: pow3Out
+  sizeInterp: pow2In
+  colorTo: 7382f0
+}
+craftEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      baseRotation: 90
+      length: 70
+      particles: 22
+      cone: 35
+      lifetime: 50
+      sizeFrom: 2
+      sizeTo: 0
+      interp: pow3Out
+      sizeInterp: pow5In
+      colorTo: 7382f0
+    }
+    {
+      baseRotation: 90
+      length: 35
+      particles: 18
+      cone: 30
+      lifetime: 110
+      sizeFrom: 7
+      sizeTo: 0
+      interp: pow5Out
+      sizeInterp: pow2In
+      colorTo: 7382f0
+    }
+  ]
+}
+ambientSound: hum
+ambientSoundVolume: 2.5
+outputItem: territe-alloy/150
+outputLiquid: crystal-plasma/2
+category: crafting
+research: ignition-core
+requirements: [
+  graphite/350
+  territe-alloy/500
+  titanium/400
+  thorium/250
+  baenite/300
+  draconium/150
+]

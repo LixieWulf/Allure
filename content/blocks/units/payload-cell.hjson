@@ -1,0 +1,10 @@
+type: LiquidRouter
+size: 2
+liquidCapacity: 1000
+placeablePlayer: false
+category: units
+research: liquid-container
+requirements: [
+  metaglass/20
+  titanium/10
+]

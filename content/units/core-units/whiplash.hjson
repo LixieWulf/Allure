@@ -1,57 +1,101 @@
 type: flying
-controller: BuilderAI
 flying: true
-speed: 4.4
-drag: 0.1
-itemCapacity: 125
-rotateSpeed: 15.4
-buildSpeed: 7.8
-mineSpeed: 12
-mineTier: 6
-engineOffset: 8
-hitSize: 15
-health: 4550
-armor: 12
+lowAltitude: true
+controller: BuilderAI
+isCounted: false
+health: 880
+armor: 5
+buildSpeed: 2
+mineSpeed: 16
+mineTier: 4
+speed: 3.5
+drag: 0.01
+accel: 0.018
+hitSize: 12
+engineOffset: 9
+omniMovement: true
 weapons: [
   {
-    name: whiplash-railgun
+    name: core-1
+    x: 3.5
+    y: 2.75
+    top: false
     mirror: false
-    x: 0
-    y: 0
-    shootCone: 5
-    shootY: 11
-    reload: 244
-    cooldownTime: 120
-    shootSound: railgun
-    recoil: 0
+    otherSide: 2
+    reload: 20
     bullet: {
-      type: RailBulletType
-      damage: 450
-      buildingDamageMultiplier: 0.01
-      pierceDamageFactor: 0.0012
-      length: 350
-      shootEffect: {
-        type: ParticleEffect
-        lifetime: 25
-        cone: 5
-        colorFrom: ffd280
-        colorTo: d4816a
-        length: 40
-        particles: 15
-      }
-      updateEffect: {
-        type: ParticleEffect
-        particles: 1
-        lifetime: 25
-        sizeFrom: 16
-        sizeTo: 0
-        length: 0
-        colorFrom: ffd37f
-        colorTo: ffd37f
-        region: exotic-mod-diamond-wide
-      }
-      hitEffect: railHit
-      updateEffectSeg: 25
+      damage: 34
+      buildingDamageMultiplier: 0.02
+      speed: 5
+      lifetime: 60
+      width: 8
+      height: 12
     }
+  }
+  {
+    name: core-1
+    x: 3.5
+    y: -3
+    top: false
+    mirror: false
+    otherSide: 3
+    reload: 20
+    bullet: {
+      damage: 34
+      buildingDamageMultiplier: 0.02
+      speed: 5
+      lifetime: 60
+      width: 8
+      height: 12
+    }
+  }
+  {
+    name: core-1
+    x: -3.5
+    y: 2.75
+    flipSprite: true
+    top: false
+    mirror: false
+    otherSide: 0
+    reload: 20
+    bullet: {
+      damage: 34
+      buildingDamageMultiplier: 0.02
+      speed: 5
+      lifetime: 60
+      width: 8
+      height: 12
+    }
+  }
+  {
+    name: core-1
+    x: -3.5
+    y: -3
+    flipSprite: true
+    top: false
+    mirror: false
+    otherSide: 1
+    reload: 20
+    bullet: {
+      damage: 34
+      buildingDamageMultiplier: 0.02
+      speed: 5
+      lifetime: 60
+      width: 8
+      height: 12
+    }
+  }
+]
+abilities: [
+  {
+    type: MoveLightningAbility
+    heatRegion: exotic-mod-whiplash-heat
+    minSpeed: 1.7
+    maxSpeed: 3.3
+    chance: 0.06
+    length: 15
+    shootEffect: hitLancer
+    damage: 22
+    color: a9d8ff
   }
 ]

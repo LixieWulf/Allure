@@ -5,12 +5,11 @@ description:
   '''
   WARNING: Not supported on low-end devices.
   
-  The official HJSON 7.0 example mod. Both a reference point and also playable. Developed in Canada.
-  Moving to 7.0 release build 130.
+  b
 
   Discord: https://discord.gg/M3hm5z6nm6
   
   A lot of work goes into Exotic, so if you want to show some support or like the content give the mod a star on GitHub!
   '''
-version: 0.7 Alpha
-minGameVersion: 131
+version: 0.75 Incomplete Alpha
+minGameVersion: 136

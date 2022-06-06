@@ -1,0 +1,91 @@
+type: flying
+flying: true
+hitSize: 22
+health: 12000
+controller: BuilderAI
+isCounted: false
+armor: 8
+lowAltitude: true
+speed: 2.8
+accel: 0.07
+drag: 0.02
+engineOffset: 13
+engineSize: 5
+buildSpeed: 6.5
+mineSpeed: 24
+mineTier: 7
+weapons: [
+  {
+    name: core-1
+    x: 6
+    y: 9
+    top: false
+    reload: 10
+    bullet: {
+      damage: 34
+      buildingDamageMultiplier: 0.015
+      speed: 5
+      lifetime: 60
+      width: 8
+      height: 12
+    }
+  }
+  {
+    name: core-1
+    x: -4
+    y: 9
+    top: false
+    reload: 10
+    ejectEffect: casing1
+    bullet: {
+      damage: 34
+      buildingDamageMultiplier: 0.015
+      speed: 5
+      lifetime: 60
+      width: 8
+      height: 12
+    }
+  }
+  {
+    name: core-1
+    x: 12
+    y: -6
+    top: false
+    rotate: true
+    shots: 4
+    shotDelay: 3
+    inaccuracy: 4
+    reload: 20
+    ejectEffect: casing1
+    bullet: {
+      damage: 40
+      buildingDamageMultiplier: 0.02
+      speed: 7
+      lifetime: 60
+      width: 8
+      height: 12
+    }
+  }
+  {
+    name: core-2
+    x: 5
+    y: -5
+    top: false
+    rotate: true
+    inaccuracy: 16
+    shots: 3
+    shotDelay: 2
+    xRand: 2
+    velocityRnd: 0.2
+    reload: 4
+    ejectEffect: casing1
+    bullet: {
+      damage: 14
+      buildingDamageMultiplier: 0.01
+      speed: 4
+      lifetime: 60
+      width: 8
+      height: 12
+    }
+  }
+]

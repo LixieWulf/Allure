@@ -69,7 +69,21 @@ requirements: [
   thorium/200
   amethyst-gem/50
 ]
-drawer: drawWeave
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawWeave
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+}
 category: crafting
 research: phase-weaver
 ambientSound: techloop

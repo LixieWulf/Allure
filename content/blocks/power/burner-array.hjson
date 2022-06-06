@@ -1,9 +1,24 @@
-type: BurnerGenerator
+type: ConsumeGenerator
 size: 4
+hasPower: true
+hasItems: true
 powerProduction: 10.5
 itemDuration: 20
-minItemEfficiency: 0.4
-minLiquidEfficiency: 0.6
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawWarmupRegion
+    }
+  ]
+}
+consumes: {
+  itemFlammable: {}
+//  itemExplode: {}
+}
 category: power
 research: combustion-generator
 requirements: [

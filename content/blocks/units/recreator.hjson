@@ -17,8 +17,6 @@ consumes: {
   }
 }
 upgrades: [
-  [outbreak, virus]
-  [victory, reckless]
   [flicker, spark]
   [soul, spirit]
 ]

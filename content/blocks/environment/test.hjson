@@ -1,0 +1,4 @@
+type: Floor
+attributes: {
+  water: 0.3
+}

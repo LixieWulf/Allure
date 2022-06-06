@@ -1,0 +1,39 @@
+type: PowerTurret
+size: 6
+range: 360
+health: 5600
+reload: 70
+recoil: 6
+restitution: 0.05
+rotateSpeed: 2.2
+consumes: {
+  power: 25
+} 
+shootType: {
+  type: BulletType
+  speed: 0
+  lifetime: 0
+  collides: false
+  absorbable: false
+  hittable: false
+  fragRandomSpread: 0
+  fragBullets: 45
+  fragLifeMin: 0.01
+  fragLifeMax: 1
+  fragVelocityMin: 1
+  fragVelocityMax: 1
+  fragBullet: {
+    type: EmpBulletType
+    damage: 0
+    collides: false
+    despawnHit: true
+    absorbable: false
+    hittable: false
+    despawnEffect: none
+    speed: 3
+    lifetime: 120
+    radius: 140
+    hitColor: 7382f0
+  }
+}
+buildVisibility: shown

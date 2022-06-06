@@ -1,444 +1,3368 @@
-type: ItemTurret
+type: PowerTurret
+customShadow: true
 size: 16
-health: 540000
-shootCone: 360
-baseExplosiveness: 185
-maxAmmo: 180
-range: 0
-reloadTime: 1081
+health: 150000
 rotateSpeed: 0
-shootLength: 0
-canOverdrive: false
-acceptCoolant: false
-recoilAmount: 0
-shootSound: none
-shootEffect: {
-  type: MultiEffect
-  lifetime: 1080
-  effects: [
+hasShadow: false
+recoil: 0
+shootY: 0
+shootCone: 360
+range: 0
+targetAir: false
+targetGround: false
+shootType: {
+  type: BulletType
+  speed: 0
+  lifetime: 1800
+  damage: 0
+  collides: false
+  hittable: false
+  absorbable: false
+  smokeEffect: none
+  shootEffect: [
     {
-      type: ParticleEffect
-      particles: 1
+      startDelay: 100
+      particles: 3
       length: 0
-      lifetime: 1080
-      region: exotic-mod-infini-main
-      sizeFrom: 64
-      sizeTo: 64
-      layer: 105
+      lifetime: 100
+      sizeFrom: 0
+      sizeTo: 25
+      region: circle-shadow
     }
     {
-      type: ParticleEffect
-      particles: 1
+      startDelay: 200
+      particles: 3
       length: 0
-      lifetime: 180
-      region: exotic-mod-infini-c-0
-      sizeFrom: 64
-      sizeTo: 64
+      lifetime: 1600
+      sizeFrom: 25
+      sizeTo: 25
+      region: circle-shadow
     }
     {
-      type: ParticleEffect
+      startDelay: 500
       particles: 1
       length: 0
-      lifetime: 300
-      region: exotic-mod-infini-c-1
-      sizeFrom: 64
-      sizeTo: 64
+      lifetime: 1300
+      offset: 90
+      sizeFrom: 0
+      sizeTo: 160
+      layer: 130
+      region: exotic-mod-blinding
+      interp: pow3Out
     }
     {
-      type: ParticleEffect
+      startDelay: 500
       particles: 1
       length: 0
-      lifetime: 420
-      region: exotic-mod-infini-c-2
-      sizeFrom: 64
-      sizeTo: 64
+      lifetime: 1300
+      sizeFrom: 0
+      sizeTo: 80
+      layer: 130
+      region: exotic-mod-blinding
+      interp: pow3Out
     }
     {
-      type: ParticleEffect
+      layer: 129
+      startDelay: 670
       particles: 1
       length: 0
-      lifetime: 560
-      region: exotic-mod-infini-0-icon
-      sizeFrom: 64
-      sizeTo: 64
-      colorFrom: 2c2d38
-      colorTo: 2c2d38
+      lifetime: 100
+      sizeFrom: 8192
+      sizeTo: 8192
+      colorFrom: e6555500
+      colorTo: e6555525
     }
     {
-      type: ParticleEffect
+      layer: 129
+      startDelay: 770
       particles: 1
       length: 0
-      lifetime: 570
-      region: exotic-mod-infini-1-icon
-      sizeFrom: 64
-      sizeTo: 64
-      colorFrom: 2c2d38
-      colorTo: 2c2d38
+      lifetime: 100
+      sizeFrom: 8192
+      sizeTo: 8192
+      colorTo: e6555500
+      colorFrom: e6555525
     }
     {
-      type: ParticleEffect
+      layer: 129
+      startDelay: 870
       particles: 1
       length: 0
-      lifetime: 580
-      region: exotic-mod-infini-2-icon
-      sizeFrom: 64
-      sizeTo: 64
-      colorFrom: 2c2d38
-      colorTo: 2c2d38
+      lifetime: 100
+      sizeFrom: 8192
+      sizeTo: 8192
+      colorFrom: e6555500
+      colorTo: e6555525
     }
     {
-      type: ParticleEffect
+      layer: 129
+      startDelay: 970
       particles: 1
       length: 0
-      lifetime: 590
-      region: exotic-mod-infini-3-icon
-      sizeFrom: 64
-      sizeTo: 64
-      colorFrom: 2c2d38
-      colorTo: 2c2d38
+      lifetime: 100
+      sizeFrom: 8192
+      sizeTo: 8192
+      colorTo: e6555500
+      colorFrom: e6555525
+    }
+    {
+      layer: 129
+      startDelay: 1070
+      particles: 1
+      length: 0
+      lifetime: 100
+      sizeFrom: 8192
+      sizeTo: 8192
+      colorFrom: e6555500
+      colorTo: e6555525
+    }
+    {
+      layer: 129
+      startDelay: 1170
+      particles: 1
+      length: 0
+      lifetime: 100
+      sizeFrom: 8192
+      sizeTo: 8192
+      colorTo: e6555500
+      colorFrom: e6555525
+    }
+    {
+      layer: 129
+      startDelay: 1270
+      particles: 1
+      length: 0
+      lifetime: 100
+      sizeFrom: 8192
+      sizeTo: 8192
+      colorFrom: e6555500
+      colorTo: e6555525
+    }
+    {
+      layer: 129
+      startDelay: 1370
+      particles: 1
+      length: 0
+      lifetime: 100
+      sizeFrom: 8192
+      sizeTo: 8192
+      colorTo: e6555500
+      colorFrom: e6555525
+    }
+    {
+      layer: 129
+      startDelay: 1470
+      particles: 1
+      length: 0
+      lifetime: 100
+      sizeFrom: 8192
+      sizeTo: 8192
+      colorFrom: e6555500
+      colorTo: e6555525
+    }
+    {
+      layer: 129
+      startDelay: 1570
+      particles: 1
+      length: 0
+      lifetime: 100
+      sizeFrom: 8192
+      sizeTo: 8192
+      colorTo: e6555500
+      colorFrom: e6555525
+    }
+    {
+      layer: 129
+      startDelay: 1670
+      particles: 1
+      length: 0
+      lifetime: 130
+      sizeFrom: 8192
+      sizeTo: 8192
+      colorFrom: e6555500
+      colorTo: e6555575
+    }
+    {
+      layer: 130
+      startDelay: 1800
+      particles: 1
+      length: 0
+      lifetime: 130
+      sizeFrom: 8192
+      sizeTo: 8192
+      colorTo: ffffff00
+    }
+    {
+      lifetime: 30
+      startDelay: 30
+      baseLength: 72
+      offset: -90
+      layer: 130
+      randLength: false
+      cone: 0
+      particles: 1
+      length: 0
+      region: exotic-mod-firing
+      sizeFrom: 48
+      sizeTo: 48
+      colorFrom: ffffff00
+      clip: 8192
+    }
+    {
+      lifetime: 360
+      startDelay: 60
+      baseLength: 72
+      offset: -90
+      layer: 130
+      randLength: false
+      cone: 0
+      particles: 1
+      length: 0
+      region: exotic-mod-firing
+      sizeFrom: 48
+      sizeTo: 48
+      clip: 8192
+    }
+    {
+      lifetime: 90
+      startDelay: 420
+      offset: -90
+      baseLength: 72
+      layer: 130
+      randLength: false
+      cone: 0
+      particles: 1
+      length: 0
+      region: exotic-mod-firing
+      sizeFrom: 48
+      sizeTo: 48
+      colorTo: ffffff00
+      clip: 8192
+    }
+    {
+      lifetime: 60
+      startDelay: 60
+      baseLength: 72
+      offset: -90
+      layer: 130.01
+      randLength: false
+      cone: 0
+      particles: 1
+      length: 0
+      region: exotic-mod-init
+      sizeFrom: 48
+      sizeTo: 48
+      colorFrom: ffffff00
+      colorTo: e65555
+      clip: 8192
+    }
+    {
+      lifetime: 60
+      startDelay: 120
+      baseLength: 72
+      offset: -90
+      layer: 130.01
+      randLength: false
+      cone: 0
+      particles: 1
+      length: 0
+      region: exotic-mod-init
+      sizeFrom: 48
+      sizeTo: 48
+      colorTo: ffffff00
+      colorFrom: e65555
+      clip: 8192
+    }
+    {
+      lifetime: 60
+      startDelay: 180
+      baseLength: 72
+      offset: -90
+      layer: 130.01
+      randLength: false
+      cone: 0
+      particles: 1
+      length: 0
+      region: exotic-mod-init
+      sizeFrom: 48
+      sizeTo: 48
+      colorFrom: ffffff00
+      colorTo: e65555
+      clip: 8192
+    }
+    {
+      lifetime: 60
+      startDelay: 240
+      baseLength: 72
+      offset: -90
+      layer: 130.01
+      randLength: false
+      cone: 0
+      particles: 1
+      length: 0
+      region: exotic-mod-init
+      sizeFrom: 48
+      sizeTo: 48
+      colorTo: ffffff00
+      colorFrom: e65555
+      clip: 8192
+    }
+    {
+      lifetime: 60
+      startDelay: 300
+      baseLength: 72
+      offset: -90
+      layer: 130.01
+      randLength: false
+      cone: 0
+      particles: 1
+      length: 0
+      region: exotic-mod-init
+      sizeFrom: 48
+      sizeTo: 48
+      colorFrom: ffffff00
+      colorTo: e65555
+      clip: 8192
+    }
+    {
+      lifetime: 60
+      startDelay: 360
+      baseLength: 72
+      offset: -90
+      layer: 130.01
+      randLength: false
+      cone: 0
+      particles: 1
+      length: 0
+      region: exotic-mod-init
+      sizeFrom: 48
+      sizeTo: 48
+      colorTo: ffffff00
+      colorFrom: e65555
+      clip: 8192
+    }
+    {
+      lifetime: 60
+      baseLength: 39.5
+      length: 0
+      randLength: false
+      offset: 180
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-rebel-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: e6555500
+      colorTo: e65555
+    }
+    {
+      lifetime: 60
+      baseRotation: 90
+      baseLength: 39.5
+      length: 0
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-specialist-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: be92f700
+      colorTo: be92f7
+    }
+    {
+      lifetime: 60
+      baseRotation: 180
+      baseLength: 39.5
+      length: 0
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-warden-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: 7382f000
+      colorTo: 7382f0
+    }
+    {
+      lifetime: 60
+      baseRotation: 270
+      baseLength: 39.5
+      length: 0
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-healer-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: 74cf8400
+      colorTo: 74cf84
+    }
+    //first piston slam begin
+    {
+      lifetime: 81
+      startDelay: 60
+      baseLength: 29
+      length: 12
+      randLength: false
+      offset: -90
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-rebel
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow2Out
+    }
+    {
+      lifetime: 81
+      startDelay: 60
+      baseRotation: 90
+      baseLength: 29
+      length: 12
+      randLength: false
+      offset: 180
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-specialist
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow2Out
+    }
+    {
+      lifetime: 81
+      startDelay: 60
+      baseRotation: 180
+      baseLength: 29
+      length: 12
+      randLength: false
+      offset: 90
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-warden
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow2Out
+    }
+    {
+      lifetime: 81
+      startDelay: 60
+      baseRotation: 270
+      baseLength: 29
+      length: 12
+      randLength: false
+      offset: 0
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-healer
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow2Out
+    }
+    {
+      lifetime: 81
+      startDelay: 60
+      baseLength: 39.5
+      length: 12
+      randLength: false
+      offset: 180
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-rebel-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: e65555
+      colorTo: e65555
+      interp: pow2Out
+    }
+    {
+      lifetime: 81
+      startDelay: 60
+      baseRotation: 90
+      baseLength: 39.5
+      length: 12
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-specialist-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: be92f7
+      colorTo: be92f7
+      interp: pow2Out
+    }
+    {
+      lifetime: 81
+      startDelay: 60
+      baseRotation: 180
+      baseLength: 39.5
+      length: 12
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-warden-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: 7382f0
+      colorTo: 7382f0
+      interp: pow2Out
+    }
+    {
+      lifetime: 81
+      startDelay: 60
+      baseRotation: 270
+      baseLength: 39.5
+      length: 12
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-healer-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: 74cf84
+      colorTo: 74cf84
+      interp: pow2Out
+    }
+    {
+      lifetime: 40
+      startDelay: 140
+      baseLength: 41
+      length: -12
+      randLength: false
+      offset: -90
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-rebel
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow5In
+    }
+    {
+      lifetime: 40
+      startDelay: 140
+      baseRotation: 90
+      baseLength: 41
+      length: -12
+      randLength: false
+      offset: 180
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-specialist
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow5In
+    }
+    {
+      lifetime: 40
+      startDelay: 140
+      baseRotation: 180
+      baseLength: 41
+      length: -12
+      randLength: false
+      offset: 90
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-warden
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow5In
+    }
+    {
+      lifetime: 40
+      startDelay: 140
+      baseRotation: 270
+      baseLength: 41
+      length: -12
+      randLength: false
+      offset: 0
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-healer
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow5In
+    }
+    {
+      lifetime: 40
+      startDelay: 140
+      baseLength: 51.5
+      length: -12
+      randLength: false
+      offset: 180
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-rebel-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: e65555
+      colorTo: e65555
+      interp: pow5In
+    }
+    {
+      lifetime: 40
+      startDelay: 140
+      baseRotation: 90
+      baseLength: 51.5
+      length: -12
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-specialist-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: be92f7
+      colorTo: be92f7
+      interp: pow5In
+    }
+    {
+      lifetime: 40
+      startDelay: 140
+      baseRotation: 180
+      baseLength: 51.5
+      length: -12
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-warden-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: 7382f0
+      colorTo: 7382f0
+      interp: pow5In
+    }
+    {
+      lifetime: 40
+      startDelay: 140
+      baseRotation: 270
+      baseLength: 51.5
+      length: -12
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-healer-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: 74cf84
+      colorTo: 74cf84
+      interp: pow5In
+    }
+    {
+      lifetime: 65
+      startDelay: 180
+      baseLength: 29
+      length: 115
+      line: true
+      cone: 25
+      particles: 22
+      lenFrom: 12
+      lenTo: 0
+      strokeFrom: 4
+      strokeTo: 2
+      colorTo: e65555
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+    {
+      lifetime: 50
+      startDelay: 180
+      baseLength: 29
+      length: 145
+      line: true
+      cone: 25
+      particles: 16
+      lenFrom: 8
+      lenTo: 0
+      strokeFrom: 3
+      strokeTo: 2
+      colorTo: e65555
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+    {
+      lifetime: 65
+      startDelay: 180
+      baseLength: 29
+      length: 115
+      baseRotation: 90
+      line: true
+      cone: 25
+      particles: 22
+      lenFrom: 12
+      lenTo: 0
+      strokeFrom: 4
+      strokeTo: 2
+      colorTo: be92f7
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+    {
+      lifetime: 50
+      startDelay: 180
+      baseLength: 29
+      length: 145
+      baseRotation: 90
+      line: true
+      cone: 25
+      particles: 16
+      lenFrom: 8
+      lenTo: 0
+      strokeFrom: 3
+      strokeTo: 2
+      colorTo: be92f7
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+    {
+      lifetime: 65
+      startDelay: 180
+      baseLength: 29
+      length: 115
+      baseRotation: 180
+      line: true
+      cone: 25
+      particles: 22
+      lenFrom: 12
+      lenTo: 0
+      strokeFrom: 4
+      strokeTo: 2
+      colorTo: 7382f0
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+    {
+      lifetime: 50
+      startDelay: 180
+      baseLength: 29
+      length: 145
+      baseRotation: 180
+      line: true
+      cone: 25
+      particles: 16
+      lenFrom: 8
+      lenTo: 0
+      strokeFrom: 3
+      strokeTo: 2
+      colorTo: 7382f0
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+    {
+      lifetime: 65
+      startDelay: 180
+      baseLength: 29
+      length: 115
+      baseRotation: -90
+      line: true
+      cone: 25
+      particles: 22
+      lenFrom: 12
+      lenTo: 0
+      strokeFrom: 4
+      strokeTo: 2
+      colorTo: 74cf84
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+    {
+      lifetime: 50
+      startDelay: 180
+      baseLength: 29
+      length: 145
+      baseRotation: -90
+      line: true
+      cone: 25
+      particles: 16
+      lenFrom: 8
+      lenTo: 0
+      strokeFrom: 3
+      strokeTo: 2
+      colorTo: 74cf84
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+    //first piston slam end
+    //second piston slam begin
+    {
+      lifetime: 60
+      startDelay: 180
+      baseLength: 29
+      length: 12
+      randLength: false
+      offset: -90
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-rebel
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow3Out
+    }
+    {
+      lifetime: 60
+      startDelay: 180
+      baseRotation: 90
+      baseLength: 29
+      length: 12
+      randLength: false
+      offset: 180
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-specialist
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow3Out
+    }
+    {
+      lifetime: 60
+      startDelay: 180
+      baseRotation: 180
+      baseLength: 29
+      length: 12
+      randLength: false
+      offset: 90
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-warden
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow3Out
+    }
+    {
+      lifetime: 60
+      startDelay: 180
+      baseRotation: 270
+      baseLength: 29
+      length: 12
+      randLength: false
+      offset: 0
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-healer
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow3Out
+    }
+    {
+      lifetime: 60
+      startDelay: 180
+      baseLength: 39.5
+      length: 12
+      randLength: false
+      offset: 180
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-rebel-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: e65555
+      colorTo: e65555
+      interp: pow3Out
+    }
+    {
+      lifetime: 60
+      startDelay: 180
+      baseRotation: 90
+      baseLength: 39.5
+      length: 12
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-specialist-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: be92f7
+      colorTo: be92f7
+      interp: pow3Out
+    }
+    {
+      lifetime: 60
+      startDelay: 180
+      baseRotation: 180
+      baseLength: 39.5
+      length: 12
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-warden-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: 7382f0
+      colorTo: 7382f0
+      interp: pow3Out
+    }
+    {
+      lifetime: 60
+      startDelay: 180
+      baseRotation: 270
+      baseLength: 39.5
+      length: 12
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-healer-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: 74cf84
+      colorTo: 74cf84
+      interp: pow3Out
+    }
+    {
+      lifetime: 40
+      startDelay: 240
+      baseLength: 41
+      length: -12
+      randLength: false
+      offset: -90
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-rebel
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow3In
+    }
+    {
+      lifetime: 40
+      startDelay: 240
+      baseLength: 41
+      length: -12
+      baseRotation: 90
+      randLength: false
+      offset: 180
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-specialist
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow3In
+    }
+    {
+      lifetime: 40
+      startDelay: 240
+      baseLength: 41
+      length: -12
+      baseRotation: 180
+      randLength: false
+      offset: 90
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-warden
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow3In
+    }
+    {
+      lifetime: 40
+      startDelay: 240
+      baseLength: 41
+      length: -12
+      baseRotation: 270
+      randLength: false
+      offset: 0
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-healer
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow3In
+    }
+    {
+      lifetime: 40
+      startDelay: 240
+      baseLength: 51.5
+      length: -12
+      randLength: false
+      offset: 180
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-rebel-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: e65555
+      colorTo: e65555
+      interp: pow3In
+    }
+    {
+      lifetime: 40
+      startDelay: 240
+      baseLength: 51.5
+      length: -12
+      baseRotation: 90
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-specialist-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: be92f7
+      colorTo: be92f7
+      interp: pow3In
+    }
+    {
+      lifetime: 40
+      startDelay: 240
+      baseLength: 51.5
+      length: -12
+      baseRotation: 180
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-warden-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: 7382f0
+      colorTo: 7382f0
+      interp: pow3In
+    }
+    {
+      lifetime: 40
+      startDelay: 240
+      baseLength: 51.5
+      length: -12
+      baseRotation: 270
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-healer-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: 74cf84
+      colorTo: 74cf84
+      interp: pow3In
+    }
+    {
+      lifetime: 65
+      startDelay: 280
+      baseLength: 29
+      length: 115
+      line: true
+      cone: 25
+      particles: 22
+      lenFrom: 12
+      lenTo: 0
+      strokeFrom: 4
+      strokeTo: 2
+      colorTo: e65555
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+    {
+      lifetime: 50
+      startDelay: 280
+      baseLength: 29
+      length: 145
+      line: true
+      cone: 25
+      particles: 16
+      lenFrom: 8
+      lenTo: 0
+      strokeFrom: 3
+      strokeTo: 2
+      colorTo: e65555
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+    {
+      lifetime: 65
+      startDelay: 280
+      baseLength: 29
+      length: 115
+      baseRotation: 90
+      line: true
+      cone: 25
+      particles: 22
+      lenFrom: 12
+      lenTo: 0
+      strokeFrom: 4
+      strokeTo: 2
+      colorTo: be92f7
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+    {
+      lifetime: 50
+      startDelay: 280
+      baseLength: 29
+      length: 145
+      baseRotation: 90
+      line: true
+      cone: 25
+      particles: 16
+      lenFrom: 8
+      lenTo: 0
+      strokeFrom: 3
+      strokeTo: 2
+      colorTo: be92f7
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+    {
+      lifetime: 65
+      startDelay: 280
+      baseLength: 29
+      length: 115
+      baseRotation: 180
+      line: true
+      cone: 25
+      particles: 22
+      lenFrom: 12
+      lenTo: 0
+      strokeFrom: 4
+      strokeTo: 2
+      colorTo: 7382f0
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+    {
+      lifetime: 50
+      startDelay: 280
+      baseLength: 29
+      length: 145
+      baseRotation: 180
+      line: true
+      cone: 25
+      particles: 16
+      lenFrom: 8
+      lenTo: 0
+      strokeFrom: 3
+      strokeTo: 2
+      colorTo: 7382f0
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+    {
+      lifetime: 65
+      startDelay: 280
+      baseLength: 29
+      length: 115
+      baseRotation: -90
+      line: true
+      cone: 25
+      particles: 22
+      lenFrom: 12
+      lenTo: 0
+      strokeFrom: 4
+      strokeTo: 2
+      colorTo: 74cf84
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+    {
+      lifetime: 50
+      startDelay: 280
+      baseLength: 29
+      length: 145
+      baseRotation: -90
+      line: true
+      cone: 25
+      particles: 16
+      lenFrom: 8
+      lenTo: 0
+      strokeFrom: 3
+      strokeTo: 2
+      colorTo: 74cf84
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+    //second piston slam end
+    //interlude, with flowers
+    {
+      lifetime: 360
+      startDelay: 280
+      baseLength: 29
+      length: 12
+      randLength: false
+      offset: -90
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-rebel
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow10Out
+    }
+    {
+      lifetime: 360
+      startDelay: 280
+      baseLength: 29
+      length: 12
+      baseRotation: 90
+      randLength: false
+      offset: 180
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-specialist
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow10Out
+    }
+    {
+      lifetime: 360
+      startDelay: 280
+      baseLength: 29
+      length: 12
+      baseRotation: 180
+      randLength: false
+      offset: 90
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-warden
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow10Out
+    }
+    {
+      lifetime: 360
+      startDelay: 280
+      baseLength: 29
+      length: 12
+      baseRotation: 270
+      randLength: false
+      offset: 0
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-healer
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow10Out
+    }
+    {
+      lifetime: 360
+      startDelay: 280
+      baseLength: 39.5
+      length: 12
+      randLength: false
+      offset: 180
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-rebel-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: e65555
+      colorTo: e65555
+      interp: pow10Out
+    }
+    {
+      lifetime: 360
+      startDelay: 280
+      baseLength: 39.5
+      length: 12
+      baseRotation: 90
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-specialist-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: be92f7
+      colorTo: be92f7
+      interp: pow10Out
+    }
+    {
+      lifetime: 360
+      startDelay: 280
+      baseLength: 39.5
+      length: 12
+      baseRotation: 180
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-warden-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: 7382f0
+      colorTo: 7382f0
+      interp: pow10Out
+    }
+    {
+      lifetime: 360
+      startDelay: 280
+      baseLength: 39.5
+      length: 12
+      baseRotation: 270
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-healer-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: 74cf84
+      colorTo: 74cf84
+      interp: pow10Out
+    }
+    {
+      lifetime: 31
+      startDelay: 640
+      baseLength: 41
+      length: 0
+      randLength: false
+      offset: -90
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-rebel
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow10Out
+    }
+    {
+      lifetime: 91
+      startDelay: 640
+      baseLength: 41
+      length: 0
+      baseRotation: 90
+      randLength: false
+      offset: 180
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-specialist
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow10Out
+    }
+    {
+      lifetime: 151
+      startDelay: 640
+      baseLength: 41
+      length: 0
+      baseRotation: 180
+      randLength: false
+      offset: 90
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-warden
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow10Out
+    }
+    {
+      lifetime: 211
+      startDelay: 640
+      baseLength: 41
+      length: 0
+      baseRotation: 270
+      randLength: false
+      offset: 0
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-healer
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow10Out
+    }
+    {
+      lifetime: 31
+      startDelay: 640
+      baseLength: 51.5
+      length: 0
+      randLength: false
+      offset: 180
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-rebel-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: e65555
+      colorTo: e65555
+      interp: pow10Out
+    }
+    {
+      lifetime: 91
+      startDelay: 640
+      baseLength: 51.5
+      length: 0
+      baseRotation: 90
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-specialist-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: be92f7
+      colorTo: be92f7
+      interp: pow10Out
+    }
+    {
+      lifetime: 151
+      startDelay: 640
+      baseLength: 51.5
+      length: 0
+      baseRotation: 180
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-warden-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: 7382f0
+      colorTo: 7382f0
+      interp: pow10Out
+    }
+    {
+      lifetime: 211
+      startDelay: 640
+      baseLength: 51.5
+      length: 0
+      baseRotation: 270
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-healer-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: 74cf84
+      colorTo: 74cf84
+      interp: pow10Out
+    }
+    //final piston slam
+    {
+      lifetime: 40
+      startDelay: 670
+      baseLength: 41
+      length: -12
+      randLength: false
+      offset: -90
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-rebel
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow3In
+    }
+    {
+      lifetime: 40
+      startDelay: 730
+      baseLength: 41
+      length: -12
+      baseRotation: 90
+      randLength: false
+      offset: 180
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-specialist
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow3In
+    }
+    {
+      lifetime: 40
+      startDelay: 790
+      baseLength: 41
+      length: -12
+      baseRotation: 180
+      randLength: false
+      offset: 90
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-warden
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow3In
+    }
+    {
+      lifetime: 40
+      startDelay: 850
+      baseLength: 41
+      length: -12
+      baseRotation: 270
+      randLength: false
+      offset: 0
+      layer: 35
+      cone: 0
+      particles: 1
+      region: exotic-mod-p-healer
+      sizeFrom: 20
+      sizeTo: 20
+      clip: 8192
+      interp: pow3In
+    }
+    {
+      lifetime: 40
+      startDelay: 670
+      baseLength: 51.5
+      length: -12
+      randLength: false
+      offset: 180
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-rebel-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: e65555
+      colorTo: e65555
+      interp: pow3In
+    }
+    {
+      lifetime: 40
+      startDelay: 730
+      baseLength: 51.5
+      length: -12
+      baseRotation: 90
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-specialist-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: be92f7
+      colorTo: be92f7
+      interp: pow3In
+    }
+    {
+      lifetime: 40
+      startDelay: 790
+      baseLength: 51.5
+      length: -12
+      baseRotation: 180
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-warden-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: 7382f0
+      colorTo: 7382f0
+      interp: pow3In
+    }
+    {
+      lifetime: 40
+      startDelay: 850
+      baseLength: 51.5
+      length: -12
+      baseRotation: 270
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-healer-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: 74cf84
+      colorTo: 74cf84
+      interp: pow3In
+    }
+    {
+      lifetime: 60
+      startDelay: 710
+      baseLength: 39.5
+      length: 0
+      randLength: false
+      offset: 180
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-rebel-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: e65555
+      colorTo: e6555500
+      interp: pow3In
+    }
+    {
+      lifetime: 60
+      startDelay: 770
+      baseLength: 39.5
+      length: 0
+      baseRotation: 90
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-specialist-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: be92f7
+      colorTo: be92f700
+      interp: pow3In
+    }
+    {
+      lifetime: 60
+      startDelay: 830
+      baseLength: 39.5
+      length: 0
+      baseRotation: 180
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-warden-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: 7382f0
+      colorTo: 7382f000
+      interp: pow3In
+    }
+    {
+      lifetime: 60
+      startDelay: 890
+      baseLength: 39.5
+      length: 0
+      baseRotation: 270
+      randLength: false
+      offset: 90
+      layer: 99.99
+      cone: 0
+      particles: 1
+      region: exotic-mod-healer-icon
+      sizeFrom: 8
+      sizeTo: 8
+      clip: 8192
+      colorFrom: 74cf84
+      colorTo: 74cf8400
+      interp: pow3In
+    }
+    {
+      lifetime: 65
+      startDelay: 710
+      baseLength: 29
+      length: 115
+      line: true
+      cone: 25
+      particles: 22
+      lenFrom: 12
+      lenTo: 0
+      strokeFrom: 4
+      strokeTo: 2
+      colorTo: e65555
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+    {
+      lifetime: 50
+      startDelay: 710
+      baseLength: 29
+      length: 145
+      line: true
+      cone: 25
+      particles: 16
+      lenFrom: 8
+      lenTo: 0
+      strokeFrom: 3
+      strokeTo: 2
+      colorTo: e65555
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+    {
+      lifetime: 65
+      startDelay: 770
+      baseLength: 29
+      length: 115
+      baseRotation: 90
+      line: true
+      cone: 25
+      particles: 22
+      lenFrom: 12
+      lenTo: 0
+      strokeFrom: 4
+      strokeTo: 2
+      colorTo: be92f7
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+    {
+      lifetime: 50
+      startDelay: 770
+      baseLength: 29
+      length: 145
+      baseRotation: 90
+      line: true
+      cone: 25
+      particles: 16
+      lenFrom: 8
+      lenTo: 0
+      strokeFrom: 3
+      strokeTo: 2
+      colorTo: be92f7
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+    {
+      lifetime: 65
+      startDelay: 830
+      baseLength: 29
+      length: 115
+      baseRotation: 180
+      line: true
+      cone: 25
+      particles: 22
+      lenFrom: 12
+      lenTo: 0
+      strokeFrom: 4
+      strokeTo: 2
+      colorTo: 7382f0
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+    {
+      lifetime: 50
+      startDelay: 830
+      baseLength: 29
+      length: 145
+      baseRotation: 180
+      line: true
+      cone: 25
+      particles: 16
+      lenFrom: 8
+      lenTo: 0
+      strokeFrom: 3
+      strokeTo: 2
+      colorTo: 7382f0
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+    {
+      lifetime: 65
+      startDelay: 890
+      baseLength: 29
+      length: 115
+      baseRotation: -90
+      line: true
+      cone: 25
+      particles: 22
+      lenFrom: 12
+      lenTo: 0
+      strokeFrom: 4
+      strokeTo: 2
+      colorTo: 74cf84
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+    {
+      lifetime: 50
+      startDelay: 890
+      baseLength: 29
+      length: 145
+      baseRotation: -90
+      line: true
+      cone: 25
+      particles: 16
+      lenFrom: 8
+      lenTo: 0
+      strokeFrom: 3
+      strokeTo: 2
+      colorTo: 74cf84
+      interp: pow3Out
+      sizeInterp: pow2In
     }
   ]
-}
-ammoPerShot: 180
-ammoTypes: {
-  shadow: {
-    damage: 0
-    lifetime: 0
-    speed: 0
-    shootEffect: none
-    smokeEffect: none
-    hitEffect: none
-    despawnEffect: {
-      type: MultiEffect
-      lifetime: 1080
-      clip: 720
-      effects: [
-        {
-          type: ParticleEffect
-          particles: 1
-          length: 0
-          lifetime: 1080
-          region: circle-shadow
-          sizeFrom: 35
-          sizeTo: 60
-        }
-        {
-          type: WaveEffect
-          lifetime: 840
-          sizeFrom: 0
-          sizeTo: 352
-          strokeFrom: 12
-          strokeTo: 12
-          colorTo: ffffff00
-          interp: pow5Out
-        }
-        {
-          type: ParticleEffect
-          line: true
-          lifetime: 840
-          length: 352
-          particles: 35
-          strokeFrom: 10
-          strokeTo: 10
-          lenFrom: 25
-          lenTo: 0
-          interp: pow5Out
-          colorTo: ffffff00
-        }
-      ]
-    }
-    fragBullets: 1
-    fragBullet: {
+  spawnBullets: [
+    //second piston slam steam
+    {
+      type: BulletType
       speed: 0
-      lifetime: 1080
-      splashDamageRadius: 720
-      splashDamage: 1250000
+      lifetime: 300
+      damage: 0
       collides: false
-      collidesTiles: false
-      absorbable: false
       hittable: false
-      hitShake: 180
-      width: 0
-      height: 0
-      fragBullets: 1
+      absorbable: false
+      fragBullets: 25
+      fragLifeMin: 0
+      fragRandomSpread: 0
       fragBullet: {
-        lifetime: 0
+        type: BulletType
         speed: 0
-        killShooter: true
-        fragBullets: 720
-        fragVelocityMax: 1
-        fragVelocityMin: 1
-        fragBullet: {
-          speed: 3
-          damage: 18000
-          pierce: true
-          pierceBuilding: true
-          hittable: false
-          absorbable: false
-          reflectable: false
-          knockback: 72
-          lifetime: 240
-          width: 0.01
-          height: 0.01
-          despawnEffect: none
-          hitEffect: none
-          lightRadius: 0
-        }
-      }
-      despawnEffect: {
-        type: MultiEffect
-        lifetime: 720
-        layer: 140
-        clip: 8192
-        effects: [
+        lifetime: 60
+        damage: 0
+        collides: false
+        hittable: false
+        absorbable: false
+        hitEffect: none
+        despawnEffect: [
           {
-            type: ParticleEffect
-            lifetime: 260
-            length: 0
-            particles: 1
-            sizeFrom: 8192
-            sizeTo: 8192
-            colorTo: ffffff00
-          }
-          {
-            type: WaveEffect
-            sizeFrom: 0
-            sizeTo: 720
-            strokeFrom: 45
-            strokeTo: 0
-            lifetime: 240
-          }
-          {
-            type: WaveEffect
-            sizeFrom: 0
-            sizeTo: 450
-            strokeFrom: 20
-            strokeTo: 0
-            lifetime: 60
-          }
-          {
-            type: ParticleEffect
-            length: 450
-            particles: 85
-            lifetime: 720
-            sizeFrom: 45
+            useRotation: false
+            lifetime: 110
+            baseLength: 29
+            length: 65
+            cone: 15
+            particles: 3
+            sizeFrom: 4
             sizeTo: 0
-            colorTo: ffffff50
+            colorTo: 787878
+            interp: pow2Out
+            sizeInterp: pow2In
           }
           {
-            type: ParticleEffect
-            length: 450
-            particles: 65
-            lifetime: 420
-            sizeFrom: 25
+            useRotation: false
+            lifetime: 110
+            baseLength: 29
+            baseRotation: 90
+            length: 65
+            cone: 15
+            particles: 3
+            sizeFrom: 4
             sizeTo: 0
-            colorTo: ffffff75
+            colorTo: 787878
+            interp: pow2Out
+            sizeInterp: pow2In
           }
           {
-            type: ParticleEffect
-            length: 320
-            particles: 70
-            lifetime: 700
-            sizeFrom: 42
-            sizeTo: 25
-            colorTo: ffffff00
+            useRotation: false
+            lifetime: 110
+            baseLength: 29
+            baseRotation: 180
+            length: 65
+            cone: 15
+            particles: 3
+            sizeFrom: 4
+            sizeTo: 0
+            colorTo: 787878
+            interp: pow2Out
+            sizeInterp: pow2In
           }
           {
-            type: ParticleEffect
-            line: true
-            particles: 35
-            length: 600
-            lifetime: 240
-            lenFrom: 30
-            lenTo: 30
-            strokeFrom: 8
-            strokeTo: 0
-          }
-          {
-            type: ParticleEffect
-            line: true
-            particles: 45
-            length: 720
-            lifetime: 360
-            lenFrom: 40
-            lenTo: 40
-            strokeFrom: 15
-            strokeTo: 0
+            useRotation: false
+            lifetime: 110
+            baseLength: 29
+            baseRotation: -90
+            length: 65
+            cone: 15
+            particles: 3
+            sizeFrom: 4
+            sizeTo: 0
+            colorTo: 787878
+            interp: pow2Out
+            sizeInterp: pow2In
           }
         ]
       }
     }
-    lightning: 1
-    lightningLength: 2
-    lightningType: {
-      lifetime: 0
-      damage: 0
+    //containment breach effects
+    {
+      type: BulletType
       speed: 0
-      fragBullets: 25
-      fragLifeMin: 0.1
-      fragLifeMax: 10
-      fragVelocityMin: 0.1
-      fragVelocityMax: 1.5
+      lifetime: 600
+      damage: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      hitEffect: none
+      despawnEffect: none
+      fragBullets: 2
+      fragLifeMin: 0
       fragBullet: {
-        speed: 4
-        lifetime: 60
-        damage: 0
-        width: 0
-        height: 0
-        despawnEffect: none
-        collides: false
-        absorbable: false
-        hittable: false
-        lightning: 1
-        lightningDamage: 12500
-        lightningLength: 35
-        lightningColor: ffffff
-        lightRadius: 0
-      }
-      lightning: 1
-      lightningLength: 2
-      lightningType: {
-        damage: 0
+        type: BulletType
         speed: 0
-        lifetime: 0
+        lifetime: 120
+        damage: 0
         collides: false
+        hittable: false
         absorbable: false
-        fragBullets: 1
+        hitEffect: none
+        despawnEffect: none
+        fragBullets: 400
+        fragRandomSpread: 0
+        fragLifeMin: 0
         fragBullet: {
-          lifetime: 835
+          type: BulletType
           speed: 0
+          lifetime: 750
           damage: 0
-          width: 0
-          height: 0
           collides: false
-          absorbable: false
           hittable: false
-          despawnEffect: {
-            type: MultiEffect
-            lifetime: 240
-            clip: 720
-            effects: [
+          absorbable: false
+          hitEffect: none
+          despawnEffect: [
+            {
+              length: 280
+              layer: 130
+              lifetime: 40
+              line: true
+              particles: 1
+              cone: 10
+              lenFrom: 10
+              lenTo: 6
+              strokeFrom: 4
+              strokeTo: 0
+            }
+            {
+              length: 240
+              layer: 130
+              lifetime: 40
+              line: true
+              particles: 1
+              cone: 10
+              lenFrom: 18
+              lenTo: 10
+              strokeFrom: 8
+              strokeTo: 0
+            }
+            {
+              length: 180
+              layer: 130
+              lifetime: 80
+              particles: 2
+              cone: 15
+              sizeFrom: 8
+              sizeTo: 0
+              colorTo: ffffff00
+              interp: pow2Out
+              sizeInterp: pow3In
+            }
+            {
+              length: 200
+              layer: 130
+              lifetime: 60
+              particles: 3
+              cone: 15
+              sizeFrom: 6
+              sizeTo: 0
+              colorTo: ffffff00
+              interp: pow2Out
+              sizeInterp: pow3In
+            }
+          ]
+        }
+      }
+    }
+    //rifts
+    {
+      type: BulletType
+      speed: 0
+      lifetime: 750
+      damage: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      hitEffect: none
+      despawnEffect: none
+      fragBullets: 5
+      fragLifeMin: 0
+      fragBullet: {
+        type: BulletType
+        speed: 0
+        lifetime: 450
+        damage: 0
+        collides: false
+        hittable: false
+        absorbable: false
+        hitEffect: none
+        despawnEffect: none
+        fragBullets: 1
+        fragVelocityMin: 0.6
+        fragBullet: {
+          type: BulletType
+          speed: 24
+          lifetime: 25
+          damage: 0
+          collides: false
+          hittable: false
+          absorbable: false
+          hitEffect: none
+          despawnEffect: [
+            {
+              particles: 3
+              length: 0
+              lifetime: 100
+              sizeFrom: 0
+              sizeTo: 45
+              region: circle-shadow
+              clip: 8192
+            }
+            {
+              particles: 4
+              length: 0
+              lifetime: 100
+              sizeFrom: 0
+              sizeTo: 30
+              colorFrom: 000000
+              colorTo: 000000
+              layer: 111
+              region: circle-shadow
+              clip: 8192
+            }
+            {
+              startDelay: 100
+              particles: 3
+              length: 0
+              lifetime: 380
+              sizeFrom: 45
+              sizeTo: 45
+              region: circle-shadow
+              clip: 8192
+            }
+            {
+              startDelay: 100
+              particles: 4
+              length: 0
+              lifetime: 380
+              sizeFrom: 30
+              sizeTo: 30
+              colorFrom: 000000
+              colorTo: 000000
+              layer: 111
+              region: circle-shadow
+              clip: 8192
+            }
+            {
+              startDelay: 480
+              particles: 3
+              length: 0
+              lifetime: 100
+              sizeTo: 0
+              sizeFrom: 45
+              region: circle-shadow
+              clip: 8192
+            }
+            {
+              startDelay: 480
+              particles: 4
+              length: 0
+              lifetime: 100
+              sizeTo: 0
+              sizeFrom: 30
+              colorFrom: 000000
+              colorTo: 000000
+              layer: 111
+              region: circle-shadow
+              clip: 8192
+            }
+            {
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 3
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            {
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 6
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            {
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 9
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            {
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 12
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            //wave 2
+            {
+              startDelay: 60
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 3
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            {
+              startDelay: 60
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 6
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            {
+              startDelay: 60
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 9
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            {
+              startDelay: 60
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 12
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            //wave 3
+            {
+              startDelay: 120
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 3
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            {
+              startDelay: 120
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 6
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            {
+              startDelay: 120
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 9
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            {
+              startDelay: 120
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 12
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            //wave 4
+            {
+              startDelay: 180
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 3
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            {
+              startDelay: 180
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 6
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            {
+              startDelay: 180
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 9
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            {
+              startDelay: 180
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 12
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            //wave 5
+            {
+              startDelay: 240
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 3
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            {
+              startDelay: 240
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 6
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            {
+              startDelay: 240
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 9
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            {
+              startDelay: 240
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 12
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            //wave 6
+            {
+              startDelay: 300
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 3
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            {
+              startDelay: 300
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 6
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            {
+              startDelay: 300
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 9
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            {
+              startDelay: 300
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 12
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            //wave 7
+            {
+              startDelay: 360
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 3
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            {
+              startDelay: 360
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 6
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            {
+              startDelay: 360
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 9
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            {
+              startDelay: 360
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 12
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            //wave 8
+            {
+              startDelay: 420
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 3
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            {
+              startDelay: 420
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 6
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            {
+              startDelay: 420
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 9
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+            {
+              startDelay: 420
+              type: WaveEffect
+              lifetime: 240
+              sizeFrom: 0
+              sizeTo: 100
+              strokeFrom: 12
+              strokeTo: 0
+              interp: pow2Out
+              colorFrom: ffffff44
+              colorTo: ffffff00
+              clip: 8192
+            }
+          ]
+          fragBullets: 1
+          fragBullet: {
+            type: BulletType
+            speed: 0
+            lifetime: 480
+            collides: false
+            hittable: false
+            absorbable: false
+            spawnBullets: [
               {
-                type: WaveEffect
-                lifetime: 240
-                interp: pow5In
-                sizeFrom: 350
-                sizeTo: 30
-                colorFrom: ffffff00
-                strokeFrom: 12
-                strokeTo: 12
+                type: BulletType
+                speed: 0
+                lifetime: 120
+                damage: 0
+                collides: false
+                hittable: false
+                absorbable: false
+                hitEffect: none
+                despawnEffect: none
+                fragBullets: 3
+                fragSpread: 120
+                fragRandomSpread: 0
+                fragVelocityMin: 1
+                fragVelocityMax: 1
+                fragBullet: {
+                  speed: 18
+                  lifetime: 25
+                  drag: 0.08
+                  homingPower: 0.12
+                  homingRange: 480
+                  damage: 24000
+                  sprite: circle-shadow
+                  width: 40
+                  height: 40
+                  shrinkY: 0
+                  frontColor: ffffff
+                  backColor: 00000000
+                  trailChance: 1
+                  trailEffect: {
+                    particles: 1
+                    length: 0
+                    lifetime: 25
+                    sizeFrom: 20
+                    sizeTo: 0
+                    region: circle-shadow
+                  }
+                  lightning: 1
+                  lightningLength: 2
+                  lightningCone: 0
+                  lightningType: {
+                    speed: 0.5
+                    lifetime: 150
+                    drag: -0.03
+                    homingPower: 0.15
+                    homingRange: 480
+                    damage: 24000
+                    sprite: circle-shadow
+                    width: 40
+                    height: 40
+                    shrinkY: 0
+                    frontColor: ffffff
+                    backColor: 00000000
+                    trailInterval: 1
+                    trailEffect: {
+                      particles: 1
+                      length: 0
+                      lifetime: 25
+                      sizeFrom: 20
+                      sizeTo: 0
+                      region: circle-shadow
+                    }
+                    knockback: 440
+                    hitEffect: [
+                      {
+                        particles: 1
+                        length: 0
+                        lifetime: 35
+                        sizeFrom: 40
+                        sizeTo: 0
+                        interp: pow3In
+                        region: exotic-mod-diamond-thin
+                      }
+                      {
+                        lifetime: 65
+                        length: 115
+                        line: true
+                        cone: 35
+                        particles: 22
+                        lenFrom: 12
+                        lenTo: 0
+                        strokeFrom: 4
+                        strokeTo: 2
+                        interp: pow3Out
+                        sizeInterp: pow2In
+                      }
+                      {
+                        lifetime: 50
+                        length: 145
+                        line: true
+                        cone: 30
+                        particles: 16
+                        lenFrom: 8
+                        lenTo: 0
+                        strokeFrom: 3
+                        strokeTo: 2
+                        interp: pow3Out
+                        sizeInterp: pow2In
+                      }
+                    ]
+                    despawnEffect: {
+                      particles: 1
+                      length: 0
+                      lifetime: 35
+                      sizeFrom: 40
+                      sizeTo: 0
+                      interp: pow3In
+                      region: circle-shadow
+                    }
+                  }
+                }
               }
               {
-                type: ParticleEffect
-                line: true
-                lifetime: 240
-                length: -350
-                baseLength: 350
-                particles: 35
-                strokeFrom: 10
-                strokeTo: 10
-                lenFrom: 0
-                lenTo: 25
-                interp: pow5In
-                colorFrom: ffffff00
+                type: BulletType
+                speed: 0
+                lifetime: 0
+                damage: 0
+                collides: false
+                hittable: false
+                absorbable: false
+                hitEffect: none
+                despawnEffect: none
+                fragBullets: 240
+                fragLifeMin: 0
+                fragBullet: {
+                  type: BulletType
+                  speed: 0
+                  lifetime: 480
+                  splashDamage: 25
+                  splashDamageRadius: 80
+                }
+              }
+              {
+                type: BulletType
+                speed: 0
+                lifetime: 0
+                damage: 0
+                collides: false
+                hittable: false
+                absorbable: false
+                hitEffect: none
+                despawnEffect: none
+                fragBullets: 3
+                fragLifeMin: 0
+                fragRandomSpread: 0
+                fragBullet: {
+                  type: BulletType
+                  speed: 0
+                  lifetime: 480
+                  damage: 0
+                  collides: false
+                  hittable: false
+                  absorbable: false
+                  hitEffect: none
+                  despawnEffect: [
+                    {
+                      length: 0.001
+                      lifetime: 110
+                      line: true
+                      cone: 0
+                      particles: 1
+                      lenFrom: 90
+                      lenTo: 90
+                      strokeFrom: 5
+                      strokeTo: 0
+                      sizeInterp: pow2In
+                    }
+                    {
+                      type: WaveEffect
+                      lifetime: 35
+                      sizeFrom: 0
+                      sizeTo: 20
+                      strokeFrom: 4
+                      strokeTo: 0
+                      interp: pow3Out
+                    }
+                  ]
+                  lightning: 2
+                  lightningLength: 2
+                  lightningCone: 0
+                  lightningType: {
+                    type: PointBulletType
+                    splashDamage: 54000
+                    splashDamageRadius: 20
+                    speed: 90
+                    lifetime: 1
+                    trailEffect: none
+                    lightning: 1
+                    lightningLength: 2
+                    lightningCone: 45
+                    lightningType: {
+                      type: BulletType
+                      speed: 0
+                      lifetime: 5
+                      damage: 0
+                      collides: false
+                      hittable: false
+                      absorbable: false
+                      hitEffect: none
+                      despawnEffect: [
+                        {
+                          length: 0.001
+                          lifetime: 110
+                          line: true
+                          cone: 0
+                          particles: 1
+                          lenFrom: 90
+                          lenTo: 90
+                          strokeFrom: 4
+                          strokeTo: 0
+                          sizeInterp: pow2In
+                        }
+                        {
+                          type: WaveEffect
+                          lifetime: 35
+                          sizeFrom: 0
+                          sizeTo: 20
+                          strokeFrom: 4
+                          strokeTo: 0
+                          interp: pow3Out
+                        }
+                      ]
+                      lightning: 1
+                      lightningLength: 2
+                      lightningCone: 0
+                      lightningType: {
+                        type: PointBulletType
+                        splashDamage: 54000
+                        splashDamageRadius: 20
+                        speed: 90
+                        lifetime: 1
+                        trailEffect: none
+                        lightning: 1
+                        lightningLength: 2
+                        lightningCone: 45
+                        lightningType: {
+                          type: BulletType
+                          speed: 0
+                          lifetime: 5
+                          damage: 0
+                          collides: false
+                          hittable: false
+                          absorbable: false
+                          hitEffect: none
+                          despawnEffect: [
+                            {
+                              length: 0.001
+                              lifetime: 110
+                              line: true
+                              cone: 0
+                              particles: 1
+                              lenFrom: 90
+                              lenTo: 90
+                              strokeFrom: 3
+                              strokeTo: 0
+                              sizeInterp: pow2In
+                            }
+                            {
+                              type: WaveEffect
+                              lifetime: 35
+                              sizeFrom: 0
+                              sizeTo: 20
+                              strokeFrom: 4
+                              strokeTo: 0
+                              interp: pow3Out
+                            }
+                          ]
+                          lightning: 2
+                          lightningLength: 2
+                          lightningCone: 0
+                          lightningType: {
+                            type: PointBulletType
+                            splashDamage: 54000
+                            splashDamageRadius: 20
+                            speed: 90
+                            lifetime: 1
+                            trailEffect: none
+                            lightning: 1
+                            lightningLength: 2
+                            lightningCone: 45
+                            lightningType: {
+                              type: BulletType
+                              speed: 0
+                              lifetime: 5
+                              damage: 0
+                              collides: false
+                              hittable: false
+                              absorbable: false
+                              hitEffect: none
+                              despawnEffect: [
+                                {
+                                  length: 0.001
+                                  lifetime: 110
+                                  line: true
+                                  cone: 0
+                                  particles: 1
+                                  lenFrom: 90
+                                  lenTo: 90
+                                  strokeFrom: 2
+                                  strokeTo: 0
+                                  sizeInterp: pow2In
+                                }
+                                {
+                                  type: WaveEffect
+                                  lifetime: 35
+                                  sizeFrom: 0
+                                  sizeTo: 20
+                                  strokeFrom: 4
+                                  strokeTo: 0
+                                  interp: pow3Out
+                                }
+                              ]
+                              lightning: 1
+                              lightningLength: 2
+                              lightningCone: 0
+                              lightningType: {
+                                type: PointBulletType
+                                splashDamage: 54000
+                                splashDamageRadius: 20
+                                speed: 90
+                                lifetime: 1
+                                trailEffect: none
+                                lightning: 1
+                                lightningLength: 2
+                                lightningCone: 45
+                                lightningType: {
+                                  type: BulletType
+                                  speed: 0
+                                  lifetime: 5
+                                  damage: 0
+                                  collides: false
+                                  hittable: false
+                                  absorbable: false
+                                  hitEffect: none
+                                  despawnEffect: [
+                                    {
+                                      length: 0.001
+                                      lifetime: 110
+                                      line: true
+                                      cone: 0
+                                      particles: 1
+                                      lenFrom: 90
+                                      lenTo: 90
+                                      strokeFrom: 1
+                                      strokeTo: 0
+                                      sizeInterp: pow2In
+                                    }
+                                    {
+                                      type: WaveEffect
+                                      lifetime: 35
+                                      sizeFrom: 0
+                                      sizeTo: 20
+                                      strokeFrom: 4
+                                      strokeTo: 0
+                                      interp: pow3Out
+                                    }
+                                  ]
+                                  lightning: 1
+                                  lightningLength: 2
+                                  lightningCone: 0
+                                  lightningType: {
+                                    type: PointBulletType
+                                    splashDamage: 54000
+                                    splashDamageRadius: 20
+                                    speed: 90
+                                    lifetime: 1
+                                    trailEffect: none
+                                    fragBullets: 1
+                                    fragRandomSpread: 45
+                                    despawnEffect: {
+                                      type: WaveEffect
+                                      lifetime: 35
+                                      sizeFrom: 0
+                                      sizeTo: 20
+                                      strokeFrom: 4
+                                      strokeTo: 0
+                                      interp: pow3Out
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
               }
             ]
           }
         }
-        lightning: 1
-        lightningLength: 2
-        lightningType: {
-          speed: 0
-          lifetime: 0
-          hitEffect: none 
-          despawnEffect: none
-          fragBullets: 60
-          fragLifeMax: 25
-          fragBullet: {
-            type: ArtilleryBulletType
-            speed: 0.01
-            lifetime: 40
-            hittable: false
-            collides: false
-            absorbable: false
-            trailChance: 0
-            width: 0
-            height: 0
-            despawnEffect: none
-            hitEffect: none
-            hitSound: none
-            fragBullets: 1
-            fragCone: 0
-            fragBullet: {
-              type: ShrapnelBulletType
-              length: 480
-              lifetime: 80
-              damage: 12500
-              toColor: ffffff
-              hitShake: 5
+      }
+    }
+    //shrapnel bursts
+    {
+      type: BulletType
+      speed: 0
+      lifetime: 700
+      damage: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      hitEffect: none
+      despawnEffect: none
+      fragBullets: 35
+      fragLifeMin: 0
+      fragBullet: {
+        type: BulletType
+        speed: 0
+        lifetime: 1000
+        damage: 0
+        collides: false
+        hittable: false
+        absorbable: false
+        hitShake: 8
+        hitEffect: none
+        despawnEffect: none
+        fragBullets: 1
+        fragBullet: {
+          type: ShrapnelBulletType
+          serrations: 0
+          toColor: ffffff
+          lifetime: 110
+          length: 220
+          width: 24
+          damage: 0
+        }
+      }
+    }
+    //massive lightning strike
+    {
+      type: BulletType
+      speed: 0
+      lifetime: 0
+      damage: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      hitEffect: none
+      despawnEffect: none
+      fragBullets: 4
+      fragLifeMin: 0.4
+      fragLifeMax: 0.8
+      fragBullet: {
+        type: BulletType
+        speed: 0
+        lifetime: 1800
+        damage: 0
+        collides: false
+        hittable: false
+        absorbable: false
+        hitEffect: none
+        despawnEffect: none
+        fragBullets: 1
+        fragBullet: {
+          hitEffect: none
+          despawnEffect: [
+            {
+              length: 0.001
+              lifetime: 150
+              line: true
+              cone: 0
+              particles: 1
+              lenFrom: 150
+              lenTo: 150
+              strokeFrom: 16
+              strokeTo: 0
+              sizeInterp: pow3In
             }
-          }
+          ]
           lightning: 1
           lightningLength: 2
+          lightningCone: 0
           lightningType: {
-            speed: 0
-            lifetime: 0
-            hitEffect: none 
+            type: PointBulletType
+            splashDamage: 128000
+            splashDamageRadius: 45
+            speed: 150
+            lifetime: 1
+            trailEffect: none
+            fragBullets: 1
+            fragRandomSpread: 45
+            hitEffect: none
             despawnEffect: none
-            fragBullets: 60
-            fragLifeMax: 20
-            fragBullet: {
-              speed: 0.01
-              lifetime: 50
+            hitShake: 35
+            lightning: 2
+            lightningLength: 2
+            lightningCone: 45
+            lightningType: {
+              type: BulletType
+              speed: 0
+              lifetime: 0
+              damage: 0
               collides: false
               hittable: false
               absorbable: false
-              reflectable: false
-              despawnEffect: none
               hitEffect: none
-              fragBullets: 2
-              fragCone: 25
-              fragLifeMin: 0.5
-              fragLifeMax: 1.5
-              fragBullet: {
-                type: EmpBulletType
-                scaleVelocity: true
-                damage: 0
-                hitUnits: false
-                healPercent: 100
-                pierce: true
-                pierceBuilding: true
-                absorbable: false
-                hittable: false
-                reflectable: false
-                speed: 8
-                sprite: exotic-mod-torpedo
-                width: 25
-                height: 25
-                frontColor: ffffff
-                backColor: 00000000
-                hitColor: ffffff
-                shrinkY: 0
-                hitEffect: {
-                  type: WaveEffect
-                  lifetime: 12
-                  sizeFrom: 0
-                  sizeTo: 7
-                  strokeFrom: 1
-                  strokeTo: 0
-                }
-                despawnEffect: none
-                trailInterval: 3
-                trailRotation: true
-                trailEffect: {
-                  type: ParticleEffect
+              despawnEffect: [
+                {
+                  length: 0.001
+                  lifetime: 150
+                  line: true
                   cone: 0
                   particles: 1
-                  length: 40
-                  lifetime: 90
-                  interp: pow10Out
-                  sizeFrom: 24
-                  region: exotic-mod-torpedo-effect
+                  lenFrom: 120
+                  lenTo: 120
+                  strokeFrom: 13
+                  strokeTo: 0
+                  sizeInterp: pow3In
+                }
+              ]
+              lightning: 1
+              lightningLength: 2
+              lightningCone: 0
+              lightningType: {
+                type: PointBulletType
+                splashDamage: 128000
+                splashDamageRadius: 45
+                speed: 120
+                lifetime: 1
+                trailEffect: none
+                fragBullets: 1
+                fragRandomSpread: 45
+                hitEffect: none
+                despawnEffect: none
+                lightning: 2
+                lightningLength: 2
+                lightningCone: 45
+                lightningType: {
+                  type: BulletType
+                  speed: 0
+                  lifetime: 0
+                  damage: 0
+                  collides: false
+                  hittable: false
+                  absorbable: false
+                  hitEffect: none
+                  despawnEffect: [
+                    {
+                      length: 0.001
+                      lifetime: 150
+                      line: true
+                      cone: 0
+                      particles: 1
+                      lenFrom: 100
+                      lenTo: 100
+                      strokeFrom: 10
+                      strokeTo: 0
+                      sizeInterp: pow3In
+                    }
+                  ]
+                  lightning: 1
+                  lightningLength: 2
+                  lightningCone: 0
+                  lightningType: {
+                    type: PointBulletType
+                    splashDamage: 128000
+                    splashDamageRadius: 45
+                    speed: 100
+                    lifetime: 1
+                    trailEffect: none
+                    fragBullets: 1
+                    fragRandomSpread: 45
+                    hitEffect: none
+                    despawnEffect: none
+                    lightning: 1
+                    lightningLength: 2
+                    lightningCone: 45
+                    lightningType: {
+                      type: BulletType
+                      speed: 0
+                      lifetime: 0
+                      damage: 0
+                      collides: false
+                      hittable: false
+                      absorbable: false
+                      hitEffect: none
+                      despawnEffect: [
+                        {
+                          length: 0.001
+                          lifetime: 150
+                          line: true
+                          cone: 0
+                          particles: 1
+                          lenFrom: 80
+                          lenTo: 80
+                          strokeFrom: 8
+                          strokeTo: 0
+                          sizeInterp: pow3In
+                        }
+                      ]
+                      lightning: 1
+                      lightningLength: 2
+                      lightningCone: 0
+                      lightningType: {
+                        type: PointBulletType
+                        splashDamage: 128000
+                        splashDamageRadius: 45
+                        speed: 80
+                        lifetime: 1
+                        trailEffect: none
+                        fragBullets: 1
+                        fragRandomSpread: 45
+                        hitEffect: none
+                        despawnEffect: none
+                        lightning: 1
+                        lightningLength: 2
+                        lightningCone: 45
+                        lightningType: {
+                          type: BulletType
+                          speed: 0
+                          lifetime: 0
+                          damage: 0
+                          collides: false
+                          hittable: false
+                          absorbable: false
+                          hitEffect: none
+                          despawnEffect: [
+                            {
+                              length: 0.001
+                              lifetime: 150
+                              line: true
+                              cone: 0
+                              particles: 1
+                              lenFrom: 80
+                              lenTo: 80
+                              strokeFrom: 7
+                              strokeTo: 0
+                              sizeInterp: pow3In
+                            }
+                          ]
+                          lightning: 1
+                          lightningLength: 2
+                          lightningCone: 0
+                          lightningType: {
+                            type: PointBulletType
+                            splashDamage: 128000
+                            splashDamageRadius: 45
+                            speed: 80
+                            lifetime: 1
+                            trailEffect: none
+                            fragBullets: 1
+                            fragRandomSpread: 45
+                            hitEffect: none
+                            despawnEffect: none
+                            lightning: 1
+                            lightningLength: 2
+                            lightningCone: 45
+                            lightningType: {
+                              type: BulletType
+                              speed: 0
+                              lifetime: 0
+                              damage: 0
+                              collides: false
+                              hittable: false
+                              absorbable: false
+                              hitEffect: none
+                              despawnEffect: [
+                                {
+                                  length: 0.001
+                                  lifetime: 150
+                                  line: true
+                                  cone: 0
+                                  particles: 1
+                                  lenFrom: 80
+                                  lenTo: 80
+                                  strokeFrom: 5
+                                  strokeTo: 0
+                                  sizeInterp: pow3In
+                                }
+                              ]
+                              lightning: 1
+                              lightningLength: 2
+                              lightningCone: 0
+                              lightningType: {
+                                type: PointBulletType
+                                splashDamage: 128000
+                                splashDamageRadius: 45
+                                speed: 80
+                                lifetime: 1
+                                trailEffect: none
+                                fragBullets: 1
+                                fragRandomSpread: 45
+                                hitEffect: none
+                                despawnEffect: none
+                                lightning: 2
+                                lightningLength: 2
+                                lightningCone: 45
+                                lightningType: {
+                                  type: BulletType
+                                  speed: 0
+                                  lifetime: 0
+                                  damage: 0
+                                  collides: false
+                                  hittable: false
+                                  absorbable: false
+                                  hitEffect: none
+                                  despawnEffect: [
+                                    {
+                                      length: 0.001
+                                      lifetime: 150
+                                      line: true
+                                      cone: 0
+                                      particles: 1
+                                      lenFrom: 80
+                                      lenTo: 80
+                                      strokeFrom: 3
+                                      strokeTo: 0
+                                      sizeInterp: pow3In
+                                    }
+                                  ]
+                                  lightning: 1
+                                  lightningLength: 2
+                                  lightningCone: 0
+                                  lightningType: {
+                                    type: PointBulletType
+                                    splashDamage: 128000
+                                    splashDamageRadius: 45
+                                    speed: 80
+                                    lifetime: 1
+                                    trailEffect: none
+                                    fragBullets: 1
+                                    fragRandomSpread: 45
+                                    hitEffect: none
+                                    despawnEffect: none
+                                    lightning: 1
+                                    lightningLength: 2
+                                    lightningCone: 45
+                                    lightningType: {
+                                      type: BulletType
+                                      speed: 0
+                                      lifetime: 0
+                                      damage: 0
+                                      collides: false
+                                      hittable: false
+                                      absorbable: false
+                                      hitEffect: none
+                                      despawnEffect: [
+                                        {
+                                          length: 0.001
+                                          lifetime: 150
+                                          line: true
+                                          cone: 0
+                                          particles: 1
+                                          lenFrom: 80
+                                          lenTo: 80
+                                          strokeFrom: 2
+                                          strokeTo: 0
+                                          sizeInterp: pow3In
+                                        }
+                                      ]
+                                      lightning: 1
+                                      lightningLength: 2
+                                      lightningCone: 0
+                                      lightningType: {
+                                        type: PointBulletType
+                                        splashDamage: 128000
+                                        splashDamageRadius: 45
+                                        speed: 80
+                                        lifetime: 1
+                                        trailEffect: none
+                                        fragBullets: 1
+                                        fragRandomSpread: 45
+                                        hitEffect: none
+                                        despawnEffect: none
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }                                        
+                        }
+                      }                  
+                    }
+                  }
                 }
               }
             }
@@ -446,6 +3370,278 @@ ammoTypes: {
         }
       }
     }
+    //screen shake/misc
+    {
+      type: BulletType
+      speed: 0
+      lifetime: 180
+      damage: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      despawnShake: 15
+    }
+    {
+      type: BulletType
+      speed: 0
+      lifetime: 280
+      damage: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      despawnShake: 15
+    }
+    {
+      type: BulletType
+      speed: 0
+      lifetime: 710
+      damage: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      despawnShake: 6
+    }
+    {
+      type: BulletType
+      speed: 0
+      lifetime: 770
+      damage: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      despawnShake: 6
+    }
+    {
+      type: BulletType
+      speed: 0
+      lifetime: 830
+      damage: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      despawnShake: 6
+    }
+    {
+      type: BulletType
+      speed: 0
+      lifetime: 890
+      damage: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      despawnShake: 6
+    }
+    {
+      type: BulletType
+      speed: 0
+      lifetime: 1800
+      damage: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      despawnShake: 120
+    }
+  ]
+  despawnEffect: [
+    {
+      lifetime: 600
+      length: 600
+      baseLength: 100
+      particles: 60
+      sizeFrom: 60
+      sizeTo: 0
+      colorTo: ffffff88
+      interp: pow5Out
+      sizeInterp: pow2In
+      layer: 130
+    }
+    {
+      lifetime: 600
+      length: 750
+      baseLength: 100
+      particles: 72
+      sizeFrom: 50
+      sizeTo: 0
+      colorTo: ffffff88
+      interp: pow5Out
+      sizeInterp: pow2In
+      layer: 130
+    }
+    {
+      lifetime: 600
+      length: 800
+      baseLength: 150
+      particles: 60
+      sizeFrom: 35
+      sizeTo: 0
+      colorTo: ffffff88
+      interp: pow5Out
+      sizeInterp: pow2In
+      layer: 130
+    }
+    {
+      lifetime: 600
+      length: 900
+      baseLength: 150
+      particles: 60
+      sizeFrom: 25
+      sizeTo: 0
+      colorTo: ffffff88
+      interp: pow5Out
+      sizeInterp: pow2In
+      layer: 130
+    }
+    {
+      lifetime: 800
+      length: 600
+      baseLength: 100
+      particles: 60
+      sizeFrom: 130
+      sizeTo: 0
+      colorTo: ffffff88
+      interp: pow5Out
+      sizeInterp: pow2In
+      layer: 130
+    }
+    {
+      lifetime: 900
+      length: 750
+      baseLength: 100
+      particles: 72
+      sizeFrom: 90
+      sizeTo: 0
+      colorTo: ffffff88
+      interp: pow5Out
+      sizeInterp: pow2In
+      layer: 130
+    }
+    {
+      lifetime: 1000
+      length: 800
+      baseLength: 150
+      particles: 60
+      sizeFrom: 60
+      sizeTo: 0
+      colorTo: ffffff88
+      interp: pow5Out
+      sizeInterp: pow2In
+      layer: 130
+    }
+    {
+      lifetime: 600
+      length: 900
+      baseLength: 150
+      particles: 60
+      sizeFrom: 25
+      sizeTo: 0
+      colorTo: ffffff88
+      interp: pow5Out
+      sizeInterp: pow2In
+      layer: 130
+    }
+    {
+      particles: 1
+      length: 0
+      lifetime: 960
+      sizeFrom: 1000
+      sizeTo: 0
+      colorTo: ffffff
+      region: circle-shadow
+      layer: 130
+    }
+    {
+      particles: 1
+      length: 0
+      lifetime: 960
+      sizeFrom: 1600
+      sizeTo: 0
+      colorTo: ffffff
+      region: circle-shadow
+      layer: 130
+    }
+    {
+      length: 1200
+      layer: 130
+      lifetime: 210
+      line: true
+      particles: 35
+      lenFrom: 60
+      lenTo: 0
+      strokeFrom: 20
+      strokeTo: 12
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+    {
+      length: 1350
+      layer: 130
+      lifetime: 260
+      line: true
+      particles: 22
+      lenFrom: 36
+      lenTo: 0
+      strokeFrom: 12
+      strokeTo: 8
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+    {
+      type: WaveEffect
+      lifetime: 360
+      sizeFrom: 0
+      sizeTo: 1100
+      strokeFrom: 20
+      strokeTo: 0
+      interp: pow3Out
+      colorFrom: ffffff
+      colorTo: ffffff88
+    }
+    {
+      type: WaveEffect
+      lifetime: 480
+      sizeFrom: 0
+      sizeTo: 1200
+      strokeFrom: 10
+      strokeTo: 0
+      interp: pow3Out
+      colorFrom: ffffff
+      colorTo: ffffff88
+    }
+    {
+      startDelay: 120
+      type: WaveEffect
+      lifetime: 480
+      sizeFrom: 0
+      sizeTo: 1200
+      strokeFrom: 15
+      strokeTo: 0
+      interp: pow3Out
+      colorFrom: ffffff
+      colorTo: ffffff88
+    }
+    {
+      startDelay: 240
+      type: WaveEffect
+      lifetime: 480
+      sizeFrom: 0
+      sizeTo: 1200
+      strokeFrom: 15
+      strokeTo: 0
+      interp: pow3Out
+      colorFrom: ffffff
+      colorTo: ffffff88
+    }
+  ]
+  fragBullets: 360
+  fragBullet: {
+    type: RailBulletType
+    pierceEffect: none
+    hitEffect: none
+    despawnEffect: none
+    pointEffectSpace: 1000
+    damage: 85000
+    length: 840
+    knockback: 55
   }
 }
 category: turret

@@ -1,0 +1,14 @@
+type: ShallowLiquid
+variants: 3
+liquidDrop: crystal-plasma
+liquidMultiplier: 0.1
+status: exotic-mod-vapourizing
+statusDuration: 120
+cacheLayer: cryofluid
+emitLight: true
+lightRadius: 25
+lightColor: 87b7ff20
+attributes: {
+  heat: 1.5
+  water: -1.0
+}

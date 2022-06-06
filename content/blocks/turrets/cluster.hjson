@@ -1,6 +1,6 @@
 type: PointDefenseTurret
 health: 250
-reloadTime: 12
+reload: 12
 bulletDamage: 2
 range: 110
 consumes: {

@@ -3,7 +3,7 @@ size: 3
 health: 225000
 requirements: [
   shadow/108
-  bluewolframite/54
+  inseltiene/54
   ]
 category: defense
 research: shadow-wall-large

@@ -5,9 +5,25 @@ liquidCapacity: 30
 craftTime: 35
 craftEffect: heal
 updateEffect: hitLaser
-drawer: drawMixer
 outputItem: baenite/1
-outputLiquid: water/10
+outputLiquid: water/0.3
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawLiquidRegion
+      drawLiquid: water
+      suffix: -liquid
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
 consumes: {
   power: 1.2
   liquid: {

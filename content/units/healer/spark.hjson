@@ -1,0 +1,51 @@
+type: legs
+speed: 0.6
+hitSize: 12
+rotateSpeed: 3.4
+health: 800
+armor: 7
+legCount: 3
+legGroupSize: 1
+legLength: 20
+maxStretch: 1.2
+legExtension: -5
+shadowElevationScl: 0.2
+lightColor: 84f591
+decals: [
+  {
+    region: exotic-mod-spark-flare
+    layer: 105
+    color: 83f793
+  }
+]
+weapons: [
+  {
+    x: 0
+    reload: 3
+    shots: 2
+    inaccuracy: 5
+    velocityRnd: 0.2
+    shootSound: none
+    bullet: {
+      type: LiquidBulletType
+      damage: 3
+      liquid: oil
+      shootEffect: shootLiquid
+      orbSize: 2
+      speed: 3
+      lifetime: 35
+    }
+  }
+]
+abilities: [
+  {
+    type: RepairFieldAbility
+    amount: 20
+    reload: 90
+    range: 45
+  }
+]
+research: {
+  parent: flicker
+  objectives: [recreator]
+}

@@ -1,25 +1,41 @@
-type: GenericSmelter
+type: GenericCrafter
+itemCapacity: 25
+craftTime: 240
+drawer: { 
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: drawFlame
+      flameColor: 90a2fc
+    }
+  ]
+}
 size: 2
 hasPower: true
 hasItems: true
 craftEffect: {
-  type: ParticleEffect
-  lifetime: 35
-  length: 8
+  baseRotation: 90
+  cone: 35
+  particles: 18
+  length: 20
+  sizeInterp: pow2In
   colorTo: 7382f0
 }
-flameColor: 90a2fc
 consumes: {
   power: 1.25
   items: {
     items: [
-      lead/3
-      silicon/2
+      lead/9
+      silicon/6
     ]
   }
 }
-craftTime: 80
-outputItem: territe-alloy/2
+outputItem: territe-alloy/6
+ambientSound: hum 
+ambientSoundVolume: 0.7
 category: crafting
 research: silicon-smelter
 requirements: [

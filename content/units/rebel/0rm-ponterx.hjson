@@ -1,0 +1,66 @@
+type: payload
+flying: true
+health: 3500
+armor: 24
+hitSize: 32
+speed: 4.1
+rotateSpeed: 3
+accel: 0.07
+drag: 0.02
+isEnemy: false
+targetable: false
+vulnerableWithPayloads: true
+payloadCapacity: 576
+itemCapacity: 360
+drawCell: false
+outlines: false
+buildSpeed: 1.1
+drawBuildBeam: false
+envEnabled: -1
+envDisabled: 4
+engineColor: e65555
+engineOffset: 35
+engineSize: 6
+engines: [
+  {
+    x: 19
+    y: 1
+    radius: 5
+    rotation: 315
+    engineColor: e65555
+  }
+  {
+    x: -19
+    y: 1
+    radius: 5
+    rotation: 225
+    engineColor: e65555
+  }
+  {
+    x: 16
+    y: -16
+    radius: 4
+    rotation: 315
+    engineColor: e65555
+  }
+  {
+    x: -16
+    y: -16
+    radius: 4
+    rotation: 225
+    engineColor: e65555
+  }
+]
+weapons: [
+  {
+    type: BuildWeapon
+    x: 14
+    y: 22
+  }
+  {
+    type: BuildWeapon
+    x: 22
+    y: 14
+  }
+]
+shadowElevationScl: 1.8

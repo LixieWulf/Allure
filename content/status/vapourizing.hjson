@@ -8,5 +8,5 @@ effect: {
   length: 4
   sizeFrom: 2
   sizeTo: 0
-  colorTo: ffb14a
+  colorTo: 87b7ff
 }

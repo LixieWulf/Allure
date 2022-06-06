@@ -10,7 +10,7 @@ requirements: [
   lead/350
   silicon/300
   thorium/450
-  bluewolframite/250
+  inseltiene/250
   baenite/150
 ]
 consumes: {
@@ -19,7 +19,7 @@ consumes: {
     items: [
       silicon/1
       baenite/1
-      bluewolframite/1
+      inseltiene/1
     ]
   }
   liquid: {
@@ -27,4 +27,4 @@ consumes: {
     amount: 0.35
   }
 }
-research: bluewolframite-overdrive-projector
+research: inseltiene-overdrive-projector

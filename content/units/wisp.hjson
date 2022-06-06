@@ -1,0 +1,68 @@
+type: payload
+flying: true
+hitSize: 18
+speed: 2.3
+rotateSpeed: 3
+strafePenalty: 1
+drag: 0.03
+accel: 0.1
+lowAltitude: true
+payloadCapacity: 324
+abilities: [
+  {
+    type: StatusFieldAbility
+    effect: none
+    reload: 15
+    effectY: 4
+    parentizeEffects: true
+    activeEffect: {
+      followParent: true
+      particles: 1
+      lifetime: 20
+      length: 0
+      region: exotic-mod-wisp-blade1
+      sizeFrom: 7.75
+      sizeTo: 7.75
+      spin: 24
+      layer: 95.1
+    }
+  }
+  {
+    type: StatusFieldAbility
+    effect: none
+    reload: 5
+    effectX: 11
+    effectY: 1
+    parentizeEffects: true
+    activeEffect: {
+      followParent: true
+      particles: 1
+      lifetime: 10
+      length: 0
+      region: exotic-mod-wisp-blade2
+      sizeFrom: 8
+      sizeTo: 8
+      spin: 36
+      layer: 95.05
+    }
+  }
+  {
+    type: StatusFieldAbility
+    effect: none
+    reload: 5
+    effectX: -11
+    effectY: 1
+    parentizeEffects: true
+    activeEffect: {
+      followParent: true
+      particles: 1
+      lifetime: 10
+      length: 0
+      region: exotic-mod-wisp-blade2
+      sizeFrom: 8
+      sizeTo: 8
+      spin: 36
+      layer: 95.05
+    }
+  }
+]

@@ -1,0 +1,42 @@
+type: AttributeCrafter
+craftTime: 30
+attribute: heat
+baseEfficiency: 0.5
+maxBoost: 2.5
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawArcSmelt
+      flameRad: 1.5
+      midColor: ded0c1
+      flameColor: dea568
+      circleSpace: 1
+      circleStroke: 0.5
+      particleLife: 25
+      particleRad: 9
+      particleStroke: 0.75
+      particleLen: 4
+      alpha: 0.5
+    }
+  ]
+}
+consumes: {
+  items: {
+    items: [
+      uranium/4
+    ]
+  }
+}
+outputItems: [
+  scilaxa/1
+  thorium/1
+]
+category: crafting
+research: accelerator
+requirements: [
+  ladera/30
+]

@@ -1,0 +1,8 @@
+type: Wall
+customShadow: true
+update: true
+size: 3
+requirements: [
+  beryllium/75
+  silicon/70
+]

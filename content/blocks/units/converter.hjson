@@ -11,8 +11,7 @@ consumes: {
         titanium/5000
         thorium/4000
         baenite/2500
-        tungsten/2000
-        bluewolframite/1000
+        inseltiene/1000
       ]
     }
   liquid: {
@@ -22,8 +21,6 @@ consumes: {
 }
 upgrades: [
   [wraith, banshee]
-  [harmony, vengeance]
-  [disease, maliase]
   [cinder, blaze]
 ]
 requirements: [
@@ -34,8 +31,7 @@ requirements: [
   surge-alloy/6000
   baenite/4000
   amethyst-gem/2500
-  tungsten/2000
-  bluewolframite/1500
+  inseltiene/1500
 ]
 category: units
 research: rebuilder

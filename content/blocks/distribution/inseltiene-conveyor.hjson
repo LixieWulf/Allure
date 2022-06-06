@@ -1,0 +1,13 @@
+type: Conveyor
+health: 540
+requirements: [
+  copper/1
+  lead/1
+  titanium/1
+  surge-alloy/1
+  inseltiene/2
+]
+category: distribution
+speed: 0.18
+displayedSpeed: 20
+research: armored-conveyor

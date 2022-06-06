@@ -13,7 +13,118 @@ engineSize: 24
 fallSpeed: 0.005
 lightColor: ffffff
 lightRadius: 0
+immunities: [
+  exotic-mod-temporal-shock
+]
 weapons: [
+  {
+    x: 0
+    mirror: false
+    shootOnDeath: true
+    controllable: false
+    shootSound: none
+    shootCone: 180
+    parentizeEffects: true
+    bullet: {
+      type: BulletType
+      lifetime: 0
+      damage: 0
+      speed: 0
+      maxRange: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      trailInterval: 30
+      trailEffect: {
+        layer: 140
+        lightOpacity: 0
+        length: 0
+        lifetime: 720
+        particles: 1
+        region: exotic-mod-blinding
+        sizeFrom: 0
+        sizeTo: 1440
+      }
+      despawnEffect: {
+        length: 0
+        particles: 1
+        lifetime: 100
+        interp: pow2In
+        colorTo: ffffff00
+        layer: 135
+        sizeFrom: 8192
+        sizeTo: 8192
+        clip: 8192
+      }
+      fragBullets: 240
+      fragLifeMin: 0.01
+      fragLifeMax: 1
+      fragBullet: {
+        type: BulletType
+        lifetime: 715
+        speed: 0
+        damage: 0
+        collides: false
+        hittable: false
+        absorbable: false
+        hitShake: 40
+        despawnEffect: none
+        hitEffect: none
+        fragBullets: 100
+        fragBullet: {
+          type: SapBulletType
+          sapStrength: 0
+          length: 800
+          damage: 12500
+          width: 0
+          status: none
+          hitEffect: {
+            length: -180
+            lifetime: 40
+            particles: 1
+            interp: pow3In
+            sizeFrom: 8
+            sizeTo: 0
+            colorFrom: 585858
+            cone: 0
+          }
+        }
+      }
+      lightning: 1
+      lightningLength: 2
+      lightningType: {
+        type: BulletType
+        lifetime: 595
+        damage: 0
+        speed: 0
+        collides: false
+        absorbable: false
+        hittable: false
+        despawnHit: true
+        hitEffect: {
+          length: 0
+          particles: 1
+          lifetime: 30
+          layer: 135
+          startDelay: 110
+          sizeFrom: 8192
+          sizeTo: 8192
+          clip: 8192
+          colorTo: ffffff00
+        }
+        despawnEffect: {
+          length: 0
+          particles: 1
+          layer: 135
+          lifetime: 120
+          clip: 8192
+          sizeFrom: 8192
+          sizeTo: 8192
+          colorFrom: ffffff00
+        }
+      }
+    }
+  }
   {
     x: 0
     y: 72
@@ -1416,6 +1527,88 @@ abilities: [
     sectorRad: 0.4
     rotateSpeed: 5
     color: a488eb
+  }
+  {
+    type: StatusFieldAbility
+    reload: 15
+    effect: none
+    parentizeEffects: true
+    activeEffect: {
+      type: MultiEffect
+      layer: 89
+      lifetime: 30
+      clip: 8192
+      followParent: true
+      rotWithParent: true
+      baseRotation: 90
+      effects: [
+        {
+          baseRotation: 90
+          randLength: false
+          offset: 180
+          layer: 94
+          length: -15
+          lifetime: 20
+          baseLength: 15
+          sizeFrom: 150
+          sizeTo: 150
+          region: exotic-mod-luminance
+          colorFrom: ffffff00
+          cone: 0
+          particles: 1
+        }
+        {
+          randLength: false
+          offset: 180
+          layer: 94
+          length: 15
+          lifetime: 20
+          baseLength: -15
+          sizeFrom: 150
+          sizeTo: 150
+          region: exotic-mod-luminance
+          colorFrom: ffffff00
+          cone: 0
+          particles: 1
+        }
+        {
+          baseRotation: 90
+          startDelay: 20
+          randLength: false
+          offset: 180
+          layer: 94
+          length: -15
+          lifetime: 20
+          sizeFrom: 150
+          sizeTo: 150
+          region: exotic-mod-luminance
+          colorTo: ffffff00
+          cone: 0
+          particles: 1
+        }
+        {
+          randLength: false
+          startDelay: 20
+          offset: 180
+          layer: 94
+          length: 15
+          lifetime: 20
+          sizeFrom: 150
+          sizeTo: 150
+          region: exotic-mod-luminance
+          colorTo: ffffff00
+          cone: 0
+          particles: 1
+        }
+        {
+          type: MultiEffect
+          startDelay: 60
+          effects: [
+            hitBulletSmall
+          ]
+        }
+      ]
+    }
   }
 ]
 fallEffect: {

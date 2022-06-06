@@ -1,0 +1,28 @@
+type: PowerTurret
+health: 260
+reload: 30
+range: 120
+shots: 2
+burstSpacing: 3
+spread: 0
+consumes: {
+  power: 0.85
+} 
+targetHealing: true
+shootSound: lasershoot
+shootType: {
+  type: LaserBoltBulletType
+  damage: 5
+  collidesTeam: true
+  healPercent: -2
+  speed: 6
+  lifetime: 20
+  frontColor: ffffff
+  backColor: 83f793
+}
+category: turret
+research: 1g-begin
+requirements: [
+  copper/40
+  lead/20
+]

@@ -1,0 +1,11 @@
+type: Wall
+chanceDeflect: 550
+health: 76000
+size: 2
+lightningChance: 0.15
+lightningDamage: 450
+requirements: [
+  inseltiene/32
+  ]
+category: defense
+research: inseltiene-wall

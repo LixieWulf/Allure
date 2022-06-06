@@ -6,32 +6,16 @@ consumes: {
 plans: [
   {
     unit: soul
-    time: 1080
+    time: 990
     requirements: [
+      copper/20
       silicon/25
-      metaglass/30
-    ]
-  }
-  {
-    unit: victory
-    time: 1250
-    requirements: [
-      silicon/20
-      lead/35
-      titanium/25
-    ]
-  }
-  {
-    unit: outbreak
-    time: 1100
-    requirements: [
-      silicon/25
-      graphite/20
+      metaglass/20
     ]
   }
   {
     unit: flicker
-    time: 2400
+    time: 1200
     requirements: [
       silicon/30
       lead/15

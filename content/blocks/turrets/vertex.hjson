@@ -2,10 +2,12 @@ type: PowerTurret
 size: 8
 health: 510000
 range: 80
-reloadTime: 140
-recoilAmount: -50
+reload: 140
+recoil: -50
 restitution: 0.2
-powerUse: 1288
+consumes: {
+  power: 1288
+  } 
 shootSound: none
 shootType: {
   type: ShrapnelBulletType

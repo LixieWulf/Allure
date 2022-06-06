@@ -1,0 +1,11 @@
+type: StorageBlock
+size: 2
+itemCapacity: 600
+placeablePlayer: false
+category: units
+research: container
+requirements: [
+  graphite/50
+  metaglass/25
+  titanium/150
+]

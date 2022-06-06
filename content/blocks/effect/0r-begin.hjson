@@ -1,0 +1,13 @@
+type: Wall
+visibleInEditor: false
+research: {
+  root: true
+  name: Rebel
+  requiresUnlock: false
+  objectives: [
+    {
+      type: SectorComplete
+      preset: crash-site
+    }
+  ]
+}

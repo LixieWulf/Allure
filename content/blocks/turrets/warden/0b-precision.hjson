@@ -1,0 +1,50 @@
+type: PowerTurret
+size: 3
+health: 850
+consumes: {
+  power: 12
+} 
+rotateSpeed: 3.5
+reload: 5
+recoil: 2
+range: 140
+shake: 1
+shootSound: none
+shootEffect: none
+smokeEffect: none
+shootY: 8
+shootType: {
+  type: ContinuousLaserBulletType
+  damage: 12
+  incendChance: 0
+  length: 132
+  width: 6
+  lifetime: 7
+  fadeTime: 0
+  colors: [7382f020, 7382f060, 7382f0, ffffff]
+  lightColor: 7382f0
+  shootEffect: none
+  smokeEffect: none
+  hitEffect: {
+    type: ParticleEffect
+    particles: 2
+    length: 20
+    lifetime: 15
+    line: true
+    lenFrom: 6
+    lenTo: 0
+    strokeFrom: 1.5
+    strokeTo: 1
+    colorFrom: 7382f0
+    colorTo: 7382f050
+  }
+}
+category: turret
+research: 0b-wavelength
+requirements: [
+  copper/200
+  lead/200
+  graphite/175
+  territe-alloy/150
+  plastanium/100
+]

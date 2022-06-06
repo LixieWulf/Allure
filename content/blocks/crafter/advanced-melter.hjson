@@ -6,6 +6,23 @@ hasItems: true
 liquidCapacity: 440
 itemCapacity: 30
 craftTime: 60
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawLiquidRegion
+      drawLiquid: crystal-plasma
+      suffix: -liquid
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
 requirements: [
   copper/200
   lead/500
@@ -24,7 +41,6 @@ consumes: {
       ]
    }
 }
-drawer: drawMixer
-outputLiquid: mag-slag/60
+outputLiquid: crystal-plasma/1
 category: crafting
 research: melter

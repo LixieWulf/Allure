@@ -1,0 +1,16 @@
+type: Floor
+variants: 0
+isLiquid: true
+liquidMultiplier: 0.18
+cacheLayer: cryofluid
+speedMultiplier: 0.15
+liquidDrop: crystal-plasma
+status: exotic-mod-vapourizing
+statusDuration: 240
+emitLight: true
+lightRadius: 65
+lightColor: 87b7ff35
+drownTime: 75
+attributes: {
+  heat: 1.8
+}

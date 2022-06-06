@@ -5,12 +5,12 @@ targetAir: true
 targetGround: true
 size: 6
 range: 414
-reloadTime: 1
+reload: 1
 shootCone: 5
 ammoUseEffect: none
 shootEffect: shootLiquid
 rotateSpeed: 10
-recoilAmount: 0
+recoil: 0
 shots: 2
 alternate: true
 inaccuracy: 10
@@ -84,20 +84,6 @@ ammoTypes: {
     ammoMultiplier: 4
     statusDuration: 180
     status: freezing
-  }
-  mag-slag: {
-    type: liquidBulletType
-    liquid: mag-slag
-    lifetime: 70
-    speed: 6
-    knockback: 4
-    puddleSize: 32
-    orbSize: 6
-    damage: 3450
-    drag: 0.002
-    ammoMultiplier: 4
-    statusDuration: 600
-    status: exotic-mod-vapourizing
   }
 }
 category: turret

@@ -1,0 +1,96 @@
+type: ItemTurret
+size: 3
+targetAir: false 
+health: 1200
+range: 160
+reload: 5
+recoil: 0.5
+shots: 3
+inaccuracy: 25
+shootSound: fire
+ammoUseEffect: none
+ammoTypes: {
+  sand: {
+    type: BulletType
+    ammoMultiplier: 1
+    speed: 8
+    pierce: true 
+    pierceBuilding: true 
+    lifetime: 20 
+    hittable: false
+    knockback: 1.2
+    status: exotic-mod-sandblasted
+    statusDuration: 10
+    collidesAir: false 
+    hitEffect: none
+    despawnEffect: none
+    shootEffect: {
+      type: MultiEffect
+      effects: [
+        {
+          layer: 60
+          length: 180
+          lifetime: 110
+          cone: 20
+          particles: 3
+          interp: pow2Out
+          sizeInterp: linear 
+          region: particle
+          sizeFrom: 4
+          sizeTo: 0
+          colorFrom: f7cba4
+          colorTo: f7cba4
+        }
+        {
+          layer: 60
+          length: 180
+          lifetime: 110
+          cone: 20
+          particles: 5
+          interp: pow3Out
+          sizeInterp: linear 
+          region: particle
+          sizeFrom: 16
+          sizeTo: 0
+          colorFrom: f7cba4
+          colorTo: f7cba4
+        }
+        {
+          layer: 60
+          length: 200
+          lifetime: 110
+          cone: 15
+          particles: 7
+          interp: pow3Out
+          sizeInterp: linear 
+          region: particle
+          sizeFrom: 16
+          sizeTo: 0
+          colorFrom: ffe4ca
+          colorTo: ffe4ca
+        }
+      ]
+    }
+    smokeEffect: {
+      length: 160
+      lifetime: 110
+      layer: 55
+      cone: 25
+      particles: 3
+      interp: pow2Out
+      sizeInterp: linear 
+      region: particle
+      sizeFrom: 8
+      sizeTo: 0
+      colorFrom: d3ae8d
+      colorTo: d3ae8d
+    }
+  }
+}
+category: turret
+research: split 
+requirements: [
+  copper/125
+  graphite/60
+  metaglass/40
+]

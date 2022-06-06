@@ -19,8 +19,6 @@ consumes: {
 }
 upgrades: [
   [fiend, ghost]
-  [phage, pathogen]
-  [excalibur, endeavour]
   [pyre, ember]
 ]
 requirements: [

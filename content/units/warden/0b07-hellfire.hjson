@@ -1,0 +1,45 @@
+type: flying
+flying: true
+envEnabled: -1
+shadowElevationScl: 2.6
+drawShields: false
+hitSize: 120
+health: 1000000
+armor: 600
+speed: 1.4
+rotateSpeed: 0.7
+drag: 0.05
+accel: 0.05
+engineOffset: 70
+engineSize: 0
+lowAltitude: true
+fallSpeed: 0.005
+lightRadius: 170
+lightColor: 6f7fe8
+buildSpeed: 12.4
+strafePenalty: 0.85
+drawCell: false
+drawBody: false
+outlines: false
+ammoType: {
+  type: PowerAmmoType
+  totalPower: 1500000
+}
+abilities: [
+  {
+    type: ShieldArcAbility
+    whenShooting: false
+    radius: 50
+    angle: 90
+    angleOffset: 90
+  }
+  {
+    type: ShieldArcAbility
+    whenShooting: false
+    radius: 50
+    angle: 90
+    angleOffset: -90
+  }
+]
+envEnabled: -1
+envDisabled: 0

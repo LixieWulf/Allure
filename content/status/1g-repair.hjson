@@ -1,0 +1,16 @@
+damage: -0.25
+speedMultiplier: 1.2
+effectChance: 0.008
+effect: {
+  length: 4
+  lifetime: 25
+  particles: 2
+  region: exotic-mod-square
+  offset: 45
+  sizeFrom: 3
+  sizeTo: 0
+  interp: pow2Out
+  sizeInterp: pow3In
+  colorFrom: 83f793
+  colorTo: 83f793
+}

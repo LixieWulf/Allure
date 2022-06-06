@@ -1,10 +1,23 @@
-type: GenericSmelter
+type: GenericCrafter
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: drawFlame
+      flameColor: ffceb5
+      flameRadius: 16
+      flameRadiusIn: 10
+    }
+  ]
+}
 size: 6
 itemCapacity: 125
 liquidCapacity: 90
 hasLiquids: true
 requiresWater: true
-flameColor: ffceb5
 updateEffectChance: 0.2
 craftTime: 210
 consumes: {
@@ -20,7 +33,7 @@ consumes: {
   }
 }
 outputItem: surge-alloy/24
-outputLiquid: mag-slag/45
+outputLiquid: crystal-plasma/0.5
 category: crafting
 research: alloy-smelter
 requirements: [

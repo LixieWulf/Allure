@@ -1,6 +1,6 @@
 type: PowerTurret
 health: 177550
-reloadTime: 35
+reload: 35
 shootCone: 15
 size: 5
 shots: 4
@@ -19,7 +19,7 @@ requirements: [
   titanium/250
   thorium/450
   surge-alloy/750
-  bluewolframite/700
+  inseltiene/700
   draconium/300
 ]
 category: turret

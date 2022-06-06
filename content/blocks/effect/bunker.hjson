@@ -1,0 +1,7 @@
+type: StorageBlock
+health: 18000
+size: 4
+itemCapacity: 1800
+unitCapModifier: 1
+category: effect
+buildVisibility: shown

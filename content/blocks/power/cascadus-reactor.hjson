@@ -1,9 +1,44 @@
-type: SingleTypeGenerator
+type: ConsumeGenerator
 size: 10
+hasLiquids: true
 canOverdrive: false
 liquidCapacity: 400
 itemDuration: 240
 baseExplosiveness: 185
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawLiquidRegion
+      suffix: -liquid
+      drawLiquid: energia
+    }
+    {
+      type: DrawRegion
+      suffix: -rotator0
+      rotateSpeed: 4.5
+      spinSprite: true
+    }
+    {
+      type: DrawRegion
+      suffix: -rotator1
+      rotateSpeed: -6
+    }
+    {
+      type: DrawRegion
+      suffix: -rotator2
+      rotateSpeed: 9
+      spinSprite: true
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
 consumes: {
   liquid: {
     liquid: energia
@@ -11,280 +46,11 @@ consumes: {
   }
   items: {
     items: [
-      bluewolframite/2
+      inseltiene/2
     ]
   }
 }
-generateEffectRnd: 0
-generateEffect: {
-  type: MultiEffect
-  clip: 8192
-  layer: 35
-  lifetime: 240
-  effects: [
-    {
-      type: ParticleEffect
-      region: exotic-mod-cascadus-base
-      lightOpacity: 0
-      particles: 1
-      lifetime: 240
-      length: 0
-      sizeFrom: 40
-      sizeTo: 40
-    }
-    {
-      type: ParticleEffect
-      region: exotic-mod-cascadus-base-frame-3
-      lightOpacity: 0
-      particles: 1
-      lifetime: 240
-      length: 0
-      sizeFrom: 40
-      sizeTo: 40
-      colorFrom: 3bbeff
-      colorTo: 3bbeff
-    }
-    {
-      type: ParticleEffect
-      region: exotic-mod-cascadus-base-frame-3
-      lightOpacity: 0
-      particles: 1
-      lifetime: 48
-      length: 0
-      sizeFrom: 40
-      sizeTo: 40
-      colorFrom: 41414a
-      colorTo: 41414a
-    }
-    {
-      type: ParticleEffect
-      region: exotic-mod-cascadus-base-frame-2
-      lightOpacity: 0
-      particles: 1
-      lifetime: 96
-      length: 0
-      sizeFrom: 40
-      sizeTo: 40
-      colorFrom: 41414a
-      colorTo: 41414a
-    }
-    {
-      type: ParticleEffect
-      region: exotic-mod-cascadus-base-frame-1
-      lightOpacity: 0
-      particles: 1
-      lifetime: 144
-      length: 0
-      sizeFrom: 40
-      sizeTo: 40
-      colorFrom: 41414a
-      colorTo: 41414a
-    }
-    {
-      type: ParticleEffect
-      region: exotic-mod-cascadus-base-frame-0
-      lightOpacity: 0
-      particles: 1
-      lifetime: 192
-      length: 0
-      sizeFrom: 40
-      sizeTo: 40
-      colorFrom: 41414a
-      colorTo: 41414a
-    }
-    {
-      type: ParticleEffect
-      region: exotic-mod-cascadus-rotator-1
-      lightOpacity: 0
-      particles: 1
-      lifetime: 240
-      length: 0
-      sizeFrom: 40
-      sizeTo: 40
-      spin: 6
-    }
-    {
-      type: ParticleEffect
-      region: exotic-mod-cascadus-spin-frame-0
-      lightOpacity: 0
-      particles: 1
-      lifetime: 240
-      length: 0
-      colorFrom: 3bbeff
-      colorTo: 3bbeff
-      sizeFrom: 40
-      sizeTo: 40
-      spin: 6
-    }
-    {
-      type: ParticleEffect
-      region: exotic-mod-cascadus-spin-frame-0
-      lightOpacity: 0
-      particles: 1
-      lifetime: 48
-      length: 0
-      colorFrom: 41414a
-      colorTo: 41414a
-      sizeFrom: 40
-      sizeTo: 40
-      spin: 6
-    }
-    {
-      type: ParticleEffect
-      region: exotic-mod-cascadus-spin-frame-1
-      lightOpacity: 0
-      particles: 1
-      lifetime: 96
-      length: 0
-      colorFrom: 41414a
-      colorTo: 41414a
-      sizeFrom: 40
-      sizeTo: 40
-      spin: 6
-    }
-    {
-      type: ParticleEffect
-      region: exotic-mod-cascadus-spin-frame-2
-      lightOpacity: 0
-      particles: 1
-      lifetime: 144
-      length: 0
-      colorFrom: 41414a
-      colorTo: 41414a
-      sizeFrom: 40
-      sizeTo: 40
-      spin: 6
-    }
-    {
-      type: ParticleEffect
-      region: exotic-mod-cascadus-spin-frame-3
-      lightOpacity: 0
-      particles: 1
-      lifetime: 192
-      length: 0
-      colorFrom: 41414a
-      colorTo: 41414a
-      sizeFrom: 40
-      sizeTo: 40
-      spin: 6
-    }
-    {
-      type: ParticleEffect
-      region: exotic-mod-cascadus-rotator-2
-      lightOpacity: 0
-      particles: 1
-      lifetime: 240
-      length: 0
-      sizeFrom: 40
-      sizeTo: 40
-      spin: -3
-    }
-    {
-      type: ParticleEffect
-      region: exotic-mod-cascadus-rotator-3
-      lightOpacity: 0
-      particles: 1
-      lifetime: 240
-      length: 0
-      sizeFrom: 40
-      sizeTo: 40
-      spin: -12
-    }
-    {
-      type: ParticleEffect
-      region: exotic-mod-cascadus-top
-      lightOpacity: 0
-      particles: 1
-      lifetime: 240
-      length: 0
-      sizeFrom: 40
-      sizeTo: 40
-    }
-  ]
-}
 powerProduction: 1800
-destroyEffect: {
-  type: MultiEffect
-  lifetime: 480
-  layer: 135
-  effects: [
-    {
-      type: ParticleEffect
-      particles: 1
-      length: 700
-      lifetime: 180
-      layer: 95
-      region: exotic-mod-cascadus-rotator-1
-      spin: 6
-      sizeFrom: 40
-      sizeTo: 60
-      colorTo: ffffff00
-    }
-    {
-      type: ParticleEffect
-      particles: 1
-      length: 700
-      lifetime: 360
-      layer: 95
-      region: exotic-mod-cascadus-rotator-2
-      spin: -3
-      sizeFrom: 40
-      sizeTo: 60
-      colorTo: ffffff00
-    }
-    {
-      type: ParticleEffect
-      particles: 1
-      length: 700
-      lifetime: 320
-      layer: 95
-      region: exotic-mod-cascadus-rotator-3
-      spin: -12
-      sizeFrom: 40
-      sizeTo: 60
-      colorTo: ffffff00
-    }
-    {
-      type: ParticleEffect
-      interp: swingIn
-      lifetime: 360
-      length: 0
-      particles: 2
-      region: circle-shadow
-      sizeFrom: 280
-      sizeTo: 0
-    }
-    {
-      type: ParticleEffect
-      interp: swingIn
-      lifetime: 360
-      length: 0
-      particles: 1
-      sizeFrom: 60
-      sizeTo: 0
-    }
-    {
-      type: WaveEffect
-      lifetime: 60
-      sizeFrom: 0
-      sizeTo: 280
-      strokeFrom: 6
-      strokeTo: 0
-    }
-    {
-      type: ParticleEffect
-      particles: 20
-      line: true
-      lifetime: 300
-      length: -450
-      baseLength: 450
-      lenFrom: 0
-      lenTo: 30
-      strokeFrom: 0
-      strokeTo: 8
-    }
-  ]
-}
 category: power
 requirements: [
   silicon/20000

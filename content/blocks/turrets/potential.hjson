@@ -4,8 +4,8 @@ size: 3
 range: 855
 targetAir: true
 targetGround: true
-reloadTime: 110
-recoilAmount: 3
+reload: 110
+recoil: 3
 restitution: 0.01
 shootSound: artillery
 ammoPerShot: 30

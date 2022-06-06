@@ -1,0 +1,11 @@
+type: Wall
+health: 19000
+size: 1
+chanceDeflect: 550
+lightningChance: 0.15
+lightningDamage: 450
+requirements: [
+  inseltiene/8
+  ]
+category: defense
+research: surge-wall

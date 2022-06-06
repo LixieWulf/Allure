@@ -31,3 +31,78 @@ requirements: [
   graphite/1
   territe-alloy/1
 ]
+destroyEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      length: 25
+      particles: 12
+      lifetime: 40
+      interp: pow3Out
+      sizeInterp: pow5In
+      sizeFrom: 3
+      sizeTo: 0
+      colorFrom: 787878
+      colorTo: 787878
+    }
+    {
+      length: 30
+      lifetime: 25
+      line: true
+      interp: pow2Out
+      lenFrom: 6
+      lenTo: 0
+      strokeFrom: 3
+      strokeTo: 0
+      colorTo: 7382f0
+    }
+    {
+      type: WaveEffect
+      lifetime: 15
+      sizeFrom: 0
+      sizeTo: 20
+      strokeFrom: 2
+      strokeTo: 0
+      colorTo: 7382f0
+    }
+    {
+      length: 0
+      particles: 1
+      lifetime: 16
+      sizeInterp: pow5In
+      sizeFrom: 8
+      sizeTo: 0
+      colorTo: 787878
+    }
+  ]
+}
+destroyBullet: {
+  type: BulletType
+  speed: 0
+  lifetime: 0
+  collides: false
+  absorbable: false
+  hittable: false
+  hitEffect: none
+  despawnEffect: none
+  fragBullets: 5
+  fragLifeMin: 0.01
+  fragBullet: {
+    type: BulletType
+    damage: 0
+    collides: false
+    absorbable: false
+    hittable: false
+    reflectable: false
+    hitEffect: none
+    despawnEffect: none
+    speed: 0.01
+    lifetime: 12
+    lightning: 1
+    lightningLength: 3
+    lightningLengthRand: 6
+    lightningCone: 0
+    lightningColor: 7382f0
+    lightningDamage: 10
+  }
+}

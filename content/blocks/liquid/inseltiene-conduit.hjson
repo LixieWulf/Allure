@@ -1,0 +1,13 @@
+type: Conduit
+leaks: true
+health: 540
+requirements: [
+  inseltiene/3
+  surge-alloy/1
+  metaglass/3
+]
+liquidCapacity: 65
+liquidPressure: 1.5
+botColor: 4a4b53
+category: liquid
+research: plated-conduit

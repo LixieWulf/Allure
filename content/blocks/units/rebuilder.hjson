@@ -12,7 +12,6 @@ consumes: {
         titanium/1500
         amethyst-gem/1100
         baenite/1000
-        tungsten/750
       ]
     }
   liquid: {
@@ -22,8 +21,6 @@ consumes: {
 }
 upgrades: [
   [ghost, wraith]
-  [endeavour, harmony]
-  [pathogen, disease]
   [ember, cinder]
 ]
 requirements: [
@@ -33,8 +30,7 @@ requirements: [
   thorium/4000
   phase-fabric/3000
   amethyst-gem/1500
-  tungsten/1000
-  bluewolframite/600
+  inseltiene/600
 ]
 category: units
 research: alterator

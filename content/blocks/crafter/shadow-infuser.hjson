@@ -1,17 +1,29 @@
 type: GenericCrafter
 drawer: {
-  type: drawArcSmelter
-  flameColor: 353535
-  midColor: a7a7a7
-  flameRad: 7
-  circleSpace: 4
-  circleStroke: 2
-  alpha: 1
-  particleRad: 28
-  particles: 60
-  particleLen: 10
-  particleStroke: 2.5
-  particleLife: 60
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: drawArcSmelt
+      flameColor: 353535
+      midColor: a7a7a7
+      flameRad: 7
+      circleSpace: 4
+      circleStroke: 2
+      alpha: 1
+      particleRad: 28
+      particles: 60
+      particleLen: 10
+      particleStroke: 2.5
+      particleLife: 60
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
 }
 size: 8
 itemCapacity: 20
@@ -23,7 +35,7 @@ consumes: {
   power: 15.4
   items: {
     items: [
-    bluewolframite/6
+    inseltiene/6
     draconium/8
     amethyst-gem/7
     baenite/10
@@ -38,7 +50,7 @@ requirements: [
   surge-alloy/500
   baenite/400
   amethyst-gem/350
-  bluewolframite/300
+  inseltiene/300
   draconium/300
 ]
 outputItem: shadow/2
@@ -50,7 +62,6 @@ research: {
     amethyst-refiner, 
     wolframite-converter, 
     extractor, 
-    furnace,
-    tungsten-refiner
+    furnace
   ]
 }

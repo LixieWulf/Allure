@@ -1,5 +1,6 @@
-type: SingleTypeGenerator
+type: ConsumeGenerator
 size: 6
+hasLiquids: true
 canOverdrive: false
 baseExplosiveness: 70
 liquidCapacity: 60
@@ -15,154 +16,35 @@ consumes: {
     ]
   }
 }
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawLiquidRegion
+      suffix: "-liquid"
+      drawLiquid: energia
+    }
+    {
+      type: DrawRegion
+      suffix: "-rotator0"
+      rotateSpeed: 4.5
+      spinSprite: true
+    }
+    {
+      type: DrawRegion
+      suffix: "-rotator1"
+      rotateSpeed: -6
+    }
+    {
+      type: DrawRegion
+      suffix: "-top"
+    }
+  ]
+}
 generateEffectRnd: 0
-generateEffect: {
-  type: MultiEffect
-  clip: 8192
-  layer: 35
-  lifetime: 121
-  effects: [
-    {
-      type: ParticleEffect
-      region: exotic-mod-empiron-base
-      lightOpacity: 0
-      particles: 1
-      lifetime: 120
-      length: 0
-      sizeFrom: 24
-      sizeTo: 24
-    }
-    {
-      type: ParticleEffect
-      region: exotic-mod-empiron-0
-      lightOpacity: 0
-      particles: 1
-      lifetime: 30
-      length: 0
-      sizeFrom: 24
-      sizeTo: 24
-      colorFrom: 41414a
-      colorTo: 41414a
-    }
-    {
-      type: ParticleEffect
-      region: exotic-mod-empiron-1
-      lightOpacity: 0
-      particles: 1
-      lifetime: 60
-      length: 0
-      sizeFrom: 24
-      sizeTo: 24
-      colorFrom: 41414a
-      colorTo: 41414a
-    }
-    {
-      type: ParticleEffect
-      region: exotic-mod-empiron-2
-      lightOpacity: 0
-      particles: 1
-      lifetime: 90
-      length: 0
-      sizeFrom: 24
-      sizeTo: 24
-      colorFrom: 41414a
-      colorTo: 41414a
-    }
-    {
-      type: ParticleEffect
-      region: exotic-mod-empiron-rotator-1
-      lightOpacity: 0
-      particles: 1
-      lifetime: 120
-      length: 0
-      sizeFrom: 24
-      sizeTo: 24
-      spin: 6
-    }
-    {
-      type: ParticleEffect
-      region: exotic-mod-empiron-rotator-2
-      lightOpacity: 0
-      particles: 1
-      lifetime: 120
-      length: 0
-      sizeFrom: 24
-      sizeTo: 24
-      spin: -12
-    }
-    {
-      type: ParticleEffect
-      region: exotic-mod-empiron-top
-      lightOpacity: 0
-      particles: 1
-      lifetime: 120
-      length: 0
-      sizeFrom: 24
-      sizeTo: 24
-    }
-  ]
-}
-destroyEffect: {
-  type: MultiEffect
-  lifetime: 180
-  layer: 135
-  effects: [
-    {
-      type: ParticleEffect
-      particles: 1
-      length: 450
-      lifetime: 160
-      layer: 95
-      region: exotic-mod-empiron-rotator-1
-      spin: 6
-      sizeFrom: 24
-      sizeTo: 36
-      colorTo: ffffff00
-    }
-    {
-      type: ParticleEffect
-      particles: 1
-      length: 700
-      lifetime: 180
-      layer: 95
-      region: exotic-mod-empiron-rotator-2
-      spin: -12
-      sizeFrom: 24
-      sizeTo: 36
-      colorTo: ffffff00
-    }
-    {
-      type: ParticleEffect
-      interp: swingIn
-      lifetime: 180
-      length: 0
-      particles: 2
-      region: circle-shadow
-      sizeFrom: 160
-      sizeTo: 0
-    }
-    {
-      type: WaveEffect
-      lifetime: 40
-      sizeFrom: 0
-      sizeTo: 180
-      strokeFrom: 4
-      strokeTo: 0
-    }
-    {
-      type: ParticleEffect
-      particles: 12
-      line: true
-      lifetime: 160
-      length: -300
-      baseLength: 300
-      lenFrom: 0
-      lenTo: 16
-      strokeFrom: 0
-      strokeTo: 4
-    }
-  ]
-}
 powerProduction: 195
 category: power
 requirements: [

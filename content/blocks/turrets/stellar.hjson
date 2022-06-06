@@ -3,7 +3,7 @@ targetGround: false
 size: 3
 range: 200
 health: 1250
-recoilAmount: 3
+recoil: 3
 alternate: true
 shots: 2
 spread: 8

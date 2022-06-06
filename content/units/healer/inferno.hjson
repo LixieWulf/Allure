@@ -1,0 +1,163 @@
+type: legs
+hitSize: 60
+drawShields: false
+hovering: true
+engineOffset: 16
+engineSize: 0
+lowAltitude: true
+health: 1200000
+armor: 500
+speed: 0.6
+rotateSpeed: 0.8
+buildSpeed: 15.8
+mineSpeed: 6
+mineTier: 8
+legCount: 5
+legLength: 150
+legBaseOffset: 25
+legExtension: -20
+legSpeed: 0.01
+legSplashDamage: 250
+legSplashRange: 80
+rippleScale: 8
+maxStretch: 1.5
+allowLegStep: true
+lightRadius: 160
+lightColor: 84f591
+weapons: [
+  {
+    name: inferno-cannon
+    x: 54.75
+    top: false
+    reload: 240
+    recoil: 12
+    shootY: 32
+    shots: 4
+    shotDelay: 2
+    shootSound: laser
+    shake: 3
+    bullet: {
+      type: LaserBulletType
+      length: 640
+      lifetime: 180
+      width: 34
+      damage: 0.001
+      collidesTeam: true
+      healPercent: 70
+      lightningSpacing: 16
+      lightningAngleRand: 90
+      lightningDelay: 0.8
+      lightningLength: 12
+      lightningLengthRand: 24
+      lightningDamage: 175
+      lightningColor: 84f591
+      colors: [84f59140, 84f591, ffffff]
+    }
+  }
+  {
+    type: PointDefenseWeapon
+    controllable: false
+    autoTarget: true
+    targetInterval: 0
+    targetSwitchInterval: 0
+    name: inferno-point
+    x: 19.5
+    y: 18.5
+    rotate: true
+    shootY: 4
+    reload: 2
+    recoil: 1
+    shootSound: lasershoot
+    beamEffect: chainLightning
+    bullet: {
+      hitEffect: pointHit
+      smokeEffect: pointHit
+      maxRange: 320
+      damage: 700
+    }
+  }
+  {
+    mirror: false
+    shootY: -40
+    reload: 25
+    xRand: 32
+    shotDelay: 5
+    shots: 5
+    shootCone: 45
+    shootSound: none
+    bullet: {
+      damage: 2000
+      maxRange: 540
+      collidesTeam: true
+      healPercent: 2.5
+      speed: -1
+      drag: -0.02
+      homingPower: 0.1
+      homingRange: 540
+      reflectable: false
+      lifetime: 180
+      shootEffect: none
+      smokeEffect: none
+      width: 35
+      height: 35
+      shrinkY: 0
+      frontColor: 84f591
+      backColor: 00000000
+      sprite: exotic-mod-longsword
+      despawnHit: true
+      trailLength: 15
+      trailWidth: 3
+      trailColor: 84f591
+      hitEffect: {
+        type: ParticleEffect
+        sizeFrom: 16
+        lifetime: 40
+        length: 0
+        particles: 1
+        colorFrom: 84f591
+      }
+    }
+  }
+]
+abilities: [
+  {
+    type: ForceFieldAbility
+    max: 18000
+    regen: 140
+    cooldown: 25
+    radius: 250
+  }
+  {
+    type: StatusFieldAbility
+    reload: 7200
+    range: 1
+    duration: 5
+    activeEffect: {
+      type: MultiEffect
+      lifetime: 80
+      layer: 94
+      effects: [
+        {
+          type: ParticleEffect
+          particles: 1
+          length: 0
+          region: exotic-mod-heal
+          lifetime: 45
+          sizeFrom: 150
+          sizeTo: 75
+          colorFrom: 84f591
+          colorTo: 84f59100
+        }
+        {
+          type: WaveEffect
+          lifetime: 80
+          sizeFrom: 150
+          sizeTo: 150
+          strokeFrom: 4
+          colorTo: 84f591
+        }
+      ]
+    }
+    effect: exotic-mod-eternal
+  }
+]

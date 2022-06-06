@@ -1,4 +1,16 @@
-type: GenericSmelter
+type: GenericCrafter
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawFlame
+      flameColor: 90a2fc
+    }
+  ]
+}
 size: 2
 hasPower: true
 hasLiquids: false
@@ -28,18 +40,18 @@ consumes: {
     items: [
       wolframite/2
       titanium/2
-      silicon/2
+      territe-alloy/2
     ]
   }
 }
 requirements: [
   lead/125
-  silicon/150
+  territe-alloy/150
   surge-alloy/50
   amethyst-gem/25
 ]
 category: crafting
 research: amethyst-refiner
-ambientSound: respawn
+ambientSound: hum
 ambientSoundVolume: 1
-outputItem: bluewolframite/1
+outputItem: inseltiene/1

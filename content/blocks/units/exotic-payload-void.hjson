@@ -1,0 +1,6 @@
+type: PayloadVoid
+size: 8
+health: 2000000
+category: units
+incinerateSound: none
+incinerateEffect: none

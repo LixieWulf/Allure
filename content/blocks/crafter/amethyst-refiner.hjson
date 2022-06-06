@@ -1,5 +1,18 @@
 type: GenericCrafter
-drawer: drawSmelter
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: drawFlame
+      flameRadius: 9
+      flameRadiusIn: 6
+      flameColor: c7aee8
+    }
+  ]
+}
 size: 4
 hasPower: true
 hasLiquids: false

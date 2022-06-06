@@ -1,0 +1,13 @@
+type: PowerNode
+health: 540
+laserRange: 8
+laserColor1: acbbf9
+laserColor2: 6579c9
+maxNodes: 35
+requirements: [
+  lead/10
+  silicon/3
+  inseltiene/5
+]
+category: power
+research: power-node
