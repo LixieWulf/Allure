@@ -1,0 +1,252 @@
+type: flying
+flying: true
+hitSize: 35
+health: 18000
+armor: 8
+speed: 3.3
+rotateSpeed: 4
+accel: 0.1
+drag: 0.04
+lowAltitude: true
+outlines: false
+drawCell: false
+engineColor: e65555
+engines: [
+  {
+    y: -16
+    rotation: -90
+    radius: 6
+  }
+  {
+    x: 8
+    y: -18
+    rotation: -90
+    radius: 4
+  }
+  {
+    x: -8
+    y: -18
+    rotation: -90
+    radius: 4
+  }
+]
+lightColor: e65555
+itemCapacity: 0
+ammoType: {
+  type: ItemAmmoType
+  item: anden
+}
+weapons: [
+  {
+    name: meron-weapon
+    alternate: false
+    x: 5.75
+    y: 9.75
+    shootY: 8
+    layerOffset: -1
+    reload: 9
+    recoil: 2
+    inaccuracy: 6
+    shootSound: shootSnap
+    bullet: {
+      speed: 12
+      lifetime: 18
+      damage: 18
+      pierce: true
+      pierceBuilding: true
+      pierceCap: 2
+      width: 7
+      height: 42
+      frontColor: ffb3b3
+      backColor: e65555
+      despawnHit: true
+      despawnEffect: none
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 15
+          length: 15
+          lenFrom: 3
+          lenTo: 0
+          strokeFrom: 1
+          strokeTo: 0
+          colorFrom: e65555
+          colorTo: e65555
+        }
+        {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 7
+          lifetime: 10
+          strokeFrom: 1.5
+          strokeTo: 0
+          colorFrom: e65555
+          colorTo: e65555
+        }
+      ]
+    }
+  }
+  {
+    name: meron-weapon
+    alternate: false
+    x: 8
+    y: 7
+    shootY: 8
+    layerOffset: -1
+    reload: 9
+    recoil: 2
+    inaccuracy: 6
+    shootSound: shootSnap
+    shoot: {
+      firstShotDelay: 6
+    }
+    bullet: {
+      speed: 12
+      lifetime: 18
+      damage: 18
+      pierce: true
+      pierceBuilding: true
+      pierceCap: 2
+      width: 7
+      height: 42
+      frontColor: ffb3b3
+      backColor: e65555
+      despawnHit: true
+      despawnEffect: none
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 15
+          length: 15
+          lenFrom: 3
+          lenTo: 0
+          strokeFrom: 1
+          strokeTo: 0
+          colorFrom: e65555
+          colorTo: e65555
+        }
+        {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 7
+          lifetime: 10
+          strokeFrom: 1.5
+          strokeTo: 0
+          colorFrom: e65555
+          colorTo: e65555
+        }
+      ]
+    }
+  }
+  {
+    name: meron-weapon
+    alternate: false
+    x: 10.25
+    y: 4.25
+    shootY: 8
+    layerOffset: -1
+    reload: 9
+    recoil: 2
+    inaccuracy: 6
+    shootSound: shootSnap
+    shoot: {
+      firstShotDelay: 12
+    }
+    bullet: {
+      speed: 12
+      lifetime: 18
+      damage: 18
+      pierce: true
+      pierceBuilding: true
+      pierceCap: 2
+      width: 7
+      height: 42
+      frontColor: ffb3b3
+      backColor: e65555
+      despawnHit: true
+      despawnEffect: none
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 15
+          length: 15
+          lenFrom: 3
+          lenTo: 0
+          strokeFrom: 1
+          strokeTo: 0
+          colorFrom: e65555
+          colorTo: e65555
+        }
+        {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 7
+          lifetime: 10
+          strokeFrom: 1.5
+          strokeTo: 0
+          colorFrom: e65555
+          colorTo: e65555
+        }
+      ]
+    }
+  }
+]
+deathExplosionEffect: {
+  type: MultiEffect
+  lifetime: 110
+  effects: [
+    {
+      length: 80
+      particles: 25
+      lifetime: 70
+      interp: pow3Out
+      sizeInterp: pow10In
+      colorFrom: 787878
+      colorTo: 787878
+      sizeFrom: 6
+      sizeTo: 0
+      lightOpacity: 0
+    }
+    {
+      length: 40
+      particles: 20
+      lifetime: 110
+      interp: pow5Out
+      sizeInterp: pow10In
+      colorFrom: 787878
+      colorTo: 787878
+      sizeFrom: 12
+      sizeTo: 0
+      lightOpacity: 0
+    }
+    {
+      length: 120
+      lifetime: 50
+      line: true
+      particles: 18
+      strokeFrom: 6
+      strokeTo: 0
+      lenFrom: 14
+      lenTo: 0
+      colorTo: e65555
+    }
+    {
+      type: WaveEffect
+      lifetime: 25
+      sizeFrom: 0
+      sizeTo: 80
+      strokeFrom: 5
+      strokeTo: 0
+      colorTo: e65555
+    }
+  ]
+}
+research: 0r01-kelta
+envEnabled: -1
+envDisabled: 4

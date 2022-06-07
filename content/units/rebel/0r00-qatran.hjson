@@ -31,35 +31,31 @@ weapons: [
       recoil: -40
       shootEffect: none
       smokeEffect: none
-      pierceEffect: { 
-        type: MultiEffect
-        lifetime: 15
-        effects: [
-          {
-            type: ParticleEffect
-            particles: 6
-            line: true
-            lifetime: 15
-            length: 15
-            lenFrom: 3
-            lenTo: 0
-            strokeFrom: 1
-            strokeTo: 0
-            colorFrom: e65555
-            colorTo: e65555
-          }
-          {
-            type: WaveEffect
-            sizeFrom: 0
-            sizeTo: 7
-            lifetime: 10
-            strokeFrom: 1.5
-            strokeTo: 0
-            colorFrom: e65555
-            colorTo: e65555
-          }
-        ]
-      }
+      pierceEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 15
+          length: 15
+          lenFrom: 3
+          lenTo: 0
+          strokeFrom: 1
+          strokeTo: 0
+          colorFrom: e65555
+          colorTo: e65555
+        }
+        {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 7
+          lifetime: 10
+          strokeFrom: 1.5
+          strokeTo: 0
+          colorFrom: e65555
+          colorTo: e65555
+        }
+      ]
     }
   }
 ]

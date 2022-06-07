@@ -52,8 +52,6 @@ weapons: [
       speed: 0
       lifetime: 0
       damage: 0
-      splashDamage: 45
-      splashDamageRadius: 32
       healAmount: 35
       collidesTeam: true
       despawnHit: true
@@ -82,6 +80,14 @@ weapons: [
           colorTo: 83f793
         }
       ]
+      fragBullets: 400
+      fragBullet: {
+        type: RailBulletType
+        length: 40
+        damage: 4
+        pierceEffect: none
+        healAmount: 3
+      }
     }
   }
 ]
