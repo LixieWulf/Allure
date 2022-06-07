@@ -1,0 +1,87 @@
+type: missile
+controller: MissileAI
+isEnemy: false
+allowedInPayloads: false
+useUnitCap: false
+playerControllable: false
+physics: false
+createWreck: false
+createScorch: false
+hidden: true
+rotateSpeed: 3.2
+envEnabled: -1
+envDisabled: 4
+flying: true
+speed: 6
+lifetime: 100
+health: 120
+maxRange: 15
+fogRadius: 4
+outlines: false
+drawCell: false
+engineSize: 3
+engineOffset: 6
+engineLayer: 110
+engineColor: 83f793
+trailLength: 8
+trailColor: 83f793
+parts: [
+  {
+    type: FlarePart
+    progress: {
+      type: life
+      op: curve
+      interp: pow3Out
+    }
+    rotation: 45
+    color1: 83f793
+    radius: 0
+    radiusTo: 25
+  }
+]
+weapons: [
+  {
+    shootOnDeath: true
+    shootCone: 360
+    shootSound: none
+    controllable: false
+    bullet: {
+      type: BulletType
+      keepVelocity: false
+      killShooter: true
+      speed: 0
+      lifetime: 0
+      damage: 0
+      splashDamage: 45
+      splashDamageRadius: 32
+      healAmount: 35
+      collidesTeam: true
+      despawnHit: true
+      despawnEffect: none
+      hitEffect: [
+        {
+          type: WaveEffect
+          interp: pow2Out
+          lifetime: 25
+          sizeFrom: 0
+          sizeTo: 32
+          strokeFrom: 4
+          colorTo: 83f793
+        }
+        {
+          length: 37
+          particles: 25
+          line: true
+          lifetime: 35
+          interp: pow2Out
+          sizeInterp: pow2In
+          lenFrom: 8
+          lenTo: 4
+          strokeFrom: 3
+          strokeTo: 0
+          colorTo: 83f793
+        }
+      ]
+    }
+  }
+]

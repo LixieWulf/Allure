@@ -81,7 +81,7 @@ weapons: [
       trailColor: e65555
       shootEffect: shootBig
       smokeEffect: shootBigSmoke
-      trailWidth: 6
+      trailWidth: 4
       trailLength: 7
       hitEffect: [
         {

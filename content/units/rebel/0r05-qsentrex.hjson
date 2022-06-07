@@ -1,0 +1,249 @@
+type: flying
+flying: true
+lowAltitude: true
+health: 42000
+armor: 18
+hitSize: 38
+speed: 3.3
+rotateSpeed: 2.4
+accel: 0.1
+drag: 0.03
+drawCell: false
+outlines: false
+engineOffset: 30
+engineSize: 8
+engineColor: e65555
+engines: [
+  {
+    x: 27
+    y: -18
+    radius: 5
+    rotation: 315
+    engineColor: e65555
+  }
+  {
+    x: -27
+    y: -18
+    radius: 5
+    rotation: 225
+    engineColor: e65555
+  }
+]
+weapons: [
+  {
+    name: qsentrex-weapon1
+    alternate: false
+    mirror: false
+    reload: 180
+    rotationLimit: 75
+    rotate: true
+    rotateSpeed: 2
+    recoil: 5
+    recoilTime: 25
+    x: 0
+    shootX: 4
+    shootY: 12
+    mirror: false
+    shoot: {
+      shots: 4
+      shotDelay: 18
+    }
+    shootSound: bang
+    shake: 3
+    heatColor: e65555
+    cooldownTime: 55
+    bullet: {
+      //TODO carbon copy of bantres bullet
+      lifetime: 45
+      speed: 7
+      damage: 55
+      splashDamage: 25
+      splashDamageRadius: 25
+      height: 35
+      width: 20
+      frontColor: ffb3b3
+      backColor: e65555
+      trailColor: e65555
+      shootEffect: shootBig
+      smokeEffect: shootBigSmoke
+      trailWidth: 4
+      trailLength: 7
+      hitEffect: [
+        {
+          lightOpacity: 0
+          length: 24
+          lifetime: 40
+          particles: 20
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 3
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow2In
+        }
+        {
+          lightOpacity: 0
+          length: 32
+          lifetime: 25
+          particles: 14
+          colorFrom: 9f9f9f
+          colorTo: 787878
+          sizeFrom: 1
+          sizeTo: 0
+          interp: pow5Out
+          sizeInterp: pow3In
+        }
+        {
+          length: 40
+          line: true
+          lifetime: 30
+          particles: 8
+          colorTo: e65555
+          lenFrom: 5
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 1
+          sizeInterp: pow2In
+        }
+        {
+          type: WaveEffect
+          lifetime: 20
+          sizeFrom: 0
+          sizeTo: 25
+          strokeFrom: 2
+          strokeTo: 0
+          colorTo: e65555
+        }
+      ]
+    }
+  }
+  {
+    name: qsentrex-weapon1
+    flipSprite: true
+    alternate: false
+    mirror: false
+    reload: 180
+    rotationLimit: 75
+    rotate: true
+    rotateSpeed: 2
+    recoil: 5
+    recoilTime: 25
+    x: 0
+    shootX: -4
+    shootY: 12
+    mirror: false
+    shoot: {
+      shots: 4
+      shotDelay: 18
+      firstShotDelay: 9
+    }
+    shootSound: bang
+    shake: 3
+    heatColor: e65555
+    cooldownTime: 55
+    bullet: {
+      lifetime: 45
+      speed: 7
+      damage: 55
+      splashDamage: 25
+      splashDamageRadius: 25
+      height: 35
+      width: 20
+      frontColor: ffb3b3
+      backColor: e65555
+      trailColor: e65555
+      shootEffect: shootBig
+      smokeEffect: shootBigSmoke
+      trailWidth: 4
+      trailLength: 7
+      hitEffect: [
+        {
+          lightOpacity: 0
+          length: 24
+          lifetime: 40
+          particles: 20
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 3
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow2In
+        }
+        {
+          lightOpacity: 0
+          length: 32
+          lifetime: 25
+          particles: 14
+          colorFrom: 9f9f9f
+          colorTo: 787878
+          sizeFrom: 1
+          sizeTo: 0
+          interp: pow5Out
+          sizeInterp: pow3In
+        }
+        {
+          length: 40
+          line: true
+          lifetime: 30
+          particles: 8
+          colorTo: e65555
+          lenFrom: 5
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 1
+          sizeInterp: pow2In
+        }
+        {
+          type: WaveEffect
+          lifetime: 20
+          sizeFrom: 0
+          sizeTo: 25
+          strokeFrom: 2
+          strokeTo: 0
+          colorTo: e65555
+        }
+      ]
+    }
+  }
+  {
+    name: qsentrex-weapon
+    reload: 180
+    rotationLimit: 75
+    rotate: true
+    rotateSpeed: 2
+    recoil: 0
+    x: 0
+    mirror: false
+    shootSound: none
+    bullet: {
+      type: BulletType
+      damage: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      lifetime: 45
+      speed: 7
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+    }
+  }
+  {
+    name: qsentrex-launcher
+    baseRotation: 270
+    reload: 25
+    shootCone: 180
+    layerOffset: -1
+    x: 17.25
+    y: 10
+    shoot: {
+      type: ShootAlternate
+    }
+    shootSound: artillery
+    shake: 1
+    bullet: {
+      type: BulletType
+      spawnUnit: exotic-mod-qsentrex-missile
+    }
+  }
+]
