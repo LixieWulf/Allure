@@ -4,12 +4,14 @@ size: 16
 health: 150000
 rotateSpeed: 0
 hasShadow: false
+reload: 2000
 recoil: 0
 shootY: 0
 shootCone: 360
 range: 0
 targetAir: false
 targetGround: false
+canOverdrive: false
 shootType: {
   type: BulletType
   speed: 0
@@ -3639,6 +3641,7 @@ shootType: {
     hitEffect: none
     despawnEffect: none
     pointEffectSpace: 1000
+    killShooter: true
     damage: 85000
     length: 840
     knockback: 55
