@@ -5,8 +5,8 @@ rotateSpeed: 4
 health: 45000
 armor: 22
 hitSize: 60
-speed: 2.8
-accel: 0.04
+speed: 2.9
+accel: 0.05
 drag: 0.01
 buildSpeed: 0.4
 buildBeamOffset: 8
@@ -195,27 +195,130 @@ abilities: [
     x: 12
     minSpeed: 2.4
     maxSpeed: 2.4
-    chance: 1
+    chance: 5
     length: 0
     damage: 0
+    parentizeEffects: true
     shootSound: none
-    shootEffect: {
-      layer: 85
-      cone: 0
-      length: -30
-      lifetime: 45
-      line: true
-      lenFrom: 6
-      lenTo: 3
-      strokeFrom: 2
-      strokeTo: 0
-      colorTo: e65555
-    }
+    shootEffect: [
+      {
+        followParent: true
+        rotWithParent: true
+        particles: 1
+        line: true
+        randLength: false
+        length: 100
+        baseLength: 30
+        lifetime: 70
+        cone: 0
+        baseRotation: 180
+        interp: linear
+        sizeInterp: pow3Out
+        lenFrom: 7
+        lenTo: 7
+        strokeFrom: 6
+        strokeTo: 0
+        colorFrom: ffb85522
+        colorTo: db661c66
+      }
+      {
+        followParent: true
+        rotWithParent: true
+        particles: 1
+        line: true
+        randLength: false
+        baseLength: 32
+        length: -14
+        lifetime: 30
+        cone: 0
+        baseRotation: 180
+        interp: pow2Out
+        sizeInterp: linear
+        lenFrom: 7
+        lenTo: 7
+        strokeFrom: 6
+        strokeTo: 0
+        colorFrom: ffb85544
+        colorTo: ffb85522
+      }
+    ]
     bullet: {
       type: RailBulletType
-      length: 40
-      damage: 125
+      length: 24
+      damage: 75
       pierceDamageFactor: 0
+      pierceEffect: [
+        {
+          particles: 1
+          line: true
+          length: 28
+          lifetime: 40
+          cone: 20
+          baseRotation: 120
+          interp: pow3Out
+          sizeInterp: pow2In
+          lenFrom: 4
+          lenTo: 1
+          strokeFrom: 1
+          strokeTo: 0
+          colorFrom: ffb855
+          colorTo: db661c88
+        }
+        {
+          particles: 1
+          line: true
+          length: 28
+          lifetime: 40
+          cone: 20
+          baseRotation: 240
+          interp: pow3Out
+          sizeInterp: pow2In
+          lenFrom: 4
+          lenTo: 1
+          strokeFrom: 1
+          strokeTo: 0
+          colorFrom: ffb855
+          colorTo: db661c88
+        }
+      ]
+    }
+  }
+  {
+    type: MoveEffectAbility
+    y: -16
+    x: 12
+    interval: 1
+    effect: {
+      layer: 55
+      lightOpacity: 0
+      length: 0
+      baseLength: 6
+      lifetime: 45
+      particles: 1
+      colorFrom: 787878
+      colorTo: 787878
+      sizeFrom: 3
+      sizeTo: 0
+      sizeInterp: pow2In
+    }
+  }
+  {
+    type: MoveEffectAbility
+    y: -16
+    x: -12
+    interval: 1
+    effect: {
+      layer: 55
+      lightOpacity: 0
+      length: 0
+      baseLength: 6
+      lifetime: 45
+      particles: 1
+      colorFrom: 787878
+      colorTo: 787878
+      sizeFrom: 3
+      sizeTo: 0
+      sizeInterp: pow2In
     }
   }
   {
