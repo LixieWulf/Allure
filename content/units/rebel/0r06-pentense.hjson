@@ -1,0 +1,286 @@
+type: flying
+flying: true
+lowAltitude: true
+health: 34000
+armor: 22
+hitSize: 40
+speed: 3.6
+rotateSpeed: 3
+accel: 0.11
+drag: 0.02
+drawBody: false
+drawCell: false
+outlines: false
+engineSize: 7
+engineOffset: 18
+engineColor: e65555
+engines: [
+  {
+    x: 23
+    y: -10
+    radius: 4
+    rotation: 315
+    engineColor: e65555
+  }
+  {
+    x: -23
+    y: -10
+    radius: 4
+    rotation: 225
+    engineColor: e65555
+  }
+  {
+    x: 21
+    y: -17
+    radius: 3
+    rotation: 315
+    engineColor: e65555
+  }
+  {
+    x: -21
+    y: -17
+    radius: 3
+    rotation: 225
+    engineColor: e65555
+  }
+  {
+    x: 12
+    y: -30
+    radius: 5
+    rotation: 270
+    engineColor: e65555
+  }
+  {
+    x: -12
+    y: -30
+    radius: 5
+    rotation: 270
+    engineColor: e65555
+  }
+]
+parts: [
+  {
+    type: RegionPart
+    outline: false
+    suffix: -low 
+    //id use -outline but anuke disgusted me
+    layer: 90.01
+  }
+  {
+    type: RegionPart
+    outline: false
+    layer: 90.03
+  }
+  {
+    type: RegionPart
+    outline: false
+    suffix: -top
+    layer: 90.05
+  }
+]
+weapons: [
+  {
+    name: pentense-weapon0-low
+    x: 0
+    y: 20.5
+    shootY: 16
+    mirror: false
+    top: false
+    layerOffset: 0.02
+    reload: 110
+    recoil: 6
+    inaccuracy: 8
+    bullet: {
+      type: BulletType
+      speed: 9
+      lifetime: 40
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      collides: false
+    }
+  }
+  {
+    name: pentense-weapon0
+    x: 0
+    y: 20.5
+    shootY: 11
+    mirror: false
+    top: false
+    layerOffset: 0.06
+    reload: 110
+    recoil: 6
+    shootSound: bang
+    shake: 3
+    bullet: {
+      speed: 9
+      keepVelocity: false
+      lifetime: 40
+      damage: 160
+      splashDamage: 160
+      splashDamageRadius: 45
+      height: 55
+      width: 30
+      frontColor: ffb3b3
+      backColor: e65555
+      trailColor: e65555
+      trailWidth: 6
+      trailLength: 7
+      shootEffect: {
+        length: 0
+        cone: 0
+        particles: 1
+        lifetime: 30
+        sizeFrom: 60
+        sizeTo: 0
+        colorFrom: ffb3b3
+        colorTo: e65555
+        region: exotic-mod-shootspike
+      } 
+      smokeEffect: {
+        length: 40
+        interp: pow5Out
+        sizeInterp: pow3In
+        lifetime: 50
+        cone: 20
+        sizeFrom: 3
+        sizeTo: 0
+        colorFrom: 909090
+        colorTo: 909090
+      }
+      hitEffect: [
+        {
+          lightOpacity: 0
+          length: 50
+          lifetime: 60
+          particles: 20
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 3
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow2In
+        }
+        {
+          lightOpacity: 0
+          length: 45
+          lifetime: 70
+          particles: 32
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 5
+          sizeTo: 0
+          interp: pow2Out
+          sizeInterp: pow2In
+        }
+        {
+          lightOpacity: 0
+          length: 60
+          lifetime: 30
+          particles: 22
+          colorFrom: 9f9f9f
+          colorTo: 787878
+          sizeFrom: 1
+          sizeTo: 0
+          interp: pow5Out
+          sizeInterp: pow3In
+        }
+        {
+          lightOpacity: 0
+          length: 50
+          lifetime: 40
+          particles: 22
+          colorFrom: 9f9f9f
+          colorTo: 787878
+          sizeFrom: 3
+          sizeTo: 0
+          interp: pow5Out
+          sizeInterp: pow3In
+        }
+        {
+          length: 60
+          line: true
+          lifetime: 30
+          particles: 8
+          colorTo: e65555
+          lenFrom: 7
+          lenTo: 0
+          strokeFrom: 3
+          strokeTo: 1
+          interp: pow2Out
+          sizeInterp: pow2In
+        }
+        {
+          type: WaveEffect
+          lifetime: 20
+          sizeFrom: 0
+          sizeTo: 45
+          strokeFrom: 4
+          strokeTo: 0
+          colorTo: e65555
+        }
+      ]
+    }
+  }
+  {
+    name: pentense-weapon1
+    x: 17.25
+    y: 17
+    shootY: 6
+    alternate: false
+    top: false
+    layerOffset: 0.02
+    reload: 12
+    recoil: 2
+    shoot: {
+      type: ShootHelix
+      shots: 2
+      scl: 4
+      mag: 3
+    }
+    shootSound: shootSnap
+    shake: 1
+    bullet: {
+      speed: 6
+      lifetime: 25
+      damage: 28
+      width: 24
+      height: 36
+      frontColor: ffffff
+      backColor: d09f00
+      trailColor: d09f00
+      trailLength: 6
+      trailWidth: 5
+      hitShake: 5f
+      fragBullets: 3
+      fragRandomSpread: 0
+      fragSpread: 120
+      fragBullet: {
+        type: LaserBulletType
+        length: 25
+        lifetime: 35
+        width: 45
+        damage: 14
+        colors: [
+          d09f0040, 
+          d09f00,
+          ffffff
+        ]
+      }
+      shootEffect: shootBig
+      smokeEffect: shootBigSmoke
+      hitEffect: {
+        length: 0
+        lifetime: 25
+        particles: 1
+        sizeFrom: 14 
+        sizeTo: 0
+        colorTo: d09f00
+        interp: pow5In
+      }
+    }
+  }
+]
+envEnabled: -1
+envDisabled: 4

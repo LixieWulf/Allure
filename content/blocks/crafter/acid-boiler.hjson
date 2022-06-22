@@ -1,0 +1,53 @@
+type: GenericCrafter
+size: 4
+squareSprite: false
+hasLiquids: true
+liquidCapacity: 25
+craftTime: 0
+drawer: [
+  {
+    type: DrawRegion
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: chlorine
+    padding: 4
+  }
+  {
+    type: DrawLiquidRegion
+    drawLiquid: water
+  }
+  {
+    type: DrawRegion
+    suffix: -top2
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -heat
+    alpha: 1
+    color: e65555
+  }
+]
+consumes: {
+  power: 1
+  liquids: {
+    liquids: [
+      water/0.1
+      chlorine/0.3
+      arkycite/0.2
+    ]
+  }
+}
+outputLiquids: [
+  ozone/0.06
+  hydrochloride/0.3
+]
+liquidOutputDirections: [1, 3]
+category: crafting
+requirements: [
+  anden/240
+  silicon/45
+  oxide/100
+]
+envEnabled: -1
+envDisabled: 4

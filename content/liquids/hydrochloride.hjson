@@ -1,0 +1,9 @@
+type: CellLiquid
+flammability: 0.6
+explosiveness: 0.2
+color: 3cb58d
+research: arkycite
+capPuddles: false
+cells: 22
+colorFrom: 70d4af
+colorTo: 14855f
