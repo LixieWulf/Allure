@@ -1,0 +1,9 @@
+type: LiquidJunction
+health: 220
+underBullets: false
+squareSprite: false
+category: liquid
+requirements: [
+  scilaxa/15
+  inseltiene/10
+]

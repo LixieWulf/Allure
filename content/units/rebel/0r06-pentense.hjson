@@ -140,6 +140,7 @@ weapons: [
       } 
       smokeEffect: {
         length: 40
+        particles: 14
         interp: pow5Out
         sizeInterp: pow3In
         lifetime: 50

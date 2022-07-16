@@ -1,0 +1,15 @@
+type: legs
+health: 220
+armor: 4
+speed: 1
+legCount: 8
+legGroupSize: 2
+legLength: 16
+legForwardScl: 2.6
+legStraightness: 0.7
+legLengthScl: 0.8
+legContinuousMove: true
+lockLegBase: true
+envEnabled: -1
+envDisabled: 0
+outlines: false

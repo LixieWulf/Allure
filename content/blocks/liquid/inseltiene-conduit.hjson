@@ -1,12 +1,12 @@
 type: Conduit
-leaks: true
+leaks: false
 health: 540
 requirements: [
   inseltiene/3
   surge-alloy/1
   metaglass/3
 ]
-liquidCapacity: 65
+liquidCapacity: 60
 liquidPressure: 1.5
 botColor: 4a4b53
 category: liquid

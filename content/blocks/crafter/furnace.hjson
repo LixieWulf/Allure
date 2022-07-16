@@ -37,10 +37,15 @@ outputItem: territe-alloy/6
 ambientSound: hum 
 ambientSoundVolume: 0.7
 category: crafting
-research: silicon-smelter
+research: oven
 requirements: [
   copper/40
   lead/35
-  silicon/20
+  territe-alloy/20
   titanium/20
+]
+researchRequirements: [
+  copper/1000
+  lead/1000
+  territe-alloy/250
 ]

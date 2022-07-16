@@ -2,7 +2,8 @@ type: payload
 flying: true
 health: 3500
 armor: 24
-hitSize: 32
+physics: false
+hitSize: 40
 speed: 4.1
 rotateSpeed: 3
 accel: 0.07

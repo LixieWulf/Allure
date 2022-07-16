@@ -1,0 +1,18 @@
+type: Conduit
+liquidCapacity: 250
+leaks: true
+health: 220
+underBullets: false
+botColor: ffffff
+category: liquid
+research: {
+  parent: inseltiene-conduit
+  objectives: []
+}
+requirements: [
+  metaglass/12
+  scilaxa/5
+  inseltiene/2
+]
+junctionReplacement: spatial-junction
+bridgeReplacement: spatial-bridge

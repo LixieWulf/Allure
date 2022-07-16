@@ -1,0 +1,18 @@
+type: LiquidBridge
+squareSprite: false
+underBullets: false
+liquidCapacity: 250
+health: 220
+category: liquid
+range: 14
+fadeIn: false
+arrowSpacing: 14
+arrowPeriod: 0.6
+consumes: {
+  power: 0.5
+}
+requirements: [
+  metaglass/10
+  scilaxa/120
+  inseltiene/75
+]

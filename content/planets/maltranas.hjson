@@ -10,3 +10,8 @@ berylChance: 0.4
 radMin: 35
 mag: 1
 scale: 0
+//mesh: {
+//  type: NoiseMesh
+//  color1: 676973
+//  color2: 7e4984
+//}

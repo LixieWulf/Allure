@@ -1,36 +1,101 @@
-type: ImpactReactor
-itemDuration: 120
-liquidCapacity: 1400
+type: ConsumeGenerator
+displayEfficiency: false
+minEfficiency: 1
+squareSprite: false
+customShadow: true
+itemDuration: 250
+liquidCapacity: 4800
 size: 8
 hasLiquids: true
-powerProduction: 436550
-plasma1: 666666
-plasma2: 3b3b3b
-consumes: {
-  power: 15430
-  items: {
-    items: [
-      shadow/1
-    ]
+powerProduction: 210
+warmupSpeed: 0.005
+drawer: [
+  {
+    type: DrawDefault
   }
-  liquid: {
-    liquid: supercoolant
-    amount: 3.8
+  {
+    type: DrawRegion
+    suffix: -spikes0
+    rotateSpeed: 3
   }
-}
-requirements: [
-  copper/13550
-  lead/14330
-  silicon/13550
-  graphite/7550
-  thorium/8540
-  surge-alloy/3500
-  amethyst-gem/4450
-  inseltiene/4560
-  draconium/3530
-  shadow/540
+  {
+    type: DrawRegion
+    suffix: -spikes1
+    rotateSpeed: -3
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -spikes0-heat
+    layer: 30
+    rotateSpeed: 3
+    color: 90a2fc
+    alpha: 1
+  }
+  {
+    type: DrawRegion
+    suffix: -top
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -abyss
+    color: 000000
+    blending: normal
+    layer: 30
+    glowScale: 22
+    glowIntensity: 1
+  }
+  {
+    type: DrawRegion
+    suffix: -top2
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -abyss1
+    color: 000000
+    blending: normal
+    layer: 30
+    glowScale: 22
+    glowIntensity: 1
+  }
+  {
+    type: DrawBlurSpin
+    suffix: -turbine
+    spinSprite: false
+    rotateSpeed: 135
+    blurThresh: 0.35
+  }
 ]
+effectChance: 0.1
+generateEffectRange: 10
+generateEffect: {
+  particles: 1
+  length: 130
+  lifetime: 440
+  cone: 12
+  baseRotation: 32
+  sizeFrom: 0
+  sizeTo: 8
+  colorTo: ffffff00
+  sizeInterp: pow2Out
+  interp: pow2Out
+}
+consumes: {
+  items: [
+    shadow/1
+  ]
+  liquids: [
+    water/102
+    hydrogen/0.35
+  ]
+}
+outputLiquid: steam/100
 category: power
 ambientSound: beam
-ambientSoundVolume: 0.5
+ambientSoundVolume: 0.1
 research: fusion-reactor
+requirements: [
+  territe-alloy/2500
+  scilaxa/1000
+  inseltiene/1000
+  draconium/250
+]

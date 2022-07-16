@@ -52,11 +52,10 @@ weapons: [
     x: 0
     y: 0
     shootY: 4
-    reload: 120
+    alwaysContinuous: true
     shootStatus: slow
-    shootStatusDuration: 150
+    shootStatusDuration: 2
     shootSound: none
-    continuous: true
     shake: 0.7
     bullet: {
       type: ContinuousFlameBulletType
@@ -64,6 +63,7 @@ weapons: [
       lifetime: 150
       pierceCap: 1
       length: 180
+      width: 8
       damage: 30
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       hitEffect: {

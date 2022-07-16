@@ -1,0 +1,13 @@
+type: LiquidRouter
+health: 220
+squareSprite: false
+underBullets: false
+liquidCapacity: 1000
+liquidPadding: 1
+category: liquid
+research: spatial-conduit
+requirements: [
+  metaglass/25
+  scilaxa/15
+  inseltiene/12
+]
