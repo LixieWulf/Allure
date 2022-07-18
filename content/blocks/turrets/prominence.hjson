@@ -11,7 +11,7 @@ shootEffect: {
   cone: 17
   sizeFrom: 15
   sizeTo: 0
-  particles: 15
+  particles: 40
   colorFrom: ffffff
   colorTo: 000000
   length: 108
