@@ -1,0 +1,57 @@
+type: HeatProducer
+size: 5
+squareSprite: false
+customShadow: true
+heatOutput: 48
+liquidCapacity: 2400
+drawer:  [
+  {
+    type: DrawRegion
+    suffix: -bottom0
+  }
+  {
+    type: DrawRegion
+    suffix: -bottom1
+  }
+  {
+    type: DrawRegion
+    suffix: -transfer
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -transfer-heat
+    layer: 30
+    color: ffb380bb
+  }
+  {
+    type: DrawLiquidTile
+    padding: 6
+    drawLiquid: steam
+  }
+  {
+    type: DrawRegion
+    suffix: -bottom2
+  }
+  {
+    type: DrawLiquidTile
+    padding: 13
+    drawLiquid: water
+  }
+  {
+    type: DrawRegion
+    suffix: -top
+  }
+  {
+    type: DrawHeatOutput
+    color: 90a2fcbb
+  }
+]
+consumes: {
+  liquid: steam/10
+}
+outputLiquid: water/10
+category: crafting
+requirements: [
+  territe-alloy/800
+  scilaxa/200
+]

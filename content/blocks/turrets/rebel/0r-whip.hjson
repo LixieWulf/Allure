@@ -359,3 +359,9 @@ requirements: [
 ]
 envEnabled: -1
 envDisabled: 4
+consumes: {
+  liquid: {
+    liquid: water
+    amount: 4
+  }
+}

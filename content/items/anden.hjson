@@ -2,3 +2,4 @@ color: ad4244
 cost: 1.8
 research: scrap
 explosiveness: 0.4
+healthScaling: 0.4

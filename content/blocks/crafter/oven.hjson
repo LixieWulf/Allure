@@ -19,7 +19,7 @@ consumes: {
 }
 outputItem: territe-alloy/1
 category: crafting
-research: 0b-begin
+research: silicon-smelter
 requirements: [
   copper/25
   lead/35

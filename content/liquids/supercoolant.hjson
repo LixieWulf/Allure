@@ -4,5 +4,5 @@ viscosity: 0.55
 heatCapacity: 3
 explosiveness: 0
 effect: freezing
-color: fbbdff
+color: a36ad5
 research: amethyst-gem

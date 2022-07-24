@@ -1,0 +1,22 @@
+type: heatConductor
+size: 1
+underBullets: true
+visualMaxHeat: 90
+drawer: [
+  {
+    type: DrawDefault
+  }
+  {
+    type: DrawHeatInput
+    heatColor: 90a2fc
+  }
+  {
+    type: DrawHeatOutput
+    heatColor: 90a2fc
+  }
+]
+regionRotated1: 1
+requirements: [
+  graphite/25
+  territe-alloy/20
+]
