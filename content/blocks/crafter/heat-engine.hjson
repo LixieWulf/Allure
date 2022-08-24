@@ -1,0 +1,35 @@
+type: HeatProducer
+size: 4
+heatOutput: 3
+craftTime: 80
+warmup: 0.007
+warmupRate: 0.05
+liquidCapacity: 40
+drawer: [
+  {
+    type: DrawDefault
+  }
+  {
+    type: DrawPistons
+    sides: 2
+    lenOffset: 3
+    sinScl: 2
+  }
+  {
+    type: DrawRegion
+    suffix: -top
+  }
+  {
+    type: DrawHeatOutput
+  }
+  {
+    type: DrawGlowRegion
+    color: ffb380
+    glowScale: 2
+  }
+]
+consumes: {
+  liquid: hydrogen/0.666666666666
+}
+category: crafting
+buildVisibility: shown

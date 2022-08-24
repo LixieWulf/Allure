@@ -1,0 +1,195 @@
+//deamth
+type: missile
+template: MissileUnitType 
+shadowElevationScl: 3.2
+lowAltitude: true 
+lifetime: 0
+hittable: false 
+hitSize: 120
+speed: 0.8
+rotateSpeed: 0
+engineSize: 0
+fallSpeed: 0.004
+drawBody: false 
+drawCell: false 
+createWreck: true 
+parts: [
+  { 
+    type: RegionPart
+    name: exotic-mod-0b17-hellfire-flare
+    outline: false
+    blending: additive
+    layer: 60.03
+    color: 7382f0bb
+  }
+  {
+    type: RegionPart
+    name: exotic-mod-0b17-hellfire
+    layer: 60.02
+    outline: false 
+  }
+  { 
+    type: RegionPart
+    name: exotic-mod-0b17-hellfire-flare
+    outline: false
+    blending: additive
+    layer: 111.01
+    color: 00000000
+    colorTo: ffffff
+  }
+  {
+    type: RegionPart
+    name: exotic-mod-0b17-hellfire
+    blending: additive
+    layer: 111
+    outline: false 
+    color: 00000000
+    colorTo: ffffff
+  }
+  {
+    type: RegionPart
+    name: circle-shadow
+    layer: 59.99
+    outline: false 
+    color: 000000
+    colorTo: 000000
+  }
+]
+weapons: [
+    {
+    name: hellfire-broadside-smol
+    x: 36
+    y: 60
+    layerOffset: -29.96
+    controllable: false 
+    parts: [
+      { 
+        type: RegionPart
+        suffix: -flare
+        outline: false
+        blending: additive
+        layer: 90.05
+        color: 7382f0bb
+      }
+    ]
+  }
+  {
+    name: hellfire-broadside-smol
+    x: 36
+    y: 48
+    layerOffset: -29.96
+    controllable: false 
+    parts: [
+      { 
+        type: RegionPart
+        suffix: -flare
+        outline: false
+        blending: additive
+        layer: 90.05
+        color: 7382f0bb
+      }
+    ]
+  }
+  {
+    name: hellfire-broadside-smol
+    x: 36
+    y: 36
+    layerOffset: -29.96
+    controllable: false 
+    parts: [
+      { 
+        type: RegionPart
+        suffix: -flare
+        outline: false
+        blending: additive
+        layer: 90.05
+        color: 7382f0bb
+      }
+    ]
+  }
+  {
+    name: hellfire-broadside-smol
+    x: 38
+    y: 10
+    layerOffset: -29.96
+    controllable: false 
+    parts: [
+      { 
+        type: RegionPart
+        suffix: -flare
+        outline: false
+        blending: additive
+        layer: 90.05
+        color: 7382f0bb
+      }
+    ]
+  }
+  {
+    name: hellfire-broadside-smol
+    x: 48
+    y: 0
+    layerOffset: -29.96
+    controllable: false 
+    parts: [
+      { 
+        type: RegionPart
+        suffix: -flare
+        outline: false
+        blending: additive
+        layer: 90.05
+        color: 7382f0bb
+      }
+    ]
+  }
+  {
+    name: hellfire-broadside-smol
+    x: 48
+    y: -20
+    layerOffset: -29.96
+    controllable: false 
+    parts: [
+      { 
+        type: RegionPart
+        suffix: -flare
+        outline: false
+        blending: additive
+        layer: 90.05
+        color: 7382f0bb
+      }
+    ]
+  }
+  {
+    name: hellfire-broadside-smol
+    x: 48
+    y: -44
+    layerOffset: -29.96
+    controllable: false 
+    parts: [
+      { 
+        type: RegionPart
+        suffix: -flare
+        outline: false
+        blending: additive
+        layer: 90.05
+        color: 7382f0bb
+      }
+    ]
+  }
+  {
+    name: hellfire-broadside-smol
+    x: 48
+    y: -52
+    layerOffset: -29.96
+    controllable: false 
+    parts: [
+      { 
+        type: RegionPart
+        suffix: -flare
+        outline: false
+        blending: additive
+        layer: 90.05
+        color: 7382f0bb
+      }
+    ]
+  }
+]

@@ -1,9 +1,12 @@
-type: Wall
-chanceDeflect: 550
-health: 76000
-size: 2
-lightningChance: 0.15
-lightningDamage: 450
+type: ShieldWall
+hasPower: false
+health: 27000
+shieldHealth: 27000
+breakCooldown: 120
+regenSpeed: 563
+size: 3
+chanceDeflect: 140
+glowColor: 7382f0
 requirements: [
   inseltiene/32
   ]

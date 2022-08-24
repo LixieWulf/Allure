@@ -2,7 +2,8 @@ type: HeatProducer
 size: 5
 squareSprite: false
 customShadow: true
-heatOutput: 48
+heatOutput: 192
+warmupRate: 0.6
 liquidCapacity: 2400
 drawer:  [
   {

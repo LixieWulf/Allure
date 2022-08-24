@@ -1,6 +1,5 @@
 disarm: true
 speedMultiplier: 0
-dragMultiplier: 0
 buildSpeedMultiplier: 0
 effectChance: 0.03
 effect: {

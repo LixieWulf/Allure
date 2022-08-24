@@ -7,10 +7,10 @@ reload: 3
 rotateSpeed: 4.1
 inaccuracy: 1
 shoot: {
-  spread: 0
-  shots: 4
+  spread: 3
+  shots: 7
 }
-velocityRnd: 0.25
+velocityRnd: 0.4
 range: 720
 shootY: 12
 shootEffect: shootLiquid

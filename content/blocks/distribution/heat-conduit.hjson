@@ -1,7 +1,7 @@
 type: heatConductor
 size: 1
 underBullets: true
-visualMaxHeat: 90
+visualMaxHeat: 450
 drawer: [
   {
     type: DrawDefault

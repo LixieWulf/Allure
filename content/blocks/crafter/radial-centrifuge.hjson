@@ -2,12 +2,11 @@ type: HeatCrafter
 squareSprite: false
 customShadow: true
 size: 7
-heatRequirement: 20
-overheatSCale: 1.5
+heatRequirement: 80
 maxEfficiency: 12
 warmupSpeed: 0.002
 craftTime: 190
-liquidCapacity: 240
+liquidCapacity: 720
 itemCapacity: 20
 drawer: [
   {

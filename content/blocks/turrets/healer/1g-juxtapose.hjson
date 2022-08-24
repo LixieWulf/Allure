@@ -1,0 +1,94 @@
+type: PowerTurret
+clipSize: 1440
+size: 11
+range: 1440
+reload: 500
+rotateSpeed: 0
+shootY: 0
+shoot: {
+  firstShotDelay: 180
+}
+moveWhileCharging: false 
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: HaloPart
+      tri: true 
+      progress: charge 
+      shapes: 4
+      triLength: 0 
+      triLengthTo: 560
+      radius: 0
+      radiusTo: 32
+      haloRotateSpeed: -0.5
+      color: 83f793
+      colorTo: ffffff
+      layer: 99.99
+    }
+    {
+      type: HaloPart
+      tri: true 
+      progress: charge 
+      shapes: 4
+      triLength: 0 
+      triLengthTo: 480
+      radius: 0
+      radiusTo: 16
+      haloRotation: 45
+      haloRotateSpeed: 0.5
+      color: 83f793
+      colorTo: ffffff
+      layer: 99.99
+    }
+    {
+      type: ShapePart
+      circle: true
+      progress: charge 
+      radius: 12
+      radiusTo: 60
+      color: 83f793
+      layer: 99.99
+    }
+    {
+      type: ShapePart
+      circle: true
+      progress: charge 
+      radius: 0
+      radiusTo: 54
+      layer: 99.99
+    }
+  ]
+}
+hasPower: true
+powerUse: 122
+recoil: 0
+shootSound: none 
+shootCone: 360 
+shootType: {
+  type: BulletType
+  lifetime: 0
+  fragBullets: 1440
+  fragSpread: 0.25
+  fragRandomSPread: 0
+  fragBullet: {
+    type: RailBulletType 
+    damage: 12
+    pierceDamageFactor: 0
+    length: 1440
+  }
+  shootEffect: {
+    type: WaveEffect
+    lifetime: 180
+    sizeFrom: 720
+    sizeTo: 1440
+    strokeFrom: 1440
+    strokeTo: 0 
+    interp: pow5
+    layer: 122
+    colorFrom: 83f793
+    colorTo: 83f793
+  }
+}
+category: turret
+buildVisibility: sandboxOnly

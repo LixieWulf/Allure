@@ -1,0 +1,184 @@
+type: missile
+template: MissileUnitType
+health: 1000000000
+speed: 0
+rotateSpeed: 0
+engineSize: 0 
+lifetime: 240
+hitSize: 0
+physics: false
+targetable: false 
+hittable: false
+drawBody: false 
+drawCell: false 
+outlines: false 
+parts: [
+  {
+    type: ShapePart
+    circle: true
+    hollow: true
+    stroke: 4
+    strokeTo: 0
+    progress: life
+    radius: 25
+    color: 7382f0
+    layer: 105
+  }
+  {
+    type: ShapePart
+    hollow: true
+    sides: 3
+    rotateSpeed: -3
+    stroke: 4
+    strokeTo: 0
+    progress: life
+    radius: 25
+    color: 7382f0
+    layer: 105
+  }
+  {
+    type: ShapePart
+    hollow: true
+    sides: 3
+    rotateSpeed: 3
+    stroke: 4
+    strokeTo: 0
+    progress: life
+    radius: 19
+    color: 7382f0
+    layer: 105
+  }
+  {
+    type: ShapePart
+    hollow: true
+    sides: 6
+    rotateSpeed: 3
+    stroke: 4
+    strokeTo: 0
+    progress: life
+    radius: 11
+    rotation: 30
+    color: 7382f0
+    layer: 105
+  }
+  {
+    type: ShapePart
+    circle: true
+    sides: 6
+    rotateSpeed: 3
+    radius: 7
+    radiusTo: 7
+    progress: life
+    color: 7382f0
+    layer: 105
+  }
+  {
+    type: ShapePart
+    circle: true
+    sides: 6
+    rotateSpeed: 3
+    radius: 6
+    radiusTo: 6
+    progress: life
+    layer: 105
+  }
+  {
+    type: HaloPart
+    tri: true
+    sides: 3
+    shapes: 6
+    triLength: 24
+    triLengthTo: 0
+    progress: life
+    color: 7382f0
+    layer: 105
+    radius: 8
+    haloRadius: 28
+    haloRotateSpeed: 1
+  }
+  {
+    type: HaloPart
+    tri: true
+    sides: 3
+    shapes: 6
+    triLength: 18
+    triLengthTo: 0
+    progress: life
+    color: 7382f0
+    layer: 105
+    radius: 6
+    haloRadius: 28
+    haloRotateSpeed: -1
+  }
+  {
+    type: ShapePart
+    circle: true
+    hollow: true
+    stroke: 7
+    strokeTo: 0
+    progress: life
+    radius: 520
+    color: 7382f0
+    layer: 105
+  }
+  {
+    type: HaloPart
+    tri: true
+    sides: 3
+    shapes: 6
+    shapeRotation: 180
+    triLength: 210
+    triLengthTo: 0
+    progress: life
+    color: 7382f0
+    layer: 105
+    radius: 48
+    haloRadius: 520
+    haloRotateSpeed: 1
+  }
+  {
+    type: HaloPart
+    tri: true
+    sides: 3
+    shapes: 6
+    shapeRotation: 180
+    triLength: 160
+    triLengthTo: 0
+    progress: life
+    color: 7382f0
+    layer: 105
+    radius: 36
+    haloRadius: 520
+    haloRotateSpeed: -1
+  }
+]
+abilities: [  
+  {
+    type: MoveLightningAbility
+    chance: 1
+    shootSound: none 
+    shootEffect: none 
+    minSpeed: -1
+    maxSpeed: -1
+    color: 00000000
+    length: -1
+    bullet: {
+      type: EmpBulletType
+      damage: 0
+      radius: 520
+      speed: 0
+      lifetime: 1
+      timeDuration: 0
+      timeIncrease: 0
+      despawnHit: true
+      unitDamageScl: 1
+      hitColor: 7382f0
+      status: exotic-mod-emp
+      statusDuration: 30
+      hitEffect: none
+      hitPowerEffect: none 
+      chainEffect: none 
+      applyEffect: none 
+    }
+  }
+]
