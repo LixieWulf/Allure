@@ -32,4 +32,4 @@ consumes: {
   liquid: hydrogen/0.666666666666
 }
 category: crafting
-buildVisibility: shown
+buildVisibility: sandboxOnly
