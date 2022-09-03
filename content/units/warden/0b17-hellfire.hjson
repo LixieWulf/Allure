@@ -1580,7 +1580,7 @@ abilities: [
       colorTo: 7382f0
     }
   }
-    {
+  {
     type: MoveEffectAbility
     minVelocity: 0
     interval: 1

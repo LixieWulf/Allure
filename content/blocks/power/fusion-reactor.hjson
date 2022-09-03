@@ -1,25 +1,63 @@
 type: ImpactReactor
-liquidCapacity: 1650
-size: 5
+liquidCapacity: 80
+size: 6
 hasLiquids: true
-powerProduction: 650
-plasma1: 5a58c4
-plasma2: 7382f0
+squareSprite: false
+customShadow: true
+powerProduction: 78.2
+drawer: [
+  {
+    type: DrawDefault
+  }
+  {
+    type: DrawPlasma
+    suffix: -plasma0-
+    plasma1: d1e4ff
+    plasma2: 97a5f7
+  }
+  {
+    type: DrawRegion
+    suffix: -top0
+  }
+  {
+    type: DrawPlasma
+    suffix: -plasma1-
+    plasma1: ffbdd4
+    plasma2: fc81dd
+  }
+  {
+    type: DrawRegion
+    suffix: -top1
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -glow0
+    color: 97a5f7
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -glow1
+    color: fc81dd
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -heat
+    color: 90a2fc
+    glowScale: 32
+    alpha: 0.7
+  }
+]
 consumes: {
   power: 44.8
-  liquid: {
-    liquid: water
-    amount: 14.4
-  }
+  liquids: [
+    hydrogen/1
+    ozone/0.66666666666
+  ]
 }
 requirements: [
-  surge-alloy/750
-  draconium/100
-  silicon/1000
-  lead/1250
-  titanium/700
-  plastanium/450
-  inseltiene/550
+  infrastructure/600
+  territe-alloy/1500
+  scilaxa/200
 ]
 category: power
 ambientSound: pulse
