@@ -1,0 +1,61 @@
+type: GenericCrafter
+size: 4
+squareSprite: false
+craftTime: 390
+itemCapacity: 15
+liquidCapacity: 360
+drawer: [
+  {
+    type: DrawDefault
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: arreacta
+    padding: 3
+  }
+  {
+    type: DrawRegion
+    suffix: -top0
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -heat
+    layer: 30
+    color: feb380
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: water
+    padding: 8
+    alpha: 0.6
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: steam
+    padding: 8
+  }
+  {
+    type: DrawRegion
+    suffix: -top1
+  }
+  {
+    type: DrawGlowRegion
+    color: ca8cd1
+  }
+]
+consumes: {
+  liquids: [
+    water/2.5
+    arreacta/0.1
+  ]
+}
+outputItem: scilaxa/1
+outputLiquid: steam/2.5
+category: power
+requirements: [
+  territe-alloy/250
+  dantrales/200
+  crystal/120
+  baenite/50
+]
+ambientSound: hum

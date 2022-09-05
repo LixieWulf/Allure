@@ -85,7 +85,7 @@ consumes: {
   ]
   liquids: [
     water/102
-    hydrogen/0.35
+    hydrogen/0.5
   ]
 }
 outputLiquid: steam/100

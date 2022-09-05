@@ -55,13 +55,3 @@ requirements: [
 ]
 outputItem: shadow/2
 category: crafting
-research: {
-  parent: refinery
-  objectives: [
-    tri-weaver,
-    amethyst-refiner, 
-    wolframite-converter, 
-    extractor, 
-    furnace
-  ]
-}

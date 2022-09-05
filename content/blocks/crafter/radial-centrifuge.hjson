@@ -5,7 +5,7 @@ size: 7
 heatRequirement: 80
 maxEfficiency: 12
 warmupSpeed: 0.002
-craftTime: 190
+craftTime: 240
 liquidCapacity: 720
 itemCapacity: 20
 drawer: [

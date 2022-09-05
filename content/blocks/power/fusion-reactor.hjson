@@ -4,7 +4,7 @@ size: 6
 hasLiquids: true
 squareSprite: false
 customShadow: true
-powerProduction: 78.2
+powerProduction: 80
 drawer: [
   {
     type: DrawDefault
@@ -48,7 +48,7 @@ drawer: [
   }
 ]
 consumes: {
-  power: 44.8
+  power: 48
   liquids: [
     hydrogen/1
     ozone/0.66666666666

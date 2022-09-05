@@ -4,7 +4,7 @@ hasPower: true
 consumes: {
   power: 5.1
 }
-pumpAmount: 0.284
+pumpAmount: 0.40666666666
 squareSprite: false
 customShadow: true
 liquidCapacity: 250
