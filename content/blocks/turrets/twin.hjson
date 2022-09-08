@@ -4,59 +4,81 @@ health: 650
 range: 140
 targetGround: true
 targetAir: true
-shots: 2
-spread: 5.5
-alternate: true
+reload: 40
+inaccuracy: 2
+shoot: {
+  type: ShootAlternate
+  shots: 2
+  spread: 5.5
+}
 ammoTypes: {
   scrap: {
-    damage: 5
+    damage: 2
     speed: 3
     lifetime: 45
-    reloadMultiplier: 0.65
+    reloadMultiplier: 1.2
     ammoMultiplier: 3
-    splashDamage: 5
-    splashDamageRadius: 12
-    height: 8
-    width: 6
+    splashDamage: 15
+    splashDamageRadius: 28
+    height: 12
+    width: 9
     shootEffect: shootSmall
     smokeEffect: shootSmallSmoke
     hitEffect: flakExplosion
   }
   lead: {
-    damage: 15
+    damage: 22
     speed: 2.5
     lifetime: 50
-    reloadMultiplier: 0.45
-    height: 8
-    width: 6
+    reloadMultiplier: 0.8
+    height: 15
+    width: 10
     shootEffect: shootSmall
     smokeEffect: shootSmallSmoke
   }
+  pyratite: {
+    damage: 11
+    speed: 2.5
+    lifetime: 50
+    reloadMultiplier: 0.5
+    height: 12
+    width: 8
+    frontColor: f8ad42
+    backColor: f68021
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    status: burning
+    makeFire: true 
+  }
   silicon: {
-    damage: 7
+    damage: 9
     speed: 3.2
     lifetime: 45
-    reloadMultiplier: 1.5
+    reloadMultiplier: 1.8
     ammoMultiplier: 4
-    height: 8
-    width: 6
+    height: 12
+    width: 8
     shootEffect: shootSmall
     smokeEffect: shootSmallSmoke
     homingPower: 0.1
   }
   thorium: {
-    damage: 17
+    damage: 33
     speed: 3
     lifetime: 60
     ammoMultiplier: 3
-    height: 10
-    width: 8
+    height: 22
+    width: 13
     shootEffect: shootSmall
     smokeEffect: shootSmallSmoke
   }
 }
 requirements: [
   copper/105
+  graphite/35
 ]
 category: turret
 research: duo
+consumes: {
+  coolant: {}
+}

@@ -39,13 +39,10 @@ ambientSoundVolume: 0.7
 category: crafting
 research: oven
 requirements: [
-  copper/40
-  lead/35
-  territe-alloy/20
-  titanium/20
+  dantrales/120
+  territe-alloy/70
 ]
-researchRequirements: [
-  copper/1000
-  lead/1000
-  territe-alloy/250
+researchCost: [
+  dantrales/50
+  territe-alloy/25
 ]

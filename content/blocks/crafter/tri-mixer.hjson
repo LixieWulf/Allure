@@ -1,0 +1,35 @@
+type: GenericCrafter
+size: 3
+liquidCapacity: 20
+consumes: {
+  power: 1
+  items: [
+    coal/1
+    sand/4
+    lead/3
+  ]
+  liquid: {
+    liquid: oil
+    amount: 0.1
+  }
+}
+craftTime: 45
+outputItems: [
+  pyratite/3
+  dantrales/1
+]
+research: {
+  parent: pyratite-mixer
+  objectives: [
+    {
+      type: SectorComplete
+      preset: fungalPass
+    }
+  ]
+}
+category: crafting
+requirements: [
+  lead/150
+  graphite/50
+  titanium/50
+]

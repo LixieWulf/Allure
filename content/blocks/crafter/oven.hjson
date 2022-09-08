@@ -19,8 +19,10 @@ consumes: {
 }
 outputItem: territe-alloy/1
 category: crafting
-research: silicon-smelter
+research: 0b-begin
 requirements: [
-  copper/25
-  lead/35
+  dantrales/60
+]
+researchCost: [
+  dantrales/100
 ]
