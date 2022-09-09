@@ -1,29 +1,42 @@
 type: GenericCrafter
+squareSprite: false
 itemCapacity: 25
 craftTime: 240
-drawer: { 
-  type: DrawMulti
-  drawers: [
-    {
-      type: DrawDefault
-    }
-    {
-      type: drawFlame
-      flameColor: 90a2fc
-    }
-  ]
-}
+drawer: [
+  {
+    type: DrawDefault
+  }
+  {
+    type: DrawCultivator
+    plantColor: 7382f0
+    plantColorLight: 90a2fc
+    bubles: 24
+    radius: 1
+    spread: 6
+    timeScl: 35
+  }
+  {
+    type: DrawFlame
+    flameRadius: 0
+    flameRadiusIn: 0
+    flameRadiusScl: 100
+    flameRadiusMag: 0
+    flameRadiusInMag: 0
+    color: 00000000
+  }
+  {
+    type: DrawRegion
+    suffix: -upper
+  }
+  {
+    type: DrawGlowRegion
+    color: ffb380
+  }
+]
 size: 2
 hasPower: true
 hasItems: true
-craftEffect: {
-  baseRotation: 90
-  cone: 35
-  particles: 18
-  length: 20
-  sizeInterp: pow2In
-  colorTo: 7382f0
-}
+craftEffect: none
 consumes: {
   power: 1.25
   items: {
@@ -39,10 +52,14 @@ ambientSoundVolume: 0.7
 category: crafting
 research: oven
 requirements: [
-  dantrales/120
-  territe-alloy/70
+  copper/50
+  lead/20
+  dantrales/45
+  territe-alloy/20
 ]
 researchCost: [
-  dantrales/50
-  territe-alloy/25
+  copper/50
+  lead/20
+  dantrales/90
+  territe-alloy/40
 ]

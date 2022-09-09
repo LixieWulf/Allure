@@ -88,7 +88,7 @@ ammoTypes: {
   }
 }
 category: turret
-research: split 
+research: twin 
 requirements: [
   copper/125
   graphite/60
