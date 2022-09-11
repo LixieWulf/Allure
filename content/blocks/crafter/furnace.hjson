@@ -10,7 +10,7 @@ drawer: [
     type: DrawCultivator
     plantColor: 7382f0
     plantColorLight: 90a2fc
-    bubles: 24
+    bubbles: 24
     radius: 1
     spread: 6
     timeScl: 35

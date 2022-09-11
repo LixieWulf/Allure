@@ -2,20 +2,47 @@ Type: GenericCrafter
 size: 5
 craftTime: 360
 itemCapacity: 240
-drawer: { 
-  type: DrawMulti
-  drawers: [
-    {
-      type: DrawDefault
-    }
-    {
-      type: DrawFlame
-      flameRadius: 10
-      flameRadiusIn: 7
-      flameColor: 90a2fc
-    }
-  ]
-}
+liquidCapacity: 60
+drawer: [
+  {
+    type: DrawDefault
+  }
+  {
+    type: DrawLiquidTile
+    padding: 4
+    drawLiquid: hydrogen
+  }
+  {
+    type: DrawRegion
+    suffix: -lower
+  }
+  {
+    type: DrawCultivator
+    plantColor: 7382f0
+    plantColorLight: 90a2fc
+    bubbles: 48
+    radius: 1
+    spread: 18
+    timeScl: 35
+  }
+  {
+    type: DrawFlame
+    flameRadius: 0
+    flameRadiusIn: 0
+    flameRadiusScl: 100
+    flameRadiusMag: 0
+    flameRadiusInMag: 0
+    color: 00000000
+  }
+  {
+    type: DrawRegion
+    suffix: -upper
+  }
+  {
+    type: DrawGlowRegion
+    color: ffb380
+  }
+]
 consumes: {
   power: 8
   items: { 
@@ -25,65 +52,17 @@ consumes: {
       coal/20
     ]
   }
-}
-updateEffectChance: 0.03
-updateEffect: {
-  length: 6
-  particles: 5
-  lifetime: 60
-  sizeFrom: 3
-  sizeTo: 0
-  interp: pow2Out
-  sizeInterp: pow3In
-  colorTo: 7382f0
-}
-craftEffect: {
-  type: MultiEffect
-  effects: [
-    {
-      baseRotation: 90
-      length: 80
-      particles: 25
-      cone: 40
-      lifetime: 70
-      sizeFrom: 2
-      sizeTo: 0
-      interp: pow3Out
-      sizeInterp: pow10In
-      colorTo: 7382f0
-    }
-    {
-      baseRotation: 90
-      length: 60
-      particles: 18
-      cone: 35
-      lifetime: 130
-      sizeFrom: 4
-      sizeTo: 0
-      interp: pow5Out
-      sizeInterp: pow3In
-      colorTo: 7382f0
-    }
-    {
-      baseRotation: 90
-      length: 35
-      particles: 18
-      cone: 30
-      lifetime: 180
-      sizeFrom: 7
-      sizeTo: 0
-      interp: pow5Out
-      sizeInterp: pow2In
-      colorTo: 7382f0
-    }
-  ]
+  liquid: {
+    liquid: hydrogen
+    amount: 0.66666666666
+  }
 }
 outputItem: territe-alloy/100
 category: crafting
 research: furnace
 requirements: [
-  territe-alloy/100
-  titanium/60
-  thorium/80
-  baenite/50
+  territe-alloy/350
+  titanium/200
+  crystal/80
+  scilaxa/50
 ]

@@ -4,6 +4,10 @@ explosiveness: 0.2
 color: 3cb58d
 research: arkycite
 capPuddles: false
-cells: 65
+cells: 21
 colorFrom: 70d4af
 colorTo: 14855f
+spreadTarget: arkycite
+spreadConversion: 1.7
+removeScaling: 0.2
+spreadDamage: -0.09

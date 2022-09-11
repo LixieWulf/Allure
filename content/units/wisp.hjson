@@ -17,6 +17,7 @@ abilities: [
     parentizeEffects: true
     activeEffect: {
       followParent: true
+      rotWithParent: true
       particles: 1
       lifetime: 20
       length: 0
@@ -36,6 +37,7 @@ abilities: [
     parentizeEffects: true
     activeEffect: {
       followParent: true
+      rotWithParent: true
       particles: 1
       lifetime: 10
       length: 0
@@ -55,6 +57,7 @@ abilities: [
     parentizeEffects: true
     activeEffect: {
       followParent: true
+      rotWithParent: true
       particles: 1
       lifetime: 10
       length: 0
