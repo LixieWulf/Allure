@@ -55,7 +55,7 @@ category: power
 requirements: [
   territe-alloy/250
   dantrales/200
-  crystal/120
+  surge-alloy/120
   baenite/50
 ]
 ambientSound: hum

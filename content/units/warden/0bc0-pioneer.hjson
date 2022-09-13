@@ -1,0 +1,76 @@
+type: flying 
+flying: true
+envDisabled: 0
+health: 1200
+coreUnitDock: true 
+hittable: false 
+targettable: false 
+physics: false 
+shadowElevationScl: 3.7
+speed: 5.5
+accel: 0.03
+drag: 0.02
+engineSize: 3.5
+engineOffset: 5
+engineColor: 7382f0
+engineLayer: 115.01
+outlines: false 
+drawCell: false 
+buildSpeed: 2.25
+drawBuildBeam: false 
+strafePenalty: 0.1
+engines: [
+  {
+    x: 5
+    y: -2
+    radius: 2
+    rotation: 315
+  }
+  {
+    x: -5
+    y: -2
+    radius: 2
+    rotation: 225
+  }
+]
+parts: [
+  {
+    type: RegionPart
+    outline: false
+    layer: 115.02
+  }
+  {
+    type: RegionPart
+    suffix: -flare
+    outline: false
+    blending: additive
+    layer: 115.03
+    color: 7382f0bb
+  }
+]
+weapons: [
+  {
+    type: BuildWeapon
+    x: 8
+    y: -1
+  }
+]
+abilities: [
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 1
+    y: -5
+    effect: {
+      lightOpacity: 0
+      length: 0
+      particles: 1
+      layer: 115
+      lifetime: 15
+      sizeFrom: 3.5
+      sizeTo: 0
+      colorFrom: 7382f0
+      colorTo: 7382f0
+    }
+  }
+]

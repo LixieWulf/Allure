@@ -10,8 +10,10 @@ berylChance: 0.4
 radMin: 35
 mag: 1
 scale: 0
+//TODO this doesnt work even though it works for other planets and i have no idea why
 //mesh: {
 //  type: NoiseMesh
+//  planet: maltranas
 //  color1: 676973
 //  color2: 7e4984
 //}

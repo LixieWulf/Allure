@@ -60,7 +60,7 @@ drawer: [
     suffix: -top
   }
 ]
-craftTime: 90
+craftTime: 310
 consumes: {
   liquids: [
     water/21

@@ -96,6 +96,7 @@ research: fusion-reactor
 requirements: [
   territe-alloy/2500
   scilaxa/1000
+  crystal/500
   inseltiene/1000
   draconium/250
 ]

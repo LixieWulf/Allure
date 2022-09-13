@@ -57,6 +57,7 @@ consumes: {
 requirements: [
   infrastructure/600
   territe-alloy/1500
+  crystal/100
   scilaxa/200
 ]
 category: power

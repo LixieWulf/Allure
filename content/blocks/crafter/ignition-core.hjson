@@ -1,4 +1,5 @@
 Type: GenericCrafter
+squareSprite: false
 size: 5
 craftTime: 360
 itemCapacity: 240

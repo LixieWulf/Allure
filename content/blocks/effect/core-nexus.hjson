@@ -4,7 +4,7 @@ itemCapacity: 45000
 size: 6
 hasPower: true
 category: effect
-unitType: whiplash
+unitType: 0bc0-pioneer
 unitCapModifier: 48
 thrusterLength: 15
 requirements: [

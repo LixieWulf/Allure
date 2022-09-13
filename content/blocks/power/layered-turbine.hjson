@@ -59,5 +59,6 @@ category: power
 requirements: [
   territe-alloy/1000
   baenite/250
+  crystal/50
   inseltiene/250
 ]
