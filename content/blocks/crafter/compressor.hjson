@@ -33,6 +33,7 @@ consumes: {
   ]
 }
 outputLiquid: arreacta/0.5
+ambientSoundVolume: 0.015 //mfs loud as fuc
 category: crafting
 requirements: [
   dantrales/120

@@ -51,6 +51,7 @@ consumes: {
   liquid: steam/10
 }
 outputLiquid: water/10
+ambientSoundVolume: 0
 category: crafting
 requirements: [
   territe-alloy/800

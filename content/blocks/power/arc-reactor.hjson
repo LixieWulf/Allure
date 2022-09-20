@@ -90,8 +90,8 @@ consumes: {
 }
 outputLiquid: steam/100
 category: power
-ambientSound: beam
-ambientSoundVolume: 0.1
+ambientSound: arc
+ambientSoundVolume: 1
 research: fusion-reactor
 requirements: [
   territe-alloy/2500

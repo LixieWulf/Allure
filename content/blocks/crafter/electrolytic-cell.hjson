@@ -48,6 +48,7 @@ outputLiquids: [
   hydrogen/0.17
   ozone/0.12
 ]
+ambientSoundVolume: 0
 category: crafting
 research: 0r-begin
 requirements: [

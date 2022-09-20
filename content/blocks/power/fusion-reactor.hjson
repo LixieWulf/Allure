@@ -62,5 +62,5 @@ requirements: [
 ]
 category: power
 ambientSound: pulse
-ambientSoundVolume: 0.2
+ambientSoundVolume: 0.1
 research: impact-reactor
