@@ -1,0 +1,142 @@
+type: VariableReactor
+squareSprite: false
+size: 11
+maxHeat: 32000
+unstableSpeed: 0 //safe boi
+powerProduction: 1640000 //really stronk boi
+itemCapacity: 50
+liquidCapacity: 2400
+drawer: [
+  {
+    type: DrawDefault
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -transfer
+    layer: 30
+    color: feb380
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: neoplasm
+    padding: 4
+    alpha: 0.4
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: hydrochloride
+    padding: 4
+    alpha: 0.4
+  }
+  {
+    type: DrawRegion
+    suffix: -top0
+  }
+  {
+    type: DrawRegion
+    suffix: -blade0
+    rotateSpeed: 48
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -blade0
+    rotateSpeed: 48
+    rotation: 30
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -blade0
+    rotateSpeed: 48
+    rotation: 60
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -blade1
+    rotateSpeed: -48
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -blade1
+    rotateSpeed: -48
+    rotation: 30
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -blade1
+    rotateSpeed: -48
+    rotation: 60
+    spinSprite: true
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -blade0-heat
+    layer: 30
+    color: feb380
+    rotateSpeed: 48
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -blade1-heat
+    layer: 30
+    color: feb380
+    rotateSpeed: -48
+  }
+  {
+    type: DrawRegion
+    suffix: -top1
+  }
+  {
+    type: DrawGlowRegion
+    color: feb380
+  }
+]
+consumes: {
+  //so funny enough, this doesnt actually work and im gonna use it as a sort of required infrastructure cost
+  items: [
+    crystal/50
+    baenite/50
+    inseltiene/50
+  ]
+  liquids: [
+    neoplasm/12
+    hydrochloride/12
+  ]
+}
+effect: {
+  type: RadialEffect
+  layer: 118
+  rotationSpacing: 45
+  amount: 8
+  lengthOffset: 8
+  effect: {
+    particles: 1
+    length: 130
+    lifetime: 440
+    cone: 20
+    baseRotation: 32
+    useRotation: false 
+    sizeFrom: 0
+    sizeTo: 28
+    colorFrom: 787878
+    colorTo: 78787800
+    sizeInterp: pow2Out
+    interp: pow2Out
+  }
+}
+category: power
+research: arc-reactor
+requirements: [
+  infrastructure/750
+  territe-alloy/2500
+  baenite/300
+  crystal/1200
+  draconium/150
+  shadow/250
+]
+ambientSound: bioLoop
+ambientSoundVolume: 0.5

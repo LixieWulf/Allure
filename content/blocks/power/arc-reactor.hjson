@@ -19,11 +19,6 @@ drawer: [
     rotateSpeed: 3
   }
   {
-    type: DrawRegion
-    suffix: -spikes1
-    rotateSpeed: -3
-  }
-  {
     type: DrawGlowRegion
     suffix: -spikes0-heat
     layer: 30
