@@ -1,9 +1,9 @@
 type: VariableReactor
 squareSprite: false
 size: 11
-maxHeat: 32000
+maxHeat: 96000
 unstableSpeed: 0 //safe boi
-powerProduction: 1640000 //really stronk boi
+powerProduction: 240000 //really stronk boi
 itemCapacity: 50
 liquidCapacity: 2400
 drawer: [
