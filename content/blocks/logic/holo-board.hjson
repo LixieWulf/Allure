@@ -1,0 +1,31 @@
+type: CanvasBlock
+size: 4
+drawer: [
+  {
+    type: DrawDefault
+  }
+  {
+    type: DrawRegion
+    layer: 31
+    suffix: -top
+  }
+]
+palette: [
+  320018175,
+  2426600703, 
+  1937961215,
+  1515767039,
+  3864352255,
+  2906801407,
+  1932341503,
+  1734964223,
+  1246450687,
+  842219007
+]
+canvasSize: 24
+padding: 6
+category: logic
+requirements: [
+  dantrales/25
+  territe-alloy/10
+]

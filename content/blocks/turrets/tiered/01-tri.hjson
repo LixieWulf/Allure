@@ -1,0 +1,116 @@
+type: ItemTurret
+liquidCapacity: 25
+size: 3
+range: 140
+health: 1200
+reload: 30
+recoil: 3.2
+inaccuracy: 2
+shootSound: none //this is handled by the bullets
+shoot: {
+  type: ShootMulti
+  source: ShootAlternate
+  dest: [
+    {
+      type: ShootBarrel
+      shots: 3
+      barrels: [
+        0, 0, 0,
+        6, 2, 0,
+        -6, 2, 0,
+      ]
+    }
+  ]
+}
+ammoPerShot: 3
+ammoTypes: {
+  pyratite: {
+    damage: 32
+    speed: 2.5
+    lifetime: 50
+    reloadMultiplier: 0.7
+    ammoMultiplier: 7
+    height: 12
+    width: 8
+    frontColor: f8ad42
+    backColor: f68021
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    status: burning
+    makeFire: true 
+    spawnBullets: [
+      {
+        spawnUnit: exotic-mod-shootUnit
+      }
+    ]
+  }
+  silicon: {
+    damage: 16
+    speed: 4
+    lifetime: 45
+    reloadMultiplier: 1.8
+    ammoMultiplier: 4
+    rangeChange: 16
+    height: 12
+    width: 8
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    homingPower: 0.1
+    spawnBullets: [
+      {
+        spawnUnit: exotic-mod-shootUnit
+      }
+    ]
+  }
+  thorium: {
+    damage: 51
+    speed: 3
+    lifetime: 60
+    ammoMultiplier: 3
+    height: 22
+    width: 13
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    spawnBullets: [
+      {
+        spawnUnit: exotic-mod-shootBigUnit
+      }
+    ]
+  }
+  blast-compound: {
+    damage: 12
+    splashDamage: 31
+    splashDamageRadius: 22
+    inaccuracy: 7
+    speed: 3
+    lifetime: 60
+    ammoMultiplier: 6
+    height: 20
+    width: 16
+    frontColor: ffd2ae
+    backColor: e58956
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    hitEffect: massiveExplosion
+    despawnEffect: massiveExplosion
+    status: blasted
+    spawnBullets: [
+      {
+        spawnUnit: exotic-mod-shootUnit
+      }
+    ]
+  }
+}
+coolantMultiplier: 10
+consumes: {
+  coolant: {
+    amount: 0.15
+  }
+}
+maxAmmo: 30
+category: turret
+research: 00-twin
+requirements: [
+  copper/150
+  graphite/60
+]

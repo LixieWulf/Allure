@@ -1,0 +1,128 @@
+//TODO rename!
+type: ItemTurret
+liquidCapacity: 20
+size: 2
+health: 800
+range: 140
+targetGround: true
+targetAir: true
+reload: 30
+recoil: 3.2
+inaccuracy: 2
+shootSound: none //this is handled by the bullets
+shoot: {
+  type: ShootAlternate
+  shots: 2
+  spread: 5.5
+}
+ammoPerShot: 2
+ammoTypes: {
+  pyratite: {
+    damage: 32
+    splashDamage: 8
+    splashDamageRadius: 14
+    speed: 2.5
+    lifetime: 50
+    reloadMultiplier: 0.7
+    ammoMultiplier: 7
+    height: 12
+    width: 8
+    frontColor: f8ad42
+    backColor: f68021
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    hitEffect: [
+      hitBulletSmall, 
+      fireHit
+    ]
+    status: burning
+    makeFire: true 
+    spawnBullets: [
+      {
+        spawnUnit: exotic-mod-shootUnit
+      }
+    ]
+  }
+  silicon: {
+    damage: 16
+    speed: 4
+    lifetime: 45
+    reloadMultiplier: 1.8
+    ammoMultiplier: 4
+    rangeChange: 16
+    height: 12
+    width: 8
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    homingPower: 0.1
+    spawnBullets: [
+      {
+        spawnUnit: exotic-mod-shootUnit
+      }
+    ]
+  }
+  thorium: {
+    damage: 51
+    speed: 3
+    lifetime: 60
+    ammoMultiplier: 3
+    height: 22
+    width: 13
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    spawnBullets: [
+      {
+        spawnUnit: exotic-mod-shootUnit
+      }
+    ]
+  }
+  scrap: {
+    damage: 3
+    speed: 5
+    lifetime: 40
+    reloadMultiplier: 1.35
+    ammoMultiplier: 3
+    splashDamage: 37
+    splashDamageRadius: 15
+    inaccuracy: 18
+    rangeChange: 60
+    height: 12
+    width: 9
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    hitEffect: flakExplosion
+    spawnBullets: [
+      {
+        spawnUnit: exotic-mod-shootUnit
+      }
+    ]
+  }
+  lead: {
+    damage: 28
+    speed: 2.5
+    lifetime: 50
+    reloadMultiplier: 0.8
+    height: 15
+    width: 10
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    spawnBullets: [
+      {
+        spawnUnit: exotic-mod-shootUnit
+      }
+    ]
+  }
+}
+requirements: [
+  copper/100
+  graphite/40
+]
+maxAmmo: 20
+category: turret
+research: duo
+coolantMultiplier: 15
+consumes: {
+  coolant: {
+    amount: 0.1
+  }
+}

@@ -1,0 +1,42 @@
+type: missile
+template: MissileUnitType 
+hitSize: 120 
+hittable: false 
+lowAltitude: true
+engineSize: 0
+envEnabled: -1
+shadowElevationScl: 3.2
+localizedName: yet another internal unit
+speed: 8
+rotateSpeed: 0
+lifetime: 45
+parts: [
+  {
+    name: exotic-mod-0b17-hellfire
+  }
+  { 
+    type: RegionPart
+    name: exotic-mod-0b17-hellfire-flare
+    outline: false
+    blending: additive
+    layer: 90.03
+    color: 7382f0bb
+  }
+]
+weapons: [
+  {
+    x: 0
+    mirror: false 
+    shootSound: none
+    controllable: false
+    shootOnDeath: true
+    shootCone: 360
+    bullet: {
+      shootEffect: none
+      smokeEffect: none
+      spawnUnit: exotic-mod-0b17-hellfire
+    }
+  }
+]
+deathSound: none
+deathExplosionEffect: none

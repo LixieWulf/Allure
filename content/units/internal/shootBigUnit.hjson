@@ -1,0 +1,24 @@
+type: missile
+template: MissileUnitType
+localizedName: yet another internal unit
+lifetime: 0
+hitSize: 0
+hittable: false
+deathSound: none 
+deathExplosionEffect: none
+weapons: [
+  {
+    controllable: false
+    shootOnDeath: true
+    shootCone: 360
+    shootSound: shootBig
+    bullet: {
+      type: BulletType
+      lifetime: 0
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+    }
+  }
+]

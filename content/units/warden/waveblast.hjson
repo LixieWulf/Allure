@@ -1,6 +1,7 @@
 //yet another internal unit
 type: missile
 template: MissileUnitType
+localizedName: yet another internal unit
 lifetime: 0
 drawBody: false 
 drawCell: false 

@@ -1,5 +1,6 @@
 type: missile
 template: MissileUnitType
+localizedName: yet another internal unit
 health: 1000000000
 speed: 0
 rotateSpeed: 0

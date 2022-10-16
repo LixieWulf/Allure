@@ -2,7 +2,7 @@ type: GenericCrafter
 size: 3
 liquidCapacity: 20
 consumes: {
-  power: 1
+  power: 2.5
   items: [
     coal/1
     sand/4

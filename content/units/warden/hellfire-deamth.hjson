@@ -1,6 +1,8 @@
 //deamth
 type: missile
 template: MissileUnitType 
+localizedName: yet another internal unit
+envEnabled: -1
 shadowElevationScl: 3.2
 lowAltitude: true 
 lifetime: 0

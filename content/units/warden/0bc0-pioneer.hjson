@@ -4,7 +4,7 @@ envDisabled: 0
 health: 1200
 coreUnitDock: true 
 hittable: false 
-targettable: false 
+targetable: false 
 physics: false 
 shadowElevationScl: 3.7
 speed: 5.5
