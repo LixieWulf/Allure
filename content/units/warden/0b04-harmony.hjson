@@ -11,9 +11,7 @@ drag: 0.08
 buildSpeed: 4.5
 buildBeamOffset: 24
 engineSize: 0
-lightRadius: 80
-lightColor: 7382f0
-lightOpacity: 0.25
+lightRadius: 0
 shadowElevationScl: 1.4
 drawCell: false
 drawBody: false
@@ -23,7 +21,8 @@ parts: [
     type: RegionPart
     suffix: -flare
     outline: false
-    layer: 105
+    blending: additive
+    layer: 91
     color: 7382f0
   }
   { 

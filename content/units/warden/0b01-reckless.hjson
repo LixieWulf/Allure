@@ -1,5 +1,5 @@
 type: flying
-controller: BuilderAI
+defaultController: BuilderAI
 speed: 3
 accel: 0.1
 drag: 0.05
@@ -16,28 +16,27 @@ engineOffset: 12
 engineSize: 2.5
 lowAltitude: true
 shadowElevationScl: 0.8
-lightRadius: 30
-lightColor: 7382f0
-lightOpacity: 0.25
+lightRadius: 0
 engineColor: 7382f0
 engineSize: 0
 drawCell: false
 drawBody: false
 outlines: false
 parts: [
-  {
+  { 
     type: RegionPart
+    suffix: -flare
     outline: false
-    name: exotic-mod-reckless-flare
-    layer: 99.99
-    color: ffffff
+    blending: additive
+    layer: 91
+    color: 7382f0
   }
-  {
+  { 
     type: RegionPart
+    suffix: -flare
     outline: false
-    name: exotic-mod-reckless-flare
     layer: 140
-    color: ffffff44
+    color: 7382f025
     blending: additive
   }
   {

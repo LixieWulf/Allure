@@ -36,10 +36,9 @@ range: 180
 fogRadius: 120
 lowAltitude: true
 fallSpeed: 1
-lightRadius: 170
-lightColor: 7382f0
+lightRadius: 0
 buildSpeed: 12.4
-strafePenalty: 0.85
+strafePenalty: 0.75
 drawCell: false
 drawBody: false
 outlines: false
@@ -73,7 +72,15 @@ parts: [
     outline: false
     blending: additive
     layer: 90.03
-    color: 7382f0bb
+    color: 7382f0
+  }
+  { 
+    type: RegionPart
+    suffix: -flare
+    outline: false
+    layer: 140
+    color: 7382f025
+    blending: additive
   }
   {
     type: RegionPart
@@ -85,7 +92,6 @@ weapons: [
   //right side broadside
   {
     name: hellfire-broadside-smol
-    outline: false 
     layerOffset: 0.04
     controllable: false 
     autoTarget: true
@@ -940,9 +946,11 @@ weapons: [
       spawnUnit: exotic-mod-hellfire-trap
     }
   }
+  //lower (front) spinal weapon
   {
     name: hellfire-spinal-lower
     layerOffset: 0.04
+    shadow: 50
     x: 0 
     y: -16
     shootY: 8
@@ -1140,8 +1148,10 @@ weapons: [
       ]
     }
   }
+  //upper (rear) railgun
   {
     name: hellfire-spinal-upper
+    shadow: 100
     mirror: false
     x: 0
     y: -64
@@ -1337,16 +1347,20 @@ weapons: [
   }
   {
     controllable: false 
+    display: false
     x: 0
     shootOnDeath: true 
+    reload: 360
     shootCone: 360
     shootSound: none 
     bullet: {
+      collides: false
       spawnUnit: exotic-mod-hellfire-deamth
     }
   }
   {
     controllable: false 
+    display: false
     x: 0
     shootY: -16
     shootOnDeath: true 
@@ -1383,7 +1397,7 @@ weapons: [
           colorTo: 7382f0
         }
         trailColor: 7382f0
-        frontolor: ffffff
+        frontColor: ffffff
         backColor: 00000000
         trailLength: 15
         trailWidth: 8
@@ -1415,6 +1429,7 @@ weapons: [
   }
   {
     controllable: false 
+    display: false
     x: 0
     shootY: -64
     shootOnDeath: true 
@@ -1451,7 +1466,7 @@ weapons: [
           colorTo: 7382f0
         }
         trailColor: 7382f0
-        frontolor: ffffff
+        frontColor: ffffff
         backColor: 00000000
         trailLength: 15
         trailWidth: 8

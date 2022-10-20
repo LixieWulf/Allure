@@ -6,11 +6,8 @@ accel: 0.06
 drag: 0.013
 strafePenalty: 0.75
 shadowElevationScl: 0.45
-controller: repairAI
-commandLimit: 5
-lightRadius: 15
-lightColor: 7382f0
-lightOpacity: 0.25
+defaultController: repairAI
+lightRadius: 0
 drawCell: false
 lowAltitude: true
 engineSize: 0
@@ -21,18 +18,20 @@ parts: [
     layer: 90.02
     outline: false
   }
-  {
+  { 
     type: RegionPart
-    name: exotic-mod-victory-flare
+    suffix: -flare
     outline: false
-    layer: 99.99
+    blending: additive
+    layer: 91
+    color: 7382f0
   }
-  {
+  { 
     type: RegionPart
-    name: exotic-mod-victory-flare
+    suffix: -flare
     outline: false
     layer: 140
-    color: ffffff25
+    color: 7382f025
     blending: additive
   }
 ]

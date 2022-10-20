@@ -1,5 +1,5 @@
 type: CanvasBlock
-size: 8
+size: 12
 palette: [
   320018175,
   2426600703, 
@@ -12,7 +12,7 @@ palette: [
   1246450687,
   842219007
 ]
-canvasSize: 48
+canvasSize: 64
 padding: 6
 category: logic
 requirements: [

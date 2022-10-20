@@ -1,0 +1,115 @@
+type: legs
+localizedName: yet another internal unit
+speed: 0
+rotateSpeed: 0
+physics: false 
+hittable: false 
+targetable: false
+buildSpeed: 1.8
+buildRange: 480
+isEnemy: false
+faceTarget: false
+healFlash: false
+engineSize: 0
+fallSpeed: 0
+drawMinimap: false
+drawBuildBeam: false
+drawCell: false
+itemCapacity: 0
+drawShields: false
+drawBody: false
+internal: true
+outlines: false
+groundLayer: 30.1
+legCount: 0
+parts: [
+  {
+    type: RegionPart
+    outline: false
+    layer: 30.01
+    name: exotic-mod-0rc0-localize-bottom
+  }
+]
+weapons: [
+  {
+    type: BuildWeapon
+    name: localize-build
+    mirror: false
+    x: 11
+    baseRotation: 90
+    rotate: true
+    rotateSpeed: 1.5
+  }
+  {
+    type: BuildWeapon
+    name: localize-build
+    mirror: false
+    x: -11
+    baseRotation: 270
+    rotate: true
+    rotateSpeed: 1.5
+  }
+  {
+    type: BuildWeapon
+    name: localize-build
+    mirror: false
+    x: 0
+    y: 11
+    rotate: true
+    rotateSpeed: 1.5
+  }
+  {
+    type: BuildWeapon
+    name: localize-build
+    mirror: false
+    x: 0
+    y: -11
+    baseRotation: 180
+    rotate: true
+    rotateSpeed: 1.5
+  }
+  {
+    name: localize-missile
+    mirror: false
+    shootCone: 360
+    x: 0
+    shootY: 0
+    shoot: {
+      type: ShootBarrel
+      shots: 1
+      barrels: 4
+      //...
+      barrels: [
+        -8, 8, 22.5
+        8, 8, -22.5,
+        8, -8, -67.5,
+        -8, -8, 67.5,
+      ]
+    }
+    reload: 5
+    recoil: 0
+    shootStatus: {
+      name: e
+      buildSpeedMultiplier: 0
+      show: false
+    }
+    shootStatusDuration: 120
+    shootSound: missile
+    bullet: {
+      spawnUnit: exotic-mod-missile0
+      smokeEffect: {
+        lightOpacity: 0
+        length: 22
+        particles: 8
+        interp: pow3Out
+        sizeInterp: pow2In
+        lifetime: 30
+        cone: 20
+        sizeFrom: 2
+        sizeTo: 0
+        colorFrom: 9f9f9f
+        colorTo: 787878
+      }
+    }
+  }
+]

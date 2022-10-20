@@ -1,0 +1,126 @@
+type: missile
+template: MissileUnitType
+localizedName: yet another internal unit
+lifetime: 80
+speed: 7
+rotateSpeed: 12
+missileAccelTime: 15
+homingDelay: 5
+drawBody: false 
+drawCell: false
+outlines: false
+hitSize: 0
+hittable: false
+targetable: false
+physics: false
+trailLength: 4
+engineSize: 1
+engineOffset: 0.5
+engineLayer: 99
+parts: [
+  {
+    type: RegionPart
+    name: missile-back
+    layer: 100
+    color: e65555
+    outline: false
+  }
+  {
+    type: RegionPart
+    name: missile
+    layer: 100.01
+    color: ffb3b3
+    outline: false
+  }
+]
+weapons: [
+  {
+    controllable: false
+    shootCone: 360
+    shootOnDeath: true
+    shootSound: explosion
+    bullet: {
+      type: ExplosionBulletType
+      splashDamage: 45
+      splashDamageRadius: 26
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: [
+        {
+          length: 25
+          lifetime: 55
+          particles: 28
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 4
+          sizeTo: 0
+          interp: pow10Out
+          sizeInterp: pow5In
+        }
+        {
+          length: 33
+          lifetime: 35
+          particles: 17
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 2
+          sizeTo: 0
+          interp: pow10Out
+          sizeInterp: pow3In
+        }
+        {
+          length: 28
+          lifetime: 45
+          particles: 12
+          colorTo: e65555
+          sizeFrom: 2
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow5In
+        }
+        {
+          type: WaveEffect
+          lifetime: 20
+          sizeFrom: 0
+          sizeTo: 26
+          strokeFrom: 3
+          strokeTo: 0
+          colorTo: e65555
+        }
+      ]
+    }
+  }
+]
+abilities: [
+  {
+    type: MoveLightningAbility
+    y: -2.5
+    minSpeed: -1
+    maxSpeed: -1
+    chance: 1
+    length: 0
+    damage: 0
+    shootSound: none
+    shootEffect: none
+    bullet: {
+      type: RailBulletType
+      length: 5
+      damage: 1
+      setDefaults: false
+      despawnHit: false
+      fragBullets: 1
+      fragBullet: {
+        type: BulletType
+        speed: 0
+        lifetime: 0
+        damage: 0
+        hitEffect: none
+        despawnEffect: none
+        killShooter: true
+      }
+    }
+  }
+]
+deathSound: none
+deathExplosionEffect: none

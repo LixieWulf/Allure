@@ -27,26 +27,8 @@ parts: [
   {
     type: RegionPart
     name: exotic-mod-0b17-hellfire
-    layer: 60.02
+    layer: 60
     outline: false 
-  }
-  { 
-    type: RegionPart
-    name: exotic-mod-0b17-hellfire-flare
-    outline: false
-    blending: additive
-    layer: 111.01
-    color: 00000000
-    colorTo: ffffff
-  }
-  {
-    type: RegionPart
-    name: exotic-mod-0b17-hellfire
-    blending: additive
-    layer: 111
-    outline: false 
-    color: 00000000
-    colorTo: ffffff
   }
   {
     type: RegionPart
@@ -58,6 +40,142 @@ parts: [
   }
 ]
 weapons: [
+    //e
+    {
+      alwaysShooting: true 
+      reload: 250
+      controllable: false
+      shootCone: 360
+      shoot: {
+        firstShotDelay: 249
+      }
+      x: 0
+      layerOffset: 0.02
+      parts: [
+        { 
+          type: RegionPart
+          name: exotic-mod-0b17-hellfire-flare
+          outline: false
+          blending: additive
+          layer: 60.03
+          color: 7382f0bb
+          colorTo: ffffff
+          progress: charge
+        }
+        {
+          type: RegionPart
+          name: exotic-mod-0b17-hellfire
+          blending: additive
+          outline: false 
+          color: 000000
+          colorTo: ffffff
+          progress: charge
+        }
+        {
+          type: ShapePart
+          circle: true
+          hollow: true
+          strokeFrom: 0
+          strokeTo: 16
+          layer: 105
+          radius: 200
+          radiusTo: 150
+          color: 7382f0
+          colorTo: ffffff
+          progress: charge
+        }
+        {
+          type: HaloPart
+          tri: true
+          shapes: 4
+          haloRotateSpeed: -4.5
+          layer: 105
+          haloRadius: 200
+          haloRadiusTo: 150
+          triLength: 0
+          triLengthTo: 48
+          radius: 50
+          radiusTo: 25
+          color: 7382f0
+          colorTo: ffffff
+          progress: charge
+        }
+        {
+          type: HaloPart
+          tri: true
+          shapes: 4
+          haloRotateSpeed: 1
+          layer: 105
+          haloRadius: 0
+          triLength: 0
+          triLengthTo: 520
+          radius: 0
+          radiusTo: 55
+          color: 7382f0
+          colorTo: 7382f0
+          progress: {
+            type: charge
+            op: delay
+            amount: 0.5
+          }
+        }
+        {
+          type: HaloPart
+          tri: true
+          shapes: 4
+          haloRotateSpeed: 1
+          layer: 105
+          haloRadius: -12
+          triLength: 0
+          triLengthTo: 490
+          radius: 0
+          radiusTo: 60
+          color: ffffff
+          colorTo: ffffff
+          progress: {
+            type: charge
+            op: delay
+            amount: 0.5
+          }
+        }
+        {
+          type: ShapePart
+          circle: true
+          layer: 105
+          radius: 0
+          radiusTo: 65
+          color: 7382f0
+          colorTo: 7382f0
+          progress: {
+            type: charge
+            op: delay
+            amount: 0.5
+          }
+        }
+        {
+          type: ShapePart
+          circle: true
+          layer: 106
+          radius: 0
+          radiusTo: 60
+          color: ffffff
+          colorTo: ffffff
+          progress: {
+            type: charge
+            op: delay
+            amount: 0.5
+          }
+        }
+      ]
+      shootSound: none
+      shake: 0
+      bullet: {
+        //WOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO NESTLED INTERNAL UNITS
+        collides: false
+        spawnUnit: exotic-mod-hellfire-singularity 
+      }
+    }
+    //visual only
     {
     name: hellfire-broadside-smol
     x: 36
@@ -195,3 +313,13 @@ weapons: [
     ]
   }
 ]
+deathExplosionEffect: {
+  type: WaveEffect
+  lifetime: 120
+  sizeFrom: 0
+  sizeTo: 720
+  strokeFrom: 36
+  strokeTo: 0
+  interp: pow2Out
+  colorFrom: 7382f0
+}

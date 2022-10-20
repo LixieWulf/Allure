@@ -1,0 +1,24 @@
+type: CanvasBlock
+size: 4
+palette: [
+  320018107,
+  2426600635, 
+  1937961147,
+  1515766971,
+  3864352187,
+  2906801339,
+  1932341435,
+  1734964155,
+  1246450619,
+  842218939,
+  3908041403,
+  3352155835,
+  2644617403
+]
+canvasSize: 24
+padding: 6
+category: logic
+requirements: [
+  dantrales/25
+  territe-alloy/10
+]

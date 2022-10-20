@@ -19,6 +19,7 @@ drawOrbit: false
 orbitTime: 15
 defaultEnv: 17
 defaultCore: core-citadel
+clearSectorOnLose: true
 //TODO this needs a proper asteroid mesh
 mesh: {
   type: NoiseMesh
