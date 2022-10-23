@@ -10,9 +10,25 @@ localizedName: yet another internal unit
 speed: 8
 rotateSpeed: 0
 lifetime: 45
+drawBody: false
+drawCell: false
 parts: [
   {
+    type: RegionPart
     name: exotic-mod-0b17-hellfire
+    outline: false 
+    color: ffffff00
+    colorTo: ffffff
+    progress: life
+  }
+  {
+    type: RegionPart
+    name: exotic-mod-0b17-hellfire
+    outline: false 
+    blending: additive
+    color: 000000
+    colorTo: ffffff00
+    progress: life
   }
   { 
     type: RegionPart
@@ -20,7 +36,9 @@ parts: [
     outline: false
     blending: additive
     layer: 90.03
-    color: 7382f0bb
+    color: ffffff00
+    colorTo: 7382f0bb
+    progress: life
   }
 ]
 weapons: [

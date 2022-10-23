@@ -66,9 +66,10 @@ weapons: [
           type: RegionPart
           name: exotic-mod-0b17-hellfire
           blending: additive
+          layer: 100
           outline: false 
-          color: 000000
-          colorTo: ffffff
+          mixColor: 000000
+          mixColorTo: ffffff
           progress: charge
         }
         {
@@ -311,6 +312,33 @@ weapons: [
         color: 7382f0bb
       }
     ]
+  }
+]
+fallEffectChance: 0.1
+fallEffect: [
+  {
+    line: true
+    lifetime: 35
+    particles: 2
+    randLength: false
+    length: 0.01
+    strokeFrom: 4
+    strokeTo: 0
+    lenFrom: 18
+    lenTo: 48
+    colorTo: 7382f0
+  }
+  {
+    line: true
+    lifetime: 15
+    particles: 8
+    randLength: false
+    length: 15
+    strokeFrom: 0.5
+    strokeTo: 0
+    lenFrom: 4
+    lenTo: 7
+    colorTo: 7382f0
   }
 ]
 deathExplosionEffect: {

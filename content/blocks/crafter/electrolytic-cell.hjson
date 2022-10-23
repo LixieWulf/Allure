@@ -50,7 +50,7 @@ outputLiquids: [
 ]
 ambientSoundVolume: 0
 category: crafting
-research: 0r-begin
+research: 0b-begin
 requirements: [
   territe-alloy/120
   dantrales/60

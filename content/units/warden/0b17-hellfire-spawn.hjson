@@ -9,6 +9,7 @@ maxRange: 8192
 engineSize: 0 
 drawBody: false 
 drawCell: false 
+envEnabled: -1
 weapons: [
   {
     x: 0
