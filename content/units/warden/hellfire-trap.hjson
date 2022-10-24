@@ -5,7 +5,7 @@ health: 1000000000
 speed: 0
 rotateSpeed: 0
 engineSize: 0 
-lifetime: 240
+lifetime: 300
 hitSize: 0
 physics: false
 targetable: false 
@@ -13,150 +13,204 @@ hittable: false
 drawBody: false 
 drawCell: false 
 outlines: false 
-parts: [
+weapons: [
   {
-    type: ShapePart
-    circle: true
-    hollow: true
-    stroke: 4
-    strokeTo: 0
-    progress: life
-    radius: 25
-    color: 7382f0
-    layer: 105
-  }
-  {
-    type: ShapePart
-    hollow: true
-    sides: 3
-    rotateSpeed: -3
-    stroke: 4
-    strokeTo: 0
-    progress: life
-    radius: 25
-    color: 7382f0
-    layer: 105
-  }
-  {
-    type: ShapePart
-    hollow: true
-    sides: 3
-    rotateSpeed: 3
-    stroke: 4
-    strokeTo: 0
-    progress: life
-    radius: 19
-    color: 7382f0
-    layer: 105
-  }
-  {
-    type: ShapePart
-    hollow: true
-    sides: 6
-    rotateSpeed: 3
-    stroke: 4
-    strokeTo: 0
-    progress: life
-    radius: 11
-    rotation: 30
-    color: 7382f0
-    layer: 105
-  }
-  {
-    type: ShapePart
-    circle: true
-    sides: 6
-    rotateSpeed: 3
-    radius: 7
-    radiusTo: 7
-    progress: life
-    color: 7382f0
-    layer: 105
-  }
-  {
-    type: ShapePart
-    circle: true
-    sides: 6
-    rotateSpeed: 3
-    radius: 6
-    radiusTo: 6
-    progress: life
-    layer: 105
-  }
-  {
-    type: HaloPart
-    tri: true
-    sides: 3
-    shapes: 6
-    triLength: 24
-    triLengthTo: 0
-    progress: life
-    color: 7382f0
-    layer: 105
-    radius: 8
-    haloRadius: 28
-    haloRotateSpeed: 1
-  }
-  {
-    type: HaloPart
-    tri: true
-    sides: 3
-    shapes: 6
-    triLength: 18
-    triLengthTo: 0
-    progress: life
-    color: 7382f0
-    layer: 105
-    radius: 6
-    haloRadius: 28
-    haloRotateSpeed: -1
-  }
-  {
-    type: ShapePart
-    circle: true
-    hollow: true
-    stroke: 7
-    strokeTo: 0
-    progress: life
-    radius: 520
-    color: 7382f0
-    layer: 105
-  }
-  {
-    type: HaloPart
-    tri: true
-    sides: 3
-    shapes: 6
-    shapeRotation: 180
-    triLength: 210
-    triLengthTo: 0
-    progress: life
-    color: 7382f0
-    layer: 105
-    radius: 48
-    haloRadius: 520
-    haloRotateSpeed: 1
-  }
-  {
-    type: HaloPart
-    tri: true
-    sides: 3
-    shapes: 6
-    shapeRotation: 180
-    triLength: 160
-    triLengthTo: 0
-    progress: life
-    color: 7382f0
-    layer: 105
-    radius: 36
-    haloRadius: 520
-    haloRotateSpeed: -1
+    x: 0
+    reload: 300
+    mirror: false
+    alwaysShooting: true
+    shootCone: 360
+    shoot: {
+      firstShotDelay: 30
+    }
+    parts: [
+      {
+        type: ShapePart
+        layer: 110
+        circle: true
+        radius: 0
+        radiusTo: 40
+        color: 7382f0
+        colorTo: 7382f0
+        progress: {
+          type: charge
+          op: curve
+          interp: pow3Out
+        }
+      }
+      {
+        type: ShapePart
+        layer: 110
+        circle: true
+        radius: 0
+        radiusTo: 35
+        progress: {
+          type: charge
+          op: curve
+          interp: pow3Out
+        }
+      }
+      {
+        type: HaloPart
+        layer: 110
+        tri: true
+        shapes: 3
+        radius: 0
+        radiusTo: 14
+        triLength: 35
+        triLengthTo: 35
+        haloRadius: 160
+        haloRadiusTo: 160
+        haloRotateSpeed: 2.5
+        progress: {
+          type: smoothReload
+          op: delay
+          amount: 0.1
+        }
+      }
+      {
+        type: HaloPart
+        layer: 110
+        tri: true
+        shapes: 3
+        radius: 0
+        radiusTo: 14
+        triLength: 35
+        triLengthTo: 35
+        shapeRotation: 180
+        haloRadius: 160
+        haloRadiusTo: 160
+        haloRotateSpeed: 2.5
+        progress: {
+          type: smoothReload
+          op: delay
+          amount: 0.1
+        }
+      }
+      {
+        type: ShapePart
+        layer: 109
+        circle: true
+        hollow: true
+        radius: 80
+        stroke: 0
+        strokeTo: 5
+        color: 7382f0
+        colorTo: 7382f0
+        progress: {
+          type: smoothReload
+          op: curve
+          interp: pow10Out
+        }
+      }
+      {
+        type: ShapePart
+        layer: 109
+        circle: true
+        hollow: true
+        radius: 80
+        radiusTo: 130
+        stroke: 0
+        strokeTo: 2.5
+        color: 7382f0
+        colorTo: 7382f0
+        progress: {
+          type: smoothReload
+          op: curve
+          interp: pow5Out
+        }
+      }
+      {
+        type: ShapePart
+        layer: 109
+        circle: true
+        hollow: true
+        radius: 80
+        radiusTo: 150
+        stroke: 0
+        strokeTo: 1.5
+        color: 7382f0
+        colorTo: 7382f0
+        progress: {
+          type: smoothReload
+          op: curve
+          interp: pow3Out
+        }
+      }
+      {
+        type: ShapePart
+        layer: 109
+        circle: true
+        hollow: true
+        radius: 80
+        radiusTo: 160
+        stroke: 0
+        strokeTo: 1
+        color: 7382f0
+        colorTo: 7382f0
+        progress: {
+          type: smoothReload
+          op: curve
+          interp: pow2Out
+        }
+      }
+    ]
+    shootY: 0
+    shootSound: none
+    bullet: {
+      shootEffect: [
+        {
+          length: 0
+          layer: 109.9
+          lifetime: 271
+          particles: 1 
+          sizeFrom: 40
+          sizeTo: 40
+          colorFrom: 7382f0
+          colorTo: 7382f0
+          followParent: true
+        }
+        {
+          length: 0
+          layer: 110
+          lifetime: 271
+          particles: 1 
+          sizeFrom: 35
+          sizeTo: 35
+          followParent: true
+        }
+        {
+          length: 0
+          startDelay: 270
+          layer: 109.9
+          lifetime: 45
+          interp: pow2In
+          particles: 1 
+          sizeFrom: 40
+          sizeTo: 0
+          colorFrom: 7382f0
+          colorTo: 7382f0
+          followParent: true
+        }
+        {
+          length: 0
+          startDelay: 270
+          layer: 110
+          lifetime: 45
+          interp: pow2In
+          particles: 1 
+          sizeFrom: 35
+          sizeTo: 0
+          followParent: true
+        }
+      ]
+    }
   }
 ]
 abilities: [  
   {
     type: MoveLightningAbility
-    chance: 1
+    chance: 0.3333333
     shootSound: none 
     shootEffect: none 
     minSpeed: -1
@@ -166,7 +220,7 @@ abilities: [
     bullet: {
       type: EmpBulletType
       damage: 0
-      radius: 520
+      radius: 160
       speed: 0
       lifetime: 1
       timeDuration: 0
@@ -178,8 +232,77 @@ abilities: [
       statusDuration: 30
       hitEffect: none
       hitPowerEffect: none 
-      chainEffect: none 
       applyEffect: none 
+    }
+  }
+  {
+    type: MoveLightningAbility
+    chance: 0.1
+    shootSound: none 
+    shootEffect: none 
+    minSpeed: -1
+    maxSpeed: -1
+    color: 00000000
+    length: -1
+    bulletSpread: 180
+    bullet: {
+      type: PointBulletType
+      speed: 40
+      lifetime: 1
+      trailEffect: none
+      collides: false
+      despawnEffect: [
+        {
+          type: WaveEffect
+          lifetime: 45
+          sizeFrom: 0
+          sizeTo: 12
+          strokeFrom: 4
+          strokeTo: 0
+          colorFrom: 7382f0
+          colorTo: 7382f0
+        }
+      ]
+    }
+  }
+  {
+    type: MoveLightningAbility
+    chance: 0.5
+    shootSound: none 
+    shootEffect: none 
+    minSpeed: -1
+    maxSpeed: -1
+    color: 00000000
+    length: -1
+    bullet: {
+      type: ExplosionBulletType
+      killShooter: false
+      hitEffect: none
+      despawnEffect: none
+      fragBullets: 75
+      fragBullet: {
+        type: RailBulletType
+        length: 160
+        damage: 0.01
+        collidesTiles: false
+        pierceDamageFactor: 0
+        pierceEffect: none
+        hitEffect: {
+          length: 50
+          particles: 1
+          cone: 10
+          line: true
+          lifetime: 35
+          lenFrom: 6
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 1
+          interp: pow3Out
+          sizeInterp: pow2In
+          colorTo: 7382f050
+        }
+        knockback: 2.5
+      }
     }
   }
 ]

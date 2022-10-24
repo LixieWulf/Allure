@@ -845,7 +845,7 @@ weapons: [
   //main lance
   {
     mirror: false
-    shootCone: 360
+    shootCone: 45
     x: 0
     y: 0
     shootY: 8
@@ -890,7 +890,7 @@ weapons: [
     x: 48
     alternate: false
     baseRotation: -90
-    shootCone: 360
+    shootCone: 22.5
     reload: 150
     shootSound: laserblast
     shoot: {
@@ -935,15 +935,25 @@ weapons: [
       }
     }
   }
+  //trap spawner
   {
     x: 0
     mirror: false 
-    reload: 480
-    shootCone: 360
+    rotate: true
+    reload: 160
+    rotateSpeed: 360
+    shootSound: none
     bullet: {
-      speed: 6
-      lifetime: 60 
-      spawnUnit: exotic-mod-hellfire-trap
+      type: PointBulletType
+      speed: 480
+      lifetime: 1
+      trailEffect: none
+      shootEffect: none
+      smokeEffect: none
+      fragBullets: 1
+      fragBullet: {
+        spawnUnit: exotic-mod-hellfire-trap
+      }
     }
   }
   //lower (front) spinal weapon
