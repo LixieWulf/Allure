@@ -2,13 +2,30 @@ type: ItemTurret
 size: 7
 range: 320
 rotateSpeed: 2.5
-reload: 160
+reload: 110
+recoil: 3
 shake: 8
 shootSound: bang
 drawer: {
   type: DrawTurret
   basePrefix: 0r-
+  parts: [
+    {
+      type: RegionPart
+      suffix: -barrel
+      y: 6.5
+      mirror: false
+      moveY: -7
+      progress: reload
+    }
+    {
+      type: RegionPart
+      suffix: -top
+      mirror: false
+    }
+  ]
 }
+ammoPerShot: 5
 ammoTypes: {
   anden: {
     speed: 4
@@ -16,6 +33,8 @@ ammoTypes: {
     damage: 440
     splashDamage: 200
     splashDamageRadius: 35
+    ammoMultiplier: 1
+    displayAmmoMultiplier: false
     width: 22
     height: 45
     frontColor: ffb3b3
@@ -143,7 +162,7 @@ ammoTypes: {
         type: ShrapnelBulletType
         length: 55
         width: 10
-        damage: 400
+        damage: 650
         lifetime: 55
         serrations: 0
         toColor: e65555
@@ -152,4 +171,11 @@ ammoTypes: {
   }
 }
 category: turret
-requirements: []
+requirements: [
+  infrastructure/100
+  anden/2500
+  beryllium/250
+  graphite/1500
+  surge-alloy/500
+  phase-fabric/800
+]

@@ -1,7 +1,7 @@
 type: ItemTurret
 squareSprite: false
 size: 5
-range: 240
+range: 300
 health: 3000
 shootY: 0
 shootCone: 180
@@ -9,139 +9,63 @@ reload: 45
 recoil: 0
 rotateSpeed: 0
 shoot: {
-  type: ShootSpread
-  spread: 90
+  type: ShootBarrel
   shots: 15
   shotDelay: 2
+  barrels: [
+    8, 0, 0,
+    0, 8, 0, 
+    -8, 0, 0, 
+    0, -8, 0,
+  ]
 }
-ammoPerShot: 2
+smokeEffect: [
+  {
+    length: 30
+    particles: 14
+    interp: pow5Out
+    sizeInterp: pow3In
+    lifetime: 20
+    cone: 15
+    sizeFrom: 3
+    sizeTo: 0
+    colorFrom: 909090
+    colorTo: 909090
+  }
+  {
+    length: 26
+    particles: 20
+    interp: pow5Out
+    sizeInterp: pow3In
+    lifetime: 30
+    cone: 20
+    sizeFrom: 1
+    sizeTo: 0
+    colorFrom: 909090
+    colorTo: 909090
+  }
+  {
+    type: WaveEffect
+    layer: 105
+    rotation: 30
+    sides: 6
+    lifetime: 20
+    sizeFrom: 0
+    sizeTo: 6
+    strokeFrom: 3
+    strokeTo: 0
+    colorFrom: ffb3b3
+    colorTo: e65555
+  }
+]
+ammoPerShot: 6
 shootSound: missile
 ammoUseEffect: none
 shootEffect: none
-smokeEffect: none
 outlineIcon: false
 ammoTypes: {
   anden: {
-    speed: 8
-    backMove: false
-    lifetime: 0
-    collides: false
-    hittable: false
-    absorbable: false
-    shootEffect: none
-    smokeEffect: none
-    hitEffect: {
-      useRotation: false
-      baseRotation: 90
-      lightOpacity: 0
-      length: 22
-      particles: 8
-      interp: pow3Out
-      sizeInterp: pow2In
-      lifetime: 30
-      cone: 20
-      sizeFrom: 2
-      sizeTo: 0
-      colorFrom: 9f9f9f
-      colorTo: 787878
-    }
-    despawnEffect: {
-      type: WaveEffect
-      layer: 105
-      sides: 6
-      lifetime: 20
-      sizeFrom: 0
-      sizeTo: 11
-      strokeFrom: 3
-      strokeTo: 0
-      colorFrom: ffb3b3
-      colorTo: e65555
-    }
-    fragBullets: 1
-    fragRandomSpread: 0
-    fragBullet: {
-      type: MissileBulletType
-      speed: 1
-      lifetime: 150
-      drag: -0.02
-      homingRange: 280
-      homingPower: 0.07
-      damage: 100
-      splashDamage: 75
-      splashDamageRadius: 12
-      weaveScale: 10
-      weaveMag: 5
-      frontColor: ffb3b3
-      backColor: e65555
-      trailChance: 0.1
-      trailColor: e65555
-      trailWidth: 2
-      trailLength: 6
-      hitEffect: {
-        type: MultiEffect
-        lifetime: 45
-        effects: [
-          {
-            length: 22
-            lifetime: 15
-            particles: 8
-            line: true
-            interp: pow3Out
-            sizeInterp: linear
-            lenFrom: 4
-            lenTo: 0
-            strokeFrom: 2
-            strokeTo: 1
-            colorFrom: ffb3b3
-            colorTo: e65555
-          }
-          {
-            length: 20
-            lifetime: 20
-            particles: 8
-            interp: pow2Out
-            sizeInterp: linear
-            sizeFrom: 2
-            sizeTo: 0
-            colorFrom: ffffff
-            colorTo: e65555
-          }
-          {
-            length: 18
-            lifetime: 35
-            particles: 12
-            interp: pow3Out
-            sizeInterp: pow3In
-            sizeFrom: 1
-            sizeTo: 0
-            colorFrom: 9f9f9f
-            colorTo: 787878
-          }
-          {
-            length: 14
-            lifetime: 45
-            particles: 12
-            interp: pow5Out
-            sizeInterp: pow3In
-            sizeFrom: 3
-            sizeTo: 0
-            colorFrom: 787878
-            colorTo: 787878
-          }
-          {
-            type: WaveEffect
-            sizeFrom: 0
-            sizeTo: 16
-            strokeFrom: 2
-            strokeTo: 0
-            lifetime: 10
-            colorFrom: ffffff
-            colorTo: e65555
-          }
-        ]
-      }
-      despawnEffect: none
-    }
+    spawnUnit: exotic-mod-cleave-missile
   }
 }
 drawer: DrawDefault
