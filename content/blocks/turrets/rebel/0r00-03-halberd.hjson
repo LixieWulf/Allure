@@ -1,0 +1,41 @@
+type: PowerTurret
+squareSprite: false
+envDisabled: 4
+outlineIcon: false
+size: 4
+health: 4400
+range: 40
+reload: 15
+recoil: -32
+rotateSpeed: 12
+shootSound: none
+shake: 2
+shootType: {
+  type: RailBulletType
+  damage: 650
+  length: 32
+  ammoMultiplier: 6
+  pierceDamageFactor: 0
+  pierceEffect: none
+  shootEffect: none
+  smokeEffect: none
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: 0r-
+}
+consumes: {
+  liquids: [
+    ozone/0.06666666666666666
+    hydrogen/0.1
+  ]
+}
+category: turret
+research: 0r-waraxe
+requirements: [
+  beryllium/1500
+  anden/800
+  oxide/600
+]
+envEnabled: -1
+envDisabled: 4

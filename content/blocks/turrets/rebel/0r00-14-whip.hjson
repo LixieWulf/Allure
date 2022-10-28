@@ -1,0 +1,365 @@
+type: ItemTurret
+squareSprite: false
+size: 8
+scaledHealth: 900
+range: 260
+rotateSpeed: 1.8
+reload: 210
+recoil: 16
+cooldownTime: 180
+ammoPerShot: 16
+maxAmmo: 32
+shootY: 12
+shootSound: none
+ammoEjectBack: 12
+ammoUseEffect: {
+  lifetime: 110
+  particles: 1
+  length: 16
+  randLength: false
+  baseRotation: 90
+  cone: 15
+  offset: -90
+  spin: 0.2
+  region: exotic-mod-standard-case-back
+  sizeFrom: 8
+  sizeTo: 0
+  interp: pow3Out
+  sizeInterp: pow10In
+  colorFrom: ffb3b3
+  colorTo: ad4244
+}
+ammoTypes: {
+  anden: {
+    type: BulletType
+    ammoMultiplier: 1
+    speed: 0
+    lifetime: 0
+    damage: 0
+    hitEffect: none
+    despawnEffect: none
+    shootEffect: {
+      type: MultiEffect
+      layer: 105
+      effects: [
+        {
+          lightOpacity: 0
+          length: 120
+          baseLength: 140
+          lifetime: 120
+          cone: 20
+          particles: 70
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 8
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow2In
+        }
+        {
+          lightOpacity: 0
+          length: 180
+          baseLength: 120
+          lifetime: 90
+          cone: 15
+          particles: 80
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 5
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow2In
+        }
+        {
+          lightOpacity: 0
+          length: 110
+          baseLength: 120
+          lifetime: 60
+          cone: 20
+          particles: 60
+          colorFrom: 9f9f9f
+          colorTo: 787878
+          sizeFrom: 5
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow3In
+        }
+        {
+          lightOpacity: 0
+          length: 160
+          baseLength: 160
+          lifetime: 60
+          cone: 25
+          particles: 45
+          colorFrom: 9f9f9f
+          colorTo: 787878
+          sizeFrom: 3
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow3In
+        }
+      ]
+    }
+    smokeEffect: {
+      type: MultiEffect
+      effects: [
+        {
+          length: 160
+          baseLength: 140
+          cone: 25
+          line: true
+          lifetime: 40
+          particles: 25
+          colorTo: e65555
+          interp: pow2Out
+          sizeInterp: pow3In
+          lenFrom: 16
+          lenTo: 0
+          strokeFrom: 6
+          strokeTo: 2
+          sizeInterp: pow2In
+        }
+        {
+          length: 160
+          baseLength: 180
+          cone: 30
+          line: true
+          lifetime: 30
+          particles: 30
+          colorTo: e65555
+          interp: pow2Out
+          sizeInterp: pow3In
+          lenFrom: 8
+          lenTo: 0
+          strokeFrom: 4
+          strokeTo: 2
+          sizeInterp: pow2In
+        }
+        {
+          lightOpacity: 0.4
+          length: 140
+          baseLength: 120
+          lifetime: 60
+          cone: 30
+          particles: 15
+          colorTo: e65555
+          sizeFrom: 5
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow3In
+        }
+        {
+          lightOpacity: 0.4
+          length: 160
+          baseLength: 160
+          lifetime: 60
+          cone: 35
+          particles: 25
+          colorTo: e65555
+          sizeFrom: 3
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow3In
+        }
+      ]
+    }
+    hitSound: explosionbig
+    hitSoundVolume: 1.8
+    fragBullets: 80
+    fragRandomSpread: 32
+    fragBullet: {
+      type: RailBulletType
+      damage: 360
+      length: 260
+      pierceDamageFactor: 0
+      pierceEffect: none
+      knockback: 4
+    }
+    lightning: 6
+    lightningLength: 2
+    lightningCone: 35
+    lightningType: {
+      type: ShrapnelBulletType
+      lifetime: 60
+      length: 200
+      width: 18
+      serrations: 0
+      layer: 110
+      damage: 1250
+      toColor: e65555
+    }
+  }
+  draconium: {
+    type: BulletType
+    ammoMultiplier: 4
+    reloadMultiplier: 0.8
+    speed: 0
+    lifetime: 0
+    damage: 0
+    hitEffect: none
+    despawnEffect: none
+    shootEffect: {
+      type: MultiEffect
+      layer: 105
+      effects: [
+        {
+          lightOpacity: 0
+          length: 160
+          baseLength: 160
+          lifetime: 120
+          cone: 20
+          particles: 40
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 8
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow2In
+        }
+        {
+          lightOpacity: 0
+          length: 180
+          baseLength: 160
+          lifetime: 90
+          cone: 15
+          particles: 50
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 5
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow2In
+        }
+        {
+          lightOpacity: 0
+          length: 130
+          baseLength: 140
+          lifetime: 60
+          cone: 20
+          particles: 40
+          colorFrom: 9f9f9f
+          colorTo: 787878
+          sizeFrom: 5
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow3In
+        }
+        {
+          lightOpacity: 0
+          length: 200
+          baseLength: 180
+          lifetime: 60
+          cone: 25
+          particles: 30
+          colorFrom: 9f9f9f
+          colorTo: 787878
+          sizeFrom: 3
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow3In
+        }
+      ]
+    }
+    smokeEffect: {
+      type: MultiEffect
+      effects: [
+        {
+          length: 180
+          baseLength: 200
+          cone: 20
+          line: true
+          lifetime: 40
+          particles: 25
+          colorTo: e3567c
+          interp: pow2Out
+          sizeInterp: pow3In
+          lenFrom: 16
+          lenTo: 0
+          strokeFrom: 6
+          strokeTo: 2
+          sizeInterp: pow2In
+        }
+        {
+          length: 200
+          baseLength: 200
+          cone: 20
+          line: true
+          lifetime: 30
+          particles: 30
+          colorTo: e3567c
+          interp: pow2Out
+          sizeInterp: pow3In
+          lenFrom: 8
+          lenTo: 0
+          strokeFrom: 4
+          strokeTo: 2
+          sizeInterp: pow2In
+        }
+        {
+          lightOpacity: 0.4
+          length: 160
+          baseLength: 160
+          lifetime: 60
+          cone: 20
+          particles: 15
+          colorTo: e3567c
+          sizeFrom: 5
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow3In
+        }
+        {
+          lightOpacity: 0.4
+          length: 160
+          baseLength: 200
+          lifetime: 60
+          cone: 25
+          particles: 25
+          colorTo: e3567c
+          sizeFrom: 3
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow3In
+        }
+      ]
+    }
+    hitSound: explosionbig
+    hitSoundVolume: 2.2
+    fragBullets: 80
+    fragRandomSpread: 32
+    fragBullet: {
+      type: RailBulletType
+      damage: 780
+      length: 300
+      pierceDamageFactor: 0
+      pierceEffect: none
+      knockback: 4
+    }
+  }
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: 0r-
+}
+category: turret
+research: {
+  parent: 0r00-04-flail
+  objectives: [
+    0r00-07-spearhead,
+    0r00-09-gauntlet
+  ]
+}
+requirements: [
+  infrastructure/500
+  anden/5000
+  surge-alloy/2000
+  scilaxa/700
+]
+envEnabled: -1
+envDisabled: 4
+consumes: {
+  liquid: {
+    liquid: water
+    amount: 4
+  }
+}

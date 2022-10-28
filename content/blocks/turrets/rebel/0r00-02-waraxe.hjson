@@ -1,0 +1,83 @@
+type: ItemTurret
+squareSprite: false
+size: 3
+health: 1400
+heatColor: e65555
+cooldownTime: 60
+range: 108
+rotateSpeed: 3
+reload: 5
+recoil: 2
+recoilTime: 40
+shootSound: flame
+ammoTypes: {
+  anden: {
+    type: BulletType
+    damage: 42
+    speed: 6
+    lifetime: 18
+    pierce: true
+    pierceBuilding: true
+    pierceCap: 3
+    ammoMultiplier: 5
+    status: burning
+    despawnEffect: none
+    hitEffect: {
+      type: ParticleEffect
+      line: true
+      length: 15
+      cone: 25
+      lifetime: 25
+      strokeFrom: 1
+      strokeTo: 0.5
+      lenFrom: 3
+      lenTo: 0
+      interp:pow5Out
+      sizeInterp: pow3In
+      colorFrom: ffb3b3
+      colorTo: a63d3d
+    }
+    shootEffect: {
+      type: ParticleEffect
+      particles: 11
+      length: 108
+      lifetime: 36
+      cone: 12
+      colorFrom: ffb3b3
+      colorTo: a63d3d
+      interp: pow5Out
+      sizeInterp: pow3In
+      sizeFrom: 4
+      sizeTo: 0
+    }
+    smokeEffect: {
+      type: ParticleEffect
+      layer: 105
+      particles: 4
+      length: 48
+      lifetime: 36
+      interp: pow5Out
+      sizeInterp: pow3In
+      cone: 20
+      colorFrom: 7e7e7e
+      colorTo: 464646
+      sizeFrom: 4
+      sizeTo: 0
+    }
+  }
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: 0r-
+}
+coolantMultiplier: 0.4
+category: turret
+research: 0r-saber
+requirements: [
+  beryllium/500
+  anden/400
+  graphite/450
+  tungsten/250
+]
+envEnabled: -1
+envDisabled: 4

@@ -1,0 +1,78 @@
+type: ItemTurret
+health: 2100
+range: 520
+reload: 70
+size: 6
+rotateSpeed: 4
+squareSprite: false
+ammoPerShot: 3
+maxAmmo: 48
+drawer: {
+  type: DrawTurret
+  basePrefix: 0r-
+  parts: [
+    {
+      type: RegionPart
+      suffix: -cannon
+      y: 15.75
+      mirror: false
+      moveY: -5
+      progress: reload
+    }
+    {
+      type: RegionPart
+      suffix: -cannon
+      y: 8.25
+      mirror: false
+      moveY: -5
+      progress: {
+        type: reload
+        op: delay
+        amount: 0.33333
+      }
+    }
+    {
+      type: RegionPart
+      suffix: -cannon
+      y: 0.75
+      mirror: false
+      moveY: -5
+      progress: {
+        type: reload
+        op: delay
+        amount: 0.66666
+      }
+    }
+    {
+      type: RegionPart
+      suffix: -top
+      mirror: false
+    }
+  ]
+}
+shoot: {
+  type: ShootBarrel
+  shots: 3
+  shotDelay: 10
+  barrels: [
+    0, 0, 0,
+    0, -7.5, 0, 
+    0, -15, 0
+  ]
+}
+inaccuracy: 9
+shootSound: shootBig
+ammoTypes: {
+  anden: {
+    ammoMultiplier: 1
+    spawnUnit: exotic-mod-rebel-trap
+  }
+}
+category: turret
+requirements: [
+  beryllium/1200
+  anden/750
+  silicon/700
+  graphite/1200
+  carbide/500
+]

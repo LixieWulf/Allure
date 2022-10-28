@@ -17,6 +17,8 @@ trailLength: 4
 engineSize: 1
 engineOffset: 0.5
 engineLayer: 99
+trailColor: e65555
+engineColor: e65555
 parts: [
   {
     type: RegionPart

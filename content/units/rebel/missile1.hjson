@@ -1,0 +1,131 @@
+type: missile
+template: MissileUnitType
+lowAltitude: true
+speed: 6
+hitSize: 0
+lifetime: 2
+createWreck: true
+hittable: false
+targetable: false
+drawCell: false
+drawBody: false
+outlines: false
+//more unique attack options
+bounded: true
+rotateSpeed: 0
+fallSpeed: 0.025
+shadowElevationScl: 4.4
+trailColor: e65555
+engineColor: e65555
+engineLayer: 104.99
+parts: [
+  {
+    outline: false
+    layer: 105
+  }
+]
+weapons: [
+  {
+    controllable: false
+    shootOnDeath: true
+    shootCone: 360
+    reload: 5
+    bullet: {
+      type: BulletType
+      lifetime: 2
+      speed: 0
+      hittable: false
+      reflectable: false
+      collides: false
+      fragOnAbsorb: false
+      keepVelocity: false
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      //gives a warning as this field doesnt exist, more smth for if it ever will
+      absorbEffect: [
+        {
+          type: WaveEffect
+          interp: pow3Out
+          lifetime: 35
+          sizeFrom: 0
+          sizeTo: 25
+          strokeFrom: 4
+          strokeTo: 4
+          colorFrom: e65555
+          colorTo: e65555
+        }
+        {
+          type: WaveEffect
+          interp: pow5In
+          lifetime: 15
+          sizeFrom: 25
+          sizeTo: 0
+          strokeFrom: 4
+          strokeTo: 4
+          colorFrom: e65555
+          colorTo: e65555
+        }
+      ]
+      fragBullets: 1
+      fragBullet: {
+        type: ExplosionBulletType
+        keepVelocity: false
+        hitEffect: [
+          {
+            length: 55
+            lifetime: 190
+            particles: 40
+            colorFrom: 787878
+            colorTo: 787878
+            sizeFrom: 6
+            sizeTo: 0
+            interp: pow10Out
+            sizeInterp: pow5In
+          }
+          {
+            length: 80
+            lifetime: 100
+            particles: 20
+            colorFrom: 787878
+            colorTo: 787878
+            sizeFrom: 2
+            sizeTo: 0
+            interp: pow10Out
+            sizeInterp: pow3In
+          }
+          {
+            length: 60
+            lifetime: 110
+            particles: 12
+            colorTo: e65555
+            sizeFrom: 3
+            sizeTo: 0
+            interp: pow3Out
+            sizeInterp: pow5In
+          }
+          {
+            type: WaveEffect
+            lifetime: 20
+            sizeFrom: 0
+            sizeTo: 40
+            strokeFrom: 3
+            strokeTo: 0
+            colorTo: e65555
+          }
+        ]
+        despawnEffect: none
+        fragBullets: 240
+        fragBullet: {
+          type: RailBulletType
+          damage: 1.2
+          length: 44
+          pierceDamageFactor: 0
+          pierceEffect: none
+        }
+      }
+    }
+  }
+]
+deathExplosionEffect: none

@@ -1,0 +1,100 @@
+type: missile
+template: MissileUnitType
+localizedName: yet another internal unit
+defaultController: FlyingAI
+health: 1220
+hitSize: 16
+speed: 0
+rotateSpeed: 0
+lifetime: 240
+shadowElevationScl: 0
+drawBody: false
+drawCell: false
+physics: true
+targetable: false
+trailLength: -1
+engineSize: 0
+parts: [
+  {
+    type: ShapePart
+    layer: 105
+    shapes: 1
+    sides: 4
+    radius: 14
+    rotation: 45
+    color: e65555
+  }
+]
+weapons: [
+  {
+    controllable: false
+    x: 0
+    baseRotation: 180
+    shootCone: 360
+    reload: 1080
+    alwaysShooting: true
+    shootSound: none
+    bullet: {
+      type: ExplosionBulletType
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      killShooter: false
+      recoil: 48
+    }
+  }
+  {
+    alwaysShooting: true
+    shootCone: 360
+    controllable: false
+    mirror: false
+    x: 0
+    shootSound: none
+    shootY: 0
+    shoot: {
+      shots: 40
+    }
+    bullet: {
+      type: RailBulletType
+      length: 16
+      damage: 0.5
+      pierceDamageFactor: 0
+      pierceArmor: true
+      knockback: 0.05
+      shootEffect: none
+      smokeEffect: none
+      pierceEffect: none
+    }
+  }
+  {
+    shootOnDeath: true
+    shootCone: 360
+    controllable: false
+    shootY: 0
+    x: 0
+    shootSound: none
+    bullet: {
+      type: ExplosionBulletType
+      killShooter: false
+      despawnEffect: {
+        type: WaveEffect
+        lifetime: 10
+        rotation: 45
+        sides: 4
+        sizeFrom: 7
+        sizeTo: 16
+        strokeFrom: 10
+        strokeTo: 23
+        colorFrom: e65555
+        colorTo: e6555500
+      }
+      shootEffect: none
+      smokeEffect: none
+    }
+  }
+]
+deathSound: none
+deathExplosionEffect: none
+loopSound: none
+loopSoundVolume: 0

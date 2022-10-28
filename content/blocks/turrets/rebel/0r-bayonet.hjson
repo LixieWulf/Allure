@@ -137,12 +137,5 @@ ammoTypes: {
   }
 }
 category: turret
-research: {
-  parent: 0r-whip
-  objectives: [
-    0r-waraxe
-    pyratite
-  ]
-}
 envEnabled: -1
 envDisabled: 4

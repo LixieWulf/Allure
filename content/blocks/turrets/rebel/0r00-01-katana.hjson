@@ -1,0 +1,84 @@
+type: ItemTurret
+squareSprite: false
+size: 3
+health: 1000
+heatColor: e65555
+cooldownTime: 60
+range: 220
+rotateSpeed: 2
+reload: 15
+recoil: 1.5
+shoot: {
+  type: ShootAlternate
+  barrels: 4
+}
+shootEffect: shootBig
+smokeEffect: shootBigSmoke
+shake: 2
+shootSound: bang
+ammoTypes: {
+  anden: {
+    damage: 44
+    speed: 2
+    drag: 0.08
+    lifetime: 45
+    homingPower: 1
+    homingRange: 180
+    homingDelay: 40
+    collides: false
+    collidesTiles: false
+    hittable: false
+    absorbable: false
+    sprite: exotic-mod-sword
+    width: 16
+    height: 16
+    shrinkY: 0
+    frontColor: ffffff
+    backColor: e65555
+    despawnEffect: none
+    hitEffect: none
+    fragBullets: 1
+    fragRandomSpread: 0
+    fragVelocityMin: 1
+    fragVelocityMax: 1
+    fragBullet: {
+      damage: 44
+      speed: 9
+      lifetime: 20
+      sprite: exotic-mod-sword
+      homingPower: 0.1
+      homingRange: 40
+      width: 16
+      height: 16
+      shrinkY: 0
+      frontColor: fd8e8e
+      backColor: ad4244
+      hitEffect: flakExplosion
+      trailInterval: 1
+      trailRotation: true
+      trailEffect: {
+        length: 0
+        lifetime: 20
+        sizeFrom: 8
+        sizeTo: 8
+        particles: 1
+        cone: 0
+        colorTo: ffffff00
+        region: exotic-mod-sword-effect
+      }
+    }
+  }
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: 0r-
+}
+category: turret
+research: 0r-begin
+requirements: [
+  beryllium/200
+  anden/160
+  tungsten/100
+]
+envEnabled: -1
+envDisabled: 4

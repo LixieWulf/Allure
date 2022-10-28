@@ -1,0 +1,87 @@
+type: ItemTurret
+squareSprite: false
+size: 8
+shootCone: 360
+squareSprite: false
+range: 1440
+targetGround: false
+targetAir: false
+outlineIcon: false
+reload: 25
+ammoPerShot: 8
+shootSound: missileLarge
+shootY: 0
+rotateSpeed: 0
+recoil: 0
+shoot: {
+  type: ShootBarrel
+  shots: 1
+  barrels: [
+    -8, 10, 0
+    8, 10, 0
+    16, 0, 0
+    8, -10, 0
+    -8, -10, 0
+    -16, 0, 0
+  ]
+}
+smokeEffect: [
+  {
+    length: 40
+    particles: 22
+    interp: pow5Out
+    sizeInterp: pow3In
+    lifetime: 50
+    cone: 15
+    sizeFrom: 3
+    sizeTo: 0
+    colorFrom: 909090
+    colorTo: 909090
+  }
+  {
+    length: 55
+    particles: 15
+    interp: pow5Out
+    sizeInterp: pow3In
+    lifetime: 40
+    cone: 20
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: 909090
+    colorTo: 909090
+  }
+  {
+    type: WaveEffect
+    layer: 105
+    rotation: 30
+    sides: 6
+    lifetime: 20
+    sizeFrom: 0
+    sizeTo: 12
+    strokeFrom: 6
+    strokeTo: 0
+    colorFrom: ffb3b3
+    colorTo: e65555
+  }
+]
+ammoTypes: {
+  anden: {
+    ammoMultiplier: 1
+    displayAmmoMultiplier: false
+    spawnUnit: exotic-mod-rebel-nuke
+  }
+}
+drawer: {
+  type: DrawDefault
+}
+category: turret
+requirements: [
+  infrastructure/500
+  beryllium/2000
+  anden/2500
+  oxide/300
+  thorium/1200
+  phase-fabric/500
+  baenite/600
+  scilaxa/400
+]

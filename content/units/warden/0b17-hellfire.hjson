@@ -887,11 +887,270 @@ weapons: [
   }
   //broadside piercing shrapnel
   {
-    x: 48
+    x: 56
+    y: 12
     alternate: false
-    baseRotation: -90
+    baseRotation: -75
     shootCone: 22.5
     reload: 150
+    parts: [
+      {
+        type: HaloPart
+        x: 72
+        layer: 109
+        tri: true
+        shapes: 1
+        haloRadius: 0
+        triLength: 60
+        triLengthTo: 0
+        radius: -18
+        radiusTo: 36
+        color: 7382f0
+        colorTo: 7382f0
+        progress: {
+          type: reload
+          op: delay
+          amount: 0.75
+        }
+      }
+      {
+        type: HaloPart
+        x: 72
+        layer: 109
+        tri: true
+        shapes: 1
+        haloRadius: 0
+        triLength: 30
+        triLengthTo: 0
+        radius: -18
+        radiusTo: 36
+        color: 000000
+        colorTo: 000000
+        progress: {
+          type: reload
+          op: delay
+          amount: 0.75
+        }
+      }
+      {
+        type: HaloPart
+        x: -72
+        layer: 109
+        tri: true
+        shapes: 1
+        haloRadius: 0
+        triLength: 60
+        triLengthTo: 0
+        radius: -18
+        radiusTo: 36
+        color: 7382f0
+        colorTo: 7382f0
+        progress: {
+          type: reload
+          op: delay
+          amount: 0.75
+        }
+      }
+      {
+        type: HaloPart
+        x: -72
+        layer: 109
+        tri: true
+        shapes: 1
+        haloRadius: 0
+        triLength: 30
+        triLengthTo: 0
+        radius: -18
+        radiusTo: 36
+        color: 000000
+        colorTo: 000000
+        progress: {
+          type: reload
+          op: delay
+          amount: 0.75
+        }
+      }
+      {
+        type: HaloPart
+        x: 48
+        layer: 109
+        tri: true
+        shapes: 1
+        haloRadius: 0
+        triLength: 60
+        triLengthTo: 0
+        radius: -18
+        radiusTo: 36
+        color: 7382f0
+        colorTo: 7382f0
+        progress: {
+          type: reload
+          op: delay
+          amount: 0.5
+        }
+      }
+      {
+        type: HaloPart
+        x: 48
+        layer: 109
+        tri: true
+        shapes: 1
+        haloRadius: 0
+        triLength: 30
+        triLengthTo: 0
+        radius: -18
+        radiusTo: 36
+        color: 000000
+        colorTo: 000000
+        progress: {
+          type: reload
+          op: delay
+          amount: 0.5
+        }
+      }
+      {
+        type: HaloPart
+        x: -48
+        layer: 109
+        tri: true
+        shapes: 1
+        haloRadius: 0
+        triLength: 60
+        triLengthTo: 0
+        radius: -18
+        radiusTo: 36
+        color: 7382f0
+        colorTo: 7382f0
+        progress: {
+          type: reload
+          op: delay
+          amount: 0.5
+        }
+      }
+      {
+        type: HaloPart
+        x: -48
+        layer: 109
+        tri: true
+        shapes: 1
+        haloRadius: 0
+        triLength: 30
+        triLengthTo: 0
+        radius: -18
+        radiusTo: 36
+        color: 000000
+        colorTo: 000000
+        progress: {
+          type: reload
+          op: delay
+          amount: 0.5
+        }
+      }
+      {
+        type: HaloPart
+        x: 24
+        layer: 109
+        tri: true
+        shapes: 1
+        haloRadius: 0
+        triLength: 60
+        triLengthTo: 0
+        radius: -9
+        radiusTo: 36
+        color: 7382f0
+        colorTo: 7382f0
+        progress: {
+          type: reload
+          op: delay
+          amount: 0.25
+        }
+      }
+      {
+        type: HaloPart
+        x: 24
+        layer: 109
+        tri: true
+        shapes: 1
+        haloRadius: 0
+        triLength: 30
+        triLengthTo: 0
+        radius: -9
+        radiusTo: 36
+        color: 000000
+        colorTo: 000000
+        progress: {
+          type: reload
+          op: delay
+          amount: 0.25
+        }
+      }
+      {
+        type: HaloPart
+        x: -24
+        layer: 109
+        tri: true
+        shapes: 1
+        haloRadius: 0
+        triLength: 60
+        triLengthTo: 0
+        radius: -9
+        radiusTo: 36
+        color: 7382f0
+        colorTo: 7382f0
+        progress: {
+          type: reload
+          op: delay
+          amount: 0.25
+        }
+      }
+      {
+        type: HaloPart
+        x: -24
+        layer: 109
+        tri: true
+        shapes: 1
+        haloRadius: 0
+        triLength: 30
+        triLengthTo: 0
+        radius: -9
+        radiusTo: 36
+        color: 000000
+        colorTo: 000000
+        progress: {
+          type: reload
+          op: delay
+          amount: 0.25
+        }
+      }
+      {
+        type: HaloPart
+        layer: 109
+        tri: true
+        shapes: 1
+        haloRadius: 0
+        triLength: 60
+        triLengthTo: 0
+        radius: 0
+        radiusTo: 36
+        color: 7382f0
+        colorTo: 7382f0
+        progress: reload
+      }
+      {
+        type: HaloPart
+        layer: 109
+        tri: true
+        shapes: 1
+        haloRadius: 0
+        triLength: 30
+        triLengthTo: 0
+        radius: 0
+        radiusTo: 36
+        color: 000000
+        colorTo: 000000
+        progress: reload
+      }
+    ]
     shootSound: laserblast
     shoot: {
       type: ShootMulti
@@ -902,12 +1161,11 @@ weapons: [
           shots: 8
           barrels: 8
           spread: 24
-          firstShotDelay: 90
         }
       ]
     }
     shootStatus: slow
-    shootStatusDuration: 120
+    shootStatusDuration: 300
     bullet: {
       type: LaserBulletType
       damage: 1500

@@ -1,5 +1,5 @@
 color: ad4244
-cost: 1.8
+cost: 0.4
 research: {
   parent: 0r-begin
   requirements: [

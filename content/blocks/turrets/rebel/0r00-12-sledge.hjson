@@ -1,0 +1,155 @@
+type: ItemTurret
+size: 7
+range: 320
+rotateSpeed: 2.5
+reload: 160
+shake: 8
+shootSound: bang
+drawer: {
+  type: DrawTurret
+  basePrefix: 0r-
+}
+ammoTypes: {
+  anden: {
+    speed: 4
+    lifetime: 80
+    damage: 440
+    splashDamage: 200
+    splashDamageRadius: 35
+    width: 22
+    height: 45
+    frontColor: ffb3b3
+    backColor: e65555
+    trailLength: 10
+    trailWidth: 3
+    trailColor: e65555
+    hitShake: 10
+    hitSound: explosion
+    hitEffect: [
+      {
+        length: 30
+        lifetime: 70
+        particles: 40
+        colorFrom: 787878
+        colorTo: 787878
+        sizeFrom: 6
+        sizeTo: 0
+        interp: pow10Out
+        sizeInterp: pow5In
+      }
+      {
+        length: 45
+        lifetime: 60
+        particles: 20
+        colorFrom: 787878
+        colorTo: 787878
+        sizeFrom: 3
+        sizeTo: 0
+        interp: pow10Out
+        sizeInterp: pow3In
+      }
+      {
+        length: 50
+        lifetime: 45
+        particles: 12
+        colorTo: e65555
+        sizeFrom: 2
+        sizeTo: 0
+        interp: pow3Out
+        sizeInterp: pow5In
+      }
+      {
+        type: WaveEffect
+        lifetime: 20
+        sizeFrom: 0
+        sizeTo: 35
+        strokeFrom: 3
+        strokeTo: 0
+        colorTo: e65555
+      }
+    ]
+    bulletInterval: 15
+    intervalRandomSpread: 0
+    intervalBullets: 1
+    intervalBullet: {
+      type: BulletType
+      speed: 0
+      lifetime: 0
+      collides: false
+      absorbable: false
+      hittable: false
+      hitEffect: [
+        {
+          lightOpacity: 0
+          length: 40
+          lifetime: 50
+          cone: 90
+          particles: 28
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 7
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow2In
+        }
+        {
+          lightOpacity: 0
+          length: 50
+          lifetime: 40
+          cone: 90
+          particles: 18
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 3
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow2In
+        }
+        {
+          lightOpacity: 0
+          length: 65
+          lifetime: 25
+          cone: 90
+          particles: 20
+          colorFrom: 9f9f9f
+          colorTo: 787878
+          sizeFrom: 3
+          sizeTo: 0
+          interp: pow5Out
+          sizeInterp: pow3In
+        }
+        {
+          length: 70
+          cone: 90
+          line: true
+          lifetime: 30
+          particles: 10
+          colorTo: e65555
+          interp: pow2Out
+          sizeInterp: pow3In
+          lenFrom: 9
+          lenTo: 0
+          strokeFrom: 4
+          strokeTo: 2
+          sizeInterp: pow2In
+        }
+      ]
+      despawnEffect: none
+      fragBullets: 2
+      fragAngle: 90
+      fragSpread: 180
+      fragRandomSpread: 0
+      fragBullet: {
+        type: ShrapnelBulletType
+        length: 55
+        width: 10
+        damage: 400
+        lifetime: 55
+        serrations: 0
+        toColor: e65555
+      }
+    }
+  }
+}
+category: turret
+requirements: []

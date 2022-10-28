@@ -1,0 +1,28 @@
+type: missile
+template: MissileUnitType
+speed: 6
+lifetime: 360
+rotateSpeed: 1
+shadowElevationScl: 4.4
+drawCell: false
+hittable: false
+targetable: false
+outlines: false
+trailColor: e65555
+weapons: [
+  {
+    x: 0
+    controllable: false
+    shootOnDeath: true 
+    shootCone: 360
+    shoot: {
+      type: ShootSpread
+      shots: 6
+      spread: 2
+    }
+    shootSound: none
+    bullet: {
+      spawnUnit: exotic-mod-missile1
+    }
+  }
+]
