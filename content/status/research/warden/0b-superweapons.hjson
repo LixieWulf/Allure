@@ -1,0 +1,19 @@
+research: {
+  parent: 0b-flare-weaponry
+  objectives: [
+    corvus,
+    thorium-reactor,
+    omura,
+    0b-electromagnetic-acceleration,
+    0b-barrier-weaponry,
+    0b-emp-weaponry
+  ]
+  requirements: [
+    forge-plating/100
+    infrastructure/5000
+    territe-alloy/1200
+    scilaxa/1400
+    inseltiene/8500
+  ]
+}
+show: false

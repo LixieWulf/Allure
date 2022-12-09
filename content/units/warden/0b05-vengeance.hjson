@@ -1,24 +1,107 @@
 type: payload
 hitSize: 70
-speed: 0.9
-accel: 0.1
+speed: 3.1
+accel: 0.07
 drag: 0.01
-rotateSpeed: 0.9
+rotateSpeed: 1.6
 flying: true
 lowAltitude: true
 health: 480000
-armor: 125
-buildSpeed: 3.4
-buildBeamOffset: 34
-payloadCapacity: 580
-engineOffset: 48
-engineSize: 9
-lightRadius: 120
-lightColor: 7382f0
+armor: 280
+omniMovement: false
+engineOffset: 60
+engineSize: 15
 engineColor: 7382f0
-shadowElevationScl: 1.8
+engineLayer: 90.01
+engines: [
+  {
+    x: 33
+    y: -31
+    radius: 6
+    rotation: 315
+    engineColor: 7382f0
+  }
+  {
+    x: -33
+    y: -31
+    radius: 6
+    rotation: 225
+    engineColor: 7382f0
+  }
+  {
+    x: 54
+    y: -3
+    radius: 3
+    rotation: 0
+    engineColor: 7382f0
+  }
+  {
+    x: -54
+    y: -3
+    radius: 3
+    rotation: 180
+    engineColor: 7382f0
+  }
+  {
+    x: 54
+    y: 3
+    radius: 3
+    rotation: 0
+    engineColor: 7382f0
+  }
+  {
+    x: -54
+    y: 3
+    radius: 3
+    rotation: 180
+    engineColor: 7382f0
+  }
+]
+shadowElevationScl: 2.4
 drawCell: false
 drawBody: false
 outlines: false
 envEnabled: -1
 envDisabled: 0
+parts: [
+  { 
+    type: RegionPart
+    suffix: -flare
+    outline: false
+    blending: additive
+    layer: 90.03
+    color: 7382f0
+  }
+  { 
+    type: RegionPart
+    suffix: -flare
+    outline: false
+    layer: 140
+    color: 7382f025
+    blending: additive
+  }
+  {
+    type: RegionPart
+    layer: 90.02
+    outline: false 
+  }
+]
+abilities: [
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 2
+    y: -60
+    effect: {
+      lightOpacity: 0
+      length: 0
+      particles: 1
+      layer: 90
+      lifetime: 25
+      sizeFrom: 15
+      sizeTo: 0
+      colorFrom: 7382f0
+      colorTo: 7382f0
+    }
+  }
+]

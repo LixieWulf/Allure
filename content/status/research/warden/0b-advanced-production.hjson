@@ -1,0 +1,17 @@
+research: {
+  parent: 0b-basic-infrastructure
+  objectives: [
+    surge-smelter,
+    silicon-crucible,
+    0b05-00-01-dual-turbine,
+    disassembler
+  ]
+  requirements: [
+    forge-plating/50
+    infrastructure/5000
+    dantrales/1500
+    territe-alloy/2500
+    scilaxa/1200
+  ]
+}
+show: false

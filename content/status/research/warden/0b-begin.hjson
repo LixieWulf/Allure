@@ -1,0 +1,6 @@
+research: {
+  root: true
+  name: Warden
+  requiresUnlock: false
+}
+show: false

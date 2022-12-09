@@ -1,0 +1,15 @@
+research: {
+  parent: 0b-wormhole-beacons
+  objectives: [
+    hyper-processor,
+    impact-reactor,
+    thorium-reactor
+  ]
+  requirements: [
+    forge-plating/50
+    territe-alloy/5000
+    plastanium/3500
+    baenite/1500
+  ]
+}
+show: false

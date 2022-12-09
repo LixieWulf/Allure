@@ -6,22 +6,35 @@ drawer: {
       type: DrawDefault
     }
     {
-      type: drawArcSmelt
-      flameColor: 353535
-      midColor: a7a7a7
-      flameRad: 7
-      circleSpace: 4
-      circleStroke: 2
-      alpha: 1
-      particleRad: 28
+      type: DrawSoftParticles
+      blending: additive
+      reverse: true
+      particleRad: 64
       particles: 60
-      particleLen: 10
-      particleStroke: 2.5
-      particleLife: 60
+      particleLife: 120
+      particleSize: 24
+      color: ffffff
+      color2: ffffff
+      alpha: 1
+      rotateScl: 5
+      particleInterp: linear
     }
     {
-      type: DrawRegion
-      suffix: -top
+      type: DrawGlowRegion
+      layer: 105
+      blending: normal
+      rotateSpeed: 0.5
+      alpha: 1
+      color: ffffff
+    }
+    {
+      type: DrawGlowRegion
+      layer: 105
+      rotation: 90
+      blending: normal
+      rotateSpeed: 0.5
+      alpha: 1
+      color: ffffff
     }
   ]
 }

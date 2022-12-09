@@ -1,0 +1,17 @@
+research: {
+  parent: 0b-energy-weaponry
+  objectives: [
+    lancer, 
+    meltdown,
+    quasar,
+    vela
+  ]
+  requirements: [
+    forge-plating/25
+    territe-alloy/2000
+    silicon/3500
+    metaglass/1000
+    baenite/500
+  ]
+}
+show: false

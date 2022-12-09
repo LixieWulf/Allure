@@ -1,0 +1,184 @@
+type: ItemTurret
+scaledHealth: 22
+size: 9
+squareSprite: false
+range: 2048
+reload: 320
+rotateSpeed: 0.6
+recoil: 16
+inaccuracy: 12
+shootSound: bang
+shoot: {
+  shots: 36
+}
+shootEffect: [
+  {
+    cone: 25
+    baseLength: 55
+    length: 90
+    lifetime: 70
+    particles: 1
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 10
+    sizeTo: 0
+    colorFrom: 787878
+    colorTo: 787878
+  }
+  {
+    cone: 25
+    baseLength: 70
+    length: 110
+    lifetime: 60
+    particles: 1
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 6
+    sizeTo: 0
+    colorFrom: 787878
+    colorTo: 787878
+  }
+  {
+    cone: 30
+    baseLength: 90
+    length: 160
+    lifetime: 40
+    particles: 1
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: 9f9f9f
+    colorTo: 787878
+  }
+  {
+    cone: 20
+    line: true
+    baseLength: 70
+    length: 150
+    lifetime: 30
+    particles: 1
+    interp: pow5Out
+    sizeInterp: pow3
+    lenFrom: 14
+    lenTo: 0
+    strokeFrom: 6
+    strokeTo: 0
+    colorFrom: e65555
+    colorTo: e65555
+  }
+  {
+    length: 0
+    cone: 0
+    particles: 1
+    lifetime: 30
+    sizeFrom: 160
+    sizeTo: 0
+    colorFrom: ffb3b3
+    colorTo: e65555
+    region: exotic-mod-shootspike
+  }
+]
+ammoUseEffect: {
+  lifetime: 70
+  particles: 1
+  length: 16
+  randLength: false
+  baseRotation: 90
+  cone: 15
+  offset: -90
+  spin: 0.7
+  region: exotic-mod-wide-case-back
+  sizeFrom: 7
+  sizeTo: 0
+  interp: pow3Out
+  sizeInterp: pow10In
+  colorFrom: ffb3b3
+  colorTo: ad4244
+}
+ammoPerShot: 18
+ammoTypes: {
+  anden: {
+    type: RailBulletType
+    length: 2048
+    damage: 1200
+    pointEffectSpace: 160
+    pointEffect: {
+      line: true
+      lifetime: 35
+      cone: 0
+      length: 0.01
+      baseLength: 36
+      particles: 1
+      lenFrom: 12
+      lenTo: 8
+      strokeFrom: 3
+      strokeTo: 0
+      colorFrom: ffffff
+      colorTo: e65555
+    }
+    pierceEffect: [
+      {
+        cone: 25
+        baseLength: 20
+        length: 40
+        lifetime: 35
+        particles: 12
+        interp: pow3Out
+        sizeInterp: pow2In
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+      }
+      {
+        cone: 25
+        baseLength: 30
+        length: 65
+        lifetime: 25
+        particles: 9
+        interp: pow3Out
+        sizeInterp: pow2In
+        sizeFrom: 2
+        sizeTo: 0
+        colorFrom: 9f9f9f
+        colorTo: 787878
+      }
+      {
+        cone: 20
+        line: true
+        baseLength: 30
+        length: 75
+        lifetime: 30
+        particles: 3
+        interp: pow5Out
+        sizeInterp: pow3
+        lenFrom: 8
+        lenTo: 0
+        strokeFrom: 3
+        strokeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+      }
+    ]
+  }
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: 0r-
+}
+consumes: {
+  liquid: {
+    liquid: arreacta
+    amount: 1
+  }
+}
+category: turret
+requirements: [
+  infrastructure/800
+  beryllium/2500
+  silicon/300
+  oxide/1200
+  thorium/150
+  scilaxa/500
+]

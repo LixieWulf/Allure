@@ -1,0 +1,14 @@
+research: {
+  parent: 0b-energy-weaponry
+  objectives: [
+    0b-steam-heating,
+    foreshadow,
+    impact-reactor
+  ]
+  requirements: [
+    forge-plating/25
+    territe-alloy/7500
+    surge-alloy/1500
+  ]
+}
+show: false

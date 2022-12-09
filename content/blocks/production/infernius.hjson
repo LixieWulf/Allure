@@ -40,4 +40,4 @@ consumes: {
     amount: 0.6
   }
 }
-buildVisibility: sandboxOnly
+buildVisibility: hidden

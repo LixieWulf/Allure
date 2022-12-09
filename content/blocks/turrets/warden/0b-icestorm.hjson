@@ -36,4 +36,4 @@ shootType: {
     hitColor: 7382f0
   }
 }
-buildVisibility: shown
+buildVisibility: hidden

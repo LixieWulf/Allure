@@ -1,0 +1,26 @@
+generator: AsteroidGenerator
+parent: 1
+orbitRadius: 0
+orbitSpacing: 0
+updateLighting: false
+atmosphereRadIn: 0
+atmosphereRadOut: 0
+atmosphereColor: c94536
+drawOrbit: false
+bloom: true
+mesh: {
+  type: NoiseMesh
+  divisions: 3
+  radius: 0.12
+  planet: 2
+  color1: ff7a38
+  color2: ff7a38
+  octaves: 1
+  persistence: 0.01
+  scale: 0.01
+  mag: 1
+  coct: 1
+  cper: 1
+  cscl: 1
+  cthresh: 1
+}

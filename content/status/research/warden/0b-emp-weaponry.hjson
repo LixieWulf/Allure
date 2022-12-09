@@ -1,0 +1,15 @@
+research: {
+  parent: 0b-shock-weaponry
+  objectives: [
+    overdrive-projector,
+    aegires,
+    navanax
+  ]
+  requirements: [
+    forge-plating/50
+    territe-alloy/2500
+    inseltiene/5000
+    surge-alloy/1500
+  ]
+}
+show: false

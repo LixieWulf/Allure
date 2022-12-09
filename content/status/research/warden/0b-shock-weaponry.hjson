@@ -1,0 +1,13 @@
+research: {
+  parent: 0b-energy-weaponry
+  objectives: [
+    surge-alloy,
+    battery
+  ]
+  requirements: [
+    forge-plating/25
+    silicon/3000
+    territe-alloy/1200
+  ]
+}
+show: false

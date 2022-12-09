@@ -1,0 +1,104 @@
+type: GenericCrafter
+size: 3
+squareSprite: false
+warmupSpeed: 0.02
+liquidCapacity: 600
+drawer: [
+  {
+    type: DrawDefault
+  }
+  {
+    type: DrawParticles
+    reverse: true
+    particleLife: 80
+    particles: 80
+    particleInterp: pow3Out
+    particleSizeInterp: pow3Out
+    blending: additive
+    color: 5594f2
+    particleRad: 8
+    particleSize: 0.25
+    rotateScl: 8
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: water
+    padding: 5
+    alpha: 0.5
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: steam
+    padding: 5
+  }
+  {
+    type: DrawRegion
+    suffix: -top0
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: energia
+    padding: 9.5
+  }
+  {
+    type: DrawRegion
+    suffix: -top1
+  }
+  {
+    type: DrawGlowRegion
+    color: 5594f2
+  }
+]
+consumes: {
+  liquids: [
+    energia/0.5
+    water/15
+  ]
+}
+outputLiquid: steam/15
+category: power
+requirements: [
+  infrastructure/150
+  territe-alloy/500
+  scilaxa/120
+  crystal/50
+]
+breakEffect: [
+  {
+    type: WaveEffect
+    rotation: 41
+    lifetime: 20
+    sides: 4
+    sizeFrom: 12
+    sizeTo: 24
+    strokeFrom: 9
+    strokeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 11
+    useRotation: false
+    region: exotic-mod-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f000
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 30
+    startDelay: 10
+    useRotation: false
+    region: exotic-mod-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f0
+    colorTo: 7382f000
+  }
+]

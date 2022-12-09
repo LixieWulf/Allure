@@ -1,0 +1,14 @@
+research: {
+  parent: 0b-basic-infrastructure
+  objectives: [
+    thermal-generator,
+    thorium-reactor
+  ]
+  requirements: [
+    forge-plating/25
+    territe-alloy/250
+    pyratite/2500
+    thorium/1000
+  ]
+}
+show: false

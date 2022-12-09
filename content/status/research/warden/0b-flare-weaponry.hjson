@@ -1,0 +1,14 @@
+research: {
+  parent: 0b-beam-weaponry
+  objectives: [
+    scorch,
+    oxynoe,
+    impact-reactor
+  ]
+  requirements: [
+    forge-plating/50
+    territe-alloy/4500
+    scilaxa/1500
+  ]
+}
+show: false

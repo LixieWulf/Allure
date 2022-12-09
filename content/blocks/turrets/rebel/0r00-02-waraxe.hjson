@@ -13,14 +13,14 @@ shootSound: flame
 ammoTypes: {
   anden: {
     type: BulletType
-    damage: 42
+    damage: 38
     speed: 6
     lifetime: 18
     pierce: true
     pierceBuilding: true
     pierceCap: 3
     ammoMultiplier: 5
-    status: burning
+    status: melting
     despawnEffect: none
     hitEffect: {
       type: ParticleEffect

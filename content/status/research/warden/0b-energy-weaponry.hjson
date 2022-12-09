@@ -1,0 +1,15 @@
+research: {
+  parent: 0b-basic-infrastructure
+  objectives: [
+    silicon,
+    territe-alloy,
+    arc,
+    lancer
+  ]
+  requirements: [
+    forge-plating/25
+    dantrales/1200
+    territe-alloy/3500
+  ]
+}
+show: false

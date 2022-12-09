@@ -1,0 +1,7 @@
+research: {
+  parent: 0b-begin
+  requirements: [
+    dantrales/500
+  ]
+}
+show: false

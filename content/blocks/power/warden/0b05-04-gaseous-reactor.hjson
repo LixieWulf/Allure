@@ -1,0 +1,135 @@
+type: GenericCrafter
+size: 4
+squareSprite: false
+craftTime: 390
+itemCapacity: 15
+liquidCapacity: 360
+drawer: [
+  {
+    type: DrawDefault
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: arreacta
+    padding: 3
+  }
+  {
+    type: DrawRegion
+    suffix: -top0
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -heat
+    layer: 30
+    color: feb380
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: water
+    padding: 8
+    alpha: 0.6
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: steam
+    padding: 8
+  }
+  {
+    type: DrawRegion
+    suffix: -top1
+  }
+  {
+    type: DrawGlowRegion
+    color: ca8cd1
+  }
+]
+consumes: {
+  liquids: [
+    water/2.5
+    arreacta/0.1
+  ]
+}
+outputItem: scilaxa/1
+outputLiquid: steam/2.5
+category: power
+requirements: [
+  territe-alloy/250
+  dantrales/200
+  surge-alloy/120
+  baenite/50
+]
+ambientSound: hum
+breakEffect: [
+  {
+    type: WaveEffect
+    rotation: 41
+    lifetime: 20
+    sides: 4
+    sizeFrom: 16
+    sizeTo: 32
+    strokeFrom: 12
+    strokeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 11
+    useRotation: false
+    region: exotic-mod-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f000
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 30
+    startDelay: 10
+    useRotation: false
+    region: exotic-mod-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f0
+    colorTo: 7382f000
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    randLength: false
+    length: 0
+    baseLength: 12
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    baseRotation: 180
+    randLength: false
+    length: 0
+    baseLength: 12
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+]

@@ -1,0 +1,140 @@
+type: ImpactReactor
+liquidCapacity: 80
+size: 6
+hasLiquids: true
+squareSprite: false
+customShadow: true
+powerProduction: 80
+drawer: [
+  {
+    type: DrawDefault
+  }
+  {
+    type: DrawPlasma
+    suffix: -plasma0-
+    plasma1: d1e4ff
+    plasma2: 97a5f7
+  }
+  {
+    type: DrawRegion
+    suffix: -top0
+  }
+  {
+    type: DrawPlasma
+    suffix: -plasma1-
+    plasma1: ffbdd4
+    plasma2: fc81dd
+  }
+  {
+    type: DrawRegion
+    suffix: -top1
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -glow0
+    color: 97a5f7
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -glow1
+    color: fc81dd
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -heat
+    color: 90a2fc
+    glowScale: 32
+    alpha: 0.7
+  }
+]
+consumes: {
+  power: 48
+  liquids: [
+    hydrogen/1
+    ozone/0.66666666666
+  ]
+}
+requirements: [
+  infrastructure/600
+  territe-alloy/1500
+  crystal/100
+  scilaxa/200
+]
+category: power
+ambientSound: pulse
+ambientSoundVolume: 0.1
+research: impact-reactor
+breakEffect: [
+  {
+    type: WaveEffect
+    rotation: 39
+    lifetime: 20
+    sides: 4
+    sizeFrom: 24
+    sizeTo: 48
+    strokeFrom: 18
+    strokeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 11
+    useRotation: false
+    region: exotic-mod-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f000
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 30
+    startDelay: 10
+    useRotation: false
+    region: exotic-mod-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f0
+    colorTo: 7382f000
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    randLength: false
+    baseLength: 6
+    length: 18
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 8
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    baseRotation: 180
+    randLength: false
+    baseLength: 6
+    length: 18
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 8
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+]

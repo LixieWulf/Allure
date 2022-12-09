@@ -23,6 +23,16 @@ shootType: {
 drawer: {
   type: DrawTurret
   basePrefix: 0r-
+  parts: [
+    {
+      type: RegionPart
+      suffix: -top
+      blending: additive
+      mirror: false
+      outline: false
+      color: e6555588
+    }
+  ]
 }
 consumes: {
   liquids: [

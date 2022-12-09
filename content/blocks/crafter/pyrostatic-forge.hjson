@@ -1,82 +1,185 @@
 Type: GenericCrafter
-size: 10
+size: 12
+squareSprite: false
 hasLiquids: true
-craftTime: 180
-itemCapacity: 240
-liquidCapacity: 240
-drawer: { 
-  type: DrawMulti
-  drawers: [
-    {
-      type: DrawDefault
-    }
-    {
-      type: DrawFlame
-      flameRadius: 16
-      flameRadiusIn: 10
-      flameColor: 90a2fc
-    }
-  ]
-}
+craftTime: 100
+itemCapacity: 140
+warmupSpeed: 0.001
+liquidCapacity: 1800
+drawer: [
+  {
+    type: DrawDefault
+  }
+  {
+    type: DrawRegion
+    suffix: -fan
+    rotateSpeed: -3
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -fan
+    rotateSpeed: -3
+    rotation: 9
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -fan
+    rotateSpeed: -3
+    rotation: 18
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -fan
+    rotateSpeed: -3
+    rotation: 27
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -fan
+    rotateSpeed: -3
+    rotation: 36
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -fan
+    rotateSpeed: -3
+    rotation: 45
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -fan
+    rotateSpeed: -3
+    rotation: 54
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -fan
+    rotateSpeed: -3
+    rotation: 63
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -fan
+    rotateSpeed: -3
+    rotation: 72
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -fan
+    rotateSpeed: -3
+    rotation: 81
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -top0
+  }
+  {
+    type: DrawLiquidTile
+    padding: 36
+    drawLiquid: supercoolant
+  }
+  {
+    type: DrawRegion
+    suffix: -blade0
+    rotateSpeed: -1
+  }
+  {
+    type: DrawRegion
+    suffix: -blade0
+    rotateSpeed: -1
+    rotation: 30
+  }
+  {
+    type: DrawRegion
+    suffix: -blade0
+    rotateSpeed: -1
+    rotation: 60
+  }
+  {
+    type: DrawRegion
+    suffix: -blade0
+    rotateSpeed: -1
+    rotation: 90
+  }
+  {
+    type: DrawRegion
+    suffix: -blade0
+    rotateSpeed: -1
+    rotation: 120
+  }
+  {
+    type: DrawRegion
+    suffix: -blade0
+    rotateSpeed: -1
+    rotation: 150
+  }
+  {
+    type: DrawRegion
+    suffix: -blade1
+    rotateSpeed: 1
+  }
+  {
+    type: DrawRegion
+    suffix: -blade1
+    rotateSpeed: 1
+    rotation: 30
+  }
+  {
+    type: DrawRegion
+    suffix: -blade1
+    rotateSpeed: 1
+    rotation: 60
+  }
+  {
+    type: DrawRegion
+    suffix: -top1
+  }
+  {
+    type: DrawCultivator
+    plantColor: 7382f0
+    plantColorLight: 90a2fc
+    bubbles: 0
+  }
+  {
+    type: DrawGlowRegion
+    color: ffb380
+  }
+]
 consumes: {
   power: 20
-  liquid: {
-    liquid: cryofluid
-    amount: 0.5
-  }
+  liquids: [
+    steam/20
+    supercoolant/0.15
+    slag/4
+  ]
   items: { 
     items: [
-      lead/120
-      silicon/90
-      coal/45
-      blast-compound/30
+      lead/70
+      silicon/25
     ]
   }
 }
-updateEffectChance: 0.08
-updateEffect: {
-  length: 6
-  particles: 6
-  lifetime: 45
-  sizeFrom: 3
-  sizeTo: 0
-  interp: pow3Out
-  sizeInterp: pow2In
-  colorTo: 7382f0
-}
-craftEffect: {
-  type: MultiEffect
-  effects: [
-    {
-      baseRotation: 90
-      length: 70
-      particles: 22
-      cone: 35
-      lifetime: 50
-      sizeFrom: 2
-      sizeTo: 0
-      interp: pow3Out
-      sizeInterp: pow5In
-      colorTo: 7382f0
-    }
-    {
-      baseRotation: 90
-      length: 35
-      particles: 18
-      cone: 30
-      lifetime: 110
-      sizeFrom: 7
-      sizeTo: 0
-      interp: pow5Out
-      sizeInterp: pow2In
-      colorTo: 7382f0
-    }
-  ]
-}
+updateEffectChance: 0
+updateEffect: none
+craftEffect: none
 ambientSound: hum
 ambientSoundVolume: 2.5
-outputItem: territe-alloy/150
-outputLiquid: crystal-plasma/2
+outputItem: territe-alloy/50
+outputLiquids: [
+  crystal-plasma/2
+  water/10
+]
+liquidOutputDirections: [1, 3]
 category: crafting
 research: ignition-core
 requirements: [
