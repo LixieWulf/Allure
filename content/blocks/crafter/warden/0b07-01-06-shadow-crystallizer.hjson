@@ -1,0 +1,21 @@
+type: GenericCrafter
+size: 4
+craftTime: 40
+itemCapacity: 30
+liquidCapacity: 600
+consumes: {
+  power: 18
+  liquids: [
+    0b20-05-superheated-shadow/1
+    water/5
+  ]
+}
+outputLiquids: [
+  crystal-plasma/2
+  slag/0.5
+  steam/5
+]
+outputItem: shadow/2
+liquidOutputDirections: [0, 1, 3]
+conductivePower: true
+rotate: true

@@ -1,0 +1,24 @@
+color: 0e0f14
+hidden: true
+hideDetails: false
+temperature: 3.6
+heatCapacity: 0
+viscosity: 0.95
+coolant: false
+incinerable: false
+particleSpacing: 30
+particleEffect: {
+  ignoreRotation: true
+  baseRotation: 31
+  particles: 1
+  cone: 15
+  length: 120
+  lifetime: 380
+  sizeFrom: 0
+  sizeTo: 36
+  colorFrom: 787878
+  colorTo: 78787800
+  interp: pow2In
+  sizeInterp: pow5In
+  layer: 111
+}

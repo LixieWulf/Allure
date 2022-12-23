@@ -1,0 +1,8 @@
+color: bd5326
+gas: true
+hidden: true
+hideDetails: false
+explosiveness: 2.2
+flammability: 1.6
+temperature: 0.8
+coolant: false

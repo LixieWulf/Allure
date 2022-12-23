@@ -1,0 +1,39 @@
+color: 5b55a1
+gas: true
+hidden: true
+hideDetails: false
+explosiveness: 5.8
+heatCapacity: 0
+temperature: 0.7
+coolant: false
+vaporEffect: [
+  {
+    length: 0
+    particles: 1
+    lifetime: 20
+    sizeFrom: 0
+    sizeTo: 12
+    sizeInterp: pow5Out
+  }
+  {
+    length: 0
+    startDelay: 19
+    particles: 1
+    lifetime: 20
+    sizeFrom: 12
+    sizeTo: 0
+    sizeInterp: pow5In
+  }
+  {
+    length: 35
+    line: true
+    lifetime: 25
+    particles: 7
+    interp: pow3Out
+    sizeInterp: linear
+    lenFrom: 4
+    lenTo: 4
+    strokeFrom: 1
+    strokeTo: 0
+  }
+]

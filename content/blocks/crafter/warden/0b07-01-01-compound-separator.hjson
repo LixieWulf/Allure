@@ -1,0 +1,17 @@
+type: GenericCrafter
+size: 2
+liquidCapacity: 256
+consumes: {
+  power: 3.5
+  liquid: {
+    liquid: 0b20-00-radioactive-slurry
+    amount: 2.1
+  }
+}
+outputLiquids: [
+  0b20-01-baenite-slag/0.5
+  0b20-02-rich-vapour/1.5
+]
+liquidOutputDirections: [0, 3]
+conductivePower: true
+rotate: true

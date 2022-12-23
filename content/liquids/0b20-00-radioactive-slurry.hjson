@@ -1,0 +1,32 @@
+color: 755744
+hidden: true
+hideDetails: false
+temperature: 1.4
+viscosity: 0.9
+coolant: false
+incinerable: false
+particleSpacing: 110
+particleEffect: [
+  {
+    length: 0
+    particles: 1
+    lifetime: 40
+    sizeFrom: 0
+    sizeTo: 1.5
+    interp: pow3Out
+    colorFrom: 8a6653
+    colorTo: 8a6653
+    layer: 29.5
+  }
+  {
+    type: WaveEffect
+    startDelay: 39
+    sizeFrom: 1
+    sizeTo: 3
+    lifetime: 25
+    strokeFrom: 1
+    colorFrom: 8a6653
+    colorTo: 8a6653
+    layer: 29.5
+  }
+]
