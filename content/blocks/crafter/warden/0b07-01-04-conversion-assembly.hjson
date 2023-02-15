@@ -10,6 +10,6 @@ consumes: {
   ]
 }
 outputLiquid: 0b20-05-superheated-shadow/1
-liquidOutputDirections: [0]
+liquidOutputDirections: [3]
 conductivePower: true
 rotate: true

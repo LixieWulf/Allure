@@ -1,0 +1,269 @@
+type: missile
+template: MissileUnitType
+defaultController: FlyingAI
+physics: false
+hittable: false
+targetable: false
+drawBody: false
+drawCell: false
+rotateSpeed: 0
+//turns out this boi likes running away
+speed: 0
+drag: 0.5
+engineSize: 0
+lifetime: 358
+weapons: [
+  {
+    alwaysShooting: true
+    alwaysContinuous: true
+    shootCone: 360
+    x: 0
+    shootSound: none
+    bullet: {
+      type: ContinuousFlameBulletType
+      recoil: 1.7
+      length: 0
+      drawFlare: false
+      smokeEffect: none
+      shootEffect: [
+        {
+          length: 0
+          layer: 60
+          particles: 5
+          region: circle-shadow
+          lifetime: 361
+          sizeFrom: 55
+          sizeTo: 55
+          colorFrom: 000000
+          colorTo: 000000
+        }
+        {
+          length: 0
+          layer: 60
+          particles: 1
+          region: circle-shadow
+          lifetime: 361
+          sizeFrom: 300
+          sizeTo: 300
+          colorFrom: 000000
+          colorTo: 000000
+        }
+        {
+          length: 0
+          layer: 60
+          particles: 5
+          lifetime: 361
+          sizeFrom: 35
+          sizeTo: 35
+          colorFrom: 000000
+          colorTo: 000000
+        }
+        {
+          length: 0
+          layer: 60
+          particles: 1
+          spin: 2
+          region: exotic-mod-singularity
+          lifetime: 361
+          sizeFrom: 240
+          sizeTo: 240
+          colorFrom: 000000
+          colorTo: 000000
+          useRotation: false
+        }
+        {
+          length: 0
+          layer: 60
+          particles: 1
+          spin: 5
+          region: exotic-mod-singularity
+          lifetime: 361
+          sizeFrom: 160
+          sizeTo: 160
+          colorFrom: 000000
+          colorTo: 000000
+          useRotation: false
+        }
+        {
+          length: 0
+          layer: 60
+          particles: 1
+          spin: 5
+          offset: 30
+          region: exotic-mod-singularity
+          lifetime: 361
+          sizeFrom: 160
+          sizeTo: 160
+          colorFrom: 000000
+          colorTo: 000000
+          useRotation: false
+        }
+        {
+          length: 0
+          layer: 60
+          particles: 1
+          spin: 5
+          offset: 60
+          region: exotic-mod-singularity
+          lifetime: 361
+          sizeFrom: 160
+          sizeTo: 160
+          colorFrom: 000000
+          colorTo: 000000
+          useRotation: false
+        }
+        {
+          length: 0
+          layer: 60
+          particles: 1
+          spin: 8
+          region: exotic-mod-singularity-ring
+          lifetime: 361
+          sizeFrom: 200
+          sizeTo: 200
+          colorFrom: 000000bb
+          colorTo: 000000bb
+          useRotation: false
+        }
+        {
+          length: 0
+          layer: 60
+          particles: 1
+          spin: -4
+          region: exotic-mod-singularity-ring
+          lifetime: 361
+          sizeFrom: 200
+          sizeTo: 200
+          colorFrom: 000000bb
+          colorTo: 000000bb
+          useRotation: false
+        }
+        {
+          length: 0
+          layer: 60
+          particles: 1
+          spin: -2
+          region: exotic-mod-singularity-ring
+          lifetime: 361
+          sizeFrom: 240
+          sizeTo: 240
+          colorFrom: 00000055
+          colorTo: 00000055
+          useRotation: false
+        }
+        {
+          length: 0
+          layer: 60
+          particles: 1
+          spin: 12
+          region: exotic-mod-singularity-ring
+          lifetime: 361
+          sizeFrom: 240
+          sizeTo: 240
+          colorFrom: 00000055
+          colorTo: 00000055
+          useRotation: false
+        }
+        {
+          length: 0
+          layer: 60
+          particles: 1
+          spin: 12
+          region: exotic-mod-singularity-ring
+          lifetime: 361
+          sizeFrom: 140
+          sizeTo: 140
+          colorFrom: 000000
+          colorTo: 000000
+          useRotation: false
+        }
+      ]
+    }
+  }
+  {
+    alwaysShooting: true
+    shootCone: 360
+    reload: 5
+    inaccuracy: 360
+    shoot: {
+      shots: 1440
+    }
+    shootSound: none
+    bullet: {
+      type: RailBulletType
+      length: 300
+      damage: 300
+      knockback: -4
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      pierceEffect: none
+    }
+  }
+  {
+    alwaysShooting: true
+    shootCone: 360
+    x: 0
+    reload: 1
+    shootSound: none
+    bullet: {
+      lifetime: 0
+      shootEffect: {
+        length: -420
+        baseLength: 420
+        layer: 65
+        region: particle
+        particles: 3
+        lifetime: 45
+        interp: pow2In
+        sizeInterp: pow5Out
+        sizeFrom: 0
+        sizeTo: 12
+        colorFrom: 000000
+        colorTo: 000000
+      }
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+    }
+  }
+  {
+    controllable: false
+    shootCone: 360
+    shootOnDeath: true
+    x: 0
+    mirror: false
+    shootSound: none
+    bullet: {
+      spawnUnit: exotic-mod-aftermath-s-eff
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+    }
+  }
+  //no touchy singularity center
+  {
+    alwaysContinuous: true
+    alwaysShooting: true
+    shootCone: 360
+    x: 0 
+    shootY: -2
+    shootSound: none
+    bullet: {
+      type: ContinuousFlameBulletType
+      length: 4
+      width: 0.1
+      damage: 2000000000
+      status: exotic-mod-annihilation
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      colors: [00000000, 00000000, 00000000, 00000000]
+    }
+  }
+]
+deathSound: none
+deathExplosionEffect: none

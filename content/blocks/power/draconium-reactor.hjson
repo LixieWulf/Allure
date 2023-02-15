@@ -16,6 +16,7 @@ consumes: {
     ]
   }
 }
+fuelItem: draconium
 requirements: [
   lead/1550
   silicon/1750

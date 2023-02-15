@@ -1,7 +1,62 @@
 type: Wall
+customShadow: true
 size: 2
-health: 5800
+health: 2000
+armor: 120
+buildCostMultiplier: 1.5
 category: defense
 requirements: [
-  amethyst-gem/24
+  amethyst-gem/36
 ]
+destroyEffect: [
+  {
+    type: WaveEffect
+    interp: pow3Out
+    lifetime: 70
+    sizeFrom: 8
+    sizeTo: 45
+    strokeFrom: 9
+    strokeTo: 0
+    colorFrom: 8960c1
+    colorTo: 8960c1
+  }
+  {
+    interp: pow3Out
+    sizeInterp: pow2In
+    region: exotic-mod-wide-case-back
+    spin: 4
+    lifetime: 55
+    length: 40
+    particles: 22
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: c3b3f8
+    colorTo: 8960c1
+  }
+]
+destroyBullet: {
+  type: BulletType
+  lifetime: 0
+  collides: false
+  hittable: false
+  absorbable: false
+  hitEffect: none
+  despawnEffect: none
+  shootEffect: none
+  smokeEffect: none
+  fragBullets: 65
+  fragVelocityMin: 0.7
+  fragVelocityMax: 1.8
+  fragLifeMin: 0.25
+  fragBullet: {
+    speed: 3
+    lifetime: 18
+    damage: 110
+    sprite: exotic-mod-diamond-thin
+    width: 8
+    height: 8
+    frontColor: c3b3f8
+    backColor: 00000000
+    despawnEffect: none
+  }
+}

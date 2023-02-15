@@ -1,0 +1,91 @@
+type: naval
+hitSize: 15
+health: 1200
+armor: 4
+speed: 2.4
+rotateSpeed: 2
+accel: 0.02
+drag: 0.03
+canBoost: true
+riseSpeed: 0.01
+fallSpeed: 0.04
+boostMultiplier: 0.25
+engineColor: e73c5e
+engineOffset: 8
+envEnabled: -1
+envDisabled: 0
+outlines: false
+weapons: [
+  {
+    name: occlusion-weapon
+    x: 5.5
+    y: 2
+    reload: 55
+    recoil: 3
+    rotationLimit: 180
+    rotate: true
+    rotateSpeed: 2
+    shootSound: laser
+    shootCone: 35
+    shake: 4
+    bullet: {
+      type: LaserBulletType
+      damage: 30
+      length: 210
+      lifetime: 30
+      pierceCap: 5
+      colors: [e73c5e88, e73c5e, ffabbd]
+      sideAngle: 150
+      lightningSpacing: 24
+      lightningDelay: 0
+      lightningLength: 2
+      lightningLengthRand: 8
+      lightningDamage: 18
+      lightningColor: e73c5e
+    }
+  }
+  {
+    alwaysShooting: true
+    x: 0
+    shootY: 0
+    reload: 5
+    inaccuracy: 360
+    shootCone: 360
+    shootSound: none
+    bullet: {
+      type: ExplosionBulletType
+      killShooter: false
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: {
+        followParent: true
+        line: true
+        particles: 2
+        lifetime: 80
+        length: 65
+        randLength: false
+        interp: pow2Out
+        sizeInterp: pow2In
+        lenFrom: 16
+        lenTo: 0
+        strokeFrom: 0
+        strokeTo: 8
+        colorFrom: ffabbd88
+        colorTo: ffabbd88
+        cap: false
+      }
+      smokeEffect: none
+      fragBullets: 360
+      fragBullet: {
+        type: RailBulletType
+        length: 65
+        pierceEffect: none
+        damage: 0.001
+        pierceDamageFactor: 1
+        status: exotic-mod-irradiated
+        statusDuration: 10
+        collidesTiles: false
+      }
+    }
+  }
+]

@@ -1,0 +1,115 @@
+type: flying
+flying: true
+lowAltitude: true
+hitSize: 14
+health: 1400
+speed: 1.5
+accel: 0.1
+drag: 0.025
+rotateSpeed: 4
+itemCapacity: 0
+outlines: false
+engineOffset: 7
+engineColor: dea568
+trailColor: dea568
+trailLength: 11
+weapons: [
+  {
+    name: guard
+    x: 0
+    mirror: false
+    controllable: false
+    layerOffset: 0.003
+  }
+  {
+    x: 0
+    mirror: false
+    shoot: {
+      type: ShootSpread
+      shots: 2
+      spread: 10
+      shotDelay: 5
+    }
+    reload: 45
+    shootSound: missile
+    bullet: {
+      damage: 5
+      speed: 4
+      lifetime: 45
+      splashDamage: 45
+      splashDamageRadius: 24
+      scaledSplashDamage: true
+      homingPower: 0.05
+      homingRange: 120
+      homingDelay: 20
+      hitSound: explosion
+      sprite: missile-large
+      width: 10
+      height: 14
+      frontColor: ffffff
+      backColor: dea568
+      trailColor: dea568
+      trailWidth: 3
+      trailLength: 7
+      hitEffect: {
+        type: ExplosionEffect
+        lifetime: 35
+        waveRad: 24
+        sparkRad: 30
+        smokeRad: 19
+        waveLife: 5
+        waveStroke: 3
+        waveColor: dea568
+        sparks: 6
+        sparkLen: 4
+        sparkStroke: 2
+        sparkColor: c46b34
+        smokes: 24
+        smokeColor: 787878
+        smokeSize: 3
+      }
+      shootEffect: shootBig
+      smokeEffect: shootBigSmoke
+    }
+  }
+]
+abilities: [
+  {
+    type: StatusFieldAbility
+    range: -1
+    reload: 5
+    effectY: -1
+    parentizeEffects: true
+    activeEffect: [
+      {
+        followParent: true
+        rotWithParent: true
+        useRotation: false
+        baseRotation: -45
+        lifetime: 16
+        length: 0
+        spin: 6
+        region: exotic-mod-guard-turbine
+        layer: 90.0001
+        sizeFrom: 2.5
+        sizeTo: 2.5
+      }
+      {
+        followParent: false
+        length: 16
+        layer: 50
+        particles: 3
+        lifetime: 60
+        interp: pow3Out
+        sizeInterp: pow3In
+        sizeFrom: 2
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 78787888
+      }
+    ]
+    effect: none
+  }
+]
+envEnabled: -1
+envDisabled: 0

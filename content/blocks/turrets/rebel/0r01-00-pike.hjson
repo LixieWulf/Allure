@@ -263,6 +263,32 @@ drawer: {
   type: DrawTurret
   basePrefix: 0r-
 }
+placeEffect: [
+  {
+    type: WaveEffect
+    lifetime: 240
+    interp: pow3Out
+    clip: 8192
+    sizeFrom: 24
+    sizeTo: 1090
+    strokeFrom: 24
+    strokeTo: 0
+    colorFrom: c46b34
+    colorTo: c46b34
+  }
+  {
+    type: WaveEffect
+    lifetime: 240
+    interp: pow3Out
+    clip: 8192
+    sizeFrom: 0
+    sizeTo: 1080
+    strokeFrom: 24
+    strokeTo: 0
+    colorFrom: e65555
+    colorTo: e65555
+  }
+]
 category: turret
 requirements: [
   beryllium/1500

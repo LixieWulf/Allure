@@ -1,0 +1,13 @@
+healthMultiplier: 0.8
+speedMultiplier: 0.6
+damage: 4.4
+effect: {
+  followParent: true
+  length: 0
+  baseLength: 12
+  lifetime: 25
+  sizeFrom: 0
+  sizeTo: 1.5
+  colorFrom: e73c5e
+  colorTo: e73c5e00
+}

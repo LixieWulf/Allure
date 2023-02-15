@@ -48,60 +48,53 @@ ammoTypes: {
     height: 28
     shrinkY: 0.5
     shrinkX: 0.5
-    shootEffect: {
-      type: MultiEffect
-      effects: [
-        {
-          length: 0
-          cone: 0
-          lifetime: 35
-          region: exotic-mod-shootspike
-          colorTo: e65555
-          sizeFrom: 75
-          sizeTo: 0
-        }
-        {
-          length: 0
-          cone: 0
-          lifetime: 45
-          region: exotic-mod-diamond-thin
-          colorTo: e65555
-          sizeFrom: 70
-          sizeTo: 0
-        }
-      ]
-    }
-    smokeEffect: {
-      type: MultiEffect
-      lifetime: 180
-      effects: [
-        {
-          particles: 20
-          length: 125
-          lifetime: 180
-          cone: 20
-          sizeFrom: 7
-          sizeTo: 0
-          colorFrom: e65555
-          colorTo: 656565
-          interp: pow5Out
-          sizeInterp: pow2In
-        }
-        {
-          particles: 20
-          lightOpacity: 0
-          length: 160
-          lifetime: 110
-          cone: 25
-          sizeFrom: 3
-          sizeTo: 0
-          colorFrom: 999999
-          colorTo: 656565
-          interp: pow5Out
-          sizeInterp: pow3In
-        }
-      ]
-    }
+    shootEffect: [
+      {
+        length: 0
+        cone: 0
+        lifetime: 35
+        region: exotic-mod-shootspike
+        colorTo: e65555
+        sizeFrom: 75
+        sizeTo: 0
+      }
+      {
+        length: 0
+        cone: 0
+        lifetime: 45
+        region: exotic-mod-diamond-thin
+        colorTo: e65555
+        sizeFrom: 70
+        sizeTo: 0
+      }
+    ]
+    smokeEffect: [
+      {
+        particles: 20
+        length: 125
+        lifetime: 180
+        cone: 20
+        sizeFrom: 7
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: 656565
+        interp: pow5Out
+        sizeInterp: pow2In
+      }
+      {
+        particles: 20
+        lightOpacity: 0
+        length: 160
+        lifetime: 110
+        cone: 25
+        sizeFrom: 3
+        sizeTo: 0
+        colorFrom: 999999
+        colorTo: 656565
+        interp: pow5Out
+        sizeInterp: pow3In
+      }
+    ]
     despawnEffect: none
     hitEffect: {
       type: MultiEffect

@@ -1,0 +1,3 @@
+//purely an internal status - this guarantees abyss can oneshot even healers damage invicibility
+show: false
+damage: 2000000000

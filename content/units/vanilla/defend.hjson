@@ -1,0 +1,525 @@
+type: flying
+flying: true
+lowAltitude: true
+hitSize: 32
+health: 9500
+armor: 15
+speed: 1.3
+accel: 0.1
+drag: 0.02
+rotateSpeed: 2.2
+itemCapacity: 0
+outlines: false
+outlineColor: 2d2f39
+engineOffset: 14
+engineSize: 5
+engineColor: dea568
+engines: [
+  {
+    x: 7.5
+    y: -19
+    rotation: 270
+    radius: 2
+  }
+  {
+    x: -7.5
+    y: -19
+    rotation: 270
+    radius: 2
+  }
+]
+parts: [
+  {
+    suffix: -blade
+    x: 7.75
+    y: 10.25
+    mirror: true
+    progress: warmup
+    heatProgress: smoothReload
+    moves: [
+      {
+        progress: {
+          type: smoothReload
+        }
+        x: 1
+        y: -2
+        rot: -15
+      }
+    ]
+    moveX: 0.5
+    moveY: -1
+    moveRot: -7.5
+    weaponIndex: 1
+    layerOffset: 0.003
+    outlineLayerOffset: -0.003
+  }
+]
+trailColor: dea568
+trailLength: 11
+weapons: [
+  {
+    name: defend
+    x: 0
+    mirror: false
+    controllable: false
+    layerOffset: 0.003
+  }
+  {
+    x: 0
+    shootY: 8
+    mirror: false
+    reload: 110
+    shootSound: missileLarge
+    minWarmup: 0.9
+    shootWarmupSpeed: 0.03
+    bullet: {
+      damage: 24
+      speed: 3
+      lifetime: 90
+      splashDamage: 180
+      splashDamageRadius: 60
+      scaledSplashDamage: true
+      homingPower: 0.025
+      homingRange: 120
+      homingDelay: 20
+      hitSound: largeExplosion
+      sprite: missile-large
+      width: 18
+      height: 36
+      layer: 105
+      frontColor: ffffff
+      backColor: dea568
+      trailColor: dea568
+      trailWidth: 5
+      trailLength: 16
+      trailChance: 0.75
+      trailEffect: {
+        layer: 100
+        length: 24
+        particles: 6
+        lifetime: 90
+        sizeFrom: 3
+        sizeTo: 0
+        colorFrom: c46b3488
+        colorTo: c46b3488
+        interp: pow3Out
+        sizeInterp: pow2In
+      }
+      shootEffect: [
+        {
+          length: 0
+          cone: 0
+          lifetime: 25
+          region: exotic-mod-shootspike
+          colorTo: dea568
+          sizeFrom: 60
+          sizeTo: 0
+        }
+        {
+          length: 0
+          cone: 0
+          lifetime: 35
+          region: exotic-mod-diamond-thin
+          colorTo: dea568
+          sizeFrom: 35
+          sizeTo: 0
+        }
+      ]
+      smokeEffect: [
+        {
+          particles: 16
+          length: 70
+          lifetime: 110
+          cone: 20
+          sizeFrom: 5
+          sizeTo: 0
+          colorFrom: dea568
+          colorTo: 656565
+          interp: pow5Out
+          sizeInterp: pow2In
+        }
+        {
+          particles: 16
+          lightOpacity: 0
+          length: 90
+          lifetime: 90
+          cone: 25
+          sizeFrom: 2
+          sizeTo: 0
+          colorFrom: 999999
+          colorTo: 656565
+          interp: pow5Out
+          sizeInterp: pow3In
+        }
+      ]
+      hitEffect: {
+        type: ExplosionEffect
+        lifetime: 55
+        waveRad: 60
+        sparkRad: 80
+        smokeRad: 70
+        waveLife: 5
+        waveStroke: 3
+        waveColor: dea568
+        sparks: 12
+        sparkLen: 6
+        sparkStroke: 2
+        sparkColor: c46b34
+        smokes: 44
+        smokeColor: 787878
+        smokeSize: 6
+      }
+      fragBullets: 12
+      fragVelocityMin: 0.5
+      fragRandomSpread: 40
+      fragLifeMin: 0.1
+      fragBullet: {
+        speed: 3
+        lifetime: 40
+        damage: 2
+        splashDamage: 46
+        splashDamageRadius: 24
+        scaledSplashDamage: true
+        collides: false
+        hitSound: explosion
+        width: 7
+        height: 9
+        frontColor: ffffff
+        backColor: dea568
+        trailColor: dea568
+        trailWidth: 1
+        trailLength: 13
+        hitEffect: {
+          type: ExplosionEffect
+          lifetime: 35
+          waveRad: 24
+          sparkRad: 30
+          smokeRad: 19
+          waveLife: 5
+          waveStroke: 3
+          waveColor: dea568
+          sparks: 6
+          sparkLen: 4
+          sparkStroke: 2
+          sparkColor: c46b34
+          smokes: 24
+          smokeColor: 787878
+          smokeSize: 3
+        }
+      }
+      bulletInterval: 10
+      intervalBullets: 2
+      intervalRandomSpread: 5
+      intervalSpread: 165
+      intervalBullet: {
+        type: ExplosionBulletType
+        killShooter: false
+        hitEffect: none
+        despawnEffect: none
+        fragVelocityMin: 1
+        fragVelocityMax: 1
+        fragBullets: 3
+        fragRandomSpread: 0
+        fragSpread: 25
+        fragBullet: {
+          speed: 2
+          lifetime: 70
+          damage: 2
+          splashDamage: 36
+          splashDamageRadius: 24
+          scaledSplashDamage: true
+          homingPower: 0.04
+          homingRange: 120
+          hitSound: explosion
+          width: 7
+          height: 9
+          frontColor: ffffff
+          backColor: dea568
+          trailColor: dea568
+          trailWidth: 1
+          trailLength: 13
+          hitEffect: {
+            type: ExplosionEffect
+            lifetime: 35
+            waveRad: 24
+            sparkRad: 30
+            smokeRad: 19
+            waveLife: 5
+            waveStroke: 3
+            waveColor: dea568
+            sparks: 6
+            sparkLen: 4
+            sparkStroke: 2
+            sparkColor: c46b34
+            smokes: 24
+            smokeColor: 787878
+            smokeSize: 3
+          }
+        }
+      }
+    }
+  }
+]
+abilities: [
+  {
+    type: StatusFieldAbility
+    range: -1
+    reload: 5
+    effectY: -3
+    parentizeEffects: true
+    activeEffect: [
+      {
+        followParent: true
+        rotWithParent: true
+        useRotation: false
+        baseRotation: -45
+        lifetime: 16
+        length: 0
+        spin: 6
+        region: exotic-mod-defend-turbine
+        layer: 90.0001
+        sizeFrom: 5.5
+        sizeTo: 5.5
+      }
+      {
+        followParent: false
+        length: 32
+        layer: 50
+        particles: 3
+        lifetime: 60
+        interp: pow3Out
+        sizeInterp: pow3In
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 78787888
+      }
+    ]
+    effect: none
+  }
+  {
+    type: StatusFieldAbility
+    range: -1
+    reload: 5
+    effectX: 14.75
+    effectY: 1
+    parentizeEffects: true
+    activeEffect: [
+      {
+        followParent: true
+        rotWithParent: true
+        useRotation: false
+        baseRotation: -45
+        lifetime: 16
+        length: 0
+        spin: 6
+        region: exotic-mod-guard-turbine
+        layer: 90.0001
+        sizeFrom: 2.5
+        sizeTo: 2.5
+      }
+      {
+        followParent: false
+        length: 16
+        layer: 50
+        particles: 3
+        lifetime: 60
+        interp: pow3Out
+        sizeInterp: pow3In
+        sizeFrom: 2
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 78787888
+      }
+    ]
+    effect: none
+  }
+  {
+    type: StatusFieldAbility
+    range: -1
+    reload: 5
+    effectX: -14.75
+    effectY: 1
+    parentizeEffects: true
+    activeEffect: [
+      {
+        followParent: true
+        rotWithParent: true
+        useRotation: false
+        baseRotation: -45
+        lifetime: 16
+        length: 0
+        spin: 6
+        region: exotic-mod-guard-turbine
+        layer: 90.0001
+        sizeFrom: 2.5
+        sizeTo: 2.5
+      }
+      {
+        followParent: false
+        length: 16
+        layer: 50
+        particles: 3
+        lifetime: 60
+        interp: pow3Out
+        sizeInterp: pow3In
+        sizeFrom: 2
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 78787888
+      }
+    ]
+    effect: none
+  }
+  {
+    type: StatusFieldAbility
+    range: -1
+    reload: 5
+    effectX: 11.75
+    effectY: -5.25
+    parentizeEffects: true
+    activeEffect: [
+      {
+        followParent: true
+        rotWithParent: true
+        useRotation: false
+        baseRotation: -45
+        lifetime: 16
+        length: 0
+        spin: 6
+        region: exotic-mod-guard-turbine
+        layer: 90.0001
+        sizeFrom: 2.5
+        sizeTo: 2.5
+      }
+      {
+        followParent: false
+        length: 16
+        layer: 50
+        particles: 3
+        lifetime: 60
+        interp: pow3Out
+        sizeInterp: pow3In
+        sizeFrom: 2
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 78787888
+      }
+    ]
+    effect: none
+  }
+  {
+    type: StatusFieldAbility
+    range: -1
+    reload: 5
+    effectX: -11.75
+    effectY: -5.25
+    parentizeEffects: true
+    activeEffect: [
+      {
+        followParent: true
+        rotWithParent: true
+        useRotation: false
+        baseRotation: -45
+        lifetime: 16
+        length: 0
+        spin: 6
+        region: exotic-mod-guard-turbine
+        layer: 90.0001
+        sizeFrom: 2.5
+        sizeTo: 2.5
+      }
+      {
+        followParent: false
+        length: 16
+        layer: 50
+        particles: 3
+        lifetime: 60
+        interp: pow3Out
+        sizeInterp: pow3In
+        sizeFrom: 2
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 78787888
+      }
+    ]
+    effect: none
+  }
+  {
+    type: StatusFieldAbility
+    range: -1
+    reload: 5
+    effectX: 8
+    effectY: -12
+    parentizeEffects: true
+    activeEffect: [
+      {
+        followParent: true
+        rotWithParent: true
+        useRotation: false
+        baseRotation: -45
+        lifetime: 16
+        length: 0
+        spin: 6
+        region: exotic-mod-guard-turbine
+        layer: 90.0001
+        sizeFrom: 2.5
+        sizeTo: 2.5
+      }
+      {
+        followParent: false
+        length: 16
+        layer: 50
+        particles: 3
+        lifetime: 60
+        interp: pow3Out
+        sizeInterp: pow3In
+        sizeFrom: 2
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 78787888
+      }
+    ]
+    effect: none
+  }
+  {
+    type: StatusFieldAbility
+    range: -1
+    reload: 5
+    effectX: -8
+    effectY: -12
+    parentizeEffects: true
+    activeEffect: [
+      {
+        followParent: true
+        rotWithParent: true
+        useRotation: false
+        baseRotation: -45
+        lifetime: 16
+        length: 0
+        spin: 6
+        region: exotic-mod-guard-turbine
+        layer: 90.0001
+        sizeFrom: 2.5
+        sizeTo: 2.5
+      }
+      {
+        followParent: false
+        length: 16
+        layer: 50
+        particles: 3
+        lifetime: 60
+        interp: pow3Out
+        sizeInterp: pow3In
+        sizeFrom: 2
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 78787888
+      }
+    ]
+    effect: none
+  }
+]
+fogRadius: 33
+envEnabled: -1
+envDisabled: 0

@@ -71,79 +71,76 @@ weapons: [
       pierceDamageFactor: 0.8
       recoil: 4
       pointEffectSpace: 120
-      pointEffect: {
-        type: MultiEffect
-        effects: [
-          {
-            lightOpacity: 0.25
-            lightScl: 1
-            type: ParticleEffect
-            length: 0
-            baseLength: 30
-            randLength: false
-            lifetime: 110
-            particles: 1
-            cone: 0
-            interp: pow3In
-            sizeInterp: linear
-            region: exotic-mod-railblast
-            sizeFrom: 14
-            sizeTo: 7
-            colorFrom: 7382f0
-            colorTo: 7382f000
-          }
-          {
-            lightOpacity: 0.25
-            lightScl: 1
-            type: ParticleEffect
-            length: 0
-            baseLength: 38
-            randLength: false
-            lifetime: 110
-            particles: 1
-            cone: 0
-            interp: pow3In
-            sizeInterp: linear
-            region: exotic-mod-railblast
-            sizeFrom: 24
-            sizeTo: 10
-            colorFrom: 7382f0
-            colorTo: 7382f000
-          }
-          {
-            lightOpacity: 0.25
-            lightScl: 1
-            type: ParticleEffect
-            length: 0
-            lifetime: 110
-            particles: 1
-            cone: 0
-            interp: pow3In
-            sizeInterp: linear
-            region: exotic-mod-diamond-wide
-            sizeFrom: 40
-            sizeTo: 10
-            colorFrom: 7382f0
-            colorTo: 7382f000
-          }
-          {
-            lightOpacity: 0.4
-            lightScl: 0.65
-            type: ParticleEffect
-            length: 0
-            lifetime: 110
-            layer: 110.001
-            particles: 1
-            cone: 0
-            interp: pow3In
-            sizeInterp: linear
-            region: exotic-mod-diamond-wide
-            sizeFrom: 28
-            sizeTo: 6
-            colorTo: ffffff00
-          }
-        ]
-      }
+      pointEffect: [
+        {
+          lightOpacity: 0.25
+          lightScl: 1
+          type: ParticleEffect
+          length: 0
+          baseLength: 30
+          randLength: false
+          lifetime: 110
+          particles: 1
+          cone: 0
+          interp: pow3In
+          sizeInterp: linear
+          region: exotic-mod-railblast
+          sizeFrom: 14
+          sizeTo: 7
+          colorFrom: 7382f0
+          colorTo: 7382f000
+        }
+        {
+          lightOpacity: 0.25
+          lightScl: 1
+          type: ParticleEffect
+          length: 0
+          baseLength: 38
+          randLength: false
+          lifetime: 110
+          particles: 1
+          cone: 0
+          interp: pow3In
+          sizeInterp: linear
+          region: exotic-mod-railblast
+          sizeFrom: 24
+          sizeTo: 10
+          colorFrom: 7382f0
+          colorTo: 7382f000
+        }
+        {
+          lightOpacity: 0.25
+          lightScl: 1
+          type: ParticleEffect
+          length: 0
+          lifetime: 110
+          particles: 1
+          cone: 0
+          interp: pow3In
+          sizeInterp: linear
+          region: exotic-mod-diamond-wide
+          sizeFrom: 40
+          sizeTo: 10
+          colorFrom: 7382f0
+          colorTo: 7382f000
+        }
+        {
+          lightOpacity: 0.4
+          lightScl: 0.65
+          type: ParticleEffect
+          length: 0
+          lifetime: 110
+          layer: 110.001
+          particles: 1
+          cone: 0
+          interp: pow3In
+          sizeInterp: linear
+          region: exotic-mod-diamond-wide
+          sizeFrom: 28
+          sizeTo: 6
+          colorTo: ffffff00
+        }
+      ]
       smokeEffect: none
       shootEffect: {
         type: MultiEffect

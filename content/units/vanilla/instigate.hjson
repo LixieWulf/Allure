@@ -1,0 +1,171 @@
+type: legs
+health: 1600
+armor: 4
+hitSize: 12
+speed: 2
+accel: 0.1
+drag: 0.06
+rotateSpeed: 4
+hovering: true
+legCount: 0
+groundLayer: 80
+faceTarget: false
+parts: [
+  {
+    type: HoverPart
+    mirror: true
+    x: 6
+    radius: 7
+    stroke: 2.5
+    strokeMin: 0
+    layerOffset: -0.0001
+    color: 5ebcbf
+  }
+  {
+    type: HoverPart
+    mirror: true
+    x: 6
+    y: 6.5
+    radius: 5
+    stroke: 1.5
+    strokeMin: 0
+    layerOffset: -0.0001
+    color: 5ebcbf
+  }
+  {
+    type: HoverPart
+    mirror: true
+    x: 6
+    y: -6.5
+    radius: 5
+    stroke: 1.5
+    strokeMin: 0
+    layerOffset: -0.0001
+    color: 5ebcbf
+  }
+  {
+    type: ShapePart
+    hollow: true
+    circle: true
+    radius: 10
+    stroke: 0
+    strokeTo: 2
+    progress: charge
+    weaponIndex: 0
+    color: 5ebcbf
+    layer: 110
+  }
+  {
+    type: ShapePart
+    hollow: true
+    circle: true
+    radius: 20
+    radiusTo: 10
+    stroke: 0
+    strokeTo: 1
+    progress: charge
+    weaponIndex: 0
+    color: 5ebcbf
+    layer: 110
+  }
+  {
+    type: HaloPart
+    haloRotateSpeed: 12
+    shapeRadius: 12
+    tri: true
+    shapes: 6
+    triLength: 10
+    triLengthTo: 0
+    radius: 0
+    radiusTo: 4
+    color: 5ebcbf
+    layer: 110
+    progress: charge
+    weaponIndex: 0
+  }
+  {
+    type: HaloPart
+    haloRotateSpeed: -12
+    shapeRadius: 15
+    shapeRadiusTo: 12
+    shapeRotation: 180
+    tri: true
+    shapes: 6
+    triLength: 10
+    triLengthTo: 0
+    radius: 0
+    radiusTo: 4
+    color: 5ebcbf
+    layer: 110
+    progress: charge
+    weaponIndex: 0
+  }
+]
+weapons: [
+  {
+    x: 0
+    shootY: 0
+    mirror: false
+    rotate: true
+    controllable: false
+    autoTarget: true
+    targetInterval: 15
+    targetSwitchInterval: 15
+    reload: 70
+    shoot: {
+      shots: 5
+      firstShotDelay: 30
+    }
+    shootCone: 360
+    inaccuracy: 40
+    shootSound: shockBlast
+    shake: 8
+    bullet: {
+      type: RailBulletType
+      damage: 38
+      pierceDamageFactor: 0
+      length: 160
+      pierceEffect: none
+      pointEffect: none
+      shootEffect: none
+      smokeEffect: none
+      lineEffect: {
+        cone: 0
+        particles: 1
+        lifetime: 45
+        length: 0
+        baseLength: 80
+        randLength: false
+        region: exotic-mod-diamond-vthin
+        sizeFrom: 80
+        sizeTo: 80
+        colorFrom: 5ebcbf
+        colorTo: 5ebcbf00
+      }
+    }
+  }
+]
+abilities: [
+  {
+    type: EnergyFieldAbility
+    maxTargets: 1
+    damage: 0.0001
+    healEffect: none
+    hitEffect: none
+    damageEffect: none
+    status: none
+    shootSound: none
+    range: 160
+    color: 5ebcbf
+    sectors: 3
+    sectorRad: 0.2
+    rotateSpeed: 6
+    layer: 110
+    effectRadius: 0
+    blinkScl: 15
+    blinkSize: 0.2
+    healPercent: 0
+  }
+]
+envEnabled: -1
+envDisabled: 0

@@ -16,6 +16,6 @@ outputLiquids: [
   steam/5
 ]
 outputItem: shadow/2
-liquidOutputDirections: [0, 1, 3]
+liquidOutputDirections: [3, 0, 2]
 conductivePower: true
 rotate: true

@@ -1,0 +1,4 @@
+type: StaticWall
+attributes: {
+  sand: 1
+}

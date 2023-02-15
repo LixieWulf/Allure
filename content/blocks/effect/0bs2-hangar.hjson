@@ -1,0 +1,14 @@
+type: StorageBlock
+squareSprite: false
+size: 4
+health: 1600
+armor: 30
+itemCapacity: 300
+unitCapModifier: 1
+category: effect
+requirements: [
+  dantrales/600
+  territe-alloy/2400
+  baenite/1800
+  scilaxa/1200
+]

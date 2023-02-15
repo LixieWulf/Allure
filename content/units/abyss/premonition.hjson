@@ -1,4 +1,6 @@
 type: flying
+//abyss do not have displayed names
+localizedName: ???
 flying: true
 health: 1900000
 armor: 1000

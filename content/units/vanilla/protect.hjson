@@ -1,0 +1,238 @@
+type: flying
+flying: true
+lowAltitude: true
+hitSize: 24
+health: 3200
+armor: 8
+speed: 1
+accel: 0.1
+drag: 0.02
+rotateSpeed: 3
+itemCapacity: 0
+outlines: false
+engineOffset: 9
+engineSize: 4
+engineColor: dea568
+engines: [
+  {
+    x: 6.5
+    y: -10.5
+    rotation: 315
+    radius: 2
+  }
+  {
+    x: -6.5
+    y: -10.5
+    rotation: 225
+    radius: 2
+  }
+]
+trailColor: dea568
+trailLength: 20
+weapons: [
+  {
+    name: protect
+    x: 0
+    mirror: false
+    controllable: false
+    layerOffset: 0.003
+  }
+  {
+    x: 7.5
+    reload: 80
+    shootSound: missileSmall
+    baseRotation: -20
+    shootCone: 35
+    bullet: {
+      damage: 12
+      speed: 3
+      lifetime: 80
+      splashDamage: 150
+      splashDamageRadius: 45
+      scaledSplashDamage: true
+      homingPower: 0.04
+      homingRange: 120
+      homingDelay: 25
+      hitSound: dullExplosion
+      sprite: missile-large
+      width: 12
+      height: 24
+      frontColor: ffffff
+      backColor: dea568
+      trailColor: dea568
+      trailWidth: 3
+      trailLength: 13
+      bulletInterval: 5
+      intervalBullets: 2
+      intervalRandomSpread: 0
+      intervalSpread: 150
+      intervalBullet: {
+        speed: 2
+        lifetime: 45
+        damage: 2
+        splashDamage: 25
+        splashDamageRadius: 24
+        scaledSplashDamage: true
+        homingPower: 0.06
+        homingRange: 120
+        hitSound: explosion
+        width: 7
+        height: 9
+        frontColor: ffffff
+        backColor: dea568
+        trailColor: dea568
+        trailWidth: 1
+        trailLength: 13
+        hitEffect: {
+          type: ExplosionEffect
+          lifetime: 35
+          waveRad: 24
+          sparkRad: 30
+          smokeRad: 19
+          waveLife: 5
+          waveStroke: 3
+          waveColor: dea568
+          sparks: 6
+          sparkLen: 4
+          sparkStroke: 2
+          sparkColor: c46b34
+          smokes: 24
+          smokeColor: 787878
+          smokeSize: 3
+        }
+      }
+      hitEffect: {
+        type: ExplosionEffect
+        lifetime: 35
+        waveRad: 45
+        sparkRad: 55
+        smokeRad: 50
+        waveLife: 5
+        waveStroke: 3
+        waveColor: dea568
+        sparks: 9
+        sparkLen: 4
+        sparkStroke: 2
+        sparkColor: c46b34
+        smokes: 36
+        smokeColor: 787878
+        smokeSize: 4
+      }
+    }
+  }
+]
+abilities: [
+  {
+    type: StatusFieldAbility
+    range: -1
+    reload: 5
+    effectY: 0.5
+    parentizeEffects: true
+    activeEffect: [
+      {
+        followParent: true
+        rotWithParent: true
+        useRotation: false
+        baseRotation: -45
+        lifetime: 16
+        length: 0
+        spin: 6
+        region: exotic-mod-protect-turbine
+        layer: 90.0001
+        sizeFrom: 4
+        sizeTo: 4
+      }
+      {
+        followParent: false
+        length: 24
+        layer: 50
+        particles: 3
+        lifetime: 60
+        interp: pow3Out
+        sizeInterp: pow3In
+        sizeFrom: 3
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 78787888
+      }
+    ]
+    effect: none
+  }
+  {
+    type: StatusFieldAbility
+    range: -1
+    reload: 5
+    effectX: 10
+    effectY: -5.5
+    parentizeEffects: true
+    activeEffect: [
+      {
+        followParent: true
+        rotWithParent: true
+        useRotation: false
+        baseRotation: -45
+        lifetime: 16
+        length: 0
+        spin: 6
+        region: exotic-mod-guard-turbine
+        layer: 90.0001
+        sizeFrom: 2.5
+        sizeTo: 2.5
+      }
+      {
+        followParent: false
+        length: 16
+        layer: 50
+        particles: 3
+        lifetime: 60
+        interp: pow3Out
+        sizeInterp: pow3In
+        sizeFrom: 2
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 78787888
+      }
+    ]
+    effect: none
+  }
+  {
+    type: StatusFieldAbility
+    range: -1
+    reload: 5
+    effectX: -10
+    effectY: -5.5
+    parentizeEffects: true
+    activeEffect: [
+      {
+        followParent: true
+        rotWithParent: true
+        useRotation: false
+        baseRotation: -45
+        lifetime: 16
+        length: 0
+        spin: 6
+        region: exotic-mod-guard-turbine
+        layer: 90.0001
+        sizeFrom: 2.5
+        sizeTo: 2.5
+      }
+      {
+        followParent: false
+        length: 16
+        layer: 50
+        particles: 3
+        lifetime: 60
+        interp: pow3Out
+        sizeInterp: pow3In
+        sizeFrom: 2
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 78787888
+      }
+    ]
+    effect: none
+  }
+]
+fogRadius: 30
+envEnabled: -1
+envDisabled: 0
