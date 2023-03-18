@@ -3,7 +3,7 @@ research: {
   objectives: [
     surge-smelter,
     silicon-crucible,
-    0b05-00-01-dual-turbine,
+    0b04-00-01-dual-turbine,
     disassembler
   ]
   requirements: [

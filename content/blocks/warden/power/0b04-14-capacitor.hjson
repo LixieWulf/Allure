@@ -10,6 +10,7 @@ research: {
     battery-large
   ]
 }
+category: power
 requirements: [
   dantrales/50
   territe-alloy/1600

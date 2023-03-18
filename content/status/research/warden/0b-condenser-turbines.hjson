@@ -1,7 +1,7 @@
 research: {
   parent: 0b-steam-heating
   objectives: [
-    0b05-00-00-steam-turbine,
+    0b04-00-00-steam-turbine,
     steam-generator,
     steam
   ]
