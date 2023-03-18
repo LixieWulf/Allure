@@ -1,0 +1,969 @@
+type: PowerTurret
+size: 16
+reload: 120
+customShadow: true
+shootY: 0
+shootType: {
+  spawnBullets: [
+    //non-piston visual effects
+    {
+      lifetime: 0
+      despawnEffect: [
+        //g l o w
+        {
+          length: 0
+          particles: 1
+          lifetime: 241
+          sizeFrom: 0
+          sizeTo: 18
+          interp: pow2Out
+        }
+        {
+          length: 0
+          particles: 1
+          lifetime: 2160
+          startDelay: 240
+          sizeFrom: 18
+          sizeTo: 18
+        }
+        {
+          length: 0
+          particles: 1
+          region: exotic-mod-diamond-vthin
+          spin: 0.5
+          lifetime: 2160
+          startDelay: 240
+          sizeFrom: 0
+          sizeTo: 180
+          interp: pow3Out
+        }
+        {
+          length: 0
+          particles: 1
+          region: exotic-mod-diamond-vthin
+          spin: 0.5
+          offset: 90
+          lifetime: 2160
+          startDelay: 240
+          sizeFrom: 0
+          sizeTo: 180
+          interp: pow3Out
+        }
+        {
+          length: 0
+          particles: 1
+          region: circle-shadow
+          layer: 115
+          lifetime: 1200
+          startDelay: 1200
+          sizeFrom: 0
+          sizeTo: 110
+        }
+        //first wave
+        {
+          type: WaveEffect
+          lifetime: 30
+          startDelay: 480
+          interp: pow3Out
+          sizeFrom: 240
+          sizeTo: 160
+          strokeFrom: 0
+          strokeTo: 3
+        }
+        {
+          type: WaveEffect
+          lifetime: 30
+          startDelay: 510
+          interp: pow3In
+          sizeFrom: 160
+          sizeTo: 140
+          strokeFrom: 3
+          strokeTo: 0
+        }
+        {
+          type: WaveEffect
+          lifetime: 30
+          startDelay: 480
+          interp: pow3Out
+          sizeFrom: 40
+          sizeTo: 160
+          strokeFrom: 12
+          strokeTo: 0
+          colorFrom: ffffff00
+        }
+        {
+          length: -60
+          baseLength: 240
+          particles: 22
+          region: circle-shadow
+          lifetime: 60
+          startDelay: 480
+          sizeFrom: 9
+          sizeTo: 0
+          interp: pow5Out
+          sizeInterp: pow5In
+        }
+        {
+          length: -90
+          baseLength: 270
+          particles: 22
+          region: circle-shadow
+          lifetime: 60
+          startDelay: 480
+          sizeFrom: 6
+          sizeTo: 0
+          interp: pow5Out
+          sizeInterp: pow5In
+        }
+        {
+          length: -120
+          baseLength: 300
+          particles: 22
+          region: circle-shadow
+          lifetime: 60
+          startDelay: 480
+          sizeFrom: 3
+          sizeTo: 0
+          interp: pow5Out
+          sizeInterp: pow5In
+        }
+        //second wave
+        {
+          type: WaveEffect
+          lifetime: 30
+          startDelay: 600
+          interp: pow3Out
+          sizeFrom: 280
+          sizeTo: 200
+          strokeFrom: 0
+          strokeTo: 4
+          colorFrom: ffffffbb
+          colorTo: ffffffbb
+        }
+        {
+          type: WaveEffect
+          lifetime: 30
+          startDelay: 630
+          interp: pow3In
+          sizeFrom: 200
+          sizeTo: 160
+          strokeFrom: 4
+          strokeTo: 0
+          colorFrom: ffffffbb
+          colorTo: ffffffbb
+        }
+        {
+          type: WaveEffect
+          lifetime: 30
+          startDelay: 600
+          interp: pow3Out
+          sizeFrom: 40
+          sizeTo: 200
+          strokeFrom: 12
+          strokeTo: 0
+          colorFrom: ffffff00
+          colorTo: ffffffbb
+        }
+        {
+          length: -60
+          baseLength: 300
+          particles: 22
+          region: circle-shadow
+          lifetime: 60
+          startDelay: 600
+          sizeFrom: 9
+          sizeTo: 0
+          interp: pow5Out
+          sizeInterp: pow5In
+        }
+        {
+          length: -90
+          baseLength: 330
+          particles: 22
+          region: circle-shadow
+          lifetime: 60
+          startDelay: 600
+          sizeFrom: 6
+          sizeTo: 0
+          interp: pow5Out
+          sizeInterp: pow5In
+        }
+        {
+          length: -120
+          baseLength: 360
+          particles: 22
+          region: circle-shadow
+          lifetime: 60
+          startDelay: 600
+          sizeFrom: 3
+          sizeTo: 0
+          interp: pow5Out
+          sizeInterp: pow5In
+        }
+        //third wave
+        {
+          type: WaveEffect
+          lifetime: 30
+          startDelay: 720
+          interp: pow3Out
+          sizeFrom: 360
+          sizeTo: 280
+          strokeFrom: 0
+          strokeTo: 5
+          colorFrom: ffffff88
+          colorTo: ffffff88
+        }
+        {
+          type: WaveEffect
+          lifetime: 30
+          startDelay: 750
+          interp: pow3In
+          sizeFrom: 280
+          sizeTo: 220
+          strokeFrom: 5
+          strokeTo: 0
+          colorFrom: ffffff88
+          colorTo: ffffff88
+        }
+        {
+          type: WaveEffect
+          lifetime: 30
+          startDelay: 720
+          interp: pow3Out
+          sizeFrom: 40
+          sizeTo: 280
+          strokeFrom: 12
+          strokeTo: 0
+          colorFrom: ffffff00
+          colorTo: ffffff88
+        }
+        {
+          length: -60
+          baseLength: 360
+          particles: 22
+          region: circle-shadow
+          lifetime: 60
+          startDelay: 720
+          sizeFrom: 9
+          sizeTo: 0
+          interp: pow5Out
+          sizeInterp: pow5In
+        }
+        {
+          length: -90
+          baseLength: 390
+          particles: 22
+          region: circle-shadow
+          lifetime: 60
+          startDelay: 720
+          sizeFrom: 6
+          sizeTo: 0
+          interp: pow5Out
+          sizeInterp: pow5In
+        }
+        {
+          length: -120
+          baseLength: 420
+          particles: 22
+          region: circle-shadow
+          lifetime: 60
+          startDelay: 720
+          sizeFrom: 3
+          sizeTo: 0
+          interp: pow5Out
+          sizeInterp: pow5In
+        }
+        //final wave
+        {
+          type: WaveEffect
+          lifetime: 30
+          startDelay: 840
+          interp: pow3Out
+          sizeFrom: 420
+          sizeTo: 340
+          strokeFrom: 0
+          strokeTo: 6
+          colorFrom: ffffff44
+          colorTo: ffffff44
+        }
+        {
+          type: WaveEffect
+          lifetime: 30
+          startDelay: 870
+          interp: pow3In
+          sizeFrom: 340
+          sizeTo: 260
+          strokeFrom: 6
+          strokeTo: 0
+          colorFrom: ffffff44
+          colorTo: ffffff44
+        }
+        {
+          type: WaveEffect
+          lifetime: 30
+          startDelay: 840
+          interp: pow3Out
+          sizeFrom: 40
+          sizeTo: 340
+          strokeFrom: 12
+          strokeTo: 0
+          colorFrom: ffffff00
+          colorTo: ffffff44
+        }
+        {
+          length: -60
+          baseLength: 420
+          particles: 22
+          region: circle-shadow
+          lifetime: 60
+          startDelay: 840
+          sizeFrom: 9
+          sizeTo: 0
+          interp: pow5Out
+          sizeInterp: pow5In
+        }
+        {
+          length: -90
+          baseLength: 450
+          particles: 22
+          region: circle-shadow
+          lifetime: 60
+          startDelay: 840
+          sizeFrom: 6
+          sizeTo: 0
+          interp: pow5Out
+          sizeInterp: pow5In
+        }
+        {
+          length: -120
+          baseLength: 480
+          particles: 22
+          region: circle-shadow
+          lifetime: 60
+          startDelay: 840
+          sizeFrom: 3
+          sizeTo: 0
+          interp: pow5Out
+          sizeInterp: pow5In
+        }
+        //initial blast wave
+        {
+          type: WaveEffect
+          lifetime: 201
+          startDelay: 2000
+          interp: pow3Out
+          sizeFrom: 40
+          sizeTo: 340
+          strokeFrom: 12
+          strokeTo: 3
+          colorFrom: ffffff00
+          colorTo: ffffff22
+        }
+        {
+          type: WaveEffect
+          lifetime: 140
+          startDelay: 2200
+          sizeFrom: 340
+          sizeTo: 340
+          strokeFrom: 3
+          strokeTo: 6
+          colorFrom: ffffff22
+          colorTo: ffffff
+        }
+        {
+          type: WaveEffect
+          lifetime: 60
+          startDelay: 2340
+          interp: pow3In
+          sizeFrom: 340
+          sizeTo: 40
+          strokeFrom: 6
+          strokeTo: 12
+          colorFrom: ffffff
+          colorTo: ffffff
+        }
+        //first (smaller) detonation
+        {
+          length: 0
+          particles: 12
+          lifetime: 90
+          interp: pow3Out
+          startDelay: 2400
+          sizeFrom: 1200
+          sizeTo: 180
+          layer: 115
+          region: circle-shadow
+        }
+        {
+          type: WaveEffect
+          lifetime: 45
+          startDelay: 2410
+          interp: pow3Out
+          sizeFrom: 640
+          sizeTo: 120
+          strokeFrom: 0
+          strokeTo: 14
+          colorFrom: ffffff
+          colorTo: ffffff
+        }
+        {
+          type: WaveEffect
+          lifetime: 45
+          startDelay: 2420
+          interp: pow3Out
+          sizeFrom: 640
+          sizeTo: 120
+          strokeFrom: 0
+          strokeTo: 14
+          colorFrom: ffffff
+          colorTo: ffffff
+        }
+        {
+          type: WaveEffect
+          lifetime: 45
+          startDelay: 2430
+          interp: pow3Out
+          sizeFrom: 640
+          sizeTo: 120
+          strokeFrom: 0
+          strokeTo: 14
+          colorFrom: ffffff
+          colorTo: ffffff
+        }
+        {
+          length: 120
+          baseLength: 180
+          startDelay: 2400
+          lifetime: 180
+          region: circle-shadow
+          particles: 25
+          sizeFrom: 150
+          sizeTo: 0
+        }
+        {
+          length: 150
+          baseLength: 180
+          startDelay: 2400
+          lifetime: 180
+          region: circle-shadow
+          particles: 25
+          sizeFrom: 100
+          sizeTo: 0
+        }
+        {
+          length: 180
+          baseLength: 180
+          startDelay: 2400
+          lifetime: 180
+          region: circle-shadow
+          particles: 25
+          sizeFrom: 50
+          sizeTo: 0
+        }
+        //final blast
+        {
+          type: WaveEffect
+          lifetime: 300
+          startDelay: 2490
+          interp: pow2Out
+          sizeFrom: 240
+          sizeTo: 2000
+          strokeFrom: 140
+          strokeTo: 0
+          colorFrom: ffffff44
+          colorTo: ffffff44
+        }
+        {
+          type: WaveEffect
+          lifetime: 300
+          startDelay: 2490
+          interp: pow2Out
+          sizeFrom: 240
+          sizeTo: 2000
+          strokeFrom: 105
+          strokeTo: 0
+          colorFrom: ffffff88
+          colorTo: ffffff88
+        }
+        {
+          type: WaveEffect
+          lifetime: 300
+          startDelay: 2490
+          interp: pow2Out
+          sizeFrom: 240
+          sizeTo: 2000
+          strokeFrom: 70
+          strokeTo: 0
+          colorFrom: ffffffbb
+          colorTo: ffffffbb
+        }
+        {
+          type: WaveEffect
+          lifetime: 300
+          startDelay: 2490
+          interp: pow2Out
+          sizeFrom: 240
+          sizeTo: 2000
+          strokeFrom: 35
+          strokeTo: 0
+          colorFrom: ffffff
+          colorTo: ffffff
+        }
+        {
+          length: 0
+          particles: 1
+          startDelay: 2490
+          lifetime: 150
+          region: circle-shadow
+          interp: pow2Out
+          particles: 1
+          sizeFrom: 8192
+          sizeTo: 0
+          layer: 130
+        }
+        {
+          length: 0
+          particles: 1
+          startDelay: 2490
+          lifetime: 1000
+          region: circle-shadow
+          particles: 1
+          sizeFrom: 2400
+          sizeTo: 0
+          layer: 130
+        }
+        {
+          line: true
+          length: 1500
+          particles: 48
+          lifetime: 360
+          interp: pow3Out
+          sizeInterp: pow2In
+          lenFrom: 87
+          lenTo: 87
+          strokeFrom: 30
+          strokeTo: 0
+          startDelay: 2490
+        }
+        {
+          line: true
+          length: 1800
+          particles: 48
+          lifetime: 300
+          interp: pow3Out
+          sizeInterp: pow2In
+          lenFrom: 67
+          lenTo: 67
+          strokeFrom: 20
+          strokeTo: 0
+          startDelay: 2490
+        }
+        {
+          type: WaveEffect
+          lifetime: 300
+          startDelay: 2670
+          interp: pow2Out
+          sizeFrom: 0
+          sizeTo: 2000
+          strokeFrom: 24
+          strokeTo: 0
+          colorFrom: ffffff
+          colorTo: ffffff
+        }
+        {
+          type: WaveEffect
+          lifetime: 300
+          startDelay: 2850
+          interp: pow2Out
+          sizeFrom: 0
+          sizeTo: 1800
+          strokeFrom: 20
+          strokeTo: 0
+          colorFrom: ffffff
+          colorTo: ffffff
+        }
+        {
+          type: WaveEffect
+          lifetime: 300
+          startDelay: 3030
+          interp: pow2Out
+          sizeFrom: 240
+          sizeTo: 1600
+          strokeFrom: 16
+          strokeTo: 0
+          colorFrom: ffffff
+          colorTo: ffffff
+        }
+      ]
+      fragBullets: 120
+      fragLifeMin: 0.1
+      fragBullet: {
+        type: BulletType
+        speed: 0
+        lifetime: 640
+        collides: false
+        absorbable: false
+        hittable: false
+        despawnEffect: {
+          line: true
+          length: -64
+          baseLength: 64
+          lifetime: 90
+          particles: 1
+          interp: pow2In
+          sizeInterp: pow2Out
+          lenFrom: 8
+          lenTo: 8
+          strokeFrom: 0
+          strokeTo: 2
+        }
+      }
+    }
+    {
+      lifetime: 600
+      speed: 0
+      fragBullets: 300
+      fragLifeMin: 0
+      fragBullet: {
+        type: BulletType
+        speed: 0
+        lifetime: 1800
+        collides: false
+        absorbable: false
+        hittable: false
+        despawnEffect: {
+          length: 120
+          lifetime: 180
+          region: circle-shadow
+          particles: 4
+          sizeFrom: 24
+          sizeTo: 0
+        }
+      }
+    }
+    {
+      lifetime: 600
+      speed: 0
+      fragBullets: 300
+      fragLifeMin: 0
+      fragVelocityMin: 0.2
+      fragBullet: {
+        type: BulletType
+        speed: 0.8
+        lifetime: 1800
+        collides: false
+        absorbable: false
+        hittable: false
+        despawnEffect: {
+          length: 120
+          cone: 0
+          lifetime: 180
+          region: exotic-mod-diamond-thin
+          spin: 1
+          particles: 1
+          sizeInterp: pow2Out
+          sizeFrom: 24
+          sizeTo: 0
+          colorFrom: ffffff00
+        }
+      }
+    }
+    //first wave
+    {
+      type: BulletType
+      lifetime: 478
+      speed: 0
+      fragBullets: 8
+      fragLifeMin: 0
+      fragBullet: {
+        type: BulletType
+        speed: 0
+        lifetime: 0
+        collides: false
+        absorbable: false
+        hittable: false
+        despawnEffect: [
+          {
+            length: -80
+            baseLength: 240
+            cone: 0
+            offset: 90
+            randLength: false
+            lifetime: 31
+            region: exotic-mod-diamond-thin
+            particles: 1
+            interp: pow3Out
+            sizeInterp: pow5In
+            sizeFrom: 36
+            sizeTo: 36
+          }
+          {
+            length: -20
+            baseLength: 160
+            startDelay: 30
+            cone: 0
+            offset: 90
+            randLength: false
+            lifetime: 30
+            region: exotic-mod-diamond-thin
+            particles: 1
+            interp: pow3In
+            sizeInterp: pow5In
+            sizeFrom: 36
+            sizeTo: 0
+          }
+        ]
+      }
+    }
+    //second wave
+    {
+      type: BulletType
+      lifetime: 598
+      speed: 0
+      fragBullets: 8
+      fragLifeMin: 0
+      fragBullet: {
+        type: BulletType
+        speed: 0
+        lifetime: 0
+        collides: false
+        absorbable: false
+        hittable: false
+        despawnEffect: [
+          {
+            length: -80
+            baseLength: 280
+            cone: 0
+            offset: 90
+            randLength: false
+            lifetime: 31
+            region: exotic-mod-diamond-thin
+            particles: 1
+            interp: pow3Out
+            sizeInterp: pow5In
+            sizeFrom: 40
+            sizeTo: 40
+            colorTo: ffffffbb
+          }
+          {
+            length: -40
+            baseLength: 200
+            startDelay: 30
+            cone: 0
+            offset: 90
+            randLength: false
+            lifetime: 30
+            region: exotic-mod-diamond-thin
+            particles: 1
+            interp: pow3In
+            sizeInterp: pow5In
+            sizeFrom: 40
+            sizeTo: 0
+            colorFrom: ffffffbb
+            colorTo: ffffffbb
+          }
+        ]
+      }
+    }
+    //third wave
+    {
+      type: BulletType
+      lifetime: 718
+      speed: 0
+      fragBullets: 8
+      fragLifeMin: 0
+      fragBullet: {
+        type: BulletType
+        speed: 0
+        lifetime: 0
+        collides: false
+        absorbable: false
+        hittable: false
+        despawnEffect: [
+          {
+            length: -80
+            baseLength: 360
+            cone: 0
+            offset: 90
+            randLength: false
+            lifetime: 31
+            region: exotic-mod-diamond-thin
+            particles: 1
+            interp: pow3Out
+            sizeInterp: pow5In
+            sizeFrom: 48
+            sizeTo: 48
+            colorTo: ffffff88
+          }
+          {
+            length: -60
+            baseLength: 280
+            startDelay: 30
+            cone: 0
+            offset: 90
+            randLength: false
+            lifetime: 30
+            region: exotic-mod-diamond-thin
+            particles: 1
+            interp: pow3In
+            sizeInterp: pow5In
+            sizeFrom: 48
+            sizeTo: 0
+            colorFrom: ffffff88
+            colorTo: ffffff88
+          }
+        ]
+      }
+    }
+    //final wave
+    {
+      type: BulletType
+      lifetime: 838
+      speed: 0
+      fragBullets: 8
+      fragLifeMin: 0
+      fragBullet: {
+        type: BulletType
+        speed: 0
+        lifetime: 0
+        collides: false
+        absorbable: false
+        hittable: false
+        despawnEffect: [
+          {
+            length: -80
+            baseLength: 420
+            cone: 0
+            offset: 90
+            randLength: false
+            lifetime: 31
+            region: exotic-mod-diamond-thin
+            particles: 1
+            interp: pow3Out
+            sizeInterp: pow5In
+            sizeFrom: 56
+            sizeTo: 56
+            colorTo: ffffff44
+          }
+          {
+            length: -60
+            baseLength: 340
+            startDelay: 30
+            cone: 0
+            offset: 90
+            randLength: false
+            lifetime: 30
+            region: exotic-mod-diamond-thin
+            particles: 1
+            interp: pow3In
+            sizeInterp: pow5In
+            sizeFrom: 56
+            sizeTo: 0
+            colorFrom: ffffff44
+            colorTo: ffffff44
+          }
+        ]
+      }
+    }
+    //explosion buildup
+    {
+      type: BulletType
+      lifetime: 1998
+      speed: 0
+      fragBullets: 9
+      fragRandomSpread: 0
+      fragSpread: 40
+      fragLifeMin: 0
+      fragBullet: {
+        type: BulletType
+        speed: 0
+        lifetime: 0
+        collides: false
+        absorbable: false
+        hittable: false
+        despawnEffect: [
+          {
+            length: 170
+            baseLength: 0
+            cone: 0
+            randLength: false
+            lifetime: 200
+            region: exotic-mod-diamond-vthin
+            particles: 1
+            interp: pow3Out
+            sizeFrom: 20
+            sizeTo: 170
+            colorFrom: ffffff00
+          }
+          {
+            length: 170
+            baseLength: 170
+            startDelay: 199
+            cone: 0
+            randLength: false
+            lifetime: 30
+            interp: pow2In
+            region: exotic-mod-diamond-vthin
+            particles: 1
+            sizeFrom: 170
+            sizeTo: 0
+            colorFrom: ffffff
+            colorTo: ffffffbb
+          }
+        ]
+      }
+    }
+    //detonation vapour 
+    {
+      type: BulletType
+      lifetime: 2490
+      speed: 0
+      fragBullets: 120
+      fragLifeMin: 0
+      fragBullet: {
+        type: BulletType
+        speed: 0
+        lifetime: 360
+        collides: false
+        absorbable: false
+        hittable: false
+        despawnEffect: [
+          {
+            length: 1400
+            lifetime: 800
+            region: circle-shadow
+            particles: 1
+            sizeFrom: 180
+            sizeTo: 0
+            interp: pow5Out
+            sizeInterp: pow2In
+          }
+          {
+            length: 1600
+            lifetime: 760
+            region: circle-shadow
+            particles: 1
+            sizeFrom: 120
+            sizeTo: 0
+            interp: pow5Out
+            sizeInterp: pow2In
+          }
+          {
+            length: 1800
+            lifetime: 720
+            region: circle-shadow
+            particles: 1
+            sizeFrom: 60
+            sizeTo: 0
+            interp: pow5Out
+            sizeInterp: pow2In
+          }
+        ]
+      }
+    }
+    //pistons
+    //screen shake (apply this sequence last)
+    //functional behaviour
+  ]
+}
+description: Redo in progress.

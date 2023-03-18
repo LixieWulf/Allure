@@ -1,0 +1,20 @@
+type: PayloadLoader
+rotate: false
+hasItems: false
+hasLiquids: false
+size: 2
+maxPayloadSize: 0
+hasPower: true
+conductivePower: true
+consumesPower: true
+outputsPower: true
+consumes: {
+  powerBuffered: 250
+}
+category: power
+requirements: [
+  dantrales/150
+  territe-alloy/200
+  crystal/100
+  inseltiene/25
+]

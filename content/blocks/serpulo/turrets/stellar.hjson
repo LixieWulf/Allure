@@ -1,0 +1,121 @@
+type: ItemTurret
+targetGround: false
+size: 3
+range: 225
+health: 1250
+rotateSpeed: 3
+recoil: 3
+shoot: {
+  type: ShootBarrel
+  shots: 2
+  barrels: 2
+  barrels: [
+    6, 0, 0,
+    -6, 0, 0
+  ]
+}
+spread: 8
+reload: 20
+inaccuracy: 8
+velocityRnd: 0.3
+shootSound: shootBig
+ammoPerShot: 2
+ammoTypes: {
+  plastanium: {
+    collidesGround: false
+    damage: 20
+    splashDamage: 25
+    splashDamageRadius: 25
+    ammoMultiplier: 5
+    speed: 5
+    lifetime: 45
+    sprite: missile-large
+    width: 11
+    height: 17
+    frontColor: fffac6
+    backColor: d8d97f
+    trailColor: d8d97f
+    trailChance: 0.15
+    fragBullets: 55
+    fragLifeMin: 0
+    fragBullet: {
+      collidesGround: false
+      damage: 7
+      speed: 3
+      lifetime: 15
+      width: 6
+      height: 12
+      shrinkY: 1
+      frontColor: fffac6
+      backColor: d8d97f
+      despawnEffect: none
+    }
+    hitEffect: plasticExplosion
+  }
+  blast-compound: {
+    type: FlakBulletType
+    damage: 55
+    collides: false
+    collidesGround: false
+    splashDamage: 45
+    splashDamageRadius: 30
+    explodeRange: 10
+    explodeDelay: 10
+    ammoMultiplier: 4
+    speed: 2
+    lifetime: 112
+    sprite: shell
+    width: 13
+    height: 17
+    frontColor: ffd2ae
+    backColor: e58956
+    trailColor: e58956
+    trailChance: 0.15
+    hitEffect: massiveExplosion
+    status: blasted
+  }
+  //i genuinely have no idea how to balance this, so its surge tier 
+  surge-alloy: {
+    collidesGround: false
+    damage: 31
+    pierce: true
+    pierceCap: 6
+    absorbable: false
+    ammoMultiplier: 2
+    reloadMultiplier: 1.2
+    speed: 3
+    lifetime: 75
+    homingPower: 0.02
+    homingRange: 60
+    sprite: large-bomb
+    width: 12
+    height: 12
+    trailLength: 7
+    trailWidth: 3
+    shrinkY: 0
+    bulletInterval: 3
+    intervalBullet: {
+      type: BulletType
+      collidesGround: false
+      damage: 17
+      lifetime: 1
+      despawnEffect: none
+      //lose your sanity
+      status: shocked
+    } 
+  }
+}
+consumes: {
+  coolant: {
+    amount: 0.6
+  }
+}
+coolantMultiplier: 1.7
+category: turret
+research: scatter
+requirements: [
+  copper/120
+  lead/300
+  silicon/50
+  plastanium/100
+]

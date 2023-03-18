@@ -1,0 +1,10 @@
+type: DuctBridge
+squareSprite: false
+range: 2
+requirements: [
+  dantrales/6
+  territe-alloy/12
+]
+category: distribution
+speed: 8.5714
+research: 0b02-00-tube

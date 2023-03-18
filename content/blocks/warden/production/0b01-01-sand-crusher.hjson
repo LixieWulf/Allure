@@ -1,0 +1,205 @@
+type: AttributeCrafter
+customShadow: true
+squareSprite: false
+craftTime: 600
+itemCapacity: 120
+size: 8
+attribute: sand
+baseEfficiency: 0
+maxBoost: 19
+boostScale: 0.2
+warmupSpeed: 0.005
+minEfficiency: 0.01
+liquidCapacity: 120
+//i feel pain.
+drawer: [
+  {
+    type: DrawPistons
+    sides: 1
+    sinScl: 3
+    lenOffset: -21
+    angleOffset: 90
+    suffix: -piston1
+    sinOffset: 6
+  }
+  {
+    type: DrawPistons
+    sides: 1
+    sinScl: 3
+    lenOffset: -21
+    angleOffset: 90
+    suffix: -piston2
+    sinOffset: 12
+  }
+  {
+    type: DrawPistons
+    sides: 1
+    sinScl: 3
+    lenOffset: -21
+    angleOffset: 90
+    suffix: -piston3
+    sinOffset: 18
+  }
+  {
+    type: DrawPistons
+    sides: 1
+    sinScl: 3
+    lenOffset: -21
+    angleOffset: 90
+    suffix: -piston4
+    sinOffset: 24
+  }
+  {
+    type: DrawRegion
+    suffix: -drill
+    rotateSpeed: -6
+    spinSprite: true
+    x: 8
+    y: 16
+  }
+  {
+    type: DrawRegion
+    suffix: -gear-small
+    rotateSpeed: -6
+    spinSprite: true
+    x: -12.5
+    y: 20.5
+  }
+  {
+    type: DrawRegion
+    suffix: -gear-small
+    rotateSpeed: 6
+    spinSprite: true
+    x: -4
+    y: 14
+  }
+  {
+    type: DrawRegion
+    suffix: -gear-small
+    rotateSpeed: -6
+    spinSprite: true
+    x: -2
+    y: 3.5
+  }
+  {
+    type: DrawRegion
+    suffix: -gear-small
+    rotateSpeed: -6
+    spinSprite: true
+    x: 8
+    y: 16
+  }
+  {
+    type: DrawRegion
+    suffix: -gear-teeth
+    rotateSpeed: 3
+    spinSprite: true
+    x: -16
+    y: -4
+  }
+  {
+    type: DrawRegion
+    suffix: -gear-teeth
+    rotateSpeed: 3
+    spinSprite: true
+    x: -16
+    y: -4
+    rotation: 60
+  }
+  {
+    type: DrawRegion
+    suffix: -gear-teeth
+    rotateSpeed: 3
+    spinSprite: true
+    x: -16
+    y: -4
+    rotation: 30
+  }
+  {
+    type: DrawRegion
+    suffix: -gear-large
+    rotateSpeed: 3
+    spinSprite: true
+    x: -16
+    y: -4
+  }
+  {
+    type: DrawGlowRegion
+    color: ffb380
+    glowScale: 3
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -heat
+    alpha: 0.7
+    color: ffb380
+    glowScale: 14
+  }
+  {
+  }
+]
+craftEffect: [
+  {
+    type: RadialEffect
+    amount: 1
+    lengthOffset: 8
+    effect: {
+      type: RadialEffect
+      amount: 1
+      rotationOffset: 90
+      lengthOffset: 16
+      effect: {
+        interp: pow3Out
+        sizeInterp: linear
+        region: exotic-mod-wide-case-back
+        offset: 45
+        lifetime: 55
+        length: 12
+        particles: 16
+        sizeFrom: 2
+        sizeTo: 0
+        colorFrom: f7cba4
+        colorTo: 787878
+      }
+    }
+  }
+  {
+    type: RadialEffect
+    amount: 1
+    lengthOffset: -12.5
+    effect: {
+      type: RadialEffect
+      amount: 1
+      rotationOffset: 90
+      lengthOffset: 20.5
+      effect: {
+        interp: pow3Out
+        sizeInterp: linear
+        region: exotic-mod-wide-case-back
+        offset: 45
+        lifetime: 45
+        length: 8
+        particles: 16
+        sizeFrom: 1
+        sizeTo: 0
+        colorFrom: f7cba4
+        colorTo: 787878
+      }
+    }
+  }
+]
+consumes: {
+  liquids: [
+    water/0.4
+    energia/0.1
+  ]
+}
+outputItems: [
+  silicon/1
+  metaglass/2
+]
+category: production
+requirements: [
+  dantrales/200
+  territe-alloy/1200
+]

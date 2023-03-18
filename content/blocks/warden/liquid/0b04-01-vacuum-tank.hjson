@@ -1,0 +1,18 @@
+type: LiquidRouter
+squareSprite: false
+size: 3
+liquidCapacity: 1200
+liquidPadding: 2
+category: liquid
+research: {
+  parent: 0b04-00-vacuum-conduit
+  objectives: [
+    liquid-container,
+    liquid-tank
+  ]
+}
+requirements: [
+  metaglass/60
+  dantrales/75
+  territe-alloy/500
+]

@@ -1,0 +1,74 @@
+type: AttributeCrafter
+size: 2
+floating: true
+hasLiquids: true 
+squareSprite: false 
+liquidOutputDirections: [0]
+liquidCapacity: 600
+baseEfficiency: 0
+boostScale: 0.5
+maxBoost: 6
+drawer: [
+  {
+    type: DrawDefault
+  }
+  {
+    type: DrawLiquidOutputs
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -transfer
+    layer: 30
+    color: feb380
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: water
+    padding: 2
+  }
+  {
+    type: DrawBubbles
+    color: 7693e3
+    timeScl: 35
+    sides: 12
+    recurrence: 6
+    spread: 6
+    radius: 1.5
+    amount: 45
+    strokeMin: 0
+  }
+  {
+    type: DrawLiquidTile 
+    drawLiquid: steam 
+    padding: 2
+  }
+  {
+    type: DrawRegion
+    suffix: -top
+  }
+]
+consumes: {
+  liquid: {
+    liquid: water 
+    amount: 0.625
+  }
+}
+ambientSoundVolume: 0
+outputLiquid: steam/0.625
+category: power
+requirements: [
+  dantrales/75
+  territe-alloy/300
+]
+breakEffect: {
+  type: WaveEffect
+  rotation: 43
+  lifetime: 20
+  sides: 4
+  sizeFrom: 8
+  sizeTo: 16
+  strokeFrom: 6
+  strokeTo: 0
+  colorFrom: 7382f0
+  colorTo: 7382f0
+}

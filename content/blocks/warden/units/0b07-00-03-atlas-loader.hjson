@@ -1,0 +1,17 @@
+type: PayloadLoader
+hasPower: true
+squareSprite: false
+consumes: {
+  power: 3
+}
+size: 4
+payloadSpeed: 2
+maxBlockSize: 2
+liquidCapacity: 700
+itemCapacity: 150
+category: units
+requirements: [
+  dantrales/300
+  territe-alloy/1200
+  baenite/300
+]

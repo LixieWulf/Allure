@@ -1,0 +1,8 @@
+type: StorageBlock
+size: 2
+placeablePlayer: false
+itemCapacity: 150
+requirements: [
+  dantrales/80
+  territe-alloy/300
+]

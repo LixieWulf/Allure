@@ -1,0 +1,59 @@
+type: GenericCrafter
+size: 3
+craftTime: 210
+liquidCapacity: 60
+squareSprite: false
+drawer: [
+  {
+    type: DrawDefault
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: liquid-baenara
+    padding: 2
+  }
+  {
+    type: DrawRegion 
+    suffix: -top
+  }
+  {
+    type: DrawGlowRegion
+    color: 70d4af
+    alpha: 0.6
+  }
+]
+consumes: {
+  power: 0.75
+  liquid: {
+    liquid: liquid-baenara
+    amount: 0.4
+  }
+  items: [
+    uranium/5
+  ]
+}
+outputLiquid: arreacta/0.5
+ambientSoundVolume: 0.015 //mfs loud as fuc
+category: crafting
+requirements: [
+  dantrales/120
+  territe-alloy/200
+  metaglass/100
+]
+craftEffect: {
+  type: RadialEffect
+  rotationOffset: 45
+  lengthOffset: 8
+  effect: {
+    length: 12
+    lifetime: 120
+    interp: pow3Out
+    sizeInterp: pow2In
+    cone: 35
+    particles: 12
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: ab68b3bb
+    colorTo: ab68b3bb
+  }
+}

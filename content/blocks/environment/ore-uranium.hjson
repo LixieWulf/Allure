@@ -1,0 +1,4 @@
+type: OreBlock
+variants: 3
+itemDrop: uranium
+needsSurface: false

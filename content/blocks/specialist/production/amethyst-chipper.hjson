@@ -1,0 +1,6 @@
+type: WallCrafter
+size: 7
+drillTime: 380
+output: amethyst-gem
+buildVisibility: shown
+attribute: granite

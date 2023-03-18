@@ -1,0 +1,17 @@
+type: Battery
+size: 4
+consumes: {
+  powerBuffered: 1000
+}
+research: {
+  parent: 0b05-12-plasma-booster
+  objectives: [
+    0b-shock-weaponry
+    battery-large
+  ]
+}
+requirements: [
+  dantrales/50
+  territe-alloy/1600
+  baenite/100
+]

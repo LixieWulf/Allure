@@ -1,5 +1,0 @@
-type: WallCrafter
-size: 3
-drillTime: 60
-output: granite
-buildVisibility: hidden

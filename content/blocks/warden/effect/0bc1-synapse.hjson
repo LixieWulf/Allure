@@ -1,0 +1,27 @@
+Type: CoreBlock
+squareSprite: false
+health: 124000
+armor: 350
+itemCapacity: 9600
+size: 8
+hasPower: true
+category: effect
+unitType: 0bc0-pioneer
+unitCapModifier: 36
+thrusterLength: 15
+hasPower: true
+conductivePower: true
+consumesPower: true
+outputsPower: true
+consumes: {
+  powerBuffered: 6000
+}
+requirements: [
+  infrastructure/1200
+  dantrales/2400
+  territe-alloy/1000
+  baenite/400
+  crystal/2400
+]
+research: 0b-begin
+coreMerge: false

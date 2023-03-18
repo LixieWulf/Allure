@@ -77,7 +77,7 @@ weapons: [
       damage: 0
       speed: 60
       lifetime: 5
-      scaleVelocity: true
+      scaleLife: true
       collides: false
       hittable: false
       absorbable: false

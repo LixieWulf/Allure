@@ -1,0 +1,321 @@
+type: legs
+health: 4500
+armor: 4
+hitSize: 12
+speed: 1.4
+accel: 0.1
+drag: 0.04
+rotateSpeed: 3
+hovering: true
+legCount: 0
+groundLayer: 80
+faceTarget: false
+outlines: false
+parts: [
+  {
+    suffix: -glow
+    blending: additive
+    color: 5ebcbf
+  }
+  {
+    type: HoverPart
+    mirror: true
+    x: 9.5
+    y: 9.5
+    radius: 8
+    stroke: 2.5
+    strokeMin: 0
+    layerOffset: -0.0001
+    color: 5ebcbf
+  }
+  {
+    type: HoverPart
+    mirror: true
+    x: 9
+    y: -0.5
+    radius: 7
+    stroke: 2.5
+    strokeMin: 0
+    layerOffset: -0.0001
+    color: 5ebcbf
+  }
+  {
+    type: HoverPart
+    mirror: true
+    x: 5
+    y: 12
+    radius: 5
+    stroke: 1.5
+    strokeMin: 0
+    layerOffset: -0.0001
+    color: 5ebcbf
+  }
+  {
+    type: HoverPart
+    mirror: true
+    x: 8
+    y: -11
+    radius: 6
+    stroke: 1.5
+    strokeMin: 0
+    layerOffset: -0.0001
+    color: 5ebcbf
+  }
+  {
+    type: ShapePart
+    hollow: true
+    circle: true
+    radius: 24
+    radiusTo: 18
+    stroke: 0
+    strokeTo: 1
+    progress: charge
+    weaponIndex: 0
+    color: 5ebcbf
+    layer: 110
+  }
+  {
+    type: ShapePart
+    hollow: true
+    circle: true
+    radius: 18
+    stroke: 0
+    strokeTo: 2
+    progress: charge
+    weaponIndex: 0
+    color: 5ebcbf
+    layer: 110
+  }
+  {
+    type: HaloPart
+    haloRotateSpeed: -8
+    haloRadius: 18
+    tri: true
+    shapes: 6
+    triLength: 6
+    triLengthTo: 0
+    radius: 0
+    radiusTo: 4
+    color: 5ebcbf
+    layer: 110
+    progress: charge
+    weaponIndex: 0
+  }
+  {
+    type: ShapePart
+    hollow: true
+    circle: true
+    radius: 35
+    stroke: 0
+    strokeTo: 5
+    progress: charge
+    weaponIndex: 1
+    color: 5ebcbf
+    layer: 110
+  }
+  {
+    type: ShapePart
+    hollow: true
+    circle: true
+    radius: 50
+    radiusTo: 35
+    stroke: 0
+    strokeTo: 3
+    progress: charge
+    weaponIndex: 1
+    color: 5ebcbf
+    layer: 110
+  }
+  {
+    type: HaloPart
+    haloRotateSpeed: 12
+    haloRadius: 50
+    haloRadiusTo: 35
+    tri: true
+    shapes: 6
+    triLength: 15
+    triLengthTo: 0
+    radius: 0
+    radiusTo: 6
+    color: 5ebcbf
+    layer: 110
+    progress: charge
+    weaponIndex: 1
+  }
+  {
+    type: HaloPart
+    haloRotateSpeed: 12
+    haloRadius: 50
+    haloRadiusTo: 35
+    shapeRotation: 180
+    tri: true
+    shapes: 6
+    triLength: 15
+    triLengthTo: 0
+    radius: 0
+    radiusTo: 6
+    color: 5ebcbf
+    layer: 110
+    progress: charge
+    weaponIndex: 1
+  }
+  {
+    type: HaloPart
+    haloRotateSpeed: -12
+    haloRadius: 35
+    shapeRotation: 180
+    tri: true
+    shapes: 6
+    triLength: 15
+    triLengthTo: 0
+    radius: 0
+    radiusTo: 6
+    color: 5ebcbf
+    layer: 110
+    progress: charge
+    weaponIndex: 1
+  }
+  {
+    type: HaloPart
+    haloRotateSpeed: -12
+    haloRadius: 35
+    tri: true
+    shapes: 6
+    triLength: 15
+    triLengthTo: 0
+    radius: 0
+    radiusTo: 6
+    color: 5ebcbf
+    layer: 110
+    progress: charge
+    weaponIndex: 1
+  }
+]
+weapons: [
+  {
+    x: 0
+    shootY: 0
+    mirror: false
+    rotate: true
+    controllable: false
+    autoTarget: true
+    targetInterval: 15
+    targetSwitchInterval: 15
+    reload: 35
+    shoot: {
+      shots: 4
+      firstShotDelay: 30
+    }
+    shootCone: 360
+    inaccuracy: 40
+    shootSound: shockBlast
+    shake: 8
+    bullet: {
+      type: RailBulletType
+      damage: 38
+      pierceDamageFactor: 0
+      length: 80
+      pierceEffect: none
+      pointEffect: none
+      shootEffect: none
+      smokeEffect: none
+      lineEffect: {
+        cone: 0
+        particles: 1
+        lifetime: 45
+        length: 0
+        baseLength: 40
+        randLength: false
+        region: exotic-mod-diamond-vthin
+        sizeFrom: 40
+        sizeTo: 40
+        colorFrom: 5ebcbf
+        colorTo: 5ebcbf00
+      }
+    }
+  }
+  {
+    x: 0
+    shootY: 0
+    mirror: false
+    rotate: true
+    controllable: false
+    autoTarget: true
+    targetInterval: 15
+    targetSwitchInterval: 15
+    reload: 110
+    shoot: {
+      shots: 8
+      firstShotDelay: 60
+    }
+    shootCone: 360
+    inaccuracy: 40
+    shootSound: shockBlast
+    shake: 14
+    bullet: {
+      type: RailBulletType
+      pierceCap: 1
+      damage: 230
+      length: 210
+      pointEffectSpace: 4
+      pointEffect: {
+        line: true
+        particles: 1
+        cone: 0
+        length: 16
+        baseLength: 8
+        cap: false
+        lifetime: 30
+        strokeFrom: 4
+        strokeTo: 0.5
+        lenFrom: 16
+        lenTo: 0
+        colorTo: 5ebcbf
+      }
+    }
+  }
+]
+abilities: [
+  {
+    type: EnergyFieldAbility
+    maxTargets: 1
+    damage: 0.0001
+    healEffect: none
+    hitEffect: none
+    damageEffect: none
+    status: none
+    shootSound: none
+    range: 210
+    color: 5ebcbf
+    sectors: 3
+    sectorRad: 0.2
+    rotateSpeed: 6
+    layer: 110
+    effectRadius: 0
+    blinkScl: 15
+    blinkSize: 0.2
+    healPercent: 0
+  }
+  {
+    type: EnergyFieldAbility
+    maxTargets: 1
+    damage: 0.0001
+    healEffect: none
+    hitEffect: none
+    damageEffect: none
+    status: none
+    shootSound: none
+    range: 80
+    color: 5ebcbf
+    sectors: 3
+    sectorRad: 0.2
+    rotateSpeed: -4
+    layer: 110
+    effectRadius: 0
+    blinkScl: 15
+    blinkSize: 0.2
+    healPercent: 0
+  }
+]
+envEnabled: -1
+envDisabled: 0

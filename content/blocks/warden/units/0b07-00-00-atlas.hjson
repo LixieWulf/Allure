@@ -1,0 +1,12 @@
+type: PayloadConveyor
+size: 2
+moveTime: 30
+moveForce: 120
+payloadLimit: 2
+interp: pow3
+category: units
+requirements: [
+  dantrales/40
+  territe-alloy/80
+  baenite/20
+]

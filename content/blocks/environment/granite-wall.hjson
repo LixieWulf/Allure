@@ -1,4 +1,4 @@
 type: StaticWall
 attributes: {
-  sand: 1
+  granite: 1
 }

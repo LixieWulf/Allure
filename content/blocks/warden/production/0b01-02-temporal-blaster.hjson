@@ -1,0 +1,221 @@
+type: BurstDrill
+size: 6
+squareSprite: false
+drillTime: 480
+liquidCapacity: 3800
+itemCapacity: 100
+tier: 9
+shake: 12
+floating: true
+drillEffect: [
+  //so simple, right?
+  {
+    type: WaveEffect
+    lifetime: 60
+    interp: pow3Out
+    sizeFrom: 0
+    sizeTo: 30
+    strokeFrom: 4
+    strokeTo: 0
+    colorFrom: 90a2fc
+    colorTo: 7382f0
+  }
+  {
+    length: 0
+    particles: 1
+    lifetime: 30
+    useRotation: false
+    region: exotic-mod-diamond-wide
+    sizeFrom: 60
+    sizeTo: 0
+    colorFrom: 90a2fc
+    colorTo: 7382f0
+  }
+  {
+    length: 0
+    particles: 1
+    lifetime: 30
+    offset: 90
+    useRotation: false
+    region: exotic-mod-diamond-wide
+    sizeFrom: 60
+    sizeTo: 0
+    colorFrom: 90a2fc
+    colorTo: 7382f0
+  }
+  //now suffer like i do
+  {
+    type: RadialEffect
+    startDelay: 5
+    lengthOffset: 8.5
+    rotationOffset: 45
+    effect: {
+      type: WaveEffect
+      lifetime: 60
+      interp: pow3Out
+      sizeFrom: 0
+      sizeTo: 8
+      strokeFrom: 4
+      strokeTo: 0
+      colorFrom: 90a2fc
+      colorTo: 7382f0
+    }
+  }
+  {
+    type: RadialEffect
+    startDelay: 5
+    lengthOffset: 8.5
+    rotationOffset: 45
+    effect: {
+      length: 0
+      particles: 1
+      lifetime: 30
+      useRotation: false
+      region: exotic-mod-diamond-wide
+      sizeFrom: 16
+      sizeTo: 0
+      colorFrom: 90a2fc
+      colorTo: 7382f0
+    }
+  }
+  {
+    type: RadialEffect
+    startDelay: 5
+    lengthOffset: 8.5
+    rotationOffset: 45
+    effect: {
+      length: 0
+      particles: 1
+      lifetime: 30
+      offset: 90
+      useRotation: false
+      region: exotic-mod-diamond-wide
+      sizeFrom: 16
+      sizeTo: 0
+      colorFrom: 90a2fc
+      colorTo: 7382f0
+    }
+  }
+  {
+    type: RadialEffect
+    startDelay: 10
+    lengthOffset: 20
+    rotationOffset: 45
+    effect: {
+      type: WaveEffect
+      lifetime: 60
+      interp: pow3Out
+      sizeFrom: 0
+      sizeTo: 6
+      strokeFrom: 3
+      strokeTo: 0
+      colorFrom: 90a2fc
+      colorTo: 7382f0
+    }
+  }
+  {
+    type: RadialEffect
+    startDelay: 10
+    lengthOffset: 20
+    rotationOffset: 45
+    effect: {
+      length: 0
+      particles: 1
+      lifetime: 30
+      useRotation: false
+      region: exotic-mod-diamond-wide
+      sizeFrom: 12
+      sizeTo: 0
+      colorFrom: 90a2fc
+      colorTo: 7382f0
+    }
+  }
+  {
+    type: RadialEffect
+    startDelay: 10
+    lengthOffset: 20
+    rotationOffset: 45
+    effect: {
+      length: 0
+      particles: 1
+      lifetime: 30
+      offset: 90
+      useRotation: false
+      region: exotic-mod-diamond-wide
+      sizeFrom: 12
+      sizeTo: 0
+      colorFrom: 90a2fc
+      colorTo: 7382f0
+    }
+  }
+  {
+    type: RadialEffect
+    startDelay: 15
+    lengthOffset: 28.25
+    rotationOffset: 45
+    effect: {
+      type: WaveEffect
+      lifetime: 60
+      interp: pow3Out
+      sizeFrom: 0
+      sizeTo: 4
+      strokeFrom: 2
+      strokeTo: 0
+      colorFrom: 90a2fc
+      colorTo: 7382f0
+    }
+  }
+  {
+    type: RadialEffect
+    startDelay: 15
+    lengthOffset: 28.25
+    rotationOffset: 45
+    effect: {
+      length: 0
+      particles: 1
+      lifetime: 30
+      useRotation: false
+      region: exotic-mod-diamond-wide
+      sizeFrom: 8
+      sizeTo: 0
+      colorFrom: 90a2fc
+      colorTo: 7382f0
+    }
+  }
+  {
+    type: RadialEffect
+    startDelay: 15
+    lengthOffset: 28.25
+    rotationOffset: 45
+    effect: {
+      length: 0
+      particles: 1
+      lifetime: 30
+      offset: 90
+      useRotation: false
+      region: exotic-mod-diamond-wide
+      sizeFrom: 8
+      sizeTo: 0
+      colorFrom: 90a2fc
+      colorTo: 7382f0
+    }
+  }
+]
+blockedItem: sand
+drillMultipliers: {
+  
+}
+consumes: {
+  power: 6.5
+  liquid: {
+    liquid: liquid-baenara
+    amount: 4.8
+  }
+}
+category: production
+requirements: [
+  silicon/550
+  dantrales/250
+  territe-alloy/2400
+  baenite/600
+]

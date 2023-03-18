@@ -1,0 +1,71 @@
+type: GenericCrafter
+squareSprite: false
+size: 6
+craftTime: 140
+hasLiquids: true
+liquidCapacity: 120
+itemCapacity: 25
+ignoreLiquidFullness: true
+drawer: [
+  {
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: liquid-baenara
+    padding: 3
+  }
+  {
+    type: DrawBubbles
+    amount: 150
+    sizes: 6
+    spread: 20
+    strokeMin: 0
+    color: 70d4af
+  }
+  {
+    type: DrawRegion
+    suffix: -top
+  }
+  {
+    type: DrawRegion
+    suffix: -reservior
+  }
+  {
+    type: DrawLiquidRegion
+    drawLiquid: water
+    padding: 8
+    alpha: 0.6
+  }
+  {
+    type: DrawParticles
+    color: 596ab888
+    alpha: 0.5
+    reverse: true
+  }
+  {
+    type: DrawRegion
+    suffix: -reservior-top
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -glow
+    color: feb380
+  }
+]
+consumes: {
+  power: 2
+  liquids: [
+    liquid-baenara/1.2
+    energia/0.2
+    hydrogen/0.17
+  ]
+}
+outputLiquid: water/1.2
+outputItem: baenite/7
+category: crafting
+requirements: [
+  silicon/200
+  metaglass/100
+  dantrales/300
+  territe-alloy/900
+]

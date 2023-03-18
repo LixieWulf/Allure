@@ -1,0 +1,23 @@
+type: BeamNode
+range: 7
+consumesPower: true
+laserWidth: 0.35
+pulseScl: 22
+pulseMag: 0.1
+consumes: {
+  power: 1.5
+}
+category: power
+research: {
+  parent: 0b-begin
+  objectives: [
+    0b-basic-infrastructure
+    beam-node
+    power-node
+  ]
+}
+requirements: [
+  dantrales/20
+  territe-alloy/80
+  metaglass/10
+]

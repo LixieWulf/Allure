@@ -1,0 +1,12 @@
+type: Conduit
+leaks: false
+requirements: [
+  metaglass/1
+  dantrales/4
+  territe-alloy/1
+]
+liquidCapacity: 2
+liquidPressure: 1
+botColor: 131316
+category: liquid
+research: 0b02-00-tube

@@ -1,0 +1,24 @@
+type: BeamNode
+size: 5
+range: 25
+consumesPower: true
+laserWidth: 0.7
+pulseScl: 22
+pulseMag: 0.2
+consumes: {
+  power: 1.2
+}
+category: power
+research: {
+  parent: 0b05-10-plasma-node
+  objectives: [
+    0b-electromagnetic-acceleration
+    surge-tower
+  ]
+}
+requirements: [
+  dantrales/180
+  territe-alloy/600
+  metaglass/150
+  scilaxa/100
+]

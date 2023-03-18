@@ -1,9 +1,0 @@
-type: Sorter
-requiresWater: true
-health: 80
-requirements: [
-  metaglass/6
-  ladera/4
-] 
-category: distribution
-research: sorter

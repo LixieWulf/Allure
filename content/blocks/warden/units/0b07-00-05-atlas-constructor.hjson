@@ -1,0 +1,19 @@
+type: Constructor
+hasPower: true
+squareSprite: false
+consumes: {
+  power: 7
+}
+buildSpeed: 4
+filter: [
+  0b07-00-06-atlas-silo,
+  0b07-00-07-atlas-cell,
+  baenite-wall-large
+]
+size: 2
+category: units
+requirements: [
+  dantrales/150
+  territe-alloy/1200
+  baenite/450
+]

@@ -1,0 +1,239 @@
+type: ItemTurret
+range: 640
+size: 12
+scaledHealth: 600
+squareSprite: false
+outlineIcon: false
+rotateSpeed: 1.25
+ammoPerShot: 1
+shootY: 40
+shoot: {
+  type: ShootAlternate
+  spread: 42
+}
+reload: 3
+recoil: 6
+recoilTime: 150
+heatColor: e65555
+cooldownTime: 140
+shootSound: flame
+maxAmmo: 56
+shootWarmupSpeed: 0.02
+minWarmup: 0.99
+linearWarmup: true
+shootEffect: [
+  {
+    length: 640
+    lifetime: 220
+    particles: 8
+    cone: 5
+    interp: pow5Out
+    sizeInterp: pow10In
+    region: circle-shadow
+    sizeFrom: 8
+    sizeTo: 0
+    colorFrom: e65555
+    colorTo: e3567c
+  }
+  {
+    length: 530
+    lifetime: 170
+    particles: 8
+    cone: 7
+    interp: pow3Out
+    sizeInterp: pow5In
+    region: circle-shadow
+    sizeFrom: 12
+    sizeTo: 0
+    colorFrom: e65555
+    colorTo: e3567c
+  }
+  {
+    length: 400
+    lifetime: 140
+    particles: 8
+    cone: 10
+    interp: pow3Out
+    sizeInterp: pow3In
+    region: circle-shadow
+    sizeFrom: 17
+    sizeTo: 0
+    colorFrom: e65555
+    colorTo: e3567c
+  }
+]
+smokeEffect: [
+  {
+    length: 440
+    lifetime: 250
+    particles: 6
+    cone: 15
+    interp: pow5Out
+    sizeInterp: pow5In
+    sizeFrom: 9
+    sizeTo: 0
+    colorFrom: 787878
+    colorTo: 787878
+    layer: 105
+  }
+  {
+    length: 600
+    lifetime: 250
+    particles: 3
+    cone: 15
+    interp: pow5Out
+    sizeInterp: pow5In
+    sizeFrom: 9
+    sizeTo: 0
+    colorFrom: 787878
+    colorTo: 787878
+    layer: 105
+  }
+  {
+    length: 640
+    lifetime: 200
+    particles: 6
+    cone: 15
+    interp: pow3Out
+    sizeInterp: pow5In
+    sizeFrom: 6
+    sizeTo: 0
+    colorFrom: 787878
+    colorTo: 787878
+    layer: 105
+  }
+  {
+    length: 720
+    lifetime: 200
+    particles: 3
+    cone: 15
+    interp: pow3Out
+    sizeInterp: pow5In
+    sizeFrom: 6
+    sizeTo: 0
+    colorFrom: 787878
+    colorTo: 787878
+    layer: 105
+  }
+  {
+    length: 800
+    lifetime: 200
+    particles: 6
+    cone: 20
+    interp: pow3Out
+    sizeInterp: pow5In
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: 787878
+    colorTo: 787878
+    layer: 105
+  }
+]
+ammoTypes: {
+  draconium: {
+    type: BulletType
+    lifetime: 0
+    speed: 0
+    damage: 0
+    ammoMultiplier: 1
+    collides: false
+    absorbable: false
+    hittable: false
+    reflectable: false
+    hitEffect: none
+    despawnEffect: none
+    fragBullets: 18
+    fragRandomSpread: 5
+    fragBullet: {
+      type: BulletType
+      damage: 120
+      speed: 8
+      lifetime: 80
+      makeFire: true
+      incendChance: 0.5
+      incendAmount: 4
+      status: burning
+      statusDuration: 440
+      despawnEffect: none
+      hitEffect: none
+      pierce: true
+      pierceBuilding: true
+      absorbable: false
+      reflectable: false
+      hittable: false
+    }
+  }
+}
+consumes: {
+  liquids: [
+    supercoolant/0.6
+    hydrogen/3
+    ozone/2
+    arreacta/4
+  ]
+}
+drawer: [
+  {
+    type: DrawRegion
+    suffix: -base
+  }
+  {
+    type: DrawPistons
+    sides: 1
+    sinScl: 3
+    sinMag: 8
+    lenOffset: 14
+    angleOffset: 0
+    suffix: -piston-0
+    sinOffset: 6
+  }
+  {
+    type: DrawPistons
+    sides: 1
+    sinScl: 3
+    sinMag: 8
+    lenOffset: 14
+    angleOffset: 0
+    suffix: -piston-1
+    sinOffset: 12
+  }
+  {
+    type: DrawPistons
+    sides: 1
+    sinScl: 3
+    sinMag: 8
+    lenOffset: 14
+    angleOffset: 0
+    suffix: -piston-2
+    sinOffset: 18
+  }
+  {
+    type: DrawPistons
+    sides: 1
+    sinScl: 3
+    sinMag: 8
+    lenOffset: 14
+    angleOffset: 0
+    suffix: -piston-3
+    sinOffset: 24
+  }
+  {
+    type: DrawRegion
+    suffix: -base-top
+  }
+  {
+    type: DrawTurret
+  }
+]
+liquidCapacity: 1500
+category: turret
+envEnabled: -1
+envDisabled: 4
+requirements: [
+  infrastructure/2500
+  anden/12500
+  thorium/2500
+  carbide/11000
+  scilaxa/1500
+  draconium/5000
+]

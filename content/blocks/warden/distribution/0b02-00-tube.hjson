@@ -1,0 +1,8 @@
+type: Duct
+requirements: [
+  dantrales/1
+  territe-alloy/5
+]
+category: distribution
+speed: 8.5714
+research: 0b-begin

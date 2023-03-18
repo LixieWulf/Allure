@@ -1,0 +1,25 @@
+type: PowerNode
+size: 3
+laserRange: 5
+maxNodes: 500
+configurable: false
+laserColor1: 00000000
+laserColor2: 00000000
+laserScale: 0
+consumesPower: true
+consumes: {
+  power: 2
+}
+category: power
+research: {
+  parent: 0b05-10-plasma-node
+  objectives: [
+    0b-wormhole-beacons
+    power-node-large
+  ]
+}
+requirements: [
+  dantrales/120
+  territe-alloy/1200
+  baenite/100
+]

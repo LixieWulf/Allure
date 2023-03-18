@@ -1,0 +1,81 @@
+type: PowerTurret
+size: 2
+range: 200
+health: 650
+reload: 150
+consumes: {
+  power: 5.5
+} 
+rotateSpeed: 3.4
+targetHealing: true
+shootSound: laser
+shake: 1.5
+shootType: {
+  type: EmpBulletType
+  scaleLife: true
+  damage: 20
+  splashDamage: 30
+  splashDamageRadius: 30
+  healPercent: 7
+  radius: 30
+  unitDamageScl: 0.8
+  timeIncrease: 1.25
+  timeDuration: 240
+  speed: 5
+  lifetime: 40
+  sprite: circle-bullet
+  width: 6
+  height: 6
+  shrinkY: 0
+  frontColor: ffffff
+  backColor: 83f793
+  lightColor: 83f793
+  hitColor: 83f793
+  hitEffect: {
+    type: MultiEffect
+    lifetime: 70
+    effects: [
+      {
+        type: ParticleEffect
+        lifetime: 5
+        particles: 1
+        length: 0
+        sizeFrom: 30
+        sizeTo: 30
+        colorFrom: 83f793
+        colorTo: 83f793
+      }
+      {
+        type: WaveEffect
+        lifetime: 70
+        sizeFrom: 30
+        sizeTo: 30
+        strokeFrom: 2
+        strokeTo: 0
+        colorFrom: 83f793
+        colorTo: 83f793
+      }
+      {
+        type: ParticleEffect
+        lifetime: 70
+        length: 0
+        particles: 1
+        sizeFrom: 4
+        sizeTo: 0
+        colorTo: 83f793
+      }
+    ]
+  }
+  trailWidth: 3
+  trailLength: 15
+  trailColor: 83f793
+  despawnEffect: none
+  despawnHit: true
+}
+category: turret
+research: 1g-dimension
+requirements: [
+  copper/90
+  graphite/80
+  silicon/60
+]

@@ -319,7 +319,7 @@ weapons: [
       collides: false
       absorbable: false
       hittable: false
-      scaleVelocity: true
+      scaleLife: true
       lifetime: 20
       speed: 30
       shootEffect: none

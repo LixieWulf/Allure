@@ -1,0 +1,14 @@
+type: PayloadMassDriver
+size: 4
+category: units
+range: 240
+maxPayloadSize: 2
+reload: 8
+chargeTime: 2
+payloadSpeed: 3
+outlineIcon: false
+requirements: [
+  dantrales/100
+  territe-alloy/200
+  baenite/100
+]

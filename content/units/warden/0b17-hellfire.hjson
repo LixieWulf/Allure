@@ -104,7 +104,7 @@ weapons: [
     y: 60
     rotate: true
     rotateSpeed: 14
-    baseRotation: 90
+    baseRotation: -90
     reload: 5
     recoil: 3
     recoilTime: 30
@@ -151,7 +151,7 @@ weapons: [
     y: 48
     rotate: true
     rotateSpeed: 14
-    baseRotation: 90
+    baseRotation: -90
     reload: 5
     recoil: 3
     recoilTime: 30
@@ -198,7 +198,7 @@ weapons: [
     y: 36
     rotate: true
     rotateSpeed: 14
-    baseRotation: 90
+    baseRotation: -90
     reload: 5
     recoil: 3
     recoilTime: 30
@@ -245,7 +245,7 @@ weapons: [
     y: 10
     rotate: true
     rotateSpeed: 14
-    baseRotation: 90
+    baseRotation: -90
     reload: 5
     recoil: 3
     recoilTime: 30
@@ -292,7 +292,7 @@ weapons: [
     y: 0
     rotate: true
     rotateSpeed: 14
-    baseRotation: 90
+    baseRotation: -90
     reload: 5
     recoil: 3
     recoilTime: 30
@@ -339,7 +339,7 @@ weapons: [
     y: -20
     rotate: true
     rotateSpeed: 14
-    baseRotation: 90
+    baseRotation: -90
     reload: 5
     recoil: 3
     recoilTime: 30
@@ -386,7 +386,7 @@ weapons: [
     y: -44
     rotate: true
     rotateSpeed: 14
-    baseRotation: 90
+    baseRotation: -90
     reload: 5
     recoil: 3
     recoilTime: 30
@@ -433,7 +433,7 @@ weapons: [
     y: -52
     rotate: true
     rotateSpeed: 14
-    baseRotation: 90
+    baseRotation: -90
     reload: 5
     recoil: 3
     recoilTime: 30

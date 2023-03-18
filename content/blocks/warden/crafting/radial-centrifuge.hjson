@@ -1,0 +1,151 @@
+type: HeatCrafter
+squareSprite: false
+customShadow: true
+size: 7
+heatRequirement: 80
+maxEfficiency: 12
+warmupSpeed: 0.002
+craftTime: 240
+liquidCapacity: 720
+itemCapacity: 20
+drawer: [
+  {
+    type: DrawDefault
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: crystal-plasma
+    padding: 7
+  }
+  {
+    type: DrawRegion
+    suffix: -cent
+  }
+  {
+    type: DrawRegion
+    suffix: -top
+  }
+  {
+    type: DrawRegion
+    suffix: -gear0
+    rotateSpeed: -4
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -gear1
+    rotateSpeed: 22
+    spinSprite: true
+    x: 15
+    y: 4
+  }
+  {
+    type: DrawRegion
+    suffix: -gear1
+    rotateSpeed: 22
+    spinSprite: true
+    x: -15
+    y: -4
+  }
+  {
+    type: DrawRegion
+    suffix: -gear0
+    rotateSpeed: -4
+    rotation: 10
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -gear0
+    rotateSpeed: -4
+    rotation: 20
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -gear0
+    rotateSpeed: -4
+    rotation: 30
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -gear0
+    rotateSpeed: -4
+    rotation: 40
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -gear0
+    rotateSpeed: -4
+    rotation: 50
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -gear0
+    rotateSpeed: -4
+    rotation: 60
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -gear0
+    rotateSpeed: -4
+    rotation: 70
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -gear0
+    rotateSpeed: -4
+    rotation: 80
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -gear0-top
+    rotateSpeed: -4
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -gear1
+    rotateSpeed: -4
+    spinSprite: true
+  }
+  {
+    type: DrawPistons
+    lenOffset: 15.5
+    sinScl: 2
+    sinMag: -3
+  }
+  {
+    type: DrawRegion
+    suffix: -top1
+  }
+  {
+    type: DrawGlowRegion
+    color: ffb380
+    glowScale: 2
+  }
+]
+consumes: {
+  items: [
+    scilaxa/1
+  ]
+  liquids: [
+    crystal-plasma/0.16666666666
+    supercoolant/0.01
+  ]
+}
+outputItem: inseltiene/2
+category: crafting
+requirements: [
+  infrastructure/500
+  territe-alloy/500
+  baenite/250
+  crystal/2500
+  scilaxa/500
+]

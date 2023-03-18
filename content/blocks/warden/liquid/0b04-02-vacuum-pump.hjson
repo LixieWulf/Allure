@@ -1,0 +1,11 @@
+type: Pump
+size: 2
+pumpAmount: 0.1
+squareSprite: false
+liquidCapacity: 25
+requirements: [
+  metaglass/25
+  dantrales/100
+  territe-alloy/150
+]
+category: liquid

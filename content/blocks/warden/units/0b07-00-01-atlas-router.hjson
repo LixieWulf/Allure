@@ -1,0 +1,13 @@
+type: PayloadRouter
+size: 2
+moveTime: 30
+moveForce: 120
+payloadLimit: 2
+interp: pow3
+outputFacing: true
+category: units
+requirements: [
+  dantrales/160
+  territe-alloy/240
+  baenite/30
+]
