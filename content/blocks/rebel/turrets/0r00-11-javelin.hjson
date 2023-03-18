@@ -108,7 +108,7 @@ ammoTypes: {
   }
 }
 category: turret
-research: 0r-shiruken
+research: 0r-shuriken
 requirements: [
   infrastructure/125
   anden/2500
