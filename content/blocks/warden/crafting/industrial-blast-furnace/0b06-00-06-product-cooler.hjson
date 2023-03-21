@@ -1,0 +1,51 @@
+type: GenericCrafter
+squareSprite: false
+size: 4
+conductivePower: true
+rotate: false
+hasLiquids: true
+liquidCapacity: 150
+consumes: {
+  liquids: [
+    0b19-05-molten-infrastructure/1
+    0b19-04-refinery-coolant/0.25
+  ]
+}
+craftTime: 80
+outputItem: infrastructure/4
+category: crafting
+requirements: [
+  metaglass/50
+  silicon/150
+  dantrales/400
+  territe-alloy/900
+  scilaxa/300
+]
+drawer: {
+  type: DrawRegion
+  layer: 30.01
+}
+drawer: [
+  {
+  }
+  {
+    type: DrawRegion
+    suffix: -top
+    layer: 30.01
+  }
+  {
+    type: DrawRegion
+    x: -24
+    suffix: -left
+  }
+  {
+    type: DrawRegion
+    x: 24
+    suffix: -right
+  }
+  {
+    type: DrawRegion
+    y: 24
+    suffix: -up
+  }
+]

@@ -17,7 +17,7 @@ drawer: [
 ]
 regionRotated1: 1
 requirements: [
-  graphite/25
+  dantrales/100
   territe-alloy/20
 ]
 breakEffect: {

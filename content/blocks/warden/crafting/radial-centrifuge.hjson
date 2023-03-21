@@ -132,10 +132,8 @@ drawer: [
   }
 ]
 consumes: {
-  items: [
-    scilaxa/1
-  ]
   liquids: [
+    arreacta/0.5
     crystal-plasma/0.16666666666
     supercoolant/0.01
   ]

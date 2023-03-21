@@ -1,0 +1,89 @@
+//A basic example crafting block. Nothing complex, just a good template.
+//block type
+type: GenericCrafter
+//block size
+size: 4
+//if the block has liquids - false by default with generic crafters
+hasLiquids: true
+//liquid capacity
+liquidCapacity: 120
+//craft time in ticks - 60 = 1 second
+craftTime: 45
+//what the block consumes - power and liquids are per tick, items per craft 
+consumes: {
+  //this is 330 power per second
+  power: 5.5
+  items: [
+    thorium/1
+  ]
+  //15 water per second
+  liquid: {
+    liquid: water
+    amount: 0.25
+  }
+}
+//you can use outputItem or outputItems to output one or multiple items
+//outputs one liquid - use outputLiquids with a format like the items in the consume for multiple liquids
+outputLiquid: arreacta/1
+//build menu category
+category: crafting
+//tech tree research
+research: coal-centrifuge
+//build cost 
+requirements: [
+  copper/150
+  metaglass/50
+  silicon/100
+  thorium/25
+]
+//more wierd stuff you may not use
+//block visual draw - the bottom-most draw draws on top
+drawer: [
+  {
+    //empty object to create the default draw of the block
+  }
+  {
+    //draws a sprite
+    type: DrawRegion
+    //this will look for "<block-name>-rotator"
+    suffix: -rotator
+    //rotate speed, degrees rotated per tick (not required)
+    rotateSpeed: 6
+    //whether to apply some visual change for rotators to help them look good
+    spinSprite: true
+  }
+  {
+    //draws a liquid/gas
+    type: DrawLiquidTile
+    //liquid to draw in this specific drawer
+    drawLiquid: arreacta
+    //border to prevent liquid showing on edges of the block
+    padding: 1
+  }
+  {
+    type: DrawRegion
+    //this will look for "<block-name>-top"
+    suffix: -top
+  }
+]
+//craft effect - displays every time the block "crafts" something 
+craftEffect: {
+  //how far the particles travel
+  length: 8
+  //lifetime in ticks
+  lifetime: 25
+  //amount of particles
+  particles: 16
+  //sprite to use, uses <mod-name>-<sprite-name> or no mod name if you want to use a vanilla sprite
+  region: exotic-mod-wide-case-back
+  //rotation offset of sprites in particles
+  offset: 45
+  //particle size at the start
+  sizeFrom: 2
+  //particle end size
+  sizeTo: 0
+  //colour to begin with
+  colorFrom: ffffff
+  //colour to end with
+  colorTo: ca8cd1
+}

@@ -1,0 +1,8 @@
+type: LiquidJunction
+squareSprite: false
+category: liquid
+requirements: [
+  metaglass/25
+  dantrales/50
+  territe-alloy/25
+]

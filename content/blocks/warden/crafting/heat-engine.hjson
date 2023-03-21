@@ -1,8 +1,8 @@
 type: HeatProducer
 size: 4
-heatOutput: 3
+heatOutput: 5
 craftTime: 80
-warmup: 0.007
+warmup: 0.01
 warmupRate: 0.05
 liquidCapacity: 40
 drawer: [
@@ -29,10 +29,16 @@ drawer: [
   }
 ]
 consumes: {
-  liquid: hydrogen/0.666666666666
+  liquids: [
+    hydrogen/0.0566666
+  ]
 }
 category: crafting
-buildVisibility: sandboxOnly
+requirements: [
+  dantrales/500
+  territe-alloy/600
+  scilaxa/300
+]
 breakEffect: [
   {
     type: WaveEffect

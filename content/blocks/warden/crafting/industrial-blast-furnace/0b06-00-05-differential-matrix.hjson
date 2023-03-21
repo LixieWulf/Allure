@@ -1,0 +1,39 @@
+type: GenericCrafter
+size: 2
+conductivePower: true
+rotate: false
+hasLiquids: true
+liquidCapacity: 50
+liquidOutputDirections: [2]
+consumes: {
+  liquids: [
+    0b19-03-fresh-coolant/0.25
+  ]
+}
+outputLiquid: 0b19-04-refinery-coolant/0.25
+category: crafting
+requirements: [
+  metaglass/50
+  dantrales/150
+  territe-alloy/300
+  baenite/100
+]
+drawer: [
+  {
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: 0b19-04-refinery-coolant
+    padding: 3
+  }
+  {
+    type: DrawRegion
+    suffix: -top
+    layer: 30.01
+  }
+  {
+    type: DrawRegion
+    x: -16
+    suffix: -left
+  }
+]

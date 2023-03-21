@@ -1,0 +1,56 @@
+type: GenericCrafter
+squareSprite: false
+size: 7
+conductivePower: true
+rotate: false
+hasLiquids: true
+liquidCapacity: 600
+liquidOutputDirections: [1]
+consumes: {
+  power: 1
+  liquid: {
+    liquid: crystal-plasma
+    amount: 0.5
+  }
+  items: [
+    altesin/2
+  ]
+}
+craftTime: 60
+outputLiquid: 0b19-00-melted-altesin/2
+category: crafting
+requirements: [
+  metaglass/300
+  dantrales/500
+  territe-alloy/1200
+  scilaxa/300
+]
+drawer: [
+  {
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: 0b19-00-melted-altesin
+    padding: 3
+  }
+  {
+    type: DrawRegion
+    suffix: -top
+  }
+  {
+    type: DrawGlowRegion
+    color: ffb380
+    layer: 30.2
+    alpha: 0.5
+  }
+  {
+    type: DrawRegion
+    x: 36
+    suffix: -right
+  }
+  {
+    type: DrawRegion
+    y: 36
+    suffix: -up
+  }
+]

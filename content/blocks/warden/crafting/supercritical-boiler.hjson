@@ -3,6 +3,7 @@ squareSprite: false
 size: 3
 craftTime: 120
 liquidCapacity: 60
+itemCapacity: 24
 drawer: [
   {
   }

@@ -10,3 +10,4 @@ liquidPressure: 1
 botColor: 131316
 category: liquid
 research: 0b02-00-tube
+junctionReplacement: 0b03-01-vacuum-junction

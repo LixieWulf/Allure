@@ -1,0 +1,49 @@
+type: HeatCrafter
+customShadow: true
+heatRequirement: 15
+maxEfficiency: 1
+size: 7
+conductivePower: true
+rotate: false
+hasLiquids: true
+liquidCapacity: 600
+liquidOutputDirections: [0]
+consumes: {
+  liquid: {
+    liquid: 0b19-00-melted-altesin
+    amount: 2
+  }
+}
+outputLiquid: 0b19-01-superheated-slag/2
+category: crafting
+requirements: [
+  metaglass/50
+  silicon/900
+  dantrales/400
+  territe-alloy/1800
+  baenite/600
+]
+drawer: [
+  {
+  }
+  {
+    type: DrawRegion
+    suffix: -top
+    layer: 30.1
+  }
+  {
+    type: DrawGlowRegion
+    color: ffb380
+    layer: 30.1
+  }
+  {
+    type: DrawRegion
+    x: 36
+    suffix: -right
+  }
+  {
+    type: DrawRegion
+    y: -36
+    suffix: -low
+  }
+]
