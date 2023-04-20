@@ -23,7 +23,7 @@ requirements: [
   metaglass/300
   dantrales/500
   territe-alloy/1200
-  scilaxa/300
+  scilaxa/150
 ]
 drawer: [
   {
@@ -36,6 +36,7 @@ drawer: [
   {
     type: DrawRegion
     suffix: -top
+    layer: 30.2
   }
   {
     type: DrawGlowRegion

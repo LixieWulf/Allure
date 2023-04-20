@@ -1,2 +1,4 @@
 color: 30f2cb
 hidden: true
+coolant: false
+incinerable: false

@@ -8,7 +8,7 @@ category: liquid
 range: 5
 requirements: [
   metaglass/40
-  scilaxa/30
+  scilaxa/25
   crystal/15
 ]
 breakEffect: {

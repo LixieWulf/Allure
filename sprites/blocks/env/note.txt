@@ -1,0 +1,1 @@
+these sprites arent part of the normal environment tiles, so do not require env atlas space/caching

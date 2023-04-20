@@ -1,0 +1,561 @@
+template: MissileUnitType
+speed: 0
+rotateSpeed: 0
+lifetime: 1
+drawBody: false
+drawCell: false
+hittable: false
+targetable: false
+physics: false
+fallSpeed: 1
+weapons: [
+  {
+    rotate: true
+    rotateSpeed: 0
+    baseRotation: 90
+    shootCone: 360
+    shootOnDeath: true
+    mirror: false
+    controllable: false
+    reload: 5
+    shootSound: none
+    shootY: 18
+    bullet: {
+      type: BulletType
+      speed: 0
+      lifetime: 30
+      collides: false
+      hittable: false
+      absorbable: false
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      fragBullets: 1
+      fragRandomSpread: 0
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragBullet: {
+        speed: 0.5
+        lifetime: 60
+        drag: -0.1
+        collides: false
+        hittable: false
+        absorbable: false
+        hitEffect: none
+        despawnEffect: none
+        sprite: exotic-mod-kusarigama-tug-large
+        width: 22.5
+        height: 39.4
+        shrinkY: 0
+        layer: 111
+        spawnBullets: [
+          {
+            type: BulletType
+            speed: 0.5
+            lifetime: 60
+            drag: -0.1
+            collides: false
+            hittable: false
+            absorbable: false
+            hitEffect: none
+            despawnEffect: none
+            trailLength: 3
+            trailWidth: 5
+            trailColor: e65555
+          }
+        ]
+      }
+    }
+  }
+  {
+    rotate: true
+    y: 17.5
+    x: -6
+    rotateSpeed: 0
+    baseRotation: 90
+    shootCone: 360
+    shootOnDeath: true
+    mirror: false
+    controllable: false
+    reload: 5
+    shootSound: none
+    shootY: 12
+    bullet: {
+      type: BulletType
+      speed: 0
+      lifetime: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      fragBullets: 1
+      fragRandomSpread: 0
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragBullet: {
+        speed: 0.5
+        lifetime: 60
+        drag: -0.1
+        collides: false
+        hittable: false
+        absorbable: false
+        hitEffect: none
+        despawnEffect: none
+        sprite: exotic-mod-kusarigama-tug-small
+        width: 7.5
+        height: 11.25
+        shrinkY: 0
+        layer: 111
+        spawnBullets: [
+          {
+            type: BulletType
+            speed: 0.5
+            lifetime: 60
+            drag: -0.1
+            collides: false
+            hittable: false
+            absorbable: false
+            hitEffect: none
+            despawnEffect: none
+            trailLength: 3
+            trailWidth: 2
+            trailColor: e65555
+          }
+        ]
+      }
+    }
+  }
+  {
+    rotate: true
+    y: 17.5
+    x: 6
+    rotateSpeed: 0
+    baseRotation: 90
+    shootCone: 360
+    shootOnDeath: true
+    mirror: false
+    controllable: false
+    reload: 5
+    shootSound: none
+    shootY: 12
+    bullet: {
+      type: BulletType
+      speed: 0
+      lifetime: 10
+      collides: false
+      hittable: false
+      absorbable: false
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      fragBullets: 1
+      fragRandomSpread: 0
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragBullet: {
+        speed: 0.5
+        lifetime: 60
+        drag: -0.1
+        collides: false
+        hittable: false
+        absorbable: false
+        hitEffect: none
+        despawnEffect: none
+        sprite: exotic-mod-kusarigama-tug-small
+        width: 7.5
+        height: 11.25
+        shrinkY: 0
+        layer: 111
+        spawnBullets: [
+          {
+            type: BulletType
+            speed: 0.5
+            lifetime: 60
+            drag: -0.1
+            collides: false
+            hittable: false
+            absorbable: false
+            hitEffect: none
+            despawnEffect: none
+            trailLength: 3
+            trailWidth: 2
+            trailColor: e65555
+          }
+        ]
+      }
+    }
+  }
+  {
+    rotate: true
+    y: -17.5
+    x: 6
+    rotateSpeed: 0
+    baseRotation: 90
+    shootCone: 360
+    shootOnDeath: true
+    mirror: false
+    controllable: false
+    reload: 5
+    shootSound: none
+    shootY: 12
+    bullet: {
+      type: BulletType
+      speed: 0
+      lifetime: 20
+      collides: false
+      hittable: false
+      absorbable: false
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      fragBullets: 1
+      fragRandomSpread: 0
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragBullet: {
+        speed: 0.5
+        lifetime: 60
+        drag: -0.1
+        collides: false
+        hittable: false
+        absorbable: false
+        hitEffect: none
+        despawnEffect: none
+        sprite: exotic-mod-kusarigama-tug-small
+        width: 7.5
+        height: 11.25
+        shrinkY: 0
+        layer: 111
+        spawnBullets: [
+          {
+            type: BulletType
+            speed: 0.5
+            lifetime: 60
+            drag: -0.1
+            collides: false
+            hittable: false
+            absorbable: false
+            hitEffect: none
+            despawnEffect: none
+            trailLength: 3
+            trailWidth: 2
+            trailColor: e65555
+          }
+        ]
+      }
+    }
+  }
+  {
+    rotate: true
+    y: -17.5
+    x: -6
+    rotateSpeed: 0
+    baseRotation: 90
+    shootCone: 360
+    shootOnDeath: true
+    mirror: false
+    controllable: false
+    reload: 5
+    shootSound: none
+    shootY: 12
+    bullet: {
+      type: BulletType
+      speed: 0
+      lifetime: 30
+      collides: false
+      hittable: false
+      absorbable: false
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      fragBullets: 1
+      fragRandomSpread: 0
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragBullet: {
+        speed: 0.5
+        lifetime: 60
+        drag: -0.1
+        collides: false
+        hittable: false
+        absorbable: false
+        hitEffect: none
+        despawnEffect: none
+        sprite: exotic-mod-kusarigama-tug-small
+        width: 7.5
+        height: 11.25
+        shrinkY: 0
+        layer: 111
+        spawnBullets: [
+          {
+            type: BulletType
+            speed: 0.5
+            lifetime: 60
+            drag: -0.1
+            collides: false
+            hittable: false
+            absorbable: false
+            hitEffect: none
+            despawnEffect: none
+            trailLength: 3
+            trailWidth: 2
+            trailColor: e65555
+          }
+        ]
+      }
+    }
+  }
+  {
+    rotate: true
+    y: -17.5
+    x: -17
+    rotateSpeed: 0
+    baseRotation: 90
+    shootCone: 360
+    shootOnDeath: true
+    mirror: false
+    controllable: false
+    reload: 5
+    shootSound: none
+    shootY: 14
+    bullet: {
+      type: BulletType
+      speed: 0
+      lifetime: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      fragBullets: 1
+      fragRandomSpread: 0
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragBullet: {
+        speed: 0.5
+        lifetime: 60
+        drag: -0.1
+        collides: false
+        hittable: false
+        absorbable: false
+        hitEffect: none
+        despawnEffect: none
+        sprite: exotic-mod-kusarigama-tug
+        width: 19
+        height: 33.75
+        shrinkY: 0
+        layer: 111
+        spawnBullets: [
+          {
+            type: BulletType
+            speed: 0.5
+            lifetime: 60
+            drag: -0.1
+            collides: false
+            hittable: false
+            absorbable: false
+            hitEffect: none
+            despawnEffect: none
+            trailLength: 3
+            trailWidth: 5
+            trailColor: e65555
+          }
+        ]
+      }
+    }
+  }
+  {
+    rotate: true
+    y: -17.5
+    x: 17
+    rotateSpeed: 0
+    baseRotation: 90
+    shootCone: 360
+    shootOnDeath: true
+    mirror: false
+    controllable: false
+    reload: 5
+    shootSound: none
+    shootY: 14
+    bullet: {
+      type: BulletType
+      speed: 0
+      lifetime: 10
+      collides: false
+      hittable: false
+      absorbable: false
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      fragBullets: 1
+      fragRandomSpread: 0
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragBullet: {
+        speed: 0.5
+        lifetime: 60
+        drag: -0.1
+        collides: false
+        hittable: false
+        absorbable: false
+        hitEffect: none
+        despawnEffect: none
+        sprite: exotic-mod-kusarigama-tug
+        width: 19
+        height: 33.75
+        shrinkY: 0
+        layer: 111
+        spawnBullets: [
+          {
+            type: BulletType
+            speed: 0.5
+            lifetime: 60
+            drag: -0.1
+            collides: false
+            hittable: false
+            absorbable: false
+            hitEffect: none
+            despawnEffect: none
+            trailLength: 3
+            trailWidth: 5
+            trailColor: e65555
+          }
+        ]
+      }
+    }
+  }
+  {
+    rotate: true
+    y: 17.5
+    x: 17
+    rotateSpeed: 0
+    baseRotation: 90
+    shootCone: 360
+    shootOnDeath: true
+    mirror: false
+    controllable: false
+    reload: 5
+    shootSound: none
+    shootY: 14
+    bullet: {
+      type: BulletType
+      speed: 0
+      lifetime: 20
+      collides: false
+      hittable: false
+      absorbable: false
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      fragBullets: 1
+      fragRandomSpread: 0
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragBullet: {
+        speed: 0.5
+        lifetime: 60
+        drag: -0.1
+        collides: false
+        hittable: false
+        absorbable: false
+        hitEffect: none
+        despawnEffect: none
+        sprite: exotic-mod-kusarigama-tug
+        width: 19
+        height: 33.75
+        shrinkY: 0
+        layer: 111
+        spawnBullets: [
+          {
+            type: BulletType
+            speed: 0.5
+            lifetime: 60
+            drag: -0.1
+            collides: false
+            hittable: false
+            absorbable: false
+            hitEffect: none
+            despawnEffect: none
+            trailLength: 3
+            trailWidth: 5
+            trailColor: e65555
+          }
+        ]
+      }
+    }
+  }
+  {
+    rotate: true
+    y: 17.5
+    x: -17
+    rotateSpeed: 0
+    baseRotation: 90
+    shootCone: 360
+    shootOnDeath: true
+    mirror: false
+    controllable: false
+    reload: 5
+    shootSound: none
+    shootY: 14
+    bullet: {
+      type: BulletType
+      speed: 0
+      lifetime: 30
+      collides: false
+      hittable: false
+      absorbable: false
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      fragBullets: 1
+      fragRandomSpread: 0
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragBullet: {
+        speed: 0.5
+        lifetime: 60
+        drag: -0.1
+        collides: false
+        hittable: false
+        absorbable: false
+        hitEffect: none
+        despawnEffect: none
+        sprite: exotic-mod-kusarigama-tug
+        width: 19
+        height: 33.75
+        shrinkY: 0
+        layer: 111
+        spawnBullets: [
+          {
+            type: BulletType
+            speed: 0.5
+            lifetime: 60
+            drag: -0.1
+            collides: false
+            hittable: false
+            absorbable: false
+            hitEffect: none
+            despawnEffect: none
+            trailLength: 3
+            trailWidth: 5
+            trailColor: e65555
+          }
+        ]
+      }
+    }
+  }
+]
+deathExplosionEffect: none
+deathSound: none

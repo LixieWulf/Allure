@@ -19,7 +19,7 @@ requirements: [
   silicon/150
   dantrales/400
   territe-alloy/900
-  scilaxa/300
+  scilaxa/100
 ]
 drawer: {
   type: DrawRegion

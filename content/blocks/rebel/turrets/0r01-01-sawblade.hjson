@@ -96,77 +96,72 @@ ammoTypes: {
       }
     ]
     despawnEffect: none
-    hitEffect: {
-      type: MultiEffect
-      lifetime: 240
-      clip: 280
-      effects: [
-        {
-          length: 150
-          lifetime: 150
-          particles: 115
-          colorFrom: 787878
-          colorTo: 787878
-          interp: pow5Out
-          sizeInterp: pow10In
-          sizeFrom: 8
-          sizeTo: 0
-        }
-        {
-          length: 190
-          lifetime: 140
-          particles: 45
-          colorFrom: 787878
-          colorTo: 787878
-          interp: pow10Out
-          sizeInterp: pow5In
-          sizeFrom: 3
-          sizeTo: 0
-        }
-        {
-          length: 60
-          lifetime: 240
-          particles: 25
-          colorFrom: 787878
-          colorTo: 787878
-          interp: pow10Out
-          sizeInterp: pow5In
-          sizeFrom: 14
-          sizeTo: 0
-        }
-        {
-          length: 260
-          lifetime: 80
-          particles: 22
-          colorFrom: ffb3b3
-          colorTo: e65555
-          interp: pow3Out
-          sizeInterp: pow10In
-          sizeFrom: 4
-          sizeTo: 0
-        }
-        {
-          length: 160
-          line: true
-          lifetime: 60
-          particles: 28
-          lenFrom: 16
-          lenTo: 0
-          strokeFrom: 6
-          strokeTo: 4
-          colorTo: e65555
-        }
-        {
-          type: WaveEffect
-          lifetime: 25
-          sizeFrom: 0
-          sizeTo: 125
-          colorTo: e65555
-          strokeFrom: 6
-          strokeTo: 0
-        }
-      ]
-    }
+    hitEffect: [
+      {
+        length: 150
+        lifetime: 150
+        particles: 115
+        colorFrom: 787878
+        colorTo: 787878
+        interp: pow5Out
+        sizeInterp: pow10In
+        sizeFrom: 8
+        sizeTo: 0
+      }
+      {
+        length: 190
+        lifetime: 140
+        particles: 45
+        colorFrom: 787878
+        colorTo: 787878
+        interp: pow10Out
+        sizeInterp: pow5In
+        sizeFrom: 3
+        sizeTo: 0
+      }
+      {
+        length: 60
+        lifetime: 240
+        particles: 25
+        colorFrom: 787878
+        colorTo: 787878
+        interp: pow10Out
+        sizeInterp: pow5In
+        sizeFrom: 14
+        sizeTo: 0
+      }
+      {
+        length: 260
+        lifetime: 80
+        particles: 22
+        colorFrom: ffb3b3
+        colorTo: e65555
+        interp: pow3Out
+        sizeInterp: pow10In
+        sizeFrom: 4
+        sizeTo: 0
+      }
+      {
+        length: 160
+        line: true
+        lifetime: 60
+        particles: 28
+        lenFrom: 16
+        lenTo: 0
+        strokeFrom: 6
+        strokeTo: 4
+        colorTo: e65555
+      }
+      {
+        type: WaveEffect
+        lifetime: 25
+        sizeFrom: 0
+        sizeTo: 125
+        colorTo: e65555
+        strokeFrom: 6
+        strokeTo: 0
+      }
+    ]
     trailLength: 8
     trailWidth: 7
     trailColor: e65555

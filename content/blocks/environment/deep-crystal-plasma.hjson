@@ -1,7 +1,7 @@
 type: Floor
 variants: 0
 isLiquid: true
-liquidMultiplier: 0.18
+liquidMultiplier: 0.5
 cacheLayer: cryofluid
 speedMultiplier: 0.15
 liquidDrop: crystal-plasma

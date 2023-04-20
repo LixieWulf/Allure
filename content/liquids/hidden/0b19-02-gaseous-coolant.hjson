@@ -1,3 +1,5 @@
 color: 3bbeff
 gas: true
 hidden: true
+coolant: false
+incinerable: false

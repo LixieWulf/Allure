@@ -1,0 +1,80 @@
+type: ItemTurret
+canOverdrive: false
+size: 12
+health: 65000
+squareSprite: false
+range: 1800
+reload: 540
+shootY: 0
+maxAmmo: 128
+ammoPerShot: 128
+hasLiquids: true
+liquidCapacity: 300
+consumes: {
+  power: 8
+  liquids: [
+    energia/1
+    arreacta/5
+  ]
+}
+drawer: {
+  type: DrawRegion
+}
+outlineIcon: false
+shootSound: none
+ammoTypes: {
+  anden: {
+    type: PointBulletType
+    collides: false
+    ammoMultiplier: 1
+    lifetime: 1
+    speed: 1800
+    trailEffect: none
+    collidesAir: false
+    collidesGround: false
+    despawnHit: true
+    hitEffect: none
+    despawnEffect: none
+    shootEffect: none
+    smokeEffect: none
+    fragBullets: 1
+    fragBullet: {
+      type: BulletType
+      collides: false
+      hittable: false
+      absorbable: false
+      reflectable: false
+      speed: 0
+      keepVelocity: false
+      lifetime: 180
+      despawnUnit: exotic-mod-the-voices-are-telling-me-to-stop-holding-them-in-the-closet
+      despawnHit: true
+      hitEffect: {
+        useRotation: false
+        baseRotation: 0
+        startDelay: 30
+        length: -600
+        baseLength: 600
+        randLength: false
+        lifetime: 242
+        layer: 80
+        particles: 1
+        cone: 0
+        sizeFrom: 0
+        sizeTo: 32
+        colorFrom: 00000044
+        colorTo: 00000044
+      }
+      despawnEffect: none
+    }
+    spawnBullets: [
+      {
+        lifetime: 0
+        hitEffect: none
+        despawnEffect: none
+        despawnUnit: exotic-mod-they-want-your-soul-for-their-cruel-experiments
+      }
+    ]
+  }
+}
+buildVisibility: sandboxOnly

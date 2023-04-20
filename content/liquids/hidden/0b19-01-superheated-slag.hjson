@@ -1,3 +1,5 @@
 color: d97562
 gas: true
 hidden: true
+coolant: false
+incinerable: false

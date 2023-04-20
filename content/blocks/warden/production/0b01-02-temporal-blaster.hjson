@@ -6,9 +6,7 @@ liquidCapacity: 3800
 itemCapacity: 100
 tier: 9
 shake: 12
-floating: true
 drillEffect: [
-  //so simple, right?
   {
     type: WaveEffect
     lifetime: 60
@@ -43,58 +41,47 @@ drillEffect: [
     colorFrom: 90a2fc
     colorTo: 7382f0
   }
-  //now suffer like i do
   {
     type: RadialEffect
     startDelay: 5
     lengthOffset: 8.5
     rotationOffset: 45
-    effect: {
-      type: WaveEffect
-      lifetime: 60
-      interp: pow3Out
-      sizeFrom: 0
-      sizeTo: 8
-      strokeFrom: 4
-      strokeTo: 0
-      colorFrom: 90a2fc
-      colorTo: 7382f0
-    }
-  }
-  {
-    type: RadialEffect
-    startDelay: 5
-    lengthOffset: 8.5
-    rotationOffset: 45
-    effect: {
-      length: 0
-      particles: 1
-      lifetime: 30
-      useRotation: false
-      region: exotic-mod-diamond-wide
-      sizeFrom: 16
-      sizeTo: 0
-      colorFrom: 90a2fc
-      colorTo: 7382f0
-    }
-  }
-  {
-    type: RadialEffect
-    startDelay: 5
-    lengthOffset: 8.5
-    rotationOffset: 45
-    effect: {
-      length: 0
-      particles: 1
-      lifetime: 30
-      offset: 90
-      useRotation: false
-      region: exotic-mod-diamond-wide
-      sizeFrom: 16
-      sizeTo: 0
-      colorFrom: 90a2fc
-      colorTo: 7382f0
-    }
+    effect: [
+      {
+        type: WaveEffect
+        lifetime: 60
+        interp: pow3Out
+        sizeFrom: 0
+        sizeTo: 8
+        strokeFrom: 4
+        strokeTo: 0
+        colorFrom: 90a2fc
+        colorTo: 7382f0
+      }
+      {
+        length: 0
+        particles: 1
+        lifetime: 30
+        useRotation: false
+        region: exotic-mod-diamond-wide
+        sizeFrom: 16
+        sizeTo: 0
+        colorFrom: 90a2fc
+        colorTo: 7382f0
+      }
+      {
+        length: 0
+        particles: 1
+        lifetime: 30
+        offset: 90
+        useRotation: false
+        region: exotic-mod-diamond-wide
+        sizeFrom: 16
+        sizeTo: 0
+        colorFrom: 90a2fc
+        colorTo: 7382f0
+      }
+    ]
   }
   {
     type: RadialEffect

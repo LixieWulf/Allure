@@ -1,13 +1,11 @@
-type: ConsumeGenerator
-displayEfficiency: false
-minEfficiency: 1
+type: GenericCrafter
 squareSprite: false
 customShadow: true
-itemDuration: 250
+craftTime: 140
 liquidCapacity: 4800
+itemCapacity: 72
 size: 8
 hasLiquids: true
-powerProduction: 210
 warmupSpeed: 0.005
 drawer: [
   {
@@ -60,38 +58,28 @@ drawer: [
     blurThresh: 0.35
   }
 ]
-effectChance: 0.1
-generateEffectRange: 10
-generateEffect: {
-  particles: 1
-  length: 130
-  lifetime: 440
-  cone: 12
-  baseRotation: 32
-  sizeFrom: 0
-  sizeTo: 8
-  colorTo: ffffff00
-  sizeInterp: pow2Out
-  interp: pow2Out
-}
 consumes: {
+  power: 960
   items: [
-    shadow/1
+    baenite/28
+    draconium/2
   ]
   liquids: [
-    water/102
-    hydrogen/0.5
+    water/100
+    ozone/0.48
+    arreacta/1
   ]
 }
 outputLiquid: steam/100
+outputItem: shadow/3
 category: power
 ambientSound: arc
 ambientSoundVolume: 1
 research: fusion-reactor
 requirements: [
-  territe-alloy/2500
-  scilaxa/1000
-  crystal/500
-  inseltiene/1000
-  draconium/250
+  territe-alloy/3600
+  scilaxa/300
+  crystal/1500
+  inseltiene/700
+  draconium/1000
 ]

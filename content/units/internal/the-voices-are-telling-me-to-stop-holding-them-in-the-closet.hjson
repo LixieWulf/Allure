@@ -1,0 +1,315 @@
+template: MissileUnitType
+speed: 0
+rotateSpeed: 0
+lifetime: 1
+drawBody: false
+drawCell: false
+hittable: false
+targetable: false
+physics: false
+fallSpeed: 1
+weapons: [
+  {
+    rotate: true
+    rotateSpeed: 0
+    shootCone: 360
+    shootOnDeath: true
+    mirror: false
+    baseRotation: 45
+    controllable: false
+    reload: 5
+    shootSound: none
+    bullet: {
+      type: PointBulletType
+      lifetime: 1
+      speed: 1200
+      scaleLife: false
+      trailEffect: none
+      hitEffect: none
+      despawnEffect: none
+      collidesAir: false
+      collidesGround: false
+      fragBullets: 1
+      fragRandomSpread: 0
+      fragAngle: 180
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragBullet: {
+        type: BulletType
+        collides: false
+        hittable: false
+        absorbable: false
+        speed: 0
+        lifetime: 30
+        hitEffect: none
+        despawnEffect: none
+        spawnBullets: [
+          {
+            type: BulletType
+            collides: false
+            lifetime: 0
+            hitEffect: none
+            despawnEffect: none
+            fragBullets: 4
+            fragVelocityMin: 0.5
+            fragBullet: {
+              type: PointBulletType
+              speed: 192
+              lifetime: 1
+              collidesAir: false
+              collidesGround: false
+              trailEffect: none 
+              hitEffect: none
+              despawnEffect: none
+              despawnHit: true
+              fragBullets: 1
+              fragLifeMin: 0
+              fragBullet: {
+                type: BulletType
+                collides: false
+                hittable: false
+                absorbable: false
+                speed: 0
+                lifetime: 60
+                hitEffect: none
+                despawnEffect: none
+                despawnHit: true
+                despawnUnit: exotic-mod-continued-wrath
+              }
+            }
+          }
+          {
+            type: BulletType
+            collides: false
+            lifetime: 0
+            hitEffect: none
+            despawnEffect: none
+            fragBullets: 4
+            fragVelocityMin: 0.5
+            fragBullet: {
+              type: PointBulletType
+              speed: 256
+              lifetime: 1
+              collidesAir: false
+              collidesGround: false
+              trailEffect: none 
+              hitEffect: none
+              despawnEffect: none
+              despawnHit: true
+              fragBullets: 1
+              fragLifeMin: 0
+              fragBullet: {
+                type: BulletType
+                collides: false
+                hittable: false
+                absorbable: false
+                lifetime: 60
+                hitEffect: none
+                despawnEffect: none
+                despawnUnit: exotic-mod-relentless-fury
+              }
+            }
+          }
+        ]
+        fragBullets: 1
+        fragRandomSpread: 0
+        fragVelocityMin: 1
+        fragVelocityMax: 1
+        fragBullet: {
+          speed: 5
+          lifetime: 240
+          collides: false
+          absorbable: false
+          damage: 2500
+          hitShake: 25
+          keepVelocity: false
+          trailInterval: 1
+          trailRotation: true
+          trailEffect: [
+            {
+              type: RadialEffect
+              amount: 1 
+              lengthOffset: 48
+              effect: [
+                {
+                  line: true
+                  baseRotation: 115
+                  length: 72
+                  baseLength: -18
+                  particles: 4
+                  cone: 15
+                  lifetime: 15
+                  interp: pow10Out
+                  sizeInterp: linear
+                  lenFrom: 12
+                  lenTo: 8
+                  strokeFrom: 4
+                  strokeTo: 0
+                  colorFrom: ffdd55
+                  colorTo: db401c
+                }
+                {
+                  line: true
+                  baseRotation: -115
+                  length: 72
+                  baseLength: -18
+                  particles: 4
+                  cone: 15
+                  lifetime: 15
+                  interp: pow10Out
+                  sizeInterp: linear
+                  lenFrom: 12
+                  lenTo: 8
+                  strokeFrom: 4
+                  strokeTo: 0
+                  colorFrom: ffdd55
+                  colorTo: db401c
+                }
+              ]
+            }
+            {
+              particles: 1
+              lifetime: 15
+              length: -35
+              baseLength: 8
+              cone: 25
+              interp: pow10Out
+              sizeInterp: linear
+              sizeFrom: 32
+              sizeTo: 0
+              colorFrom: ffdd55
+              colorTo: ffdd55
+            }
+            {
+              particles: 1
+              lifetime: 25
+              length: -35
+              baseLength: 8
+              cone: 25
+              interp: pow10Out
+              sizeInterp: linear
+              sizeFrom: 32
+              sizeTo: 0
+              colorFrom: db401c
+              colorTo: db401c
+              layer: 109
+            }
+            {
+              particles: 1
+              lifetime: 35
+              length: -35
+              baseLength: 8
+              cone: 25
+              interp: pow10Out
+              sizeInterp: linear
+              sizeFrom: 32
+              sizeTo: 0
+              colorFrom: 787878
+              colorTo: 787878
+              layer: 99
+            }
+            {
+              particles: 1
+              lifetime: 35
+              length: -54
+              baseLength: 8
+              cone: 45
+              interp: pow10Out
+              sizeInterp: linear
+              sizeFrom: 8
+              sizeTo: 0
+              colorFrom: 787878
+              colorTo: 787878
+              layer: 99
+            }
+          ]
+          fragBullets: 750
+          fragVelocityMin: 1
+          fragVelocityMax: 1
+          fragBullet: {
+            type: BulletType
+            speed: 5
+            lifetime: 20
+            hitEffect: none
+            despawnEffect: none
+            damage: 240
+            pierceDamageFactor: 1
+            hittable: false
+            reflectable: false
+          }
+          fragOnHit: false
+          despawnHit: false
+          despawnEffect: [
+            {
+              length: 150
+              lifetime: 150
+              particles: 80
+              colorFrom: 787878
+              colorTo: 787878
+              interp: pow5Out
+              sizeInterp: pow10In
+              sizeFrom: 8
+              sizeTo: 0
+            }
+            {
+              length: 190
+              lifetime: 140
+              particles: 45
+              colorFrom: 787878
+              colorTo: 787878
+              interp: pow10Out
+              sizeInterp: pow5In
+              sizeFrom: 3
+              sizeTo: 0
+            }
+            {
+              length: 60
+              lifetime: 240
+              particles: 25
+              colorFrom: 787878
+              colorTo: 787878
+              interp: pow10Out
+              sizeInterp: pow5In
+              sizeFrom: 14
+              sizeTo: 0
+            }
+            {
+              length: 260
+              lifetime: 80
+              particles: 22
+              colorFrom: ffdd55
+              colorTo: db401c
+              interp: pow3Out
+              sizeInterp: pow10In
+              sizeFrom: 4
+              sizeTo: 0
+            }
+            {
+              length: 160
+              line: true
+              lifetime: 60
+              particles: 28
+              lenFrom: 16
+              lenTo: 0
+              strokeFrom: 6
+              strokeTo: 4
+              colorTo: db401c
+            }
+            {
+              type: WaveEffect
+              lifetime: 50
+              sizeFrom: 0
+              sizeTo: 125
+              interp: pow3Out
+              colorTo: db401c
+              strokeFrom: 12
+              strokeTo: 0
+            }
+          ]
+        }
+      }
+    }
+  }
+]
+deathExplosionEffect: none
+deathSound: none

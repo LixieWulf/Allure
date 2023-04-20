@@ -6,7 +6,10 @@ accel: 0.06
 drag: 0.013
 strafePenalty: 0.75
 shadowElevationScl: 0.45
-defaultController: repairAI
+defaultController: BuilderAI
+rebuildPeriod: 0
+onlyAssist: true
+buildSpeed: 1
 lightRadius: 0
 drawCell: false
 lowAltitude: true

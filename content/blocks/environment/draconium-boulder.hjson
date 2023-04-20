@@ -1,0 +1,19 @@
+type: Wall
+update: true
+breakable: true
+drawTeamOverlay: false
+size: 3
+customShadow: true
+targetable: false
+underBullets: true
+variants: 3
+itemDrop: draconium
+buildVisibility: editorOnly
+instantDeconstruct: false
+buildCostMultiplier: 0.001
+requirements: [
+  draconium/120
+]
+destructible: false
+breakSound: rockBreak
+breakEffect: breakProp

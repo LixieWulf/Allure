@@ -6,7 +6,7 @@ size: 4
 cooldownTime: 120
 recoilTime: 80
 heatColor: ff0000
-reload: 160
+reload: 150
 shots: 1
 recoil: 8
 ammoUseEffect: casing3
@@ -16,6 +16,7 @@ maxAmmo: 36
 ammoPerShot: 8
 range: 440
 liquidCapacity: 60
+buildCostMultiplier: 0.75
 ammoTypes: {
   surge-alloy: {
     type: RailBulletType
@@ -298,10 +299,16 @@ ammoTypes: {
 consumes: {
   power: 15.5
   liquids: [
-    water/2
-    oil/0.5
+    water/2.5
+    oil/0.75
   ]
 }
+coolant: {
+  type: ConsumeLiquid
+  liquid: cryofluid
+  amount: 2
+}
+coolantMultiplier: 0.4
 requirements: [
   copper/1000
   lead/770

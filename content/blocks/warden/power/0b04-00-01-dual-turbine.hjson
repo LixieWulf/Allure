@@ -42,7 +42,7 @@ consumes: {
   liquid: steam/5
 }
 powerProduction: 90
-outputLiquid: water/4.75
+outputLiquid: water/4.825
 category: power
 requirements: [
   dantrales/300

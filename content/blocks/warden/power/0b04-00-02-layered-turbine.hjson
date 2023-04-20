@@ -46,6 +46,13 @@ drawer: [
   }
   {
     type: DrawGlowRegion
+    suffix: -heat
+    alpha: 1 
+    blending: normal
+    color: 7382f0
+  }
+  {
+    type: DrawGlowRegion
     alpha: 1 
     color: 7382f0
   }
@@ -54,13 +61,14 @@ consumes: {
   liquid: steam/10
 }
 powerProduction: 240
-outputLiquid: water/9.5
+outputLiquid: water/9.75
 category: power
 requirements: [
+  dantrales/400
   territe-alloy/1600
   baenite/600
   crystal/300
-  inseltiene/250
+  inseltiene/25
 ]
 breakEffect: [
   {

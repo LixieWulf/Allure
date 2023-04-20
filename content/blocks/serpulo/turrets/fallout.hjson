@@ -1,7 +1,7 @@
 type: ItemTurret
 liquidCapacity: 240
 health: 4600
-reload: 180
+reload: 170
 rotateSpeed: 2
 recoil: 3
 shootCone: 30
@@ -10,11 +10,12 @@ size: 4
 targetAir: true
 targetGround: false
 shootSound: bang
-ammoPerShot: 6
+ammoPerShot: 3
 shootWarmupSpeed: 0.01
 linearWarmup: true
 cooldownTime: 120
 minWarmup: 0.9
+liquidCapacity: 30
 shootEffect: shootBig
 smokeEffect: shootBigSmoke
 drawer: {
@@ -103,7 +104,7 @@ ammoTypes: {
         type: ExplosionBulletType
         collidesGround: false
         killShooter: false
-        splashDamage: 100
+        splashDamage: 180
         splashDamageRadius: 80
         hitEffect: [
           {
@@ -186,18 +187,17 @@ ammoTypes: {
   }
 }
 canOverdrive: false
-coolantMultiplier: 0.7
-consumes: {
-  coolant: {
-    amount: 2
-  }
+coolantMultiplier: 2.7
+coolant: {
+  type: ConsumeLiquid
+  liquid: oil
+  amount: 0.5
 }
 category: turret
 research: swarmer
 requirements: [
   lead/1800
-  graphite/1000
-  thorium/800
-  phase-fabric/500
+  graphite/200
+  thorium/350
+  phase-fabric/250
 ]
-

@@ -1,0 +1,29 @@
+type: BeamDrill
+size: 3
+range: 2
+drillTime: 240
+tier: 9
+sparks: 24
+sparkRecurrence: 8
+sparkLife: 25
+sparkSpread: 25
+sparkRange: -18
+liquidCapacity: 30
+consumes: {
+  power: 12
+  liquids: [
+    {
+      liquid: energia
+      amount: 0.25
+      optional: true
+      booster: true
+    }
+  ]
+}
+liquidBoostIntensity: 1.8
+requirements: [
+  territe-alloy/350
+  dantrales/400
+  scilaxa/50
+  draconium/120
+]

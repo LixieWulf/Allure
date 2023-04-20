@@ -11,7 +11,7 @@ research: {
 }
 requirements: [
   metaglass/12
-  scilaxa/5
+  scilaxa/2
   crystal/5
 ]
 junctionReplacement: spatial-junction

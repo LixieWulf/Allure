@@ -1,0 +1,244 @@
+template: MissileUnitType
+speed: 0
+rotateSpeed: 0
+lifetime: 1
+drawBody: false
+drawCell: false
+hittable: false
+targetable: false
+physics: false
+fallSpeed: 1
+weapons: [
+  {
+    rotate: true
+    rotateSpeed: 0
+    shootCone: 360
+    shootOnDeath: true
+    mirror: false
+    baseRotation: 225
+    controllable: false
+    reload: 5
+    shootSound: none
+    bullet: {
+      speed: 5
+      lifetime: 240
+      collides: false
+      absorbable: false
+      damage: 1200
+      hitShake: 15
+      keepVelocity: false
+      trailInterval: 1
+      trailRotation: true
+      trailEffect: [
+        {
+          type: RadialEffect
+          amount: 1 
+          lengthOffset: 24
+          effect: [
+            {
+              line: true
+              baseRotation: 115
+              length: 48
+              baseLength: -18
+              particles: 4
+              cone: 15
+              lifetime: 15
+              interp: pow10Out
+              sizeInterp: linear
+              lenFrom: 7
+              lenTo: 5
+              strokeFrom: 2
+              strokeTo: 0
+              colorFrom: ffdd55
+              colorTo: db401c
+            }
+            {
+              line: true
+              baseRotation: -115
+              length: 48
+              baseLength: -18
+              particles: 4
+              cone: 15
+              lifetime: 15
+              interp: pow10Out
+              sizeInterp: linear
+              lenFrom: 7
+              lenTo: 5
+              strokeFrom: 2
+              strokeTo: 0
+              colorFrom: ffdd55
+              colorTo: db401c
+            }
+          ]
+        }
+        {
+          particles: 1
+          lifetime: 15
+          length: -35
+          baseLength: 8
+          cone: 25
+          interp: pow10Out
+          sizeInterp: linear
+          sizeFrom: 16
+          sizeTo: 0
+          colorFrom: ffdd55
+          colorTo: ffdd55
+        }
+        {
+          particles: 1
+          lifetime: 25
+          length: -35
+          baseLength: 8
+          cone: 25
+          interp: pow10Out
+          sizeInterp: linear
+          sizeFrom: 16
+          sizeTo: 0
+          colorFrom: db401c
+          colorTo: db401c
+          layer: 109
+        }
+        {
+          particles: 1
+          lifetime: 35
+          length: -35
+          baseLength: 8
+          cone: 25
+          interp: pow10Out
+          sizeInterp: linear
+          sizeFrom: 16
+          sizeTo: 0
+          colorFrom: 787878
+          colorTo: 787878
+          layer: 99
+        }
+        {
+          particles: 1
+          lifetime: 35
+          length: -54
+          baseLength: 8
+          cone: 45
+          interp: pow10Out
+          sizeInterp: linear
+          sizeFrom: 4
+          sizeTo: 0
+          colorFrom: 787878
+          colorTo: 787878
+          layer: 99
+        }
+      ]
+      fragBullets: 750
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragBullet: {
+        type: BulletType
+        speed: 2
+        lifetime: 20
+        hitEffect: none
+        despawnEffect: none
+        damage: 60
+        pierceDamageFactor: 1
+        hittable: false
+        reflectable: false
+      }
+      fragOnHit: false
+      despawnHit: false
+      despawnEffect: [
+        {
+          length: 40
+          lifetime: 40
+          particles: 25
+          colorFrom: 787878
+          colorTo: 787878
+          interp: pow5Out
+          sizeInterp: pow10In
+          sizeFrom: 5
+          sizeTo: 0
+        }
+        {
+          length: 60
+          lifetime: 60
+          particles: 20
+          colorFrom: 787878
+          colorTo: 787878
+          interp: pow10Out
+          sizeInterp: pow5In
+          sizeFrom: 2
+          sizeTo: 0
+        }
+        {
+          length: 35
+          lifetime: 90
+          particles: 14
+          colorFrom: 787878
+          colorTo: 787878
+          interp: pow10Out
+          sizeInterp: pow5In
+          sizeFrom: 7
+          sizeTo: 0
+        }
+        {
+          length: 70
+          lifetime: 40
+          particles: 12
+          colorFrom: ffdd55
+          colorTo: db401c
+          interp: pow3Out
+          sizeInterp: pow10In
+          sizeFrom: 3
+          sizeTo: 0
+        }
+        {
+          length: 60
+          line: true
+          lifetime: 35
+          particles: 15
+          lenFrom: 16
+          lenTo: 0
+          strokeFrom: 4
+          strokeTo: 2
+          colorTo: db401c
+        }
+        {
+          type: WaveEffect
+          lifetime: 50
+          sizeFrom: 0
+          sizeTo: 60
+          interp: pow3Out
+          colorTo: db401c
+          strokeFrom: 4
+          strokeTo: 0
+        }
+      ]
+      spawnBullets: [
+        {
+          type: PointBulletType
+          speed: 1200
+          lifetime: 1
+          collidesAir: false
+          collidesGround: false
+          despawnHit: true
+          trailEffect: none
+          hitEffect: none
+          despawnEffect: {
+            useRotation: false
+            baseRotation: 0
+            length: -600
+            baseLength: 600
+            randLength: false
+            lifetime: 242
+            layer: 80
+            particles: 1
+            cone: 0
+            sizeFrom: 0
+            sizeTo: 16
+            colorFrom: 00000044
+            colorTo: 00000044
+          }
+        }
+      ]
+    }
+  }
+]
+deathExplosionEffect: none
+deathSound: none

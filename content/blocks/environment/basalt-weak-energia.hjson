@@ -5,7 +5,7 @@ attributes: {
   water: -0.3
 }
 liquidDrop: energia
-liquidMultiplier: 0.07
+liquidMultiplier: 0.2
 emitLight: true
 lightRadius: 25
 lightColor: 3bbeff25

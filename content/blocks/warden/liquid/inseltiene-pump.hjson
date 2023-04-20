@@ -2,16 +2,17 @@ type: Pump
 size: 5
 hasPower: true
 consumes: {
+  liquid: energia/0.35
   power: 5.1
 }
-pumpAmount: 0.40666666666
+pumpAmount: 0.192
 squareSprite: false
 customShadow: true
 liquidCapacity: 250
 requirements: [
-  territe-alloy/250
-  baenite/100
-  inseltiene/50
+  territe-alloy/1800
+  baenite/300
+  inseltiene/150
 ]
 category: liquid
 research: inseltiene-conduit

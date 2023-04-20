@@ -1,0 +1,13 @@
+sector: 22
+planet: serpulo
+research: {
+  parent: planetaryTerminal
+  objectives: [
+    omura, 
+    tetrative-reconstructor,
+    overdrive-dome
+  ]
+}
+difficulty: 10
+enemyBase: true
+clearSectorOnLose: true

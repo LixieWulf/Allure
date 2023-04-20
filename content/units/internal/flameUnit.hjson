@@ -6,6 +6,7 @@ hitSize: 0
 hittable: false
 deathSound: none 
 deathExplosionEffect: none
+useUnitCap: false
 weapons: [
   {
     controllable: false
