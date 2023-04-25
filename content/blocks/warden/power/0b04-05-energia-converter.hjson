@@ -27,6 +27,17 @@ drawer: [
     alpha: 0.5
   }
   {
+    type: DrawBubbles
+    color: 7693e3
+    timeScl: 35
+    sides: 12
+    recurrence: 6
+    spread: 8
+    radius: 2
+    amount: 100
+    strokeMin: 0
+  }
+  {
     type: DrawLiquidTile
     drawLiquid: steam
     padding: 5
@@ -101,3 +112,5 @@ breakEffect: [
     colorTo: 7382f000
   }
 ]
+ambientSound: steam
+ambientSoundVolume: 0.35

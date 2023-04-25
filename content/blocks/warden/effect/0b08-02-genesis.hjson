@@ -1,0 +1,399 @@
+type: LiquidTurret
+squareSprite: false
+size: 6
+targetHealing: true
+range: 240
+reload: 180
+recoil: 0
+rotateSpeed: 0
+shootCone: 360
+hasPower: true
+hasPower: true
+conductivePower: true
+consumesPower: true
+outputsPower: true
+liquidCapacity: 12400
+consumes: {
+  power: 96
+}
+shootY: 0
+loopSound: none
+shootEffect: {
+  type: WaveEffect
+  lifetime: 60
+  sizeFrom: 0
+  sizeTo: 240
+  strokeFrom: 9
+  strokeTo: 0
+  colorTo: 70d4af
+}
+ammoTypes: {
+  liquid-baenara: {
+    ammoMultiplier: 0.0005
+    type: BulletType
+    lifetime: 180
+    speed: 0
+    hittable: false
+    absorbable: false
+    reflectable: false
+    pierce: true
+    collidesTeam: true
+    healPercent: 100
+    hitEffect: none
+    despawnEffect: none
+    spawnBullets: [
+      {
+        type: ExplosionBulletType
+        killShooter: false
+        fragBullets: 750
+        fragVelocityMin: 1
+        fragVelocityMax: 1
+        fragBullet: {
+          type: BulletType
+          pierce: true
+          pierceBuilding: true
+          speed: 4
+          lifetime: 60
+          collidesTeam: true
+          healAmount: 40
+          hitEffect: none
+          despawnEffect: none
+        }
+      }
+    ]
+    trailInterval: 2
+    trailEffect: {
+      line: true
+      length: -24
+      baseLength: 24
+      particles: 1
+      lifetime: 30
+      interp: pow2In
+      sizeInterp: linear
+      lenFrom: 4
+      lenTo: 6
+      strokeFrom: 0
+      strokeTo: 1
+      colorFrom: 70d4af
+      colorTo: 70d4af
+    }
+  }
+}
+shootWarmupSpeed: 0.01
+minWarmup: 0.9
+linearWarmup: true
+category: effect
+requirements: [
+  dantrales/1200
+  territe-alloy/2400
+  baenite/600
+  draconium/200
+]
+drawer: [
+  {
+    type: DrawTurret
+    parts: [
+      {
+        type: ShapePart
+        circle: true
+        radius: 0
+        radiusTo: 8
+        color: 70d4af
+        layer: 100
+      }
+      {
+        type: ShapePart
+        circle: true
+        hollow: true
+        radius: 220
+        stroke: 0
+        strokeTo: 2
+        color: 7382f0
+        layer: 100
+      }
+      {
+        type: ShapePart
+        circle: true
+        hollow: true
+        radius: 200
+        stroke: 0
+        strokeTo: 2
+        color: 7382f0
+        layer: 100
+      }
+      {
+        type: HaloPart
+        shapes: 8
+        tri: true
+        haloRadius: 210
+        radius: 16
+        radiusTo: 16
+        triLength: 8
+        triLengthTo: 8
+        shapeMoveRot: 180
+        color: 000000
+        colorTo: 7382f0
+        haloRotateSpeed: 1
+        layer: 100
+        progress: {
+          type: warmup
+          op: delay
+          amount: 0.5
+        }
+      }
+      {
+        type: HaloPart
+        shapes: 8
+        tri: true
+        haloRadius: 210
+        haloRotation: 22.5
+        radius: 16
+        radiusTo: 16
+        triLength: 8
+        triLengthTo: 8
+        shapeRotation: 180
+        shapeMoveRot: 180
+        color: 000000
+        colorTo: 7382f0
+        haloRotateSpeed: 1
+        layer: 100
+        progress: {
+          type: warmup
+          op: delay
+          amount: 0.5
+        }
+      }
+      {
+        type: HaloPart
+        shapes: 8
+        tri: true
+        haloRadius: 210
+        radius: 16
+        radiusTo: 16
+        triLength: 8
+        triLengthTo: 8
+        shapeRotation: 180
+        shapeMoveRot: 180
+        color: 000000
+        colorTo: 7382f0
+        haloRotateSpeed: 1
+        layer: 100
+        progress: {
+          type: warmup
+          op: delay
+          amount: 0.5
+        }
+      }
+      {
+        type: HaloPart
+        shapes: 8
+        tri: true
+        haloRadius: 210
+        haloRotation: 22.5
+        radius: 16
+        radiusTo: 16
+        triLength: 8
+        triLengthTo: 8
+        shapeMoveRot: 180
+        color: 000000
+        colorTo: 7382f0
+        haloRotateSpeed: 1
+        layer: 100
+        progress: {
+          type: warmup
+          op: delay
+          amount: 0.5
+        }
+      }
+      {
+        type: HaloPart
+        shapes: 8
+        tri: true
+        haloRadius: 210
+        radius: 10
+        radiusTo: 10
+        triLength: 5
+        triLengthTo: 5
+        shapeRotation: 180
+        shapeMoveRot: 180
+        color: 000000
+        haloRotateSpeed: 1
+        layer: 100
+        progress: {
+          type: warmup
+          op: delay
+          amount: 0.5
+        }
+      }
+      {
+        type: HaloPart
+        shapes: 8
+        tri: true
+        haloRadius: 210
+        haloRotation: 22.5
+        radius: 10
+        radiusTo: 10
+        triLength: 5
+        triLengthTo: 5
+        shapeMoveRot: 180
+        color: 000000
+        haloRotateSpeed: 1
+        layer: 100
+        progress: {
+          type: warmup
+          op: delay
+          amount: 0.5
+        }
+      }
+    ]
+  }
+  {
+    type: DrawRegion
+  }
+]
+breakEffect: [
+  {
+    type: WaveEffect
+    rotation: 39
+    lifetime: 20
+    sides: 4
+    sizeFrom: 24
+    sizeTo: 48
+    strokeFrom: 18
+    strokeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 11
+    useRotation: false
+    region: exotic-mod-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f000
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 30
+    startDelay: 10
+    useRotation: false
+    region: exotic-mod-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f0
+    colorTo: 7382f000
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    randLength: false
+    baseLength: 6
+    length: 18
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 8
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    baseRotation: 180
+    randLength: false
+    baseLength: 6
+    length: 18
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 8
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    baseRotation: 45
+    randLength: false
+    baseLength: 6
+    length: 9
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    baseRotation: -45
+    randLength: false
+    baseLength: 6
+    length: 9
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    baseRotation: 135
+    randLength: false
+    baseLength: 6
+    length: 9
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    baseRotation: -135
+    randLength: false
+    baseLength: 6
+    length: 9
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+]

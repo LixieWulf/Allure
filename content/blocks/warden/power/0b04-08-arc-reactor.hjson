@@ -21,12 +21,12 @@ drawer: [
     suffix: -spikes0-heat
     layer: 30
     rotateSpeed: 3
-    color: 90a2fc
+    color: bc5452
     alpha: 1
   }
   {
     type: DrawRegion
-    suffix: -top
+    suffix: -top0
   }
   {
     type: DrawGlowRegion
@@ -38,10 +38,6 @@ drawer: [
     glowIntensity: 1
   }
   {
-    type: DrawRegion
-    suffix: -top2
-  }
-  {
     type: DrawGlowRegion
     suffix: -abyss1
     color: 000000
@@ -49,6 +45,10 @@ drawer: [
     layer: 30
     glowScale: 22
     glowIntensity: 1
+  }
+  {
+    type: DrawRegion
+    suffix: -top1
   }
   {
     type: DrawBlurSpin
@@ -59,18 +59,18 @@ drawer: [
   }
 ]
 consumes: {
-  power: 960
+  power: 180
   items: [
     baenite/28
     draconium/2
   ]
   liquids: [
-    water/100
+    water/20
     ozone/0.48
     arreacta/1
   ]
 }
-outputLiquid: steam/100
+outputLiquid: steam/20
 outputItem: shadow/3
 category: power
 ambientSound: arc

@@ -138,4 +138,76 @@ breakEffect: [
     colorFrom: 7382f0
     colorTo: 7382f0
   }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    baseRotation: 45
+    randLength: false
+    baseLength: 6
+    length: 9
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    baseRotation: -45
+    randLength: false
+    baseLength: 6
+    length: 9
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    baseRotation: 135
+    randLength: false
+    baseLength: 6
+    length: 9
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    baseRotation: -135
+    randLength: false
+    baseLength: 6
+    length: 9
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
 ]

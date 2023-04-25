@@ -6,3 +6,53 @@ requirements: [
 category: distribution
 speed: 7.5
 research: 0b-begin
+breakEffect: {
+  type: WaveEffect
+  rotation: 44
+  lifetime: 20
+  sides: 4
+  sizeFrom: 4
+  sizeTo: 8
+  strokeFrom: 3
+  strokeTo: 0
+  colorFrom: 7382f0
+  colorTo: 7382f0
+}
+destroyBullet: {
+  type: BulletType
+  speed: 0
+  lifetime: 0
+  collides: false
+  absorbable: false
+  hittable: false
+  hitEffect: none
+  despawnEffect: none
+  fragBullets: 2
+  fragLifeMin: 0.01
+  fragBullet: {
+    type: BulletType
+    damage: 0
+    collides: false
+    absorbable: false
+    hittable: false
+    reflectable: false
+    hitEffect: none
+    despawnEffect: none
+    speed: 0.01
+    lifetime: 12
+    lightning: 1
+    lightningLength: 4
+    lightningCone: 0
+    lightningColor: 7382f0
+    lightningDamage: 10
+  }
+}
+destroyEffect: {
+  particles: 1
+  length: 0
+  lifetime: 25
+  interp: pow2In
+  sizeFrom: 8
+  sizeTo: 0
+  colorTo: 7382f0
+}

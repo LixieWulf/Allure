@@ -1,0 +1,141 @@
+//this gave me an aneurysm
+type: LiquidTurret
+squareSprite: false
+extinguish: false
+size: 3
+alwaysShooting: true
+rotateSpeed: 0
+shootCone: 360
+range: 160
+liquidCapacity: 720
+reload: 120
+shootY: 0
+recoil: 0
+loopSound: none
+outlineIcon: false
+ammoTypes: {
+  energia: {
+    ammoMultiplier: 0.008
+    spawnUnit: exotic-mod-discharge-energia
+  }
+  liquid-baenara: {
+    type: EmpBulletType
+    ammoMultiplier: 0.016
+    keepVelocity: false
+    radius: 120
+    rangeChange: -40
+    lifetime: 1
+    hitEffect: none
+    despawnEffect: none
+    hitEffect: [
+      {
+        type: WaveEffect
+        lifetime: 30
+        sizeFrom: 60
+        sizeTo: 120
+        interp: pow3Out
+        strokeFrom: 6
+        strokeTo: 0
+        colorTo: 70d4af
+      }
+      {
+        type: WaveEffect
+        lifetime: 30
+        sizeFrom: 120
+        sizeTo: 120
+        strokeFrom: 4
+        strokeTo: 0
+        colorTo: 70d4af
+      }
+    ]
+    shootEffect: none
+    smokeEffect: none
+    hitShake: 4
+    hitSound: spark
+    despawnHit: true
+    hitPowerEffect: none
+    applyEffect: none
+    hitColor: 70d4af
+    timeDuration: 119
+    timeIncrease: 2
+  }
+}
+drawer: [
+  {
+    type: DrawRegion
+  }
+  {
+    type: DrawTurret
+    parts: [
+      {
+        type: ShapePart
+        rotation: 22.5
+        layer: 100
+        hollow: true
+        sides: 8
+        radius: 6
+        radiusTo: 8
+        color: 7382f0
+        colorTo: 90a2fc
+        stroke: 0.5
+        strokeTo: 0
+        progress: {
+          type: warmup
+          op: sin
+          scl: 40
+          mag: 1
+        }
+      }
+    ]
+  }
+  {
+    type: DrawGlowRegion
+    color: feb380
+  }
+]
+category: effect
+requirements: [
+  dantrales/600
+  territe-alloy/1800
+  baenite/200
+  crystal/600
+]
+breakEffect: [
+  {
+    type: WaveEffect
+    rotation: 41
+    lifetime: 20
+    sides: 4
+    sizeFrom: 12
+    sizeTo: 24
+    strokeFrom: 9
+    strokeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 11
+    useRotation: false
+    region: exotic-mod-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f000
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 30
+    startDelay: 10
+    useRotation: false
+    region: exotic-mod-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f0
+    colorTo: 7382f000
+  }
+]

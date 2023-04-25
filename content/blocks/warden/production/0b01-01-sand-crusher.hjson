@@ -203,3 +203,5 @@ requirements: [
   dantrales/200
   territe-alloy/1200
 ]
+ambientSound: crack
+ambientSoundVolume: 0.1

@@ -14,7 +14,7 @@ conductivePower: true
 consumesPower: true
 outputsPower: true
 consumes: {
-  powerBuffered: 6000
+  powerBuffered: 12000
 }
 requirements: [
   infrastructure/1200

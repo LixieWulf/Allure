@@ -4,6 +4,11 @@ squareSprite: false
 craftTime: 390
 itemCapacity: 15
 liquidCapacity: 360
+//just so that the warden overdrive does anything, in a sensical way
+hasPower: true
+conductivePower: true
+consumesPower: true
+outputsPower: true
 drawer: [
   {
     type: DrawDefault
@@ -30,6 +35,17 @@ drawer: [
     alpha: 0.6
   }
   {
+    type: DrawBubbles
+    color: 7693e3
+    timeScl: 35
+    sides: 12
+    recurrence: 6
+    spread: 6
+    radius: 2
+    amount: 70
+    strokeMin: 0
+  }
+  {
     type: DrawLiquidTile
     drawLiquid: steam
     padding: 8
@@ -44,6 +60,7 @@ drawer: [
   }
 ]
 consumes: {
+  powerBuffered: 500
   liquids: [
     water/2.5
     arreacta/0.1
@@ -133,3 +150,5 @@ breakEffect: [
     colorTo: 7382f0
   }
 ]
+ambientSound: steam
+ambientSoundVolume: 0.05

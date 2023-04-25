@@ -3,6 +3,7 @@ template: MissileUnitType
 localizedName: yet another internal unit
 lifetime: 0
 hitSize: 0
+fallSpeed: 0.2
 hittable: false
 deathSound: none 
 deathExplosionEffect: none
@@ -15,6 +16,7 @@ weapons: [
     shootSound: flame
     bullet: {
       type: BulletType
+      recoil: 1000
       lifetime: 0
       hitEffect: none
       despawnEffect: none

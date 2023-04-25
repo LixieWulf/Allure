@@ -55,3 +55,149 @@ drawer: [
     suffix: -up
   }
 ]
+breakEffect: [
+  {
+    type: WaveEffect
+    rotation: 38
+    lifetime: 20
+    sides: 4
+    sizeFrom: 28
+    sizeTo: 56
+    strokeFrom: 21
+    strokeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 11
+    useRotation: false
+    region: exotic-mod-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f000
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 30
+    startDelay: 10
+    useRotation: false
+    region: exotic-mod-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f0
+    colorTo: 7382f000
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    randLength: false
+    baseLength: 6
+    length: 21
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 8
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    baseRotation: 180
+    randLength: false
+    baseLength: 6
+    length: 21
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 8
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    baseRotation: 45
+    randLength: false
+    baseLength: 6
+    length: 24
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    baseRotation: -45
+    randLength: false
+    baseLength: 6
+    length: 24
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    baseRotation: 135
+    randLength: false
+    baseLength: 6
+    length: 24
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    baseRotation: -135
+    randLength: false
+    baseLength: 6
+    length: 24
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+]

@@ -3,9 +3,35 @@ squareSprite: false
 size: 2
 health: 900
 armor: 30
-itemCapacity: 200
+itemCapacity: 400
 category: effect
 requirements: [
   dantrales/80
   territe-alloy/400
+]
+breakEffect: [
+  {
+    type: WaveEffect
+    rotation: 43
+    lifetime: 20
+    sides: 4
+    sizeFrom: 8
+    sizeTo: 16
+    strokeFrom: 6
+    strokeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 30
+    useRotation: false
+    region: exotic-mod-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f0
+    colorTo: 7382f000
+  }
 ]

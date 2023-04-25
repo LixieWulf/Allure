@@ -1,7 +1,7 @@
 type: Battery
 size: 4
 consumes: {
-  powerBuffered: 1000
+  powerBuffered: 2000
 }
 research: {
   parent: 0b05-12-plasma-booster
@@ -15,4 +15,94 @@ requirements: [
   dantrales/50
   territe-alloy/1600
   baenite/100
+]
+drawer: [
+  {
+  }
+  {
+    type: DrawPower
+    mixcol: false
+  }
+  {
+    type: DrawRegion
+    suffix: -top
+  }
+  {
+    type: DrawGlowRegion
+    color: feb380
+  }
+]
+breakEffect: [
+  {
+    type: WaveEffect
+    rotation: 41
+    lifetime: 20
+    sides: 4
+    sizeFrom: 16
+    sizeTo: 32
+    strokeFrom: 12
+    strokeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 11
+    useRotation: false
+    region: exotic-mod-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f000
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 30
+    startDelay: 10
+    useRotation: false
+    region: exotic-mod-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f0
+    colorTo: 7382f000
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    randLength: false
+    length: 0
+    baseLength: 12
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    baseRotation: 180
+    randLength: false
+    length: 0
+    baseLength: 12
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
 ]

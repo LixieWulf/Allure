@@ -1,0 +1,72 @@
+template: MissileUnitType
+hitSize: 0
+speed: 0
+rotateSpeed: 0
+lifetime: 1
+speed: 0
+drawBody: false
+drawCell: false
+hittable: false
+targetable: false
+physics: false
+fallSpeed: 0.5
+weapons: [
+  {
+    controllable: false
+    alwaysShooting: true
+    x: 0
+    reload: 5
+    shootCone: 360
+    shootSound: none
+    bullet: {
+      type: EmpBulletType
+      keepVelocity: false
+      radius: 160
+      lifetime: 1
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: [
+        {
+          type: WaveEffect
+          lifetime: 30
+          sizeFrom: 80
+          sizeTo: 160
+          interp: pow3Out
+          strokeFrom: 9
+          strokeTo: 0
+          colorTo: 3bbeff
+        }
+        {
+          type: WaveEffect
+          lifetime: 30
+          sizeFrom: 160
+          sizeTo: 160
+          strokeFrom: 6
+          strokeTo: 0
+          colorTo: 3bbeff
+        }
+      ]
+      hitShake: 6
+      hitSound: spark
+      despawnHit: true
+      hitPowerEffect: none
+      applyEffect: none
+      hitColor: 3bbeff
+      timeDuration: 119
+      timeIncrease: 4      
+    }
+  }
+]
+abilities: [
+  {
+    type: StatusFieldAbility
+    effect: exotic-mod-overcharge
+    range: 160
+    reload: 1
+    duration: 120
+    parentizeEffects: false
+    activeEffect: none
+  }
+]
+deathSound: none
+deathExplosionEffect: none

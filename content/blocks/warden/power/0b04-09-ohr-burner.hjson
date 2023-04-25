@@ -33,6 +33,11 @@ drawer: [
     suffix: -top0
   }
   {
+    type: DrawGlowRegion
+    suffix: -burn
+    layer: 30
+  }
+  {
     type: DrawRegion
     suffix: -blade0
     rotateSpeed: 48
@@ -122,10 +127,11 @@ effect: {
     useRotation: false 
     sizeFrom: 0
     sizeTo: 28
-    colorFrom: 787878
+    colorFrom: 78787888
     colorTo: 78787800
     sizeInterp: pow2Out
     interp: pow2Out
+    layer: 111
   }
 }
 category: power
@@ -138,5 +144,5 @@ requirements: [
   draconium/150
   shadow/250
 ]
-ambientSound: bioLoop
-ambientSoundVolume: 0.5
+ambientSound: smelter
+ambientSoundVolume: 4

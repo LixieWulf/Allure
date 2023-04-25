@@ -28,3 +28,15 @@ breakEffect: {
   colorFrom: 7382f0
   colorTo: 7382f0
 }
+breakEffect: {
+  type: WaveEffect
+  rotation: 44
+  lifetime: 20
+  sides: 4
+  sizeFrom: 4
+  sizeTo: 8
+  strokeFrom: 3
+  strokeTo: 0
+  colorFrom: 7382f0
+  colorTo: 7382f0
+}

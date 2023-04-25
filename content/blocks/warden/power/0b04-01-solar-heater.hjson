@@ -254,3 +254,5 @@ destroyBullet: {
     lightningColor: 7382f0
   }
 }
+ambientSound: steam
+ambientSoundVolume: 0.05

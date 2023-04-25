@@ -7,6 +7,7 @@ pulseMag: 0.1
 consumes: {
   power: 1.5
 }
+canOverdrive: false
 category: power
 research: {
   parent: 0b-begin
@@ -21,3 +22,15 @@ requirements: [
   territe-alloy/80
   metaglass/10
 ]
+breakEffect: {
+  type: WaveEffect
+  rotation: 44
+  lifetime: 20
+  sides: 4
+  sizeFrom: 4
+  sizeTo: 8
+  strokeFrom: 3
+  strokeTo: 0
+  colorFrom: 7382f0
+  colorTo: 7382f0
+}

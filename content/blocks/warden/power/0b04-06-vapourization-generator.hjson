@@ -61,7 +61,7 @@ drawer: [
     suffix: -top
   }
 ]
-craftTime: 240
+craftTime: 260
 consumes: {
   liquids: [
     water/10
@@ -157,3 +157,5 @@ breakEffect: [
     colorTo: 7382f0
   }
 ]
+ambientSound: steam
+ambientSoundVolume: 0.25

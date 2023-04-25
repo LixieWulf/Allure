@@ -11,3 +11,15 @@ botColor: 131316
 category: liquid
 research: 0b02-00-tube
 junctionReplacement: 0b03-01-vacuum-junction
+breakEffect: {
+  type: WaveEffect
+  rotation: 44
+  lifetime: 20
+  sides: 4
+  sizeFrom: 4
+  sizeTo: 8
+  strokeFrom: 3
+  strokeTo: 0
+  colorFrom: 7382f0
+  colorTo: 7382f0
+}

@@ -11,3 +11,29 @@ requirements: [
   territe-alloy/240
   baenite/30
 ]
+breakEffect: [
+  {
+    type: WaveEffect
+    rotation: 43
+    lifetime: 20
+    sides: 4
+    sizeFrom: 8
+    sizeTo: 16
+    strokeFrom: 6
+    strokeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 30
+    useRotation: false
+    region: exotic-mod-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f0
+    colorTo: 7382f000
+  }
+]
