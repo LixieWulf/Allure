@@ -1,0 +1,226 @@
+health: 9500
+crushDamage: 5
+weapons: [
+  {
+    name: vanquish-point-weapon
+    mirror: false
+    otherSide: 1
+    reload: 35
+    x: -12
+    y: 8.5
+    shootY: 5.5
+    recoil: 2
+    rotate: true
+    rotateSpeed: 2
+    shootSound: bolt
+    bullet: {
+      type: RailBulletType
+      length: 110
+      damage: 35
+      shootEffect: sparkShoot
+      smokeEffect: shootBigSmoke
+      hitColor: feb380
+      hitEffect: hitBulletColor
+      pierceDamageFactor: 1
+      pointEffectSpace: 4
+      pointEffect: {
+        line: true
+        particles: 1
+        cone: 0
+        length: 4
+        baseLength: 2
+        cap: false
+        lifetime: 30
+        strokeFrom: 1.2
+        strokeTo: 0
+        lenFrom: 8
+        lenTo: 2
+        colorTo: feb380
+      }
+    }
+  }
+  {
+    name: vanquish-point-weapon
+    flipSprite: true
+    mirror: false
+    otherSide: 2
+    reload: 35
+    x: 12
+    y: 8.5
+    shootY: 5.5
+    recoil: 2
+    rotate: true
+    rotateSpeed: 2
+    shootSound: bolt
+    bullet: {
+      type: RailBulletType
+      length: 110
+      damage: 35
+      shootEffect: sparkShoot
+      smokeEffect: shootBigSmoke
+      hitColor: feb380
+      hitEffect: hitBulletColor
+      pierceDamageFactor: 1
+      pointEffectSpace: 4
+      pointEffect: {
+        line: true
+        particles: 1
+        cone: 0
+        length: 4
+        baseLength: 2
+        cap: false
+        lifetime: 30
+        strokeFrom: 1.2
+        strokeTo: 0
+        lenFrom: 8
+        lenTo: 2
+        colorTo: feb380
+      }
+    }
+  }
+  {
+    name: vanquish-point-weapon
+    flipSprite: true
+    mirror: false
+    otherSide: 3
+    reload: 35
+    x: 12
+    y: -9
+    shootY: 5.5
+    recoil: 2
+    rotate: true
+    rotateSpeed: 2
+    shootSound: bolt
+    bullet: {
+      type: RailBulletType
+      length: 110
+      damage: 35
+      shootEffect: sparkShoot
+      smokeEffect: shootBigSmoke
+      hitColor: feb380
+      hitEffect: hitBulletColor
+      pierceDamageFactor: 1
+      pointEffectSpace: 4
+      pointEffect: {
+        line: true
+        particles: 1
+        cone: 0
+        length: 4
+        baseLength: 2
+        cap: false
+        lifetime: 30
+        strokeFrom: 1.2
+        strokeTo: 0
+        lenFrom: 8
+        lenTo: 2
+        colorTo: feb380
+      }
+    }
+  }
+  {
+    name: vanquish-point-weapon
+    flipSprite: true
+    mirror: false
+    otherSide: 0
+    reload: 35
+    x: -12
+    y: -9
+    shootY: 5.5
+    recoil: 2
+    rotate: true
+    rotateSpeed: 2
+    shootSound: bolt
+    bullet: {
+      type: RailBulletType
+      length: 110
+      damage: 35
+      shootEffect: sparkShoot
+      smokeEffect: shootBigSmoke
+      hitColor: feb380
+      hitEffect: hitBulletColor
+      pierceDamageFactor: 1
+      pointEffectSpace: 4
+      pointEffect: {
+        line: true
+        particles: 1
+        cone: 0
+        length: 4
+        baseLength: 2
+        cap: false
+        lifetime: 30
+        strokeFrom: 1.2
+        strokeTo: 0
+        lenFrom: 8
+        lenTo: 2
+        colorTo: feb380
+      }
+    }
+  }
+  {
+    name: vanquish-weapon
+    reload: 70
+    shootY: 17.75
+    shake: 5
+    recoil: 4
+    rotate: true
+    rotateSpeed: 1
+    mirror: false
+    alternate: false
+    x: 0
+    y: 0
+    shadow: 28
+    heatColor: f9350f
+    cooldownTime: 80
+    shootSound: mediumCannon
+    bullet: {
+      sprite: missile-large
+      speed: 8
+      damage: 160
+      width: 9.5
+      height: 13
+      lifetime: 18
+      hitSize: 6
+      shootEffect: shootTitan
+      smokeEffect: shootSmokeTitan
+      pierceCap: 2
+      pierce: true
+      pierceBuilding: true
+      hitColor: feb380
+      backColor: feb380
+      trailColor: feb380
+      frontColor: ffffff
+      trailWidth: 3.1
+      trailLength: 8
+      hitEffect: blastExplosion
+      despawnEffect: blastExplosion
+      splashDamageRadius: 20
+      splashDamage: 50
+      maxRange: 240
+      fragOnHit: false
+      fragRandomSpread: 0
+      fragSpread: 10
+      fragBullets: 5
+      fragVelocityMin: 1
+      fragBullet: {
+        speed: 8
+        damage: 35
+        sprite: missile-large
+        width: 8
+        height: 12
+        lifetime: 15
+        hitSize: 4
+        hitColor: feb380
+        backColor: feb380
+        trailColor: feb380
+        frontColor: ffffff
+        trailWidth: 2.8
+        trailLength: 6
+        hitEffect: blastExplosion
+        despawnEffect: blastExplosion
+        splashDamageRadius: 10
+        splashDamage: 60
+      }
+      despawnSound: dullExplosion
+    }
+  }
+]

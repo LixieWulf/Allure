@@ -1767,67 +1767,6 @@ weapons: [
 ]
 abilities: [
   {
-    type: ShieldArcAbility
-    max: 2000000000
-    regen: 2000000000
-    cooldown: 0
-    angle: 65
-    whenShooting: false
-    angleOffset: 80
-    drawArc: false
-    y: 36
-  }
-  {
-    type: ShieldArcAbility
-    max: 2000000000
-    regen: 2000000000
-    cooldown: 0
-    angle: 65
-    whenShooting: false
-    angleOffset: -80
-    drawArc: false
-    y: 36
-  }
-  {
-    type: ShieldArcAbility
-    max: 2000000000
-    regen: 2000000000
-    cooldown: 0
-    angle: 360
-    whenShooting: false
-    drawArc: false
-  }
-  {
-    type: ShieldArcAbility
-    max: 2000000000
-    regen: 2000000000
-    cooldown: 0
-    angle: 360
-    angleOffset: 90
-    whenShooting: false
-    drawArc: false
-  }
-  {
-    type: ShieldArcAbility
-    max: 2000000000
-    regen: 2000000000
-    cooldown: 0
-    angle: 360
-    angleOffset: -90
-    whenShooting: false
-    drawArc: false
-  }
-  {
-    type: ShieldArcAbility
-    max: 2000000000
-    regen: 2000000000
-    cooldown: 0
-    angle: 360
-    angleOffset: 180
-    whenShooting: false
-    drawArc: false
-  }
-  {
     type: MoveEffectAbility
     minVelocity: 0
     interval: 1
@@ -1844,6 +1783,7 @@ abilities: [
       colorFrom: 7382f0
       colorTo: 7382f0
     }
+    display: false
   }
   {
     type: MoveEffectAbility
@@ -1862,6 +1802,7 @@ abilities: [
       colorFrom: 7382f0
       colorTo: 7382f0
     }
+    display: false
   }
   {
     type: MoveEffectAbility
@@ -1879,6 +1820,7 @@ abilities: [
       colorFrom: 7382f0
       colorTo: 7382f0
     }
+    display: false
   }
   {
     type: EnergyFieldAbility
@@ -1893,6 +1835,7 @@ abilities: [
     sectors: 0
     y: -96
     x: 42
+    display: false
   }
   {
     type: EnergyFieldAbility
@@ -1907,6 +1850,7 @@ abilities: [
     sectors: 0
     y: -96
     x: -42
+    display: false
   }
   {
     type: EnergyFieldAbility
@@ -1920,6 +1864,7 @@ abilities: [
     blinkSize: 0.25
     sectors: 0
     y: -80
+    display: false
   }
 ]
 envEnabled: -1

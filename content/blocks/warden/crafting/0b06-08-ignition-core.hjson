@@ -1,21 +1,73 @@
-type: Pump
-size: 5
-hasPower: true
-consumes: {
-  liquid: energia/0.35
-  power: 5.1
-}
-pumpAmount: 0.192
+Type: GenericCrafter
 squareSprite: false
-customShadow: true
-liquidCapacity: 250
-requirements: [
-  territe-alloy/1800
-  baenite/300
-  inseltiene/150
+size: 5
+craftTime: 480
+itemCapacity: 240
+liquidCapacity: 60
+drawer: [
+  {
+    type: DrawDefault
+  }
+  {
+    type: DrawLiquidTile
+    padding: 4
+    drawLiquid: oil
+  }
+  {
+    type: DrawRegion
+    suffix: -top0
+  }
+  {
+    type: DrawCultivator
+    plantColor: 7382f0
+    plantColorLight: 90a2fc
+    bubbles: 48
+    radius: 1
+    spread: 10
+    timeScl: 35
+  }
+  {
+    type: DrawRegion
+    suffix: -top1
+  }
+  {
+    type: DrawGlowRegion
+    color: ffb380
+  }
+  {
+    type: DrawGlowRegion
+    color: ffffff
+    suffix: -glow0
+    blending: normal
+  }
+  {
+    type: DrawGlowRegion
+    color: f7cba4
+    suffix: -glow1
+  }
 ]
-category: liquid
-research: inseltiene-conduit
+consumes: {
+  power: 8
+  items: { 
+    items: [
+      lead/12
+      silicon/36
+    ]
+  }
+  liquid: {
+    liquid: oil
+    amount: 0.3
+  }
+}
+outputItem: territe-alloy/25
+category: crafting
+research: furnace
+requirements: [
+  silicon/150
+  titanium/300
+  thorium/200
+  dantrales/300
+]
 breakEffect: [
   {
     type: WaveEffect

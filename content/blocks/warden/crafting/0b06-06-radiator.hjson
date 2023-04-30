@@ -54,8 +54,9 @@ outputLiquid: water/10
 ambientSoundVolume: 0
 category: crafting
 requirements: [
-  territe-alloy/800
-  scilaxa/200
+  dantrales/400
+  territe-alloy/1200
+  scilaxa/100
 ]
 breakEffect: [
   {

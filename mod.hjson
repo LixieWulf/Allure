@@ -11,6 +11,8 @@ description:
   HJSON at its core, Exotic seeks to break the limits and deliver a hopefully interesting experience to whoever plays it. Although most mods (well, all mods really) give an easier experience due to bad balancing, Exotic is considerably tougher than vanilla.
 
   This mod may cause ragequits and you may get stuck at any point in progression. Skill is required.
+
+  THIS UPDATE IS STILL IN EARLY DEV SO PLEASE SHUT UP ABOUT BUG REPORTS
   '''
 version: spaghetti
-minGameVersion: 140
+minGameVersion: 144

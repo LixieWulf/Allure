@@ -1,0 +1,7 @@
+reload: 90
+chargeTime: 50
+requirements: [
+  graphite/50
+  silicon/120
+  tungsten/80
+]

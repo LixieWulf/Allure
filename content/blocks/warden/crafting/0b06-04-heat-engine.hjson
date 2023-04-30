@@ -37,7 +37,7 @@ category: crafting
 requirements: [
   dantrales/500
   territe-alloy/600
-  scilaxa/300
+  scilaxa/150
 ]
 breakEffect: [
   {

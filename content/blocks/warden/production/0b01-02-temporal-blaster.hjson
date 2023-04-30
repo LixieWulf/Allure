@@ -1,7 +1,7 @@
 type: BurstDrill
 size: 6
 squareSprite: false
-drillTime: 480
+drillTime: 240
 liquidCapacity: 3800
 itemCapacity: 100
 tier: 9
@@ -193,7 +193,7 @@ consumes: {
   power: 6.5
   liquid: {
     liquid: liquid-baenara
-    amount: 4.8
+    amount: 9.6
   }
 }
 category: production

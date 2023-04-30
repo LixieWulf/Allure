@@ -15,7 +15,7 @@ loopSound: none
 outlineIcon: false
 ammoTypes: {
   energia: {
-    ammoMultiplier: 0.008
+    ammoMultiplier: 0.032
     spawnUnit: exotic-mod-discharge-energia
   }
   liquid-baenara: {
@@ -139,3 +139,4 @@ breakEffect: [
     colorTo: 7382f000
   }
 ]
+group: projectors

@@ -20,3 +20,27 @@ breakEffect: {
   colorFrom: 7382f0
   colorTo: 7382f0
 }
+destroyBullet: {
+  type: BulletType
+  speed: 0
+  lifetime: 0
+  collides: false
+  absorbable: false
+  hittable: false
+  hitEffect: none
+  despawnEffect: none
+  lightning: 3
+  lightningLength: 6
+  lightningLengthRand: 12
+  lightningColor: 7382f0
+  lightningDamage: 25
+}
+destroyEffect: {
+  particles: 1
+  length: 0
+  lifetime: 25
+  interp: pow2In
+  sizeFrom: 8
+  sizeTo: 0
+  colorTo: 7382f0
+}

@@ -72,5 +72,6 @@ abilities: [
       colorFrom: 7382f0
       colorTo: 7382f0
     }
+    display: false
   }
 ]

@@ -6,7 +6,7 @@ underBullets: false
 botColor: ffffff
 category: liquid
 research: {
-  parent: vacuum-conduit
+  parent: 0b03-00-vacuum-conduit
   objectives: []
 }
 requirements: [
@@ -14,8 +14,8 @@ requirements: [
   scilaxa/2
   crystal/5
 ]
-junctionReplacement: spatial-junction
-bridgeReplacement: spatial-bridge
+junctionReplacement: 0b03-05-spatial-junction
+bridgeReplacement: 0b03-07-spatial-bridge
 breakEffect: {
   type: WaveEffect
   rotation: 44

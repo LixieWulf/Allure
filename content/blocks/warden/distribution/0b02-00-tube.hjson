@@ -27,25 +27,11 @@ destroyBullet: {
   hittable: false
   hitEffect: none
   despawnEffect: none
-  fragBullets: 2
-  fragLifeMin: 0.01
-  fragBullet: {
-    type: BulletType
-    damage: 0
-    collides: false
-    absorbable: false
-    hittable: false
-    reflectable: false
-    hitEffect: none
-    despawnEffect: none
-    speed: 0.01
-    lifetime: 12
-    lightning: 1
-    lightningLength: 4
-    lightningCone: 0
-    lightningColor: 7382f0
-    lightningDamage: 10
-  }
+  lightning: 2
+  lightningLength: 3
+  lightningLengthRand: 6
+  lightningColor: 7382f0
+  lightningDamage: 25
 }
 destroyEffect: {
   particles: 1

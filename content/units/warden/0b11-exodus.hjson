@@ -241,6 +241,7 @@ weapons: [
     shootStatus: {
       name: e1
       dragMultiplier: 0.8
+      show: false
     }
     shootStatusDuration: 2
     shootSound: none
@@ -261,6 +262,7 @@ weapons: [
     shootStatus: {
       name: e2
       dragMultiplier: 0.9
+      show: false
     }
     shootStatusDuration: 2
     shootSound: none
@@ -281,6 +283,7 @@ weapons: [
     shootStatus: {
       name: e3
       dragMultiplier: 0.7
+      show: false
     }
     shootStatusDuration: 2
     shootSound: none
@@ -301,6 +304,7 @@ weapons: [
     shootStatus: {
       name: e4
       dragMultiplier: 0.6
+      show: false
     }
     shootStatusDuration: 2
     shootSound: none
@@ -609,6 +613,7 @@ abilities: [
       colorFrom: 7382f0
       colorTo: 7382f0
     }
+    display: false
   }
   {
     type: MoveEffectAbility
@@ -627,6 +632,7 @@ abilities: [
       colorFrom: 7382f0
       colorTo: 7382f0
     }
+    display: false
   }
   {
     type: MoveEffectAbility
@@ -645,6 +651,7 @@ abilities: [
       colorFrom: 7382f0
       colorTo: 7382f0
     }
+    display: false
   }
   {
     type: MoveEffectAbility
@@ -665,6 +672,7 @@ abilities: [
       colorFrom: ffffff
       colorTo: ffffff00
     }
+    display: false
   }
   //purely visual, does not spawn lightning or bullets
   {
@@ -675,6 +683,7 @@ abilities: [
     color: 7382f0
     chance: 0
     shootSound: none
+    display: false
   }
 ]
 envEnabled: -1

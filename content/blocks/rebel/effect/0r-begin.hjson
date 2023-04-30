@@ -3,6 +3,7 @@ visibleInEditor: false
 research: {
   root: true
   name: Rebel
+  planet: erekir
   requiresUnlock: false
   objectives: [
     {

@@ -103,6 +103,7 @@ abilities: [
     sectors: 0
     y: -6
     x: 7.25
+    display: false
   }
   {
     type: EnergyFieldAbility
@@ -117,6 +118,7 @@ abilities: [
     sectors: 0
     y: -6
     x: -7.25
+    display: false
   }
   {
     type: EnergyFieldAbility
@@ -130,6 +132,7 @@ abilities: [
     blinkSize: 0.25
     sectors: 0
     y: -8
+    display: false
   }
   {
     type: MoveEffectAbility
@@ -148,6 +151,7 @@ abilities: [
       colorFrom: 7382f0
       colorTo: 7382f0
     }
+    display: false
   }
   {
     type: MoveEffectAbility
@@ -166,6 +170,7 @@ abilities: [
       colorFrom: 7382f0
       colorTo: 7382f0
     }
+    display: false
   }
   {
     type: MoveEffectAbility
@@ -183,6 +188,7 @@ abilities: [
       colorFrom: 7382f0
       colorTo: 7382f0
     }
+    display: false
   }
 ]
 research: {

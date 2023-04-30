@@ -12,7 +12,7 @@ itemCapacity: 150
 category: units
 requirements: [
   dantrales/300
-  territe-alloy/1200
+  territe-alloy/600
   baenite/300
 ]
 breakEffect: [

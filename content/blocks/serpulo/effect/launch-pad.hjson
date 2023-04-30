@@ -1,0 +1,9 @@
+hasLiquids: true
+liquidCapacity: 30
+consumes: {
+  power: 8
+  liquids: [
+    cryofluid/0.1
+    oil/0.15
+  ]
+}

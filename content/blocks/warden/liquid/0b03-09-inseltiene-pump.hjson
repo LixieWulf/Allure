@@ -1,0 +1,232 @@
+type: Pump
+size: 5
+hasPower: true
+consumes: {
+  liquid: energia/0.35
+  power: 5.1
+}
+drawer: [
+  {
+  }
+  {
+    type: DrawPumpLiquid
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: energia
+    padding: 11
+  }
+  {
+    type: DrawRegion
+    suffix: -turbine
+    rotateSpeed: 6
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -turbine
+    rotateSpeed: 6
+    rotation: 45
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -top
+  }
+]
+pumpAmount: 0.192
+squareSprite: false
+customShadow: true
+liquidCapacity: 250
+requirements: [
+  territe-alloy/1800
+  baenite/300
+  inseltiene/35
+]
+category: liquid
+research: inseltiene-conduit
+breakEffect: [
+  {
+    type: WaveEffect
+    rotation: 40
+    lifetime: 20
+    sides: 4
+    sizeFrom: 20
+    sizeTo: 40
+    strokeFrom: 15
+    strokeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 11
+    useRotation: false
+    region: exotic-mod-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f000
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 30
+    startDelay: 10
+    useRotation: false
+    region: exotic-mod-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f0
+    colorTo: 7382f000
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    randLength: false
+    baseLength: 6
+    length: 12
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 6
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    baseRotation: 180
+    randLength: false
+    baseLength: 6
+    length: 12
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 6
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+]
+destroyEffect: [
+  {
+    layer: 105
+    length: 0
+    lifetime: 90
+    particles: 1
+    sizeInterp: pow3In
+    sizeFrom: 30
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    length: 0
+    lifetime: 90
+    particles: 1
+    sizeInterp: pow3In
+    sizeFrom: 20
+    sizeTo: 0
+  }
+  {
+    length: 60
+    particles: 35
+    lifetime: 120
+    interp: pow2Out
+    sizeInterp: pow5In
+    sizeFrom: 12
+    sizeTo: 0
+    colorFrom: 7382f0bb
+    colorTo: 7382f0bb
+  }
+  {
+    length: 70
+    particles: 30
+    lifetime: 100
+    interp: pow3Out
+    sizeInterp: pow5In
+    sizeFrom: 8
+    sizeTo: 0
+    colorFrom: 7382f0bb
+    colorTo: 7382f0bb
+  }
+  {
+    length: 80
+    particles: 22
+    lifetime: 90
+    interp: pow5Out
+    sizeInterp: pow5In
+    sizeFrom: 3
+    sizeTo: 0
+    colorFrom: 7382f0bb
+    colorTo: 7382f0bb
+  }
+  {
+    line: true
+    length: 100
+    lifetime: 35
+    particles: 12
+    interp: pow2Out
+    sizeInterp: linear
+    lenFrom: 14
+    lenTo: 10
+    strokeFrom: 6
+    strokeTo: 0
+    colorTo: 7382f0
+  }
+  {
+    line: true
+    length: 80
+    lifetime: 25
+    particles: 24
+    interp: pow3Out
+    sizeInterp: pow2In
+    lenFrom: 6
+    lenTo: 4
+    strokeFrom: 2
+    strokeTo: 0
+    colorTo: 7382f0
+  }
+  {
+    type: WaveEffect
+    sizeFrom: 18
+    sizeTo: 54
+    colorTo: 90a2fc
+    lifetime: 60
+    strokeFrom: 8
+    strokeTo: 0
+    interp: pow5Out
+  }
+]
+destroyBullet: {
+  type: BulletType
+  absorbable: false
+  lifetime: 0
+  fragBullets: 38
+  fragLifeMin: 0
+  fragBullet: {
+    type: BulletType
+    absorbable: false
+    hittable: false
+    collides: false
+    reflectable: false
+    speed: 0
+    lifetime: 15
+    lightningCone: 5
+    lightning: 1
+    lightningLengthRand: 16
+    lightningDamage: 11
+    lightningColor: 7382f0
+  }
+}

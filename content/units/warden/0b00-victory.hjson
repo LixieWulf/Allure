@@ -201,6 +201,7 @@ abilities: [
     sectors: 0
     y: -2.5
     x: 1.5
+    display: false
   }
   {
     type: EnergyFieldAbility
@@ -215,6 +216,7 @@ abilities: [
     sectors: 0
     y: -2.5
     x: -1.5
+    display: false
   }
   {
     type: MoveEffectAbility
@@ -233,6 +235,7 @@ abilities: [
       colorFrom: 7382f0
       colorTo: 7382f0
     }
+    display: false
   }
   {
     type: MoveEffectAbility
@@ -251,6 +254,7 @@ abilities: [
       colorFrom: 7382f0
       colorTo: 7382f0
     }
+    display: false
   }
   {
     type: MoveLightningAbility
@@ -262,6 +266,7 @@ abilities: [
     shootEffect: none
     heatRegion: exotic-mod-victory-wake
     color: 7382f060
+    display: false
   }
   {
     type: MoveLightningAbility
@@ -273,6 +278,7 @@ abilities: [
     shootEffect: none
     heatRegion: exotic-mod-victory-wake
     color: 7382f0bb
+    display: false
   }
   {
     type: MoveLightningAbility
@@ -284,6 +290,7 @@ abilities: [
     shootEffect: none
     heatRegion: exotic-mod-victory-wake
     color: 7382f0
+    display: false
   }
 ]
 research: 0b-begin
