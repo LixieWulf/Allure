@@ -1,0 +1,1464 @@
+type: flying
+fogRadius: 150
+lowAltitude: true
+flying: true
+health: 2100000
+armor: 1500
+hitSize: 160
+speed: 3
+rotateSpeed: 0.5
+omniMovement: false
+accel: 0.02
+drag: 0.03
+drawCell: false
+outlines: false
+shadowElevationScl: 3.5
+immunities: [
+  exotic-mod-emp
+]
+engineColor: e65555
+engines: [
+  {
+    x: 32
+    y: 2
+    rotation: 0
+    radius: 4
+  }
+  {
+    x: -32
+    y: 2
+    rotation: 180
+    radius: 4
+  }
+  {
+    x: 32
+    y: 50
+    rotation: 0
+    radius: 4
+  }
+  {
+    x: -32
+    y: 50
+    rotation: 180
+    radius: 4
+  }
+  {
+    x: 32
+    y: 59
+    rotation: 0
+    radius: 4
+  }
+  {
+    x: -32
+    y: 59
+    rotation: 180
+    radius: 4
+  }
+  {
+    x: 61
+    y: 4
+    rotation: 90
+    radius: 7
+  }
+  {
+    x: -61
+    y: 4
+    rotation: 90
+    radius: 7
+  }
+  {
+    x: 62
+    y: -105
+    rotation: -90
+    radius: 12
+  }
+  {
+    x: -62
+    y: -105
+    rotation: -90
+    radius: 12
+  }
+  {
+    x: 22
+    y: -101
+    rotation: -90
+    radius: 8
+  }
+  {
+    x: -22
+    y: -101
+    rotation: -90
+    radius: 8
+  }
+  {
+    y: -110
+    rotation: -90
+    radius: 16
+  }
+]
+weapons: [
+  {
+    name: extelsus-flak
+    x: 0
+    y: 28
+    controllable: false
+    autoTarget: true
+    targetInterval: 80
+    targetSwitchInterval: 8
+    shadow: 48
+    mirror: false
+    rotate: true
+    rotateSpeed: 3.4
+    reload: 35
+    recoil: 6
+    shootY: 10
+    shoot: {
+      type: ShootMulti
+      source: ShootPattern
+      dest: [
+        {
+          type: ShootHelix
+          shots: 2
+          scl: 4
+          mag: 4
+        }
+        {
+          type: ShootHelix
+          shots: 2
+          scl: 2
+          mag: 2
+        }
+      ]
+    }
+    shootSound: shoot
+    shake: 1
+    bullet: {
+      speed: 11
+      lifetime: 50 
+      damage: 550
+      width: 18
+      height: 44
+      collidesGround: false
+      frontColor: ffffff
+      backColor: d09f00
+      trailColor: d09f00
+      trailLength: 6
+      trailWidth: 5
+      hitShake: 2
+      fragBullets: 6
+      fragRandomSpread: 0
+      fragSpread: 60
+      fragBullet: {
+        type: LaserBulletType
+        length: 40
+        lifetime: 35
+        width: 45
+        damage: 600
+        colors: [
+          d09f0040, 
+          d09f00,
+          ffffff
+        ]
+        collidesGround: false
+      }
+      shootEffect: {
+        length: 0
+        cone: 0
+        particles: 1
+        lifetime: 30
+        sizeFrom: 60
+        sizeTo: 0
+        colorFrom: ffffff
+        colorTo: d09f00
+        region: exotic-mod-shootspike
+      } 
+      smokeEffect: {
+        length: 40
+        particles: 3
+        interp: pow5Out
+        sizeInterp: pow3In
+        lifetime: 50
+        cone: 20
+        sizeFrom: 3
+        sizeTo: 0
+        colorFrom: 909090
+        colorTo: 909090
+      }
+      hitEffect: {
+        length: 0
+        lifetime: 25
+        particles: 1
+        sizeFrom: 14 
+        sizeTo: 0
+        colorTo: d09f00
+        interp: pow5In
+      }
+    }
+  }
+  {
+    name: extelsus-flak
+    controllable: false
+    autoTarget: true
+    targetInterval: 80
+    targetSwitchInterval: 8
+    x: 0
+    y: -85
+    shadow: 48
+    mirror: false
+    rotate: true
+    rotateSpeed: 3.4
+    reload: 35
+    recoil: 6
+    shootY: 10
+    shoot: {
+      type: ShootMulti
+      source: ShootPattern
+      dest: [
+        {
+          type: ShootHelix
+          shots: 2
+          scl: 4
+          mag: 4
+        }
+        {
+          type: ShootHelix
+          shots: 2
+          scl: 2
+          mag: 2
+        }
+      ]
+    }
+    shootSound: shoot
+    shake: 1
+    bullet: {
+      speed: 11
+      lifetime: 50 
+      collidesGround: false
+      damage: 550
+      width: 18
+      height: 44
+      frontColor: ffffff
+      backColor: d09f00
+      trailColor: d09f00
+      trailLength: 6
+      trailWidth: 5
+      hitShake: 2
+      fragBullets: 6
+      fragRandomSpread: 0
+      fragSpread: 60
+      fragBullet: {
+        type: LaserBulletType
+        length: 40
+        lifetime: 35
+        width: 45
+        damage: 600
+        colors: [
+          d09f0040, 
+          d09f00,
+          ffffff
+        ]
+        collidesGround: false
+      }
+      shootEffect: {
+        length: 0
+        cone: 0
+        particles: 1
+        lifetime: 30
+        sizeFrom: 60
+        sizeTo: 0
+        colorFrom: ffffff
+        colorTo: d09f00
+        region: exotic-mod-shootspike
+      } 
+      smokeEffect: {
+        length: 40
+        particles: 3
+        interp: pow5Out
+        sizeInterp: pow3In
+        lifetime: 50
+        cone: 20
+        sizeFrom: 3
+        sizeTo: 0
+        colorFrom: 909090
+        colorTo: 909090
+      }
+      hitEffect: {
+        length: 0
+        lifetime: 25
+        particles: 1
+        sizeFrom: 14 
+        sizeTo: 0
+        colorTo: d09f00
+        interp: pow5In
+      }
+    }
+  }
+  {
+    name: extelsus-autocannon
+    x: 0
+    y: -20
+    shadow: 76
+    shootY: 28
+    mirror: false
+    rotate: true
+    rotateSpeed: 1.5
+    reload: 5
+    recoil: 4
+    recoilTime: 45
+    heatColor: e65555
+    cooldownTime: 45
+    shootSound: bang
+    inaccuracy: 12
+    bullet: {
+      speed: 14
+      lifetime: 75
+      damage: 2500
+      pierceDamageFactor: 0.75
+      pierce: true
+      pierceBuilding: true
+      width: 18
+      height: 55
+      shrinkY: 1
+      shrinkX: 1
+      frontColor: c3b3f8
+      backColor: 8960c1
+      trailColor: 8960c1
+      trailWidth: 3
+      trailLength: 5
+      shootEffect: {
+        length: 0
+        cone: 0
+        particles: 1
+        lifetime: 30
+        sizeFrom: 60
+        sizeTo: 0
+        colorFrom: c3b3f8
+        colorTo: 8960c1
+        region: exotic-mod-shootspike
+      } 
+      smokeEffect: {
+        length: 40
+        particles: 14
+        interp: pow5Out
+        sizeInterp: pow3In
+        lifetime: 35
+        cone: 20
+        sizeFrom: 3
+        sizeTo: 0
+        colorFrom: 909090
+        colorTo: 909090
+      }
+      hitEffect: none
+      despawnEffect: none
+      bulletInterval: 7
+      intervalRandomSpread: 15
+      intervalDelay: 12
+      intervalBullet: {
+        speed: 12
+        lifetime: 30
+        damage: 200
+        pierceDamageFactor: 0.75
+        pierce: true
+        pierceBuilding: true
+        width: 7
+        height: 20
+        frontColor: c3b3f8
+        backColor: 8960c1
+        trailColor: 8960c1
+        trailWidth: 1
+        trailLength: 5
+        despawnHit: true
+        despawnEffect: none
+        hitEffect: [
+          {
+            type: ParticleEffect
+            particles: 6
+            line: true
+            lifetime: 15
+            length: 15
+            lenFrom: 3
+            lenTo: 0
+            strokeFrom: 1
+            strokeTo: 0
+            colorFrom: c3b3f8
+            colorTo: 8960c1
+          }
+          {
+            type: WaveEffect
+            sizeFrom: 0
+            sizeTo: 7
+            lifetime: 10
+            strokeFrom: 1.5
+            strokeTo: 0
+            colorFrom: c3b3f8
+            colorTo: 8960c1
+          }
+        ]
+      }
+    }
+  }
+  {
+    x: 40
+    y: 23
+    rotate: true
+    rotateSpeed: 0
+    baseRotation: -90
+    reload: 90
+    shootCone: 360
+    shoot: {
+      type: ShootBarrel
+      shots: 3
+      shotDelay: 5
+      barrels: [
+        12, 0, 0, 
+        0, 0, 0,
+        -12, 0, 0
+      ]
+    }
+    shake: 0.5
+    shootSound: missile
+    bullet: {
+      type: MissileBulletType
+      speed: 0.5
+      drag: -0.025
+      damage: 2500
+      splashDamage: 2200
+      splashDamageRadius: 45
+      collidesTiles: false
+      lifetime: 140
+      homingPower: 0.025
+      homingRange: 1080
+      width: 14
+      height: 28
+      sprite: missile-large
+      frontColor: ffb3b3
+      backColor: e65555
+      trailColor: e65555
+      trailWidth: 2
+      trailLength: 4
+      hitEffect: [
+        {
+          lightOpacity: 0
+          length: 50
+          lifetime: 60
+          particles: 20
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 3
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow2In
+        }
+        {
+          lightOpacity: 0
+          length: 45
+          lifetime: 70
+          particles: 32
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 5
+          sizeTo: 0
+          interp: pow2Out
+          sizeInterp: pow2In
+        }
+        {
+          lightOpacity: 0
+          length: 60
+          lifetime: 30
+          particles: 22
+          colorFrom: 9f9f9f
+          colorTo: 787878
+          sizeFrom: 1
+          sizeTo: 0
+          interp: pow5Out
+          sizeInterp: pow3In
+        }
+        {
+          lightOpacity: 0
+          length: 50
+          lifetime: 40
+          particles: 22
+          colorFrom: 9f9f9f
+          colorTo: 787878
+          sizeFrom: 3
+          sizeTo: 0
+          interp: pow5Out
+          sizeInterp: pow3In
+        }
+        {
+          length: 60
+          line: true
+          lifetime: 30
+          particles: 8
+          colorTo: e65555
+          lenFrom: 7
+          lenTo: 0
+          strokeFrom: 3
+          strokeTo: 1
+          interp: pow2Out
+          sizeInterp: pow2In
+        }
+        {
+          type: WaveEffect
+          lifetime: 20
+          sizeFrom: 0
+          sizeTo: 45
+          strokeFrom: 4
+          strokeTo: 0
+          colorTo: e65555
+        }
+      ]
+    }
+  }
+  {
+    x: 0
+    y: 120
+    rotate: true
+    rotateSpeed: 0
+    mirror: false
+    reload: 180
+    shake: 8
+    shootSound: bang
+    bullet: {
+      damage: 32000
+      recoil: 3
+      speed: 20
+      lifetime: 60
+      pierce: true
+      pierceBuilding: true
+      pierceDamageFactor: 1
+      frontColor: ffb3b3
+      backColor: e65555
+      trailColor: e65555
+      width: 35
+      height: 98
+      trailWidth: 7
+      trailLength: 8
+      fragOnHit: false
+      fragBullets: 480
+      fragBullet: {
+        type: RailBulletType
+        pierceEffect: none
+        damage: 440
+        pierceDamageFactor: 0
+        length: 125
+        collidesAir: false
+      }
+      shootEffect: [
+        {
+          length: 0
+          cone: 0
+          lifetime: 45
+          region: exotic-mod-shootspike
+          colorTo: e65555
+          sizeFrom: 140
+          sizeTo: 0
+        }
+        {
+          length: 0
+          cone: 0
+          lifetime: 45
+          region: exotic-mod-diamond-thin
+          colorTo: e65555
+          sizeFrom: 70
+          sizeTo: 0
+        }
+      ]
+      smokeEffect: [
+        {
+          particles: 20
+          length: 125
+          lifetime: 180
+          cone: 20
+          sizeFrom: 7
+          sizeTo: 0
+          colorFrom: e65555
+          colorTo: 656565
+          interp: pow5Out
+          sizeInterp: pow2In
+          followParent: false
+        }
+        {
+          particles: 20
+          lightOpacity: 0
+          length: 160
+          lifetime: 110
+          cone: 25
+          sizeFrom: 3
+          sizeTo: 0
+          colorFrom: 999999
+          colorTo: 656565
+          interp: pow5Out
+          sizeInterp: pow3In
+          followParent: false
+        }
+      ]
+      despawnEffect: [
+        {
+          length: 150
+          lifetime: 150
+          particles: 115
+          colorFrom: 787878
+          colorTo: 787878
+          interp: pow5Out
+          sizeInterp: pow10In
+          sizeFrom: 8
+          sizeTo: 0
+        }
+        {
+          length: 190
+          lifetime: 140
+          particles: 45
+          colorFrom: 787878
+          colorTo: 787878
+          interp: pow10Out
+          sizeInterp: pow5In
+          sizeFrom: 3
+          sizeTo: 0
+        }
+        {
+          length: 60
+          lifetime: 240
+          particles: 25
+          colorFrom: 787878
+          colorTo: 787878
+          interp: pow10Out
+          sizeInterp: pow5In
+          sizeFrom: 14
+          sizeTo: 0
+        }
+        {
+          length: 260
+          lifetime: 80
+          particles: 22
+          colorFrom: ffb3b3
+          colorTo: e65555
+          interp: pow3Out
+          sizeInterp: pow10In
+          sizeFrom: 4
+          sizeTo: 0
+        }
+        {
+          length: 160
+          line: true
+          lifetime: 60
+          particles: 28
+          lenFrom: 16
+          lenTo: 0
+          strokeFrom: 6
+          strokeTo: 4
+          colorTo: e65555
+        }
+        {
+          type: WaveEffect
+          lifetime: 25
+          sizeFrom: 0
+          sizeTo: 125
+          colorTo: e65555
+          strokeFrom: 6
+          strokeTo: 0
+        }
+      ]
+    }
+  }
+  {
+    useAttackRange: false
+    alwaysShooting: true
+    x: 0
+    recoil: 0
+    mirror: false
+    reload: 360
+    shootSound: none
+    shootCone: 360
+    parts: [
+      {
+        type: RegionPart
+        name: exotic-mod-0r14-extelsus
+        outline: false
+        layer: 98
+        color: ffffff00
+        colorTo: ffffff
+        blending: additive
+        mixColor: e65555
+        mixColorTo: e65555
+        progress: {
+          type: smoothReload
+          op: compress
+          start: 0.6
+          end: 1
+        }
+      }
+    ]
+    bullet: {
+      type: BulletType
+      lifetime: 0
+      collides: false
+      absobrbable: false
+      shootEffect: none
+      smokeEFfect: none
+      despawnEffect: none
+      fragBullets: 720
+      fragRandomSpread: 0
+      fragSpread: 0.5
+      fragVelocityMin: 1
+      fragBullet: {
+        type: PointBulletType
+        lifetime: 1
+        speed: 80
+        collides: false
+        absorbable: false
+        hitEffect: none
+        despawnEffect: none
+        trailEffect: none
+        fragBullets: 1
+        fragRandomSpread: 0
+        fragSpread: 0.5
+        fragVelocityMin: 1
+        fragBullet: {
+          type: BulletType
+          collidesAir: false
+          keepVelocity: false
+          hittable: false
+          absorbable: false
+          speed: 4
+          lifetime: 240
+          damage: 70
+          pierce: true
+          pierceBuilding: true
+          hitEffect: none
+          despawnEffect: none
+        }
+      }
+      hitEffect: [
+        {
+          type: WaveEffect
+          lifetime: 240
+          sizeFrom: 160
+          sizeTo: 960
+          strokeFrom: 4
+          strokeTo: 0
+          colorFrom: e6555522
+          colorTo: e6555522
+        }
+        {
+          type: WaveEffect
+          lifetime: 240
+          sizeFrom: 158
+          sizeTo: 960
+          strokeFrom: 8
+          strokeTo: 0
+          colorFrom: e6555522
+          colorTo: e6555522
+        }
+        {
+          type: WaveEffect
+          lifetime: 240
+          sizeFrom: 156
+          sizeTo: 960
+          strokeFrom: 12
+          strokeTo: 0
+          colorFrom: e6555522
+          colorTo: e6555522
+        }
+        {
+          type: WaveEffect
+          lifetime: 240
+          sizeFrom: 154
+          sizeTo: 960
+          strokeFrom: 16
+          strokeTo: 0
+          colorFrom: e6555522
+          colorTo: e6555522
+        }
+        {
+          type: WaveEffect
+          lifetime: 240
+          sizeFrom: 152
+          sizeTo: 960
+          strokeFrom: 20
+          strokeTo: 0
+          colorFrom: e6555522
+          colorTo: e6555522
+        }
+        {
+          type: WaveEffect
+          lifetime: 240
+          sizeFrom: 150
+          sizeTo: 960
+          strokeFrom: 24
+          strokeTo: 0
+          colorFrom: e6555522
+          colorTo: e6555522
+        }
+        {
+          type: WaveEffect
+          lifetime: 240
+          sizeFrom: 148
+          sizeTo: 960
+          strokeFrom: 28
+          strokeTo: 0
+          colorFrom: e6555522
+          colorTo: e6555522
+        }
+        {
+          type: WaveEffect
+          lifetime: 240
+          sizeFrom: 146
+          sizeTo: 960
+          strokeFrom: 32
+          strokeTo: 0
+          colorFrom: e6555522
+          colorTo: e6555522
+        }
+        {
+          type: WaveEffect
+          lifetime: 240
+          sizeFrom: 144
+          sizeTo: 960
+          strokeFrom: 36
+          strokeTo: 0
+          colorFrom: e6555522
+          colorTo: e6555522
+        }
+        {
+          type: WaveEffect
+          lifetime: 240
+          sizeFrom: 142
+          sizeTo: 960
+          strokeFrom: 40
+          strokeTo: 0
+          colorFrom: e6555522
+          colorTo: e6555522
+        }
+        {
+          type: WaveEffect
+          lifetime: 240
+          sizeFrom: 140
+          sizeTo: 960
+          strokeFrom: 44
+          strokeTo: 0
+          colorFrom: e6555522
+          colorTo: e6555522
+        }
+        {
+          type: WaveEffect
+          lifetime: 240
+          sizeFrom: 138
+          sizeTo: 960
+          strokeFrom: 48
+          strokeTo: 0
+          colorFrom: e6555522
+          colorTo: e6555522
+        }
+      ]
+    }
+  }
+  {
+    shootOnDeath: true
+    controllable: false
+    reload: 15
+    x: 0
+    shootCone: 360
+    shootSound: none
+    bullet: {
+      spawnUnit: exotic-mod-0r14-extelsus-deamth
+    }
+  }
+]
+abilities: [
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: -32
+    y: 2
+    parentizeEffects: true
+    rotateEffect: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 5
+        cone: 15
+        length: 4
+        baseLength: 2
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 84.9
+        rotWithParent: true
+        baseRotation: 90
+      }
+      {
+        particles: 2
+        cone: 15
+        lifetime: 10
+        length: 8
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+        rotWithParent: true
+        baseRotation: 90
+      }
+      {
+        particles: 1
+        cone: 15
+        lifetime: 10
+        length: 8
+        baseLength: 2
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 1
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+        rotWithParent: true
+        baseRotation: 90
+      }
+    ]
+  }
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: 32
+    y: 2
+    parentizeEffects: true
+    rotateEffect: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 5
+        cone: 15
+        length: 4
+        baseLength: 2
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 84.9
+        rotWithParent: true
+        baseRotation: -90
+      }
+      {
+        particles: 2
+        cone: 15
+        lifetime: 10
+        length: 8
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+        rotWithParent: true
+        baseRotation: -90
+      }
+      {
+        particles: 1
+        cone: 15
+        lifetime: 10
+        length: 8
+        baseLength: 2
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 1
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+        rotWithParent: true
+        baseRotation: -90
+      }
+    ]
+  }
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: -32
+    y: 50
+    parentizeEffects: true
+    rotateEffect: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 5
+        cone: 15
+        length: 4
+        baseLength: 2
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 84.9
+        rotWithParent: true
+        baseRotation: 90
+      }
+      {
+        particles: 2
+        cone: 15
+        lifetime: 10
+        length: 8
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+        rotWithParent: true
+        baseRotation: 90
+      }
+      {
+        particles: 1
+        cone: 15
+        lifetime: 10
+        length: 8
+        baseLength: 2
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 1
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+        rotWithParent: true
+        baseRotation: 90
+      }
+    ]
+  }
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: 32
+    y: 50
+    parentizeEffects: true
+    rotateEffect: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 5
+        cone: 15
+        length: 4
+        baseLength: 2
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 84.9
+        rotWithParent: true
+        baseRotation: -90
+      }
+      {
+        particles: 2
+        cone: 15
+        lifetime: 10
+        length: 8
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+        rotWithParent: true
+        baseRotation: -90
+      }
+      {
+        particles: 1
+        cone: 15
+        lifetime: 10
+        length: 8
+        baseLength: 2
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 1
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+        rotWithParent: true
+        baseRotation: -90
+      }
+    ]
+  }
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: -32
+    y: 59
+    parentizeEffects: true
+    rotateEffect: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 5
+        cone: 15
+        length: 4
+        baseLength: 2
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 84.9
+        rotWithParent: true
+        baseRotation: 90
+      }
+      {
+        particles: 2
+        cone: 15
+        lifetime: 10
+        length: 8
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+        rotWithParent: true
+        baseRotation: 90
+      }
+      {
+        particles: 1
+        cone: 15
+        lifetime: 10
+        length: 8
+        baseLength: 2
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 1
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+        rotWithParent: true
+        baseRotation: 90
+      }
+    ]
+  }
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: 32
+    y: 59
+    parentizeEffects: true
+    rotateEffect: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 5
+        cone: 15
+        length: 4
+        baseLength: 2
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 84.9
+        rotWithParent: true
+        baseRotation: -90
+      }
+      {
+        particles: 2
+        cone: 15
+        lifetime: 10
+        length: 8
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+        rotWithParent: true
+        baseRotation: -90
+      }
+      {
+        particles: 1
+        cone: 15
+        lifetime: 10
+        length: 8
+        baseLength: 2
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 1
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+        rotWithParent: true
+        baseRotation: -90
+      }
+    ]
+  }
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: -62
+    y: -105
+    effectRotation: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 15
+        length: 0
+        baseLength: 6
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 12
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 84.9
+      }
+      {
+        particles: 2
+        lifetime: 30
+        length: 6
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 12
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+      }
+      {
+        particles: 1
+        lifetime: 30
+        length: 0
+        baseLength: 24
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 3
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+      }
+    ]
+  }
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: 62
+    y: -105
+    effectRotation: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 15
+        length: 0
+        baseLength: 6
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 12
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 84.9
+      }
+      {
+        particles: 2
+        lifetime: 30
+        length: 6
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 12
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+      }
+      {
+        particles: 1
+        lifetime: 30
+        length: 0
+        baseLength: 24
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 3
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+      }
+    ]
+  }
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: -22
+    y: -101
+    effectRotation: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 10
+        length: 0
+        baseLength: 4
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 8
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 84.9
+      }
+      {
+        particles: 2
+        lifetime: 20
+        length: 4
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 8
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+      }
+      {
+        particles: 1
+        lifetime: 20
+        length: 0
+        baseLength: 16
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 2
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+      }
+    ]
+  }
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: 22
+    y: -101
+    effectRotation: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 10
+        length: 0
+        baseLength: 4
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 8
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 84.9
+      }
+      {
+        particles: 2
+        lifetime: 20
+        length: 4
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 8
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+      }
+      {
+        particles: 1
+        lifetime: 20
+        length: 0
+        baseLength: 16
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 2
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+      }
+    ]
+  }
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: 0
+    y: -110
+    effectRotation: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 20
+        length: 0
+        baseLength: 8
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 16
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 84.9
+      }
+      {
+        particles: 2
+        lifetime: 40
+        length: 8
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 16
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+      }
+      {
+        particles: 1
+        lifetime: 40
+        length: 0
+        baseLength: 32
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+      }
+    ]
+  }
+]
+envEnabled: -1
+envDisabled: 4
+deathSound: none
+deathExplosionEffect: none
+createWreck: false
+createScorch: false
+crashDamageMultiplier: 0

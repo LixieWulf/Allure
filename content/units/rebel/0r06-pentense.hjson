@@ -253,7 +253,7 @@ weapons: [
       trailColor: d09f00
       trailLength: 6
       trailWidth: 5
-      hitShake: 5f
+      hitShake: 2
       fragBullets: 3
       fragRandomSpread: 0
       fragSpread: 120

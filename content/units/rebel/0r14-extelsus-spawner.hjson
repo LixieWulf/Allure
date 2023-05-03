@@ -1,0 +1,279 @@
+type: missile
+template: MissileUnitType
+lifetime: 1
+deathExplosionEffect: none
+deathSound: none
+weapons: [
+  {
+    shootOnDeath: true
+    x: 0
+    mirror: false
+    shootCone: 360
+    reload: 15
+    shootSound: none
+    bullet: {
+      type: ExplosionBulletType
+      instantDisappear: false
+      lifetime: 3
+      homingRange: 8192
+      homingPower: 360
+      despawnEffect: {
+        followParent: false
+        lifetime: 30
+        interp: pow3In
+        cone: 0
+        particles: 1
+        randLength: false
+        length: 0.01
+        region: circle-shadow
+        sizeFrom: 640
+        sizeTo: 0
+        layer: 89
+        colorFrom: e65555
+        colorTo: e65555
+      }
+      hitEffect: none
+      shootEffect: none
+      smokeEffect: none
+      killShooter: false
+      fragBullets: 1
+      fragRandomSpread: 0
+      fragVelocityMin: 0
+      fragVelocityMax: 0
+      fragBullet: {
+        spawnUnit: exotic-mod-0r14-extelsus
+      }
+    }
+  }
+  {
+    shootOnDeath: true
+    x: 0
+    y: -110
+    rotate: true
+    rotateSpeed: 0
+    baseRotation: 180
+    mirror: false
+    shootCone: 360
+    reload: 15
+    shootSound: none
+    bullet: {
+      type: ExplosionBulletType
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: [
+        {
+          followParent: false
+          cap: false
+          line: true
+          lifetime: 45
+          cone: 0
+          particles: 1
+          randLength: false
+          length: 0.01
+          strokeFrom: 32
+          strokeTo: 0
+          lenFrom: 8192
+          lenTo: 8192
+          colorFrom: e65555
+          colorTo: e65555
+          layer: 90
+        }
+        {
+          followParent: false
+          lifetime: 45
+          cone: 0
+          particles: 1
+          randLength: false
+          length: 0.01
+          sizeFrom: 16
+          sizeTo: 0
+          colorFrom: e65555
+          colorTo: e65555
+          layer: 90
+        }
+        {
+          followParent: false
+          cap: false
+          line: true
+          lifetime: 45
+          cone: 0
+          particles: 1
+          randLength: false
+          length: 0.01
+          strokeFrom: 16
+          strokeTo: 0
+          lenFrom: 8192
+          lenTo: 8192
+          layer: 91
+        }
+        {
+          followParent: false
+          lifetime: 45
+          cone: 0
+          particles: 1
+          randLength: false
+          length: 0.01
+          sizeFrom: 8
+          sizeTo: 0
+          layer: 91
+        }
+      ]
+      smokeEffect: none
+      killShooter: false
+    }
+  }
+  {
+    shootOnDeath: true
+    x: 22
+    y: -101
+    rotate: true
+    rotateSpeed: 0
+    baseRotation: 180
+    alternate: false
+    shootCone: 360
+    reload: 15
+    shootSound: none
+    bullet: {
+      type: ExplosionBulletType
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: [
+        {
+          followParent: false
+          cap: false
+          line: true
+          lifetime: 45
+          cone: 0
+          particles: 1
+          randLength: false
+          length: 0.01
+          strokeFrom: 16
+          strokeTo: 0
+          lenFrom: 8192
+          lenTo: 8192
+          colorFrom: e65555
+          colorTo: e65555
+          layer: 90
+        }
+        {
+          followParent: false
+          lifetime: 45
+          cone: 0
+          particles: 1
+          randLength: false
+          length: 0.01
+          sizeFrom: 8
+          sizeTo: 0
+          colorFrom: e65555
+          colorTo: e65555
+          layer: 90
+        }
+        {
+          followParent: false
+          cap: false
+          line: true
+          lifetime: 45
+          cone: 0
+          particles: 1
+          randLength: false
+          length: 0.01
+          strokeFrom: 8
+          strokeTo: 0
+          lenFrom: 8192
+          lenTo: 8192
+          layer: 91
+        }
+        {
+          followParent: false
+          lifetime: 45
+          cone: 0
+          particles: 1
+          randLength: false
+          length: 0.01
+          sizeFrom: 4
+          sizeTo: 0
+          layer: 91
+        }
+      ]
+      smokeEffect: none
+      killShooter: false
+    }
+  }
+  {
+    shootOnDeath: true
+    x: 62
+    y: -105
+    rotate: true
+    rotateSpeed: 0
+    baseRotation: 180
+    alternate: false
+    shootCone: 360
+    reload: 15
+    shootSound: none
+    bullet: {
+      type: ExplosionBulletType
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: [
+        {
+          followParent: false
+          cap: false
+          line: true
+          lifetime: 45
+          cone: 0
+          particles: 1
+          randLength: false
+          length: 0.01
+          strokeFrom: 24
+          strokeTo: 0
+          lenFrom: 8192
+          lenTo: 8192
+          colorFrom: e65555
+          colorTo: e65555
+          layer: 90
+        }
+        {
+          followParent: false
+          lifetime: 45
+          cone: 0
+          particles: 1
+          randLength: false
+          length: 0.01
+          sizeFrom: 12
+          sizeTo: 0
+          colorFrom: e65555
+          colorTo: e65555
+          layer: 90
+        }
+        {
+          followParent: false
+          cap: false
+          line: true
+          lifetime: 45
+          cone: 0
+          particles: 1
+          randLength: false
+          length: 0.01
+          strokeFrom: 12
+          strokeTo: 0
+          lenFrom: 8192
+          lenTo: 8192
+          layer: 91
+        }
+        {
+          followParent: false
+          lifetime: 45
+          cone: 0
+          particles: 1
+          randLength: false
+          length: 0.01
+          sizeFrom: 6
+          sizeTo: 0
+          layer: 91
+        }
+      ]
+      smokeEffect: none
+      killShooter: false
+    }
+  }
+]
