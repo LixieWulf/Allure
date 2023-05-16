@@ -5,7 +5,7 @@ areaSize: 21
 dronesCreated: 4
 hasLiquids: true
 liquidCapacity: 240
-droneType: exotic-mod-assault-construction-dronez
+droneType: exotic-mod-assault-construction-drone
 consumes: {
   power: 15
   liquids: [
