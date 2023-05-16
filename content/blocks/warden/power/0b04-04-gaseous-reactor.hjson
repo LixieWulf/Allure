@@ -70,7 +70,7 @@ outputItem: scilaxa/1
 outputLiquid: steam/2.5
 category: power
 requirements: [
-  territe-alloy/1200
+  territe-alloy/600
   dantrales/200
   silicon/300
   baenite/150

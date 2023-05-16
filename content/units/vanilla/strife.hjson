@@ -1,0 +1,75 @@
+type: tank
+template: TankUnitType
+crushDamage: 3
+hitSize: 48
+health: 112000
+armor: 45
+faceTarget: false
+speed: 1.05
+accel: 0.1
+drag: 0.1
+drownTimeMultiplier: 6
+treadPullOffset: 0
+treadFrames: 18
+treadRects: [
+  {
+    x: 52
+    y: -82
+    width: 20
+    height: 176
+  }
+]
+rotateSpeed: 1
+outlineColor: 565666
+weapons: [
+  {
+    name: strife-cannon
+    layerOffset: 0.01
+    y: -12
+    x: 0
+    shootY: 38
+    mirror: false
+    rotate: true
+    rotateSpeed: 1.2
+    reload: 280
+    recoil: 1
+    cooldownTime: 180
+    shadow: 26
+    shootSound: bang
+    inaccuracy: 9
+    parts: [
+      {
+        suffix: -barrel
+        heatLayerOffset: 0
+        under: true
+        moveY: -6
+        progress: {
+          type: heat
+          op: compress
+          start: 0.66
+          end: 1
+        }
+      }
+    ]
+    shoot: {
+      shots: 3
+      shotDelay: 6
+    }
+    bullet: {
+      speed: 6
+      lifetime: 35
+      damage: 1200
+      splashDamage: 120
+      splashDamageRadius: 24
+      pierce: true
+      pierceBuilding: true
+      pierceDamageFactor: 6
+      sprite: missile-large
+      width: 11
+      height: 28
+      trailWidth: 2
+      trailLength: 8
+      hitEffect: blastExplosion
+    }
+  }
+]

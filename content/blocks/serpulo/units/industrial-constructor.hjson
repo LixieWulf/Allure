@@ -1,0 +1,15 @@
+type: Constructor
+size: 7
+consumes: {
+  power: 4
+}
+payloadSpeed: 12
+buildSpeed: 3
+maxBlockSize: 4
+category: units
+requirements: [
+  copper/45
+  lead/150
+  silicon/25
+  thorium/25
+]

@@ -867,6 +867,7 @@ weapons: [
 ]
 abilities: [
   {
+    display: false
     type: MoveEffectAbility
     minVelocity: 0
     x: -32
@@ -925,6 +926,7 @@ abilities: [
     ]
   }
   {
+    display: false
     type: MoveEffectAbility
     minVelocity: 0
     x: 32
@@ -983,6 +985,7 @@ abilities: [
     ]
   }
   {
+    display: false
     type: MoveEffectAbility
     minVelocity: 0
     x: -32
@@ -1041,6 +1044,7 @@ abilities: [
     ]
   }
   {
+    display: false
     type: MoveEffectAbility
     minVelocity: 0
     x: 32
@@ -1099,6 +1103,7 @@ abilities: [
     ]
   }
   {
+    display: false
     type: MoveEffectAbility
     minVelocity: 0
     x: -32
@@ -1157,6 +1162,7 @@ abilities: [
     ]
   }
   {
+    display: false
     type: MoveEffectAbility
     minVelocity: 0
     x: 32
@@ -1215,6 +1221,7 @@ abilities: [
     ]
   }
   {
+    display: false
     type: MoveEffectAbility
     minVelocity: 0
     x: -62
@@ -1263,6 +1270,7 @@ abilities: [
     ]
   }
   {
+    display: false
     type: MoveEffectAbility
     minVelocity: 0
     x: 62
@@ -1311,6 +1319,7 @@ abilities: [
     ]
   }
   {
+    display: false
     type: MoveEffectAbility
     minVelocity: 0
     x: -22
@@ -1359,6 +1368,7 @@ abilities: [
     ]
   }
   {
+    display: false
     type: MoveEffectAbility
     minVelocity: 0
     x: 22
@@ -1407,6 +1417,7 @@ abilities: [
     ]
   }
   {
+    display: false
     type: MoveEffectAbility
     minVelocity: 0
     x: 0

@@ -1,4 +1,5 @@
 type: PayloadSource
+payloadSpeed: 12
 size: 8
 health: 2000000
 category: units

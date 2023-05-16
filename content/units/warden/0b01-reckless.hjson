@@ -8,7 +8,6 @@ hitSize: 25
 health: 600
 armor: 6
 faceTarget: true
-faceTarget: true
 buildSpeed: 1.7
 mineSpeed: 4
 mineTier: 2

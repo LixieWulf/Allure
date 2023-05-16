@@ -1,0 +1,228 @@
+type: ItemTurret
+squareSprite: false
+size: 11
+reload: 50
+rotateSpeed: 1
+range: 950
+shootY: 25
+shootSound: none
+ammoPerShot: 12
+ammoTypes: {
+  anden: {
+    type: BulletType
+    parts: [
+      {
+        type: RegionPart
+        name: exotic-mod-0r00-15-glaive-arrow
+        y: -30
+        outline: false
+        layer: 111
+      }
+    ]
+    shootEffect: none
+    smokeEffect: none
+    speed: 22
+    lifetime: 110
+    drag: 0.02
+    ammoMultiplier: 1
+    damage: 51000
+    pierceDamageFactor: 0.9
+    buildingDamageMultiplier: 0.05
+    pierce: true
+    pierceBuilding: true
+    absorbable: false
+    trailColor: e65555
+    trailWidth: 1.2
+    trailLength: 9
+    trailInterval: 2
+    trailEffect: [
+      {
+        particles: 1
+        length: 0
+        lifetime: 20
+        baseRotation: 45
+        region: exotic-mod-diamond-wide
+        interp: pow2In
+        sizeFrom: 6
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 105
+      }
+      {
+        particles: 1
+        length: 0
+        lifetime: 20
+        baseRotation: 45
+        region: exotic-mod-diamond-wide
+        interp: pow2In
+        sizeFrom: 4
+        sizeTo: 0
+      }
+      {
+        particles: 1
+        length: 0
+        lifetime: 20
+        baseRotation: -45
+        region: exotic-mod-diamond-wide
+        interp: pow2In
+        sizeFrom: 6
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 105
+      }
+      {
+        particles: 1
+        length: 0
+        lifetime: 20
+        baseRotation: -45
+        region: exotic-mod-diamond-wide
+        interp: pow2In
+        sizeFrom: 4
+        sizeTo: 0
+      }
+    ]
+    hitEffect: [
+      {
+        length: 0
+        cone: 0
+        particles: 1
+        baseRotation: -140
+        lifetime: 30
+        sizeFrom: 60
+        sizeTo: 0
+        colorFrom: ffb3b3
+        colorTo: e65555
+        region: exotic-mod-shootspike
+      }
+      {
+        length: 0
+        cone: 0
+        particles: 1
+        baseRotation: 140
+        lifetime: 30
+        sizeFrom: 60
+        sizeTo: 0
+        colorFrom: ffb3b3
+        colorTo: e65555
+        region: exotic-mod-shootspike
+      }
+    ]
+  }
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: 0r-
+  parts: [
+    {
+      suffix: -arrow
+      y: 4
+      outline: false
+      mirror: false
+      color: ffffff
+      colorTo: ffffff00
+      progress: {
+        type: reload
+        op: compress
+        start: 0
+        end: 0.9
+      }
+      moves: [
+        {
+          y: 60
+          progress: {
+            type: reload
+            op: curve
+            interp: pow3
+          }
+        }
+      ]
+    }
+    {
+      suffix: -string
+      x: 20
+      y: -12
+      rotation: 50
+      moveRot: -50
+      xScl: 22
+      yScl: 2
+      moveY: 24
+      progress: {
+        type: reload
+        op: curve
+        interp: pow3
+      }
+      moves: [
+        {
+          gx: -7
+          progress: {
+            type: reload
+            op: curve
+            interp: pow3
+          }
+        }
+      ]
+    }
+    {
+      suffix: -string
+      x: -20
+      y: -12
+      rotation: -50
+      moveRot: 50
+      xScl: 22
+      yScl: 2
+      moveY: 24
+      progress: {
+        type: reload
+        op: curve
+        interp: pow3
+      }
+      moves: [
+        {
+          gx: -7
+          progress: {
+            type: reload
+            op: curve
+            interp: pow3
+          }
+        }
+      ]
+    }
+    {
+      suffix: -draw
+      mirror: false
+      y: -29
+      moveY: 41
+      progress: {
+        type: reload
+        op: curve
+        interp: pow3
+      }
+    }
+    {
+      mirror: true
+      suffix: -blade
+      x: 33.25
+      y: 15
+      x: 33.25
+      y: 11.75
+      moveY: 3.25
+      moveRot: 45
+      rotation: -45
+      progress: {
+        type: reload
+        op: curve
+        interp: pow3
+      }
+    }
+    {
+      //bruh.
+      suffix: -tope
+      mirror: false
+      y: 19.5
+    }
+  ]
+}
+category: turret
+buildVisibility: sandboxOnly

@@ -1,0 +1,8 @@
+type: UnitAssemblerModule
+size: 7
+payloadSpeed: 12
+consumes: {
+  power: 2
+}
+category: units
+buildVisibility: sandboxOnly

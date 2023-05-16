@@ -1,0 +1,24 @@
+type: Drill
+size: 4
+tier: 6
+drillTime: 200
+hardnessDrillMultiplier: 12
+liquidBoostIntensity: 2
+liquidCapacity: 40
+itemCapacity: 40
+consumes: {
+  power: 6
+  liquid: {
+    liquid: cryofluid
+    amount: 1
+    optional: true
+    booster: true
+  }
+}
+category: production
+requirements: [
+  graphite/350
+  silicon/600
+  thorium/150
+  phase-fabric/80
+]

@@ -1,3 +1,4 @@
 attributes: {
   water: -0.25
+  heat: 0.75
 }

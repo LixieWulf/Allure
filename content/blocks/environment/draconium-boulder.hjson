@@ -1,7 +1,10 @@
 type: Wall
 update: true
 breakable: true
+destructible: false
 drawTeamOverlay: false
+health: 2000000000
+armor: 2000000000
 size: 3
 customShadow: true
 targetable: false

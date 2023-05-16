@@ -1,0 +1,93 @@
+type: tank
+template: TankUnitType
+crushDamage: 8
+hitSize: 48
+health: 111000
+armor: 47
+faceTarget: false
+speed: 1.05
+accel: 0.1
+drag: 0.1
+drownTimeMultiplier: 6
+treadFrames: 18
+treadRects: [
+  {
+    x: 44
+    y: 36
+    width: 24
+    height: 48
+  }
+  {
+    x: 0
+    y: -99
+    width: 25
+    height: 96
+  }
+]
+rotateSpeed: 1.2
+outlineColor: 565666
+weapons: [
+  {
+    name: conflict-cannon
+    layerOffset: 0.01
+    y: -13
+    x: 0
+    shootY: 34
+    mirror: false
+    rotate: true
+    rotateSpeed: 1.5
+    reload: 210
+    recoil: 0.5
+    shadow: 26
+    shootSound: bang
+    inaccuracy: 9
+    cooldownTime: 140
+    parts: [
+      {
+        suffix: -barrel
+        heatLayerOffset: 0
+        under: true
+        moveY: -7
+        progress: {
+          type: heat
+          op: compress
+          start: 0.66
+          end: 1
+        }
+      }
+    ]
+    shoot: {
+      shots: 5
+      shotDelay: 5
+    }
+    bullet: {
+      speed: 8
+      lifetime: 25
+      damage: 36
+      pierce: true
+      pierceBuilding: true
+      pierceDamageFactor: 0.04
+      width: 11
+      height: 22
+      trailWidth: 1.2
+      trailLength: 4
+      shootEffect: shootBig
+      smokeEffect: shootBigSmoke
+      fragBullets: 3
+      fragRandomSpread: 45
+      fragVelocityMin: 0.5
+      fragBullet: {
+        speed: 6
+        lifetime: 15
+        damage: 8
+        pierce: true
+        pierceBuilding: true
+        width: 7
+        height: 14
+        shrinkX: 1
+        shrinkY: 1
+        hitEffect: none
+      }
+    }
+  }
+]

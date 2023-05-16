@@ -1,0 +1,11 @@
+type: tether
+flying: true
+hoverable: false
+defaultController: AssemblerAI
+playerControllable: false
+speed: 1.4
+drag: 0.1
+accel: 0.1
+buildSpeed: 1
+buildBeamOffset: 8
+engineOffset: 9

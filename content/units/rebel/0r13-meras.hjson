@@ -1,0 +1,876 @@
+type: flying
+flying: true
+hitSize: 90
+health: 1250000
+armor: 800
+speed: 0
+accel: 0.05
+drag: 0.05
+rotateSpeed: 1.3
+engineOffset: 58
+engineColor: e65555
+engineLayer: 90.5
+engineSize: 16
+engines: [
+  {
+    x: 20
+    y: -51
+    rotation: -90
+    radius: 8
+  }
+  {
+    x: -20
+    y: -51
+    rotation: -90
+    radius: 8
+  }
+]
+circleTarget: true
+lightRadius: 120
+lightColor: e65555
+drawBody: false
+drawCell: false
+outlines: false
+lowAltitude: true
+parts: [
+  {
+    layer: 91
+    outline: false
+    y: 20
+  }
+  {
+    layer: 92
+    y: -18
+    outline: false
+    suffix: -top
+  }
+]
+shadowElevationScl: 2.2
+immunities: [
+  burning,
+  melting,
+  tarred,
+  freezing,
+  slow,
+  disarmed
+]
+weapons: [
+  {
+    x: 0
+    y: 20
+    shootCone: 20
+    mirror: false
+    reload: 2
+    rotate: true
+    rotateSpeed: 0
+    shoot: {
+      type: ShootBarrel
+      shots: 3
+      barrels: [
+        34, 0, 0,
+        0, 0, 0, 
+        -34, 0, 0
+      ]
+    }
+    shootSound: none
+    continuous: true
+    bullet: {
+      type: RailBulletType
+      width: 0
+      drawFlare: false
+      damage: 6000
+      lifetime: 15
+      length: 80
+      pierceEffect: none
+      shootEffect: none
+      smokeEffect: none
+      recoil: -0.15
+      maxRange: 8192
+      hitEffect: [
+        {
+          particles: 4
+          line: true
+          length: 28
+          lifetime: 40
+          cone: 20
+          baseRotation: 120
+          interp: pow3Out
+          sizeInterp: pow2In
+          lenFrom: 4
+          lenTo: 1
+          strokeFrom: 1
+          strokeTo: 0
+          colorFrom: ffffff
+          colorTo: e65555
+        }
+        {
+          particles: 4
+          line: true
+          length: 28
+          lifetime: 40
+          cone: 20
+          baseRotation: 240
+          interp: pow3Out
+          sizeInterp: pow2In
+          lenFrom: 4
+          lenTo: 1
+          strokeFrom: 1
+          strokeTo: 0
+          colorFrom: ffffff
+          colorTo: e65555
+        }
+      ]
+    }
+  }
+  {
+    useAttackRange: false
+    shootCone: 1
+    x: 0
+    y: 20
+    reload: 45
+    minShootVelocity: 3.1
+    controllable: false
+    autoTarget: true
+    targetInterval: 2
+    targetSwitchInterval: 2
+    rotate: true
+    rotateSpeed: 0
+    shootSound: none
+    shoot: {
+      type: ShootBarrel
+      firstShotDelay: 40
+      shots: 3
+      barrels: [
+        34, 0, 0,
+        0, 0, 0, 
+        -34, 0, 0
+      ]
+    }
+    shootStatus: {
+      name: ae
+      show: false
+      speedMultiplier: 0
+      dragMultiplier: 1.5
+      disarm: true
+    }
+    shootStatusDuration: 80
+    bullet: {
+      type: RailBulletType
+      length: 90
+      damage: 18000
+      recoil: 5
+      knockback: 12
+      maxRange: 15
+      collidesGround: false
+      pierceEffect: none
+      smokeEffect: none
+      shootEffect: [
+        {
+          length: 0
+          cone: 0
+          particles: 1
+          baseRotation: -140
+          lifetime: 45
+          sizeFrom: 110
+          sizeTo: 0
+          colorFrom: ffb3b3
+          colorTo: e65555
+          region: exotic-mod-shootspike
+          followParent: false
+        }
+        {
+          length: 0
+          cone: 0
+          particles: 1
+          baseRotation: 140
+          lifetime: 45
+          sizeFrom: 110
+          sizeTo: 0
+          colorFrom: ffb3b3
+          colorTo: e65555
+          region: exotic-mod-shootspike
+          followParent: false
+        }
+        {
+          length: 110
+          line: true
+          lifetime: 60
+          cone: 40
+          baseRotation: 180
+          particles: 16
+          colorTo: e65555
+          lenFrom: 18
+          lenTo: 14
+          strokeFrom: 5
+          strokeTo: 0
+          interp: pow2Out
+          sizeInterp: pow2In
+          followParent: false
+        }
+        {
+          length: 170
+          line: true
+          lifetime: 60
+          cone: 40
+          baseRotation: 180
+          particles: 16
+          colorTo: e65555
+          lenFrom: 8
+          lenTo: 7
+          strokeFrom: 3
+          strokeTo: 0
+          interp: pow2Out
+          sizeInterp: pow2In
+          followParent: false
+        }
+      ]
+    }
+  }
+  {
+    useAttackRange: false
+    shootCone: 1
+    x: 0
+    y: 20
+    reload: 90
+    minShootVelocity: 3.1
+    controllable: false
+    autoTarget: true
+    targetInterval: 2
+    targetSwitchInterval: 2
+    rotate: true
+    rotateSpeed: 0
+    shoot: {
+      type: ShootBarrel
+      shots: 3
+      barrels: [
+        34, 0, 0,
+        0, 0, 0, 
+        -34, 0, 0
+      ]
+    }
+    shootSound: none
+    bullet: {
+      type: RailBulletType
+      maxRange: 15
+      collidesGround: false
+      //so that other mods cant add immunities to unmoving and invalidate this behaviour
+      status: {
+        name: ae2
+        show: false
+        disarm: true
+        speedMultplier: 0
+        dragMultiplier: 4
+      }
+      shootEffect: {
+        length: 80
+        line: true
+        lifetime: 50
+        cone: 30
+        particles: 16
+        colorTo: e65555
+        lenFrom: 8
+        lenTo: 7
+        strokeFrom: 2
+        strokeTo: 0
+        interp: pow2Out
+        sizeInterp: pow2In
+        followParent: false
+      }
+    }
+  }
+]
+abilities: [
+  {
+    display: false
+    type: EnergyFieldAbility
+    range: 0
+    effectRadius: 4
+    maxTargets: 0
+    damage: 0
+    color: e65555
+    layer: 91.66
+    blinkScl: 2
+    blinkSize: 0.25
+    sectors: 0
+    y: -18.5
+    x: 24
+  }
+  {
+    display: false
+    type: EnergyFieldAbility
+    range: 0
+    effectRadius: 4
+    maxTargets: 0
+    damage: 0
+    color: e65555
+    layer: 91.66
+    blinkScl: 2
+    blinkSize: 0.25
+    sectors: 0
+    y: -18.5
+    x: -24
+  }
+  {
+    display: false
+    type: EnergyFieldAbility
+    range: 0
+    effectRadius: 4
+    maxTargets: 0
+    damage: 0
+    color: e65555
+    layer: 91.66
+    blinkScl: 2
+    blinkSize: 0.25
+    sectors: 0
+    y: -8
+    x: 24
+  }
+  {
+    display: false
+    type: EnergyFieldAbility
+    range: 0
+    effectRadius: 4
+    maxTargets: 0
+    damage: 0
+    color: e65555
+    layer: 91.66
+    blinkScl: 2
+    blinkSize: 0.25
+    sectors: 0
+    y: -8
+    x: -24
+  }
+  {
+    display: false
+    type: EnergyFieldAbility
+    range: 0
+    effectRadius: 3
+    maxTargets: 0
+    damage: 0
+    color: e65555
+    layer: 91.66
+    blinkScl: 2
+    blinkSize: 0.25
+    sectors: 0
+    y: -28.75
+    x: 22
+  }
+  {
+    display: false
+    type: EnergyFieldAbility
+    range: 0
+    effectRadius: 3
+    maxTargets: 0
+    damage: 0
+    color: e65555
+    layer: 91.66
+    blinkScl: 2
+    blinkSize: 0.25
+    sectors: 0
+    y: -28.75
+    x: -22
+  }
+  {
+    display: false
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: 20
+    y: -51
+    effectRotation: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 10
+        length: 0
+        baseLength: 4
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 8
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 84.9
+      }
+      {
+        particles: 2
+        lifetime: 20
+        length: 4
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 8
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+      }
+      {
+        particles: 1
+        lifetime: 20
+        length: 0
+        baseLength: 16
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 2
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+      }
+    ]
+  }
+  {
+    display: false
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: -20
+    y: -51
+    effectRotation: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 10
+        length: 0
+        baseLength: 4
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 8
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 84.9
+      }
+      {
+        particles: 2
+        lifetime: 20
+        length: 4
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 8
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+      }
+      {
+        particles: 1
+        lifetime: 20
+        length: 0
+        baseLength: 16
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 2
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+      }
+    ]
+  }
+  {
+    display: false
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: 0
+    y: -58
+    effectRotation: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 20
+        length: 0
+        baseLength: 8
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 16
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 84.9
+      }
+      {
+        particles: 2
+        lifetime: 40
+        length: 8
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 16
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+      }
+      {
+        particles: 1
+        lifetime: 40
+        length: 0
+        baseLength: 32
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 84
+      }
+    ]
+  }
+  {
+    display: false
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: 24
+    y: -18.5
+    parentizeEffects: true
+    rotateEffect: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 5
+        cone: 15
+        length: 4
+        baseLength: 2
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 91.4
+        rotWithParent: true
+        baseRotation: -90
+      }
+      {
+        particles: 2
+        cone: 15
+        lifetime: 10
+        length: 8
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 91.33
+        rotWithParent: true
+        baseRotation: -90
+      }
+      {
+        particles: 1
+        cone: 15
+        lifetime: 10
+        length: 8
+        baseLength: 2
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 1
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 91.33
+        rotWithParent: true
+        baseRotation: -90
+      }
+    ]
+  }
+  {
+    display: false
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: -24
+    y: -18.5
+    parentizeEffects: true
+    rotateEffect: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 5
+        cone: 15
+        length: 4
+        baseLength: 2
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 91.4
+        rotWithParent: true
+        baseRotation: 90
+      }
+      {
+        particles: 2
+        cone: 15
+        lifetime: 10
+        length: 8
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 91.33
+        rotWithParent: true
+        baseRotation: 90
+      }
+      {
+        particles: 1
+        cone: 15
+        lifetime: 10
+        length: 8
+        baseLength: 2
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 1
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 91.33
+        rotWithParent: true
+        baseRotation: 90
+      }
+    ]
+  }
+  {
+    display: false
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: 24
+    y: -8
+    parentizeEffects: true
+    rotateEffect: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 5
+        cone: 15
+        length: 4
+        baseLength: 2
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 91.4
+        rotWithParent: true
+        baseRotation: -90
+      }
+      {
+        particles: 2
+        cone: 15
+        lifetime: 10
+        length: 8
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 91.33
+        rotWithParent: true
+        baseRotation: -90
+      }
+      {
+        particles: 1
+        cone: 15
+        lifetime: 10
+        length: 8
+        baseLength: 2
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 1
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 91.33
+        rotWithParent: true
+        baseRotation: -90
+      }
+    ]
+  }
+  {
+    display: false
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: -24
+    y: -8
+    parentizeEffects: true
+    rotateEffect: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 5
+        cone: 15
+        length: 4
+        baseLength: 2
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 91.4
+        rotWithParent: true
+        baseRotation: 90
+      }
+      {
+        particles: 2
+        cone: 15
+        lifetime: 10
+        length: 8
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 91.33
+        rotWithParent: true
+        baseRotation: 90
+      }
+      {
+        particles: 1
+        cone: 15
+        lifetime: 10
+        length: 8
+        baseLength: 2
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 1
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 91.33
+        rotWithParent: true
+        baseRotation: 90
+      }
+    ]
+  }
+  {
+    display: false
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: 22
+    y: -28.75
+    parentizeEffects: true
+    rotateEffect: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 5
+        cone: 15
+        length: 4
+        baseLength: 2
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 3
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 91.4
+        rotWithParent: true
+        baseRotation: -90
+      }
+      {
+        particles: 2
+        cone: 15
+        lifetime: 10
+        length: 8
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 3
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 91.33
+        rotWithParent: true
+        baseRotation: -90
+      }
+      {
+        particles: 1
+        cone: 15
+        lifetime: 10
+        length: 8
+        baseLength: 2
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 0.75
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 91.33
+        rotWithParent: true
+        baseRotation: -90
+      }
+    ]
+  }
+  {
+    display: false
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: -22
+    y: -28.75
+    parentizeEffects: true
+    rotateEffect: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 5
+        cone: 15
+        length: 4
+        baseLength: 2
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 3
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 91.4
+        rotWithParent: true
+        baseRotation: 90
+      }
+      {
+        particles: 2
+        cone: 15
+        lifetime: 10
+        length: 8
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 3
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 91.33
+        rotWithParent: true
+        baseRotation: 90
+      }
+      {
+        particles: 1
+        cone: 15
+        lifetime: 10
+        length: 8
+        baseLength: 2
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 0.75
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 91.33
+        rotWithParent: true
+        baseRotation: 90
+      }
+    ]
+  }
+]
+envEnabled: -1
+envDisabled: 4

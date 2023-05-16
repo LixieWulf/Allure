@@ -1,0 +1,639 @@
+type: ItemTurret
+size: 14
+range: 1440
+health: 55000
+armor: 330
+reload: 240
+recoil: 0
+rotateSpeed: 0.35
+targetGround: false
+cooldownTime: 240
+heatColor: 00000000
+shake: 45
+shoot: {
+  firstShotDelay: 120
+}
+shootWarmupSpeed: 0.025
+minWarmup: 0.9
+shootY: -16
+shootSound: shootSmite
+outlineIcon: false
+drawer: [
+  {
+    type: DrawRegion
+    suffix: -base-top
+    layer: 31
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -base-glow
+    layer: 32
+    color: feb380
+  }
+  {
+    type: DrawTurret
+    parts: [
+      {
+        type: RegionPart
+        layer: 30.5
+        suffix: -turntable
+      }
+      {
+        suffix: -main
+        outline: false
+        moveY: -24
+        progress: heat
+        children: [
+          {
+            type: RegionPart
+            x: 26.5
+            moveY: 48
+            suffix: -blade-r
+            progress: {
+              type: charge
+              op: compress
+              start: 0
+              end: 0.8
+            }
+            moves: [
+              {
+                progress: {
+                  type: charge
+                  op: compress
+                  start: 0.9
+                  end: 0.95
+                }
+                y: -12
+              }
+              {
+                progress: {
+                  type: charge
+                  op: compress
+                  start: 0.95
+                  end: 1
+                }
+                y: -36
+              }
+            ]
+          }
+          {
+            type: RegionPart
+            x: -26.5
+            moveY: 48
+            suffix: -blade-l
+            progress: {
+              type: charge
+              op: compress
+              start: 0
+              end: 0.8
+            }
+            moves: [
+              {
+                progress: {
+                  type: charge
+                  op: compress
+                  start: 0.9
+                  end: 0.95
+                }
+                y: -12
+              }
+              {
+                progress: {
+                  type: charge
+                  op: compress
+                  start: 0.95
+                  end: 1
+                }
+                y: -36
+              }
+            ]
+          }
+          {
+            type: RegionPart
+            suffix: -tope
+          }
+          {
+            type: RegionPart
+            drawRegion: false
+            outline: false
+            heatLight: true
+            heatColor: ea8878
+            y: 34
+          }
+          {
+            type: RegionPart
+            suffix: -chargeplate
+            drawRegion: false
+            outline: false
+            heatLight: true
+            heatColor: 7382f0
+            y: -7
+            heatProgress: {
+              type: charge
+              op: compress
+              start: 0
+              end: 0.25
+            }
+          }
+          {
+            type: RegionPart
+            suffix: -chargeplate
+            drawRegion: false
+            outline: false
+            heatLight: true
+            heatColor: 7382f0
+            y: 17.5
+            heatProgress: {
+              type: charge
+              op: compress
+              start: 0.25
+              end: 0.5
+            }
+          }
+          {
+            type: RegionPart
+            suffix: -chargeplate
+            drawRegion: false
+            outline: false
+            heatLight: true
+            heatColor: 7382f0
+            y: 42
+            heatProgress: {
+              type: charge
+              op: compress
+              start: 0.5
+              end: 0.75
+            }
+          }
+          {
+            type: RegionPart
+            suffix: -chargeplate
+            drawRegion: false
+            outline: false
+            heatLight: true
+            heatColor: 7382f0
+            y: 66.5
+            heatProgress: {
+              type: charge
+              op: compress
+              start: 0.75
+              end: 1
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
+maxAmmo: 320
+ammoPerShot: 32
+ammoTypes: {
+  inseltiene: {
+    type: RailBulletType
+    length: 3800
+    damage: 120000
+    status: exotic-mod-0b-energy4
+    statusDuration: 40
+    pierceDamageFactor: 0.85
+    collidesGround: false
+    ammoMultiplier: 1
+    pointEffectSpace: 4
+    pointEffect: [
+      {
+        line: true
+        particles: 1
+        cone: 0
+        length: 0.01
+        baseLength: 0
+        cap: false
+        lifetime: 90
+        strokeFrom: 8
+        strokeTo: 0
+        lenFrom: 6
+        lenTo: 6
+        colorFrom: 7382f0
+        colorTo: 7382f0
+        layer: 105
+      }
+      {
+        line: true
+        particles: 1
+        cone: 0
+        length: 0.01
+        baseLength: 0
+        cap: false
+        lifetime: 90
+        strokeFrom: 6
+        strokeTo: 0
+        lenFrom: 6
+        lenTo: 6
+      }
+    ]
+    shootEffect: [
+      //complicated incoming
+      {
+        type: RadialEffect
+        amount: 1
+        lengthOffset: 320
+        effect: [
+          {
+            particles: 1
+            length: 0
+            lifetime: 90
+            baseRotation: 45
+            region: exotic-mod-wide-case-back
+            interp: pow2In
+            sizeFrom: 16
+            sizeTo: 0
+            colorFrom: 7382f0
+            colorTo: 7382f0
+            layer: 105
+          }
+          {
+            particles: 1
+            length: 0
+            lifetime: 90
+            baseRotation: 45
+            region: exotic-mod-wide-case-back
+            interp: pow2In
+            sizeFrom: 14
+            sizeTo: 0
+          }
+          {
+            particles: 1
+            length: 0
+            lifetime: 90
+            baseRotation: 90
+            region: exotic-mod-diamond-wide
+            interp: pow2In
+            sizeFrom: 96
+            sizeTo: 0
+            colorFrom: 7382f0
+            colorTo: 7382f0
+            layer: 105
+          }
+          {
+            particles: 1
+            length: 0
+            lifetime: 90
+            baseRotation: 90
+            region: exotic-mod-diamond-wide
+            interp: pow2In
+            sizeFrom: 90
+            sizeTo: 0
+          }
+        ]
+      }
+      {
+        type: RadialEffect
+        amount: 1
+        lengthOffset: 350
+        effect: [
+          {
+            particles: 1
+            length: 0
+            lifetime: 90
+            baseRotation: 45
+            region: exotic-mod-wide-case-back
+            interp: pow2In
+            sizeFrom: 12
+            sizeTo: 0
+            colorFrom: 7382f0
+            colorTo: 7382f0
+            layer: 105
+          }
+          {
+            particles: 1
+            length: 0
+            lifetime: 90
+            baseRotation: 45
+            region: exotic-mod-wide-case-back
+            interp: pow2In
+            sizeFrom: 10
+            sizeTo: 0
+          }
+          {
+            particles: 1
+            length: 0
+            lifetime: 90
+            baseRotation: 90
+            region: exotic-mod-diamond-wide
+            interp: pow2In
+            sizeFrom: 72
+            sizeTo: 0
+            colorFrom: 7382f0
+            colorTo: 7382f0
+            layer: 105
+          }
+          {
+            particles: 1
+            length: 0
+            lifetime: 90
+            baseRotation: 90
+            region: exotic-mod-diamond-wide
+            interp: pow2In
+            sizeFrom: 66
+            sizeTo: 0
+          }
+        ]
+      }
+      {
+        type: RadialEffect
+        amount: 1
+        lengthOffset: 380
+        effect: [
+          {
+            particles: 1
+            length: 0
+            lifetime: 90
+            baseRotation: 45
+            region: exotic-mod-wide-case-back
+            interp: pow2In
+            sizeFrom: 8
+            sizeTo: 0
+            colorFrom: 7382f0
+            colorTo: 7382f0
+            layer: 105
+          }
+          {
+            particles: 1
+            length: 0
+            lifetime: 90
+            baseRotation: 45
+            region: exotic-mod-wide-case-back
+            interp: pow2In
+            sizeFrom: 6
+            sizeTo: 0
+          }
+          {
+            particles: 1
+            length: 0
+            lifetime: 90
+            baseRotation: 90
+            region: exotic-mod-diamond-wide
+            interp: pow2In
+            sizeFrom: 48
+            sizeTo: 0
+            colorFrom: 7382f0
+            colorTo: 7382f0
+            layer: 105
+          }
+          {
+            particles: 1
+            length: 0
+            lifetime: 90
+            baseRotation: 90
+            region: exotic-mod-diamond-wide
+            interp: pow2In
+            sizeFrom: 42
+            sizeTo: 0
+          }
+        ]
+      }
+      //actual shoot lmao
+      {
+        type: RadialEffect
+        amount: 1
+        lengthOffset: 120
+        effect: [
+          {
+            particles: 22
+            length: 110
+            lifetime: 80
+            baseLength: 60
+            cone: 30
+            interp: pow3Out
+            sizeInterp: linear
+            sizeFrom: 20
+            sizeTo: 0
+            colorFrom: 7382f0bb
+            colorTo: 7382f0bb
+            layer: 109
+          }
+          {
+            particles: 22
+            length: 110
+            lifetime: 70
+            baseLength: 60
+            cone: 35
+            interp: pow3Out
+            sizeInterp: linear
+            sizeFrom: 10
+            sizeTo: 0
+            colorFrom: 7382f0bb
+            colorTo: 7382f0bb
+            layer: 109
+          }
+          {
+            type: WaveEffect
+            sizeFrom: 18
+            sizeTo: 120
+            colorTo: 90a2fc
+            lifetime: 80
+            strokeFrom: 16
+            strokeTo: 0
+            interp: pow5Out
+          }
+          {
+            particles: 1
+            length: 0
+            lifetime: 90
+            baseRotation: 90
+            region: exotic-mod-diamond-wide
+            interp: pow2In
+            sizeFrom: 150
+            sizeTo: 100
+            colorFrom: 7382f0
+            colorTo: 7382f000
+            layer: 105
+          }
+          {
+            particles: 1
+            length: 0
+            lifetime: 90
+            baseRotation: 90
+            region: exotic-mod-diamond-wide
+            interp: pow2In
+            sizeFrom: 100
+            sizeTo: 66
+            colorFrom: 000000
+            colorTo: 000000
+            layer: 109
+          }
+          {
+            particles: 1
+            length: 0
+            lifetime: 35
+            baseRotation: 25
+            region: exotic-mod-shootspike
+            interp: pow2In
+            sizeFrom: 210
+            sizeTo: 140
+            colorFrom: 7382f0
+            colorTo: 7382f000
+            layer: 105
+          }
+          {
+            particles: 1
+            length: 0
+            lifetime: 35
+            baseRotation: 25
+            region: exotic-mod-shootspike
+            interp: pow2In
+            sizeFrom: 140
+            sizeTo: 100
+            colorFrom: 000000
+            colorTo: 000000
+            layer: 109
+          }
+          {
+            particles: 1
+            length: 0
+            lifetime: 35
+            baseRotation: -25
+            region: exotic-mod-shootspike
+            interp: pow2In
+            sizeFrom: 210
+            sizeTo: 140
+            colorFrom: 7382f0
+            colorTo: 7382f000
+            layer: 105
+          }
+          {
+            particles: 1
+            length: 0
+            lifetime: 35
+            baseRotation: -25
+            region: exotic-mod-shootspike
+            interp: pow2In
+            sizeFrom: 140
+            sizeTo: 100
+            colorFrom: 000000
+            colorTo: 000000
+            layer: 109
+          }
+          {
+            particles: 1
+            length: 0
+            lifetime: 90
+            baseRotation: 45
+            region: exotic-mod-wide-case-back
+            interp: pow2In
+            sizeFrom: 25
+            sizeTo: 17
+            colorFrom: 7382f0
+            colorTo: 7382f000
+            layer: 109.5
+          }
+          {
+            particles: 1
+            length: 0
+            lifetime: 90
+            baseRotation: 45
+            region: exotic-mod-wide-case-back
+            interp: pow2In
+            sizeFrom: 20
+            sizeTo: 13
+            colorTo: ffffff00
+          }
+        ]
+      }
+    ]
+    pierceEffect: [
+      {
+        particles: 25
+        length: 25
+        lifetime: 80
+        interp: pow3Out
+        sizeInterp: linear
+        sizeFrom: 10
+        sizeTo: 0
+        colorFrom: 7382f0bb
+        colorTo: 7382f0bb
+        layer: 109
+      }
+      {
+        particles: 25
+        length: 30
+        lifetime: 70
+        interp: pow3Out
+        sizeInterp: linear
+        sizeFrom: 5
+        sizeTo: 0
+        colorFrom: 7382f0bb
+        colorTo: 7382f0bb
+        layer: 109
+      }
+      {
+        line: true
+        baseRotation: 180
+        length: 140
+        lifetime: 35
+        particles: 20
+        cone: 30
+        interp: pow3Out
+        sizeInterp: linear
+        cap: false
+        lenFrom: 12
+        lenTo: 5
+        strokeFrom: 3
+        strokeTo: 0
+        colorTo: 7382f0
+      }
+      {
+        particles: 1
+        length: 0
+        lifetime: 35
+        baseRotation: 135
+        region: exotic-mod-shootspike
+        interp: pow2In
+        sizeFrom: 80
+        sizeTo: 0
+        colorFrom: 7382f0
+        colorTo: 7382f0
+        layer: 105
+      }
+      {
+        particles: 1
+        length: 0
+        lifetime: 35
+        baseRotation: 135
+        region: exotic-mod-shootspike
+        interp: pow2In
+        sizeFrom: 76
+        sizeTo: 0
+      }
+      {
+        particles: 1
+        length: 0
+        lifetime: 35
+        baseRotation: -135
+        region: exotic-mod-shootspike
+        interp: pow2In
+        sizeFrom: 80
+        sizeTo: 0
+        colorFrom: 7382f0
+        colorTo: 7382f0
+        layer: 105
+      }
+      {
+        particles: 1
+        length: 0
+        lifetime: 35
+        baseRotation: -135
+        region: exotic-mod-shootspike
+        interp: pow2In
+        sizeFrom: 76
+        sizeTo: 0
+      }
+    ]
+  }
+}
+category: turret
+requirements: [
+  dantrales/1200
+  territe-alloy/3600
+  crystal/4800
+  inseltiene/450
+  shadow/1200
+]

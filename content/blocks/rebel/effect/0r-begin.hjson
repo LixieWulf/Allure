@@ -8,7 +8,7 @@ research: {
   objectives: [
     {
       type: SectorComplete
-      preset: crashSite
+      preset: exotic-mod-crashSite
     }
   ]
 }
