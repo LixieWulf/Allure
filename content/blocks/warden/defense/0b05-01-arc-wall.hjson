@@ -1,0 +1,397 @@
+type: PowerTurret
+health: 4800
+armor: 30
+size: 4
+range: 210
+recoil: 0
+shake: 0
+reload: 160
+rotate: true
+rotateSpeed: 0
+shootY: 0
+shootSound: none
+shootCone: 360
+canOverdrive: false
+outlineIcon: false
+consumes: {
+  power: 8
+}
+conductivePower: true
+shootType: {
+  type: BulletType
+  lifetime: 5
+  collides: false
+  absorbable: false
+  hitEffect: none
+  despawnEffect: none
+  shootEffect: none
+  smokeEffect: none
+  fragLifeMin: 0.1
+  fragBullets: 4
+  fragBullet: {
+    type: BulletType
+    lifetime: 30
+    homingPower: 5
+    homingRange: 360
+    collides: false
+    absorbable: false
+    hitEffect: none
+    //temporary
+    hitSound: spark
+    despawnEffect: [
+      {
+        length: 0 
+        particles: 1
+        lifetime: 30
+        sizeFrom: 6
+        sizeTo: 0
+        colorTo: 7382f0
+      }
+    ]
+    fragBullets: 1
+    fragRandomSpread: 0
+    fragVelocityMax: 1
+    fragVelocityMin: 1
+    fragBullet: {
+      type: PointBulletType
+      spawnBullets: [
+        {
+          type: RailBulletType
+          length: 60
+          damage: 150
+          hitEffect: hitLaserBlast
+          pierceEffect: none
+          pierceDamageFactor: 0
+          status: exotic-mod-0b-energy1
+          statusDuration: 1
+        }
+      ]
+      collidesTiles: false
+      speed: 60
+      lifetime: 1
+      damage: 550
+      trailEffect: none
+      fragBullets: 1
+      fragRandomSpread: 45
+      fragVelocityMax: 1
+      fragVelocityMin: 1
+      fragBullet: {
+        type: PointBulletType
+        spawnBullets: [
+          {
+            type: RailBulletType
+            length: 60
+            damage: 150
+            hitEffect: hitLaserBlast
+            pierceEffect: none
+            pierceDamageFactor: 0
+            status: exotic-mod-0b-energy1
+            statusDuration: 1
+          }
+        ]
+        collidesTiles: false
+        speed: 60
+        lifetime: 1
+        damage: 550
+        trailEffect: none
+        lightning: 1
+        lightningLength: 2
+        lightningCone: 45
+        lightningType: {
+          type: PointBulletType
+          spawnBullets: [
+            {
+              type: RailBulletType
+              length: 60
+              damage: 150
+              hitEffect: hitLaserBlast
+              pierceEffect: none
+              pierceDamageFactor: 0
+              status: exotic-mod-0b-energy1
+              statusDuration: 1
+            }
+          ]
+          collidesTiles: false
+          speed: 60
+          lifetime: 1
+          damage: 250
+          trailEffect: none
+          lightning: 1
+          lightningLength: 2
+          lightningCone: 45
+          lightningType: {
+            type: PointBulletType
+            collidesTiles: false
+            speed: 60
+            lifetime: 1
+            damage: 550
+            trailEffect: none
+            lightning: 1
+            lightningLength: 2
+            lightningCone: 45
+            lightningType: {
+              type: PointBulletType
+              collidesTiles: false
+              speed: 60
+              lifetime: 1
+              damage: 550
+              trailEffect: none
+              despawnHit: true
+              despawnEffect: [
+                {
+                  length: 0 
+                  particles: 1
+                  lifetime: 30
+                  sizeFrom: 6
+                  sizeTo: 0
+                  colorTo: 7382f0
+                }
+                {
+                  line: true
+                  cone: 0
+                  length: -0.01
+                  particles: 1
+                  lifetime: 30
+                  lenFrom: 60
+                  lenTo: 60
+                  strokeFrom: 4
+                  strokeTo: 0
+                  colorTo: 7382f0
+                }
+              ]
+            }
+            despawnHit: true
+            despawnEffect: [
+              {
+                length: 0 
+                particles: 1
+                lifetime: 30
+                sizeFrom: 6
+                sizeTo: 0
+                colorTo: 7382f0
+              }
+              {
+                line: true
+                cone: 0
+                length: -0.01
+                particles: 1
+                lifetime: 30
+                lenFrom: 60
+                lenTo: 60
+                strokeFrom: 4
+                strokeTo: 0
+                colorTo: 7382f0
+              }
+            ]
+          }
+          despawnHit: true
+          despawnEffect: [
+            {
+              length: 0 
+              particles: 1
+              lifetime: 30
+              sizeFrom: 6
+              sizeTo: 0
+              colorTo: 7382f0
+            }
+            {
+              line: true
+              cone: 0
+              length: -0.01
+              particles: 1
+              lifetime: 30
+              lenFrom: 60
+              lenTo: 60
+              strokeFrom: 4
+              strokeTo: 0
+              colorTo: 7382f0
+            }
+          ]
+        }
+        despawnHit: true
+        despawnEffect: [
+          {
+            length: 0 
+            particles: 1
+            lifetime: 30
+            sizeFrom: 6
+            sizeTo: 0
+            colorTo: 7382f0
+          }
+          {
+            line: true
+            cone: 0
+            length: -0.01
+            particles: 1
+            lifetime: 30
+            lenFrom: 60
+            lenTo: 60
+            strokeFrom: 4
+            strokeTo: 0
+            colorTo: 7382f0
+          }
+        ]
+      }
+      despawnHit: true
+      despawnEffect: [
+        {
+          length: 0 
+          particles: 1
+          lifetime: 30
+          sizeFrom: 6
+          sizeTo: 0
+          colorTo: 7382f0
+        }
+        {
+          line: true
+          cone: 0
+          length: -0.01
+          particles: 1
+          lifetime: 30
+          lenFrom: 60
+          lenTo: 60
+          strokeFrom: 4
+          strokeTo: 0
+          colorTo: 7382f0
+        }
+      ]
+    }
+  }
+}
+priority: -2
+category: defense
+requirements: [
+  silicon/150
+  metaglass/120
+  dantrales/300
+  territe-alloy/1200
+]
+group: walls
+regionRotated1: 1
+drawer: [
+  {
+    type: DrawDefault
+  }
+  {
+    type: DrawSideRegion
+  }
+  {
+    type: DrawGlowRegion
+    layer: 30
+    color: feb380
+    rotate: true
+  }
+]
+breakEffect: [
+  {
+    type: WaveEffect
+    rotation: 41
+    lifetime: 20
+    sides: 4
+    sizeFrom: 16
+    sizeTo: 32
+    strokeFrom: 12
+    strokeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 11
+    useRotation: false
+    region: exotic-mod-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f000
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 30
+    startDelay: 10
+    useRotation: false
+    region: exotic-mod-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f0
+    colorTo: 7382f000
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    randLength: false
+    length: 0
+    baseLength: 12
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    baseRotation: 180
+    randLength: false
+    length: 0
+    baseLength: 12
+    lifetime: 35
+    useRotation: false
+    region: exotic-mod-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+]
+destroyBullet: {
+  type: BulletType
+  speed: 0
+  lifetime: 0
+  collides: false
+  absorbable: false
+  hittable: false
+  hitEffect: none
+  despawnEffect: none
+  fragBullets: 40
+  fragLifeMin: 0.01
+  fragBullet: {
+    type: BulletType
+    damage: 0
+    collides: false
+    absorbable: false
+    hittable: false
+    reflectable: false
+    hitEffect: none
+    despawnEffect: none
+    speed: 0.01
+    lifetime: 15
+    lightning: 1
+    lightningLength: 12
+    lightningLengthRand: 24
+    lightningCone: 0
+    lightningColor: 7382f0
+    lightningDamage: 55
+  }
+}
+destroyEffect: {
+  particles: 1
+  length: 0
+  lifetime: 35
+  interp: pow2In
+  sizeFrom: 32
+  sizeTo: 0
+  colorTo: 7382f0
+}

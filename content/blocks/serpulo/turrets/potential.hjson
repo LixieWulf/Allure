@@ -6,7 +6,7 @@ targetAir: true
 targetGround: true
 reload: 110
 recoil: 3
-restitution: 0.01
+recoilTime: 100
 shootSound: artillery
 ammoPerShot: 30
 maxAmmo: 140

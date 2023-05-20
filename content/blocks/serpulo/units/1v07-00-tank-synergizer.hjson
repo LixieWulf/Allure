@@ -1,0 +1,38 @@
+type: UnitAssembler
+payloadSpeed: 12
+size: 7
+areaSize: 21
+dronesCreated: 4
+hasLiquids: true
+liquidCapacity: 240
+droneType: exotic-mod-assault-construction-drone
+consumes: {
+  power: 15
+  liquids: [
+    oil/2
+    cryofluid/0.6
+  ]
+}
+plans: [
+  {
+    type: AssemblerUnitPlan
+    unit: 1v00-conflict
+    time: 3600
+    requirements: [
+      scepter/1
+      bryde/4
+      armored-conveyor/250
+    ]
+  }
+  {
+    type: AssemblerUnitPlan
+    unit: 1v01-strife
+    time: 80
+    requirements: [
+      exotic-mod-1v00-conflict/1
+      ripple/1
+    ]
+  }
+]
+category: units
+buildVisibility: sandboxOnly

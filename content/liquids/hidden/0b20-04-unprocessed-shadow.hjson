@@ -8,7 +8,7 @@ coolant: false
 incinerable: false
 particleSpacing: 30
 particleEffect: {
-  ignoreRotation: true
+  useRotation: false
   baseRotation: 31
   particles: 1
   cone: 15

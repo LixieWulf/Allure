@@ -5,7 +5,9 @@ health: 1200
 range: 160
 reload: 5
 recoil: 0.5
-shots: 3
+shoot: {
+  shots: 3
+}
 inaccuracy: 25
 shootSound: fire
 ammoUseEffect: none

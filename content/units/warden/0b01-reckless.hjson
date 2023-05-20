@@ -190,9 +190,5 @@ abilities: [
     display: false
   }
 ]
-research: {
-  parent: victory
-  objectives: [recreator]
-}
 envEnabled: -1
 envDisabled: 0

@@ -1,0 +1,8 @@
+type: PayloadDeconstructor
+size: 14
+solid: false
+maxPayloadSize: 12
+itemCapacity: 1800
+deconstructSpeed: 4
+category: units
+buildVisibility: sandboxOnly

@@ -19,7 +19,6 @@ drawer: [
     type: DrawGlowRegion
     layer: 30
     rotateSpeed: 5
-    glowScl: 8
     color: ffb380
   }
   {

@@ -44,7 +44,7 @@ drawer:  [
   }
   {
     type: DrawHeatOutput
-    color: 90a2fcbb
+    heatColor: 90a2fcbb
   }
 ]
 consumes: {

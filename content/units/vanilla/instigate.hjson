@@ -17,7 +17,7 @@ parts: [
     x: 6
     radius: 7
     stroke: 2.5
-    strokeMin: 0
+    minStroke: 0
     layerOffset: -0.0001
     color: 5ebcbf
   }
@@ -28,7 +28,7 @@ parts: [
     y: 6.5
     radius: 5
     stroke: 1.5
-    strokeMin: 0
+    minStroke: 0
     layerOffset: -0.0001
     color: 5ebcbf
   }
@@ -39,7 +39,7 @@ parts: [
     y: -6.5
     radius: 5
     stroke: 1.5
-    strokeMin: 0
+    minStroke: 0
     layerOffset: -0.0001
     color: 5ebcbf
   }

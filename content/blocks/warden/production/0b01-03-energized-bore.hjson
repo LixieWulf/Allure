@@ -20,7 +20,7 @@ consumes: {
     }
   ]
 }
-liquidBoostIntensity: 1.8
+optionalBoostIntensity: 1.8
 category: production
 requirements: [
   territe-alloy/350

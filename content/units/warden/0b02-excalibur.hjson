@@ -143,11 +143,5 @@ abilities: [
     }
   }
 ]
-research: {
-  parent: reckless
-  objectives: [
-    recaster
-  ]
-}
 envEnabled: -1
 envDisabled: 0

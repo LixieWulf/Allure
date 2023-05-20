@@ -21,11 +21,5 @@ faceTarget: false
 drawCell: false
 drawBody: false
 outlines: false
-research: {
-  parent: excalibur
-  objectives: [
-    alterator
-  ]
-}
 envEnabled: -1
 envDisabled: 0

@@ -7,8 +7,6 @@ drag: 0.013
 strafePenalty: 0.75
 shadowElevationScl: 0.45
 defaultController: BuilderAI
-rebuildPeriod: 0
-onlyAssist: true
 buildSpeed: 1
 lightRadius: 0
 drawCell: false
@@ -116,7 +114,6 @@ weapons: [
     shootSound: none
     shootStatus: exotic-mod-vslow
     shootStatusDuration: 120
-    firstShotDelay: 5
     bullet: {
       speed: 5
       damage: 35

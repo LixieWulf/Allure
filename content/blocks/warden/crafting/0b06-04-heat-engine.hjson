@@ -2,7 +2,6 @@ type: HeatProducer
 size: 4
 heatOutput: 5
 craftTime: 80
-warmup: 0.01
 warmupRate: 0.05
 liquidCapacity: 40
 drawer: [
@@ -21,6 +20,7 @@ drawer: [
   }
   {
     type: DrawHeatOutput
+    heatColor: 90a2fcbb
   }
   {
     type: DrawGlowRegion

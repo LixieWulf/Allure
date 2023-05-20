@@ -17,7 +17,7 @@ drawer: [
   {
     type: DrawBubbles
     amount: 150
-    sizes: 6
+    sides: 6
     spread: 20
     strokeMin: 0
     color: 70d4af
@@ -33,7 +33,6 @@ drawer: [
   {
     type: DrawLiquidRegion
     drawLiquid: water
-    padding: 8
     alpha: 0.6
   }
   {

@@ -4,21 +4,16 @@ health: 1600
 range: 160
 rotateSpeed: 3.8
 reload: 160
-//shoot: {
-//  type: ShootBarrel
-//  shots: 3
-//  shotDelay: 3
-//  barrels: [
-//    {
-//      x: -8
-//    }
-//    {
-//    }
-//    {
-//      x: 8
-//    }
-//  ]
-//}
+shoot: {
+  type: ShootBarrel
+  shots: 3
+  shotDelay: 3
+   barrels: [
+    8, 0, 0, 
+    0, 0, 0, 
+    -8, 0, 0
+  ]
+}
 consumes: {
   power: 10
 } 

@@ -1,0 +1,1148 @@
+type: LaserTurret
+size: 10
+reload: 1800
+recoil: 12
+rotateSpeed: 1
+range: 720
+recoilTime: 80
+shoot: {
+  firstShotDelay: 140
+}
+shootY: 54
+consumes: {
+  power: 1200
+  coolant: {
+    amount: 6
+    maxTemp: 0.4
+  }
+}
+liquidCapacity: 700
+shootDuration: 240
+shootSound: laserbig
+loopSound: beam
+loopSoundVolume: 4
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      suffix: -glow
+      outline: false
+      blending: additive
+      color: e6555500
+      colorTo: e6555511
+      progress: {
+        type: charge
+        op: compress
+        start: 0
+        end: 0.16
+      }
+    }
+    {
+      suffix: -glow
+      outline: false
+      blending: additive
+      color: ffa76300
+      colorTo: ffa76322
+      progress: {
+        type: charge
+        op: compress
+        start: 0.16
+        end: 0.33
+      }
+    }
+    {
+      suffix: -glow
+      outline: false
+      blending: additive
+      color: f2e87900
+      colorTo: f2e87933
+      progress: {
+        type: charge
+        op: compress
+        start: 0.33
+        end: 0.5
+      }
+    }
+    {
+      suffix: -glow
+      outline: false
+      blending: additive
+      color: 84f58f00
+      colorTo: 84f58f44
+      progress: {
+        type: charge
+        op: compress
+        start: 0.5
+        end: 0.66
+      }
+    }
+    {
+      suffix: -glow
+      outline: false
+      blending: additive
+      color: 87a3ff00
+      colorTo: 87a3ff55
+      progress: {
+        type: charge
+        op: compress
+        start: 0.66
+        end: 0.83
+      }
+    }
+    {
+      suffix: -glow
+      outline: false
+      blending: additive
+      color: be92f700
+      colorTo: be92f766
+      progress: {
+        type: charge
+        op: compress
+        start: 0.83
+        end: 1
+      }
+    }
+    //cooldown
+    {
+      suffix: -glow
+      outline: false
+      blending: additive
+      color: e6555500
+      colorTo: e6555511
+      progress: {
+        type: recoil
+        op: compress
+        start: 0
+        end: 0.16
+      }
+    }
+    {
+      suffix: -glow
+      outline: false
+      blending: additive
+      color: ffa76300
+      colorTo: ffa76322
+      progress: {
+        type: recoil
+        op: compress
+        start: 0.16
+        end: 0.33
+      }
+    }
+    {
+      suffix: -glow
+      outline: false
+      blending: additive
+      color: f2e87900
+      colorTo: f2e87933
+      progress: {
+        type: recoil
+        op: compress
+        start: 0.33
+        end: 0.5
+      }
+    }
+    {
+      suffix: -glow
+      outline: false
+      blending: additive
+      color: 84f58f00
+      colorTo: 84f58f44
+      progress: {
+        type: recoil
+        op: compress
+        start: 0.5
+        end: 0.66
+      }
+    }
+    {
+      suffix: -glow
+      outline: false
+      blending: additive
+      color: 87a3ff00
+      colorTo: 87a3ff55
+      progress: {
+        type: recoil
+        op: compress
+        start: 0.66
+        end: 0.83
+      }
+    }
+    {
+      suffix: -glow
+      outline: false
+      blending: additive
+      color: be92f700
+      colorTo: be92f766
+      progress: {
+        type: recoil
+        op: compress
+        start: 0.83
+        end: 1
+      }
+    }
+    //large plates
+    //movement
+    {
+      suffix: -plate
+      x: 24
+      y: -11
+      moveX: 4
+      mirror: true
+      progress: {
+        type: charge
+        op: compress
+        start: 0
+        end: 0.75
+      }
+      moves: [
+        {
+          y: -2.5
+          progress: {
+            type: charge
+            op: compress
+            start: 0.75
+            end: 1
+          }
+        }
+        {
+          y: -2.5
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.75
+            end: 1
+          }
+        }
+        {
+          x: 4
+          progress: {
+            type: recoil
+            op: compress
+            start: 0
+            end: 0.75
+          }
+        }
+      ]
+      //ae
+      children: [
+        {
+          suffix: -plate-glow
+          outline: false
+          blending: additive
+          color: e6555500
+          colorTo: e6555511
+          progress: {
+            type: charge
+            op: compress
+            start: 0
+            end: 0.16
+          }
+        }
+        {
+          suffix: -plate-glow
+          outline: false
+          blending: additive
+          color: ffa76300
+          colorTo: ffa76322
+          progress: {
+            type: charge
+            op: compress
+            start: 0.16
+            end: 0.33
+          }
+        }
+        {
+          suffix: -plate-glow
+          outline: false
+          blending: additive
+          color: f2e87900
+          colorTo: f2e87933
+          progress: {
+            type: charge
+            op: compress
+            start: 0.33
+            end: 0.5
+          }
+        }
+        {
+          suffix: -plate-glow
+          outline: false
+          blending: additive
+          color: 84f58f00
+          colorTo: 84f58f44
+          progress: {
+            type: charge
+            op: compress
+            start: 0.5
+            end: 0.66
+          }
+        }
+        {
+          suffix: -plate-glow
+          outline: false
+          blending: additive
+          color: 87a3ff00
+          colorTo: 87a3ff55
+          progress: {
+            type: charge
+            op: compress
+            start: 0.66
+            end: 0.83
+          }
+        }
+        {
+          suffix: -plate-glow
+          outline: false
+          blending: additive
+          color: be92f700
+          colorTo: be92f766
+          progress: {
+            type: charge
+            op: compress
+            start: 0.83
+            end: 1
+          }
+        }
+        //cooldown
+        {
+          suffix: -plate-glow
+          outline: false
+          blending: additive
+          color: e6555500
+          colorTo: e6555511
+          progress: {
+            type: recoil
+            op: compress
+            start: 0
+            end: 0.16
+          }
+        }
+        {
+          suffix: -plate-glow
+          outline: false
+          blending: additive
+          color: ffa76300
+          colorTo: ffa76322
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.16
+            end: 0.33
+          }
+        }
+        {
+          suffix: -plate-glow
+          outline: false
+          blending: additive
+          color: f2e87900
+          colorTo: f2e87933
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.33
+            end: 0.5
+          }
+        }
+        {
+          suffix: -plate-glow
+          outline: false
+          blending: additive
+          color: 84f58f00
+          colorTo: 84f58f44
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.5
+            end: 0.66
+          }
+        }
+        {
+          suffix: -plate-glow
+          outline: false
+          blending: additive
+          color: 87a3ff00
+          colorTo: 87a3ff55
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.66
+            end: 0.83
+          }
+        }
+        {
+          suffix: -plate-glow
+          outline: false
+          blending: additive
+          color: be92f700
+          colorTo: be92f766
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.83
+            end: 1
+          }
+        }
+      ]
+    }
+    //bits
+    {
+      suffix: -bit0
+      y: 9.75
+      moveY: 16
+      progress: charge
+      moves: [
+        {
+          y: 16
+          progress: recoil
+        }
+      ]
+      //bit glow
+      children: [
+        {
+          suffix: -bit0-glow
+          outline: false
+          blending: additive
+          color: e6555500
+          colorTo: e6555511
+          progress: {
+            type: charge
+            op: compress
+            start: 0
+            end: 0.16
+          }
+        }
+        {
+          suffix: -bit0-glow
+          outline: false
+          blending: additive
+          color: ffa76300
+          colorTo: ffa76322
+          progress: {
+            type: charge
+            op: compress
+            start: 0.16
+            end: 0.33
+          }
+        }
+        {
+          suffix: -bit0-glow
+          outline: false
+          blending: additive
+          color: f2e87900
+          colorTo: f2e87933
+          progress: {
+            type: charge
+            op: compress
+            start: 0.33
+            end: 0.5
+          }
+        }
+        {
+          suffix: -bit0-glow
+          outline: false
+          blending: additive
+          color: 84f58f00
+          colorTo: 84f58f44
+          progress: {
+            type: charge
+            op: compress
+            start: 0.5
+            end: 0.66
+          }
+        }
+        {
+          suffix: -bit0-glow
+          outline: false
+          blending: additive
+          color: 87a3ff00
+          colorTo: 87a3ff55
+          progress: {
+            type: charge
+            op: compress
+            start: 0.66
+            end: 0.83
+          }
+        }
+        {
+          suffix: -bit0-glow
+          outline: false
+          blending: additive
+          color: be92f700
+          colorTo: be92f766
+          progress: {
+            type: charge
+            op: compress
+            start: 0.83
+            end: 1
+          }
+        }
+        //cooldown
+        {
+          suffix: -bit0-glow
+          outline: false
+          blending: additive
+          color: e6555500
+          colorTo: e6555511
+          progress: {
+            type: recoil
+            op: compress
+            start: 0
+            end: 0.16
+          }
+        }
+        {
+          suffix: -bit0-glow
+          outline: false
+          blending: additive
+          color: ffa76300
+          colorTo: ffa76322
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.16
+            end: 0.33
+          }
+        }
+        {
+          suffix: -bit0-glow
+          outline: false
+          blending: additive
+          color: f2e87900
+          colorTo: f2e87933
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.33
+            end: 0.5
+          }
+        }
+        {
+          suffix: -bit0-glow
+          outline: false
+          blending: additive
+          color: 84f58f00
+          colorTo: 84f58f44
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.5
+            end: 0.66
+          }
+        }
+        {
+          suffix: -bit0-glow
+          outline: false
+          blending: additive
+          color: 87a3ff00
+          colorTo: 87a3ff55
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.66
+            end: 0.83
+          }
+        }
+        {
+          suffix: -bit0-glow
+          outline: false
+          blending: additive
+          color: be92f700
+          colorTo: be92f766
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.83
+            end: 1
+          }
+        }
+      ]
+    }
+    {
+      suffix: -bit1
+      y: -10.25
+      moveY: 12
+      progress: charge
+      moves: [
+        {
+          y: 12
+          progress: recoil
+        }
+      ]
+      //yes this applies to every bit
+      children: [
+        {
+          suffix: -bit1-glow
+          outline: false
+          blending: additive
+          color: e6555500
+          colorTo: e6555511
+          progress: {
+            type: charge
+            op: compress
+            start: 0
+            end: 0.16
+          }
+        }
+        {
+          suffix: -bit1-glow
+          outline: false
+          blending: additive
+          color: ffa76300
+          colorTo: ffa76322
+          progress: {
+            type: charge
+            op: compress
+            start: 0.16
+            end: 0.33
+          }
+        }
+        {
+          suffix: -bit1-glow
+          outline: false
+          blending: additive
+          color: f2e87900
+          colorTo: f2e87933
+          progress: {
+            type: charge
+            op: compress
+            start: 0.33
+            end: 0.5
+          }
+        }
+        {
+          suffix: -bit1-glow
+          outline: false
+          blending: additive
+          color: 84f58f00
+          colorTo: 84f58f44
+          progress: {
+            type: charge
+            op: compress
+            start: 0.5
+            end: 0.66
+          }
+        }
+        {
+          suffix: -bit1-glow
+          outline: false
+          blending: additive
+          color: 87a3ff00
+          colorTo: 87a3ff55
+          progress: {
+            type: charge
+            op: compress
+            start: 0.66
+            end: 0.83
+          }
+        }
+        {
+          suffix: -bit1-glow
+          outline: false
+          blending: additive
+          color: be92f700
+          colorTo: be92f766
+          progress: {
+            type: charge
+            op: compress
+            start: 0.83
+            end: 1
+          }
+        }
+        //cooldown
+        {
+          suffix: -bit1-glow
+          outline: false
+          blending: additive
+          color: e6555500
+          colorTo: e6555511
+          progress: {
+            type: recoil
+            op: compress
+            start: 0
+            end: 0.16
+          }
+        }
+        {
+          suffix: -bit1-glow
+          outline: false
+          blending: additive
+          color: ffa76300
+          colorTo: ffa76322
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.16
+            end: 0.33
+          }
+        }
+        {
+          suffix: -bit1-glow
+          outline: false
+          blending: additive
+          color: f2e87900
+          colorTo: f2e87933
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.33
+            end: 0.5
+          }
+        }
+        {
+          suffix: -bit1-glow
+          outline: false
+          blending: additive
+          color: 84f58f00
+          colorTo: 84f58f44
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.5
+            end: 0.66
+          }
+        }
+        {
+          suffix: -bit1-glow
+          outline: false
+          blending: additive
+          color: 87a3ff00
+          colorTo: 87a3ff55
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.66
+            end: 0.83
+          }
+        }
+        {
+          suffix: -bit1-glow
+          outline: false
+          blending: additive
+          color: be92f700
+          colorTo: be92f766
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.83
+            end: 1
+          }
+        }
+      ]
+    }
+    {
+      suffix: -bit2
+      y: -18.25
+      moveY: 8
+      progress: charge
+      moves: [
+        {
+          y: 8
+          progress: recoil
+        }
+      ]
+      //all of them.
+      children: [
+        {
+          suffix: -bit2-glow
+          outline: false
+          blending: additive
+          color: e6555500
+          colorTo: e6555511
+          progress: {
+            type: charge
+            op: compress
+            start: 0
+            end: 0.16
+          }
+        }
+        {
+          suffix: -bit2-glow
+          outline: false
+          blending: additive
+          color: ffa76300
+          colorTo: ffa76322
+          progress: {
+            type: charge
+            op: compress
+            start: 0.16
+            end: 0.33
+          }
+        }
+        {
+          suffix: -bit2-glow
+          outline: false
+          blending: additive
+          color: f2e87900
+          colorTo: f2e87933
+          progress: {
+            type: charge
+            op: compress
+            start: 0.33
+            end: 0.5
+          }
+        }
+        {
+          suffix: -bit2-glow
+          outline: false
+          blending: additive
+          color: 84f58f00
+          colorTo: 84f58f44
+          progress: {
+            type: charge
+            op: compress
+            start: 0.5
+            end: 0.66
+          }
+        }
+        {
+          suffix: -bit2-glow
+          outline: false
+          blending: additive
+          color: 87a3ff00
+          colorTo: 87a3ff55
+          progress: {
+            type: charge
+            op: compress
+            start: 0.66
+            end: 0.83
+          }
+        }
+        {
+          suffix: -bit2-glow
+          outline: false
+          blending: additive
+          color: be92f700
+          colorTo: be92f766
+          progress: {
+            type: charge
+            op: compress
+            start: 0.83
+            end: 1
+          }
+        }
+        //cooldown
+        {
+          suffix: -bit2-glow
+          outline: false
+          blending: additive
+          color: e6555500
+          colorTo: e6555511
+          progress: {
+            type: recoil
+            op: compress
+            start: 0
+            end: 0.16
+          }
+        }
+        {
+          suffix: -bit2-glow
+          outline: false
+          blending: additive
+          color: ffa76300
+          colorTo: ffa76322
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.16
+            end: 0.33
+          }
+        }
+        {
+          suffix: -bit2-glow
+          outline: false
+          blending: additive
+          color: f2e87900
+          colorTo: f2e87933
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.33
+            end: 0.5
+          }
+        }
+        {
+          suffix: -bit2-glow
+          outline: false
+          blending: additive
+          color: 84f58f00
+          colorTo: 84f58f44
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.5
+            end: 0.66
+          }
+        }
+        {
+          suffix: -bit2-glow
+          outline: false
+          blending: additive
+          color: 87a3ff00
+          colorTo: 87a3ff55
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.66
+            end: 0.83
+          }
+        }
+        {
+          suffix: -bit2-glow
+          outline: false
+          blending: additive
+          color: be92f700
+          colorTo: be92f766
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.83
+            end: 1
+          }
+        }
+      ]
+    }
+    {
+      suffix: -bit3
+      y: -24
+      moveY: 4
+      progress: charge
+      moves: [
+        {
+          y: 4
+          progress: recoil
+        }
+      ]
+      //pain.
+      children: [
+        {
+          suffix: -bit3-glow
+          outline: false
+          blending: additive
+          color: e6555500
+          colorTo: e6555511
+          progress: {
+            type: charge
+            op: compress
+            start: 0
+            end: 0.16
+          }
+        }
+        {
+          suffix: -bit3-glow
+          outline: false
+          blending: additive
+          color: ffa76300
+          colorTo: ffa76322
+          progress: {
+            type: charge
+            op: compress
+            start: 0.16
+            end: 0.33
+          }
+        }
+        {
+          suffix: -bit3-glow
+          outline: false
+          blending: additive
+          color: f2e87900
+          colorTo: f2e87933
+          progress: {
+            type: charge
+            op: compress
+            start: 0.33
+            end: 0.5
+          }
+        }
+        {
+          suffix: -bit3-glow
+          outline: false
+          blending: additive
+          color: 84f58f00
+          colorTo: 84f58f44
+          progress: {
+            type: charge
+            op: compress
+            start: 0.5
+            end: 0.66
+          }
+        }
+        {
+          suffix: -bit3-glow
+          outline: false
+          blending: additive
+          color: 87a3ff00
+          colorTo: 87a3ff55
+          progress: {
+            type: charge
+            op: compress
+            start: 0.66
+            end: 0.83
+          }
+        }
+        {
+          suffix: -bit3-glow
+          outline: false
+          blending: additive
+          color: be92f700
+          colorTo: be92f766
+          progress: {
+            type: charge
+            op: compress
+            start: 0.83
+            end: 1
+          }
+        }
+        //cooldown
+        {
+          suffix: -bit3-glow
+          outline: false
+          blending: additive
+          color: e6555500
+          colorTo: e6555511
+          progress: {
+            type: recoil
+            op: compress
+            start: 0
+            end: 0.16
+          }
+        }
+        {
+          suffix: -bit3-glow
+          outline: false
+          blending: additive
+          color: ffa76300
+          colorTo: ffa76322
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.16
+            end: 0.33
+          }
+        }
+        {
+          suffix: -bit3-glow
+          outline: false
+          blending: additive
+          color: f2e87900
+          colorTo: f2e87933
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.33
+            end: 0.5
+          }
+        }
+        {
+          suffix: -bit3-glow
+          outline: false
+          blending: additive
+          color: 84f58f00
+          colorTo: 84f58f44
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.5
+            end: 0.66
+          }
+        }
+        {
+          suffix: -bit3-glow
+          outline: false
+          blending: additive
+          color: 87a3ff00
+          colorTo: 87a3ff55
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.66
+            end: 0.83
+          }
+        }
+        {
+          suffix: -bit3-glow
+          outline: false
+          blending: additive
+          color: be92f700
+          colorTo: be92f766
+          progress: {
+            type: recoil
+            op: compress
+            start: 0.83
+            end: 1
+          }
+        }
+      ]
+    }
+  ]
+}
+shootType: {
+  type: ContinuousLaserBulletType
+  damage: 12000
+  length: 2400
+  width: 60
+  lifetime: 5
+  colors: [
+    e6555522,
+    ffa76344,
+    f2e87966,
+    84f58f88,
+    87a3ffbb,
+    be92f7dd
+  ]
+  backLength: 25
+  frontLength: 120
+  bulletInterval: 1
+  intervalRandomSpread: 25
+  intervalBullet: {
+    type: BulletType
+    lifetime: 0
+    instantDisappear: true
+    spawnBullets: [
+      {
+        type: LightningBulletType
+        damage: 2200
+        lightningLength: 160
+        lightningLengthRand: 160
+        lightningColor: e65555
+      }
+      {
+        type: LightningBulletType
+        damage: 2200
+        lightningLength: 160
+        lightningLengthRand: 160
+        lightningColor: ffa763
+      }
+      {
+        type: LightningBulletType
+        damage: 2200
+        lightningLength: 160
+        lightningLengthRand: 160
+        lightningColor: f2e879
+      }
+      {
+        type: LightningBulletType
+        damage: 2200
+        lightningLength: 160
+        lightningLengthRand: 160
+        lightningColor: 84f58f
+      }
+      {
+        type: LightningBulletType
+        damage: 2200
+        lightningLength: 160
+        lightningLengthRand: 160
+        lightningColor: 87a3ff
+      }
+      {
+        type: LightningBulletType
+        damage: 2200
+        lightningLength: 160
+        lightningLengthRand: 160
+        lightningColor: be92f7
+      }
+    ]
+  }
+}
+category: turret
+buildVisibility: shown

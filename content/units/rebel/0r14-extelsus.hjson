@@ -695,7 +695,7 @@ weapons: [
       collides: false
       absobrbable: false
       shootEffect: none
-      smokeEFfect: none
+      SmokeEffect: none
       despawnEffect: none
       fragBullets: 720
       fragRandomSpread: 0
