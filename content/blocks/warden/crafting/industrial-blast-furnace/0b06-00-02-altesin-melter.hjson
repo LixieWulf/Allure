@@ -19,6 +19,10 @@ consumes: {
 craftTime: 60
 outputLiquid: 0b19-00-melted-altesin/2
 category: crafting
+research: {
+  parent: industrial-blast-furnace
+  requirements: []
+}
 requirements: [
   metaglass/300
   dantrales/500

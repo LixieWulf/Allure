@@ -732,7 +732,7 @@ abilities: [
     maxSpeed: -1
     chance: 0.05
     length: -1
-    offset: -5
+    y: -5
     parentizeEffects: true
     shootSound: none
     shootEffect: {

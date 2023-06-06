@@ -1,0 +1,9 @@
+type: PayloadConveyor
+size: 1
+payloadLimit: 1
+moveTime: 60
+interp: linear
+requirements: [
+  beryllium/2
+  anden/6
+]

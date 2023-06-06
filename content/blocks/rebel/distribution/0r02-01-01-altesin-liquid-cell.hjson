@@ -1,0 +1,8 @@
+type: LiquidRouter
+liquidCapacity: 200
+liquidPadding: 1
+placeablePlayer: false
+buildVisibility: shown
+requirements: [
+  altesin/0
+]

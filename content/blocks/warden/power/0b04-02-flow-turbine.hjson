@@ -23,6 +23,7 @@ drawer: [
   }
 ]
 category: power
+research: 0b04-01-solar-heater
 requirements: [
   dantrales/150
   territe-alloy/250

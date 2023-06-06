@@ -1078,10 +1078,12 @@ drawer: {
 }
 shootType: {
   type: ContinuousLaserBulletType
-  damage: 12000
-  length: 2400
-  width: 60
-  lifetime: 5
+  damage: 4000
+  length: 700
+  drawSize: 700
+  width: 24
+  lifetime: 31
+  fadeTime: 30
   colors: [
     e6555522,
     ffa76344,
@@ -1092,8 +1094,8 @@ shootType: {
   ]
   backLength: 25
   frontLength: 120
-  bulletInterval: 1
-  intervalRandomSpread: 25
+  bulletInterval: 5
+  intervalRandomSpread: 0
   intervalBullet: {
     type: BulletType
     lifetime: 0
@@ -1101,44 +1103,44 @@ shootType: {
     spawnBullets: [
       {
         type: LightningBulletType
-        damage: 2200
-        lightningLength: 160
-        lightningLengthRand: 160
+        damage: 1100
+        lightningLength: 24
+        lightningLengthRand: 48
         lightningColor: e65555
       }
       {
         type: LightningBulletType
-        damage: 2200
-        lightningLength: 160
-        lightningLengthRand: 160
+        damage: 1100
+        lightningLength: 24
+        lightningLengthRand: 48
         lightningColor: ffa763
       }
       {
         type: LightningBulletType
-        damage: 2200
-        lightningLength: 160
-        lightningLengthRand: 160
+        damage: 1100
+        lightningLength: 24
+        lightningLengthRand: 48
         lightningColor: f2e879
       }
       {
         type: LightningBulletType
-        damage: 2200
-        lightningLength: 160
-        lightningLengthRand: 160
+        damage: 1100
+        lightningLength: 24
+        lightningLengthRand: 48
         lightningColor: 84f58f
       }
       {
         type: LightningBulletType
-        damage: 2200
-        lightningLength: 160
-        lightningLengthRand: 160
+        damage: 1100
+        lightningLength: 24
+        lightningLengthRand: 48
         lightningColor: 87a3ff
       }
       {
         type: LightningBulletType
-        damage: 2200
-        lightningLength: 160
-        lightningLengthRand: 160
+        damage: 1100
+        lightningLength: 24
+        lightningLengthRand: 48
         lightningColor: be92f7
       }
     ]

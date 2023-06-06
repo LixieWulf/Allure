@@ -1,5 +1,0 @@
-type: Floor
-variants: 3
-wall: crystal-wall
-itemDrop: sand
-playerUnmineable: true

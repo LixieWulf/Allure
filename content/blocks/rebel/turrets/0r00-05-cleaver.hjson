@@ -75,8 +75,8 @@ requirements: [
   anden/500
   silicon/600
   oxide/400
-  thorium/300
-  carbide/200
+  renfrien/300
+  surge-alloy/200
 ]
 envEnabled: -1
 envDisabled: 4

@@ -63,6 +63,12 @@ consumes: {
 powerProduction: 240
 outputLiquid: water/9.75
 category: power
+research: {
+  parent: 0b04-00-01-dual-turbine
+  objectives: [
+    0b-condenser-turbines
+  ]
+}
 requirements: [
   dantrales/400
   territe-alloy/1600

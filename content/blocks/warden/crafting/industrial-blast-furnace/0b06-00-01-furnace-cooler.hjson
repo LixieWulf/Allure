@@ -19,6 +19,10 @@ outputLiquids: [
 ]
 craftTime: 5
 category: crafting
+research: {
+  parent: industrial-blast-furnace
+  requirements: []
+}
 requirements: [
   metaglass/100
   silicon/450

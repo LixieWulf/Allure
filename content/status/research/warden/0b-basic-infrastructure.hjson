@@ -1,7 +1,7 @@
 research: {
   parent: 0b-begin
   requirements: [
-    dantrales/500
+    dantrales/2000
   ]
 }
 show: false

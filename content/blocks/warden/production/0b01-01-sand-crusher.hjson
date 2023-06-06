@@ -199,6 +199,12 @@ outputItems: [
   metaglass/2
 ]
 category: production
+research: {
+  parent: 0b01-00-rudimentary-fuser
+  objectives: [
+    0b-basic-infrastructure
+  ]
+}
 requirements: [
   dantrales/200
   territe-alloy/1200

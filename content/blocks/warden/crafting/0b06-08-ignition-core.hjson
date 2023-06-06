@@ -61,7 +61,13 @@ consumes: {
 }
 outputItem: territe-alloy/25
 category: crafting
-research: furnace
+research: {
+  parent: 0b-begin
+  objectives: [
+    0b-basic-infrastructure,
+    tri-mixer
+  ]
+}
 requirements: [
   silicon/150
   titanium/300

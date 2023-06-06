@@ -17,6 +17,10 @@ consumes: {
 hasPower: true
 outputLiquid: 0b19-01-superheated-slag/2
 category: crafting
+research: {
+  parent: industrial-blast-furnace
+  requirements: []
+}
 requirements: [
   metaglass/50
   silicon/900

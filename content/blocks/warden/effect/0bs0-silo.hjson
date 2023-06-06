@@ -5,6 +5,7 @@ health: 900
 armor: 30
 itemCapacity: 400
 category: effect
+research: 0bc0-nexus
 requirements: [
   dantrales/80
   territe-alloy/400

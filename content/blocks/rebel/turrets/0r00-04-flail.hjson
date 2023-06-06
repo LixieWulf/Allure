@@ -134,7 +134,7 @@ requirements: [
   graphite/500
   silicon/800
   oxide/200
-  thorium/400
+  renfrien/400
   surge-alloy/150
 ]
 envEnabled: -1

@@ -1,7 +1,7 @@
 type: ItemTurret
 squareSprite: false
 size: 3
-health: 1000
+health: 2100
 heatColor: e65555
 cooldownTime: 60
 range: 220
@@ -12,13 +12,14 @@ shoot: {
   type: ShootAlternate
   barrels: 4
 }
+targetGround: false
 shootEffect: shootBig
 smokeEffect: shootBigSmoke
 shake: 2
 shootSound: bang
 ammoTypes: {
   anden: {
-    damage: 44
+    damage: 72
     speed: 2
     drag: 0.08
     lifetime: 45
@@ -27,6 +28,7 @@ ammoTypes: {
     homingDelay: 40
     collides: false
     collidesTiles: false
+    collidesGround: false
     hittable: false
     absorbable: false
     sprite: exotic-mod-sword
@@ -42,10 +44,11 @@ ammoTypes: {
     fragVelocityMin: 1
     fragVelocityMax: 1
     fragBullet: {
-      damage: 44
+      damage: 72
       speed: 9
       lifetime: 20
       sprite: exotic-mod-sword
+      collidesGround: false
       homingPower: 0.1
       homingRange: 40
       width: 16
@@ -76,9 +79,8 @@ drawer: {
 category: turret
 research: 0r-begin
 requirements: [
-  beryllium/200
-  anden/160
-  tungsten/100
+  beryllium/400
+  anden/300
 ]
 envEnabled: -1
 envDisabled: 4

@@ -13,7 +13,6 @@ drawBody: false
 drawCell: false
 outlines: false
 trailLength: 0
-trailWidth: 0
 parts: [
   {
     type: RegionPart

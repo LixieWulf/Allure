@@ -9,5 +9,4 @@ research: {
   ]
 }
 difficulty: 10
-enemyBase: true
 clearSectorOnLose: true

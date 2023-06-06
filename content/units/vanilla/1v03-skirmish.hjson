@@ -1,0 +1,205 @@
+type: tank
+template: TankUnitType
+crushDamage: 5
+hitSize: 72
+health: 500000
+armor: 180
+faceTarget: false
+speed: 0.8
+accel: 0.1
+drag: 0.1
+drownTimeMultiplier: 7
+treadPullOffset: 0
+treadFrames: 18
+treadRects: [
+  {
+    x: 64
+    y: -121
+    width: 37
+    height: 272
+  }
+  {
+    x: 127
+    y: 8
+    width: 15
+    height: 144
+  }
+]
+rotateSpeed: 1
+outlineColor: 565666
+weapons: [
+  {
+    name: skirmish-launcher
+    layerOffset: 0.01
+    y: -16.75
+    x: 0
+    shootY: 32
+    mirror: false
+    rotate: true
+    rotateSpeed: 0.6
+    reload: 350
+    recoil: 14
+    shadow: 85
+    shootSound: missileLarge
+    inaccuracy: 2
+    shoot: {
+      type: ShootBarrel
+      shots: 2
+      shotDelay: 15
+      barrels: [
+        14, 0, 0,
+        -14, 0, 0
+      ]
+    }
+    bullet: {
+      keepVelocity: false
+      maxRange: 440
+      speed: 0.5
+      drag: -0.2
+      lifetime: 15
+      absorbable: false
+      collides: false
+      hittable: false
+      trailLength: 14
+      trailWidth: 5
+      sprite: missile-large
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: {
+        line: true
+        length: 80
+        cone: 20
+        lifetime: 30
+        particles: 8
+        interp: pow3Out
+        sizeInterp: linear
+        lenFrom: 8
+        lenTo: 0
+        strokeFrom: 3
+        strokeTo: 1
+        cap: false
+        colorFrom: ffdd55
+        colorTo: db401c
+      }
+      smokeEffect: [
+        shootBigSmoke2
+        {
+          type: RadialEffect
+          lengthOffset: 70
+          rotationOffset: 180
+          amount: 1
+          effect: shootBigSmoke2
+        }
+      ]
+      width: 20
+      height: 36
+      shrinkY: 0
+      lightning: 1
+      lightningLength: 2
+      lightningCone: 0
+      lightningDamage: 320
+      lightningType: {
+        keepVelocity: false
+        despawnHit: true
+        speed: 4
+        lifetime: 80
+        damage: 280
+        homingPower: 0.01
+        homingRange: 240
+        trailLength: 14
+        trailWidth: 5
+        trailChance: 0.3
+        trailEffect: {
+          length: 30
+          particles: 6
+          lifetime: 60
+          interp: pow3Out
+          sizeInterp: pow5In
+          sizeFrom: 6
+          sizeTo: 0
+          colorFrom: e58956bb
+          colorTo: 787878
+        }
+        hitSound: largeExplosion
+        hitShake: 18
+        sprite: missile-large
+        hitEffect: [
+          {
+            type: WaveEffect
+            lifetime: 45
+            interp: pow3Out
+            sizeFrom: 20
+            sizeTo: 120
+            strokeFrom: 32
+            colorFrom: ffd2ae
+            colorTo: e58956
+          }
+          {
+            length: 140
+            lifetime: 70
+            particles: 20
+            colorFrom: 787878
+            colorTo: 787878
+            sizeFrom: 14
+            sizeTo: 0
+            interp: pow3Out
+            sizeInterp: pow2In
+            layer: 105
+          }
+          {
+            length: 110
+            lifetime: 80
+            particles: 20
+            colorFrom: 787878
+            colorTo: 787878
+            sizeFrom: 6
+            sizeTo: 0
+            interp: pow3Out
+            sizeInterp: pow2In
+            layer: 105
+          }
+          {
+            length: 110
+            baseLength: 40
+            lifetime: 80
+            particles: 34
+            colorFrom: ffd2aebb
+            colorTo: e58956bb
+            sizeFrom: 24
+            sizeTo: 0
+            interp: pow3Out
+            sizeInterp: pow2In
+          }
+          {
+            line: true
+            length: 180
+            lifetime: 30
+            particles: 8
+            interp: pow3Out
+            sizeInterp: linear
+            lenFrom: 24
+            lenTo: 12
+            strokeFrom: 4
+            strokeTo: 0
+            cap: false
+            colorFrom: ffd2ae
+            colorTo: e58956
+          }
+        ]
+        width: 20
+        height: 36
+        shrinkY: 0
+        fragBullets: 960
+        fragBullet: {
+          type: RailBulletType
+          damage: 110
+          pierceDamageFactor: 0.1
+          pierceArmor: true
+          length: 120
+          pierceEffect: none
+          pierceDamageFactor: 1
+        }
+      }
+    }
+  }
+]

@@ -5,6 +5,12 @@ moveForce: 120
 payloadLimit: 2
 interp: pow3
 category: units
+research: {
+  parent: 0b02-00-tube
+  objectives: [
+    0b-payload-launching
+  ]
+}
 requirements: [
   dantrales/40
   territe-alloy/80

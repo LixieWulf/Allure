@@ -75,6 +75,12 @@ outputLiquids: [
 ]
 liquidOutputDirections: [1, 3]
 category: power
+research: {
+  parent: 0b04-04-gaseous-reactor
+  objectives: [
+    0b-steam-heating
+  ]
+}
 requirements: [
   metaglass/180
   dantrales/600

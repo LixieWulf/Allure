@@ -24,7 +24,7 @@ requirements: [
   thorium/1220
   plastanium/750
   phase-fabric/650
-  amethyst-gem/700
+  amethyst/700
   inseltiene/600
 ]
 category: power

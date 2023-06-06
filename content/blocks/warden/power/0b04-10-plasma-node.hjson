@@ -1,6 +1,7 @@
 type: BeamNode
 range: 7
 consumesPower: true
+conductivePower: true
 laserWidth: 0.35
 pulseScl: 22
 pulseMag: 0.1
@@ -13,8 +14,6 @@ research: {
   parent: 0b-begin
   objectives: [
     0b-basic-infrastructure
-    beam-node
-    power-node
   ]
 }
 requirements: [

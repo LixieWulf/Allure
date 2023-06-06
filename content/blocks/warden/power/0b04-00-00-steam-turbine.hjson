@@ -38,9 +38,15 @@ consumes: {
 powerProduction: 30
 outputLiquid: water/2.375
 category: power
+research: {
+  parent: 0b04-01-solar-heater
+  objectives: [
+    0b-steam-heating
+  ]
+}
 requirements: [
-  dantrales/80
-  territe-alloy/200
+  dantrales/140
+  territe-alloy/400
 ]
 breakEffect: [
   {

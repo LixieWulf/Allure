@@ -1,6 +1,6 @@
 heatCapacity: 0
 explosiveness: 0.45
 flammability: 0.2
-research: slag
+research: 0b-begin
 color: b3e9ff
 lightColor: b3e9ff

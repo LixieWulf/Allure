@@ -10,6 +10,7 @@ maxBlockSize: 2
 liquidCapacity: 700
 itemCapacity: 150
 category: units
+research: 0b07-00-00-atlas
 requirements: [
   dantrales/300
   territe-alloy/600

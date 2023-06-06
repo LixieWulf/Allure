@@ -7,6 +7,8 @@ reload: 8
 chargeTime: 2
 payloadSpeed: 3
 outlineIcon: false
+hasPower: false
+research: 0b07-00-00-atlas
 requirements: [
   dantrales/100
   territe-alloy/200

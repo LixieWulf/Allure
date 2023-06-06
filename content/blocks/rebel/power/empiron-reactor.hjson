@@ -12,7 +12,7 @@ consumes: {
   }
   items: {
     items: [
-      amethyst-gem/1
+      amethyst/1
     ]
   }
 }
@@ -44,7 +44,6 @@ drawer: {
     }
   ]
 }
-generateEffectRnd: 0
 powerProduction: 195
 category: power
 requirements: [
@@ -53,5 +52,5 @@ requirements: [
   silicon/1000
   phase-fabric/600
   baenite/400
-  amethyst-gem/250
+  amethyst/250
 ]

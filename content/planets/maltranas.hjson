@@ -6,11 +6,6 @@ minZoom: 1
 bloom: true
 alwaysUnlocked: true
 updateLighting: false
-ferriteChance: 0.2
-iceChance: 0.34
-carbonChance: 0.7
-berylChance: 0.4
-radMin: 35
 mag: 1
 scale: 0
 atmosphereRadIn: 0

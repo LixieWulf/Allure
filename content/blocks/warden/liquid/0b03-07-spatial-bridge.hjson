@@ -6,6 +6,7 @@ liquidCapacity: 250
 health: 220
 category: liquid
 range: 5
+research: 0b03-04-spatial-conduit
 requirements: [
   metaglass/40
   scilaxa/25

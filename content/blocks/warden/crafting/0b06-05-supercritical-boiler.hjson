@@ -35,6 +35,12 @@ ignoreLiquidFullness: true
 outputItem: altesin/2
 outputLiquid: crystal-plasma/0.5
 category: crafting
+research: {
+  parent: 0b06-04-heat-engine
+  objectives: [
+    0b-advanced-production
+  ]
+}
 requirements: [
   dantrales/200
   territe-alloy/500

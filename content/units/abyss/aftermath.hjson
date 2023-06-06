@@ -232,7 +232,6 @@ weapons: [
           strokeTo: 16
           colorFrom: 000000
           colorTo: 000000
-          useRotation: false
         }
         {
           type: WaveEffect
@@ -246,7 +245,6 @@ weapons: [
           strokeTo: 16
           colorFrom: 000000
           colorTo: 000000
-          useRotation: false
         }
         {
           type: WaveEffect
@@ -260,7 +258,6 @@ weapons: [
           strokeTo: 16
           colorFrom: 000000
           colorTo: 000000
-          useRotation: false
         }
         {
           length: 0

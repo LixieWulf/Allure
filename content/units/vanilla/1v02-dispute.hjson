@@ -1,0 +1,184 @@
+type: tank
+template: TankUnitType
+crushDamage: 12
+hitSize: 72
+health: 480000
+armor: 180
+faceTarget: false
+speed: 0.8
+accel: 0.1
+drag: 0.1
+drownTimeMultiplier: 7
+treadPullOffset: 0
+treadFrames: 18
+treadRects: [
+  {
+    x: 71
+    y: -67
+    width: 47
+    height: 224
+  }
+  {
+    x: 27
+    y: -154
+    width: 33
+    height: 128
+  }
+]
+rotateSpeed: 1
+outlineColor: 565666
+weapons: [
+  {
+    name: dispute-launcher
+    layerOffset: 0.01
+    y: -16
+    x: 0
+    shootY: 28
+    mirror: false
+    rotate: true
+    rotateSpeed: 0.6
+    reload: 310
+    recoil: 5
+    shadow: 75
+    shootSound: missileLarge
+    inaccuracy: 2
+    cooldownTime: 140
+    shoot: {
+      type: ShootBarrel
+      shots: 5
+      shotDelay: 6
+      barrels: [
+        16, 0, 0,
+        8, 0, 0, 
+        0, 0, 0,
+        -8, 0, 0,
+        -16, 0, 0
+      ]
+    }
+    bullet: {
+      keepVelocity: false
+      maxRange: 480
+      speed: 0.5
+      drag: -0.2
+      lifetime: 15
+      absorbable: false
+      collides: false
+      hittable: false
+      trailLength: 6
+      trailWidth: 3.3
+      sprite: missile-large
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: {
+        line: true
+        length: 45
+        cone: 20
+        lifetime: 30
+        particles: 8
+        interp: pow3Out
+        sizeInterp: linear
+        lenFrom: 8
+        lenTo: 0
+        strokeFrom: 3
+        strokeTo: 1
+        cap: false
+        colorFrom: ffdd55
+        colorTo: db401c
+      }
+      smokeEffect: [
+        shootBigSmoke2
+        {
+          type: RadialEffect
+          lengthOffset: 52
+          rotationOffset: 180
+          amount: 1
+          effect: shootBigSmoke2
+        }
+      ]
+      width: 14
+      height: 24
+      shrinkY: 0
+      lightning: 1
+      lightningLength: 2
+      lightningCone: 0
+      lightningDamage: 320
+      lightningType: {
+        keepVelocity: false
+        despawnHit: true
+        speed: 6
+        lifetime: 75
+        damage: 140
+        pierce: true
+        pierceBuilding: true
+        pierceDamageFactor: 0.02
+        homingPower: 0.02
+        homingRange: 240
+        trailLength: 6
+        trailWidth: 3.3
+        hitSound: explosion
+        hitShake: 6
+        sprite: missile-large
+        hitEffect: [
+          {
+            type: WaveEffect
+            lifetime: 5
+            sizeFrom: 20
+            sizeTo: 45
+            strokeFrom: 4
+            colorFrom: ffd2ae
+            colorTo: e58956
+          }
+          {
+            length: 40
+            lifetime: 50
+            particles: 20
+            colorFrom: 787878
+            colorTo: 787878
+            sizeFrom: 6
+            sizeTo: 0
+            interp: pow3Out
+            sizeInterp: pow2In
+          }
+          {
+            length: 55
+            lifetime: 40
+            particles: 20
+            colorFrom: 787878
+            colorTo: 787878
+            sizeFrom: 2
+            sizeTo: 0
+            interp: pow3Out
+            sizeInterp: pow2In
+          }
+          {
+            line: true
+            length: 65
+            lifetime: 30
+            particles: 8
+            interp: pow3Out
+            sizeInterp: linear
+            lenFrom: 8
+            lenTo: 0
+            strokeFrom: 2
+            strokeTo: 1
+            cap: false
+            colorFrom: ffd2ae
+            colorTo: e58956
+          }
+        ]
+        width: 14
+        height: 24
+        shrinkY: 0
+        fragBullets: 480
+        fragBullet: {
+          type: RailBulletType
+          damage: 0.4
+          pierceArmor: true
+          length: 45
+          pierceDamageFactor: 0
+          pierceEffect: none
+        }
+      }
+    }
+  }
+]

@@ -2,6 +2,7 @@ type: StorageBlock
 size: 2
 placeablePlayer: false
 itemCapacity: 150
+research: 0b07-00-00-atlas
 requirements: [
   dantrales/80
   territe-alloy/300

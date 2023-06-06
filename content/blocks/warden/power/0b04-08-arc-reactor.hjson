@@ -74,7 +74,13 @@ outputItem: shadow/3
 category: power
 ambientSound: arc
 ambientSoundVolume: 1
-research: fusion-reactor
+research: {
+  parent: 0b04-06-vapourization-generator
+  objectives: [
+    0b-steam-heating,
+    0b-advanced-production
+  ]
+}
 requirements: [
   territe-alloy/3600
   scilaxa/300

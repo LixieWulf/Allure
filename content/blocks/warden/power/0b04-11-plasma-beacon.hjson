@@ -2,6 +2,7 @@ type: BeamNode
 size: 5
 range: 25
 consumesPower: true
+conductivePower: true
 laserWidth: 0.7
 pulseScl: 22
 pulseMag: 0.2
@@ -11,10 +12,9 @@ consumes: {
 canOverdrive: false
 category: power
 research: {
-  parent: 0b05-10-plasma-node
+  parent: 0b04-10-plasma-node
   objectives: [
     0b-electromagnetic-acceleration
-    surge-tower
   ]
 }
 requirements: [

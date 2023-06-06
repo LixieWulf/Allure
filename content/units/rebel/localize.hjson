@@ -86,7 +86,7 @@ weapons: [
         -8, -8, 67.5,
       ]
     }
-    reload: 5
+    reload: 25
     recoil: 0
     shootStatus: {
       name: e

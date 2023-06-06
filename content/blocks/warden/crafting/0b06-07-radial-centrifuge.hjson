@@ -140,6 +140,12 @@ consumes: {
 }
 outputItem: inseltiene/2
 category: crafting
+research: {
+  parent: 0b06-06-radiator
+  objectives: [
+    0b-advanced-production
+  ]
+}
 requirements: [
   infrastructure/500
   territe-alloy/500

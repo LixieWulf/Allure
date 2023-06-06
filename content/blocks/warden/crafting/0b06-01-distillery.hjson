@@ -62,6 +62,12 @@ consumes: {
 outputLiquid: water/1.2
 outputItem: baenite/7
 category: crafting
+research: {
+  parent: 0b06-08-ignition-core
+  objectives: [
+    0b-basic-infrastructure
+  ]
+}
 requirements: [
   silicon/200
   metaglass/100

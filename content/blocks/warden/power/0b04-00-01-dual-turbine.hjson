@@ -44,6 +44,12 @@ consumes: {
 powerProduction: 90
 outputLiquid: water/4.825
 category: power
+research: {
+  parent: 0b04-00-00-steam-turbine
+  objectives: [
+    0b-condenser-turbines
+  ]
+}
 requirements: [
   dantrales/300
   territe-alloy/900

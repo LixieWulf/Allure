@@ -69,6 +69,12 @@ consumes: {
 outputItem: scilaxa/1
 outputLiquid: steam/2.5
 category: power
+research: {
+  parent: 0b04-01-solar-heater
+  objectives: [
+    0b-steam-heating
+  ]
+}
 requirements: [
   territe-alloy/600
   dantrales/200

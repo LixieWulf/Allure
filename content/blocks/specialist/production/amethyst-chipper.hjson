@@ -1,6 +1,6 @@
 type: WallCrafter
 size: 7
 drillTime: 380
-output: amethyst-gem
+output: amethyst
 buildVisibility: shown
 attribute: granite

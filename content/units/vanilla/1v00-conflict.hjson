@@ -5,7 +5,7 @@ hitSize: 48
 health: 111000
 armor: 47
 faceTarget: false
-speed: 1.05
+speed: 0.8
 accel: 0.1
 drag: 0.1
 drownTimeMultiplier: 6

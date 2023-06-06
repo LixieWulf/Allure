@@ -13,6 +13,10 @@ consumes: {
 hasPower: true
 outputLiquid: 0b19-04-refinery-coolant/0.25
 category: crafting
+research: {
+  parent: industrial-blast-furnace
+  requirements: []
+}
 requirements: [
   metaglass/50
   dantrales/150

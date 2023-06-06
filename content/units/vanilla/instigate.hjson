@@ -71,7 +71,6 @@ parts: [
   {
     type: HaloPart
     haloRotateSpeed: 12
-    shapeRadius: 12
     tri: true
     shapes: 6
     triLength: 10
@@ -86,8 +85,6 @@ parts: [
   {
     type: HaloPart
     haloRotateSpeed: -12
-    shapeRadius: 15
-    shapeRadiusTo: 12
     shapeRotation: 180
     tri: true
     shapes: 6

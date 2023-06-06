@@ -1,5 +1,6 @@
 research: {
   root: true
+  planet: serpulo
   name: Warden
   requiresUnlock: false
 }

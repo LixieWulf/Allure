@@ -6,6 +6,7 @@ payloadLimit: 2
 interp: pow3
 outputFacing: true
 category: units
+research: 0b07-00-00-atlas
 requirements: [
   dantrales/160
   territe-alloy/240

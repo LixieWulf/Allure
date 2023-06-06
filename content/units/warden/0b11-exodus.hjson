@@ -252,7 +252,7 @@ weapons: [
       hitEffect: none
       despawnEffect: none
       shootEffect: none
-      SmokeEffect: none
+      smokeEffect: none
     }
   }
   {
@@ -273,7 +273,7 @@ weapons: [
       hitEffect: none
       despawnEffect: none
       shootEffect: none
-      SmokeEffect: none
+      smokeEffect: none
     }
   }
   {
@@ -294,7 +294,7 @@ weapons: [
       hitEffect: none
       despawnEffect: none
       shootEffect: none
-      SmokeEffect: none
+      smokeEffect: none
     }
   }
   {
@@ -315,7 +315,7 @@ weapons: [
       hitEffect: none
       despawnEffect: none
       shootEffect: none
-      SmokeEffect: none
+      smokeEffect: none
     }
   }
   //bonk

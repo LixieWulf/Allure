@@ -9,8 +9,9 @@ fadeIn: false
 arrowSpacing: 14
 arrowPeriod: 0.6
 consumes: {
-  power: 0.5
+  power: 4
 }
+research: 0b03-07-spatial-bridge
 requirements: [
   metaglass/10
   scilaxa/120

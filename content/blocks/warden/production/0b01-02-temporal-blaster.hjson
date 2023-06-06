@@ -197,6 +197,12 @@ consumes: {
   }
 }
 category: production
+research: {
+  parent: 0b01-00-rudimentary-fuser
+  objectives: [
+    0b-basic-infrastructure
+  ]
+}
 requirements: [
   silicon/550
   dantrales/250

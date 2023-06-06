@@ -12,6 +12,7 @@ filter: [
 ]
 size: 2
 category: units
+research: 0b07-00-00-atlas
 requirements: [
   dantrales/150
   territe-alloy/1200

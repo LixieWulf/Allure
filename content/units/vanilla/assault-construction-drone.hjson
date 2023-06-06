@@ -9,3 +9,4 @@ accel: 0.1
 buildSpeed: 1
 buildBeamOffset: 8
 engineOffset: 9
+hidden: true

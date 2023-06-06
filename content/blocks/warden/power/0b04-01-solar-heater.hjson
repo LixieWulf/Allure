@@ -63,7 +63,12 @@ consumes: {
 outputLiquid: steam/0.625
 ambientSoundVolume: 0
 category: power
-research: territe-alloy
+research: {
+  parent: 0b-begin
+  objectives: [
+    0b-steam-heating
+  ]
+}
 requirements: [
   metaglass/50
   dantrales/60

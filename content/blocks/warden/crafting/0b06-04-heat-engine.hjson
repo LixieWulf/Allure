@@ -34,10 +34,16 @@ consumes: {
   ]
 }
 category: crafting
+research: {
+  parent: 0b06-02-electrolytic-cell
+  objectives: [
+    0b-basic-infrastructure
+  ]
+}
 requirements: [
   dantrales/500
   territe-alloy/600
-  scilaxa/75
+  baenite/150
 ]
 breakEffect: [
   {

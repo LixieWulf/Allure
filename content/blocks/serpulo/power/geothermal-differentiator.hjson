@@ -11,7 +11,7 @@ requirements: [
   silicon/780
   thorium/440
   surge-alloy/350
-  amethyst-gem/180
+  amethyst/180
 ]
 category: power
 research: thermal-generator

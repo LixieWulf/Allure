@@ -693,9 +693,9 @@ weapons: [
       type: BulletType
       lifetime: 0
       collides: false
-      absobrbable: false
+      absorbable: false
       shootEffect: none
-      SmokeEffect: none
+      smokeEffect: none
       despawnEffect: none
       fragBullets: 720
       fragRandomSpread: 0
@@ -707,6 +707,7 @@ weapons: [
         speed: 80
         collides: false
         absorbable: false
+        reflectable: false
         hitEffect: none
         despawnEffect: none
         trailEffect: none
@@ -718,6 +719,7 @@ weapons: [
           type: BulletType
           collidesAir: false
           keepVelocity: false
+          reflectable: false
           hittable: false
           absorbable: false
           speed: 4
@@ -1226,7 +1228,7 @@ abilities: [
     minVelocity: 0
     x: -62
     y: -105
-    effectRotation: true
+    rotateEffect: true
     effect: [
       {
         particles: 1
@@ -1275,7 +1277,7 @@ abilities: [
     minVelocity: 0
     x: 62
     y: -105
-    effectRotation: true
+    rotateEffect: true
     effect: [
       {
         particles: 1
@@ -1324,7 +1326,7 @@ abilities: [
     minVelocity: 0
     x: -22
     y: -101
-    effectRotation: true
+    rotateEffect: true
     effect: [
       {
         particles: 1
@@ -1373,7 +1375,7 @@ abilities: [
     minVelocity: 0
     x: 22
     y: -101
-    effectRotation: true
+    rotateEffect: true
     effect: [
       {
         particles: 1
@@ -1422,7 +1424,7 @@ abilities: [
     minVelocity: 0
     x: 0
     y: -110
-    effectRotation: true
+    rotateEffect: true
     effect: [
       {
         particles: 1

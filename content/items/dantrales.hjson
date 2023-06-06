@@ -3,4 +3,14 @@ radioactivity: 0.7
 explosiveness: 0.8
 flammability: 0.5
 charge: 0.2
-research: 0b-begin
+research: {
+  parent: 0b-begin
+  objectives: [
+    oil
+  ]
+  requirements: [
+    sand/1200
+    lead/1800
+    coal/600
+  ]
+}

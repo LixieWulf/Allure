@@ -45,7 +45,7 @@ research: 0r-waraxe
 requirements: [
   beryllium/1500
   anden/800
-  oxide/600
+  renfrien/600
 ]
 envEnabled: -1
 envDisabled: 4

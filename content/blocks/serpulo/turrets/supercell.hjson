@@ -10,7 +10,7 @@ shots: 2
 xRand: 8
 rotateSpeed: 2.9
 ammoTypes: {
-  amethyst-gem: {
+  amethyst: {
     damage: 720
     splashDamage: 550
     splashDamageRadius: 19
@@ -55,7 +55,7 @@ requirements: [
   plastanium/18000
   thorium/16000
   surge-alloy/9000
-  amethyst-gem/2500
+  amethyst/2500
   draconium/1500
   shadow/1000
 ]

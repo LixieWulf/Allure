@@ -1,0 +1,38 @@
+type: UnitAssembler
+payloadSpeed: 24
+size: 14
+areaSize: 28
+dronesCreated: 4
+hasLiquids: true
+liquidCapacity: 240
+droneType: exotic-mod-assault-construction-drone
+consumes: {
+  power: 15
+  liquids: [
+    arreacta/5
+    supercoolant/0.6
+  ]
+}
+plans: [
+  {
+    type: AssemblerUnitPlan
+    unit: 1v02-dispute
+    time: 4200
+    requirements: [
+      reign/2
+      antumbra/8
+      armored-conveyor/350
+    ]
+  }
+  {
+    type: AssemblerUnitPlan
+    unit: 1v03-skirmish
+    time: 80
+    requirements: [
+      exotic-mod-1v02-dispute/1
+      exotic-mod-fallout/1
+    ]
+  }
+]
+category: units
+buildVisibility: sandboxOnly

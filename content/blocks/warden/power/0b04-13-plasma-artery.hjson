@@ -3,7 +3,7 @@ rotate: false
 hasItems: false
 hasLiquids: false
 size: 2
-maxPayloadSize: 0
+maxBlockSize: 0
 hasPower: true
 conductivePower: true
 consumesPower: true
@@ -13,11 +13,16 @@ consumes: {
 }
 canOverdrive: false
 category: power
+research: {
+  parent: 0b04-11-plasma-beacon
+  objectives: [
+    0b-electromagnetic-acceleration
+  ]
+}
 requirements: [
   dantrales/150
   territe-alloy/200
   crystal/100
-  inseltiene/25
 ]
 breakEffect: [
   {

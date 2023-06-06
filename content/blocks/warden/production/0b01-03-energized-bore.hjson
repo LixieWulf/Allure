@@ -22,6 +22,12 @@ consumes: {
 }
 optionalBoostIntensity: 1.8
 category: production
+research: {
+  parent: 0b01-02-temporal-blaster
+  objectives: [
+    0b-advanced-production
+  ]
+}
 requirements: [
   territe-alloy/350
   dantrales/400

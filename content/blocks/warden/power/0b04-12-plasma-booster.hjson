@@ -7,16 +7,16 @@ laserColor1: 00000000
 laserColor2: 00000000
 laserScale: 0
 consumesPower: true
+conductivePower: true
 consumes: {
   power: 2
 }
 canOverdrive: false
 category: power
 research: {
-  parent: 0b05-10-plasma-node
+  parent: 0b04-10-plasma-node
   objectives: [
     0b-wormhole-beacons
-    power-node-large
   ]
 }
 requirements: [

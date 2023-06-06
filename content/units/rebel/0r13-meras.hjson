@@ -76,8 +76,6 @@ weapons: [
     continuous: true
     bullet: {
       type: RailBulletType
-      width: 0
-      drawFlare: false
       damage: 6000
       lifetime: 15
       length: 80
@@ -258,7 +256,7 @@ weapons: [
         name: ae2
         show: false
         disarm: true
-        speedMultplier: 0
+        speedMultiplier: 0
         dragMultiplier: 4
       }
       shootEffect: {
@@ -376,7 +374,7 @@ abilities: [
     minVelocity: 0
     x: 20
     y: -51
-    effectRotation: true
+    rotateEffect: true
     effect: [
       {
         particles: 1
@@ -425,7 +423,7 @@ abilities: [
     minVelocity: 0
     x: -20
     y: -51
-    effectRotation: true
+    rotateEffect: true
     effect: [
       {
         particles: 1
@@ -474,7 +472,7 @@ abilities: [
     minVelocity: 0
     x: 0
     y: -58
-    effectRotation: true
+    rotateEffect: true
     effect: [
       {
         particles: 1

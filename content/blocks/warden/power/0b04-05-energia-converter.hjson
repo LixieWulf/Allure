@@ -68,6 +68,12 @@ consumes: {
 }
 outputLiquid: steam/15
 category: power
+research: {
+  parent: 0b04-04-gaseous-reactor
+  objectives: [
+    0b-steam-heating
+  ]
+}
 requirements: [
   metaglass/150
   territe-alloy/500

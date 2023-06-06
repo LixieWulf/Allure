@@ -58,6 +58,6 @@ requirements: [
   thorium/17000
   phase-fabric/9000
   baenite/5000
-  amethyst-gem/4000
+  amethyst/4000
   draconium/2000
 ]

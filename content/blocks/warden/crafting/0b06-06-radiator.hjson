@@ -53,6 +53,13 @@ consumes: {
 outputLiquid: water/10
 ambientSoundVolume: 0
 category: crafting
+research: {
+  parent: 0b06-04-heat-engine
+  objectives: [
+    0b-steam-heating,
+    0b-advanced-production
+  ]
+}
 requirements: [
   dantrales/400
   territe-alloy/1200

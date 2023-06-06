@@ -56,6 +56,12 @@ consumes: {
 ambientSoundVolume: 0
 outputLiquid: steam/0.625
 category: power
+research: {
+  parent: 0b04-01-solar-heater
+  objectives: [
+    0b-steam-heating
+  ]
+}
 requirements: [
   dantrales/75
   territe-alloy/300

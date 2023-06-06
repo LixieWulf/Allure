@@ -3,6 +3,7 @@ health: 220
 underBullets: false
 squareSprite: false
 category: liquid
+research: 0b03-04-spatial-conduit
 requirements: [
   scilaxa/15
   crystal/10

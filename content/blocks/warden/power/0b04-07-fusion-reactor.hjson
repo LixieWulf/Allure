@@ -58,13 +58,18 @@ requirements: [
   infrastructure/600
   dantrales/500
   territe-alloy/1500
-  crystal/100
+  crystal/1200
   scilaxa/200
 ]
 category: power
 ambientSound: pulse
 ambientSoundVolume: 0.1
-research: impact-reactor
+research: {
+  parent: 0b04-06-vapourization-generator
+  objectives: [
+    0b-steam-heating
+  ]
+}
 breakEffect: [
   {
     type: WaveEffect

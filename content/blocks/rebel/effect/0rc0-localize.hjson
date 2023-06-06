@@ -1,5 +1,6 @@
 type: CoreBlock
 isFirstTier: true
+squareSprite: false
 size: 5
 health: 5400
 armor: 55
@@ -7,4 +8,9 @@ unitType: exotic-mod-localize
 unitCapModifier: 18
 itemCapacity: 3200
 category: effect
-buildVisibility: sandboxOnly
+fogRadius: 60
+requirements: [
+  beryllium/1200
+  anden/3200
+  renfrien/1800
+]

@@ -9,8 +9,8 @@ research: {
     forge-plating/25
     territe-alloy/3500
     silicon/1250
-    lead/500
     scilaxa/1000
+    crystal/2500
   ]
 }
 show: false

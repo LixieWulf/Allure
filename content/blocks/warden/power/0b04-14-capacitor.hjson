@@ -1,20 +1,21 @@
 type: Battery
+conductivePower: true
 size: 4
 consumes: {
   powerBuffered: 2000
 }
 research: {
-  parent: 0b05-12-plasma-booster
+  parent: 0b04-12-plasma-booster
   objectives: [
     0b-shock-weaponry
-    battery-large
   ]
 }
 category: power
+buildCostMultiplier: 0.8
 requirements: [
-  dantrales/50
-  territe-alloy/1600
-  baenite/100
+  dantrales/300
+  territe-alloy/1800
+  baenite/400
 ]
 drawer: [
   {

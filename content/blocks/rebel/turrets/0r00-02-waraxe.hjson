@@ -77,7 +77,7 @@ requirements: [
   beryllium/500
   anden/400
   graphite/450
-  tungsten/250
+  oxide/50
 ]
 envEnabled: -1
 envDisabled: 4

@@ -47,6 +47,12 @@ outputItems: [
   territe-alloy/5
 ]
 category: production
+research: {
+  parent: 0b-begin
+  objectives: [
+    0b-basic-infrastructure
+  ]
+}
 requirements: [
   dantrales/50
   territe-alloy/300

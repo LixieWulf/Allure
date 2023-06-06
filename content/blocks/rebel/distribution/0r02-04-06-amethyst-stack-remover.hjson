@@ -1,0 +1,12 @@
+type: PayloadDeconstructor
+size: 1
+payloadSpeed: 0.5
+maxPayloadSize: 1.1
+deconstructSpeed: 0.25
+hasPower: false
+requirements: [
+  anden/60
+  beryllium/20
+  renfrien/40
+  amethyst/30
+]

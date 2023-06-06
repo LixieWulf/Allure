@@ -1,6 +1,7 @@
 type: Pump
 size: 5
 hasPower: true
+research: 0b03-04-spatial-conduit
 consumes: {
   liquid: energia/0.35
   power: 5.1

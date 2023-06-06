@@ -1,0 +1,5 @@
+type: Floor
+speedMultiplier: 0.9
+attributes: {
+  chemical: 0.7
+}

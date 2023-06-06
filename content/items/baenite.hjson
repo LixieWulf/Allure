@@ -1,5 +1,10 @@
 hardness: 5
 cost: 1.8
 color: 74cf84
-research: phase-fabric
+research: {
+  parent: territe-alloy
+  objectives: [
+    liquid-baenara
+  ]
+}
 healthScaling: 1.4

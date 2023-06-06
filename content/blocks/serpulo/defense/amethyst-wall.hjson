@@ -5,7 +5,7 @@ armor: 120
 buildCostMultiplier: 1.5
 category: defense
 requirements: [
-  amethyst-gem/9
+  amethyst/9
 ]
 destroyEffect: [
   {

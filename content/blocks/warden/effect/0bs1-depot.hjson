@@ -12,6 +12,7 @@ outputsPower: true
 consumes: {
   powerBuffered: 1000
 }
+research: 0bs0-silo
 requirements: [
   dantrales/350
   territe-alloy/1200

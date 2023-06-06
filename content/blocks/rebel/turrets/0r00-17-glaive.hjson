@@ -13,7 +13,7 @@ ammoTypes: {
     parts: [
       {
         type: RegionPart
-        name: exotic-mod-0r00-15-glaive-arrow
+        name: exotic-mod-0r00-17-glaive-arrow
         y: -30
         outline: false
         layer: 111

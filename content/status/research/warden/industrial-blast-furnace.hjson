@@ -1,0 +1,16 @@
+research: {
+  parent: 0b06-05-supercritical-boiler
+  objectives: [
+    0b-advanced-production
+  ]
+  requirements: [
+    metaglass/2500
+    silicon/25000
+    dantrales/15000
+    territe-alloy/35000
+    baenite/15000
+    scilaxa/4000
+    crystal/50000
+  ]
+}
+show: false

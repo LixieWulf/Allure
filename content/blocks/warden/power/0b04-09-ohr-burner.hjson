@@ -135,7 +135,12 @@ effect: {
   }
 }
 category: power
-research: arc-reactor
+research: {
+  parent: 0b04-08-arc-reactor
+  objectives: [
+    0b-advanced-production
+  ]
+}
 requirements: [
   infrastructure/750
   territe-alloy/2500

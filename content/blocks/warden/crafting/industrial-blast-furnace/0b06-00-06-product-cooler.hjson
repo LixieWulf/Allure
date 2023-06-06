@@ -15,6 +15,10 @@ hasPower: true
 craftTime: 80
 outputItem: infrastructure/4
 category: crafting
+research: {
+  parent: industrial-blast-furnace
+  requirements: []
+}
 requirements: [
   metaglass/50
   silicon/150
