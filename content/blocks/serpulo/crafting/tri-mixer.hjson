@@ -23,7 +23,7 @@ research: {
   objectives: [
     {
       type: SectorComplete
-      preset: fungalPass
+      preset: exotic-mod-infestedValley
     }
   ]
 }

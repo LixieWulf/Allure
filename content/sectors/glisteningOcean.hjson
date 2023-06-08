@@ -1,4 +1,4 @@
-sector: 22
+sector: 102
 planet: serpulo
 research: {
   parent: planetaryTerminal
@@ -9,4 +9,3 @@ research: {
   ]
 }
 difficulty: 10
-clearSectorOnLose: true

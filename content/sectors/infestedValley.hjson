@@ -1,0 +1,11 @@
+sector: 176
+planet: serpulo
+research: {
+  parent: extractionOutpost 
+  objectives: [
+    minke, 
+    poly, 
+    pyratite-mixer 
+  ]
+}
+difficulty: 6
