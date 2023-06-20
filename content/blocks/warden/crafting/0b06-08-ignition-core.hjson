@@ -66,6 +66,10 @@ research: {
   objectives: [
     0b-basic-infrastructure,
     tri-mixer
+    {
+      type: SectorComplete
+      preset: glisteningOcean
+    }
   ]
 }
 requirements: [

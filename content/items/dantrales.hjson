@@ -3,6 +3,10 @@ radioactivity: 0.7
 explosiveness: 0.8
 flammability: 0.5
 charge: 0.2
+hiddenOnPlanets: [
+  erekir, 
+  exotic-mod-maltranas
+]
 research: {
   parent: 0b-begin
   objectives: [

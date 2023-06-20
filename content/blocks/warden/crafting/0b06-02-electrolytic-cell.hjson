@@ -6,6 +6,8 @@ liquidCapacity: 20
 invertFlip: true
 regionRotated1: 3
 liquidOutputDirections: [1, 3]
+rotate: true
+
 drawer: [
   {
     type: DrawDefault

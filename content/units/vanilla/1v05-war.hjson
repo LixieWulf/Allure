@@ -1,0 +1,255 @@
+type: tank
+template: TankUnitType
+shadowElevation: 0.5
+groundLayer: 85
+crushDamage: 9
+hitSize: 96
+health: 1000000
+armor: 620
+faceTarget: false
+speed: 0.8
+accel: 0.1
+drag: 0.1
+drownTimeMultiplier: 6
+treadPullOffset: 0
+treadFrames: 18
+treadRects: [
+  {
+    x: 112
+    y: -208
+    width: 56
+    height: 416
+  }
+]
+rotateSpeed: 1
+outlineColor: 565666
+weapons: [
+  {
+    name: war-cannon
+    layerOffset: 1.5
+    mirror: false
+    x: 0
+    y: -36
+    rotate: true
+    rotateSpeed: 0.6
+    shadow: 150
+    shootY: 60
+    shootSound: mildlyintensepew
+    shake: 8
+    soundPitchMin: 1
+    reload: 330
+    recoilTime: 110
+    parts: [
+      {
+        y: 70
+        moveY: -48
+        suffix: -barrel1
+        under: true
+        progress: recoil
+      }
+      {
+        y: 4
+        moveY: -8
+        suffix: -barrel0
+        under: true
+        progress: recoil
+      }
+    ]
+    bullet: {
+      type: ArtilleryBulletType
+      collides: true 
+      collidesTiles: true
+      damage: 2400
+      lifetime: 70
+      speed: 7
+      rangeOverride: 600
+      width: 30
+      height: 30
+      shrinkX: -1
+      shrinkY: -2
+      shrinkInterp: pow3In
+      trailLength: 18
+      trailWidth: 4
+      trailChance: 0.3
+      trailEffect: {
+        length: 30
+        particles: 6
+        lifetime: 50
+        interp: pow3Out
+        sizeInterp: pow5In
+        sizeFrom: 5
+        sizeTo: 0
+        colorFrom: e58956bb
+        colorTo: 787878
+      }
+      shootEffect: [
+        {
+          length: 0
+          lifetime: 35
+          region: exotic-mod-shootspike
+          colorTo: e58956
+          sizeFrom: 90
+          sizeTo: 0
+        }
+        {
+          length: 0
+          offset: 35
+          lifetime: 35
+          region: exotic-mod-shootspike
+          colorTo: e58956
+          sizeFrom: 80
+          sizeTo: 0
+        }
+        {
+          length: 0
+          offset: -35
+          lifetime: 35
+          region: exotic-mod-shootspike
+          colorTo: e58956
+          sizeFrom: 80
+          sizeTo: 0
+        }
+        {
+          length: 0
+          cone: 0
+          lifetime: 45
+          region: exotic-mod-diamond-thin
+          colorTo: e58956
+          sizeFrom: 70
+          sizeTo: 0
+        }
+      ]
+      smokeEffect: [
+        {
+          particles: 20
+          length: 125
+          lifetime: 180
+          cone: 20
+          sizeFrom: 7
+          sizeTo: 0
+          colorFrom: e58956
+          colorTo: 656565
+          interp: pow5Out
+          sizeInterp: pow2In
+        }
+        {
+          particles: 20
+          lightOpacity: 0
+          length: 160
+          lifetime: 110
+          cone: 25
+          sizeFrom: 3
+          sizeTo: 0
+          colorFrom: 999999
+          colorTo: 656565
+          interp: pow5Out
+          sizeInterp: pow3In
+        }
+      ]
+      fragBullets:5
+      fragVelocityMin: 0.15
+      fragLifeMin: 0.5
+      fragRandomSpread: 70
+      fragBullet: {
+        type: ArtilleryBulletType
+        collides: true 
+        collidesTiles: true
+        speed: 7
+        rangeOverride: 480
+        width: 28
+        height: 40
+        shrinkY: 1
+        shrinkX: 0.25
+        shrinkInterp: pow5Out
+        lifetime: 90
+        damage: 250
+        trailLength: 18
+        trailWidth: 2
+        trailChance: 0.3
+        trailEffect: {
+          length: 10
+          particles: 3
+          lifetime: 40
+          interp: pow3Out
+          sizeInterp: pow5In
+          sizeFrom: 2
+          sizeTo: 0
+          colorFrom: e58956bb
+          colorTo: 787878
+        }
+        fragBullets: 960
+        fragBullet: {
+          type: RailBulletType
+          damage: 65
+          pierceArmor: true
+          length: 120
+          pierceEffect: none
+          pierceDamageFactor: 1
+        }
+        hitEffect: [
+          {
+            type: WaveEffect
+            lifetime: 45
+            interp: pow3Out
+            sizeFrom: 20
+            sizeTo: 120
+            strokeFrom: 32
+            colorFrom: ffd2ae
+            colorTo: e58956
+          }
+          {
+            length: 140
+            lifetime: 70
+            particles: 20
+            colorFrom: 787878
+            colorTo: 787878
+            sizeFrom: 14
+            sizeTo: 0
+            interp: pow3Out
+            sizeInterp: pow2In
+            layer: 105
+          }
+          {
+            length: 110
+            lifetime: 80
+            particles: 20
+            colorFrom: 787878
+            colorTo: 787878
+            sizeFrom: 6
+            sizeTo: 0
+            interp: pow3Out
+            sizeInterp: pow2In
+            layer: 105
+          }
+          {
+            length: 110
+            baseLength: 40
+            lifetime: 80
+            particles: 34
+            colorFrom: ffd2aebb
+            colorTo: e58956bb
+            sizeFrom: 24
+            sizeTo: 0
+            interp: pow3Out
+            sizeInterp: pow2In
+          }
+          {
+            line: true
+            length: 180
+            lifetime: 30
+            particles: 8
+            interp: pow3Out
+            sizeInterp: linear
+            lenFrom: 24
+            lenTo: 12
+            strokeFrom: 4
+            strokeTo: 0
+            cap: false
+            colorFrom: ffd2ae
+            colorTo: e58956
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,6 +1,7 @@
 type: UnitAssemblerModule
 size: 7
 payloadSpeed: 1.5
+tier: 3
 consumes: {
   power: 2
 }

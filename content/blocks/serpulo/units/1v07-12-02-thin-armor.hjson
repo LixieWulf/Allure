@@ -1,0 +1,9 @@
+type: Wall
+size: 3
+customShadow: true
+placeablePlayer: false
+requirements: [
+  titanium/200
+  thorium/800
+  baenite/100
+]

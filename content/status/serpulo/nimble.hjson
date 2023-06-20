@@ -1,0 +1,31 @@
+buildSpeedMultiplier: 1.25
+speedMultiplier: 1.15
+effectChance: 0.05
+effect: [
+  {
+    useRotation: false
+    particles: 1
+    length: 0
+    baseLength: 6
+    randLength: false
+    offset: 45
+    region: exotic-mod-wide-case-back
+    sizeFrom: 1
+    sizeTo: 0
+    colorFrom: f3e979
+    colorTo: f3e979
+  }
+  {
+    useRotation: false
+    particles: 1
+    length: 0
+    baseLength: 6
+    randLength: false
+    offset: 45
+    region: exotic-mod-wide-case-back
+    sizeFrom: 1
+    sizeTo: 0
+    colorFrom: 4cebd1
+    colorTo: 4cebd1
+  }
+]

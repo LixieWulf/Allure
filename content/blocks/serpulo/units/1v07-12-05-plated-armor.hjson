@@ -1,0 +1,11 @@
+type: Wall
+size: 6
+customShadow: true
+placeablePlayer: false
+requirements: [
+  titanium/1200
+  thorium/1800
+  surge-alloy/600
+  baenite/1000
+  infrastructure/800
+]

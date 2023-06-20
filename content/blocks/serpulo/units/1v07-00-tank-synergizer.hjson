@@ -1,5 +1,5 @@
 type: UnitAssembler
-payloadSpeed: 12
+payloadSpeed: 1.5
 size: 7
 areaSize: 21
 dronesCreated: 4
@@ -19,9 +19,10 @@ plans: [
     unit: 1v00-conflict
     time: 3600
     requirements: [
-      scepter/1
-      bryde/4
-      armored-conveyor/250
+      exotic-mod-1v07-12-00-treads/4
+      exotic-mod-1v07-12-01-lightweight-cells/2
+      exotic-mod-1v07-12-02-thin-armor/8
+      salvo/1
     ]
   }
   {
@@ -30,7 +31,7 @@ plans: [
     time: 80
     requirements: [
       exotic-mod-1v00-conflict/1
-      ripple/1
+      spectre/1
     ]
   }
 ]

@@ -3,9 +3,23 @@ size: 7
 consumes: {
   power: 4
 }
-payloadSpeed: 12
-buildSpeed: 3
-maxBlockSize: 4
+payloadSpeed: 0.75
+buildSpeed: 14
+filter: [
+  exotic-mod-1v07-12-00-treads,
+  exotic-mod-1v07-12-01-lightweight-cells,
+  exotic-mod-1v07-12-02-thin-armor,
+  exotic-mod-1v07-12-03-thruster-module,
+  exotic-mod-1v07-12-04-shielded-cells,
+  exotic-mod-1v07-12-05-plated-armor,
+  salvo,
+  spectre,
+  swarmer,
+  exotic-mod-fallout,
+  hail,
+  ripple
+]
+maxBlockSize: 7
 category: units
 requirements: [
   copper/45

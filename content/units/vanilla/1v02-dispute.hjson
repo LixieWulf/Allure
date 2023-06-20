@@ -1,5 +1,6 @@
 type: tank
 template: TankUnitType
+shadowElevation: 0.4
 crushDamage: 12
 hitSize: 72
 health: 480000

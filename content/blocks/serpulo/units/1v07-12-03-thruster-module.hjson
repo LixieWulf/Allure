@@ -1,0 +1,9 @@
+type: Wall
+size: 3
+customShadow: true
+placeablePlayer: false
+requirements: [
+  silicon/900
+  surge-alloy/200
+  pyratite/350
+]

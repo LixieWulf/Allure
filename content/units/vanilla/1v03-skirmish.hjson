@@ -1,5 +1,6 @@
 type: tank
 template: TankUnitType
+shadowElevation: 0.4
 crushDamage: 5
 hitSize: 72
 health: 500000
@@ -193,7 +194,6 @@ weapons: [
         fragBullet: {
           type: RailBulletType
           damage: 110
-          pierceDamageFactor: 0.1
           pierceArmor: true
           length: 120
           pierceEffect: none

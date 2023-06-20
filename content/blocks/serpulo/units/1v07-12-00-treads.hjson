@@ -1,0 +1,9 @@
+type: Wall
+size: 3
+customShadow: true
+placeablePlayer: false
+requirements: [
+  silicon/50
+  thorium/500
+  baenite/50
+]

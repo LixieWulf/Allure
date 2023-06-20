@@ -1,0 +1,11 @@
+type: Wall
+size: 6
+customShadow: true
+placeablePlayer: false
+requirements: [
+  silicon/4800
+  thorium/800
+  phase-fabric/1200
+  scilaxa/250
+  crystal/1200
+]
