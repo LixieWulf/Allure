@@ -1,5 +1,5 @@
 generator: AsteroidGenerator
-parent: 1
+parent: exotic-mod-wandura
 orbitRadius: 0
 orbitSpacing: 0
 updateLighting: false
@@ -7,20 +7,19 @@ atmosphereRadIn: 0
 atmosphereRadOut: 0
 atmosphereColor: c94536
 drawOrbit: false
-bloom: true
+accessible: false
 mesh: {
   type: NoiseMesh
-  divisions: 3
-  radius: 0.12
-  planet: 2
-  color1: ff7a38
-  color2: ff7a38
-  octaves: 1
-  persistence: 0.01
-  scale: 0.01
+  divisions: 6
+  radius: 0.925
+  color1: ffe4ca
+  color2: d3ae8d
+  octaves: 4.6
+  persistence: 0.65
+  scale: 0.7
   mag: 1
-  coct: 1
+  coct: 4
   cper: 1
-  cscl: 1
+  cscl: 1.8
   cthresh: 1
 }

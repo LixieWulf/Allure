@@ -1,0 +1,19 @@
+generator: AsteroidGenerator
+parent: exotic-mod-wandura
+orbitRadius: 0
+updateLighting: false
+atmosphereRadIn: 0
+atmosphereRadOut: 0
+drawOrbit: false
+accessible: false
+cloudMesh: {
+  type: HexSkyMesh
+  speed: 1.1
+  divisions: 6
+  radius: 0.031
+  color: e8effa
+  octaves: 2.8
+  persistence: 0.5
+  scl: 0.5
+  thresh: 0.3
+}

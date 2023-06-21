@@ -1,0 +1,66 @@
+//decorative earthlike(?) planet, name is an easter egg referencing v6 exotic
+//also an example
+//also, use multiple planets if you need several meshes
+
+//generator - necessary to prevent crashes, even if you do not use numbered sectors
+generator: AsteroidGenerator
+//sector count - larger numbers mean exponentially more sectors, may crash above 4
+sectorSize: 3.1
+//parent to orbit around and follow
+parent: sun
+//radius from the planet's "surface" that the atmosphere blur begins
+atmosphereRadIn: 0
+//radius where it fades away - this can have visual issues if above 0.25
+atmosphereRadOut: 0.1
+//orbit radius, measured in units i do not know
+orbitRadius: 32
+//angle of the starting position of the orbit, 0 means the planet starts in line with serpulo
+orbitOffset: 50
+//time taken to complete one full orbit, in seconds
+orbitTime: 12000
+//time in ticks that it takes for one day to pass on the planet
+rotateTime: 5000
+//add tidalLock: true and updateLighting: false to make a planet's daylight not move
+//whether this planet can be selected, ever
+accessible: false
+//whether to allow launching to numbered sectors - set to false for erekir sector behaviour
+allowLaunchToNumbered: false
+//visual mesh made of hexagons - note that JSON only supports NoiseMesh and HexSkyMesh
+mesh: {
+  //a two colour mesh type
+  type: NoiseMesh
+  //number of hexagons - like sectors, this is exponential, so beware of frying your GPU (although your GPU can handle way more hexagons here)
+  divisions: 5
+  //mesh size - 1 is serpulo
+  radius: 0.9
+  //first colour to use 
+  color1: 596ab8
+  //second
+  color2: 596ab8
+  //mesh shape values - just mess around with these until they stop exploding, i still do not know how they work
+  octaves: 1
+  persistence: 0.01
+  scale: 0.01
+  mag: 1
+  //these control how the two colours behave on the mesh
+  coct: 1
+  cper: 1
+  cscl: 1
+  cthresh: 1
+}
+//mesh to use for drawing the clouds, essentially just a second mesh
+cloudMesh: {
+  type: HexSkyMesh
+  //rotate speed 
+  speed: 2.3
+  divisions: 6
+  //this radius value is based on the planet "surface", not the "core" of the planet, unlike noise meshes
+  radius: 0.1
+  //cloud colour
+  color: e8effa88
+  //more explodey values, they're even more sensitive here
+  octaves: 3
+  persistence: 0.5
+  scl: 1
+  thresh: 0.43
+}
