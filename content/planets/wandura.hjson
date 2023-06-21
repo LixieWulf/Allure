@@ -3,19 +3,38 @@
 //also, use multiple planets if you need several meshes
 
 //generator - necessary to prevent crashes, even if you do not use numbered sectors
-generator: AsteroidGenerator
+//also accepts just doing generator: AsteroidGenerator
+//also these numbers are funny and i have no idea how they precisely work
+generator: {
+  type: AsteroidGenerator
+  berylChance: 0.45
+  iceChance: 0.15
+  ferricChance: 0.55
+  stoneChance: 2
+  radMin: 1500
+  radMax: 1500
+  berylliumScale: 4
+  copperScale: 0.6
+  scale: 25
+  mag: 0.5
+  thresh: 0.9
+  fscl: 30
+  fper: 0.4
+}
 //sector count - larger numbers mean exponentially more sectors, may crash above 4
 sectorSize: 3.1
 //parent to orbit around and follow
 parent: sun
+//icon colour
+iconColor: 63ad7a
 //radius from the planet's "surface" that the atmosphere blur begins
 atmosphereRadIn: 0
 //radius where it fades away - this can have visual issues if above 0.25
 atmosphereRadOut: 0.1
 //orbit radius, measured in units i do not know
 orbitRadius: 32
-//angle of the starting position of the orbit, 0 means the planet starts in line with serpulo
-orbitOffset: 50
+//angle of the starting position of the orbit, so that all planets are not in the same line 
+orbitOffset: 140
 //time taken to complete one full orbit, in seconds
 orbitTime: 12000
 //time in ticks that it takes for one day to pass on the planet
