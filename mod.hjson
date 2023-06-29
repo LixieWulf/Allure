@@ -3,9 +3,8 @@ displayName: Exotic Mod
 author: Elixias
 description:
   '''
-  WARNING: Not supported on low-end devices. If you are playing on an old, slow phone, or a PC from a decade or so ago, don't expect the mod to function. 
-  This is due to old devices not having enough RAM to load mods.
-
+  WARNING: Not supported on low-end devices.
+  
   An attempt at an immersive content mod.
 
   HJSON at its core, Exotic seeks to break the limits and deliver a hopefully interesting experience to whoever plays it. Although most mods (well, all mods really) give an easier experience due to bad balancing, Exotic is considerably tougher than vanilla.
@@ -15,4 +14,4 @@ description:
   THIS UPDATE IS STILL IN EARLY DEV SO PLEASE SHUT UP ABOUT BUG REPORTS
   '''
 version: spaghetti
-minGameVersion: 144
+minGameVersion: 146

@@ -1,0 +1,56 @@
+parent: sun
+radius: 2
+camRadius: 1
+orbitRadius: 90
+orbitOffset: 210
+//broken, will have to ask for a bugfix
+atmosphereRadIn: 2
+atmosphereRadOut: 2.3
+atmosphereColor: 7926a6
+accessible: false
+mesh: [
+  {
+    type: HexSkyMesh
+    radius: 1
+    divisions: 5
+    speed: -4
+    color: 531ca6
+    octaves: 1
+    persistence: 1
+    scl: 1
+    thresh: 1
+  }
+  {
+    type: HexSkyMesh
+    radius: 1.1
+    divisions: 5
+    speed: 2.7
+    color: 681a9ccc
+    octaves: 1
+    persistence: 1
+    scl: 1
+    thresh: 0.5
+  }
+  {
+    type: HexSkyMesh
+    speed: 3.2
+    divisions: 5
+    radius: 1.15
+    color: a53bbfcc
+    octaves: 3
+    persistence: 0.5
+    scl: 1
+    thresh: 0.45
+  }
+  {
+    type: HexSkyMesh
+    speed: 2.3
+    divisions: 5
+    radius: 1.05
+    color: 7926a6cc
+    octaves: 3
+    persistence: 0.5
+    scl: 1
+    thresh: 0.6
+  }
+]

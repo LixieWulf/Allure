@@ -1,0 +1,37 @@
+parent: kharalis
+radius: 0.4
+atmosphereRadIn: 0
+atmosphereRadOut: 0
+orbitRadius: 12
+orbitOffset: 50
+accessible: false
+mesh: {
+  type: NoiseMesh
+  divisions: 4
+  radius: 0.383
+  color1: 545178
+  color2: 545178
+  octaves: 1
+  persistence: 0.01
+  scale: 0.01
+  mag: 1
+  coct: 4
+  cper: 1
+  cscl: 1.8
+  cthresh: 1
+}
+cloudMesh: {
+  type: NoiseMesh
+  divisions: 4
+  radius: 0.4
+  color1: 756ca6
+  color2: 978fbd
+  octaves: 4.6
+  persistence: 0.9
+  scale: 0.7
+  mag: 1
+  coct: 4
+  cper: 1
+  cscl: 1.8
+  cthresh: 1
+}

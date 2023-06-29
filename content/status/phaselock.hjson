@@ -1,0 +1,214 @@
+speedMultiplier: 0
+disarm: true
+parentizeApplyEffect: true
+applyEffect: [
+  {
+    line: true
+    lifetime: 60
+    particles: 60
+    length: -60
+    baseLength: 160
+    strokeFrom: 0
+    strokeTo: 2
+    lenFrom: 8
+    lenTo: 24
+    colorFrom: cfd446
+    interp: pow2Out
+    sizeInterp: linear
+  }
+  {
+    type: WaveEffect
+    interp: pow3Out
+    lifetime: 60
+    sizeFrom: 380
+    sizeTo: 150
+    strokeFrom: 0
+    strokeTo: 9
+    colorFrom: cfd446
+    colorTo: cfd446
+  }
+  {
+    type: WaveEffect
+    interp: pow3Out
+    lifetime: 60
+    startDelay: 60
+    sizeFrom: 80
+    sizeTo: 380
+    strokeFrom: 12
+    strokeTo: 0
+    colorFrom: cfd446
+    colorTo: cfd446
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    startDelay: 55
+    lifetime: 15
+    sizeFrom: 0
+    sizeTo: 400
+    region: circle-shadow
+    colorFrom: cfd446
+    colorTo: cfd446
+    layer: 99
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    startDelay: 70
+    lifetime: 30
+    sizeFrom: 400
+    sizeTo: 0
+    region: circle-shadow
+    colorFrom: cfd446
+    colorTo: cfd446
+    layer: 99
+  }
+  {
+    type: ParticleEffect
+    particles: 4
+    length: 0
+    startDelay: 70
+    lifetime: 430
+    sizeFrom: 225
+    sizeTo: 225
+    region: circle-shadow
+    colorFrom: cfd446
+    colorTo: cfd446
+    layer: 105
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    spin: 1
+    length: 0
+    startDelay: 70
+    lifetime: 430
+    sizeFrom: 225
+    sizeTo: 225
+    region: exotic-mod-sawblade
+    colorFrom: cfd446
+    colorTo: cfd446
+    layer: 105
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    spin: -1
+    length: 0
+    startDelay: 70
+    lifetime: 430
+    sizeFrom: 225
+    sizeTo: 225
+    region: exotic-mod-sawblade
+    colorFrom: cfd446
+    colorTo: cfd446
+    layer: 105
+  }
+  {
+    type: ParticleEffect
+    baseLength: 150
+    cone: 0
+    randLength: false
+    particles: 1
+    length: 0
+    startDelay: 70
+    lifetime: 430
+    sizeFrom: 400
+    sizeTo: 200
+    region: exotic-mod-shootspike
+    useRotation: false
+    baseRotation: 0
+    colorFrom: cfd446
+    colorTo: cfd446
+    layer: 104
+  }
+  {
+    type: ParticleEffect
+    baseLength: 150
+    cone: 0
+    randLength: false
+    particles: 1
+    length: 0
+    startDelay: 70
+    lifetime: 430
+    sizeFrom: 400
+    sizeTo: 200
+    region: exotic-mod-shootspike
+    useRotation: false
+    baseRotation: 180
+    colorFrom: cfd446
+    colorTo: cfd446
+    layer: 104
+  }
+  {
+    type: ParticleEffect
+    baseLength: 150
+    cone: 0
+    randLength: false
+    particles: 1
+    length: 0
+    startDelay: 70
+    lifetime: 430
+    sizeFrom: 100
+    sizeTo: 200
+    region: exotic-mod-shootspike
+    useRotation: false
+    baseRotation: 0
+    colorFrom: 000000
+    colorTo: 000000
+    layer: 104.5
+  }
+  {
+    type: ParticleEffect
+    baseLength: 150
+    cone: 0
+    randLength: false
+    particles: 1
+    length: 0
+    startDelay: 70
+    lifetime: 430
+    sizeFrom: 100
+    sizeTo: 200
+    region: exotic-mod-shootspike
+    useRotation: false
+    baseRotation: 180
+    colorFrom: 000000
+    colorTo: 000000
+    layer: 104.5
+  }
+  {
+    type: ParticleEffect
+    particles: 4
+    length: 0
+    startDelay: 70
+    lifetime: 430
+    sizeFrom: 150
+    sizeTo: 150
+    region: circle-shadow
+    colorFrom: 000000
+    colorTo: 000000
+    layer: 106
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    startDelay: 70
+    lifetime: 430
+    sizeFrom: 150
+    sizeTo: 150
+    colorFrom: 00000088
+    colorTo: 00000088
+    layer: 55
+  }
+]
+effect: {
+  type: ParticleEffect
+  lifetime: 25
+  length: 16
+  sizeFrom: 2
+  sizeTo: 0
+  colorTo: cfd446
+}

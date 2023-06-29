@@ -1,0 +1,157 @@
+type: naval
+hitSize: 55
+health: 450000
+armor: 120
+speed: 0.2
+rotateSpeed: 1.9
+drag: 0.04
+parts: [
+  {
+    mirror: true
+    suffix: -fin0
+    layer: 59.9
+    y: 6
+    x: 20
+    moveRot: -45
+    weaponIndex: 0
+    progress: smoothReload
+  }
+  {
+    mirror: true
+    suffix: -fin1
+    layer: 59.9
+    y: 20
+    x: 15
+    moveRot: -45
+    weaponIndex: 0
+    progress: smoothReload
+  }
+  {
+    mirror: true
+    suffix: -fin1
+    layer: 59.9
+    y: -5
+    x: 15
+    moveRot: -45
+    weaponIndex: 0
+    progress: smoothReload
+  }
+  {
+    mirror: true
+    suffix: -fin2
+    layer: 59.9
+    y: -19
+    x: 13
+    moveRot: -45
+    weaponIndex: 0
+    progress: smoothReload
+  }
+]
+weapons: [
+  {
+    x: 0
+    mirror: false
+    alwaysShooting: true
+    minShootVelocity: 0.17
+    reload: 90
+    continuous: true
+    shootSound: none
+    bullet: {
+      type: ContinuousFlameBulletType
+      drawFlare: false
+      collides: false
+      width: 0
+      length: 0
+      recoil: -0.3
+      lifetime: 30
+    }
+  }
+  {
+    x: 0
+    y: 4
+    rotate: true
+    rotateSpeed: 360
+    mirror: false
+    reload: 1200
+    shootSound: none
+    bullet: {
+      type: PointBulletType
+      maxRange: 440
+      speed: 440
+      damage: 0.01
+      collidesTiles: false
+      trailEffect: none
+      shootEffect: [
+        {
+          type: WaveEffect
+          interp: pow3Out
+          lifetime: 60
+          sizeFrom: 0
+          sizeTo: 120
+          strokeFrom: 9
+          strokeTo: 0
+          colorFrom: cfd446
+          colorTo: cfd446
+        }
+        {
+          line: true
+          lifetime: 45
+          particles: 22
+          length: 120
+          baseLength: 20
+          strokeFrom: 5
+          strokeTo: 0
+          lenFrom: 0
+          lenTo: 24
+          colorFrom: cfd446
+          colorTo: cfd446
+          interp: pow2Out
+          sizeInterp: linear
+        }
+      ]
+      status: exotic-mod-phaselock
+      statusDuration: 500
+    }
+  }
+]
+abilities: [
+  {
+    type: MoveLightningAbility
+    display: false
+    y: 4
+    minSpeed: -1
+    maxSpeed: -1
+    length: -1
+    bulletSpread: 360
+    shootEffect: none
+    shootSound: none
+    bullet: {
+      type: BulletType
+      collides: false
+      absorbable: false
+      lifetime: 0
+      lightning: 1
+      lightningLength: 12
+      lightningLengthRand: 24
+      lightningDamage: 80
+      lightningColor: cfd446
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      hitSound: spark
+      hitSoundVolume: 0.1
+    }
+  }
+  {
+    type: EnergyFieldAbility
+    y: 4
+    effectRadius: 8
+    display: false
+    maxTargets: 0
+    range: 0
+    blinkSize: 0.25
+    color: cfd446
+    sectors: 0
+  }
+]

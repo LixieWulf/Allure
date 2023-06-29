@@ -1,0 +1,73 @@
+generator: AsteroidGenerator
+parent: kharalis
+radius: 0.7
+minZoom: 0.9
+atmosphereRadIn: 0
+atmosphereRadOut: 0.2
+atmosphereColor: e38f5baa
+iconColor: e38f5b
+orbitRadius: 7
+orbitOffset: 110
+accessible: true
+allowLaunchToNumbered: false
+sectorSize: 2
+totalRadius: 1.8
+bloom: true
+mesh: [
+  {
+    type: NoiseMesh
+    divisions: 5
+    radius: 0.65
+    color1: cc6b41
+    color2: cc6b41
+    octaves: 1
+    persistence: 0.01
+    scale: 0.01
+    mag: 1
+    coct: 1
+    cper: 1
+    cscl: 1
+    cthresh: 1
+  }
+  {
+    type: NoiseMesh
+    divisions: 5
+    radius: 0.675
+    color1: e3b15b
+    color2: e38f5b
+    octaves: 4.6
+    persistence: 0.9
+    scale: 0.7
+    mag: 1.1
+    coct: 4
+    cper: 1
+    cscl: 1.8
+    cthresh: 1
+  }
+  {
+    type: NoiseMesh
+    divisions: 5
+    radius: 0.65
+    color1: 4a4b53
+    color2: 4a4b53
+    octaves: 4.6
+    persistence: 0.9
+    scale: 0.7
+    mag: 1.5
+    coct: 4
+    cper: 1
+    cscl: 1.8
+    cthresh: 1
+  }
+]
+cloudMesh: {
+  type: HexSkyMesh
+  speed: -2.8
+  divisions: 5
+  radius: 0.15
+  color: e3b578bb
+  octaves: 3
+  persistence: 0.5
+  scl: 0.7
+  thresh: 0.43
+}
