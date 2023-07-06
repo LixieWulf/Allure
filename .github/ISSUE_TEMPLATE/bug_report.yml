@@ -1,0 +1,56 @@
+name: Bug report
+description: Report an issue about the mod
+title: Bug Report
+labels: ["bug"]
+body:
+  - type: input
+    id: os
+    attributes:
+      label: OS
+      description: The operating system used, such as iOS or Windows
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Build
+      description: The current build number you are on
+      placeholder: ex. 145.1
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Issue
+      description: Explain the issue you have here. Please be as descriptive as possible and leave a video or screenshot if possible
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Method(s) To Reproduce
+      description: How you ran across this issue, and how I am supposed to recreate it
+    validations:
+      required: true
+  - type: textarea
+    id: allmods
+    attributes:
+      label: All Mods Used
+      description: Link or put the .zip files of all mods other than Exotic Mod used when this issue happened
+    validations:
+      required: false
+  - type: textarea
+    id: crashlogs
+    attributes:
+      label: Crash Logs
+      description: If you experienced a crash, put the logs here. Otherwise this line can be left alone
+    validations:
+      required: false
+  - type: checkboxes
+    id: check
+    attributes:
+      label: Other
+      description: Place an X in this box to show you understand. 
+      options:
+        - label: I have updated to the newest commit of Exotic Mod and the latest official release build of Mindustry to make sure this wasn't already fixed.
+          required: true
