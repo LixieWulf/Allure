@@ -42,25 +42,15 @@ weapons: [
     recoilTime: 90
     recoils: 5
     shoot: {
-      type: ShootMulti
-      source: {
-        type: ShootAlternate
-        shots: 1
-        barrels: 5
-      }
-      dest: [
-        {
-          type: ShootBarrel
-          shots: 5
-          shotDelay: 15
-          barrels: [
-            -12, 12, 0,
-            0, 12, 0,
-            12, 12, 0,
-            6, 0, 0,
-            -6, 0, 0
-          ]
-        }
+      type: ShootBarrel
+      shots: 5
+      shotDelay: 15
+      barrels: [
+        -12, 12, 0,
+        0, 12, 0,
+        12, 12, 0,
+        6, 0, 0,
+        -6, 0, 0
       ]
     }
     parts: [
