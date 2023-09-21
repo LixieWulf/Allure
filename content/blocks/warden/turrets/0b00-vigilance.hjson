@@ -192,7 +192,7 @@ ammoTypes: {
     type: RailBulletType
     length: 3800
     damage: 120000
-    status: exotic-mod-0b-energy4
+    status: allure-0b-energy4
     statusDuration: 40
     pierceDamageFactor: 0.85
     collidesGround: false
@@ -241,7 +241,7 @@ ammoTypes: {
             length: 0
             lifetime: 90
             baseRotation: 45
-            region: exotic-mod-wide-case-back
+            region: allure-wide-case-back
             interp: pow2In
             sizeFrom: 16
             sizeTo: 0
@@ -254,7 +254,7 @@ ammoTypes: {
             length: 0
             lifetime: 90
             baseRotation: 45
-            region: exotic-mod-wide-case-back
+            region: allure-wide-case-back
             interp: pow2In
             sizeFrom: 14
             sizeTo: 0
@@ -264,7 +264,7 @@ ammoTypes: {
             length: 0
             lifetime: 90
             baseRotation: 90
-            region: exotic-mod-diamond-wide
+            region: allure-diamond-wide
             interp: pow2In
             sizeFrom: 96
             sizeTo: 0
@@ -277,7 +277,7 @@ ammoTypes: {
             length: 0
             lifetime: 90
             baseRotation: 90
-            region: exotic-mod-diamond-wide
+            region: allure-diamond-wide
             interp: pow2In
             sizeFrom: 90
             sizeTo: 0
@@ -294,7 +294,7 @@ ammoTypes: {
             length: 0
             lifetime: 90
             baseRotation: 45
-            region: exotic-mod-wide-case-back
+            region: allure-wide-case-back
             interp: pow2In
             sizeFrom: 12
             sizeTo: 0
@@ -307,7 +307,7 @@ ammoTypes: {
             length: 0
             lifetime: 90
             baseRotation: 45
-            region: exotic-mod-wide-case-back
+            region: allure-wide-case-back
             interp: pow2In
             sizeFrom: 10
             sizeTo: 0
@@ -317,7 +317,7 @@ ammoTypes: {
             length: 0
             lifetime: 90
             baseRotation: 90
-            region: exotic-mod-diamond-wide
+            region: allure-diamond-wide
             interp: pow2In
             sizeFrom: 72
             sizeTo: 0
@@ -330,7 +330,7 @@ ammoTypes: {
             length: 0
             lifetime: 90
             baseRotation: 90
-            region: exotic-mod-diamond-wide
+            region: allure-diamond-wide
             interp: pow2In
             sizeFrom: 66
             sizeTo: 0
@@ -347,7 +347,7 @@ ammoTypes: {
             length: 0
             lifetime: 90
             baseRotation: 45
-            region: exotic-mod-wide-case-back
+            region: allure-wide-case-back
             interp: pow2In
             sizeFrom: 8
             sizeTo: 0
@@ -360,7 +360,7 @@ ammoTypes: {
             length: 0
             lifetime: 90
             baseRotation: 45
-            region: exotic-mod-wide-case-back
+            region: allure-wide-case-back
             interp: pow2In
             sizeFrom: 6
             sizeTo: 0
@@ -370,7 +370,7 @@ ammoTypes: {
             length: 0
             lifetime: 90
             baseRotation: 90
-            region: exotic-mod-diamond-wide
+            region: allure-diamond-wide
             interp: pow2In
             sizeFrom: 48
             sizeTo: 0
@@ -383,7 +383,7 @@ ammoTypes: {
             length: 0
             lifetime: 90
             baseRotation: 90
-            region: exotic-mod-diamond-wide
+            region: allure-diamond-wide
             interp: pow2In
             sizeFrom: 42
             sizeTo: 0
@@ -439,7 +439,7 @@ ammoTypes: {
             length: 0
             lifetime: 90
             baseRotation: 90
-            region: exotic-mod-diamond-wide
+            region: allure-diamond-wide
             interp: pow2In
             sizeFrom: 150
             sizeTo: 100
@@ -452,7 +452,7 @@ ammoTypes: {
             length: 0
             lifetime: 90
             baseRotation: 90
-            region: exotic-mod-diamond-wide
+            region: allure-diamond-wide
             interp: pow2In
             sizeFrom: 100
             sizeTo: 66
@@ -465,7 +465,7 @@ ammoTypes: {
             length: 0
             lifetime: 35
             baseRotation: 25
-            region: exotic-mod-shootspike
+            region: allure-shootspike
             interp: pow2In
             sizeFrom: 210
             sizeTo: 140
@@ -478,7 +478,7 @@ ammoTypes: {
             length: 0
             lifetime: 35
             baseRotation: 25
-            region: exotic-mod-shootspike
+            region: allure-shootspike
             interp: pow2In
             sizeFrom: 140
             sizeTo: 100
@@ -491,7 +491,7 @@ ammoTypes: {
             length: 0
             lifetime: 35
             baseRotation: -25
-            region: exotic-mod-shootspike
+            region: allure-shootspike
             interp: pow2In
             sizeFrom: 210
             sizeTo: 140
@@ -504,7 +504,7 @@ ammoTypes: {
             length: 0
             lifetime: 35
             baseRotation: -25
-            region: exotic-mod-shootspike
+            region: allure-shootspike
             interp: pow2In
             sizeFrom: 140
             sizeTo: 100
@@ -517,7 +517,7 @@ ammoTypes: {
             length: 0
             lifetime: 90
             baseRotation: 45
-            region: exotic-mod-wide-case-back
+            region: allure-wide-case-back
             interp: pow2In
             sizeFrom: 25
             sizeTo: 17
@@ -530,7 +530,7 @@ ammoTypes: {
             length: 0
             lifetime: 90
             baseRotation: 45
-            region: exotic-mod-wide-case-back
+            region: allure-wide-case-back
             interp: pow2In
             sizeFrom: 20
             sizeTo: 13
@@ -585,7 +585,7 @@ ammoTypes: {
         length: 0
         lifetime: 35
         baseRotation: 135
-        region: exotic-mod-shootspike
+        region: allure-shootspike
         interp: pow2In
         sizeFrom: 80
         sizeTo: 0
@@ -598,7 +598,7 @@ ammoTypes: {
         length: 0
         lifetime: 35
         baseRotation: 135
-        region: exotic-mod-shootspike
+        region: allure-shootspike
         interp: pow2In
         sizeFrom: 76
         sizeTo: 0
@@ -608,7 +608,7 @@ ammoTypes: {
         length: 0
         lifetime: 35
         baseRotation: -135
-        region: exotic-mod-shootspike
+        region: allure-shootspike
         interp: pow2In
         sizeFrom: 80
         sizeTo: 0
@@ -621,7 +621,7 @@ ammoTypes: {
         length: 0
         lifetime: 35
         baseRotation: -135
-        region: exotic-mod-shootspike
+        region: allure-shootspike
         interp: pow2In
         sizeFrom: 76
         sizeTo: 0

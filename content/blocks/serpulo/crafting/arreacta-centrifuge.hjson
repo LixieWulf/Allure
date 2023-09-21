@@ -75,7 +75,7 @@ craftEffect: {
   //amount of particles
   particles: 16
   //sprite to use, uses <mod-name>-<sprite-name> or no mod name if you want to use a vanilla sprite
-  region: exotic-mod-wide-case-back
+  region: allure-wide-case-back
   //rotation offset of sprites in particles
   offset: 45
   //particle size at the start

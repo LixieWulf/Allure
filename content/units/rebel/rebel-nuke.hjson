@@ -22,7 +22,7 @@ weapons: [
     }
     shootSound: none
     bullet: {
-      spawnUnit: exotic-mod-missile1
+      spawnUnit: allure-missile1
     }
   }
 ]

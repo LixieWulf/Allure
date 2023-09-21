@@ -22,7 +22,7 @@ destroyEffect: [
   {
     interp: pow3Out
     sizeInterp: pow2In
-    region: exotic-mod-wide-case-back
+    region: allure-wide-case-back
     spin: 4
     lifetime: 45
     length: 24
@@ -51,7 +51,7 @@ destroyBullet: {
     speed: 2
     lifetime: 18
     damage: 110
-    sprite: exotic-mod-diamond-thin
+    sprite: allure-diamond-thin
     width: 8
     height: 8
     frontColor: c3b3f8

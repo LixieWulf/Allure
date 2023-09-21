@@ -74,7 +74,7 @@ weapons: [
                 hitEffect: none
                 despawnEffect: none
                 despawnHit: true
-                despawnUnit: exotic-mod-continued-wrath
+                despawnUnit: allure-continued-wrath
               }
             }
           }
@@ -106,7 +106,7 @@ weapons: [
                 lifetime: 60
                 hitEffect: none
                 despawnEffect: none
-                despawnUnit: exotic-mod-relentless-fury
+                despawnUnit: allure-relentless-fury
               }
             }
           }

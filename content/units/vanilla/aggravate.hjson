@@ -226,7 +226,7 @@ weapons: [
         length: 0
         baseLength: 40
         randLength: false
-        region: exotic-mod-diamond-vthin
+        region: allure-diamond-vthin
         sizeFrom: 40
         sizeTo: 40
         colorFrom: 5ebcbf

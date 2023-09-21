@@ -124,7 +124,7 @@ breakEffect: [
     length: 0
     lifetime: 11
     useRotation: false
-    region: exotic-mod-warden-icon
+    region: allure-warden-icon
     sizeFrom: 8
     sizeTo: 8
     colorFrom: 7382f000
@@ -137,7 +137,7 @@ breakEffect: [
     lifetime: 30
     startDelay: 10
     useRotation: false
-    region: exotic-mod-warden-icon
+    region: allure-warden-icon
     sizeFrom: 8
     sizeTo: 8
     colorFrom: 7382f0
@@ -152,7 +152,7 @@ breakEffect: [
     length: 21
     lifetime: 35
     useRotation: false
-    region: exotic-mod-energy-arrow
+    region: allure-energy-arrow
     interp: pow3Out
     sizeInterp: pow2In
     sizeFrom: 8
@@ -170,7 +170,7 @@ breakEffect: [
     length: 21
     lifetime: 35
     useRotation: false
-    region: exotic-mod-energy-arrow
+    region: allure-energy-arrow
     interp: pow3Out
     sizeInterp: pow2In
     sizeFrom: 8
@@ -188,7 +188,7 @@ breakEffect: [
     length: 24
     lifetime: 35
     useRotation: false
-    region: exotic-mod-energy-arrow
+    region: allure-energy-arrow
     interp: pow3Out
     sizeInterp: pow2In
     sizeFrom: 4
@@ -206,7 +206,7 @@ breakEffect: [
     length: 24
     lifetime: 35
     useRotation: false
-    region: exotic-mod-energy-arrow
+    region: allure-energy-arrow
     interp: pow3Out
     sizeInterp: pow2In
     sizeFrom: 4
@@ -224,7 +224,7 @@ breakEffect: [
     length: 24
     lifetime: 35
     useRotation: false
-    region: exotic-mod-energy-arrow
+    region: allure-energy-arrow
     interp: pow3Out
     sizeInterp: pow2In
     sizeFrom: 4
@@ -242,7 +242,7 @@ breakEffect: [
     length: 24
     lifetime: 35
     useRotation: false
-    region: exotic-mod-energy-arrow
+    region: allure-energy-arrow
     interp: pow3Out
     sizeInterp: pow2In
     sizeFrom: 4

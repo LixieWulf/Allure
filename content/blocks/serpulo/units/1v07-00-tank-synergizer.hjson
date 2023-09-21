@@ -5,7 +5,7 @@ areaSize: 21
 dronesCreated: 4
 hasLiquids: true
 liquidCapacity: 240
-droneType: exotic-mod-assault-construction-drone
+droneType: allure-assault-construction-drone
 consumes: {
   power: 15
   liquids: [
@@ -19,9 +19,9 @@ plans: [
     unit: 1v00-conflict
     time: 3600
     requirements: [
-      exotic-mod-1v07-12-00-treads/4
-      exotic-mod-1v07-12-01-lightweight-cells/2
-      exotic-mod-1v07-12-02-thin-armor/8
+      allure-1v07-12-00-treads/4
+      allure-1v07-12-01-lightweight-cells/2
+      allure-1v07-12-02-thin-armor/8
       salvo/1
     ]
   }
@@ -30,7 +30,7 @@ plans: [
     unit: 1v01-strife
     time: 80
     requirements: [
-      exotic-mod-1v00-conflict/1
+      allure-1v00-conflict/1
       spectre/1
     ]
   }

@@ -23,7 +23,7 @@ research: {
   objectives: [
     {
       type: SectorComplete
-      preset: exotic-mod-infestedValley
+      preset: allure-infestedValley
     }
   ]
 }

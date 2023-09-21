@@ -21,7 +21,7 @@ abilities: [
       particles: 1
       lifetime: 20
       length: 0
-      region: exotic-mod-wisp-blade1
+      region: allure-wisp-blade1
       sizeFrom: 7.75
       sizeTo: 7.75
       spin: 24
@@ -41,7 +41,7 @@ abilities: [
       particles: 1
       lifetime: 10
       length: 0
-      region: exotic-mod-wisp-blade2
+      region: allure-wisp-blade2
       sizeFrom: 8
       sizeTo: 8
       spin: 36
@@ -61,7 +61,7 @@ abilities: [
       particles: 1
       lifetime: 10
       length: 0
-      region: exotic-mod-wisp-blade2
+      region: allure-wisp-blade2
       sizeFrom: 8
       sizeTo: 8
       spin: 36

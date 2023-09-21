@@ -82,7 +82,7 @@ weapons: [
         pierceEffect: none
         damage: 0.001
         pierceDamageFactor: 1
-        status: exotic-mod-irradiated
+        status: allure-irradiated
         statusDuration: 10
         collidesTiles: false
       }

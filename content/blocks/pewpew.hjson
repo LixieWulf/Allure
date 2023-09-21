@@ -2,9 +2,9 @@ type: ItemTurret
 size: 4
 ammoTypes: {
   copper: {
-    spawnUnit: exotic-mod-luminance-missile
+    spawnUnit: allure-luminance-missile
   }
   lead: {
-    spawnUnit: exotic-mod-luminance-lightning
+    spawnUnit: allure-luminance-lightning
   }
 }

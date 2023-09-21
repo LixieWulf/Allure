@@ -76,7 +76,7 @@ shootEffect: [
     sizeTo: 0
     colorFrom: ffb3b3
     colorTo: e65555
-    region: exotic-mod-shootspike
+    region: allure-shootspike
   }
 ]
 ammoUseEffect: {
@@ -88,7 +88,7 @@ ammoUseEffect: {
   cone: 15
   offset: -90
   spin: 0.7
-  region: exotic-mod-wide-case-back
+  region: allure-wide-case-back
   sizeFrom: 7
   sizeTo: 0
   interp: pow3Out

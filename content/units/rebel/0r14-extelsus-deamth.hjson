@@ -19,13 +19,13 @@ deathSound: jump
 parts: [
   {
     type: RegionPart
-    name: exotic-mod-0r14-extelsus
+    name: allure-0r14-extelsus
     layer: 90.01
     outline: false
   }
   {
     type: RegionPart
-    name: exotic-mod-0r14-extelsus-jump
+    name: allure-0r14-extelsus-jump
     progress: {
       type: life
       op: compress

@@ -27,7 +27,7 @@ parts: [
     type: RegionPart
     outline: false
     layer: 30.01
-    name: exotic-mod-0rc0-localize-bottom
+    name: allure-0rc0-localize-bottom
   }
 ]
 weapons: [
@@ -96,7 +96,7 @@ weapons: [
     shootStatusDuration: 120
     shootSound: missile
     bullet: {
-      spawnUnit: exotic-mod-missile0
+      spawnUnit: allure-missile0
       smokeEffect: {
         lightOpacity: 0
         length: 22

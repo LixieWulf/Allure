@@ -68,7 +68,7 @@ ammoTypes: {
   anden: {
     ammoMultiplier: 1
     displayAmmoMultiplier: false
-    spawnUnit: exotic-mod-rebel-nuke
+    spawnUnit: allure-rebel-nuke
   }
 }
 drawer: {

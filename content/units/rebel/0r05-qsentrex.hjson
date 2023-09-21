@@ -243,7 +243,7 @@ weapons: [
     shake: 1
     bullet: {
       type: BulletType
-      spawnUnit: exotic-mod-qsentrex-missile
+      spawnUnit: allure-qsentrex-missile
     }
   }
 ]

@@ -6,16 +6,16 @@ consumes: {
 payloadSpeed: 0.75
 buildSpeed: 14
 filter: [
-  exotic-mod-1v07-12-00-treads,
-  exotic-mod-1v07-12-01-lightweight-cells,
-  exotic-mod-1v07-12-02-thin-armor,
-  exotic-mod-1v07-12-03-thruster-module,
-  exotic-mod-1v07-12-04-shielded-cells,
-  exotic-mod-1v07-12-05-plated-armor,
+  allure-1v07-12-00-treads,
+  allure-1v07-12-01-lightweight-cells,
+  allure-1v07-12-02-thin-armor,
+  allure-1v07-12-03-thruster-module,
+  allure-1v07-12-04-shielded-cells,
+  allure-1v07-12-05-plated-armor,
   salvo,
   spectre,
   swarmer,
-  exotic-mod-fallout,
+  allure-fallout,
   hail,
   ripple
 ]

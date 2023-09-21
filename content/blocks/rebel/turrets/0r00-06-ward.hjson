@@ -65,7 +65,7 @@ shootSound: shootBig
 ammoTypes: {
   anden: {
     ammoMultiplier: 1
-    spawnUnit: exotic-mod-rebel-trap
+    spawnUnit: allure-rebel-trap
   }
 }
 category: turret

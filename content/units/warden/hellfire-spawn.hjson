@@ -15,7 +15,7 @@ drawCell: false
 parts: [
   {
     type: RegionPart
-    name: exotic-mod-0b17-hellfire
+    name: allure-0b17-hellfire
     outline: false 
     color: ffffff00
     colorTo: ffffff
@@ -23,7 +23,7 @@ parts: [
   }
   {
     type: RegionPart
-    name: exotic-mod-0b17-hellfire
+    name: allure-0b17-hellfire
     outline: false 
     blending: additive
     color: 000000
@@ -32,7 +32,7 @@ parts: [
   }
   { 
     type: RegionPart
-    name: exotic-mod-0b17-hellfire-flare
+    name: allure-0b17-hellfire-flare
     outline: false
     blending: additive
     layer: 90.03
@@ -52,7 +52,7 @@ weapons: [
     bullet: {
       shootEffect: none
       smokeEffect: none
-      spawnUnit: exotic-mod-0b17-hellfire
+      spawnUnit: allure-0b17-hellfire
     }
   }
 ]

@@ -41,7 +41,7 @@ weapons: [
       fragVelocityMin: 0
       fragVelocityMax: 0
       fragBullet: {
-        spawnUnit: exotic-mod-0r14-extelsus
+        spawnUnit: allure-0r14-extelsus
       }
     }
   }

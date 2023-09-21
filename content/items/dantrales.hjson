@@ -5,7 +5,7 @@ flammability: 0.5
 charge: 0.2
 hiddenOnPlanets: [
   erekir, 
-  exotic-mod-maltranas
+  allure-maltranas
 ]
 research: {
   parent: 0b-begin

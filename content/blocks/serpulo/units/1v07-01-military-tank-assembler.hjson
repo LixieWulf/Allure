@@ -5,7 +5,7 @@ areaSize: 28
 dronesCreated: 4
 hasLiquids: true
 liquidCapacity: 240
-droneType: exotic-mod-assault-construction-drone
+droneType: allure-assault-construction-drone
 consumes: {
   power: 15
   liquids: [
@@ -19,9 +19,9 @@ plans: [
     unit: 1v02-dispute
     time: 4200
     requirements: [
-      exotic-mod-1v07-12-00-treads/7
-      exotic-mod-1v07-12-01-lightweight-cells/6
-      exotic-mod-1v07-12-05-plated-armor/3
+      allure-1v07-12-00-treads/7
+      allure-1v07-12-01-lightweight-cells/6
+      allure-1v07-12-05-plated-armor/3
       swarmer/1
     ]
   }
@@ -30,8 +30,8 @@ plans: [
     unit: 1v03-skirmish
     time: 80
     requirements: [
-      exotic-mod-1v02-dispute/1
-      exotic-mod-fallout/1
+      allure-1v02-dispute/1
+      allure-fallout/1
     ]
   }
   {
@@ -39,10 +39,10 @@ plans: [
     unit: 1v04-hostility
     time: 6400
     requirements: [
-      exotic-mod-1v07-12-00-treads/16
-      exotic-mod-1v07-12-02-thin-armor/5
-      exotic-mod-1v07-12-04-shielded-cells/9
-      exotic-mod-1v07-12-05-plated-armor/12
+      allure-1v07-12-00-treads/16
+      allure-1v07-12-02-thin-armor/5
+      allure-1v07-12-04-shielded-cells/9
+      allure-1v07-12-05-plated-armor/12
       hail/5
     ]
   }
@@ -51,7 +51,7 @@ plans: [
     unit: 1v05-war
     time: 80
     requirements: [
-      exotic-mod-1v04-hostility/1
+      allure-1v04-hostility/1
       ripple/1
     ]
   }

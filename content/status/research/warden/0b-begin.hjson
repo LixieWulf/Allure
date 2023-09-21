@@ -6,7 +6,7 @@ research: {
   objectives: [
     {
       type: SectorComplete
-      preset: exotic-mod-glisteningOcean
+      preset: allure-glisteningOcean
     }
   ]
 }

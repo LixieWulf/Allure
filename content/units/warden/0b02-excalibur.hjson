@@ -23,13 +23,13 @@ outlines: false
 parts: [
   { 
     type: RegionPart
-    name: exotic-mod-excalibur-flare
+    name: allure-excalibur-flare
     outline: false
     layer: 99.99
   }
   { 
     type: RegionPart
-    name: exotic-mod-excalibur-flare
+    name: allure-excalibur-flare
     outline: false
     layer: 140
     color: ffffff25
@@ -42,7 +42,7 @@ parts: [
   }
   { 
     type: RegionPart
-    name: exotic-mod-excalibur-top
+    name: allure-excalibur-top
     outline: false
     layer: 90.05
   }

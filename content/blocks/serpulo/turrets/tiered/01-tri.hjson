@@ -40,7 +40,7 @@ ammoTypes: {
     makeFire: true 
     spawnBullets: [
       {
-        spawnUnit: exotic-mod-shootUnit
+        spawnUnit: allure-shootUnit
       }
     ]
   }
@@ -58,7 +58,7 @@ ammoTypes: {
     homingPower: 0.1
     spawnBullets: [
       {
-        spawnUnit: exotic-mod-shootUnit
+        spawnUnit: allure-shootUnit
       }
     ]
   }
@@ -73,7 +73,7 @@ ammoTypes: {
     smokeEffect: shootSmallSmoke
     spawnBullets: [
       {
-        spawnUnit: exotic-mod-shootBigUnit
+        spawnUnit: allure-shootBigUnit
       }
     ]
   }
@@ -96,7 +96,7 @@ ammoTypes: {
     status: blasted
     spawnBullets: [
       {
-        spawnUnit: exotic-mod-shootUnit
+        spawnUnit: allure-shootUnit
       }
     ]
   }

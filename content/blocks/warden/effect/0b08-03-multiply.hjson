@@ -8,7 +8,7 @@ rotateSpeed: 0
 shootType: {
   shootEffect: none
   smokeEffect: none
-  spawnUnit: exotic-mod-multiply-pulse
+  spawnUnit: allure-multiply-pulse
 }
 drawer: [
   {

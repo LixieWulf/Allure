@@ -86,7 +86,7 @@ weapons: [
         {
           length: 0
           lifetime: 35
-          region: exotic-mod-shootspike
+          region: allure-shootspike
           colorTo: e58956
           sizeFrom: 90
           sizeTo: 0
@@ -95,7 +95,7 @@ weapons: [
           length: 0
           offset: 35
           lifetime: 35
-          region: exotic-mod-shootspike
+          region: allure-shootspike
           colorTo: e58956
           sizeFrom: 80
           sizeTo: 0
@@ -104,7 +104,7 @@ weapons: [
           length: 0
           offset: -35
           lifetime: 35
-          region: exotic-mod-shootspike
+          region: allure-shootspike
           colorTo: e58956
           sizeFrom: 80
           sizeTo: 0
@@ -113,7 +113,7 @@ weapons: [
           length: 0
           cone: 0
           lifetime: 45
-          region: exotic-mod-diamond-thin
+          region: allure-diamond-thin
           colorTo: e58956
           sizeFrom: 70
           sizeTo: 0

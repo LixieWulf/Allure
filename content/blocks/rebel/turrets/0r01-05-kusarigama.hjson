@@ -47,7 +47,7 @@ ammoTypes: {
       speed: 0
       keepVelocity: false
       lifetime: 180
-      despawnUnit: exotic-mod-the-voices-are-telling-me-to-stop-holding-them-in-the-closet
+      despawnUnit: allure-the-voices-are-telling-me-to-stop-holding-them-in-the-closet
       despawnHit: true
       hitEffect: {
         useRotation: false
@@ -72,7 +72,7 @@ ammoTypes: {
         lifetime: 0
         hitEffect: none
         despawnEffect: none
-        despawnUnit: exotic-mod-they-want-your-soul-for-their-cruel-experiments
+        despawnUnit: allure-they-want-your-soul-for-their-cruel-experiments
       }
     ]
   }

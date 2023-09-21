@@ -65,7 +65,7 @@ weapons: [
           layer: 60
           particles: 1
           spin: 2
-          region: exotic-mod-singularity
+          region: allure-singularity
           lifetime: 90
           sizeFrom: 240
           sizeTo: 0
@@ -78,7 +78,7 @@ weapons: [
           layer: 60
           particles: 1
           spin: 5
-          region: exotic-mod-singularity
+          region: allure-singularity
           lifetime: 60
           sizeFrom: 160
           sizeTo: 0
@@ -92,7 +92,7 @@ weapons: [
           particles: 1
           spin: 5
           offset: 30
-          region: exotic-mod-singularity
+          region: allure-singularity
           lifetime: 60
           sizeFrom: 160
           sizeTo: 0
@@ -106,7 +106,7 @@ weapons: [
           particles: 1
           spin: 5
           offset: 60
-          region: exotic-mod-singularity
+          region: allure-singularity
           lifetime: 60
           sizeFrom: 160
           sizeTo: 0
@@ -119,7 +119,7 @@ weapons: [
           layer: 60
           particles: 1
           spin: 8
-          region: exotic-mod-singularity-ring
+          region: allure-singularity-ring
           lifetime: 120
           sizeFrom: 200
           sizeTo: 0
@@ -133,7 +133,7 @@ weapons: [
           layer: 60
           particles: 1
           spin: -4
-          region: exotic-mod-singularity-ring
+          region: allure-singularity-ring
           lifetime: 120
           sizeFrom: 200
           sizeTo: 0
@@ -147,7 +147,7 @@ weapons: [
           layer: 60
           particles: 1
           spin: -2
-          region: exotic-mod-singularity-ring
+          region: allure-singularity-ring
           lifetime: 120
           sizeFrom: 240
           sizeTo: 0
@@ -161,7 +161,7 @@ weapons: [
           layer: 60
           particles: 1
           spin: 12
-          region: exotic-mod-singularity-ring
+          region: allure-singularity-ring
           lifetime: 120
           sizeFrom: 240
           sizeTo: 0
@@ -175,7 +175,7 @@ weapons: [
           layer: 60
           particles: 1
           spin: 12
-          region: exotic-mod-singularity-ring
+          region: allure-singularity-ring
           lifetime: 120
           sizeFrom: 140
           sizeTo: 0

@@ -33,7 +33,7 @@ ammoTypes: {
       sizeTo: 12
       colorFrom: f9c27a
       colorTo: f9c27a00
-      region: exotic-mod-diamond-wide
+      region: allure-diamond-wide
     }
     hitEffect: railHit
     pierceEffect: massiveExplosion
@@ -62,7 +62,7 @@ ammoTypes: {
         cone: 0
         interp: pow3In
         sizeInterp: linear
-        region: exotic-mod-railblast
+        region: allure-railblast
         sizeFrom: 10
         sizeTo: 7
         colorFrom: 7382f0
@@ -80,7 +80,7 @@ ammoTypes: {
         cone: 0
         interp: pow3In
         sizeInterp: linear
-        region: exotic-mod-railblast
+        region: allure-railblast
         sizeFrom: 16
         sizeTo: 10
         colorFrom: 7382f0
@@ -96,7 +96,7 @@ ammoTypes: {
         cone: 0
         interp: pow3In
         sizeInterp: linear
-        region: exotic-mod-diamond-wide
+        region: allure-diamond-wide
         sizeFrom: 30
         sizeTo: 10
         colorFrom: 7382f0
@@ -113,7 +113,7 @@ ammoTypes: {
         cone: 0
         interp: pow3In
         sizeInterp: linear
-        region: exotic-mod-diamond-wide
+        region: allure-diamond-wide
         sizeFrom: 24
         sizeTo: 6
         colorTo: ffffff00
@@ -175,7 +175,7 @@ ammoTypes: {
         lifetime: 45
         particles: 1
         cone: 0
-        region: exotic-mod-shootspike
+        region: allure-shootspike
         sizeFrom: 50
         sizeTo: 25
         colorTo: 7382f000
@@ -188,7 +188,7 @@ ammoTypes: {
         lifetime: 45
         particles: 1
         cone: 0
-        region: exotic-mod-shootspike
+        region: allure-shootspike
         sizeFrom: 50
         sizeTo: 25
         colorTo: 7382f000
@@ -204,7 +204,7 @@ ammoTypes: {
         lifetime: 45
         particles: 1
         cone: 0
-        region: exotic-mod-shootspike
+        region: allure-shootspike
         sizeFrom: 45
         sizeTo: 22
         colorFrom: 7382f0
@@ -219,7 +219,7 @@ ammoTypes: {
         lifetime: 45
         particles: 1
         cone: 0
-        region: exotic-mod-shootspike
+        region: allure-shootspike
         sizeFrom: 45
         sizeTo: 22
         colorFrom: 7382f0
@@ -233,7 +233,7 @@ ammoTypes: {
         lifetime: 45
         particles: 1
         cone: 0
-        region: exotic-mod-shootspike
+        region: allure-shootspike
         sizeFrom: 100
         sizeTo: 50
         colorFrom: 7382f0
@@ -248,7 +248,7 @@ ammoTypes: {
         lifetime: 45
         particles: 1
         cone: 0
-        region: exotic-mod-diamond-thin
+        region: allure-diamond-thin
         sizeFrom: 60
         sizeTo: 30
         colorFrom: 7382f0
@@ -262,7 +262,7 @@ ammoTypes: {
         lifetime: 45
         particles: 1
         cone: 0
-        region: exotic-mod-shootspike
+        region: allure-shootspike
         sizeFrom: 25
         sizeTo: 12
         colorFrom: 000000
@@ -276,7 +276,7 @@ ammoTypes: {
         lifetime: 45
         particles: 1
         cone: 0
-        region: exotic-mod-shootspike
+        region: allure-shootspike
         sizeFrom: 25
         sizeTo: 12
         colorFrom: 000000

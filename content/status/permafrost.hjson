@@ -16,5 +16,5 @@ effect: {
   sizeTo: 0
   colorFrom: bfdfff
   colorTo: bfdfff50
-  region: exotic-mod-snowflake
+  region: allure-snowflake
 }

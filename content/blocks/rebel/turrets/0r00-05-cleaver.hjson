@@ -65,7 +65,7 @@ shootEffect: none
 outlineIcon: false
 ammoTypes: {
   anden: {
-    spawnUnit: exotic-mod-cleave-missile
+    spawnUnit: allure-cleave-missile
   }
 }
 drawer: DrawDefault

@@ -16,7 +16,7 @@ shootType: {
   width: 0.01
   serrations: 0
   toColor: ffffff
-  status: exotic-mod-bleeding
+  status: allure-bleeding
 }
 coolantUsage: 2.1
 research: 0r-halberd

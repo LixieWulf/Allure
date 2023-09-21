@@ -87,7 +87,7 @@ applyEffect: [
     lifetime: 430
     sizeFrom: 225
     sizeTo: 225
-    region: exotic-mod-sawblade
+    region: allure-sawblade
     colorFrom: cfd446
     colorTo: cfd446
     layer: 105
@@ -101,7 +101,7 @@ applyEffect: [
     lifetime: 430
     sizeFrom: 225
     sizeTo: 225
-    region: exotic-mod-sawblade
+    region: allure-sawblade
     colorFrom: cfd446
     colorTo: cfd446
     layer: 105
@@ -117,7 +117,7 @@ applyEffect: [
     lifetime: 430
     sizeFrom: 400
     sizeTo: 200
-    region: exotic-mod-shootspike
+    region: allure-shootspike
     useRotation: false
     baseRotation: 0
     colorFrom: cfd446
@@ -135,7 +135,7 @@ applyEffect: [
     lifetime: 430
     sizeFrom: 400
     sizeTo: 200
-    region: exotic-mod-shootspike
+    region: allure-shootspike
     useRotation: false
     baseRotation: 180
     colorFrom: cfd446
@@ -153,7 +153,7 @@ applyEffect: [
     lifetime: 430
     sizeFrom: 100
     sizeTo: 200
-    region: exotic-mod-shootspike
+    region: allure-shootspike
     useRotation: false
     baseRotation: 0
     colorFrom: 000000
@@ -171,7 +171,7 @@ applyEffect: [
     lifetime: 430
     sizeFrom: 100
     sizeTo: 200
-    region: exotic-mod-shootspike
+    region: allure-shootspike
     useRotation: false
     baseRotation: 180
     colorFrom: 000000

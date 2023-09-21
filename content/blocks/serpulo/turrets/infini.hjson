@@ -29,7 +29,7 @@ shootType: {
         {
           length: 0
           particles: 1
-          region: exotic-mod-diamond-vthin
+          region: allure-diamond-vthin
           spin: 0.5
           lifetime: 2160
           startDelay: 240
@@ -40,7 +40,7 @@ shootType: {
         {
           length: 0
           particles: 1
-          region: exotic-mod-diamond-vthin
+          region: allure-diamond-vthin
           spin: 0.5
           offset: 90
           lifetime: 2160
@@ -658,7 +658,7 @@ shootType: {
           length: 120
           cone: 0
           lifetime: 180
-          region: exotic-mod-diamond-thin
+          region: allure-diamond-thin
           spin: 1
           particles: 1
           sizeInterp: pow2Out
@@ -690,7 +690,7 @@ shootType: {
             offset: 90
             randLength: false
             lifetime: 31
-            region: exotic-mod-diamond-thin
+            region: allure-diamond-thin
             particles: 1
             interp: pow3Out
             sizeInterp: pow5In
@@ -705,7 +705,7 @@ shootType: {
             offset: 90
             randLength: false
             lifetime: 30
-            region: exotic-mod-diamond-thin
+            region: allure-diamond-thin
             particles: 1
             interp: pow3In
             sizeInterp: pow5In
@@ -737,7 +737,7 @@ shootType: {
             offset: 90
             randLength: false
             lifetime: 31
-            region: exotic-mod-diamond-thin
+            region: allure-diamond-thin
             particles: 1
             interp: pow3Out
             sizeInterp: pow5In
@@ -753,7 +753,7 @@ shootType: {
             offset: 90
             randLength: false
             lifetime: 30
-            region: exotic-mod-diamond-thin
+            region: allure-diamond-thin
             particles: 1
             interp: pow3In
             sizeInterp: pow5In
@@ -787,7 +787,7 @@ shootType: {
             offset: 90
             randLength: false
             lifetime: 31
-            region: exotic-mod-diamond-thin
+            region: allure-diamond-thin
             particles: 1
             interp: pow3Out
             sizeInterp: pow5In
@@ -803,7 +803,7 @@ shootType: {
             offset: 90
             randLength: false
             lifetime: 30
-            region: exotic-mod-diamond-thin
+            region: allure-diamond-thin
             particles: 1
             interp: pow3In
             sizeInterp: pow5In
@@ -837,7 +837,7 @@ shootType: {
             offset: 90
             randLength: false
             lifetime: 31
-            region: exotic-mod-diamond-thin
+            region: allure-diamond-thin
             particles: 1
             interp: pow3Out
             sizeInterp: pow5In
@@ -853,7 +853,7 @@ shootType: {
             offset: 90
             randLength: false
             lifetime: 30
-            region: exotic-mod-diamond-thin
+            region: allure-diamond-thin
             particles: 1
             interp: pow3In
             sizeInterp: pow5In
@@ -888,7 +888,7 @@ shootType: {
             cone: 0
             randLength: false
             lifetime: 200
-            region: exotic-mod-diamond-vthin
+            region: allure-diamond-vthin
             particles: 1
             interp: pow3Out
             sizeFrom: 20
@@ -903,7 +903,7 @@ shootType: {
             randLength: false
             lifetime: 30
             interp: pow2In
-            region: exotic-mod-diamond-vthin
+            region: allure-diamond-vthin
             particles: 1
             sizeFrom: 170
             sizeTo: 0

@@ -60,7 +60,7 @@ weapons: [
 abilities: [
   {
     type: StatusFieldAbility
-    effect: exotic-mod-overcharge
+    effect: allure-overcharge
     range: 160
     reload: 1
     duration: 120

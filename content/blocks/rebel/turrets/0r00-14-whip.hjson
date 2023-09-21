@@ -21,7 +21,7 @@ ammoUseEffect: {
   cone: 15
   offset: -90
   spin: 0.2
-  region: exotic-mod-standard-case-back
+  region: allure-standard-case-back
   sizeFrom: 8
   sizeTo: 0
   interp: pow3Out

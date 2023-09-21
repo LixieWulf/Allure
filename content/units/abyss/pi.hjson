@@ -42,7 +42,7 @@ weapons: [
       lifetime: 45
       speed: 6
       shrinkY: 0
-      sprite: exotic-mod-torpedo
+      sprite: allure-torpedo
       frontColor: 808080
       backColor: 00000000
       lightRadius: 0
@@ -56,7 +56,7 @@ weapons: [
       trailRotation: true
       trailEffect: {
         type: ParticleEffect
-        region: exotic-mod-torpedo-effect
+        region: allure-torpedo-effect
         lightOpacity: 0
         particles: 1
         cone: 0

@@ -13,7 +13,7 @@ ammoTypes: {
     parts: [
       {
         type: RegionPart
-        name: exotic-mod-0r00-17-glaive-arrow
+        name: allure-0r00-17-glaive-arrow
         y: -30
         outline: false
         layer: 111
@@ -41,7 +41,7 @@ ammoTypes: {
         length: 0
         lifetime: 20
         baseRotation: 45
-        region: exotic-mod-diamond-wide
+        region: allure-diamond-wide
         interp: pow2In
         sizeFrom: 6
         sizeTo: 0
@@ -54,7 +54,7 @@ ammoTypes: {
         length: 0
         lifetime: 20
         baseRotation: 45
-        region: exotic-mod-diamond-wide
+        region: allure-diamond-wide
         interp: pow2In
         sizeFrom: 4
         sizeTo: 0
@@ -64,7 +64,7 @@ ammoTypes: {
         length: 0
         lifetime: 20
         baseRotation: -45
-        region: exotic-mod-diamond-wide
+        region: allure-diamond-wide
         interp: pow2In
         sizeFrom: 6
         sizeTo: 0
@@ -77,7 +77,7 @@ ammoTypes: {
         length: 0
         lifetime: 20
         baseRotation: -45
-        region: exotic-mod-diamond-wide
+        region: allure-diamond-wide
         interp: pow2In
         sizeFrom: 4
         sizeTo: 0
@@ -94,7 +94,7 @@ ammoTypes: {
         sizeTo: 0
         colorFrom: ffb3b3
         colorTo: e65555
-        region: exotic-mod-shootspike
+        region: allure-shootspike
       }
       {
         length: 0
@@ -106,7 +106,7 @@ ammoTypes: {
         sizeTo: 0
         colorFrom: ffb3b3
         colorTo: e65555
-        region: exotic-mod-shootspike
+        region: allure-shootspike
       }
     ]
   }

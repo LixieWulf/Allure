@@ -81,7 +81,7 @@ weapons: [
         offset: -90
         followParent: true
         rotWithParent: true
-        region: exotic-mod-luminance-missile
+        region: allure-luminance-missile
         colorTo: be92f7
         colorFrom: 7382f0
       }
@@ -161,7 +161,7 @@ weapons: [
         offset: -90
         followParent: true
         rotWithParent: true
-        region: exotic-mod-luminance-missile
+        region: allure-luminance-missile
         colorTo: 7382f0
         colorFrom: 74cf84
       }
@@ -241,7 +241,7 @@ weapons: [
         offset: -90
         followParent: true
         rotWithParent: true
-        region: exotic-mod-luminance-missile
+        region: allure-luminance-missile
         colorTo: 74cf84
         colorFrom: ded750
       }
@@ -321,7 +321,7 @@ weapons: [
         offset: -90
         followParent: true
         rotWithParent: true
-        region: exotic-mod-luminance-missile
+        region: allure-luminance-missile
         colorTo: ded750
         colorFrom: de7a40
       }
@@ -401,7 +401,7 @@ weapons: [
         offset: -90
         followParent: true
         rotWithParent: true
-        region: exotic-mod-luminance-missile
+        region: allure-luminance-missile
         colorTo: de7a40
         colorFrom: e65555
       }
@@ -481,7 +481,7 @@ weapons: [
         offset: -90
         followParent: true
         rotWithParent: true
-        region: exotic-mod-luminance-missile
+        region: allure-luminance-missile
         colorTo: e65555
         colorFrom: be92f7
       }

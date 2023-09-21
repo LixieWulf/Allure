@@ -10,7 +10,7 @@ effect: [
     baseLength: 6
     randLength: false
     offset: 45
-    region: exotic-mod-wide-case-back
+    region: allure-wide-case-back
     sizeFrom: 1
     sizeTo: 0
     colorFrom: f3e979
@@ -23,7 +23,7 @@ effect: [
     baseLength: 6
     randLength: false
     offset: 45
-    region: exotic-mod-wide-case-back
+    region: allure-wide-case-back
     sizeFrom: 1
     sizeTo: 0
     colorFrom: e8731a

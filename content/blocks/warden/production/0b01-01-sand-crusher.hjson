@@ -157,7 +157,7 @@ craftEffect: [
       effect: {
         interp: pow3Out
         sizeInterp: linear
-        region: exotic-mod-wide-case-back
+        region: allure-wide-case-back
         offset: 45
         lifetime: 55
         length: 12
@@ -181,7 +181,7 @@ craftEffect: [
       effect: {
         interp: pow3Out
         sizeInterp: linear
-        region: exotic-mod-wide-case-back
+        region: allure-wide-case-back
         offset: 45
         lifetime: 45
         length: 8

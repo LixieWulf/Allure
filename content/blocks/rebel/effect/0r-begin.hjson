@@ -7,7 +7,7 @@ research: {
   objectives: [
     {
       type: SectorComplete
-      preset: exotic-mod-crashSite
+      preset: allure-crashSite
     }
   ]
 }

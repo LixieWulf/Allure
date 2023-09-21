@@ -5,7 +5,7 @@ liquidMultiplier: 0.5
 cacheLayer: cryofluid
 speedMultiplier: 0.15
 liquidDrop: crystal-plasma
-status: exotic-mod-vapourizing
+status: allure-vapourizing
 statusDuration: 240
 emitLight: true
 lightRadius: 65

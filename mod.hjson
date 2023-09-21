@@ -1,5 +1,5 @@
-name: exotic-mod
-displayName: Exotic Mod
+name: allure
+displayName: Allure
 author: Elixias
 description:
   '''
@@ -7,7 +7,7 @@ description:
   
   An attempt at an immersive content mod.
 
-  HJSON at its core, Exotic seeks to break the limits and deliver a hopefully interesting experience to whoever plays it. Although most mods (well, all mods really) give an easier experience due to bad balancing, Exotic is considerably tougher than vanilla.
+  HJSON at its core, Allure seeks to break the limits and deliver a hopefully interesting experience to whoever plays it. Although most mods (well, all mods really) give an easier experience due to bad balancing, Allure is considerably tougher than vanilla.
 
   This mod may cause ragequits and you may get stuck at any point in progression. Skill is required.
 

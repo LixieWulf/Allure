@@ -2,7 +2,7 @@ type: ShallowLiquid
 variants: 3
 liquidDrop: crystal-plasma
 liquidMultiplier: 0.1
-status: exotic-mod-vapourizing
+status: allure-vapourizing
 statusDuration: 120
 cacheLayer: cryofluid
 emitLight: true

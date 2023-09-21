@@ -173,7 +173,7 @@ weapons: [
           sizeTo: 0
           colorFrom: ffb3b3
           colorTo: e65555
-          region: exotic-mod-shootspike
+          region: allure-shootspike
           followParent: false
         }
         {
@@ -186,7 +186,7 @@ weapons: [
           sizeTo: 0
           colorFrom: ffb3b3
           colorTo: e65555
-          region: exotic-mod-shootspike
+          region: allure-shootspike
           followParent: false
         }
         {

@@ -24,7 +24,7 @@ drillEffect: [
     particles: 1
     lifetime: 30
     useRotation: false
-    region: exotic-mod-diamond-wide
+    region: allure-diamond-wide
     sizeFrom: 60
     sizeTo: 0
     colorFrom: 90a2fc
@@ -36,7 +36,7 @@ drillEffect: [
     lifetime: 30
     offset: 90
     useRotation: false
-    region: exotic-mod-diamond-wide
+    region: allure-diamond-wide
     sizeFrom: 60
     sizeTo: 0
     colorFrom: 90a2fc
@@ -64,7 +64,7 @@ drillEffect: [
         particles: 1
         lifetime: 30
         useRotation: false
-        region: exotic-mod-diamond-wide
+        region: allure-diamond-wide
         sizeFrom: 16
         sizeTo: 0
         colorFrom: 90a2fc
@@ -76,7 +76,7 @@ drillEffect: [
         lifetime: 30
         offset: 90
         useRotation: false
-        region: exotic-mod-diamond-wide
+        region: allure-diamond-wide
         sizeFrom: 16
         sizeTo: 0
         colorFrom: 90a2fc
@@ -111,7 +111,7 @@ drillEffect: [
       particles: 1
       lifetime: 30
       useRotation: false
-      region: exotic-mod-diamond-wide
+      region: allure-diamond-wide
       sizeFrom: 12
       sizeTo: 0
       colorFrom: 90a2fc
@@ -129,7 +129,7 @@ drillEffect: [
       lifetime: 30
       offset: 90
       useRotation: false
-      region: exotic-mod-diamond-wide
+      region: allure-diamond-wide
       sizeFrom: 12
       sizeTo: 0
       colorFrom: 90a2fc
@@ -163,7 +163,7 @@ drillEffect: [
       particles: 1
       lifetime: 30
       useRotation: false
-      region: exotic-mod-diamond-wide
+      region: allure-diamond-wide
       sizeFrom: 8
       sizeTo: 0
       colorFrom: 90a2fc
@@ -181,7 +181,7 @@ drillEffect: [
       lifetime: 30
       offset: 90
       useRotation: false
-      region: exotic-mod-diamond-wide
+      region: allure-diamond-wide
       sizeFrom: 8
       sizeTo: 0
       colorFrom: 90a2fc
@@ -229,7 +229,7 @@ breakEffect: [
     length: 0
     lifetime: 11
     useRotation: false
-    region: exotic-mod-warden-icon
+    region: allure-warden-icon
     sizeFrom: 8
     sizeTo: 8
     colorFrom: 7382f000
@@ -242,7 +242,7 @@ breakEffect: [
     lifetime: 30
     startDelay: 10
     useRotation: false
-    region: exotic-mod-warden-icon
+    region: allure-warden-icon
     sizeFrom: 8
     sizeTo: 8
     colorFrom: 7382f0
@@ -257,7 +257,7 @@ breakEffect: [
     length: 18
     lifetime: 35
     useRotation: false
-    region: exotic-mod-energy-arrow
+    region: allure-energy-arrow
     interp: pow3Out
     sizeInterp: pow2In
     sizeFrom: 8
@@ -275,7 +275,7 @@ breakEffect: [
     length: 18
     lifetime: 35
     useRotation: false
-    region: exotic-mod-energy-arrow
+    region: allure-energy-arrow
     interp: pow3Out
     sizeInterp: pow2In
     sizeFrom: 8
@@ -293,7 +293,7 @@ breakEffect: [
     length: 9
     lifetime: 35
     useRotation: false
-    region: exotic-mod-energy-arrow
+    region: allure-energy-arrow
     interp: pow3Out
     sizeInterp: pow2In
     sizeFrom: 4
@@ -311,7 +311,7 @@ breakEffect: [
     length: 9
     lifetime: 35
     useRotation: false
-    region: exotic-mod-energy-arrow
+    region: allure-energy-arrow
     interp: pow3Out
     sizeInterp: pow2In
     sizeFrom: 4
@@ -329,7 +329,7 @@ breakEffect: [
     length: 9
     lifetime: 35
     useRotation: false
-    region: exotic-mod-energy-arrow
+    region: allure-energy-arrow
     interp: pow3Out
     sizeInterp: pow2In
     sizeFrom: 4
@@ -347,7 +347,7 @@ breakEffect: [
     length: 9
     lifetime: 35
     useRotation: false
-    region: exotic-mod-energy-arrow
+    region: allure-energy-arrow
     interp: pow3Out
     sizeInterp: pow2In
     sizeFrom: 4

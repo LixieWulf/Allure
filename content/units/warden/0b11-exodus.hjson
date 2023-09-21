@@ -336,7 +336,7 @@ weapons: [
     }
     targetInterval: 1
     targetSwitchInterval: 1
-    shootStatus: exotic-mod-gh
+    shootStatus: allure-gh
     shootStatusDuration: 120
     shootSound: none
     bullet: {
@@ -403,7 +403,7 @@ weapons: [
           length: 0
           particles: 1
           lifetime: 30
-          region: exotic-mod-diamond-thin
+          region: allure-diamond-thin
           sizeFrom: 180
           sizeTo: 0
           colorTo: 7382f0
@@ -440,7 +440,7 @@ weapons: [
     }
     targetInterval: 1
     targetSwitchInterval: 1
-    shootStatus: exotic-mod-gh
+    shootStatus: allure-gh
     shootStatusDuration: 240
     shootSound: none
     bullet: {
@@ -475,7 +475,7 @@ weapons: [
     }
     targetInterval: 1
     targetSwitchInterval: 1
-    shootStatus: exotic-mod-gh
+    shootStatus: allure-gh
     shootStatusDuration: 360
     shootSound: none
     bullet: {
@@ -510,7 +510,7 @@ weapons: [
     }
     targetInterval: 1
     targetSwitchInterval: 1
-    shootStatus: exotic-mod-gh
+    shootStatus: allure-gh
     shootStatusDuration: 480
     shootSound: none
     bullet: {
@@ -574,7 +574,7 @@ weapons: [
             length: 0
             particles: 1
             lifetime: 30
-            region: exotic-mod-diamond-thin
+            region: allure-diamond-thin
             sizeFrom: 180
             sizeTo: 0
             colorTo: 7382f0
@@ -662,7 +662,7 @@ abilities: [
       lightOpacity: 0
       length: 0
       particles: 1
-      region: exotic-mod-0b11-exodus-full
+      region: allure-0b11-exodus-full
       offset: -90
       layer: 90.1
       layerDuration: 0.1
@@ -679,7 +679,7 @@ abilities: [
     type: MoveLightningAbility
     minSpeed: 16
     maxSpeed: 24
-    heatRegion: exotic-mod-0b11-exodus-wake
+    heatRegion: allure-0b11-exodus-wake
     color: 7382f0
     chance: 0
     shootSound: none

@@ -110,7 +110,7 @@ weapons: [
           length: 0
           cone: 0
           lifetime: 25
-          region: exotic-mod-shootspike
+          region: allure-shootspike
           colorTo: dea568
           sizeFrom: 60
           sizeTo: 0
@@ -119,7 +119,7 @@ weapons: [
           length: 0
           cone: 0
           lifetime: 35
-          region: exotic-mod-diamond-thin
+          region: allure-diamond-thin
           colorTo: dea568
           sizeFrom: 35
           sizeTo: 0
@@ -276,7 +276,7 @@ abilities: [
         lifetime: 16
         length: 0
         spin: 6
-        region: exotic-mod-defend-turbine
+        region: allure-defend-turbine
         layer: 90.0001
         sizeFrom: 5.5
         sizeTo: 5.5
@@ -313,7 +313,7 @@ abilities: [
         lifetime: 16
         length: 0
         spin: 6
-        region: exotic-mod-guard-turbine
+        region: allure-guard-turbine
         layer: 90.0001
         sizeFrom: 2.5
         sizeTo: 2.5
@@ -350,7 +350,7 @@ abilities: [
         lifetime: 16
         length: 0
         spin: 6
-        region: exotic-mod-guard-turbine
+        region: allure-guard-turbine
         layer: 90.0001
         sizeFrom: 2.5
         sizeTo: 2.5
@@ -387,7 +387,7 @@ abilities: [
         lifetime: 16
         length: 0
         spin: 6
-        region: exotic-mod-guard-turbine
+        region: allure-guard-turbine
         layer: 90.0001
         sizeFrom: 2.5
         sizeTo: 2.5
@@ -424,7 +424,7 @@ abilities: [
         lifetime: 16
         length: 0
         spin: 6
-        region: exotic-mod-guard-turbine
+        region: allure-guard-turbine
         layer: 90.0001
         sizeFrom: 2.5
         sizeTo: 2.5
@@ -461,7 +461,7 @@ abilities: [
         lifetime: 16
         length: 0
         spin: 6
-        region: exotic-mod-guard-turbine
+        region: allure-guard-turbine
         layer: 90.0001
         sizeFrom: 2.5
         sizeTo: 2.5
@@ -498,7 +498,7 @@ abilities: [
         lifetime: 16
         length: 0
         spin: 6
-        region: exotic-mod-guard-turbine
+        region: allure-guard-turbine
         layer: 90.0001
         sizeFrom: 2.5
         sizeTo: 2.5

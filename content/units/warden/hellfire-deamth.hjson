@@ -18,7 +18,7 @@ createWreck: true
 parts: [
   { 
     type: RegionPart
-    name: exotic-mod-0b17-hellfire-flare
+    name: allure-0b17-hellfire-flare
     outline: false
     blending: additive
     layer: 60.03
@@ -26,7 +26,7 @@ parts: [
   }
   {
     type: RegionPart
-    name: exotic-mod-0b17-hellfire
+    name: allure-0b17-hellfire
     layer: 60
     outline: false 
   }
@@ -54,7 +54,7 @@ weapons: [
       parts: [
         { 
           type: RegionPart
-          name: exotic-mod-0b17-hellfire-flare
+          name: allure-0b17-hellfire-flare
           outline: false
           blending: additive
           layer: 60.03
@@ -64,7 +64,7 @@ weapons: [
         }
         {
           type: RegionPart
-          name: exotic-mod-0b17-hellfire
+          name: allure-0b17-hellfire
           blending: additive
           layer: 100
           outline: false 
@@ -173,7 +173,7 @@ weapons: [
       bullet: {
         //WOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO NESTLED INTERNAL UNITS
         collides: false
-        spawnUnit: exotic-mod-hellfire-singularity 
+        spawnUnit: allure-hellfire-singularity 
       }
     }
     //visual only

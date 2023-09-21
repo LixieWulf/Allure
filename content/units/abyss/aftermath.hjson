@@ -25,12 +25,12 @@ immunities: [
   disarmed,
   corroded,
   spore-slowed,
-  exotic-mod-0b-energy0,
-  exotic-mod-0b-energy1,
-  exotic-mod-0b-energy2,
-  exotic-mod-0b-energy3,
-  exotic-mod-0b-energy4,
-  exotic-mod-emp
+  allure-0b-energy0,
+  allure-0b-energy1,
+  allure-0b-energy2,
+  allure-0b-energy3,
+  allure-0b-energy4,
+  allure-emp
 ]
 weapons: [
   //deployable what the f's
@@ -183,7 +183,7 @@ weapons: [
     shootStatusDuration: 360
     shootSound: none
     bullet: {
-      spawnUnit: exotic-mod-aftermath-singularity
+      spawnUnit: allure-aftermath-singularity
       shootEffect: none
       smokeEffect: none
       chargeEffect: [
@@ -265,7 +265,7 @@ weapons: [
           particles: 1
           interp: pow3Out
           spin: 2
-          region: exotic-mod-singularity
+          region: allure-singularity
           lifetime: 181
           startDelay: 180
           sizeFrom: 0
@@ -280,7 +280,7 @@ weapons: [
           particles: 1
           interp: pow3Out
           spin: 5
-          region: exotic-mod-singularity
+          region: allure-singularity
           lifetime: 181
           startDelay: 180
           sizeFrom: 0
@@ -296,7 +296,7 @@ weapons: [
           interp: pow3Out
           spin: 5
           offset: 30
-          region: exotic-mod-singularity
+          region: allure-singularity
           lifetime: 181
           startDelay: 180
           sizeFrom: 0
@@ -312,7 +312,7 @@ weapons: [
           interp: pow3Out
           spin: 5
           offset: 60
-          region: exotic-mod-singularity
+          region: allure-singularity
           lifetime: 181
           startDelay: 180
           sizeFrom: 0
@@ -327,7 +327,7 @@ weapons: [
           particles: 1
           interp: pow5Out
           spin: 8
-          region: exotic-mod-singularity-ring
+          region: allure-singularity-ring
           lifetime: 361
           sizeFrom: 0
           sizeTo: 200
@@ -341,7 +341,7 @@ weapons: [
           particles: 1
           interp: pow5Out
           spin: -4
-          region: exotic-mod-singularity-ring
+          region: allure-singularity-ring
           lifetime: 361
           sizeFrom: 0
           sizeTo: 200
@@ -355,7 +355,7 @@ weapons: [
           particles: 1
           interp: pow5Out
           spin: -2
-          region: exotic-mod-singularity-ring
+          region: allure-singularity-ring
           lifetime: 361
           sizeFrom: 0
           sizeTo: 240
@@ -369,7 +369,7 @@ weapons: [
           particles: 1
           interp: pow5Out
           spin: 12
-          region: exotic-mod-singularity-ring
+          region: allure-singularity-ring
           lifetime: 361
           sizeFrom: 0
           sizeTo: 240
@@ -383,7 +383,7 @@ weapons: [
           particles: 1
           interp: pow5Out
           spin: 12
-          region: exotic-mod-singularity-ring
+          region: allure-singularity-ring
           lifetime: 361
           sizeFrom: 0
           sizeTo: 140
@@ -596,7 +596,7 @@ deathExplosionEffect: [
     particles: 1
     interp: pow3Out
     spin: 2
-    region: exotic-mod-singularity
+    region: allure-singularity
     lifetime: 181
     startDelay: 60
     sizeFrom: 0
@@ -611,7 +611,7 @@ deathExplosionEffect: [
     particles: 1
     interp: pow3Out
     spin: 5
-    region: exotic-mod-singularity
+    region: allure-singularity
     lifetime: 181
     startDelay: 60
     sizeFrom: 0
@@ -627,7 +627,7 @@ deathExplosionEffect: [
     interp: pow3Out
     spin: 5
     offset: 30
-    region: exotic-mod-singularity
+    region: allure-singularity
     lifetime: 181
     startDelay: 60
     sizeFrom: 0
@@ -643,7 +643,7 @@ deathExplosionEffect: [
     interp: pow3Out
     spin: 5
     offset: 60
-    region: exotic-mod-singularity
+    region: allure-singularity
     lifetime: 181
     startDelay: 60
     sizeFrom: 0
@@ -658,7 +658,7 @@ deathExplosionEffect: [
     particles: 1
     interp: pow2In
     spin: 2
-    region: exotic-mod-singularity
+    region: allure-singularity
     lifetime: 90
     startDelay: 240
     sizeFrom: 240
@@ -673,7 +673,7 @@ deathExplosionEffect: [
     particles: 1
     interp: pow2In
     spin: 5
-    region: exotic-mod-singularity
+    region: allure-singularity
     lifetime: 90
     startDelay: 240
     sizeFrom: 160
@@ -689,7 +689,7 @@ deathExplosionEffect: [
     interp: pow2In
     spin: 5
     offset: 30
-    region: exotic-mod-singularity
+    region: allure-singularity
     lifetime: 90
     startDelay: 240
     sizeFrom: 160
@@ -705,7 +705,7 @@ deathExplosionEffect: [
     interp: pow2In
     spin: 5
     offset: 60
-    region: exotic-mod-singularity
+    region: allure-singularity
     lifetime: 90
     startDelay: 240
     sizeFrom: 160

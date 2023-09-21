@@ -67,7 +67,7 @@ weapons: [
       height: 14
       shrinkX: 1
       shrinkY: 1
-      sprite: exotic-mod-torpedo
+      sprite: allure-torpedo
       mixColorTo: 7382f0
       hitColor: 7382f0
       frontColor: ffffff
@@ -75,7 +75,7 @@ weapons: [
       trailColor: 7382f088
       trailLength: 4
       trailWidth: 1.2
-      status: exotic-mod-0b-energy0
+      status: allure-0b-energy0
       statusDuration: 1
       shootEffect: none
       smokeEffect: none

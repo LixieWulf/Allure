@@ -10,5 +10,5 @@ effect: {
   sizeTo: 2
   colorFrom: 44a64e
   colorTo: 0b611f00
-  region: exotic-mod-heal
+  region: allure-heal
 }

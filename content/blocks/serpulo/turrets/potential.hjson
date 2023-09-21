@@ -20,7 +20,7 @@ ammoTypes: {
     speed: 4
     hittable: false
     absorbable: false
-    sprite: exotic-mod-mine
+    sprite: allure-mine
     frontColor: e58956
     backColor: ffd2ae
     width: 16
@@ -38,7 +38,7 @@ ammoTypes: {
     speed: 4
     hittable: false
     absorbable: false
-    sprite: exotic-mod-mine
+    sprite: allure-mine
     width: 16
     height: 16
     shrinkY: 0
@@ -54,7 +54,7 @@ ammoTypes: {
     speed: 4
     hittable: false
     absorbable: false
-    sprite: exotic-mod-mine
+    sprite: allure-mine
     width: 16
     height: 16
     shrinkY: 0

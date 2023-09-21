@@ -28,7 +28,7 @@ shootEffect: {
   sizeTo: 0
   colorTo: e65555
   colorFrom: ffb3b3
-  region: exotic-mod-shootspike
+  region: allure-shootspike
 }
 smokeEffect: {
   lightOpacity: 0
@@ -53,7 +53,7 @@ ammoUseEffect: {
   baseRotation: 90
   cone: 15
   spin: -0.7
-  region: exotic-mod-ridiculous
+  region: allure-ridiculous
   sizeFrom: 0
   sizeTo: 8
   interp: pow3In
@@ -65,7 +65,7 @@ ammoTypes: {
     speed: 10
     lifetime: 50
     damage: 1250
-    sprite: exotic-mod-standard-case-back
+    sprite: allure-standard-case-back
     width: 15
     height: 35
     frontColor: e65555

@@ -505,7 +505,7 @@ weapons: [
       fragVelocityMin: 1 
       fragVelocityMax: 1
       fragBullet: {
-        spawnUnit: exotic-mod-hellfire-spawn
+        spawnUnit: allure-hellfire-spawn
       }
     }
   }

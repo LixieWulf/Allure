@@ -30,13 +30,13 @@ parts: [
     type: RegionPart
     outline: false
     layer: 90.5
-    name: exotic-mod-bantres-bottom
+    name: allure-bantres-bottom
   }
   {
     type: RegionPart
     outline: false
     layer: 91.5
-    name: exotic-mod-bantres-top
+    name: allure-bantres-top
   }
 ]
 immunities: [

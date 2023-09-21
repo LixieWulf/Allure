@@ -66,7 +66,7 @@ weapons: [
       length: 180
       width: 6
       damage: 10
-      status: exotic-mod-0b-energy0
+      status: allure-0b-energy0
       statusDuration: 2
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       hitEffect: {

@@ -44,7 +44,7 @@ weapons: [
         absorbable: false
         hitEffect: none
         despawnEffect: none
-        sprite: exotic-mod-kusarigama-tug-large
+        sprite: allure-kusarigama-tug-large
         width: 22.5
         height: 39.4
         shrinkY: 0
@@ -105,7 +105,7 @@ weapons: [
         absorbable: false
         hitEffect: none
         despawnEffect: none
-        sprite: exotic-mod-kusarigama-tug-small
+        sprite: allure-kusarigama-tug-small
         width: 7.5
         height: 11.25
         shrinkY: 0
@@ -166,7 +166,7 @@ weapons: [
         absorbable: false
         hitEffect: none
         despawnEffect: none
-        sprite: exotic-mod-kusarigama-tug-small
+        sprite: allure-kusarigama-tug-small
         width: 7.5
         height: 11.25
         shrinkY: 0
@@ -227,7 +227,7 @@ weapons: [
         absorbable: false
         hitEffect: none
         despawnEffect: none
-        sprite: exotic-mod-kusarigama-tug-small
+        sprite: allure-kusarigama-tug-small
         width: 7.5
         height: 11.25
         shrinkY: 0
@@ -288,7 +288,7 @@ weapons: [
         absorbable: false
         hitEffect: none
         despawnEffect: none
-        sprite: exotic-mod-kusarigama-tug-small
+        sprite: allure-kusarigama-tug-small
         width: 7.5
         height: 11.25
         shrinkY: 0
@@ -349,7 +349,7 @@ weapons: [
         absorbable: false
         hitEffect: none
         despawnEffect: none
-        sprite: exotic-mod-kusarigama-tug
+        sprite: allure-kusarigama-tug
         width: 19
         height: 33.75
         shrinkY: 0
@@ -410,7 +410,7 @@ weapons: [
         absorbable: false
         hitEffect: none
         despawnEffect: none
-        sprite: exotic-mod-kusarigama-tug
+        sprite: allure-kusarigama-tug
         width: 19
         height: 33.75
         shrinkY: 0
@@ -471,7 +471,7 @@ weapons: [
         absorbable: false
         hitEffect: none
         despawnEffect: none
-        sprite: exotic-mod-kusarigama-tug
+        sprite: allure-kusarigama-tug
         width: 19
         height: 33.75
         shrinkY: 0
@@ -532,7 +532,7 @@ weapons: [
         absorbable: false
         hitEffect: none
         despawnEffect: none
-        sprite: exotic-mod-kusarigama-tug
+        sprite: allure-kusarigama-tug
         width: 19
         height: 33.75
         shrinkY: 0

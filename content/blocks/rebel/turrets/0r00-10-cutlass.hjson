@@ -47,7 +47,7 @@ shootEffect: {
   baseRotation: 90
   offset: -90
   colorTo: ffffff00
-  region: exotic-mod-0r-cutlass-nuke
+  region: allure-0r-cutlass-nuke
 }
 smokeEffect: {
   type: MultiEffect
@@ -68,7 +68,7 @@ smokeEffect: {
       offset: -45
       colorFrom: e65555
       colorTo: e6555500
-      region: exotic-mod-diamond-wide
+      region: allure-diamond-wide
     }
     {
       length: 56
@@ -85,7 +85,7 @@ smokeEffect: {
       offset: 45
       colorFrom: e65555
       colorTo: e6555500
-      region: exotic-mod-diamond-wide
+      region: allure-diamond-wide
     }
   ]
 }
@@ -108,7 +108,7 @@ ammoTypes: {
           useRotation: false
           particles: 1
           cone: 0
-          region: exotic-mod-0r-cutlass-empty
+          region: allure-0r-cutlass-empty
         }
         {
           layer: 35.01
@@ -119,7 +119,7 @@ ammoTypes: {
           useRotation: false
           particles: 1
           cone: 0
-          region: exotic-mod-0r-cutlass-nuke
+          region: allure-0r-cutlass-nuke
         }
         {
           layer: 35.02
@@ -132,7 +132,7 @@ ammoTypes: {
           particles: 1
           cone: 0
           spin: -1
-          region: exotic-mod-0r-cutlass-cover0
+          region: allure-0r-cutlass-cover0
         }
         {
           layer: 35.02
@@ -145,7 +145,7 @@ ammoTypes: {
           particles: 1
           cone: 0
           spin: -1
-          region: exotic-mod-0r-cutlass-cover1
+          region: allure-0r-cutlass-cover1
         }
         {
           layer: 35.03
@@ -156,7 +156,7 @@ ammoTypes: {
           useRotation: false
           particles: 1
           cone: 0
-          region: exotic-mod-0r-cutlass-top
+          region: allure-0r-cutlass-top
         }
       ]
     }
@@ -176,7 +176,7 @@ ammoTypes: {
       offset: -90
       colorFrom: e6555500
       colorTo: e65555
-      region: exotic-mod-0r-cutlass-nuke-white
+      region: allure-0r-cutlass-nuke-white
     }
     hitEffect: none
     lightning: 1

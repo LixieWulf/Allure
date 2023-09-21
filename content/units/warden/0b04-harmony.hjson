@@ -84,7 +84,7 @@ weapons: [
           cone: 0
           interp: pow3In
           sizeInterp: linear
-          region: exotic-mod-railblast
+          region: allure-railblast
           sizeFrom: 14
           sizeTo: 7
           colorFrom: 7382f0
@@ -102,7 +102,7 @@ weapons: [
           cone: 0
           interp: pow3In
           sizeInterp: linear
-          region: exotic-mod-railblast
+          region: allure-railblast
           sizeFrom: 24
           sizeTo: 10
           colorFrom: 7382f0
@@ -118,7 +118,7 @@ weapons: [
           cone: 0
           interp: pow3In
           sizeInterp: linear
-          region: exotic-mod-diamond-wide
+          region: allure-diamond-wide
           sizeFrom: 40
           sizeTo: 10
           colorFrom: 7382f0
@@ -135,7 +135,7 @@ weapons: [
           cone: 0
           interp: pow3In
           sizeInterp: linear
-          region: exotic-mod-diamond-wide
+          region: allure-diamond-wide
           sizeFrom: 28
           sizeTo: 6
           colorTo: ffffff00
@@ -154,7 +154,7 @@ weapons: [
             lifetime: 140
             particles: 1
             cone: 0
-            region: exotic-mod-shootspike
+            region: allure-shootspike
             sizeInterp: pow2In
             sizeFrom: 60
             sizeTo: 0
@@ -169,7 +169,7 @@ weapons: [
             lifetime: 110
             particles: 1
             cone: 0
-            region: exotic-mod-shootspike
+            region: allure-shootspike
             sizeFrom: 45
             sizeTo: 25
             colorFrom: 7382f0
@@ -184,7 +184,7 @@ weapons: [
             lifetime: 110
             particles: 1
             cone: 0
-            region: exotic-mod-shootspike
+            region: allure-shootspike
             sizeFrom: 45
             sizeTo: 25
             colorFrom: 7382f0
@@ -198,7 +198,7 @@ weapons: [
             lifetime: 50
             particles: 1
             cone: 0
-            region: exotic-mod-diamond-thin
+            region: allure-diamond-thin
             sizeFrom: 70
             sizeTo: 0
             colorFrom: 7382f0
@@ -255,7 +255,7 @@ weapons: [
             lifetime: 180
             particles: 1
             spin: 9
-            region: exotic-mod-0b04-harmony-reactor
+            region: allure-0b04-harmony-reactor
             sizeFrom: 12.5
             sizeTo: 12.5
           }
@@ -269,7 +269,7 @@ weapons: [
             lifetime: 180
             particles: 1
             spin: 9
-            region: exotic-mod-0b04-harmony-reactor-ohcrap
+            region: allure-0b04-harmony-reactor-ohcrap
             sizeFrom: 12.5
             sizeTo: 12.5
             colorFrom: 7382f0
@@ -284,7 +284,7 @@ weapons: [
             lifetime: 180
             particles: 1
             spin: -3
-            region: exotic-mod-0b04-harmony-reactor-inner
+            region: allure-0b04-harmony-reactor-inner
             sizeFrom: 12.5
             sizeTo: 12.5
             colorFrom: 7382f0
@@ -299,7 +299,7 @@ weapons: [
             lifetime: 180
             particles: 1
             spin: -6
-            region: exotic-mod-0b04-harmony-reactor-inner
+            region: allure-0b04-harmony-reactor-inner
             sizeFrom: 12.5
             sizeTo: 12.5
             colorFrom: 7382f0
@@ -311,7 +311,7 @@ weapons: [
             lifetime: 180
             particles: 1
             offset: -90
-            region: exotic-mod-0b04-harmony-full
+            region: allure-0b04-harmony-full
             sizeFrom: 48.75
             sizeTo: 48.75
           }
@@ -321,7 +321,7 @@ weapons: [
             lifetime: 180
             particles: 1
             offset: -90
-            region: exotic-mod-0b04-harmony-flare
+            region: allure-0b04-harmony-flare
             sizeFrom: 48.75
             sizeTo: 48.75
             colorFrom: 7382f0
@@ -353,7 +353,7 @@ weapons: [
             particles: 1
             offset: -90
             interp: pow5In
-            region: exotic-mod-0b04-harmony-cover
+            region: allure-0b04-harmony-cover
             sizeFrom: 48.75
             sizeTo: 48.75
             colorFrom: 7382f0
@@ -456,7 +456,7 @@ weapons: [
             spin: 1
             interp: pow10In
             sizeInterp: linear
-            region: exotic-mod-diamond-vthin
+            region: allure-diamond-vthin
             sizeFrom: 0
             sizeTo: 160
             colorFrom: 7382f0
@@ -476,7 +476,7 @@ weapons: [
             interp: pow10In
             sizeInterp: linear
             offset: 90
-            region: exotic-mod-diamond-vthin
+            region: allure-diamond-vthin
             sizeFrom: 0
             sizeTo: 160
             colorFrom: 7382f0
@@ -510,7 +510,7 @@ weapons: [
             spin: 1
             interp: pow10In
             sizeInterp: linear
-            region: exotic-mod-diamond-vthin
+            region: allure-diamond-vthin
             sizeFrom: 0
             sizeTo: 120
             colorTo: ffffff00
@@ -528,7 +528,7 @@ weapons: [
             offset: 90
             interp: pow10In
             sizeInterp: linear
-            region: exotic-mod-diamond-vthin
+            region: allure-diamond-vthin
             sizeFrom: 0
             sizeTo: 120
             colorTo: ffffff00
@@ -686,7 +686,7 @@ abilities: [
           lifetime: 31
           particles: 1
           spin: 9
-          region: exotic-mod-0b04-harmony-reactor
+          region: allure-0b04-harmony-reactor
           sizeFrom: 12.5
           sizeTo: 12.5
         }
@@ -700,7 +700,7 @@ abilities: [
           lifetime: 31
           particles: 1
           spin: -3
-          region: exotic-mod-0b04-harmony-reactor-inner
+          region: allure-0b04-harmony-reactor-inner
           sizeFrom: 12.5
           sizeTo: 12.5
           colorFrom: 7382f0
@@ -717,7 +717,7 @@ abilities: [
           lifetime: 33
           particles: 1
           spin: -6
-          region: exotic-mod-0b04-harmony-reactor-inner
+          region: allure-0b04-harmony-reactor-inner
           sizeFrom: 12.5
           sizeTo: 12.5
           colorFrom: 7382f0

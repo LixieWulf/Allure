@@ -3,6 +3,6 @@ flammability: 2
 viscosity: 0.9
 heatCapacity: 0
 explosiveness: 2
-effect: exotic-mod-vapourizing
+effect: allure-vapourizing
 color: 87b7ff
 research: energia

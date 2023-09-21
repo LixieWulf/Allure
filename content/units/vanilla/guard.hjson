@@ -89,7 +89,7 @@ abilities: [
         lifetime: 16
         length: 0
         spin: 6
-        region: exotic-mod-guard-turbine
+        region: allure-guard-turbine
         layer: 90.0001
         sizeFrom: 2.5
         sizeTo: 2.5

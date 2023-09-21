@@ -48,7 +48,7 @@ weapons: [
         absorbable: false 
         speed: 0
         damage: 120
-        status: exotic-mod-0b-energy4
+        status: allure-0b-energy4
         statusDuration: 3
         knockback: 12
         impact: true

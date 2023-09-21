@@ -228,7 +228,7 @@ abilities: [
       despawnHit: true
       unitDamageScl: 1
       hitColor: 7382f0
-      status: exotic-mod-emp
+      status: allure-emp
       statusDuration: 30
       hitEffect: none
       hitPowerEffect: none 

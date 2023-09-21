@@ -8,5 +8,5 @@ effect: {
   sizeTo: 0
   colorFrom: 98ffa950
   colorTo: 98ffa9
-  region: exotic-mod-heal
+  region: allure-heal
 }

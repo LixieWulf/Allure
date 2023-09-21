@@ -3,7 +3,7 @@ color: 7382f0
 charge: 0.25
 hiddenOnPlanets: [
   erekir, 
-  exotic-mod-maltranas
+  allure-maltranas
 ]
 research: {
   parent: dantrales

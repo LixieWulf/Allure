@@ -21,7 +21,7 @@ ammoTypes: {
     lifetime: 20 
     hittable: false
     knockback: 1.2
-    status: exotic-mod-sandblasted
+    status: allure-sandblasted
     statusDuration: 10
     collidesAir: false 
     hitEffect: none

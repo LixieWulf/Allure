@@ -2,7 +2,7 @@ type: Floor
 speedMultiplier: 0.3
 drownTime: 180
 variants: 0
-status: exotic-mod-healing-flood
+status: allure-healing-flood
 statusDuration: 60
 cacheLayer: water
 isLiquid: true

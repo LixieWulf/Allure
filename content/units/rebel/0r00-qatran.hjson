@@ -20,7 +20,7 @@ weapons: [
     y: 0
     mirror: false
     shootSound: none
-    shootStatus: exotic-mod-0r-dashstopper
+    shootStatus: allure-0r-dashstopper
     shootStatusDuration: 15
     reload: 25
     bullet: {
@@ -74,7 +74,7 @@ abilities: [
       sizeTo: 4
       length: 0.01
       lifetime: 15
-      region: exotic-mod-0r00-qatran
+      region: allure-0r00-qatran
       colorFrom: fffffff25
       colorTo: ffffff00
     }

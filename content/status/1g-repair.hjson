@@ -5,7 +5,7 @@ effect: {
   length: 4
   lifetime: 25
   particles: 2
-  region: exotic-mod-square
+  region: allure-square
   offset: 45
   sizeFrom: 3
   sizeTo: 0

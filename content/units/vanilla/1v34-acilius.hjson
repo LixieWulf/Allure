@@ -109,7 +109,7 @@ weapons: [
           sizeInterp: linear
         }
       ]
-      status: exotic-mod-phaselock
+      status: allure-phaselock
       statusDuration: 500
     }
   }

@@ -14,7 +14,7 @@ drawCell: false
 outlines: false
 shadowElevationScl: 3.5
 immunities: [
-  exotic-mod-emp
+  allure-emp
 ]
 engineColor: e65555
 engines: [
@@ -170,7 +170,7 @@ weapons: [
         sizeTo: 0
         colorFrom: ffffff
         colorTo: d09f00
-        region: exotic-mod-shootspike
+        region: allure-shootspike
       } 
       smokeEffect: {
         length: 40
@@ -268,7 +268,7 @@ weapons: [
         sizeTo: 0
         colorFrom: ffffff
         colorTo: d09f00
-        region: exotic-mod-shootspike
+        region: allure-shootspike
       } 
       smokeEffect: {
         length: 40
@@ -334,7 +334,7 @@ weapons: [
         sizeTo: 0
         colorFrom: c3b3f8
         colorTo: 8960c1
-        region: exotic-mod-shootspike
+        region: allure-shootspike
       } 
       smokeEffect: {
         length: 40
@@ -549,7 +549,7 @@ weapons: [
           length: 0
           cone: 0
           lifetime: 45
-          region: exotic-mod-shootspike
+          region: allure-shootspike
           colorTo: e65555
           sizeFrom: 140
           sizeTo: 0
@@ -558,7 +558,7 @@ weapons: [
           length: 0
           cone: 0
           lifetime: 45
-          region: exotic-mod-diamond-thin
+          region: allure-diamond-thin
           colorTo: e65555
           sizeFrom: 70
           sizeTo: 0
@@ -673,7 +673,7 @@ weapons: [
     parts: [
       {
         type: RegionPart
-        name: exotic-mod-0r14-extelsus
+        name: allure-0r14-extelsus
         outline: false
         layer: 98
         color: ffffff00
@@ -863,7 +863,7 @@ weapons: [
     shootCone: 360
     shootSound: none
     bullet: {
-      spawnUnit: exotic-mod-0r14-extelsus-deamth
+      spawnUnit: allure-0r14-extelsus-deamth
     }
   }
 ]

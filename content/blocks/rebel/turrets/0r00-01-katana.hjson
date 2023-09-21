@@ -31,7 +31,7 @@ ammoTypes: {
     collidesGround: false
     hittable: false
     absorbable: false
-    sprite: exotic-mod-sword
+    sprite: allure-sword
     width: 16
     height: 16
     shrinkY: 0
@@ -47,7 +47,7 @@ ammoTypes: {
       damage: 72
       speed: 9
       lifetime: 20
-      sprite: exotic-mod-sword
+      sprite: allure-sword
       collidesGround: false
       homingPower: 0.1
       homingRange: 40
@@ -67,7 +67,7 @@ ammoTypes: {
         particles: 1
         cone: 0
         colorTo: ffffff00
-        region: exotic-mod-sword-effect
+        region: allure-sword-effect
       }
     }
   }

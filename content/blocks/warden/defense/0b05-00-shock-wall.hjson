@@ -54,7 +54,7 @@ shootType: {
       hitPowerEffect: hitLancer
       applyEffect: none
       hitColor: 7382f0
-      status: exotic-mod-0b-energy0
+      status: allure-0b-energy0
       statusDuration: 1
     }
   }
@@ -101,7 +101,7 @@ breakEffect: [
     length: 0
     lifetime: 30
     useRotation: false
-    region: exotic-mod-warden-icon
+    region: allure-warden-icon
     sizeFrom: 8
     sizeTo: 8
     colorFrom: 7382f0
