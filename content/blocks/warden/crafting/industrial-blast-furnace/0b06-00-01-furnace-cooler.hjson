@@ -30,76 +30,56 @@ requirements: [
   territe-alloy/1200
   crystal/600
 ]
-drawer: [
-  {
-    type: DrawRegion
-    suffix: ""
-    layer: 30.1
-  }
-  {
-    type: DrawRegion
-    suffix: -fan
-    rotateSpeed: 4
-    spinSprite: true
-    layer: 30.1
-  }
-  {
-    type: DrawRegion
-    suffix: -fan
-    rotateSpeed: 4
-    rotation: 15
-    spinSprite: true
-    layer: 30.1
-  }
-  {
-    type: DrawRegion
-    suffix: -fan
-    rotateSpeed: 4
-    rotation: 30
-    spinSprite: true
-    layer: 30.1
-  }
-  {
-    type: DrawRegion
-    suffix: -fan
-    rotateSpeed: 4
-    rotation: 45
-    spinSprite: true
-    layer: 30.1
-  }
-  {
-    type: DrawRegion
-    suffix: -fan
-    rotateSpeed: 4
-    rotation: 60
-    spinSprite: true
-    layer: 30.1
-  }
-  {
-    type: DrawRegion
-    suffix: -fan
-    rotateSpeed: 4
-    rotation: 75
-    spinSprite: true
-    layer: 30.1
-  }
-  {
-    type: DrawRegion
-    suffix: -top
-    layer: 30.1
-  }
-  {
-    type: DrawGlowRegion
-    layer: 30.2
-    color: ffb380
-    alpha: 0.5
-  }
-  {
-    type: DrawRegion
-    x: -36
-    suffix: -left
-  }
-]
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    -icon
+  ]
+  drawers: [
+    {
+      type: DrawRegion
+      layer: 30.1
+    }
+    {
+      type: DrawRegion
+      suffix: -fan
+      rotateSpeed: 4
+      spinSprite: true
+      layer: 30.1
+    }
+    {
+      type: DrawRegion
+      suffix: -fan
+      rotateSpeed: 4
+      rotation: 30
+      spinSprite: true
+      layer: 30.1
+    }
+    {
+      type: DrawRegion
+      suffix: -fan
+      rotateSpeed: 4
+      rotation: 60
+      spinSprite: true
+      layer: 30.1
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+      layer: 30.1
+    }
+    {
+      type: DrawGlowRegion
+      layer: 30.2
+      color: ffb380
+      alpha: 0.5
+    }
+    {
+      type: DrawRegion
+      suffix: -icon
+    }
+  ]
+}
 craftEffect: {
   type: RadialEffect
   layer: 118

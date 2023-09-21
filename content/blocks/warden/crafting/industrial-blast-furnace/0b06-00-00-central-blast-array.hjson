@@ -39,14 +39,14 @@ drawer: [
   {
     type: DrawRegion
     suffix: -fan
-    rotateSpeed: 4
+    rotateSpeed: -4
     spinSprite: true
     layer: 30.1
   }
   {
     type: DrawRegion
     suffix: -fan
-    rotateSpeed: 4
+    rotateSpeed: -4
     rotation: 10
     spinSprite: true
     layer: 30.1
@@ -54,7 +54,7 @@ drawer: [
   {
     type: DrawRegion
     suffix: -fan
-    rotateSpeed: 4
+    rotateSpeed: -4
     rotation: 20
     spinSprite: true
     layer: 30.1
@@ -62,7 +62,7 @@ drawer: [
   {
     type: DrawRegion
     suffix: -fan
-    rotateSpeed: 4
+    rotateSpeed: -4
     rotation: 30
     spinSprite: true
     layer: 30.1
@@ -70,7 +70,7 @@ drawer: [
   {
     type: DrawRegion
     suffix: -fan
-    rotateSpeed: 4
+    rotateSpeed: -4
     rotation: 40
     spinSprite: true
     layer: 30.1
@@ -78,7 +78,7 @@ drawer: [
   {
     type: DrawRegion
     suffix: -fan
-    rotateSpeed: 4
+    rotateSpeed: -4
     rotation: 50
     spinSprite: true
     layer: 30.1
@@ -86,7 +86,7 @@ drawer: [
   {
     type: DrawRegion
     suffix: -fan
-    rotateSpeed: 4
+    rotateSpeed: -4
     rotation: 60
     spinSprite: true
     layer: 30.1
@@ -94,7 +94,7 @@ drawer: [
   {
     type: DrawRegion
     suffix: -fan
-    rotateSpeed: 4
+    rotateSpeed: -4
     rotation: 70
     spinSprite: true
     layer: 30.1
@@ -102,7 +102,7 @@ drawer: [
   {
     type: DrawRegion
     suffix: -fan
-    rotateSpeed: 4
+    rotateSpeed: -4
     rotation: 80
     spinSprite: true
     layer: 30.1
@@ -132,24 +132,8 @@ drawer: [
   }
   {
     type: DrawRegion
-    x: -56
-    suffix: -left
-  }
-  {
-    type: DrawRegion
-    x: 56
-    suffix: -right
-  }
-  {
-    type: DrawRegion
-    y: -56
-    suffix: -low
-  }
-  {
-    type: DrawRegion
-    y: -56
-    suffix: -bot
-    layer: 30.005
+    suffix: -icon
+    layer: 30.05
   }
   {
     type: DrawGlowRegion

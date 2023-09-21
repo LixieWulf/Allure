@@ -28,30 +28,30 @@ requirements: [
   territe-alloy/1800
   baenite/600
 ]
-drawer: [
-  {
-  }
-  {
-    type: DrawRegion
-    suffix: -top
-    layer: 30.1
-  }
-  {
-    type: DrawGlowRegion
-    color: ffb380
-    layer: 30.1
-  }
-  {
-    type: DrawRegion
-    x: 36
-    suffix: -right
-  }
-  {
-    type: DrawRegion
-    y: -36
-    suffix: -low
-  }
-]
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    -icon
+  ]
+  drawers: [
+    {
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+      layer: 30.1
+    }
+    {
+      type: DrawGlowRegion
+      color: ffb380
+      layer: 30.1
+    }
+    {
+      type: DrawRegion
+      suffix: -icon
+    }
+  ]
+}
 breakEffect: [
   {
     type: WaveEffect

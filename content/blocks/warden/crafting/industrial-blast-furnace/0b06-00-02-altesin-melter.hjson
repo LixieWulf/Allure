@@ -29,36 +29,36 @@ requirements: [
   territe-alloy/1200
   scilaxa/150
 ]
-drawer: [
-  {
-  }
-  {
-    type: DrawLiquidTile
-    drawLiquid: 0b19-00-melted-altesin
-    padding: 3
-  }
-  {
-    type: DrawRegion
-    suffix: -top
-    layer: 30.2
-  }
-  {
-    type: DrawGlowRegion
-    color: ffb380
-    layer: 30.2
-    alpha: 0.5
-  }
-  {
-    type: DrawRegion
-    x: 36
-    suffix: -right
-  }
-  {
-    type: DrawRegion
-    y: 36
-    suffix: -up
-  }
-]
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    -icon
+  ]
+  drawers: [
+    {
+    }
+    {
+      type: DrawRegion
+      suffix: -icon
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: 0b19-00-melted-altesin
+      padding: 3
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+      layer: 30.2
+    }
+    {
+      type: DrawGlowRegion
+      color: ffb380
+      layer: 30.2
+      alpha: 0.5
+    }
+  ]
+}
 breakEffect: [
   {
     type: WaveEffect

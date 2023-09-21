@@ -1,29 +1,36 @@
 type: AttributeCrafter
 squareSprite: false
-craftTime: 600
+craftTime: 60
 itemCapacity: 50
 size: 4
-attribute: sand
+attribute: gravel
 baseEfficiency: 0
-maxBoost: 8
-boostScale: 0.35
+minEfficiency: 0.01
+maxBoost: 2
+boostScale: 0.0625
 liquidCapacity: 12
-drawer: [
-  {
-    type: DrawRegion
-    suffix: -drill
-    spinSprite: true
-    rotateSpeed: 5
-  }
-  {
-    type: DrawGlowRegion
-    layer: 30
-    rotateSpeed: 5
-    color: ffb380
-  }
-  {
-  }
-]
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    -icon
+  ]
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -drill
+      spinSprite: true
+      rotateSpeed: 5
+    }
+    {
+      type: DrawGlowRegion
+      layer: 30
+      rotateSpeed: 5
+      color: ffb380
+    }
+    {
+    }
+  ]
+}
 craftEffect: {
   interp: pow3Out
   sizeInterp: linear

@@ -1,3 +1,9 @@
+liquidDrop: water
+liquidMultiplier: 0.25
+//handled by status
+speedMultiplier: 1
+isLiquid: true
+shallow: true
 attributes: {
-  water: 0.1
+  water: 1
 }

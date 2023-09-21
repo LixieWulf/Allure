@@ -1,0 +1,6 @@
+type: Floor
+liquidDrop: liquid-baenara
+liquidMultiplier: 0.75
+isLiquid: true
+shallow: true
+cacheLayer: water

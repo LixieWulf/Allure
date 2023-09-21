@@ -1,0 +1,972 @@
+//disclaimer: none of luminances code is meant to be readable, if you are looking for examples DO NOT LOOK HERE
+type: missile
+template: MissileUnitType
+flying: true
+speed: 4
+rotateSpeed: 0.2
+lifetime: 240
+drawBody: false 
+drawCell: false
+outlines: false
+trailLength: 0
+engineSize: 0
+weapons: [
+  {
+    x: 0
+    mirror: false
+    alternate: true
+    otherSide: 5
+    reload: 20
+    recoil: 0
+    alwaysShooting: true
+    shootSound: none
+    parts: [
+      {
+        layer: 109
+        type: HaloPart
+        progress: reload
+        shapes: 1
+        tri: true
+        y: -20
+        radius: 0
+        radiusTo: 32
+        triLength: 40
+        triLengthTo: 0
+        color: be92f7bb
+        colorTo: 7382f0bb
+        shapeRotation: 140
+      }
+      {
+        layer: 109
+        type: HaloPart
+        progress: reload
+        shapes: 1
+        tri: true
+        y: -20
+        radius: 0
+        radiusTo: 32
+        triLength: 40
+        triLengthTo: 0
+        color: be92f7bb
+        colorTo: 7382f0bb
+        shapeRotation: -140
+      }
+      {
+        y: -16
+        layer: 109
+        type: HaloPart
+        progress: reload
+        shapes: 1
+        tri: true
+        radius: 0
+        radiusTo: 32
+        triLength: 80
+        triLengthTo: 0
+        color: be92f7bb
+        colorTo: 7382f0bb
+        shapeRotation: 180
+      }
+    ]
+    bullet: {
+      type: BulletType
+      lifetime: 0
+      instantDisappear: true
+      shootEffect: {
+        particles: 1
+        length: 0
+        cone: 0
+        lifetime: 11
+        sizeFrom: 16  
+        sizeTo: 16
+        offset: -90
+        followParent: true
+        rotWithParent: true
+        region: exotic-mod-luminance-missile
+        colorTo: be92f7
+        colorFrom: 7382f0
+      }
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+    }
+  }
+  {
+    x: 0
+    mirror: false
+    alternate: true
+    flipSprite: true
+    otherSide: 0
+    reload: 20
+    recoil: 0
+    alwaysShooting: true
+    shootSound: none
+    parts: [
+      {
+        layer: 109
+        type: HaloPart
+        progress: reload
+        shapes: 1
+        tri: true
+        y: -20
+        radius: 0
+        radiusTo: 32
+        triLength: 40
+        triLengthTo: 0
+        color: 7382f0bb
+        colorTo: 74cf84bb
+        shapeRotation: 140
+      }
+      {
+        layer: 109
+        type: HaloPart
+        progress: reload
+        shapes: 1
+        tri: true
+        y: -20
+        radius: 0
+        radiusTo: 32
+        triLength: 40
+        triLengthTo: 0
+        color: 7382f0bb
+        colorTo: 74cf84bb
+        shapeRotation: -140
+      }
+      {
+        y: -16
+        layer: 109
+        type: HaloPart
+        progress: reload
+        shapes: 1
+        tri: true
+        radius: 0
+        radiusTo: 32
+        triLength: 80
+        triLengthTo: 0
+        color: 7382f0bb
+        colorTo: 74cf84bb
+        shapeRotation: 180
+      }
+    ]
+    bullet: {
+      type: BulletType
+      lifetime: 0
+      instantDisappear: true
+      shootEffect: {
+        particles: 1
+        length: 0
+        cone: 0
+        lifetime: 11
+        sizeFrom: 16  
+        sizeTo: 16
+        offset: -90
+        followParent: true
+        rotWithParent: true
+        region: exotic-mod-luminance-missile
+        colorTo: 7382f0
+        colorFrom: 74cf84
+      }
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+    }
+  }
+  {
+    x: 0
+    mirror: false
+    alternate: true
+    flipSprite: true
+    otherSide: 1
+    reload: 20
+    recoil: 0
+    alwaysShooting: true
+    shootSound: none
+    parts: [
+      {
+        layer: 109
+        type: HaloPart
+        progress: reload
+        shapes: 1
+        tri: true
+        y: -20
+        radius: 0
+        radiusTo: 32
+        triLength: 40
+        triLengthTo: 0
+        color: 74cf84bb
+        colorTo: ded750bb
+        shapeRotation: 140
+      }
+      {
+        layer: 109
+        type: HaloPart
+        progress: reload
+        shapes: 1
+        tri: true
+        y: -20
+        radius: 0
+        radiusTo: 32
+        triLength: 40
+        triLengthTo: 0
+        color: 74cf84bb
+        colorTo: ded750bb
+        shapeRotation: -140
+      }
+      {
+        y: -16
+        layer: 109
+        type: HaloPart
+        progress: reload
+        shapes: 1
+        tri: true
+        radius: 0
+        radiusTo: 32
+        triLength: 80
+        triLengthTo: 0
+        color: 74cf84bb
+        colorTo: ded750bb
+        shapeRotation: 180
+      }
+    ]
+    bullet: {
+      type: BulletType
+      lifetime: 0
+      instantDisappear: true
+      shootEffect: {
+        particles: 1
+        length: 0
+        cone: 0
+        lifetime: 11
+        sizeFrom: 16  
+        sizeTo: 16
+        offset: -90
+        followParent: true
+        rotWithParent: true
+        region: exotic-mod-luminance-missile
+        colorTo: 74cf84
+        colorFrom: ded750
+      }
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+    }
+  }
+  {
+    x: 0
+    mirror: false
+    alternate: true
+    flipSprite: true
+    otherSide: 2
+    reload: 20
+    recoil: 0
+    alwaysShooting: true
+    shootSound: none
+    parts: [
+      {
+        layer: 109
+        type: HaloPart
+        progress: reload
+        shapes: 1
+        tri: true
+        y: -20
+        radius: 0
+        radiusTo: 32
+        triLength: 40
+        triLengthTo: 0
+        color: ded750bb
+        colorTo: de7a40bb
+        shapeRotation: 140
+      }
+      {
+        layer: 109
+        type: HaloPart
+        progress: reload
+        shapes: 1
+        tri: true
+        y: -20
+        radius: 0
+        radiusTo: 32
+        triLength: 40
+        triLengthTo: 0
+        color: ded750bb
+        colorTo: de7a40bb
+        shapeRotation: -140
+      }
+      {
+        y: -16
+        layer: 109
+        type: HaloPart
+        progress: reload
+        shapes: 1
+        tri: true
+        radius: 0
+        radiusTo: 32
+        triLength: 80
+        triLengthTo: 0
+        color: ded750bb
+        colorTo: de7a40bb
+        shapeRotation: 180
+      }
+    ]
+    bullet: {
+      type: BulletType
+      lifetime: 0
+      instantDisappear: true
+      shootEffect: {
+        particles: 1
+        length: 0
+        cone: 0
+        lifetime: 11
+        sizeFrom: 16  
+        sizeTo: 16
+        offset: -90
+        followParent: true
+        rotWithParent: true
+        region: exotic-mod-luminance-missile
+        colorTo: ded750
+        colorFrom: de7a40
+      }
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+    }
+  }
+  {
+    x: 0
+    mirror: false
+    alternate: true
+    flipSprite: true
+    otherSide: 3
+    reload: 20
+    recoil: 0
+    alwaysShooting: true
+    shootSound: none
+    parts: [
+      {
+        layer: 109
+        type: HaloPart
+        progress: reload
+        shapes: 1
+        tri: true
+        y: -20
+        radius: 0
+        radiusTo: 32
+        triLength: 40
+        triLengthTo: 0
+        color: de7a40bb
+        colorTo: e65555bb
+        shapeRotation: 140
+      }
+      {
+        layer: 109
+        type: HaloPart
+        progress: reload
+        shapes: 1
+        tri: true
+        y: -20
+        radius: 0
+        radiusTo: 32
+        triLength: 40
+        triLengthTo: 0
+        color: de7a40bb
+        colorTo: e65555bb
+        shapeRotation: -140
+      }
+      {
+        y: -16
+        layer: 109
+        type: HaloPart
+        progress: reload
+        shapes: 1
+        tri: true
+        radius: 0
+        radiusTo: 32
+        triLength: 80
+        triLengthTo: 0
+        color: de7a40bb
+        colorTo: e65555bb
+        shapeRotation: 180
+      }
+    ]
+    bullet: {
+      type: BulletType
+      lifetime: 0
+      instantDisappear: true
+      shootEffect: {
+        particles: 1
+        length: 0
+        cone: 0
+        lifetime: 11
+        sizeFrom: 16  
+        sizeTo: 16
+        offset: -90
+        followParent: true
+        rotWithParent: true
+        region: exotic-mod-luminance-missile
+        colorTo: de7a40
+        colorFrom: e65555
+      }
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+    }
+  }
+  {
+    x: 0
+    mirror: false
+    alternate: true
+    flipSprite: true
+    otherSide: 4
+    reload: 20
+    recoil: 0
+    alwaysShooting: true
+    shootSound: none
+    parts: [
+      {
+        layer: 109
+        type: HaloPart
+        progress: reload
+        shapes: 1
+        tri: true
+        y: -20
+        radius: 0
+        radiusTo: 32
+        triLength: 40
+        triLengthTo: 0
+        color: e65555bb
+        colorTo: be92f7bb
+        shapeRotation: 140
+      }
+      {
+        layer: 109
+        type: HaloPart
+        progress: reload
+        shapes: 1
+        tri: true
+        y: -20
+        radius: 0
+        radiusTo: 32
+        triLength: 40
+        triLengthTo: 0
+        color: e65555bb
+        colorTo: be92f7bb
+        shapeRotation: -140
+      }
+      {
+        y: -16
+        layer: 109
+        type: HaloPart
+        progress: reload
+        shapes: 1
+        tri: true
+        radius: 0
+        radiusTo: 32
+        triLength: 80
+        triLengthTo: 0
+        color: e65555bb
+        colorTo: be92f7bb
+        shapeRotation: 180
+      }
+    ]
+    bullet: {
+      type: BulletType
+      lifetime: 0
+      instantDisappear: true
+      shootEffect: {
+        particles: 1
+        length: 0
+        cone: 0
+        lifetime: 11
+        sizeFrom: 16  
+        sizeTo: 16
+        offset: -90
+        followParent: true
+        rotWithParent: true
+        region: exotic-mod-luminance-missile
+        colorTo: e65555
+        colorFrom: be92f7
+      }
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+    }
+  }
+  {
+    shootOnDeath: true
+    shootCone: 360
+    x: 0
+    mirror: false
+    shootSound: none
+    shake: 16
+    bullet: {
+      type: ExplosionBulletType
+      spawnBullets: [
+        {
+          type: BulletType
+          lifetime: 0
+          speed: 0
+          keepVelocity: false
+          absorbable: false
+          fragBullets: 1
+          fragRandomSpread: 0
+          fragAngle: 30
+          fragBullet: {
+            type: LaserBulletType
+            damage: 1
+            pierceCap: 3
+            lifetime: 60
+            length: 60
+            lengthFalloff: 0.8
+            width: 64
+            sideLength: 0
+            colors: [
+              e6555544,
+              e65555,
+              ffffff
+            ]
+          }
+        }
+        {
+          type: BulletType
+          lifetime: 0
+          speed: 0
+          keepVelocity: false
+          absorbable: false
+          fragBullets: 1
+          fragRandomSpread: 0
+          fragAngle: 90
+          fragBullet: {
+            type: LaserBulletType
+            damage: 1
+            pierceCap: 3
+            lifetime: 60
+            length: 60
+            lengthFalloff: 0.8
+            width: 64
+            sideLength: 0
+            colors: [
+              de7a4044,
+              de7a40,
+              ffffff
+            ]
+          }
+        }
+        {
+          type: BulletType
+          lifetime: 0
+          speed: 0
+          keepVelocity: false
+          absorbable: false
+          fragBullets: 1
+          fragRandomSpread: 0
+          fragAngle: 150
+          fragBullet: {
+            type: LaserBulletType
+            damage: 1
+            pierceCap: 3
+            lifetime: 60
+            length: 60
+            lengthFalloff: 0.8
+            width: 64
+            sideLength: 0
+            colors: [
+              ded75044,
+              ded750,
+              ffffff
+            ]
+          }
+        }
+        {
+          type: BulletType
+          lifetime: 0
+          speed: 0
+          keepVelocity: false
+          absorbable: false
+          fragBullets: 1
+          fragRandomSpread: 0
+          fragAngle: 210
+          fragBullet: {
+            type: LaserBulletType
+            damage: 1
+            pierceCap: 3
+            lifetime: 60
+            length: 60
+            lengthFalloff: 0.8
+            width: 64
+            sideLength: 0
+            colors: [
+              74cf8444,
+              74cf84,
+              ffffff
+            ]
+          }
+        }
+        {
+          type: BulletType
+          lifetime: 0
+          speed: 0
+          keepVelocity: false
+          absorbable: false
+          fragBullets: 1
+          fragRandomSpread: 0
+          fragAngle: 270
+          fragBullet: {
+            type: LaserBulletType
+            damage: 1
+            pierceCap: 3
+            lifetime: 60
+            length: 60
+            lengthFalloff: 0.8
+            width: 64
+            sideLength: 0
+            colors: [
+              7382f044,
+              7382f0,
+              ffffff
+            ]
+          }
+        }
+        {
+          type: BulletType
+          lifetime: 0
+          speed: 0
+          keepVelocity: false
+          absorbable: false
+          fragBullets: 1
+          fragRandomSpread: 0
+          fragAngle: 330
+          fragBullet: {
+            type: LaserBulletType
+            damage: 1
+            pierceCap: 3
+            lifetime: 60
+            length: 60
+            lengthFalloff: 0.8
+            width: 64
+            sideLength: 0
+            colors: [
+              be92f744,
+              be92f7,
+              ffffff
+            ]
+          }
+        }
+        {
+          type: BulletType
+          lifetime: 0
+          speed: 0
+          keepVelocity: false
+          absorbable: false
+          collides: false
+          hittable: false
+          reflectable: false
+          fragBullets: 6
+          fragSpread: 60
+          fragRandomSpread: 0
+          fragAngle: -20
+          fragBullet: {
+            type: ContinuousFlameBulletType
+            lifetime: 30
+            length: 180
+            width: 12
+            damage: 1
+            hitEffect: none
+            colors: [
+              e6555533,
+              e6555566,
+              e6555599,
+              e65555bb,
+              ffffff
+            ]
+          }
+        }
+        {
+          type: BulletType
+          lifetime: 5
+          speed: 0
+          keepVelocity: false
+          absorbable: false
+          collides: false
+          hittable: false
+          reflectable: false
+          fragBullets: 6
+          fragSpread: 60
+          fragRandomSpread: 0
+          fragAngle: -12
+          fragBullet: {
+            type: ContinuousFlameBulletType
+            lifetime: 30
+            length: 180
+            width: 12
+            damage: 1
+            hitEffect: none
+            colors: [
+              de7a4033,
+              de7a4066,
+              de7a4099,
+              de7a40bb,
+              ffffff
+            ]
+          }
+        }
+        {
+          type: BulletType
+          lifetime: 10
+          speed: 0
+          keepVelocity: false
+          absorbable: false
+          collides: false
+          hittable: false
+          reflectable: false
+          fragBullets: 6
+          fragSpread: 60
+          fragRandomSpread: 0
+          fragAngle: -4
+          fragBullet: {
+            type: ContinuousFlameBulletType
+            lifetime: 30
+            length: 180
+            width: 12
+            damage: 1
+            hitEffect: none
+            colors: [
+              ded75033,
+              ded75066,
+              ded75099,
+              ded750bb,
+              ffffff
+            ]
+          }
+        }
+        {
+          type: BulletType
+          lifetime: 15
+          speed: 0
+          keepVelocity: false
+          absorbable: false
+          collides: false
+          hittable: false
+          reflectable: false
+          fragBullets: 6
+          fragSpread: 60
+          fragRandomSpread: 0
+          fragAngle: 4
+          fragBullet: {
+            type: ContinuousFlameBulletType
+            lifetime: 30
+            length: 180
+            width: 12
+            damage: 1
+            hitEffect: none
+            colors: [
+              74cf8433,
+              74cf8466,
+              74cf8499,
+              74cf84bb,
+              ffffff
+            ]
+          }
+        }
+        {
+          type: BulletType
+          lifetime: 20
+          speed: 0
+          keepVelocity: false
+          absorbable: false
+          collides: false
+          hittable: false
+          reflectable: false
+          fragBullets: 6
+          fragSpread: 60
+          fragRandomSpread: 0
+          fragAngle: 12
+          fragBullet: {
+            type: ContinuousFlameBulletType
+            lifetime: 30
+            length: 180
+            width: 12
+            damage: 1
+            hitEffect: none
+            colors: [
+              7382f033,
+              7382f066,
+              7382f099,
+              7382f0bb,
+              ffffff
+            ]
+          }
+        }
+        {
+          type: BulletType
+          lifetime: 25
+          speed: 0
+          keepVelocity: false
+          absorbable: false
+          collides: false
+          hittable: false
+          reflectable: false
+          fragBullets: 6
+          fragSpread: 60
+          fragRandomSpread: 0
+          fragAngle: 20
+          fragBullet: {
+            type: ContinuousFlameBulletType
+            lifetime: 30
+            length: 180
+            width: 12
+            damage: 1
+            hitEffect: none
+            colors: [
+              be92f733,
+              be92f766,
+              be92f799,
+              be92f7bb,
+              ffffff
+            ]
+          }
+        }
+      ]
+    }
+  }
+]
+abilities: [
+  {
+    type: MoveEffectAbility
+    y: -16
+    intverval: 1
+    effect: {
+      type: SeqEffect
+      effects: [
+        {
+          particles: 1
+          length: 0
+          cone: 0
+          lifetime: 7
+          sizeFrom: 7.5
+          sizeTo: 6
+          colorFrom: be92f7
+          colorTo: 7382f0
+          layer: 100
+        }
+        {
+          particles: 1
+          length: 0
+          cone: 0
+          lifetime: 7
+          sizeFrom: 6
+          sizeTo: 4.5
+          colorFrom: 7382f0
+          colorTo: 74cf84
+          layer: 100
+        }
+        {
+          particles: 1
+          length: 0
+          cone: 0
+          lifetime: 7
+          sizeFrom: 4.5
+          sizeTo: 3
+          colorFrom: 74cf84
+          colorTo: ded750
+          layer: 100
+        }
+        {
+          particles: 1
+          length: 0
+          cone: 0
+          lifetime: 7
+          sizeFrom: 3
+          sizeTo: 1.5
+          colorFrom: ded750
+          colorTo: de7a40
+          layer: 100
+        }
+        {
+          particles: 1
+          length: 0
+          cone: 0
+          lifetime: 7
+          sizeFrom: 1.5
+          sizeTo: 0
+          colorFrom: de7a40
+          colorTo: e65555
+          layer: 100
+        }
+      ]
+    }
+  }
+]
+deathExplosionEffect: [
+  {
+    type: WaveEffect
+    interp: pow3Out
+    lifetime: 120
+    sizeFrom: 22
+    sizeTo: 120
+    strokeFrom: 20
+    strokeTo: 0
+    colorFrom: e6555533
+    colorTo: e6555533
+    layer: 104
+  }
+  {
+    type: WaveEffect
+    interp: pow3Out
+    lifetime: 120
+    sizeFrom: 24
+    sizeTo: 120
+    strokeFrom: 18
+    strokeTo: 0
+    colorFrom: de7a4055
+    colorTo: de7a4055
+    layer: 105
+  }
+  {
+    type: WaveEffect
+    interp: pow3Out
+    lifetime: 120
+    sizeFrom: 26
+    sizeTo: 120
+    strokeFrom: 16
+    strokeTo: 0
+    colorFrom: ded75077
+    colorTo: ded75077
+    layer: 106
+  }
+  {
+    type: WaveEffect
+    interp: pow3Out
+    lifetime: 120
+    sizeFrom: 28
+    sizeTo: 120
+    strokeFrom: 12
+    strokeTo: 0
+    colorFrom: 74cf8499
+    colorTo: 74cf8499
+    layer: 107
+  }
+  {
+    type: WaveEffect
+    interp: pow3Out
+    lifetime: 120
+    sizeFrom: 30
+    sizeTo: 120
+    strokeFrom: 8
+    strokeTo: 0
+    colorFrom: 7382f0aa
+    colorTo: 7382f0aa
+    layer: 108
+  }
+  {
+    type: WaveEffect
+    interp: pow3Out
+    lifetime: 120
+    sizeFrom: 32
+    sizeTo: 120
+    strokeFrom: 4
+    strokeTo: 0
+    colorFrom: be92f7cc
+    colorTo: be92f7cc
+    layer: 109
+  }
+]
+deathSound: largeExplosion

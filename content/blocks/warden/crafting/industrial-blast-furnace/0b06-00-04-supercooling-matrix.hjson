@@ -24,25 +24,30 @@ requirements: [
   territe-alloy/600
   crystal/100
 ]
-drawer: [
-  {
-  }
-  {
-    type: DrawLiquidTile
-    drawLiquid: 0b19-04-refinery-coolant
-    padding: 3
-  }
-  {
-    type: DrawRegion
-    suffix: -top
-    layer: 30.01
-  }
-  {
-    type: DrawRegion
-    x: 16
-    suffix: -right
-  }
-]
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    -icon
+  ]
+  drawers: [
+    {
+    }
+    {
+      type: DrawRegion
+      suffix: -icon
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: 0b19-04-refinery-coolant
+      padding: 3
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+      layer: 30.01
+    }
+  ]
+}
 breakEffect: [
   {
     type: WaveEffect

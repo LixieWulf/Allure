@@ -17,27 +17,33 @@ generateEffect: {
   sizeInterp: pow2Out
   interp: pow2Out
 }
-drawer: [
-  {
-    type: DrawDefault
-  }
-  {
-    type: DrawBlurSpin
-    suffix: -fan
-    blurThresh: 0.4
-    rotateSpeed: 120
-  }
-  {
-    type: DrawBlurSpin
-    suffix: -fan1
-    blurThresh: 0.75
-    rotateSpeed: 70
-  }
-  {
-    type: DrawRegion
-    suffix: -top
-  }
-]
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    -icon
+  ]
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawBlurSpin
+      suffix: -fan1
+      blurThresh: 0.75
+      rotateSpeed: 70
+    }
+    {
+      type: DrawBlurSpin
+      suffix: -fan
+      blurThresh: 0.4
+      rotateSpeed: 120
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
 consumes: {
   liquid: steam/5
 }

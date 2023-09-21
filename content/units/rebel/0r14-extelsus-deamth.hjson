@@ -8,11 +8,14 @@ speed: 0.2
 rotateSpeed: 0
 template: MissileUnitType
 lowAltitude: true
-lifetime: 45
+lifetime: 91
 drawBody: false
 drawCell: false
 outlines: false
 trailLength: 0
+loopSound: none
+deathExplosionEffect: none
+deathSound: jump
 parts: [
   {
     type: RegionPart
@@ -129,36 +132,13 @@ engines: [
 ]
 weapons: [
   {
-    alwaysShooting: true
-    x: 0
-    mirror: false
-    shootCone: 360
-    shoot: {
-      firstShotDelay: 40
-    }
-    reload: 15
-    shootSound: none
-    bullet: {
-      type: ExplosionBulletType
-      hitEffect: none
-      despawnEffect: none
-      shootEffect: none
-      smokeEffect: none
-      killShooter: false
-      recoil: -1500
-    }
-  }
-  {
-    alwaysShooting: true
+    shootOnDeath: true
     x: 0
     y: -110
     rotate: true
     rotateSpeed: 0
     mirror: false
     shootCone: 360
-    shoot: {
-      firstShotDelay: 40
-    }
     reload: 15
     shootSound: none
     bullet: {
@@ -228,16 +208,13 @@ weapons: [
     }
   }
   {
-    alwaysShooting: true
+    shootOnDeath: true
     x: 22
     y: -101
     rotate: true
     rotateSpeed: 0
     alternate: false
     shootCone: 360
-    shoot: {
-      firstShotDelay: 40
-    }
     reload: 15
     shootSound: none
     bullet: {
@@ -307,16 +284,13 @@ weapons: [
     }
   }
   {
-    alwaysShooting: true
+    shootOnDeath: true
     x: 62
     y: -105
     rotate: true
     rotateSpeed: 0
     alternate: false
     shootCone: 360
-    shoot: {
-      firstShotDelay: 40
-    }
     reload: 15
     shootSound: none
     bullet: {
@@ -388,8 +362,6 @@ weapons: [
 ]
 envEnabled: -1
 envDisabled: 4
-deathSound: none
-deathExplosionEffect: none
 createWreck: false
 createScorch: false
 crashDamageMultiplier: 0

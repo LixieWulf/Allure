@@ -1,0 +1,135 @@
+type: payload
+payloadCapacity: 1024
+squareShape: true
+hitSize: 30
+health: 84000
+armor: 73
+speed: 0.6
+rotateSpeed: 1.3
+rotateMoveFirst: true
+omniMovement: false
+canBoost: true
+riseSpeed: 0.015
+faceTarget: false
+lowAltitude: true
+crawlSlowdown: 1
+drawShields: false
+engineSize: 0
+engines: [
+  {
+    x: 16
+    y: 20
+    radius: 5
+    rotation: 45
+  }
+  {
+    x: 16
+    y: -20
+    radius: 5
+    rotation: 315
+  }
+  {
+    x: -16
+    y: 20
+    radius: 5
+    rotation: 135
+  }
+  {
+    x: -16
+    y: -20
+    radius: 5
+    rotation: 225
+  }
+  {
+    x: 16
+    y: 8
+    radius: 3
+    rotation: 0
+  }
+  {
+    x: 16
+    y: -8
+    radius: 3
+    rotation: 0
+  }
+  {
+    x: -16
+    y: 8
+    radius: 3
+    rotation: 180
+  }
+  {
+    x: -16
+    y: -8
+    radius: 3
+    rotation: 180
+  }
+  {
+    x: 18
+    y: 0
+    radius: 5
+    rotation: 0
+  }
+  {
+    x: -18
+    y: 0
+    radius: 5
+    rotation: 180
+  }
+]
+singleTarget: true
+weapons: [
+  {
+    alwaysShooting: true
+    reload: 5
+    shootStatus: unmoving
+    shootStatusDuration: 10
+    shootSound: none
+    bullet: {
+      type: BulletType
+      insteantDisappear: true
+      lifetime: 0
+      shootEffect: none
+      smokeEffect: none
+      despawnEffect: none
+    }
+  }
+  {
+    type: RepairBeamWeapon
+    name: bulwark-repair-weapon
+    x: 9
+    y: 11
+    shootY: 9
+    rotateSpeed: 1.8
+    baseRotation: -45
+    repairSpeed: 11
+    beamWidth: 1.2
+    bullet: {
+      maxRange: 120
+    }
+  }
+  {
+    type: RepairBeamWeapon
+    name: bulwark-repair-weapon
+    x: 9
+    y: -11
+    shootY: 9
+    rotateSpeed: 1.8
+    baseRotation: -135
+    repairSpeed: 11
+    beamWidth: 1.2
+    bullet: {
+      maxRange: 120
+    }
+  }
+]
+abilities: [
+  {
+    type: ForceFieldAbility
+    radius: 260
+    sides: 8 
+    max: 16000
+    regen: 40
+    cooldown: 900
+  }
+]

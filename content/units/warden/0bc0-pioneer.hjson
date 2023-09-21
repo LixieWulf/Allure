@@ -18,7 +18,8 @@ outlines: false
 drawCell: false 
 buildSpeed: 2.25
 drawBuildBeam: false 
-strafePenalty: 0.1
+strafePenalty: 0.2
+lightRadius: 0
 engines: [
   {
     x: 5
@@ -36,16 +37,24 @@ engines: [
 parts: [
   {
     type: RegionPart
-    outline: false
     layer: 115.02
+    outline: false
   }
-  {
+  { 
     type: RegionPart
     suffix: -flare
     outline: false
     blending: additive
-    layer: 115.03
-    color: 7382f0bb
+    layer: 116
+    color: 7382f0
+  }
+  { 
+    type: RegionPart
+    suffix: -flare
+    outline: false
+    layer: 140
+    color: 7382f025
+    blending: additive
   }
 ]
 weapons: [

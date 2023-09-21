@@ -1,6 +1,7 @@
 type: BurstDrill
 size: 6
 squareSprite: false
+placeableLiquid: true
 drillTime: 240
 liquidCapacity: 3800
 itemCapacity: 100

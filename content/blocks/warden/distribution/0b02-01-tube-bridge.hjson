@@ -6,7 +6,7 @@ requirements: [
   territe-alloy/12
 ]
 category: distribution
-speed: 8.5714
+speed: 7.5
 research: 0b02-00-tube
 breakEffect: {
   type: WaveEffect

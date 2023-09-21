@@ -1,0 +1,21 @@
+type: GenericCrafter
+liquidCapacity: 20
+rotateDraw: false
+rotate: true
+liquidOutputDirections: [0]
+drawer: [
+  {
+  }
+  {
+    type: DrawLiquidOutputs
+    drawGlow: false
+  }
+]
+consumes: {
+  power: 8
+  liquids: [
+    thermal-gas/0.5
+  ]
+}
+outputLiquid: thermal-fluid/0.5
+buildVisibility: sandboxOnly

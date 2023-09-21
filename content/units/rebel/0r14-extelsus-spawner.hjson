@@ -2,7 +2,7 @@ type: missile
 template: MissileUnitType
 lifetime: 1
 deathExplosionEffect: none
-deathSound: none
+deathSound: jump
 weapons: [
   {
     shootOnDeath: true

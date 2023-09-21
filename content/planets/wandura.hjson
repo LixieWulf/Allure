@@ -46,7 +46,7 @@ orbitTime: 12000
 rotateTime: 5000
 //add tidalLock: true and updateLighting: false to make a planet's daylight not move
 //whether this planet can be selected, ever
-accessible: false
+accessible: true
 //whether to allow launching to numbered sectors - set to false for erekir sector behaviour
 allowLaunchToNumbered: false
 //visual mesh made of hexagons - note that JSON only supports NoiseMesh and HexSkyMesh
@@ -58,15 +58,15 @@ mesh: [
     //number of hexagons - like sectors, this is exponential, so beware of frying your GPU (although your GPU can handle way more hexagons here)
     divisions: 5
     //mesh size - 1 is serpulo
-    radius: 0.91
+    radius: 0.94
     //first colour to use 
-    color1: 596ab8
+    color1: 28a699
     //second
-    color2: 596ab8
+    color2: 28a699
     //mesh shape values - just mess around with these until they stop exploding, i still do not know how they work
     octaves: 1
-    persistence: 0.01
-    scale: 0.01
+    persistence: 0.0001
+    scale: 0.0001
     mag: 1
     //these control how the two colours behave on the mesh
     coct: 1
@@ -77,13 +77,28 @@ mesh: [
   {
     type: NoiseMesh
     divisions: 6
-    radius: 0.945
+    radius: 0.94
+    color1: d3ae8d
+    color2: 9192a6
+    octaves: 4.6
+    persistence: 0.9
+    scale: 0.7
+    mag: 1
+    coct: 1
+    cper: 1
+    cscl: 1.8
+    cthresh: 1
+  }
+  {
+    type: NoiseMesh
+    divisions: 6
+    radius: 0.895
     color1: 6aa95e
     color2: 80cb71
     octaves: 4.6
     persistence: 0.9
     scale: 0.7
-    mag: 1
+    mag: 1.5
     coct: 4
     cper: 1
     cscl: 1.8
@@ -93,15 +108,15 @@ mesh: [
     type: NoiseMesh
     divisions: 6
     radius: 0.83
-    color1: 7a7a7a
-    color2: 7a7a7a
+    color1: c1c4cb
+    color2: 525252
     octaves: 4.6
     persistence: 0.9
     scale: 0.7
     mag: 2.2
     coct: 4
     cper: 1
-    cscl: 1.8
+    cscl: 0.7
     cthresh: 1
   }
   {
@@ -114,21 +129,6 @@ mesh: [
     persistence: 0.9
     scale: 0.7
     mag: 3.3
-    coct: 4
-    cper: 1
-    cscl: 1.8
-    cthresh: 1
-  }
-  {
-    type: NoiseMesh
-    divisions: 6
-    radius: 0.925
-    color1: a6896f
-    color2: d3ae8d
-    octaves: 4.6
-    persistence: 0.65
-    scale: 0.6
-    mag: 1
     coct: 4
     cper: 1
     cscl: 1.8
@@ -148,7 +148,7 @@ cloudMesh: [
     color: e8effa88
     //more explodey values, they're even more sensitive here
     octaves: 3
-    persistence: 0.5
+    persistence: 0.3
     scl: 1
     thresh: 0.43
   }
@@ -162,5 +162,16 @@ cloudMesh: [
     persistence: 0.5
     scl: 0.9
     thresh: 0.43
+  }
+  {
+    type: HexSkyMesh
+    speed: -2
+    divisions: 5
+    radius: 0.034
+    color: 35bda8
+    octaves: 0.4
+    persistence: 0.2
+    scl: 0.2
+    thresh: 0.4
   }
 ]

@@ -1,0 +1,9 @@
+type: SeaBush
+lobesMin: 12
+lobesMax: 20
+timeRange: 50
+sclMin: 35
+sclMax: 45
+magMin: 5
+magMax: 10
+buildVisibility: sandboxOnly

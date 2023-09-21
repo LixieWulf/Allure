@@ -1,0 +1,10 @@
+type: ItemTurret
+size: 4
+ammoTypes: {
+  copper: {
+    spawnUnit: exotic-mod-luminance-missile
+  }
+  lead: {
+    spawnUnit: exotic-mod-luminance-lightning
+  }
+}

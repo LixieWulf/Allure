@@ -4,3 +4,6 @@ liquidDrop: water
 status: wet
 speedMultiplier: 0.8
 cacheLayer: water
+attributes: {
+  sand: 2
+}

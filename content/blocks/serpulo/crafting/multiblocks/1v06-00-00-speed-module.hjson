@@ -1,0 +1,14 @@
+type: HeatProducer
+heatOutput: 6
+drawer: [
+  {
+  }
+  {
+    type: DrawHeatOutput
+    drawGlow: false
+  }
+]
+consumes: {
+  power: 3
+}
+buildVisibility: sandboxOnly

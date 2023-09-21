@@ -1,0 +1,17 @@
+type: Wall
+variants: 3
+update: false
+solid: false
+breakable: true
+destructible: false
+drawTeamOverlay: false
+health: 200
+armor: 30
+customShadow: true
+targetable: false
+underBullets: true
+buildVisibility: sandboxOnly
+instantDeconstruct: true
+alwaysReplace: true
+breakSound: plantBreak
+breakEffect: breakProp

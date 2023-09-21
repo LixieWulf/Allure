@@ -1,7 +1,13 @@
 research: {
   root: true
-  planet: serpulo
+  planet: wandura
   name: Warden
-  requiresUnlock: false
+  requiresUnlock: true
+  objectives: [
+    {
+      type: SectorComplete
+      preset: exotic-mod-glisteningOcean
+    }
+  ]
 }
 show: false

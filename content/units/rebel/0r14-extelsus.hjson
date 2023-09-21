@@ -724,7 +724,7 @@ weapons: [
           absorbable: false
           speed: 4
           lifetime: 240
-          damage: 70
+          damage: 160
           pierce: true
           pierceBuilding: true
           hitEffect: none

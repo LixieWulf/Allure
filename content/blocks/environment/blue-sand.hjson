@@ -1,8 +1,0 @@
-type: Floor
-itemDrop: sand
-playerUnmineable: true
-attributes: {
-  oil: 0.4
-  sand: 1.7
-  water: -0.3
-}

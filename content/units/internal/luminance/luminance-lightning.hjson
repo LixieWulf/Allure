@@ -1,0 +1,1574 @@
+//disclaimer: none of luminances code is meant to be readable, if you are looking for examples DO NOT LOOK HERE
+//using a missile because of the unholy length of this attacks code 
+type: missile
+template: MissileUnitType
+lifetime: 0
+speed: 0
+weapons: [
+  {
+    controllable: false
+    shootCone: 360
+    shootOnDeath: true
+    shootSound: none
+    bullet: {
+      type: BulletType
+      keepVelocity: false
+      spawnBullets: [
+        {
+          type: BulletType
+          keepVelocity: false
+          speed: 0
+          lifetime: 50
+          fragBullets: 1
+          fragRandomSpread: 0
+          fragVelocityMin: 1
+          fragVelocityMax: 1
+          fragBullet: {
+            type: RailBulletType
+            length: 90 
+            damage: 1
+            pierceDamageFactor: 0
+            hitEffect: hitLancer
+            pierceEffect: none
+          }
+        }
+      ]
+      speed: 18
+      lifetime: 5
+      damage: 0
+      shootEffect: {
+        type: SeqEffect
+        startDelay: 55
+        effects: [
+          {
+            length: 0.01
+            cone: 0
+            cap: false
+            particles: 1
+            line: true
+            lifetime: 20
+            lenFrom: 93
+            lenTo: 93
+            strokeFrom: 12
+            strokeTo: 10
+            colorFrom: ffffff
+            colorTo: be92f7
+          }
+          {
+            length: 0.01
+            cone: 0
+            cap: false
+            particles: 1
+            line: true
+            lifetime: 20
+            lenFrom: 93
+            lenTo: 93
+            strokeFrom: 10
+            strokeTo: 8
+            colorFrom: be92f7
+            colorTo: 7382f0
+          }
+          {
+            length: 0.01
+            cone: 0
+            cap: false
+            particles: 1
+            line: true
+            lifetime: 20
+            lenFrom: 93
+            lenTo: 93
+            strokeFrom: 8
+            strokeTo: 6
+            colorFrom: 7382f0
+            colorTo: 74cf84
+          }
+          {
+            length: 0.01
+            cone: 0
+            cap: false
+            particles: 1
+            line: true
+            lifetime: 20
+            lenFrom: 93
+            lenTo: 93
+            strokeFrom: 6
+            strokeTo: 4
+            colorFrom: 74cf84
+            colorTo: ded750
+          }
+          {
+            length: 0.01
+            cone: 0
+            cap: false
+            particles: 1
+            line: true
+            lifetime: 20
+            lenFrom: 93
+            lenTo: 93
+            strokeFrom: 4
+            strokeTo: 2
+            colorFrom: ded750
+            colorTo: de7a40
+          }
+          {
+            length: 0.01
+            cone: 0
+            cap: false
+            particles: 1
+            line: true
+            lifetime: 20
+            lenFrom: 93
+            lenTo: 93
+            strokeFrom: 2
+            strokeTo: 0
+            colorFrom: de7a40
+            colorTo: e65555
+          }
+        ]
+      }
+      setDefaults: false
+      despawnHit: false
+      fragOnHit: false
+      fragBullets: 1
+      fragRandomSpread: 45
+      fragAngle: 22.5
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragBullet: {
+        type: BulletType
+        keepVelocity: false
+        spawnBullets: [
+          {
+            type: BulletType
+            keepVelocity: false
+            speed: 0
+            lifetime: 45
+            fragBullets: 1
+            fragRandomSpread: 0
+            fragVelocityMin: 1
+            fragVelocityMax: 1
+            fragBullet: {
+              type: RailBulletType
+              length: 90 
+              damage: 1
+              pierceDamageFactor: 0
+              hitEffect: hitLancer
+              pierceEffect: none
+            }
+          }
+        ]
+        speed: 0
+        lifetime: 0
+        fragBullets: 1
+        fragRandomSpread: 0
+        fragVelocityMin: 1
+        fragVelocityMax: 1
+        fragBullet: {
+          type: BulletType
+          keepVelocity: false
+          speed: 18
+          lifetime: 5
+          damage: 0
+          setDefaults: false
+          despawnHit: false
+          fragOnHit: false
+          fragBullets: 1
+          fragRandomSpread: 45
+          fragAngle: -22.5
+          fragVelocityMin: 1
+          fragVelocityMax: 1
+          fragBullet: {
+            type: BulletType
+            keepVelocity: false
+            spawnBullets: [
+              {
+                type: BulletType
+                keepVelocity: false
+                speed: 0
+                lifetime: 40
+                fragBullets: 1
+                fragRandomSpread: 0
+                fragVelocityMin: 1
+                fragVelocityMax: 1
+                fragBullet: {
+                  type: RailBulletType
+                  length: 90 
+                  damage: 1
+                  pierceDamageFactor: 0
+                  hitEffect: hitLancer
+                  pierceEffect: none
+                }
+              }
+            ]
+            speed: 0
+            lifetime: 0
+            fragBullets: 1
+            fragRandomSpread: 0
+            fragVelocityMin: 1
+            fragVelocityMax: 1
+            fragBullet: {
+              type: BulletType
+              keepVelocity: false
+              speed: 18
+              lifetime: 5
+              damage: 0
+              setDefaults: false
+              despawnHit: false
+              fragOnHit: false
+              fragBullets: 1
+              fragRandomSpread: 45
+              fragAngle: 22.5
+              fragVelocityMin: 1
+              fragVelocityMax: 1
+              fragBullet: {
+                type: BulletType
+                keepVelocity: false
+                spawnBullets: [
+                  {
+                    type: BulletType
+                    keepVelocity: false
+                    speed: 0
+                    lifetime: 35
+                    fragBullets: 1
+                    fragRandomSpread: 0
+                    fragVelocityMin: 1
+                    fragVelocityMax: 1
+                    fragBullet: {
+                      type: RailBulletType
+                      length: 90 
+                      damage: 1
+                      pierceDamageFactor: 0
+                      hitEffect: hitLancer
+                      pierceEffect: none
+                    }
+                  }
+                ]
+                speed: 0
+                lifetime: 0
+                fragBullets: 1
+                fragRandomSpread: 0
+                fragVelocityMin: 1
+                fragVelocityMax: 1
+                fragBullet: {
+                  type: BulletType
+                  keepVelocity: false
+                  speed: 18
+                  lifetime: 5
+                  damage: 0
+                  setDefaults: false
+                  despawnHit: false
+                  fragOnHit: false
+                  fragBullets: 1
+                  fragRandomSpread: 45
+                  fragAngle: -22.5
+                  fragVelocityMin: 1
+                  fragVelocityMax: 1
+                  fragBullet: {
+                    type: BulletType
+                    keepVelocity: false
+                    spawnBullets: [
+                      {
+                        type: BulletType
+                        keepVelocity: false
+                        speed: 0
+                        lifetime: 30
+                        fragBullets: 1
+                        fragRandomSpread: 0
+                        fragVelocityMin: 1
+                        fragVelocityMax: 1
+                        fragBullet: {
+                          type: RailBulletType
+                          length: 90 
+                          damage: 1
+                          pierceDamageFactor: 0
+                          hitEffect: hitLancer
+                          pierceEffect: none
+                        }
+                      }
+                    ]
+                    speed: 0
+                    lifetime: 0
+                    fragBullets: 1
+                    fragRandomSpread: 0
+                    fragVelocityMin: 1
+                    fragVelocityMax: 1
+                    fragBullet: {
+                      type: BulletType
+                      keepVelocity: false
+                      speed: 18
+                      lifetime: 5
+                      damage: 0
+                      setDefaults: false
+                      despawnHit: false
+                      fragOnHit: false
+                      fragBullets: 1
+                      fragRandomSpread: 45
+                      fragAngle: 22.5
+                      fragVelocityMin: 1
+                      fragVelocityMax: 1
+                      fragBullet: {
+                        type: BulletType
+                        keepVelocity: false
+                        spawnBullets: [
+                          {
+                            type: BulletType
+                            keepVelocity: false
+                            speed: 0
+                            lifetime: 25
+                            fragBullets: 1
+                            fragRandomSpread: 0
+                            fragVelocityMin: 1
+                            fragVelocityMax: 1
+                            fragBullet: {
+                              type: RailBulletType
+                              length: 90 
+                              damage: 1
+                              pierceDamageFactor: 0
+                              hitEffect: hitLancer
+                              pierceEffect: none
+                            }
+                          }
+                        ]
+                        speed: 0
+                        lifetime: 0
+                        fragBullets: 1
+                        fragRandomSpread: 0
+                        fragVelocityMin: 1
+                        fragVelocityMax: 1
+                        fragBullet: {
+                          type: BulletType
+                          keepVelocity: false
+                          speed: 18
+                          lifetime: 5
+                          damage: 0
+                          setDefaults: false
+                          despawnHit: false
+                          fragOnHit: false
+                          fragBullets: 1
+                          fragRandomSpread: 45
+                          fragAngle: -22.5
+                          fragVelocityMin: 1
+                          fragVelocityMax: 1
+                          fragBullet: {
+                            type: BulletType
+                            keepVelocity: false
+                            spawnBullets: [
+                              {
+                                type: BulletType
+                                keepVelocity: false
+                                speed: 0
+                                lifetime: 20
+                                fragBullets: 1
+                                fragRandomSpread: 0
+                                fragVelocityMin: 1
+                                fragVelocityMax: 1
+                                fragBullet: {
+                                  type: RailBulletType
+                                  length: 90 
+                                  damage: 1
+                                  pierceDamageFactor: 0
+                                  hitEffect: hitLancer
+                                  pierceEffect: none
+                                }
+                              }
+                            ]
+                            speed: 0
+                            lifetime: 0
+                            fragBullets: 1
+                            fragRandomSpread: 0
+                            fragVelocityMin: 1
+                            fragVelocityMax: 1
+                            fragBullet: {
+                              type: BulletType
+                              keepVelocity: false
+                              speed: 18
+                              lifetime: 5
+                              damage: 0
+                              setDefaults: false
+                              despawnHit: false
+                              fragOnHit: false
+                              fragBullets: 1
+                              fragRandomSpread: 45
+                              fragAngle: 22.5
+                              fragVelocityMin: 1
+                              fragVelocityMax: 1
+                              fragBullet: {
+                                type: BulletType
+                                keepVelocity: false
+                                speed: 0
+                                lifetime: 0
+                                fragBullets: 1
+                                fragRandomSpread: 0
+                                fragVelocityMin: 1
+                                fragVelocityMax: 1
+                                fragBullet: {
+                                  type: BulletType
+                                  keepVelocity: false
+                                  speed: 18
+                                  lifetime: 5
+                                  damage: 0
+                                  setDefaults: false
+                                  despawnHit: false
+                                  fragOnHit: false
+                                  fragBullets: 1
+                                  fragRandomSpread: 45
+                                  fragAngle: -22.5
+                                  fragVelocityMin: 1
+                                  fragVelocityMax: 1
+                                  fragBullet: {
+                                    type: BulletType
+                                    keepVelocity: false
+                                    spawnBullets: [
+                                      {
+                                        type: BulletType
+                                        keepVelocity: false
+                                        speed: 0
+                                        lifetime: 15
+                                        fragBullets: 1
+                                        fragRandomSpread: 0
+                                        fragVelocityMin: 1
+                                        fragVelocityMax: 1
+                                        fragBullet: {
+                                          type: RailBulletType
+                                          length: 90 
+                                          damage: 1
+                                          pierceDamageFactor: 0
+                                          hitEffect: hitLancer
+                                          pierceEffect: none
+                                        }
+                                      }
+                                    ]
+                                    speed: 0
+                                    lifetime: 0
+                                    fragBullets: 1
+                                    fragRandomSpread: 0
+                                    fragVelocityMin: 1
+                                    fragVelocityMax: 1
+                                    fragBullet: {
+                                      type: BulletType
+                                      keepVelocity: false
+                                      speed: 18
+                                      lifetime: 5
+                                      damage: 0
+                                      setDefaults: false
+                                      despawnHit: false
+                                      fragOnHit: false
+                                      fragBullets: 1
+                                      fragRandomSpread: 45
+                                      fragAngle: 22.5
+                                      fragVelocityMin: 1
+                                      fragVelocityMax: 1
+                                      fragBullet: {
+                                        type: BulletType
+                                        keepVelocity: false
+                                        spawnBullets: [
+                                          {
+                                            type: BulletType
+                                            keepVelocity: false
+                                            speed: 0
+                                            lifetime: 10
+                                            fragBullets: 1
+                                            fragRandomSpread: 0
+                                            fragVelocityMin: 1
+                                            fragVelocityMax: 1
+                                            fragBullet: {
+                                              type: RailBulletType
+                                              length: 90 
+                                              damage: 1
+                                              pierceDamageFactor: 0
+                                              hitEffect: hitLancer
+                                              pierceEffect: none
+                                            }
+                                          }
+                                        ]
+                                        speed: 0
+                                        lifetime: 0
+                                        fragBullets: 1
+                                        fragRandomSpread: 0
+                                        fragVelocityMin: 1
+                                        fragVelocityMax: 1
+                                        fragBullet: {
+                                          type: BulletType
+                                          keepVelocity: false
+                                          speed: 18
+                                          lifetime: 5
+                                          damage: 0
+                                          setDefaults: false
+                                          despawnHit: false
+                                          fragOnHit: false
+                                          fragBullets: 1
+                                          fragRandomSpread: 45
+                                          fragAngle: -22.5
+                                          fragVelocityMin: 1
+                                          fragVelocityMax: 1
+                                          fragBullet: {
+                                            type: BulletType
+                                            keepVelocity: false
+                                            spawnBullets: [
+                                              {
+                                                type: BulletType
+                                                keepVelocity: false
+                                                speed: 0
+                                                lifetime: 5
+                                                fragBullets: 1
+                                                fragRandomSpread: 0
+                                                fragVelocityMin: 1
+                                                fragVelocityMax: 1
+                                                fragBullet: {
+                                                  type: RailBulletType
+                                                  length: 90 
+                                                  damage: 1
+                                                  pierceDamageFactor: 0
+                                                  hitEffect: hitLancer
+                                                  pierceEffect: none
+                                                }
+                                              }
+                                            ]
+                                            speed: 0
+                                            lifetime: 0
+                                            fragBullets: 1
+                                            fragRandomSpread: 0
+                                            fragVelocityMin: 1
+                                            fragVelocityMax: 1
+                                            fragBullet: {
+                                              type: BulletType
+                                              keepVelocity: false
+                                              speed: 18
+                                              lifetime: 5
+                                              damage: 0
+                                              setDefaults: false
+                                              despawnHit: false
+                                              fragOnHit: false
+                                              fragBullets: 1
+                                              fragRandomSpread: 45
+                                              fragAngle: 22.5
+                                              fragVelocityMin: 1
+                                              fragVelocityMax: 1
+                                              fragBullet: {
+                                                type: BulletType
+                                                keepVelocity: false
+                                                spawnBullets: [
+                                                  {
+                                                    type: RailBulletType
+                                                    length: 90 
+                                                    damage: 1
+                                                    pierceDamageFactor: 0
+                                                    hitEffect: hitLancer
+                                                    pierceEffect: none
+                                                  }
+                                                ]
+                                                speed: 0
+                                                lifetime: 0
+                                                hitEffect: {
+                                                  type: SeqEffect
+                                                  effects: [
+                                                    {
+                                                      length: 0.01
+                                                      cone: 0
+                                                      cap: false
+                                                      particles: 1
+                                                      line: true
+                                                      lifetime: 20
+                                                      lenFrom: 93
+                                                      lenTo: 93
+                                                      strokeFrom: 1
+                                                      strokeTo: 0.833
+                                                      colorFrom: ffffff
+                                                      colorTo: be92f7
+                                                    }
+                                                    {
+                                                      length: 0.01
+                                                      cone: 0
+                                                      cap: false
+                                                      particles: 1
+                                                      line: true
+                                                      lifetime: 20
+                                                      lenFrom: 93
+                                                      lenTo: 93
+                                                      strokeFrom: 0.833
+                                                      strokeTo: 0.666
+                                                      colorFrom: be92f7
+                                                      colorTo: 7382f0
+                                                    }
+                                                    {
+                                                      length: 0.01
+                                                      cone: 0
+                                                      cap: false
+                                                      particles: 1
+                                                      line: true
+                                                      lifetime: 20
+                                                      lenFrom: 93
+                                                      lenTo: 93
+                                                      strokeFrom: 0.666
+                                                      strokeTo: 0.5
+                                                      colorFrom: 7382f0
+                                                      colorTo: 74cf84
+                                                    }
+                                                    {
+                                                      length: 0.01
+                                                      cone: 0
+                                                      cap: false
+                                                      particles: 1
+                                                      line: true
+                                                      lifetime: 20
+                                                      lenFrom: 93
+                                                      lenTo: 93
+                                                      strokeFrom: 0.5
+                                                      strokeTo: 0.333
+                                                      colorFrom: 74cf84
+                                                      colorTo: ded750
+                                                    }
+                                                    {
+                                                      length: 0.01
+                                                      cone: 0
+                                                      cap: false
+                                                      particles: 1
+                                                      line: true
+                                                      lifetime: 20
+                                                      lenFrom: 93
+                                                      lenTo: 93
+                                                      strokeFrom: 0.333
+                                                      strokeTo: 0.166
+                                                      colorFrom: ded750
+                                                      colorTo: de7a40
+                                                    }
+                                                    {
+                                                      length: 0.01
+                                                      cone: 0
+                                                      cap: false
+                                                      particles: 1
+                                                      line: true
+                                                      lifetime: 20
+                                                      lenFrom: 93
+                                                      lenTo: 93
+                                                      strokeFrom: 0.166
+                                                      strokeTo: 0
+                                                      colorFrom: de7a40
+                                                      colorTo: e65555
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            }
+                                            hitEffect: {
+                                              type: SeqEffect
+                                              startDelay: 5
+                                              effects: [
+                                                {
+                                                  length: 0.01
+                                                  cone: 0
+                                                  cap: false
+                                                  particles: 1
+                                                  line: true
+                                                  lifetime: 20
+                                                  lenFrom: 93
+                                                  lenTo: 93
+                                                  strokeFrom: 2
+                                                  strokeTo: 1.666
+                                                  colorFrom: ffffff
+                                                  colorTo: be92f7
+                                                }
+                                                {
+                                                  length: 0.01
+                                                  cone: 0
+                                                  cap: false
+                                                  particles: 1
+                                                  line: true
+                                                  lifetime: 20
+                                                  lenFrom: 93
+                                                  lenTo: 93
+                                                  strokeFrom: 1.666
+                                                  strokeTo: 1.333
+                                                  colorFrom: be92f7
+                                                  colorTo: 7382f0
+                                                }
+                                                {
+                                                  length: 0.01
+                                                  cone: 0
+                                                  cap: false
+                                                  particles: 1
+                                                  line: true
+                                                  lifetime: 20
+                                                  lenFrom: 93
+                                                  lenTo: 93
+                                                  strokeFrom: 1.333
+                                                  strokeTo: 1
+                                                  colorFrom: 7382f0
+                                                  colorTo: 74cf84
+                                                }
+                                                {
+                                                  length: 0.01
+                                                  cone: 0
+                                                  cap: false
+                                                  particles: 1
+                                                  line: true
+                                                  lifetime: 20
+                                                  lenFrom: 93
+                                                  lenTo: 93
+                                                  strokeFrom: 1
+                                                  strokeTo: 0.666
+                                                  colorFrom: 74cf84
+                                                  colorTo: ded750
+                                                }
+                                                {
+                                                  length: 0.01
+                                                  cone: 0
+                                                  cap: false
+                                                  particles: 1
+                                                  line: true
+                                                  lifetime: 20
+                                                  lenFrom: 93
+                                                  lenTo: 93
+                                                  strokeFrom: 0.666
+                                                  strokeTo: 0.333
+                                                  colorFrom: ded750
+                                                  colorTo: de7a40
+                                                }
+                                                {
+                                                  length: 0.01
+                                                  cone: 0
+                                                  cap: false
+                                                  particles: 1
+                                                  line: true
+                                                  lifetime: 20
+                                                  lenFrom: 93
+                                                  lenTo: 93
+                                                  strokeFrom: 0.333
+                                                  strokeTo: 0
+                                                  colorFrom: de7a40
+                                                  colorTo: e65555
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        }
+                                        hitEffect: {
+                                          type: SeqEffect
+                                          startDelay: 10
+                                          effects: [
+                                            {
+                                              length: 0.01
+                                              cone: 0
+                                              cap: false
+                                              particles: 1
+                                              line: true
+                                              lifetime: 20
+                                              lenFrom: 93
+                                              lenTo: 93
+                                              strokeFrom: 3
+                                              strokeTo: 2.5
+                                              colorFrom: ffffff
+                                              colorTo: be92f7
+                                            }
+                                            {
+                                              length: 0.01
+                                              cone: 0
+                                              cap: false
+                                              particles: 1
+                                              line: true
+                                              lifetime: 20
+                                              lenFrom: 93
+                                              lenTo: 93
+                                              strokeFrom: 2.5
+                                              strokeTo: 2
+                                              colorFrom: be92f7
+                                              colorTo: 7382f0
+                                            }
+                                            {
+                                              length: 0.01
+                                              cone: 0
+                                              cap: false
+                                              particles: 1
+                                              line: true
+                                              lifetime: 20
+                                              lenFrom: 93
+                                              lenTo: 93
+                                              strokeFrom: 2
+                                              strokeTo: 1.5
+                                              colorFrom: 7382f0
+                                              colorTo: 74cf84
+                                            }
+                                            {
+                                              length: 0.01
+                                              cone: 0
+                                              cap: false
+                                              particles: 1
+                                              line: true
+                                              lifetime: 20
+                                              lenFrom: 93
+                                              lenTo: 93
+                                              strokeFrom: 1.5
+                                              strokeTo: 1
+                                              colorFrom: 74cf84
+                                              colorTo: ded750
+                                            }
+                                            {
+                                              length: 0.01
+                                              cone: 0
+                                              cap: false
+                                              particles: 1
+                                              line: true
+                                              lifetime: 20
+                                              lenFrom: 93
+                                              lenTo: 93
+                                              strokeFrom: 1
+                                              strokeTo: 0.5
+                                              colorFrom: ded750
+                                              colorTo: de7a40
+                                            }
+                                            {
+                                              length: 0.01
+                                              cone: 0
+                                              cap: false
+                                              particles: 1
+                                              line: true
+                                              lifetime: 20
+                                              lenFrom: 93
+                                              lenTo: 93
+                                              strokeFrom: 0.5
+                                              strokeTo: 0
+                                              colorFrom: de7a40
+                                              colorTo: e65555
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    }
+                                    hitEffect: {
+                                      type: SeqEffect
+                                      startDelay: 15
+                                      effects: [
+                                        {
+                                          length: 0.01
+                                          cone: 0
+                                          cap: false
+                                          particles: 1
+                                          line: true
+                                          lifetime: 20
+                                          lenFrom: 93
+                                          lenTo: 93
+                                          strokeFrom: 4
+                                          strokeTo: 3.333
+                                          colorFrom: ffffff
+                                          colorTo: be92f7
+                                        }
+                                        {
+                                          length: 0.01
+                                          cone: 0
+                                          cap: false
+                                          particles: 1
+                                          line: true
+                                          lifetime: 20
+                                          lenFrom: 93
+                                          lenTo: 93
+                                          strokeFrom: 3.333
+                                          strokeTo: 2.666
+                                          colorFrom: be92f7
+                                          colorTo: 7382f0
+                                        }
+                                        {
+                                          length: 0.01
+                                          cone: 0
+                                          cap: false
+                                          particles: 1
+                                          line: true
+                                          lifetime: 20
+                                          lenFrom: 93
+                                          lenTo: 93
+                                          strokeFrom: 2.666
+                                          strokeTo: 2
+                                          colorFrom: 7382f0
+                                          colorTo: 74cf84
+                                        }
+                                        {
+                                          length: 0.01
+                                          cone: 0
+                                          cap: false
+                                          particles: 1
+                                          line: true
+                                          lifetime: 20
+                                          lenFrom: 93
+                                          lenTo: 93
+                                          strokeFrom: 2
+                                          strokeTo: 1.333
+                                          colorFrom: 74cf84
+                                          colorTo: ded750
+                                        }
+                                        {
+                                          length: 0.01
+                                          cone: 0
+                                          cap: false
+                                          particles: 1
+                                          line: true
+                                          lifetime: 20
+                                          lenFrom: 93
+                                          lenTo: 93
+                                          strokeFrom: 1.333
+                                          strokeTo: 0.666
+                                          colorFrom: ded750
+                                          colorTo: de7a40
+                                        }
+                                        {
+                                          length: 0.01
+                                          cone: 0
+                                          cap: false
+                                          particles: 1
+                                          line: true
+                                          lifetime: 20
+                                          lenFrom: 93
+                                          lenTo: 93
+                                          strokeFrom: 0.666
+                                          strokeTo: 0
+                                          colorFrom: de7a40
+                                          colorTo: e65555
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                                hitEffect: { 
+                                  type: SeqEffect
+                                  startDelay: 20
+                                  effects: [
+                                    {
+                                      length: 0.01
+                                      cone: 0
+                                      cap: false
+                                      particles: 1
+                                      line: true
+                                      lifetime: 20
+                                      lenFrom: 93
+                                      lenTo: 93
+                                      strokeFrom: 5
+                                      strokeTo: 4.166
+                                      colorFrom: ffffff
+                                      colorTo: be92f7
+                                    }
+                                    {
+                                      length: 0.01
+                                      cone: 0
+                                      cap: false
+                                      particles: 1
+                                      line: true
+                                      lifetime: 20
+                                      lenFrom: 93
+                                      lenTo: 93
+                                      strokeFrom: 4.166
+                                      strokeTo: 3.333
+                                      colorFrom: be92f7
+                                      colorTo: 7382f0
+                                    }
+                                    {
+                                      length: 0.01
+                                      cone: 0
+                                      cap: false
+                                      particles: 1
+                                      line: true
+                                      lifetime: 20
+                                      lenFrom: 93
+                                      lenTo: 93
+                                      strokeFrom: 3.333
+                                      strokeTo: 2.5
+                                      colorFrom: 7382f0
+                                      colorTo: 74cf84
+                                    }
+                                    {
+                                      length: 0.01
+                                      cone: 0
+                                      cap: false
+                                      particles: 1
+                                      line: true
+                                      lifetime: 20
+                                      lenFrom: 93
+                                      lenTo: 93
+                                      strokeFrom: 2.5
+                                      strokeTo: 1.666
+                                      colorFrom: 74cf84
+                                      colorTo: ded750
+                                    }
+                                    {
+                                      length: 0.01
+                                      cone: 0
+                                      cap: false
+                                      particles: 1
+                                      line: true
+                                      lifetime: 20
+                                      lenFrom: 93
+                                      lenTo: 93
+                                      strokeFrom: 1.666
+                                      strokeTo: 0.833
+                                      colorFrom: ded750
+                                      colorTo: de7a40
+                                    }
+                                    {
+                                      length: 0.01
+                                      cone: 0
+                                      cap: false
+                                      particles: 1
+                                      line: true
+                                      lifetime: 20
+                                      lenFrom: 93
+                                      lenTo: 93
+                                      strokeFrom: 0.833
+                                      strokeTo: 0
+                                      colorFrom: de7a40
+                                      colorTo: e65555
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                            hitEffect: {
+                              type: SeqEffect
+                              startDelay: 25
+                              effects: [
+                                {
+                                  length: 0.01
+                                  cone: 0
+                                  cap: false
+                                  particles: 1
+                                  line: true
+                                  lifetime: 20
+                                  lenFrom: 93
+                                  lenTo: 93
+                                  strokeFrom: 6
+                                  strokeTo: 5
+                                  colorFrom: ffffff
+                                  colorTo: be92f7
+                                }
+                                {
+                                  length: 0.01
+                                  cone: 0
+                                  cap: false
+                                  particles: 1
+                                  line: true
+                                  lifetime: 20
+                                  lenFrom: 93
+                                  lenTo: 93
+                                  strokeFrom: 5
+                                  strokeTo: 4
+                                  colorFrom: be92f7
+                                  colorTo: 7382f0
+                                }
+                                {
+                                  length: 0.01
+                                  cone: 0
+                                  cap: false
+                                  particles: 1
+                                  line: true
+                                  lifetime: 20
+                                  lenFrom: 93
+                                  lenTo: 93
+                                  strokeFrom: 4
+                                  strokeTo: 3
+                                  colorFrom: 7382f0
+                                  colorTo: 74cf84
+                                }
+                                {
+                                  length: 0.01
+                                  cone: 0
+                                  cap: false
+                                  particles: 1
+                                  line: true
+                                  lifetime: 20
+                                  lenFrom: 93
+                                  lenTo: 93
+                                  strokeFrom: 3
+                                  strokeTo: 2
+                                  colorFrom: 74cf84
+                                  colorTo: ded750
+                                }
+                                {
+                                  length: 0.01
+                                  cone: 0
+                                  cap: false
+                                  particles: 1
+                                  line: true
+                                  lifetime: 20
+                                  lenFrom: 93
+                                  lenTo: 93
+                                  strokeFrom: 2
+                                  strokeTo: 1
+                                  colorFrom: ded750
+                                  colorTo: de7a40
+                                }
+                                {
+                                  length: 0.01
+                                  cone: 0
+                                  cap: false
+                                  particles: 1
+                                  line: true
+                                  lifetime: 20
+                                  lenFrom: 93
+                                  lenTo: 93
+                                  strokeFrom: 1
+                                  strokeTo: 0
+                                  colorFrom: de7a40
+                                  colorTo: e65555
+                                }
+                              ]
+                            }
+                          }
+                        }
+                        hitEffect: {
+                          type: SeqEffect
+                          startDelay: 30
+                          effects: [
+                            {
+                              length: 0.01
+                              cone: 0
+                              cap: false
+                              particles: 1
+                              line: true
+                              lifetime: 20
+                              lenFrom: 93
+                              lenTo: 93
+                              strokeFrom: 7
+                              strokeTo: 5.833
+                              colorFrom: ffffff
+                              colorTo: be92f7
+                            }
+                            {
+                              length: 0.01
+                              cone: 0
+                              cap: false
+                              particles: 1
+                              line: true
+                              lifetime: 20
+                              lenFrom: 93
+                              lenTo: 93
+                              strokeFrom: 5.833
+                              strokeTo: 4.666
+                              colorFrom: be92f7
+                              colorTo: 7382f0
+                            }
+                            {
+                              length: 0.01
+                              cone: 0
+                              cap: false
+                              particles: 1
+                              line: true
+                              lifetime: 20
+                              lenFrom: 93
+                              lenTo: 93
+                              strokeFrom: 4.666
+                              strokeTo: 3.5
+                              colorFrom: 7382f0
+                              colorTo: 74cf84
+                            }
+                            {
+                              length: 0.01
+                              cone: 0
+                              cap: false
+                              particles: 1
+                              line: true
+                              lifetime: 20
+                              lenFrom: 93
+                              lenTo: 93
+                              strokeFrom: 3.5
+                              strokeTo: 2.333
+                              colorFrom: 74cf84
+                              colorTo: ded750
+                            }
+                            {
+                              length: 0.01
+                              cone: 0
+                              cap: false
+                              particles: 1
+                              line: true
+                              lifetime: 20
+                              lenFrom: 93
+                              lenTo: 93
+                              strokeFrom: 2.333
+                              strokeTo: 1.166
+                              colorFrom: ded750
+                              colorTo: de7a40
+                            }
+                            {
+                              length: 0.01
+                              cone: 0
+                              cap: false
+                              particles: 1
+                              line: true
+                              lifetime: 20
+                              lenFrom: 93
+                              lenTo: 93
+                              strokeFrom: 1.166
+                              strokeTo: 0
+                              colorFrom: de7a40
+                              colorTo: e65555
+                            }
+                          ]
+                        }
+                      }
+                    }
+                    hitEffect: {
+                      type: SeqEffect
+                      startDelay: 35
+                      effects: [
+                        {
+                          length: 0.01
+                          cone: 0
+                          cap: false
+                          particles: 1
+                          line: true
+                          lifetime: 20
+                          lenFrom: 93
+                          lenTo: 93
+                          strokeFrom: 8
+                          strokeTo: 6.666
+                          colorFrom: ffffff
+                          colorTo: be92f7
+                        }
+                        {
+                          length: 0.01
+                          cone: 0
+                          cap: false
+                          particles: 1
+                          line: true
+                          lifetime: 20
+                          lenFrom: 93
+                          lenTo: 93
+                          strokeFrom: 6.666
+                          strokeTo: 5.333
+                          colorFrom: be92f7
+                          colorTo: 7382f0
+                        }
+                        {
+                          length: 0.01
+                          cone: 0
+                          cap: false
+                          particles: 1
+                          line: true
+                          lifetime: 20
+                          lenFrom: 93
+                          lenTo: 93
+                          strokeFrom: 5.333
+                          strokeTo: 4
+                          colorFrom: 7382f0
+                          colorTo: 74cf84
+                        }
+                        {
+                          length: 0.01
+                          cone: 0
+                          cap: false
+                          particles: 1
+                          line: true
+                          lifetime: 20
+                          lenFrom: 93
+                          lenTo: 93
+                          strokeFrom: 4
+                          strokeTo: 2.666
+                          colorFrom: 74cf84
+                          colorTo: ded750
+                        }
+                        {
+                          length: 0.01
+                          cone: 0
+                          cap: false
+                          particles: 1
+                          line: true
+                          lifetime: 20
+                          lenFrom: 93
+                          lenTo: 93
+                          strokeFrom: 2.666
+                          strokeTo: 1.333
+                          colorFrom: ded750
+                          colorTo: de7a40
+                        }
+                        {
+                          length: 0.01
+                          cone: 0
+                          cap: false
+                          particles: 1
+                          line: true
+                          lifetime: 20
+                          lenFrom: 93
+                          lenTo: 93
+                          strokeFrom: 1.333
+                          strokeTo: 0
+                          colorFrom: de7a40
+                          colorTo: e65555
+                        }
+                      ]
+                    }
+                  }
+                }
+                hitEffect: {
+                  type: SeqEffect
+                  startDelay: 40
+                  effects: [
+                    {
+                      length: 0.01
+                      cone: 0
+                      cap: false
+                      particles: 1
+                      line: true
+                      lifetime: 20
+                      lenFrom: 93
+                      lenTo: 93
+                      strokeFrom: 9
+                      strokeTo: 7.5
+                      colorFrom: ffffff
+                      colorTo: be92f7
+                    }
+                    {
+                      length: 0.01
+                      cone: 0
+                      cap: false
+                      particles: 1
+                      line: true
+                      lifetime: 20
+                      lenFrom: 93
+                      lenTo: 93
+                      strokeFrom: 7.5
+                      strokeTo: 6
+                      colorFrom: be92f7
+                      colorTo: 7382f0
+                    }
+                    {
+                      length: 0.01
+                      cone: 0
+                      cap: false
+                      particles: 1
+                      line: true
+                      lifetime: 20
+                      lenFrom: 93
+                      lenTo: 93
+                      strokeFrom: 6
+                      strokeTo: 4.5
+                      colorFrom: 7382f0
+                      colorTo: 74cf84
+                    }
+                    {
+                      length: 0.01
+                      cone: 0
+                      cap: false
+                      particles: 1
+                      line: true
+                      lifetime: 20
+                      lenFrom: 93
+                      lenTo: 93
+                      strokeFrom: 4.5
+                      strokeTo: 3
+                      colorFrom: 74cf84
+                      colorTo: ded750
+                    }
+                    {
+                      length: 0.01
+                      cone: 0
+                      cap: false
+                      particles: 1
+                      line: true
+                      lifetime: 20
+                      lenFrom: 93
+                      lenTo: 93
+                      strokeFrom: 3
+                      strokeTo: 1.5
+                      colorFrom: ded750
+                      colorTo: de7a40
+                    }
+                    {
+                      length: 0.01
+                      cone: 0
+                      cap: false
+                      particles: 1
+                      line: true
+                      lifetime: 20
+                      lenFrom: 93
+                      lenTo: 93
+                      strokeFrom: 1.5
+                      strokeTo: 0
+                      colorFrom: de7a40
+                      colorTo: e65555
+                    }
+                  ]
+                }
+              }    
+            }
+            hitEffect: {
+              type: SeqEffect
+              startDelay: 45
+              effects: [
+                {
+                  length: 0.01
+                  cone: 0
+                  cap: false
+                  particles: 1
+                  line: true
+                  lifetime: 20
+                  lenFrom: 93
+                  lenTo: 93
+                  strokeFrom: 10
+                  strokeTo: 8.333
+                  colorFrom: ffffff
+                  colorTo: be92f7
+                }
+                {
+                  length: 0.01
+                  cone: 0
+                  cap: false
+                  particles: 1
+                  line: true
+                  lifetime: 20
+                  lenFrom: 93
+                  lenTo: 93
+                  strokeFrom: 8.333
+                  strokeTo: 6.666
+                  colorFrom: be92f7
+                  colorTo: 7382f0
+                }
+                {
+                  length: 0.01
+                  cone: 0
+                  cap: false
+                  particles: 1
+                  line: true
+                  lifetime: 20
+                  lenFrom: 93
+                  lenTo: 93
+                  strokeFrom: 6.666
+                  strokeTo: 5
+                  colorFrom: 7382f0
+                  colorTo: 74cf84
+                }
+                {
+                  length: 0.01
+                  cone: 0
+                  cap: false
+                  particles: 1
+                  line: true
+                  lifetime: 20
+                  lenFrom: 93
+                  lenTo: 93
+                  strokeFrom: 5
+                  strokeTo: 3.333
+                  colorFrom: 74cf84
+                  colorTo: ded750
+                }
+                {
+                  length: 0.01
+                  cone: 0
+                  cap: false
+                  particles: 1
+                  line: true
+                  lifetime: 20
+                  lenFrom: 93
+                  lenTo: 93
+                  strokeFrom: 3.333
+                  strokeTo: 1.666
+                  colorFrom: ded750
+                  colorTo: de7a40
+                }
+                {
+                  length: 0.01
+                  cone: 0
+                  cap: false
+                  particles: 1
+                  line: true
+                  lifetime: 20
+                  lenFrom: 93
+                  lenTo: 93
+                  strokeFrom: 1.666
+                  strokeTo: 0
+                  colorFrom: de7a40
+                  colorTo: e65555
+                }
+              ]
+            }
+          }
+        }
+        hitEffect: {
+          type: SeqEffect
+          startDelay: 50
+          effects: [
+            {
+              length: 0.01
+              cone: 0
+              cap: false
+              particles: 1
+              line: true
+              lifetime: 20
+              lenFrom: 93
+              lenTo: 93
+              strokeFrom: 11
+              strokeTo: 9.166
+              colorFrom: ffffff
+              colorTo: be92f7
+            }
+            {
+              length: 0.01
+              cone: 0
+              cap: false
+              particles: 1
+              line: true
+              lifetime: 20
+              lenFrom: 93
+              lenTo: 93
+              strokeFrom: 9.166
+              strokeTo: 7.333
+              colorFrom: be92f7
+              colorTo: 7382f0
+            }
+            {
+              length: 0.01
+              cone: 0
+              cap: false
+              particles: 1
+              line: true
+              lifetime: 20
+              lenFrom: 93
+              lenTo: 93
+              strokeFrom: 7.333
+              strokeTo: 5.5
+              colorFrom: 7382f0
+              colorTo: 74cf84
+            }
+            {
+              length: 0.01
+              cone: 0
+              cap: false
+              particles: 1
+              line: true
+              lifetime: 20
+              lenFrom: 93
+              lenTo: 93
+              strokeFrom: 5.5
+              strokeTo: 3.666
+              colorFrom: 74cf84
+              colorTo: ded750
+            }
+            {
+              length: 0.01
+              cone: 0
+              cap: false
+              particles: 1
+              line: true
+              lifetime: 20
+              lenFrom: 93
+              lenTo: 93
+              strokeFrom: 3.666
+              strokeTo: 1.833
+              colorFrom: ded750
+              colorTo: de7a40
+            }
+            {
+              length: 0.01
+              cone: 0
+              cap: false
+              particles: 1
+              line: true
+              lifetime: 20
+              lenFrom: 93
+              lenTo: 93
+              strokeFrom: 1.833
+              strokeTo: 0
+              colorFrom: de7a40
+              colorTo: e65555
+            }
+          ]
+        }
+      }  
+    }
+  }
+]

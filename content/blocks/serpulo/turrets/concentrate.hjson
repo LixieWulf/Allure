@@ -1,0 +1,116 @@
+type: ItemTurret
+targetGround: false
+health: 2000
+size: 3
+range: 270
+rotateSpeed: 2
+reload: 210
+recoil: 3
+recoilTime: 150
+inaccuracy: 9
+velocityRnd: 0.1
+shoot: {
+  type: ShootMulti
+  source: {
+    type: ShootAlternate
+    spread: 8
+    shots: 2
+  }
+  dest: [
+    {
+      shots: 4
+      shotDelay: 8
+    }
+  ]
+}
+shootSound: shootBig
+shake: 2
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      under: true
+      suffix: -barrel
+      x: 4
+      moveY: -3
+      progress: recoil
+    }
+    {
+      type: RegionPart
+      under: true
+      suffix: -barrel
+      x: -4
+      moveY: -3
+      progress: recoil
+    }
+  ]
+}
+ammoTypes: {
+  lead: {
+    type: FlakBulletType
+    collidesGround: false
+    damage: 20
+    splashDamage: 60
+    splashDamageRadius: 20
+    speed: 9
+    lifetime: 30
+    width: 7
+    height: 24
+    hitEffect: flakExplosion
+  }
+  metaglass: {
+    type: FlakBulletType
+    collidesGround: false
+    damage: 17
+    splashDamage: 40
+    splashDamageRadius: 38
+    speed: 9
+    lifetime: 30
+    width: 8
+    height: 26
+    hitEffect: massiveExplosion
+    fragBullets: 8
+    fragBullet: {
+      collidesGround: false
+      pierceDamageFactor: 0.4
+      pierce: true
+      damage: 16
+      speed: 8
+      drag: 0.05
+      shrinkY: 1
+      lifetime: 25
+      width: 3
+      height: 15
+    }
+  }
+  phase-fabric: {
+    type: FlakBulletType
+    collidesGround: false
+    damage: 12
+    splashDamage: 43
+    splashDamageRadius: 35
+    knockback: 5
+    speed: 9
+    lifetime: 30
+    width: 6
+    height: 24
+    hitEffect: massiveExplosion
+    fragBullets: 12
+    fragBullet: {
+      type: RailBulletType
+      collidesGround: false
+      length: 45
+      damage: 20
+      knockback: 1.7
+      pierceEffect: none
+    }
+  }
+}
+category: turret
+research: scatter
+requirements: [
+  lead/120
+  graphite/70
+  titanium/80
+]

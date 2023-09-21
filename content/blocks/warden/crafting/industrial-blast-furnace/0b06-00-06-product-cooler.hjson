@@ -27,33 +27,24 @@ requirements: [
   scilaxa/100
 ]
 drawer: {
-  type: DrawRegion
-  layer: 30.01
+  type: DrawMulti
+  iconOverride: [
+    -icon
+  ]
+  drawers: [
+    {
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+      layer: 30.1
+    }
+    {
+      type: DrawRegion
+      suffix: -icon
+    }
+  ]
 }
-drawer: [
-  {
-  }
-  {
-    type: DrawRegion
-    suffix: -top
-    layer: 30.01
-  }
-  {
-    type: DrawRegion
-    x: -24
-    suffix: -left
-  }
-  {
-    type: DrawRegion
-    x: 24
-    suffix: -right
-  }
-  {
-    type: DrawRegion
-    y: 24
-    suffix: -up
-  }
-]
 breakEffect: [
   {
     type: WaveEffect

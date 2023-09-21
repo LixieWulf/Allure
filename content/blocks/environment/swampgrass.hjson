@@ -1,0 +1,15 @@
+type: Seaweed
+variants: 4
+update: false
+solid: false
+breakable: true
+destructible: false
+drawTeamOverlay: false
+health: 200
+customShadow: true
+targetable: false
+underBullets: true
+buildVisibility: sandboxOnly
+instantDeconstruct: true
+breakSound: plantBreak
+breakEffect: breakProp

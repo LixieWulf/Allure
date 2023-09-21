@@ -1,0 +1,20 @@
+type: HeatCrafter
+liquidCapacity: 70
+heatRequirement: 6
+maxEfficiency: 2
+size: 2
+craftTime: 30
+consumes: {
+  power: 1.5
+  liquids: [
+    oil/0.1
+  ]
+  items: [
+    coal/2
+  ]
+}
+outputLiquids: [
+  pure-carbon/0.2
+  thermal-fluid/0.075
+]
+buildVisibility: sandboxOnly

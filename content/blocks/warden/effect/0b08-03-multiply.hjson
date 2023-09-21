@@ -1,0 +1,21 @@
+type: PowerTurret
+size: 4
+alwaysShooting: true
+canOverdrive: false
+reload: 180
+shootY: 0
+rotateSpeed: 0
+shootType: {
+  shootEffect: none
+  smokeEffect: none
+  spawnUnit: exotic-mod-multiply-pulse
+}
+drawer: [
+  {
+    type: DrawRegion
+  }
+  {
+    type: DrawGlowRegion
+    color: feb380
+  }
+]

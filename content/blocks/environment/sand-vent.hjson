@@ -1,0 +1,16 @@
+type: SteamVent
+parent: sand-floor  
+blendGroup: sand-floor
+variants: 2
+effectSpacing: 120
+effect: {
+  type: WaveEffect
+  lifetime: 60
+  layer: 31
+  sizeFrom: 0
+  sizeTo: 5
+  strokeFrom: 1
+  strokeTo: 0
+  colorFrom: 69dbcc
+  colorTo: 53cfc4
+}

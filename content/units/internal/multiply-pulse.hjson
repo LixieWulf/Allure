@@ -1,0 +1,9 @@
+type: missile
+flying: true
+drawBody: false
+drawCell: false
+speed: 0
+engineSize: 0
+hitSize: 0
+physics: false
+lifetime: 180

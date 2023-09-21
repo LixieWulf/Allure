@@ -4,59 +4,173 @@ customShadow: true
 craftTime: 140
 liquidCapacity: 4800
 itemCapacity: 72
-size: 8
+size: 10
 hasLiquids: true
-warmupSpeed: 0.005
-drawer: [
-  {
-    type: DrawDefault
-  }
-  {
-    type: DrawRegion
-    suffix: -spikes0
-    rotateSpeed: 3
-  }
-  {
-    type: DrawGlowRegion
-    suffix: -spikes0-heat
-    layer: 30
-    rotateSpeed: 3
-    color: bc5452
-    alpha: 1
-  }
-  {
-    type: DrawRegion
-    suffix: -top0
-  }
-  {
-    type: DrawGlowRegion
-    suffix: -abyss
-    color: 000000
-    blending: normal
-    layer: 30
-    glowScale: 22
-    glowIntensity: 1
-  }
-  {
-    type: DrawGlowRegion
-    suffix: -abyss1
-    color: 000000
-    blending: normal
-    layer: 30
-    glowScale: 22
-    glowIntensity: 1
-  }
-  {
-    type: DrawRegion
-    suffix: -top1
-  }
-  {
-    type: DrawBlurSpin
-    suffix: -turbine
-    rotateSpeed: 135
-    blurThresh: 0.35
-  }
-]
+warmupSpeed: 0.0025
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    -icon
+  ]
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: water
+      padLeft: 4
+      padRight: 48
+      padTop: 4
+      padBottom: 4
+      alpha: 0.5
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: steam
+      padLeft: 48
+      padRight: 4
+      padTop: 4
+      padBottom: 4
+      alpha: 0.5
+    }
+    {
+      type: DrawRegion
+      suffix: -top0
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: ozone
+      padLeft: 32
+      padRight: 32
+      padTop: 4
+      padBottom: 64
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: arreacta
+      padLeft: 32
+      padRight: 32
+      padTop: 64
+      padBottom: 4
+    }
+    {
+      type: DrawRegion
+      suffix: -fin0
+      rotateSpeed: 4
+    }
+    {
+      type: DrawRegion
+      suffix: -fin0
+      rotateSpeed: 4
+      rotation: 15
+    }
+    {
+      type: DrawRegion
+      suffix: -fin0
+      rotateSpeed: 4
+      rotation: 30
+    }
+    {
+      type: DrawRegion
+      suffix: -fin0
+      rotateSpeed: 4
+      rotation: 45
+    }
+    {
+      type: DrawRegion
+      suffix: -fin0
+      rotateSpeed: 4
+      rotation: 60
+    }
+    {
+      type: DrawRegion
+      suffix: -fin0
+      rotateSpeed: 4
+      rotation: 75
+    }
+    {
+      type: DrawRegion
+      suffix: -fin1
+      rotateSpeed: -4
+    }
+    {
+      type: DrawRegion
+      suffix: -fin1
+      rotateSpeed: -4
+      rotation: 30
+    }
+    {
+      type: DrawRegion
+      suffix: -fin1
+      rotateSpeed: -4
+      rotation: 60
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -fin0-glow
+      color: 7382f0
+      layer: 30
+      rotateSpeed: 4
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -fin1-glow
+      color: 7382f0
+      layer: 30
+      rotateSpeed: -4
+    }
+    {
+      type: DrawRegion
+      suffix: -top1
+    }
+    {
+      type: DrawRegion
+      suffix: -vessel-shadow
+    }
+    {
+      type: DrawGlowRegion
+      color: feb380
+      layer: 30
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -abyss
+      blending: normal
+      glowScale: 35
+      glowIntensity: 1
+      color: 000000
+      layer: 30
+    }
+    {
+      type: DrawParticles
+      particles: 70
+      particleLife: 45
+      particleRad: 14
+      particleSize: 2
+      color: 000000
+      rotateScl: 1.5
+    }
+    {
+      type: DrawCrucibleFlame
+      flameColor: 787878
+      midColor: 787878
+      alpha: 1
+      flameRad: 7
+      flameRadiusScl: 22
+      particles: 0
+      circleSpace: 7
+      circleStroke: 0
+    }
+    {
+      type: DrawFlame
+      flameColor: 000000
+      flameRadius: 5
+      flameRadiusIn: 4.5
+      flameRadiusScl: 22
+    }
+  ]
+}
 consumes: {
   power: 180
   items: [

@@ -1,2 +1,5 @@
 type: Floor
 itemDrop: sand
+attributes: {
+  sand: 1
+}
