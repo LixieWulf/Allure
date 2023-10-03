@@ -1,5 +1,6 @@
 type: HeatProducer
 heatOutput: 6
+conductivePower: true
 drawer: [
   {
   }
@@ -10,5 +11,9 @@ drawer: [
 ]
 consumes: {
   power: 3
+  liquids: [
+    oil/1
+  ]
 }
+category: crafting
 buildVisibility: sandboxOnly

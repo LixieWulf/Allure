@@ -4,7 +4,6 @@ orbitRadius: 3
 camRadius: -0.7
 minZoom: 1
 bloom: true
-alwaysUnlocked: true
 updateLighting: false
 atmosphereRadIn: 0
 atmosphereRadOut: 0

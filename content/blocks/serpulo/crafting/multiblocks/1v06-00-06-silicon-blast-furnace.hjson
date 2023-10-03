@@ -1,0 +1,32 @@
+type: HeatCrafter
+itemCapacity: 80
+liquidCapacity: 120
+size: 6
+heatRequirement: 6
+boostScale: 1.33
+maxEfficiency: 6
+craftTime: 120
+rotateDraw: false
+rotate: true
+ignoreLiquidFullness: true
+liquidOutputDirections: [0]
+conductivePower: true
+drawer: [
+  {
+  }
+  {
+    type: DrawLiquidOutputs
+  }
+]
+consumes: {
+  power: 12
+  liquids: [
+    pure-carbon/0.266666666666666666666
+    thermal-fluid/0.5
+    molten-silica/0.08333333333333
+  ]
+}
+outputItem: silicon/24
+outputLiquid: thermal-gas/0.5
+category: crafting
+buildVisibility: sandboxOnly

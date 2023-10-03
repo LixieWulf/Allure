@@ -670,6 +670,10 @@ weapons: [
     reload: 360
     shootSound: none
     shootCone: 360
+    shoot: {
+      firstShotDelay: 120
+    }
+    cooldownTime: 120
     parts: [
       {
         type: RegionPart
@@ -681,12 +685,69 @@ weapons: [
         blending: additive
         mixColor: e65555
         mixColorTo: e65555
+        progress: charge
+      }
+      {
+        type: RegionPart
+        name: allure-0r14-extelsus
+        outline: false
+        layer: 98
+        color: ffffff00
+        colorTo: ffffff
+        blending: additive
+        mixColor: e65555
+        mixColorTo: e65555
+        progress: heat
+      }
+      {
+        type: RegionPart
+        name: allure-0r14-extelsus
+        outline: false
+        layer: 89
+        color: ffffff00
+        colorTo: ffffff88
+        blending: additive
+        mixColor: e65555
+        mixColorTo: e65555
         progress: {
-          type: smoothReload
-          op: compress
-          start: 0.6
-          end: 1
+          type: warmup
+          ops: [
+            {
+              op: sin
+              scl: 30
+              mag: 0.5
+            }
+            {
+              op: add
+              amount: 0.5
+            }
+          ]
         }
+        moves: [
+          {
+            gx: 0.25
+            gy: 0.25
+            progress: {
+              type: heat
+              ops: [
+                {
+                  op: sin
+                  scl: 30
+                  mag: 0.5
+                }
+                {
+                  op: add
+                  amount: 0.5
+                }
+                {
+                  op: blend
+                  other: charge
+                  amount: 0.5
+                }
+              ]
+            }
+          }
+        ]
       }
     ]
     bullet: {

@@ -3,9 +3,10 @@ flying: true
 hitSize: 90
 health: 1250000
 armor: 800
-speed: 0
-accel: 0.05
+speed: 10000000000
+accel: 0.00000000001
 drag: 0.05
+strafePenalty: 0.25
 rotateSpeed: 1.3
 engineOffset: 58
 engineColor: e65555
@@ -57,67 +58,158 @@ immunities: [
 weapons: [
   {
     x: 0
-    y: 20
-    shootCone: 20
     mirror: false
-    reload: 2
-    rotate: true
-    rotateSpeed: 0
+    reload: 360
+    shootCone: 180
     shoot: {
-      type: ShootBarrel
-      shots: 3
-      barrels: [
-        34, 0, 0,
-        0, 0, 0, 
-        -34, 0, 0
-      ]
+      firstShotDelay: 15
     }
-    shootSound: none
+    cooldownTime: 60
+    parts: [
+      {
+        x: 20
+        y: -51
+        name: allure-shootspike
+        outline: false
+        xScl: 0
+        yScl: 1.25
+        layer: 90.1
+        color: ffffff
+        mixColor: e65555
+        rotation: -90
+        progress: charge
+        moves: [
+          {
+            gx: 0.75
+            progress: charge            
+          }
+          {
+            gx: 0.75
+            progress: heat            
+          }
+        ]
+      }
+      {
+        x: -20
+        y: -51
+        name: allure-shootspike
+        outline: false
+        xScl: 0
+        yScl: 1.25
+        layer: 90.1
+        color: ffffff
+        mixColor: e65555
+        rotation: -90
+        progress: charge
+        moves: [
+          {
+            gx: 0.75
+            progress: charge            
+          }
+          {
+            gx: 0.75
+            progress: heat            
+          }
+        ]
+      }
+      {
+        y: -58
+        name: allure-shootspike
+        outline: false
+        xScl: 0
+        yScl: 2.5
+        layer: 90.1
+        color: ffffff
+        mixColor: e65555
+        rotation: -90
+        progress: charge
+        moves: [
+          {
+            gx: 1.5
+            progress: charge            
+          }
+          {
+            gx: 1.5
+            progress: heat            
+          }
+        ]
+      }
+      {
+        x: 20
+        y: -51
+        name: allure-shootspike
+        outline: false
+        xScl: 0
+        yScl: 0.75
+        layer: 90.6
+        color: ffffff
+        rotation: -90
+        progress: charge
+        moves: [
+          {
+            gx: 0.375
+            progress: charge            
+          }
+          {
+            gx: 0.375
+            progress: heat            
+          }
+        ]
+      }
+      {
+        x: -20
+        y: -51
+        name: allure-shootspike
+        outline: false
+        xScl: 0
+        yScl: 0.75
+        layer: 90.6
+        color: ffffff
+        rotation: -90
+        progress: charge
+        moves: [
+          {
+            gx: 0.375
+            progress: charge            
+          }
+          {
+            gx: 0.375
+            progress: heat            
+          }
+        ]
+      }
+      {
+        y: -58
+        name: allure-shootspike
+        outline: false
+        xScl: 0
+        yScl: 1.25
+        layer: 90.6
+        color: ffffff
+        rotation: -90
+        progress: charge
+        moves: [
+          {
+            gx: 0.75
+            progress: charge            
+          }
+          {
+            gx: 0.75
+            progress: heat            
+          }
+        ]
+      }
+    ]
     continuous: true
+    shootSound: none
     bullet: {
-      type: RailBulletType
-      damage: 6000
-      lifetime: 15
-      length: 80
-      pierceEffect: none
-      shootEffect: none
-      smokeEffect: none
-      recoil: -0.15
-      maxRange: 8192
-      hitEffect: [
-        {
-          particles: 4
-          line: true
-          length: 28
-          lifetime: 40
-          cone: 20
-          baseRotation: 120
-          interp: pow3Out
-          sizeInterp: pow2In
-          lenFrom: 4
-          lenTo: 1
-          strokeFrom: 1
-          strokeTo: 0
-          colorFrom: ffffff
-          colorTo: e65555
-        }
-        {
-          particles: 4
-          line: true
-          length: 28
-          lifetime: 40
-          cone: 20
-          baseRotation: 240
-          interp: pow3Out
-          sizeInterp: pow2In
-          lenFrom: 4
-          lenTo: 1
-          strokeFrom: 1
-          strokeTo: 0
-          colorFrom: ffffff
-          colorTo: e65555
-        }
-      ]
+      type: ContinuousFlameBulletType
+      recoil: -0.3
+      length: 0
+      damage: 0
+      width: 0
+      lifetime: 45
+      drawFlare: false
     }
   }
   {
@@ -274,6 +366,17 @@ weapons: [
         sizeInterp: pow2In
         followParent: false
       }
+    }
+  }
+  {
+    shootOnDeath: true
+    controllable: false
+    reload: 15
+    x: 0
+    shootCone: 360
+    shootSound: none
+    bullet: {
+      spawnUnit: allure-0r13-meras-deamth
     }
   }
 ]
@@ -872,3 +975,8 @@ abilities: [
 ]
 envEnabled: -1
 envDisabled: 4
+deathSound: none
+deathExplosionEffect: none
+createWreck: false
+createScorch: false
+crashDamageMultiplier: 0

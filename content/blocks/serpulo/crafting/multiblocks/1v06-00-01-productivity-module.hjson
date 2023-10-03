@@ -3,12 +3,13 @@ liquidCapacity: 20
 rotateDraw: false
 rotate: true
 liquidOutputDirections: [0]
+conductivePower: true
+canOverdrive: false
 drawer: [
   {
   }
   {
     type: DrawLiquidOutputs
-    drawGlow: false
   }
 ]
 consumes: {
@@ -18,4 +19,5 @@ consumes: {
   ]
 }
 outputLiquid: thermal-fluid/0.5
+category: crafting
 buildVisibility: sandboxOnly

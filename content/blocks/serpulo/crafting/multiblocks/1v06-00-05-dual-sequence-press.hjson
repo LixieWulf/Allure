@@ -1,0 +1,31 @@
+type: HeatCrafter
+itemCapacity: 40
+liquidCapacity: 120
+size: 4
+heatRequirement: 6
+boostScale: 1.33
+craftTime: 80
+rotateDraw: false
+rotate: true
+ignoreLiquidFullness: true
+liquidOutputDirections: [0]
+conductivePower: true
+drawer: [
+  {
+  }
+  {
+    type: DrawLiquidOutputs
+  }
+]
+consumes: {
+  power: 4.5
+  liquids: [
+    pure-carbon/0.4
+    thermal-fluid/0.5
+    water/0.4
+  ]
+}
+outputItem: graphite/12
+outputLiquid: thermal-gas/0.5
+category: crafting
+buildVisibility: sandboxOnly

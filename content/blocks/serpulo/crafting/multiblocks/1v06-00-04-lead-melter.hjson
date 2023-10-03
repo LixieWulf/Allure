@@ -4,19 +4,30 @@ heatRequirement: 6
 maxEfficiency: 2
 size: 2
 conductivePower: true
-craftTime: 30
+craftTime: 20
+drawer: [
+  {
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: molten-lead
+  }
+  {
+    type: DrawRegion
+    suffix: -top
+  }
+]
 consumes: {
-  power: 1.5
+  power: 1
   liquids: [
-    oil/0.1
+    slag/0.15
   ]
   items: [
-    coal/2
+    lead/3
   ]
 }
 outputLiquids: [
-  pure-carbon/0.4
-  thermal-fluid/0.001
+  molten-lead/0.2
 ]
 category: crafting
 buildVisibility: sandboxOnly

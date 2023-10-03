@@ -15,6 +15,7 @@ fallSpeed: 0.004
 drawBody: false 
 drawCell: false 
 createWreck: true 
+outlines: false
 parts: [
   { 
     type: RegionPart

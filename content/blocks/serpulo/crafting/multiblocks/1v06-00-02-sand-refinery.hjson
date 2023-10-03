@@ -1,0 +1,22 @@
+type: GenericCrafter
+canOverdrive: false
+itemCapacity: 50
+liquidCapacity: 70
+size: 2
+conductivePower: true
+craftTime: 15
+consumes: {
+  power: 3
+  liquids: [
+    arreacta/0.25
+  ]
+  items: [
+    sand/6
+  ]
+}
+outputLiquids: [
+  molten-silica/0.5
+  thermal-fluid/0.001
+]
+category: crafting
+buildVisibility: sandboxOnly
