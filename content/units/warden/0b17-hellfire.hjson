@@ -1581,7 +1581,7 @@ weapons: [
       }
     }
   }
-  //TODO redo the main lance
+  //lance
   {
     mirror: false
     shootCone: 45
@@ -2120,7 +2120,6 @@ weapons: [
       }
     }
   }
-  //TODO replace trap spawner with something less annoying and more canonically accurate, or scrap altogether
   {
     controllable: false 
     display: false
