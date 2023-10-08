@@ -1,4 +1,5 @@
 type: flying
+fogRadius: 12
 lowAltitude: true
 hitSize: 18
 health: 450
@@ -17,7 +18,7 @@ drawBody: false
 faceTarget: false
 lightRadius: 45
 lightColor: e65555
-research: outbreak
+circleTarget: true
 envEnabled: -1
 envDisabled: 4
 fallSpeed: 0.25
@@ -46,6 +47,7 @@ weapons: [
       absorbable: false
       hitEffect: none
       despawnEffect: none
+      maxRange: 96
       fragBullets: 95
       fragLifeMin: 0
       fragBullet: {

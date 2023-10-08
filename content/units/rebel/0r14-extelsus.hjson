@@ -1,4 +1,5 @@
 type: flying
+fogRadius: 149
 fogRadius: 150
 lowAltitude: true
 flying: true

@@ -1,4 +1,5 @@
 type: flying
+fogRadius: 45
 flying: true
 lowAltitude: true
 health: 42000

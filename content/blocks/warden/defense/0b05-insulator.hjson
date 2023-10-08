@@ -1,0 +1,9 @@
+type: Block
+solid: true
+update: true
+insulated: true
+category: defense
+requirements: [
+  territe-alloy/80
+  crystal/40
+]

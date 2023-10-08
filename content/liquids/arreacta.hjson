@@ -1,5 +1,5 @@
 gas: true
 color: ab68b3
-flammability: 1.5
-explosiveness: 0.6
+flammability: 0
+explosiveness: 1.4
 research: liquid-baenara

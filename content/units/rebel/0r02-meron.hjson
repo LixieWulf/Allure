@@ -1,4 +1,5 @@
 type: flying
+fogRadius: 44
 flying: true
 hitSize: 35
 health: 18000
@@ -46,15 +47,15 @@ weapons: [
     layerOffset: -1
     reload: 9
     recoil: 2
-    inaccuracy: 6
+    inaccuracy: 3
     shootSound: shootSnap
     bullet: {
       speed: 12
-      lifetime: 18
+      lifetime: 30
       damage: 18
       pierce: true
       pierceBuilding: true
-      pierceCap: 2
+      pierceDamageFactor: 0.02
       width: 7
       height: 42
       frontColor: ffb3b3
@@ -97,18 +98,18 @@ weapons: [
     layerOffset: -1
     reload: 9
     recoil: 2
-    inaccuracy: 6
+    inaccuracy: 3
     shootSound: shootSnap
     shoot: {
       firstShotDelay: 6
     }
     bullet: {
       speed: 12
-      lifetime: 18
+      lifetime: 30
       damage: 18
       pierce: true
       pierceBuilding: true
-      pierceCap: 2
+      pierceDamageFactor: 0.02
       width: 7
       height: 42
       frontColor: ffb3b3
@@ -151,18 +152,18 @@ weapons: [
     layerOffset: -1
     reload: 9
     recoil: 2
-    inaccuracy: 6
+    inaccuracy: 3
     shootSound: shootSnap
     shoot: {
       firstShotDelay: 12
     }
     bullet: {
       speed: 12
-      lifetime: 18
+      lifetime: 30
       damage: 18
       pierce: true
       pierceBuilding: true
-      pierceCap: 2
+      pierceDamageFactor: 0.02
       width: 7
       height: 42
       frontColor: ffb3b3

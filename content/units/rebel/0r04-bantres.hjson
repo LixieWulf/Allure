@@ -1,4 +1,5 @@
 type: flying
+fogRadius: 33
 flying: true
 lowAltitude: true
 rotateSpeed: 4
