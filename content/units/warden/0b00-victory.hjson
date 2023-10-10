@@ -213,7 +213,7 @@ abilities: [
   //all warden ships regenerate slowly
   {
     type: RegenAbility
-    percentAmount: 0.0333
+    percentAmount: 0.01388888888 
   }
 ]
 research: 0b-begin

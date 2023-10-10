@@ -97,13 +97,21 @@ engines: [
     radius: 16
   }
 ]
+drawBody: false
+parts: [
+  {
+    type: RegionPart
+    layer: 91.01
+    outline: false
+  }
+]
 weapons: [
   //flak cannons
   {
     name: extelsus-flak
     x: 0
     y: 28
-    layerOffset: 1
+    layerOffset: 2
     controllable: false
     autoTarget: true
     targetInterval: 80
@@ -127,7 +135,7 @@ weapons: [
         type: RegionPart
         suffix: -line
         outline: false
-        layer: 90.8
+        layer: 91.8
       }
       {
         type: RegionPart
@@ -135,7 +143,7 @@ weapons: [
         y: 6.5
         suffix: -l
         outline: false
-        layer: 90.9
+        layer: 91.9
         moveY: -18
         progress: recoil
         recoilIndex: 0
@@ -146,7 +154,7 @@ weapons: [
         y: 6.5
         suffix: -r
         outline: false
-        layer: 90.9
+        layer: 91.9
         moveY: -18
         progress: recoil
         recoilIndex: 1
@@ -232,7 +240,7 @@ weapons: [
     name: extelsus-flak
     x: 0
     y: -85
-    layerOffset: 1
+    layerOffset: 2
     controllable: false
     autoTarget: true
     targetInterval: 80
@@ -256,7 +264,7 @@ weapons: [
         type: RegionPart
         suffix: -line
         outline: false
-        layer: 90.8
+        layer: 91.8
       }
       {
         type: RegionPart
@@ -264,7 +272,7 @@ weapons: [
         y: 6.5
         suffix: -l
         outline: false
-        layer: 90.9
+        layer: 91.9
         moveY: -18
         progress: recoil
         recoilIndex: 0
@@ -275,7 +283,7 @@ weapons: [
         y: 6.5
         suffix: -r
         outline: false
-        layer: 90.9
+        layer: 91.9
         moveY: -18
         progress: recoil
         recoilIndex: 1
@@ -359,7 +367,7 @@ weapons: [
   //large devastating blast weapon
   {
     name: extelsus-blaster
-    layerOffset: 2
+    layerOffset: 5
     x: 0
     y: -20
     shadow: 76
@@ -380,6 +388,7 @@ weapons: [
       {
         type: RegionPart
         suffix: -ram-line
+        layer: 95
         y: -27.25
         moveY: 16
         outline: false
@@ -402,13 +411,13 @@ weapons: [
       {
         type: RegionPart
         suffix: -line
-        layer: 93.1
+        layer: 95.1
         outline: false
       }
       {
         type: RegionPart
         suffix: -ram
-        layer: 93.2
+        layer: 95.2
         y: -27.25
         moveY: 16
         outline: false
@@ -430,7 +439,7 @@ weapons: [
       }
       {
         type: RegionPart
-        layer: 93.3
+        layer: 95.3
         outline: false
       }
     ]
@@ -827,30 +836,6 @@ weapons: [
     }
     cooldownTime: 120
     parts: [
-      {
-        type: RegionPart
-        name: allure-0r14-extelsus
-        outline: false
-        layer: 98
-        color: ffffff00
-        colorTo: ffffff
-        blending: additive
-        mixColor: e65555
-        mixColorTo: e65555
-        progress: charge
-      }
-      {
-        type: RegionPart
-        name: allure-0r14-extelsus
-        outline: false
-        layer: 98
-        color: ffffff00
-        colorTo: ffffff
-        blending: additive
-        mixColor: e65555
-        mixColorTo: e65555
-        progress: heat
-      }
       {
         type: RegionPart
         name: allure-0r14-extelsus

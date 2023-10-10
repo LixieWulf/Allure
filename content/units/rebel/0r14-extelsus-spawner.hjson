@@ -539,3 +539,5 @@ weapons: [
     }
   }
 ]
+envEnabled: -1
+envDisabled: 4

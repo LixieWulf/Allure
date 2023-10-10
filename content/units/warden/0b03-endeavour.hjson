@@ -1,25 +1,351 @@
 type: flying
-hitSize: 60
-health: 54000
-armor: 20
-flying: true
-targetAir: false
-targetGround: false
-speed: 2.8
-drag: 0.02
+speed: 3
+rotateSpeed: 2.5
 accel: 0.08
-rotateSpeed: 3.1
-buildSpeed: 4.5
-controller: BuilderAI
-lightRadius: 65
-lightColor: 7382f0
+drag: 0.04
+strafePenalty: 0.3
+flying: true
+hitSize: 56
+health: 36000
+armor: 22
+shadowElevationScl: 0.9
+lightRadius: 0
+engineLayer: 115.01
 engineColor: 7382f0
-engineOffset: 32
-engineSize: 5
-omniMovement: true
-faceTarget: false
+engineSize: 0
+engines: [
+  {
+    x: 5
+    y: -31
+    radius: 6
+    rotation: -90
+  }
+  {
+    x: -5
+    y: -31
+    radius: 6
+    rotation: -90
+  }
+  {
+    x: 18
+    y: -26
+    radius: 4
+    rotation: -90
+  }
+  {
+    x: -18
+    y: -26
+    radius: 4
+    rotation: -90
+  }
+  {
+    x: 16
+    y: -1
+    radius: 4
+    rotation: 90
+  }
+  {
+    x: -16
+    y: -1
+    radius: 4
+    rotation: 90
+  }
+]
 drawCell: false
-drawBody: false
 outlines: false
+healColor: 7382f088
+parts: [
+  {
+    type: RegionPart
+    layer: 115.02
+    outline: false
+  }
+  { 
+    type: RegionPart
+    suffix: -flare
+    outline: false
+    blending: additive
+    layer: 116
+    color: 7382f0
+    colorTo: ffffff
+    weaponIndex: 0
+  }
+  { 
+    type: RegionPart
+    suffix: -flare
+    outline: false
+    layer: 140
+    color: 7382f025
+    blending: additive
+  }
+]
+weapons: [
+  {
+    x: 0
+    y: 11
+    rotate: true
+    mirror: false
+    rotateSpeed: 1
+    rotationLimit: 15
+    alternate: false
+    reload: 20
+    inaccuracy: 8
+    parts: [
+      {
+        type: ShapePart
+        radius: 12
+        stroke: 2
+        circle: true
+        hollow: true
+        color: 7382f0
+        layer: 110
+      }
+      {
+        type: ShapePart
+        radius: 12
+        circle: true
+        color: 7382f088
+        layer: 110
+      }
+    ]
+    shoot: {
+      type: ShootSummon
+      shots: 3
+      shotDelay: 2
+      radius: 8
+    }
+    shootWarmupSpeed: 0.05
+    minWarmup: 0.9
+    shootSound: laser
+    shake: 3
+    recoil: 0
+    bullet: {
+      shootEffect: none
+      smokeEffect: none
+      damage: 30
+      splashDamage: 34
+      splashDamageRadius: 16
+      speed: 7
+      lifetime: 60
+      pierce: true
+      pierceBuilding: true
+      pierceDamageFactor: 0.1
+      pierceCap: 3
+      homingPower: 0.06
+      homingRange: 100
+      status: allure-0b-energy0
+      statusDuration: 4
+      sprite: allure-torpedo
+      width: 28
+      height: 48
+      shrinkY: 0
+      frontColor: 7382f0
+      backColor: 000000
+      hitColor: 7382f0
+      trailColor: 7382f0
+      trailWidth: 1.6
+      trailLength: 7
+      trailChance: 0.2
+      trailRotation: true
+      trailEffect: {
+        line: true
+        cone: 15
+        lifetime: 25
+        length: 20
+        interp: pow3Out
+        sizeInterp: pow2In
+        lenFrom: 7
+        lenTo: 0
+        strokeFrom: 1
+        strokeTo: 1
+        colorTo: 7382f0
+      }
+      hitEffect: [
+        {
+          type: WaveEffect
+          interp: pow3Out
+          lifetime: 25
+          sizeFrom: 0
+          sizeTo: 25
+          strokeFrom: 4
+          colorTo: 7382f0
+        }
+        {
+          length: 16
+          particles: 6
+          lifetime: 30
+          interp: pow2Out
+          sizeInterp: pow3In
+          sizeFrom: 12
+          sizeTo: 0
+          colorFrom: 7382f0bb
+          colorTo: 7382f0bb
+        }
+        {
+          line: true
+          length: 12
+          lifetime: 30
+          particles: 9
+          lenFrom: 6
+          lenTo: 4
+          strokeFrom: 2
+          strokeTo: 0
+          colorTo: 7382f0
+        }
+      ]
+      despawnEffect: {
+        type: WaveEffect
+        lifetime: 10
+        sizeFrom: 0
+        sizeTo: 5
+        strokeFrom: 1
+        colorTo: 7382f0
+      }
+    }
+  }
+]
+abilities: [
+  {
+    type: SuppressionFieldAbility
+    display: false
+    active: false
+    color: 7382f0
+    orbRadius: 6
+    orbMidScl: 1
+    x: 0
+    y: 11
+    particleSize: 2.5
+    particleLen: 10
+    rotateScl: -1
+    particleColor: 7382f0
+  }
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 1
+    x: 5
+    y: -31
+    effect: {
+      lightOpacity: 0
+      length: 0
+      particles: 1
+      layer: 115
+      lifetime: 16
+      sizeFrom: 6
+      sizeTo: 0
+      colorFrom: 7382f0
+      colorTo: 7382f0
+    }
+    display: false
+  }
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 1
+    x: -5
+    y: -31
+    effect: {
+      lightOpacity: 0
+      length: 0
+      particles: 1
+      layer: 115
+      lifetime: 16
+      sizeFrom: 6
+      sizeTo: 0
+      colorFrom: 7382f0
+      colorTo: 7382f0
+    }
+    display: false
+  }
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 1
+    x: 18
+    y: -26
+    effect: {
+      lightOpacity: 0
+      length: 0
+      particles: 1
+      layer: 115
+      lifetime: 12
+      sizeFrom: 4
+      sizeTo: 0
+      colorFrom: 7382f0
+      colorTo: 7382f0
+    }
+    display: false
+  }
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 1
+    x: -18
+    y: -26
+    effect: {
+      lightOpacity: 0
+      length: 0
+      particles: 1
+      layer: 115
+      lifetime: 12
+      sizeFrom: 4
+      sizeTo: 0
+      colorFrom: 7382f0
+      colorTo: 7382f0
+    }
+    display: false
+  }
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 1
+    x: 16
+    y: -1
+    effect: {
+      lightOpacity: 0
+      length: 0
+      particles: 1
+      layer: 115
+      lifetime: 12
+      sizeFrom: 4
+      sizeTo: 0
+      colorFrom: 7382f0
+      colorTo: 7382f0
+    }
+    display: false
+  }
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 1
+    x: -16
+    y: -1
+    effect: {
+      lightOpacity: 0
+      length: 0
+      particles: 1
+      layer: 115
+      lifetime: 12
+      sizeFrom: 4
+      sizeTo: 0
+      colorFrom: 7382f0
+      colorTo: 7382f0
+    }
+    display: false
+  }
+  {
+    type: ForceFieldAbility
+    regen: 7
+    cooldown: 0
+    radius: 0
+    sides: 1
+    max: 2400
+  }
+  //all warden ships regenerate slowly
+  {
+    type: RegenAbility
+    percentAmount: 0.01388888888 
+  }
+]
 envEnabled: -1
 envDisabled: 0
