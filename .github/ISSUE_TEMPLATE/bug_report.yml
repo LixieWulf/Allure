@@ -67,7 +67,7 @@ body:
       label: Le Checkboxe
       description: Read these simple questions, then check them once you understand.
       options:
-        - label: **I have disabled all other mods and reproduced this bug anyways.**
+        - label: I have disabled all other mods and reproduced this bug anyways.
           required: true
         - label: I have updated to the latest release/BE (Bleeding Edge) version before submitting this report.
           required: true
