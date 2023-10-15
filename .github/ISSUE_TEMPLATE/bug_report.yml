@@ -25,7 +25,7 @@ body:
       description: The build number of Mindustry. 
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: version
     attributes:
       label: Mod Version
