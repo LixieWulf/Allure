@@ -1062,7 +1062,7 @@ weapons: [
     shootCone: 360
     shootSound: none
     bullet: {
-      spawnUnit: allure-0r14-extelsus-deamth
+      spawnUnit: allure-0r00-01-14-extelsus-deamth
     }
   }
 ]

@@ -49,6 +49,58 @@ rotateTime: 5000
 accessible: true
 //whether to allow launching to numbered sectors - set to false for erekir sector behaviour
 allowLaunchToNumbered: false
+//planet environmental factors
+defaultEnv: 129
+//content unlocked when landing on this planet
+unlockedOnLand: [
+  allure-0bc0-nexus,
+  allure-0b02-00-tube,
+  allure-0b03-00-vacuum-conduit,
+  allure-0b01-00-rudimentary-fuser
+]
+//various rules
+allowLaunchSchematics: false
+allowLaunchLoadout: false
+allowWaveSimulation: false
+allowSectorInvasion: false
+clearSectorOnLose: false
+prebuildBase: true
+allowWaves: false
+allowLaunchToNumbered: false
+enemyBuildSpeedMultiplier: 1
+//default core to launch with
+defaultCore: 0bc0-nexus
+//allowed items on this planet
+itemWhitelist: [
+  copper,
+  lead,
+  sand,
+  coal,
+  graphite,
+  silicon,
+  metaglass,
+  spore-pod,
+  pyratite,
+  blast-compound,
+  titanium,
+  plastanium,
+  thorium,
+  phase-fabric,
+  surge-alloy,
+  scrap,
+  dantrales,
+  territe-alloy,
+  baenite,
+  uranium,
+  scilaxa,
+  wolframite,
+  crystal,
+  altesin,
+  infrastructure,
+  inseltiene,
+  draconium,
+  shadow
+]
 //visual mesh made of hexagons - note that JSON only supports NoiseMesh and HexSkyMesh
 //use objects {} to make a single mesh, and the below format to create multiple
 mesh: [

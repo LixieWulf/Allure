@@ -283,6 +283,7 @@ weapons: [
       }
     }
   }
+  //death
 ]
 envEnabled: -1
 envDisabled: 4

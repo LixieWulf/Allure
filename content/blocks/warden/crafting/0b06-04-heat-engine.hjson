@@ -30,7 +30,7 @@ drawer: [
 ]
 consumes: {
   liquids: [
-    hydrogen/0.0566666
+    hydrogen/0.11333333333 
   ]
 }
 category: crafting

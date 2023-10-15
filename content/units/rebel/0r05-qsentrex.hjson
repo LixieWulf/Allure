@@ -4,7 +4,7 @@ flying: true
 lowAltitude: true
 health: 42000
 armor: 18
-hitSize: 38
+hitSize: 44
 speed: 3.3
 rotateSpeed: 2.4
 accel: 0.1
@@ -247,6 +247,7 @@ weapons: [
       spawnUnit: allure-qsentrex-missile
     }
   }
+  //death
 ]
 envEnabled: -1
 envDisabled: 4

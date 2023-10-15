@@ -122,8 +122,8 @@ weapons: [
     bullet: {
       shootEffect: none
       smokeEffect: none
-      damage: 30
-      splashDamage: 34
+      damage: 45
+      splashDamage: 44
       splashDamageRadius: 16
       speed: 7
       lifetime: 60
@@ -134,7 +134,7 @@ weapons: [
       homingPower: 0.06
       homingRange: 100
       status: allure-0b-energy0
-      statusDuration: 4
+      statusDuration: 5
       sprite: allure-torpedo
       width: 28
       height: 48

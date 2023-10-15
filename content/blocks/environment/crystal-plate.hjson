@@ -1,0 +1,6 @@
+type: Floor
+variants: 4
+attributes: {
+  water: -1
+}
+blendGroup: foundation

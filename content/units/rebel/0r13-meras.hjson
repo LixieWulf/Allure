@@ -376,7 +376,7 @@ weapons: [
     shootCone: 360
     shootSound: none
     bullet: {
-      spawnUnit: allure-0r13-meras-deamth
+      spawnUnit: allure-0r00-01-13-meras-deamth
     }
   }
 ]
