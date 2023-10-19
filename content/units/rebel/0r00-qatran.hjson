@@ -5,16 +5,25 @@ health: 75
 speed: 3.4
 accel: 0.14
 drag: 0.05
-rotateSpeed: 14
+hitSize: 11
+rotateSpeed: 8
 circleTarget: true
 drawCell: false
 outlines: false
 engineSize: 3
 engineOffset: 7
+engineLayer: 115.02
 engineColor: e65555
 lightRadius: 25
 lightColor: e65555
 itemCapacity: 0
+parts: [
+  {
+    type: RegionPart
+    layer: 115.04
+    outline: false
+  }
+]
 weapons: [
   {
     x: 0
@@ -80,6 +89,55 @@ abilities: [
       colorFrom: fffffff25
       colorTo: ffffff00
     }
+  }
+  {
+    display: false
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: 0
+    y: -7
+    rotateEffect: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 20
+        length: 0
+        baseLength: 3
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 3
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 115.01
+      }
+      {
+        particles: 2
+        lifetime: 40
+        length: 8
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 3
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 115
+      }
+      {
+        particles: 1
+        lifetime: 40
+        length: 0
+        baseLength: 5
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 1.5
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 115
+      }
+    ]
   }
 ]
 deathExplosionEffect: {

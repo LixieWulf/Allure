@@ -12,12 +12,10 @@ lowAltitude: true
 outlines: false
 drawCell: false
 engineColor: e65555
+engineOffset: 16
+engineSize: 6
+engineLayer: 90.02
 engines: [
-  {
-    y: -16
-    rotation: -90
-    radius: 6
-  }
   {
     x: 8
     y: -18
@@ -37,6 +35,13 @@ ammoType: {
   type: ItemAmmoType
   item: anden
 }
+parts: [
+  {
+    type: RegionPart
+    layer: 90.04
+    outline: false
+  }
+]
 weapons: [
   {
     name: meron-weapon
@@ -198,6 +203,155 @@ weapons: [
     }
   }
   //death
+]
+abilities: [
+  {
+    display: false
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: 0
+    y: -16
+    rotateEffect: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 20
+        length: 0
+        baseLength: 3
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 6
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 90.01
+      }
+      {
+        particles: 2
+        lifetime: 40
+        length: 8
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 6
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 90
+      }
+      {
+        particles: 1
+        lifetime: 40
+        length: 0
+        baseLength: 7
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 1.5
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 90
+      }
+    ]
+  }
+  {
+    display: false
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: 8
+    y: -18
+    rotateEffect: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 20
+        length: 0
+        baseLength: 3
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 90.01
+      }
+      {
+        particles: 2
+        lifetime: 40
+        length: 8
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 90
+      }
+      {
+        particles: 1
+        lifetime: 40
+        length: 0
+        baseLength: 5
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 1.5
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 90
+      }
+    ]
+  }
+  {
+    display: false
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: -8
+    y: -18
+    rotateEffect: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 20
+        length: 0
+        baseLength: 3
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 90.01
+      }
+      {
+        particles: 2
+        lifetime: 40
+        length: 8
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 90
+      }
+      {
+        particles: 1
+        lifetime: 40
+        length: 0
+        baseLength: 5
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 1.5
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 90
+      }
+    ]
+  }
 ]
 deathExplosionEffect: {
   type: MultiEffect

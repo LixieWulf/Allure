@@ -10,6 +10,7 @@ deathExplosionEffect: none
 deathSound: none
 drawBody: false
 drawCell: false
+outlines: false
 engineSize: 0
 physics: true
 shadowElevationScl: 0
@@ -324,3 +325,5 @@ weapons: [
     }
   }
 ]
+envEnabled: -1
+envDisabled: 4

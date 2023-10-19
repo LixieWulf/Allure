@@ -4,7 +4,7 @@ flying: true
 lifetime: 60
 speed: 0
 rotateSpeed: 360
-hitSize: 135
+hitSize: 64
 maxRange: 8192
 deathExplosionEffect: none
 deathSound: none
@@ -38,10 +38,10 @@ weapons: [
       speed: 0
       lifetime: 0
       fragRandomSpread: 0
-      //always spawn somewhat late
+      //always spawn first
       fragBullets: 1
-      fragLifeMin: 0.5
-      fragLifeMax: 0.75
+      fragLifeMin: 0
+      fragLifeMax: 0.25
       fragBullet: {
         type: BulletType
         keepVelocity: false 
@@ -75,7 +75,7 @@ weapons: [
             hittable: false
             hitEffect: none
             despawnEffect: none
-            despawnUnit: allure-0r13-meras
+            despawnUnit: allure-0r03-calsaten
           }
           //separated for ease of writing
           hitEffect: [
@@ -84,7 +84,7 @@ weapons: [
               cap: false
               particles: 1
               length: -60
-              baseLength: 130
+              baseLength: 95
               randLength: false
               cone: 0
               lifetime: 31
@@ -101,7 +101,7 @@ weapons: [
               cap: false
               particles: 1
               length: 0.001
-              baseLength: 70
+              baseLength: 35
               randLength: false
               cone: 0
               lifetime: 60
@@ -119,7 +119,7 @@ weapons: [
               cap: false
               particles: 1
               length: -60
-              baseLength: 130
+              baseLength: 95
               randLength: false
               cone: 0
               lifetime: 31
@@ -136,7 +136,7 @@ weapons: [
               cap: false
               particles: 1
               length: 0.001
-              baseLength: 70
+              baseLength: 35
               randLength: false
               cone: 0
               lifetime: 60
@@ -158,7 +158,7 @@ weapons: [
               randLength: false
               length: 0.01
               region: circle-shadow
-              sizeFrom: 540
+              sizeFrom: 160
               sizeTo: 0
               layer: 89
               colorFrom: e65555
@@ -170,39 +170,9 @@ weapons: [
             {
               type: RadialEffect
               amount: 1
-              lengthOffset: 58
+              lengthOffset: 22
               rotationOffset: 180
               effect: [
-                {
-                  followParent: false
-                  cap: false
-                  line: true
-                  lifetime: 45
-                  cone: 0
-                  particles: 1
-                  randLength: false
-                  length: 0.01
-                  strokeFrom: 64
-                  strokeTo: 0
-                  lenFrom: 8192
-                  lenTo: 8192
-                  colorFrom: e65555
-                  colorTo: e65555
-                  layer: 90
-                }
-                {
-                  followParent: false
-                  lifetime: 45
-                  cone: 0
-                  particles: 1
-                  randLength: false
-                  length: 0.01
-                  sizeFrom: 32
-                  sizeTo: 0
-                  colorFrom: e65555
-                  colorTo: e65555
-                  layer: 90
-                }
                 {
                   followParent: false
                   cap: false
@@ -216,7 +186,9 @@ weapons: [
                   strokeTo: 0
                   lenFrom: 8192
                   lenTo: 8192
-                  layer: 90.6
+                  colorFrom: e65555
+                  colorTo: e65555
+                  layer: 90
                 }
                 {
                   followParent: false
@@ -225,98 +197,50 @@ weapons: [
                   particles: 1
                   randLength: false
                   length: 0.01
-                  sizeFrom: 12
+                  sizeFrom: 9
                   sizeTo: 0
-                  layer: 90.6
+                  colorFrom: e65555
+                  colorTo: e65555
+                  layer: 90
+                }
+                {
+                  followParent: false
+                  cap: false
+                  line: true
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  strokeFrom: 12
+                  strokeTo: 0
+                  lenFrom: 8192
+                  lenTo: 8192
+                  layer: 90.03
+                }
+                {
+                  followParent: false
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  sizeFrom: 6
+                  sizeTo: 0
+                  layer: 90.03
                 }
               ]
             }
             {
               type: RadialEffect
               amount: 1
-              lengthOffset: 51
+              lengthOffset: 19
               rotationOffset: 180
               effect: [
                 {
                   type: RadialEffect
                   amount: 1
-                  lengthOffset: 20
-                  rotationOffset: 90
-                  effect: [
-                    {
-                      followParent: false
-                      cap: false
-                      line: true
-                      lifetime: 45
-                      cone: 0
-                      particles: 1
-                      randLength: false
-                      length: 0.01
-                      strokeFrom: 32
-                      strokeTo: 0
-                      lenFrom: 8192
-                      lenTo: 8192
-                      colorFrom: e65555
-                      colorTo: e65555
-                      layer: 90
-                      baseRotation: -90
-                    }
-                    {
-                      followParent: false
-                      lifetime: 45
-                      cone: 0
-                      particles: 1
-                      randLength: false
-                      length: 0.01
-                      sizeFrom: 16
-                      sizeTo: 0
-                      colorFrom: e65555
-                      colorTo: e65555
-                      layer: 90
-                      baseRotation: -90
-                    }
-                    {
-                      followParent: false
-                      cap: false
-                      line: true
-                      lifetime: 45
-                      cone: 0
-                      particles: 1
-                      randLength: false
-                      length: 0.01
-                      strokeFrom: 12
-                      strokeTo: 0
-                      lenFrom: 8192
-                      lenTo: 8192
-                      layer: 90.6
-                      baseRotation: -90
-                    }
-                    {
-                      followParent: false
-                      lifetime: 45
-                      cone: 0
-                      particles: 1
-                      randLength: false
-                      length: 0.01
-                      sizeFrom: 6
-                      sizeTo: 0
-                      layer: 90.6
-                      baseRotation: -90
-                    }
-                  ]
-                }
-              ]
-            }
-            {
-              type: RadialEffect
-              amount: 1
-              lengthOffset: 51
-              rotationOffset: 180
-              effect: [
-                {
-                  type: RadialEffect
-                  amount: 1
-                  lengthOffset: 20
+                  lengthOffset: 8
                   rotationOffset: -90
                   effect: [
                     {
@@ -328,7 +252,7 @@ weapons: [
                       particles: 1
                       randLength: false
                       length: 0.01
-                      strokeFrom: 32
+                      strokeFrom: 12
                       strokeTo: 0
                       lenFrom: 8192
                       lenTo: 8192
@@ -344,7 +268,7 @@ weapons: [
                       particles: 1
                       randLength: false
                       length: 0.01
-                      sizeFrom: 16
+                      sizeFrom: 6
                       sizeTo: 0
                       colorFrom: e65555
                       colorTo: e65555
@@ -360,12 +284,58 @@ weapons: [
                       particles: 1
                       randLength: false
                       length: 0.01
+                      strokeFrom: 8
+                      strokeTo: 0
+                      lenFrom: 8192
+                      lenTo: 8192
+                      layer: 90.03
+                      baseRotation: 90
+                    }
+                    {
+                      followParent: false
+                      lifetime: 45
+                      cone: 0
+                      particles: 1
+                      randLength: false
+                      length: 0.01
+                      sizeFrom: 4
+                      sizeTo: 0
+                      layer: 90.03
+                      baseRotation: 90
+                    }
+                  ]
+                }
+              ]
+            }
+            {
+              type: RadialEffect
+              amount: 1
+              lengthOffset: 19
+              rotationOffset: 180
+              effect: [
+                {
+                  type: RadialEffect
+                  amount: 1
+                  lengthOffset: 8
+                  rotationOffset: 90
+                  effect: [
+                    {
+                      followParent: false
+                      cap: false
+                      line: true
+                      lifetime: 45
+                      cone: 0
+                      particles: 1
+                      randLength: false
+                      length: 0.01
                       strokeFrom: 12
                       strokeTo: 0
                       lenFrom: 8192
                       lenTo: 8192
-                      layer: 90.6
-                      baseRotation: 90
+                      colorFrom: e65555
+                      colorTo: e65555
+                      layer: 90
+                      baseRotation: -90
                     }
                     {
                       followParent: false
@@ -376,8 +346,38 @@ weapons: [
                       length: 0.01
                       sizeFrom: 6
                       sizeTo: 0
-                      layer: 90.6
-                      baseRotation: 90
+                      colorFrom: e65555
+                      colorTo: e65555
+                      layer: 90
+                      baseRotation: -90
+                    }
+                    {
+                      followParent: false
+                      cap: false
+                      line: true
+                      lifetime: 45
+                      cone: 0
+                      particles: 1
+                      randLength: false
+                      length: 0.01
+                      strokeFrom: 8
+                      strokeTo: 0
+                      lenFrom: 8192
+                      lenTo: 8192
+                      layer: 90.03
+                      baseRotation: -90
+                    }
+                    {
+                      followParent: false
+                      lifetime: 45
+                      cone: 0
+                      particles: 1
+                      randLength: false
+                      length: 0.01
+                      sizeFrom: 4
+                      sizeTo: 0
+                      layer: 90.03
+                      baseRotation: -90
                     }
                   ]
                 }

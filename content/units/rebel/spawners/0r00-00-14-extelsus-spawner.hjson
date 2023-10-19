@@ -10,6 +10,7 @@ deathExplosionEffect: none
 deathSound: none
 drawBody: false
 drawCell: false
+outlines: false
 engineSize: 0
 physics: true
 shadowElevationScl: 0

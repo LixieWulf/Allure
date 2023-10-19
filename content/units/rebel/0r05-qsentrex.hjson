@@ -4,7 +4,7 @@ flying: true
 lowAltitude: true
 health: 42000
 armor: 18
-hitSize: 44
+hitSize: 55
 speed: 3.3
 rotateSpeed: 2.4
 accel: 0.1
@@ -14,6 +14,7 @@ outlines: false
 engineOffset: 30
 engineSize: 8
 engineColor: e65555
+engineLayer: 90.02
 engines: [
   {
     x: 27
@@ -30,6 +31,13 @@ engines: [
     engineColor: e65555
   }
 ]
+parts: [
+  {
+    type: RegionPart
+    layer: 90.04
+    outline: false
+  }
+]
 weapons: [
   {
     name: qsentrex-weapon1
@@ -41,6 +49,7 @@ weapons: [
     rotateSpeed: 2
     recoil: 5
     recoilTime: 25
+    layerOffset: 1.99
     x: 0
     shootX: 4
     shootY: 12
@@ -129,6 +138,7 @@ weapons: [
     rotateSpeed: 2
     recoil: 5
     recoilTime: 25
+    layerOffset: 1.99
     x: 0
     shootX: -4
     shootY: 12
@@ -213,6 +223,7 @@ weapons: [
     rotate: true
     rotateSpeed: 2
     recoil: 0
+    layerOffset: 2
     x: 0
     mirror: false
     shootSound: none
@@ -248,6 +259,57 @@ weapons: [
     }
   }
   //death
+]
+abilities: [
+  {
+    display: false
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: 0
+    y: -30
+    rotateEffect: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 20
+        length: 0
+        baseLength: 3
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 8
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 90.01
+      }
+      {
+        particles: 2
+        lifetime: 40
+        length: 8
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 8
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 90
+      }
+      {
+        particles: 1
+        lifetime: 40
+        length: 0
+        baseLength: 7
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 3
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 90
+      }
+    ]
+  }
 ]
 envEnabled: -1
 envDisabled: 4

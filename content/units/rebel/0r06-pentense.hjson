@@ -15,6 +15,7 @@ outlines: false
 engineSize: 7
 engineOffset: 18
 engineColor: e65555
+engineLayer: 90.02
 engines: [
   {
     x: 23
@@ -64,44 +65,22 @@ parts: [
     type: RegionPart
     outline: false
     suffix: -low 
-    //id use -outline but anuke disgusted me
-    layer: 90.01
+    //disgraceful
+    layer: 91
   }
   {
     type: RegionPart
     outline: false
-    layer: 90.03
+    layer: 91.03
   }
   {
     type: RegionPart
     outline: false
     suffix: -top
-    layer: 90.05
+    layer: 91.05
   }
 ]
 weapons: [
-  {
-    name: pentense-weapon0-low
-    x: 0
-    y: 20.5
-    shootY: 16
-    mirror: false
-    top: false
-    layerOffset: 0.02
-    reload: 110
-    recoil: 6
-    inaccuracy: 8
-    bullet: {
-      type: BulletType
-      speed: 9
-      lifetime: 40
-      shootEffect: none
-      smokeEffect: none
-      hitEffect: none
-      despawnEffect: none
-      collides: false
-    }
-  }
   {
     name: pentense-weapon0
     x: 0
@@ -109,9 +88,17 @@ weapons: [
     shootY: 11
     mirror: false
     top: false
-    layerOffset: 0.06
+    layerOffset: 2
     reload: 110
     recoil: 6
+    parts: [
+      {
+        type: RegionPart
+        suffix: -low
+        layer: 91
+        outline: false
+      }
+    ]
     shootSound: bang
     shake: 3
     bullet: {
@@ -284,6 +271,155 @@ weapons: [
     }
   }
   //death
+]
+abilities: [
+  {
+    display: false
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: 0
+    y: -18
+    rotateEffect: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 20
+        length: 0
+        baseLength: 3
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 7
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 90.01
+      }
+      {
+        particles: 2
+        lifetime: 40
+        length: 8
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 7
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 90
+      }
+      {
+        particles: 1
+        lifetime: 40
+        length: 0
+        baseLength: 7
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 1.5
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 90
+      }
+    ]
+  }
+  {
+    display: false
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: 12
+    y: -30
+    rotateEffect: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 20
+        length: 0
+        baseLength: 3
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 5
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 90.01
+      }
+      {
+        particles: 2
+        lifetime: 40
+        length: 8
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 5
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 90
+      }
+      {
+        particles: 1
+        lifetime: 40
+        length: 0
+        baseLength: 5
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 1.5
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 90
+      }
+    ]
+  }
+  {
+    display: false
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: -12
+    y: -30
+    rotateEffect: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 20
+        length: 0
+        baseLength: 3
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 5
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 90.01
+      }
+      {
+        particles: 2
+        lifetime: 40
+        length: 8
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 5
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 90
+      }
+      {
+        particles: 1
+        lifetime: 40
+        length: 0
+        baseLength: 5
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 1.5
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 90
+      }
+    ]
+  }
 ]
 envEnabled: -1
 envDisabled: 4

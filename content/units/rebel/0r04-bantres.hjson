@@ -392,6 +392,55 @@ abilities: [
     sectors: 0
     y: -15
   }
+  {
+    display: false
+    type: MoveEffectAbility
+    minVelocity: 0
+    x: 0
+    y: -15
+    rotateEffect: true
+    effect: [
+      {
+        particles: 1
+        lifetime: 20
+        length: 0
+        baseLength: 3
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 8
+        sizeTo: 0
+        colorFrom: e65555
+        colorTo: e65555
+        layer: 90.6
+      }
+      {
+        particles: 2
+        lifetime: 40
+        length: 8
+        baseLength: 0
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 8
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 90
+      }
+      {
+        particles: 1
+        lifetime: 40
+        length: 0
+        baseLength: 7
+        interp: pow10Out
+        sizeInterp: linear
+        sizeFrom: 3
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 90
+      }
+    ]
+  }
 ]
 envEnabled: -1
 envDisabled: 4
