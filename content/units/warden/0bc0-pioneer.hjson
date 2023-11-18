@@ -18,6 +18,7 @@ outlines: false
 drawCell: false 
 buildSpeed: 2.25
 drawBuildBeam: false 
+buildRange: 120
 strafePenalty: 0.2
 lightRadius: 0
 engines: [

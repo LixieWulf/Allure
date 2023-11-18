@@ -79,8 +79,9 @@ weapons: [
       pierceCap: 1
       length: 180
       width: 6
-      damage: 10
-      status: allure-0b-energy0
+      damage: 0.01
+      buildingDamageMultiplier: 1000
+      status: allure-0t-thermal0
       statusDuration: 2
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       hitEffect: {
@@ -123,6 +124,8 @@ weapons: [
       speed: 0.5
       drag: -0.04
       lifetime: 80
+      status: allure-0b-energy0
+      statusDuration: 1
       homingPower: 0.06
       homingRange: 240
       width: 4

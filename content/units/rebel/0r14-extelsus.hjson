@@ -110,7 +110,136 @@ weapons: [
   {
     name: extelsus-flak
     x: 0
-    y: 28
+    y: 74
+    layerOffset: 2
+    controllable: false
+    autoTarget: true
+    targetInterval: 80
+    targetSwitchInterval: 8
+    shadow: 48
+    mirror: false
+    rotate: true
+    rotateSpeed: 3.4
+    reload: 35
+    recoil: 6
+    recoils: 2
+    inaccuracy: 5
+    shootY: 10
+    shoot: {
+      type: ShootAlternate
+      spread: 13
+    }
+    shootSound: shootBig
+    parts: [
+      {
+        type: RegionPart
+        suffix: -line
+        outline: false
+        layer: 91.8
+      }
+      {
+        type: RegionPart
+        x: -6.75
+        y: 6.5
+        suffix: -l
+        outline: false
+        layer: 91.9
+        moveY: -18
+        progress: recoil
+        recoilIndex: 0
+      }
+      {
+        type: RegionPart
+        x: 6.75
+        y: 6.5
+        suffix: -r
+        outline: false
+        layer: 91.9
+        moveY: -18
+        progress: recoil
+        recoilIndex: 1
+      }
+    ]
+    shake: 1
+    bullet: {
+      type: RailBulletType
+      despawnHit: false
+      setDefaults: false
+      pierce: false
+      pierceBuilding: false
+      pierceDamageFactor: 1
+      damage: 480
+      length: 640
+      pierceEffect: none
+      hitEffect: massiveExplosion
+      pointEffectSpace: 20
+      pointEffect: [
+        {
+          cone: 0
+          lifetime: 45
+          length: 0
+          baseLength: 30
+          particles: 8
+          sizeFrom: 2
+          sizeTo: 0
+          interp: pow2In
+          colorFrom: 787878
+          colorTo: 787878
+        }
+        {
+          cone: 0
+          lifetime: 45
+          length: 0
+          baseLength: 30
+          particles: 2
+          sizeFrom: 4
+          sizeTo: 0
+          interp: pow2In
+          colorFrom: 787878
+          colorTo: 787878
+        }
+      ]
+      status: 0r-kinetic2
+      statusDuration: 1
+      fragBullets: 6
+      fragBullet: {
+        type: RailBulletType
+        length: 45
+        damage: 200
+        pointEffectSpace: 25
+        pointEffect: [
+          {
+            cone: 0
+            lifetime: 45
+            length: 0
+            baseLength: 30
+            particles: 8
+            sizeFrom: 2
+            sizeTo: 0
+            interp: pow2In
+            colorFrom: 787878
+            colorTo: 787878
+          }
+          {
+            cone: 0
+            lifetime: 45
+            length: 0
+            baseLength: 30
+            particles: 2
+            sizeFrom: 4
+            sizeTo: 0
+            interp: pow2In
+            colorFrom: 787878
+            colorTo: 787878
+          }
+        ]
+      }
+    }
+  }
+  {
+    name: extelsus-flak
+    x: 0
+    y: 18
     layerOffset: 2
     controllable: false
     autoTarget: true
@@ -240,6 +369,7 @@ weapons: [
     name: extelsus-flak
     x: 0
     y: -85
+    baseRotation: 180
     layerOffset: 2
     controllable: false
     autoTarget: true
@@ -369,7 +499,7 @@ weapons: [
     name: extelsus-blaster
     layerOffset: 5
     x: 0
-    y: -20
+    y: -28
     shadow: 76
     shootY: 38
     mirror: false
@@ -846,20 +976,6 @@ weapons: [
         blending: additive
         mixColor: e65555
         mixColorTo: e65555
-        progress: {
-          type: warmup
-          ops: [
-            {
-              op: sin
-              scl: 30
-              mag: 0.5
-            }
-            {
-              op: add
-              amount: 0.5
-            }
-          ]
-        }
         moves: [
           {
             gx: 0.25
@@ -868,18 +984,27 @@ weapons: [
               type: heat
               ops: [
                 {
-                  op: sin
-                  scl: 30
-                  mag: 0.5
-                }
-                {
-                  op: add
-                  amount: 0.5
-                }
-                {
                   op: blend
                   other: charge
                   amount: 0.5
+                }
+              ]
+            }
+          }
+          {
+            gx: 0.25
+            gy: 0.25
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress
+                  start: 0.25
+                  end: 0.5
+                }
+                {
+                  op: curve
+                  interp: pow2Out
                 }
               ]
             }

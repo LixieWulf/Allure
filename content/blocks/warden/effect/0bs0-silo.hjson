@@ -3,7 +3,7 @@ squareSprite: false
 size: 2
 health: 900
 armor: 30
-itemCapacity: 400
+itemCapacity: 200
 category: effect
 research: 0bc0-nexus
 requirements: [

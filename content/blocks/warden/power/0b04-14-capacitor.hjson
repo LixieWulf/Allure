@@ -2,7 +2,7 @@ type: Battery
 conductivePower: true
 size: 4
 consumes: {
-  powerBuffered: 2000
+  powerBuffered: 8000
 }
 research: {
   parent: 0b04-12-plasma-booster
@@ -30,7 +30,7 @@ drawer: [
   }
   {
     type: DrawGlowRegion
-    color: feb380
+    color: 7382f0
   }
 ]
 breakEffect: [

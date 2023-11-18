@@ -1,4 +1,5 @@
-Type: CoreBlock
+type: CoreBlock
+enableDrawStatus: false
 squareSprite: false
 health: 1600
 armor: 30
@@ -13,7 +14,7 @@ conductivePower: true
 consumesPower: true
 outputsPower: true
 consumes: {
-  powerBuffered: 2500
+  powerBuffered: 5000
 }
 requirements: [
   dantrales/1000

@@ -1,0 +1,309 @@
+fogRadius: 33
+weapons: [
+  {
+    name: conquer-weapon
+    shadow: 60
+    x: 0
+    mirror: false
+    reload: 150
+    rotate: true
+    rotateSpeed: 1
+    shoot: {
+      firstShotDelay: 40
+    }
+    shootWarmupSpeed: 0.03
+    minWarmup: 0.9
+    chargeSound: lasercharge2
+    shootSound: shootSmite
+    cooldownTime: 170
+    heatColor: f9350f
+    shake: 8
+    shootY: 36
+    recoil: 8
+    layerOffset: 0.1
+    bullet: {
+      type: RailBulletType
+      length: 360
+      damage: 900
+      pierce: false
+      pierceBuilding: false
+      pierceDamageFactor: 10000
+      pointEffectSpace: 90
+      pointEffect: [
+        {
+          lightOpacity: 0.25
+          lightScl: 1
+          type: ParticleEffect
+          length: 0
+          baseLength: 14
+          randLength: false
+          lifetime: 60
+          particles: 1
+          cone: 0
+          interp: pow3In
+          sizeInterp: linear
+          region: allure-railblast
+          sizeFrom: 24
+          sizeTo: 12
+          colorFrom: feb380
+          colorTo: feb38000
+        }
+        {
+          lightOpacity: 0.25
+          lightScl: 1
+          type: ParticleEffect
+          length: 0
+          lifetime: 60
+          particles: 1
+          cone: 0
+          interp: pow3In
+          sizeInterp: linear
+          region: allure-diamond-wide
+          sizeFrom: 40
+          sizeTo: 20
+          colorFrom: feb380
+          colorTo: feb38000
+        }
+        {
+          lightOpacity: 0.4
+          lightScl: 0.65
+          type: ParticleEffect
+          length: 0
+          lifetime: 60
+          layer: 110.001
+          particles: 1
+          cone: 0
+          interp: pow3In
+          sizeInterp: linear
+          region: allure-diamond-wide
+          sizeFrom: 28
+          sizeTo: 14
+          colorTo: ffffff00
+        }
+      ]
+      pierceEffect: [
+        {
+          lightOpacity: 0
+          length: 70
+          lifetime: 40
+          cone: 35
+          particles: 18
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 4
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow2In
+        }
+        {
+          lightOpacity: 0
+          length: 85
+          lifetime: 25
+          cone: 35
+          particles: 10
+          colorFrom: 9f9f9f
+          colorTo: 787878
+          sizeFrom: 3
+          sizeTo: 0
+          interp: pow5Out
+          sizeInterp: pow3In
+        }
+        {
+          length: 110
+          cone: 35
+          line: true
+          lifetime: 30
+          particles: 10
+          colorTo: feb380
+          interp: pow2Out
+          sizeInterp: pow3In
+          lenFrom: 15
+          lenTo: 0
+          strokeFrom: 3
+          strokeTo: 0
+          sizeInterp: pow2In
+        }
+        {
+          lightOpacity: 0.4
+          lightScl: 0.5
+          length: 0
+          cone: 0
+          particles: 1
+          lifetime: 40
+          sizeFrom: 110
+          sizeTo: 0
+          offset: 90
+          colorFrom: feb380
+          colorTo: feb380
+          region: allure-diamond-vthin
+        }
+      ]
+      shootEffect: instShoot
+      setDefaults: false
+      despawnHit: false
+      fragBullets: 8
+      fragRandomSpread: 90
+      fragBullet: {
+        type: RailBulletType
+        damage: 260
+        length: 110
+        pierceDamageFactor: 0.3
+        pointEffectSpace: 4
+        pointEffect: {
+          line: true
+          particles: 1
+          cone: 0
+          length: 4
+          baseLength: 2
+          cap: false
+          lifetime: 30
+          strokeFrom: 1.2
+          strokeTo: 0
+          lenFrom: 8
+          lenTo: 2
+          colorTo: feb380
+        }
+        pierceEffect: flakExplosion
+      }
+    }
+    parts: [
+      {
+        type: RegionPart
+        outline: false
+        suffix: -glow
+        blending: additive
+        color: ff0000
+      }
+      {
+        type: RegionPart
+        suffix: -sinks
+        outline: false
+        mirror: true
+        layer: 60.09
+        x: 4
+        y: -11
+        moveX: 4.5
+        moveY: -4.5
+        heatColor: ff0000
+        heatProgress: warmup
+      }
+      {
+        type: RegionPart
+        suffix: -blade
+        outline: false
+        mirror: true
+        moveRot: -40
+        moveX: 3
+        layer: 60.08
+        x: 6
+        y: -6
+        heatColor: ff0000
+        progress: {
+          type: warmup
+          ops: [
+            {
+              op: delay
+              amount: 0.6
+            }
+            {
+              op: blend
+              amount: 0.3
+              other: recoil
+            }
+          ]
+        }
+        heatProgress: {
+          type: heat
+          ops: [
+            {
+              op: add
+              amount: 0.3
+            }
+            {
+              op: min
+              other: warmup
+            }
+          ]
+        }
+      }
+      {
+        type: RegionPart
+        suffix: -blade
+        outline: false
+        mirror: true
+        moveRot: -80
+        moveX: 3
+        layer: 60.08
+        x: 6
+        y: -6
+        heatColor: ff0000
+        progress: {
+          type: warmup
+          ops: [
+            {
+              op: delay
+              amount: 0.3
+            }
+            {
+              op: blend
+              amount: 0.3
+              other: recoil
+            }
+          ]
+        }
+        heatProgress: {
+          type: heat
+          ops: [
+            {
+              op: add
+              amount: 0.3
+            }
+            {
+              op: min
+              other: warmup
+            }
+          ]
+        }
+      }
+      {
+        type: RegionPart
+        suffix: -blade
+        outline: false
+        mirror: true
+        moveRot: -120
+        moveX: 3
+        layer: 60.08
+        x: 6
+        y: -6
+        heatColor: ff0000
+        progress: {
+          type: warmup
+          ops: [
+            {
+              op: delay
+              amount: 0
+            }
+            {
+              op: blend
+              amount: 0.3
+              other: recoil
+            }
+          ]
+        }
+        heatProgress: {
+          type: heat
+          ops: [
+            {
+              op: add
+              amount: 0.3
+            }
+            {
+              op: min
+              other: warmup
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

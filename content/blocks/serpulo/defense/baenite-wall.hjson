@@ -1,12 +1,9 @@
-type: MendProjector
-health: 900
+type: RegenProjector
+health: 640
 hasPower: false
-reload: 45
-healPercent: 5
-range: 4
-phaseBoost: 0
-phaseRangeBoost: 0
-phaseColor: 74cf84
+range: 1
+optionalMultiplier: 1
+baseColor: abffac
 category: defense
 research: surge-wall
 requirements: [

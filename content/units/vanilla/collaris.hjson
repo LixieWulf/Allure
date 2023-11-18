@@ -1,0 +1,202 @@
+targetAir: true
+weapons: [
+  {
+    name: collaris-weapon
+    rotationLimit: 30
+    rotateSpeed: 2
+    rotate: true
+    x: 12
+    y: -7
+    shootY: 16
+    inaccuracy: 3
+    velocityRnd: 0.25
+    recoil: 2
+    reload: 8
+    cooldownTime: 35
+    shake: 1
+    layerOffset: 0.02
+    shadow: 20
+    heatColor: ff0000
+    minWarmup: 0.75
+    shootSound: shockBlast
+    bullet: {
+      speed: 9
+      lifetime: 30
+      damage: 80
+      pierceDamageFactor: 0.7
+      pierce: true
+      pierceBuilding: true
+      homingRange: 40
+      homingPower: 0.05
+      homingDelay: 10
+      splashDamage: 35
+      splashDamageRadius: 20
+      shootEffect: shootBigColor
+      smokeEffect: shootSmokeSquareBig
+      width: 15
+      height: 40
+      frontColor: ffffff
+      backColor: 8ca9e8
+      hitColor: 8ca9e8
+      trailColor: 8ca9e8
+      trailWidth: 3
+      trailLength: 9
+      trailChance: 0
+      despawnEffect: none
+      hitEffect: {
+        type: ExplosionEffect
+        waveColor: 8ca9e8
+        smokeColor: 8ca9e8
+        sparkColor: 8ca9e8
+        waveLife: 8
+        waveStroke: 2
+        waveRad: 20
+        waveRadBase: 4
+        sparks: 12
+      }
+    }
+    //definitely do this with recursive math in java
+    parts: [
+      {
+        type: RegionPart
+        suffix: -blade
+        outline: false
+        layer: 75.01
+        y: 12
+        x: 2
+        moveX: -3
+        rotation: 90
+        heatProgress: {
+          type: warmup
+          ops: [
+            {
+              op: add
+              amount: 0.3
+            }
+            {
+              op: min
+              other: heat
+            }
+          ]
+        }
+        heatColor: 8ca9e8
+        moves: [
+          {
+            x: 3
+            progress: {
+              type: reload
+              op: compress
+              start: 0.8
+              end: 1
+            }
+          }
+        ]
+      }
+      {
+        type: RegionPart
+        suffix: -blade
+        outline: false
+        layer: 75.01
+        y: 8
+        x: 2
+        moveX: -3
+        rotation: 90
+        heatProgress: {
+          type: warmup
+          ops: [
+            {
+              op: add
+              amount: 0.3
+            }
+            {
+              op: min
+              other: heat
+            }
+          ]
+        }
+        heatColor: 8ca9e8
+        moves: [
+          {
+            x: 3
+            progress: {
+              type: reload
+              op: compress
+              start: 0.6
+              end: 0.8
+            }
+          }
+        ]
+      }
+      {
+        type: RegionPart
+        suffix: -blade
+        outline: false
+        layer: 75.01
+        y: 4
+        x: 2
+        moveX: -3
+        rotation: 90
+        heatProgress: {
+          type: warmup
+          ops: [
+            {
+              op: add
+              amount: 0.3
+            }
+            {
+              op: min
+              other: heat
+            }
+          ]
+        }
+        heatColor: 8ca9e8
+        moves: [
+          {
+            x: 3
+            progress: {
+              type: reload
+              op: compress
+              start: 0.4
+              end: 0.6
+            }
+          }
+        ]
+      }
+      {
+        type: RegionPart
+        suffix: -blade
+        outline: false
+        layer: 75.01
+        y: 0
+        x: 2
+        moveX: -3
+        rotation: 90
+        heatProgress: {
+          type: warmup
+          ops: [
+            {
+              op: add
+              amount: 0.3
+            }
+            {
+              op: min
+              other: heat
+            }
+          ]
+        }
+        heatColor: 8ca9e8
+        moves: [
+          {
+            x: 3
+            progress: {
+              type: reload
+              op: compress
+              start: 0.2
+              end: 0.4
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

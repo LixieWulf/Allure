@@ -84,66 +84,62 @@ ammoTypes: {
       pierceEffect: none
     }
     despawnEffect: none
-    hitEffect: {
-      type: MultiEffect
-      lifetime: 40
-      effects: [
-        {
-          lightOpacity: 0
-          length: 50
-          lifetime: 40
-          cone: 35
-          particles: 18
-          colorFrom: 787878
-          colorTo: 787878
-          sizeFrom: 6
-          sizeTo: 0
-          interp: pow3Out
-          sizeInterp: pow2In
-        }
-        {
-          lightOpacity: 0
-          length: 65
-          lifetime: 25
-          cone: 35
-          particles: 20
-          colorFrom: 9f9f9f
-          colorTo: 787878
-          sizeFrom: 3
-          sizeTo: 0
-          interp: pow5Out
-          sizeInterp: pow3In
-        }
-        {
-          length: 70
-          cone: 35
-          line: true
-          lifetime: 30
-          particles: 10
-          colorTo: e65555
-          interp: pow2Out
-          sizeInterp: pow3In
-          lenFrom: 9
-          lenTo: 0
-          strokeFrom: 4
-          strokeTo: 2
-          sizeInterp: pow2In
-        }
-        {
-          lightOpacity: 0.4
-          lightScl: 0.5
-          length: 0
-          cone: 0
-          particles: 1
-          lifetime: 40
-          sizeFrom: 30
-          sizeTo: 0
-          colorFrom: ffb3b3
-          colorTo: e65555
-          region: allure-diamond-thin
-        }
-      ]
-    }
+    hitEffect: [
+      {
+        lightOpacity: 0
+        length: 50
+        lifetime: 40
+        cone: 35
+        particles: 18
+        colorFrom: 787878
+        colorTo: 787878
+        sizeFrom: 6
+        sizeTo: 0
+        interp: pow3Out
+        sizeInterp: pow2In
+      }
+      {
+        lightOpacity: 0
+        length: 65
+        lifetime: 25
+        cone: 35
+        particles: 20
+        colorFrom: 9f9f9f
+        colorTo: 787878
+        sizeFrom: 3
+        sizeTo: 0
+        interp: pow5Out
+        sizeInterp: pow3In
+      }
+      {
+        length: 70
+        cone: 35
+        line: true
+        lifetime: 30
+        particles: 10
+        colorTo: e65555
+        interp: pow2Out
+        sizeInterp: pow3In
+        lenFrom: 9
+        lenTo: 0
+        strokeFrom: 4
+        strokeTo: 2
+        sizeInterp: pow2In
+      }
+      {
+        lightOpacity: 0.4
+        lightScl: 0.5
+        length: 0
+        cone: 0
+        particles: 1
+        lifetime: 40
+        sizeFrom: 30
+        sizeTo: 0
+        colorFrom: ffb3b3
+        colorTo: e65555
+        region: allure-diamond-thin
+      }
+    ]
   }
   surge-alloy: {
     speed: 9

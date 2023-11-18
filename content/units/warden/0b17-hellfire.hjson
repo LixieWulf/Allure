@@ -201,9 +201,10 @@ weapons: [
       pierceCap: 1
       length: 240
       width: 4
-      damage: 150
-      status: allure-0b-energy3
-      statusDuration: 2
+      damage: 0.15
+      buildingDamageMultiplier: 1000
+      status: allure-0t-thermal2
+      statusDuration: 1
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       hitEffect: none
       shootEffect: none 
@@ -248,9 +249,10 @@ weapons: [
       pierceCap: 1
       length: 240
       width: 4
-      damage: 150
-      status: allure-0b-energy3
-      statusDuration: 2
+      damage: 0.15
+      buildingDamageMultiplier: 1000
+      status: allure-0t-thermal2
+      statusDuration: 1
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       hitEffect: none
       shootEffect: none 
@@ -295,9 +297,10 @@ weapons: [
       pierceCap: 1
       length: 240
       width: 4
-      damage: 150
-      status: allure-0b-energy3
-      statusDuration: 2
+      damage: 0.15
+      buildingDamageMultiplier: 1000
+      status: allure-0t-thermal2
+      statusDuration: 1
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       hitEffect: none
       shootEffect: none 
@@ -342,9 +345,10 @@ weapons: [
       pierceCap: 1
       length: 240
       width: 4
-      damage: 150
-      status: allure-0b-energy3
-      statusDuration: 2
+      damage: 0.15
+      buildingDamageMultiplier: 1000
+      status: allure-0t-thermal2
+      statusDuration: 1
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       hitEffect: none
       shootEffect: none 
@@ -389,9 +393,10 @@ weapons: [
       pierceCap: 1
       length: 240
       width: 4
-      damage: 150
-      status: allure-0b-energy3
-      statusDuration: 2
+      damage: 0.15
+      buildingDamageMultiplier: 1000
+      status: allure-0t-thermal2
+      statusDuration: 1
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       hitEffect: none
       shootEffect: none 
@@ -436,9 +441,10 @@ weapons: [
       pierceCap: 1
       length: 240
       width: 4
-      damage: 150
-      status: allure-0b-energy3
-      statusDuration: 2
+      damage: 0.15
+      buildingDamageMultiplier: 1000
+      status: allure-0t-thermal2
+      statusDuration: 1
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       hitEffect: none
       shootEffect: none 
@@ -483,9 +489,10 @@ weapons: [
       pierceCap: 1
       length: 240
       width: 4
-      damage: 150
-      status: allure-0b-energy3
-      statusDuration: 2
+      damage: 0.15
+      buildingDamageMultiplier: 1000
+      status: allure-0t-thermal2
+      statusDuration: 1
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       hitEffect: none
       shootEffect: none 
@@ -530,9 +537,10 @@ weapons: [
       pierceCap: 1
       length: 240
       width: 4
-      damage: 150
-      status: allure-0b-energy3
-      statusDuration: 2
+      damage: 0.15
+      buildingDamageMultiplier: 1000
+      status: allure-0t-thermal2
+      statusDuration: 1
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       hitEffect: none
       shootEffect: none 
@@ -578,9 +586,10 @@ weapons: [
       pierceCap: 1
       length: 240
       width: 4
-      damage: 150
-      status: allure-0b-energy3
-      statusDuration: 2
+      damage: 0.15
+      buildingDamageMultiplier: 1000
+      status: allure-0t-thermal2
+      statusDuration: 1
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       hitEffect: none
       shootEffect: none 
@@ -625,9 +634,10 @@ weapons: [
       pierceCap: 1
       length: 240
       width: 4
-      damage: 150
-      status: allure-0b-energy3
-      statusDuration: 2
+      damage: 0.15
+      buildingDamageMultiplier: 1000
+      status: allure-0t-thermal2
+      statusDuration: 1
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       hitEffect: none
       shootEffect: none 
@@ -672,9 +682,10 @@ weapons: [
       pierceCap: 1
       length: 240
       width: 4
-      damage: 150
-      status: allure-0b-energy3
-      statusDuration: 2
+      damage: 0.15
+      buildingDamageMultiplier: 1000
+      status: allure-0t-thermal2
+      statusDuration: 1
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       hitEffect: none
       shootEffect: none 
@@ -719,9 +730,10 @@ weapons: [
       pierceCap: 1
       length: 240
       width: 4
-      damage: 150
-      status: allure-0b-energy3
-      statusDuration: 2
+      damage: 0.15
+      buildingDamageMultiplier: 1000
+      status: allure-0t-thermal2
+      statusDuration: 1
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       hitEffect: none
       shootEffect: none 
@@ -766,9 +778,10 @@ weapons: [
       pierceCap: 1
       length: 240
       width: 4
-      damage: 150
-      status: allure-0b-energy3
-      statusDuration: 2
+      damage: 0.15
+      buildingDamageMultiplier: 1000
+      status: allure-0t-thermal2
+      statusDuration: 1
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       hitEffect: none
       shootEffect: none 
@@ -813,9 +826,10 @@ weapons: [
       pierceCap: 1
       length: 240
       width: 4
-      damage: 150
-      status: allure-0b-energy3
-      statusDuration: 2
+      damage: 0.15
+      buildingDamageMultiplier: 1000
+      status: allure-0t-thermal2
+      statusDuration: 1
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       hitEffect: none
       shootEffect: none 
@@ -860,9 +874,10 @@ weapons: [
       pierceCap: 1
       length: 240
       width: 4
-      damage: 150
-      status: allure-0b-energy3
-      statusDuration: 2
+      damage: 0.15
+      buildingDamageMultiplier: 1000
+      status: allure-0t-thermal2
+      statusDuration: 1
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       hitEffect: none
       shootEffect: none 
@@ -907,9 +922,10 @@ weapons: [
       pierceCap: 1
       length: 240
       width: 4
-      damage: 150
-      status: allure-0b-energy3
-      statusDuration: 2
+      damage: 0.15
+      buildingDamageMultiplier: 1000
+      status: allure-0t-thermal2
+      statusDuration: 1
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       hitEffect: none
       shootEffect: none 
@@ -1601,8 +1617,9 @@ weapons: [
       pierceCap: 5
       length: 1024
       width: 18
-      damage: 1200
-      status: allure-0b-energy4
+      damage: 1.2
+      buildingDamageMultiplier: 1000
+      status: allure-0t-thermal4
       statusDuration: 3
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       oscScl: 84

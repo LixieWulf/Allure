@@ -1,8 +1,9 @@
-Type: CoreBlock
+type: CoreBlock
+enableDrawStatus: false
 squareSprite: false
 health: 124000
 armor: 350
-itemCapacity: 9600
+itemCapacity: 3600
 size: 8
 hasPower: true
 category: effect
@@ -14,7 +15,7 @@ conductivePower: true
 consumesPower: true
 outputsPower: true
 consumes: {
-  powerBuffered: 12000
+  powerBuffered: 20000
 }
 requirements: [
   infrastructure/1200
@@ -24,4 +25,3 @@ requirements: [
   crystal/2400
 ]
 research: 0bc0-nexus
-coreMerge: false

@@ -1,5 +1,5 @@
 hardness: 5
-cost: 1.8
+cost: 1.1
 color: 74cf84
 research: {
   parent: territe-alloy

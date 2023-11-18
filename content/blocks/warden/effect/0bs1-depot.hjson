@@ -1,4 +1,5 @@
 type: StorageBlock
+enableDrawStatus: false
 squareSprite: false
 size: 4
 health: 2400

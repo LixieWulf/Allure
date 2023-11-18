@@ -3,25 +3,29 @@ crushDamage: 5
 weapons: [
   {
     name: vanquish-point-weapon
+    controllable: false
+    autoTarget: true
+    targetInterval: 20
+    targetSwitchInterval: 10
     mirror: false
     otherSide: 1
-    reload: 35
+    reload: 10
     x: -12
     y: 8.5
     shootY: 5.5
     recoil: 2
     rotate: true
-    rotateSpeed: 2
+    rotateSpeed: 2.7
     shootSound: bolt
     bullet: {
       type: RailBulletType
-      length: 110
-      damage: 35
+      length: 90
+      damage: 60
+      pierceDamageFactor: 1
       shootEffect: sparkShoot
       smokeEffect: shootBigSmoke
       hitColor: feb380
       hitEffect: hitBulletColor
-      pierceDamageFactor: 1
       pointEffectSpace: 4
       pointEffect: {
         line: true
@@ -41,26 +45,30 @@ weapons: [
   }
   {
     name: vanquish-point-weapon
+    controllable: false
+    autoTarget: true
+    targetInterval: 20
+    targetSwitchInterval: 10
     flipSprite: true
     mirror: false
     otherSide: 2
-    reload: 35
+    reload: 10
     x: 12
     y: 8.5
     shootY: 5.5
     recoil: 2
     rotate: true
-    rotateSpeed: 2
+    rotateSpeed: 2.7
     shootSound: bolt
     bullet: {
       type: RailBulletType
-      length: 110
-      damage: 35
+      length: 90
+      damage: 60
+      pierceDamageFactor: 1
       shootEffect: sparkShoot
       smokeEffect: shootBigSmoke
       hitColor: feb380
       hitEffect: hitBulletColor
-      pierceDamageFactor: 1
       pointEffectSpace: 4
       pointEffect: {
         line: true
@@ -80,26 +88,30 @@ weapons: [
   }
   {
     name: vanquish-point-weapon
+    controllable: false
+    targetInterval: 20
+    targetSwitchInterval: 10
+    autoTarget: true
     flipSprite: true
     mirror: false
     otherSide: 3
-    reload: 35
+    reload: 10
     x: 12
     y: -9
     shootY: 5.5
-    recoil: 2
+    recoil: 2.7
     rotate: true
     rotateSpeed: 2
     shootSound: bolt
     bullet: {
       type: RailBulletType
-      length: 110
-      damage: 35
+      length: 90
+      damage: 60
+      pierceDamageFactor: 1
       shootEffect: sparkShoot
       smokeEffect: shootBigSmoke
       hitColor: feb380
       hitEffect: hitBulletColor
-      pierceDamageFactor: 1
       pointEffectSpace: 4
       pointEffect: {
         line: true
@@ -119,26 +131,30 @@ weapons: [
   }
   {
     name: vanquish-point-weapon
+    controllable: false
+    targetInterval: 20
+    targetSwitchInterval: 10
+    autoTarget: true
     flipSprite: true
     mirror: false
     otherSide: 0
-    reload: 35
+    reload: 10
     x: -12
     y: -9
     shootY: 5.5
     recoil: 2
     rotate: true
-    rotateSpeed: 2
+    rotateSpeed: 2.7
     shootSound: bolt
     bullet: {
       type: RailBulletType
-      length: 110
-      damage: 35
+      length: 90
+      damage: 60
+      pierceDamageFactor: 1
       shootEffect: sparkShoot
       smokeEffect: shootBigSmoke
       hitColor: feb380
       hitEffect: hitBulletColor
-      pierceDamageFactor: 1
       pointEffectSpace: 4
       pointEffect: {
         line: true

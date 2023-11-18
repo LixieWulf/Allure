@@ -38,9 +38,9 @@ weapons: [
       speed: 0
       lifetime: 0
       fragRandomSpread: 0
-      //always spawn late
+      //always spawn last
       fragBullets: 1
-      fragLifeMin: 0.75
+      fragLifeMax: 1.25
       fragBullet: {
         type: BulletType
         keepVelocity: false 
