@@ -10,6 +10,7 @@ accel: 0.09
 drag: 0.05
 buildSpeed: 4.5
 buildBeamOffset: 24
+healColor: 7382f088
 engineOffset: 44
 engineSize: 8
 engineColor: 7382f0

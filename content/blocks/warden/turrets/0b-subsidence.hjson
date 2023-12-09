@@ -1,6 +1,8 @@
 type: PowerTurret
 size: 5
+range: 30
 rotateSpeed: 0
+recoil: 0
 alwaysShooting: true
 consumes: {
   power: 4
@@ -9,77 +11,28 @@ consumes: {
   ]
 }
 shootY: 0
-reload: 100
+reload: 5
 canOverdrive: false
 shootWarmupSpeed: 0.0035
 minWarmup: 0.999
 linearWarmup: true
 shootType: {
   type: BulletType
+  damage: 1400
+  lifetime: 5
+  hitSize: 26
   hittable: false
   absorbable: false
-  reflectable: false
   speed: 0.001
-  setDefaults: false
-  despawnHit: false
-  hitSize: 22
   homingPower: 360
   homingRange: 180
-  fragBullets: 1
-  fragRandomSpread: 0
-  fragBullet: {
-    type: RailBulletType
-    length: 22
-    status: {
-      name: dbjssf
-      disarm: true
-      speedMultiplier: 0
-      dragMultiplier: 1000
-    }
-    statusDuration: 60
-    spawnBullets: [
-      {
-        type: BulletType
-        hittable: false
-        collides: false
-        absorbable: false
-        reflectable: false
-        speed: 0.001
-        homingPower: 360
-        homingRange: 180
-        lifetime: 70
-        fragBullets: 1
-        fragRandomSpread: 0
-        fragBullet: {
-          type: BulletType
-          hittable: false
-          absorbable: false
-          reflectable: false
-          speed: 0.001
-          homingPower: 360
-          homingRange: 180
-          lifetime: 2
-          hitSize: 22
-          setDefaults: false
-          despawnHit: false
-          fragBullets: 1
-          fragRandomSpread: 0
-          fragBullet: {
-            type: RailBulletType
-            length: 22
-            damage: 2800
-            knockback: 256
-            status: {
-              name: SKJDFhksahdgkshdkjshgd
-              speedMultiplier: 0.1
-              dragMultiplier: 0.01
-            }
-            statusDuration: 30
-          }
-        }
-      }
-    ]
+  status: {
+    name: SKJDFhksahdgkshdkjshgd
+    speedMultiplier: 0.01
+    dragMultiplier: 0.01
   }
+  statusDuration: 30
+  knockback: 200
 }
 shootSound: none
 drawer: [
@@ -113,7 +66,7 @@ drawer: [
             rot: -360
           }
           {
-            rot: 900
+            rot: 45
             progress: reload
           }
         ]
@@ -419,7 +372,7 @@ drawer: [
             rot: -360
           }
           {
-            rot: 900
+            rot: 45
             progress: reload
           }
         ]
@@ -698,6 +651,63 @@ drawer: [
             ]
           }
         ]
+      }
+      {
+        type: ShapePart
+        circle: true
+        hollow: true
+        radius: 0
+        radiusTo: 29
+        stroke: 2
+        color: 7382f0
+        progress: {
+          type: warmup
+          op: compress
+          start: 0.75
+          end: 1
+        }
+        layer: 109
+      }
+      {
+        type: ShapePart
+        circle: true
+        radius: 0
+        radiusTo: 30
+        color: 7382f088
+        progress: {
+          type: warmup
+          op: compress
+          start: 0.75
+          end: 1
+        }
+        layer: 108
+      }
+      {
+        type: ShapePart
+        circle: true
+        radius: 0
+        radiusTo: 22
+        color: 7382f0
+        progress: {
+          type: warmup
+          op: compress
+          start: 0.75
+          end: 1
+        }
+        layer: 109
+      }
+      {
+        type: ShapePart
+        circle: true
+        radius: 0
+        radiusTo: 18
+        progress: {
+          type: warmup
+          op: compress
+          start: 0.75
+          end: 1
+        }
+        layer: 110
       }
     ]
   }

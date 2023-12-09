@@ -48,7 +48,7 @@ shootType: {
       hitEffect: none
       despawnEffect: none
       lifetime: 0
-      damage: 22
+      damage: 19
       radius: 80
       unitDamageScl: 1
       hitPowerEffect: hitLancer

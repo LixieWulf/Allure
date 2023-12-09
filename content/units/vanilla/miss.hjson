@@ -1,0 +1,171 @@
+type: missile
+template: MissileUnitType
+fogRadius: 4.5
+hitSize: 22
+health: 190
+speed: 4
+rotateSpeed: 1.4
+accel: 0.09
+drag: 0.01
+missileAccelTime: 40
+lifetime: 160
+trailLength: 12
+engineOffset: 10
+engineSize: 4
+engineColor: b279c2
+trailColor: b279c2
+weapons: [
+  {
+    shootCone: 360
+    reload: 5
+    controllable: false
+    shootSound: none
+    shootOnDeath: true
+    bullet: {
+      type: ExplosionBulletType
+      splashDamage: 380
+      splashDamageRadius: 48
+      suppressionRange: 120
+      suppressionEffectChance: 210
+      suppressionDuration: 120
+      hitSound: none
+      despawnEffect: none
+      hitEffect: [
+        {
+          type: WaveEffect 
+          sizeFrom: 120
+          sizeTo: 60
+          interp: pow3Out
+          strokeFrom: 4
+          strokeTo: 0
+          lifetime: 35
+          colorFrom: b279c2
+          colorTo: 6d56bf
+        }
+        {
+          type: WaveEffect 
+          sizeFrom: 4
+          sizeTo: 48
+          interp: pow2Out
+          strokeFrom: 4
+          strokeTo: 0
+          lifetime: 35
+          colorFrom: b279c2
+          colorTo: 6d56bf
+        }
+        {
+          line: true
+          particles: 12
+          lifetime: 25
+          length: 56
+          interp: pow2Out
+          sizeInterp: pow2In
+          colorTo: b279c2
+          lenFrom: 10
+          lenTo: 5
+          strokeFrom: 2
+          strokeTo: 0
+        }
+        {
+          particles: 18
+          length: 48
+          lifetime: 45
+          interp: pow3Out
+          sizeInterp: pow2In
+          colorFrom: 6d56bf
+          colorTo: 6d56bf88
+          sizeFrom: 6
+          sizeTo: 0
+        }
+      ]
+    }
+  }
+  {
+    x: 3
+    y: -2
+    alternate: false
+    baseRotation: -135
+    alwaysShooting: true
+    alwaysContinuous: true
+    shootSound: none
+    bullet: {
+      type: ContinuousFlameBulletType
+      damage: 0
+      collides: false
+      width: 2.4
+      length: 8
+      shootEffect: none
+      smokeEffect: none 
+      drawFlare: false
+      colors: [
+        6d56bf66,
+        7658bfa0,
+        8c62bfbb,
+        b279c2,
+        ffffff
+      ]
+    }
+  }
+  //Kills the missile only upon direct front impact with a block or unit, hacky way to reduce missile-to-missile losses.
+  {
+    alwaysShooting: true
+    x: 0
+    mirror: false
+    shootSound: none
+    bullet: {
+      type: RailBulletType
+      shootEffect: none
+      smokeEffect: none
+      pierceEffect: none
+      length: 12
+      despawnHit: false
+      setDefaults: false
+      fragBullets: 1
+      fragBullet: {
+        type: ExplosionBulletType
+        hitEffect: none
+        despawnEffect: none
+        hitSound: none
+        despawnSound: none
+        hitShake: 0
+      }
+    }
+  }
+]
+abilities: [
+  {
+    type: MoveEffectAbility
+    rotateEffect: true
+    interval: 4
+    effect: {
+      line: true
+      cone: 30
+      particles: 6
+      lifetime: 45
+      length: -30
+      baseLength: -20
+      interp: pow2Out
+      colorFrom: b279c2
+      colorTo: 6d56bf
+      lenFrom: 10
+      lenTo: 5
+      strokeFrom: 2
+      strokeTo: 0
+    }
+  }
+  {
+    type: SuppressionFieldAbility
+    display: false
+    active: false
+    orbRadius: 3
+    x: 0
+    y: -2
+    particleSize: 0.4
+    particleLen: 2
+    rotateScl: -1
+  }
+]
+loopSound: missileTrail
+loopSoundVolume: 0.25
+deathExplosionEffect: none
+deathSound: largeExplosion

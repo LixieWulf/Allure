@@ -65,6 +65,7 @@ weapons: [
               fragBullets: 1
               fragLifeMin: 0
               fragBullet: {
+                ignoreSpawnAngle: true
                 type: BulletType
                 collides: false
                 hittable: false
@@ -99,6 +100,7 @@ weapons: [
               fragBullets: 1
               fragLifeMin: 0
               fragBullet: {
+                ignoreSpawnAngle: true
                 type: BulletType
                 collides: false
                 hittable: false

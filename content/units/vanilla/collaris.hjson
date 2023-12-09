@@ -21,7 +21,7 @@ weapons: [
     shootSound: shockBlast
     bullet: {
       speed: 9
-      lifetime: 30
+      lifetime: 37
       damage: 80
       pierceDamageFactor: 0.7
       pierce: true

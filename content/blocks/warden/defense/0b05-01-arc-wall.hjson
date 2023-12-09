@@ -37,7 +37,7 @@ shootType: {
     absorbable: false
     hitEffect: none
     //temporary
-    hitSound: spark
+    hitSound: shockBlast
     despawnEffect: [
       {
         length: 0 
@@ -58,7 +58,7 @@ shootType: {
         {
           type: RailBulletType
           length: 60
-          damage: 150
+          damage: 80
           hitEffect: hitLaserBlast
           pierceEffect: none
           pierceDamageFactor: 0
@@ -69,7 +69,7 @@ shootType: {
       collidesTiles: false
       speed: 60
       lifetime: 1
-      damage: 550
+      damage: 200
       trailEffect: none
       fragBullets: 1
       fragRandomSpread: 45
@@ -81,7 +81,7 @@ shootType: {
           {
             type: RailBulletType
             length: 60
-            damage: 150
+            damage: 80
             hitEffect: hitLaserBlast
             pierceEffect: none
             pierceDamageFactor: 0
@@ -92,7 +92,7 @@ shootType: {
         collidesTiles: false
         speed: 60
         lifetime: 1
-        damage: 550
+        damage: 200
         trailEffect: none
         lightning: 1
         lightningLength: 2
@@ -103,7 +103,7 @@ shootType: {
             {
               type: RailBulletType
               length: 60
-              damage: 150
+              damage: 80
               hitEffect: hitLaserBlast
               pierceEffect: none
               pierceDamageFactor: 0
@@ -124,7 +124,7 @@ shootType: {
             collidesTiles: false
             speed: 60
             lifetime: 1
-            damage: 550
+            damage: 200
             trailEffect: none
             lightning: 1
             lightningLength: 2
@@ -134,7 +134,7 @@ shootType: {
               collidesTiles: false
               speed: 60
               lifetime: 1
-              damage: 550
+              damage: 200
               trailEffect: none
               despawnHit: true
               despawnEffect: [

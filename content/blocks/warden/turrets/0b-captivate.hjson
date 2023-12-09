@@ -1,0 +1,58 @@
+type: PowerTurret
+size: 3
+health: 1300
+armor: 26
+range: 220
+reload: 100
+recoil: 7
+recoilTime: 30
+rotateSpeed: 2.4
+consumes: {
+  power: 3.8
+  liquids: [
+    liquid-baenara/0.4
+  ]
+}
+shootSound: plasmaboom
+shootEffect: none
+smokeEffect: none
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: HaloPart
+      mirror: true
+      tri: true
+      x: 10
+      y: 3
+      triLength: 0
+      triLengthTo: 220
+      shapes: 1
+      radius: 0
+      radiusTo: 6
+      color: 7382f0
+      shapeRotation: 0
+      layer: 100
+      progress: recoil
+    }
+  ]
+}
+shootType: {
+  type: RailBulletType
+  length: 220
+  damage: 240
+  knockback: -40
+  pointEffectSpace: 40
+  pointEffect: {
+    length: -40
+    cone: 0
+    region: allure-semicircle
+    lifetime: 25
+    particles: 1
+    randLength: false
+    sizeFrom: 20
+    sizeTo: 20
+    colorFrom: 7382f0
+    colorTo: 7382f000
+  }
+}

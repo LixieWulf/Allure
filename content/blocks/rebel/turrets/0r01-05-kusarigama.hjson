@@ -39,6 +39,7 @@ ammoTypes: {
     smokeEffect: none
     fragBullets: 1
     fragBullet: {
+      ignoreSpawnAngle: true
       type: BulletType
       collides: false
       hittable: false
@@ -69,6 +70,7 @@ ammoTypes: {
     }
     spawnBullets: [
       {
+        ignoreSpawnAngle: true
         lifetime: 0
         hitEffect: none
         despawnEffect: none

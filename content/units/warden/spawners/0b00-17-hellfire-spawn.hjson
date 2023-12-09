@@ -1,0 +1,196 @@
+type: missile
+envEnabled: -1
+lifetime: 1
+speed: 0
+engineSize: 0 
+drawBody: false 
+drawCell: false 
+envEnabled: -1
+weapons: [
+  {
+    shootOnDeath: true
+    controllable: false
+    shootCone: 360
+    x: 0
+    mirror: false
+    shootSound: none
+    bullet: {
+      damage: 0
+      speed: 0
+      lifetime: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      despawnEffect: [
+        //this is an intensely long effect, so each individual effects sequence is commented
+        //"""space"""
+        {
+          type: SeqEffect
+          layer: 99
+          effects: [
+            {
+              type: ParticleEffect
+              particles: 1
+              lifetime: 31
+              length: 0
+              sizeFrom: 0
+              sizeTo: 200
+              layer: 89
+              colorFrom: 000000
+              colorTo: 000000
+              clip: 8192
+              interp: pow3Out
+            }
+            {
+              type: ParticleEffect
+              particles: 1
+              lifetime: 161
+              length: 0
+              sizeFrom: 200
+              sizeTo: 200
+              layer: 89
+              colorFrom: 000000
+              colorTo: 000000
+              clip: 8192
+            }
+            {
+              type: ParticleEffect
+              particles: 1
+              lifetime: 30
+              length: 0
+              sizeFrom: 200
+              sizeTo: 0
+              layer: 89
+              colorFrom: 000000
+              colorTo: 000000
+              clip: 8192
+              interp: pow3In
+            }
+          ]
+        }
+        //"""stars"""
+        {
+          type: ParticleEffect
+          particles: 45
+          startDelay: 20
+          lifetime: 180
+          length: 0
+          baseLength: 180
+          sizeFrom: 1
+          sizeTo: 1
+          clip: 8192
+        }
+        {
+          type: ParticleEffect
+          particles: 20
+          startDelay: 20
+          lifetime: 180
+          length: 0
+          baseLength: 180
+          sizeFrom: 2
+          sizeTo: 2
+          clip: 8192
+        }
+        //creates wormhole outer ring effect by abusing bloom shader
+        {
+          type: SeqEffect
+          layer: 105
+          effects: [
+            {
+              type: ParticleEffect
+              particles: 4
+              region: circle-shadow
+              lifetime: 31
+              length: 0
+              sizeFrom: 0
+              sizeTo: 200
+              colorFrom: 000000
+              colorTo: 000000
+              clip: 8192
+              interp: pow3Out
+            }
+            {
+              type: ParticleEffect
+              particles: 4
+              region: circle-shadow
+              lifetime: 161
+              length: 0
+              sizeFrom: 200
+              sizeTo: 200
+              colorFrom: 000000
+              colorTo: 000000
+              clip: 8192
+            }
+            {
+              type: ParticleEffect
+              particles: 4
+              region: circle-shadow
+              lifetime: 30
+              length: 0
+              sizeFrom: 200
+              sizeTo: 0
+              colorFrom: 000000
+              colorTo: 000000
+              clip: 8192
+              interp: pow3In
+            }
+          ]
+        }
+        //"outer ring" - easy to make
+        {
+          type: ParticleEffect
+          particles: 15
+          region: circle-shadow
+          lifetime: 21
+          length: 0
+          sizeFrom: 0
+          sizeTo: 240
+          layer: 104
+          colorFrom: 7382f0
+          colorTo: 7382f0
+          clip: 8192
+          interp: pow3Out
+        }
+        {
+          type: ParticleEffect
+          particles: 15
+          region: circle-shadow
+          startDelay: 20
+          lifetime: 181
+          length: 0
+          sizeFrom: 240
+          sizeTo: 240
+          layer: 104
+          colorFrom: 7382f0
+          colorTo: 7382f0
+          clip: 8192
+        }
+        {
+          type: ParticleEffect
+          particles: 15
+          region: circle-shadow
+          startDelay: 200
+          lifetime: 20
+          length: 0
+          sizeFrom: 240
+          sizeTo: 0
+          layer: 104
+          colorFrom: 7382f0
+          colorTo: 7382f0
+          clip: 8192
+          interp: pow3In
+        }
+      ]
+      hitEffect: none
+      shootEffect: none
+      smokeEffect: none
+      fragBullets: 1
+      fragRandomSpread: 0
+      fragBullet: {
+        spawnUnit: allure-miss
+      }
+    }
+  }
+]
+deathSound: none 
+deathExplosionEffect: none 
