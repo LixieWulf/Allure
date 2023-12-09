@@ -1,4 +1,5 @@
 fogRadius: 27
+targetAir: true
 weapons: [
   {
     name: disrupt-weapon
