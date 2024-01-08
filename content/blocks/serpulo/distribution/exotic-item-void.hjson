@@ -1,0 +1,3 @@
+type: ItemVoid
+health: 2000000
+buildVisibility: sandboxOnly

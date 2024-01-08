@@ -1,0 +1,96 @@
+type: naval
+hitSize: 22
+health: 75000
+armor: 14
+speed: 4
+accel: 0.004
+rotateSpeed: 2.4
+drag: 0.08
+parts: [
+  {
+    mirror: true
+    suffix: -fin0
+    layer: 59.9
+    y: -1
+    x: 4
+    moveRot: -45
+    weaponIndex: 0
+    progress: smoothReload
+  }
+  {
+    mirror: true
+    suffix: -fin1
+    layer: 59.9
+    y: -8
+    x: 4.25
+    moveRot: -45
+    weaponIndex: 0
+    progress: smoothReload
+  }
+]
+weapons: [
+  {
+    x: 0
+    mirror: false
+    alwaysShooting: true
+    minShootVelocity: 0.17
+    reload: 30
+    continuous: true
+    shootSound: none
+    bullet: {
+      type: ContinuousFlameBulletType
+      drawFlare: false
+      collides: false
+      width: 0
+      length: 0
+      recoil: -0.15
+      lifetime: 20
+    }
+  }
+  {
+    name: oreodytes-stunner
+    x: 6
+    y: 7.75
+    rotate: true
+    rotateSpeed: 3
+    reload: 12
+    recoil: 2
+    recoilTime: 24
+    shootSound: sap
+    shootX: -1
+    bullet: {
+      type: SapBulletType
+      length: 140
+      damage: 35
+      sapStrength: 0
+      color: cfd446
+      status: {
+        name: oreodytes-stun
+        reloadMultiplier: 0.5
+      }
+    }
+  }
+  {
+    name: oreodytes-slower
+    x: 0
+    y: -2
+    mirror: false
+    rotate: true
+    rotateSpeed: 2
+    reload: 24
+    recoil: 2
+    recoilTime: 24
+    shootSound: sap
+    bullet: {
+      type: SapBulletType
+      length: 180
+      damage: 20
+      sapStrength: 0
+      color: cfd446
+      status: {
+        name: oreodytes-slow
+        speedMultiplier: 0.5
+      }
+    }
+  }
+]

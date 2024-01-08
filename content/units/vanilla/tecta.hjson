@@ -1,0 +1,13 @@
+abilities: [
+  {
+    type: ShieldArcAbility
+    region: tecta-shield
+    radius: 45
+    angle: 82
+    regen: 2000000
+    max: 2000000
+    y: -26
+    width: 6
+    whenShooting: false
+  }
+]

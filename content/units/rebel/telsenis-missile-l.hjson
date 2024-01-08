@@ -1,0 +1,140 @@
+type: missile
+lowAltitude: true
+template: MissileUnitType
+health: 480
+armor: 25
+speed: 6
+rotateSpeed: 2
+missileAccelTime: 40
+lifetime: 120
+drawCell: false
+drawBody: false
+engineColor: e65555
+engineOffset: 16
+trailColor: e65555
+trailLength: 15
+parts: [
+  {
+    type: RegionPart
+    name: allure-0r08-telsenis-missile-l
+    outline: false
+  }
+]
+weapons: [
+  {
+    controllable: false
+    alwaysShooting: true
+    reload: 180
+    shootSound: none
+    x: 0
+    mirror: false
+    shoot: {
+      firstShotDelay: 5
+    }
+    bullet: {
+      lifetime: 0
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      recoil: -18
+    }
+  }
+  {
+    shootCone: 360
+    reload: 5
+    shootOnDeath: true
+    shootSound: none
+    shake: 6
+    bullet: {
+      type: ExplosionBulletType
+      splashDamage: 1200
+      splashDamageRadius: 45
+      despawnEffect: none
+      hitEffect: [
+        {
+          lightOpacity: 0
+          length: 50
+          lifetime: 60
+          particles: 20
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 3
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow2In
+        }
+        {
+          lightOpacity: 0
+          length: 45
+          lifetime: 70
+          particles: 32
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 5
+          sizeTo: 0
+          interp: pow2Out
+          sizeInterp: pow2In
+        }
+        {
+          lightOpacity: 0
+          length: 60
+          lifetime: 30
+          particles: 22
+          colorFrom: 9f9f9f
+          colorTo: 787878
+          sizeFrom: 1
+          sizeTo: 0
+          interp: pow5Out
+          sizeInterp: pow3In
+        }
+        {
+          lightOpacity: 0
+          length: 50
+          lifetime: 40
+          particles: 22
+          colorFrom: 9f9f9f
+          colorTo: 787878
+          sizeFrom: 3
+          sizeTo: 0
+          interp: pow5Out
+          sizeInterp: pow3In
+        }
+        {
+          length: 60
+          line: true
+          lifetime: 30
+          particles: 8
+          colorTo: e65555
+          lenFrom: 7
+          lenTo: 0
+          strokeFrom: 3
+          strokeTo: 1
+          interp: pow2Out
+          sizeInterp: pow2In
+        }
+        {
+          type: WaveEffect
+          lifetime: 20
+          sizeFrom: 0
+          sizeTo: 45
+          strokeFrom: 4
+          strokeTo: 0
+          colorTo: e65555
+        }
+      ]
+      fragBullets: 6
+      fragBullet: {
+        type: ShrapnelBulletType
+        createChance: 0.5
+        damage: 250
+        pierce: true
+        pierceBuilding: true
+        toColor: e65555
+        lifetime: 40
+      }
+    }
+  }
+]
+deathExplosionEffect: none
+deathSound: largeExplosion

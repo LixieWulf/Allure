@@ -1,0 +1,164 @@
+type: flying
+flying: true
+lowAltitude: true
+hitSize: 30
+health: 56000
+armor: 20
+speed: 100
+accel: 0.0009
+drag: 0.05
+rotateSpeed: 2
+engineOffset: 20
+engineSize: 4
+faceTarget: false
+outlines: false
+omniMovement: false
+parts: [
+  {
+    type: RegionPart
+    suffix: -low
+    outline: false
+    layer: 90
+  }
+  {
+    type: RegionPart
+    layer: 91
+    outline: false
+  }
+]
+weapons: [
+  //speeb
+  {
+    baseRotation: 180
+    x: 7.5
+    y: -15
+    recoil: 0
+    alternate: false
+    rotate: true
+    rotateSpeed: 0
+    continuous: true
+    shoot: {
+      firstShotDelay: 30
+    }
+    reload: 180
+    recoilTime: 200
+    shootCone: 360
+    shootSound: laserbeam
+    display: false
+    bullet: {
+      type: ContinuousFlameBulletType
+      shootEffect: none
+      smokeEffect: none
+      lifetime: 150
+      lengthInterp: pow5Out
+      recoil: -0.0125
+      collides: false
+      drawFlare: false
+      length: 16
+      width: 3
+      colors: [
+        c2464666,
+        c45a53bb,
+        eb867f,
+        ffffff
+      ]
+    }
+  }
+  {
+    name: harass-weapon
+    layerOffset: 2
+    x: 0
+    recoil: 0
+    continuous: true
+    rotate: true
+    rotateSpeed: 0
+    mirror: false
+    parts: [
+      {
+        suffix: -wing
+        outline: false
+        mirror: true
+        layer: 90.5
+        x: 15
+        moveY: -6
+        moveX: -6
+        moveRot: -45
+        progress: charge
+        heatProgress: smoothReload
+        smoothReloadSpeed: 0.01
+        heatLayerOffset: 0.1
+        moves: [
+          {
+            rot: -45
+            x: -6
+            y: -6
+            progress: {
+              type: recoil
+              op: curve
+              interp: pow10Out
+            }
+          }
+        ]
+      }
+    ]
+    shoot: {
+      firstShotDelay: 30
+    }
+    reload: 360
+    recoilTime: 200
+    shootCone: 360
+    shootStatus: allure-boosting
+    shootStatusDuration: 220
+    display: false
+    shootSound: none
+    shake: 1
+    bullet: {
+      type: BulletType
+      collides: false
+      hittable: false
+      absorbable: false
+      lifetime: 150
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+    }
+  }
+  {
+    name: harass-cannon
+    x: 0
+    y: 4
+    layerOffset: 3
+    mirror: false
+    rotate: true
+    rotateSpeed: 4
+    controllable: false
+    autoTarget: true
+    targetInterval: 8
+    targetSwitchInterval: 8
+    reload: 70
+    recoil: 3
+    shootY: 12
+    cooldownTime: 50
+    shootSound: shootBig
+    bullet: {
+      speed: 8
+      lifetime: 40
+      damage: 40
+      splashDamage: 120
+      splashDamageRadius: 12
+      width: 14
+      height: 24
+      trailLength: 12
+      trailWidth: 3
+      trailInterp: slope
+      fragBullets: 1
+      fragRandomSpread: 0
+      fragBullet: {
+        type: RailBulletType
+        length: 24
+        damage: 210
+      }
+    }
+  }
+]

@@ -1,0 +1,4 @@
+type: PowerVoid
+health: 2000000
+buildVisibility: sandboxOnly
+category: power

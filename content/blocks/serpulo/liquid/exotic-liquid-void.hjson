@@ -1,0 +1,5 @@
+type: LiquidVoid
+liquidCapacity: 100000
+health: 2000000
+buildVisibility: sandboxOnly
+category: liquid
