@@ -1,0 +1,40 @@
+type: UnitAssembler
+payloadSpeed: 1.5
+size: 7
+areaSize: 21
+dronesCreated: 4
+hasLiquids: true
+liquidCapacity: 240
+droneType: allure-assault-construction-drone
+consumes: {
+  power: 15
+  liquids: [
+    oil/2
+    cryofluid/0.6
+  ]
+}
+plans: [
+  {
+    type: AssemblerUnitPlan
+    unit: 1v24-spark
+    time: 3600
+    requirements: [
+      allure-1v07-12-03-thruster-module/2
+      allure-1v07-12-01-lightweight-cells/2
+      allure-1v07-12-02-thin-armor/6
+      arc/6
+    ]
+  }
+  {
+    type: AssemblerUnitPlan
+    unit: 1v25-wildfire
+    time: 80
+    requirements: [
+      allure-1v24-spark/1
+      swarmer/2
+      thorium-reactor/1
+    ]
+  }
+]
+category: units
+buildVisibility: sandboxOnly

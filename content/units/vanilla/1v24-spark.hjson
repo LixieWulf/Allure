@@ -1,0 +1,177 @@
+type: flying
+flying: true
+hitSize: 45
+health: 68000
+armor: 30
+speed: 5
+accel: 0.015
+drag: 0.015
+rotateSpeed: 1.4
+omniMovement: false
+circleTarget: true
+maxRange: 180
+outlines: false
+engineOffset: 19
+engineSize: 6.5
+engines: [
+  {
+    x: 15
+    y: -15
+    rotation: -90
+    radius: 4
+  }
+  {
+    x: -15
+    y: -15
+    rotation: -90
+    radius: 4
+  }
+]
+weapons: [
+  {
+    alwaysShooting: true
+    alwaysContinuous: true
+    alternate: false
+    shootY: 0
+    recoil: 0
+    y: -18
+    x: 22
+    shootSound: none
+    bullet: {
+      type: BulletType
+      keepVelocity: false
+      speed: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      layer: 100
+      trailLength: 35
+      trailWidth: 1
+      trailColor: a9d8ff
+    }
+  }
+  {
+    alwaysShooting: true
+    alwaysContinuous: true
+    alternate: false
+    shootY: 0
+    recoil: 0
+    y: -18
+    x: 22
+    shootSound: none
+    bullet: {
+      type: BulletType
+      keepVelocity: false
+      speed: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      layer: 101
+      trailLength: 8
+      trailWidth: 2
+      trailColor: ffffff
+    }
+  }
+  {
+    alwaysShooting: true
+    alwaysContinuous: true
+    alternate: false
+    shootY: 0
+    recoil: 0
+    y: -18
+    x: 8
+    shootSound: none
+    bullet: {
+      type: BulletType
+      keepVelocity: false
+      speed: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      layer: 100
+      trailLength: 20
+      trailWidth: 1
+      trailColor: a9d8ff
+    }
+  }
+  {
+    alwaysShooting: true
+    alwaysContinuous: true
+    alternate: false
+    shootY: 0
+    recoil: 0
+    y: -18
+    x: 8
+    shootSound: none
+    bullet: {
+      type: BulletType
+      keepVelocity: false
+      speed: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      layer: 101
+      trailLength: 6
+      trailWidth: 2
+      trailColor: ffffff
+    }
+  }
+]
+abilities: [
+  {
+    type: MoveLightningAbility
+    heatRegion: allure-spark-heat
+    y: 24
+    chance: 0.25
+    length: 22
+    damage: 200
+    minSpeed: 0.8
+    maxSpeed: 5
+  }
+  {
+    type: MoveLightningAbility
+    x: 8
+    y: 20
+    chance: 0.2
+    length: 14
+    damage: 200
+    minSpeed: 0.8
+    maxSpeed: 5
+  }
+  {
+    type: MoveLightningAbility
+    x: 15
+    y: 18
+    chance: 0.1
+    length: 8
+    damage: 200
+    minSpeed: 0.8
+    maxSpeed: 5
+  }
+  {
+    type: MoveLightningAbility
+    x: 24
+    y: 4
+    chance: 0.2
+    length: 14
+    damage: 200
+    minSpeed: 0.8
+    maxSpeed: 5
+  }
+]

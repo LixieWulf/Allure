@@ -1,0 +1,210 @@
+type: flying
+flying: true
+lowAltitude: true
+hitSize: 44
+health: 80000
+armor: 36
+speed: 5
+accel: 0.03
+drag: 0.02
+rotateSpeed: 2.3
+strafePenalty: 0.25
+outlines: false
+drawBody: false
+engineSize: 0
+engineLayer: 90.5
+engines: [
+  {
+    x: 7
+    y: -14
+    rotation: -90
+    radius: 4
+  }
+  {
+    x: -7
+    y: -14
+    rotation: -90
+    radius: 4
+  }
+]
+parts: [
+  {
+    type: RegionPart
+    suffix: ""
+    layer: 91
+    outline: false
+  }
+  {
+    type: RegionPart
+    name: circle-shadow
+    color: c9453688
+    layer: 90.1
+    outline: false
+    xScl: 3.5
+    yScl: 3.5
+  }
+  {
+    type: RegionPart
+    name: circle-shadow
+    color: feca8088
+    layer: 90.15
+    outline: false
+    xScl: 2
+    yScl: 2
+  }
+]
+weapons: [
+  {
+    name: wildfire-overlay
+    layerOffset: 2
+    display: false
+    x: 0
+    alwaysShooting: true
+    reload: 5
+    recoil: 0
+    mirror: false
+    shootSound: none
+    shoot: {
+      type: ShootSpread
+      shots: 360
+      spread: 1
+    }
+    shootStatus: {
+      name: wildfire-burn
+      damage: 88.88889
+      effect: [
+        fireHit,
+        smoke
+      ]
+      effectChance: 0.5
+    }
+    bullet: {
+      type: RailBulletType
+      damage: 0.007
+      length: 230
+      status: allure-0t-thermal1
+      statusDuration: 5
+      pierceEffect: none
+      shootEffect: none
+      smokeEffect: none
+      incendAmount: 5
+      incendChance: 0.001
+      puddles: 1
+      puddleRange: 6
+      puddleAmount: 0.8
+      puddleLiquid: slag
+    }
+  }
+  {
+    name: wildfire-launcher
+    layerOffset: 0.7
+    alternate: false
+    x: 11.25
+    y: 5.75
+    reload: 170
+    recoil: 4
+    recoilTime: 30
+    shootSound: missile
+    inaccuracy: 4
+    shoot: {
+      shots: 7
+      shotDelay: 20
+    }
+    bullet: {
+      type: MissileBulletType
+      damage: 60
+      splashDamage: 95
+      splashDamageRadius: 24
+      speed: 4
+      lifetime: 80
+      homingPower: 0.14
+      homingRange: 35
+      sprite: missile-large
+      width: 15
+      height: 30
+      trailChance: 0.25
+      trailEffect: [
+        fireHit,
+        {
+          length: 11
+          particles: 4
+          lifetime: 40
+          interp: pow3Out
+          sizeInterp: pow5In
+          sizeFrom: 3
+          sizeTo: 0
+          colorFrom: e58956bb
+          colorTo: 787878
+        }
+      ]
+      hitEffect: massiveExplosion
+    }
+  }
+  {
+    name: wildfire-launcher
+    layerOffset: 0.6
+    alternate: false
+    x: 16.25
+    y: 1.75
+    reload: 170
+    recoil: 4
+    recoilTime: 30
+    shootSound: missile
+    inaccuracy: 4
+    shoot: {
+      shots: 7
+      shotDelay: 20
+      firstShotDelay: 10
+    }
+    bullet: {
+      type: MissileBulletType
+      damage: 60
+      splashDamage: 95
+      splashDamageRadius: 24
+      speed: 4
+      lifetime: 80
+      homingPower: 0.09
+      homingRange: 35
+      sprite: missile-large
+      width: 15
+      height: 30
+      trailChance: 0.25
+      trailEffect: [
+        fireHit,
+        {
+          length: 11
+          particles: 4
+          lifetime: 40
+          interp: pow3Out
+          sizeInterp: pow5In
+          sizeFrom: 3
+          sizeTo: 0
+          colorFrom: e58956bb
+          colorTo: 787878
+        }
+      ]
+      hitEffect: massiveExplosion
+      bulletInterval: 10
+      intervalBullets: 1
+      intervalRandomSpread: 30
+      intervalDelay: 25
+      intervalBullet: {
+        type: MissileBulletType
+        damage: 60
+        splashDamage: 30
+        splashDamageRadius: 17
+        speed: 3
+        lifetime: 80
+        homingPower: 0.07
+        homingRange: 35
+        sprite: missile-large
+        width: 8
+        height: 22
+        trailLength: 24
+        trailWidth: 1.1
+        trailChance: 0
+        hitEffect: flakExplosion
+      }
+    }
+  }
+]

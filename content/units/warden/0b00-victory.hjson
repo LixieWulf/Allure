@@ -83,6 +83,57 @@ weapons: [
       despawnEffect: none
     }
   }
+  {
+    alwaysShooting: true
+    alwaysContinuous: true
+    alternate: false
+    shootY: 0
+    recoil: 0
+    y: -7
+    x: 6
+    shootSound: none
+    bullet: {
+      type: BulletType
+      keepVelocity: false
+      speed: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      trailLength: 60
+      trailWidth: 0.5
+      trailColor: 7382f0
+    }
+  }
+  {
+    alwaysShooting: true
+    alwaysContinuous: true
+    alternate: false
+    shootY: 0
+    recoil: 0
+    y: -7
+    x: 6
+    shootSound: none
+    bullet: {
+      type: BulletType
+      keepVelocity: false
+      speed: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      layer: 101
+      trailLength: 30
+      trailWidth: 0.5
+      trailColor: ffffff
+    }
+  }
 ]
 abilities: [
   {
@@ -149,56 +200,6 @@ abilities: [
       sizeFrom: 1.5
       sizeTo: 0
       colorFrom: 7382f0
-      colorTo: 7382f0
-    }
-    display: false
-  }
-  {
-    type: MoveEffectAbility
-    minVelocity: 1
-    rotateEffect: true
-    interval: 1
-    y: -4
-    x: 6
-    effect: {
-      line: true
-      lightOpacity: 0.2
-      cone: 0
-      length: 0.001
-      particles: 1
-      layer: 90
-      baseRotation: 180
-      lifetime: 18
-      lenFrom: 6
-      lenTo: 6
-      strokeFrom: 1
-      strokeTo: 0
-      colorFrom: ffffff
-      colorTo: 7382f0
-    }
-    display: false
-  }
-  {
-    type: MoveEffectAbility
-    minVelocity: 1
-    rotateEffect: true
-    interval: 1
-    y: -4
-    x: -6
-    effect: {
-      line: true
-      lightOpacity: 0.2
-      cone: 0
-      length: 0.001
-      particles: 1
-      layer: 90
-      baseRotation: 180
-      lifetime: 18
-      lenFrom: 6
-      lenTo: 6
-      strokeFrom: 1
-      strokeTo: 0
-      colorFrom: ffffff
       colorTo: 7382f0
     }
     display: false

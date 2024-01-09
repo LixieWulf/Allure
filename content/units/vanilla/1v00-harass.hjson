@@ -49,10 +49,10 @@ weapons: [
       type: ContinuousFlameBulletType
       shootEffect: none
       smokeEffect: none
+      collides: false
       lifetime: 150
       lengthInterp: pow5Out
       recoil: -0.0125
-      collides: false
       drawFlare: false
       length: 16
       width: 3
@@ -156,8 +156,9 @@ weapons: [
       fragRandomSpread: 0
       fragBullet: {
         type: RailBulletType
-        length: 24
+        length: 38
         damage: 210
+        pierceEffect: flakExplosion
       }
     }
   }

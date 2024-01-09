@@ -53,40 +53,126 @@ weapons: [
     y: 7.75
     rotate: true
     rotateSpeed: 3
-    reload: 12
+    reload: 25
     recoil: 2
     recoilTime: 24
+    inaccuracy: 3
+    shoot: {
+      shots: 3
+      shotDelay: 3
+    }
     shootSound: sap
     shootX: -1
     bullet: {
-      type: SapBulletType
-      length: 140
-      damage: 35
-      sapStrength: 0
-      color: cfd446
+      type: LaserBoltBulletType
+      damage: 45
+      speed: 5
+      lifetime: 45
+      width: 3
+      height: 8
+      backColor: cfd446
       status: {
         name: oreodytes-stun
         reloadMultiplier: 0.5
+      }
+      smokeEffect: {
+        type: WaveEffect
+        lifetime: 10
+        sizeFrom: 0
+        sizeTo: 5
+        strokeFrom: 1
+        colorTo: cfd446
+      }
+      hitEffect: {
+        type: WaveEffect
+        lifetime: 10
+        sizeFrom: 0
+        sizeTo: 5
+        strokeFrom: 1
+        colorTo: cfd446
+      }
+      despawnEffect: {
+        type: WaveEffect
+        lifetime: 10
+        sizeFrom: 0
+        sizeTo: 5
+        strokeFrom: 1
+        colorTo: cfd446
+      }
+      setDefaults: false
+      despawnHit: false
+      fragBullets: 1
+      fragRandomSpread: 0
+      fragBullet: {
+        type: LaserBoltBulletType
+        collides: false
+        damage: 0
+        speed: 5
+        lifetime: 10
+        shrinkX: 1
+        width: 3
+        height: 8
+        backColor: cfd446
+        hitEffect: {
+          type: WaveEffect
+          lifetime: 10
+          sizeFrom: 0
+          sizeTo: 5
+          strokeFrom: 1
+          colorTo: cfd446
+        }
+        despawnEffect: none
+        fragBullets: 1
+        fragBullet: {
+          type: EmpBulletType
+          despawnHit: true
+          collides: false
+          lifetime: 1
+          speed: 0
+          damage: 0
+          timeDuration: 60
+          radius: 12
+          hitColor: cfd446
+          healEffect: none
+          hitPowerEffect: {
+            type: WaveEffect
+            lifetime: 10
+            sizeFrom: 0
+            sizeTo: 5
+            strokeFrom: 1
+            colorTo: cfd446
+          }
+        }
       }
     }
   }
   {
     name: oreodytes-slower
+    controllable: false
+    autoTarget: true
+    targetInterval: 15
+    targetSwitchInterval: 25
     x: 0
     y: -2
     mirror: false
     rotate: true
     rotateSpeed: 2
-    reload: 24
+    reload: 70
     recoil: 2
-    recoilTime: 24
-    shootSound: sap
+    recoilTime: 50
+    shootSound: laser
+    shake: 2
     bullet: {
-      type: SapBulletType
+      type: LaserBulletType
+      pierceCap: 3
       length: 180
-      damage: 20
-      sapStrength: 0
-      color: cfd446
+      lifetime: 35
+      damage: 70
+      colors: [
+        cfd44666,
+        cfd446,
+        ffffff
+      ]
       status: {
         name: oreodytes-slow
         speedMultiplier: 0.5
