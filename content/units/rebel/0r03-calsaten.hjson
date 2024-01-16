@@ -37,8 +37,8 @@ parts: [
   {
     type: RegionPart
     outline: false
-    suffix: -low 
     //abhorrent
+    suffix: -low 
     layer: 91
   }
   {

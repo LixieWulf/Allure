@@ -4,8 +4,9 @@ size: 7
 areaSize: 21
 dronesCreated: 4
 hasLiquids: true
+floating: true
 liquidCapacity: 240
-droneType: allure-electric-construction-drone
+droneType: allure-specialist-construction-drone
 consumes: {
   power: 15
   liquids: [
@@ -16,23 +17,23 @@ consumes: {
 plans: [
   {
     type: AssemblerUnitPlan
-    unit: 1v24-spark
+    unit: 1v30-piscicola
     time: 3600
     requirements: [
-      allure-1v07-12-03-thruster-module/2
-      allure-1v07-12-01-lightweight-cells/2
-      allure-1v07-12-02-thin-armor/6
-      arc/6
+      allure-1v07-12-01-lightweight-cells/3
+      allure-1v07-12-02-thin-armor/7
+      risso/1
+      lancer/2
+      salvo/4
     ]
   }
   {
     type: AssemblerUnitPlan
-    unit: 1v25-wildfire
+    unit: 1v31-haemopis
     time: 80
     requirements: [
-      allure-1v24-spark/1
-      swarmer/2
-      thorium-reactor/1
+      allure-1v30-piscicola/1
+      hail/3
     ]
   }
 ]

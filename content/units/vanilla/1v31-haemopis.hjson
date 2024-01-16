@@ -1,0 +1,230 @@
+type: naval
+hitSize: 70
+health: 85000
+armor: 35
+speed: 1.1
+accel: 0.07
+drag: 0.03
+rotateSpeed: 0.9
+outlines: false
+rotateMoveFirst: true
+waveTrailX: 22
+waveTrailY: -32
+trailLength: 40
+trailScl: 3
+weapons: [
+  {
+    name: artillery-mount
+    shadow: 60
+    x: 0
+    y: 9.75
+    shootY: 36
+    mirror: false
+    rotate: true
+    rotateSpeed: 0.6
+    baseRotation: 180
+    rotationLimit: 225
+    reload: 120
+    recoilTime: 60
+    recoils: 3
+    recoil: 0
+    inaccuracy: 5
+    shoot: {
+      type: ShootAlternate
+      shots: 3
+      barrels: 3
+      spread: 5.5
+      shotDelay: 20
+    }
+    shootSound: bang
+    shake: 7
+    parts: [
+      {
+        suffix: -barrel
+        under: true
+        outline: false
+        x: -5.5
+        y: 22
+        recoilIndex: 0
+        heatProgress: recoil
+        moves: [
+          {
+            progress: {
+              type: recoil
+              op: compress
+              start: 0
+              end: 0.75
+            }
+            y: -12
+          }
+          {
+            progress: {
+              type: recoil
+              op: compress
+              start: 0.75
+              end: 1
+            }
+            y: 12
+          }
+        ]
+      }
+      {
+        suffix: -barrel
+        under: true
+        outline: false
+        x: 0
+        y: 22
+        recoilIndex: 1
+        heatProgress: recoil
+        moves: [
+          {
+            progress: {
+              type: recoil
+              op: compress
+              start: 0
+              end: 0.75
+            }
+            y: -12
+          }
+          {
+            progress: {
+              type: recoil
+              op: compress
+              start: 0.75
+              end: 1
+            }
+            y: 12
+          }
+        ]
+      }
+      {
+        suffix: -barrel
+        under: true
+        outline: false
+        x:  5.5
+        y: 22
+        recoilIndex: 2
+        heatProgress: recoil
+        moves: [
+          {
+            progress: {
+              type: recoil
+              op: compress
+              start: 0
+              end: 0.75
+            }
+            y: -12
+          }
+          {
+            progress: {
+              type: recoil
+              op: compress
+              start: 0.75
+              end: 1
+            }
+            y: 12
+          }
+        ]
+      }
+    ]
+    bullet: {
+      type: ArtilleryBulletType
+      collides: false 
+      reflectable: false
+      hittable: false
+      fragOnAbsorb: false
+      speed: 6
+      width: 24
+      height: 40
+      shrinkInterp: one
+      lifetime: 90
+      damage: 0.01
+      hitEffect: sapExplosion
+      hitShake: 8
+      frontColor: bf92f9
+      backColor: 6d56bf
+      trailColor: 6d56bf
+      trailLength: 16
+      trailWidth: 4
+      trailChance: 0.3
+      trailEffect: {
+        length: 8
+        particles: 3
+        lifetime: 30
+        interp: pow3Out
+        sizeInterp: pow5In
+        sizeFrom: 2
+        sizeTo: 0
+        colorFrom: bf92f9bb
+        colorTo: 787878
+      }
+      shootEffect: {
+        particles: 1
+        length: 0
+        lifetime: 45
+        followParent: false
+        cone: 0
+        region: allure-shootspike
+        sizeFrom: 60
+        sizeTo: 0
+        colorFrom: bf92f9
+        colorTo: 787878
+      }
+      smokeEffect: {
+        followParent: false
+        cone: 40
+        particles: 12
+        lifetime: 80
+        length: 60
+        interp: pow3Out
+        sizeInterp: pow3In
+        sizeFrom: 7
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 105
+      }
+      fragBullets: 12
+      fragRandomSpread: 70
+      fragVelocityMin: 0.25
+      fragLifeMin: 0
+      fragBullet: {
+        type: ArtilleryBulletType
+        collides: false 
+        reflectable: false
+        hittable: false
+        speed: 4
+        lifetime: 20
+        width: 12
+        height: 20
+        lifetime: 90
+        damage: 0.01
+        splashDamage: 90
+        splashDamageRadius: 30
+        hitShake: 5
+        lightning: 3
+        lightningLength: 6
+        lightningLengthRand: 12
+        lightningColor: bf92f9
+        lightningDamage: 120
+        lightningType: {
+          type: BulletType
+          speed: 0
+          lifetime: 2
+          damage: 120
+          keepVelocity: false
+          hittable: false
+          absorbable: false
+          hitEffect: hitLancer
+          despawnEffect: none
+        }
+        hitEffect: sapExplosion
+        frontColor: bf92f9
+        backColor: 6d56bf
+        trailColor: 6d56bf
+        trailLength: 6
+        trailWidth: 2
+      }
+    }
+  }
+]

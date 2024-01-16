@@ -12,12 +12,15 @@ filter: [
   allure-1v07-12-03-thruster-module,
   allure-1v07-12-04-shielded-cells,
   allure-1v07-12-05-plated-armor,
+  lancer,
+  arc,
   salvo,
   spectre,
   swarmer,
   allure-fallout,
   hail,
-  ripple
+  ripple,
+  thorium-reactor
 ]
 maxBlockSize: 7
 category: units

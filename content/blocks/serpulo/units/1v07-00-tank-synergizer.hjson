@@ -16,7 +16,7 @@ consumes: {
 plans: [
   {
     type: AssemblerUnitPlan
-    unit: 1v00-conflict
+    unit: 1v06-conflict
     time: 3600
     requirements: [
       allure-1v07-12-00-treads/4
@@ -27,10 +27,10 @@ plans: [
   }
   {
     type: AssemblerUnitPlan
-    unit: 1v01-strife
+    unit: 1v07-strife
     time: 80
     requirements: [
-      allure-1v00-conflict/1
+      allure-1v06-conflict/1
       spectre/1
     ]
   }

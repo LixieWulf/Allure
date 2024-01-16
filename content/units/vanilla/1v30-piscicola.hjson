@@ -1,0 +1,275 @@
+type: naval
+hitSize: 70
+health: 48000
+armor: 60
+speed: 180
+accel: 0.0004
+drag: 0.07
+rotateSpeed: 1.1
+outlines: false
+waveTrailX: 14
+waveTrailY: -28
+trailLength: 70
+trailScl: 3
+weapons: [
+  {
+    name: sap-shooter
+    controllable: false
+    autoTarget: true
+    targetInterval: 10
+    targetSwitchInterval: 10
+    x: 19.75
+    y: 13
+    parts: [
+      {
+        suffix: -barrel
+        under: true
+        moveY: -3
+        progress: reload
+      }
+    ]
+    shoot: {
+      shots: 4
+      shotDelay: 2
+    }
+    reload: 21
+    rotate: true
+    rotateSpeed: 3.4
+    baseRotation: -90
+    alternate: false
+    inaccuracy: 4
+    shootY: 6
+    shootSound: shootBig
+    shake: 1
+    recoil: 2
+    bullet: {
+      damage: 1
+      speed: 8
+      lifetime: 40
+      reflectable: false
+      hittable: false
+      homingRange: 120
+      homingPower: 0.035
+      width: 14
+      height: 27
+      frontColor: bf92f9
+      backColor: 6d56bf
+      hitColor: bf92f9
+      hitEffect: hitBulletColor
+      despawnEffect: hitBulletColor
+      fragBullets: 1
+      fragBullet: {
+        type: SapBulletType
+        length: 4
+        width: 0
+        damage: 70
+        sapStrength: 1
+        color: bf92f9
+        hitColor: bf92f9
+      }
+    }
+  }
+  {
+    name: sap-shooter
+    controllable: false
+    autoTarget: true
+    targetInterval: 10
+    targetSwitchInterval: 10
+    x: 19.75
+    y: 22
+    parts: [
+      {
+        suffix: -barrel
+        under: true
+        moveY: -3
+        progress: recoil
+      }
+    ]
+    shoot: {
+      shots: 4
+      shotDelay: 2
+    }
+    reload: 21
+    rotate: true
+    rotateSpeed: 3.4
+    baseRotation: -90
+    alternate: false
+    inaccuracy: 4
+    shootY: 6
+    shootSound: shootBig
+    shake: 1
+    recoil: 2
+    bullet: {
+      damage: 1
+      speed: 8
+      lifetime: 40
+      reflectable: false
+      hittable: false
+      homingRange: 120
+      homingPower: 0.035
+      width: 14
+      height: 27
+      frontColor: bf92f9
+      backColor: 6d56bf
+      hitColor: bf92f9
+      hitEffect: hitBulletColor
+      despawnEffect: hitBulletColor
+      fragBullets: 1
+      fragBullet: {
+        type: SapBulletType
+        length: 4
+        width: 0
+        damage: 70
+        sapStrength: 1
+        color: bf92f9
+        hitColor: bf92f9
+      }
+    }
+  }
+  {
+    name: twin-sapper
+    controllable: false
+    autoTarget: true
+    targetInterval: 10
+    targetSwitchInterval: 10
+    x: 21.5
+    y: 31.25
+    reload: 8
+    rotate: true
+    rotateSpeed: 2
+    baseRotation: -90
+    rotationLimit: 220
+    alternate: false
+    shoot: {
+      type: ShootAlternate
+      spread: 3
+    }
+    shootY: 6
+    shootSound: sap
+    recoil: 2
+    bullet: {
+      type: SapBulletType
+      length: 140
+      damage: 70
+      sapStrength: 1
+      color: bf92f9
+      hitColor: bf92f9
+    }
+  }
+  {
+    name: twin-sapper
+    controllable: false
+    autoTarget: true
+    targetInterval: 10
+    targetSwitchInterval: 10
+    x: 22.25
+    y: 3.5
+    reload: 8
+    rotate: true
+    rotateSpeed: 2
+    baseRotation: -90
+    rotationLimit: 220
+    alternate: false
+    shoot: {
+      type: ShootAlternate
+      spread: 3
+    }
+    shootY: 6
+    shootSound: sap
+    recoil: 2
+    bullet: {
+      type: SapBulletType
+      length: 140
+      damage: 70
+      sapStrength: 1
+      color: bf92f9
+      hitColor: bf92f9
+    }
+  }
+  {
+    name: tri-cannon
+    x: 21.25
+    y: -14
+    rotate: true
+    rotateSpeed: 1.5
+    shootY: 12
+    reload: 80
+    cooldownTime: 90
+    recoil: 7
+    shoot: {
+      type: ShootBarrel
+      shots: 3
+      shotDelay: 8
+      barrels: [
+        0, 0, 0, 
+        6, -3, 0, 
+        -6, -3, 0
+      ]
+    }
+    shootSound: laser
+    bullet: {
+      type: LaserBulletType
+      damage: 0.001
+      length: 280
+      lifetime: 60
+      colors: [
+        bf92f966,
+        bf92f9,
+        ffffff
+      ]
+      pierceCap: 14
+      width: 24
+      despawnHit: false
+      setDefaults: false
+      fragBullets: 1
+      fragBullet: {
+        type: SapBulletType
+        sapStrength: 1
+        width: 0
+        length: 4
+        damage: 90
+      }
+    }
+  }
+  {
+    mirror: false
+    aiControllable: false
+    x: 0
+    shootY: 0
+    reload: 30
+    baseRotation: 180
+    rotate: true
+    rotateSpeed: 0
+    shootStatus: {
+      name: dsfjh
+      dragMultiplier: 1000
+      speedMultiplier: 0
+      damage: 4000
+      show: false
+    }
+    shootStatusDuration: 2
+    bullet: {
+      recoil: 200
+      speed: 0
+      lifetime: 0
+      shootEffect: [
+        {
+          followParent: false
+          region: allure-piscicola-warp
+          lifetime: 120
+          offset: 180
+          particles: 1
+          cone: 0
+          length: 0
+          sizeFrom: 40
+          sizeTo: 60
+          colorFrom: bf92f988
+          colorTo: bf92f900
+        }
+      ]
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+    }
+  }
+]

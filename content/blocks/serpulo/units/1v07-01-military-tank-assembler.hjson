@@ -16,7 +16,7 @@ consumes: {
 plans: [
   {
     type: AssemblerUnitPlan
-    unit: 1v02-dispute
+    unit: 1v08-dispute
     time: 4200
     requirements: [
       allure-1v07-12-00-treads/7
@@ -27,16 +27,16 @@ plans: [
   }
   {
     type: AssemblerUnitPlan
-    unit: 1v03-skirmish
+    unit: 1v09-skirmish
     time: 80
     requirements: [
-      allure-1v02-dispute/1
+      allure-1v08-dispute/1
       allure-fallout/1
     ]
   }
   {
     type: AssemblerUnitPlan
-    unit: 1v04-hostility
+    unit: 1v10-hostility
     time: 6400
     requirements: [
       allure-1v07-12-00-treads/16
@@ -48,10 +48,10 @@ plans: [
   }
   {
     type: AssemblerUnitPlan
-    unit: 1v05-war
+    unit: 1v11-war
     time: 80
     requirements: [
-      allure-1v04-hostility/1
+      allure-1v10-hostility/1
       ripple/1
     ]
   }

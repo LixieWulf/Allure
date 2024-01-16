@@ -9,5 +9,6 @@ accel: 0.1
 rotateSpeed: 2.5
 buildSpeed: 1
 buildBeamOffset: 8
-engineOffset: 9
+engineOffset: 7
+engineSize: 3
 hidden: true

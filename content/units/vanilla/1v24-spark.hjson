@@ -88,6 +88,7 @@ weapons: [
     recoil: 0
     y: -18
     x: 8
+    display: false
     shootSound: none
     bullet: {
       type: BulletType
@@ -114,6 +115,7 @@ weapons: [
     recoil: 0
     y: -18
     x: 8
+    display: false
     shootSound: none
     bullet: {
       type: BulletType
