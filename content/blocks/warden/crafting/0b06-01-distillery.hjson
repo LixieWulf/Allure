@@ -6,51 +6,57 @@ hasLiquids: true
 liquidCapacity: 120
 itemCapacity: 25
 ignoreLiquidFullness: true
-drawer: [
-  {
-  }
-  {
-    type: DrawLiquidTile
-    drawLiquid: liquid-baenara
-    padding: 3
-  }
-  {
-    type: DrawBubbles
-    amount: 150
-    sides: 6
-    spread: 20
-    strokeMin: 0
-    color: 70d4af
-  }
-  {
-    type: DrawRegion
-    suffix: -top
-  }
-  {
-    type: DrawRegion
-    suffix: -reservior
-  }
-  {
-    type: DrawLiquidRegion
-    drawLiquid: water
-    alpha: 0.6
-  }
-  {
-    type: DrawParticles
-    color: 596ab888
-    alpha: 0.5
-    reverse: true
-  }
-  {
-    type: DrawRegion
-    suffix: -reservior-top
-  }
-  {
-    type: DrawGlowRegion
-    suffix: -glow
-    color: feb380
-  }
-]
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    -icon
+  ]
+  drawers: [
+    {
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: liquid-baenara
+      padding: 3
+    }
+    {
+      type: DrawBubbles
+      amount: 150
+      sides: 6
+      spread: 20
+      strokeMin: 0
+      color: 70d4af
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+    {
+      type: DrawRegion
+      suffix: -reservior
+    }
+    {
+      type: DrawLiquidRegion
+      drawLiquid: water
+      alpha: 0.6
+    }
+    {
+      type: DrawParticles
+      color: 596ab888
+      alpha: 0.5
+      reverse: true
+    }
+    {
+      type: DrawRegion
+      suffix: -reservior-top
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -glow
+      color: feb380
+    }
+  ]
+}
 consumes: {
   power: 2
   liquids: [

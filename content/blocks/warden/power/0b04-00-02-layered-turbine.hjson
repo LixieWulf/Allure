@@ -66,11 +66,11 @@ drawer: {
 consumes: {
   liquid: steam/10
 }
-powerProduction: 240
-outputLiquid: water/9.75
+powerProduction: 120
+outputLiquid: water/9
 category: power
 research: {
-  parent: 0b04-00-01-dual-turbine
+  parent: 0b04-00-05-tri-turbine
   objectives: [
     0b-condenser-turbines
   ]
@@ -79,7 +79,7 @@ requirements: [
   dantrales/400
   territe-alloy/1600
   baenite/600
-  crystal/300
+  crystal/1600
   inseltiene/25
 ]
 breakEffect: [

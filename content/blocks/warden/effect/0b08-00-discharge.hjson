@@ -60,39 +60,46 @@ ammoTypes: {
     timeIncrease: 2
   }
 }
-drawer: [
-  {
-    type: DrawRegion
-  }
-  {
-    type: DrawTurret
-    parts: [
-      {
-        type: ShapePart
-        rotation: 22.5
-        layer: 100
-        hollow: true
-        sides: 8
-        radius: 6
-        radiusTo: 8
-        color: 7382f0
-        colorTo: 90a2fc
-        stroke: 0.5
-        strokeTo: 0
-        progress: {
-          type: warmup
-          op: sin
-          scl: 40
-          mag: 1
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    -icon
+  ]
+  drawers: [
+    {
+      type: DrawRegion
+    }
+    {
+      type: DrawTurret
+      basePrefix: -ajhgasjhfbkajsfdbj
+      parts: [
+        {
+          type: ShapePart
+          rotation: 22.5
+          layer: 100
+          hollow: true
+          sides: 8
+          radius: 6
+          radiusTo: 8
+          color: 7382f0
+          colorTo: 90a2fc
+          stroke: 0.5
+          strokeTo: 0
+          progress: {
+            type: warmup
+            op: sin
+            scl: 40
+            mag: 1
+          }
         }
-      }
-    ]
-  }
-  {
-    type: DrawGlowRegion
-    color: feb380
-  }
-]
+      ]
+    }
+    {
+      type: DrawGlowRegion
+      color: feb380
+    }
+  ]
+}
 category: effect
 requirements: [
   dantrales/600
@@ -100,6 +107,12 @@ requirements: [
   baenite/200
   crystal/600
 ]
+research: {
+  parent: 0b08-01-sprinkler
+  objectives: [
+    0b-shock-weaponry
+  ]
+}
 breakEffect: [
   {
     type: WaveEffect

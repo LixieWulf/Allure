@@ -30,118 +30,125 @@ requirements: [
   baenite/300
 ]
 hideDetails: false
-drawer: [
-  {
-    type: DrawRegion
-    layer: 30.1
-    suffix: ""
-  }
-  {
-    type: DrawRegion
-    suffix: -fan
-    rotateSpeed: -4
-    spinSprite: true
-    layer: 30.1
-  }
-  {
-    type: DrawRegion
-    suffix: -fan
-    rotateSpeed: -4
-    rotation: 10
-    spinSprite: true
-    layer: 30.1
-  }
-  {
-    type: DrawRegion
-    suffix: -fan
-    rotateSpeed: -4
-    rotation: 20
-    spinSprite: true
-    layer: 30.1
-  }
-  {
-    type: DrawRegion
-    suffix: -fan
-    rotateSpeed: -4
-    rotation: 30
-    spinSprite: true
-    layer: 30.1
-  }
-  {
-    type: DrawRegion
-    suffix: -fan
-    rotateSpeed: -4
-    rotation: 40
-    spinSprite: true
-    layer: 30.1
-  }
-  {
-    type: DrawRegion
-    suffix: -fan
-    rotateSpeed: -4
-    rotation: 50
-    spinSprite: true
-    layer: 30.1
-  }
-  {
-    type: DrawRegion
-    suffix: -fan
-    rotateSpeed: -4
-    rotation: 60
-    spinSprite: true
-    layer: 30.1
-  }
-  {
-    type: DrawRegion
-    suffix: -fan
-    rotateSpeed: -4
-    rotation: 70
-    spinSprite: true
-    layer: 30.1
-  }
-  {
-    type: DrawRegion
-    suffix: -fan
-    rotateSpeed: -4
-    rotation: 80
-    spinSprite: true
-    layer: 30.1
-  }
-  {
-    type: DrawRegion
-    suffix: -top1
-    layer: 30.1
-  }
-  {
-    type: DrawGlowRegion
-    suffix: -glow1
-    layer: 30.1
-    color: ffffff
-  }
-  {
-    type: DrawRegion
-    suffix: -top2
-    layer: 30.1
-  }
-  {
-    type: DrawGlowRegion
-    suffix: -glow2
-    layer: 30.1
-    color: ffb380
-    alpha: 1
-  }
-  {
-    type: DrawRegion
-    suffix: -icon
-    layer: 30.05
-  }
-  {
-    type: DrawGlowRegion
-    layer: 30.2
-    color: ffb380
-    alpha: 0.5
-  }
-]
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    -icon
+  ]
+  drawers: [
+    {
+      type: DrawRegion
+      layer: 30.1
+      suffix: ""
+    }
+    {
+      type: DrawRegion
+      suffix: -fan
+      rotateSpeed: -4
+      spinSprite: true
+      layer: 30.1
+    }
+    {
+      type: DrawRegion
+      suffix: -fan
+      rotateSpeed: -4
+      rotation: 10
+      spinSprite: true
+      layer: 30.1
+    }
+    {
+      type: DrawRegion
+      suffix: -fan
+      rotateSpeed: -4
+      rotation: 20
+      spinSprite: true
+      layer: 30.1
+    }
+    {
+      type: DrawRegion
+      suffix: -fan
+      rotateSpeed: -4
+      rotation: 30
+      spinSprite: true
+      layer: 30.1
+    }
+    {
+      type: DrawRegion
+      suffix: -fan
+      rotateSpeed: -4
+      rotation: 40
+      spinSprite: true
+      layer: 30.1
+    }
+    {
+      type: DrawRegion
+      suffix: -fan
+      rotateSpeed: -4
+      rotation: 50
+      spinSprite: true
+      layer: 30.1
+    }
+    {
+      type: DrawRegion
+      suffix: -fan
+      rotateSpeed: -4
+      rotation: 60
+      spinSprite: true
+      layer: 30.1
+    }
+    {
+      type: DrawRegion
+      suffix: -fan
+      rotateSpeed: -4
+      rotation: 70
+      spinSprite: true
+      layer: 30.1
+    }
+    {
+      type: DrawRegion
+      suffix: -fan
+      rotateSpeed: -4
+      rotation: 80
+      spinSprite: true
+      layer: 30.1
+    }
+    {
+      type: DrawRegion
+      suffix: -top1
+      layer: 30.1
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -glow1
+      layer: 30.1
+      color: ffffff
+    }
+    {
+      type: DrawRegion
+      suffix: -top2
+      layer: 30.1
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -glow2
+      layer: 30.1
+      color: ffb380
+      alpha: 1
+    }
+    {
+      type: DrawRegion
+      suffix: -icon
+      layer: 30.05
+    }
+    {
+      type: DrawGlowRegion
+      layer: 30.2
+      color: ffb380
+      alpha: 0.5
+    }
+  ]
+}
+
 craftEffect: [
   {
     type: RadialEffect

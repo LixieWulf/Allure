@@ -173,7 +173,7 @@ drawer: {
   ]
 }
 consumes: {
-  power: 180
+  power: 120
   items: [
     baenite/28
     draconium/2

@@ -4,30 +4,36 @@ heatOutput: 5
 craftTime: 80
 warmupRate: 0.05
 liquidCapacity: 40
-drawer: [
-  {
-    type: DrawDefault
-  }
-  {
-    type: DrawPistons
-    sides: 2
-    lenOffset: 3
-    sinScl: 2
-  }
-  {
-    type: DrawRegion
-    suffix: -top
-  }
-  {
-    type: DrawHeatOutput
-    heatColor: 90a2fcbb
-  }
-  {
-    type: DrawGlowRegion
-    color: ffb380
-    glowScale: 2
-  }
-]
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    -icon
+  ]
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawPistons
+      sides: 2
+      lenOffset: 3
+      sinScl: 2
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+    {
+      type: DrawHeatOutput
+      heatColor: 90a2fcbb
+    }
+    {
+      type: DrawGlowRegion
+      color: ffb380
+      glowScale: 2
+    }
+  ]
+}
 consumes: {
   liquids: [
     hydrogen/0.11333333333 

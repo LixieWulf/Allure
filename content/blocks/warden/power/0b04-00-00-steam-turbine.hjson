@@ -41,18 +41,20 @@ drawer: {
 consumes: {
   liquid: steam/2.5
 }
-powerProduction: 30
-outputLiquid: water/2.375
+powerProduction: 15
+
+outputLiquid: water/2.25
 category: power
 research: {
-  parent: 0b04-01-solar-heater
+  parent:  0b04-00-03-industrial-turbine
   objectives: [
-    0b-steam-heating
+    0b-condenser-turbines
   ]
 }
 requirements: [
   dantrales/140
   territe-alloy/400
+  baenite/50
 ]
 breakEffect: [
   {

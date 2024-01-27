@@ -1,21 +1,446 @@
 type: PowerTurret
+clipSize: 420
 size: 4
 alwaysShooting: true
 canOverdrive: false
 reload: 180
+range: 210
+recoil: 0
 shootY: 0
+shootSound: none
+outlineIcon: false
 rotateSpeed: 0
-shootType: {
-  shootEffect: none
-  smokeEffect: none
-  spawnUnit: allure-multiply-pulse
+shootWarmupSpeed: 0.01
+minWarmup: 0.99
+hasLiquids: true
+liquidCapacity: 20
+consumes: {
+  power: 16
+  liquids: [
+    arreacta/0.1
+  ]
 }
-drawer: [
+shootType: {
+  shootEffect: {
+    type: WaveEffect
+    lifetime: 60
+    sizeFrom: 104.5
+    sizeTo: 209
+    strokeFrom: 209
+    strokeTo: 0
+    colorFrom: 7382f000
+    colorTo: 7382f088
+    interp: pow3Out
+  }
+  //This one's gonna hurt.
+  smokeEffect: [
+    {
+      type: RadialEffect
+      amount: 4
+      lengthOffset: 16
+      effect: [
+        {
+          clip: 210 
+          line: true
+          baseRotation: 90 
+          particles: 1
+          lifetime: 180
+          length: 0.001
+          baseLength: 2
+          randLength: false
+          cone: 0
+          lenFrom: 204
+          lenTo: 204
+          strokeFrom: 4
+          strokeTo: 4
+          colorFrom: 7382f044
+          colorTo: 7382f044
+        }
+        {
+          clip: 210 
+          line: true
+          baseRotation: -90 
+          particles: 1
+          lifetime: 180
+          length: 0.001
+          baseLength: 2
+          randLength: false
+          cone: 0
+          lenFrom: 204
+          lenTo: 204
+          strokeFrom: 4
+          strokeTo: 4
+          colorFrom: 7382f044
+          colorTo: 7382f044
+        }
+      ]
+    }
+    {
+      type: RadialEffect
+      amount: 4
+      lengthOffset: 48
+      effect: [
+        {
+          clip: 210 
+          line: true
+          baseRotation: 90 
+          particles: 1
+          lifetime: 180
+          length: 0.001
+          baseLength: 2
+          randLength: false
+          cone: 0
+          lenFrom: 198
+          lenTo: 198
+          strokeFrom: 4
+          strokeTo: 4
+          colorFrom: 7382f044
+          colorTo: 7382f044
+        }
+        {
+          clip: 210 
+          line: true
+          baseRotation: -90 
+          particles: 1
+          lifetime: 180
+          length: 0.001
+          baseLength: 2
+          randLength: false
+          cone: 0
+          lenFrom: 198
+          lenTo: 198
+          strokeFrom: 4
+          strokeTo: 4
+          colorFrom: 7382f044
+          colorTo: 7382f044
+        }
+      ]
+    }
+    {
+      type: RadialEffect
+      amount: 4
+      lengthOffset: 80
+      effect: [
+        {
+          clip: 210 
+          line: true
+          baseRotation: 90 
+          particles: 1
+          lifetime: 180
+          length: 0.001
+          baseLength: 2
+          randLength: false
+          cone: 0
+          lenFrom: 190
+          lenTo: 190
+          strokeFrom: 4
+          strokeTo: 4
+          colorFrom: 7382f044
+          colorTo: 7382f044
+        }
+        {
+          clip: 210 
+          line: true
+          baseRotation: -90 
+          particles: 1
+          lifetime: 180
+          length: 0.001
+          baseLength: 2
+          randLength: false
+          cone: 0
+          lenFrom: 190
+          lenTo: 190
+          strokeFrom: 4
+          strokeTo: 4
+          colorFrom: 7382f044
+          colorTo: 7382f044
+        }
+      ]
+    }
+    {
+      type: RadialEffect
+      amount: 4
+      lengthOffset: 112
+      effect: [
+        {
+          clip: 210 
+          line: true
+          baseRotation: 90 
+          particles: 1
+          lifetime: 180
+          length: 0.001
+          baseLength: 2
+          randLength: false
+          cone: 0
+          lenFrom: 173
+          lenTo: 173
+          strokeFrom: 4
+          strokeTo: 4
+          colorFrom: 7382f044
+          colorTo: 7382f044
+        }
+        {
+          clip: 210 
+          line: true
+          baseRotation: -90 
+          particles: 1
+          lifetime: 180
+          length: 0.001
+          baseLength: 2
+          randLength: false
+          cone: 0
+          lenFrom: 173
+          lenTo: 173
+          strokeFrom: 4
+          strokeTo: 4
+          colorFrom: 7382f044
+          colorTo: 7382f044
+        }
+      ]
+    }
+    {
+      type: RadialEffect
+      amount: 4
+      lengthOffset: 144
+      effect: [
+        {
+          clip: 210 
+          line: true
+          baseRotation: 90 
+          particles: 1
+          lifetime: 180
+          length: 0.001
+          baseLength: 2
+          randLength: false
+          cone: 0
+          lenFrom: 149
+          lenTo: 149
+          strokeFrom: 4
+          strokeTo: 4
+          colorFrom: 7382f044
+          colorTo: 7382f044
+        }
+        {
+          clip: 210 
+          line: true
+          baseRotation: -90 
+          particles: 1
+          lifetime: 180
+          length: 0.001
+          baseLength: 2
+          randLength: false
+          cone: 0
+          lenFrom: 149
+          lenTo: 149
+          strokeFrom: 4
+          strokeTo: 4
+          colorFrom: 7382f044
+          colorTo: 7382f044
+        }
+      ]
+    }
+    {
+      type: RadialEffect
+      amount: 4
+      lengthOffset: 176
+      effect: [
+        {
+          clip: 210 
+          line: true
+          baseRotation: 90 
+          particles: 1
+          lifetime: 180
+          length: 0.001
+          baseLength: 2
+          randLength: false
+          cone: 0
+          lenFrom: 107
+          lenTo: 107
+          strokeFrom: 4
+          strokeTo: 4
+          colorFrom: 7382f044
+          colorTo: 7382f044
+        }
+        {
+          clip: 210 
+          line: true
+          baseRotation: -90 
+          particles: 1
+          lifetime: 180
+          length: 0.001
+          baseLength: 2
+          randLength: false
+          cone: 0
+          lenFrom: 107
+          lenTo: 107
+          strokeFrom: 4
+          strokeTo: 4
+          colorFrom: 7382f044
+          colorTo: 7382f044
+        }
+      ]
+    }
+  ]
+  speed: 0
+  lifetime: 0
+  hitEffect: none
+  despawnEffect: none
+  absorbable: false
+  hittable: false
+  collides: false
+  lightning: 5
+  lightningLength: 2
+  lightningType: {
+    spawnUnit: allure-multiply-pulse
+  }
+}
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    -icon
+  ]
+  drawers: [
+    {
+      type: DrawTurret
+      basePrefix: -ahkjdrjnkjmzhdfhgajkhgkxhjzaknvlujjahgnakhlfhjlkagn
+      parts: [
+        {
+          type: ShapePart
+          hollow: true
+          circle: true
+          radius: 0
+          radiusTo: 210
+          stroke: 0
+          strokeTo: 4
+          color: 7382f0bb
+          progress: {
+            type: warmup
+            op: curve
+            interp: pow3Out
+          }
+          layer: 100
+        }
+        {
+          type: ShapePart
+          circle: true
+          radius: 0
+          radiusTo: 9
+          color: 7382f0
+          progress: {
+            type: warmup
+            op: curve
+            interp: pow3Out
+          }
+          layer: 101
+        }
+        {
+          type: ShapePart
+          circle: true
+          radius: 0
+          radiusTo: 7
+          color: ffffff
+          progress: {
+            type: warmup
+            op: curve
+            interp: pow3Out
+          }
+          layer: 101
+        }
+      ]
+    }
+    {
+      type: DrawRegion
+    }
+    {
+      type: DrawGlowRegion
+      color: feb380
+    }
+  ]
+}
+requirements: [
+  territe-alloy/1000
+  dantrales/300
+  silicon/200
+  crystal/2400
+]
+research: {
+  parent: 0b08-01-sprinkler
+  objectives: [
+    0b-energy-defense
+  ]
+}
+breakEffect: [
   {
-    type: DrawRegion
+    type: WaveEffect
+    rotation: 41
+    lifetime: 20
+    sides: 4
+    sizeFrom: 16
+    sizeTo: 32
+    strokeFrom: 12
+    strokeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
   }
   {
-    type: DrawGlowRegion
-    color: feb380
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 11
+    useRotation: false
+    region: allure-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f000
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 30
+    startDelay: 10
+    useRotation: false
+    region: allure-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f0
+    colorTo: 7382f000
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    randLength: false
+    length: 0
+    baseLength: 12
+    lifetime: 35
+    useRotation: false
+    region: allure-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    baseRotation: 180
+    randLength: false
+    length: 0
+    baseLength: 12
+    lifetime: 35
+    useRotation: false
+    region: allure-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
   }
 ]
+category: effect

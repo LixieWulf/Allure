@@ -12,6 +12,7 @@ accessible: true
 allowLaunchToNumbered: false
 sectorSize: 2
 totalRadius: 1.8
+defaultEnv: 17
 bloom: true
 mesh: [
   {

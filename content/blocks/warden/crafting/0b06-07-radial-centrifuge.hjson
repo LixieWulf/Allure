@@ -8,129 +8,135 @@ warmupSpeed: 0.002
 craftTime: 180
 liquidCapacity: 720
 itemCapacity: 20
-drawer: [
-  {
-    type: DrawDefault
-  }
-  {
-    type: DrawLiquidTile
-    drawLiquid: crystal-plasma
-    padding: 7
-  }
-  {
-    type: DrawRegion
-    suffix: -cent
-  }
-  {
-    type: DrawRegion
-    suffix: -top
-  }
-  {
-    type: DrawRegion
-    suffix: -gear0
-    rotateSpeed: -4
-    spinSprite: true
-  }
-  {
-    type: DrawRegion
-    suffix: -gear1
-    rotateSpeed: 22
-    spinSprite: true
-    x: 15
-    y: 4
-  }
-  {
-    type: DrawRegion
-    suffix: -gear1
-    rotateSpeed: 22
-    spinSprite: true
-    x: -15
-    y: -4
-  }
-  {
-    type: DrawRegion
-    suffix: -gear0
-    rotateSpeed: -4
-    rotation: 10
-    spinSprite: true
-  }
-  {
-    type: DrawRegion
-    suffix: -gear0
-    rotateSpeed: -4
-    rotation: 20
-    spinSprite: true
-  }
-  {
-    type: DrawRegion
-    suffix: -gear0
-    rotateSpeed: -4
-    rotation: 30
-    spinSprite: true
-  }
-  {
-    type: DrawRegion
-    suffix: -gear0
-    rotateSpeed: -4
-    rotation: 40
-    spinSprite: true
-  }
-  {
-    type: DrawRegion
-    suffix: -gear0
-    rotateSpeed: -4
-    rotation: 50
-    spinSprite: true
-  }
-  {
-    type: DrawRegion
-    suffix: -gear0
-    rotateSpeed: -4
-    rotation: 60
-    spinSprite: true
-  }
-  {
-    type: DrawRegion
-    suffix: -gear0
-    rotateSpeed: -4
-    rotation: 70
-    spinSprite: true
-  }
-  {
-    type: DrawRegion
-    suffix: -gear0
-    rotateSpeed: -4
-    rotation: 80
-    spinSprite: true
-  }
-  {
-    type: DrawRegion
-    suffix: -gear0-top
-    rotateSpeed: -4
-    spinSprite: true
-  }
-  {
-    type: DrawRegion
-    suffix: -gear1
-    rotateSpeed: -4
-    spinSprite: true
-  }
-  {
-    type: DrawPistons
-    lenOffset: 15.5
-    sinScl: 2
-    sinMag: -3
-  }
-  {
-    type: DrawRegion
-    suffix: -top1
-  }
-  {
-    type: DrawGlowRegion
-    color: ffb380
-    glowScale: 2
-  }
-]
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    -icon
+  ]
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: crystal-plasma
+      padding: 7
+    }
+    {
+      type: DrawRegion
+      suffix: -cent
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+    {
+      type: DrawRegion
+      suffix: -gear0
+      rotateSpeed: -4
+      spinSprite: true
+    }
+    {
+      type: DrawRegion
+      suffix: -gear1
+      rotateSpeed: 22
+      spinSprite: true
+      x: 15
+      y: 4
+    }
+    {
+      type: DrawRegion
+      suffix: -gear1
+      rotateSpeed: 22
+      spinSprite: true
+      x: -15
+      y: -4
+    }
+    {
+      type: DrawRegion
+      suffix: -gear0
+      rotateSpeed: -4
+      rotation: 10
+      spinSprite: true
+    }
+    {
+      type: DrawRegion
+      suffix: -gear0
+      rotateSpeed: -4
+      rotation: 20
+      spinSprite: true
+    }
+    {
+      type: DrawRegion
+      suffix: -gear0
+      rotateSpeed: -4
+      rotation: 30
+      spinSprite: true
+    }
+    {
+      type: DrawRegion
+      suffix: -gear0
+      rotateSpeed: -4
+      rotation: 40
+      spinSprite: true
+    }
+    {
+      type: DrawRegion
+      suffix: -gear0
+      rotateSpeed: -4
+      rotation: 50
+      spinSprite: true
+    }
+    {
+      type: DrawRegion
+      suffix: -gear0
+      rotateSpeed: -4
+      rotation: 60
+      spinSprite: true
+    }
+    {
+      type: DrawRegion
+      suffix: -gear0
+      rotateSpeed: -4
+      rotation: 70
+      spinSprite: true
+    }
+    {
+      type: DrawRegion
+      suffix: -gear0
+      rotateSpeed: -4
+      rotation: 80
+      spinSprite: true
+    }
+    {
+      type: DrawRegion
+      suffix: -gear0-top
+      rotateSpeed: -4
+      spinSprite: true
+    }
+    {
+      type: DrawRegion
+      suffix: -gear1
+      rotateSpeed: -4
+      spinSprite: true
+    }
+    {
+      type: DrawPistons
+      lenOffset: 15.5
+      sinScl: 2
+      sinMag: -3
+    }
+    {
+      type: DrawRegion
+      suffix: -top1
+    }
+    {
+      type: DrawGlowRegion
+      color: ffb380
+      glowScale: 2
+    }
+  ]
+}
 consumes: {
   liquids: [
     arreacta/0.5

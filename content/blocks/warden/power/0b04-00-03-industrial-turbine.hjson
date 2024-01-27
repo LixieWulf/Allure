@@ -1,0 +1,99 @@
+type: ConsumeGenerator
+size: 3
+liquidCapacity: 150
+squareSprite: false 
+effectChance: 0.5
+warmupSpeed: 0.01
+generateEffectRange: 8
+generateEffect: {
+  particles: 1
+  length: 100
+  lifetime: 240
+  cone: 12
+  baseRotation: 32
+  sizeFrom: 0
+  sizeTo: 6
+  colorTo: ffffff00
+  sizeInterp: pow2Out
+  interp: pow2Out
+}
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    -icon
+  ]
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawRegion
+    }
+    {
+      type: DrawRegion
+      suffix: -blades
+      rotateSpeed: 8
+      spinSprite: true
+    }
+    {
+      type: DrawRegion
+      suffix: -blades
+      rotateSpeed: 8
+      spinSprite: true
+      rotation: 30
+    }
+    {
+      type: DrawRegion
+      suffix: -blades
+      rotateSpeed: 8
+      spinSprite: true
+      rotation: 60
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
+consumes: {
+  liquid: steam/0.625
+}
+powerProduction: 7.5
+category: power
+research: {
+  parent: 0b04-01-solar-heater
+  objectives: [
+    0b-steam-heating
+  ]
+}
+requirements: [
+  dantrales/120
+  territe-alloy/300
+]
+breakEffect: [
+  {
+    type: WaveEffect
+    rotation: 43
+    lifetime: 20
+    sides: 4
+    sizeFrom: 8
+    sizeTo: 16
+    strokeFrom: 6
+    strokeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 30
+    useRotation: false
+    region: allure-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f0
+    colorTo: 7382f000
+  }
+]

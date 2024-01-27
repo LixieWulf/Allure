@@ -41,23 +41,56 @@ ammoTypes: {
     liquid: liquid-baenara
   }
 }
-drawer: [
-  {
-    type: DrawRegion
-    suffix: -base
-  }
-  {
-    type: DrawRegion
-    suffix: -top
-    spinSprite: true
-    rotateSpeed: 16
-  }
-]
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    -icon
+  ]
+  drawers: [
+    {
+      type: DrawTurret
+      basePrefix: -zdfgbjhvgjabkhj
+      parts: [
+        {
+          type: RegionPart
+          suffix: -rotator
+          progress: smoothReload
+          moveRot: -90
+          layerOffset: 4
+          color: ffffff
+          outline: false
+          children: [
+            {
+              type: RegionPart
+              suffix: -rotator
+              progress: smoothReload
+              color: ffffff00
+              colorTo: ffffff
+              outline: false
+              rotation: 90
+              layerOffset: 5
+            }
+          ]
+        }
+      ]
+    }
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+  ]
+}
 category: effect
 requirements: [
   dantrales/600
   territe-alloy/1200
 ]
+research: {
+  parent: 0b-begin
+  objectives: [
+    0b-basic-infrastructure
+  ]
+}
 breakEffect: [
   {
     type: WaveEffect

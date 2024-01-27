@@ -1,0 +1,157 @@
+type: ConsumeGenerator
+size: 5
+liquidCapacity: 600
+squareSprite: false 
+effectChance: 0.5
+warmupSpeed: 0.01
+generateEffectRange: 18
+generateEffect: {
+  particles: 1
+  length: 180
+  lifetime: 360
+  cone: 12
+  baseRotation: 32
+  sizeFrom: 0
+  sizeTo: 8
+  colorTo: ffffff00
+  sizeInterp: pow2Out
+  interp: pow2Out
+}
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    -icon
+  ]
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawRegion
+      suffix: -blades
+      rotateSpeed: 8
+      spinSprite: true
+      x: -8.75
+      y: 7.25
+    }
+    {
+      type: DrawRegion
+      suffix: -blades
+      rotateSpeed: 8
+      spinSprite: true
+      rotation: 30
+      x: -8.75
+      y: 7.25
+    }
+    {
+      type: DrawRegion
+      suffix: -blades
+      rotateSpeed: 8
+      spinSprite: true
+      rotation: 60
+      x: -8.75
+      y: 7.25
+    }
+    {
+      type: DrawRegion
+      suffix: -blades
+      rotateSpeed: 8
+      spinSprite: true
+      x: 8.75
+      y: 7.25
+    }
+    {
+      type: DrawRegion
+      suffix: -blades
+      rotateSpeed: 8
+      spinSprite: true
+      rotation: 30
+      x: 8.75
+      y: 7.25
+    }
+    {
+      type: DrawRegion
+      suffix: -blades
+      rotateSpeed: 8
+      spinSprite: true
+      rotation: 60
+      x: 8.75
+      y: 7.25
+    }
+    {
+      type: DrawRegion
+      suffix: -blades
+      rotateSpeed: 8
+      spinSprite: true
+      y: -8.75
+    }
+    {
+      type: DrawRegion
+      suffix: -blades
+      rotateSpeed: 8
+      spinSprite: true
+      rotation: 30
+      y: -8.75
+    }
+    {
+      type: DrawRegion
+      suffix: -blades
+      rotateSpeed: 8
+      spinSprite: true
+      rotation: 60
+      y: -8.75
+    }
+    {
+      type: DrawRegion
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
+consumes: {
+  liquid: steam/2.5
+}
+powerProduction: 60
+category: power
+research: {
+  parent: 0b04-00-04-industrial-turbine-large
+  objectives: [
+    0b-steam-heating
+  ]
+}
+requirements: [
+  dantrales/600
+  territe-alloy/1400
+  baenite/300
+  crystal/1800
+  infrastructure/300
+]
+breakEffect: [
+  {
+    type: WaveEffect
+    rotation: 43
+    lifetime: 20
+    sides: 4
+    sizeFrom: 8
+    sizeTo: 16
+    strokeFrom: 6
+    strokeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 30
+    useRotation: false
+    region: allure-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f0
+    colorTo: 7382f000
+  }
+]

@@ -52,7 +52,7 @@ weapons: [
       collides: false
       lifetime: 150
       lengthInterp: pow5Out
-      recoil: -0.0125
+      recoil: 0.0125
       drawFlare: false
       length: 16
       width: 3

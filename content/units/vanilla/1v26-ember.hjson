@@ -1,0 +1,232 @@
+type: flying
+flying: true
+hitSize: 90
+health: 400000
+armor: 160
+speed: 4
+accel: 0.015
+drag: 0.015
+rotateSpeed: 1.2
+shadowElevationScl: 2.2
+omniMovement: false
+circleTarget: true
+maxRange: 180
+outlines: false
+engines: [
+  {
+    x: 9
+    y: -30
+    rotation: -90
+    radius: 8
+  }
+  {
+    x: -9
+    y: -30
+    rotation: -90
+    radius: 8
+  }
+]
+weapons: [
+  {
+    name: ember-weapon
+    mirror: false
+    x: 0
+    reload: 80
+    recoil: 0
+    minShootVelocity: 3.5
+    shootY: 36
+    shootCone: 45
+    shoot: {
+      type: ShootBarrel
+      shots: 20
+      shotDelay: 2
+      barrels: [
+        0, 0, 0, 
+        -6, -6, 0, 
+        -12, -12, 0,
+        6, -6, 0, 
+        12, -12, 0
+      ]
+    }
+    inaccuracy: 2
+    shootSound: shockBlast
+    shake: 24
+    cooldownTime: 120
+    bullet: {
+      type: LightningBulletType
+      lightningLength: 20
+      lightningLengthRand: 40
+      damage: 400
+      recoil: 0.2
+      shootEffect: {
+        line: true
+        particles: 3
+        cone: 40
+        length: 60
+        lifetime: 25
+        interp: pow2Out
+        sizeInterp: linear
+        lenFrom: 6
+        lenTo: 3
+        strokeFrom: 2
+        strokeTo: 0
+        colorTo: a9d8ff
+      }
+    }
+  }
+  {
+    baseRotation: -90
+    rotate: true
+    rotateSpeed: 0
+    alternate: false
+    reload: 120
+    x: 32
+    y: -17
+    shootSound: thrusterModified
+    continuous: true
+    shake: 3
+    bullet: {
+      type: BulletType
+      collides: false
+      hittable: false
+      absorbable: false
+      lifetime: 20
+      recoil: 0.5
+      hitEffect: none
+      despawnEffect: none
+      smokeEffect: none
+      shootEffect: [
+        {
+          rotWithParent: true
+          particles: 1
+          baseLength: 5
+          randLength: false
+          cone: 0
+          length: 0
+          baseRotation: 90
+          offset: -90
+          layer: 116
+          region: allure-shootspike
+          sizeFrom: 40
+          sizeTo: 0
+          interp: pow5In
+          colorFrom: a9d8ff
+          colorTo: a9d8ff
+        }
+        {
+          rotWithParent: true
+          particles: 1
+          baseLength: -5
+          randLength: false
+          cone: 0
+          length: 0
+          baseRotation: 90
+          offset: -90
+          layer: 116
+          region: allure-shootspike
+          sizeFrom: 40
+          sizeTo: 0
+          interp: pow5In
+          colorFrom: a9d8ff
+          colorTo: a9d8ff
+        }
+        {
+          rotWithParent: true
+          particles: 1
+          baseLength: 5
+          randLength: false
+          cone: 0
+          length: 0
+          baseRotation: 90
+          offset: -90
+          layer: 117
+          region: allure-shootspike
+          sizeFrom: 25
+          sizeTo: 0
+          interp: pow5In
+        }
+        {
+          rotWithParent: true
+          particles: 1
+          baseLength: -5
+          randLength: false
+          cone: 0
+          length: 0
+          baseRotation: 90
+          offset: -90
+          layer: 117
+          region: allure-shootspike
+          sizeFrom: 25
+          sizeTo: 0
+          interp: pow5In
+        }
+      ]
+    }
+  }
+  {
+    alwaysShooting: true
+    alwaysContinuous: true
+    alternate: false
+    shootY: 0
+    recoil: 0
+    y: -34
+    x: 24
+    display: false
+    shootSound: none
+    bullet: {
+      type: BulletType
+      keepVelocity: false
+      speed: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      layer: 100
+      trailLength: 30
+      trailWidth: 3
+      trailColor: a9d8ff
+    }
+  }
+  {
+    alwaysShooting: true
+    alwaysContinuous: true
+    alternate: false
+    shootY: 0
+    recoil: 0
+    y: -34
+    x: 24
+    display: false
+    shootSound: none
+    bullet: {
+      type: BulletType
+      keepVelocity: false
+      speed: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      layer: 101
+      trailLength: 8
+      trailWidth: 6
+      trailColor: ffffff
+    }
+  }
+]
+abilities: [
+  {
+    type: MoveLightningAbility
+    heatRegion: allure-ember-heat
+    y: 24
+    chance: 0
+    length: 22
+    damage: 200
+    minSpeed: 0.8
+    maxSpeed: 5
+  }
+]

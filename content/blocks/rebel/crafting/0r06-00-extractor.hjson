@@ -1,17 +1,19 @@
 type: AttributeCrafter
 rotate: true
 baseEfficiency: 0
-minEfficiency: 0.01
-boostScale: 0.04
-attribute: chemical
+minEfficiency: 8.9999
+boostScale: 0.1111111111111
+maxBoost: 2
+attribute: steam
 squareSprite: false
 size: 8
 warmupSpeed: 0.01
 itemCapacity: 400
-craftTime: 600
+craftTime: 1200
 ignoreLiquidFullness: true
 liquidOutputDirections: [1]
 rotateDraw: false
+quickRotate: false
 drawer: [
   {
   }

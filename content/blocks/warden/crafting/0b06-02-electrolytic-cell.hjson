@@ -7,38 +7,44 @@ invertFlip: true
 regionRotated1: 3
 liquidOutputDirections: [1, 3]
 rotate: true
-
-drawer: [
-  {
-    type: DrawDefault
-  }
-  {
-    type: DrawLiquidTile
-    drawLiquid: water
-    padding: 2
-  }
-  {
-    type: DrawBubbles
-    color: 7693e3
-    sides: 12
-    recurrence: 3
-    spread: 6
-    radius: 1.2
-    amount: 20
-  }
-  {
-    type: DrawRegion
-    suffix: -top
-  }
-  {
-    type: DrawLiquidOutputs
-  }
-  {
-    type: DrawGlowRegion
-    suffix: -top-glow
-    color: feb380
-  }
-]
+rotateDraw: false
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    -icon
+  ]
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: water
+      padding: 2
+    }
+    {
+      type: DrawBubbles
+      color: 7693e3
+      sides: 12
+      recurrence: 3
+      spread: 6
+      radius: 1.2
+      amount: 20
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+    {
+      type: DrawLiquidOutputs
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -top-glow
+      color: feb380
+    }
+  ]
+}
 consumes: {
   power: 1
   liquid: {

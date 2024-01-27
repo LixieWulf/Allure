@@ -47,11 +47,11 @@ drawer: {
 consumes: {
   liquid: steam/5
 }
-powerProduction: 90
-outputLiquid: water/4.825
+powerProduction: 45
+outputLiquid: water/4.5
 category: power
 research: {
-  parent: 0b04-00-00-steam-turbine
+  parent: 0b04-00-04-industrial-turbine-large
   objectives: [
     0b-condenser-turbines
   ]

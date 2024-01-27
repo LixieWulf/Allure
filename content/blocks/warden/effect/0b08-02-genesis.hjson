@@ -89,6 +89,12 @@ requirements: [
   baenite/600
   draconium/200
 ]
+research: {
+  parent: 0b08-01-sprinkler
+  objectives: [
+    0b-advanced-production
+  ]
+}
 drawer: [
   {
     type: DrawTurret

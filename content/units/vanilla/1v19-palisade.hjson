@@ -1,0 +1,133 @@
+type: payload
+payloadCapacity: 1024
+squareShape: true
+hitSize: 35
+health: 180000
+armor: 110
+speed: 0.4
+rotateSpeed: 1.3
+rotateMoveFirst: true
+omniMovement: false
+canBoost: true
+riseSpeed: 0.015
+faceTarget: false
+lowAltitude: true
+crawlSlowdown: 1
+drawShields: false
+engineSize: 0
+engines: [
+  {
+    x: 20
+    y: 0
+    radius: 7
+    rotation: 0
+  }
+  {
+    x: -20
+    y: 0
+    radius: 7
+    rotation: 180
+  }
+  {
+    x: 21
+    y: 15
+    radius: 7
+    rotation: 0
+  }
+  {
+    x: -21
+    y: 15
+    radius: 7
+    rotation: 180
+  }
+  {
+    x: 21
+    y: -15
+    radius: 7
+    rotation: 0
+  }
+  {
+    x: -21
+    y: -15
+    radius: 7
+    rotation: 180
+  }
+]
+singleTarget: true
+outlines: false
+weapons: [
+  {
+    alwaysShooting: true
+    reload: 5
+    shootStatus: unmoving
+    shootStatusDuration: 10
+    shootSound: none
+    display: false
+    bullet: {
+      type: BulletType
+      insteantDisappear: true
+      lifetime: 0
+      shootEffect: none
+      smokeEffect: none
+      despawnEffect: none
+    }
+  }
+  {
+    type: RepairBeamWeapon
+    name: small-regen-mount
+    x: 15.5
+    y: 14.5
+    shootY: 6
+    rotateSpeed: 1.3
+    baseRotation: -90
+    repairSpeed: 8
+    beamWidth: 1.2
+    bullet: {
+      maxRange: 170
+      pulseRadius: 12
+    }
+  }
+  {
+    type: RepairBeamWeapon
+    name: small-regen-mount
+    x: 15.5
+    y: -14.5
+    shootY: 6
+    rotateSpeed: 1.3
+    baseRotation: -90
+    repairSpeed: 8
+    beamWidth: 1.2
+    bullet: {
+      maxRange: 170
+      pulseRadius: 12
+    }
+  }
+  {
+    type: RepairBeamWeapon
+    name: large-regen-mount
+    x: 13.25
+    y: 0
+    shootY: 7
+    rotateSpeed: 1.6
+    baseRotation: -90
+    repairSpeed: 16
+    beamWidth: 1.8
+    targetBuildings: true
+    bullet: {
+      maxRange: 140
+      pulseRadius: 18
+      pulseStroke: 2.5
+    }
+  }
+]
+abilities: [
+  {
+    type: ForceFieldAbility
+    radius: 200
+    sides: 4
+    max: 44000
+    regen: 120
+    cooldown: 1200
+    rotation: 45
+  }
+]

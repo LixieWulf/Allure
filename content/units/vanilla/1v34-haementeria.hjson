@@ -1,0 +1,148 @@
+type: naval
+hitSize: 120
+health: 580000
+armor: 350
+speed: 1
+accel: 0.15
+drag: 0.05
+rotateSpeed: 0.9
+outlines: false
+weapons: [
+  {
+    name: leech-beam
+    x: 0
+    y: -20
+    shootY: 48
+    layerOffset: 1
+    alwaysContinuous: true
+    shadow: 90
+    rotate: true
+    rotateSpeed: 0.8
+    reload: 70
+    cooldownTime: 210
+    mirror: false
+    parts: [
+      {
+        suffix: -mid
+        mirror: true
+        x: 14.5
+        y: 14.75
+        moveX: 5
+        moveY: 2
+        moveRot: -45
+        progress: warmup
+      }
+      {
+        suffix: -front
+        mirror: true
+        under: true
+        x: 10.75
+        y: 36.5
+        moveX: 10
+        moveY: 1
+        progress: warmup
+      }
+      {
+        type: ShapePart
+        color: 6d56bf88
+        under: true
+        circle: true
+        radius: 13
+        y: 3
+      }
+      {
+        type: ShapePart
+        color: bf92f9
+        under: true
+        circle: true
+        radius: 11
+        y: 3
+      }
+      {
+        type: ShapePart
+        color: ffffff
+        under: true
+        circle: true
+        radius: 8
+        y: 3
+      }
+    ]
+    minWarmup: 0.99
+    shootWarmupSpeed: 0.024
+    shootSound: beam
+    chargeSound: laserbig
+    shootStatus: slow
+    shootStatusDuration: 120
+    shoot: {
+      firstShotDelay: 1
+    }
+    shake: 32
+    bullet: {
+      type: ContinuousLaserBulletType
+      setDefaults: false
+      despawnHit: false
+      largeHit: true
+      lifetime: 25
+      shake: 16
+      length: 410
+      width: 16
+      pierceCap: 1
+      damage: 1
+      colors: [
+        6d56bf88,
+        6d56bf,
+        bf92f9,
+        ffffff
+      ]
+      hitEffect: {
+        length: 0
+        offset: 90
+        cone: 0
+        region: allure-diamond-vthin
+        particles: 1
+        lifetime: 25
+        colorFrom: ffffff
+        colorTo: bf92f9
+        sizeFrom: 140
+        sizeTo: 0
+      }
+      frontLength: 0
+      backLength: 35
+      fragBullets: 1
+      fragRandomSpread: 180
+      fragBullet: {
+        type: SapBulletType
+        length: 3
+        sapStrength: 20
+        damage: 2600
+        hitColor: bf92f9
+        width: 0
+        hitEffect: [
+          {
+            baseRotation: 180
+            length: 80
+            cone: 0
+            region: allure-shootspike
+            particles: 1
+            lifetime: 80
+            colorFrom: bf92f9
+            colorTo: 6d56bf
+            sizeFrom: 80
+            sizeTo: 0
+          }
+          {
+            length: 0
+            cone: 0
+            region: allure-diamond-wide
+            particles: 1
+            lifetime: 25
+            colorFrom: ffffff
+            colorTo: bf92f9
+            sizeFrom: 60
+            sizeTo: 0
+          }
+        ]
+      }
+    }
+  }
+]

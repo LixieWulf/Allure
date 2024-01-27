@@ -1,9 +1,11 @@
 name: allure
 displayName: Allure
-author: Elixias
+author: Lixie
 description:
   '''
   WARNING: Not supported on low-end devices.
+
+  World logic contributed by Sh1penfire (@sh1penfire). Much thanks!
   
   An attempt at an immersive content mod.
 
