@@ -1,0 +1,144 @@
+type: ConsumeGenerator
+size: 4
+consumes: {
+  liquids: [
+    slag/0.2
+  ]
+}
+powerProduction: 0.001
+outputLiquid: energia/0.1
+drawer: [
+  {
+    type: DrawRegion
+    suffix: -bottom
+  }
+  {
+    type: DrawLiquidTile
+    padding: 4
+    drawLiquid: slag
+  }
+  {
+    type: DrawDefault
+  }
+  {
+    type: DrawRegion
+    suffix: -top
+  }
+  {
+    type: DrawGlowRegion
+    alpha: 0.75
+  }
+]
+requirements: [
+  anden/100
+]
+category: power
+destroySound: generatorBreak
+destroyBullet: {
+  type: BulletType
+  damage: 0
+  lifetime: 0
+  speed: 0
+  collides: false
+  hittable: false
+  absorbable: false
+  hitShake: 28
+  hitEffect: none
+  despawnEffect: none
+  fragBullets: 160
+  fragLifeMin: 0
+  fragVelocityMin: 1
+  fragVelocityMax: 1
+  fragBullet: {
+    type: BulletType
+    damage: 15
+    pierce: true
+    pierceBuilding: true
+    lifetime: 25
+    speed: 5
+    hitEffect: none
+    despawnEffect: none
+    hittable: false
+    absorbable: false
+    reflectable: false
+    bulletInterval: 5
+    intervalBullets: 1
+    intervalBullet: {
+      type: EmpBulletType
+      width: 0
+      height: 0
+      damage: 20
+      powerDamageScl: 8
+      timeDuration: 0
+      radius: 24
+      lifetime: 2
+      speed: 0
+      despawnHit: true
+      hittable: false
+      absorbable: false
+      hitColor: 3bbeff
+      hitEffect: none
+      hitPowerEffect: none
+      despawnEffect: none
+      applyEffect: none
+    }
+  }
+  lightning: 7
+  lightningLength: 14
+  lightningLengthRand: 12
+  lightningColor: 3bbeff
+  lightningDamage: 20
+}
+destroyEffect: [
+  {
+    type: WaveEffect
+    lifetime: 40
+    sizeFrom: 0
+    sizeTo: 125
+    strokeFrom: 6
+    strokeTo: 0
+    colorFrom: b3e9ff
+    colorTo: 3bbeff
+  }
+  {
+    length: 65
+    lifetime: 190
+    particles: 40
+    colorFrom: 787878
+    colorTo: 787878
+    sizeFrom: 6
+    sizeTo: 0
+    interp: pow10Out
+    sizeInterp: pow5In
+  }
+  {
+    length: 120
+    lifetime: 100
+    particles: 20
+    colorFrom: 787878
+    colorTo: 787878
+    sizeFrom: 2
+    sizeTo: 0
+    interp: pow10Out
+    sizeInterp: pow3In
+  }
+  {
+    length: 70
+    lifetime: 110
+    particles: 12
+    colorTo: 3bbeff
+    sizeFrom: 3
+    sizeTo: 0
+    interp: pow3Out
+    sizeInterp: pow5In
+  }
+  {
+    type: WaveEffect
+    lifetime: 20
+    sizeFrom: 0
+    sizeTo: 40
+    strokeFrom: 3
+    strokeTo: 0
+    colorTo: 3bbeff
+  }
+]

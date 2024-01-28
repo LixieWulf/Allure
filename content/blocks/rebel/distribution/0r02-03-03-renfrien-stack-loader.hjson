@@ -7,7 +7,8 @@ loadPowerDynamic: false
 consumes: {}
 maxBlockSize: 1
 requirements: [
-  beryllium/25
   anden/20
   renfrien/40
 ]
+saveConfig: true
+clearOnDoubleTap: true

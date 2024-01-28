@@ -13,6 +13,24 @@ allowLaunchToNumbered: false
 sectorSize: 2
 totalRadius: 1.8
 defaultEnv: 17
+itemWhitelist: [
+  tungsten, 
+  surge-alloy,
+  silicon,
+  graphite,
+  carbide,
+  phase-fabric,
+  thorium,
+  anden, 
+  ladera, 
+  renfrien,
+  baenite,
+  scilaxa,
+  amethyst,
+  infrastructure,
+  draconium,
+  shadow
+]
 bloom: true
 mesh: [
   {

@@ -20,7 +20,11 @@ drawShields: false
 drawBody: false
 internal: true
 outlines: false
-groundLayer: 30.1
+groundLayer: 25
+immunities: [
+  burning,
+  melting
+]
 legCount: 0
 parts: [
   {
@@ -33,6 +37,7 @@ parts: [
 weapons: [
   {
     type: BuildWeapon
+    layerOffset: 6
     name: localize-build
     mirror: false
     x: 11
@@ -42,6 +47,7 @@ weapons: [
   }
   {
     type: BuildWeapon
+    layerOffset: 6
     name: localize-build
     mirror: false
     x: -11
@@ -51,6 +57,7 @@ weapons: [
   }
   {
     type: BuildWeapon
+    layerOffset: 6
     name: localize-build
     mirror: false
     x: 0
@@ -60,6 +67,7 @@ weapons: [
   }
   {
     type: BuildWeapon
+    layerOffset: 6
     name: localize-build
     mirror: false
     x: 0
@@ -70,6 +78,7 @@ weapons: [
   }
   {
     name: localize-missile
+    layerOffset: 7
     mirror: false
     shootCone: 360
     x: 0

@@ -9,6 +9,7 @@ squareSprite: false
 size: 8
 warmupSpeed: 0.01
 itemCapacity: 400
+liquidCapacity: 200
 craftTime: 1200
 ignoreLiquidFullness: true
 liquidOutputDirections: [1]
@@ -235,12 +236,10 @@ drawer: [
   }
 ]
 consumes: {
-  power: 1
-  items: {
-    items: [
-      sand/200
-    ]
-  }
+  liquids: [
+    slag/0.8
+    energia/0.075
+  ]
 }
 outputItem: anden/100
 outputLiquids: [
@@ -266,7 +265,7 @@ craftEffect: {
 category: crafting
 research: 0r-begin
 requirements: [
-  beryllium/400
+  anden/400
 ]
 envEnabled: -1
 envDisabled: 4

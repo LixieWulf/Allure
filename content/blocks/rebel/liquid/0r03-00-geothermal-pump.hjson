@@ -1,0 +1,9 @@
+type: Pump
+size: 4
+pumpAmount: 0.05
+squareSprite: false
+liquidCapacity: 160
+requirements: [
+  anden/150
+]
+category: liquid

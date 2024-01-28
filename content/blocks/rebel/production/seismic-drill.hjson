@@ -1,0 +1,22 @@
+type: BurstDrill
+size: 12
+squareSprite: false
+drillTime: 340
+invertedTime: 310
+itemCapacity: 500
+dumpTime: 2
+tier: 9
+shake: 36
+blockedItem: sand
+arrows: 0
+consumes: {
+  liquids: [
+    energia/0.2
+  ]
+}
+drillSoundVolume: 1.2
+category: production
+requirements: [
+  anden/1200
+  graphite/400
+]

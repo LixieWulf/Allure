@@ -6,6 +6,5 @@ deconstructSpeed: 0.25
 hasPower: false
 requirements: [
   anden/60
-  beryllium/20
   renfrien/40
 ]

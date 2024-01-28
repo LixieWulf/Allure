@@ -5,7 +5,6 @@ offloadSpeed: 6
 hasPower: false
 maxBlockSize: 1
 requirements: [
-  beryllium/25
   anden/20
   renfrien/40
   amethyst/30

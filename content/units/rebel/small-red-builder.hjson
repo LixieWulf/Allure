@@ -1,0 +1,29 @@
+type: tether
+controller: BuilderAI
+defaultController: BuilderAI
+hitSize: 20
+health: 1200
+speed: 0
+rotateSpeed: 0
+physics: false
+targettable: false
+outlines: false
+drawCell: false
+buildRange: 320
+buildSpeed: 1.6
+drawBuildBeam: false
+immunities: [
+  burning,
+  melting
+]
+weapons: [
+  {
+    type: BuildWeapon
+    name: small-red-builder-weapon
+    x: 0
+    mirror: false
+    rotateSpeed: 2.2
+  }
+]
+envEnabled: -1
+envDisabled: 0

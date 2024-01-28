@@ -1,0 +1,38 @@
+type: GenericCrafter
+size: 9
+craftTime: 600
+itemCapacity: 400
+liquidCapacity: 20
+consumes: {
+  liquids: [
+    energia/0.2
+    slag/0.4
+  ]
+  items: [
+    anden/50
+    silicon/50
+    ladera/100
+  ]
+}
+drawer: [
+  {
+    type: DrawDefault
+  }
+  {
+    type: DrawFlame
+    flameColor: e68585
+    flameRadius: 14
+    flameRadiusIn: 10
+  }
+  {
+    type: DrawGlowRegion
+  }
+]
+outputItem: renfrien/100
+category: crafting
+requirements: [
+  anden/1200
+  silicon/300
+  graphite/150
+  ladera/400
+]

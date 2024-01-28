@@ -1,0 +1,17 @@
+type: UnitCargoLoader
+size: 3
+status: none
+unitType: allure-small-red-builder
+buildTime: 2400
+polyColor: 00000000
+category: effect
+consumes: {
+  liquids: [
+    energia/0.4
+  ]
+}
+requirements: [
+  anden/700
+  graphite/400
+  silicon/600
+]

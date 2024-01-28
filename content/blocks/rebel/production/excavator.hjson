@@ -1,0 +1,22 @@
+type: BeamDrill
+size: 6
+range: 3
+drillTime: 210
+tier: 4
+sparks: 30
+sparkRecurrence: 14
+sparkLife: 25
+sparkSpread: 25
+sparkRange: -26
+liquidCapacity: 30
+consumes: {
+  liquids: [
+    chlorine/0.05
+    energia/0.2
+  ]
+}
+requirements: [
+  anden/250
+]
+optionalBoostIntensity: 2.5
+category: production

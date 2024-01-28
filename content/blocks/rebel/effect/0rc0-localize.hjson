@@ -10,7 +10,7 @@ itemCapacity: 3200
 category: effect
 fogRadius: 60
 requirements: [
-  beryllium/1200
   anden/3200
+  graphite/1200
   renfrien/1800
 ]

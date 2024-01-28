@@ -1,0 +1,17 @@
+type: WallCrafter
+size: 4
+drillTime: 30
+output: silicon
+consumes: {
+  liquids: [
+    energia/0.125
+  ]
+}
+rotateSpeed: 4
+dumpTime: 2
+itemCapacity: 100
+category: crafting
+requirements: [
+  anden/900
+  graphite/300
+]

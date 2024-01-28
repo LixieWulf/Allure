@@ -5,6 +5,5 @@ payloadLimit: 1
 moveTime: 60
 interp: linear
 requirements: [
-  beryllium/16
   anden/8
 ]

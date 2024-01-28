@@ -15,6 +15,5 @@ enableDrawStatus: false
 hasPower: false
 requirements: [
   anden/12
-  beryllium/80
   renfrien/30
 ]
