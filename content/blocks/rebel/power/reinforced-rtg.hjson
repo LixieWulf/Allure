@@ -1,36 +1,20 @@
 type: ConsumeGenerator
 size: 4
-consumes: {
-  liquids: [
-    slag/0.2
-  ]
-}
 powerProduction: 0.001
 outputLiquid: energia/0.1
+requirements: [
+  anden/600
+  silicon/100
+  renfrien/300
+]
 drawer: [
   {
-    type: DrawRegion
-    suffix: -bottom
-  }
-  {
-    type: DrawLiquidTile
-    padding: 4
-    drawLiquid: slag
-  }
-  {
     type: DrawDefault
-  }
-  {
-    type: DrawRegion
-    suffix: -top
   }
   {
     type: DrawGlowRegion
     alpha: 0.75
   }
-]
-requirements: [
-  anden/100
 ]
 category: power
 destroyBullet: {
@@ -41,11 +25,11 @@ destroyBullet: {
   collides: false
   hittable: false
   absorbable: false
-  hitShake: 28
+  hitShake: 19
   hitEffect: none
   hitSound: generatorBreak
-  hitSoundVolume: 1.1
-  hitSoundPitch: 1.05
+  hitSoundVolume: 0.85
+  hitSoundPitch: 0.95
   despawnEffect: none
   fragBullets: 160
   fragLifeMin: 0
@@ -56,7 +40,7 @@ destroyBullet: {
     damage: 15
     pierce: true
     pierceBuilding: true
-    lifetime: 60
+    lifetime: 50
     speed: 2
     hitEffect: none
     despawnEffect: none
@@ -96,7 +80,7 @@ destroyEffect: [
     type: WaveEffect
     lifetime: 80
     sizeFrom: 0
-    sizeTo: 120
+    sizeTo: 100
     strokeFrom: 6
     strokeTo: 0
     colorFrom: b3e9ff

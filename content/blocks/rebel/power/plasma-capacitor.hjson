@@ -1,0 +1,28 @@
+type: GenericCrafter
+size: 3
+consumes: {
+  liquids: [
+    energia/0.001
+  ]
+}
+outputLiquid: energia/0.001
+liquidCapacity: 1200
+drawer: [
+  {
+    type: DrawDefault
+  }
+  {
+    type: DrawLiquidTile
+    padding: 3
+    drawLiquid: energia
+  }
+  {
+    type: DrawRegion
+    suffix: -top
+  }
+]
+requirements: [
+  anden/400
+  silicon/200
+]
+category: power

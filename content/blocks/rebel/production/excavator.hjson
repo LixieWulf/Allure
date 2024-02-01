@@ -8,6 +8,7 @@ sparkRecurrence: 14
 sparkLife: 25
 sparkSpread: 25
 sparkRange: -26
+itemCapacity: 30
 liquidCapacity: 30
 consumes: {
   liquids: [

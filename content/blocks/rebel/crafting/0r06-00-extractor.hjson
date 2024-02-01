@@ -10,7 +10,7 @@ size: 8
 warmupSpeed: 0.01
 itemCapacity: 400
 liquidCapacity: 200
-craftTime: 1200
+craftTime: 600
 ignoreLiquidFullness: true
 liquidOutputDirections: [1]
 rotateDraw: false

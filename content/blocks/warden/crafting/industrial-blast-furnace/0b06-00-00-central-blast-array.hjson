@@ -146,6 +146,11 @@ drawer: {
       color: ffb380
       alpha: 0.5
     }
+    {
+      type: DrawRegion
+      suffix: -overlay
+      layer: 29.5
+    }
   ]
 }
 
