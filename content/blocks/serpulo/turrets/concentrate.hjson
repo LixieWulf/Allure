@@ -23,6 +23,12 @@ shoot: {
     }
   ]
 }
+consumes: {
+  coolant: {
+    amount: 0.5
+  }
+}
+coolantMultiplier: 1.8
 shootSound: shootBig
 shake: 2
 drawer: {

@@ -1,5 +1,7 @@
 //Spawn package meant to be used in waves. Handles distancing and visual effects. Not exactly simple, do not reuse as you will break it!
 type: missile
+hittable: false
+targettable: false
 flying: true
 lifetime: 60
 speed: 0

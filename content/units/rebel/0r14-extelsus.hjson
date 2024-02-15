@@ -18,6 +18,7 @@ immunities: [
   allure-emp
 ]
 engineColor: e65555
+engineLayer: 90.03
 engines: [
   {
     x: 32
@@ -101,7 +102,7 @@ drawBody: false
 parts: [
   {
     type: RegionPart
-    layer: 91.01
+    layer: 91.04
     outline: false
   }
 ]
@@ -165,13 +166,14 @@ weapons: [
       type: RailBulletType
       despawnHit: false
       setDefaults: false
-      pierce: false
-      pierceBuilding: false
       pierceDamageFactor: 1
+      pierceCap: 1
       damage: 480
       length: 640
       pierceEffect: none
       hitEffect: massiveExplosion
+      status: 0r-kinetic2
+      statusDuration: 5
       pointEffectSpace: 20
       pointEffect: [
         {
@@ -206,6 +208,8 @@ weapons: [
         type: RailBulletType
         length: 45
         damage: 200
+        status: 0r-kinetic2
+        statusDuration: 2
         pointEffectSpace: 25
         pointEffect: [
           {
@@ -294,13 +298,14 @@ weapons: [
       type: RailBulletType
       despawnHit: false
       setDefaults: false
-      pierce: false
-      pierceBuilding: false
       pierceDamageFactor: 1
+      pierceCap: 1
       damage: 480
       length: 640
       pierceEffect: none
       hitEffect: massiveExplosion
+      status: 0r-kinetic2
+      statusDuration: 5
       pointEffectSpace: 20
       pointEffect: [
         {
@@ -335,6 +340,8 @@ weapons: [
         type: RailBulletType
         length: 45
         damage: 200
+        status: 0r-kinetic2
+        statusDuration: 2
         pointEffectSpace: 25
         pointEffect: [
           {
@@ -431,7 +438,7 @@ weapons: [
       pierceEffect: none
       hitEffect: massiveExplosion
       status: 0r-kinetic2
-      statusDuration: 1
+      statusDuration: 5
       pointEffectSpace: 20
       pointEffect: [
         {
@@ -464,6 +471,8 @@ weapons: [
         type: RailBulletType
         length: 45
         damage: 200
+        status: 0r-kinetic2
+        statusDuration: 2
         pointEffectSpace: 25
         pointEffect: [
           {
@@ -811,7 +820,6 @@ weapons: [
     shootSound: bang
     bullet: {
       damage: 32000
-      recoil: 3
       speed: 20
       lifetime: 60
       pierce: true
@@ -951,229 +959,1062 @@ weapons: [
       ]
     }
   }
-  //aoe blast (redo)
+  //jump shockwave
   {
     useAttackRange: false
     alwaysShooting: true
     x: 0
     recoil: 0
     mirror: false
-    reload: 360
+    reload: 840
     shootSound: none
     shootCone: 360
-    shoot: {
-      firstShotDelay: 120
+    shootStatus: {
+      name: MHJRghbagbakhtrbefakjgbahfgberhkargebyahkjbkfdavbkeajrb
+      show: false
+      speedMultiplier: 0
+      disarm: true
+      dragMultiplier: 1000
     }
-    cooldownTime: 120
+    shootStatusDuration: 171
+    shoot: {
+      firstShotDelay: 150
+    }
     parts: [
       {
         type: RegionPart
-        name: allure-0r14-extelsus
-        outline: false
-        layer: 89
+        name: allure-0r14-extelsus-jump
+        progress: {
+          type: charge
+          op: compress
+          start: 0
+          end: 0.6
+        }
+        y: -84.5
+        layer: 92
         color: ffffff00
-        colorTo: ffffff88
-        blending: additive
+        colorTo: ffffff
         mixColor: e65555
-        mixColorTo: e65555
-        moves: [
-          {
-            gx: 0.25
-            gy: 0.25
-            progress: {
-              type: heat
-              ops: [
-                {
-                  op: blend
-                  other: charge
-                  amount: 0.5
-                }
-              ]
-            }
-          }
-          {
-            gx: 0.25
-            gy: 0.25
-            progress: {
-              type: reload
-              ops: [
-                {
-                  op: compress
-                  start: 0.25
-                  end: 0.5
-                }
-                {
-                  op: curve
-                  interp: pow2Out
-                }
-              ]
-            }
-          }
-        ]
+        blending: additive
+        outline: false
       }
     ]
+    shake: 86
     bullet: {
-      type: BulletType
+      speed: 0
       lifetime: 0
-      collides: false
       absorbable: false
-      shootEffect: none
-      smokeEffect: none
-      despawnEffect: none
-      fragBullets: 720
-      fragRandomSpread: 0
-      fragSpread: 0.5
-      fragVelocityMin: 1
-      fragBullet: {
-        type: PointBulletType
-        lifetime: 1
-        speed: 80
-        collides: false
+      hittable: false
+      collides: false
+      lightning: 720
+      lightningDamage: 80
+      lightningLength: 2
+      lightningType: {
+        type: BulletType
         absorbable: false
+        hittable: false
         reflectable: false
-        hitEffect: none
+        speed: 4
+        lifetime: 160 
+        pierce: true
+        pierceBuilding: true
         despawnEffect: none
-        trailEffect: none
-        fragBullets: 1
-        fragRandomSpread: 0
-        fragSpread: 0.5
-        fragVelocityMin: 1
-        fragBullet: {
-          type: BulletType
-          collidesAir: false
-          keepVelocity: false
-          reflectable: false
-          hittable: false
-          absorbable: false
-          speed: 4
-          lifetime: 240
-          damage: 160
-          pierce: true
-          pierceBuilding: true
-          hitEffect: none
-          despawnEffect: none
-        }
       }
-      hitEffect: [
+      chargeEffect: [
         {
-          type: WaveEffect
-          lifetime: 240
-          sizeFrom: 160
-          sizeTo: 960
-          strokeFrom: 4
-          strokeTo: 0
-          colorFrom: e6555522
-          colorTo: e6555522
+          type: SoundEffect
+          sound: jump
+          minPitch: 1
+          maxPitch: 1
+          minVolume: 4
+          maxVolume: 4
+          effect: none
+          startDelay: 90
+        }
+        //exit trails
+        {
+          type: RadialEffect
+          amount: 1
+          lengthOffset: 110
+          rotationOffset: 180
+          effect: [
+            {
+              followParent: false
+              cap: false
+              line: true
+              lifetime: 45
+              cone: 0
+              particles: 1
+              randLength: false
+              length: 0.001
+              strokeFrom: 32
+              strokeTo: 0
+              lenFrom: 8192
+              lenTo: 8192
+              colorFrom: e65555
+              colorTo: e65555
+              layer: 90
+              baseRotation: 180
+              startDelay: 90
+            }
+            {
+              followParent: false
+              lifetime: 45
+              cone: 0
+              particles: 1
+              randLength: false
+              length: 0.001
+              sizeFrom: 16
+              sizeTo: 0
+              colorFrom: e65555
+              colorTo: e65555
+              layer: 90
+              baseRotation: 180
+              startDelay: 90
+            }
+            {
+              followParent: false
+              cap: false
+              line: true
+              lifetime: 45
+              cone: 0
+              particles: 1
+              randLength: false
+              length: 0.001
+              strokeFrom: 16
+              strokeTo: 0
+              lenFrom: 8192
+              lenTo: 8192
+              layer: 90.05
+              baseRotation: 180
+              startDelay: 90
+            }
+            {
+              followParent: false
+              lifetime: 45
+              cone: 0
+              particles: 1
+              randLength: false
+              length: 0.001
+              sizeFrom: 8
+              sizeTo: 0
+              layer: 90.05
+              baseRotation: 180
+              startDelay: 90
+            }
+          ]
         }
         {
-          type: WaveEffect
-          lifetime: 240
-          sizeFrom: 158
-          sizeTo: 960
-          strokeFrom: 8
-          strokeTo: 0
-          colorFrom: e6555522
-          colorTo: e6555522
+          type: RadialEffect
+          amount: 1
+          lengthOffset: 101
+          rotationOffset: 180
+          effect: [
+            {
+              type: RadialEffect
+              amount: 1
+              lengthOffset: 22
+              rotationOffset: 90
+              effect: [
+                {
+                  followParent: false
+                  cap: false
+                  line: true
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.001
+                  strokeFrom: 16
+                  strokeTo: 0
+                  lenFrom: 8192
+                  lenTo: 8192
+                  colorFrom: e65555
+                  colorTo: e65555
+                  layer: 90
+                  baseRotation: 90
+                  startDelay: 90
+                }
+                {
+                  followParent: false
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.001
+                  sizeFrom: 8
+                  sizeTo: 0
+                  colorFrom: e65555
+                  colorTo: e65555
+                  layer: 90
+                  baseRotation: 90
+                  startDelay: 90
+                }
+                {
+                  followParent: false
+                  cap: false
+                  line: true
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.001
+                  strokeFrom: 8
+                  strokeTo: 0
+                  lenFrom: 8192
+                  lenTo: 8192
+                  layer: 90.05
+                  baseRotation: 90
+                  startDelay: 90
+                }
+                {
+                  followParent: false
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.001
+                  sizeFrom: 4
+                  sizeTo: 0
+                  layer: 90.05
+                  baseRotation: 90
+                  startDelay: 90
+                }
+              ]
+            }
+          ]
         }
         {
-          type: WaveEffect
-          lifetime: 240
-          sizeFrom: 156
-          sizeTo: 960
-          strokeFrom: 12
-          strokeTo: 0
-          colorFrom: e6555522
-          colorTo: e6555522
+          type: RadialEffect
+          amount: 1
+          lengthOffset: 101
+          rotationOffset: 180
+          effect: [
+            {
+              type: RadialEffect
+              amount: 1
+              lengthOffset: 22
+              rotationOffset: -90
+              effect: [
+                {
+                  followParent: false
+                  cap: false
+                  line: true
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  strokeFrom: 16
+                  strokeTo: 0
+                  lenFrom: 8192
+                  lenTo: 8192
+                  colorFrom: e65555
+                  colorTo: e65555
+                  layer: 90
+                  baseRotation: -90
+                  startDelay: 90
+                }
+                {
+                  followParent: false
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  sizeFrom: 8
+                  sizeTo: 0
+                  colorFrom: e65555
+                  colorTo: e65555
+                  layer: 90
+                  baseRotation: -90
+                  startDelay: 90
+                }
+                {
+                  followParent: false
+                  cap: false
+                  line: true
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  strokeFrom: 8
+                  strokeTo: 0
+                  lenFrom: 8192
+                  lenTo: 8192
+                  layer: 90.05
+                  baseRotation: -90
+                  startDelay: 90
+                }
+                {
+                  followParent: false
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  sizeFrom: 4
+                  sizeTo: 0
+                  layer: 90.05
+                  baseRotation: -90
+                  startDelay: 90
+                }
+              ]
+            }
+          ]
         }
         {
-          type: WaveEffect
-          lifetime: 240
-          sizeFrom: 154
-          sizeTo: 960
-          strokeFrom: 16
-          strokeTo: 0
-          colorFrom: e6555522
-          colorTo: e6555522
+          type: RadialEffect
+          amount: 1
+          lengthOffset: 105
+          rotationOffset: 180
+          effect: [
+            {
+              type: RadialEffect
+              amount: 1
+              lengthOffset: 62
+              rotationOffset: 90
+              effect: [
+                {
+                  followParent: false
+                  cap: false
+                  line: true
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  strokeFrom: 24
+                  strokeTo: 0
+                  lenFrom: 8192
+                  lenTo: 8192
+                  colorFrom: e65555
+                  colorTo: e65555
+                  layer: 90
+                  baseRotation: 90
+                  startDelay: 90
+                }
+                {
+                  followParent: false
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  sizeFrom: 12
+                  sizeTo: 0
+                  colorFrom: e65555
+                  colorTo: e65555
+                  layer: 90
+                  baseRotation: 90
+                  startDelay: 90
+                }
+                {
+                  followParent: false
+                  cap: false
+                  line: true
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  strokeFrom: 12
+                  strokeTo: 0
+                  lenFrom: 8192
+                  lenTo: 8192
+                  layer: 90.05
+                  baseRotation: 90
+                  startDelay: 90
+                }
+                {
+                  followParent: false
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  sizeFrom: 6
+                  sizeTo: 0
+                  layer: 90.05
+                  baseRotation: 90
+                  startDelay: 90
+                }
+              ]
+            }
+          ]
         }
         {
-          type: WaveEffect
-          lifetime: 240
-          sizeFrom: 152
-          sizeTo: 960
-          strokeFrom: 20
-          strokeTo: 0
-          colorFrom: e6555522
-          colorTo: e6555522
+          type: RadialEffect
+          amount: 1
+          lengthOffset: 105
+          rotationOffset: 180
+          effect: [
+            {
+              type: RadialEffect
+              amount: 1
+              lengthOffset: 62
+              rotationOffset: -90
+              effect: [
+                {
+                  followParent: false
+                  cap: false
+                  line: true
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  strokeFrom: 24
+                  strokeTo: 0
+                  lenFrom: 8192
+                  lenTo: 8192
+                  colorFrom: e65555
+                  colorTo: e65555
+                  layer: 90
+                  baseRotation: -90
+                  startDelay: 90
+                }
+                {
+                  followParent: false
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  sizeFrom: 12
+                  sizeTo: 0
+                  colorFrom: e65555
+                  colorTo: e65555
+                  layer: 90
+                  baseRotation: -90
+                  startDelay: 90
+                }
+                {
+                  followParent: false
+                  cap: false
+                  line: true
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  strokeFrom: 12
+                  strokeTo: 0
+                  lenFrom: 8192
+                  lenTo: 8192
+                  layer: 90.05
+                  baseRotation: -90
+                  startDelay: 90
+                }
+                {
+                  followParent: false
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  sizeFrom: 6
+                  sizeTo: 0
+                  layer: 90.05
+                  baseRotation: -90
+                  startDelay: 90
+                }
+              ]
+            }
+          ]
+        }
+        //energy sphere
+        {
+          lifetime: 151
+          interp: pow3Out
+          particles: 1
+          length: 0
+          sizeFrom: 0
+          sizeTo: 150
+          colorFrom: e65555
+          colorTo: e65555
+          layer: 105
         }
         {
-          type: WaveEffect
-          lifetime: 240
+          lifetime: 151
+          interp: pow3Out
+          particles: 1
+          length: 0
+          sizeFrom: 0
+          sizeTo: 180
+          colorFrom: e6555580
+          colorTo: e6555580
+          layer: 105
+        }
+        {
+          lifetime: 151
+          interp: pow3Out
+          particles: 1
+          length: 0
+          sizeFrom: 0
+          sizeTo: 120
+        }
+      ]
+      despawnEffect: [
+        //help
+        {
+          type: SoundEffect
+          sound: jump
+          minPitch: 1
+          maxPitch: 1
+          minVolume: 4
+          maxVolume: 4
+          effect: none
+        }
+        //entry jump
+        {
+          line: true
+          cap: false
+          particles: 1
+          length: -60
+          baseLength: 160
+          randLength: false
+          cone: 0
+          lifetime: 31
+          interp: pow3In
+          lenFrom: 3
+          lenTo: 3
+          strokeFrom: 0
+          strokeTo: 480
+          baseRotation: 90
+          colorFrom: e65555
+        }
+        {
+          line: true
+          cap: false
+          particles: 1
+          length: 0.001
+          baseLength: 100
+          randLength: false
+          cone: 0
+          lifetime: 60
+          interp: pow3Out
+          lenFrom: 3
+          lenTo: 0
+          strokeFrom: 480
+          strokeTo: 2048
+          baseRotation: 90
+          colorTo: e65555
+          startDelay: 30
+        }
+        {
+          line: true
+          cap: false
+          particles: 1
+          length: -60
+          baseLength: 160
+          randLength: false
+          cone: 0
+          lifetime: 31
+          interp: pow3In
+          lenFrom: 3
+          lenTo: 3
+          strokeFrom: 0
+          strokeTo: 480
+          baseRotation: -90
+          colorFrom: e65555
+        }
+        {
+          line: true
+          cap: false
+          particles: 1
+          length: 0.001
+          baseLength: 100
+          randLength: false
+          cone: 0
+          lifetime: 60
+          interp: pow3Out
+          lenFrom: 3
+          lenTo: 0
+          strokeFrom: 480
+          strokeTo: 2048
+          baseRotation: -90
+          colorTo: e65555
+          startDelay: 30
+        }
+        {
+          followParent: false
+          lifetime: 30
+          interp: pow3In
+          cone: 0
+          particles: 1
+          randLength: false
+          length: 0.01
+          region: circle-shadow
+          sizeFrom: 640
+          sizeTo: 0
+          layer: 89
+          colorFrom: e65555
+          colorTo: e65555
+        }
+        //entry trails
+        {
+          type: RadialEffect
+          amount: 1
+          lengthOffset: 110
+          rotationOffset: 180
+          effect: [
+            {
+              followParent: false
+              cap: false
+              line: true
+              lifetime: 45
+              cone: 0
+              particles: 1
+              randLength: false
+              length: 0.001
+              strokeFrom: 32
+              strokeTo: 0
+              lenFrom: 8192
+              lenTo: 8192
+              colorFrom: e65555
+              colorTo: e65555
+              layer: 90
+            }
+            {
+              followParent: false
+              lifetime: 45
+              cone: 0
+              particles: 1
+              randLength: false
+              length: 0.001
+              sizeFrom: 16
+              sizeTo: 0
+              colorFrom: e65555
+              colorTo: e65555
+              layer: 90
+            }
+            {
+              followParent: false
+              cap: false
+              line: true
+              lifetime: 45
+              cone: 0
+              particles: 1
+              randLength: false
+              length: 0.001
+              strokeFrom: 16
+              strokeTo: 0
+              lenFrom: 8192
+              lenTo: 8192
+              layer: 90.05
+            }
+            {
+              followParent: false
+              lifetime: 45
+              cone: 0
+              particles: 1
+              randLength: false
+              length: 0.001
+              sizeFrom: 8
+              sizeTo: 0
+              layer: 90.05
+            }
+          ]
+        }
+        {
+          type: RadialEffect
+          amount: 1
+          lengthOffset: 101
+          rotationOffset: 180
+          effect: [
+            {
+              type: RadialEffect
+              amount: 1
+              lengthOffset: 22
+              rotationOffset: 90
+              effect: [
+                {
+                  followParent: false
+                  cap: false
+                  line: true
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.001
+                  strokeFrom: 16
+                  strokeTo: 0
+                  lenFrom: 8192
+                  lenTo: 8192
+                  colorFrom: e65555
+                  colorTo: e65555
+                  layer: 90
+                  baseRotation: -90
+                }
+                {
+                  followParent: false
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.001
+                  sizeFrom: 8
+                  sizeTo: 0
+                  colorFrom: e65555
+                  colorTo: e65555
+                  layer: 90
+                  baseRotation: -90
+                }
+                {
+                  followParent: false
+                  cap: false
+                  line: true
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.001
+                  strokeFrom: 8
+                  strokeTo: 0
+                  lenFrom: 8192
+                  lenTo: 8192
+                  layer: 90.05
+                  baseRotation: -90
+                }
+                {
+                  followParent: false
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.001
+                  sizeFrom: 4
+                  sizeTo: 0
+                  layer: 90.05
+                  baseRotation: -90
+                }
+              ]
+            }
+          ]
+        }
+        {
+          type: RadialEffect
+          amount: 1
+          lengthOffset: 101
+          rotationOffset: 180
+          effect: [
+            {
+              type: RadialEffect
+              amount: 1
+              lengthOffset: 22
+              rotationOffset: -90
+              effect: [
+                {
+                  followParent: false
+                  cap: false
+                  line: true
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  strokeFrom: 16
+                  strokeTo: 0
+                  lenFrom: 8192
+                  lenTo: 8192
+                  colorFrom: e65555
+                  colorTo: e65555
+                  layer: 90
+                  baseRotation: 90
+                }
+                {
+                  followParent: false
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  sizeFrom: 8
+                  sizeTo: 0
+                  colorFrom: e65555
+                  colorTo: e65555
+                  layer: 90
+                  baseRotation: 90
+                }
+                {
+                  followParent: false
+                  cap: false
+                  line: true
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  strokeFrom: 8
+                  strokeTo: 0
+                  lenFrom: 8192
+                  lenTo: 8192
+                  layer: 90.05
+                  baseRotation: 90
+                }
+                {
+                  followParent: false
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  sizeFrom: 4
+                  sizeTo: 0
+                  layer: 90.05
+                  baseRotation: 90
+                }
+              ]
+            }
+          ]
+        }
+        {
+          type: RadialEffect
+          amount: 1
+          lengthOffset: 105
+          rotationOffset: 180
+          effect: [
+            {
+              type: RadialEffect
+              amount: 1
+              lengthOffset: 62
+              rotationOffset: 90
+              effect: [
+                {
+                  followParent: false
+                  cap: false
+                  line: true
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  strokeFrom: 24
+                  strokeTo: 0
+                  lenFrom: 8192
+                  lenTo: 8192
+                  colorFrom: e65555
+                  colorTo: e65555
+                  layer: 90
+                  baseRotation: -90
+                }
+                {
+                  followParent: false
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  sizeFrom: 12
+                  sizeTo: 0
+                  colorFrom: e65555
+                  colorTo: e65555
+                  layer: 90
+                  baseRotation: -90
+                }
+                {
+                  followParent: false
+                  cap: false
+                  line: true
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  strokeFrom: 12
+                  strokeTo: 0
+                  lenFrom: 8192
+                  lenTo: 8192
+                  layer: 90.05
+                  baseRotation: -90
+                }
+                {
+                  followParent: false
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  sizeFrom: 6
+                  sizeTo: 0
+                  layer: 90.05
+                  baseRotation: -90
+                }
+              ]
+            }
+          ]
+        }
+        {
+          type: RadialEffect
+          amount: 1
+          lengthOffset: 105
+          rotationOffset: 180
+          effect: [
+            {
+              type: RadialEffect
+              amount: 1
+              lengthOffset: 62
+              rotationOffset: -90
+              effect: [
+                {
+                  followParent: false
+                  cap: false
+                  line: true
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  strokeFrom: 24
+                  strokeTo: 0
+                  lenFrom: 8192
+                  lenTo: 8192
+                  colorFrom: e65555
+                  colorTo: e65555
+                  layer: 90
+                  baseRotation: 90
+                }
+                {
+                  followParent: false
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  sizeFrom: 12
+                  sizeTo: 0
+                  colorFrom: e65555
+                  colorTo: e65555
+                  layer: 90
+                  baseRotation: 90
+                }
+                {
+                  followParent: false
+                  cap: false
+                  line: true
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  strokeFrom: 12
+                  strokeTo: 0
+                  lenFrom: 8192
+                  lenTo: 8192
+                  layer: 90.05
+                  baseRotation: 90
+                }
+                {
+                  followParent: false
+                  lifetime: 45
+                  cone: 0
+                  particles: 1
+                  randLength: false
+                  length: 0.01
+                  sizeFrom: 6
+                  sizeTo: 0
+                  layer: 90.05
+                  baseRotation: 90
+                }
+              ]
+            }
+          ]
+        }
+        //shockwave
+        {
+          lifetime: 80
+          interp: pow3Out
+          particles: 1
+          length: 0
           sizeFrom: 150
-          sizeTo: 960
-          strokeFrom: 24
-          strokeTo: 0
-          colorFrom: e6555522
-          colorTo: e6555522
+          sizeTo: 210
+          colorFrom: e65555
+          colorTo: e65555
+          layer: 105
+        }
+        {
+          lifetime: 80
+          interp: pow3Out
+          particles: 1
+          length: 0
+          sizeFrom: 180
+          sizeTo: 240
+          colorFrom: e6555580
+          colorTo: e6555580
+          layer: 105
+        }
+        {
+          lifetime: 80
+          interp: pow3Out
+          particles: 1
+          length: 0
+          sizeFrom: 120
+          sizeTo: 180
+        }
+        {
+          lifetime: 80
+          interp: pow3In
+          particles: 1
+          length: 0
+          sizeFrom: 210
+          sizeTo: 0
+          colorFrom: e65555
+          colorTo: e65555
+          layer: 105
+          startDelay: 79
+        }
+        {
+          lifetime: 80
+          interp: pow3In
+          particles: 1
+          length: 0
+          sizeFrom: 240
+          sizeTo: 0
+          colorFrom: e6555580
+          colorTo: e6555580
+          layer: 105
+          startDelay: 79
+        }
+        {
+          lifetime: 80
+          interp: pow3In
+          particles: 1
+          length: 0
+          sizeFrom: 180
+          sizeTo: 0
+          startDelay: 79
         }
         {
           type: WaveEffect
-          lifetime: 240
-          sizeFrom: 148
-          sizeTo: 960
-          strokeFrom: 28
+          layer: 105
+          lifetime: 160
+          sizeFrom: 0
+          sizeTo: 640
+          strokeFrom: 160
           strokeTo: 0
-          colorFrom: e6555522
-          colorTo: e6555522
+          colorFrom: e6555580
+          colorTo: e6555580
         }
         {
           type: WaveEffect
-          lifetime: 240
-          sizeFrom: 146
-          sizeTo: 960
-          strokeFrom: 32
+          layer: 105
+          lifetime: 160
+          sizeFrom: 0
+          sizeTo: 640
+          strokeFrom: 120
           strokeTo: 0
-          colorFrom: e6555522
-          colorTo: e6555522
+          colorFrom: e65555
+          colorTo: e65555
         }
         {
           type: WaveEffect
-          lifetime: 240
-          sizeFrom: 144
-          sizeTo: 960
-          strokeFrom: 36
+          lifetime: 160
+          sizeFrom: 0
+          sizeTo: 640
+          strokeFrom: 100
           strokeTo: 0
-          colorFrom: e6555522
-          colorTo: e6555522
-        }
-        {
-          type: WaveEffect
-          lifetime: 240
-          sizeFrom: 142
-          sizeTo: 960
-          strokeFrom: 40
-          strokeTo: 0
-          colorFrom: e6555522
-          colorTo: e6555522
-        }
-        {
-          type: WaveEffect
-          lifetime: 240
-          sizeFrom: 140
-          sizeTo: 960
-          strokeFrom: 44
-          strokeTo: 0
-          colorFrom: e6555522
-          colorTo: e6555522
-        }
-        {
-          type: WaveEffect
-          lifetime: 240
-          sizeFrom: 138
-          sizeTo: 960
-          strokeFrom: 48
-          strokeTo: 0
-          colorFrom: e6555522
-          colorTo: e6555522
         }
       ]
     }

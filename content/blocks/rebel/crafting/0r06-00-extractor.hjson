@@ -7,9 +7,10 @@ maxBoost: 2
 attribute: steam
 squareSprite: false
 size: 8
-warmupSpeed: 0.01
+warmupSpeed: 0.005
 itemCapacity: 400
 liquidCapacity: 200
+hasLiquids: true
 craftTime: 600
 ignoreLiquidFullness: true
 liquidOutputDirections: [1]
@@ -18,171 +19,15 @@ quickRotate: false
 drawer: [
   {
   }
-  //inner large gear teeth
   {
-    type: DrawRegion
-    suffix: -spinner2
-    rotateSpeed: 15
+    type: DrawLiquidRegion
+    drawLiquid: slag
   }
-  {
-    type: DrawRegion
-    suffix: -spinner2
-    rotateSpeed: 15
-    rotation: 10
-  }
-  {
-    type: DrawRegion
-    suffix: -spinner2
-    rotateSpeed: 15
-    rotation: 20
-  }
-  {
-    type: DrawRegion
-    suffix: -spinner2
-    rotateSpeed: 15
-    rotation: 30
-  }
-  {
-    type: DrawRegion
-    suffix: -spinner2
-    rotateSpeed: 15
-    rotation: 40
-  }
-  {
-    type: DrawRegion
-    suffix: -spinner2
-    rotateSpeed: 15
-    rotation: 50
-  }
-  {
-    type: DrawRegion
-    suffix: -spinner2
-    rotateSpeed: 15
-    rotation: 60
-  }
-  {
-    type: DrawRegion
-    suffix: -spinner2
-    rotateSpeed: 15
-    rotation: 70
-  }
-  {
-    type: DrawRegion
-    suffix: -spinner2
-    rotateSpeed: 15
-    rotation: 80
-  }
-  //gears 
-  {
-    type: DrawRegion
-    x: 12
-    y: 4
-    suffix: -gear-teeth
-    rotateSpeed: 27
-  }
-  {
-    type: DrawRegion
-    x: 12
-    y: 4
-    suffix: -gear-teeth
-    rotateSpeed: 27
-    rotation: 30
-  }
-  {
-    type: DrawRegion
-    x: 12
-    y: 4
-    suffix: -gear-teeth
-    rotateSpeed: 27
-    rotation: 60
-  }
-  {
-    type: DrawRegion
-    x: 12
-    y: 4
-    suffix: -gear-top
-    rotateSpeed: 27
-    spinSprite: true
-  }
-  {
-    type: DrawRegion
-    x: -12
-    y: -4
-    suffix: -gear-teeth
-    rotateSpeed: 27
-  }
-  {
-    type: DrawRegion
-    x: -12
-    y: -4
-    suffix: -gear-teeth
-    rotateSpeed: 27
-    rotation: 30
-  }
-  {
-    type: DrawRegion
-    x: -12
-    y: -4
-    suffix: -gear-teeth
-    rotateSpeed: 27
-    rotation: 60
-  }
-  {
-    type: DrawRegion
-    x: -12
-    y: -4
-    suffix: -gear-top
-    rotateSpeed: 27
-    spinSprite: true
-  }
-  //center bitsies
   {
     type: DrawRegion
     suffix: -top1
   }
-  //inner circle shading
-  {
-    type: DrawRegion
-    suffix: -spinner0
-    rotateSpeed: 15
-    spinSprite: true
-  }
-  {
-    type: DrawRegion
-    suffix: -spinner0
-    rotateSpeed: 15
-    rotation: 15
-    spinSprite: true
-  }
-  {
-    type: DrawRegion
-    suffix: -spinner0
-    rotateSpeed: 15
-    rotation: 30
-    spinSprite: true
-  }
-  {
-    type: DrawRegion
-    suffix: -spinner0
-    rotateSpeed: 15
-    rotation: 45
-    spinSprite: true
-  }
-  {
-    type: DrawRegion
-    suffix: -spinner0
-    rotateSpeed: 15
-    rotation: 60
-    spinSprite: true
-  }
-  {
-    type: DrawRegion
-    suffix: -spinner0
-    rotateSpeed: 15
-    rotation: 75
-    spinSprite: true
-  }
-  //outer circle shading
+  //circle shading
   {
     type: DrawRegion
     suffix: -spinner1
@@ -246,22 +91,6 @@ outputLiquids: [
   chlorine/0.05
 ]
 updateEffect: none
-craftEffect: {
-  type: RadialEffect
-  rotationOffset: 45
-  lengthOffset: 5
-  effect: {
-    length: 12
-    particles: 6
-    cone: 20
-    lifetime: 45
-    sizeInterp: pow2In
-    sizeFrom: 2
-    sizeTo: 1
-    colorFrom: b7b7b7
-    colorTo: b7b7b700
-  }
-}
 category: crafting
 research: 0r-begin
 requirements: [

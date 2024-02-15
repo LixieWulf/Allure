@@ -1,0 +1,37 @@
+weapons: [
+  {
+    name: stell-weapon
+    reload: 55
+    shootY: 4.5
+    recoil: 1
+    rotate: true
+    rotateSpeed: 2.2
+    mirror: false
+    x: 0
+    y: -0.75
+    heatColor: f9350f
+    cooldownTime: 30
+    bullet: {
+      speed: 4
+      damage: 25
+      pierce: true
+      pierceBuilding: true
+      pierceCap: 2
+      sprite: missile-large
+      smokeEffect: shootBigSmoke
+      shootEffect: shootBigColor
+      width: 5
+      height: 7
+      lifetime: 40
+      hitSize: 4
+      hitColor: feb380
+      backColor: feb380
+      trailColor: feb380
+      frontColor: ffffff
+      trailWidth: 1.7
+      trailLength: 5
+      despawnEffect: hitBulletColor
+      hitEffect: hitBulletColor
+    }
+  }
+]

@@ -1,4 +1,6 @@
 type: missile
+hittable: false
+targettable: false
 localizedName: yet another internal unit
 targetable: false
 hittable: false

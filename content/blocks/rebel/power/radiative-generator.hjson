@@ -9,16 +9,12 @@ powerProduction: 0.001
 outputLiquid: energia/0.1
 drawer: [
   {
-    type: DrawRegion
-    suffix: -bottom
+    type: DrawDefault
   }
   {
     type: DrawLiquidTile
     padding: 4
     drawLiquid: slag
-  }
-  {
-    type: DrawDefault
   }
   {
     type: DrawRegion
