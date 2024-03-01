@@ -1,4 +1,5 @@
 type: HeatProducer
+placeablePlayer: false
 heatOutput: 6
 conductivePower: true
 drawer: [
@@ -12,7 +13,7 @@ drawer: [
 consumes: {
   power: 3
   liquids: [
-    oil/1
+    oil/0.5
   ]
 }
 category: crafting

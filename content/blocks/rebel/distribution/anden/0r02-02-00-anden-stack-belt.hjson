@@ -1,0 +1,8 @@
+type: PayloadConveyor
+size: 1
+payloadLimit: 1
+moveTime: 120
+interp: linear
+requirements: [
+  anden/12
+]

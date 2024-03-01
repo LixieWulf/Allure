@@ -1,0 +1,85 @@
+type: AttributeCrafter
+size: 10
+dumpTime: 1
+itemCapacity: 450
+floating: true
+attribute: heat
+boostScale: 0.0117647058824 
+minEfficiency: 0
+baseEfficiency: 0
+liquidCapacity: 45
+consumes: {
+  liquids: [
+    energia/0.4
+    steam/0.25
+  ]
+}
+drawer: [
+  {
+  }
+  {
+    type: DrawGlowRegion
+    blending: normal
+    alpha: 1
+    glowIntensity: 0
+    suffix: -liquid
+    color: ffa166
+    layer: 30
+  }
+  {
+    type: DrawRegion
+    suffix: -top1
+  }
+  {
+    type: DrawRegion
+    suffix: -top2
+  }
+  {
+    type: DrawRegion
+    suffix: -centrifuge
+    rotateSpeed: 5
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -centrifuge
+    rotateSpeed: 5
+    rotation: 15
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -centrifuge
+    rotateSpeed: 5
+    rotation: 30
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -centrifuge
+    rotateSpeed: 5
+    rotation: 45
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -centrifuge
+    rotateSpeed: 5
+    rotation: 60
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -centrifuge
+    rotateSpeed: 5
+    rotation: 75
+    spinSprite: true
+  }
+]
+craftTime: 800
+outputItem: baenite/200
+requirements: [
+  anden/1800
+  graphite/800
+  renfrien/400
+]

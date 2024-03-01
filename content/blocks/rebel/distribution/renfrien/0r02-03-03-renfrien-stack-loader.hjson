@@ -1,0 +1,14 @@
+type: PayloadLoader
+size: 1
+loadTime: 6
+payloadSpeed: 0.125
+hasPower: false
+loadPowerDynamic: false
+consumes: {}
+maxBlockSize: 1
+requirements: [
+  anden/50
+  renfrien/80
+]
+saveConfig: true
+clearOnDoubleTap: true

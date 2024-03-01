@@ -1,6 +1,6 @@
 type: SeaBush
-lobesMin: 12
-lobesMax: 20
+lobesMin: 5
+lobesMax: 8
 timeRange: 50
 sclMin: 35
 sclMax: 45

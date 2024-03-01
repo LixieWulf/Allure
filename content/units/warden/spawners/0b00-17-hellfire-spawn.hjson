@@ -1,6 +1,12 @@
 type: missile
+template: MissileUnitType
+targetable: false
+hittable: false
 envEnabled: -1
-lifetime: 1
+lifetime: 30
+range: 8192
+maxRange: 8192
+rotateSpeed: 360
 speed: 0
 engineSize: 0 
 drawBody: false 
@@ -21,7 +27,7 @@ weapons: [
       collides: false
       hittable: false
       absorbable: false
-      despawnEffect: [
+      chargeEffect: [
         //this is an intensely long effect, so each individual effects sequence is commented
         //"""space"""
         {
@@ -34,7 +40,7 @@ weapons: [
               lifetime: 31
               length: 0
               sizeFrom: 0
-              sizeTo: 200
+              sizeTo: 188
               layer: 89
               colorFrom: 000000
               colorTo: 000000
@@ -46,8 +52,8 @@ weapons: [
               particles: 1
               lifetime: 161
               length: 0
-              sizeFrom: 200
-              sizeTo: 200
+              sizeFrom: 188
+              sizeTo: 188
               layer: 89
               colorFrom: 000000
               colorTo: 000000
@@ -58,7 +64,7 @@ weapons: [
               particles: 1
               lifetime: 30
               length: 0
-              sizeFrom: 200
+              sizeFrom: 188
               sizeTo: 0
               layer: 89
               colorFrom: 000000
@@ -75,7 +81,7 @@ weapons: [
           startDelay: 20
           lifetime: 180
           length: 0
-          baseLength: 180
+          baseLength: 155
           sizeFrom: 1
           sizeTo: 1
           clip: 8192
@@ -86,7 +92,7 @@ weapons: [
           startDelay: 20
           lifetime: 180
           length: 0
-          baseLength: 180
+          baseLength: 160
           sizeFrom: 2
           sizeTo: 2
           clip: 8192
@@ -136,7 +142,7 @@ weapons: [
             }
           ]
         }
-        //"outer ring" - easy to make
+        //"outer ring" - easy to make SIC GET TROLLD
         {
           type: ParticleEffect
           particles: 15
@@ -177,6 +183,43 @@ weapons: [
           layer: 104
           colorFrom: 7382f0
           colorTo: 7382f0
+          clip: 8192
+          interp: pow3In
+        }
+        {
+          type: WaveEffect
+          lifetime: 21
+          sizeFrom: 0
+          sizeTo: 220
+          strokeFrom: 0
+          strokeTo: 60
+          colorFrom: 000000
+          colorTo: 000000
+          clip: 8192
+          interp: pow3Out
+        }
+        {
+          type: WaveEffect
+          startDelay: 20
+          lifetime: 181
+          sizeFrom: 220
+          sizeTo: 220
+          strokeFrom: 60
+          strokeTo: 60
+          colorFrom: 000000
+          colorTo: 000000
+          clip: 8192
+        }
+        {
+          type: WaveEffect
+          startDelay: 200
+          lifetime: 20
+          sizeFrom: 220
+          sizeTo: 0
+          strokeFrom: 60
+          strokeTo: 0
+          colorFrom: 000000
+          colorTo: 000000
           clip: 8192
           interp: pow3In
         }

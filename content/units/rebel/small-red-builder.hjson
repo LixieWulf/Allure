@@ -12,6 +12,7 @@ drawCell: false
 buildRange: 320
 buildSpeed: 1.6
 drawBuildBeam: false
+internal: true
 immunities: [
   burning,
   melting

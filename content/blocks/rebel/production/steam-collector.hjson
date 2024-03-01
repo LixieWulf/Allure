@@ -1,0 +1,24 @@
+type: AttributeCrafter
+size: 3
+boostScale: 0.111111111
+minEfficiency: 8.99999
+baseEfficiency: 0
+maxBoost: 1
+displayEfficiency: false
+attribute: steam
+customShadow: true
+liquidCapacity: 200
+drawer: [
+  {
+    type: DrawLiquidTile
+    drawLiquid: steam
+    padding: 2
+  }
+  {
+  }
+]
+outputLiquid: steam/0.75
+requirements: [
+  anden/200
+  renfrien/100
+]

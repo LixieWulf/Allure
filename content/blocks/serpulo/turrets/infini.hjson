@@ -3331,7 +3331,17 @@ shootType: {
         lifetime: 240
         speed: 30
         drag: 0.011
-        damage: 12000
+        damage: 90000
+        buildingDamageMultiplier: 0.1
+        splashDamage: 120
+        splashDamageRadius: 67
+        splashDamagePierce: true
+        pierce: true
+        pierceBuilding: true
+        pierceDamageFactor: 0.2
+        absorbale: false
+        hittable: false
+        reflectable: false
         despawnEffect: none
       }
     }

@@ -1,0 +1,103 @@
+type: PowerTurret
+size: 2
+health: 24000
+drawTeamOverlay: false
+customShadow: true
+canOverdrive: false
+clipSize: 130
+shoot: {
+  type: ShootSummon
+  shots: 12
+  shotDelay: 3
+  radius: 48
+}
+reload: 36
+recoil: 0 
+rotateSpeed: 0
+drawer: [
+  {
+    type: DrawTurret
+    basePrefix: ahkjgfkadshfgkadshgfkeywuafktaubfdgycag
+    parts: [
+      {
+        type: RegionPart
+        layer: 89
+        outline: false
+        name: allure-tree-base
+      }
+      {
+        type: RegionPart
+        layer: 88
+        mixColor: 000000
+        outline: false
+        color: ffffff50
+        x: -24
+        y: -24
+        name: allure-tree-base
+      }
+      {
+        type: RegionPart
+        layer: 88
+        mixColor: 000000
+        outline: false
+        color: ffffff
+        name: allure-tree-shadow
+      }
+    ]
+  }
+]
+outlineIcon: false
+alwaysShooting: true
+shootY: 0
+shootSound: none
+inaccuracy: 360
+shootType: {
+  speed: 1
+  lifetime: 40
+  drag: 0.03
+  width: 1
+  height: 2
+  shrinkY: 0
+  createChance: 0.2
+  collidesGround: true
+  lightOpacity: 0.25
+  hitSize: 240
+  setDefaults: false
+  despawnHit: false
+  absorbable: false
+  lightRadius: 12
+  fragRandomSpread: 0
+  fragBullets: 1
+  fragOffsetMin: 0
+  fragOffsetMax: 0
+  fragBullet: {
+    speed: 0.5
+    drag: -0.04
+    lifetime: 90
+    damage: 45
+    width: 1
+    height: 2
+    shrinkY: 0
+    homingPower: 0.14
+    homingRange: 480
+    homingDelay: 10
+    hitEffect: none
+    despawnEffect: none 
+    trailWidth: 0.2
+    trailLength: 15
+    lightning: 1
+    lightningLength: 5
+    lightningCone: 15
+    lightningDamage: 80
+    lightRadius: 12
+    setDefaults: false
+    despawnHit: false
+    absorbable: false
+  }
+  shootEffect: none
+  smokeEffect: none
+  hitEffect: none
+  despawnEffect: none 
+  trailWidth: 0.2
+  trailLength: 15
+}

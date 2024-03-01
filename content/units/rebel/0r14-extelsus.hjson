@@ -15,7 +15,28 @@ drawCell: false
 outlines: false
 shadowElevationScl: 3.5
 immunities: [
-  allure-emp
+  burning,
+  melting,
+  freezing, 
+  wet, 
+  tarred,
+  slow,
+  unmoving, 
+  disarmed,
+  spore-slowed,
+  shocked,
+  blasted,
+  electrified,
+  sapped, 
+  overclock,
+  overdrive,
+  allure-emp,
+  allure-0r-kinetic0,
+  allure-0r-kinetic1,
+  allure-0r-kinetic2,
+  allure-0r-kinetic3,
+  allure-0r-kinetic4,
+
 ]
 engineColor: e65555
 engineLayer: 90.03

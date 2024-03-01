@@ -1,0 +1,9 @@
+type: PayloadRouter
+size: 1
+invert: true
+payloadLimit: 1
+moveTime: 120
+interp: linear
+requirements: [
+  anden/16
+]

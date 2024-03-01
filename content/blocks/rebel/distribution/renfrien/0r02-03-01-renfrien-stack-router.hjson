@@ -1,0 +1,9 @@
+type: PayloadRouter
+size: 1
+payloadLimit: 1
+moveTime: 60
+interp: linear
+requirements: [
+  anden/24
+  renfrien/40
+]

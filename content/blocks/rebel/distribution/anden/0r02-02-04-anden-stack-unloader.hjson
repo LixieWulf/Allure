@@ -1,0 +1,10 @@
+type: PayloadUnloader
+size: 1
+liquidCapacity: 200
+payloadSpeed: 0.0625 
+offloadSpeed: 6
+hasPower: false
+maxBlockSize: 1
+requirements: [
+  anden/40
+]

@@ -1,0 +1,10 @@
+type: PayloadDeconstructor
+size: 1
+payloadSpeed: 0.0625 
+maxPayloadSize: 1.1
+deconstructSpeed: 0.25
+hasPower: false
+floating: true
+requirements: [
+  anden/24
+]

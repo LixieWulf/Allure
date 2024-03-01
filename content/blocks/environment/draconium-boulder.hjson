@@ -13,6 +13,7 @@ variants: 3
 itemDrop: draconium
 buildVisibility: editorOnly
 instantDeconstruct: false
+allowDerelictRepair: false
 buildCostMultiplier: 0.001
 requirements: [
   draconium/120

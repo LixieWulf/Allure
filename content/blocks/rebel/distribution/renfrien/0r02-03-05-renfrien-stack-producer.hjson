@@ -1,0 +1,22 @@
+type: Constructor
+size: 1
+payloadSpeed: 0.125
+buildSpeed: 0.25
+filter: [
+  0r02-00-00-anden-capsule,
+  0r02-00-02-renfrien-capsule,
+  0r02-00-03-scilaxa-capsule,
+  0r02-00-04-amethyst-capsule,
+  0r02-01-00-graphite-liquid-cell,
+  0r02-01-01-ladera-liquid-cell,
+  0r02-01-02-baenite-liquid-cell,
+  0r02-01-03-crystal-liquid-cell,
+  0r02-01-04-draconium-liquid-cell,
+]
+enableDrawStatus: false
+hasPower: false
+floating: true
+requirements: [
+  anden/30
+  renfrien/60
+]

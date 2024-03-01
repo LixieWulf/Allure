@@ -13,8 +13,3 @@ baseSpeed: 0.3
 sound: fire
 soundVol: 0.65
 force: 0
-attrs: {
-  heat: 1.4
-  water: -0.5
-  spores: -0.9
-}

@@ -1,9 +1,0 @@
-type: PayloadUnloader
-size: 1
-payloadSpeed: 0.125
-offloadSpeed: 6
-hasPower: false
-maxBlockSize: 1
-requirements: [
-  anden/20
-]

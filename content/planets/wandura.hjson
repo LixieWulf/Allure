@@ -74,6 +74,9 @@ defaultCore: 0bc0-nexus
 itemWhitelist: [
   copper,
   lead,
+  sand,
+  coal,
+  pyratite,
   graphite,
   silicon,
   metaglass,

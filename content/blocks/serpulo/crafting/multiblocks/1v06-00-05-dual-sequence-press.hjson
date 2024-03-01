@@ -14,9 +14,32 @@ drawer: [
   {
   }
   {
+    type: DrawPistons
+    sinScl: 4
+    sinMag: 2
+    sinOffset: 25
+    sideOffset: 6.28318
+  }
+  {
     type: DrawLiquidOutputs
   }
 ]
+updateEffect: pulverize
+craftEffect: {
+  type: RadialEffect
+  lengthOffset: 10
+  rotationOffset: 45
+  effect: {
+    length: 25
+    lifetime: 45
+    cone: 35
+    particles: 6
+    sizeFrom: 3
+    sizeTo: 0
+    colorFrom: 787878
+    colorTo: 787878
+  }
+}
 consumes: {
   power: 4.5
   liquids: [
@@ -26,6 +49,6 @@ consumes: {
   ]
 }
 outputItem: graphite/12
-outputLiquid: thermal-gas/0.5
+outputLiquid: thermal-gas/0.51
 category: crafting
 buildVisibility: sandboxOnly

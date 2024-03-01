@@ -1,0 +1,15 @@
+type: PayloadLoader
+size: 1
+liquidCapacity: 200
+payloadSpeed: 0.0625 
+loadTime: 6
+hasPower: false
+//remove default consumes
+loadPowerDynamic: false
+consumes: {}
+maxBlockSize: 1
+requirements: [
+  anden/40
+]
+saveConfig: true
+clearOnDoubleTap: true

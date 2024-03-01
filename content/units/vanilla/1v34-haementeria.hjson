@@ -113,11 +113,12 @@ weapons: [
       fragBullet: {
         type: SapBulletType
         length: 3
-        sapStrength: 20
+        sapStrength: 1
         damage: 2600
         hitColor: bf92f9
         width: 0
-        hitEffect: [
+        despawnHit: true
+        despawnEffect: [
           {
             baseRotation: 180
             length: 80

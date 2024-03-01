@@ -27,6 +27,6 @@ consumes: {
   ]
 }
 outputItem: silicon/24
-outputLiquid: thermal-gas/0.5
+outputLiquid: thermal-gas/0.51
 category: crafting
 buildVisibility: sandboxOnly

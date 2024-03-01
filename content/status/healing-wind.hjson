@@ -1,7 +1,4 @@
-color: 73d187
-damage: -4
-healthMultiplier: 1.1
-speedMultiplier: 1.1
+damage: -6
 effect: {
   type: WaveEffect
   lifetime: 12
