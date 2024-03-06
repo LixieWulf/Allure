@@ -4,5 +4,5 @@ liquidPadding: 1
 placeablePlayer: false
 buildVisibility: shown
 requirements: [
-  ladera/0
+  crystal/0
 ]

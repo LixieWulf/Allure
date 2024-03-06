@@ -4,5 +4,5 @@ liquidPadding: 1
 placeablePlayer: false
 buildVisibility: shown
 requirements: [
-  altesin/0
+  ladera/0
 ]

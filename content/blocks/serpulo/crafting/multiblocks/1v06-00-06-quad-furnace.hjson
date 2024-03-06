@@ -17,16 +17,27 @@ drawer: [
   {
     type: DrawLiquidOutputs
   }
+  {
+    type: DrawFlame
+    flameRadius: 8
+    flameRadiusIn: 6
+    flameRadiusMag: 5
+    flameRadiusInMag: 4
+    flameRadiusScl: 12
+    flameColor: ffffa8
+  }
 ]
+updateEffect: fuelburn
+craftEffect: mineHuge
 consumes: {
   power: 12
   liquids: [
-    pure-carbon/0.266666666666666666666
+    molten-lead/0.1333333333
     thermal-fluid/0.5
     molten-silica/0.08333333333333
   ]
 }
-outputItem: silicon/24
+outputItem: metaglass/24
 outputLiquid: thermal-gas/0.51
 category: crafting
 buildVisibility: sandboxOnly

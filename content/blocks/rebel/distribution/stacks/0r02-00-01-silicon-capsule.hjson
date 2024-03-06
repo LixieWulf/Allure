@@ -4,5 +4,5 @@ placeablePlayer: false
 itemCapacity: 100
 buildVisibility: shown
 requirements: [
-  anden/0
+  silicon/0
 ]

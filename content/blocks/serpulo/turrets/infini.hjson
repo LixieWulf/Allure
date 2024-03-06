@@ -48,6 +48,7 @@ drawer: {
     }
   ]
 }
+shootSound: none
 shootType: {
   type: BulletType
   speed: 0
@@ -1536,6 +1537,7 @@ shootType: {
         absorbable: false
         hitEffect: none
         despawnEffect: none
+        hitShake: 15
         fragBullets: 1
         fragRandomSpread: 0
         fragOffsetMin: 120
@@ -1550,22 +1552,54 @@ shootType: {
           pierce: true
           pierceBuilding: true
           hitEffect: none
-          despawnEffect: {
-            line: true
-            particles: 1
-            length: -0.001
-            cone: 0
-            lifetime: 1800
-            interp: pow10Out
-            lenFrom: 120
-            lenTo: 120
-            strokeFrom: 0
-            strokeTo: 12
-            colorFrom: 000000
-            colorTo: 000000
-            layer: 28
-            clip: 8192
-          }
+          despawnEffect: [
+            {
+              line: true
+              particles: 1
+              length: -0.001
+              cone: 0
+              lifetime: 1800
+              interp: pow10Out
+              lenFrom: 120
+              lenTo: 120
+              strokeFrom: 0
+              strokeTo: 12
+              colorFrom: 000000
+              colorTo: 000000
+              layer: 28
+              clip: 8192
+            }
+            {
+              line: true
+              particles: 1
+              length: -0.001
+              cone: 0
+              lifetime: 1800
+              interp: pow10Out
+              lenFrom: 120
+              lenTo: 120
+              strokeFrom: 0
+              strokeTo: 6
+              layer: 28.1
+              clip: 8192
+              colorFrom: ffffff88
+              colorTo: ffffff88
+            }
+            {
+              line: true
+              particles: 1
+              length: -0.001
+              cone: 0
+              lifetime: 1800
+              interp: pow10Out
+              lenFrom: 120
+              lenTo: 120
+              strokeFrom: 0
+              strokeTo: 3
+              layer: 28.2
+              clip: 8192
+            }
+          ]
           fragBullets: 2
           fragRandomSpread: 45
           fragAngle: 22.5
@@ -1581,23 +1615,56 @@ shootType: {
             absorbable: false
             pierce: true
             pierceBuilding: true
+            hitShake: 15
             hitEffect: none
-            despawnEffect: {
-              line: true
-              particles: 1
-              length: -0.001
-              cone: 0
-              lifetime: 1800
-              interp: pow10Out
-              lenFrom: 120
-              lenTo: 120
-              strokeFrom: 0
-              strokeTo: 11
-              colorFrom: 000000
-              colorTo: 000000
-              layer: 28
-              clip: 8192
-            }
+            despawnEffect: [
+              {
+                line: true
+                particles: 1
+                length: -0.001
+                cone: 0
+                lifetime: 1800
+                interp: pow10Out
+                lenFrom: 120
+                lenTo: 120
+                strokeFrom: 0
+                strokeTo: 11
+                colorFrom: 000000
+                colorTo: 000000
+                layer: 28
+                clip: 8192
+              }
+              {
+                line: true
+                particles: 1
+                length: -0.001
+                cone: 0
+                lifetime: 1800
+                interp: pow10Out
+                lenFrom: 120
+                lenTo: 120
+                strokeFrom: 0
+                strokeTo: 5
+                layer: 28.1
+                clip: 8192
+                colorFrom: ffffff88
+                colorTo: ffffff88
+              }
+              {
+                line: true
+                particles: 1
+                length: -0.001
+                cone: 0
+                lifetime: 1800
+                interp: pow10Out
+                lenFrom: 120
+                lenTo: 120
+                strokeFrom: 0
+                strokeTo: 2
+                layer: 28.2
+                clip: 8192
+              }
+            ]
             fragBullets: 2
             fragRandomSpread: 45
             fragAngle: -22.5
@@ -1613,23 +1680,56 @@ shootType: {
               absorbable: false
               pierce: true
               pierceBuilding: true
+              hitShake: 15
               hitEffect: none
-              despawnEffect: {
-                line: true
-                particles: 1
-                length: -0.001
-                cone: 0
-                lifetime: 1800
-                interp: pow10Out
-                lenFrom: 120
-                lenTo: 120
-                strokeFrom: 0
-                strokeTo: 10
-                colorFrom: 000000
-                colorTo: 000000
-                layer: 28
-                clip: 8192
-              }
+              despawnEffect: [
+                {
+                  line: true
+                  particles: 1
+                  length: -0.001
+                  cone: 0
+                  lifetime: 1800
+                  interp: pow10Out
+                  lenFrom: 120
+                  lenTo: 120
+                  strokeFrom: 0
+                  strokeTo: 10
+                  colorFrom: 000000
+                  colorTo: 000000
+                  layer: 28
+                  clip: 8192
+                }
+                {
+                  line: true
+                  particles: 1
+                  length: -0.001
+                  cone: 0
+                  lifetime: 1800
+                  interp: pow10Out
+                  lenFrom: 120
+                  lenTo: 120
+                  strokeFrom: 0
+                  strokeTo: 4
+                  layer: 28.1
+                  clip: 8192
+                  colorFrom: ffffff88
+                  colorTo: ffffff88
+                }
+                {
+                  line: true
+                  particles: 1
+                  length: -0.001
+                  cone: 0
+                  lifetime: 1800
+                  interp: pow10Out
+                  lenFrom: 120
+                  lenTo: 120
+                  strokeFrom: 0
+                  strokeTo: 1
+                  layer: 28.2
+                  clip: 8192
+                }
+              ]
               fragBullets: 2
               fragRandomSpread: 45
               fragAngle: 22.5
@@ -1645,23 +1745,42 @@ shootType: {
                 absorbable: false
                 pierce: true
                 pierceBuilding: true
+                hitShake: 15
                 hitEffect: none
-                despawnEffect: {
-                  line: true
-                  particles: 1
-                  length: -0.001
-                  cone: 0
-                  lifetime: 1800
-                  interp: pow10Out
-                  lenFrom: 120
-                  lenTo: 120
-                  strokeFrom: 0
-                  strokeTo: 9
-                  colorFrom: 000000
-                  colorTo: 000000
-                  layer: 28
-                  clip: 8192
-                }
+                despawnEffect: [
+                  {
+                    line: true
+                    particles: 1
+                    length: -0.001
+                    cone: 0
+                    lifetime: 1800
+                    interp: pow10Out
+                    lenFrom: 120
+                    lenTo: 120
+                    strokeFrom: 0
+                    strokeTo: 9
+                    colorFrom: 000000
+                    colorTo: 000000
+                    layer: 28
+                    clip: 8192
+                  }
+                  {
+                    line: true
+                    particles: 1
+                    length: -0.001
+                    cone: 0
+                    lifetime: 1800
+                    interp: pow10Out
+                    lenFrom: 120
+                    lenTo: 120
+                    strokeFrom: 0
+                    strokeTo: 3
+                    layer: 28.1
+                    clip: 8192
+                    colorFrom: ffffff88
+                    colorTo: ffffff88
+                  }
+                ]
                 fragBullets: 2
                 fragRandomSpread: 45
                 fragAngle: -22.5
@@ -1677,23 +1796,42 @@ shootType: {
                   absorbable: false
                   pierce: true
                   pierceBuilding: true
+                  hitShake: 15
                   hitEffect: none
-                  despawnEffect: {
-                    line: true
-                    particles: 1
-                    length: -0.001
-                    cone: 0
-                    lifetime: 1800
-                    interp: pow10Out
-                    lenFrom: 120
-                    lenTo: 120
-                    strokeFrom: 0
-                    strokeTo: 8
-                    colorFrom: 000000
-                    colorTo: 000000
-                    layer: 28
-                    clip: 8192
-                  }
+                  despawnEffect: [
+                    {
+                      line: true
+                      particles: 1
+                      length: -0.001
+                      cone: 0
+                      lifetime: 1800
+                      interp: pow10Out
+                      lenFrom: 120
+                      lenTo: 120
+                      strokeFrom: 0
+                      strokeTo: 8
+                      colorFrom: 000000
+                      colorTo: 000000
+                      layer: 28
+                      clip: 8192
+                    }
+                    {
+                      line: true
+                      particles: 1
+                      length: -0.001
+                      cone: 0
+                      lifetime: 1800
+                      interp: pow10Out
+                      lenFrom: 120
+                      lenTo: 120
+                      strokeFrom: 0
+                      strokeTo: 2
+                      layer: 28.1
+                      clip: 8192
+                      colorFrom: ffffff88
+                      colorTo: ffffff88
+                    }
+                  ]
                   fragBullets: 2
                   fragRandomSpread: 45
                   fragAngle: 22.5
@@ -1709,23 +1847,42 @@ shootType: {
                     absorbable: false
                     pierce: true
                     pierceBuilding: true
+                    hitShake: 15
                     hitEffect: none
-                    despawnEffect: {
-                      line: true
-                      particles: 1
-                      length: -0.001
-                      cone: 0
-                      lifetime: 1800
-                      interp: pow10Out
-                      lenFrom: 120
-                      lenTo: 120
-                      strokeFrom: 0
-                      strokeTo: 7
-                      colorFrom: 000000
-                      colorTo: 000000
-                      layer: 28
-                      clip: 8192
-                    }
+                    despawnEffect: [
+                      {
+                        line: true
+                        particles: 1
+                        length: -0.001
+                        cone: 0
+                        lifetime: 1800
+                        interp: pow10Out
+                        lenFrom: 120
+                        lenTo: 120
+                        strokeFrom: 0
+                        strokeTo: 7
+                        colorFrom: 000000
+                        colorTo: 000000
+                        layer: 28
+                        clip: 8192
+                      }
+                      {
+                        line: true
+                        particles: 1
+                        length: -0.001
+                        cone: 0
+                        lifetime: 1800
+                        interp: pow10Out
+                        lenFrom: 120
+                        lenTo: 120
+                        strokeFrom: 0
+                        strokeTo: 1
+                        layer: 28.1
+                        clip: 8192
+                        colorFrom: ffffff88
+                        colorTo: ffffff88
+                      }
+                    ]
                     fragBullets: 2
                     fragRandomSpread: 45
                     fragAngle: -22.5
@@ -1741,6 +1898,7 @@ shootType: {
                       absorbable: false
                       pierce: true
                       pierceBuilding: true
+                      hitShake: 15
                       hitEffect: none
                       despawnEffect: {
                         line: true
@@ -1773,6 +1931,7 @@ shootType: {
                         absorbable: false
                         pierce: true
                         pierceBuilding: true
+                        hitShake: 15
                         hitEffect: none
                         despawnEffect: {
                           line: true
@@ -1805,6 +1964,7 @@ shootType: {
                           absorbable: false
                           pierce: true
                           pierceBuilding: true
+                          hitShake: 15
                           hitEffect: none
                           despawnEffect: {
                             line: true
@@ -1837,6 +1997,7 @@ shootType: {
                             absorbable: false
                             pierce: true
                             pierceBuilding: true
+                            hitShake: 15
                             hitEffect: none
                             despawnEffect: {
                               line: true
@@ -1869,6 +2030,7 @@ shootType: {
                               absorbable: false
                               pierce: true
                               pierceBuilding: true
+                              hitShake: 15
                               hitEffect: none
                               despawnEffect: {
                                 line: true
@@ -1901,6 +2063,7 @@ shootType: {
                                 absorbable: false
                                 pierce: true
                                 pierceBuilding: true
+                                hitShake: 15
                                 hitEffect: none
                                 despawnEffect: {
                                   line: true
@@ -1972,6 +2135,56 @@ shootType: {
       hittable: false
       absorbable: false
       despawnEffect: [
+        {
+          particles: 1
+          length: 0
+          region: allure-diamond-vthin
+          lifetime: 400
+          sizeFrom: 0
+          sizeTo: 220
+          interp: pow2Out
+          offset: 45
+          clip: 8192
+        }
+        {
+          particles: 1
+          length: 0
+          region: allure-diamond-vthin
+          lifetime: 400
+          sizeFrom: 0
+          sizeTo: 220
+          interp: pow2Out
+          offset: 135
+          clip: 8192
+        }
+        {
+          particles: 1
+          length: 0
+          region: allure-diamond-vthin
+          lifetime: 200
+          startDelay: 200
+          sizeFrom: 0
+          sizeTo: 440
+          interp: pow2Out
+          offset: 45
+          clip: 8192
+          colorFrom: ffffff66
+          colorTo: ffffff66
+        }
+        {
+          particles: 1
+          length: 0
+          region: allure-diamond-vthin
+          lifetime: 200
+          startDelay: 200
+          sizeFrom: 0
+          sizeTo: 440
+          interp: pow2Out
+          offset: 135
+          clip: 8192
+          colorFrom: ffffff66
+          colorTo: ffffff66
+        }
         {
           particles: 45
           length: 1600
@@ -2060,6 +2273,216 @@ shootType: {
           layer: 135
           colorTo: ffffff00
           clip: 8192
+        }
+      ]
+    }
+    //Sound
+    {
+      type: BulletType
+      speed: 0
+      lifetime: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      despawnEffect: [
+        //Startup
+        {
+          type: SoundEffect
+          effect: none
+          sound: pressure
+          minPitch: 1
+          maxPitch: 1
+          minVolume: 0.25
+          maxVolume: 0.25
+        }
+        {
+          type: SoundEffect
+          startDelay: 150
+          effect: none
+          sound: drillImpact
+          minPitch: 1
+          maxPitch: 1
+          minVolume: 1
+          maxVolume: 1
+        }
+        //Charge
+        {
+          type: SoundEffect
+          startDelay: 600
+          effect: none
+          sound: quake
+          minPitch: 1
+          maxPitch: 1
+          minVolume: 1
+          maxVolume: 1
+        }
+        {
+          type: SoundEffect
+          startDelay: 500
+          effect: none
+          sound: chargeup
+          minPitch: 1
+          maxPitch: 1
+          minVolume: 0.8
+          maxVolume: 0.8
+        }
+        {
+          type: SoundEffect
+          startDelay: 955
+          effect: none
+          sound: chargeup
+          minPitch: 1.2
+          maxPitch: 1.2
+          minVolume: 1
+          maxVolume: 1
+        }
+        {
+          type: SoundEffect
+          startDelay: 2300
+          effect: none
+          sound: whoosh
+          minPitch: 1
+          maxPitch: 1
+          minVolume: 1
+          maxVolume: 1
+        }
+        {
+          type: SoundEffect
+          startDelay: 2325
+          effect: none
+          sound: whoosh
+          minPitch: 1
+          maxPitch: 1
+          minVolume: 1.5
+          maxVolume: 1.5
+        }
+        {
+          type: SoundEffect
+          startDelay: 2350
+          effect: none
+          sound: whoosh
+          minPitch: 1
+          maxPitch: 1
+          minVolume: 2
+          maxVolume: 2
+        }
+        {
+          type: SoundEffect
+          startDelay: 2400
+          effect: none
+          sound: explod
+          minPitch: 1
+          maxPitch: 1
+          minVolume: 1
+          maxVolume: 1
+        }
+        {
+          type: SoundEffect
+          startDelay: 2520
+          effect: none
+          sound: whoosh
+          minPitch: 1
+          maxPitch: 1
+          minVolume: 2
+          maxVolume: 2
+        }
+        {
+          type: SoundEffect
+          startDelay: 2640
+          effect: none
+          sound: whoosh
+          minPitch: 1
+          maxPitch: 1
+          minVolume: 1.5
+          maxVolume: 1.5
+        }
+        {
+          type: SoundEffect
+          startDelay: 2760
+          effect: none
+          sound: whoosh
+          minPitch: 1
+          maxPitch: 1
+          minVolume: 1
+          maxVolume: 1
+        }
+        //Pistons
+        {
+          type: SoundEffect
+          startDelay: 600
+          effect: none
+          sound: drillImpact
+          minPitch: 1
+          maxPitch: 1
+          minVolume: 1
+          maxVolume: 1
+        }
+        {
+          type: SoundEffect
+          startDelay: 630
+          effect: none
+          sound: drillImpact
+          minPitch: 1
+          maxPitch: 1
+          minVolume: 1
+          maxVolume: 1
+        }
+        {
+          type: SoundEffect
+          startDelay: 660
+          effect: none
+          sound: drillImpact
+          minPitch: 1
+          maxPitch: 1
+          minVolume: 1
+          maxVolume: 1
+        }
+        {
+          type: SoundEffect
+          startDelay: 690
+          effect: none
+          sound: drillImpact
+          minPitch: 1
+          maxPitch: 1
+          minVolume: 1
+          maxVolume: 1
+        }
+      ]
+      spawnBullets: [
+        //Warn
+        {
+          type: BulletType
+          speed: 0
+          lifetime: 700
+          collides: false
+          hittable: false
+          absorbable: false
+          despawnEffect: none
+          fragOffsetMin: 0
+          fragOffsetMax: 0
+          fragBullet: {
+            type: BulletType
+            speed: 0
+            lifetime: 1700
+            collides: false
+            hittable: false
+            absorbable: false
+            despawnEffect: none
+            bulletInterval: 100
+            intervalDelay: 101
+            intervalBullets: 1
+            intervalBullet: {
+              type: BulletType
+              speed: 0
+              lifetime: 0
+              collides: false
+              hittable: false
+              absorbable: false
+              despawnEffect: none
+              //Will add a sound when a fitting one is located (tried and failed to find one similar to Halo Reach Covenant AA platform alarm)
+              despawnSound: none
+            }
+          }
         }
       ]
     }
@@ -2264,6 +2687,7 @@ shootType: {
           absorbable: false
           hitEffect: none
           despawnEffect: none
+          hitSound: spark
           lightning: 1
           lightningLength: 14
           lightningLengthRand: 28
@@ -3041,6 +3465,7 @@ shootType: {
                   absorbable: false
                   hitEffect: none
                   despawnEffect: none
+                  hitSound: shockBlast
                   fragBullets: 1
                   fragOffsetMin: 0
                   fragOffsetMax: 0
@@ -3278,6 +3703,7 @@ shootType: {
                   collides: false
                   hittable: false
                   absorbable: false
+                  hitSound: explosion
                   hitEffect: none
                   despawnEffect: {
                     particles: 3
@@ -3357,6 +3783,11 @@ shootType: {
     killShooter: true
     hitEffect: none
     despawnEffect: none
+    spawnBullets: [
+      {
+        spawnUnit: allure-infini0
+      }
+    ]
   }
 }
 category: turret
@@ -3372,3 +3803,6 @@ requirements: [
   shadow/6000
 ]
 //It gets worse
+destroyBullet: {
+  spawnUnit: allure-infini0
+}

@@ -123,8 +123,9 @@ drawer: {
     {
       type: DrawPistons
       lenOffset: 15.5
-      sinScl: 2
+      sinScl: 3
       sinMag: -3
+      sideOffset: 3.14159
     }
     {
       type: DrawRegion
@@ -133,7 +134,7 @@ drawer: {
     {
       type: DrawGlowRegion
       color: ffb380
-      glowScale: 2
+      glowScale: 8
     }
   ]
 }

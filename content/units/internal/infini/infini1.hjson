@@ -1,0 +1,56 @@
+type: missile
+template: MissileUnitType
+internal: true
+speed: 0
+flying: false
+hovering: true
+hittable: false
+targetable: false
+groundLayer: -11
+lifetime: 7199
+weapons: [
+  {
+    alwaysShooting: true
+    reload: 60
+    shootY: 0
+    mirror: false
+    x: 0
+    shootSound: none
+    bullet: {
+      type: EmpBulletType
+      damage: 0
+      lifetime: 0
+      collidesTiles: false
+      radius: 8192
+      hittable: false
+      absorbable: false
+      reflectable: false 
+      status: allure-temporal-shock1
+      statusDuration: 65
+      despawnHit: true
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      hitPowerEffect: none
+      applyEffect: none
+      chainEffect: none
+    }
+  }
+  {
+    shootOnDeath: true
+    shootCone: 360
+    controllable: false
+    shootSound: none
+    mirror: false
+    x: 0
+    shootY: 0
+    bullet: {
+      spawnUnit: allure-infini2
+      shootEffect: none
+      smokeEffect: none
+    }
+  }
+]
+deathSound: none
+deathExplosionEffect: none

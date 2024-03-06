@@ -75,6 +75,10 @@ drawer: [
     rotation: 75
     spinSprite: true
   }
+  {
+    type: DrawRegion
+    suffix: -top3
+  }
 ]
 craftTime: 800
 outputItem: baenite/200

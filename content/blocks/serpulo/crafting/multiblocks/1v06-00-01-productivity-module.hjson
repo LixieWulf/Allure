@@ -17,6 +17,7 @@ consumes: {
   power: 8
   liquids: [
     thermal-gas/0.5
+    cryofluid/0.1
   ]
 }
 outputLiquid: thermal-fluid/0.5

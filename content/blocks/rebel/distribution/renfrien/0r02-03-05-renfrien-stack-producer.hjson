@@ -4,6 +4,7 @@ payloadSpeed: 0.125
 buildSpeed: 0.25
 filter: [
   0r02-00-00-anden-capsule,
+  0r02-00-01-silicon-capsule,
   0r02-00-02-renfrien-capsule,
   0r02-00-03-scilaxa-capsule,
   0r02-00-04-amethyst-capsule,
