@@ -1,0 +1,869 @@
+type: missile
+template: MissileUnitType 
+controller: FlyingAI
+defaultController: FlyingAI
+hitSize: 120 
+hittable: false 
+targetable: false
+lowAltitude: true
+engineSize: 0
+envEnabled: -1
+shadowElevationScl: 3.2
+localizedName: yet another internal unit
+speed: 0.01
+rotateSpeed: 360
+maxRange: 8192
+lifetime: 180
+drawBody: false
+drawCell: false
+parts: [
+  //Body
+  {
+    type: RegionPart
+    name: allure-0b17-hellfire
+    outline: false 
+    color: ffffff00
+    colorTo: ffffff
+    progress: {
+      type: life
+      op: curve
+      interp: pow2Out
+    }
+    moveY: 240
+    layer: 90.02
+  }
+  {
+    type: RegionPart
+    name: allure-0b17-hellfire
+    outline: false 
+    blending: additive
+    color: ffffff
+    colorTo: ffffff00
+    progress: {
+      type: life
+      op: curve
+      interp: pow2Out
+    }
+    moveY: 240
+    xScl: 0.001
+    yScl: 0.001
+    layer: 90.04
+    moves: [
+      {
+        gx: 1
+        gy: 1
+        progress: {
+          type: life
+          op: compress
+          start: 0.01
+          end: 0.1
+        }
+      }
+    ]
+  }
+  {
+    type: RegionPart
+    name: circle-shadow
+    outline: false 
+    color: 00000088
+    colorTo: 00000088
+    progress: {
+      type: life
+      op: curve
+      interp: pow2Out
+    }
+    moveY: 240
+    xScl: 0.001
+    yScl: 0.001
+    layer: 89
+    moves: [
+      {
+        gx: 7
+        gy: 7
+        progress: {
+          type: life
+          op: compress
+          start: 0.01
+          end: 0.1
+        }
+      }
+    ]
+  }
+  { 
+    type: RegionPart
+    name: allure-0b17-hellfire-flare
+    outline: false
+    blending: additive
+    layer: 90.03
+    color: ffffff00
+    colorTo: 7382f0bb
+    progress: {
+      type: life
+      op: curve
+      interp: pow2Out
+    }
+    moveY: 240
+  }
+  //Weapon sprites tacked on with region parts
+  {
+    type: RegionPart
+    y: -40
+    name: allure-hellfire-spinal-upper
+    outline: false 
+    color: ffffff00
+    colorTo: ffffff
+    progress: {
+      type: life
+      op: curve
+      interp: pow2Out
+    }
+    moveY: 240
+    layer: 96
+  }
+  {
+    type: RegionPart
+    y: -40
+    name: allure-hellfire-spinal-upper-line
+    layer: 95
+    outline: false
+    color: ffffff00
+    colorTo: ffffff
+    progress: {
+      type: life
+      op: curve
+      interp: pow2Out
+    }
+    moveY: 240
+  }
+  {
+    type: RegionPart
+    y: -40
+    name: allure-hellfire-spinal-upper-line
+    outline: false 
+    blending: additive
+    color: ffffff
+    colorTo: ffffff00
+    progress: {
+      type: life
+      op: curve
+      interp: pow2Out
+    }
+    xScl: 0.001
+    yScl: 0.001
+    moveY: 240
+    layer: 97
+    moves: [
+      {
+        gx: 1
+        gy: 1
+        progress: {
+          type: life
+          op: compress
+          start: 0.01
+          end: 0.1
+        }
+      }
+    ]
+  }
+  {
+    type: RegionPart
+    name: allure-hellfire-spinal-upper-barrel
+    outline: false
+    y: 27
+    color: ffffff00
+    colorTo: ffffff
+    progress: {
+      type: life
+      op: curve
+      interp: pow2Out
+    }
+    moveY: 240
+    layer: 95.5
+  }
+  //AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+  {
+    type: RegionPart
+    name: allure-hellfire-broadside-smol
+    outline: false
+    mirror: true
+    x: 36
+    y: 60
+    rotation: -90
+    color: ffffff00
+    colorTo: ffffff
+    progress: {
+      type: life
+      op: curve
+      interp: pow2Out
+    }
+    moveY: 240
+    layer: 95.5
+  }
+  {
+    type: RegionPart
+    name: allure-hellfire-broadside-smol-flare
+    outline: false
+    mirror: true
+    x: 36
+    y: 60
+    rotation: -90
+    color: ffffff00
+    colorTo: ffffff
+    progress: {
+      type: life
+      op: curve
+      interp: pow2Out
+    }
+    moveY: 240
+    layer: 95.5
+  }
+  {
+    type: RegionPart
+    name: allure-hellfire-broadside-smol
+    outline: false
+    mirror: true
+    x: 36
+    y: 48
+    rotation: -90
+    color: ffffff00
+    colorTo: ffffff
+    progress: {
+      type: life
+      op: curve
+      interp: pow2Out
+    }
+    moveY: 240
+    layer: 95.5
+  }
+  {
+    type: RegionPart
+    name: allure-hellfire-broadside-smol-flare
+    outline: false
+    mirror: true
+    x: 36
+    y: 48
+    rotation: -90
+    color: ffffff00
+    colorTo: ffffff
+    progress: {
+      type: life
+      op: curve
+      interp: pow2Out
+    }
+    moveY: 240
+    layer: 95.5
+  }
+  {
+    type: RegionPart
+    name: allure-hellfire-broadside-smol
+    outline: false
+    mirror: true
+    x: 36
+    y: 36
+    rotation: -90
+    color: ffffff00
+    colorTo: ffffff
+    progress: {
+      type: life
+      op: curve
+      interp: pow2Out
+    }
+    moveY: 240
+    layer: 95.5
+  }
+  {
+    type: RegionPart
+    name: allure-hellfire-broadside-smol-flare
+    outline: false
+    mirror: true
+    x: 36
+    y: 36
+    rotation: -90
+    color: ffffff00
+    colorTo: ffffff
+    progress: {
+      type: life
+      op: curve
+      interp: pow2Out
+    }
+    moveY: 240
+    layer: 95.5
+  }
+  {
+    type: RegionPart
+    name: allure-hellfire-broadside-smol
+    outline: false
+    mirror: true
+    x: 38
+    y: 10
+    rotation: -90
+    color: ffffff00
+    colorTo: ffffff
+    progress: {
+      type: life
+      op: curve
+      interp: pow2Out
+    }
+    moveY: 240
+    layer: 95.5
+  }
+  {
+    type: RegionPart
+    name: allure-hellfire-broadside-smol-flare
+    outline: false
+    mirror: true
+    x: 38
+    y: 10
+    rotation: -90
+    color: ffffff00
+    colorTo: ffffff
+    progress: {
+      type: life
+      op: curve
+      interp: pow2Out
+    }
+    moveY: 240
+    layer: 95.5
+  }
+  {
+    type: RegionPart
+    name: allure-hellfire-broadside-smol
+    outline: false
+    mirror: true
+    x: 48
+    y: 0
+    rotation: -90
+    color: ffffff00
+    colorTo: ffffff
+    progress: {
+      type: life
+      op: curve
+      interp: pow2Out
+    }
+    moveY: 240
+    layer: 95.5
+  }
+  {
+    type: RegionPart
+    name: allure-hellfire-broadside-smol-flare
+    outline: false
+    mirror: true
+    x: 48
+    y: 0
+    rotation: -90
+    color: ffffff00
+    colorTo: ffffff
+    progress: {
+      type: life
+      op: curve
+      interp: pow2Out
+    }
+    moveY: 240
+    layer: 95.5
+  }
+  {
+    type: RegionPart
+    name: allure-hellfire-broadside-smol
+    outline: false
+    mirror: true
+    x: 48
+    y: -20
+    rotation: -90
+    color: ffffff00
+    colorTo: ffffff
+    progress: {
+      type: life
+      op: curve
+      interp: pow2Out
+    }
+    moveY: 240
+    layer: 95.5
+  }
+  {
+    type: RegionPart
+    name: allure-hellfire-broadside-smol-flare
+    outline: false
+    mirror: true
+    x: 48
+    y: -20
+    rotation: -90
+    color: ffffff00
+    colorTo: ffffff
+    progress: {
+      type: life
+      op: curve
+      interp: pow2Out
+    }
+    moveY: 240
+    layer: 95.5
+  }
+  {
+    type: RegionPart
+    name: allure-hellfire-broadside-smol
+    outline: false
+    mirror: true
+    x: 48
+    y: -44
+    rotation: -90
+    color: ffffff00
+    colorTo: ffffff
+    progress: {
+      type: life
+      op: curve
+      interp: pow2Out
+    }
+    moveY: 240
+    layer: 95.5
+  }
+  {
+    type: RegionPart
+    name: allure-hellfire-broadside-smol-flare
+    outline: false
+    mirror: true
+    x: 48
+    y: -44
+    rotation: -90
+    color: ffffff00
+    colorTo: ffffff
+    progress: {
+      type: life
+      op: curve
+      interp: pow2Out
+    }
+    moveY: 240
+    layer: 95.5
+  }
+  {
+    type: RegionPart
+    name: allure-hellfire-broadside-smol
+    outline: false
+    mirror: true
+    x: 48
+    y: -52
+    rotation: -90
+    color: ffffff00
+    colorTo: ffffff
+    progress: {
+      type: life
+      op: curve
+      interp: pow2Out
+    }
+    moveY: 240
+    layer: 95.5
+  }
+  {
+    type: RegionPart
+    name: allure-hellfire-broadside-smol-flare
+    outline: false
+    mirror: true
+    x: 48
+    y: -52
+    rotation: -90
+    color: ffffff00
+    colorTo: ffffff
+    progress: {
+      type: life
+      op: curve
+      interp: pow2Out
+    }
+    moveY: 240
+    layer: 95.5
+  }
+]
+weapons: [
+  {
+    x: 0
+    shootY: 240
+    mirror: false 
+    shootSound: none
+    controllable: false
+    shootOnDeath: true
+    shootCone: 360
+    bullet: {
+      type: BulletType
+      lifetime: 0
+      collides: false
+      hittable: false
+      reflectable: false
+      shootEffect: none
+      smokeEffect: none
+      despawnEffect: none
+      despawnUnit: allure-0b17-hellfire
+      maxRange: 8192
+    }
+  }
+  //engines
+  {
+    x: 0
+    y: -66
+    baseRotation: 180
+    alwaysShooting: true
+    shootCone: 360
+    continuous: true
+    mirror: false
+    reload: 1
+    shootSound: none
+    shootWarmupSpeed: 0.03
+    minShootVelocity: 1.8
+    recoil: 0
+    parts: [
+      {
+        name: allure-thruster-flare
+        y: 46
+        rotation: 180
+        outline: false
+        blending: additive
+        mixColor: 90a2fc
+        color: ffffff44
+        colorTo: ffffff
+        layer: 90.01
+        progress: warmup
+      }
+    ]
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90.01
+      lifetime: 14
+      collides: false
+      length: 70
+      width: 15
+      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 1
+      oscMag: 0.1
+    }
+  }
+  {
+    x: 0
+    y: -70
+    baseRotation: 180
+    alwaysShooting: true
+    shootCone: 360
+    continuous: true
+    mirror: false
+    reload: 1
+    shootSound: none
+    shootWarmupSpeed: 0.03
+    minShootVelocity: 1.8
+    recoil: 0
+    parts: [
+      {
+        name: allure-thruster-flare
+        y: 46
+        rotation: 180
+        outline: false
+        blending: additive
+        mixColor: 90a2fc
+        color: ffffff44
+        colorTo: ffffff
+        layer: 90
+        progress: warmup
+      }
+    ]
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90.01
+      lifetime: 10
+      collides: false
+      length: 70
+      width: 15
+      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 1
+      oscMag: 0.1
+    }
+  }
+  {
+    x: 42
+    y: -86
+    baseRotation: 180
+    alwaysShooting: true
+    shootCone: 360
+    continuous: true
+    mirror: false
+    reload: 1
+    shootSound: none
+    shootWarmupSpeed: 0.03
+    minShootVelocity: 1.8
+    recoil: 0
+    parts: [
+      {
+        name: allure-thruster-flare
+        y: 20
+        xScl: 0.45
+        yScl: 0.45
+        rotation: 180
+        outline: false
+        blending: additive
+        mixColor: 90a2fc
+        color: ffffff44
+        colorTo: ffffff
+        layer: 90
+        progress: warmup
+      }
+    ]
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90.01
+      lifetime: 14
+      collides: false
+      length: 40
+      width: 7
+      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 1
+      oscMag: 0.1
+    }
+  }
+  {
+    x: 42
+    y: -86
+    baseRotation: 180
+    alwaysShooting: true
+    shootCone: 360
+    continuous: true
+    mirror: false
+    reload: 1
+    shootSound: none
+    shootWarmupSpeed: 0.03
+    minShootVelocity: 1.8
+    recoil: 0
+    parts: [
+      {
+        name: allure-thruster-flare
+        y: 20
+        xScl: 0.45
+        yScl: 0.45
+        rotation: 180
+        outline: false
+        blending: additive
+        mixColor: 90a2fc
+        color: ffffff44
+        colorTo: ffffff
+        layer: 90
+        progress: warmup
+      }
+    ]
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90.01
+      lifetime: 10
+      collides: false
+      length: 40
+      width: 7
+      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 1
+      oscMag: 0.1
+    }
+  }
+  {
+    x: -42
+    y: -86
+    baseRotation: 180
+    alwaysShooting: true
+    shootCone: 360
+    continuous: true
+    mirror: false
+    reload: 1
+    shootSound: none
+    shootWarmupSpeed: 0.03
+    minShootVelocity: 1.8
+    recoil: 0
+    parts: [
+      {
+        name: allure-thruster-flare
+        y: 20
+        xScl: 0.45
+        yScl: 0.45
+        rotation: 180
+        outline: false
+        blending: additive
+        mixColor: 90a2fc
+        color: ffffff44
+        colorTo: ffffff
+        layer: 90
+        progress: warmup
+      }
+    ]
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90.01
+      lifetime: 14
+      collides: false
+      length: 40
+      width: 7
+      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 1
+      oscMag: 0.1
+    }
+  }
+  {
+    x: -42
+    y: -86
+    baseRotation: 180
+    alwaysShooting: true
+    shootCone: 360
+    continuous: true
+    mirror: false
+    reload: 1
+    shootSound: none
+    shootWarmupSpeed: 0.03
+    minShootVelocity: 1.8
+    recoil: 0
+    parts: [
+      {
+        name: allure-thruster-flare
+        y: 20
+        xScl: 0.45
+        yScl: 0.45
+        rotation: 180
+        outline: false
+        blending: additive
+        mixColor: 90a2fc
+        color: ffffff44
+        colorTo: ffffff
+        layer: 90
+        progress: warmup
+      }
+    ]
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90.01
+      lifetime: 10
+      collides: false
+      length: 40
+      width: 7
+      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 1
+      oscMag: 0.1
+    }
+  }
+  //idle flames
+  {
+    x: 0
+    y: -66
+    baseRotation: 180
+    alwaysShooting: true
+    alwaysContinuous: true
+    shootCone: 360
+    continuous: true
+    mirror: false
+    shootSound: none
+    recoil: 0
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90
+      collides: false
+      length: 30
+      width: 15
+      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 2.5
+      oscMag: 0.1
+    }
+  }
+  {
+    x: 42
+    y: -86
+    baseRotation: 180
+    alwaysShooting: true
+    alwaysContinuous: true
+    shootCone: 360
+    continuous: true
+    alternate: false
+    shootSound: none
+    recoil: 0
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90
+      collides: false
+      length: 14
+      width: 7
+      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 2.5
+      oscMag: 0.1
+    }
+  }
+  {
+    x: 42
+    y: 16
+    baseRotation: -90
+    alwaysShooting: true
+    alwaysContinuous: true
+    shootCone: 360
+    continuous: true
+    alternate: false
+    shootSound: none
+    recoil: 0
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90
+      collides: false
+      length: 12
+      width: 6
+      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 2.5
+      oscMag: 0.1
+    }
+  }
+  {
+    x: 36
+    y: 43
+    baseRotation: -90
+    alwaysShooting: true
+    alwaysContinuous: true
+    shootCone: 360
+    continuous: true
+    alternate: false
+    shootSound: none
+    recoil: 0
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90
+      collides: false
+      length: 12
+      width: 6
+      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 2.5
+      oscMag: 0.1
+    }
+  }
+]
+deathSound: none
+deathExplosionEffect: none

@@ -1,4 +1,8 @@
-type: flying
+//Literally just a Harmony copy with lifetime and forced AI. For use with Hellfire.
+type: missile
+controller: FlyingAI
+defaultController: FlyingAI
+lifetime: 1500
 flying: true
 lowAltitude: true
 hitSize: 85
@@ -15,24 +19,31 @@ healColor: 7382f088
 engineSize: 0
 lightRadius: 0
 shadowElevationScl: 1.7
+range: 570
+maxRange: 570
 drawCell: false
 drawBody: false
 outlines: false
+targetFlags: [
+  turret, 
+  core
+]
 parts: [
   {
     type: RegionPart
+    name: allure-0b04-harmony
     layer: 90.02
     outline: false
   }
   { 
     type: RegionPart
-    suffix: -top
+    name: allure-0b04-harmony-top
     outline: false
     layer: 91.5
   }
   { 
     type: RegionPart
-    suffix: -flare
+    name: allure-0b04-harmony-flare
     outline: false
     blending: additive
     layer: 92
@@ -42,7 +53,7 @@ parts: [
   }
   { 
     type: RegionPart
-    suffix: -flare
+    name: allure-0b04-harmony-flare
     outline: false
     layer: 140
     color: 7382f025
@@ -50,7 +61,7 @@ parts: [
   }
   { 
     type: RegionPart
-    suffix: -cover
+    name: allure-0b04-harmony-cover
     outline: false
     layer: 122
     color: 7382f0
@@ -59,6 +70,7 @@ parts: [
 weapons: [
   {
     alwaysShooting: true
+    useAttackRange: false
     layerOffset: 0.001
     x: 0
     mirror: false
@@ -310,7 +322,7 @@ weapons: [
     shootWarmupSpeed: 0.05
     minWarmup: 0.99
     shootStatus: {
-      name: hiusbgjdfv
+      name: sdhfksjdfsj
       reloadMultiplier: 3
       healthMultiplier: 0.5
       show: false
@@ -502,6 +514,7 @@ weapons: [
   }
   //engines
   {
+    useAttackRange: false
     x: 0
     y: -36
     baseRotation: 180
@@ -548,6 +561,7 @@ weapons: [
     }
   }
   {
+    useAttackRange: false
     x: 0
     y: -36
     baseRotation: 180
@@ -594,6 +608,7 @@ weapons: [
     }
   }
   {
+    useAttackRange: false
     x: 14
     y: -38
     baseRotation: 180
@@ -640,6 +655,7 @@ weapons: [
     }
   }
   {
+    useAttackRange: false
     x: 14
     y: -38
     baseRotation: 180
@@ -687,6 +703,7 @@ weapons: [
   }
   //idle flames
   {
+    useAttackRange: false
     x: 0
     y: -36
     baseRotation: 180
@@ -714,6 +731,7 @@ weapons: [
     }
   }
   {
+    useAttackRange: false
     x: 14
     y: -38
     baseRotation: 180
@@ -741,6 +759,7 @@ weapons: [
     }
   }
   {
+    useAttackRange: false
     x: 24
     y: 0
     baseRotation: -90
@@ -768,6 +787,7 @@ weapons: [
     }
   }
   {
+    useAttackRange: false
     x: 22
     y: 20
     baseRotation: -90
@@ -795,6 +815,7 @@ weapons: [
     }
   }
   {
+    useAttackRange: false
     x: 30
     y: -27
     baseRotation: -90

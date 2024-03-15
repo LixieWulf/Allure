@@ -4,7 +4,7 @@ dumpTime: 1
 itemCapacity: 450
 floating: true
 attribute: heat
-boostScale: 0.0117647058824 
+boostScale: 0.0118
 minEfficiency: 0
 baseEfficiency: 0
 liquidCapacity: 45
@@ -36,42 +36,111 @@ drawer: [
   }
   {
     type: DrawRegion
+    suffix: -gear0-teeth
+    rotateSpeed: 10
+    x: 7.75
+    y: 4.25
+  }
+  {
+    type: DrawRegion
+    suffix: -gear0-teeth
+    rotateSpeed: 10
+    rotation: 45
+    x: 7.75
+    y: 4.25
+  }
+  {
+    type: DrawRegion
+    suffix: -gear0
+    rotateSpeed: 10
+    spinSprite: true
+    x: 7.75
+    y: 4.25
+  }
+  {
+    type: DrawRegion
+    suffix: -gear0-teeth
+    rotateSpeed: 10
+    x: -7.75
+    y: 4.25
+  }
+  {
+    type: DrawRegion
+    suffix: -gear0-teeth
+    rotateSpeed: 10
+    rotation: 45
+    x: -7.75
+    y: 4.25
+  }
+  {
+    type: DrawRegion
+    suffix: -gear0
+    rotateSpeed: 10
+    spinSprite: true
+    x: -7.75
+    y: 4.25
+  }
+  {
+    type: DrawRegion
+    suffix: -gear0-teeth
+    rotateSpeed: 10
+    x: 0
+    y: -9
+  }
+  {
+    type: DrawRegion
+    suffix: -gear0-teeth
+    rotateSpeed: 10
+    rotation: 45
+    x: 0
+    y: -9
+  }
+  {
+    type: DrawRegion
+    suffix: -gear0
+    rotateSpeed: 10
+    spinSprite: true
+    x: 0
+    y: -9
+  }
+  {
+    type: DrawRegion
     suffix: -centrifuge
-    rotateSpeed: 5
+    rotateSpeed: 4
     spinSprite: true
   }
   {
     type: DrawRegion
     suffix: -centrifuge
-    rotateSpeed: 5
+    rotateSpeed: 4
     rotation: 15
     spinSprite: true
   }
   {
     type: DrawRegion
     suffix: -centrifuge
-    rotateSpeed: 5
+    rotateSpeed: 4
     rotation: 30
     spinSprite: true
   }
   {
     type: DrawRegion
     suffix: -centrifuge
-    rotateSpeed: 5
+    rotateSpeed: 4
     rotation: 45
     spinSprite: true
   }
   {
     type: DrawRegion
     suffix: -centrifuge
-    rotateSpeed: 5
+    rotateSpeed: 4
     rotation: 60
     spinSprite: true
   }
   {
     type: DrawRegion
     suffix: -centrifuge
-    rotateSpeed: 5
+    rotateSpeed: 4
     rotation: 75
     spinSprite: true
   }

@@ -113,6 +113,7 @@ weapons: [
       fragBullet: {
         type: SapBulletType
         length: 3
+        lifetime: 0
         sapStrength: 1
         damage: 2600
         hitColor: bf92f9
