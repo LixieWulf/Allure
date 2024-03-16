@@ -5,6 +5,7 @@ accel: 0.06
 drag: 0.05
 strafePenalty: 0.5
 flying: true
+lowAltitude: true
 hitSize: 65
 health: 210000
 armor: 80
@@ -17,14 +18,14 @@ engineSize: 0
 parts: [
   {
     type: RegionPart
-    layer: 115.02
+    layer: 90.02
     outline: false
   }
   {
     type: RegionPart
     suffix: -top
     y: -19.75
-    layer: 116.5
+    layer: 91.5
     outline: false
   }
   { 
@@ -32,7 +33,7 @@ parts: [
     suffix: -flare
     outline: false
     blending: additive
-    layer: 116
+    layer: 91
     color: 7382f0
     colorTo: ffffff
     weaponIndex: 0
@@ -50,7 +51,7 @@ weapons: [
   {
     x: 0
     y: -4
-    shootY: 18
+    shootY: 24
     mirror: false
     reload: 160
     parts: [
@@ -75,6 +76,7 @@ weapons: [
     minWarmup: 0.9
     shootSound: laserblast
     recoil: 0
+    shake: 18
     bullet: {
       type: LaserBulletType
       damage: 1500
@@ -84,6 +86,7 @@ weapons: [
       status: allure-0b-energy3
       statusDuration: 1
       colors: [90a2fc40, 90a2fc, ffffff]
+      sideLength: 70
       lightningSpacing: 22
       lightningLength: 2
       lightningColor: 90a2fc
@@ -112,6 +115,21 @@ weapons: [
         hitEffect: hitBulletColor
         despawnEffect: hitBulletColor
       }
+      smokeEffect: {
+        followParent: false
+        particles: 1
+        length: 20
+        baseLength: 24
+        randLength: false
+        lifetime: 70
+        cone: 0
+        offset: 90
+        region: allure-squishwave
+        sizeFrom: 40
+        sizeTo: 80
+        colorFrom: 7382f0
+        colorTo: 7382f000
+      }
     }
   }
   {
@@ -122,7 +140,7 @@ weapons: [
         type: RegionPart
         suffix: -flare2
         outline: false
-        layer: 117.07
+        layer: 92.07
         color: 00000000
         colorTo: 7382f0
       }
@@ -131,7 +149,7 @@ weapons: [
         suffix: -flare
         outline: false
         blending: additive
-        layer: 117.07
+        layer: 92.07
         color: 00000000
         colorTo: 7382f0
       }
@@ -140,7 +158,7 @@ weapons: [
         suffix: -flare
         outline: false
         blending: additive
-        layer: 117.07
+        layer: 92.07
         color: 000000
         colorTo: ffffff
         progress: {
@@ -162,6 +180,7 @@ weapons: [
     ]
     x: 14
     y: 17
+    shootY: 11
     rotate: true
     autoTarget: true
     controllable: false
@@ -185,7 +204,6 @@ weapons: [
       status: allure-0b-energy2
       statusDuration: 4
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      layer: 116
       frontLength: 0
       shootEffect: none
       smokeEffect: none
@@ -200,7 +218,6 @@ weapons: [
           colorTo: 90a2fc
           sizeFrom: 60
           sizeTo: 0
-          layer: 118
         }
         {
           baseRotation: 180
@@ -227,7 +244,7 @@ weapons: [
         type: RegionPart
         suffix: -flare2
         outline: false
-        layer: 115.01
+        layer: 90.01
         color: 00000000
         colorTo: 7382f0
       }
@@ -236,7 +253,7 @@ weapons: [
         suffix: -flare
         outline: false
         blending: additive
-        layer: 115.01
+        layer: 90.01
         color: 00000000
         colorTo: 7382f0
       }
@@ -245,7 +262,7 @@ weapons: [
         suffix: -flare
         outline: false
         blending: additive
-        layer: 115.01
+        layer: 90.01
         color: 000000
         colorTo: ffffff
         progress: {
@@ -267,8 +284,9 @@ weapons: [
     ]
     x: 18
     y: 9
+    shootY: 11
     rotate: true
-    rotationLimit: 150
+    rotationLimit: 120
     baseRotation: -90
     autoTarget: true
     controllable: false
@@ -292,7 +310,6 @@ weapons: [
       status: allure-0b-energy2
       statusDuration: 4
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      layer: 115
       frontLength: 0
       shootEffect: none
       smokeEffect: none
@@ -307,7 +324,6 @@ weapons: [
           colorTo: 90a2fc
           sizeFrom: 60
           sizeTo: 0
-          layer: 118
         }
         {
           baseRotation: 180
@@ -334,7 +350,7 @@ weapons: [
         type: RegionPart
         suffix: -flare2
         outline: false
-        layer: 115.01
+        layer: 90.01
         color: 00000000
         colorTo: 7382f0
       }
@@ -343,7 +359,7 @@ weapons: [
         suffix: -flare
         outline: false
         blending: additive
-        layer: 115.01
+        layer: 90.01
         color: 00000000
         colorTo: 7382f0
       }
@@ -352,7 +368,7 @@ weapons: [
         suffix: -flare
         outline: false
         blending: additive
-        layer: 115.01
+        layer: 90.01
         color: 000000
         colorTo: ffffff
         progress: {
@@ -374,8 +390,9 @@ weapons: [
     ]
     x: 18
     y: 34
+    shootY: 11
     rotate: true
-    rotationLimit: 150
+    rotationLimit: 120
     baseRotation: -90
     autoTarget: true
     controllable: false
@@ -399,7 +416,6 @@ weapons: [
       status: allure-0b-energy2
       statusDuration: 4
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      layer: 115
       frontLength: 0
       shootEffect: none
       smokeEffect: none
@@ -414,7 +430,6 @@ weapons: [
           colorTo: 90a2fc
           sizeFrom: 60
           sizeTo: 0
-          layer: 118
         }
         {
           baseRotation: 180
@@ -467,7 +482,7 @@ weapons: [
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 115.01
+      layer: 90.01
       lifetime: 14
       collides: false
       length: 31
@@ -514,7 +529,7 @@ weapons: [
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 115.01
+      layer: 90.01
       lifetime: 10
       collides: false
       length: 31
@@ -561,7 +576,7 @@ weapons: [
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 116.01
+      layer: 91.01
       lifetime: 14
       collides: false
       length: 31
@@ -608,7 +623,7 @@ weapons: [
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 116.01
+      layer: 91.01
       lifetime: 10
       collides: false
       length: 31
@@ -655,7 +670,7 @@ weapons: [
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 115.01
+      layer: 90.01
       lifetime: 14
       collides: false
       length: 12
@@ -702,7 +717,7 @@ weapons: [
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 115.01
+      layer: 90.01
       lifetime: 10
       collides: false
       length: 12
@@ -732,7 +747,7 @@ weapons: [
     recoil: 0
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 115
+      layer: 90
       collides: false
       length: 12
       width: 6
@@ -760,7 +775,7 @@ weapons: [
     recoil: 0
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 116
+      layer: 91
       collides: false
       length: 12
       width: 6
@@ -788,7 +803,7 @@ weapons: [
     recoil: 0
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 115
+      layer: 90
       collides: false
       length: 6
       width: 3
@@ -816,7 +831,7 @@ weapons: [
     recoil: 0
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 116
+      layer: 91
       collides: false
       length: 8
       width: 4
