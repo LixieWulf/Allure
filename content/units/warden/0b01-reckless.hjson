@@ -386,5 +386,9 @@ abilities: [
     percentAmount: 0.01388888888 
   }
 ]
+createWreck: false
+createScorch: false
+deathSound: none
+deathExplosionEffect: none
 envEnabled: -1
 envDisabled: 0

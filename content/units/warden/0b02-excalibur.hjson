@@ -151,7 +151,7 @@ weapons: [
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90.01
+      layer: 115.01
       lifetime: 14
       collides: false
       length: 35
@@ -198,7 +198,7 @@ weapons: [
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90.01
+      layer: 115.01
       lifetime: 10
       collides: false
       length: 35
@@ -244,7 +244,7 @@ weapons: [
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90.01
+      layer: 115.01
       lifetime: 14
       collides: false
       length: 18
@@ -290,7 +290,7 @@ weapons: [
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90.01
+      layer: 115.01
       lifetime: 10
       collides: false
       length: 18
@@ -320,7 +320,7 @@ weapons: [
     recoil: 0
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90
+      layer: 115
       collides: false
       length: 10
       width: 5
@@ -347,7 +347,7 @@ weapons: [
     recoil: 0
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90
+      layer: 115
       collides: false
       length: 6
       width: 3
@@ -403,5 +403,9 @@ abilities: [
     percentAmount: 0.01388888888 
   }
 ]
+createWreck: false
+createScorch: false
+deathSound: none
+deathExplosionEffect: none
 envEnabled: -1
 envDisabled: 0

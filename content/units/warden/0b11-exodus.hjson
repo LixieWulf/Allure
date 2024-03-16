@@ -686,5 +686,9 @@ abilities: [
     display: false
   }
 ]
+createWreck: false
+createScorch: false
+deathSound: none
+deathExplosionEffect: none
 envEnabled: -1
 envDisabled: 0

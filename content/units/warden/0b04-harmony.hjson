@@ -837,35 +837,8 @@ abilities: [
     percentAmount: 0.01388888888 
   }
 ]
-fallSpeed: 0.008
-fallEngineEffect: none
-fallEffect: {
-  type: MultiEffect
-  effects: [
-    {
-      line: true
-      length: 0.001
-      lifetime: 40
-      particles: 2
-      lenFrom: 12
-      lenTo: 12
-      strokeFrom: 3
-      strokeTo: 0
-      colorTo: 7382f0
-    }
-    {
-      line: true
-      length: 15
-      lifetime: 15
-      particles: 12
-      lenFrom: 4
-      lenTo: 4
-      strokeFrom: 1
-      strokeTo: 0
-      colorTo: 7382f0
-    }
-  ]
-}
+createWreck: false
+createScorch: false
 deathSound: none
 deathExplosionEffect: none
 envEnabled: -1

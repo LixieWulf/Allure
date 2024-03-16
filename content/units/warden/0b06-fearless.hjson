@@ -1,3 +1,4 @@
+//TODO Remake this ship and Vengeance
 type: payload
 flying: true
 payloadCapacity: 1024
@@ -24,5 +25,9 @@ ammoType: {
   type: PowerAmmoType
   totalPower: 750000
 }
+createWreck: false
+createScorch: false
+deathSound: none
+deathExplosionEffect: none
 envEnabled: -1
 envDisabled: 0
