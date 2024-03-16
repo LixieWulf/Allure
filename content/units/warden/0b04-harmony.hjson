@@ -825,11 +825,11 @@ weapons: [
 abilities: [
   {
     type: ForceFieldAbility
-    regen: 5
+    regen: 15
     cooldown: 0
     radius: 0
     sides: 1
-    max: 20000
+    max: 10000
   }
   //all warden ships regenerate slowly
   {
