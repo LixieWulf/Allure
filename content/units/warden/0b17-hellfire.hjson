@@ -124,6 +124,7 @@ parts: [
   }
 ]
 healColor: 7382f088
+shieldColor: 7382f0
 weapons: [
   //right side broadside
   {
@@ -2219,6 +2220,7 @@ weapons: [
     shootWarmupSpeed: 0.03
     minShootVelocity: 1.8
     recoil: 0
+    display: false
     parts: [
       {
         name: allure-thruster-flare
@@ -2263,6 +2265,7 @@ weapons: [
     shootWarmupSpeed: 0.03
     minShootVelocity: 1.8
     recoil: 0
+    display: false
     parts: [
       {
         name: allure-thruster-flare
@@ -2307,6 +2310,7 @@ weapons: [
     shootWarmupSpeed: 0.03
     minShootVelocity: 1.8
     recoil: 0
+    display: false
     parts: [
       {
         name: allure-thruster-flare
@@ -2353,6 +2357,7 @@ weapons: [
     shootWarmupSpeed: 0.03
     minShootVelocity: 1.8
     recoil: 0
+    display: false
     parts: [
       {
         name: allure-thruster-flare
@@ -2398,6 +2403,7 @@ weapons: [
     mirror: false
     shootSound: none
     recoil: 0
+    display: false
     bullet: {
       type: ContinuousFlameBulletType
       layer: 90
@@ -2425,6 +2431,7 @@ weapons: [
     alternate: false
     shootSound: none
     recoil: 0
+    display: false
     bullet: {
       type: ContinuousFlameBulletType
       layer: 90
@@ -2452,6 +2459,7 @@ weapons: [
     alternate: false
     shootSound: none
     recoil: 0
+    display: false
     bullet: {
       type: ContinuousFlameBulletType
       layer: 90
@@ -2479,6 +2487,7 @@ weapons: [
     alternate: false
     shootSound: none
     recoil: 0
+    display: false
     bullet: {
       type: ContinuousFlameBulletType
       layer: 90
@@ -2523,8 +2532,8 @@ weapons: [
       smokeEffect: none
       hitEffect: none
       despawnEffect: none
-      fragOffsetMin: 240
-      fragOffsetMax: 240
+      fragOffsetMin: 160
+      fragOffsetMax: 160
       fragRandomSpread: 0
       fragBullets: 1
       fragBullet: {

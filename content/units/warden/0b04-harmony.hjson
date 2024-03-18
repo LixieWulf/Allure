@@ -12,6 +12,7 @@ strafePenalty: 0.2
 buildSpeed: 4.5
 buildBeamOffset: 24
 healColor: 7382f088
+shieldColor: 7382f0
 engineSize: 0
 lightRadius: 0
 shadowElevationScl: 1.7
@@ -514,6 +515,7 @@ weapons: [
     shootWarmupSpeed: 0.03
     minShootVelocity: 1.8
     recoil: 0
+    display: false
     parts: [
       {
         name: allure-thruster-flare
@@ -560,6 +562,7 @@ weapons: [
     shootWarmupSpeed: 0.03
     minShootVelocity: 1.8
     recoil: 0
+    display: false
     parts: [
       {
         name: allure-thruster-flare
@@ -606,6 +609,7 @@ weapons: [
     shootWarmupSpeed: 0.03
     minShootVelocity: 1.8
     recoil: 0
+    display: false
     parts: [
       {
         name: allure-thruster-flare
@@ -652,6 +656,7 @@ weapons: [
     shootWarmupSpeed: 0.03
     minShootVelocity: 1.8
     recoil: 0
+    display: false
     parts: [
       {
         name: allure-thruster-flare
@@ -697,6 +702,7 @@ weapons: [
     mirror: false
     shootSound: none
     recoil: 0
+    display: false
     bullet: {
       type: ContinuousFlameBulletType
       layer: 90
@@ -724,6 +730,7 @@ weapons: [
     alternate: false
     shootSound: none
     recoil: 0
+    display: false
     bullet: {
       type: ContinuousFlameBulletType
       layer: 90
@@ -751,6 +758,7 @@ weapons: [
     alternate: false
     shootSound: none
     recoil: 0
+    display: false
     bullet: {
       type: ContinuousFlameBulletType
       layer: 90
@@ -778,6 +786,7 @@ weapons: [
     alternate: false
     shootSound: none
     recoil: 0
+    display: false
     bullet: {
       type: ContinuousFlameBulletType
       layer: 90
@@ -805,6 +814,7 @@ weapons: [
     alternate: false
     shootSound: none
     recoil: 0
+    display: false
     bullet: {
       type: ContinuousFlameBulletType
       layer: 90

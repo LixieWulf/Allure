@@ -16,6 +16,7 @@ engineSize: 0
 outlines: false
 omniMovement: false
 healColor: 7382f088
+shieldColor: 7382f0
 parts: [
   {
     type: RegionPart
@@ -148,6 +149,7 @@ weapons: [
     shootWarmupSpeed: 0.03
     minShootVelocity: 2.2
     recoil: 0
+    display: false
     parts: [
       {
         name: allure-thruster-flare
@@ -194,6 +196,7 @@ weapons: [
     shootWarmupSpeed: 0.03
     minShootVelocity: 2.2
     recoil: 0
+    display: false
     parts: [
       {
         name: allure-thruster-flare
@@ -239,6 +242,7 @@ weapons: [
     alternate: false
     shootSound: none
     recoil: 0
+    display: false
     bullet: {
       type: ContinuousFlameBulletType
       layer: 90

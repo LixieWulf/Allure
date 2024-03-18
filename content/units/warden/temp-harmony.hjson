@@ -16,6 +16,7 @@ strafePenalty: 0.2
 buildSpeed: 4.5
 buildBeamOffset: 24
 healColor: 7382f088
+shieldColor: 7382f0
 engineSize: 0
 lightRadius: 0
 shadowElevationScl: 1.7
@@ -516,7 +517,6 @@ weapons: [
   }
   //engines
   {
-    useAttackRange: false
     x: 0
     y: -36
     baseRotation: 180
@@ -529,6 +529,7 @@ weapons: [
     shootWarmupSpeed: 0.03
     minShootVelocity: 1.8
     recoil: 0
+    display: false
     parts: [
       {
         name: allure-thruster-flare
@@ -563,7 +564,6 @@ weapons: [
     }
   }
   {
-    useAttackRange: false
     x: 0
     y: -36
     baseRotation: 180
@@ -576,6 +576,7 @@ weapons: [
     shootWarmupSpeed: 0.03
     minShootVelocity: 1.8
     recoil: 0
+    display: false
     parts: [
       {
         name: allure-thruster-flare
@@ -610,7 +611,6 @@ weapons: [
     }
   }
   {
-    useAttackRange: false
     x: 14
     y: -38
     baseRotation: 180
@@ -623,6 +623,7 @@ weapons: [
     shootWarmupSpeed: 0.03
     minShootVelocity: 1.8
     recoil: 0
+    display: false
     parts: [
       {
         name: allure-thruster-flare
@@ -657,7 +658,6 @@ weapons: [
     }
   }
   {
-    useAttackRange: false
     x: 14
     y: -38
     baseRotation: 180
@@ -670,6 +670,7 @@ weapons: [
     shootWarmupSpeed: 0.03
     minShootVelocity: 1.8
     recoil: 0
+    display: false
     parts: [
       {
         name: allure-thruster-flare
@@ -705,7 +706,6 @@ weapons: [
   }
   //idle flames
   {
-    useAttackRange: false
     x: 0
     y: -36
     baseRotation: 180
@@ -716,6 +716,7 @@ weapons: [
     mirror: false
     shootSound: none
     recoil: 0
+    display: false
     bullet: {
       type: ContinuousFlameBulletType
       layer: 90
@@ -733,7 +734,6 @@ weapons: [
     }
   }
   {
-    useAttackRange: false
     x: 14
     y: -38
     baseRotation: 180
@@ -744,6 +744,7 @@ weapons: [
     alternate: false
     shootSound: none
     recoil: 0
+    display: false
     bullet: {
       type: ContinuousFlameBulletType
       layer: 90
@@ -761,7 +762,6 @@ weapons: [
     }
   }
   {
-    useAttackRange: false
     x: 24
     y: 0
     baseRotation: -90
@@ -772,6 +772,7 @@ weapons: [
     alternate: false
     shootSound: none
     recoil: 0
+    display: false
     bullet: {
       type: ContinuousFlameBulletType
       layer: 90
@@ -789,7 +790,6 @@ weapons: [
     }
   }
   {
-    useAttackRange: false
     x: 22
     y: 20
     baseRotation: -90
@@ -800,6 +800,7 @@ weapons: [
     alternate: false
     shootSound: none
     recoil: 0
+    display: false
     bullet: {
       type: ContinuousFlameBulletType
       layer: 90
@@ -817,7 +818,6 @@ weapons: [
     }
   }
   {
-    useAttackRange: false
     x: 30
     y: -27
     baseRotation: -90
@@ -828,6 +828,7 @@ weapons: [
     alternate: false
     shootSound: none
     recoil: 0
+    display: false
     bullet: {
       type: ContinuousFlameBulletType
       layer: 90

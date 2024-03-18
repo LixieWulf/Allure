@@ -19,6 +19,7 @@ buildRange: 120
 faceTarget: false
 strafePenalty: 0.2
 lightRadius: 0
+shieldColor: 7382f0
 parts: [
   {
     type: RegionPart
@@ -63,6 +64,7 @@ weapons: [
     shootWarmupSpeed: 0.03
     minShootVelocity: 2.2
     recoil: 0
+    display: false
     parts: [
       {
         name: allure-thruster-flare
@@ -110,6 +112,7 @@ weapons: [
     shootWarmupSpeed: 0.03
     minShootVelocity: 2.2
     recoil: 0
+    display: false
     parts: [
       {
         name: allure-thruster-flare
@@ -157,6 +160,7 @@ weapons: [
     shootWarmupSpeed: 0.03
     minShootVelocity: 2.2
     recoil: 0
+    display: false
     parts: [
       {
         name: allure-thruster-flare
@@ -204,6 +208,7 @@ weapons: [
     shootWarmupSpeed: 0.03
     minShootVelocity: 2.2
     recoil: 0
+    display: false
     parts: [
       {
         name: allure-thruster-flare
@@ -250,6 +255,7 @@ weapons: [
     mirror: false
     shootSound: none
     recoil: 0
+    display: false
     bullet: {
       type: ContinuousFlameBulletType
       layer: 115
@@ -278,6 +284,7 @@ weapons: [
     alternate: false
     shootSound: none
     recoil: 0
+    display: false
     bullet: {
       type: ContinuousFlameBulletType
       layer: 115

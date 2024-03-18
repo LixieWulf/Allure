@@ -15,6 +15,7 @@ outlines: false
 drawBody: false
 drawCell: false
 bounded: false
+shieldColor: 7382f0
 parts: [
   {
     type: RegionPart
