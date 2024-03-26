@@ -99,37 +99,37 @@ itemWhitelist: [
 //use objects {} to make a single mesh, and the below format to create multiple
 mesh: [
   {
-    //a two colour mesh type
     type: NoiseMesh
-    //number of hexagons - like sectors, this is exponential, so beware of frying your GPU (although your GPU can handle way more hexagons here)
     divisions: 5
-    //mesh size - 1 is serpulo
     radius: 0.94
-    //first colour to use 
-    color1: 28a699
-    //second
+    color1: 43baba
     color2: 28a699
-    //mesh shape values - just mess around with these until they stop exploding, i still do not know how they work
     octaves: 1
     persistence: 0.0001
     scale: 0.0001
     mag: 1
-    //these control how the two colours behave on the mesh
     coct: 1
     cper: 1
     cscl: 1
-    cthresh: 1
+    cthresh: 4
   }
   {
+    //a two colour mesh type
     type: NoiseMesh
+    //number of hexagons - like sectors, this is exponential, so beware of frying your GPU (although your GPU can handle way more hexagons here)
     divisions: 6
+    //mesh size - 1 is serpulo
     radius: 0.94
+    //first colour to use 
     color1: d3ae8d
+    //second
     color2: 9192a6
+    //mesh shape values - just mess around with these until they stop exploding, i still do not know how they work
     octaves: 4.6
     persistence: 0.9
     scale: 0.7
     mag: 1
+    //these control how the two colours behave on the mesh
     coct: 1
     cper: 1
     cscl: 1.8
@@ -214,7 +214,7 @@ cloudMesh: [
     speed: -2
     divisions: 5
     radius: 0.034
-    color: 35bda8
+    color: 53cfc4
     octaves: 0.4
     persistence: 0.2
     scl: 0.2

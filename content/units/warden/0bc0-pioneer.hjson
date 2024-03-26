@@ -96,6 +96,8 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 10.5
+      lightOpacity: 0.4
     }
   }
   {
@@ -144,6 +146,8 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 10.5
+      lightOpacity: 0.4
     }
   }
   {
@@ -192,6 +196,8 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 6
+      lightOpacity: 0.4
     }
   }
   {
@@ -240,6 +246,8 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 6
+      lightOpacity: 0.4
     }
   }
   //idle flames
@@ -270,6 +278,8 @@ weapons: [
       oscScl: 2.5
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 10.5
+      lightOpacity: 0.25
     }
   }
   {
@@ -299,6 +309,8 @@ weapons: [
       oscScl: 2.5
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 6
+      lightOpacity: 0.25
     }
   }
 ]

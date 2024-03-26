@@ -9,6 +9,8 @@ hitSize: 56
 health: 36000
 armor: 22
 shadowElevationScl: 0.9
+range: 416
+maxRange: 416
 lightRadius: 0
 drawCell: false
 outlines: false
@@ -210,6 +212,8 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 18
+      lightOpacity: 0.4
     }
   }
   {
@@ -257,6 +261,8 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 18
+      lightOpacity: 0.4
     }
   }
   {
@@ -304,6 +310,8 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 12
+      lightOpacity: 0.4
     }
   }
   {
@@ -351,6 +359,8 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 12
+      lightOpacity: 0.4
     }
   }
   //idle flames
@@ -380,6 +390,8 @@ weapons: [
       oscScl: 2.5
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 18
+      lightOpacity: 0.25
     }
   }
   {
@@ -408,6 +420,8 @@ weapons: [
       oscScl: 2.5
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 12
+      lightOpacity: 0.25
     }
   }
   {
@@ -435,6 +449,8 @@ weapons: [
       oscScl: 2.5
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 12
+      lightOpacity: 0.25
     }
   }
 ]

@@ -16,6 +16,8 @@ shieldColor: 7382f0
 engineSize: 0
 lightRadius: 0
 shadowElevationScl: 1.7
+range: 660
+maxRange: 660
 drawCell: false
 drawBody: false
 outlines: false
@@ -358,7 +360,7 @@ weapons: [
     shake: 12
     bullet: {
       type: RailBulletType
-      length: 570
+      length: 660
       damage: 1600
       status: allure-0b-energy2
       statusDuration: 4
@@ -547,6 +549,8 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 15
+      lightOpacity: 0.4
     }
   }
   {
@@ -594,6 +598,8 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 15
+      lightOpacity: 0.4
     }
   }
   {
@@ -641,6 +647,8 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 15
+      lightOpacity: 0.4
     }
   }
   {
@@ -688,6 +696,8 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 15
+      lightOpacity: 0.4
     }
   }
   //idle flames
@@ -717,6 +727,8 @@ weapons: [
       oscScl: 2.5
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 15
+      lightOpacity: 0.25
     }
   }
   {
@@ -745,6 +757,8 @@ weapons: [
       oscScl: 2.5
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 15
+      lightOpacity: 0.25
     }
   }
   {
@@ -773,6 +787,8 @@ weapons: [
       oscScl: 2.5
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 15
+      lightOpacity: 0.25
     }
   }
   {
@@ -801,6 +817,8 @@ weapons: [
       oscScl: 2.5
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 15
+      lightOpacity: 0.25
     }
   }
   {
@@ -829,6 +847,8 @@ weapons: [
       oscScl: 2.5
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 15
+      lightOpacity: 0.25
     }
   }
 ]

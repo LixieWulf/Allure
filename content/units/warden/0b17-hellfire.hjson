@@ -2,6 +2,8 @@ type: flying
 flying: true
 envEnabled: -1
 shadowElevationScl: 3.2
+range: 240
+maxRange: 1316
 hitSize: 180
 health: 1000000
 armor: 1150
@@ -67,8 +69,8 @@ parts: [
     type: RegionPart
     suffix: -flare
     outline: false
-    layer: 140
-    color: 7382f025
+    layer: 141
+    color: 7382f015
     blending: additive
   }
   {
@@ -955,7 +957,8 @@ weapons: [
         blending: additive
         layer: 97.07
         color: 00000000
-        colorTo: 7382f0bb
+        colorTo: 7382f015
+        heatLight: true
       }
       { 
         type: RegionPart
@@ -2250,6 +2253,7 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightOpacity: 0.4
     }
   }
   {
@@ -2295,6 +2299,7 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightOpacity: 0.4
     }
   }
   {
@@ -2342,6 +2347,8 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 20
+      lightOpacity: 0.4
     }
   }
   {
@@ -2389,6 +2396,8 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 20
+      lightOpacity: 0.4
     }
   }
   //idle flames
@@ -2418,6 +2427,8 @@ weapons: [
       oscScl: 2.5
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 20
+      lightOpacity: 0.25
     }
   }
   {
@@ -2446,6 +2457,8 @@ weapons: [
       oscScl: 2.5
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 10
+      lightOpacity: 0.25
     }
   }
   {
@@ -2474,6 +2487,8 @@ weapons: [
       oscScl: 2.5
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 10
+      lightOpacity: 0.25
     }
   }
   {
@@ -2502,6 +2517,8 @@ weapons: [
       oscScl: 2.5
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 10
+      lightOpacity: 0.25
     }
   }
   //temporary Harmony summons

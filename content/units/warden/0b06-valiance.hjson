@@ -10,6 +10,8 @@ hitSize: 75
 health: 200000
 armor: 75
 shadowElevationScl: 2.1
+range: 351
+maxRange: 351
 lightRadius: 0
 drawCell: false
 outlines: false
@@ -174,7 +176,7 @@ weapons: [
       splashDamageRadius: 24
       speed: 0.5
       drag: -0.03
-      lifetime: 120
+      lifetime: 105
       homingPower: 0.07
       homingDelay: 20
       homingRange: 320
@@ -282,6 +284,8 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 25
+      lightOpacity: 0.4
     }
   }
   {
@@ -329,6 +333,8 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 25
+      lightOpacity: 0.4
     }
   }
   //idle flames
@@ -358,6 +364,8 @@ weapons: [
       oscScl: 2.5
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 26
+      lightOpacity: 0.25
     }
   }
   {
@@ -386,6 +394,8 @@ weapons: [
       oscScl: 2.5
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 15
+      lightOpacity: 0.25
     }
   }
 ]

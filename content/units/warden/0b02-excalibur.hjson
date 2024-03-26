@@ -10,10 +10,12 @@ drag: 0.02
 accel: 0.03
 health: 16000
 armor: 12
-lightRadius: 70
+lightRadius: 0
 lightColor: 7382f0
 fallSpeed: 0.007
 buildBeamOffset: 10
+range: 296
+maxRange: 296
 drawCell: false
 drawBody: false
 outlines: false
@@ -166,6 +168,8 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 15
+      lightOpacity: 0.4
     }
   }
   {
@@ -214,6 +218,8 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 15
+      lightOpacity: 0.4
     }
   }
   {
@@ -261,6 +267,8 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 9
+      lightOpacity: 0.4
     }
   }
   {
@@ -308,6 +316,8 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 9
+      lightOpacity: 0.4
     }
   }
   //idle flames
@@ -338,6 +348,8 @@ weapons: [
       oscScl: 2.5
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 9
+      lightOpacity: 0.25
     }
   }
   {
@@ -366,6 +378,8 @@ weapons: [
       oscScl: 2.5
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 9
+      lightOpacity: 0.25
     }
   }
 ]
