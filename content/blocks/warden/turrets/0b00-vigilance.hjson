@@ -1,5 +1,7 @@
 type: ItemTurret
+customShadow: true
 size: 14
+clipSize: 220
 range: 1440
 health: 55000
 armor: 330
@@ -13,10 +15,13 @@ shake: 45
 shoot: {
   firstShotDelay: 120
 }
+consumes: {
+  power: 444
+}
 shootWarmupSpeed: 0.025
 minWarmup: 0.9
-shootY: -16
-shootSound: shootSmite
+shootY: 24
+shootSound: considerablyintensepew
 outlineIcon: false
 drawer: [
   {
@@ -32,6 +37,7 @@ drawer: [
   }
   {
     type: DrawTurret
+    shadowLayer: 84
     parts: [
       {
         type: RegionPart
@@ -40,95 +46,21 @@ drawer: [
       }
       {
         suffix: -main
+        layer: 85
         outline: false
+        y: 24
         moveY: -24
         progress: heat
         children: [
           {
             type: RegionPart
-            x: 26.5
-            moveY: 48
-            suffix: -blade-r
-            progress: {
-              type: charge
-              op: compress
-              start: 0
-              end: 0.8
-            }
-            moves: [
-              {
-                progress: {
-                  type: charge
-                  op: compress
-                  start: 0.9
-                  end: 0.95
-                }
-                y: -12
-              }
-              {
-                progress: {
-                  type: charge
-                  op: compress
-                  start: 0.95
-                  end: 1
-                }
-                y: -36
-              }
-            ]
-          }
-          {
-            type: RegionPart
-            x: -26.5
-            moveY: 48
-            suffix: -blade-l
-            progress: {
-              type: charge
-              op: compress
-              start: 0
-              end: 0.8
-            }
-            moves: [
-              {
-                progress: {
-                  type: charge
-                  op: compress
-                  start: 0.9
-                  end: 0.95
-                }
-                y: -12
-              }
-              {
-                progress: {
-                  type: charge
-                  op: compress
-                  start: 0.95
-                  end: 1
-                }
-                y: -36
-              }
-            ]
-          }
-          {
-            type: RegionPart
-            suffix: -tope
-          }
-          {
-            type: RegionPart
-            drawRegion: false
             outline: false
-            heatLight: true
-            heatColor: ea8878
-            y: 34
-          }
-          {
-            type: RegionPart
-            suffix: -chargeplate
-            drawRegion: false
-            outline: false
-            heatLight: true
-            heatColor: 7382f0
-            y: -7
-            heatProgress: {
+            layer: 85.1
+            y: -3.75
+            color: 212229
+            colorTo: 7382f0
+            suffix: -charge0
+            progress: {
               type: charge
               op: compress
               start: 0
@@ -137,13 +69,29 @@ drawer: [
           }
           {
             type: RegionPart
-            suffix: -chargeplate
-            drawRegion: false
             outline: false
-            heatLight: true
-            heatColor: 7382f0
-            y: 17.5
-            heatProgress: {
+            layer: 85.1
+            y: -3.75
+            color: 000000
+            colorTo: 7382f0
+            suffix: -charge1
+            blending: additive
+            progress: {
+              type: charge
+              op: compress
+              start: 0
+              end: 0.25
+            }
+          }
+          {
+            type: RegionPart
+            outline: false
+            layer: 85.1
+            y: 13.5
+            color: 212229
+            colorTo: 7382f0
+            suffix: -charge0
+            progress: {
               type: charge
               op: compress
               start: 0.25
@@ -152,13 +100,29 @@ drawer: [
           }
           {
             type: RegionPart
-            suffix: -chargeplate
-            drawRegion: false
             outline: false
-            heatLight: true
-            heatColor: 7382f0
-            y: 42
-            heatProgress: {
+            layer: 85.1
+            y: 13.5
+            color: 000000
+            colorTo: 7382f0
+            suffix: -charge1
+            blending: additive
+            progress: {
+              type: charge
+              op: compress
+              start: 0.25
+              end: 0.5
+            }
+          }
+          {
+            type: RegionPart
+            outline: false
+            layer: 85.1
+            y: 30.75
+            color: 212229
+            colorTo: 7382f0
+            suffix: -charge0
+            progress: {
               type: charge
               op: compress
               start: 0.5
@@ -167,36 +131,130 @@ drawer: [
           }
           {
             type: RegionPart
-            suffix: -chargeplate
-            drawRegion: false
             outline: false
-            heatLight: true
-            heatColor: 7382f0
-            y: 66.5
-            heatProgress: {
+            layer: 85.1
+            y: 30.75
+            color: 000000
+            colorTo: 7382f0
+            suffix: -charge1
+            blending: additive
+            progress: {
+              type: charge
+              op: compress
+              start: 0.5
+              end: 0.75
+            }
+          }
+          {
+            type: RegionPart
+            outline: false
+            layer: 85.1
+            y: 34.75
+            color: 212229
+            colorTo: 7382f0
+            suffix: -charge2
+            progress: {
               type: charge
               op: compress
               start: 0.75
-              end: 1
+              end: 0.9
             }
+          }
+          {
+            type: RegionPart
+            outline: false
+            layer: 85.1
+            y: 34.75
+            color: 000000
+            colorTo: 7382f0
+            suffix: -charge3
+            blending: additive
+            progress: {
+              type: charge
+              op: compress
+              start: 0.75
+              end: 0.9
+            }
+          }
+          {
+            type: RegionPart
+            outline: false
+            layer: 86
+            x: 13
+            y: -2.5
+            moveY: 72
+            suffix: -blade-r
+            progress: {
+              type: charge
+              op: compress
+              start: 0
+              end: 0.9
+            }
+            moves: [
+              {
+                progress: {
+                  type: recoil
+                  op: curve
+                  interp: pow10In
+                }
+                y: 48
+              }
+            ]
+          }
+          {
+            type: RegionPart
+            outline: false
+            layer: 86
+            x: -13
+            y: -2.5
+            moveY: 72
+            suffix: -blade-l
+            progress: {
+              type: charge
+              op: compress
+              start: 0
+              end: 0.9
+            }
+            moves: [
+              {
+                progress: {
+                  type: recoil
+                  op: curve
+                  interp: pow10In
+                }
+                y: 48
+              }
+            ]
+          }
+          {
+            type: RegionPart
+            outline: false
+            layer: 85.1
+            y: 48.5
+            outline: false
+            suffix: -hot
+            blending: additive
+            progress: heat
+            color: 000000
+            colorTo: 7382f0
           }
         ]
       }
     ]
   }
 ]
-maxAmmo: 320
-ammoPerShot: 32
+maxAmmo: 256
+ammoPerShot: 256
 ammoTypes: {
   inseltiene: {
     type: RailBulletType
-    length: 3800
+    length: 3600
     damage: 120000
     status: allure-0b-energy4
-    statusDuration: 40
+    statusDuration: 4
     pierceDamageFactor: 0.85
     collidesGround: false
-    ammoMultiplier: 1
+    ammoMultiplier: 8
     pointEffectSpace: 4
     pointEffect: [
       {
@@ -207,7 +265,7 @@ ammoTypes: {
         baseLength: 0
         cap: false
         lifetime: 90
-        strokeFrom: 8
+        strokeFrom: 16
         strokeTo: 0
         lenFrom: 6
         lenTo: 6
@@ -223,7 +281,7 @@ ammoTypes: {
         baseLength: 0
         cap: false
         lifetime: 90
-        strokeFrom: 6
+        strokeFrom: 12
         strokeTo: 0
         lenFrom: 6
         lenTo: 6
@@ -264,7 +322,7 @@ ammoTypes: {
             length: 0
             lifetime: 90
             baseRotation: 90
-            region: allure-diamond-wide
+            region: allure-diamond-thin
             interp: pow2In
             sizeFrom: 96
             sizeTo: 0
@@ -277,7 +335,7 @@ ammoTypes: {
             length: 0
             lifetime: 90
             baseRotation: 90
-            region: allure-diamond-wide
+            region: allure-diamond-thin
             interp: pow2In
             sizeFrom: 90
             sizeTo: 0
@@ -317,7 +375,7 @@ ammoTypes: {
             length: 0
             lifetime: 90
             baseRotation: 90
-            region: allure-diamond-wide
+            region: allure-diamond-thin
             interp: pow2In
             sizeFrom: 72
             sizeTo: 0
@@ -330,7 +388,7 @@ ammoTypes: {
             length: 0
             lifetime: 90
             baseRotation: 90
-            region: allure-diamond-wide
+            region: allure-diamond-thin
             interp: pow2In
             sizeFrom: 66
             sizeTo: 0
@@ -370,7 +428,7 @@ ammoTypes: {
             length: 0
             lifetime: 90
             baseRotation: 90
-            region: allure-diamond-wide
+            region: allure-diamond-thin
             interp: pow2In
             sizeFrom: 48
             sizeTo: 0
@@ -383,7 +441,7 @@ ammoTypes: {
             length: 0
             lifetime: 90
             baseRotation: 90
-            region: allure-diamond-wide
+            region: allure-diamond-thin
             interp: pow2In
             sizeFrom: 42
             sizeTo: 0
@@ -439,7 +497,7 @@ ammoTypes: {
             length: 0
             lifetime: 90
             baseRotation: 90
-            region: allure-diamond-wide
+            region: allure-diamond-thin
             interp: pow2In
             sizeFrom: 150
             sizeTo: 100
@@ -452,7 +510,7 @@ ammoTypes: {
             length: 0
             lifetime: 90
             baseRotation: 90
-            region: allure-diamond-wide
+            region: allure-diamond-thin
             interp: pow2In
             sizeFrom: 100
             sizeTo: 66
@@ -625,6 +683,229 @@ ammoTypes: {
         interp: pow2In
         sizeFrom: 76
         sizeTo: 0
+      }
+    ]
+  }
+  shadow: {
+    type: RailBulletType
+    killShooter: true
+    length: 3600
+    pierceCap: 1
+    ammoMultiplier: 1
+    reloadMultiplier: 0.333
+    //Average antimatter round
+    damage: 10000000
+    maxDamageFraction: 0.33333
+    splashDamage: 80000
+    splashDamageRadius: 480
+    collidesGround: false
+    setDefaults: false
+    despawnHit: false
+    hitSound: explod
+    fragBullets: 16
+    fragOffsetMin: 0
+    fragOffsetMax: 0
+    fragSpread: 22.5
+    fragRandomSpread: 18
+    fragBullet: {
+      type: BulletType
+      createChance: 0.5
+      despawnShake: 95
+      speed: 0
+      lifetime: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      despawnEffect: {
+        region: allure-flash
+        particles: 1
+        length: 0
+        lifetime: 45
+        spin: 1.4
+        sizeFrom: 0
+        sizeTo: 1600
+        colorTo: ffffff00
+        interp: pow3In 
+        sizeInterp: pow2Out
+        layer: 135
+      }
+    }
+    pointEffectSpace: 160
+    pointEffect: [
+      {
+        lightOpacity: 0.25
+        lightScl: 1
+        type: ParticleEffect
+        length: 0
+        baseLength: 54
+        randLength: false
+        lifetime: 120
+        particles: 1
+        cone: 0
+        interp: pow3In
+        sizeInterp: linear
+        region: allure-railblast
+        sizeFrom: 30
+        sizeTo: 15
+        colorTo: ffffff00
+      }
+      {
+        lightOpacity: 0.25
+        lightScl: 1
+        type: ParticleEffect
+        length: 0
+        baseLength: 40
+        randLength: false
+        lifetime: 80
+        particles: 1
+        cone: 0
+        interp: pow3In
+        sizeInterp: linear
+        region: allure-railblast
+        sizeFrom: 20
+        sizeTo: 10
+        colorTo: ffffff00
+      }
+      {
+        lightOpacity: 0.4
+        lightScl: 0.65
+        type: ParticleEffect
+        length: 0
+        lifetime: 60
+        layer: 110.001
+        particles: 1
+        cone: 0
+        interp: pow3In
+        sizeInterp: linear
+        region: allure-diamond-thin
+        sizeFrom: 40
+        sizeTo: 20
+        colorTo: ffffff00
+      }
+    ]
+    hitEffect: [
+      {
+        type: WaveEffect
+        lifetime: 60
+        sizeFrom: 50
+        sizeTo: 960
+        strokeFrom: 12
+        interp: pow3Out
+      }
+      {
+        type: WaveEffect
+        lifetime: 500
+        sizeFrom: 0
+        sizeTo: 2400
+        strokeFrom: 36
+        layer: 29
+        clip: 4000
+      }
+      {
+        particles: 2
+        length: 0
+        region: circle-shadow
+        lifetime: 45
+        sizeFrom: 0
+        sizeTo: 1200
+        colorTo: ffffff00
+        interp: pow3In
+        sizeInterp: pow2Out
+        layer: 135
+      }
+      {
+        particles: 60
+        length: 600
+        lifetime: 90
+        region: circle-shadow
+        interp: pow3Out
+        sizeInterp: pow2In
+        sizeFrom: 60
+        sizeTo: 0
+      }
+      {
+        particles: 60
+        length: 500
+        lifetime: 120
+        region: circle-shadow
+        interp: pow3Out
+        sizeInterp: pow2In
+        sizeFrom: 120
+        sizeTo: 0
+      }
+    ]
+    shootEffect: [
+      {
+        particles: 60
+        cone: 30
+        length: 700
+        lifetime: 90
+        interp: pow3Out
+        sizeInterp: pow2In
+        sizeFrom: 35
+        sizeTo: 0
+      }
+      {
+        particles: 40
+        cone: 30
+        line: true
+        length: 900
+        lifetime: 70
+        interp: pow3Out
+        sizeInterp: pow2In
+        lenFrom: 50
+        lenTo: 0
+        strokeFrom: 15
+        strokeTo: 0
+        cap: false
+      }
+      {
+        type: RadialEffect
+        amount: 1
+        rotationOffset: 180
+        lengthOffset: 24
+        effect: [
+          {
+            type: WaveEffect
+            lifetime: 40
+            sizeFrom: 50
+            sizeTo: 480
+            strokeFrom: 12
+            interp: pow3Out
+          }
+          {
+            particles: 2
+            length: 0
+            region: circle-shadow
+            lifetime: 45
+            sizeFrom: 0
+            sizeTo: 300
+            colorTo: ffffff00
+            interp: pow3In
+            sizeInterp: pow2Out
+            layer: 135
+          }
+          {
+            particles: 60
+            length: 600
+            lifetime: 90
+            region: circle-shadow
+            interp: pow3Out
+            sizeInterp: pow2In
+            sizeFrom: 60
+            sizeTo: 0
+          }
+          {
+            particles: 60
+            length: 500
+            lifetime: 120
+            region: circle-shadow
+            interp: pow3Out
+            sizeInterp: pow2In
+            sizeFrom: 120
+            sizeTo: 0
+          }
+        ]
       }
     ]
   }

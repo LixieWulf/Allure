@@ -1,3 +1,4 @@
+//TODO rework to make function properly
 type: flying
 flying: true 
 lowAltitude: true

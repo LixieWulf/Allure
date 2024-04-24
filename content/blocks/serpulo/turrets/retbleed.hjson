@@ -33,7 +33,7 @@ ammoTypes: {
       sizeTo: 12
       colorFrom: f9c27a
       colorTo: f9c27a00
-      region: allure-diamond-wide
+      region: allure-diamond-thin
     }
     hitEffect: railHit
     pierceEffect: massiveExplosion
@@ -96,7 +96,7 @@ ammoTypes: {
         cone: 0
         interp: pow3In
         sizeInterp: linear
-        region: allure-diamond-wide
+        region: allure-diamond-thin
         sizeFrom: 30
         sizeTo: 10
         colorFrom: 7382f0
@@ -113,7 +113,7 @@ ammoTypes: {
         cone: 0
         interp: pow3In
         sizeInterp: linear
-        region: allure-diamond-wide
+        region: allure-diamond-thin
         sizeFrom: 24
         sizeTo: 6
         colorTo: ffffff00

@@ -28,6 +28,7 @@ weapons: [
       status: allure-temporal-shock1
       statusDuration: 65
       despawnHit: true
+      hitColor: 000000
       shootEffect: none
       smokeEffect: none
       hitEffect: none

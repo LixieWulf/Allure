@@ -135,7 +135,8 @@ weapons: [
           {
             length: 0
             cone: 0
-            region: allure-diamond-wide
+            region: allure-diamond-thin
+            offset: 90
             particles: 1
             lifetime: 25
             colorFrom: ffffff

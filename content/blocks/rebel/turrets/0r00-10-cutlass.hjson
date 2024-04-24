@@ -68,7 +68,8 @@ smokeEffect: {
       offset: -45
       colorFrom: e65555
       colorTo: e6555500
-      region: allure-diamond-wide
+      region: allure-diamond-thin
+      offset: 90
     }
     {
       length: 56
@@ -85,7 +86,8 @@ smokeEffect: {
       offset: 45
       colorFrom: e65555
       colorTo: e6555500
-      region: allure-diamond-wide
+      region: allure-diamond-thin
+      offset: 90
     }
   ]
 }

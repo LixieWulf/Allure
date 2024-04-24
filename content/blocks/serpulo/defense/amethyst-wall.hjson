@@ -49,11 +49,14 @@ destroyBullet: {
   fragLifeMin: 0.25
   fragBullet: {
     speed: 2
-    lifetime: 18
+    lifetime: 30
+    drag: 0.05
     damage: 110
     sprite: allure-diamond-thin
     width: 8
     height: 8
+    shrinkY: 0.25
+    shrinkX: 1
     frontColor: c3b3f8
     backColor: 00000000
     despawnEffect: none

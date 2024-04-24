@@ -2,7 +2,7 @@ type: flying
 fogRadius: 12
 lowAltitude: true
 hitSize: 18
-health: 450
+health: 6000
 range: 32
 speed: 2.9
 flying: true
@@ -46,6 +46,29 @@ parts: [
     outline: false
     layer: 90.04
   }
+]
+immunities: [
+  burning,
+  melting,
+  freezing, 
+  wet, 
+  tarred,
+  slow,
+  unmoving, 
+  disarmed,
+  spore-slowed,
+  shocked,
+  blasted,
+  electrified,
+  sapped, 
+  overclock,
+  overdrive,
+  allure-emp,
+  allure-0r-kinetic0,
+  allure-0r-kinetic1,
+  allure-0r-kinetic2,
+  allure-0r-kinetic3,
+  allure-0r-kinetic4,
 ]
 weapons: [
   {

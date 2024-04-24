@@ -58,7 +58,7 @@ weapons: [
           cone: 0
           interp: pow3In
           sizeInterp: linear
-          region: allure-diamond-wide
+          region: allure-diamond-thin
           sizeFrom: 40
           sizeTo: 20
           colorFrom: feb380
@@ -75,7 +75,7 @@ weapons: [
           cone: 0
           interp: pow3In
           sizeInterp: linear
-          region: allure-diamond-wide
+          region: allure-diamond-thin
           sizeFrom: 28
           sizeTo: 14
           colorTo: ffffff00

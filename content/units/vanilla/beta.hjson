@@ -1,0 +1,28 @@
+speed: 6
+rotateSpeed: 10
+buildSpeed: 1
+accel: 0.05
+strafePenalty: 0.33
+weapons: [
+  {
+    name: small-mount-weapon
+    reload: 35
+    x: 3
+    y: 0.5
+    top: false
+    rotate: true
+    shoot: {
+      shots: 4
+      shotDelay: 4
+    }
+    ejectEffect: casing1
+    bullet: {
+      speed: 4
+      damage: 12
+      width: 7
+      height: 9
+      lifetime: 45
+      buildingDamageMultiplier: 0.5
+    }
+  }
+]

@@ -41,7 +41,8 @@ ammoTypes: {
         length: 0
         lifetime: 20
         baseRotation: 45
-        region: allure-diamond-wide
+        region: allure-diamond-thin
+        offset: 90
         interp: pow2In
         sizeFrom: 6
         sizeTo: 0
@@ -54,7 +55,8 @@ ammoTypes: {
         length: 0
         lifetime: 20
         baseRotation: 45
-        region: allure-diamond-wide
+        region: allure-diamond-thin
+        offset: 90
         interp: pow2In
         sizeFrom: 4
         sizeTo: 0
@@ -64,7 +66,8 @@ ammoTypes: {
         length: 0
         lifetime: 20
         baseRotation: -45
-        region: allure-diamond-wide
+        region: allure-diamond-thin
+        offset: 90
         interp: pow2In
         sizeFrom: 6
         sizeTo: 0
@@ -77,7 +80,8 @@ ammoTypes: {
         length: 0
         lifetime: 20
         baseRotation: -45
-        region: allure-diamond-wide
+        region: allure-diamond-thin
+        offset: 90
         interp: pow2In
         sizeFrom: 4
         sizeTo: 0

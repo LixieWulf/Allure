@@ -24,7 +24,7 @@ drillEffect: [
     particles: 1
     lifetime: 30
     useRotation: false
-    region: allure-diamond-wide
+    region: allure-diamond-thin
     sizeFrom: 60
     sizeTo: 0
     colorFrom: 90a2fc
@@ -36,7 +36,7 @@ drillEffect: [
     lifetime: 30
     offset: 90
     useRotation: false
-    region: allure-diamond-wide
+    region: allure-diamond-thin
     sizeFrom: 60
     sizeTo: 0
     colorFrom: 90a2fc
@@ -64,7 +64,7 @@ drillEffect: [
         particles: 1
         lifetime: 30
         useRotation: false
-        region: allure-diamond-wide
+        region: allure-diamond-thin
         sizeFrom: 16
         sizeTo: 0
         colorFrom: 90a2fc
@@ -76,7 +76,7 @@ drillEffect: [
         lifetime: 30
         offset: 90
         useRotation: false
-        region: allure-diamond-wide
+        region: allure-diamond-thin
         sizeFrom: 16
         sizeTo: 0
         colorFrom: 90a2fc
@@ -111,7 +111,7 @@ drillEffect: [
       particles: 1
       lifetime: 30
       useRotation: false
-      region: allure-diamond-wide
+      region: allure-diamond-thin
       sizeFrom: 12
       sizeTo: 0
       colorFrom: 90a2fc
@@ -129,7 +129,7 @@ drillEffect: [
       lifetime: 30
       offset: 90
       useRotation: false
-      region: allure-diamond-wide
+      region: allure-diamond-thin
       sizeFrom: 12
       sizeTo: 0
       colorFrom: 90a2fc
@@ -163,7 +163,7 @@ drillEffect: [
       particles: 1
       lifetime: 30
       useRotation: false
-      region: allure-diamond-wide
+      region: allure-diamond-thin
       sizeFrom: 8
       sizeTo: 0
       colorFrom: 90a2fc
@@ -181,7 +181,7 @@ drillEffect: [
       lifetime: 30
       offset: 90
       useRotation: false
-      region: allure-diamond-wide
+      region: allure-diamond-thin
       sizeFrom: 8
       sizeTo: 0
       colorFrom: 90a2fc

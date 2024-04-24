@@ -188,6 +188,12 @@ drawer: [
   {
     type: DrawGlowRegion
     color: feb380
+    alpha: 0.5
+  }
+  {
+    type: DrawGlowRegion
+    alpha: 1
+    suffix: -glow2
   }
 ]
 consumes: {

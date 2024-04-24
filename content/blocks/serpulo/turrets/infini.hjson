@@ -3326,7 +3326,8 @@ shootType: {
               }
               {
                 type: RegionPart
-                name: allure-diamond-wide
+                name: allure-diamond-thin
+                rotation: 90
                 layer: 99
                 color: 000000
                 outline: false
