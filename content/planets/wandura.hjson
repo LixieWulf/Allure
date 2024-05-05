@@ -5,7 +5,6 @@
 //also accepts just doing generator: AsteroidGenerator
 //also these numbers are funny and i have no idea how they precisely work
 generator: {
-  type: AsteroidGenerator
   berylChance: 0.45
   iceChance: 0.15
   ferricChance: 0.55
@@ -153,6 +152,21 @@ mesh: [
   {
     type: NoiseMesh
     divisions: 6
+    radius: 0.858
+    color1: 56c774
+    color2: 3e9d6b
+    octaves: 4.6
+    persistence: 0.9
+    scale: 0.7
+    mag: 1.9
+    coct: 4
+    cper: 1
+    cscl: 4
+    cthresh: 1
+  }
+  {
+    type: NoiseMesh
+    divisions: 6
     radius: 0.83
     color1: c1c4cb
     color2: 525252
@@ -168,13 +182,13 @@ mesh: [
   {
     type: NoiseMesh
     divisions: 6
-    radius: 0.74
+    radius: 0.73
     color1: d1efff
     color2: d1efff
     octaves: 4.6
     persistence: 0.9
     scale: 0.7
-    mag: 3.3
+    mag: 3.4
     coct: 4
     cper: 1
     cscl: 1.8

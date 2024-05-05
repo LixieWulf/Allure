@@ -1,0 +1,39 @@
+type: GenericCrafter
+size: 6
+rotate: true
+quickRotate: true
+craftTime: 680
+floating: true
+liquidCapacity: 80
+liquidPressure: 2.1
+drawer: [
+  {
+  }
+  {
+    type: DrawLiquidTile
+    padding: 16
+    drawLiquid: arreacta
+  }
+  {
+    type: DrawRegion
+    suffix: -top
+  }
+  {
+    type: DrawRegion
+    suffix: -transfer
+    layer: 31
+    buildingRotate: true
+  }
+]
+consumes: {
+  liquids: [
+    arreacta/0.1
+  ]
+}
+outputLiquid: arreacta/0.05
+category: crafting
+requirements: [
+  anden/400
+  ladera/80
+  baenite/150
+]

@@ -1,0 +1,49 @@
+type: AttributeCrafter
+size: 12
+rotate: true
+quickRotate: true
+liquidOutputDirections: [0]
+craftTime: 120
+floating: true
+liquidCapacity: 180
+liquidPressure: 2.1
+maxBoost: 1
+baseEfficiency: 0
+minEfficiency: 1
+boostScale: 0.011458
+drawer: [
+  {
+  }
+  {
+    type: DrawLiquidTile
+    padding: 16
+    drawLiquid: arreacta
+  }
+  {
+    type: DrawRegion
+    suffix: -top1
+  }
+  {
+    type: DrawRegion
+    suffix: -top2
+  }
+  {
+    type: DrawRegion
+    suffix: -transfer
+    layer: 31
+    buildingRotate: true
+  }
+]
+consumes: {
+  liquids: [
+    energia/0.8
+  ]
+}
+outputLiquid: arreacta/1.2
+category: crafting
+requirements: [
+  anden/1200
+  ladera/300
+  renfrien/600
+  baenite/300
+]

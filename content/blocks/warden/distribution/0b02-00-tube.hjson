@@ -3,6 +3,7 @@ requirements: [
   dantrales/1
   territe-alloy/5
 ]
+bridgeReplacement: 0b02-01-tube-bridge
 category: distribution
 speed: 7.5
 research: 0b-begin

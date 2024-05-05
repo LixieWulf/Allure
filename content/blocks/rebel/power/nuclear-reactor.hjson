@@ -9,7 +9,7 @@ consumes: {
     graphite/1
   ]
 }
-itemDuration: 80
+itemDuration: 240
 drawer: [
   {
     type: DrawDefault

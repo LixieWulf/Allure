@@ -1,25 +1,26 @@
 type: AttributeCrafter
-size: 3
+size: 6
 boostScale: 0.111111111
 minEfficiency: 8.99999
 baseEfficiency: 0
-maxBoost: 1
+maxBoost: 2
 displayEfficiency: false
 attribute: steam
 customShadow: true
-liquidCapacity: 200
+liquidCapacity: 400
 drawer: [
   {
     type: DrawLiquidTile
-    drawLiquid: steam
-    padding: 2
+    drawLiquid: chlorine
+    padding: 4
   }
   {
   }
 ]
-outputLiquid: steam/0.75
+outputLiquid: chlorine/0.25
 category: production
 requirements: [
-  anden/200
-  renfrien/100
+  anden/600
+  renfrien/150
+  baenite/200
 ]

@@ -151,6 +151,7 @@ drawer: [
 ]
 craftTime: 800
 outputItem: baenite/200
+category: crafting
 requirements: [
   anden/1800
   graphite/800

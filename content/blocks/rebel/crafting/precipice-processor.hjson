@@ -10,7 +10,7 @@ consumes: {
 rotateSpeed: 4
 dumpTime: 2
 itemCapacity: 100
-category: crafting
+category: production
 requirements: [
   anden/900
   graphite/300
