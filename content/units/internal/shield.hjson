@@ -1,0 +1,63 @@
+type: missile
+template: MissileUnitType
+controller: MinerAI
+defaultController: MinerAI
+fullOverride: clear
+hitSize: 1
+lifetime: 210
+health: 1
+speed: 8
+drag: 0.04
+engineSize: 0
+drawBody: false
+drawCell: false
+drawShields: false
+weapons: [
+  {
+    alwaysShooting: true
+    shootCone: 360
+    reload: 5
+    shootSound: none
+    shootStatus: {
+      name: khdrj
+      damage: 0.2
+      show: false
+    }
+    bullet: {
+      type: BulletType
+      speed: 0
+      damage: 0
+      lifetime: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      shootEffect: none
+      smokeEffect: none
+      despawnEffect: none
+    }
+  }
+]
+abilities: [
+  {
+    type: ForceFieldAbility
+    radius: 45
+    regen: 1
+    max: 2400
+    cooldown: 200
+  }
+  {
+    type: ShieldRegenFieldAbility
+    reload: 1
+    amount: 2400
+    max: 2400
+    range: 0
+    applyEffect: none
+    activeEffect: none
+  }
+]
+createWreck: false
+createScorch: false
+deathSound: none
+deathExplosionEffect: none
+envEnabled: -1
+envDisabled: 0

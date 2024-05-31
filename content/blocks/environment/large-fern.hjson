@@ -7,8 +7,8 @@ alwaysReplace: false
 buildVisibility: sandboxOnly
 solid: true
 destructible: true
-health: 4200
-buildCost: 1400
+health: 2400
+buildCost: 900
 instantDeconstruct: false
 clipSize: 110
 underBullets: true

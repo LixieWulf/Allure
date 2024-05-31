@@ -1,0 +1,45 @@
+type: AttributeCrafter
+size: 12
+rotate: true
+quickRotate: true
+craftTime: 120
+floating: true
+liquidCapacity: 180
+liquidPressure: 2.1
+maxBoost: 1
+baseEfficiency: 0
+minEfficiency: 1
+boostScale: 0.02
+drawer: [
+  {
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: crystal-plasma
+    padding: 6
+  }
+  {
+    type: DrawRegion
+    suffix: -mid
+  }
+  {
+    type: DrawGlowRegion
+    blending: normal
+    color: ffffff
+    alpha: 1
+    suffix: -top
+  }
+]
+consumes: {
+  liquids: [
+    arreacta/0.01
+  ]
+}
+outputLiquid: crystal-plasma/1
+category: crafting
+requirements: [
+  anden/1200
+  ladera/300
+  renfrien/600
+  baenite/300
+]

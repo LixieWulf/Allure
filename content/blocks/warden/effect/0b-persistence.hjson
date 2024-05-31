@@ -1,0 +1,119 @@
+type: PowerTurret
+size: 6
+alwaysShooting: true
+rotateSpeed: 0.6
+recoil: 0
+reload: 180
+outlineIcon: false
+shootSound: artillery
+drawer: [
+  {
+    type: DrawTurret
+    parts: [
+      {
+        type: RegionPart
+        layer: 30.5
+        suffix: -turntable
+      } 
+      {
+        suffix: -main
+        progress: recoil
+        moveY: -8
+        outline: false
+        children: [
+          {
+            type: RegionPart
+            suffix: -inrail
+            outline: false
+            y: 4
+            moveY: -3
+            progress: {
+              type: recoil
+              op: compress
+              start: 0.5
+              end: 1
+            }
+          }
+          {
+            type: RegionPart
+            suffix: -inrail
+            outline: false
+            y: 10
+            moveY: -4.5
+            progress: {
+              type: recoil
+              op: compress
+              start: 0.25
+              end: 1
+            }
+          }
+          {
+            type: RegionPart
+            suffix: -inrail
+            outline: false
+            y: 16
+            moveY: -6
+            progress: {
+              type: recoil
+              op: compress
+              start: 0
+              end: 1
+            }
+          }
+          {
+            type: RegionPart
+            suffix: -main-top
+            outline: false
+          }
+          {
+            type: RegionPart
+            suffix: -outrail
+            y: 7.75
+            moveY: 6
+          }
+          {
+            type: RegionPart
+            suffix: -outrail
+            y: 1
+            moveY: 4
+          }
+          {
+            type: RegionPart
+            suffix: -upper
+            outline: false
+          }
+        ]
+      }
+    ]
+  }
+  {
+    type: DrawRegion
+    suffix: -base-top
+    layer: 31
+  }
+]
+shoot: {
+  type: ShootSpread
+  shots: 3 
+  shotDelay: 10
+  spread: 15
+}
+recoils: 3
+recoilTime: 90
+liquidCapacity: 60
+consumes: {
+  power: 6
+  liquids: [
+    energia/0.5
+  ]
+}
+shootType: {
+  spawnUnit: allure-shield
+}
+category: effect
+requirements: [
+  dantrales/400
+  territe-alloy/1200
+  metaglass/300
+  baenite/300
+]

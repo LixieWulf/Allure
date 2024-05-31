@@ -25,6 +25,83 @@ drawer: [
   }
   {
     type: DrawRegion
+    suffix: -spin2-shadow
+    rotateSpeed: -0.6
+    x: -4
+    y: -4
+  }
+  {
+    type: DrawRegion
+    suffix: -spin2-shadow
+    rotateSpeed: -0.6
+    rotation: 30
+    x: -4
+    y: -4
+  }
+  {
+    type: DrawRegion
+    suffix: -spin2-shadow
+    rotateSpeed: -0.6
+    rotation: 60
+    x: -4
+    y: -4
+  }
+  {
+    type: DrawRegion
+    suffix: -top2-shadow
+    x: -4
+    y: -4
+  }
+  {
+    type: DrawRegion
+    suffix: -spin2
+    rotateSpeed: -0.6
+  }
+  {
+    type: DrawRegion
+    suffix: -spin2
+    rotateSpeed: -0.6
+    rotation: 30
+  }
+  {
+    type: DrawRegion
+    suffix: -spin2
+    rotateSpeed: -0.6
+    rotation: 60
+  }
+  {
+    type: DrawRegion
+    suffix: -spin1
+    rotateSpeed: -1
+  }
+  {
+    type: DrawRegion
+    suffix: -spin1
+    rotateSpeed: -1
+    rotation: 45
+  }
+  {
+    type: DrawRegion
+    suffix: -spin0
+    spinSprite: true
+    rotateSpeed: -1.8
+  }
+  {
+    type: DrawRegion
+    suffix: -spin0
+    spinSprite: true
+    rotateSpeed: -1.8
+    rotation: 30
+  }
+  {
+    type: DrawRegion
+    suffix: -spin0
+    spinSprite: true
+    rotateSpeed: -1.8
+    rotation: 60
+  }
+  {
+    type: DrawRegion
     suffix: -top2
   }
   {
