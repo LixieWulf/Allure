@@ -3,6 +3,7 @@ size: 6
 rotate: true
 quickRotate: true
 liquidOutputDirections: [0]
+enableDrawStatus: false
 craftTime: 940
 floating: true
 itemCapacity: 100
@@ -10,6 +11,7 @@ liquidCapacity: 80
 liquidPressure: 2.1
 drawer: [
   {
+    type: DrawRegion
   }
   {
     type: DrawLiquidTile
@@ -18,7 +20,11 @@ drawer: [
   }
   {
     type: DrawRegion
-    suffix: -top
+    suffix: -transfer-shadow
+    layer: 30.9
+    x: -6
+    y: -6
+    buildingRotate: true
   }
   {
     type: DrawRegion
@@ -26,14 +32,24 @@ drawer: [
     layer: 31
     buildingRotate: true
   }
+  {
+    type: DrawRegion
+    suffix: -top
+    layer: 31.1
+  }
+  {
+    type: DrawRegion
+    suffix: -transfer-top
+    layer: 31.2
+    buildingRotate: true
+  }
 ]
 consumes: {
   liquids: [
-    arreacta/0.0666666
+    arreacta/0.06666666666
   ]
 }
-outputLiquid: arreacta/0.05
-outputItem: scilaxa/10
+outputLiquid: arreacta/0.06666666666
 category: crafting
 requirements: [
   anden/300

@@ -2284,6 +2284,139 @@ weapons: [
       lightOpacity: 0.4
     }
   }
+  //damaging flames
+  {
+    y: -100
+    x: 0
+    rotate: true
+    rotateSpeed: 0
+    shootY: 0
+    shoot: {
+      type: ShootSummon
+      radius: 16
+    }
+    inaccuracy: 0
+    baseRotation: 180
+    alwaysShooting: true
+    shootCone: 360
+    mirror: false
+    reload: 2
+    shootSound: none
+    minShootVelocity: 0.9
+    recoil: 0
+    display: false
+    bullet: {
+      type: ContinuousFlameBulletType
+      speed: 3
+      drag: 0.08
+      createChance: 0.5
+      damage: 210
+      layer: 90.01
+      lifetime: 30
+      collides: false
+      length: 48
+      width: 8
+      colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: reverse
+      oscScl: 1
+      oscMag: 0.1
+      hitEffect: none
+      lightColor: e65555
+      lightStroke: 16
+      lightOpacity: 0.4
+    }
+  }
+  {
+    y: -97
+    x: 22
+    rotate: true
+    rotateSpeed: 0
+    shootY: 0
+    shoot: {
+      type: ShootSummon
+      radius: 4
+    }
+    inaccuracy: 0
+    baseRotation: 180
+    alwaysShooting: true
+    shootCone: 360
+    alternate: false
+    reload: 2
+    shootSound: none
+    minShootVelocity: 0.9
+    recoil: 0
+    display: false
+    bullet: {
+      type: ContinuousFlameBulletType
+      speed: 0.7
+      drag: 0.08
+      createChance: 0.5
+      damage: 60
+      layer: 90.01
+      lifetime: 30
+      collides: false
+      length: 15
+      width: 3
+      colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: reverse
+      oscScl: 1
+      oscMag: 0.1
+      hitEffect: none
+      lightColor: e65555
+      lightStroke: 6
+      lightOpacity: 0.4
+    }
+  }
+  {
+    x: 62
+    y: -95
+    rotate: true
+    rotateSpeed: 0
+    shootY: 0
+    shoot: {
+      type: ShootSummon
+      radius: 7
+    }
+    inaccuracy: 0
+    baseRotation: 180
+    alwaysShooting: true
+    shootCone: 360
+    alternate: false
+    reload: 2
+    shootSound: none
+    minShootVelocity: 0.9
+    recoil: 0
+    display: false
+    bullet: {
+      type: ContinuousFlameBulletType
+      speed: 2.4
+      drag: 0.08
+      createChance: 0.5
+      damage: 140
+      layer: 90.01
+      lifetime: 30
+      collides: false
+      length: 30
+      width: 6
+      colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: reverse
+      oscScl: 1
+      oscMag: 0.1
+      hitEffect: none
+      lightColor: e65555
+      lightStroke: 12
+      lightOpacity: 0.4
+    }
+  }
   //idle flames
   {
     y: -100

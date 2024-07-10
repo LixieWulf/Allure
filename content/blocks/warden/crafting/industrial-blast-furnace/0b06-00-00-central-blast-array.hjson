@@ -43,7 +43,7 @@ drawer: {
     }
     {
       type: DrawRegion
-      suffix: -fan
+      suffix: -fan1
       rotateSpeed: -4
       spinSprite: true
       layer: 30.1
@@ -109,6 +109,13 @@ drawer: {
       suffix: -fan
       rotateSpeed: -4
       rotation: 80
+      spinSprite: true
+      layer: 30.1
+    }
+    {
+      type: DrawRegion
+      suffix: -fan0
+      rotateSpeed: -4
       spinSprite: true
       layer: 30.1
     }
@@ -180,26 +187,25 @@ craftEffect: [
   {
     type: RadialEffect
     layer: 118
-    rotationSpacing: 22.5
-    amount: 16
+    rotationSpacing: 11.25
+    amount: 32
     lengthOffset: 24
     effect: {
       particles: 1
       line: true
-      length: -40
-      baseLength: 40
+      length: 40
       lifetime: 35
       cone: 20
       useRotation: false
       baseRotation: 90
-      lenFrom: 8
-      lenTo: 0
-      strokeFrom: 0
-      strokeTo: 1
-      colorFrom: ffffff88
-      colorTo: ffffff00
+      lenFrom: 0
+      lenTo: 8
+      strokeFrom: 1
+      strokeTo: 0
+      colorFrom: ffffff00
+      colorTo: ffffff88
       interp: pow2
-      sizeInterp: pow3Out
+      sizeInterp: pow3In
       layer: 80
     }
   }

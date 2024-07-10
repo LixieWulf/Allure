@@ -1,11 +1,13 @@
 type: GenericCrafter
-size: 6
+size: 10
 rotate: true
 quickRotate: true
+liquidOutputDirections: [0]
 enableDrawStatus: false
-craftTime: 680
+craftTime: 1500
 floating: true
-liquidCapacity: 80
+itemCapacity: 200
+liquidCapacity: 2200
 liquidPressure: 2.1
 drawer: [
   {
@@ -13,7 +15,7 @@ drawer: [
   }
   {
     type: DrawLiquidTile
-    padding: 16
+    padding: 24
     drawLiquid: arreacta
   }
   {
@@ -44,13 +46,14 @@ drawer: [
 ]
 consumes: {
   liquids: [
-    arreacta/0.06666666666
+    arreacta/0.7
   ]
 }
-outputLiquid: arreacta/0.06666666666
+outputLiquid: arreacta/0.1
+outputItem: scilaxa/100
 category: crafting
 requirements: [
-  anden/400
-  ladera/80
+  anden/300
+  ladera/150
   baenite/150
 ]

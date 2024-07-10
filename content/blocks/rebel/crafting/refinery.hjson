@@ -1,7 +1,5 @@
 type: AttributeCrafter
 size: 12
-rotate: true
-quickRotate: true
 craftTime: 120
 floating: true
 liquidCapacity: 180
@@ -15,12 +13,21 @@ drawer: [
   }
   {
     type: DrawLiquidTile
-    drawLiquid: crystal-plasma
+    drawLiquid: slag
     padding: 6
   }
   {
     type: DrawRegion
     suffix: -mid
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: crystal-plasma
+    padding: 30
+  }
+  {
+    type: DrawRegion
+    suffix: -mid3
   }
   {
     type: DrawGlowRegion
@@ -29,10 +36,23 @@ drawer: [
     alpha: 1
     suffix: -top
   }
+  {
+    type: DrawRegion
+    suffix: -mid-shadow
+    layer: 30.9
+    x: -6
+    y: -6
+  }
+  {
+    type: DrawRegion
+    suffix: -mid2
+    layer: 31.1
+  }
 ]
 consumes: {
   liquids: [
     arreacta/0.01
+    slag/1.6
   ]
 }
 outputLiquid: crystal-plasma/1

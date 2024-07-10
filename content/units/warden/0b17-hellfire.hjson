@@ -955,7 +955,16 @@ weapons: [
         suffix: -flare
         outline: false
         blending: additive
-        layer: 97.07
+        layer: 97.08
+        color: 00000000
+        colorTo: 7382f0
+      }
+      { 
+        type: RegionPart
+        suffix: -flare
+        outline: false
+        blending: additive
+        layer: 97.08
         color: 00000000
         colorTo: 7382f015
         heatLight: true
@@ -2212,7 +2221,7 @@ weapons: [
   //engines
   {
     x: 0
-    y: -66
+    y: -75
     baseRotation: 180
     alwaysShooting: true
     shootCone: 360
@@ -2220,7 +2229,7 @@ weapons: [
     mirror: false
     reload: 1
     shootSound: none
-    shootWarmupSpeed: 0.03
+    shootWarmupSpeed: 0.1
     minShootVelocity: 1.8
     recoil: 0
     display: false
@@ -2235,15 +2244,37 @@ weapons: [
         color: ffffff44
         colorTo: ffffff
         layer: 90.01
-        progress: warmup
+        progress: heat
+      }
+      {
+        type: FlarePart
+        sides: 2
+        color1: 7382f0bb
+        radius: 0
+        radiusTo: 100
+        stroke: 6
+        innerRadScl: 0.75
+        y: 6
+        progress: heat
+        layer: 101
+      }
+      {
+        type: FlarePart
+        sides: 2
+        color1: 00000000
+        radius: 0
+        radiusTo: 40
+        stroke: 40
+        y: 6
+        progress: heat
+        layer: 101
       }
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90.01
       lifetime: 14
       collides: false
-      length: 70
+      length: 100
       width: 15
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false
@@ -2258,7 +2289,7 @@ weapons: [
   }
   {
     x: 0
-    y: -70
+    y: -75
     baseRotation: 180
     alwaysShooting: true
     shootCone: 360
@@ -2266,8 +2297,9 @@ weapons: [
     mirror: false
     reload: 1
     shootSound: none
-    shootWarmupSpeed: 0.03
+    shootWarmupSpeed: 0.1
     minShootVelocity: 1.8
+    cooldownTime: 15
     recoil: 0
     display: false
     parts: [
@@ -2281,15 +2313,14 @@ weapons: [
         color: ffffff44
         colorTo: ffffff
         layer: 90
-        progress: warmup
+        progress: heat
       }
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90.01
       lifetime: 10
       collides: false
-      length: 70
+      length: 100
       width: 15
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false
@@ -2312,7 +2343,7 @@ weapons: [
     alternate: false
     reload: 1
     shootSound: none
-    shootWarmupSpeed: 0.03
+    shootWarmupSpeed: 0.1
     minShootVelocity: 1.8
     recoil: 0
     display: false
@@ -2329,15 +2360,37 @@ weapons: [
         color: ffffff44
         colorTo: ffffff
         layer: 90
-        progress: warmup
+        progress: heat
+      }
+      {
+        type: FlarePart
+        sides: 2
+        color1: 7382f0bb
+        radius: 0
+        radiusTo: 45
+        stroke: 4
+        innerRadScl: 0.75
+        y: 4
+        progress: heat
+        layer: 101
+      }
+      {
+        type: FlarePart
+        sides: 2
+        color1: 00000000
+        radius: 0
+        radiusTo: 18
+        stroke: 18
+        y: 4
+        progress: heat
+        layer: 101
       }
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90.01
       lifetime: 14
       collides: false
-      length: 40
+      length: 47
       width: 7
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false
@@ -2378,15 +2431,14 @@ weapons: [
         color: ffffff44
         colorTo: ffffff
         layer: 90
-        progress: warmup
+        progress: heat
       }
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90.01
       lifetime: 10
       collides: false
-      length: 40
+      length: 47
       width: 7
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false
@@ -2533,6 +2585,7 @@ weapons: [
     shootSound: none
     shoot: {
       type: ShootSpread
+      firstShotDelay: 1200
       shots: 3
       shotDelay: 30
       spread: 120

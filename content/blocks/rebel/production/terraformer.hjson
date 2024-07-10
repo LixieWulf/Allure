@@ -1,0 +1,22 @@
+type: BeamDrill
+size: 6
+range: 12
+drillTime: 80
+tier: 12
+sparks: 80
+sparkRecurrence: 14
+sparkLife: 25
+sparkSpread: 0
+sparkRange: -80
+itemCapacity: 30
+liquidCapacity: 30
+consumes: {
+  liquids: [
+    arreacta/0.1
+  ]
+}
+requirements: [
+  anden/250
+]
+optionalBoostIntensity: 1
+category: production

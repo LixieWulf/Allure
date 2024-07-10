@@ -102,7 +102,11 @@ drawer: [
   }
   {
     type: DrawRegion
-    suffix: -top2
+    suffix: -transfer-shadow
+    layer: 30.9
+    x: -6
+    y: -6
+    buildingRotate: true
   }
   {
     type: DrawRegion
@@ -110,10 +114,24 @@ drawer: [
     layer: 31
     buildingRotate: true
   }
+  {
+    type: DrawRegion
+    suffix: -top2
+    layer: 31.1
+  }
+  {
+    type: DrawRegion
+    suffix: -transfer-top
+    layer: 31.2
+    buildingRotate: true
+  }
 ]
 consumes: {
   liquids: [
     energia/0.8
+  ]
+  items: [
+    uranium/5
   ]
 }
 outputLiquid: arreacta/1.2
