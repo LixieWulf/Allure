@@ -515,7 +515,7 @@ weapons: [
     reload: 1
     shootSound: none
     shootWarmupSpeed: 0.03
-    minShootVelocity: 1.8
+    minShootVelocity: 1.5
     recoil: 0
     display: false
     parts: [
@@ -526,20 +526,42 @@ weapons: [
         outline: false
         blending: additive
         mixColor: 90a2fc
+        xScl: 0.5
+        yScl: 0.5
         color: ffffff44
         colorTo: ffffff
-        xScl: 0.55
-        yScl: 0.55
         layer: 90.01
-        progress: warmup
+        progress: heat
+      }
+      {
+        type: FlarePart
+        sides: 2
+        color1: 7382f0bb
+        radius: 0
+        radiusTo: 60
+        stroke: 4
+        innerRadScl: 0.75
+        y: 6
+        progress: heat
+        layer: 101
+      }
+      {
+        type: FlarePart
+        sides: 2
+        color1: 00000000
+        radius: 0
+        radiusTo: 16
+        stroke: 16
+        y: 6
+        progress: heat
+        layer: 101
       }
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90.01
       lifetime: 14
       collides: false
-      length: 40
+      length: 60
       width: 8
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false
@@ -549,7 +571,6 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
-      lightStroke: 15
       lightOpacity: 0.4
     }
   }
@@ -564,7 +585,7 @@ weapons: [
     reload: 1
     shootSound: none
     shootWarmupSpeed: 0.03
-    minShootVelocity: 1.8
+    minShootVelocity: 1.5
     recoil: 0
     display: false
     parts: [
@@ -585,10 +606,9 @@ weapons: [
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90.01
-      lifetime: 10
+      lifetime: 9
       collides: false
-      length: 40
+      length: 60
       width: 8
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false
@@ -598,7 +618,6 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
-      lightStroke: 15
       lightOpacity: 0.4
     }
   }
@@ -613,7 +632,7 @@ weapons: [
     reload: 1
     shootSound: none
     shootWarmupSpeed: 0.03
-    minShootVelocity: 1.8
+    minShootVelocity: 1.5
     recoil: 0
     display: false
     parts: [
@@ -631,13 +650,35 @@ weapons: [
         layer: 90
         progress: warmup
       }
+      {
+        type: FlarePart
+        sides: 2
+        color1: 7382f0bb
+        radius: 0
+        radiusTo: 36
+        stroke: 3
+        innerRadScl: 0.75
+        y: 4
+        progress: heat
+        layer: 101
+      }
+      {
+        type: FlarePart
+        sides: 2
+        color1: 00000000
+        radius: 0
+        radiusTo: 7
+        stroke: 7
+        y: 4
+        progress: heat
+        layer: 101
+      }
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90.01
       lifetime: 14
       collides: false
-      length: 32
+      length: 37.5
       width: 5
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false
@@ -647,7 +688,6 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
-      lightStroke: 15
       lightOpacity: 0.4
     }
   }
@@ -662,7 +702,7 @@ weapons: [
     reload: 1
     shootSound: none
     shootWarmupSpeed: 0.03
-    minShootVelocity: 1.8
+    minShootVelocity: 1.5
     recoil: 0
     display: false
     parts: [
@@ -683,10 +723,9 @@ weapons: [
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90.01
-      lifetime: 10
+      lifetime: 9
       collides: false
-      length: 32
+      length: 37.5
       width: 5
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false
@@ -696,7 +735,6 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
-      lightStroke: 15
       lightOpacity: 0.4
     }
   }

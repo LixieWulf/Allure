@@ -18,6 +18,7 @@ trailLength: 0
 loopSound: none
 deathExplosionEffect: none
 deathSound: jump
+engineSize: 0
 parts: [
   {
     type: RegionPart
@@ -50,86 +51,6 @@ parts: [
     color: 000000bb
     layer: 89.99
     outline: false
-  }
-]
-engineColor: e65555
-engines: [
-  {
-    x: 32
-    y: 2
-    rotation: 0
-    radius: 4
-  }
-  {
-    x: -32
-    y: 2
-    rotation: 180
-    radius: 4
-  }
-  {
-    x: 32
-    y: 50
-    rotation: 0
-    radius: 4
-  }
-  {
-    x: -32
-    y: 50
-    rotation: 180
-    radius: 4
-  }
-  {
-    x: 32
-    y: 59
-    rotation: 0
-    radius: 4
-  }
-  {
-    x: -32
-    y: 59
-    rotation: 180
-    radius: 4
-  }
-  {
-    x: 61
-    y: 4
-    rotation: 90
-    radius: 7
-  }
-  {
-    x: -61
-    y: 4
-    rotation: 90
-    radius: 7
-  }
-  {
-    x: 62
-    y: -105
-    rotation: -90
-    radius: 12
-  }
-  {
-    x: -62
-    y: -105
-    rotation: -90
-    radius: 12
-  }
-  {
-    x: 22
-    y: -101
-    rotation: -90
-    radius: 8
-  }
-  {
-    x: -22
-    y: -101
-    rotation: -90
-    radius: 8
-  }
-  {
-    y: -110
-    rotation: -90
-    radius: 16
   }
 ]
 weapons: [
@@ -359,6 +280,230 @@ weapons: [
       ]
       smokeEffect: none
       killShooter: false
+    }
+  }
+  //idle flames
+  {
+    y: -100
+    x: 0
+    baseRotation: 180
+    alwaysShooting: true
+    alwaysContinuous: true
+    shootCone: 360
+    continuous: true
+    mirror: false
+    shootSound: none
+    recoil: 0
+    display: false
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90
+      lifetime: 14
+      collides: false
+      length: 24
+      width: 12
+      colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 2.5
+      oscMag: 0.1
+      hitEffect: none
+      lightColor: e65555
+      lightStroke: 24
+      lightOpacity: 0.25
+    }
+  }
+  {
+    y: -97
+    x: 22
+    baseRotation: 180
+    alwaysShooting: true
+    alwaysContinuous: true
+    shootCone: 360
+    continuous: true
+    alternate: false
+    shootSound: none
+    recoil: 0
+    display: false
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90
+      lifetime: 14
+      collides: false
+      length: 12
+      width: 6
+      colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 2.5
+      oscMag: 0.1
+      hitEffect: none
+      lightColor: e65555
+      lightStroke: 12
+      lightOpacity: 0.25
+    }
+  }
+  {
+    x: 62
+    y: -95
+    baseRotation: 180
+    alwaysShooting: true
+    alwaysContinuous: true
+    shootCone: 360
+    continuous: true
+    alternate: false
+    shootSound: none
+    recoil: 0
+    display: false
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90
+      lifetime: 14
+      collides: false
+      length: 20
+      width: 10
+      colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 2.5
+      oscMag: 0.1
+      hitEffect: none
+      lightColor: e65555
+      lightStroke: 20
+      lightOpacity: 0.25
+    }
+  }
+  {
+    x: 61
+    y: -2
+    alwaysShooting: true
+    alwaysContinuous: true
+    shootCone: 360
+    continuous: true
+    alternate: false
+    shootSound: none
+    recoil: 0
+    display: false
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90
+      lifetime: 14
+      collides: false
+      length: 14
+      width: 7
+      colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 2.5
+      oscMag: 0.1
+      hitEffect: none
+      lightColor: e65555
+      lightStroke: 14
+      lightOpacity: 0.25
+    }
+  }
+  {
+    x: 27
+    y: 59
+    baseRotation: -90
+    alwaysShooting: true
+    alwaysContinuous: true
+    shootCone: 360
+    continuous: true
+    alternate: false
+    shootSound: none
+    recoil: 0
+    display: false
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90
+      lifetime: 14
+      collides: false
+      length: 8
+      width: 4
+      colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 2.5
+      oscMag: 0.1
+      hitEffect: none
+      lightColor: e65555
+      lightStroke: 8
+      lightOpacity: 0.25
+    }
+  }
+  {
+    x: 27
+    y: 50
+    baseRotation: -90
+    alwaysShooting: true
+    alwaysContinuous: true
+    shootCone: 360
+    continuous: true
+    alternate: false
+    shootSound: none
+    recoil: 0
+    display: false
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90
+      lifetime: 14
+      collides: false
+      length: 8
+      width: 4
+      colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 2.5
+      oscMag: 0.1
+      hitEffect: none
+      lightColor: e65555
+      lightStroke: 8
+      lightOpacity: 0.25
+    }
+  }
+  {
+    x: 27
+    y: 3
+    baseRotation: -90
+    alwaysShooting: true
+    alwaysContinuous: true
+    shootCone: 360
+    continuous: true
+    alternate: false
+    shootSound: none
+    recoil: 0
+    display: false
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90
+      lifetime: 14
+      collides: false
+      length: 8
+      width: 4
+      colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 2.5
+      oscMag: 0.1
+      hitEffect: none
+      lightColor: e65555
+      lightStroke: 8
+      lightOpacity: 0.25
     }
   }
 ]

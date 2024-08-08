@@ -268,13 +268,35 @@ weapons: [
         layer: 90.01
         progress: warmup
       }
+      {
+        type: FlarePart
+        sides: 2
+        color1: 7382f0bb
+        radius: 0
+        radiusTo: 50
+        stroke: 4
+        innerRadScl: 0.75
+        y: 6
+        progress: heat
+        layer: 101
+      }
+      {
+        type: FlarePart
+        sides: 2
+        color1: 00000000
+        radius: 0
+        radiusTo: 18
+        stroke: 18
+        y: 6
+        progress: heat
+        layer: 101
+      }
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90.01
       lifetime: 14
       collides: false
-      length: 42
+      length: 54
       width: 8
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false
@@ -320,10 +342,10 @@ weapons: [
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90.01
+      layer: 101
       lifetime: 10
       collides: false
-      length: 42
+      length: 54
       width: 8
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false

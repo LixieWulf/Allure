@@ -1,4 +1,4 @@
-//Spawn package intended for beacons and waves. Do not attempt to copy this! Seriously, this one hurt even my brain
+//Spawn package intended for beacons and waves. Do not attempt to copy this! 
 type: missile
 template: MissileUnitType
 //Allows lockon and prevents exploding 
@@ -8,7 +8,7 @@ speed: 0
 rotateSpeed: 360
 hittable: false
 targetable: false
-hitSize: 270
+hitSize: 240
 lifetime: 420
 drawBody: false
 drawCell: false
@@ -26,8 +26,8 @@ parts: [
     outline: false
     progress: warmup
     weaponIndex: 0
-    growX: 50
-    growY: 50
+    growX: 45
+    growY: 45
     children: [
       {
         type: RegionPart
@@ -98,8 +98,8 @@ parts: [
         layer: 110
         color: 7382f0
         colorTo: 90a2fc
-        x: -190
-        moveX: 190
+        x: -170
+        moveX: 170
         xScl: 0.001
         yScl: 0.1
         moves: [
@@ -122,7 +122,7 @@ parts: [
         color: 90a2fc
         colorTo: 7382f0
         x: 0
-        moveX: 190
+        moveX: 170
         xScl: 0.101
         yScl: 0.1
         moves: [
@@ -141,8 +141,8 @@ parts: [
           start: 0.9
           end: 1
         }
-        gx: -51
-        gy: -51
+        gx: -46
+        gy: -46
       }
     ]
   }
@@ -152,8 +152,8 @@ parts: [
     outline: false
     progress: warmup
     weaponIndex: 1
-    growX: 40
-    growY: 40
+    growX: 37
+    growY: 37
     children: [
       {
         type: RegionPart
@@ -167,8 +167,8 @@ parts: [
         layer: 109
         color: 5a58c4
         colorTo: 7382f0
-        x: -180
-        moveX: 180
+        x: -165
+        moveX: 165
         xScl: 0.001
         yScl: 0.1
         moves: [
@@ -191,7 +191,7 @@ parts: [
         color: 7382f0
         colorTo: 5a58c4
         x: 0
-        moveX: 180
+        moveX: 165
         xScl: 0.101
         yScl: 0.1
         moves: [
@@ -210,8 +210,8 @@ parts: [
           start: 0.9
           end: 1
         }
-        gx: -51
-        gy: -51
+        gx: -38
+        gy: -38
       }
     ]
   }
@@ -221,8 +221,8 @@ parts: [
     outline: false
     progress: warmup
     weaponIndex: 2
-    growX: 40
-    growY: 40
+    growX: 37
+    growY: 37
     children: [
       {
         type: RegionPart
@@ -236,8 +236,8 @@ parts: [
         layer: 109
         color: 5a58c4
         colorTo: 7382f0
-        x: -180
-        moveX: 180
+        x: -165
+        moveX: 165
         xScl: 0.001
         yScl: 0.1
         moves: [
@@ -260,7 +260,7 @@ parts: [
         color: 7382f0
         colorTo: 5a58c4
         x: 0
-        moveX: 180
+        moveX: 165
         xScl: 0.101
         yScl: 0.1
         moves: [
@@ -279,8 +279,8 @@ parts: [
           start: 0.9
           end: 1
         }
-        gx: -51
-        gy: -51
+        gx: -38
+        gy: -38
       }
     ]
   }
@@ -371,7 +371,7 @@ weapons: [
     }
     bullet: {
       type: BulletType
-      spawnUnit: allure-0b17-hellfire
+      spawnUnit: allure-0b16-fearless
       chargeEffect: [
         {
           particles: 4
@@ -382,58 +382,53 @@ weapons: [
           colorTo: 000000
           rotWithParent: true
           sizeFrom: 0
-          sizeTo: 190
+          sizeTo: 180
           lifetime: 380
           interp: pow10Out
-          clip: 8192
         }
         {
           particles: 32
-          length: 180
+          length: 175
           layer: 106
           rotWithParent: true
           sizeFrom: 0
           sizeTo: 1
           lifetime: 380
           interp: pow10Out
-          clip: 8192
         }
         {
           particles: 64
-          length: 180
+          length: 175
           layer: 106
           rotWithParent: true
           sizeFrom: 0
           sizeTo: 0.5
           lifetime: 380
           interp: pow10Out
-          clip: 8192
         }
         {
           type: WaveEffect
           startDelay: 340
           lifetime: 40
-          sizeFrom: 190
-          sizeTo: 95
+          sizeFrom: 180
+          sizeTo: 90
           strokeFrom: 0
           strokeTo: 190
           interp: pow3In
           colorFrom: 7382f0
           colorTo: 7382f0
-          clip: 8192
         }
         {
           type: WaveEffect
           startDelay: 380
           lifetime: 40
-          sizeFrom: 95
+          sizeFrom: 90
           sizeTo: 0
           strokeFrom: 190
           strokeTo: 0
           interp: pow3Out
           colorFrom: 7382f0
           colorTo: 7382f0
-          clip: 8192
         }
         {
           particles: 1
@@ -443,12 +438,10 @@ weapons: [
           colorFrom: 7382f0
           colorTo: 7382f0
           sizeFrom: 0
-          sizeTo: 300
+          sizeTo: 280
           lifetime: 20
           startDelay: 410
           interp: pow3Out
-          useRotation: false
-          clip: 8192
         }
         {
           particles: 1
@@ -457,11 +450,10 @@ weapons: [
           colorFrom: 7382f0
           colorTo: 7382f0
           sizeFrom: 0
-          sizeTo: 24
+          sizeTo: 22
           lifetime: 20
           startDelay: 410
           interp: pow3Out
-          clip: 8192
         }
         {
           particles: 1
@@ -470,11 +462,10 @@ weapons: [
           colorFrom: 000000
           colorTo: 000000
           sizeFrom: 0
-          sizeTo: 20
+          sizeTo: 19
           lifetime: 20
           startDelay: 410
           interp: pow3Out
-          clip: 8192
         }
         {
           particles: 1
@@ -483,11 +474,10 @@ weapons: [
           colorFrom: 000000
           colorTo: 000000
           sizeFrom: 0
-          sizeTo: 20
+          sizeTo: 19
           lifetime: 20
           startDelay: 410
           interp: pow3Out
-          clip: 8192
         }
         {
           particles: 1
@@ -496,12 +486,10 @@ weapons: [
           region: allure-diamond-vthin
           colorFrom: 7382f0
           colorTo: 7382f0
-          sizeFrom: 300
+          sizeFrom: 280
           sizeTo: 0
           lifetime: 80
           startDelay: 430
-          useRotation: false
-          clip: 8192
         }
         {
           particles: 1
@@ -509,11 +497,10 @@ weapons: [
           layer: 105
           colorFrom: 7382f0
           colorTo: 7382f0
-          sizeFrom: 24
+          sizeFrom: 22
           sizeTo: 0
           lifetime: 80
           startDelay: 430
-          clip: 8192
         }
         {
           particles: 1
@@ -521,11 +508,10 @@ weapons: [
           layer: 110
           colorFrom: 000000
           colorTo: 000000
-          sizeFrom: 20
+          sizeFrom: 19
           sizeTo: 0
           lifetime: 80
           startDelay: 430
-          clip: 8192
         }
         {
           particles: 1
@@ -533,11 +519,10 @@ weapons: [
           layer: 99
           colorFrom: 000000
           colorTo: 000000
-          sizeFrom: 20
+          sizeFrom: 19
           sizeTo: 0
           lifetime: 80
           startDelay: 430
-          clip: 8192
         }
       ]
       smokeEffect: none
@@ -573,7 +558,7 @@ abilities: [
     reload: 2
     effect: allure-permaslide
     range: 6
-    duration: 150
+    duration: 120
     activeEffect: none
     applyEffect: none
   }

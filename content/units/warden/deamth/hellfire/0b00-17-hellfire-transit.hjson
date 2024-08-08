@@ -1,62 +1,33 @@
-type: flying
-flying: true
-envEnabled: -1
-shadowElevationScl: 3.2
-range: 240
-maxRange: 1316
-hitSize: 180
-health: 1000000
-armor: 1150
-speed: 2.4
-rotateSpeed: 0.9
-drag: 0.05
-accel: 0.1
-forceMultiTarget: true
-fogRadius: 120
+type: missile
+template: MissileUnitType
+fullOverride: allure-0b17-hellfire
 lowAltitude: true
-fallSpeed: 1
-lightRadius: 0
-buildSpeed: 12.4
-strafePenalty: 0.35
-drawCell: false
+missileAccelTime: 60
+shadowElevationScl: 3.2
+speed: 2.4
+rotateSpeed: 0
+hittable: false
+targetable: false
+hitSize: 240
+lifetime: 260
 drawBody: false
+drawCell: false
 outlines: false
-immunities: [
-  wet,
-  shocked,
-  blasted,
-  tarred,
-  burning,
-  melting,
-  electrified,
-  freezing,
-  unmoving,
-  disarmed,
-  allure-0b-energy0,
-  allure-0b-energy1,
-  allure-0b-energy2,
-  allure-0b-energy3,
-  allure-0b-energy4,
-  allure-0t-thermal0,
-  allure-0t-thermal1,
-  allure-0t-thermal2,
-  allure-0t-thermal3,
-  allure-0t-thermal4,
-  allure-emp
-]
-ammoType: {
-  type: PowerAmmoType
-  totalPower: 1500000
-}
+physics: false
+bounded: false
+range: 8192
+maxRange: 8192
+engineSize: 0
 parts: [
   {
     type: RegionPart
     layer: 90.02
     outline: false
+    name: allure-0b17-hellfire
   }
   { 
     type: RegionPart
-    suffix: -flare
+    name: allure-0b17-hellfire-flare
     outline: false
     blending: additive
     layer: 91
@@ -66,68 +37,15 @@ parts: [
   }
   { 
     type: RegionPart
-    suffix: -flare
+    name: allure-0b17-hellfire-flare
     outline: false
     layer: 141
     color: 7382f015
     blending: additive
   }
-  {
-    type: RegionPart
-    suffix: -lance2
-    outline: false
-    y: 62
-    blending: additive
-    layer: 90.6
-    color: 000000
-    colorTo: 7382f0
-    weaponIndex: 18
-    progress: {
-      type: warmup
-      op: compress
-      start: 0
-      end: 0.5
-    }
-  }
-  {
-    type: RegionPart
-    outline: false
-    suffix: -lance
-    y: 62
-    blending: additive
-    layer: 91
-    color: 000000
-    colorTo: 7382f0
-    weaponIndex: 18
-    progress: {
-      type: warmup
-      op: compress
-      start: 0
-      end: 0.5
-    }
-  }
-  {
-    type: RegionPart
-    suffix: -lance
-    outline: false
-    y: 62
-    blending: additive
-    layer: 91
-    color: 000000
-    colorTo: ffffff
-    weaponIndex: 18
-    progress: {
-      type: warmup
-      op: compress
-      start: 0.5
-      end: 1
-    }
-  }
 ]
-healColor: 7382f088
-shieldColor: 7382f0
+//why not keep these functional? More realistic
 weapons: [
-  //right side broadside
   {
     name: hellfire-broadside-smol
     layerOffset: 0.04
@@ -1571,358 +1489,6 @@ weapons: [
       }
     }
   }
-  //lance
-  {
-    mirror: false
-    shootCone: 45
-    x: 0
-    y: 0
-    shootY: 8
-    alwaysContinuous: true
-    shootStatus: slow
-    shootStatusDuration: 2
-    shootSound: none
-    shootWarmupSpeed: 0.019
-    shake: 4
-    bullet: {
-      type: ContinuousFlameBulletType
-      layer: 105.1
-      lifetime: 210
-      pierceCap: 5
-      length: 1024
-      width: 18
-      damage: 1.2
-      buildingDamageMultiplier: 1000
-      status: allure-0t-thermal4
-      statusDuration: 3
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      oscScl: 84
-      oscMag: 0.1
-      drawFlare: false
-      hitEffect: {
-        length: 65
-        particles: 5
-        cone: 40
-        line: true
-        lifetime: 35
-        lenFrom: 4
-        lenTo: 0
-        strokeFrom: 2
-        strokeTo: 1
-        interp: pow3Out
-        sizeInterp: pow2In
-        colorTo: 7382f050
-      }
-    }
-  }
-  //broadside piercing shrapnel
-  {
-    x: 56
-    y: 12
-    alternate: false
-    baseRotation: -75
-    shootCone: 22.5
-    reload: 150
-    parts: [
-      {
-        type: HaloPart
-        x: 72
-        layer: 109
-        tri: true
-        shapes: 1
-        haloRadius: 0
-        triLength: 60
-        triLengthTo: 0
-        radius: -18
-        radiusTo: 36
-        color: 7382f0
-        colorTo: 7382f0
-        progress: {
-          type: reload
-          op: delay
-          amount: 0.75
-        }
-      }
-      {
-        type: HaloPart
-        x: 72
-        layer: 109
-        tri: true
-        shapes: 1
-        haloRadius: 0
-        triLength: 30
-        triLengthTo: 0
-        radius: -18
-        radiusTo: 36
-        color: 000000
-        colorTo: 000000
-        progress: {
-          type: reload
-          op: delay
-          amount: 0.75
-        }
-      }
-      {
-        type: HaloPart
-        x: -72
-        layer: 109
-        tri: true
-        shapes: 1
-        haloRadius: 0
-        triLength: 60
-        triLengthTo: 0
-        radius: -18
-        radiusTo: 36
-        color: 7382f0
-        colorTo: 7382f0
-        progress: {
-          type: reload
-          op: delay
-          amount: 0.75
-        }
-      }
-      {
-        type: HaloPart
-        x: -72
-        layer: 109
-        tri: true
-        shapes: 1
-        haloRadius: 0
-        triLength: 30
-        triLengthTo: 0
-        radius: -18
-        radiusTo: 36
-        color: 000000
-        colorTo: 000000
-        progress: {
-          type: reload
-          op: delay
-          amount: 0.75
-        }
-      }
-      {
-        type: HaloPart
-        x: 48
-        layer: 109
-        tri: true
-        shapes: 1
-        haloRadius: 0
-        triLength: 60
-        triLengthTo: 0
-        radius: -18
-        radiusTo: 36
-        color: 7382f0
-        colorTo: 7382f0
-        progress: {
-          type: reload
-          op: delay
-          amount: 0.5
-        }
-      }
-      {
-        type: HaloPart
-        x: 48
-        layer: 109
-        tri: true
-        shapes: 1
-        haloRadius: 0
-        triLength: 30
-        triLengthTo: 0
-        radius: -18
-        radiusTo: 36
-        color: 000000
-        colorTo: 000000
-        progress: {
-          type: reload
-          op: delay
-          amount: 0.5
-        }
-      }
-      {
-        type: HaloPart
-        x: -48
-        layer: 109
-        tri: true
-        shapes: 1
-        haloRadius: 0
-        triLength: 60
-        triLengthTo: 0
-        radius: -18
-        radiusTo: 36
-        color: 7382f0
-        colorTo: 7382f0
-        progress: {
-          type: reload
-          op: delay
-          amount: 0.5
-        }
-      }
-      {
-        type: HaloPart
-        x: -48
-        layer: 109
-        tri: true
-        shapes: 1
-        haloRadius: 0
-        triLength: 30
-        triLengthTo: 0
-        radius: -18
-        radiusTo: 36
-        color: 000000
-        colorTo: 000000
-        progress: {
-          type: reload
-          op: delay
-          amount: 0.5
-        }
-      }
-      {
-        type: HaloPart
-        x: 24
-        layer: 109
-        tri: true
-        shapes: 1
-        haloRadius: 0
-        triLength: 60
-        triLengthTo: 0
-        radius: -9
-        radiusTo: 36
-        color: 7382f0
-        colorTo: 7382f0
-        progress: {
-          type: reload
-          op: delay
-          amount: 0.25
-        }
-      }
-      {
-        type: HaloPart
-        x: 24
-        layer: 109
-        tri: true
-        shapes: 1
-        haloRadius: 0
-        triLength: 30
-        triLengthTo: 0
-        radius: -9
-        radiusTo: 36
-        color: 000000
-        colorTo: 000000
-        progress: {
-          type: reload
-          op: delay
-          amount: 0.25
-        }
-      }
-      {
-        type: HaloPart
-        x: -24
-        layer: 109
-        tri: true
-        shapes: 1
-        haloRadius: 0
-        triLength: 60
-        triLengthTo: 0
-        radius: -9
-        radiusTo: 36
-        color: 7382f0
-        colorTo: 7382f0
-        progress: {
-          type: reload
-          op: delay
-          amount: 0.25
-        }
-      }
-      {
-        type: HaloPart
-        x: -24
-        layer: 109
-        tri: true
-        shapes: 1
-        haloRadius: 0
-        triLength: 30
-        triLengthTo: 0
-        radius: -9
-        radiusTo: 36
-        color: 000000
-        colorTo: 000000
-        progress: {
-          type: reload
-          op: delay
-          amount: 0.25
-        }
-      }
-      {
-        type: HaloPart
-        layer: 109
-        tri: true
-        shapes: 1
-        haloRadius: 0
-        triLength: 60
-        triLengthTo: 0
-        radius: 0
-        radiusTo: 36
-        color: 7382f0
-        colorTo: 7382f0
-        progress: reload
-      }
-      {
-        type: HaloPart
-        layer: 109
-        tri: true
-        shapes: 1
-        haloRadius: 0
-        triLength: 30
-        triLengthTo: 0
-        radius: 0
-        radiusTo: 36
-        color: 000000
-        colorTo: 000000
-        progress: reload
-      }
-    ]
-    shootSound: laserblast
-    shoot: {
-      type: ShootMulti
-      source: ShootPattern
-      dest: [
-        {
-          type: ShootAlternate
-          shots: 8
-          barrels: 8
-          spread: 24
-        }
-      ]
-    }
-    shootStatus: slow
-    shootStatusDuration: 300
-    bullet: {
-      type: LaserBulletType
-      damage: 1500
-      length: 280
-      width: 56
-      lifetime: 120
-      status: allure-0b-energy4
-      statusDuration: 1
-      colors: [90a2fc40, 90a2fc, ffffff]
-      lightningSpacing: 22
-      lightningLength: 2
-      lightningColor: 90a2fc
-      lightningDelay: 3
-      lightningType: {
-        type: ShrapnelBulletType
-        damage: 100
-        length: 18
-        width: 8
-        lifetime: 35
-        serrations: 0
-        fromColor: 90a2fc
-        toColor: 90a2fc
-        status: allure-0b-energy3
-        statusDuration: 2
-      }
-    }
-  }
   //point defense
   {
     type: PointDefenseWeapon
@@ -2572,58 +2138,21 @@ weapons: [
       lightOpacity: 0.25
     }
   }
-  //temporary Harmony summons
+  //exit
   {
     alwaysShooting: true
     controllable: false
     rotate: true
     rotateSpeed: 0
-    x: 0
     mirror: false
-    reload: 1500
-    shootSound: none
-    shoot: {
-      type: ShootBarrel
-      firstShotDelay: 1100
-      shots: 4
-      shotDelay: 60
-      barrels: [
-        0, 240, 0,
-        -240, 0, 0,
-        0, -240, 0,
-        -240, 0, 0
-      ]
-    }
-    bullet: {
-      spawnUnit: allure-temp-harmony-spawn
-    }
-  }
-  //death
-  {
-    shootOnDeath: true
-    controllable: false
-    reload: 15
+    reload: 480
     x: 0
+    y: 504
     shootCone: 360
     shootSound: none
     bullet: {
-      spawnUnit: allure-0b00-17-hellfire-transit
+      spawnUnit: allure-0b00-17-hellfire-exit
     }
-  }
-]
-abilities: [
-  //canonically accurate stuff
-  {
-    type: ForceFieldAbility
-    regen: 100
-    cooldown: 0
-    radius: 0
-    sides: 1
-    max: 120000
-  }
-  {
-    type: RegenAbility
-    percentAmount: 0.0333
   }
 ]
 createWreck: false

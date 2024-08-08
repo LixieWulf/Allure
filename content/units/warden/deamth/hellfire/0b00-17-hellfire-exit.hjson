@@ -2,23 +2,20 @@
 type: missile
 template: MissileUnitType
 //Allows lockon and prevents exploding 
-controller: FlyingAI
-defaultController: FlyingAI
 speed: 0
 rotateSpeed: 360
 hittable: false
 targetable: false
-hitSize: 270
+hitSize: 240
 lifetime: 420
 drawBody: false
 drawCell: false
 outlines: false
+physics: false
+bounded: false
 range: 8192
 maxRange: 8192
 engineSize: 0
-immunities: [
-  allure-permaslide
-]
 parts: [
   {
     type: RegionPart
@@ -371,7 +368,11 @@ weapons: [
     }
     bullet: {
       type: BulletType
-      spawnUnit: allure-0b17-hellfire
+      speed: 0
+      lifetime: 0
+      collides: false
+      absorbable: false
+      hittable: false
       chargeEffect: [
         {
           particles: 4
@@ -565,17 +566,6 @@ weapons: [
       smokeEffect: none
       despawnEffect: none
     }
-  }
-]
-abilities: [
-  {
-    type: StatusFieldAbility
-    reload: 2
-    effect: allure-permaslide
-    range: 6
-    duration: 150
-    activeEffect: none
-    applyEffect: none
   }
 ]
 createWreck: false
