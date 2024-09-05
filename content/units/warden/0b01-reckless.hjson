@@ -158,13 +158,35 @@ weapons: [
         layer: 90.01
         progress: warmup
       }
+      {
+        type: FlarePart
+        sides: 2
+        color1: 7382f0bb
+        radius: 0
+        radiusTo: 30 
+        stroke: 3
+        innerRadScl: 0.75
+        y: 5
+        progress: heat
+        layer: 101
+      }
+      {
+        type: FlarePart
+        sides: 2
+        color1: 00000000
+        radius: 0
+        radiusTo: 8
+        stroke: 8
+        y: 5
+        progress: heat
+        layer: 101
+      }
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90.01
       lifetime: 14
       collides: false
-      length: 24
+      length: 30
       width: 4
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false
@@ -211,10 +233,9 @@ weapons: [
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90.01
       lifetime: 10
       collides: false
-      length: 24
+      length: 30
       width: 4
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false
@@ -258,13 +279,35 @@ weapons: [
         layer: 90.01
         progress: warmup
       }
+      {
+        type: FlarePart
+        sides: 2
+        color1: 7382f0bb
+        radius: 0
+        radiusTo: 15
+        stroke: 1.5
+        innerRadScl: 0.75
+        y: 2
+        progress: heat
+        layer: 101
+      }
+      {
+        type: FlarePart
+        sides: 2
+        color1: 00000000
+        radius: 0
+        radiusTo: 4
+        stroke: 4
+        y: 2
+        progress: heat
+        layer: 101
+      }
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90.01
       lifetime: 14
       collides: false
-      length: 10
+      length: 15
       width: 2
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false
@@ -311,10 +354,9 @@ weapons: [
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90.01
       lifetime: 10
       collides: false
-      length: 10
+      length: 15
       width: 2
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false

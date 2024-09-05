@@ -6,7 +6,7 @@ drag: 0.05
 strafePenalty: 0.5
 flying: true
 lowAltitude: true
-hitSize: 65
+hitSize: 75
 health: 210000
 armor: 80
 shadowElevationScl: 1.7
@@ -483,13 +483,35 @@ weapons: [
         layer: 90.01
         progress: warmup
       }
+      {
+        type: FlarePart
+        sides: 2
+        color1: 7382f0bb
+        radius: 0
+        radiusTo: 45
+        stroke: 4
+        innerRadScl: 0.75
+        y: 4
+        progress: heat
+        layer: 101
+      }
+      {
+        type: FlarePart
+        sides: 2
+        color1: 00000000
+        radius: 0
+        radiusTo: 12
+        stroke: 12
+        y: 4
+        progress: heat
+        layer: 101
+      }
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90.01
       lifetime: 14
       collides: false
-      length: 31
+      length: 45
       width: 6
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false
@@ -536,10 +558,9 @@ weapons: [
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90.01
       lifetime: 10
       collides: false
-      length: 31
+      length: 45
       width: 6
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false
@@ -583,13 +604,35 @@ weapons: [
         layer: 91.01
         progress: warmup
       }
+      {
+        type: FlarePart
+        sides: 2
+        color1: 7382f0bb
+        radius: 0
+        radiusTo: 45
+        stroke: 4
+        innerRadScl: 0.75
+        y: 4
+        progress: heat
+        layer: 101
+      }
+      {
+        type: FlarePart
+        sides: 2
+        color1: 00000000
+        radius: 0
+        radiusTo: 12
+        stroke: 12
+        y: 4
+        progress: heat
+        layer: 101
+      }
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 91.01
       lifetime: 14
       collides: false
-      length: 31
+      length: 45
       width: 6
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false
@@ -636,10 +679,9 @@ weapons: [
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 91.01
       lifetime: 10
       collides: false
-      length: 31
+      length: 45
       width: 6
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false
@@ -683,13 +725,35 @@ weapons: [
         layer: 90.01
         progress: warmup
       }
+      {
+        type: FlarePart
+        sides: 2
+        color1: 7382f0bb
+        radius: 0
+        radiusTo: 22.5
+        stroke: 2
+        innerRadScl: 0.75
+        y: 4
+        progress: heat
+        layer: 101
+      }
+      {
+        type: FlarePart
+        sides: 2
+        color1: 00000000
+        radius: 0
+        radiusTo: 6
+        stroke: 6
+        y: 4
+        progress: heat
+        layer: 101
+      }
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90.01
       lifetime: 14
       collides: false
-      length: 12
+      length: 22.5
       width: 3
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false
@@ -736,10 +800,9 @@ weapons: [
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90.01
       lifetime: 10
       collides: false
-      length: 12
+      length: 22.5
       width: 3
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false

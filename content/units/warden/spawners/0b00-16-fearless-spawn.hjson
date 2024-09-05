@@ -385,6 +385,7 @@ weapons: [
           sizeTo: 180
           lifetime: 380
           interp: pow10Out
+          clip: 8192
         }
         {
           particles: 32
@@ -395,6 +396,7 @@ weapons: [
           sizeTo: 1
           lifetime: 380
           interp: pow10Out
+          clip: 8192
         }
         {
           particles: 64
@@ -405,6 +407,7 @@ weapons: [
           sizeTo: 0.5
           lifetime: 380
           interp: pow10Out
+          clip: 8192
         }
         {
           type: WaveEffect
@@ -417,6 +420,7 @@ weapons: [
           interp: pow3In
           colorFrom: 7382f0
           colorTo: 7382f0
+          clip: 8192
         }
         {
           type: WaveEffect
@@ -429,6 +433,7 @@ weapons: [
           interp: pow3Out
           colorFrom: 7382f0
           colorTo: 7382f0
+          clip: 8192
         }
         {
           particles: 1
@@ -442,6 +447,8 @@ weapons: [
           lifetime: 20
           startDelay: 410
           interp: pow3Out
+          useRotation: false
+          clip: 8192
         }
         {
           particles: 1
@@ -454,6 +461,7 @@ weapons: [
           lifetime: 20
           startDelay: 410
           interp: pow3Out
+          clip: 8192
         }
         {
           particles: 1
@@ -466,6 +474,7 @@ weapons: [
           lifetime: 20
           startDelay: 410
           interp: pow3Out
+          clip: 8192
         }
         {
           particles: 1
@@ -478,6 +487,7 @@ weapons: [
           lifetime: 20
           startDelay: 410
           interp: pow3Out
+          clip: 8192
         }
         {
           particles: 1
@@ -490,6 +500,8 @@ weapons: [
           sizeTo: 0
           lifetime: 80
           startDelay: 430
+          useRotation: false
+          clip: 8192
         }
         {
           particles: 1
@@ -501,6 +513,7 @@ weapons: [
           sizeTo: 0
           lifetime: 80
           startDelay: 430
+          clip: 8192
         }
         {
           particles: 1
@@ -512,6 +525,7 @@ weapons: [
           sizeTo: 0
           lifetime: 80
           startDelay: 430
+          clip: 8192
         }
         {
           particles: 1
@@ -523,6 +537,7 @@ weapons: [
           sizeTo: 0
           lifetime: 80
           startDelay: 430
+          clip: 8192
         }
       ]
       smokeEffect: none

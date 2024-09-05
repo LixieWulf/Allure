@@ -1,8 +1,4 @@
-//Literally just a Harmony copy with lifetime and forced AI. For use with Hellfire.
-type: missile
-controller: FlyingAI
-defaultController: FlyingAI
-lifetime: 1500
+type: flying
 flying: true
 lowAltitude: true
 hitSize: 85
@@ -25,33 +21,21 @@ maxRange: 660
 drawCell: false
 drawBody: false
 outlines: false
-fullOverride: allure-0b05-harmony-full
-playerControllable: false
-targetFlags: [
-  turret, 
-  core
-]
-range: 660
-maxRange: 660
-drawCell: false
-drawBody: false
-outlines: false
 parts: [
   {
     type: RegionPart
     layer: 90.02
     outline: false
-    name: allure-0b05-harmony
   }
   { 
     type: RegionPart
-    name: allure-0b05-harmony-top
+    suffix: -top
     outline: false
     layer: 91.5
   }
   { 
     type: RegionPart
-    name: allure-0b05-harmony-flare
+    suffix: -flare
     outline: false
     blending: additive
     layer: 92
@@ -61,7 +45,7 @@ parts: [
   }
   { 
     type: RegionPart
-    name: allure-0b05-harmony-flare
+    suffix: -flare
     outline: false
     layer: 140
     color: 7382f025
@@ -69,7 +53,7 @@ parts: [
   }
   { 
     type: RegionPart
-    name: allure-0b05-harmony-cover
+    suffix: -cover
     outline: false
     layer: 122
     color: 7382f0
@@ -329,7 +313,7 @@ weapons: [
     shootWarmupSpeed: 0.05
     minWarmup: 0.99
     shootStatus: {
-      name: djfhgjhdjgdjfgjdkfjghkdjghkdhgkdhgkdhgfdgfhkjdhgfkdhfgkjdhfhgkjdfghdfhgkdfhgjkdfgkdjfgkdjgkdfhgkjhfgkjdhfkgjdkjfhgkdhgkjdhdfjhgjdm
+      name: hiusbgjdfv
       reloadMultiplier: 3
       healthMultiplier: 0.5
       show: false
@@ -342,7 +326,7 @@ weapons: [
         y: -4
         layer: 91
         //Really need to make a just "square" at some point
-        name: allure-wide-case-back
+        name: allure-wormhole
         xScl: 0.2
         yScl: 0
         color: 7382f0

@@ -8,7 +8,7 @@ speed: 2.4
 rotateSpeed: 0
 hittable: false
 targetable: false
-hitSize: 240
+hitSize: 180
 lifetime: 260
 drawBody: false
 drawCell: false
@@ -32,8 +32,6 @@ parts: [
     blending: additive
     layer: 91
     color: 7382f0
-    colorTo: ffffff
-    weaponIndex: 0
   }
   { 
     type: RegionPart

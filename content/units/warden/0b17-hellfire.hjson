@@ -2585,13 +2585,11 @@ weapons: [
     shoot: {
       type: ShootBarrel
       firstShotDelay: 1100
-      shots: 4
-      shotDelay: 60
+      shots: 2
+      shotDelay: 100
       barrels: [
-        0, 240, 0,
         -240, 0, 0,
-        0, -240, 0,
-        -240, 0, 0
+        240, 0, 0
       ]
     }
     bullet: {

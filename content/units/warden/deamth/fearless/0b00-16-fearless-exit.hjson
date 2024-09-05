@@ -381,14 +381,14 @@ weapons: [
           colorTo: 000000
           rotWithParent: true
           sizeFrom: 0
-          sizeTo: 190
+          sizeTo: 180
           lifetime: 380
           interp: pow10Out
           clip: 8192
         }
         {
           particles: 32
-          length: 180
+          length: 175
           layer: 106
           rotWithParent: true
           sizeFrom: 0
@@ -399,7 +399,7 @@ weapons: [
         }
         {
           particles: 64
-          length: 180
+          length: 175
           layer: 106
           rotWithParent: true
           sizeFrom: 0
@@ -412,8 +412,8 @@ weapons: [
           type: WaveEffect
           startDelay: 340
           lifetime: 40
-          sizeFrom: 190
-          sizeTo: 95
+          sizeFrom: 180
+          sizeTo: 90
           strokeFrom: 0
           strokeTo: 190
           interp: pow3In
@@ -425,7 +425,7 @@ weapons: [
           type: WaveEffect
           startDelay: 380
           lifetime: 40
-          sizeFrom: 95
+          sizeFrom: 90
           sizeTo: 0
           strokeFrom: 190
           strokeTo: 0
@@ -442,7 +442,7 @@ weapons: [
           colorFrom: 7382f0
           colorTo: 7382f0
           sizeFrom: 0
-          sizeTo: 300
+          sizeTo: 280
           lifetime: 20
           startDelay: 410
           interp: pow3Out
@@ -456,7 +456,7 @@ weapons: [
           colorFrom: 7382f0
           colorTo: 7382f0
           sizeFrom: 0
-          sizeTo: 24
+          sizeTo: 22
           lifetime: 20
           startDelay: 410
           interp: pow3Out
@@ -469,7 +469,7 @@ weapons: [
           colorFrom: 000000
           colorTo: 000000
           sizeFrom: 0
-          sizeTo: 20
+          sizeTo: 19
           lifetime: 20
           startDelay: 410
           interp: pow3Out
@@ -482,7 +482,7 @@ weapons: [
           colorFrom: 000000
           colorTo: 000000
           sizeFrom: 0
-          sizeTo: 20
+          sizeTo: 19
           lifetime: 20
           startDelay: 410
           interp: pow3Out
@@ -495,7 +495,7 @@ weapons: [
           region: allure-diamond-vthin
           colorFrom: 7382f0
           colorTo: 7382f0
-          sizeFrom: 300
+          sizeFrom: 280
           sizeTo: 0
           lifetime: 80
           startDelay: 430
@@ -508,7 +508,7 @@ weapons: [
           layer: 105
           colorFrom: 7382f0
           colorTo: 7382f0
-          sizeFrom: 24
+          sizeFrom: 22
           sizeTo: 0
           lifetime: 80
           startDelay: 430
@@ -520,7 +520,7 @@ weapons: [
           layer: 110
           colorFrom: 000000
           colorTo: 000000
-          sizeFrom: 20
+          sizeFrom: 19
           sizeTo: 0
           lifetime: 80
           startDelay: 430
@@ -532,7 +532,7 @@ weapons: [
           layer: 99
           colorFrom: 000000
           colorTo: 000000
-          sizeFrom: 20
+          sizeFrom: 19
           sizeTo: 0
           lifetime: 80
           startDelay: 430

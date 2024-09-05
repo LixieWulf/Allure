@@ -6,7 +6,7 @@ drag: 0.05
 strafePenalty: 0.5
 flying: true
 lowAltitude: true
-hitSize: 75
+hitSize: 85
 health: 200000
 armor: 75
 shadowElevationScl: 2.1
@@ -418,6 +418,18 @@ weapons: [
       hitEffect: none
       lightStroke: 15
       lightOpacity: 0.25
+    }
+  }
+  //death
+  {
+    shootOnDeath: true
+    controllable: false
+    reload: 15
+    x: 0
+    shootCone: 360
+    shootSound: none
+    bullet: {
+      spawnUnit: allure-0b00-08-valiance-transit
     }
   }
 ]

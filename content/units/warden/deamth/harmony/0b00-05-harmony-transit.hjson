@@ -1,64 +1,55 @@
-type: flying
-flying: true
+type: missile
+template: MissileUnitType
+fullOverride: allure-0b05-harmony-full
 lowAltitude: true
-hitSize: 85
-health: 150000
-armor: 60
-speed: 2.4
-rotateSpeed: 2
-accel: 0.06
-drag: 0.05
-strafePenalty: 0.2
-buildSpeed: 4.5
-buildBeamOffset: 24
-healColor: 7382f088
-shieldColor: 7382f0
-engineSize: 0
-lightRadius: 0
+missileAccelTime: 60
 shadowElevationScl: 1.7
-range: 660
-maxRange: 660
-drawCell: false
+speed: 2.4
+rotateSpeed: 0
+hittable: false
+targetable: false
+hitSize: 85
+lifetime: 260
 drawBody: false
+drawCell: false
 outlines: false
+physics: false
+bounded: false
+range: 8192
+maxRange: 8192
+engineSize: 0
 parts: [
   {
     type: RegionPart
     layer: 90.02
     outline: false
+    name: allure-0b05-harmony
   }
   { 
     type: RegionPart
-    suffix: -top
-    outline: false
-    layer: 91.5
-  }
-  { 
-    type: RegionPart
-    suffix: -flare
+    name: allure-0b05-harmony-flare
     outline: false
     blending: additive
-    layer: 92
+    layer: 91
     color: 7382f0
-    colorTo: ffffff
-    weaponIndex: 1
   }
   { 
     type: RegionPart
-    suffix: -flare
+    name: allure-0b05-harmony-flare
     outline: false
-    layer: 140
-    color: 7382f025
+    layer: 141
+    color: 7382f015
     blending: additive
   }
   { 
     type: RegionPart
-    suffix: -cover
+    name: allure-0b05-harmony-cover
     outline: false
     layer: 122
     color: 7382f0
   }
 ]
+//why not keep these functional? More realistic
 weapons: [
   {
     alwaysShooting: true
@@ -80,7 +71,7 @@ weapons: [
       //main pylon
       {
         type: RegionPart
-        name: allure-0b04-harmony-reactor
+        name: allure-0b05-harmony-reactor
         weaponIndex: 2
         progress: reload
         color: 131316
@@ -98,7 +89,7 @@ weapons: [
       }
       {
         type: RegionPart
-        name: allure-0b04-harmony-reactor
+        name: allure-0b05-harmony-reactor
         weaponIndex: 2
         progress: reload
         colorTo: 131316
@@ -116,7 +107,7 @@ weapons: [
       }
       {
         type: RegionPart
-        name: allure-0b04-harmony-reactor
+        name: allure-0b05-harmony-reactor
         weaponIndex: 2
         progress: reload
         colorTo: 212229
@@ -134,7 +125,7 @@ weapons: [
       }
       {
         type: RegionPart
-        name: allure-0b04-harmony-reactor
+        name: allure-0b05-harmony-reactor
         weaponIndex: 2
         progress: reload
         color: 212229
@@ -153,7 +144,7 @@ weapons: [
       //forward reaction ring
       {
         type: RegionPart
-        name: allure-0b04-harmony-reactor
+        name: allure-0b05-harmony-reactor
         weaponIndex: 2
         progress: reload
         color: 5a58c4
@@ -172,7 +163,7 @@ weapons: [
       }
       {
         type: RegionPart
-        name: allure-0b04-harmony-reactor
+        name: allure-0b05-harmony-reactor
         weaponIndex: 2
         progress: reload
         colorTo: 5a58c4
@@ -191,7 +182,7 @@ weapons: [
       }
       {
         type: RegionPart
-        name: allure-0b04-harmony-reactor
+        name: allure-0b05-harmony-reactor
         weaponIndex: 2
         progress: reload
         colorTo: 7382f0
@@ -210,7 +201,7 @@ weapons: [
       }
       {
         type: RegionPart
-        name: allure-0b04-harmony-reactor
+        name: allure-0b05-harmony-reactor
         weaponIndex: 2
         progress: reload
         color: 7382f0
@@ -230,7 +221,7 @@ weapons: [
       //rear reaction ring
       {
         type: RegionPart
-        name: allure-0b04-harmony-reactor
+        name: allure-0b05-harmony-reactor
         weaponIndex: 2
         progress: reload
         color: 5a58c4
@@ -249,7 +240,7 @@ weapons: [
       }
       {
         type: RegionPart
-        name: allure-0b04-harmony-reactor
+        name: allure-0b05-harmony-reactor
         weaponIndex: 2
         progress: reload
         colorTo: 5a58c4
@@ -268,7 +259,7 @@ weapons: [
       }
       {
         type: RegionPart
-        name: allure-0b04-harmony-reactor
+        name: allure-0b05-harmony-reactor
         weaponIndex: 2
         progress: reload
         colorTo: 7382f0
@@ -287,7 +278,7 @@ weapons: [
       }
       {
         type: RegionPart
-        name: allure-0b04-harmony-reactor
+        name: allure-0b05-harmony-reactor
         weaponIndex: 2
         progress: reload
         color: 7382f0
@@ -305,203 +296,6 @@ weapons: [
         ]
       }
     ]
-  }
-  {
-    x: 0
-    shootY: 35
-    mirror: false
-    shootWarmupSpeed: 0.05
-    minWarmup: 0.99
-    shootStatus: {
-      name: hiusbgjdfv
-      reloadMultiplier: 3
-      healthMultiplier: 0.5
-      show: false
-    }
-    parts: [
-      {
-        type: RegionPart
-        mirror: true
-        x: 18
-        y: -4
-        layer: 91
-        //Really need to make a just "square" at some point
-        name: allure-wormhole
-        xScl: 0.2
-        yScl: 0
-        color: 7382f0
-        colorTo: ffffff
-        progress: {
-          type: charge
-          op: compress
-          start: 0.2
-          end: 1
-        }
-        moves: [
-          {
-            y: 14
-            gy: 1.8
-            progress: {
-              type: charge
-              op: curve
-              interp: pow3Out
-            }
-          }
-        ]
-      }
-    ]
-    shoot: {
-      firstShotDelay: 40
-    }
-    shootStatusDuration: 190
-    reload: 380
-    chargeSound: lasercharge2
-    shootSound: considerablyintensepew
-    shake: 12
-    bullet: {
-      type: RailBulletType
-      length: 660
-      damage: 1600
-      status: allure-0b-energy2
-      statusDuration: 4
-      recoil: 3
-      pierceDamageFactor: 0.1
-      hitShake: 8
-      pointEffectSpace: 8
-      pointEffect: [
-        {
-          line: true
-          lifetime: 6
-          particles: 1
-          randLength: false
-          length: -0.001
-          cone: 0
-          lenFrom: 8
-          lenTo: 8
-          strokeFrom: 0
-          strokeTo: 8
-          colorFrom: 7382f0
-        }
-        {
-          line: true
-          lifetime: 30
-          startDelay: 5
-          particles: 1
-          randLength: false
-          length: -0.001
-          cone: 0
-          lenFrom: 8
-          lenTo: 8
-          strokeFrom: 8
-          strokeTo: 0
-          colorTo: 7382f0
-        }
-      ]
-      shootEffect: [
-        {
-          followParent: false
-          length: 0
-          lifetime: 35
-          particles: 1
-          cone: 0
-          region: allure-shootspike
-          sizeFrom: 120
-          sizeTo: 0
-          colorTo: 7382f0
-        }
-        {
-          type: RadialEffect
-          amount: 1
-          lengthOffset: -30
-          effect: [
-            {
-              type: RadialEffect
-              amount: 1
-              lengthOffset: 10
-              rotationOffset: -90
-              effect: {
-                rotWithParent: true
-                line: true
-                particles: 20
-                cone: 0
-                baseRotation: 90
-                length: 60
-                lifetime: 35
-                interp: pow3Out
-                sizeInterp: pow2In
-                colorTo: 7382f0
-                lenFrom: 8
-                lenTo: 0
-                strokeFrom: 2
-                strokeTo: 1
-              }
-            }
-            {
-              type: RadialEffect
-              amount: 1
-              lengthOffset: -10
-              rotationOffset: -90
-              effect: {
-                rotWithParent: true
-                line: true
-                particles: 20
-                cone: 0
-                baseRotation: 90
-                length: 60
-                lifetime: 35
-                interp: pow3Out
-                sizeInterp: pow2In
-                colorTo: 7382f0
-                lenFrom: 8
-                lenTo: 0
-                strokeFrom: 2
-                strokeTo: 1
-              }
-            }
-          ]
-        }
-      ]
-      smokeEffect: {
-        followParent: false
-        particles: 1
-        length: 8
-        baseLength: 20
-        randLength: false
-        lifetime: 40
-        cone: 0
-        offset: 90
-        region: allure-squishwave
-        sizeFrom: 30
-        sizeTo: 60
-        colorFrom: 7382f0
-        colorTo: 7382f000
-      }
-      pierceEffect: none
-      hitEffect: [
-        {
-          length: 0
-          baseRotation: 150
-          lifetime: 25
-          particles: 1
-          cone: 0
-          region: allure-shootspike
-          sizeFrom: 50
-          sizeTo: 0
-          colorTo: 7382f0
-        }
-        {
-          length: 0
-          baseRotation: -150
-          lifetime: 25
-          particles: 1
-          cone: 0
-          region: allure-shootspike
-          sizeFrom: 50
-          sizeTo: 0
-          colorTo: 7382f0
-        }
-      ]
-    }
   }
   //engines
   {
@@ -889,20 +683,21 @@ weapons: [
       lightOpacity: 0.25
     }
   }
-]
-abilities: [
+  //exit
   {
-    type: ForceFieldAbility
-    regen: 15
-    cooldown: 0
-    radius: 0
-    sides: 1
-    max: 10000
-  }
-  //all warden ships regenerate slowly
-  {
-    type: RegenAbility
-    percentAmount: 0.01388888888 
+    alwaysShooting: true
+    controllable: false
+    rotate: true
+    rotateSpeed: 0
+    mirror: false
+    reload: 480
+    x: 0
+    y: 504
+    shootCone: 360
+    shootSound: none
+    bullet: {
+      spawnUnit: allure-0b00-05-harmony-exit
+    }
   }
 ]
 createWreck: false

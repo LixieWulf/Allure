@@ -142,7 +142,7 @@ weapons: [
   }
   //engines
   {
-    y: 0
+    y: -2
     x: 1.5
     baseRotation: 180
     alwaysShooting: true
@@ -170,13 +170,35 @@ weapons: [
         layer: 90.01
         progress: warmup
       }
+      {
+        type: FlarePart
+        sides: 2
+        color1: 7382f0bb
+        radius: 0
+        radiusTo: 11.25 
+        stroke: 1
+        innerRadScl: 0.75
+        y: 2
+        progress: heat
+        layer: 101
+      }
+      {
+        type: FlarePart
+        sides: 2
+        color1: 00000000
+        radius: 0
+        radiusTo: 3
+        stroke: 3
+        y: 2
+        progress: heat
+        layer: 101
+      }
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90.01
       lifetime: 14
       collides: false
-      length: 13
+      length: 11.25 
       width: 1.5
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false
@@ -191,7 +213,7 @@ weapons: [
     }
   }
   {
-    y: 0
+    y: -2
     x: 1.5
     baseRotation: 180
     alwaysShooting: true
@@ -222,10 +244,9 @@ weapons: [
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90.01
       lifetime: 10
       collides: false
-      length: 13
+      length: 11.25
       width: 1.5
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false
