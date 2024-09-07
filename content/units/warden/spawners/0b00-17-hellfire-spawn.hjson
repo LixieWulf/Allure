@@ -1,5 +1,6 @@
 //Spawn package intended for beacons and waves. Do not attempt to copy this! Seriously, this one hurt even my brain
 type: missile
+hidden: false
 template: MissileUnitType
 //Allows lockon and prevents exploding 
 controller: FlyingAI
