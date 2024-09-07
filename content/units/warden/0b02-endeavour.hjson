@@ -87,16 +87,13 @@ weapons: [
       shootEffect: none
       smokeEffect: none
       damage: 45
-      splashDamage: 44
+      splashDamage: 20
       splashDamageRadius: 16
       speed: 7
       lifetime: 60
       pierce: true
       pierceBuilding: true
-      pierceDamageFactor: 0.1
       pierceCap: 3
-      homingPower: 0.06
-      homingRange: 100
       status: allure-0b-energy0
       statusDuration: 5
       sprite: allure-torpedo

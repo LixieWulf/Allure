@@ -325,8 +325,7 @@ weapons: [
         x: 18
         y: -4
         layer: 91
-        //Really need to make a just "square" at some point
-        name: allure-wormhole
+        name: allure-unusually-organized-rectangle
         xScl: 0.2
         yScl: 0
         color: 7382f0
@@ -348,6 +347,117 @@ weapons: [
             }
           }
         ]
+      }
+      //just stop Lixie it's fine you don't need to add this pls no stop it stop it stop it stop it JUST PUT IT DOWN LIXIE NOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+      {
+        type: RegionPart
+        y: 16
+        layer: 110
+        name: allure-unusually-organized-rectangle
+        xScl: 0.2
+        yScl: 0
+        color: 7382f0
+        colorTo: ffffff
+        progress: {
+          type: charge
+          op: curve
+          interp: pow3In
+        }
+        moves: [
+          {
+            y: 24
+            gy: 0.75
+            progress: {
+              type: charge
+              op: curve
+              interp: pow3In
+            }
+          }
+        ]
+      }
+      {
+        type: HaloPart
+        tri: true
+        x: -12
+        y: 16
+        triLength: 6
+        shapes: 1
+        radius: 0
+        radiusTo: 6
+        color: 7382f0
+        shapeRotation: -90
+        layer: 100
+        progress: charge
+      }
+      {
+        type: HaloPart
+        tri: true
+        x: 12
+        y: 16
+        triLength: 6
+        shapes: 1
+        radius: 0
+        radiusTo: 6
+        color: 7382f0
+        shapeRotation: 90
+        layer: 100
+        progress: charge
+      }
+      {
+        type: HaloPart
+        tri: true
+        x: -12
+        y: 24
+        triLength: 6
+        shapes: 1
+        radius: 0
+        radiusTo: 6
+        color: 7382f0
+        shapeRotation: -90
+        layer: 100
+        progress: charge
+      }
+      {
+        type: HaloPart
+        tri: true
+        x: 12
+        y: 24
+        triLength: 6
+        shapes: 1
+        radius: 0
+        radiusTo: 6
+        color: 7382f0
+        shapeRotation: 90
+        layer: 100
+        progress: charge
+      }
+      {
+        type: HaloPart
+        tri: true
+        x: -12
+        y: 32
+        triLength: 6
+        shapes: 1
+        radius: 0
+        radiusTo: 6
+        color: 7382f0
+        shapeRotation: -90
+        layer: 100
+        progress: charge
+      }
+      {
+        type: HaloPart
+        tri: true
+        x: 12
+        y: 32
+        triLength: 6
+        shapes: 1
+        radius: 0
+        radiusTo: 6
+        color: 7382f0
+        shapeRotation: 90
+        layer: 100
+        progress: charge
       }
     ]
     shoot: {
@@ -461,44 +571,90 @@ weapons: [
           ]
         }
       ]
-      smokeEffect: {
-        followParent: false
-        particles: 1
-        length: 8
-        baseLength: 20
-        randLength: false
-        lifetime: 40
-        cone: 0
-        offset: 90
-        region: allure-squishwave
-        sizeFrom: 30
-        sizeTo: 60
-        colorFrom: 7382f0
-        colorTo: 7382f000
-      }
+      smokeEffect: [
+        {
+          followParent: false
+          particles: 1
+          length: 8
+          baseLength: 20
+          randLength: false
+          lifetime: 40
+          cone: 0
+          offset: 90
+          region: allure-squishwave
+          sizeFrom: 30
+          sizeTo: 60
+          colorFrom: 7382f0
+          colorTo: 7382f000
+        }
+        {
+          followParent: false
+          particles: 1
+          length: 32
+          baseLength: 30
+          randLength: false
+          lifetime: 30
+          cone: 0
+          offset: 90
+          region: allure-squishwave
+          sizeFrom: 20
+          sizeTo: 40
+          colorFrom: 7382f0
+          colorTo: 7382f000
+        }
+        {
+          followParent: false
+          particles: 1
+          length: 48
+          baseLength: 40
+          randLength: false
+          lifetime: 20
+          cone: 0
+          offset: 90
+          region: allure-squishwave
+          sizeFrom: 10
+          sizeTo: 20
+          colorFrom: 7382f0
+          colorTo: 7382f000
+        }
+      ]
       pierceEffect: none
       hitEffect: [
         {
           length: 0
-          baseRotation: 150
+          baseRotation: 170
           lifetime: 25
           particles: 1
           cone: 0
           region: allure-shootspike
-          sizeFrom: 50
+          sizeFrom: 70
           sizeTo: 0
           colorTo: 7382f0
         }
         {
           length: 0
-          baseRotation: -150
+          baseRotation: -160
           lifetime: 25
           particles: 1
           cone: 0
           region: allure-shootspike
-          sizeFrom: 50
+          sizeFrom: 70
           sizeTo: 0
           colorTo: 7382f0
+        }
+        {
+          followParent: false
+          particles: 1
+          length: -24
+          randLength: false
+          lifetime: 30
+          cone: 0
+          offset: 90
+          region: allure-squishwave
+          sizeFrom: 20
+          sizeTo: 40
+          colorFrom: 7382f0
+          colorTo: 7382f000
         }
       ]
     }

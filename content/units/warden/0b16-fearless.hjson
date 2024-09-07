@@ -72,6 +72,7 @@ parts: [
 weapons: [
   {
     mirror: false
+    aiControllable: false
     x: 0
     shootY: 24
     alwaysContinuous: true
@@ -200,8 +201,9 @@ weapons: [
   }
   {
     alwaysContinuous: true
+    aiControllable: false
     shootStatus: allure-0t-thermal3
-    shootStatusDuration: 1
+    shootStatusDuration: 5
     shootWarmupSpeed: 0.01
     linearWarmup: true
     minWarmup: 0.99

@@ -1,55 +1,48 @@
-type: flying
-speed: 2.6
-rotateSpeed: 1.7
-accel: 0.06
-drag: 0.05
-strafePenalty: 0.5
-flying: true
+type: missile
+template: MissileUnitType
+fullOverride: allure-0b07-ultimatum-full
 lowAltitude: true
-hitSize: 75
-health: 210000
-armor: 80
+missileAccelTime: 60
 shadowElevationScl: 1.7
-range: 406
-maxRange: 406
-lightRadius: 0
+speed: 2.6
+rotateSpeed: 0
+hittable: false
+targetable: false
+hitSize: 85
+lifetime: 260
+drawBody: false
 drawCell: false
 outlines: false
-healColor: 7382f088
-shieldColor: 7382f0
+physics: false
+bounded: false
+range: 8192
+maxRange: 8192
 engineSize: 0
 parts: [
   {
     type: RegionPart
     layer: 90.02
     outline: false
-  }
-  {
-    type: RegionPart
-    suffix: -top
-    y: -19.75
-    layer: 91.5
-    outline: false
+    name: allure-0b07-ultimatum
   }
   { 
     type: RegionPart
-    suffix: -flare
+    name: allure-0b07-ultimatum-flare
     outline: false
     blending: additive
     layer: 91
     color: 7382f0
-    colorTo: ffffff
-    weaponIndex: 0
   }
   { 
     type: RegionPart
-    suffix: -flare
+    name: allure-0b07-ultimatum-flare
     outline: false
-    layer: 140
-    color: 7382f025
+    layer: 141
+    color: 7382f015
     blending: additive
   }
 ]
+//why not keep these functional? More realistic
 weapons: [
   {
     x: 0
@@ -941,16 +934,20 @@ weapons: [
       lightOpacity: 0.25
     }
   }
-  //death
+  //exit
   {
-    shootOnDeath: true
+    alwaysShooting: true
     controllable: false
-    reload: 15
+    rotate: true
+    rotateSpeed: 0
+    mirror: false
+    reload: 480
     x: 0
+    y: 530
     shootCone: 360
     shootSound: none
     bullet: {
-      spawnUnit: allure-0b00-07-ultimatum-transit
+      spawnUnit: allure-0b00-05-harmony-exit
     }
   }
 ]
@@ -968,19 +965,7 @@ abilities: [
     particleLen: 7
     rotateScl: -1
     particleColor: 7382f0
-  }
-  {
-    type: ForceFieldAbility
-    regen: 32
-    cooldown: 0
-    radius: 0
-    sides: 1
-    max: 20000
-  }
-  //all warden ships regenerate slowly
-  {
-    type: RegenAbility
-    percentAmount: 0.01388888888 
+    layer: 100
   }
 ]
 createWreck: false

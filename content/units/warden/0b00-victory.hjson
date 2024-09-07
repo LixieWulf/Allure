@@ -59,6 +59,7 @@ weapons: [
     }
     shootWarmupSpeed: 0.02
     minWarmup: 0.99
+    aiControllable: false
     velocityRnd: 0.25
     inaccuracy: 3
     baseRotation: -40
