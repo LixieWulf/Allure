@@ -15,6 +15,7 @@ forceMultiTarget: true
 fogRadius: 120
 lowAltitude: true
 fallSpeed: 1
+faceTarget: false
 lightRadius: 0
 buildSpeed: 12.4
 strafePenalty: 0.35
@@ -1115,17 +1116,18 @@ weapons: [
     ]
     bullet: {
       pierce: true 
-      pierceCap: 12
       pierceBuilding: true
+      pierceDamageFactor: 0.01
       hitSize: 24
-      speed: 22
+      speed: 30
+      drag: 0.01
       lifetime: 60
       damage: 1100
       status: allure-0b-energy3
       statusDuration: 8
       sprite: allure-bolt
       width: 60
-      height: 125
+      height: 60
       frontColor: ffffff
       backColor: 7382f0
       shrinkY: 0
@@ -1133,44 +1135,40 @@ weapons: [
       trailWidth: 5
       trailColor: 7382f0
       trailChance: 0
-      trailInterval: 3
+      trailInterval: 1
       trailRotation: true
       trailEffect: [
         {
-          lightOpacity: 0.25
-          lightScl: 1
-          type: ParticleEffect
-          length: 0
-          baseLength: 30
-          randLength: false
-          lifetime: 110
-          particles: 1
+          line: true
           cone: 0
-          interp: pow3In
+          baseRotation: 135
+          length: 60
+          randLength: false
+          lifetime: 45
+          particles: 1
+          lenFrom: 24
+          lenTo: 0
+          strokeFrom: 3
+          strokeTo: 3
+          colorTo: 7382f0
+          interp: pow2Out
           sizeInterp: linear
-          region: allure-railblast
-          sizeFrom: 14
-          sizeTo: 7
-          colorFrom: 7382f0
-          colorTo: 7382f000
         }
         {
-          lightOpacity: 0.25
-          lightScl: 1
-          type: ParticleEffect
-          length: 0
-          baseLength: 38
-          randLength: false
-          lifetime: 110
-          particles: 1
+          line: true
           cone: 0
-          interp: pow3In
+          baseRotation: -135
+          length: 60
+          randLength: false
+          lifetime: 45
+          particles: 1
+          lenFrom: 24
+          lenTo: 0
+          strokeFrom: 3
+          strokeTo: 3
+          colorTo: 7382f0
+          interp: pow2Out
           sizeInterp: linear
-          region: allure-railblast
-          sizeFrom: 24
-          sizeTo: 10
-          colorFrom: 7382f0
-          colorTo: 7382f000
         }
       ]
       smokeEffect: none
@@ -1393,17 +1391,18 @@ weapons: [
     ]
     bullet: {
       pierce: true 
-      pierceCap: 12
       pierceBuilding: true
+      pierceDamageFactor: 0.01
       hitSize: 24
-      speed: 22
+      speed: 30
+      drag: 0.01
       lifetime: 60
       damage: 1100
       status: allure-0b-energy3
       statusDuration: 8
       sprite: allure-bolt
       width: 60
-      height: 125
+      height: 60
       frontColor: ffffff
       backColor: 7382f0
       shrinkY: 0
@@ -1411,44 +1410,40 @@ weapons: [
       trailWidth: 5
       trailColor: 7382f0
       trailChance: 0
-      trailInterval: 3
+      trailInterval: 1
       trailRotation: true
       trailEffect: [
         {
-          lightOpacity: 0.25
-          lightScl: 1
-          type: ParticleEffect
-          length: 0
-          baseLength: 30
-          randLength: false
-          lifetime: 110
-          particles: 1
+          line: true
           cone: 0
-          interp: pow3In
+          baseRotation: 135
+          length: 60
+          randLength: false
+          lifetime: 45
+          particles: 1
+          lenFrom: 24
+          lenTo: 0
+          strokeFrom: 3
+          strokeTo: 3
+          colorTo: 7382f0
+          interp: pow2Out
           sizeInterp: linear
-          region: allure-railblast
-          sizeFrom: 14
-          sizeTo: 7
-          colorFrom: 7382f0
-          colorTo: 7382f000
         }
         {
-          lightOpacity: 0.25
-          lightScl: 1
-          type: ParticleEffect
-          length: 0
-          baseLength: 38
-          randLength: false
-          lifetime: 110
-          particles: 1
+          line: true
           cone: 0
-          interp: pow3In
+          baseRotation: -135
+          length: 60
+          randLength: false
+          lifetime: 45
+          particles: 1
+          lenFrom: 24
+          lenTo: 0
+          strokeFrom: 3
+          strokeTo: 3
+          colorTo: 7382f0
+          interp: pow2Out
           sizeInterp: linear
-          region: allure-railblast
-          sizeFrom: 24
-          sizeTo: 10
-          colorFrom: 7382f0
-          colorTo: 7382f000
         }
       ]
       smokeEffect: none
@@ -1542,6 +1537,58 @@ weapons: [
           colorTo: 7382f000
         }
         {
+          type: RadialEffect
+          amount: 1
+          lengthOffset: -40
+          effect: {
+            type: RadialEffect
+            amount: 1
+            lengthOffset: 8
+            rotationOffset: -90
+            effect: {
+              line: true
+              particles: 20
+              cone: 0
+              baseRotation: 90
+              length: 100
+              lifetime: 35
+              interp: pow3Out
+              sizeInterp: pow2In
+              colorTo: 7382f0
+              lenFrom: 8
+              lenTo: 0
+              strokeFrom: 2
+              strokeTo: 1
+            }
+          }
+        }
+        {
+          type: RadialEffect
+          amount: 1
+          lengthOffset: -40
+          effect: {
+            type: RadialEffect
+            amount: 1
+            lengthOffset: -8
+            rotationOffset: -90
+            effect: {
+              line: true
+              particles: 20
+              cone: 0
+              baseRotation: 90
+              length: 100
+              lifetime: 35
+              interp: pow3Out
+              sizeInterp: pow2In
+              colorTo: 7382f0
+              lenFrom: 8
+              lenTo: 0
+              strokeFrom: 2
+              strokeTo: 1
+            }
+          }
+        }
+        {
           type: WaveEffect
           lifetime: 50
           interp: pow5Out
@@ -1574,7 +1621,7 @@ weapons: [
   //lance
   {
     mirror: false
-    shootCone: 45
+    shootCone: 20
     x: 0
     y: 0
     shootY: 8
@@ -2613,15 +2660,15 @@ abilities: [
   //canonically accurate stuff
   {
     type: ForceFieldAbility
-    regen: 100
-    cooldown: 0
+    regen: 240
+    cooldown: 60
     radius: 0
     sides: 1
     max: 120000
   }
   {
     type: RegenAbility
-    percentAmount: 0.0333
+    percentAmount: 0.01388888888 
   }
 ]
 createWreck: false

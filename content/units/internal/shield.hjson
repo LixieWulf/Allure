@@ -3,6 +3,7 @@ template: MissileUnitType
 controller: MinerAI
 defaultController: MinerAI
 fullOverride: clear
+outlines: false
 hitSize: 1
 lifetime: 210
 health: 1
