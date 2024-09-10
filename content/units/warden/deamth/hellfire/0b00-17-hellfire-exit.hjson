@@ -1,5 +1,7 @@
 type: missile
 template: MissileUnitType
+controller: FlyingAI
+defaultController: FlyingAI
 speed: 0
 rotateSpeed: 0
 hittable: false

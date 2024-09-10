@@ -1,1 +1,23 @@
 damage: 10
+effectChance: 0.25
+effect: [
+  {
+    particles: 3
+    length: 16
+    lifetime: 30
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: ffdd55
+    colorTo: db401c
+  }
+  {
+    particles: 5
+    length: 12
+    lifetime: 45
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: 787878
+    colorTo: 787878
+    layer: 105
+  }
+]

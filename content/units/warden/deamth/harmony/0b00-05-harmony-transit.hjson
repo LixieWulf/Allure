@@ -1,11 +1,13 @@
 type: missile
 template: MissileUnitType
+controller: FlyingAI
+defaultController: FlyingAI
 fullOverride: allure-0b05-harmony-full
 lowAltitude: true
-missileAccelTime: 60
 shadowElevationScl: 1.7
-speed: 2.4
+speed: 0
 rotateSpeed: 0
+drag: 0.1
 hittable: false
 targetable: false
 hitSize: 85
@@ -13,11 +15,9 @@ lifetime: 260
 drawBody: false
 drawCell: false
 outlines: false
-physics: false
-bounded: false
-range: 8192
-maxRange: 8192
 engineSize: 0
+shieldColor: 7382f000
+physics: false
 parts: [
   {
     type: RegionPart
@@ -47,6 +47,16 @@ parts: [
     outline: false
     layer: 122
     color: 7382f0
+  }
+  {
+    type: RegionPart
+    name: allure-shield
+    outline: false
+    blending: additive
+    color: 7382f088
+    layer: 95
+    xScl: 1.2
+    yScl: 1.5
   }
 ]
 //why not keep these functional? More realistic
@@ -692,12 +702,150 @@ weapons: [
     mirror: false
     reload: 480
     x: 0
-    y: 504
+    y: 544
     shootCone: 360
     shootSound: none
     bullet: {
       spawnUnit: allure-0b00-05-harmony-exit
     }
+  }
+  {
+    alwaysShooting: true
+    controllable: false
+    rotate: true
+    rotateSpeed: 0
+    mirror: false
+    x: 0
+    reload: 5
+    shootCone: 360
+    shootSound: none
+    bullet: {
+      type: BulletType
+      hittable: false
+      absorbable: false 
+      collides: false 
+      speed: 0
+      lifetime: 1
+      recoil: -1.1
+      shootEffect: none
+      smokeEffect: none
+      despawnEffect: none
+    }
+  }
+]
+abilities: [
+  //segmented shield layer
+  {
+    type: ShieldArcAbility
+    regen: 50
+    max: 120000
+    angle: 55
+    radius: 115
+    cooldown: 90
+    whenShooting: false
+    angleOffset: 0
+    y: 23
+    width: 3
+  }
+  {
+    type: ShieldArcAbility
+    regen: 50
+    max: 120000
+    angle: 55
+    radius: 115
+    cooldown: 90
+    whenShooting: false
+    angleOffset: 180
+    y: -23
+    width: 3
+    display: false
+  }
+  {
+    type: ShieldArcAbility
+    regen: 50
+    max: 120000
+    angle: 35
+    radius: 171
+    cooldown: 90
+    whenShooting: false
+    angleOffset: 90
+    x: 49
+    width: 3
+    display: false
+  }
+  {
+    type: ShieldArcAbility
+    regen: 50
+    max: 120000
+    angle: 35
+    radius: 171
+    cooldown: 90
+    whenShooting: false
+    angleOffset: -90
+    x: -49
+    width: 3
+    display: false
+  }
+  {
+    type: ShieldArcAbility
+    regen: 50
+    max: 120000
+    angle: 54
+    radius: 109
+    cooldown: 90
+    whenShooting: false
+    angleOffset: 50.5
+    y: 26
+    x: -8
+    width: 3
+    display: false
+  }
+  {
+    type: ShieldArcAbility
+    regen: 50
+    max: 120000
+    angle: 54
+    radius: 109
+    cooldown: 90
+    whenShooting: false
+    angleOffset: 129.5
+    y: -26
+    x: -8
+    width: 3
+    display: false
+  }
+  {
+    type: ShieldArcAbility
+    regen: 50
+    max: 120000
+    angle: 54
+    radius: 109
+    cooldown: 90
+    whenShooting: false
+    angleOffset: -50.5
+    y: 26
+    x: 8
+    width: 3
+    display: false
+  }
+  {
+    type: ShieldArcAbility
+    regen: 50
+    max: 120000
+    angle: 54
+    radius: 109
+    cooldown: 90
+    whenShooting: false
+    angleOffset: -129.5
+    y: -26
+    x: 8
+    width: 3
+    display: false
+  }
+  //all warden ships regenerate slowly
+  {
+    type: RegenAbility
+    percentAmount: 0.01388888888 
   }
 ]
 createWreck: false

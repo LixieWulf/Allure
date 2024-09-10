@@ -1,1 +1,36 @@
 damage: 1000
+effectChance: 0.25
+effect: [
+  {
+    particles: 6
+    length: 32
+    lifetime: 40
+    sizeFrom: 3
+    sizeTo: 0
+    colorFrom: ffdd55
+    colorTo: db401c
+  }
+  {
+    particles: 7
+    length: 15
+    lifetime: 45
+    sizeFrom: 3
+    sizeTo: 0
+    colorFrom: 787878
+    colorTo: 787878
+    layer: 105
+  }
+  {
+    particles: 7
+    length: 30
+    lifetime: 50
+    line: true
+    lenFrom: 8
+    lenTo: 0
+    strokeFrom: 2
+    strokeTo: 1
+    cap: false
+    colorFrom: ffdd55
+    colorTo: db401c
+  }
+]

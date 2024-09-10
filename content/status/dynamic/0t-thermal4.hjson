@@ -1,1 +1,45 @@
 damage: 10000
+effectChance: 0.25
+effect: [
+  {
+    particles: 7
+    length: 45
+    lifetime: 60
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: ffdd55
+    colorTo: db401c
+  }
+  {
+    particles: 9
+    length: 25
+    lifetime: 55
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 787878
+    colorTo: 787878
+    layer: 105
+  }
+  {
+    particles: 5
+    length: 45
+    lifetime: 70
+    line: true
+    lenFrom: 6
+    lenTo: 0
+    strokeFrom: 3
+    strokeTo: 1
+    cap: false
+    colorFrom: ffdd55
+    colorTo: db401c
+  }
+  {
+    type: WaveEffect
+    sizeFrom: 0
+    sizeTo: 26
+    lifetime: 50
+    interp: pow2Out
+    colorFrom: ffdd55
+    colorTo: db401c
+  }
+]

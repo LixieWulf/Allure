@@ -1,5 +1,7 @@
 type: missile
 template: MissileUnitType
+controller: FlyingAI
+defaultController: FlyingAI
 speed: 0
 rotateSpeed: 0
 hittable: false
@@ -9,10 +11,6 @@ lifetime: 420
 drawBody: false
 drawCell: false
 outlines: false
-physics: false
-bounded: false
-range: 8192
-maxRange: 8192
 engineSize: 0
 parts: [
   {
