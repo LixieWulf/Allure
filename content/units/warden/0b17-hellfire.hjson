@@ -63,7 +63,7 @@ parts: [
     layer: 91
     color: 7382f0
     colorTo: ffffff
-    weaponIndex: 0
+    weaponIndex: 16
   }
   { 
     type: RegionPart

@@ -1,44 +1,43 @@
-type: flying
+type: missile
+template: MissileUnitType
+controller: FlyingAI
+defaultController: FlyingAI
+fullOverride: allure-0b03-forefront
 lowAltitude: true
-speed: 20
-rotateSpeed: 2
-accel: 0.008
-drag: 0.04
-strafePenalty: 0.2
-omniMovement: false
-flying: true
-hitSize: 60
-health: 90000
-armor: 210
 shadowElevationScl: 3
-physics: false
-range: 90
-maxRange: 360
-lightRadius: 0
+speed: 0
+rotateSpeed: 0
+drag: 0.1
+hittable: false
+targetable: false
+hitSize: 60
+lifetime: 260
+drawBody: false
 drawCell: false
 outlines: false
-healColor: 7382f088
-shieldColor: 7382f000
+physics: false
 engineSize: 0
+shieldColor: 7382f000
 parts: [
   {
     type: RegionPart
-    layer: 97.02
+    name: allure-0b03-forefront
+    layer: 91.02
     outline: false
   }
   { 
     type: RegionPart
-    suffix: -flare
+    name: allure-0b03-forefront-flare
     outline: false
     blending: additive
-    layer: 98
+    layer: 92
     color: 7382f0
     colorTo: ffffff
     weaponIndex: 0
   }
   { 
     type: RegionPart
-    suffix: -flare
+    name: allure-0b03-forefront-flare
     outline: false
     layer: 140
     color: 7382f025
@@ -50,34 +49,13 @@ parts: [
     outline: false
     blending: additive
     color: 7382f088
-    layer: 98.5
+    layer: 92.5
     xScl: 1.1
     yScl: 1.4
   }
 ]
+//why not keep these functional? More realistic
 weapons: [
-  {
-    mirror: false
-    alternate: false
-    continuous: true
-    reload: 120
-    x: 0
-    y: -18
-    shootSound: none
-    bullet: {
-      type: BulletType
-      collides: false
-      absorbable: false
-      hittable: false
-      lifetime: 30
-      recoil: -0.8
-      shootEffect: none
-      smokeEffect: none
-      hitEffect: none
-      despawnEffect: none
-      maxRange: 400
-    }
-  }
   //engines
   {
     x: 0
@@ -492,16 +470,43 @@ weapons: [
       lightOpacity: 0.25
     }
   }
-  //death
   {
-    shootOnDeath: true
+    alwaysShooting: true
     controllable: false
-    reload: 15
+    rotate: true
+    rotateSpeed: 0
+    mirror: false
+    reload: 480
     x: 0
+    y: 660
     shootCone: 360
     shootSound: none
     bullet: {
-      spawnUnit: allure-0b00-03-forefront-transit
+      //This can be the same since they're the same size
+      spawnUnit: allure-0b00-05-harmony-exit
+    }
+  }
+  {
+    alwaysShooting: true
+    controllable: false
+    rotate: true
+    rotateSpeed: 0
+    mirror: false
+    x: 0
+    reload: 5
+    shootCone: 360
+    shootSound: none
+    bullet: {
+      type: BulletType
+      hittable: false
+      absorbable: false 
+      collides: false 
+      speed: 0
+      lifetime: 1
+      recoil: -1.4
+      shootEffect: none
+      smokeEffect: none
+      despawnEffect: none
     }
   }
 ]

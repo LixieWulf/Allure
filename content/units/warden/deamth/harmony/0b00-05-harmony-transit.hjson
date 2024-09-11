@@ -737,10 +737,10 @@ abilities: [
   //segmented shield layer
   {
     type: ShieldArcAbility
-    regen: 50
-    max: 120000
+    regen: 5
+    max: 10000
     angle: 55
-    radius: 115
+    radius: 50
     cooldown: 90
     whenShooting: false
     angleOffset: 0
@@ -749,10 +749,10 @@ abilities: [
   }
   {
     type: ShieldArcAbility
-    regen: 50
-    max: 120000
+    regen: 5
+    max: 10000
     angle: 55
-    radius: 115
+    radius: 50
     cooldown: 90
     whenShooting: false
     angleOffset: 180
@@ -762,10 +762,10 @@ abilities: [
   }
   {
     type: ShieldArcAbility
-    regen: 50
-    max: 120000
+    regen: 5
+    max: 10000
     angle: 35
-    radius: 171
+    radius: 106
     cooldown: 90
     whenShooting: false
     angleOffset: 90
@@ -775,10 +775,10 @@ abilities: [
   }
   {
     type: ShieldArcAbility
-    regen: 50
-    max: 120000
+    regen: 5
+    max: 10000
     angle: 35
-    radius: 171
+    radius: 106
     cooldown: 90
     whenShooting: false
     angleOffset: -90
@@ -788,10 +788,10 @@ abilities: [
   }
   {
     type: ShieldArcAbility
-    regen: 50
-    max: 120000
+    regen: 5
+    max: 10000
     angle: 54
-    radius: 109
+    radius: 44
     cooldown: 90
     whenShooting: false
     angleOffset: 50.5
@@ -802,10 +802,10 @@ abilities: [
   }
   {
     type: ShieldArcAbility
-    regen: 50
-    max: 120000
+    regen: 5
+    max: 10000
     angle: 54
-    radius: 109
+    radius: 44
     cooldown: 90
     whenShooting: false
     angleOffset: 129.5
@@ -816,10 +816,10 @@ abilities: [
   }
   {
     type: ShieldArcAbility
-    regen: 50
-    max: 120000
+    regen: 5
+    max: 10000
     angle: 54
-    radius: 109
+    radius: 44
     cooldown: 90
     whenShooting: false
     angleOffset: -50.5
@@ -830,10 +830,10 @@ abilities: [
   }
   {
     type: ShieldArcAbility
-    regen: 50
-    max: 120000
+    regen: 5
+    max: 10000
     angle: 54
-    radius: 109
+    radius: 44
     cooldown: 90
     whenShooting: false
     angleOffset: -129.5

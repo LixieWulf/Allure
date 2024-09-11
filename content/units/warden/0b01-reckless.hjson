@@ -8,8 +8,6 @@ flying: true
 hitSize: 25
 health: 4200
 armor: 8
-mineSpeed: 4
-mineTier: 2
 lowAltitude: true
 shadowElevationScl: 0.9
 range: 240
@@ -18,7 +16,7 @@ lightRadius: 0
 drawCell: false
 outlines: false
 healColor: 7382f088
-shieldColor: 7382f0
+shieldColor: 7382f000
 parts: [
   {
     type: RegionPart
@@ -42,6 +40,16 @@ parts: [
     layer: 140
     color: 7382f025
     blending: additive
+  }
+  {
+    type: RegionPart
+    name: allure-shield
+    outline: false
+    blending: additive
+    color: 7382f088
+    layer: 95
+    xScl: 0.4
+    yScl: 0.5
   }
 ]
 weapons: [
@@ -433,15 +441,127 @@ weapons: [
       lightOpacity: 0.25
     }
   }
+  //death
+  {
+    shootOnDeath: true
+    controllable: false
+    reload: 15
+    x: 0
+    shootCone: 360
+    shootSound: none
+    bullet: {
+      spawnUnit: allure-0b00-01-reckless-transit
+    }
+  }
 ]
 abilities: [
+  //segmented shield layer
   {
-    type: ForceFieldAbility
-    regen: 1.8
-    cooldown: 0
-    radius: 0
-    sides: 1
+    type: ShieldArcAbility
+    regen: 0.6
     max: 600
+    angle: 60
+    radius: 15
+    cooldown: 90
+    whenShooting: false
+    angleOffset: 0
+    y: 8
+    width: 3
+  }
+  {
+    type: ShieldArcAbility
+    regen: 0.6
+    max: 600
+    angle: 60
+    radius: 15
+    cooldown: 90
+    whenShooting: false
+    angleOffset: 180
+    y: -8
+    width: 3
+    display: false
+  }
+  {
+    type: ShieldArcAbility
+    regen: 0.6
+    max: 600
+    angle: 35
+    radius: 40
+    cooldown: 90
+    whenShooting: false
+    angleOffset: 90
+    x: 23
+    width: 3
+    display: false
+  }
+  {
+    type: ShieldArcAbility
+    regen: 0.6
+    max: 600
+    angle: 35
+    radius: 40
+    cooldown: 90
+    whenShooting: false
+    angleOffset: -90
+    x: -23
+    width: 3
+    display: false
+  }
+  {
+    type: ShieldArcAbility
+    regen: 0.6
+    max: 600
+    angle: 60
+    radius: 12
+    cooldown: 90
+    whenShooting: false
+    angleOffset: 50.5
+    y: 10
+    x: -3
+    width: 3
+    display: false
+  }
+  {
+    type: ShieldArcAbility
+    regen: 0.6
+    max: 600
+    angle: 60
+    radius: 12
+    cooldown: 90
+    whenShooting: false
+    angleOffset: 129.5
+    y: -10
+    x: -3
+    width: 3
+    display: false
+  }
+  {
+    type: ShieldArcAbility
+    regen: 0.6
+    max: 600
+    angle: 60
+    radius: 12
+    cooldown: 90
+    whenShooting: false
+    angleOffset: -50.5
+    y: 10
+    x: 3
+    width: 3
+    display: false
+  }
+  {
+    type: ShieldArcAbility
+    regen: 0.6
+    max: 600
+    angle: 60
+    radius: 12
+    cooldown: 90
+    whenShooting: false
+    angleOffset: -129.5
+    y: -10
+    x: 3
+    width: 3
+    display: false
   }
   //all warden ships regenerate slowly
   {

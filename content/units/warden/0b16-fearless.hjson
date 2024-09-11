@@ -316,6 +316,7 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 24
       lightOpacity: 0.4
     }
   }
@@ -364,6 +365,7 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 24
       lightOpacity: 0.4
     }
   }
@@ -434,6 +436,7 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 12
       lightOpacity: 0.4
     }
   }
@@ -482,6 +485,7 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 12
       lightOpacity: 0.4
     }
   }
@@ -542,8 +546,8 @@ weapons: [
       type: ContinuousFlameBulletType
       lifetime: 14
       collides: false
-      length: 30
-      width: 4
+      length: 24
+      width: 3
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false
       shootEffect: none
@@ -552,6 +556,7 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 9
       lightOpacity: 0.4
     }
   }
@@ -600,6 +605,7 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
+      lightStroke: 9
       lightOpacity: 0.4
     }
   }
@@ -630,7 +636,7 @@ weapons: [
       oscScl: 2.5
       oscMag: 0.1
       hitEffect: none
-      lightStroke: 4.5
+      lightStroke: 16
       lightOpacity: 0.25
     }
   }
@@ -660,7 +666,7 @@ weapons: [
       oscScl: 2.5
       oscMag: 0.1
       hitEffect: none
-      lightStroke: 4.5
+      lightStroke: 8
       lightOpacity: 0.25
     }
   }
@@ -690,7 +696,7 @@ weapons: [
       oscScl: 2.5
       oscMag: 0.1
       hitEffect: none
-      lightStroke: 4.5
+      lightStroke: 6
       lightOpacity: 0.25
     }
   }
@@ -719,7 +725,7 @@ weapons: [
       oscScl: 2.5
       oscMag: 0.1
       hitEffect: none
-      lightStroke: 4.5
+      lightStroke: 16
       lightOpacity: 0.25
     }
   }

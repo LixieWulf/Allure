@@ -1,47 +1,44 @@
-type: flying
-//don't bother trying to attack as the AI
-controller: BuilderAI
-defaultController: BuilderAI
-hitSize: 12
-flying: true
-health: 1300
-armor: 2
-speed: 3
-rotateSpeed: 4
-accel: 0.06
-drag: 0.013
-strafePenalty: 0.75
-shadowElevationScl: 0.45
-lightRadius: 0
-drawCell: false
+type: missile
+template: MissileUnitType
+controller: FlyingAI
+defaultController: FlyingAI
+fullOverride: allure-0b00-victory
 lowAltitude: true
-engineSize: 0
+shadowElevationScl: 0.45
+speed: 0
+rotateSpeed: 0
+drag: 0.1
+hittable: false
+targetable: false
+hitSize: 12
+lifetime: 260
+drawBody: false
+drawCell: false
 outlines: false
-omniMovement: false
-healColor: 7382f088
+engineSize: 0
 shieldColor: 7382f000
+physics: false
 parts: [
   {
     type: RegionPart
     layer: 90.02
     outline: false
+    name: allure-0b00-victory
   }
   { 
     type: RegionPart
-    suffix: -flare
+    name: allure-0b00-victory-flare
     outline: false
     blending: additive
     layer: 91
     color: 7382f0
-    colorTo: ffffff
-    weaponIndex: 0
   }
   { 
     type: RegionPart
-    suffix: -flare
+    name: allure-0b00-victory-flare
     outline: false
-    layer: 140
-    color: 7382f025
+    layer: 141
+    color: 7382f015
     blending: additive
   }
   {
@@ -55,52 +52,8 @@ parts: [
     yScl: 0.25
   }
 ]
+//why not keep these functional? More realistic
 weapons: [
-  {
-    x: 3
-    y: 2
-    reload: 2
-    shootCone: 360
-    alternate: false
-    shootY: 2
-    shoot: {
-      shots: 3
-      shotDelay: 1
-    }
-    shootWarmupSpeed: 0.02
-    minWarmup: 0.99
-    aiControllable: false
-    velocityRnd: 0.25
-    inaccuracy: 3
-    baseRotation: -40
-    shootSound: lasershoot
-    bullet: {
-      damage: 14
-      speed: 5
-      lifetime: 40
-      drag: 0.03
-      width: 7
-      height: 14
-      homingPower: 0.06
-      homingRange: 45
-      shrinkX: 1
-      shrinkY: 1
-      sprite: allure-torpedo
-      mixColorTo: 7382f0
-      hitColor: 7382f0
-      frontColor: ffffff
-      backColor: 00000000
-      trailColor: 7382f088
-      trailLength: 4
-      trailWidth: 1.2
-      status: allure-0b-energy0
-      statusDuration: 1
-      shootEffect: none
-      smokeEffect: none
-      hitEffect: hitBulletColor
-      despawnEffect: none
-    }
-  }
   {
     alwaysShooting: true
     alwaysContinuous: true
@@ -305,16 +258,42 @@ weapons: [
       lightOpacity: 0.25
     }
   }
-  //death
   {
-    shootOnDeath: true
+    alwaysShooting: true
     controllable: false
-    reload: 15
+    rotate: true
+    rotateSpeed: 0
+    mirror: false
+    reload: 480
     x: 0
+    y: 600
     shootCone: 360
     shootSound: none
     bullet: {
-      spawnUnit: allure-0b00-00-victory-transit
+      spawnUnit: allure-0b00-00-victory-exit
+    }
+  }
+  {
+    alwaysShooting: true
+    controllable: false
+    rotate: true
+    rotateSpeed: 0
+    mirror: false
+    x: 0
+    reload: 5
+    shootCone: 360
+    shootSound: none
+    bullet: {
+      type: BulletType
+      hittable: false
+      absorbable: false 
+      collides: false 
+      speed: 0
+      lifetime: 1
+      recoil: -1.25
+      shootEffect: none
+      smokeEffect: none
+      despawnEffect: none
     }
   }
 ]

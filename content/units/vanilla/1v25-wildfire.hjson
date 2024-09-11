@@ -42,6 +42,7 @@ parts: [
     outline: false
     xScl: 3.5
     yScl: 3.5
+    blending: additive
   }
   {
     type: RegionPart
@@ -51,6 +52,7 @@ parts: [
     outline: false
     xScl: 2
     yScl: 2
+    blending: additive
   }
 ]
 weapons: [

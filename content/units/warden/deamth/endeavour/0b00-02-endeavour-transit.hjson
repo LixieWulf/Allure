@@ -1,47 +1,44 @@
-type: flying
+type: missile
+template: MissileUnitType
+controller: FlyingAI
+defaultController: FlyingAI
+fullOverride: allure-0b01-reckless
 lowAltitude: true
-speed: 20
-rotateSpeed: 2
-accel: 0.008
-drag: 0.04
-strafePenalty: 0.2
-omniMovement: false
-flying: true
-hitSize: 60
-health: 90000
-armor: 210
-shadowElevationScl: 3
-physics: false
-range: 90
-maxRange: 360
-lightRadius: 0
+shadowElevationScl: 0.9
+speed: 0
+rotateSpeed: 0
+drag: 0.1
+hittable: false
+targetable: false
+hitSize: 56
+lifetime: 260
+drawBody: false
 drawCell: false
 outlines: false
-healColor: 7382f088
-shieldColor: 7382f000
 engineSize: 0
+shieldColor: 7382f000
+physics: false
 parts: [
   {
     type: RegionPart
-    layer: 97.02
+    layer: 90.02
     outline: false
+    name: allure-0b02-endeavour
   }
   { 
     type: RegionPart
-    suffix: -flare
+    name: allure-0b02-endeavour-flare
     outline: false
     blending: additive
-    layer: 98
+    layer: 91
     color: 7382f0
-    colorTo: ffffff
-    weaponIndex: 0
   }
   { 
     type: RegionPart
-    suffix: -flare
+    name: allure-0b02-endeavour-flare
     outline: false
-    layer: 140
-    color: 7382f025
+    layer: 141
+    color: 7382f015
     blending: additive
   }
   {
@@ -50,214 +47,137 @@ parts: [
     outline: false
     blending: additive
     color: 7382f088
-    layer: 98.5
-    xScl: 1.1
-    yScl: 1.4
+    layer: 95
+    xScl: 0.9
+    yScl: 0.9
   }
 ]
+//why not keep these functional? More realistic
 weapons: [
   {
-    mirror: false
-    alternate: false
-    continuous: true
-    reload: 120
     x: 0
-    y: -18
-    shootSound: none
+    y: 11
+    rotate: true
+    mirror: false
+    rotateSpeed: 1
+    rotationLimit: 15
+    alternate: false
+    reload: 20
+    inaccuracy: 8
+    parts: [
+      {
+        type: ShapePart
+        radius: 8
+        stroke: 2
+        circle: true
+        hollow: true
+        color: 7382f0
+        layer: 110
+      }
+      {
+        type: ShapePart
+        radius: 8
+        circle: true
+        color: 7382f088
+        layer: 110
+      }
+    ]
+    shoot: {
+      type: ShootSummon
+      shots: 3
+      shotDelay: 2
+      radius: 8
+    }
+    shootWarmupSpeed: 0.05
+    minWarmup: 0.9
+    shootSound: laser
+    shake: 3
+    recoil: 0
     bullet: {
-      type: BulletType
-      collides: false
-      absorbable: false
-      hittable: false
-      lifetime: 30
-      recoil: -0.8
       shootEffect: none
       smokeEffect: none
-      hitEffect: none
-      despawnEffect: none
-      maxRange: 400
+      damage: 45
+      splashDamage: 20
+      splashDamageRadius: 16
+      speed: 7
+      lifetime: 60
+      pierce: true
+      pierceBuilding: true
+      pierceCap: 3
+      status: allure-0b-energy0
+      statusDuration: 5
+      sprite: allure-torpedo
+      width: 28
+      height: 48
+      shrinkY: 0
+      frontColor: 7382f0
+      backColor: 000000
+      hitColor: 7382f0
+      trailColor: 7382f0
+      trailWidth: 1.6
+      trailLength: 7
+      trailChance: 0.2
+      trailRotation: true
+      trailEffect: {
+        line: true
+        cone: 15
+        lifetime: 25
+        length: 20
+        interp: pow3Out
+        sizeInterp: pow2In
+        lenFrom: 7
+        lenTo: 0
+        strokeFrom: 1
+        strokeTo: 1
+        colorTo: 7382f0
+      }
+      hitEffect: [
+        {
+          type: WaveEffect
+          interp: pow3Out
+          lifetime: 25
+          sizeFrom: 0
+          sizeTo: 25
+          strokeFrom: 4
+          colorTo: 7382f0
+        }
+        {
+          length: 16
+          particles: 6
+          lifetime: 30
+          interp: pow2Out
+          sizeInterp: pow3In
+          sizeFrom: 12
+          sizeTo: 0
+          colorFrom: 7382f0bb
+          colorTo: 7382f0bb
+        }
+        {
+          line: true
+          length: 12
+          lifetime: 30
+          particles: 9
+          lenFrom: 6
+          lenTo: 4
+          strokeFrom: 2
+          strokeTo: 0
+          colorTo: 7382f0
+        }
+      ]
+      despawnEffect: {
+        type: WaveEffect
+        lifetime: 10
+        sizeFrom: 0
+        sizeTo: 5
+        strokeFrom: 1
+        colorTo: 7382f0
+      }
     }
   }
   //engines
   {
-    x: 0
-    y: -28
-    baseRotation: 180
-    alwaysShooting: true
-    shootCone: 360
-    continuous: true
-    mirror: false
-    reload: 1
-    shootSound: none
-    shootWarmupSpeed: 0.03
-    minShootVelocity: 2.5
-    recoil: 0
-    display: false
-    parts: [
-      {
-        name: allure-thruster-flare
-        y: 28
-        rotation: 180
-        outline: false
-        blending: additive
-        mixColor: 90a2fc
-        color: ffffff44
-        colorTo: ffffff
-        xScl: 0.6
-        yScl: 0.6
-        layer: 90.01
-        progress: warmup
-      }
-      {
-        type: FlarePart
-        sides: 2
-        color1: 7382f0bb
-        radius: 0
-        radiusTo: 67.5
-        stroke: 5
-        innerRadScl: 0.75
-        y: 6
-        progress: heat
-        layer: 101
-      }
-      {
-        type: FlarePart
-        sides: 2
-        color1: 00000000
-        radius: 0
-        radiusTo: 18
-        stroke: 18
-        y: 7
-        progress: heat
-        layer: 101
-      }
-    ]
-    bullet: {
-      type: ContinuousFlameBulletType
-      lifetime: 14
-      collides: false
-      length: 67.5
-      width: 9
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      drawFlare: false
-      shootEffect: none
-      smokeEffect: none
-      lengthInterp: pow10Out
-      oscScl: 1
-      oscMag: 0.1
-      hitEffect: none
-      lightStroke: 27
-      lightOpacity: 0.4
-    }
-  }
-  {
-    x: 0
-    y: -28
-    baseRotation: 180
-    alwaysShooting: true
-    shootCone: 360
-    continuous: true
-    mirror: false
-    reload: 1
-    shootSound: none
-    shootWarmupSpeed: 0.03
-    minShootVelocity: 2.5
-    recoil: 0
-    display: false
-    parts: [
-      {
-        name: allure-thruster-flare
-        y: 28
-        rotation: 180
-        outline: false
-        blending: additive
-        mixColor: 90a2fc
-        color: ffffff44
-        colorTo: ffffff
-        xScl: 0.6
-        yScl: 0.6
-        layer: 90
-        progress: warmup
-      }
-    ]
-    bullet: {
-      type: ContinuousFlameBulletType
-      lifetime: 10
-      collides: false
-      length: 67.5
-      width: 9
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      drawFlare: false
-      shootEffect: none
-      smokeEffect: none
-      lengthInterp: pow10Out
-      oscScl: 1
-      oscMag: 0.1
-      hitEffect: none
-      lightStroke: 27
-      lightOpacity: 0.4
-    }
-  }
-  {
-    x: 0
-    y: -28
-    baseRotation: 180
-    alwaysShooting: true
-    shootCone: 360
-    continuous: true
-    mirror: false
-    reload: 30
-    shootSound: none
-    shootWarmupSpeed: 0.03
-    minShootVelocity: 7.5
-    recoil: 0
-    display: false
-    parts: [
-      {
-        type: FlarePart
-        sides: 2
-        color1: 7382f0bb
-        radius: 0
-        radiusTo: 135
-        stroke: 6
-        innerRadScl: 0.75
-        y: 6
-        progress: heat
-        layer: 101
-      }
-      {
-        type: FlarePart
-        sides: 2
-        color1: 00000000
-        radius: 0
-        radiusTo: 18
-        stroke: 18
-        y: 7
-        progress: heat
-        layer: 101
-      }
-    ]
-    bullet: {
-      type: ContinuousFlameBulletType
-      lifetime: 45
-      collides: false
-      length: 135
-      width: 9
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      drawFlare: false
-      shootEffect: none
-      smokeEffect: none
-      lengthInterp: pow10Out
-      oscScl: 1
-      oscMag: 0.1
-      hitEffect: none
-      lightStroke: 27
-      lightOpacity: 0.4
-    }
-  }
-  {
-    x: 24
-    y: -48
+    x: 5
+    y: -26
     baseRotation: 180
     alwaysShooting: true
     shootCone: 360
@@ -266,21 +186,21 @@ weapons: [
     reload: 1
     shootSound: none
     shootWarmupSpeed: 0.03
-    minShootVelocity: 2.5
+    minShootVelocity: 2.2
     recoil: 0
     display: false
     parts: [
       {
         name: allure-thruster-flare
-        y: 6
+        y: 12
         rotation: 180
         outline: false
         blending: additive
         mixColor: 90a2fc
         color: ffffff44
         colorTo: ffffff
-        xScl: 0.2
-        yScl: 0.2
+        xScl: 0.4
+        yScl: 0.4
         layer: 90.01
         progress: warmup
       }
@@ -289,7 +209,7 @@ weapons: [
         sides: 2
         color1: 7382f0bb
         radius: 0
-        radiusTo: 22.5
+        radiusTo: 45
         stroke: 2
         innerRadScl: 0.75
         y: 4
@@ -301,8 +221,8 @@ weapons: [
         sides: 2
         color1: 00000000
         radius: 0
-        radiusTo: 6
-        stroke: 6
+        radiusTo: 12
+        stroke: 12
         y: 4
         progress: heat
         layer: 101
@@ -312,8 +232,8 @@ weapons: [
       type: ContinuousFlameBulletType
       lifetime: 14
       collides: false
-      length: 22.5
-      width: 3
+      length: 45
+      width: 6
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false
       shootEffect: none
@@ -322,13 +242,13 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
-      lightStroke: 9
+      lightStroke: 18
       lightOpacity: 0.4
     }
   }
   {
-    x: 24
-    y: -48
+    x: 5
+    y: -26
     baseRotation: 180
     alwaysShooting: true
     shootCone: 360
@@ -337,21 +257,21 @@ weapons: [
     reload: 1
     shootSound: none
     shootWarmupSpeed: 0.03
-    minShootVelocity: 2.5
+    minShootVelocity: 2.2
     recoil: 0
     display: false
     parts: [
       {
         name: allure-thruster-flare
-        y: 6
+        y: 12
         rotation: 180
         outline: false
         blending: additive
         mixColor: 90a2fc
         color: ffffff44
         colorTo: ffffff
-        xScl: 0.2
-        yScl: 0.2
+        xScl: 0.4
+        yScl: 0.4
         layer: 90
         progress: warmup
       }
@@ -360,8 +280,8 @@ weapons: [
       type: ContinuousFlameBulletType
       lifetime: 10
       collides: false
-      length: 22.5
-      width: 3
+      length: 45
+      width: 6
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false
       shootEffect: none
@@ -370,34 +290,48 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
-      lightStroke: 9
+      lightStroke: 18
       lightOpacity: 0.4
     }
   }
   {
-    x: 24
-    y: -48
+    x: 18
+    y: -20
     baseRotation: 180
     alwaysShooting: true
     shootCone: 360
     continuous: true
     alternate: false
-    reload: 30
+    reload: 1
     shootSound: none
     shootWarmupSpeed: 0.03
-    minShootVelocity: 7.5
+    minShootVelocity: 2.2
     recoil: 0
     display: false
     parts: [
+      {
+        name: allure-thruster-flare
+        y: 12
+        rotation: 180
+        outline: false
+        blending: additive
+        mixColor: 90a2fc
+        color: ffffff44
+        colorTo: ffffff
+        xScl: 0.3
+        yScl: 0.3
+        layer: 90.01
+        progress: warmup
+      }
       {
         type: FlarePart
         sides: 2
         color1: 7382f0bb
         radius: 0
-        radiusTo: 45
-        stroke: 3
+        radiusTo: 30
+        stroke: 1.5
         innerRadScl: 0.75
-        y: 4
+        y: 3
         progress: heat
         layer: 101
       }
@@ -406,19 +340,19 @@ weapons: [
         sides: 2
         color1: 00000000
         radius: 0
-        radiusTo: 6
-        stroke: 6
-        y: 4
+        radiusTo: 8
+        stroke: 8
+        y: 3
         progress: heat
         layer: 101
       }
     ]
     bullet: {
       type: ContinuousFlameBulletType
-      lifetime: 45
+      lifetime: 14
       collides: false
-      length: 45
-      width: 3
+      length: 30
+      width: 4
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false
       shootEffect: none
@@ -427,29 +361,77 @@ weapons: [
       oscScl: 1
       oscMag: 0.1
       hitEffect: none
-      lightStroke: 9
+      lightStroke: 12
+      lightOpacity: 0.4
+    }
+  }
+  {
+    x: 18
+    y: -20
+    baseRotation: 180
+    alwaysShooting: true
+    shootCone: 360
+    continuous: true
+    alternate: false
+    reload: 1
+    shootSound: none
+    shootWarmupSpeed: 0.03
+    minShootVelocity: 2.2
+    recoil: 0
+    display: false
+    parts: [
+      {
+        name: allure-thruster-flare
+        y: 12
+        rotation: 180
+        outline: false
+        blending: additive
+        mixColor: 90a2fc
+        color: ffffff44
+        colorTo: ffffff
+        xScl: 0.3
+        yScl: 0.3
+        layer: 90
+        progress: warmup
+      }
+    ]
+    bullet: {
+      type: ContinuousFlameBulletType
+      lifetime: 10
+      collides: false
+      length: 30
+      width: 4
+      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 1
+      oscMag: 0.1
+      hitEffect: none
+      lightStroke: 12
       lightOpacity: 0.4
     }
   }
   //idle flames
   {
-    x: 0
-    y: -28
+    x: 5
+    y: -26
     baseRotation: 180
     alwaysShooting: true
     alwaysContinuous: true
     shootCone: 360
     continuous: true
-    mirror: false
+    alternate: false
     shootSound: none
     recoil: 0
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 98
+      layer: 90
       collides: false
-      length: 18
-      width: 9
+      length: 12
+      width: 6
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false
       shootEffect: none
@@ -463,8 +445,8 @@ weapons: [
     }
   }
   {
-    x: 24
-    y: -48
+    x: 18
+    y: -20
     baseRotation: 180
     alwaysShooting: true
     alwaysContinuous: true
@@ -476,10 +458,10 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 98
+      layer: 90
       collides: false
-      length: 6
-      width: 3
+      length: 8
+      width: 4
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       drawFlare: false
       shootEffect: none
@@ -488,129 +470,186 @@ weapons: [
       oscScl: 2.5
       oscMag: 0.1
       hitEffect: none
-      lightStroke: 6
+      lightStroke: 12
       lightOpacity: 0.25
     }
   }
-  //death
   {
-    shootOnDeath: true
+    x: 16
+    y: -6
+    alwaysShooting: true
+    alwaysContinuous: true
+    shootCone: 360
+    continuous: true
+    alternate: false
+    shootSound: none
+    recoil: 0
+    display: false
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90
+      collides: false
+      length: 8
+      width: 4
+      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 2.5
+      oscMag: 0.1
+      hitEffect: none
+      lightStroke: 12
+      lightOpacity: 0.25
+    }
+  }
+  {
+    alwaysShooting: true
     controllable: false
-    reload: 15
+    rotate: true
+    rotateSpeed: 0
+    mirror: false
+    reload: 480
     x: 0
+    y: 600
     shootCone: 360
     shootSound: none
     bullet: {
-      spawnUnit: allure-0b00-03-forefront-transit
+      spawnUnit: allure-0b00-02-endeavour-exit
+    }
+  }
+  {
+    alwaysShooting: true
+    controllable: false
+    rotate: true
+    rotateSpeed: 0
+    mirror: false
+    x: 0
+    reload: 5
+    shootCone: 360
+    shootSound: none
+    bullet: {
+      type: BulletType
+      hittable: false
+      absorbable: false 
+      collides: false 
+      speed: 0
+      lifetime: 1
+      recoil: -1.25
+      shootEffect: none
+      smokeEffect: none
+      despawnEffect: none
     }
   }
 ]
 abilities: [
+  {
+    type: SuppressionFieldAbility
+    display: false
+    active: false
+    color: 7382f0
+    orbRadius: 3
+    orbMidScl: 1
+    x: 0
+    y: 11
+    particleSize: 1.5
+    particleLen: 5
+    rotateScl: -1
+    particleColor: 7382f0
+  }
   //segmented shield layer
   {
     type: ShieldArcAbility
-    regen: 13
-    max: 8000
-    angle: 55
-    radius: 45
+    regen: 3
+    max: 4500
+    angle: 50
+    radius: 42
     cooldown: 90
     whenShooting: false
     angleOffset: 0
-    y: 23
     width: 3
   }
   {
     type: ShieldArcAbility
-    regen: 13
-    max: 8000
-    angle: 55
-    radius: 45
+    regen: 3
+    max: 4500
+    angle: 50
+    radius: 42
     cooldown: 90
     whenShooting: false
-    angleOffset: 180
-    y: -23
+    angleOffset: 45
     width: 3
     display: false
   }
   {
     type: ShieldArcAbility
-    regen: 13
-    max: 8000
-    angle: 35
-    radius: 101
+    regen: 3
+    max: 4500
+    angle: 50
+    radius: 42
+    cooldown: 90
+    whenShooting: false
+    angleOffset: -45
+    width: 3
+    display: false
+  }
+  {
+    type: ShieldArcAbility
+    regen: 3
+    max: 4500
+    angle: 50
+    radius: 42
     cooldown: 90
     whenShooting: false
     angleOffset: 90
-    x: 49
     width: 3
     display: false
   }
   {
     type: ShieldArcAbility
-    regen: 13
-    max: 8000
-    angle: 35
-    radius: 101
+    regen: 3
+    max: 4500
+    angle: 50
+    radius: 42
     cooldown: 90
     whenShooting: false
     angleOffset: -90
-    x: -49
     width: 3
     display: false
   }
   {
     type: ShieldArcAbility
-    regen: 13
-    max: 8000
-    angle: 54
-    radius: 39
+    regen: 3
+    max: 4500
+    angle: 50
+    radius: 42
     cooldown: 90
     whenShooting: false
-    angleOffset: 50.5
-    y: 26
-    x: -8
+    angleOffset: 135
     width: 3
     display: false
   }
   {
     type: ShieldArcAbility
-    regen: 13
-    max: 8000
-    angle: 54
-    radius: 39
+    regen: 3
+    max: 4500
+    angle: 50
+    radius: 42
     cooldown: 90
     whenShooting: false
-    angleOffset: 129.5
-    y: -26
-    x: -8
+    angleOffset: -135
     width: 3
     display: false
   }
   {
     type: ShieldArcAbility
-    regen: 13
-    max: 8000
-    angle: 54
-    radius: 39
+    regen: 3
+    max: 4500
+    angle: 50
+    radius: 42
     cooldown: 90
     whenShooting: false
-    angleOffset: -50.5
-    y: 26
-    x: 8
-    width: 3
-    display: false
-  }
-  {
-    type: ShieldArcAbility
-    regen: 13
-    max: 8000
-    angle: 54
-    radius: 39
-    cooldown: 90
-    whenShooting: false
-    angleOffset: -129.5
-    y: -26
-    x: 8
+    angleOffset: 180
     width: 3
     display: false
   }

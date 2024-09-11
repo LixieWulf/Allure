@@ -1,0 +1,576 @@
+//Spawn package intended for beacons and waves. Do not attempt to copy this! Seriously, this one hurt even my brain
+type: missile
+hidden: false
+template: MissileUnitType
+//Allows lockon and prevents exploding 
+controller: FlyingAI
+defaultController: FlyingAI
+speed: 0
+rotateSpeed: 360
+hittable: false
+targetable: false
+hitSize: 18
+lifetime: 420
+drawBody: false
+drawCell: false
+outlines: false
+range: 8192
+maxRange: 8192
+engineSize: 0
+immunities: [
+  allure-permaslide
+]
+parts: [
+  {
+    type: RegionPart
+    name: clear-effect
+    outline: false
+    progress: warmup
+    weaponIndex: 0
+    growX: 4
+    growY: 4
+    children: [
+      {
+        type: RegionPart
+        name: circle
+        outline: false
+        xScl: 0.14
+        yScl: 0.14
+        color: 000000
+        layer: 99
+        weaponIndex: 0
+      }
+      {
+        type: RegionPart
+        name: circle
+        outline: false
+        xScl: 0.14
+        yScl: 0.14
+        color: 7382f0
+        layer: 100
+        weaponIndex: 0
+      }
+      {
+        type: RegionPart
+        name: allure-vortex
+        progress: reload
+        outline: false
+        xScl: 0.08
+        yScl: 0.08
+        color: 7382f0
+        layer: 100
+        moveRot: 360
+        weaponIndex: 0
+      }
+      {
+        type: RegionPart
+        name: allure-vortex
+        progress: reload
+        outline: false
+        xScl: 0.08
+        yScl: 0.08
+        color: 7382f0
+        layer: 100
+        moveRot: 720
+        weaponIndex: 0
+      }
+      {
+        type: RegionPart
+        name: allure-vortex
+        progress: reload
+        outline: false
+        xScl: 0.08
+        yScl: 0.08
+        color: 7382f0
+        layer: 100
+        moveRot: 180
+        weaponIndex: 0
+      }
+      {
+        type: RegionPart
+        name: allure-wormhole
+        outline: false
+        progress: {
+          type: reload
+          op: curve
+          interp: pow2In
+        }
+        weaponIndex: 0
+        layer: 110
+        color: 7382f0
+        colorTo: 90a2fc
+        x: -16
+        moveX: 16
+        xScl: 0.001
+        yScl: 0.1
+        moves: [
+          {
+            progress: reload
+            gx: 0.1
+          }
+        ]
+      }
+      {
+        type: RegionPart
+        name: allure-wormhole
+        progress: {
+          type: reload
+          op: curve
+          interp: pow2Out
+        }
+        weaponIndex: 0
+        layer: 110
+        color: 90a2fc
+        colorTo: 7382f0
+        x: 0
+        moveX: 16
+        xScl: 0.101
+        yScl: 0.1
+        moves: [
+          {
+            progress: reload
+            gx: -0.1
+          }
+        ]
+      }
+    ]
+    moves: [
+      {
+        progress: {
+          type: life
+          op: compress
+          start: 0.9
+          end: 1
+        }
+        gx: -5
+        gy: -5
+      }
+    ]
+  }
+  {
+    type: RegionPart
+    name: clear-effect
+    outline: false
+    progress: warmup
+    weaponIndex: 1
+    growX: 3
+    growY: 3
+    children: [
+      {
+        type: RegionPart
+        name: allure-wormhole
+        progress: {
+          type: heat
+          op: curve
+          interp: pow2In
+        }
+        weaponIndex: 1
+        layer: 109
+        color: 5a58c4
+        colorTo: 7382f0
+        x: -14
+        moveX: 14
+        xScl: 0.001
+        yScl: 0.1
+        moves: [
+          {
+            progress: heat
+            gx: 0.1
+          }
+        ]
+      }
+      {
+        type: RegionPart
+        name: allure-wormhole
+        progress: {
+          type: heat
+          op: curve
+          interp: pow2Out
+        }
+        weaponIndex: 1
+        layer: 109
+        color: 7382f0
+        colorTo: 5a58c4
+        x: 0
+        moveX: 14
+        xScl: 0.101
+        yScl: 0.1
+        moves: [
+          {
+            progress: heat
+            gx: -0.1
+          }
+        ]
+      }
+    ]
+    moves: [
+      {
+        progress: {
+          type: life
+          op: compress
+          start: 0.9
+          end: 1
+        }
+        gx: -4
+        gy: -4
+      }
+    ]
+  }
+  {
+    type: RegionPart
+    name: clear-effect
+    outline: false
+    progress: warmup
+    weaponIndex: 2
+    growX: 3
+    growY: 3
+    children: [
+      {
+        type: RegionPart
+        name: allure-wormhole
+        progress: {
+          type: heat
+          op: curve
+          interp: pow2In
+        }
+        weaponIndex: 2
+        layer: 109
+        color: 5a58c4
+        colorTo: 7382f0
+        x: -15
+        moveX: 15
+        xScl: 0.001
+        yScl: 0.1
+        moves: [
+          {
+            progress: heat
+            gx: 0.1
+          }
+        ]
+      }
+      {
+        type: RegionPart
+        name: allure-wormhole
+        progress: {
+          type: heat
+          op: curve
+          interp: pow2Out
+        }
+        weaponIndex: 2
+        layer: 109
+        color: 7382f0
+        colorTo: 5a58c4
+        x: 0
+        moveX: 15
+        xScl: 0.101
+        yScl: 0.1
+        moves: [
+          {
+            progress: heat
+            gx: -0.1
+          }
+        ]
+      }
+    ]
+    moves: [
+      {
+        progress: {
+          type: life
+          op: compress
+          start: 0.9
+          end: 1
+        }
+        gx: -4
+        gy: -4
+      }
+    ]
+  }
+]
+weapons: [
+  {
+    name: hellfire-pd
+    alwaysShooting: true
+    controllable: false
+    shootCone: 360
+    x: 0
+    mirror: false
+    recoil: 0
+    reload: 140
+    shootWarmupSpeed: 0.04
+    minWarmup: 0.25
+    shootSound: none
+    bullet: {
+      type: BulletType
+      hittable: false
+      absorbable: false 
+      collides: false 
+      speed: 0
+      lifetime: 0
+      shootEffect: none
+      smokeEffect: none
+      despawnEffect: none
+    }
+  }
+  {
+    name: hellfire-pd
+    alwaysShooting: true
+    controllable: false
+    shootCone: 360
+    x: 0
+    mirror: false
+    recoil: 0
+    reload: 90
+    cooldownTime: 90
+    shootWarmupSpeed: 0.04
+    minWarmup: 0.25
+    shootSound: none
+    bullet: {
+      type: BulletType
+      hittable: false
+      absorbable: false 
+      collides: false 
+      speed: 0
+      lifetime: 0
+      shootEffect: none
+      smokeEffect: none
+      despawnEffect: none
+    }
+  }
+  {
+    name: hellfire-pd
+    alwaysShooting: true
+    controllable: false
+    shootCone: 360
+    x: 0
+    mirror: false
+    recoil: 0
+    reload: 50
+    cooldownTime: 50
+    shootWarmupSpeed: 0.04
+    minWarmup: 0.25
+    shootSound: none
+    bullet: {
+      type: BulletType
+      hittable: false
+      absorbable: false 
+      collides: false 
+      speed: 0
+      lifetime: 0
+      shootEffect: none
+      smokeEffect: none
+      despawnEffect: none
+    }
+  }
+  {
+    alwaysShooting: true
+    x: 0
+    shootY: 0
+    mirror: false
+    reload: 480
+    shoot: {
+      firstShotDelay: 120
+    }
+    bullet: {
+      type: BulletType
+      spawnUnit: allure-0b00-victory
+      chargeEffect: [
+        {
+          particles: 4
+          length: 0
+          layer: 105
+          region: circle-shadow 
+          colorFrom: 000000
+          colorTo: 000000
+          rotWithParent: true
+          sizeFrom: 0
+          sizeTo: 15
+          lifetime: 380
+          interp: pow10Out
+          clip: 8192
+        }
+        {
+          particles: 32
+          length: 13
+          layer: 106
+          rotWithParent: true
+          sizeFrom: 0
+          sizeTo: 0.5
+          lifetime: 380
+          interp: pow10Out
+          clip: 8192
+        }
+        {
+          type: WaveEffect
+          startDelay: 340
+          lifetime: 40
+          sizeFrom: 15
+          sizeTo: 7.5
+          strokeFrom: 0
+          strokeTo: 15
+          interp: pow3In
+          colorFrom: 7382f0
+          colorTo: 7382f0
+          clip: 8192
+        }
+        {
+          type: WaveEffect
+          startDelay: 380
+          lifetime: 40
+          sizeFrom: 7.5
+          sizeTo: 0
+          strokeFrom: 15
+          strokeTo: 0
+          interp: pow3Out
+          colorFrom: 7382f0
+          colorTo: 7382f0
+          clip: 8192
+        }
+        {
+          particles: 1
+          length: 0
+          layer: 105
+          region: allure-diamond-vthin
+          colorFrom: 7382f0
+          colorTo: 7382f0
+          sizeFrom: 0
+          sizeTo: 30
+          lifetime: 20
+          startDelay: 410
+          interp: pow3Out
+          useRotation: false
+          clip: 8192
+        }
+        {
+          particles: 1
+          length: 0
+          layer: 105
+          colorFrom: 7382f0
+          colorTo: 7382f0
+          sizeFrom: 0
+          sizeTo: 2.5
+          lifetime: 20
+          startDelay: 410
+          interp: pow3Out
+          clip: 8192
+        }
+        {
+          particles: 1
+          length: 0
+          layer: 110
+          colorFrom: 000000
+          colorTo: 000000
+          sizeFrom: 0
+          sizeTo: 2
+          lifetime: 20
+          startDelay: 410
+          interp: pow3Out
+          clip: 8192
+        }
+        {
+          particles: 1
+          length: 0
+          layer: 99
+          colorFrom: 000000
+          colorTo: 000000
+          sizeFrom: 0
+          sizeTo: 2
+          lifetime: 20
+          startDelay: 410
+          interp: pow3Out
+          clip: 8192
+        }
+        {
+          particles: 1
+          length: 0
+          layer: 105
+          region: allure-diamond-vthin
+          colorFrom: 7382f0
+          colorTo: 7382f0
+          sizeFrom: 30
+          sizeTo: 0
+          lifetime: 80
+          startDelay: 430
+          useRotation: false
+          clip: 8192
+        }
+        {
+          particles: 1
+          length: 0
+          layer: 105
+          colorFrom: 7382f0
+          colorTo: 7382f0
+          sizeFrom: 2.5
+          sizeTo: 0
+          lifetime: 80
+          startDelay: 430
+          clip: 8192
+        }
+        {
+          particles: 1
+          length: 0
+          layer: 110
+          colorFrom: 000000
+          colorTo: 000000
+          sizeFrom: 2
+          sizeTo: 0
+          lifetime: 80
+          startDelay: 430
+          clip: 8192
+        }
+        {
+          particles: 1
+          length: 0
+          layer: 99
+          colorFrom: 000000
+          colorTo: 000000
+          sizeFrom: 2
+          sizeTo: 0
+          lifetime: 80
+          startDelay: 430
+          clip: 8192
+        }
+      ]
+      smokeEffect: none
+      despawnEffect: none
+    }
+  }
+  {
+    alwaysShooting: true
+    x: 0
+    shootY: 0
+    mirror: false
+    reload: 380
+    shootStatus: allure-stopped
+    shootStatusDuration: 360
+    minWarmup: 0.99
+    shootWarmupSpeed: 0.01
+    bullet: {
+      type: BulletType
+      hittable: false
+      absorbable: false 
+      collides: false 
+      speed: 0
+      lifetime: 0
+      shootEffect: none
+      smokeEffect: none
+      despawnEffect: none
+    }
+  }
+]
+abilities: [
+  {
+    type: StatusFieldAbility
+    reload: 2
+    effect: allure-permaslide
+    range: 6
+    duration: 60
+    activeEffect: none
+    applyEffect: none
+  }
+]
+createWreck: false
+createScorch: false
+deathSound: none
+deathExplosionEffect: none
+envEnabled: -1
+envDisabled: 0
