@@ -1,0 +1,99 @@
+type: BurstDrill
+size: 2
+drillTime: 140
+invertedTime: 100
+itemCapacity: 20
+liquidCapacity: 10
+tier: 8
+shake: 4
+arrows: 0
+consumes: {
+  liquids: [
+    cryofluid/0.025
+    kerosene/0.05
+  ]
+}
+drillSound: explosion
+drillSoundVolume: 0.25
+drillEffect: [
+  {
+    type: RadialEffect
+    amount: 2
+    lengthOffset: 0
+    rotationSpacing: 180
+    effect: [
+      {
+        particles: 30
+        length: 30
+        baseLength: 20
+        lifetime: 120
+        cone: 15
+        interp: pow5Out
+        sizeInterp: linear
+        sizeFrom: 4
+        layer: 99
+        colorFrom: 787878
+        colorTo: 787878
+      }
+      {
+        particles: 30
+        length: 45
+        baseLength: 30
+        lifetime: 100
+        cone: 25
+        interp: pow5Out
+        sizeInterp: linear
+        sizeFrom: 1
+        layer: 99
+        colorFrom: 787878
+        colorTo: 787878
+      }
+      {
+        particles: 12
+        length: 60
+        lifetime: 30
+        baseLength: 30
+        cone: 25
+        interp: pow3Out
+        sizeInterp: linear
+        sizeFrom: 2
+        colorFrom: ffdd55
+        colorTo: db401c
+      }
+      {
+        particles: 10
+        line: true
+        length: 90
+        lifetime: 30
+        baseLength: 45
+        cone: 13
+        interp: pow3Out
+        sizeInterp: linear
+        lenFrom: 6
+        lenTo: 2
+        strokeFrom: 2
+        strokeTo: 0
+        colorFrom: ffdd55
+        colorTo: db401c
+      }
+    ]
+  }
+  {
+    particles: 1
+    region: allure-diamond-thin
+    lifetime: 20
+    length: 0
+    cone: 0
+    sizeFrom: 20
+    sizeTo: 0
+    colorTo: ffdd55
+    interp: pow2In
+  }
+]
+category: production
+requirements: [
+  thorium/100
+  metaglass/50
+  baenite/25
+  crystal/180
+]

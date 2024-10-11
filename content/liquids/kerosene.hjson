@@ -1,0 +1,8 @@
+flammability: 1.7
+viscosity: 0.2
+heatCapacity: 0.3
+explosiveness: 4.9
+effect: overclock
+color: f3e979
+coolant: false
+research: oil

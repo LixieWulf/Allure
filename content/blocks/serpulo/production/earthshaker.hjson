@@ -1,0 +1,105 @@
+type: BurstDrill
+size: 6
+drillTime: 180
+invertedTime: 140
+itemCapacity: 80
+liquidCapacity: 40
+tier: 2000000000
+shake: 24
+arrows: 3
+arrowOffset: 14.8
+arrowSpacing: 3.55
+arrowColor: f7a7a7
+glowColor: a74d76
+consumes: {
+  liquids: [
+    slag/0.1
+    water/0.5
+    cryofluid/0.2
+    kerosene/0.15
+  ]
+}
+drillSound: largeExplosion
+drillSoundVolume: 1
+drillEffect: [
+  {
+    type: RadialEffect
+    amount: 2
+    lengthOffset: 0
+    rotationSpacing: 180
+    effect: [
+      {
+        particles: 70
+        length: 120
+        baseLength: 80
+        lifetime: 180
+        cone: 15
+        interp: pow5Out
+        sizeInterp: linear
+        sizeFrom: 7
+        layer: 99
+        colorFrom: 787878
+        colorTo: 787878
+      }
+      {
+        particles: 50
+        length: 170
+        baseLength: 70
+        lifetime: 140
+        cone: 25
+        interp: pow5Out
+        sizeInterp: linear
+        sizeFrom: 3
+        layer: 99
+        colorFrom: 787878
+        colorTo: 787878
+      }
+      {
+        particles: 12
+        length: 190
+        lifetime: 45
+        baseLength: 90
+        cone: 25
+        interp: pow3Out
+        sizeInterp: linear
+        sizeFrom: 5
+        colorFrom: ffdd55
+        colorTo: db401c
+      }
+      {
+        particles: 10
+        line: true
+        length: 210
+        lifetime: 50
+        baseLength: 80
+        cone: 13
+        interp: pow3Out
+        sizeInterp: linear
+        lenFrom: 12
+        lenTo: 8
+        strokeFrom: 4
+        strokeTo: 0
+        colorFrom: ffdd55
+        colorTo: db401c
+      }
+    ]
+  }
+  {
+    particles: 1
+    region: allure-diamond-thin
+    lifetime: 35
+    length: 0
+    cone: 0
+    sizeFrom: 50
+    sizeTo: 0
+    colorTo: ffdd55
+    interp: pow2In
+  }
+]
+category: production
+requirements: [
+  metaglass/350
+  baenite/400
+  crystal/1100
+  inseltiene/150
+]

@@ -1,0 +1,4 @@
+speedMultiplier: 1.5
+dragMultiplier: 0.25
+reloadMultiplier: 0.75
+permanent: true

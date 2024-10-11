@@ -2,7 +2,7 @@ type: missile
 template: MissileUnitType
 controller: FlyingAI
 defaultController: FlyingAI
-fullOverride: allure-0b01-reckless
+fullOverride: allure-0b02-endeavour
 lowAltitude: true
 shadowElevationScl: 0.9
 speed: 0

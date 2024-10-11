@@ -1,0 +1,269 @@
+type: HeatCrafter
+itemCapacity: 120
+liquidCapacity: 160
+size: 8
+heatRequirement: 6
+boostScale: 1.33
+maxEfficiency: 8
+craftTime: 160
+rotateDraw: false
+rotate: true
+ignoreLiquidFullness: true
+liquidOutputDirections: [0]
+conductivePower: true
+drawer: [
+  {
+  }
+  {
+    type: DrawLiquidOutputs
+  }
+  {
+    type: DrawGlowRegion 
+    color: ffffff
+    alpha: 1
+    layer: 30
+  }
+  {
+    type: DrawRegion 
+    suffix: -rotator
+    spinSprite: true
+    rotateSpeed: 9
+  }
+  {
+    type: DrawRegion 
+    suffix: -rotator
+    spinSprite: true
+    rotateSpeed: 9
+    rotation: 45
+  }
+  {
+    type: DrawRegion
+    suffix: -top
+  }
+  {
+    type: DrawFlame
+    flameRadius: 8
+    flameRadiusIn: 6
+    flameRadiusMag: 5
+    flameRadiusInMag: 4
+    flameRadiusScl: 12
+    flameColor: ffffa8
+  }
+]
+updateEffect: fuelburn
+craftEffect: [
+  mineHuge
+  {
+    type: RadialEffect
+    amount: 2
+    rotationSpacing: 180
+    rotationOffset: 0
+    lengthOffset: 24
+    effect: [
+      {
+        particles: 30
+        length: 15
+        lifetime: 45
+        cone: 10
+        interp: pow5Out
+        sizeInterp: linear
+        sizeFrom: 3
+        layer: 99
+        colorFrom: 787878
+        colorTo: 787878
+        baseRotation: 45
+      }
+      {
+        particles: 12
+        length: 35
+        cone: 10
+        interp: pow3Out
+        sizeInterp: linear
+        sizeFrom: 2
+        colorFrom: ffdd55
+        colorTo: db401c
+        baseRotation: 45
+      }
+      {
+        particles: 12
+        line: true
+        length: 22
+        cone: 10
+        interp: pow3Out
+        sizeInterp: linear
+        lenFrom: 2
+        lenTo: 1
+        strokeFrom: 1
+        strokeTo: 0
+        colorFrom: ffdd55
+        colorTo: db401c
+        baseRotation: 45
+      }
+    ]
+  }
+  {
+    type: RadialEffect
+    amount: 2
+    rotationSpacing: 180
+    rotationOffset: 45
+    lengthOffset: 24
+    effect: [
+      {
+        particles: 30
+        length: 15
+        lifetime: 45
+        cone: 10
+        interp: pow5Out
+        sizeInterp: linear
+        sizeFrom: 3
+        layer: 99
+        colorFrom: 787878
+        colorTo: 787878
+        baseRotation: 45
+        startDelay: 5
+      }
+      {
+        particles: 12
+        length: 35
+        cone: 10
+        interp: pow3Out
+        sizeInterp: linear
+        sizeFrom: 2
+        colorFrom: ffdd55
+        colorTo: db401c
+        baseRotation: 45
+        startDelay: 5
+      }
+      {
+        particles: 12
+        line: true
+        length: 22
+        cone: 10
+        interp: pow3Out
+        sizeInterp: linear
+        lenFrom: 2
+        lenTo: 1
+        strokeFrom: 1
+        strokeTo: 0
+        colorFrom: ffdd55
+        colorTo: db401c
+        baseRotation: 45
+        startDelay: 5
+      }
+    ]
+  }
+  {
+    type: RadialEffect
+    amount: 2
+    rotationSpacing: 180
+    rotationOffset: 90
+    lengthOffset: 24
+    effect: [
+      {
+        particles: 30
+        length: 15
+        lifetime: 45
+        cone: 10
+        interp: pow5Out
+        sizeInterp: linear
+        sizeFrom: 3
+        layer: 99
+        colorFrom: 787878
+        colorTo: 787878
+        baseRotation: 45
+        startDelay: 10
+      }
+      {
+        particles: 12
+        length: 35
+        cone: 10
+        interp: pow3Out
+        sizeInterp: linear
+        sizeFrom: 2
+        colorFrom: ffdd55
+        colorTo: db401c
+        baseRotation: 45
+        startDelay: 10
+      }
+      {
+        particles: 12
+        line: true
+        length: 22
+        cone: 10
+        interp: pow3Out
+        sizeInterp: linear
+        lenFrom: 2
+        lenTo: 1
+        strokeFrom: 1
+        strokeTo: 0
+        colorFrom: ffdd55
+        colorTo: db401c
+        baseRotation: 45
+        startDelay: 10
+      }
+    ]
+  }
+  {
+    type: RadialEffect
+    amount: 2
+    rotationSpacing: 180
+    rotationOffset: 135
+    lengthOffset: 24
+    effect: [
+      {
+        particles: 30
+        length: 15
+        lifetime: 45
+        cone: 10
+        interp: pow5Out
+        sizeInterp: linear
+        sizeFrom: 3
+        layer: 99
+        colorFrom: 787878
+        colorTo: 787878
+        baseRotation: 45
+        startDelay: 15
+      }
+      {
+        particles: 12
+        length: 35
+        cone: 10
+        interp: pow3Out
+        sizeInterp: linear
+        sizeFrom: 2
+        colorFrom: ffdd55
+        colorTo: db401c
+        baseRotation: 45
+        startDelay: 15
+      }
+      {
+        particles: 12
+        line: true
+        length: 22
+        cone: 10
+        interp: pow3Out
+        sizeInterp: linear
+        lenFrom: 2
+        lenTo: 1
+        strokeFrom: 1
+        strokeTo: 0
+        colorFrom: ffdd55
+        colorTo: db401c
+        baseRotation: 45
+        startDelay: 15
+      }
+    ]
+  }
+]
+consumes: {
+  power: 19
+  liquids: [
+    pure-carbon/0.2
+    thermal-fluid/0.5
+    molten-silica/0.125
+  ]
+}
+outputItem: silicon/36
+outputLiquid: thermal-gas/0.51
+category: crafting
+buildVisibility: sandboxOnly

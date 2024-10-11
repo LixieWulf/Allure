@@ -1,0 +1,34 @@
+type: Drill
+size: 6
+tier: 5
+rotateSpeed: -0.5
+warmupSpeed: 0.25
+drillTime: 275
+hardnessDrillMultiplier: 12
+drawRim: true
+heatColor: 85dcd8
+liquidBoostIntensity: 1.9
+liquidCapacity: 80
+itemCapacity: 40
+updateEffectChance: 0.25
+ambientSound: crack
+ambientSoundVolume: 0.05
+consumes: {
+  power: 6
+  liquid: {
+    liquid: oil
+    amount: 0.25
+    optional: true
+    booster: true
+  }
+  liquids: [
+    water/1
+  ]
+}
+category: production
+requirements: [
+  graphite/500
+  metaglass/100
+  thorium/200
+  baenite/100
+]

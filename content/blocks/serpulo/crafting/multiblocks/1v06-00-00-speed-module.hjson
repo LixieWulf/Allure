@@ -13,7 +13,7 @@ drawer: [
 consumes: {
   power: 3
   liquids: [
-    oil/0.5
+    kerosene/0.075
   ]
 }
 category: crafting

@@ -1,0 +1,11 @@
+type: PayloadConveyor
+size: 2
+moveTime: 20
+interp: linear
+payloadLimit: 1
+category: units
+requirements: [
+  copper/40
+  silicon/20
+  baenite/10
+]

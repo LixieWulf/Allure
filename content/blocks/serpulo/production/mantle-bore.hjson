@@ -1,0 +1,36 @@
+type: Drill
+size: 10
+tier: 7
+rotateSpeed: -0.2
+warmupSpeed: 0.25
+drillTime: 300
+hardnessDrillMultiplier: 12
+drawRim: true
+heatColor: f7a7a7
+liquidBoostIntensity: 1.9
+liquidCapacity: 80
+itemCapacity: 40
+updateEffectChance: 0.25
+ambientSound: crack
+ambientSoundVolume: 0.1
+consumes: {
+  power: 6
+  liquid: {
+    liquid: oil
+    amount: 0.25
+    optional: true
+    booster: true
+  }
+  liquids: [
+    water/1
+    cryofluid/0.4
+  ]
+}
+category: production
+requirements: [
+  graphite/1500
+  metaglass/300
+  baenite/300
+  crystal/600
+  draconium/150
+]

@@ -4,7 +4,7 @@ lowAltitude: true
 flying: true
 health: 2100000
 armor: 1500
-hitSize: 160
+hitSize: 180
 speed: 3
 rotateSpeed: 0.7
 omniMovement: false
@@ -1059,17 +1059,186 @@ weapons: [
       ]
     }
   }
-  //jump shockwave TODO 
-  //death
+  //jump ability
   {
-    shootOnDeath: true
-    controllable: false
-    reload: 15
     x: 0
-    shootCone: 360
+    reload: 1800
+    rotate: true
+    rotateSpeed: 0.25
+    mirror: false
+    continuous: true
+    shootStatus: allure-0r-dashstopper
+    shootStatusDuration: 10
+    parts: [
+      {
+        type: ShapePart
+        radius: 500
+        stroke: 6
+        color: e65555
+        hollow: true
+        circle: true
+        layer: 109
+      }
+      {
+        type: ShapePart
+        y: -500
+        radius: 24
+        color: e65555
+        circle: true
+        layer: 109
+      }
+      {
+        type: ShapePart
+        y: -500
+        radius: 15
+        stroke: 6
+        color: 000000
+        hollow: true
+        circle: true
+        layer: 109.5
+      }
+      {
+        type: ShapePart
+        y: 500
+        radius: 24
+        color: e65555
+        sides: 4
+        layer: 109
+      }
+      {
+        type: ShapePart
+        y: 500
+        radius: 15
+        radiusTo: 0
+        stroke: 0
+        strokeTo: 22.5
+        color: 000000
+        hollow: true
+        sides: 4
+        layer: 109.5
+        progress: smoothReload
+      }
+      {
+        type: HaloPart
+        tri: true
+        shapes: 1
+        y: -500
+        haloRotation: 180
+        triLength: 120
+        radius: 18
+        color: e65555
+        layer: 109
+      }
+      {
+        type: HaloPart
+        tri: true
+        shapes: 1
+        y: -500
+        haloRotation: 83
+        triLength: 120
+        radius: 24
+        color: e65555
+        layer: 109
+      }
+      {
+        type: HaloPart
+        tri: true
+        shapes: 1
+        y: -500
+        haloRotation: -83
+        triLength: 120
+        radius: 24
+        color: e65555
+        layer: 109
+      }
+      {
+        type: HaloPart
+        tri: true
+        shapes: 1
+        y: -480
+        haloRotation: 0
+        triLength: 18
+        radius: 18
+        color: e65555
+        layer: 109
+      }
+      {
+        type: HaloPart
+        tri: true
+        shapes: 1
+        y: 500
+        haloRotation: 180
+        triLength: 120
+        radius: 18
+        color: e65555
+        layer: 109
+      }
+    ]
+    shootY: 0
     shootSound: none
     bullet: {
-      spawnUnit: allure-0r00-01-14-extelsus-deamth
+      type: BulletType
+      keepVelocity: false 
+      collides: false 
+      hittable: false
+      absorbable: false
+      lifetime: 5
+      recoil: 100
+      shootEffect: none
+      smokeEffect: none
+    }
+  }
+  {
+    x: 0
+    shootY: 0
+    alwaysShooting: true
+    minShootVelocity: 25
+    shootCone: 360
+    continuous: true
+    mirror: false
+    shootSound: none
+    recoil: 0
+    display: false
+    bullet: {
+      type: BulletType
+      keepVelocity: false 
+      collides: false 
+      hittable: false
+      absorbable: false
+      speed: 0
+      lifetime: 8
+      shootEffect: none
+      smokeEffect: none
+      despawnEffect: {
+        particles: 1
+        length: 0
+        lifetime: 500
+        region: allure-shield
+        sizeFrom: 0
+        sizeTo: 1000
+        colorTo: e6555500
+        interp: pow3
+        sizeInterp: linear
+      }
+      fragBullets: 720
+      fragOffsetMin: 0
+      fragOffsetMax: 0
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragBullet: {
+        type: BulletType
+        keepVelocity: false 
+        hittable: false
+        absorbable: false
+        reflectable: false
+        pierce: true
+        pierceBuilding: true
+        damage: 55
+        speed: 2
+        lifetime: 250
+        despawnEffect: none
+        status: allure-0r-waveblasted
+      }
     }
   }
   //engines
@@ -1415,7 +1584,7 @@ weapons: [
       layer: 90.01
       lifetime: 30
       collides: false
-      length: 48
+      length: 24
       width: 8
       colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
       drawFlare: false
@@ -1459,7 +1628,7 @@ weapons: [
       layer: 90.01
       lifetime: 30
       collides: false
-      length: 15
+      length: 9
       width: 3
       colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
       drawFlare: false
@@ -1503,7 +1672,7 @@ weapons: [
       layer: 90.01
       lifetime: 30
       collides: false
-      length: 30
+      length: 18
       width: 6
       colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
       drawFlare: false
@@ -2005,6 +2174,22 @@ weapons: [
       lengthInterp: pow10Out
     }
   }
+  //death
+  {
+    x: 0
+    rotate: true
+    rotateSpeed: 0
+    controllable: false
+    shootY: 0
+    shootCone: 360
+    shootOnDeath: true
+    shootSound: none
+    bullet: {
+      shootEffect: none
+      smokeEffect: none
+      spawnUnit: allure-0r00-01-14-extelsus-deamth
+    }
+  }
 ]
 abilities: [
   {
@@ -2205,6 +2390,28 @@ abilities: [
           lightOpacity: 0
         }
       ]
+    }
+  }
+  {
+    type: MoveEffectAbility
+    minVelocity: 95
+    interval: 1
+    rotateEffect: true
+    effect: {
+      offset: -90
+      cone: 0
+      layer: 91.2
+      particles: 1
+      sizeFrom: 87.5
+      sizeTo: 87.5
+      randLength: false
+      length: 0
+      lifetime: 60
+      region: allure-0r14-extelsus-full
+      colorFrom: ffffff88
+      colorTo: ffffff00
+      interp: pow3Out
+      lightOpacity: 0
     }
   }
 ]

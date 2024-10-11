@@ -1,0 +1,101 @@
+type: BurstDrill
+size: 3
+drillTime: 160
+invertedTime: 100
+itemCapacity: 40
+liquidCapacity: 20
+tier: 7
+shake: 6
+arrows: 1
+arrowOffset: 0
+arrowColor: 85dcd8
+glowColor: 85dcd8
+consumes: {
+  liquids: [
+    water/0.2
+    cryofluid/0.05
+    kerosene/0.05
+  ]
+}
+drillSound: largeExplosion
+drillSoundVolume: 0.25
+drillEffect: [
+  {
+    type: RadialEffect
+    amount: 2
+    lengthOffset: 0
+    rotationSpacing: 180
+    effect: [
+      {
+        particles: 45
+        length: 60
+        baseLength: 30
+        lifetime: 180
+        cone: 15
+        interp: pow5Out
+        sizeInterp: linear
+        sizeFrom: 6
+        layer: 99
+        colorFrom: 787878
+        colorTo: 787878
+      }
+      {
+        particles: 45
+        length: 70
+        baseLength: 50
+        lifetime: 150
+        cone: 35
+        interp: pow5Out
+        sizeInterp: linear
+        sizeFrom: 2
+        layer: 99
+        colorFrom: 787878
+        colorTo: 787878
+      }
+      {
+        particles: 12
+        length: 90
+        baseLength: 45
+        cone: 25
+        interp: pow3Out
+        sizeInterp: linear
+        sizeFrom: 4
+        colorFrom: ffdd55
+        colorTo: db401c
+      }
+      {
+        particles: 12
+        line: true
+        length: 110
+        baseLength: 45
+        cone: 13
+        interp: pow3Out
+        sizeInterp: linear
+        lenFrom: 8
+        lenTo: 4
+        strokeFrom: 3
+        strokeTo: 0
+        colorFrom: ffdd55
+        colorTo: db401c
+      }
+    ]
+  }
+  {
+    particles: 1
+    region: allure-diamond-thin
+    lifetime: 30
+    length: 0
+    cone: 0
+    sizeFrom: 30
+    sizeTo: 0
+    colorTo: ffdd55
+    interp: pow2In
+  }
+]
+category: production
+requirements: [
+  titanium/200
+  silicon/100
+  metaglass/50
+  baenite/50
+]
