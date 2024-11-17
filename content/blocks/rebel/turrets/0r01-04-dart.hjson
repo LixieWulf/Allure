@@ -101,7 +101,8 @@ ammoTypes: {
   anden: {
     type: RailBulletType
     length: 2048
-    damage: 1200
+    damage: 1700
+    pierceDamageFactor: 0.8
     pointEffectSpace: 160
     pointEffect: {
       line: true

@@ -1,0 +1,417 @@
+type: ItemTurret
+shootSound: shootSmite
+shootY: 24
+size: 8
+liquidCapacity: 70
+range: 760
+health: 90000
+armor: 80
+reload: 180
+recoil: 7
+shake: 8
+cooldownTime: 90
+recoilTime: 80
+rotateSpeed: 1.5
+consumeAmmoOnce: false
+shoot: {
+  type: ShootBarrel
+  shots: 4
+  shotDelay: 10
+  barrels: [
+    -16, 0, 0,
+    -6, 0, 0, 
+    6, 0, 0, 
+    16, 0, 0
+  ]
+}
+velocityRnd: 0.1
+recoils: 4
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      x: -16
+      y: 4.25
+      moveY: -12
+      suffix: -barrel1
+      recoilIndex: 0
+      progress: recoil
+      heatProgress: recoil
+    }
+    {
+      x: -6
+      y: 4.25
+      moveY: -12
+      suffix: -barrel1
+      recoilIndex: 1
+      progress: recoil
+      heatProgress: recoil
+    }
+    {
+      x: 16
+      y: 4.25
+      moveY: -12
+      suffix: -barrel2
+      recoilIndex: 3
+      progress: recoil
+      heatProgress: recoil
+    }
+    {
+      x: 6
+      y: 4.25
+      moveY: -12
+      suffix: -barrel2
+      recoilIndex: 2
+      progress: recoil
+      heatProgress: recoil
+    }
+  ]
+}
+ammoTypes: {
+  surge-alloy: {
+    type: RailBulletType
+    damage: 1000
+    length: 760
+    ammoMultiplier: 2
+    pierceDamageFactor: 0.7
+    pointEffect: {
+      type: ParticleEffect
+      lifetime: 70
+      particles: 1
+      length: 0
+      sizeFrom: 24
+      sizeTo: 12
+      colorFrom: f9c27a
+      colorTo: f9c27a00
+      region: allure-diamond-thin
+    }
+    hitEffect: railHit
+    pierceEffect: massiveExplosion
+    shootEffect: instShoot
+    smokeEffect: smokeCloud
+    pointEffectSpace: 75
+  }
+  crystal: {
+    type: BulletType
+    damage: 4200
+    ammoMultiplier: 1
+    lifetime: 0
+    collides: false
+    hittable: false
+    absorbable: false
+    hitEffect: none
+    despawnEffect: none
+    shootEffect: shootBig2
+    smokeEffect: smokeCloud
+    fragBullets: 12
+    fragRandomSpread: 8
+    fragVelocityMin: 0.7
+    fragVelocityMax: 1.8
+    fragLifeMin: 0.5
+    fragBullet: {
+      speed: 30
+      lifetime: 40
+      drag: 0.035
+      damage: 300
+      status: allure-0b-energy2
+      statusDuration: 5
+      sprite: allure-diamond-thin
+      width: 6
+      height: 32
+      shrinkY: 0.25
+      shrinkX: 1
+      frontColor: 90a2fc
+      backColor: 00000000
+      hitColor: 7382f0
+      despawnEffect: none
+      hitEffect: hitBulletColor
+      lightning: 1
+      lightningLength: 4
+      lightningLengthRand: 8
+      lightningColor: 7382f0
+      lightningDamage: 140
+      despawnHit: false
+      setDefaults: false
+    }
+  }
+  inseltiene: {
+    type: RailBulletType
+    damage: 600
+    length: 890
+    rangeOverride: 890
+    pierceDamageFactor: 0.5
+    pointEffectSpace: 120
+    pointEffect: [
+      {
+        lightOpacity: 0.25
+        lightScl: 1
+        type: ParticleEffect
+        length: 0
+        baseLength: 24
+        randLength: false
+        lifetime: 110
+        particles: 1
+        cone: 0
+        interp: pow3In
+        sizeInterp: linear
+        region: allure-railblast
+        sizeFrom: 10
+        sizeTo: 7
+        colorFrom: 7382f0
+        colorTo: 7382f000
+      }
+      {
+        lightOpacity: 0.25
+        lightScl: 1
+        type: ParticleEffect
+        length: 0
+        baseLength: 30
+        randLength: false
+        lifetime: 110
+        particles: 1
+        cone: 0
+        interp: pow3In
+        sizeInterp: linear
+        region: allure-railblast
+        sizeFrom: 16
+        sizeTo: 10
+        colorFrom: 7382f0
+        colorTo: 7382f000
+      }
+      {
+        lightOpacity: 0.25
+        lightScl: 1
+        type: ParticleEffect
+        length: 0
+        lifetime: 110
+        particles: 1
+        cone: 0
+        interp: pow3In
+        sizeInterp: linear
+        region: allure-diamond-thin
+        sizeFrom: 30
+        sizeTo: 10
+        colorFrom: 7382f0
+        colorTo: 7382f000
+      }
+      {
+        lightOpacity: 0.4
+        lightScl: 0.65
+        type: ParticleEffect
+        length: 0
+        lifetime: 110
+        layer: 110.001
+        particles: 1
+        cone: 0
+        interp: pow3In
+        sizeInterp: linear
+        region: allure-diamond-thin
+        sizeFrom: 24
+        sizeTo: 6
+        colorTo: ffffff00
+      }
+    ]
+    pierceEffect: [
+      {
+        line: true
+        cone: 35
+        lifetime: 40
+        length: 55
+        particles: 14
+        interp: pow3Out
+        sizeInterp: pow2In
+        strokeFrom: 2
+        strokeTo: 0
+        lenFrom: 8
+        lenTo: 12
+        colorTo: 7382f0
+      }
+      {
+        type: WaveEffect
+        lifetime: 30
+        interp: pow3Out
+        sizeFrom: 0
+        sizeTo: 40
+        strokeFrom: 6
+        strokeTo: 0
+        colorFrom: 7382f0
+        colorTo: 7382f0
+      }
+      {
+        length: 40
+        particles: 32
+        lifetime: 80
+        interp: pow3Out
+        sizeInterp: pow5In
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: 7382f0bb
+        colorTo: 7382f0bb
+      }
+      {
+        length: 50
+        particles: 32
+        lifetime: 65
+        interp: pow3Out
+        sizeInterp: pow5In
+        sizeFrom: 2
+        sizeTo: 0
+        colorFrom: 7382f0bb
+        colorTo: 7382f0bb
+      }
+      {
+        lightOpacity: 0.25
+        lightScl: 1
+        length: 0
+        offset: 25
+        lifetime: 45
+        particles: 1
+        cone: 0
+        region: allure-shootspike
+        sizeFrom: 50
+        sizeTo: 25
+        colorTo: 7382f000
+      }
+      {
+        lightOpacity: 0.25
+        lightScl: 1
+        length: 0
+        offset: -30
+        lifetime: 45
+        particles: 1
+        cone: 0
+        region: allure-shootspike
+        sizeFrom: 50
+        sizeTo: 25
+        colorTo: 7382f000
+      }
+    ]
+    shootEffect: [
+      {
+        layer: 105
+        lightOpacity: 0.25
+        lightScl: 1
+        length: 0
+        offset: 30
+        lifetime: 45
+        particles: 1
+        cone: 0
+        region: allure-shootspike
+        sizeFrom: 45
+        sizeTo: 22
+        colorFrom: 7382f0
+        colorTo: 7382f000
+      }
+      {
+        layer: 105
+        lightOpacity: 0.25
+        lightScl: 1
+        length: 0
+        offset: -30
+        lifetime: 45
+        particles: 1
+        cone: 0
+        region: allure-shootspike
+        sizeFrom: 45
+        sizeTo: 22
+        colorFrom: 7382f0
+        colorTo: 7382f000
+      }
+      {
+        layer: 105
+        lightOpacity: 0.25
+        lightScl: 1
+        length: 0
+        lifetime: 45
+        particles: 1
+        cone: 0
+        region: allure-shootspike
+        sizeFrom: 100
+        sizeTo: 50
+        colorFrom: 7382f0
+        colorTo: 7382f000
+        randLength: false 
+        baseLength: 17
+      }
+      {
+        lightOpacity: 0.25
+        lightScl: 1
+        length: 0
+        lifetime: 45
+        particles: 1
+        cone: 0
+        region: allure-diamond-thin
+        sizeFrom: 60
+        sizeTo: 30
+        colorFrom: 7382f0
+        colorTo: 7382f000
+      }
+      {
+        lightOpacity: 0.25
+        lightScl: 1
+        length: 0
+        offset: 30
+        lifetime: 45
+        particles: 1
+        cone: 0
+        region: allure-shootspike
+        sizeFrom: 25
+        sizeTo: 12
+        colorFrom: 000000
+        colorTo: 000000
+      }
+      {
+        lightOpacity: 0.25
+        lightScl: 1
+        length: 0
+        offset: -30
+        lifetime: 45
+        particles: 1
+        cone: 0
+        region: allure-shootspike
+        sizeFrom: 25
+        sizeTo: 12
+        colorFrom: 000000
+        colorTo: 000000
+      }
+      {
+        type: WaveEffect
+        lifetime: 35
+        interp: pow3Out
+        sizeFrom: 0
+        sizeTo: 80
+        strokeFrom: 6
+        strokeTo: 0
+        colorFrom: 7382f0
+        colorTo: 7382f0
+      }
+    ]
+    setDefaults: false
+    despawnHit: false
+    fragRandomSpread: 15
+    fragBullets: 9
+    fragBullet: {
+      type: LightningBulletType
+      createChance: 0.5
+      lightningLength: 12
+      lightningLengthRand: 12
+      damage: 150
+      lightningColor: 7382f0
+    }
+  }
+}
+coolant: {
+  type: ConsumeLiquid
+  liquid: cryofluid
+  amount: 0.6
+}
+coolantMultiplier: 1.7
+category: turret
+requirements: [
+  copper/4500
+  graphite/1000
+  surge-alloy/1500
+  baenite/4000
+  infrastructure/1500
+  inseltiene/1000
+]

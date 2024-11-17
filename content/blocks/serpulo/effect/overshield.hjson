@@ -1,0 +1,25 @@
+type: ForceProjector
+size: 12
+sides: 25
+radius: 600
+liquidCapacity: 60
+phaseRadiusBoost: 240
+shieldHealth: 1500000
+phaseShieldBoost: 500000
+cooldownNormal: 0
+cooldownLiquid: 1.5
+cooldownBrokenBase: 250
+coolantConsumption: 2.5
+buildVisibility: sandboxOnly
+itemConsumer: {
+  type: ConsumeItems
+  items: [
+    inseltiene/3
+  ]
+}
+consumes: {
+  power: 36
+  liquids: [
+    kerosene/0.5
+  ]
+}

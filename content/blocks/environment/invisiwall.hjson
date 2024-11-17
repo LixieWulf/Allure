@@ -1,0 +1,7 @@
+type: Wall
+variants: 0
+hasShadow: false
+forceDark: true
+update: false
+breakable: false
+destructible: false

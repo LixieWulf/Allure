@@ -1,0 +1,26 @@
+type: ForceProjector
+hasPower: false
+hasItems: false
+hasLiquids: false
+size: 2
+sides: 4
+radius: 90
+shieldHealth: 5200
+shieldRotation: 45
+cooldownNormal: 9
+cooldownBrokenBase: 13
+consumeCoolant: false
+buildVisibility: sandboxOnly
+consumes: {
+  power: 4
+  liquids: [
+    kerosene/0.025
+  ]
+}
+shieldBreakEffect: {
+  type: RadialEffect
+  amount: 1
+  lengthOffset: 0
+  rotationOffset: -74
+  effect: placeBlock
+}

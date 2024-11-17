@@ -1,0 +1,186 @@
+type: missile
+template: MissileUnitType
+defaultController: FlyingAI
+speed: 0
+lifetime: 300
+hittable: false
+targetable: false
+rotateSpeed: 0 
+engineSize: 0
+fullOverride: clear-effect
+drawCell: false
+drawBody: false
+outlines: false
+weapons: [
+  {
+    x: 0
+    shootY: 0
+    mirror: false
+    alwaysShooting: true
+    inaccuracy: 35
+    reload: 15
+    shootSound: none
+    shake: 25
+    bullet: {
+      type: BulletType
+      hittable: false
+      pierce: true
+      pierceBuilding: true
+      damage: 240
+      lifetime: 2
+      splashDamage: 240
+      splashDamageRadius: 85
+      splashDamagePierce: true
+      ignoreSpawnAngle: true
+      shootEffect: [
+        {
+          line: true
+          useRotation: false
+          baseRotation: 70
+          cone: 0
+          particles: 1
+          length: 0.001
+          lifetime: 30
+          sizeInterp: slope
+          lenFrom: 1024
+          lenTo: 1024
+          strokeFrom: 0
+          strokeTo: 24
+          colorFrom: 7382f0
+          colorTo: 7382f0
+          layer: 109.9
+        }
+        {
+          line: true
+          useRotation: false
+          baseRotation: 70
+          cone: 0
+          particles: 1
+          length: 0.001
+          lifetime: 30
+          sizeInterp: slope
+          lenFrom: 1024
+          lenTo: 1024
+          strokeFrom: 0
+          strokeTo: 20
+        }
+        {
+          particles: 1
+          length: 0
+          lifetime: 30
+          particles: 1
+          sizeInterp: slope
+          sizeFrom: 0
+          sizeTo: 40
+          colorFrom: 7382f0
+          colorTo: 7382f088
+        }
+        {
+          particles: 1
+          length: 0
+          lifetime: 30
+          particles: 1
+          sizeInterp: slope
+          sizeFrom: 0
+          sizeTo: 32
+        }
+      ]
+      smokeEffect: none
+      despawnEffect: none
+      puddleLiquid: slag
+      puddles: 9
+      puddleRange: 9
+      puddleAmount: 25
+      fragBullets: 1
+      fragRandomSpread: 0
+      fragAngle: 70
+      fragOffsetMin: 0
+      fragOffsetMax: 16
+      fragBullet: {
+        type: LaserBulletType
+        damage: 0
+        width: 0
+        length: 1024
+        laserAbsorb: false
+        lightningSpacing: 32
+        lightningDelay: 0
+        lightningLength: 2
+        lightningType: {
+          type: BulletType
+          createChance: 0.25
+          collides: false
+          hittable: false
+          absorbable: false
+          damage: 0 
+          instantDisappear: true
+          despawnEffect: {
+            line: true
+            useRotation: false
+            baseRotation: 70
+            cone: 0
+            particles: 1
+            length: -64
+            lifetime: 45
+            sizeInterp: slope
+            lenFrom: 0
+            lenTo: 24
+            strokeFrom: 0
+            strokeTo: 2
+            colorFrom: 7382f0
+          }
+        }
+      }
+      fragOnAbsorb: true
+    }
+  }
+  {
+    x: 0
+    shootY: 0
+    mirror: false
+    alwaysShooting: true
+    reload: 5
+    shootSound: none
+    shake: 25
+    inaccuracy: 35
+    bullet: {
+      type: BulletType
+      recoil: -3
+      hittable: false
+      absorbable: false
+      pierce: true
+      pierceBuilding: true
+      hitSize: 24
+      lifetime: 2
+      damage: 1000000000
+      maxDamageFraction: 0.025
+      shootEffect: {
+        line: true
+        followParent: false
+        particles: 12
+        length: 85
+        lifetime: 30
+        interp: pow3Out
+        sizeInterp: linear
+        lenFrom: 16
+        lenTo: 0
+        strokeFrom: 4
+        strokeTo: 0
+        colorTo: 7382f0
+      }
+      smokeEffect: {
+        cone: 0
+        particles: 1
+        baseRotation: 180
+        length: 0
+        lifetime: 45
+        particles: 1
+        region: allure-shootspike
+        sizeInterp: slope
+        sizeFrom: 0
+        sizeTo: 180
+        colorFrom: 7382f0
+      }
+      despawnEffect: none
+    }
+  }
+]

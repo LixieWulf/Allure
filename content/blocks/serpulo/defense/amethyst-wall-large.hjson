@@ -54,7 +54,7 @@ destroyBullet: {
     drag: 0.05
     damage: 110
     sprite: allure-diamond-thin
-    width: 8
+    width: 4
     height: 8
     shrinkY: 0.25
     shrinkX: 1

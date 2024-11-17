@@ -1,31 +1,266 @@
-type: PowerTurret
+type: ItemTurret
 size: 8
-health: 510000
-range: 80
-reload: 140
-recoil: -50
-restitution: 0.2
+shootY: -18
+health: 160000
+armor: 440
+range: 800
+reload: 400
+cooldownTime: 200
+recoil: -9
+rotateSpeed: 1.4
+shake: 15
 consumes: {
-  power: 1288
-  } 
-shootSound: none
-shootType: {
-  type: ShrapnelBulletType
-  damage: 250000
-  length: 50
-  width: 0.01
-  serrations: 0
-  toColor: ffffff
-  status: allure-bleeding
+  power: 1290
 }
-coolantUsage: 2.1
+coolant: {
+  type: ConsumeLiquid
+  liquid: kerosene
+  amount: 0.75
+}
+coolantMultiplier: 1.414
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -blade0
+      moveY: 64
+      progress: heat
+      moves: [
+        {
+          y: -64
+          progress: {
+            type: heat
+            ops: [
+              {
+                op: compress
+                start: 0.97
+                end: 1
+              }
+              {
+                op: curve
+                interp: pow3In
+              }
+            ]
+          }
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -blade1
+      moveY: 32
+      progress: {
+        type: heat
+        op: compress
+        start: 0
+        end: 0.5
+      }
+      moves: [
+        {
+          y: -32
+          progress: {
+            type: heat
+            op: compress
+            start: 0.99
+            end: 1
+          }
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -upper
+    }
+    {
+      type: RegionPart
+      suffix: -launcher
+      moveY: 24
+      progress: reload
+      moves: [
+        {
+          y: -24
+          progress: {
+            type: reload
+            ops: [
+              {
+                op: compress
+                start: 0.99
+                end: 1
+              }
+              {
+                op: curve
+                interp: pow3In
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
+shootSound: explosionbig
+ammoPerShot: 32
+maxAmmo: 64
+ammoTypes: {
+  blast-compound: {
+    type: BulletType
+    damage: 30000
+    ammoMultiplier: 1
+    lifetime: 0
+    collides: false
+    hittable: false
+    absorbable: false
+    hitEffect: none
+    despawnEffect: none
+    shootEffect: none
+    smokeEffect: none
+    fragBullets: 1
+    fragRandomSpread: 0
+    fragOffsetMin: 15
+    fragOffsetMax: 15
+    fragAngle: 90
+    fragBullet: {
+      type: BulletType
+      lifetime: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      hitEffect: none
+      despawnEffect: [
+        {
+          length: 40
+          particles: 14
+          interp: pow5Out
+          sizeInterp: pow2In
+          lifetime: 50
+          cone: 20
+          sizeFrom: 3
+          sizeTo: 0
+          colorFrom: 909090
+          colorTo: 909090
+          baseRotation: 90
+        }
+        {
+          length: 0
+          cone: 0
+          particles: 1
+          lifetime: 30
+          sizeFrom: 60
+          sizeTo: 0
+          colorFrom: ffdd55
+          colorTo: db401c
+          region: allure-shootspike
+          baseRotation: 90
+        } 
+      ]
+      fragBullets: 1
+      fragRandomSpread: 0
+      fragOffsetMin: 0
+      fragOffsetMax: 0
+      fragAngle: -90
+      fragBullet: {
+        type: RailBulletType
+        damage: 28000
+        length: 180
+        knockback: 3
+        pointEffect: none
+        spawnBullets: [
+          {
+            type: RailBulletType
+            damage: 2000000000
+            maxDamageFraction: 0.06
+            length: 180
+            pointEffect: none
+          }
+        ]
+      }
+    }
+    spawnBullets: [
+      {
+        type: BulletType
+        ammoMultiplier: 1
+        lifetime: 0
+        collides: false
+        hittable: false
+        absorbable: false
+        hitEffect: none
+        despawnEffect: none
+        shootEffect: none
+        smokeEffect: none
+        fragBullets: 1
+        fragRandomSpread: 0
+        fragOffsetMin: 15
+        fragOffsetMax: 15
+        fragAngle: -90
+        fragBullet: {
+          type: BulletType
+          lifetime: 0
+          collides: false
+          hittable: false
+          absorbable: false
+          hitEffect: none
+          despawnEffect: [
+            {
+              length: 40
+              particles: 14
+              interp: pow5Out
+              sizeInterp: pow2In
+              lifetime: 50
+              cone: 20
+              sizeFrom: 3
+              sizeTo: 0
+              colorFrom: 909090
+              colorTo: 909090
+              baseRotation: -90
+            }
+            {
+              length: 0
+              cone: 0
+              particles: 1
+              lifetime: 30
+              sizeFrom: 60
+              sizeTo: 0
+              colorFrom: ffdd55
+              colorTo: db401c
+              region: allure-shootspike
+              baseRotation: -90
+            } 
+          ]
+          fragBullets: 1
+          fragRandomSpread: 0
+          fragOffsetMin: 0
+          fragOffsetMax: 0
+          fragAngle: 90
+          fragBullet: {
+            type: RailBulletType
+            damage: 28000
+            length: 180
+            knockback: 3
+            pointEffect: none
+            spawnBullets: [
+              {
+                type: RailBulletType
+                damage: 2000000000
+                maxDamageFraction: 0.06
+                length: 180
+                pointEffect: none
+              }
+            ]
+          }
+        }
+      }
+      {
+        spawnUnit: allure-vertex-decoy
+      }
+    ]
+  }
+}
 research: 0r-halberd
 category: turret
 requirements: [
-  copper/25000
-  lead/30000
-  thorium/20000
-  surge-alloy/15000
-  draconium/4500
-  shadow/750
+  thorium/2000
+  baenite/2500
+  crystal/7500
+  infrastructure/1000
 ]

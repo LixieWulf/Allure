@@ -12,6 +12,62 @@ speed: 0
 drag: 0.5
 engineSize: 0
 lifetime: 358
+parts: [
+  {
+    type: RegionPart
+    name: allure-singularity
+    outline: false
+    layer: 150
+    progress: life
+    moveRot: 720
+    xScl: 2.25
+    yScl: 2.25
+    color: ffffff88
+  }
+  {
+    type: RegionPart
+    name: allure-singularity
+    outline: false
+    layer: 150
+    progress: life
+    moveRot: 720
+    rotation: 180
+    xScl: 2.25
+    yScl: 2.25
+    color: ffffff88
+  }
+  {
+    type: RegionPart
+    name: allure-singularity
+    outline: false
+    layer: 150
+    progress: life
+    moveRot: 960
+    xScl: 1.5
+    yScl: 1.5
+    color: ffffffbb
+  }
+  {
+    type: RegionPart
+    name: allure-singularity
+    outline: false
+    layer: 150
+    progress: life
+    moveRot: 1440
+    xScl: 1
+    yScl: 1
+    color: ffffff88
+  }
+  {
+    type: RegionPart
+    name: circle-shadow
+    outline: false
+    layer: 150
+    xScl: 12
+    yScl: 12
+    color: 000000
+  }
+]
 weapons: [
   {
     alwaysShooting: true
@@ -25,159 +81,7 @@ weapons: [
       length: 0
       drawFlare: false
       smokeEffect: none
-      shootEffect: [
-        {
-          length: 0
-          layer: 60
-          particles: 5
-          region: circle-shadow
-          lifetime: 361
-          sizeFrom: 55
-          sizeTo: 55
-          colorFrom: 000000
-          colorTo: 000000
-        }
-        {
-          length: 0
-          layer: 60
-          particles: 1
-          region: circle-shadow
-          lifetime: 361
-          sizeFrom: 300
-          sizeTo: 300
-          colorFrom: 000000
-          colorTo: 000000
-        }
-        {
-          length: 0
-          layer: 60
-          particles: 5
-          lifetime: 361
-          sizeFrom: 35
-          sizeTo: 35
-          colorFrom: 000000
-          colorTo: 000000
-        }
-        {
-          length: 0
-          layer: 60
-          particles: 1
-          spin: 2
-          region: allure-singularity
-          lifetime: 361
-          sizeFrom: 240
-          sizeTo: 240
-          colorFrom: 000000
-          colorTo: 000000
-          useRotation: false
-        }
-        {
-          length: 0
-          layer: 60
-          particles: 1
-          spin: 5
-          region: allure-singularity
-          lifetime: 361
-          sizeFrom: 160
-          sizeTo: 160
-          colorFrom: 000000
-          colorTo: 000000
-          useRotation: false
-        }
-        {
-          length: 0
-          layer: 60
-          particles: 1
-          spin: 5
-          offset: 30
-          region: allure-singularity
-          lifetime: 361
-          sizeFrom: 160
-          sizeTo: 160
-          colorFrom: 000000
-          colorTo: 000000
-          useRotation: false
-        }
-        {
-          length: 0
-          layer: 60
-          particles: 1
-          spin: 5
-          offset: 60
-          region: allure-singularity
-          lifetime: 361
-          sizeFrom: 160
-          sizeTo: 160
-          colorFrom: 000000
-          colorTo: 000000
-          useRotation: false
-        }
-        {
-          length: 0
-          layer: 60
-          particles: 1
-          spin: 8
-          region: allure-singularity-ring
-          lifetime: 361
-          sizeFrom: 200
-          sizeTo: 200
-          colorFrom: 000000bb
-          colorTo: 000000bb
-          useRotation: false
-        }
-        {
-          length: 0
-          layer: 60
-          particles: 1
-          spin: -4
-          region: allure-singularity-ring
-          lifetime: 361
-          sizeFrom: 200
-          sizeTo: 200
-          colorFrom: 000000bb
-          colorTo: 000000bb
-          useRotation: false
-        }
-        {
-          length: 0
-          layer: 60
-          particles: 1
-          spin: -2
-          region: allure-singularity-ring
-          lifetime: 361
-          sizeFrom: 240
-          sizeTo: 240
-          colorFrom: 00000055
-          colorTo: 00000055
-          useRotation: false
-        }
-        {
-          length: 0
-          layer: 60
-          particles: 1
-          spin: 12
-          region: allure-singularity-ring
-          lifetime: 361
-          sizeFrom: 240
-          sizeTo: 240
-          colorFrom: 00000055
-          colorTo: 00000055
-          useRotation: false
-        }
-        {
-          length: 0
-          layer: 60
-          particles: 1
-          spin: 12
-          region: allure-singularity-ring
-          lifetime: 361
-          sizeFrom: 140
-          sizeTo: 140
-          colorFrom: 000000
-          colorTo: 000000
-          useRotation: false
-        }
-      ]
+      shootEffect: none
     }
   }
   {
@@ -186,17 +90,29 @@ weapons: [
     reload: 5
     inaccuracy: 360
     shoot: {
-      shots: 1440
+      shots: 120
     }
     shootSound: none
     bullet: {
       type: RailBulletType
       length: 300
-      damage: 300
-      knockback: -4
+      damage: 40
+      knockback: -14
       shootEffect: none
       smokeEffect: none
-      hitEffect: none
+      hitEffect: {
+        length: -120
+        layer: 150
+        region: particle
+        cone: 0
+        particles: 1
+        lifetime: 15
+        interp: pow2In
+        sizeFrom: 6
+        sizeTo: 0
+        colorFrom: 000000
+        colorTo: 000000
+      }
       pierceEffect: none
     }
   }
@@ -222,21 +138,6 @@ weapons: [
         colorFrom: 000000
         colorTo: 000000
       }
-      smokeEffect: none
-      hitEffect: none
-      despawnEffect: none
-    }
-  }
-  {
-    controllable: false
-    shootCone: 360
-    shootOnDeath: true
-    x: 0
-    mirror: false
-    shootSound: none
-    bullet: {
-      spawnUnit: allure-aftermath-s-eff
-      shootEffect: none
       smokeEffect: none
       hitEffect: none
       despawnEffect: none

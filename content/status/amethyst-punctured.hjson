@@ -1,0 +1,41 @@
+healthMultiplier: 0.75
+effect: [
+  {
+    useRotation: false
+    particles: 1
+    length: 0
+    region: allure-diamond-vthin
+    lifetime: 30
+    sizeFrom: 8
+    sizeTo: 0
+    interp: pow2In
+    clip: 8192
+    colorTo: c3b3f8
+  }
+  {
+    useRotation: false
+    particles: 1
+    length: 0
+    region: allure-diamond-vthin
+    lifetime: 20
+    sizeFrom: 5
+    sizeTo: 0
+    interp: pow2In
+    offset: 45
+    clip: 8192
+    colorTo: c3b3f8
+  }
+  {
+    useRotation: false
+    particles: 1
+    length: 0
+    region: allure-diamond-vthin
+    lifetime: 20
+    sizeFrom: 5
+    sizeTo: 0
+    interp: pow2In
+    offset: 135
+    clip: 8192
+    colorTo: c3b3f8
+  }
+]

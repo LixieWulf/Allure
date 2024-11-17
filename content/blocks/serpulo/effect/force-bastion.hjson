@@ -1,0 +1,17 @@
+type: ForceProjector
+hasItems: false
+sides: 4
+radius: 64
+shieldHealth: 1700
+shieldRotation: 45
+cooldownNormal: 3
+cooldownBrokenBase: 5
+consumeCoolant: false
+buildVisibility: sandboxOnly
+shieldBreakEffect: {
+  type: RadialEffect
+  amount: 1
+  lengthOffset: 0
+  rotationOffset: -53
+  effect: placeBlock
+}

@@ -1,0 +1,58 @@
+type: ContinuousTurret
+liquidCapacity: 160
+size: 8
+health: 190000
+armor: 240
+range: 260
+recoil: 2
+reload: 80
+rotateSpeed: 1.6
+shootWarmupSpeed: 0.015
+shootY: 20
+heatColor: 000000
+consumes: {
+  power: 1400
+  liquids: [
+    arreacta/1
+    kerosene/0.15
+    cryofluid/0.6
+  ]
+} 
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      outline: false
+      blending: additive
+      suffix: -heat
+      progress: warmup
+      color: 000000
+      colorTo: ab3400
+    }
+  ]
+}
+shootSound: none
+loopSound: pulse
+shootType: {
+  type: ContinuousFlameBulletType
+  shake: 2
+  drawFlare: false
+  lifetime: 250
+  pierceCap: 1
+  length: 240
+  width: 28
+  damage: 0.2
+  buildingDamageMultiplier: 1000
+  status: allure-0t-thermal3
+  statusDuration: 3
+  colors: [665c9e45, 8b73c790, be92f7aa, be92f7, ffffff]
+}
+category: turret
+requirements: [
+  graphite/5000
+  metaglass/2500
+  thorium/1500
+  phase-fabric/4000
+  draconium/2500
+]

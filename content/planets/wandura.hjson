@@ -46,6 +46,7 @@ rotateTime: 5000
 //add tidalLock: true and updateLighting: false to make a planet's daylight not move
 //whether this planet can be selected, ever
 accessible: true
+alwaysUnlocked: true
 //whether to allow launching to numbered sectors - set to false for erekir sector behaviour
 allowLaunchToNumbered: false
 //planet environmental factors

@@ -5,6 +5,10 @@ liquidCapacity: 70
 size: 2
 conductivePower: true
 craftTime: 15
+drawer: {
+  type: DrawRegion
+  layer: 29.9
+}
 consumes: {
   power: 3
   liquids: [

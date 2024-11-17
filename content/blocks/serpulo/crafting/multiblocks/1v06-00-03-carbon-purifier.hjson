@@ -5,6 +5,10 @@ maxEfficiency: 2
 size: 2
 conductivePower: true
 craftTime: 30
+drawer: {
+  type: DrawRegion
+  layer: 29.9
+}
 consumes: {
   power: 1.5
   liquids: [

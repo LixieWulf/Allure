@@ -7,10 +7,13 @@ conductivePower: true
 craftTime: 20
 drawer: [
   {
+    type: DrawRegion
+    layer: 29.9
   }
   {
     type: DrawLiquidTile
     drawLiquid: molten-lead
+    padding: 4
   }
   {
     type: DrawRegion

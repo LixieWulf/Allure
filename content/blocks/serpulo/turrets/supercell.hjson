@@ -1,61 +1,432 @@
 type: ItemTurret
+shootSound: artillery
 size: 8
-liquidCapacity: 350
-range: 600
-health: 270000
-reload: 15
+liquidCapacity: 70
+range: 825
+health: 70000
+armor: 120
+reload: 40
+cooldownTime: 10
 recoil: 4
-inaccuracy: 5
-shots: 2
-xRand: 8
-rotateSpeed: 2.9
+shake: 3
+inaccuracy: 2
+rotateSpeed: 2.2
+shootEffect: shootBig
+smokeEffect: shootBigSmoke
+consumeAmmoOnce: false
+shootWarmupSpeed: 0.01
+shoot: {
+  shots: 4
+  shotDelay: 50
+}
+velocityRnd: 0.1
+drawer: {
+  type: DrawTurret
+  parts: [
+    //left lower anim
+    {
+      type: RegionPart
+      name: allure-supercell-barrel
+      progress: heat
+      heatProgress: warmup
+      turretHeatLayer: 50
+      color: 212229
+      colorTo: 131316
+      x: -2.625
+      moveX: -3.125
+      y: 4.25
+      moveY: -1.5
+      xScl: 0.4375
+      yScl: 1.5
+      moves: [
+        {
+          progress: heat
+          gx: -0.05
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      name: allure-supercell-barrel
+      progress: heat
+      heatProgress: warmup
+      turretHeatLayer: 50
+      color: 4a4b53
+      colorTo: 131316
+      x: -0.875
+      moveX: -3.625
+      y: 4.25
+      moveY: -1.5
+      xScl: 0.4375
+      yScl: 1.5
+      moves: [
+        {
+          progress: heat
+          gx: -0.05
+        }
+      ]
+    }
+    //right lower anim
+    {
+      type: RegionPart
+      name: allure-supercell-barrel
+      progress: heat
+      heatProgress: warmup
+      turretHeatLayer: 50
+      color: 32333d
+      colorTo: 131316
+      x: 4.25
+      moveX: -3.625
+      y: 2.75
+      moveY: 1.5
+      xScl: 0.3875
+      yScl: 1.5
+      moves: [
+        {
+          progress: heat
+          gx: 0.05
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      name: allure-supercell-barrel
+      progress: heat
+      heatProgress: warmup
+      turretHeatLayer: 50
+      color: 4a4b53
+      colorTo: 131316
+      x: 5.75
+      moveX: -3.125
+      y: 2.75
+      moveY: 1.5
+      xScl: 0.3875
+      yScl: 1.5
+      moves: [
+        {
+          progress: heat
+          gx: 0.05
+        }
+      ]
+    }
+    //left upper anim
+    {
+      type: RegionPart
+      name: allure-supercell-barrel
+      progress: heat
+      heatProgress: warmup
+      turretHeatLayer: 50
+      color: 212229
+      colorTo: 212229
+      x: -5.75
+      moveX: 3.625
+      y: 2.75
+      moveY: 1.5
+      xScl: 0.3875
+      yScl: 1.5
+      moves: [
+        {
+          progress: heat
+          gx: 0.05
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      name: allure-supercell-barrel
+      progress: heat
+      heatProgress: warmup
+      turretHeatLayer: 50
+      color: 32333d
+      colorTo: 4a4b53
+      x: -4.25
+      moveX: 3.125
+      y: 2.75
+      moveY: 1.5
+      xScl: 0.3875
+      yScl: 1.5
+      moves: [
+        {
+          progress: heat
+          gx: 0.05
+        }
+      ]
+    }
+    //center upper anim
+    {
+      type: RegionPart
+      name: allure-supercell-barrel
+      progress: heat
+      heatProgress: warmup
+      turretHeatLayer: 50
+      color: 212229
+      x: -2.625
+      moveX: 3.625
+      y: 4.25
+      xScl: 0.4375
+      yScl: 1.5
+    }
+    {
+      type: RegionPart
+      name: allure-supercell-barrel
+      progress: heat
+      heatProgress: warmup
+      turretHeatLayer: 50
+      color: 4a4b53
+      x: -0.875
+      moveX: 3.625
+      y: 4.25
+      xScl: 0.4375
+      yScl: 1.5
+    }
+    //right upper anim
+    {
+      type: RegionPart
+      name: allure-supercell-barrel
+      progress: heat
+      heatProgress: warmup
+      turretHeatLayer: 50
+      color: 212229
+      colorTo: 32333d
+      x: 0.875
+      moveX: 3.625
+      y: 4.25
+      moveY: -1.5
+      xScl: 0.4375
+      yScl: 1.5
+      moves: [
+        {
+          progress: heat
+          gx: -0.05
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      name: allure-supercell-barrel
+      progress: heat
+      heatProgress: warmup
+      turretHeatLayer: 50
+      color: 4a4b53
+      colorTo: 32333d
+      x: 2.625
+      moveX: 3.125
+      y: 4.25
+      moveY: -1.5
+      xScl: 0.4375
+      yScl: 1.5
+      moves: [
+        {
+          progress: heat
+          gx: -0.05
+        }
+      ]
+    }
+
+    {
+      type: RegionPart
+      suffix: -upper
+    }
+  ]
+}
 ammoTypes: {
   amethyst: {
-    damage: 720
-    splashDamage: 550
-    splashDamageRadius: 19
-    speed: 8
-    lifetime: 75
+    type: FlakBulletType
+    inaccuracy: 3
+    collidesGround: true
+    collides: false
+    speed: 15
+    lifetime: 55
+    damage: 250
+    splashDamage: 100
+    splashDamageRadius: 65
+    explodeRange: 65
+    explodeDelay: 0
+    sprite: allure-chonker
     width: 12
-    height: 20
-    hitEffect: flakExplosion
-    frontColor: ffffff
-    backColor: a56be8
-    fragBullets: 10
+    height: 36
+    frontColor: c3b3f8
+    backColor: 8960c1
+    trailLength: 7
+    trailWidth: 3
+    trailColor: 8960c1
+    hitEffect: [
+      {
+        type: WaveEffect
+        interp: pow3Out
+        lifetime: 35
+        sizeFrom: 8
+        sizeTo: 45
+        strokeFrom: 9
+        strokeTo: 0
+        colorFrom: 8960c1
+        colorTo: 8960c1
+      }
+      {
+        interp: pow3Out
+        sizeInterp: pow2In
+        region: allure-wide-case-back
+        spin: 8
+        lifetime: 25
+        length: 40
+        particles: 22
+        sizeFrom: 2
+        sizeTo: 0
+        colorFrom: c3b3f8
+        colorTo: 8960c1
+      }
+      {
+        useRotation: false
+        particles: 1
+        length: 0
+        region: allure-diamond-vthin
+        lifetime: 30
+        sizeFrom: 50
+        sizeTo: 0
+        interp: pow2In
+        clip: 8192
+        colorTo: c3b3f8
+      }
+      {
+        useRotation: false
+        particles: 1
+        length: 0
+        region: allure-diamond-vthin
+        lifetime: 20
+        sizeFrom: 30
+        sizeTo: 0
+        interp: pow2In
+        offset: 45
+        clip: 8192
+        colorTo: c3b3f8
+      }
+      {
+        useRotation: false
+        particles: 1
+        length: 0
+        region: allure-diamond-vthin
+        lifetime: 20
+        sizeFrom: 30
+        sizeTo: 0
+        interp: pow2In
+        offset: 135
+        clip: 8192
+        colorTo: c3b3f8
+      }
+    ]
+    fragBullets: 32
+    fragLifeMin: 0.5
+    fragOffsetMin: 0
+    fragOffsetMax: 0
     fragBullet: {
-      damage: 350
-      speed: 4
-      lifetime: 15
-      frontColor: ffffff
-      backColor: a56be8
+      collidesTiles: false
+      speed: 8
+      lifetime: 30
+      drag: 0.08
+      damage: 50
+      sprite: allure-diamond-thin
+      width: 8
+      height: 8
+      shrinkY: 0.25
+      shrinkX: 1
+      frontColor: c3b3f8
+      backColor: 00000000
+      despawnEffect: none
+      status: allure-amethyst-punctured
+    }
+    parts: [
+      {
+        type: FlarePart
+        sides: 2
+        color1: c3b3f8
+        radius: 0
+        radiusTo: 60
+        stroke: 3
+        innerRadScl: 0.75
+        progress: {
+          type: life
+          op: curve
+          interp: pow2Out
+        }
+        layer: 101
+      }
+    ]
+  }
+  draconium: {
+    ammoMultiplier: 6
+    speed: 15
+    lifetime: 55
+    damage: 700
+    status: allure-0r-kinetic2
+    statusDuration: 5
+    pierce: true
+    pierceBuilding: true
+    pierceCap: 2
+    splashDamage: 180
+    splashDamageRadius: 25
+    sprite: allure-chonker
+    width: 16
+    height: 36
+    trailLength: 7
+    trailWidth: 4
+    hitEffect: massiveExplosion
+  }
+  crystal: {
+    type: BulletType
+    damage: 3000
+    rangeOverride: 570
+    ammoMultiplier: 1
+    lifetime: 0
+    collides: false
+    hittable: false
+    absorbable: false
+    hitEffect: none
+    despawnEffect: none
+    shootEffect: none
+    smokeEffect: none
+    fragBullets: 20
+    fragRandomSpread: 12
+    fragVelocityMin: 0.7
+    fragVelocityMax: 1.8
+    fragLifeMin: 0.5
+    fragBullet: {
+      speed: 20
+      lifetime: 40
+      drag: 0.035
+      damage: 150
+      status: allure-0b-energy2
+      statusDuration: 2
+      sprite: allure-diamond-thin
+      width: 6
+      height: 32
+      shrinkY: 0.25
+      shrinkX: 1
+      frontColor: 90a2fc
+      backColor: 00000000
+      hitColor: 7382f0
+      despawnEffect: none
+      hitEffect: hitBulletColor
+      lightning: 1
+      lightningLength: 4
+      lightningLengthRand: 8
+      lightningColor: 7382f0
+      lightningDamage: 80
+      despawnHit: false
+      setDefaults: false
     }
   }
-  inseltiene: {
-    damage: 1020
-    splashDamage: 600
-    splashDamageRadius: 21
-    speed: 8
-    lifetime: 75
-    width: 12
-    height: 20
-    frontColor: ffffff
-    backColor: 8ca4f5
-    lightning: 12
-    lightningDamage: 250
-    lightningColor: 8ca4f5
-    lightningLength: 15
-  }
 }
-coolantUsage: 3.2
-coolantMultiplier: 0.3
+coolant: {
+  type: ConsumeLiquid
+  liquid: supercoolant
+  amount: 0.25
+}
+coolantMultiplier: 2.5
 category: turret
 requirements: [
-  copper/20000
-  graphite/18000
-  plastanium/18000
-  thorium/16000
-  surge-alloy/9000
-  amethyst/2500
-  draconium/1500
-  shadow/1000
+  titanium/5000
+  plastanium/2500
+  scilaxa/1000
+  infrastructure/2500
+  draconium/3500
 ]

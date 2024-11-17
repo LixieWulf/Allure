@@ -119,7 +119,7 @@ weapons: [
       lifetime: 80
       status: allure-0b-energy0
       statusDuration: 1
-      homingPower: 0.06
+      homingPower: 0.08
       homingRange: 240
       width: 4
       height: 12
@@ -575,3 +575,4 @@ deathSound: none
 deathExplosionEffect: none
 envEnabled: -1
 envDisabled: 0
+research: allure-0b07-01-reckless-beacon

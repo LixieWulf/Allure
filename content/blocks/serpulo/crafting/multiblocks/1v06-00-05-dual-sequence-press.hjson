@@ -12,6 +12,8 @@ liquidOutputDirections: [0]
 conductivePower: true
 drawer: [
   {
+    type: DrawRegion
+    layer: 29.9
   }
   {
     type: DrawPistons

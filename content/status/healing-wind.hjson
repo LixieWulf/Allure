@@ -1,4 +1,4 @@
-damage: -6
+damage: -0.06
 effect: {
   type: WaveEffect
   lifetime: 12

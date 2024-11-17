@@ -59,6 +59,7 @@ ammoTypes: {
         sizeTo: 0
       }
       {
+        offset: 90
         length: 0
         cone: 0
         lifetime: 45

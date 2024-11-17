@@ -117,6 +117,7 @@ weapons: [
           colorTo: e58956
           sizeFrom: 70
           sizeTo: 0
+          offset: 90
         }
       ]
       smokeEffect: [

@@ -32,6 +32,7 @@ immunities: [
   allure-0b-energy4,
   allure-emp
 ]
+//What in the ungodly heck are these old comments
 weapons: [
   //deployable what the f's
   {
@@ -53,6 +54,7 @@ weapons: [
     shootSound: none
     bullet: {
       type: BulletType
+      layer: 130
       pierce: true
       pierceBuilding: true
       pierceCap: 4
@@ -66,34 +68,11 @@ weapons: [
       homingRange: 480
       weaveMag: 3
       weaveScale: 18
-      trailInterval: 1
-      trailEffect: [
-        {
-          length: 0
-          particles: 1
-          region: circle-shadow
-          layer: 60
-          lifetime: 15
-          interp: pow2
-          sizeFrom: 0
-          sizeTo: 12
-          colorFrom: 000000
-          colorTo: 000000
-        }
-        {
-          length: 0
-          particles: 1
-          region: circle-shadow
-          layer: 60
-          lifetime: 15
-          startDelay: 14
-          interp: pow2
-          sizeFrom: 12
-          sizeTo: 0
-          colorFrom: 000000
-          colorTo: 000000
-        }
-      ]
+      trailWidth: 0.1
+      trailLength: 24
+      trailColor: 000000
+      trailSinMag: 120
+      trailSinScl: 2
       hitEffect: none
       despawnEffect: none
       shootEffect: none
@@ -102,7 +81,7 @@ weapons: [
       intervalBullet: {
         type: BulletType
         lifetime: 2
-        damage: 1500
+        damage: 700
         pierce: true
         pierceBuilding: true
         reflectable: false
@@ -481,85 +460,37 @@ weapons: [
   }
   //p u l s e 
   {
-    reload: 180
+    reload: 60
     x: 0
     mirror: false
     inaccuracy: 360
     alwaysShooting: true
     shootCone: 360
     shootSound: none
+    parts: [
+      {
+        type: RegionPart
+        name: circle-shadow
+        outline: false
+        xScl: 7
+        yScl: 7
+        color: 000000
+        layer: 154
+        moves: [
+          {
+            gx: 7
+            gy: 7
+            progress: smoothReload
+          }
+        ]
+      }
+    ]
     bullet: {
       type: BulletType
-      lifetime: 0
-      hitEffect: none
-      despawnEffect: none
+      instantDisappear: true
+      shootEffect: none
       smokeEffect: none
-      shootEffect: [
-        {
-          type: SeqEffect
-          layer: 60
-          clip: 8192
-          effects: [
-            {
-              length: 0
-              particles: 4
-              region: circle-shadow
-              layer: 60
-              lifetime: 90
-              interp: pow2
-              sizeFrom: 120
-              sizeTo: 160
-              colorFrom: 000000
-              colorTo: 000000
-            }
-            {
-              length: 0
-              particles: 4
-              region: circle-shadow
-              layer: 60
-              lifetime: 91
-              startDelay: 90
-              interp: pow2
-              sizeFrom: 160
-              sizeTo: 120
-              colorFrom: 000000
-              colorTo: 000000
-            }
-          ]
-        }
-        {
-          type: SeqEffect
-          layer: 60
-          clip: 8192
-          effects: [
-            {
-              length: 0
-              particles: 1
-              region: circle-shadow
-              layer: 60
-              lifetime: 91
-              interp: pow2
-              sizeFrom: 0
-              sizeTo: 400
-              colorFrom: 000000bb
-              colorTo: 000000bb
-            }
-            {
-              length: 0
-              particles: 1
-              region: circle-shadow
-              layer: 60
-              lifetime: 91
-              startDelay: 90
-              interp: pow2
-              sizeFrom: 400
-              sizeTo: 0
-              colorFrom: 000000bb
-              colorTo: 000000bb
-            }
-          ]
-        }
-      ]
+      despawnEffect: none
     }
   }
 ]
