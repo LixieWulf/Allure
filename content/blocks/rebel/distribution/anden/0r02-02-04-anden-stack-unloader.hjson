@@ -1,10 +1,11 @@
 type: PayloadUnloader
 size: 1
-liquidCapacity: 200
-payloadSpeed: 0.0625 
+liquidCapacity: 100
+payloadSpeed: 0.15
 offloadSpeed: 6
 hasPower: false
 maxBlockSize: 1
 requirements: [
   anden/40
 ]
+research: 0r02-02-03-anden-stack-loader

@@ -26,7 +26,7 @@ sectorSeed: -4
 //sector to start on - probably make this a preset sector
 startSector: 23
 //parent to orbit around and follow
-parent: sun
+parent: 0a
 //icon colour
 iconColor: 63ad7a
 //radius from the planet's "surface" that the atmosphere blur begins
@@ -36,7 +36,7 @@ atmosphereRadOut: 0.35
 //colour of the atmosphere
 atmosphereColor: 3898a1
 //orbit radius, measured in units i do not know
-orbitRadius: 32
+orbitRadius: 39
 //angle of the starting position of the orbit, so that all planets are not in the same line 
 orbitOffset: 140
 //time taken to complete one full orbit, in seconds
@@ -58,51 +58,28 @@ unlockedOnLand: [
   allure-0b03-00-vacuum-conduit,
   allure-0b01-00-rudimentary-fuser
 ]
+//planet icon 
+icon: terrain
 //various rules
 allowLaunchSchematics: false
 allowLaunchLoadout: false
 allowWaveSimulation: false
 allowSectorInvasion: false
-clearSectorOnLose: false
+clearSectorOnLose: true
 prebuildBase: true
 allowWaves: false
 allowLaunchToNumbered: false
 enemyBuildSpeedMultiplier: 1
 //default core to launch with
 defaultCore: 0bc0-nexus
-//allowed items on this planet
-itemWhitelist: [
-  copper,
-  lead,
-  sand,
-  coal,
-  pyratite,
-  graphite,
-  silicon,
-  metaglass,
-  titanium,
-  plastanium,
-  thorium,
-  phase-fabric,
-  surge-alloy,
-  dantrales,
-  territe-alloy,
-  baenite,
-  scilaxa,
-  crystal,
-  infrastructure,
-  inseltiene,
-  draconium,
-  shadow
-]
 //visual mesh made of hexagons - note that JSON only supports NoiseMesh and HexSkyMesh
 //use objects {} to make a single mesh, and the below format to create multiple
 mesh: [
   {
     type: NoiseMesh
     divisions: 5
-    radius: 0.94
-    color1: 43baba
+    radius: 0.943
+    color1: 28a699
     color2: 28a699
     octaves: 1
     persistence: 0.0001
@@ -114,21 +91,51 @@ mesh: [
     cthresh: 4
   }
   {
+    type: NoiseMesh
+    divisions: 5
+    radius: 1.019
+    color1: 43baba
+    color2: 43baba
+    octaves: 4.2
+    persistence: 0.9
+    scale: 0.7
+    mag: 0.2
+    coct: 4
+    cper: 1
+    cscl: 1.8
+    cthresh: 1
+  }
+  {
+    type: NoiseMesh
+    divisions: 6
+    radius: 1.0088
+    color1: 8cb3a3
+    color2: 6ba5af
+    octaves: 4.2
+    persistence: 0.9
+    scale: 0.7
+    mag: 0.3
+    coct: 4
+    cper: 1
+    cscl: 1.8
+    cthresh: 1
+  }
+  {
     //a two colour mesh type
     type: NoiseMesh
     //number of hexagons - like sectors, this is exponential, so beware of frying your GPU (although your GPU can handle way more hexagons here)
     divisions: 6
     //mesh size - 1 is serpulo
-    radius: 0.94
+    radius: 0.998
     //first colour to use 
     color1: d3ae8d
     //second
     color2: 9192a6
     //mesh shape values - just mess around with these until they stop exploding, i still do not know how they work
-    octaves: 4.6
+    octaves: 4.2
     persistence: 0.9
     scale: 0.7
-    mag: 1
+    mag: 0.4
     //these control how the two colours behave on the mesh
     coct: 1
     cper: 1
@@ -138,13 +145,13 @@ mesh: [
   {
     type: NoiseMesh
     divisions: 6
-    radius: 0.895
+    radius: 0.945
     color1: 6aa95e
     color2: 80cb71
     octaves: 4.6
     persistence: 0.9
     scale: 0.7
-    mag: 1.5
+    mag: 0.9
     coct: 4
     cper: 1
     cscl: 1.8
@@ -153,13 +160,13 @@ mesh: [
   {
     type: NoiseMesh
     divisions: 6
-    radius: 0.858
+    radius: 0.884
     color1: 56c774
     color2: 3e9d6b
     octaves: 4.6
     persistence: 0.9
     scale: 0.7
-    mag: 1.9
+    mag: 1.5
     coct: 4
     cper: 1
     cscl: 4
@@ -168,7 +175,7 @@ mesh: [
   {
     type: NoiseMesh
     divisions: 6
-    radius: 0.83
+    radius: 0.818
     color1: c1c4cb
     color2: 525252
     octaves: 4.6
@@ -183,7 +190,7 @@ mesh: [
   {
     type: NoiseMesh
     divisions: 6
-    radius: 0.73
+    radius: 0.721
     color1: d1efff
     color2: d1efff
     octaves: 4.6
@@ -228,7 +235,7 @@ cloudMesh: [
     type: HexSkyMesh
     speed: -2
     divisions: 5
-    radius: 0.034
+    radius: 0.0372
     color: 53cfc4
     octaves: 0.4
     persistence: 0.2

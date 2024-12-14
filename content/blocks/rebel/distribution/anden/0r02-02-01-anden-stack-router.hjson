@@ -1,8 +1,9 @@
 type: PayloadRouter
 size: 1
 payloadLimit: 1
-moveTime: 120
+moveTime: 60
 interp: linear
 requirements: [
   anden/16
 ]
+research: 0r02-02-00-anden-stack-belt

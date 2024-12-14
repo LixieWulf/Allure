@@ -11,6 +11,7 @@ boostScale: 0.015625
 warmupSpeed: 0.005
 minEfficiency: 0.01
 liquidCapacity: 120
+drawLiquidLight: false
 //i feel pain.
 drawer: {
   type: DrawMulti
@@ -209,6 +210,10 @@ research: {
   parent: 0b01-00-rudimentary-fuser
   objectives: [
     0b-basic-infrastructure
+  ]
+  requirements: [
+    dantrales/1200
+    territe-alloy/6000
   ]
 }
 requirements: [

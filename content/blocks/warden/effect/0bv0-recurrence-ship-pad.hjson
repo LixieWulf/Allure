@@ -1,0 +1,21 @@
+type: UnitCargoLoader
+size: 3
+unitType: allure-0bc1-recurrence
+buildTime: 300
+itemCapacity: 0
+polyRadius: 20
+polySides: 3
+polyColor: 7382f0
+consumes: {
+  liquids: [
+    liquid-baenara/0.4
+    energia/0.2
+  ]
+}
+category: effect
+research: 0bc0-nexus
+requirements: [
+  territe-alloy/600
+  dantrales/200
+  baenite/300
+]

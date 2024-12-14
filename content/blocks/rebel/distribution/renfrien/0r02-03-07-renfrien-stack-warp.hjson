@@ -1,9 +1,9 @@
 type: PayloadMassDriver
 size: 1
-payloadSpeed: 0.125
-range: 20
-reload: 15
-chargeTime: 15
+payloadSpeed: 0.25
+range: 40
+reload: 10
+chargeTime: 10
 maxPayloadSize: 1
 shootEffect: none
 smokeEffect: none

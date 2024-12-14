@@ -1,6 +1,6 @@
 type: PayloadDeconstructor
 size: 1
-payloadSpeed: 0.125
+payloadSpeed: 0.25
 maxPayloadSize: 1.1
 deconstructSpeed: 0.25
 hasPower: false

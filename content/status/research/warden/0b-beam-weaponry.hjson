@@ -1,11 +1,5 @@
 research: {
   parent: 0b-energy-weaponry
-  objectives: [
-    lancer, 
-    meltdown,
-    quasar,
-    vela
-  ]
   requirements: [
     forge-plating/25
     territe-alloy/2000

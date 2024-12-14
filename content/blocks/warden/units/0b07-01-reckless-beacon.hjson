@@ -387,7 +387,18 @@ drawer: {
   ]
 }
 category: units
-research: 0b-begin
+research: {
+  parent: 0b-begin
+  objectives: [
+    0b-basic-infrastructure, 
+    0b-wormhole-beacons
+  ]
+  requirements: [
+    territe-alloy/2200
+    dantrales/1000
+    silicon/400
+  ]
+}
 requirements: [
   territe-alloy/1200
   dantrales/400

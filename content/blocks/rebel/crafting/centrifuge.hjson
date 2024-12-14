@@ -149,8 +149,8 @@ drawer: [
     suffix: -top3
   }
 ]
-craftTime: 800
-outputItem: baenite/200
+craftTime: 400
+outputItem: baenite/100
 category: crafting
 requirements: [
   anden/1800

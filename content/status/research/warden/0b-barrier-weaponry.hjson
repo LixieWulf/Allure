@@ -1,14 +1,9 @@
 research: {
   parent: 0b-energy-defense
-  objectives: [
-    quasar, 
-    oct, 
-    segment
-  ]
   requirements: [
     forge-plating/50
-    surge-alloy/1000
-    phase-fabric/3500
+    territe-alloy/1000
+    crystal/3500
     scilaxa/1500
   ]
 }

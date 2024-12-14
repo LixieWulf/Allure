@@ -6,7 +6,7 @@ armor: 30
 itemCapacity: 1200
 size: 4
 category: effect
-unitType: 0bc0-pioneer
+unitType: 0bc0-construct
 unitCapModifier: 6
 thrusterLength: 15
 hasPower: true
@@ -19,9 +19,17 @@ consumes: {
 requirements: [
   dantrales/1000
   territe-alloy/2400
-  baenite/200
 ]
-research: 0b-begin
+research: {
+  parent: 0bs0-silo
+  objectives: [
+    0b-basic-infrastructure
+  ]
+  requirements: [
+    dantrales/2400
+    territe-alloy/9600
+  ]
+}
 breakEffect: [
   {
     type: WaveEffect

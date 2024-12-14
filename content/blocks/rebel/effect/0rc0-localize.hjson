@@ -4,6 +4,7 @@ squareSprite: false
 size: 5
 health: 5400
 armor: 55
+fullOverride: allure-0rc0-localize-full
 unitType: allure-localize
 unitCapModifier: 18
 itemCapacity: 3200

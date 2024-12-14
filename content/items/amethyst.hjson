@@ -2,7 +2,8 @@ cost: 10
 color: 8349b3
 research: ladera
 healthScaling: 1.1
-hiddenOnPlanets: [
-  erekir,
-  maltranas
+shownPlanets: [
+  allure-wandura,
+  allure-genaise,
+  allure-lus
 ]

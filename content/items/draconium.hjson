@@ -4,3 +4,8 @@ explosiveness: 4.4
 color: a33164
 research: anden
 healthScaling: 4
+shownPlanets: [
+  allure-wandura,
+  allure-genaise,
+  allure-lus
+]

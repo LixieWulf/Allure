@@ -3,18 +3,8 @@ radioactivity: 0.7
 explosiveness: 0.8
 flammability: 0.5
 charge: 0.2
-hiddenOnPlanets: [
-  erekir, 
-  allure-maltranas
+shownPlanets: [
+  allure-wandura,
+  allure-lus
 ]
-research: {
-  parent: 0b-begin
-  objectives: [
-    oil
-  ]
-  requirements: [
-    sand/1200
-    lead/1800
-    coal/600
-  ]
-}
+research: territe-alloy

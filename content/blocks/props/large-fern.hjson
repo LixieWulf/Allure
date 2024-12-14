@@ -1,0 +1,41 @@
+type: TreeBlock
+update: true
+customShadow: true
+drawTeamOverlay: false
+allowDerelictRepair: false
+alwaysReplace: false
+buildVisibility: sandboxOnly
+solid: true
+destructible: true
+health: 2400
+buildCost: 900
+instantDeconstruct: false
+clipSize: 110
+breakSound: plantBreak
+destroySound: plantBreak
+drawCracks: false
+createRubble: false
+breakEffect: {
+  particles: 30
+  baseLength: 48
+  length: 12
+  lifetime: 90
+  region: circle-shadow
+  sizeFrom: 25
+  sizeTo: 15
+  colorFrom: 56c774
+  colorTo: 56c77400
+  layer: 55
+}
+destroyEffect: {
+  particles: 30
+  baseLength: 48
+  length: 12
+  lifetime: 90
+  region: circle-shadow
+  sizeFrom: 25
+  sizeTo: 15
+  colorFrom: 56c774
+  colorTo: 56c77400
+  layer: 55
+}

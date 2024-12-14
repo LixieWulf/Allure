@@ -7,18 +7,81 @@ bridgeReplacement: 0b02-01-tube-bridge
 category: distribution
 speed: 7.5
 research: 0b-begin
-breakEffect: {
-  type: WaveEffect
-  rotation: 44
-  lifetime: 20
-  sides: 4
-  sizeFrom: 4
-  sizeTo: 8
-  strokeFrom: 3
-  strokeTo: 0
-  colorFrom: 7382f0
-  colorTo: 7382f0
-}
+placeEffect: [
+  {
+    particles: 1
+    length: 0
+    lifetime: 30
+    region: allure-unusually-organized-rectangle
+    useRotation: false
+    sizeFrom: 4
+    sizeTo: 6
+    colorFrom: 7382f0
+    colorTo: 7382f000
+  }
+  {
+    type: WaveEffect
+    rotation: 44
+    lifetime: 30
+    sides: 4
+    sizeFrom: 4
+    sizeTo: 8
+    strokeFrom: 3
+    strokeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+]
+breakEffect: [
+  {
+    type: WaveEffect
+    rotation: 44
+    lifetime: 60
+    sides: 4
+    sizeFrom: 5
+    sizeTo: 6
+    strokeFrom: 1
+    strokeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: RadialEffect
+    useRotation: false
+    lengthOffset: 4
+    amount: 2
+    effect: {
+      line: true
+      particles: 1
+      baseRotation: 180
+      lifetime: 30
+      length: 8
+      cone: 0
+      randLength: false
+      cap: false
+      lenFrom: 8
+      lenTo: 0
+      strokeFrom: 1
+      strokeTo: 1
+      colorFrom: 7382f0
+      colorTo: 7382f0
+    }
+  }
+  {
+    type: ParticleEffect
+    startDelay: 30
+    particles: 1
+    length: 0
+    lifetime: 30
+    useRotation: false
+    region: allure-warden-icon
+    sizeFrom: 3
+    sizeTo: 3
+    interp: slope
+    colorFrom: 7382f000
+    colorTo: 7382f0
+  }
+]
 destroyBullet: {
   type: BulletType
   speed: 0

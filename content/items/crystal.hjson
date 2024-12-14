@@ -3,3 +3,8 @@ hardness: 8
 cost: 0.2
 research: ladera
 healthScaling: 3
+shownPlanets: [
+  allure-wandura,
+  allure-genaise,
+  allure-lus
+]

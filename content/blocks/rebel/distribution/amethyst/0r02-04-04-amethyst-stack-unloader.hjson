@@ -1,6 +1,6 @@
 type: PayloadUnloader
 size: 1
-payloadSpeed: 0.25
+payloadSpeed: 0.55
 offloadSpeed: 6
 hasPower: false
 maxBlockSize: 1

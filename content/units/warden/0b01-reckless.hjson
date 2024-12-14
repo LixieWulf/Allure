@@ -10,7 +10,7 @@ health: 4200
 armor: 8
 lowAltitude: true
 shadowElevationScl: 0.9
-range: 240
+range: 164
 maxRange: 261
 lightRadius: 0
 drawCell: false

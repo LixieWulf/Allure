@@ -1,0 +1,6 @@
+type: RainWeather
+yspeed: 15
+xspeed: 10
+liquid: liquid-baenara
+color: 46b084
+density: 700

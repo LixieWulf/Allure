@@ -1,7 +1,7 @@
 type: PayloadLoader
 size: 1
-liquidCapacity: 200
-payloadSpeed: 0.0625 
+liquidCapacity: 100
+payloadSpeed: 0.15
 loadTime: 6
 hasPower: false
 //remove default consumes
@@ -13,3 +13,4 @@ requirements: [
 ]
 saveConfig: true
 clearOnDoubleTap: true
+research: 0r02-02-00-anden-stack-belt

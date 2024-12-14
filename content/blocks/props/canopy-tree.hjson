@@ -1,0 +1,116 @@
+type: TallBlock
+size: 3
+update: true
+customShadow: true
+drawTeamOverlay: false
+allowDerelictRepair: false
+alwaysReplace: false
+buildVisibility: sandboxOnly
+rotationRand: 90
+layer: 89.5
+shadowLayer: 89
+shadowOffset: -32
+shadowAlpha: 0.33
+solid: true
+destructible: true
+health: 15000
+buildCost: 3600
+instantDeconstruct: false
+clipSize: 240
+breakSound: plantBreak
+destroySound: plantBreak
+drawCracks: false
+createRubble: false
+breakEffect: [
+  //What a fucking gongshow
+  {
+    type: RadialEffect
+    amount: 16
+    lengthOffset: 42
+    rotationSpacing: 22.5
+    effect: [
+      {
+        particles: 1
+        region: allure-diamond-thin
+        length: 24
+        baseLength: 36
+        lifetime: 90
+        sizeFrom: 20
+        sizeTo: 15
+        colorFrom: 6d5b3c
+        colorTo: 6d5b3c00
+        layer: 85
+      }
+      {
+        particles: 1
+        region: allure-diamond-thin
+        length: 24
+        baseLength: 36
+        lifetime: 90
+        sizeFrom: 15
+        sizeTo: 10
+        colorFrom: 62391f
+        colorTo: 62391f00
+        layer: 80
+      }
+    ]
+  }
+  {
+    particles: 36
+    baseLength: 88
+    length: 12
+    lifetime: 90
+    region: circle-shadow
+    sizeFrom: 35
+    sizeTo: 25
+    colorFrom: 56c774
+    colorTo: 56c77400
+    layer: 75
+  }
+]
+destroyEffect: [
+  {
+    type: RadialEffect
+    amount: 16
+    lengthOffset: 42
+    rotationSpacing: 22.5
+    effect: [
+      {
+        particles: 1
+        region: allure-diamond-thin
+        length: 24
+        baseLength: 36
+        lifetime: 90
+        sizeFrom: 20
+        sizeTo: 15
+        colorFrom: 6d5b3c
+        colorTo: 6d5b3c00
+        layer: 85
+      }
+      {
+        particles: 1
+        region: allure-diamond-thin
+        length: 24
+        baseLength: 36
+        lifetime: 90
+        sizeFrom: 15
+        sizeTo: 10
+        colorFrom: 62391f
+        colorTo: 62391f00
+        layer: 80
+      }
+    ]
+  }
+  {
+    particles: 36
+    baseLength: 88
+    length: 12
+    lifetime: 90
+    region: circle-shadow
+    sizeFrom: 35
+    sizeTo: 25
+    colorFrom: 56c774
+    colorTo: 56c77400
+    layer: 75
+  }
+]

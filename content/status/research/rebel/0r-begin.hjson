@@ -1,13 +1,13 @@
-type: Wall
 research: {
   root: true
+  planet: genaise
   name: Rebel
-  planet: erekir
-  requiresUnlock: false
+  requiresUnlock: true
   objectives: [
     {
       type: SectorComplete
-      preset: allure-crashSite
+      preset: origin
     }
   ]
 }
+show: false

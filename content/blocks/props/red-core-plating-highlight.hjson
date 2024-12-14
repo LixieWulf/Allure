@@ -1,0 +1,76 @@
+type: SteamVent
+parent: red-core-plating
+blendGroup: red-core-plating
+allowCorePlacement: true
+variants: 0
+effectSpacing: 200
+effect: [
+  {
+    particles: 1
+    length: 0
+    lifetime: 61
+    region: allure-rebel-icon
+    colorFrom: e6555500
+    colorTo: e65555
+    sizeFrom: 8
+    sizeTo: 8
+  }
+  {
+    particles: 1
+    startDelay: 60
+    length: 0
+    lifetime: 120
+    region: allure-rebel-icon
+    colorFrom: e65555
+    colorTo: e6555500
+    sizeFrom: 8
+    sizeTo: 8
+  }
+  {
+    type: RadialEffect
+    rotationOffset: 45
+    lengthOffset: 15
+    effect: {
+      particles: 1
+      cone: 0
+      length: -24
+      baseLength: 24
+      randLength: false
+      line: true
+      lifetime: 60
+      sizeInterp: slope
+      strokeFrom: 2
+      strokeTo: 2
+      lenFrom: 0
+      lenTo: 12
+      cap: false
+      colorFrom: e65555
+      colorTo: e65555
+    }
+  }
+  {
+    type: WaveEffect
+    sides: 4
+    baseRotation: 45
+    lifetime: 61
+    sizeFrom: 15
+    sizeTo: 16
+    strokeFrom: 0
+    strokeTo: 2
+    colorFrom: e65555
+    colorTo: e65555
+  }
+  {
+    type: WaveEffect
+    sides: 4
+    baseRotation: 45
+    lifetime: 120
+    startDelay: 60
+    sizeFrom: 16
+    sizeTo: 40
+    strokeFrom: 2
+    strokeTo: 0
+    colorFrom: e65555
+    colorTo: e65555
+  }
+]

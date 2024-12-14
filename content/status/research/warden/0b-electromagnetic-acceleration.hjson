@@ -1,9 +1,7 @@
 research: {
   parent: 0b-energy-weaponry
   objectives: [
-    0b-steam-heating,
-    foreshadow,
-    impact-reactor
+    0b-steam-heating
   ]
   requirements: [
     forge-plating/25

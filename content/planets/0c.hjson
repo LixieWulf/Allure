@@ -1,0 +1,6 @@
+radius: 0.2
+parent: 0a
+lightParent: 0c
+orbitRadius: 9
+orbitOffset: 120
+accessible: false

@@ -1,7 +1,7 @@
 type: BeamDrill
 size: 6
 range: 3
-drillTime: 210
+drillTime: 90
 tier: 4
 sparks: 30
 sparkRecurrence: 14
@@ -10,6 +10,7 @@ sparkSpread: 25
 sparkRange: -26
 itemCapacity: 30
 liquidCapacity: 30
+boostHeatColor: e65555
 consumes: {
   liquids: [
     chlorine/0.05
@@ -19,5 +20,5 @@ consumes: {
 requirements: [
   anden/250
 ]
-optionalBoostIntensity: 2.5
+optionalBoostIntensity: 1
 category: production

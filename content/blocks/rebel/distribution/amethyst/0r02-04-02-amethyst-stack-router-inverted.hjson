@@ -2,7 +2,7 @@ type: PayloadRouter
 size: 1
 invert: true
 payloadLimit: 1
-moveTime: 30
+moveTime: 15
 interp: linear
 requirements: [
   anden/32

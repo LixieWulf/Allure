@@ -1,0 +1,21 @@
+radius: 7
+parent: 0a
+orbitRadius: 9
+accessible: false
+lightParent: 0a
+mesh: {
+  type: SunMesh 
+  divisions: 7
+  octaves: 3
+  persistence: 0.5
+  scl: 2
+  pow: 1
+  mag: 1
+  colorScale: 1
+  colors: [
+    c5ffec,
+    9cefd3,
+    67d5b0,
+    3cb58d
+  ]
+}

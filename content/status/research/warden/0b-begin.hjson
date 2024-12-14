@@ -10,4 +10,5 @@ research: {
     }
   ]
 }
+alwaysUnlocked: true
 show: false

@@ -1,0 +1,23 @@
+type: UnitCargoLoader
+size: 3
+unitType: allure-0bc2-maintenance
+buildTime: 300
+itemCapacity: 0
+liquidCapacity: 200
+polyRadius: 16
+polySides: 4
+polyColor: 7382f0
+consumes: {
+  liquids: [
+    liquid-baenara/0.8
+    energia/0.1
+    arreacta/2
+  ]
+}
+category: effect
+research: 0bv1-recurrence-ship-pad
+requirements: [
+  territe-alloy/1200
+  dantrales/300
+  scilaxa/200
+]

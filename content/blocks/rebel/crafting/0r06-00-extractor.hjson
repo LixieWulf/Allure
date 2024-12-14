@@ -11,7 +11,7 @@ warmupSpeed: 0.005
 itemCapacity: 400
 liquidCapacity: 200
 hasLiquids: true
-craftTime: 600
+craftTime: 300
 ignoreLiquidFullness: true
 liquidOutputDirections: [1]
 rotateDraw: false
@@ -86,7 +86,7 @@ consumes: {
     energia/0.075
   ]
 }
-outputItem: anden/100
+outputItem: anden/50
 outputLiquids: [
   chlorine/0.05
 ]

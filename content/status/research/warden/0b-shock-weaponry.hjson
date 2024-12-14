@@ -1,8 +1,7 @@
 research: {
   parent: 0b-energy-weaponry
   objectives: [
-    surge-alloy,
-    battery
+    0b04-14-capacitor
   ]
   requirements: [
     forge-plating/25

@@ -1,9 +1,7 @@
 research: {
   parent: 0b-beam-weaponry
   objectives: [
-    scorch,
-    oxynoe,
-    impact-reactor
+    0b01-reckless
   ]
   requirements: [
     forge-plating/50

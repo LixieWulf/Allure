@@ -3,3 +3,7 @@ cost: 4
 color: 4a4b53
 research: scrap
 charge: 0.9
+shownPlanets: [
+  allure-wandura,
+  allure-lus
+]

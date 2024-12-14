@@ -1,6 +1,6 @@
 type: PayloadDeconstructor
 size: 1
-payloadSpeed: 0.0625 
+payloadSpeed: 0.125
 maxPayloadSize: 1.1
 deconstructSpeed: 0.25
 hasPower: false
@@ -8,3 +8,4 @@ floating: true
 requirements: [
   anden/24
 ]
+research: 0r02-02-05-anden-stack-producer

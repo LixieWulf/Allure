@@ -1,6 +1,6 @@
 type: Constructor
 size: 1
-payloadSpeed: 0.0625 
+payloadSpeed: 0.125
 buildSpeed: 0.25
 filter: [
   0r02-00-00-anden-capsule,
@@ -20,3 +20,4 @@ hasPower: false
 requirements: [
   anden/24
 ]
+research: 0r02-02-00-anden-stack-belt

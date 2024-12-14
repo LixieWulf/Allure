@@ -7,24 +7,36 @@ consumes: {
 }
 powerProduction: 0.001
 outputLiquid: energia/0.1
-drawer: [
-  {
-    type: DrawDefault
-  }
-  {
-    type: DrawLiquidTile
-    padding: 4
-    drawLiquid: slag
-  }
-  {
-    type: DrawRegion
-    suffix: -top
-  }
-  {
-    type: DrawGlowRegion
-    alpha: 0.75
-  }
-]
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    ""
+  ]
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawLiquidTile
+      padding: 4
+      drawLiquid: slag
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+    {
+      type: DrawGlowRegion
+      alpha: 0.75
+      layer: 33
+    }
+    {
+      type: DrawRegion
+      suffix: -shade
+      layer: 32
+    }
+  ]
+}
 requirements: [
   anden/100
 ]

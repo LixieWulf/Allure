@@ -446,7 +446,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 98
+      layer: 97
       collides: false
       length: 18
       width: 9
@@ -476,7 +476,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 98
+      layer: 97
       collides: false
       length: 6
       width: 3
@@ -506,6 +506,65 @@ weapons: [
   }
 ]
 abilities: [
+  {
+    type: MoveLightningAbility
+    heatRegion: allure-0b03-forefront-heat1
+    chance: 0
+    minSpeed: 5
+    maxSpeed: 12
+    color: 90a2fc
+  }
+  {
+    type: MoveLightningAbility
+    heatRegion: allure-0b03-forefront-heat2
+    chance: 0.5
+    minSpeed: 5
+    maxSpeed: 12
+    y: 60
+    color: 90a2fc
+    length: 0
+    parentizeEffects: true
+    shootSound: none
+    shootEffect: {
+      followParent: true
+      rotWithParent: true
+      baseRotation: 180
+      cone: 75
+      line: true
+      particles: 4
+      length: 80
+      lifetime: 45
+      colorTo: 90a2fc00
+      lenFrom: 6
+      lenTo: 12
+      strokeFrom: 3
+      strokeTo: 0
+    }
+    bulletAngle: 180
+    bullet: {
+      type: RailBulletType
+      collidesGround: false
+      length: 60
+      damage: 2400
+      status: allure-0b-energy3
+      statusDuration: 1
+      hitEffect: {
+        baseRotation: 180
+        cone: 30
+        line: true
+        particles: 4
+        length: 80
+        lifetime: 30
+        colorTo: 7382f0
+        lenFrom: 12
+        lenTo: 6
+        strokeFrom: 4
+        strokeTo: 0
+        interp: pow3Out
+        sizeInterp: pow2In
+      }
+    }
+  }
   //segmented shield layer
   {
     type: ShieldArcAbility

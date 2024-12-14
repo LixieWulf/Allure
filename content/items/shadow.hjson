@@ -3,3 +3,6 @@ cost: 54.8
 color: 000000
 research: inseltiene
 healthScaling: 5
+shownPlanets: [
+  allure-lus
+]

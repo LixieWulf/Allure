@@ -1,5 +1,5 @@
 generator: AsteroidGenerator
-parent: kharalis
+parent: 1-kharalis
 radius: 0.7
 minZoom: 0.9
 atmosphereRadIn: 0
@@ -9,10 +9,12 @@ iconColor: e38f5b
 orbitRadius: 7
 orbitOffset: 110
 accessible: true
+alwaysUnlocked: true
 allowLaunchToNumbered: false
 sectorSize: 2
 totalRadius: 1.8
 defaultEnv: 17
+icon: terrain
 itemWhitelist: [
   tungsten, 
   surge-alloy,

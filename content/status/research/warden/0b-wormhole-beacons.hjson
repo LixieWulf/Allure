@@ -1,14 +1,9 @@
 research: {
   parent: 0b-basic-infrastructure
-  objectives: [
-    surge-tower,
-    mass-driver
-  ]
   requirements: [
-    forge-plating/25
     dantrales/250
     territe-alloy/8500
-    thorium/500
+    silicon/500
   ]
 }
 show: false

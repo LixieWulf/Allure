@@ -1,5 +1,13 @@
 viscosity: 0.5
 heatCapacity: 0.6
 color: 46b084
-research: energia
+research: {
+  parent: 0b-begin
+  objectives: [
+    {
+      type: Produce
+      content: allure-liquid-baenara
+    }
+  ]
+}
 effect: allure-healing-flood

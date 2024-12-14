@@ -1,10 +1,5 @@
 research: {
   parent: 0b-basic-infrastructure
-  objectives: [
-    payload-conveyor,
-    ground-factory,
-    mega
-  ]
   requirements: [
     forge-plating/50
     territe-alloy/1500

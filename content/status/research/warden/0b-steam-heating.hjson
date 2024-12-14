@@ -1,14 +1,11 @@
 research: {
   parent: 0b-basic-infrastructure
   objectives: [
-    thermal-generator,
-    thorium-reactor,
     energia
   ]
   requirements: [
-    forge-plating/25
-    territe-alloy/250
-    uranium/1000
+    dantrales/500
+    territe-alloy/2500
   ]
 }
 show: false

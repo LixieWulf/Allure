@@ -9,6 +9,14 @@ requirements: [
   territe-alloy/150
 ]
 category: liquid
+research: {
+  parent: 0b03-00-vacuum-conduit
+  requirements: [
+    metaglass/300
+    dantrales/600
+    territe-alloy/1000
+  ]
+}
 breakEffect: [
   {
     type: WaveEffect

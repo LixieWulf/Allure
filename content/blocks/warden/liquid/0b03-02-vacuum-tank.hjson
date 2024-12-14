@@ -5,10 +5,11 @@ liquidCapacity: 1200
 liquidPadding: 2
 category: liquid
 research: {
-  parent: 0b04-00-vacuum-conduit
-  objectives: [
-    liquid-container,
-    liquid-tank
+  parent: 0b03-00-vacuum-conduit
+  requirements: [
+    metaglass/200
+    dantrales/300
+    territe-alloy/1500
   ]
 }
 requirements: [

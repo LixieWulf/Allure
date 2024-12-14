@@ -1,0 +1,22 @@
+type: UnitCargoLoader
+size: 4
+unitType: allure-0bc3-industrialism
+buildTime: 300
+itemCapacity: 0
+liquidCapacity: 200
+polyRadius: 18
+polySides: 6
+polyColor: 7382f0
+consumes: {
+  liquids: [
+    energia/2
+  ]
+}
+category: effect
+research: 0bv2-maintenance-ship-pad
+requirements: [
+  infrastructure/300
+  territe-alloy/1200
+  dantrales/400
+  crystal/1800
+]

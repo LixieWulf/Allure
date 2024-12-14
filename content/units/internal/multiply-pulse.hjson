@@ -4,11 +4,12 @@ defaultController: builderAI
 controller: BuilderAI
 hoverable: false
 playerControllable: false
+fullOverride: clear-effect
 buildSpeed: 3
 flying: true
 drawBody: false
 drawCell: false
-shadowElevationScl: 0
+shadowElevationScl: -1
 speed: 0
 engineSize: 0
 hitSize: 0

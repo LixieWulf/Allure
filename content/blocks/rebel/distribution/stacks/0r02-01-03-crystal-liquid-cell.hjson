@@ -1,6 +1,7 @@
 type: LiquidRouter
-liquidCapacity: 200
-liquidPadding: 1
+hasShadow: false
+liquidCapacity: 100
+liquidPadding: 2
 placeablePlayer: false
 buildVisibility: shown
 requirements: [

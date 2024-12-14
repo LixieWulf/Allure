@@ -1,3 +1,11 @@
 gas: true
 color: c7cdd6
-research: energia
+research: {
+  parent: energia
+  objectives: [
+    {
+      type: Produce
+      content: allure-steam
+    }
+  ]
+}

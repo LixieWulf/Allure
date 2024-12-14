@@ -1,7 +1,7 @@
 type: PayloadLoader
 size: 1
 loadTime: 6
-payloadSpeed: 0.125
+payloadSpeed: 0.255
 hasPower: false
 loadPowerDynamic: false
 consumes: {}

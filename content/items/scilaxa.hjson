@@ -5,3 +5,8 @@ flammability: 0.4
 radioactivity: 0.7
 research: ladera
 healthScaling: 2.2
+shownPlanets: [
+  allure-wandura,
+  allure-genaise,
+  allure-lus
+]

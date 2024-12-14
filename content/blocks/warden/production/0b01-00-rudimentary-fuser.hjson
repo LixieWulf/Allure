@@ -9,6 +9,7 @@ minEfficiency: 0.01
 maxBoost: 2
 boostScale: 0.0625
 liquidCapacity: 12
+drawLiquidLight: false
 drawer: {
   type: DrawMulti
   iconOverride: [
@@ -58,6 +59,10 @@ research: {
   parent: 0b-begin
   objectives: [
     0b-basic-infrastructure
+  ]
+  requirements: [
+    dantrales/700
+    territe-alloy/2500
   ]
 }
 requirements: [

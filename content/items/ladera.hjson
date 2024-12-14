@@ -3,3 +3,7 @@ cost: 2
 color: 8b73c7
 research: water
 healthScaling: 1.1
+shownPlanets: [
+  allure-genaise,
+  allure-lus
+]

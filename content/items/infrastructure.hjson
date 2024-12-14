@@ -1,4 +1,9 @@
 color: 989aa4
 hardness: 8
 cost: 0.8
-research: copper
+research: scilaxa
+shownPlanets: [
+  allure-wandura,
+  allure-genaise,
+  allure-lus
+]

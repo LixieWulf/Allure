@@ -1,6 +1,6 @@
 color: 424e85
 hardness: 2
-hiddenOnPlanets: [
-  erekir,
-  maltranas
+shownPlanets: [
+  allure-wandura,
+  allure-lus
 ]

@@ -2,9 +2,10 @@ color: ad4244
 cost: 0.4
 research: {
   parent: 0r-begin
-  requirements: [
-    sand/500
-  ]
 }
 explosiveness: 0.4
 healthScaling: 0.4
+shownPlanets: [
+  allure-genaise,
+  allure-lus
+]

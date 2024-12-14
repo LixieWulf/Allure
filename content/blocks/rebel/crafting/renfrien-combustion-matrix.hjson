@@ -1,6 +1,6 @@
 type: GenericCrafter
 size: 9
-craftTime: 600
+craftTime: 300
 itemCapacity: 400
 liquidCapacity: 20
 consumes: {
@@ -11,7 +11,7 @@ consumes: {
   items: [
     anden/50
     silicon/50
-    ladera/100
+    ladera/50
   ]
 }
 drawer: [
@@ -28,7 +28,7 @@ drawer: [
     type: DrawGlowRegion
   }
 ]
-outputItem: renfrien/100
+outputItem: renfrien/50
 category: crafting
 requirements: [
   anden/1200

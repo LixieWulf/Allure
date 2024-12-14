@@ -1,7 +1,7 @@
 type: StorageBlock
 buildCostMultiplier: 3
 placeablePlayer: false
-itemCapacity: 100
+itemCapacity: 50
 buildVisibility: shown
 requirements: [
   amethyst/0

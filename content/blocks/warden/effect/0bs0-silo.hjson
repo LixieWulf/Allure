@@ -5,7 +5,13 @@ health: 900
 armor: 30
 itemCapacity: 200
 category: effect
-research: 0bc0-nexus
+research: {
+  parent: 0b-begin
+  requirements: [
+    dantrales/400
+    territe-alloy/2400
+  ]
+}
 requirements: [
   dantrales/80
   territe-alloy/400

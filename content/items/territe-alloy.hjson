@@ -1,15 +1,9 @@
 cost: 1.2
 color: 7382f0
 charge: 0.25
-hiddenOnPlanets: [
-  erekir, 
-  allure-maltranas
+shownPlanets: [
+  allure-wandura,
+  allure-lus
 ]
-research: {
-  parent: dantrales
-  requirements: [
-    silicon/1500
-    lead/2500
-  ]
-}
+research: 0b-begin
 healthScaling: 0.7

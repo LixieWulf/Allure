@@ -2,6 +2,8 @@ type: legs
 localizedName: yet another internal unit
 speed: 0
 rotateSpeed: 0
+health: 5400
+armor: 55
 physics: false 
 hittable: false 
 targetable: false
@@ -10,6 +12,7 @@ buildRange: 480
 isEnemy: false
 faceTarget: false
 healFlash: false
+fullOverride: allure-0rc0-localize-full
 engineSize: 0
 fallSpeed: 0
 drawMinimap: false
@@ -26,21 +29,24 @@ immunities: [
   melting
 ]
 legCount: 0
-parts: [
-  {
-    type: RegionPart
-    outline: false
-    layer: 30.01
-    name: allure-0rc0-localize-bottom
-  }
-]
 weapons: [
   {
     type: BuildWeapon
     layerOffset: 6
     name: localize-build
     mirror: false
-    x: 11
+    x: 0
+    y: 12
+    shootY: 8
+    rotate: true
+    rotateSpeed: 1.5
+  }
+  {
+    type: BuildWeapon
+    layerOffset: 6
+    name: localize-build
+    x: -12
+    shootY: 8
     baseRotation: 90
     rotate: true
     rotateSpeed: 1.5
@@ -50,76 +56,12 @@ weapons: [
     layerOffset: 6
     name: localize-build
     mirror: false
-    x: -11
-    baseRotation: 270
-    rotate: true
-    rotateSpeed: 1.5
-  }
-  {
-    type: BuildWeapon
-    layerOffset: 6
-    name: localize-build
-    mirror: false
     x: 0
-    y: 11
-    rotate: true
-    rotateSpeed: 1.5
-  }
-  {
-    type: BuildWeapon
-    layerOffset: 6
-    name: localize-build
-    mirror: false
-    x: 0
-    y: -11
+    y: -12
+    shootY: 8
     baseRotation: 180
     rotate: true
     rotateSpeed: 1.5
-  }
-  {
-    name: localize-missile
-    layerOffset: 7
-    mirror: false
-    shootCone: 360
-    x: 0
-    shootY: 0
-    shoot: {
-      type: ShootBarrel
-      shots: 1
-      barrels: 4
-      //...
-      barrels: [
-        -8, 8, 22.5
-        8, 8, -22.5,
-        8, -8, -67.5,
-        -8, -8, 67.5,
-      ]
-    }
-    reload: 25
-    recoil: 0
-    shootStatus: {
-      name: e
-      buildSpeedMultiplier: 0
-      show: false
-    }
-    shootStatusDuration: 120
-    shootSound: missile
-    bullet: {
-      spawnUnit: allure-missile0
-      smokeEffect: {
-        lightOpacity: 0
-        length: 22
-        particles: 8
-        interp: pow3Out
-        sizeInterp: pow2In
-        lifetime: 30
-        cone: 20
-        sizeFrom: 2
-        sizeTo: 0
-        colorFrom: 9f9f9f
-        colorTo: 787878
-      }
-    }
   }
 ]
 envEnabled: -1

@@ -1,14 +1,9 @@
 research: {
   parent: 0b-energy-weaponry
-  objectives: [
-    force-projector,
-    mender,
-    titanium-wall-large
-  ]
   requirements: [
     forge-plating/25
-    thorium/4500
-    territe-alloy/1200
+    territe-alloy/4500
+    dantrales/1200
   ]
 }
 show: false

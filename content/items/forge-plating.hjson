@@ -1,4 +1,9 @@
-color: "6e7080"
+color: 6e7080
 cost: 12
 research: core-shard
 alwaysUnlocked: true
+shownPlanets: [
+  allure-wandura,
+  allure-genaise,
+  allure-lus
+]

@@ -1,0 +1,7 @@
+accessible: false
+localizedName: "Verden-Calsiope"
+mesh: {
+  type: HexSkyMesh
+  color: 000000
+  thresh: 0.01
+}

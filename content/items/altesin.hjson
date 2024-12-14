@@ -2,3 +2,8 @@ color: c94536
 research: pyratite
 flammability: 1.2
 explosiveness: 0.4
+shownPlanets: [
+  allure-wandura,
+  allure-genaise,
+  allure-lus
+]

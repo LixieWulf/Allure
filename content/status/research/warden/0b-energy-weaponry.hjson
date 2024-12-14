@@ -1,10 +1,7 @@
 research: {
   parent: 0b-basic-infrastructure
   objectives: [
-    silicon,
-    territe-alloy,
-    arc,
-    lancer
+    0b05-00-shock-wall
   ]
   requirements: [
     forge-plating/25

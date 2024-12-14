@@ -3,3 +3,8 @@ explosiveness: 0.6
 hardness: 4
 color: ded16a
 research: thorium
+shownPlanets: [
+  allure-wandura,
+  allure-genaise,
+  allure-lus
+]

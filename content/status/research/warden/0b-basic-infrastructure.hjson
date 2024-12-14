@@ -1,7 +1,8 @@
 research: {
   parent: 0b-begin
   requirements: [
-    dantrales/2000
+    dantrales/200
+    territe-alloy/2000
   ]
 }
 show: false

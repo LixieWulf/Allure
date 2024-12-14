@@ -1,0 +1,50 @@
+type: SeaBush
+update: true
+customShadow: true
+lobesMin: 6
+lobesMax: 8
+timeRange: 140
+sclMin: 60
+sclMax: 85
+magMin: 2
+magMax: 4
+botAngle: 90
+drawTeamOverlay: false
+allowDerelictRepair: false
+alwaysReplace: false
+buildVisibility: sandboxOnly
+solid: true
+destructible: true
+health: 800
+buildCost: 360
+instantDeconstruct: false
+clipSize: 60
+underBullets: true
+breakSound: plantBreak
+destroySound: plantBreak
+drawCracks: false
+createRubble: false
+breakEffect: {
+  particles: 24
+  baseLength: 24
+  length: 8
+  lifetime: 90
+  region: circle-shadow
+  sizeFrom: 15
+  sizeTo: 10
+  colorFrom: 71b05a
+  colorTo: 71b05a00
+  layer: 30
+}
+destroyEffect: {
+  particles: 24
+  baseLength: 24
+  length: 8
+  lifetime: 90
+  region: circle-shadow
+  sizeFrom: 15
+  sizeTo: 10
+  colorFrom: 71b05a
+  colorTo: 71b05a00
+  layer: 30
+}

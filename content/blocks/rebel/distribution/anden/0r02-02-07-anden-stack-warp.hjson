@@ -1,9 +1,9 @@
 type: PayloadMassDriver
 size: 1
-payloadSpeed: 0.0625 
+payloadSpeed: 0.125
 range: 20
-reload: 15
-chargeTime: 15
+reload: 20
+chargeTime: 20
 maxPayloadSize: 1
 shootEffect: none
 smokeEffect: none
@@ -17,3 +17,4 @@ hasPower: false
 requirements: [
   anden/60
 ]
+research: 0r02-02-00-anden-stack-belt

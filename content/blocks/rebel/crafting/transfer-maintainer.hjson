@@ -4,7 +4,7 @@ rotate: true
 quickRotate: true
 liquidOutputDirections: [0]
 enableDrawStatus: false
-craftTime: 1500
+craftTime: 700
 floating: true
 itemCapacity: 200
 liquidCapacity: 2200
@@ -50,7 +50,7 @@ consumes: {
   ]
 }
 outputLiquid: arreacta/0.1
-outputItem: scilaxa/100
+outputItem: scilaxa/50
 category: crafting
 requirements: [
   anden/300

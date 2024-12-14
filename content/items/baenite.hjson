@@ -8,3 +8,8 @@ research: {
   ]
 }
 healthScaling: 1.4
+shownPlanets: [
+  allure-wandura,
+  allure-genaise,
+  allure-lus
+]
