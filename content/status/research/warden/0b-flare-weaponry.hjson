@@ -1,10 +1,10 @@
 research: {
-  parent: 0b-beam-weaponry
+  parent: 0b-energy-weaponry
   objectives: [
     0b01-reckless
   ]
   requirements: [
-    forge-plating/50
+    forge-plating/25
     territe-alloy/4500
     scilaxa/1500
   ]

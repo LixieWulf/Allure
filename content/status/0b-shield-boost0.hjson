@@ -1,0 +1,13 @@
+healthMultiplier: 1.25
+effectChance: 0.05
+effect: {
+  type: WaveEffect
+  lifetime: 45
+  sides: 6
+  sizeFrom: 3
+  sizeTo: 3
+  strokeFrom: 0.5
+  strokeTo: 0.5
+  colorFrom: 7382f0
+  colorTo: 7382f000
+}

@@ -40,6 +40,7 @@ drawer: {
     {
       type: DrawRegion
       suffix: -icon
+      layer: 29.5
     }
     {
       type: DrawLiquidTile
@@ -49,12 +50,11 @@ drawer: {
     {
       type: DrawRegion
       suffix: -top
-      layer: 30.2
     }
     {
       type: DrawGlowRegion
       color: ffb380
-      layer: 30.2
+      layer: 30
       alpha: 0.5
     }
   ]

@@ -17,6 +17,7 @@ outlines: false
 range: 8192
 maxRange: 8192
 engineSize: 0
+deathShake: 0
 immunities: [
   allure-permaslide
 ]

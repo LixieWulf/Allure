@@ -1,0 +1,330 @@
+type: PowerTurret
+squareSprite: false
+size: 6
+reload: 280
+rotateSpeed: 0.9
+range: 560
+recoil: 7
+recoilTime: 140
+cooldownTime: 170
+shootSound: shootSmite
+chargeSound: lasercharge2
+shootWarmupSpeed: 0.001
+shoot: {
+  firstShotDelay: 40
+}
+outlineColor: 212229
+liquidCapacity: 40
+shake: 7
+//Be REALLY accurate
+shootCone: 0.25
+//Yes, a railgun targets the weakest enemies. This may be considered deranged, but it's not like it does anything to chunkier units.
+unitSort: weakest
+consumes: {
+  power: 21
+  liquids: [
+    liquid-baenara/2
+  ]
+}
+coolant: {
+  type: ConsumeLiquid
+  liquid: energia
+  amount: 1.5
+}
+heatColor: 000000
+drawer: {
+  type: DrawTurret
+  basePrefix: 0b-
+  parts: [
+    {
+      suffix: -heat
+      y: 20.25
+      blending: additive
+      outline: false
+      color: 000000
+      colorTo: ab3400
+      progress: {
+        type: heat
+        op: slope
+      }
+    }
+    {
+      suffix: -heat
+      y: 20.25
+      blending: additive
+      outline: false
+      color: 000000
+      colorTo: 90a2fc
+      progress: heat
+    }
+    { 
+      type: RegionPart
+      suffix: -flare
+      y: 19
+      outline: false
+      blending: additive
+      color: 7382f0
+      colorTo: ffffff
+      progress: charge
+    }
+    {
+      suffix: -barrel
+      y: 25.5
+      progress: recoil
+      children: [
+        {
+          suffix: -barrel
+          outline: false
+          blending: additive
+          color: 000000
+          colorTo: ffffff88
+          mixColor: ab3400
+        }
+      ]
+      moves: [
+        {
+          y: -11.75
+          progress: {
+            type: recoil
+            ops: [
+              {
+                op: compress
+                start: 0.9
+                end: 1
+              }
+              {
+                op: curve
+                interp: pow3In
+              }
+              {
+                op: inv
+              }
+            ]
+          }
+        }
+        {
+          y: 11.75
+          progress: {
+            type: recoil
+            ops: [
+              {
+                op: compress
+                start: 0
+                end: 0.9
+              }
+              {
+                op: inv
+              }
+            ]
+          }
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -mid
+      y: 7
+    }
+    {
+      type: RegionPart
+      suffix: -upper
+      y: 6  
+    }
+    { 
+      type: RegionPart
+      suffix: -flare
+      y: 19
+      outline: false
+      layer: 140
+      color: 7382f025
+      blending: additive
+    }
+  ]
+}
+coolantMultiplier: 0.66666
+shootType: {
+  speed: 28
+  lifetime: 60
+  drag: 0.05
+  damage: 200
+  splashDamage: 40
+  splashDamageRadius: 16
+  status: allure-0b-energy3
+  statusDuration: 1
+  pierceDamageFactor: 0.025
+  pierce: true
+  pierceBuilding: true
+  hittable: false
+  sprite: allure-diamond-thin
+  parts: [
+    {
+      type: RegionPart
+      name: allure-railblast
+      outline: false
+      rotation: 90
+      color: 90a2fc
+      xScl: 0
+      yScl: 0
+      moves: [
+        {
+          gx: 1
+          gy: 1
+          progress: {
+            type: life
+            op: slope
+          }
+        }
+      ]
+    }
+  ]
+  width: 64
+  height: 12
+  shrinkY: 1
+  shrinkInterp: pow5Out
+  rotationOffset: 90
+  frontColor: 90a2fc
+  backSprite: clear-effect
+  trailLength: 14
+  trailWidth: 3
+  trailColor: 7382f0
+  trailInterval: 1
+  trailRotation: true
+  trailEffect: {
+    line: true
+    cone: 67.5
+    particles: 2
+    lifetime: 20
+    length: -30
+    baseLength: -30
+    interp: pow3Out
+    sizeInterp: linear
+    lenFrom: 8
+    lenTo: 4
+    strokeFrom: 2
+    strokeTo: 0
+    colorTo: 7382f0
+  }
+  smokeEffect: none
+  shootEffect: {
+    line: true
+    cone: 20
+    particles: 17
+    lifetime: 20
+    length: 70
+    interp: pow3Out
+    sizeInterp: linear
+    lenFrom: 12
+    lenTo: 6
+    strokeFrom: 3
+    strokeTo: 0
+    colorTo: 7382f0
+  }
+  hitEffect: [
+    {
+      line: true
+      cone: 20
+      particles: 8
+      lifetime: 20
+      length: 45
+      interp: pow3Out
+      sizeInterp: linear
+      lenFrom: 8
+      lenTo: 4
+      strokeFrom: 2
+      strokeTo: 0
+      colorTo: 7382f0
+    }
+    {
+      type: WaveEffect
+      lifetime: 10
+      sizeFrom: 16
+      sizeTo: 16
+      strokeFrom: 2
+      strokeTo: 3
+      colorFrom: 7382f0
+      colorTo: 7382f000
+    }
+  ]
+  despawnEffect: none
+  setDefaults: false
+  despawnHit: false
+  fragBullets: 12
+  fragRandomSpread: 60
+  fragLifeMin: 0.5
+  fragBullet: {
+    speed: 20
+    lifetime: 40
+    pierce: true
+    pierceBuilding: true
+    pierceCap: 4
+    pierceDamageFactor: 0.01
+    drag: 0.05
+    damage: 30
+    status: allure-0b-energy1
+    statusDuration: 1
+    sprite: allure-diamond-thin
+    width: 4
+    height: 24
+    shrinkY: 0.25
+    shrinkX: 1
+    frontColor: 90a2fc
+    backColor: 00000000
+    hitColor: 7382f0
+    despawnEffect: none
+    hitEffect: hitBulletColor
+  }
+  spawnBullets: [
+    {
+      type: BulletType
+      damage: 0
+      lifetime: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      fragBullets: 20
+      fragRandomSpread: 12
+      fragVelocityMin: 0.7
+      fragVelocityMax: 1.8
+      fragLifeMin: 0.5
+      fragBullet: {
+        speed: 20
+        lifetime: 40
+        pierce: true
+        pierceBuilding: true
+        pierceCap: 4
+        pierceDamageFactor: 0.01
+        drag: 0.05
+        damage: 30
+        status: allure-0b-energy1
+        statusDuration: 1
+        sprite: allure-diamond-thin
+        width: 4
+        height: 24
+        shrinkY: 0.25
+        shrinkX: 1
+        frontColor: 90a2fc
+        backColor: 00000000
+        hitColor: 7382f0
+        despawnEffect: none
+        hitEffect: hitBulletColor
+      }
+    }
+  ]
+}
+category: turret
+research: {
+  parent: 0b-tremor
+  objectives: [
+    0b-electromagnetic-acceleration
+  ]
+}
+requirements: [
+  territe-alloy/1800
+  dantrales/700
+  silicon/600
+  baenite/350
+]

@@ -59,7 +59,7 @@ outputLiquids: [
 ambientSoundVolume: 0
 category: crafting
 research: {
-  parent: 0b06-08-ignition-core
+  parent: 0b06-01-distillery
   objectives: [
     0b-basic-infrastructure
   ]

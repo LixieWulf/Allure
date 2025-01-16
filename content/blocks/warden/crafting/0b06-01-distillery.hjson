@@ -69,7 +69,7 @@ outputLiquid: water/1.2
 outputItem: baenite/7
 category: crafting
 research: {
-  parent: 0b06-08-ignition-core
+  parent: 0b-begin
   objectives: [
     0b-basic-infrastructure
   ]

@@ -20,6 +20,7 @@ shieldColor: 7382f000
 engineSize: 0
 //No need to have her turn
 faceTarget: false
+deathShake: 0
 parts: [
   {
     type: RegionPart

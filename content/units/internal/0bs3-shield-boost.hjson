@@ -1,0 +1,33 @@
+type: missile
+template: MissileUnitType
+flying: false
+controller: MinerAI
+defaultController: MinerAI
+lifetime: 30
+hitSize: 180
+speed: 0
+drag: 10000
+physics: false
+hittable: false
+targettable: false
+drawBody: false
+drawCell: false
+drawShields: false
+outlines: false
+groundLayer: 0
+deathShake: 0
+shieldColor: 7382f000
+abilities: [
+  {
+    type: StatusFieldAbility
+    reload: 29
+    range: -88
+    effect: allure-0b-shield-boost0
+    duration: 40
+    activeEffect: none
+  }
+]
+deathSound: none
+loopSound: respawning
+loopSoundVolume: 0.25
+deathExplosionEffect: none

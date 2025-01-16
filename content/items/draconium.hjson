@@ -2,7 +2,7 @@ hardness: 9
 cost: 1.1
 explosiveness: 4.4
 color: a33164
-research: anden
+research: inseltiene
 healthScaling: 4
 shownPlanets: [
   allure-wandura,

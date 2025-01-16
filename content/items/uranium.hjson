@@ -2,7 +2,7 @@ radioactivity: 1.6
 explosiveness: 0.6
 hardness: 4
 color: ded16a
-research: thorium
+research: baenite
 shownPlanets: [
   allure-wandura,
   allure-genaise,

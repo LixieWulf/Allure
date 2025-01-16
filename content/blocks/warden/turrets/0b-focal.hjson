@@ -1,0 +1,130 @@
+type: ContinuousLiquidTurret
+squareSprite: false
+size: 4
+reload: 45
+rotateSpeed: 2
+range: 310
+recoil: 0
+recoilTime: 30
+shootSound: laser
+loopSound: hum
+loopSoundVolume: 1
+outlineColor: 212229
+shootY: 30
+consumes: {
+  power: 10
+  liquids: [
+    energia/0.66666
+  ]
+}
+shootWarmupSpeed: 0.02
+heatColor: 000000
+drawer: {
+  type: DrawTurret
+  basePrefix: 0b-
+  parts: [
+    {
+      suffix: -heat
+      blending: additive
+      color: 000000
+      colorTo: ab3400
+      progress: {
+        type: warmup
+        op: slope
+      }
+    }
+    {
+      suffix: -heat2
+      blending: additive
+      outline: false
+      color: 000000
+      colorTo: ab3400
+    }
+    {
+      suffix: -heat
+      blending: additive
+      color: 000000
+      colorTo: 90a2fc
+    }
+  ]
+}
+coolantMultiplier: 1.414
+ammoTypes: {
+  energia: {
+    type: ContinuousLaserBulletType
+    damage: 40
+    status: allure-0b-energy2
+    statusDuration: 1
+    damageInterval: 7
+    setDefaults: false
+    despawnHit: false
+    largeHit: true
+    lifetime: 30
+    frontLength: 0
+    backLength: 12
+    shake: 0.5
+    length: 290
+    width: 3
+    pierceCap: 1
+    colors: [
+      7382f088,
+      7382f0,
+      90a2fc,
+      ffffff
+    ]
+    hitEffect: none
+    fragBullets: 1
+    fragRandomSpread: 180
+    fragBullet: {
+      type: BulletType
+      collides: false
+      hittable: false
+      absorbable: false
+      length: 0
+      lifetime: 0
+      damage: 0
+      width: 0
+      despawnEffect: [
+        {
+          baseRotation: 180
+          length: 30
+          cone: 0
+          region: allure-shootspike
+          particles: 1
+          lifetime: 40
+          colorFrom: 90a2fc
+          colorTo: 7382f0
+          sizeFrom: 20
+          sizeTo: 0
+        }
+        {
+          length: 0
+          cone: 0
+          region: allure-diamond-thin
+          offset: 90
+          particles: 1
+          lifetime: 25
+          colorFrom: ffffff
+          colorTo: 90a2fc
+          sizeFrom: 25
+          sizeTo: 0
+        }
+      ]
+    }
+    shootEffect: none
+    smokeEffect: none
+  }
+}
+category: turret
+research: {
+  parent: 0b05-00-shock-wall
+  objectives: [
+    0b-beam-weaponry
+  ]
+}
+requirements: [
+  territe-alloy/1200
+  dantrales/400
+  metaglass/250
+  silicon/100
+]

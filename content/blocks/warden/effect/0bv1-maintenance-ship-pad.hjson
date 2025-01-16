@@ -15,7 +15,7 @@ consumes: {
   ]
 }
 category: effect
-research: 0bv1-recurrence-ship-pad
+research: 0bv0-recurrence-ship-pad
 requirements: [
   territe-alloy/1200
   dantrales/300

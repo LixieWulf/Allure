@@ -1,0 +1,67 @@
+type: PowerTurret
+squareSprite: false
+size: 4
+reload: 150
+rotateSpeed: 0
+range: 440
+recoil: 0
+shootY: 0
+shootCone: 360
+shootSound: sap
+outlineIcon: false
+unitSort: strongest
+shoot: {
+  type: ShootSpread
+  spread: 45
+  shots: 8
+  shotDelay: 2
+}
+drawer: {
+  type: DrawRegion
+}
+consumes: {
+  power: 18
+  liquids: [
+    liquid-baenara/1
+  ]
+}
+coolant: {
+  type: ConsumeLiquid
+  liquid: energia
+  amount: 1.5
+}
+coolantMultiplier: 1.111111
+shootType: {
+  speed: 2
+  drag: -0.07
+  lifetime: 45
+  damage: 45
+  status: allure-0b-energy1
+  statusDuration: 4
+  homingPower: 0.11
+  homingRange: 480
+  width: 11
+  height: 18
+  frontColor: 90a2fc
+  backColor: 7382f0
+  trailLength: 5
+  trailWidth: 1.5
+  trailColor: 7382f0
+  hitColor: 7382f0
+  hitEffect: hitBulletColor
+  despawnEffect: hitBulletColor
+  smokeEffect: none
+}
+category: turret
+research: {
+  parent: 0b05-00-shock-wall
+  objectives: [
+    0b-guided-plasma-weaponry
+  ]
+}
+requirements: [
+  territe-alloy/1200
+  dantrales/400
+  metaglass/250
+  silicon/100
+]

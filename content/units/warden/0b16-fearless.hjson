@@ -18,6 +18,7 @@ engineSize: 0
 outlines: false
 healColor: 7382f088
 shieldColor: 7382f000
+deathShake: 0
 immunities: [
   wet,
   shocked,

@@ -1,0 +1,271 @@
+type: PowerTurret
+squareSprite: false
+size: 4
+reload: 70
+rotateSpeed: 360
+range: 360
+recoil: 0
+shootY: 8
+shootSound: shockBlast
+outlineIcon: false
+shake: 4
+unitSort: strongest
+drawer: {
+  type: DrawRegion
+}
+consumes: {
+  power: 30
+  liquids: [
+    liquid-baenara/1
+  ]
+}
+coolant: {
+  type: ConsumeLiquid
+  liquid: energia
+  amount: 2
+}
+coolantMultiplier: 0.888888
+shootType: {
+  type: BulletType
+  speed: 0
+  damage: 48
+  status: allure-0b-energy3
+  statusDuration: 5
+  lifetime: 2
+  hittable: false
+  absorbable: false
+  pierce: true
+  pierceBuilding: true
+  hitEffect: none
+  despawnEffect: none
+  fragBullets: 2
+  fragRandomSpread: 45
+  fragAngle: 22.5
+  fragOffsetMin: 60
+  fragOffsetMax: 60
+  fragBullet: {
+    type: BulletType
+    createChance: 1
+    speed: 0
+    damage: 44
+    status: allure-0b-energy3
+    statusDuration: 4
+    lifetime: 2
+    hittable: false
+    absorbable: false
+    pierce: true
+    pierceBuilding: true
+    hitEffect: none
+    despawnEffect: {
+      line: true
+      particles: 1
+      length: -0.001
+      cone: 0
+      lifetime: 30
+      colorTo: 7382f0
+      lenFrom: 60
+      lenTo: 60
+      strokeFrom: 4
+      strokeTo: 0
+    }
+    fragBullets: 2
+    fragRandomSpread: 45
+    fragAngle: -22.5
+    fragOffsetMin: 60
+    fragOffsetMax: 60
+    fragBullet: {
+      type: BulletType
+      createChance: 0.75
+      speed: 0
+      damage: 40
+      status: allure-0b-energy3
+      statusDuration: 2
+      lifetime: 2
+      hittable: false
+      absorbable: false
+      pierce: true
+      pierceBuilding: true
+      hitEffect: none
+      despawnEffect: {
+        line: true
+        particles: 1
+        length: -0.001
+        cone: 0
+        lifetime: 30
+        colorTo: 7382f0
+        lenFrom: 60
+        lenTo: 60
+        strokeFrom: 3.5
+        strokeTo: 0
+      }
+      fragBullets: 2
+      fragRandomSpread: 45
+      fragAngle: 22.5
+      fragOffsetMin: 60
+      fragOffsetMax: 60
+      fragBullet: {
+        type: BulletType
+        createChance: 0.75
+        speed: 0
+        damage: 36
+        status: allure-0b-energy3
+        statusDuration: 1
+        lifetime: 2
+        hittable: false
+        absorbable: false
+        pierce: true
+        pierceBuilding: true
+        hitEffect: none
+        despawnEffect: {
+          line: true
+          particles: 1
+          length: -0.001
+          cone: 0
+          lifetime: 30
+          colorTo: 7382f0
+          lenFrom: 60
+          lenTo: 60
+          strokeFrom: 3
+          strokeTo: 0
+        }
+        fragBullets: 2
+        fragRandomSpread: 45
+        fragAngle: -22.5
+        fragOffsetMin: 60
+        fragOffsetMax: 60
+        fragBullet: {
+          type: BulletType
+          createChance: 0.5
+          speed: 0
+          damage: 32
+          status: allure-0b-energy2
+          statusDuration: 7
+          lifetime: 2
+          hittable: false
+          absorbable: false
+          pierce: true
+          pierceBuilding: true
+          hitEffect: none
+          despawnEffect: {
+            line: true
+            particles: 1
+            length: -0.001
+            cone: 0
+            lifetime: 30
+            colorTo: 7382f0
+            lenFrom: 60
+            lenTo: 60
+            strokeFrom: 2.5
+            strokeTo: 0
+          }
+          fragBullets: 2
+          fragRandomSpread: 45
+          fragAngle: 22.5
+          fragOffsetMin: 60
+          fragOffsetMax: 60
+          fragBullet: {
+            type: BulletType
+            createChance: 0.5
+            speed: 0
+            damage: 28
+            status: allure-0b-energy2
+            statusDuration: 2
+            lifetime: 2
+            hittable: false
+            absorbable: false
+            pierce: true
+            pierceBuilding: true
+            hitEffect: none
+            despawnEffect: {
+              line: true
+              particles: 1
+              length: -0.001
+              cone: 0
+              lifetime: 30
+              colorTo: 7382f0
+              lenFrom: 60
+              lenTo: 60
+              strokeFrom: 2
+              strokeTo: 0
+            }
+            fragBullets: 2
+            fragRandomSpread: 45
+            fragAngle: -22.5
+            fragOffsetMin: 60
+            fragOffsetMax: 60
+            fragBullet: {
+              type: BulletType
+              createChance: 0.25
+              speed: 0
+              damage: 24
+              status: allure-0b-energy1
+              statusDuration: 8
+              lifetime: 2
+              hittable: false
+              absorbable: false
+              pierce: true
+              pierceBuilding: true
+              hitEffect: none
+              despawnEffect: {
+                line: true
+                particles: 1
+                length: -0.001
+                cone: 0
+                lifetime: 30
+                colorTo: 7382f0
+                lenFrom: 60
+                lenTo: 60
+                strokeFrom: 1.5
+                strokeTo: 0
+              }
+              fragBullets: 2
+              fragRandomSpread: 45
+              fragAngle: 22.5
+              fragOffsetMin: 60
+              fragOffsetMax: 60
+              fragBullet: {
+                type: BulletType
+                createChance: 0.25
+                speed: 0
+                damage: 20
+                status: allure-0b-energy1
+                statusDuration: 4
+                lifetime: 2
+                hittable: false
+                absorbable: false
+                pierce: true
+                pierceBuilding: true
+                hitEffect: none
+                despawnEffect: {
+                  line: true
+                  particles: 1
+                  length: -0.001
+                  cone: 0
+                  lifetime: 30
+                  colorTo: 7382f0
+                  lenFrom: 60
+                  lenTo: 60
+                  strokeFrom: 1
+                  strokeTo: 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+category: turret
+research: {
+  parent: 0b05-00-shock-wall
+  objectives: [
+    0b-shock-weaponry
+  ]
+}
+requirements: [
+  territe-alloy/1200
+  dantrales/400
+  metaglass/250
+  silicon/100
+]

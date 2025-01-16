@@ -1,10 +1,6 @@
 research: {
   parent: 0b-basic-infrastructure
-  objectives: [
-    0b05-00-shock-wall
-  ]
   requirements: [
-    forge-plating/25
     dantrales/1200
     territe-alloy/3500
   ]

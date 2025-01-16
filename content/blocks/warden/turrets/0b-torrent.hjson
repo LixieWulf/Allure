@@ -1,0 +1,154 @@
+type: PowerTurret
+squareSprite: false
+size: 4
+reload: 16
+rotateSpeed: 2.7
+range: 320
+recoil: 0.5
+recoilTime: 12
+shootSound: blaster
+outlineColor: 212229
+shake: 1
+shoot: {
+  type: ShootAlternate
+  spread: 5
+}
+consumes: {
+  power: 24
+  liquids: [
+    liquid-baenara/1
+  ]
+}
+coolant: {
+  type: ConsumeLiquid
+  liquid: energia
+  amount: 1
+}
+shootWarmupSpeed: 0.01
+heatColor: 000000
+recoils: 2
+drawer: {
+  type: DrawTurret
+  basePrefix: 0b-
+  parts: [
+    {
+      suffix: -barrel-r
+      x: 3.25
+      y: 4
+      moveY: -4
+      recoilIndex: 1
+      progress: recoil
+      children: [
+        {
+          suffix: -heat
+          blending: additive
+          outline: false
+          color: 000000
+          colorTo: ab3400
+          progress: {
+            type: warmup
+            op: slope
+          }
+        }
+        {
+          suffix: -heat2
+          blending: additive
+          outline: false
+          color: 000000
+          colorTo: ab3400
+        }
+        {
+          suffix: -heat
+          blending: additive
+          outline: false
+          color: 000000
+          colorTo: 90a2fc
+        }
+      ]
+    }
+    {
+      suffix: -barrel-l
+      x: -3.25
+      y: 4
+      moveY: -4
+      recoilIndex: 0
+      progress: recoil
+      children: [
+        {
+          suffix: -heat
+          blending: additive
+          xScl: -1
+          color: 000000
+          colorTo: ab3400
+          progress: {
+            type: warmup
+            op: slope
+          }
+        }
+        {
+          suffix: -heat2
+          blending: additive
+          xScl: -1
+          color: 000000
+          colorTo: ab3400
+        }
+        {
+          suffix: -heat
+          blending: additive
+          xScl: -1
+          color: 000000
+          colorTo: 90a2fc
+        }
+      ]
+    }
+    {
+      suffix: -top
+    }
+  ]
+}
+coolantMultiplier: 1.6666666
+shootType: {
+  speed: 15
+  lifetime: 20
+  damage: 20
+  status: allure-0b-energy2
+  statusDuration: 1
+  width: 12
+  height: 24
+  frontColor: 90a2fc
+  backColor: 7382f0
+  trailLength: 5
+  trailWidth: 2
+  trailColor: 7382f0
+  hitColor: 7382f0
+  hitEffect: hitBulletColor
+  despawnEffect: hitBulletColor
+  smokeEffect: none
+  shootEffect: {
+    line: true
+    cone: 20
+    particles: 5
+    lifetime: 10
+    length: 18
+    interp: pow3Out
+    sizeInterp: linear
+    lenFrom: 4
+    lenTo: 2
+    strokeFrom: 1
+    strokeTo: 0
+    colorTo: 7382f0
+  }
+}
+category: turret
+research: {
+  parent: 0b05-00-shock-wall
+  objectives: [
+    0b-rapid-fire-plasma
+  ]
+}
+requirements: [
+  territe-alloy/1200
+  dantrales/400
+  metaglass/250
+  silicon/100
+]

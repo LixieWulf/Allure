@@ -28,6 +28,7 @@ outlines: false
 bounded: false
 fullOverride: allure-0b05-harmony-full
 playerControllable: false
+deathShake: 0
 targetFlags: [
   turret, 
   core

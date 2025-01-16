@@ -5,7 +5,7 @@ insulated: true
 category: defense
 requirements: [
   territe-alloy/80
-  crystal/40
+  dantrales/40
 ]
 placeEffect: [
   {
@@ -47,7 +47,7 @@ breakEffect: [
   }
   {
     type: RadialEffect
-    useRotation: false
+    rotationOffset: -1
     lengthOffset: 4
     amount: 2
     effect: {

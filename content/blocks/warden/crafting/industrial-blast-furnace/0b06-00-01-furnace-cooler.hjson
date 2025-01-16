@@ -12,12 +12,13 @@ consumes: {
   liquids: [
     liquid-baenara/0.4
     ozone/0.12
+    water/0.6
   ]
 }
 outputLiquids: [
   0b19-03-fresh-coolant/0.5
 ]
-craftTime: 5
+craftTime: 10
 category: crafting
 research: {
   parent: industrial-blast-furnace
@@ -38,73 +39,246 @@ drawer: {
   drawers: [
     {
       type: DrawRegion
-      layer: 30.1
+      suffix: -icon
+      layer: 29.5
+    }
+    {
+      type: DrawRegion
     }
     {
       type: DrawRegion
       suffix: -fan
-      rotateSpeed: 4
+      rotateSpeed: -7
       spinSprite: true
-      layer: 30.1
-    }
-    {
-      type: DrawRegion
-      suffix: -fan
-      rotateSpeed: 4
-      rotation: 30
-      spinSprite: true
-      layer: 30.1
-    }
-    {
-      type: DrawRegion
-      suffix: -fan
-      rotateSpeed: 4
-      rotation: 60
-      spinSprite: true
-      layer: 30.1
+      y: 9.25
     }
     {
       type: DrawRegion
       suffix: -top
-      layer: 30.1
-    }
-    {
-      type: DrawGlowRegion
-      layer: 30.2
-      color: ffb380
-      alpha: 0.5
+      y: 9.25
     }
     {
       type: DrawRegion
-      suffix: -icon
+      suffix: -fan
+      rotateSpeed: -7
+      spinSprite: true
+      y: 9.25
+      x: 9.5
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+      y: 9.25
+      x: 9.5
+    }
+    {
+      type: DrawRegion
+      suffix: -fan
+      rotateSpeed: -7
+      spinSprite: true
+      y: 9.25
+      x: -9.5
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+      y: 9.25
+      x: -9.5
+    }
+    {
+      type: DrawRegion
+      suffix: -fan
+      rotateSpeed: -7
+      spinSprite: true
+      y: -9.25
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+      y: -9.25
+    }
+    {
+      type: DrawRegion
+      suffix: -fan
+      rotateSpeed: -7
+      spinSprite: true
+      y: -9.25
+      x: 9.5
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+      y: -9.25
+      x: 9.5
+    }
+    {
+      type: DrawRegion
+      suffix: -fan
+      rotateSpeed: -7
+      spinSprite: true
+      y: -9.25
+      x: -9.5
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+      y: -9.25
+      x: -9.5
+    }
+    {
+      type: DrawPistons
+      suffix: -p1
+      sides: 1
+      angleOffset: 180
+      horiOffset: 3.5
+      lenOffset: 19
+      sinScl: 12
+      sinMag: 8.75
+      sinOffset: 0
+    }
+    {
+      type: DrawPistons
+      suffix: -p2
+      sides: 1
+      angleOffset: 180
+      horiOffset: -14.75
+      lenOffset: 19
+      sinScl: 12
+      sinMag: 8.75
+      sinOffset: 75
+    }
+    {
+      type: DrawRegion
+      suffix: -mid
+      x: -24
+    }
+    {
+      type: DrawPistons
+      sides: 1
+      angleOffset: 180
+      horiOffset: 9.25
+      lenOffset: 19
+      sinScl: 12
+      sinMag: 8.75
+      sinOffset: 0
+    }
+    {
+      type: DrawPistons
+      sides: 1
+      angleOffset: 180
+      horiOffset: -9
+      lenOffset: 19
+      sinScl: 12
+      sinMag: 8.75
+      sinOffset: 75
+    }
+    {
+      type: DrawGlowRegion
+      layer: 30
+      color: ffb380
+      alpha: 0.5
     }
   ]
 }
-craftEffect: {
-  type: RadialEffect
-  layer: 118
-  rotationSpacing: 22.5
-  amount: 16
-  lengthOffset: 8
-  effect: {
-    particles: 1
-    line: true
-    length: 18
-    lifetime: 35
-    cone: 20
-    useRotation: false
-    baseRotation: 90
-    lenFrom: 0
-    lenTo: 4
-    strokeFrom: 0.5
-    strokeTo: 0
-    colorFrom: ffffff00
-    colorTo: ffffff88
-    interp: pow2
-    sizeInterp: pow3In
-    layer: 80
+craftEffect: [
+  //radial effect hell radial effect hell radial effect hell radial effect hell radial effect hell radial effect hell
+  {
+    type: RadialEffect
+    rotationSpacing: 180
+    rotationOffset: 90
+    amount: 2
+    lengthOffset: 9.25
+    effect: {
+      type: RadialEffect
+      rotationSpacing: 60
+      amount: 6
+      lengthOffset: 2.5
+      effect: {
+        particles: 1
+        line: true
+        length: -18
+        baseLength: 18
+        lifetime: 35
+        cone: 20
+        useRotation: false
+        baseRotation: 90
+        lenFrom: 4
+        lenTo: 0
+        strokeFrom: 0
+        strokeTo: 0.5
+        colorFrom: ffffff00
+        colorTo: ffffff88
+        interp: pow2
+        sizeInterp: pow3In
+        layer: 80
+      }
+    }
   }
-}
+  {
+    type: RadialEffect
+    rotationSpacing: 180
+    amount: 2
+    lengthOffset: 9.5
+    effect: {
+      type: RadialEffect
+      rotationSpacing: 180
+      rotationOffset: 90
+      amount: 2
+      lengthOffset: 9.25
+      effect: {
+        type: RadialEffect
+        rotationSpacing: 60
+        amount: 6
+        lengthOffset: 2.5
+        effect: {
+          particles: 1
+          line: true
+          length: -18
+          baseLength: 18
+          lifetime: 35
+          cone: 20
+          useRotation: false
+          baseRotation: 90
+          lenFrom: 4
+          lenTo: 0
+          strokeFrom: 0
+          strokeTo: 0.5
+          colorFrom: ffffff00
+          colorTo: ffffff88
+          interp: pow2
+          sizeInterp: pow3In
+          layer: 80
+        }
+      }
+    }
+  }
+  {
+    type: RadialEffect
+    amount: 1
+    lengthOffset: 18
+    effect: {
+      type: RadialEffect
+      rotationSpacing: 180
+      rotationOffset: 90
+      amount: 2
+      lengthOffset: 9.25
+      effect: {
+        particles: 5
+        length: 40
+        lifetime: 90
+        cone: 20
+        useRotation: false
+        sizeFrom: 0
+        sizeTo: 6
+        colorFrom: ffffff
+        colorTo: ffffff00
+        interp: pow2Out
+        sizeInterp: linear
+        layer: 75
+      }
+    }
+  }
+]
 breakEffect: [
   {
     type: WaveEffect

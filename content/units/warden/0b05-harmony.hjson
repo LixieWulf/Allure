@@ -21,6 +21,7 @@ maxRange: 660
 drawCell: false
 drawBody: false
 outlines: false
+deathShake: 0
 parts: [
   {
     type: RegionPart

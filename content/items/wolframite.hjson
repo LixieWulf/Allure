@@ -1,7 +1,7 @@
 hardness: 8
 cost: 4
 color: 4a4b53
-research: scrap
+research: baenite
 charge: 0.9
 shownPlanets: [
   allure-wandura,

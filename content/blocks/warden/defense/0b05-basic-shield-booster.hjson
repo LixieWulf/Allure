@@ -1,0 +1,28 @@
+//PowerTurret makes consumes easier to set up. Don't question it.
+type: PowerTurret
+size: 2
+reload: 30
+range: 32
+shootY: 24
+rotateSpeed: 1
+recoil: 0
+shootSound: none
+alwaysShooting: true
+liquidCapacity: 20
+shake: 0
+consumes: {
+  liquids: [
+    energia/0.5
+  ]
+}
+shootType: {
+  spawnUnit: allure-0bs3-shield-boost
+  shootEffect: none
+  smokeEffect: none
+}
+research: 0b05-small-shield-projector
+requirements: [
+  territe-alloy/600
+  dantrales/300
+  baenite/150
+]

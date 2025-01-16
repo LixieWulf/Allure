@@ -1,0 +1,26 @@
+type: UnitCargoLoader
+size: 6
+unitType: allure-0bs1-medium-shield
+buildTime: 900
+itemCapacity: 0
+liquidCapacity: 200
+polySides: 0
+consumes: {
+  liquids: [
+    liquid-baenara/3
+    energia/2
+    arreacta/1
+  ]
+}
+category: defense
+research: {
+  parent: 0b05-small-shield-projector
+  objectives: [
+    0b-energy-defense
+  ]
+}
+requirements: [
+  territe-alloy/1200
+  dantrales/400
+  baenite/200
+]

@@ -1,7 +1,6 @@
 research: {
-  parent: 0b-energy-weaponry
+  parent: 0b-basic-infrastructure
   requirements: [
-    forge-plating/25
     territe-alloy/4500
     dantrales/1200
   ]

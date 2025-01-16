@@ -1,0 +1,217 @@
+type: tether
+controller: MinerAI
+defaultController: MinerAI
+playerControllable: false
+health: 4000
+hitSize: 360
+drag: 10000
+physics: false
+drawBody: false
+drawCell: false
+drawShields: false
+outlines: false
+hoverable: false
+groundLayer: 0
+deathShake: 0
+shieldColor: 7382f000
+fullOverride: allure-0b05-medium-shield-projector
+immunities: [
+  allure-0b-energy0,
+  allure-0b-energy1,
+  allure-0b-energy2,
+  allure-0b-energy3,
+  allure-0b-energy4,
+  allure-0t-thermal0,
+  allure-0t-thermal1,
+  allure-0t-thermal2,
+  allure-0t-thermal3,
+  allure-0t-thermal4,
+  burning,
+  melting,
+  wet,
+  freezing,
+  tarred,
+  electrified,
+  slow,
+  unmoving,
+  overdrive,
+  overclock,
+  fast,
+  allure-healing-wind
+]
+parts: [
+  {
+    type: RegionPart
+    name: allure-square-shield
+    xScl: 0
+    yScl: 0
+    layer: 80
+    blending: additive
+    color: 7382f088
+    outline: false
+    weaponIndex: 0
+    moves: [
+      {
+        gx: 3.448 
+        gy: 3.448 
+        x: 124.125 
+      }
+    ]
+  }
+  {
+    type: RegionPart
+    name: allure-square-shield
+    rotation: -90
+    xScl: 0
+    yScl: 0
+    layer: 80
+    blending: additive
+    color: 7382f088
+    outline: false
+    weaponIndex: 0
+    moves: [
+      {
+        gx: 3.448 
+        gy: 3.448 
+        y: -124.125 
+      }
+    ]
+  }
+  {
+    type: RegionPart
+    name: allure-square-shield
+    rotation: 180
+    xScl: 0
+    yScl: 0
+    layer: 80
+    blending: additive
+    color: 7382f088
+    outline: false
+    weaponIndex: 0
+    moves: [
+      {
+        gx: 3.448 
+        gy: 3.448 
+        x: -124.125 
+      }
+    ]
+  }
+  {
+    type: RegionPart
+    name: allure-square-shield
+    rotation: 90
+    xScl: 0
+    yScl: 0
+    layer: 80
+    blending: additive
+    color: 7382f088
+    outline: false
+    weaponIndex: 0
+    moves: [
+      {
+        gx: 3.448 
+        gy: 3.448 
+        y: 124.125 
+      }
+    ]
+  }
+  {
+    type: RegionPart
+    name: allure-0b05-medium-shield-projector-top
+    color: 000000
+    colorTo: feb38088
+    outline: false
+    blending: additive
+    layer: 35
+    weaponIndex: 0
+    progress: {
+      type: reload
+      op: slope
+    }
+  }
+]
+weapons: [
+  {
+    reload: 170
+    alwaysShooting: true
+    shootCone: 360
+    controllable: false
+    mirror: false
+    shootSound: none
+    bullet: {
+      type: ExplosionBulletType
+      killShooter: false
+      despawnEffect: none
+      hitEffect: none
+      shootEffect: none
+      smokeEffect: none
+    }
+  }
+]
+abilities: [
+  {
+    type: RegenAbility
+    percentAmount: 0.3
+  }
+  {
+    type: ShieldArcAbility
+    regen: 2000000000
+    max: 2000000000
+    angle: 10
+    radius: 1800
+    y: -1636
+    cooldown: 0
+    whenShooting: false
+    angleOffset: 0
+    width: 3
+  }
+  {
+    type: ShieldArcAbility
+    regen: 2000000000
+    max: 2000000000
+    angle: 10
+    radius: 1800
+    x: 1636
+    cooldown: 0
+    whenShooting: false
+    angleOffset: 90
+    width: 3
+  }
+  {
+    type: ShieldArcAbility
+    regen: 2000000000
+    max: 2000000000
+    angle: 10
+    radius: 1800
+    y: 1636
+    cooldown: 0
+    whenShooting: false
+    angleOffset: 180
+    width: 3
+  }
+  {
+    type: ShieldArcAbility
+    regen: 2000000000
+    max: 2000000000
+    angle: 10
+    radius: 1800
+    x: -1636
+    cooldown: 0
+    whenShooting: false
+    angleOffset: -90
+    width: 3
+  }
+]
+deathSound: none
+createScorch: false
+loopSound: hum
+loopSoundVolume: 0.1
+deathExplosionEffect: {
+  type: WaveEffect
+  lifetime: 60
+  sizeFrom: 240
+  sizeTo: 240
+  sides: 4
+  colorTo: 7382f0
+  strokeFrom: 6
+}

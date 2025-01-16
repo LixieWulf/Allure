@@ -60,7 +60,7 @@ breakEffect: [
   }
   {
     type: RadialEffect
-    useRotation: false
+    baseRotation: 43
     lengthOffset: 4
     amount: 2
     effect: {

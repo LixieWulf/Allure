@@ -43,7 +43,7 @@ consumes: {
 }
 powerProduction: 15
 
-outputLiquid: water/2.25
+outputLiquid: water/2.3
 category: power
 research: {
   parent:  0b04-00-03-industrial-turbine

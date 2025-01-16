@@ -14,6 +14,7 @@ drawCell: false
 outlines: false
 shadowElevationScl: 3.5
 lightRadius: 0
+deathShake: 0
 immunities: [
   burning,
   melting,

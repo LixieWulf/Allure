@@ -36,7 +36,7 @@ outputLiquid: arreacta/0.5
 ambientSoundVolume: 0.015 //mfs loud as fuc
 category: crafting
 research: {
-  parent: 0b06-08-ignition-core
+  parent: 0b06-01-distillery
   objectives: [
     0b-basic-infrastructure
   ]

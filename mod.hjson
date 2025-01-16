@@ -9,11 +9,11 @@ description:
   
   An attempt at an immersive content mod.
 
-  HJSON at its core, Allure seeks to break the limits and deliver a hopefully interesting experience to whoever plays it. Although most mods (well, all mods really) give an easier experience due to bad balancing, Allure is considerably tougher than vanilla.
+  HJSON at its core, Allure seeks to do what no other mod has ever done. With RTS-centered gameplay and a focus on combat diversity, this hardcore mod aims to put difficulty and replayability onto the table. Fight enemies as two factions, each with their own unique design and weapon trees. 
 
-  This mod may cause ragequits and you may get stuck at any point in progression. Skill is required.
+  This mod may cause rage-quits and you may get stuck at any point in progression. Skill is required. Follow the tutorials provided.
 
-  THIS UPDATE IS STILL IN EARLY DEV SO PLEASE SHUT UP ABOUT BUG REPORTS
+  THIS UPDATE IS STILL IN EARLY DEV - PLEASE DON'T MAKE BUG REPORTS
   '''
 version: spaghetti
 minGameVersion: 147

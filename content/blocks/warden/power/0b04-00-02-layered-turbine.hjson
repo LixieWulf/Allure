@@ -67,7 +67,7 @@ consumes: {
   liquid: steam/10
 }
 powerProduction: 120
-outputLiquid: water/9
+outputLiquid: water/9.2
 category: power
 research: {
   parent: 0b04-00-05-tri-turbine

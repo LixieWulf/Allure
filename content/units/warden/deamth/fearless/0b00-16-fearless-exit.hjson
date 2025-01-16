@@ -12,6 +12,7 @@ drawBody: false
 drawCell: false
 outlines: false
 engineSize: 0
+deathShake: 0
 parts: [
   {
     type: RegionPart

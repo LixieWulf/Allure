@@ -260,6 +260,12 @@ shootType: {
 }
 priority: -2
 category: defense
+research: {
+  parent: 0b05-00-shock-wall
+  objectives: [
+    0b-basic-infrastructure
+  ]
+}
 requirements: [
   silicon/150
   metaglass/120

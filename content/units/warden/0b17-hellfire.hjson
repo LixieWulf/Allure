@@ -22,6 +22,7 @@ strafePenalty: 0.35
 drawCell: false
 drawBody: false
 outlines: false
+deathShake: 0
 immunities: [
   wet,
   shocked,

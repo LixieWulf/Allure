@@ -1,12 +1,7 @@
 research: {
   parent: 0b-energy-weaponry
-  objectives: [
-    0b04-14-capacitor
-  ]
   requirements: [
     forge-plating/25
-    silicon/3000
-    territe-alloy/1200
   ]
 }
 show: false

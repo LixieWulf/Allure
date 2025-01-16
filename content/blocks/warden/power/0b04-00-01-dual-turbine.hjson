@@ -48,7 +48,7 @@ consumes: {
   liquid: steam/5
 }
 powerProduction: 45
-outputLiquid: water/4.5
+outputLiquid: water/4.6
 category: power
 research: {
   parent: 0b04-00-04-industrial-turbine-large

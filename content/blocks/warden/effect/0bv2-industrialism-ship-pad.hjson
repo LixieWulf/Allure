@@ -13,7 +13,7 @@ consumes: {
   ]
 }
 category: effect
-research: 0bv2-maintenance-ship-pad
+research: 0bv1-maintenance-ship-pad
 requirements: [
   infrastructure/300
   territe-alloy/1200

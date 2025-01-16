@@ -35,20 +35,23 @@ drawer: {
   ]
   drawers: [
     {
+      type: DrawRegion
+      suffix: -icon
+      layer: 29.5
     }
     {
       type: DrawRegion
-      suffix: -top
+    }
+    {
+      type: DrawRegion
+      suffix: -tubing
       layer: 30.1
+      y: -31.5
     }
     {
       type: DrawGlowRegion
       color: ffb380
       layer: 30.1
-    }
-    {
-      type: DrawRegion
-      suffix: -icon
     }
   ]
 }

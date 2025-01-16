@@ -1,9 +1,9 @@
 research: {
-  parent: 0b-flare-weaponry
+  parent: 0b-advanced-production
   objectives: [
-    0b-electromagnetic-acceleration,
-    0b-barrier-weaponry,
-    0b-emp-weaponry
+    0b-fleet-beacons,
+    0b-condenser-turbines,
+    0b-barrier-weaponry
   ]
   requirements: [
     forge-plating/100

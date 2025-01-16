@@ -42,6 +42,8 @@ shootType: {
     fragBullets: 1
     fragBullet: {
       type: EmpBulletType
+      timeIncrease: 1
+      timeDuration: 0
       despawnHit: true
       absorbable: false
       collidesTiles: false
@@ -61,6 +63,12 @@ shootType: {
 }
 priority: -2
 category: defense
+research: {
+  parent: 0b-begin
+  objectives: [
+    0b-energy-weaponry
+  ]
+}
 requirements: [
   silicon/35
   dantrales/100
@@ -82,30 +90,101 @@ drawer: [
     rotate: true
   }
 ]
+placeEffect: [
+  {
+    particles: 1
+    length: 0
+    lifetime: 30
+    region: allure-unusually-organized-rectangle
+    useRotation: false
+    sizeFrom: 8
+    sizeTo: 12
+    colorFrom: 7382f0
+    colorTo: 7382f000
+  }
+  {
+    type: WaveEffect
+    rotation: 43
+    lifetime: 30
+    sides: 4
+    sizeFrom: 8
+    sizeTo: 16
+    strokeFrom: 3
+    strokeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+]
 breakEffect: [
   {
     type: WaveEffect
     rotation: 43
-    lifetime: 20
+    lifetime: 60
     sides: 4
-    sizeFrom: 8
-    sizeTo: 16
-    strokeFrom: 6
+    sizeFrom: 10
+    sizeTo: 12
+    strokeFrom: 2
     strokeTo: 0
     colorFrom: 7382f0
     colorTo: 7382f0
   }
   {
+    type: RadialEffect
+    rotationOffset: -2
+    lengthOffset: 8
+    amount: 4
+    effect: {
+      line: true
+      particles: 1
+      baseRotation: 180
+      lifetime: 30
+      length: 16
+      cone: 0
+      randLength: false
+      cap: false
+      lenFrom: 16
+      lenTo: 0
+      strokeFrom: 1
+      strokeTo: 1
+      colorFrom: 7382f0
+      colorTo: 7382f0
+    }
+  }
+  {
+    type: RadialEffect
+    rotationOffset: -24.5
+    lengthOffset: 8.66
+    amount: 4
+    effect: {
+      line: true
+      particles: 1
+      baseRotation: 202.5 
+      lifetime: 30
+      length: 16
+      cone: 0
+      randLength: false
+      cap: false
+      lenFrom: 16
+      lenTo: 0
+      strokeFrom: 1
+      strokeTo: 1
+      colorFrom: 7382f0
+      colorTo: 7382f0
+    }
+  }
+  {
     type: ParticleEffect
+    startDelay: 30
     particles: 1
     length: 0
     lifetime: 30
     useRotation: false
     region: allure-warden-icon
-    sizeFrom: 8
-    sizeTo: 8
-    colorFrom: 7382f0
-    colorTo: 7382f000
+    sizeFrom: 6
+    sizeTo: 6
+    interp: slope
+    colorFrom: 7382f000
+    colorTo: 7382f0
   }
 ]
 destroyBullet: {

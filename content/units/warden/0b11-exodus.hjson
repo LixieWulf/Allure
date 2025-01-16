@@ -17,6 +17,7 @@ drawBody: false
 drawCell: false
 bounded: false
 shieldColor: 7382f0
+deathShake: 0
 parts: [
   {
     type: RegionPart
