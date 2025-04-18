@@ -109,7 +109,8 @@ weapons: [
     bullet: {
       type: ContinuousFlameBulletType
       lifetime: 14
-      collides: false
+      collidesGround: false
+      collidesAir: false
       length: 22.5
       width: 3
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
@@ -142,7 +143,8 @@ weapons: [
     bullet: {
       type: ContinuousFlameBulletType
       lifetime: 10
-      collides: false
+      collidesGround: false
+      collidesAir: false
       length: 22.5
       width: 3
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
@@ -214,7 +216,8 @@ weapons: [
     bullet: {
       type: ContinuousFlameBulletType
       lifetime: 14
-      collides: false
+      collidesGround: false
+      collidesAir: false
       length: 15
       width: 2
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
@@ -247,7 +250,8 @@ weapons: [
     bullet: {
       type: ContinuousFlameBulletType
       lifetime: 10
-      collides: false
+      collidesGround: false
+      collidesAir: false
       length: 15
       width: 2
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
@@ -279,7 +283,8 @@ weapons: [
     bullet: {
       type: ContinuousFlameBulletType
       layer: 90
-      collides: false
+      collidesGround: false
+      collidesAir: false
       length: 7
       width: 3.5
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
@@ -310,7 +315,8 @@ weapons: [
     bullet: {
       type: ContinuousFlameBulletType
       layer: 90
-      collides: false
+      collidesGround: false
+      collidesAir: false
       length: 4
       width: 2
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]

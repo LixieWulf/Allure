@@ -8,7 +8,7 @@ buildVisibility: sandboxOnly
 solid: true
 destructible: true
 health: 2400
-buildCost: 900
+buildTime: 900
 instantDeconstruct: false
 clipSize: 110
 breakSound: plantBreak

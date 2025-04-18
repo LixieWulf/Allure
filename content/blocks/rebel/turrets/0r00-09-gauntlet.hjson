@@ -162,7 +162,6 @@ drawer: {
   basePrefix: 0r-
 }
 category: turret
-research: 0r-rapier
 requirements: [
   anden/900
   beryllium/300

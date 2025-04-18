@@ -180,7 +180,7 @@ consumes: {
   ]
   liquids: [
     water/20
-    ozone/0.48
+    plasma/1
     arreacta/1
   ]
 }

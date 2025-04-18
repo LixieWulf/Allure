@@ -252,7 +252,6 @@ drawer: {
   basePrefix: 0r-
 }
 category: turret
-research: 0r-sawblade
 requirements: [
   infrastructure/50
   anden/3000

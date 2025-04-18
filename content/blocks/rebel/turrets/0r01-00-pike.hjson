@@ -2,18 +2,19 @@ type: ItemTurret
 squareSprite: false
 size: 5
 health: 1500
-heatColor: e65555
 cooldownTime: 200
 range: 1080
 targetAir: false
 targetGround: false
 rotateSpeed: 0.75
-reload: 380
+reload: 1800
 canOverdrive: false
 ammoPerShot: 24
-shootSound: bang
+shootSound: mediumCannon
 shake: 5
-recoil: 10
+recoil: 0
+outlineIcon: false
+outlineRadius: 0
 shootEffect: {
   length: 0
   cone: 0
@@ -24,23 +25,6 @@ shootEffect: {
   colorFrom: ffb3b3
   colorTo: e65555
   region: allure-shootspike
-}
-ammoUseEffect: {
-  lifetime: 70
-  particles: 1
-  length: 16
-  randLength: false
-  baseRotation: 90
-  cone: 15
-  offset: -90
-  spin: 0.7
-  region: allure-thin-case-back
-  sizeFrom: 5
-  sizeTo: 0
-  interp: pow3Out
-  sizeInterp: pow10In
-  colorFrom: ffb3b3
-  colorTo: ad4244
 }
 smokeEffect: {
   length: 40
@@ -53,11 +37,85 @@ smokeEffect: {
   colorFrom: 909090
   colorTo: 909090
 }
+drawer: {
+  type: DrawTurret
+  basePrefix: 0r-
+  parts: [
+    {
+      type: RegionPart
+      outline: false
+      suffix: -heats
+      x: -2.5
+      y: -2.25
+      moveX: -8
+      heatLayerOffset: 0
+      turretHeatLayer: 50
+      heatProgress: {
+        type: reload
+        op: sin
+        scl: 12
+        mag: 0.15
+      }
+      progress: {
+        type: smoothReload
+        op: compress
+        start: 0.03
+        end: 0.07
+      }
+    }
+    {
+      type: RegionPart
+      outline: false
+      suffix: -round
+      x: 8.75
+      y: -2.25
+      mixColor: 00000000
+      mixColorTo: 000000
+      progress: {
+        type: smoothReload
+        op: compress
+        start: 0.01
+        end: 0.02
+      }
+    }
+    {
+      type: RegionPart
+      outline: false
+      suffix: -round
+      x: 0.75
+      y: -2.25
+      moveX: 8
+      progress: {
+        type: smoothReload
+        op: compress
+        start: 0
+        end: 0.03
+      }
+    }
+    {
+      type: RegionPart
+      outline: false
+      suffix: -barrel
+      moveY: -9
+      progress: {
+        type: smoothReload
+        op: compress
+        start: 0.95
+        end: 1
+      }
+    }
+    {
+      type: RegionPart
+      outline: false
+      suffix: -upper
+    }
+  ]
+}
 ammoTypes: {
   anden: {
-    damage: 3200
+    damage: 1200
     speed: 18
-    lifetime: 50
+    lifetime: 60
     collidesAir: false
     ammoMultiplier: 1
     width: 22
@@ -69,151 +127,179 @@ ammoTypes: {
     trailColor: e65555
     hitShake: 10
     hitSound: explosion
-    fragBullets: 140
+    fragBullets: 1
+    fragRandomSpread: 0
+    fragVelocityMin: 1
+    fragVelocityMax: 1
+    fragOffsetMin: 1
+    fragOffsetMax: 1
     fragBullet: {
-      type: RailBulletType
-      length: 40
-      pierceEffect: none
-      damage: 70
-      pierceDamageFactor: 0
+      damage: 1200
+      speed: 12
+      lifetime: 5
       collidesAir: false
+      pierce: true
+      pierceBuilding: true
+      ammoMultiplier: 1
+      width: 22
+      height: 60
+      frontColor: ffb3b3
+      backColor: e65555
+      trailLength: 10
+      trailWidth: 3
+      trailColor: e65555
+      fragOnHit: false
+      hitShake: 10
+      hitSound: explosion
+      fragBullets: 240
+      fragBullet: {
+        type: RailBulletType
+        damage: 14
+        length: 40
+        pierceEffect: none
+      }
+      despawnEffect: [
+        {
+          length: 55
+          lifetime: 190
+          particles: 40
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 6
+          sizeTo: 0
+          interp: pow10Out
+          sizeInterp: pow5In
+        }
+        {
+          length: 80
+          lifetime: 100
+          particles: 20
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 2
+          sizeTo: 0
+          interp: pow10Out
+          sizeInterp: pow3In
+        }
+        {
+          length: 60
+          lifetime: 110
+          particles: 12
+          colorTo: e65555
+          sizeFrom: 3
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow5In
+        }
+        {
+          type: WaveEffect
+          lifetime: 20
+          sizeFrom: 0
+          sizeTo: 40
+          strokeFrom: 3
+          strokeTo: 0
+          colorTo: e65555
+        }
+      ]
     }
-    hitEffect: [
-      {
-        length: 55
-        lifetime: 190
-        particles: 40
-        colorFrom: 787878
-        colorTo: 787878
-        sizeFrom: 6
-        sizeTo: 0
-        interp: pow10Out
-        sizeInterp: pow5In
-      }
-      {
-        length: 80
-        lifetime: 100
-        particles: 20
-        colorFrom: 787878
-        colorTo: 787878
-        sizeFrom: 2
-        sizeTo: 0
-        interp: pow10Out
-        sizeInterp: pow3In
-      }
-      {
-        length: 60
-        lifetime: 110
-        particles: 12
-        colorTo: e65555
-        sizeFrom: 3
-        sizeTo: 0
-        interp: pow3Out
-        sizeInterp: pow5In
-      }
-      {
-        type: WaveEffect
-        lifetime: 20
-        sizeFrom: 0
-        sizeTo: 40
-        strokeFrom: 3
-        strokeTo: 0
-        colorTo: e65555
-      }
-    ]
+    hitEffect: none
+    despawnEffect: none
   }
   altesin: {
-    damage: 3000
     speed: 18
-    lifetime: 50
-    collidesAir: false
-    ammoMultiplier: 1
-    width: 22
-    height: 60
+    lifetime: 60 
+    damage: 150
+    splashDamage: 200
+    splashDamageRadius: 80
+    width: 20
+    height: 70
     frontColor: ffc1ba
     backColor: c94536
     trailLength: 5
-    trailWidth: 2.5
+    trailWidth: 3
     trailColor: c94536
-    hitShake: 10
-    hitSound: explosion
-    hitEffect: none
-    despawnEffect: none
-    fragBullets: 1
+    fragBullets: 36
+    fragOffsetMax: 80
+    fragOffsetMin: 12
+    fragLifeMin: 0.8
     fragBullet: {
+      createChance: 0.66
       speed: 0
-      lifetime: 150
-      collides: false
-      hittable: false
       damage: 0
+      splashDamage: 850
+      splashDamageRadius: 22
+      lifetime: 60
+      hittable: false
+      absorbable: false
+      collides: false
+      keepVelocity: false
       sprite: circle-bullet
-      width: 15
-      height: 15
-      shrinkY: 0
+      width: 0.002
+      height: 0.002
+      shrinkX: -3000
+      shrinkY: -3000
       frontColor: ffc1ba
       backColor: c94536
-      hitEffect: {
-        type: MultiEffect
-        lifetime: 190
-        effects: [
-          {
-            length: 65
-            lifetime: 190
-            particles: 40
-            colorFrom: 787878
-            colorTo: 787878
-            sizeFrom: 6
-            sizeTo: 0
-            interp: pow10Out
-            sizeInterp: pow5In
-          }
-          {
-            length: 90
-            lifetime: 100
-            particles: 20
-            colorFrom: 787878
-            colorTo: 787878
-            sizeFrom: 2
-            sizeTo: 0
-            interp: pow10Out
-            sizeInterp: pow3In
-          }
-          {
-            length: 70
-            lifetime: 110
-            particles: 12
-            colorTo: c94536
-            sizeFrom: 3
-            sizeTo: 0
-            interp: pow3Out
-            sizeInterp: pow5In
-          }
-          {
-            type: WaveEffect
-            lifetime: 20
-            sizeFrom: 0
-            sizeTo: 50
-            strokeFrom: 3
-            strokeTo: 0
-            colorTo: c94536
-          }
-        ]
-      }
-      fragBullets: 440
-      fragBullet: {
-        type: RailBulletType
-        length: 45
-        pierceEffect: none
-        damage: 90
-        pierceDamageFactor: 0
-        collidesAir: false
-      }
+      hitEffect: blastExplosion
+      hitShake: 2
+      hitSound: explosion
     }
+    hitShake: 6
+    hitSound: explosion
+    hitEffect: [
+      {
+        type: WaveEffect
+        lifetime: 30
+        sizeFrom: 48
+        sizeTo: 120
+        colorFrom: ffc1ba
+        colorTo: c9453600
+        interp: pow3Out
+        strokeFrom: 12
+        strokeTo: 6
+      }
+      {
+        particles: 36
+        length: 45
+        baseLength: 45
+        lifetime: 60
+        interp: pow3Out
+        sizeInterp: pow2Out
+        colorFrom: 787878
+        colorTo: 787878
+        sizeFrom: 18
+        sizeTo: 0
+      }
+      {
+        particles: 36
+        length: 60
+        baseLength: 60
+        lifetime: 45
+        interp: pow3Out
+        sizeInterp: pow2Out
+        colorFrom: 787878
+        colorTo: 787878
+        sizeFrom: 8
+        sizeTo: 0
+      }
+      {
+        particles: 24
+        length: 85
+        baseLength: 85
+        lifetime: 30
+        interp: pow3Out
+        sizeInterp: linear
+        colorFrom: 9f9f9f
+        colorTo: 9f9f9f
+        sizeFrom: 2
+        sizeTo: 0
+      }
+    ]
   }
   uranium: {
-    damage: 1800
+    damage: 800
     speed: 18
-    lifetime: 50
+    lifetime: 60 
     collidesAir: false
     ammoMultiplier: 1
     width: 22
@@ -225,10 +311,8 @@ ammoTypes: {
     trailColor: c4b53d
     hitShake: 10
     hitSound: explosion
-    hitEffect: none
     despawnEffect: none
-    fragBullets: 380
-    fragLifeMin: 0.01
+    fragBullets: 1
     fragBullet: {
       type: BulletType
       speed: 0
@@ -236,58 +320,104 @@ ammoTypes: {
       hittable: false
       collides: false
       absorbable: false
-      hitEffect: {
-        layer: 99
-        length: 100
-        particles: 1
-        lifetime: 100
-        sizeFrom: 7
-        sizeTo: 4
-        colorFrom: ded16a
-        colorTo: ded16a00
-      }
       despawnEffect: none
-      fragBullets: 40
-      fragBullet: {
+      intervalBullets: 120
+      bulletInterval: 59
+      intervalBullet: {
         type: RailBulletType
-        length: 60
+        length: 100
         pierceEffect: none
-        damage: 5
+        damage: 0.001
+        splashDamage: 11
+        splashDamageRadius: 14
         pierceDamageFactor: 0
         collidesAir: false
       }
+      trailInterval: 4
+      trailEffect: [
+        {
+          layer: 99
+          length: 80
+          particles: 7
+          lifetime: 190
+          sizeFrom: 0
+          sizeTo: 60
+          colorFrom: ded16a
+          colorTo: 81a23900
+          interp: pow2Out
+          sizeInterp: linear
+        }
+      ]
     }
+    hitEffect: [
+      {
+        layer: 99
+        length: 80
+        randLength: false
+        particles: 14
+        lifetime: 35
+        sizeFrom: 0
+        sizeTo: 14
+        colorFrom: ded16a
+        colorTo: 81a23900
+        interp: pow5Out
+        sizeInterp: pow10Out
+      }
+      {
+        layer: 99
+        length: 80
+        randLength: false
+        particles: 14
+        lifetime: 35
+        sizeFrom: 0
+        sizeTo: 7
+        colorFrom: ded16a
+        colorTo: 81a23900
+        interp: pow5Out
+        sizeInterp: pow10Out
+      }
+      {
+        layer: 99
+        length: 80
+        randLength: false
+        particles: 14
+        lifetime: 35
+        sizeFrom: 0
+        sizeTo: 1
+        colorFrom: ded16a
+        colorTo: 81a23900
+        interp: pow5Out
+        sizeInterp: pow10Out
+      }
+    ]
   }
-}
-drawer: {
-  type: DrawTurret
-  basePrefix: 0r-
 }
 placeEffect: [
   {
     type: WaveEffect
     lifetime: 240
-    interp: pow3Out
+    interp: slope
     clip: 8192
-    sizeFrom: 24
+    sizeFrom: 1090
     sizeTo: 1090
-    strokeFrom: 24
-    strokeTo: 0
+    strokeFrom: 0
+    strokeTo: 8
     colorFrom: c46b34
     colorTo: c46b34
   }
   {
     type: WaveEffect
     lifetime: 240
-    interp: pow3Out
+    interp: slope
     clip: 8192
-    sizeFrom: 0
+    sizeFrom: 1080
     sizeTo: 1080
-    strokeFrom: 24
-    strokeTo: 0
+    strokeFrom: 0
+    strokeTo: 8
     colorFrom: e65555
     colorTo: e65555
   }
+  placeBlock
 ]
 category: turret
 requirements: [
@@ -297,6 +427,5 @@ requirements: [
   thorium/500
   baenite/250
 ]
-research: 0r-rapier
 envEnabled: -1
 envDisabled: 4

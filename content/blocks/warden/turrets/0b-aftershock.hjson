@@ -23,7 +23,7 @@ unitSort: weakest
 consumes: {
   power: 21
   liquids: [
-    liquid-baenara/2
+    plasma/2
   ]
 }
 coolant: {
@@ -146,9 +146,11 @@ shootType: {
   speed: 28
   lifetime: 60
   drag: 0.05
-  damage: 200
-  splashDamage: 40
+  damage: 300
+  splashDamage: 80
   splashDamageRadius: 16
+  hitShake: 6
+  hitSound: explosion
   status: allure-0b-energy3
   statusDuration: 1
   pierceDamageFactor: 0.025
@@ -259,9 +261,9 @@ shootType: {
     pierceCap: 4
     pierceDamageFactor: 0.01
     drag: 0.05
-    damage: 30
+    damage: 50
     status: allure-0b-energy1
-    statusDuration: 1
+    statusDuration: 2
     sprite: allure-diamond-thin
     width: 4
     height: 24
@@ -298,9 +300,9 @@ shootType: {
         pierceCap: 4
         pierceDamageFactor: 0.01
         drag: 0.05
-        damage: 30
+        damage: 50
         status: allure-0b-energy1
-        statusDuration: 1
+        statusDuration: 2
         sprite: allure-diamond-thin
         width: 4
         height: 24

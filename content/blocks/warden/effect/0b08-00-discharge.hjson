@@ -108,7 +108,7 @@ requirements: [
   crystal/600
 ]
 research: {
-  parent: 0b08-01-sprinkler
+  parent: 0b08-01-rejuvenate
   objectives: [
     0b-shock-weaponry
   ]

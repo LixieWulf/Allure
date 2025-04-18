@@ -85,7 +85,6 @@ weapons: [
         moveRot: -45
         progress: charge
         heatProgress: smoothReload
-        smoothReloadSpeed: 0.01
         heatLayerOffset: 0.1
         moves: [
           {

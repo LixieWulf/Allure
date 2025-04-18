@@ -4,12 +4,12 @@ flying: false
 controller: MinerAI
 defaultController: MinerAI
 lifetime: 30
-hitSize: 180
+hitSize: 0
 speed: 0
 drag: 10000
 physics: false
 hittable: false
-targettable: false
+targetable: false
 drawBody: false
 drawCell: false
 drawShields: false

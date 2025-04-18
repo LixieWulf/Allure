@@ -43,31 +43,6 @@ weapons: [
       despawnEffect: none
       shootEffect: none
       smokeEffect: none
-      //gives a warning as this field doesnt exist, more smth for if it ever will
-      absorbEffect: [
-        {
-          type: WaveEffect
-          interp: pow3Out
-          lifetime: 35
-          sizeFrom: 0
-          sizeTo: 25
-          strokeFrom: 4
-          strokeTo: 4
-          colorFrom: e65555
-          colorTo: e65555
-        }
-        {
-          type: WaveEffect
-          interp: pow5In
-          lifetime: 15
-          sizeFrom: 25
-          sizeTo: 0
-          strokeFrom: 4
-          strokeTo: 4
-          colorFrom: e65555
-          colorTo: e65555
-        }
-      ]
       fragBullets: 1
       fragBullet: {
         type: ExplosionBulletType

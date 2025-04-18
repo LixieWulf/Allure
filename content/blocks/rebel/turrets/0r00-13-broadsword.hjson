@@ -139,7 +139,6 @@ drawer: {
   basePrefix: 0r-
 }
 category: turret
-research: 0r-halberd
 requirements: [
   infrastructure/400
   anden/4500

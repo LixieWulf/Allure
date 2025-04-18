@@ -72,7 +72,6 @@ drawer: {
 }
 coolantMultiplier: 0.4
 category: turret
-research: 0r-saber
 requirements: [
   beryllium/500
   anden/400

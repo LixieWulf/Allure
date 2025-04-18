@@ -45,7 +45,7 @@ parts: [
     name: allure-square-shield
     xScl: 0
     yScl: 0
-    layer: 80
+    layer: 99
     blending: additive
     color: 7382f088
     outline: false
@@ -64,7 +64,7 @@ parts: [
     rotation: -90
     xScl: 0
     yScl: 0
-    layer: 80
+    layer: 99
     blending: additive
     color: 7382f088
     outline: false
@@ -83,7 +83,7 @@ parts: [
     rotation: 180
     xScl: 0
     yScl: 0
-    layer: 80
+    layer: 99
     blending: additive
     color: 7382f088
     outline: false
@@ -102,7 +102,7 @@ parts: [
     rotation: 90
     xScl: 0
     yScl: 0
-    layer: 80
+    layer: 99
     blending: additive
     color: 7382f088
     outline: false

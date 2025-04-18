@@ -1,7 +1,6 @@
 color: 32333d
 flammability: 0.8
 radioactivity: 0.3
-research: 1s-begin
 shownPlanets: [
   allure-wandura,
   allure-lus

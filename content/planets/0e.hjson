@@ -1,0 +1,44 @@
+parent: 0a
+localizedName: Crasene
+radius: 0.2
+camRadius: 0.5
+minZoom: 0.8
+orbitRadius: 44
+accessible: false
+atmosphereRadIn: 0
+atmosphereRadOut: 0.15
+atmosphereColor: 444444
+icon: command-rally
+iconColor: 8ca9e8
+mesh: [
+  {
+    type: NoiseMesh
+    divisions: 5
+    radius: 0.142
+    color1: d1efff
+    color2: 8ca9e8
+    octaves: 4.6
+    persistence: 0.9
+    scale: 0.4
+    mag: 5
+    coct: 4
+    cper: 1.4
+    cscl: 0.3
+    cthresh: 0.01
+  }
+  {
+    type: NoiseMesh
+    divisions: 5
+    radius: 0.165
+    color1: f7a7a7
+    color2: ca7c8f
+    octaves: 4.6
+    persistence: 0.9
+    scale: 0.4
+    mag: 3
+    coct: 4
+    cper: 1.4
+    cscl: 0.3
+    cthresh: 0.01
+  }
+]

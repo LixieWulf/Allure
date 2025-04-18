@@ -1,0 +1,60 @@
+parent: 0a
+localizedName: Zendrix
+radius: 2.5
+camRadius: 1
+orbitRadius: 25
+orbitOffset: 210
+hasAtmosphere: false
+accessible: false
+mesh: [
+  {
+    type: SunMesh 
+    divisions: 5
+    octaves: 1
+    persistence: 0.5
+    scl: 2
+    pow: 1
+    mag: 1
+    colorScale: 1
+    colors: [
+      d97562,
+      c94536,
+      992929
+    ]
+  }
+  {
+    type: HexSkyMesh
+    radius: 0.05
+    divisions: 5
+    speed: -4
+    color: bc5452cc
+    octaves: 3
+    persistence: 0.5
+    scl: 0.9
+    thresh: 0.6
+  }
+  {
+    type: HexSkyMesh
+    seed: 6
+    radius: 0.1
+    divisions: 5
+    speed: -7
+    color: ea8878bb
+    octaves: 3
+    persistence: 0.5
+    scl: 0.9
+    thresh: 0.5
+  }
+  {
+    type: HexSkyMesh
+    seed: 9
+    radius: 0.15
+    divisions: 5
+    speed: -8
+    color: feb38088
+    octaves: 3
+    persistence: 0.5
+    scl: 0.9
+    thresh: 0.4
+  }
+]

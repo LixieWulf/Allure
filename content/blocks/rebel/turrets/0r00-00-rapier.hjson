@@ -100,7 +100,6 @@ drawer: {
   basePrefix: 0r-
 }
 category: turret
-research: 0r-begin
 requirements: [
   beryllium/120
   anden/70

@@ -20,7 +20,7 @@ consumes: {
     cryofluid/0.1
   ]
 }
-buildCost: 302400
+buildTime: 302400
 outputLiquid: thermal-fluid/0.5
 category: crafting
 buildVisibility: sandboxOnly

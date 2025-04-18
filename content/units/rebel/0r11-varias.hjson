@@ -1,0 +1,953 @@
+type: flying
+fogRadius: 39
+flying: true
+lowAltitude: true
+hitSize: 78
+health: 240000
+armor: 220
+speed: 2.4
+accel: 0.1
+drag: 0.06
+rotateSpeed: 1.7
+strafePenalty: 0.2
+drawCell: false
+drawBody: false
+outlines: false
+envEnabled: -1
+envDisabled: 4
+itemCapacity: 0
+shadowElevationScl: 2.4
+faceTarget: false
+engineSize: 0
+parts: [
+  {
+    type: RegionPart
+    outline: false
+    layer: 90.04
+  }
+]
+immunities: [
+  burning,
+  melting,
+  freezing, 
+  wet, 
+  tarred,
+  slow,
+  unmoving, 
+  disarmed,
+  spore-slowed,
+  shocked,
+  blasted,
+  electrified,
+  sapped, 
+  overclock,
+  overdrive,
+  allure-emp,
+  allure-0r-kinetic0,
+  allure-0r-kinetic1,
+  allure-0r-kinetic2,
+  allure-0r-kinetic3,
+  allure-0r-kinetic4,
+]
+weapons: [
+  {
+    name: varias-cannon
+    shadow: 55
+    layerOffset: 2
+    x: 0
+    y: 6.5
+    shootY: 56
+    mirror: false
+    reload: 90
+    rotate: true
+    rotateSpeed: 1
+    rotationLimit: 200
+    recoil: 1
+    shake: 8
+    otherSide: 1
+    shootSound: mediumCannon
+    parts: [
+      {
+        type: RegionPart
+        suffix: -top
+        layer: 92.5
+        outline: false
+        progress: {
+          type: smoothReload
+          op: compress
+          start: 0.5
+          end: 1
+        }
+        y: 45.75
+        moveY: -6
+      }
+    ]
+    bullet: {
+      speed: 14
+      lifetime: 60
+      drag: 0.01
+      damage: 800
+      splashDamage: 80
+      splashDamageRadius: 24
+      pierce: true
+      pierceBuilding: true
+      pierceDamageFactor: 0.4
+      sprite: allure-chonker
+      frontColor: ffb3b3
+      backColor: e65555
+      width: 18
+      height: 40
+      trailWidth: 5
+      trailLength: 12
+      trailColor: e65555
+      shootEffect: {
+        followParent: false
+        particles: 1
+        lifetime: 25
+        length: 0
+        region: allure-shootspike
+        sizeFrom: 45
+        sizeTo: 0
+        colorTo: e65555
+      }
+      smokeEffect: [
+        {
+          followParent: false
+          particles: 36
+          length: 35
+          cone: 30
+          lifetime: 60
+          interp: pow3Out
+          sizeInterp: pow2Out
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 8
+          sizeTo: 0
+        }
+        {
+          followParent: false
+          particles: 24
+          length: 65
+          cone: 50
+          lifetime: 120
+          interp: pow3Out
+          sizeInterp: pow2Out
+          colorFrom: 78787800
+          colorTo: 787878
+          sizeFrom: 16
+          sizeTo: 0
+        }
+      ]
+    }
+  }
+  {
+    name: varias-cannon
+    shadow: 55
+    layerOffset: 0.1
+    x: 0
+    y: 23.5
+    shootY: 56
+    mirror: false
+    reload: 90
+    rotate: true
+    rotateSpeed: 1
+    rotationLimit: 200
+    recoil: 1
+    shake: 8
+    otherSide: 2
+    flipSprite: true
+    shootSound: mediumCannon
+    parts: [
+      {
+        type: RegionPart
+        suffix: -top
+        layer: 91
+        outline: false
+        progress: {
+          type: smoothReload
+          op: compress
+          start: 0.5
+          end: 1
+        }
+        y: 45.75
+        moveY: -6
+      }
+    ]
+    bullet: {
+      speed: 14
+      lifetime: 60
+      drag: 0.01
+      damage: 800
+      splashDamage: 80
+      splashDamageRadius: 24
+      pierce: true
+      pierceBuilding: true
+      pierceDamageFactor: 0.4
+      sprite: allure-chonker
+      frontColor: ffb3b3
+      backColor: e65555
+      width: 18
+      height: 40
+      trailWidth: 5
+      trailLength: 12
+      trailColor: e65555
+      shootEffect: {
+        followParent: false
+        particles: 1
+        lifetime: 25
+        length: 0
+        region: allure-shootspike
+        sizeFrom: 45
+        sizeTo: 0
+        colorTo: e65555
+      }
+      smokeEffect: [
+        {
+          followParent: false
+          particles: 36
+          length: 35
+          cone: 30
+          lifetime: 60
+          interp: pow3Out
+          sizeInterp: pow2Out
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 8
+          sizeTo: 0
+        }
+        {
+          followParent: false
+          particles: 24
+          length: 65
+          cone: 50
+          lifetime: 120
+          interp: pow3Out
+          sizeInterp: pow2Out
+          colorFrom: 78787800
+          colorTo: 787878
+          sizeFrom: 16
+          sizeTo: 0
+        }
+      ]
+    }
+  }
+  {
+    name: varias-cannon
+    shadow: 55
+    layerOffset: -5
+    x: 0
+    y: 2.5
+    shootY: 56
+    mirror: false
+    reload: 90
+    rotate: true
+    rotateSpeed: 1
+    rotationLimit: 200
+    recoil: 1
+    shake: 8
+    otherSide: 3
+    flipSprite: true
+    shootSound: mediumCannon
+    parts: [
+      {
+        type: RegionPart
+        suffix: -top
+        layer: 86
+        outline: false
+        progress: {
+          type: smoothReload
+          op: compress
+          start: 0.5
+          end: 1
+        }
+        y: 45.75
+        moveY: -6
+      }
+    ]
+    bullet: {
+      speed: 14
+      lifetime: 60
+      drag: 0.01
+      damage: 800
+      splashDamage: 80
+      splashDamageRadius: 24
+      pierce: true
+      pierceBuilding: true
+      pierceDamageFactor: 0.4
+      sprite: allure-chonker
+      frontColor: ffb3b3
+      backColor: e65555
+      width: 18
+      height: 40
+      trailWidth: 5
+      trailLength: 12
+      trailColor: e65555
+      shootEffect: {
+        followParent: false
+        particles: 1
+        lifetime: 25
+        length: 0
+        region: allure-shootspike
+        sizeFrom: 45
+        sizeTo: 0
+        colorTo: e65555
+      }
+      smokeEffect: [
+        {
+          followParent: false
+          particles: 36
+          length: 35
+          cone: 30
+          lifetime: 60
+          interp: pow3Out
+          sizeInterp: pow2Out
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 8
+          sizeTo: 0
+        }
+        {
+          followParent: false
+          particles: 24
+          length: 65
+          cone: 50
+          lifetime: 120
+          interp: pow3Out
+          sizeInterp: pow2Out
+          colorFrom: 78787800
+          colorTo: 787878
+          sizeFrom: 16
+          sizeTo: 0
+        }
+      ]
+    }
+  }
+  {
+    name: varias-cannon
+    shadow: 55
+    layerOffset: -3
+    x: 0
+    y: 19.5
+    shootY: 56
+    mirror: false
+    reload: 90
+    rotate: true
+    rotateSpeed: 1
+    rotationLimit: 200
+    recoil: 1
+    shake: 8
+    otherSide: 0
+    flipSprite: true
+    shootSound: mediumCannon
+    parts: [
+      {
+        type: RegionPart
+        suffix: -top
+        layer: 88
+        outline: false
+        progress: {
+          type: smoothReload
+          op: compress
+          start: 0.5
+          end: 1
+        }
+        y: 45.75
+        moveY: -6
+      }
+    ]
+    bullet: {
+      speed: 14
+      lifetime: 60
+      drag: 0.01
+      damage: 800
+      splashDamage: 80
+      splashDamageRadius: 24
+      pierce: true
+      pierceBuilding: true
+      pierceDamageFactor: 0.4
+      sprite: allure-chonker
+      frontColor: ffb3b3
+      backColor: e65555
+      width: 18
+      height: 40
+      trailWidth: 5
+      trailLength: 12
+      trailColor: e65555
+      shootEffect: {
+        followParent: false
+        particles: 1
+        lifetime: 25
+        length: 0
+        region: allure-shootspike
+        sizeFrom: 45
+        sizeTo: 0
+        colorTo: e65555
+      }
+      smokeEffect: [
+        {
+          followParent: false
+          particles: 36
+          length: 35
+          cone: 30
+          lifetime: 60
+          interp: pow3Out
+          sizeInterp: pow2Out
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 8
+          sizeTo: 0
+        }
+        {
+          followParent: false
+          particles: 24
+          length: 65
+          cone: 50
+          lifetime: 120
+          interp: pow3Out
+          sizeInterp: pow2Out
+          colorFrom: 78787800
+          colorTo: 787878
+          sizeFrom: 16
+          sizeTo: 0
+        }
+      ]
+    }
+  }
+  {
+    name: varias-cannon
+    shadow: 55
+    layerOffset: 0.1
+    x: 0
+    y: -12.5
+    shootY: 56
+    mirror: false
+    reload: 212
+    rotate: true
+    rotateSpeed: 1
+    rotationLimit: 200
+    baseRotation: 180
+    recoil: 1
+    shake: 8
+    otherSide: 5
+    shootSound: mediumCannon
+    parts: [
+      {
+        type: RegionPart
+        suffix: -top
+        layer: 91
+        outline: false
+        progress: {
+          type: smoothReload
+          op: compress
+          start: 0.5
+          end: 1
+        }
+        y: 45.75
+        moveY: -6
+      }
+    ]
+    bullet: {
+      speed: 14
+      lifetime: 60
+      drag: 0.01
+      damage: 800
+      splashDamage: 80
+      splashDamageRadius: 24
+      pierce: true
+      pierceBuilding: true
+      pierceDamageFactor: 0.4
+      sprite: allure-chonker
+      frontColor: ffb3b3
+      backColor: e65555
+      width: 18
+      height: 40
+      trailWidth: 5
+      trailLength: 12
+      trailColor: e65555
+      shootEffect: {
+        followParent: false
+        particles: 1
+        lifetime: 25
+        length: 0
+        region: allure-shootspike
+        sizeFrom: 45
+        sizeTo: 0
+        colorTo: e65555
+      }
+      smokeEffect: [
+        {
+          followParent: false
+          particles: 36
+          length: 35
+          cone: 30
+          lifetime: 60
+          interp: pow3Out
+          sizeInterp: pow2Out
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 8
+          sizeTo: 0
+        }
+        {
+          followParent: false
+          particles: 24
+          length: 65
+          cone: 50
+          lifetime: 120
+          interp: pow3Out
+          sizeInterp: pow2Out
+          colorFrom: 78787800
+          colorTo: 787878
+          sizeFrom: 16
+          sizeTo: 0
+        }
+      ]
+    }
+  }
+  {
+    name: varias-cannon
+    shadow: 55
+    layerOffset: -3
+    x: 0
+    y: -16.5
+    shootY: 56
+    mirror: false
+    reload: 212
+    rotate: true
+    rotateSpeed: 1
+    rotationLimit: 200
+    baseRotation: 180
+    recoil: 1
+    shake: 8
+    otherSide: 4
+    flipSprite: true
+    shootSound: mediumCannon
+    parts: [
+      {
+        type: RegionPart
+        suffix: -top
+        layer: 88
+        outline: false
+        progress: {
+          type: smoothReload
+          op: compress
+          start: 0.5
+          end: 1
+        }
+        y: 45.75
+        moveY: -6
+      }
+    ]
+    bullet: {
+      speed: 14
+      lifetime: 60
+      drag: 0.01
+      damage: 800
+      splashDamage: 80
+      splashDamageRadius: 24
+      pierce: true
+      pierceBuilding: true
+      pierceDamageFactor: 0.4
+      sprite: allure-chonker
+      frontColor: ffb3b3
+      backColor: e65555
+      width: 18
+      height: 40
+      trailWidth: 5
+      trailLength: 12
+      trailColor: e65555
+      shootEffect: {
+        followParent: false
+        particles: 1
+        lifetime: 25
+        length: 0
+        region: allure-shootspike
+        sizeFrom: 45
+        sizeTo: 0
+        colorTo: e65555
+      }
+      smokeEffect: [
+        {
+          followParent: false
+          particles: 36
+          length: 35
+          cone: 30
+          lifetime: 60
+          interp: pow3Out
+          sizeInterp: pow2Out
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 8
+          sizeTo: 0
+        }
+        {
+          followParent: false
+          particles: 24
+          length: 65
+          cone: 50
+          lifetime: 120
+          interp: pow3Out
+          sizeInterp: pow2Out
+          colorFrom: 78787800
+          colorTo: 787878
+          sizeFrom: 16
+          sizeTo: 0
+        }
+      ]
+    }
+  }
+  {
+    x: 20.25
+    y: 9.25
+    shootY: 16
+    rotate: true
+    rotateSpeed: 0
+    baseRotation: -90
+    alternate: false
+    reload: 190
+    recoil: 0
+    recoils: 5
+    shake: 4
+    shootSound: artillery
+    shootCone: 45
+    shoot: {
+      type: ShootAlternate
+      shots: 5
+      shotDelay: 15
+      barrels: 5
+      spread: 10.25
+    }
+    parts: [
+      {
+        type: RegionPart
+        outline: false
+        x: 0.5
+        layer: 90.06
+        rotation: 90
+        name: allure-varias-side-plates
+      }
+      {
+        type: RegionPart
+        outline: false
+        x: -20.5
+        y: 7.5
+        moveY: -1
+        layer: 90.05
+        rotation: 90
+        name: allure-varias-broadside
+        progress: {
+          type: recoil
+          op: compress
+          start: 0.75
+          end: 1
+        }
+        recoilIndex: 0
+      }
+      {
+        type: RegionPart
+        outline: false
+        x: -10.25
+        y: 7.5
+        moveY: -1
+        layer: 90.05
+        rotation: 90
+        name: allure-varias-broadside
+        progress: {
+          type: recoil
+          op: compress
+          start: 0.75
+          end: 1
+        }
+        recoilIndex: 1
+      }
+      {
+        type: RegionPart
+        outline: false
+        x: 0
+        y: 7.5
+        moveY: -1
+        layer: 90.05
+        rotation: 90
+        name: allure-varias-broadside
+        progress: {
+          type: recoil
+          op: compress
+          start: 0.75
+          end: 1
+        }
+        recoilIndex: 2
+      }
+      {
+        type: RegionPart
+        outline: false
+        x: 10.25
+        y: 7.5
+        moveY: -1
+        layer: 90.05
+        rotation: 90
+        name: allure-varias-broadside
+        progress: {
+          type: recoil
+          op: compress
+          start: 0.75
+          end: 1
+        }
+        recoilIndex: 3
+      }
+      {
+        type: RegionPart
+        outline: false
+        x: 20.5
+        y: 7.5
+        moveY: -1
+        layer: 90.05
+        rotation: 90
+        name: allure-varias-broadside
+        progress: {
+          type: recoil
+          op: compress
+          start: 0.75
+          end: 1
+        }
+        recoilIndex: 4
+      }
+    ]
+    bullet: {
+      speed: 14
+      lifetime: 80
+      drag: 0.01
+      damage: 1200
+      pierce: true
+      pierceBuilding: true
+      pierceDamageFactor: 0.33
+      sprite: allure-chonker
+      frontColor: ffb3b3
+      backColor: e65555
+      width: 18
+      height: 48
+      trailWidth: 5
+      trailLength: 12
+      trailColor: e65555
+      shootEffect: {
+        followParent: false
+        particles: 1
+        lifetime: 25
+        length: 0
+        region: allure-shootspike
+        sizeFrom: 45
+        sizeTo: 0
+        colorTo: e65555
+        layer: 110.01
+      }
+      smokeEffect: [
+        {
+          followParent: false
+          particles: 36
+          length: 45
+          cone: 30
+          lifetime: 75
+          interp: pow3Out
+          sizeInterp: pow2Out
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 8
+          sizeTo: 0
+          layer: 105
+        }
+        {
+          followParent: false
+          particles: 30
+          length: 90
+          cone: 50
+          lifetime: 150
+          colorFrom: 78787800
+          colorTo: 787878
+          sizeFrom: 16
+          sizeTo: 0
+          layer: 105
+        }
+      ]
+    }
+  }
+  //engines
+  {
+    x: 23
+    y: -46
+    shootY: 0
+    baseRotation: 180
+    alwaysShooting: true
+    shootCone: 360
+    continuous: true
+    alternate: false
+    reload: 1
+    shootSound: none
+    shootWarmupSpeed: 0.03
+    minShootVelocity: 0.9
+    recoil: 0
+    display: false
+    parts: [
+      {
+        name: allure-thruster-flare-2
+        y: 6
+        moveY: 6
+        rotation: 180
+        outline: false
+        blending: additive
+        mixColor: e65555
+        color: ffffff44
+        colorTo: ffffff
+        xScl: 0.6
+        yScl: 0.8
+        layer: 90.03
+        progress: warmup
+      }
+    ]
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90.02
+      lifetime: 14
+      collides: false
+      length: 40
+      width: 8
+      colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 1
+      oscMag: 0.1
+      hitEffect: none
+      lightColor: e65555
+      lightStroke: 24
+      lightOpacity: 0.4
+      collidesGround: false
+      damage: 400
+      status: allure-0t-thermal2
+      statusDuration: 30
+    }
+  }
+  {
+    x: 23
+    y: -46
+    shootY: 0
+    baseRotation: 180
+    alwaysShooting: true
+    shootCone: 360
+    continuous: true
+    alternate: false
+    reload: 1
+    shootSound: none
+    shootWarmupSpeed: 0.03
+    minShootVelocity: 0.9
+    recoil: 0
+    display: false
+    parts: [
+      {
+        name: allure-thruster-flare-2
+        y: 6
+        moveY: 6
+        rotation: 180
+        outline: false
+        blending: additive
+        mixColor: e65555
+        color: ffffff44
+        colorTo: ffffff
+        xScl: 0.6
+        yScl: 0.8
+        layer: 90.03
+        progress: warmup
+      }
+    ]
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90.02
+      lifetime: 10
+      collides: false
+      length: 40
+      width: 8
+      colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 1
+      oscMag: 0.1
+      hitEffect: none
+      lightColor: e65555
+      lightStroke: 24
+      lightOpacity: 0.4
+      collidesGround: false
+      damage: 400
+      status: allure-0t-thermal2
+      statusDuration: 30
+    }
+  }
+  //idle flames
+  {
+    x: 23
+    y: -46
+    baseRotation: 180
+    alwaysShooting: true
+    alwaysContinuous: true
+    shootCone: 360
+    continuous: true
+    alternate: false
+    shootSound: none
+    recoil: 0
+    display: false
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90
+      lifetime: 14
+      collides: false
+      length: 16
+      width: 8
+      colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 2.5
+      oscMag: 0.1
+      hitEffect: none
+      lightColor: e65555
+      lightStroke: 16
+      lightOpacity: 0.25
+      collidesAir: false
+      collidesGround: false
+    }
+  }
+  {
+    x: 30
+    y: -23
+    alwaysShooting: true
+    alwaysContinuous: true
+    shootCone: 360
+    continuous: true
+    alternate: false
+    shootSound: none
+    recoil: 0
+    display: false
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90
+      lifetime: 14
+      collides: false
+      length: 8
+      width: 4
+      colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 2.5
+      oscMag: 0.1
+      hitEffect: none
+      lightColor: e65555
+      lightStroke: 8
+      lightOpacity: 0.25
+      collidesAir: false
+      collidesGround: false
+    }
+  }
+]

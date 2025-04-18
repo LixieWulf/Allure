@@ -36,12 +36,12 @@ drawer: {
 }
 consumes: {
   liquids: [
-    hydrogen/0.11333333333 
+    plasma/0.125
   ]
 }
 category: crafting
 research: {
-  parent: 0b06-02-electrolytic-cell
+  parent: 0b06-02-ionizer
   objectives: [
     0b-basic-infrastructure
   ]

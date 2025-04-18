@@ -70,7 +70,6 @@ ammoTypes: {
 }
 drawer: DrawDefault
 category: turret
-research: 0r-begin
 requirements: [
   anden/500
   silicon/600

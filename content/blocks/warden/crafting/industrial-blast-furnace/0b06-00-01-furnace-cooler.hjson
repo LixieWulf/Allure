@@ -11,7 +11,7 @@ consumes: {
   power: 3
   liquids: [
     liquid-baenara/0.4
-    ozone/0.12
+    plasma/0.25
     water/0.6
   ]
 }

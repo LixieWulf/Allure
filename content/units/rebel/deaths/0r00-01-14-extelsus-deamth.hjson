@@ -1,6 +1,6 @@
 type: missile
 hittable: false
-targettable: false
+targetable: false
 localizedName: yet another internal unit
 fullOverride: allure-0r14-extelsus-full
 shadowElevationScl: 3.5
@@ -811,7 +811,6 @@ weapons: [
           strokeTo: 0
           colorFrom: ffb3b3
           colorTo: e65555
-          useRotation: false
           baseRotation: 90
         }
       ]
@@ -1384,16 +1383,15 @@ weapons: [
   }
   //headlights (messy)
   {
-    x: 70
-    y: 24
+    x: 0
+    y: 72
     rotate: true
     rotateSpeed: 0
     shootY: 0
-    reload: 2
     alwaysShooting: true
     alwaysContinuous: true
     shootCone: 360
-    alternate: false
+    mirror: false
     shootSound: none
     recoil: 0
     display: false
@@ -1401,7 +1399,7 @@ weapons: [
       type: ContinuousFlameBulletType
       collidesGround: false
       collidesAir: false
-      length: 400
+      length: 1200
       width: 0
       lifetime: 7
       damage: 0.001
@@ -1409,19 +1407,19 @@ weapons: [
       shootEffect: none
       smokeEffect: none
       hitEffect: none
-      lightOpacity: 0.2
+      lightStroke: 120
+      lightOpacity: 0.25
       lightColor: ffffff
       lengthInterp: pow10Out
     }
   }
   {
-    x: 70
-    y: 24
+    x: 0
+    y: 72
     rotate: true
     baseRotation: 4
     rotateSpeed: 0
     shootY: 0
-    reload: 2
     alwaysShooting: true
     alwaysContinuous: true
     shootCone: 360
@@ -1433,7 +1431,7 @@ weapons: [
       type: ContinuousFlameBulletType
       collidesGround: false
       collidesAir: false
-      length: 400
+      length: 1200
       width: 0
       lifetime: 7
       damage: 0.001
@@ -1441,14 +1439,15 @@ weapons: [
       shootEffect: none
       smokeEffect: none
       hitEffect: none
-      lightOpacity: 0.2
+      lightStroke: 120
+      lightOpacity: 0.25
       lightColor: ffffff
       lengthInterp: pow10Out
     }
   }
   {
-    x: 70
-    y: 24
+    x: 0
+    y: 72
     rotate: true
     baseRotation: 8
     rotateSpeed: 0
@@ -1465,7 +1464,7 @@ weapons: [
       type: ContinuousFlameBulletType
       collidesGround: false
       collidesAir: false
-      length: 400
+      length: 1200
       width: 0
       lifetime: 7
       damage: 0.001
@@ -1473,19 +1472,19 @@ weapons: [
       shootEffect: none
       smokeEffect: none
       hitEffect: none
-      lightOpacity: 0.2
+      lightStroke: 120
+      lightOpacity: 0.25
       lightColor: ffffff
       lengthInterp: pow10Out
     }
   }
   {
-    x: 70
-    y: 24
+    x: 72
+    y: -24
     rotate: true
-    baseRotation: -4
     rotateSpeed: 0
     shootY: 0
-    reload: 2
+    baseRotation: -90
     alwaysShooting: true
     alwaysContinuous: true
     shootCone: 360
@@ -1497,7 +1496,7 @@ weapons: [
       type: ContinuousFlameBulletType
       collidesGround: false
       collidesAir: false
-      length: 400
+      length: 90
       width: 0
       lifetime: 7
       damage: 0.001
@@ -1505,19 +1504,19 @@ weapons: [
       shootEffect: none
       smokeEffect: none
       hitEffect: none
-      lightOpacity: 0.2
+      lightStroke: 120
+      lightOpacity: 0.25
       lightColor: ffffff
       lengthInterp: pow10Out
     }
   }
   {
-    x: 70
-    y: 24
+    x: 72
+    y: -24
     rotate: true
-    baseRotation: -8
+    baseRotation: -60
     rotateSpeed: 0
     shootY: 0
-    reload: 2
     alwaysShooting: true
     alwaysContinuous: true
     shootCone: 360
@@ -1529,7 +1528,7 @@ weapons: [
       type: ContinuousFlameBulletType
       collidesGround: false
       collidesAir: false
-      length: 400
+      length: 100
       width: 0
       lifetime: 7
       damage: 0.001
@@ -1537,7 +1536,104 @@ weapons: [
       shootEffect: none
       smokeEffect: none
       hitEffect: none
-      lightOpacity: 0.2
+      lightStroke: 120
+      lightOpacity: 0.25
+      lightColor: ffffff
+      lengthInterp: pow10Out
+    }
+  }
+  {
+    x: 72
+    y: -24
+    rotate: true
+    baseRotation: -40
+    rotateSpeed: 0
+    shootY: 0
+    alwaysShooting: true
+    alwaysContinuous: true
+    shootCone: 360
+    alternate: false
+    shootSound: none
+    recoil: 0
+    display: false
+    bullet: {
+      type: ContinuousFlameBulletType
+      collidesGround: false
+      collidesAir: false
+      length: 140
+      width: 0
+      lifetime: 7
+      damage: 0.001
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      lightStroke: 120
+      lightOpacity: 0.25
+      lightColor: ffffff
+      lengthInterp: pow10Out
+    }
+  }
+  {
+    x: 72
+    y: -24
+    rotate: true
+    baseRotation: -120
+    rotateSpeed: 0
+    shootY: 0
+    alwaysShooting: true
+    alwaysContinuous: true
+    shootCone: 360
+    alternate: false
+    shootSound: none
+    recoil: 0
+    display: false
+    bullet: {
+      type: ContinuousFlameBulletType
+      collidesGround: false
+      collidesAir: false
+      length: 100
+      width: 0
+      lifetime: 7
+      damage: 0.001
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      lightStroke: 120
+      lightOpacity: 0.25
+      lightColor: ffffff
+      lengthInterp: pow10Out
+    }
+  }
+  {
+    x: 72
+    y: -24
+    rotate: true
+    baseRotation: -130
+    rotateSpeed: 0
+    shootY: 0
+    alwaysShooting: true
+    alwaysContinuous: true
+    shootCone: 360
+    alternate: false
+    shootSound: none
+    recoil: 0
+    display: false
+    bullet: {
+      type: ContinuousFlameBulletType
+      collidesGround: false
+      collidesAir: false
+      length: 140
+      width: 0
+      lifetime: 7
+      damage: 0.001
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      lightStroke: 120
+      lightOpacity: 0.25
       lightColor: ffffff
       lengthInterp: pow10Out
     }
@@ -1563,10 +1659,8 @@ weapons: [
       length: 8192
       width: 12
       colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
-      drawFlare: false
       shootEffect: none
       smokeEffect: none
-      lengthInterp: pow5Out
       hitEffect: none
       laserAbsorb: false
       lightColor: e65555
@@ -1666,10 +1760,8 @@ weapons: [
       length: 8192
       width: 6
       colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
-      drawFlare: false
       shootEffect: none
       smokeEffect: none
-      lengthInterp: pow5Out
       hitEffect: none
       laserAbsorb: false
       lightColor: e65555
@@ -1769,10 +1861,8 @@ weapons: [
       length: 8192
       width: 10
       colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
-      drawFlare: false
       shootEffect: none
       smokeEffect: none
-      lengthInterp: pow5Out
       hitEffect: none
       laserAbsorb: false
       lightColor: e65555

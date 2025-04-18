@@ -57,7 +57,7 @@ drillEffect: [
               lifetime: 45
               sizeFrom: 0
               sizeTo: 24
-              colorto: e65555
+              colorTo: e65555
               interp: pow3Out
               startDelay: 10
             }
@@ -155,7 +155,7 @@ drillEffect: [
             lifetime: 45
             sizeFrom: 0
             sizeTo: 24
-            colorto: e65555
+            colorTo: e65555
             interp: pow3Out
             startDelay: 20
           }
@@ -257,7 +257,7 @@ drillEffect: [
               lifetime: 45
               sizeFrom: 0
               sizeTo: 24
-              colorto: e65555
+              colorTo: e65555
               interp: pow3Out
               startDelay: 30
             }
@@ -367,7 +367,7 @@ drillEffect: [
               lifetime: 45
               sizeFrom: 0
               sizeTo: 24
-              colorto: e65555
+              colorTo: e65555
               interp: pow3Out
               startDelay: 40
             }
@@ -465,7 +465,7 @@ drillEffect: [
             lifetime: 45
             sizeFrom: 0
             sizeTo: 24
-            colorto: e65555
+            colorTo: e65555
             interp: pow3Out
             startDelay: 50
           }
@@ -567,7 +567,7 @@ drillEffect: [
               lifetime: 45
               sizeFrom: 0
               sizeTo: 24
-              colorto: e65555
+              colorTo: e65555
               interp: pow3Out
               startDelay: 60
             }
@@ -643,7 +643,7 @@ drillEffect: [
     lifetime: 45
     sizeFrom: 0
     sizeTo: 45
-    colorto: e65555
+    colorTo: e65555
     interp: pow3Out
   }
   {

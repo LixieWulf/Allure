@@ -14,7 +14,6 @@ shoot: {
     -6, 0, 0
   ]
 }
-spread: 8
 reload: 20
 inaccuracy: 8
 velocityRnd: 0.3

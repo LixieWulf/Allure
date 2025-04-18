@@ -234,7 +234,7 @@ ammoTypes: {
     type: FlakBulletType
     inaccuracy: 3
     collidesGround: true
-    collides: false
+    collides: true
     speed: 15
     lifetime: 55
     damage: 250

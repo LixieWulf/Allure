@@ -2,7 +2,7 @@ type: HeatCrafter
 squareSprite: false
 customShadow: true
 size: 7
-heatRequirement: 192
+heatRequirement: 20
 maxEfficiency: 12
 warmupSpeed: 0.002
 craftTime: 180
@@ -140,8 +140,8 @@ drawer: {
 }
 consumes: {
   liquids: [
-    arreacta/0.5
-    crystal-plasma/0.25
+    arreacta/0.25
+    crystal-plasma/0.1
     supercoolant/0.01
   ]
 }

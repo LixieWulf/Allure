@@ -8,30 +8,492 @@ rotateSpeed: 0.6
 targetGround: false
 targetAir: false
 range: 1440
-reload: 500
-recoil: 13
-recoilTime: 180
-shootSound: artillery
+reload: 2400
+recoil: 3
+recoilTime: 40
+outlineRadius: 0
+outlineIcon: false
+shootSound: largeCannon
 shake: 8
 ammoPerShot: 48
 maxAmmo: 64
 canOverdrive: false
-ammoUseEffect: {
-  lifetime: 120
-  particles: 1
-  length: 16
-  randLength: false
-  baseRotation: 90
-  cone: 15
-  offset: -90
-  spin: 0.4
-  region: allure-wide-case-back
-  sizeFrom: 7
-  sizeTo: 0
-  interp: pow3Out
-  sizeInterp: pow10In
-  colorFrom: ffb3b3
-  colorTo: ad4244
+ammoUseEffect: none
+drawer: {
+  type: DrawTurret
+  basePrefix: 0r-
+  //this became hell very quickly
+  parts: [
+    //the bullet
+    {
+      type: RegionPart
+      outline: false
+      suffix: -round
+      x: 12
+      y: 8.5
+      mixColor: 00000000
+      mixColorTo: 000000
+      progress: {
+        type: smoothReload
+        op: compress
+        start: 0.05
+        end: 0.07
+      }
+    }
+    {
+      type: RegionPart
+      outline: false
+      suffix: -round
+      x: 2
+      y: -1.5
+      moveX: 10
+      moveY: 10
+      progress: {
+        type: smoothReload
+        op: compress
+        start: 0.05
+        end: 0.07
+      }
+    }
+    //start
+    {
+      type: RegionPart
+      suffix: -barrel-front
+      outline: false
+      y: 11
+      yScl: 0
+      growY: 1
+      color: ffffff00
+      colorTo: ffffff
+      growProgress: {
+        type: reload
+        op: compress
+        start: 0.8
+        end: 0.82
+      }
+      progress: {
+        type: reload
+        op: compress
+        start: 0.8
+        end: 0.81
+      }
+      moves: [
+        {
+          y: -9
+          progress: recoil
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -barrel
+      outline: false
+      y: 1.5
+      yScl: 1.16
+      growY: -0.16
+      color: ffffff00
+      colorTo: ffffff
+      growProgress: {
+        type: reload
+        op: compress
+        start: 0.8
+        end: 0.82
+      }
+      progress: {
+        type: reload
+        op: compress
+        start: 0.8
+        end: 0.81
+      }
+      moves: [
+        {
+          y: -9
+          progress: recoil
+        }
+        {
+          y: -5
+          progress: {
+            type: reload
+            op: compress
+            start: 0.8
+            end: 0.82
+          }
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -upper
+      y: -8.5
+      yScl: 1.2
+      growY: -0.2
+      color: ffffff00
+      colorTo: ffffff
+      growProgress: {
+        type: reload
+        op: compress
+        start: 0.8
+        end: 0.82
+      }
+      progress: {
+        type: reload
+        op: compress
+        start: 0.8
+        end: 0.81
+      }
+      moves: [
+        {
+          y: -2
+          progress: {
+            type: reload
+            op: compress
+            start: 0.8
+            end: 0.82
+          }
+        }
+      ]
+    }
+    //end
+    {
+      type: RegionPart
+      suffix: -barrel-front
+      outline: false
+      y: 11
+      yScl: 1
+      growY: -1
+      color: ffffff
+      colorTo: ffffff00
+      growProgress: {
+        type: reload
+        op: compress
+        start: 0
+        end: 0.02
+      }
+      progress: {
+        type: reload
+        op: compress
+        start: 0.01
+        end: 0.02
+      }
+      moves: [
+        {
+          y: -9
+          progress: recoil
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -barrel
+      outline: false
+      y: -3.5
+      growY: 0.16
+      color: ffffff
+      colorTo: ffffff00
+      growProgress: {
+        type: reload
+        op: compress
+        start: 0
+        end: 0.02
+      }
+      progress: {
+        type: reload
+        op: compress
+        start: 0.01
+        end: 0.02
+      }
+      moves: [
+        {
+          y: -9
+          progress: recoil
+        }
+        {
+          y: 5
+          progress: {
+            type: reload
+            op: compress
+            start: 0
+            end: 0.02
+          }
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -upper
+      y: -10.5
+      growY: 0.2
+      color: ffffff
+      colorTo: ffffff00
+      growProgress: {
+        type: reload
+        op: compress
+        start: 0
+        end: 0.02
+      }
+      progress: {
+        type: reload
+        op: compress
+        start: 0.01
+        end: 0.02
+      }
+      moves: [
+        {
+          y: 2
+          progress: {
+            type: reload
+            op: compress
+            start: 0
+            end: 0.02
+          }
+        }
+      ]
+    }
+    //transitions, heats
+    {
+      type: RegionPart
+      suffix: -heats
+      outline: false
+      x: 6.5
+      y: -10
+      xScl: 0
+      moves: [
+        {
+          gx: 1
+          x: 7
+          progress: {
+            type: reload
+            op: compress
+            start: 0.1
+            end: 0.11
+          }
+        }
+        {
+          gx: -1
+          x: -7
+          progress: {
+            type: reload
+            op: compress
+            start: 0.74
+            end: 0.75
+          }
+        }
+      ]
+      heatLayerOffset: 0
+      turretHeatLayer: 50
+      heatProgress: {
+        type: reload
+        op: sin
+        scl: 12
+        mag: 0.15
+      }
+    }
+    {
+      type: RegionPart
+      suffix: -heats
+      outline: false
+      x: -6.5
+      y: -10
+      xScl: 0
+      moves: [
+        {
+          gx: 1
+          x: -7
+          progress: {
+            type: reload
+            op: compress
+            start: 0.1
+            end: 0.11
+          }
+        }
+        {
+          gx: -1
+          x: 7
+          progress: {
+            type: reload
+            op: compress
+            start: 0.74
+            end: 0.75
+          }
+        }
+      ]
+      heatLayerOffset: 0
+      turretHeatLayer: 50
+      heatProgress: {
+        type: reload
+        op: sin
+        scl: 12
+        mag: 0.15
+      }
+    }
+    {
+      type: RegionPart
+      suffix: -heats-edge
+      outline: false
+      x: -6.75
+      y: -10
+      xScl: 0
+      yScl: 0
+      moves: [
+        {
+          x: -14.5
+          progress: {
+            type: reload
+            op: compress
+            start: 0.1
+            end: 0.11
+          }
+        }
+        {
+          x: 14.5
+          progress: {
+            type: reload
+            op: compress
+            start: 0.74
+            end: 0.75
+          }
+        }
+        {
+          gx: -1
+          gy: -1
+          progress: {
+            type: reload
+            op: compress
+            start: 0.75
+            end: 0.75
+          }
+        }
+        {
+          gx: 1
+          gy: 1
+          progress: {
+            type: reload
+            op: compress
+            start: 0.1
+            end: 0.1
+          }
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -heats-edge
+      outline: false
+      x: 6.75
+      y: -10
+      xScl: 0
+      yScl: 0
+      moves: [
+        {
+          x: 14.5
+          progress: {
+            type: reload
+            op: compress
+            start: 0.1
+            end: 0.11
+          }
+        }
+        {
+          x: -14.5
+          progress: {
+            type: reload
+            op: compress
+            start: 0.74
+            end: 0.75
+          }
+        }
+        {
+          gx: -1
+          gy: -1
+          progress: {
+            type: reload
+            op: compress
+            start: 0.75
+            end: 0.75
+          }
+        }
+        {
+          gx: 1
+          gy: 1
+          progress: {
+            type: reload
+            op: compress
+            start: 0.1
+            end: 0.1
+          }
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -barrel-transition
+      y: 0
+      moveY: -3.5
+      color: ffffff
+      colorTo: ffffff00
+      yScl: 0
+      xScl: 0
+      growY: -0.15
+      growProgress: {
+        type: reload
+        op: compress
+        start: 0.8
+        end: 0.82
+      }
+      progress: {
+        type: reload
+        op: compress
+        start: 0.8
+        end: 0.82
+      }
+      moves: [
+        {
+          gx: 1
+          gy: 1
+          progress: {
+            type: reload
+            op: compress
+            start: 0.5
+            end: 0.5
+          }
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -barrel-transition
+      y: -3.5
+      moveY: 3.5
+      color: ffffff00
+      colorTo: ffffff
+      yScl: 0.85
+      growY: 0.15
+      growProgress: {
+        type: reload
+        op: compress
+        start: 0
+        end: 0.02
+      }
+      progress: {
+        type: reload
+        op: compress
+        start: 0
+        end: 0.02
+      }
+      moves: [
+        {
+          gx: -1
+          gy: -1
+          progress: {
+            type: reload
+            op: compress
+            start: 0.5
+            end: 0.5
+          }
+        }
+      ]
+    }
+  ]
 }
 ammoTypes: {
   anden: {
@@ -40,7 +502,6 @@ ammoTypes: {
     scaleLife: true
     speed: 3
     lifetime: 480
-    absorbable: false
     reflectable: false
     collidesAir: false
     sprite: allure-shell-large
@@ -48,6 +509,177 @@ ammoTypes: {
     height: 28
     shrinkY: 0.5
     shrinkX: 0.5
+    trailLength: 8
+    trailWidth: 7
+    trailColor: e65555
+    trailInterval: 2
+    trailRotation: true
+    frontColor: ffb3b3
+    backColor: e65555
+    fragBullets: 1
+    fragRandomSpread: 0
+    fragOffsetMin: 0
+    fragOffsetMax: 0
+    fragVelocityMin: 1
+    fragVelocityMax: 1
+    fragBullet: {
+      damage: 2500
+      pierce: true
+      pierceBuilding: true
+      fragOnHit: false
+      speed: 2
+      lifetime: 10
+      reflectable: false
+      collidesAir: false
+      sprite: allure-shell-large
+      width: 14
+      height: 14
+      shrinkY: 0
+      shrinkX: 0
+      frontColor: ffb3b3
+      backColor: e65555
+      fragBullets: 1
+      fragRandomSpread: 0
+      fragOffsetMin: 0
+      fragOffsetMax: 0
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragBullet: {
+        damage: 2500
+        pierce: true
+        pierceBuilding: true
+        fragOnHit: false
+        speed: 2
+        lifetime: 10
+        reflectable: false
+        collidesAir: false
+        sprite: allure-shell-large
+        width: 14
+        height: 14
+        shrinkY: 0
+        shrinkX: 0
+        frontColor: ffb3b3
+        backColor: e65555
+        fragBullets: 1
+        fragRandomSpread: 0
+        fragOffsetMin: 0
+        fragOffsetMax: 0
+        fragVelocityMin: 1
+        fragVelocityMax: 1
+        fragBullet: {
+          damage: 2500
+          pierce: true
+          pierceBuilding: true
+          fragOnHit: false
+          speed: 2
+          lifetime: 10
+          reflectable: false
+          collidesAir: false
+          sprite: allure-shell-large
+          width: 14
+          height: 14
+          shrinkY: 0
+          shrinkX: 0
+          frontColor: ffb3b3
+          backColor: e65555
+          fragBullets: 250
+          fragBullet: {
+            type: RailBulletType
+            pierceEffect: none
+            damage: 20
+            pierceDamageFactor: 0
+            length: 125
+            collidesAir: false
+          }
+          hitSound: largeExplosion
+          despawnEffect: [
+            {
+              length: 150
+              lifetime: 150
+              particles: 115
+              colorFrom: 787878
+              colorTo: 787878
+              interp: pow5Out
+              sizeInterp: pow10In
+              sizeFrom: 8
+              sizeTo: 0
+            }
+            {
+              length: 190
+              lifetime: 140
+              particles: 45
+              colorFrom: 787878
+              colorTo: 787878
+              interp: pow10Out
+              sizeInterp: pow5In
+              sizeFrom: 3
+              sizeTo: 0
+            }
+            {
+              length: 60
+              lifetime: 240
+              particles: 25
+              colorFrom: 787878
+              colorTo: 787878
+              interp: pow10Out
+              sizeInterp: pow5In
+              sizeFrom: 14
+              sizeTo: 0
+            }
+            {
+              length: 260
+              lifetime: 80
+              particles: 22
+              colorFrom: ffb3b3
+              colorTo: e65555
+              interp: pow3Out
+              sizeInterp: pow10In
+              sizeFrom: 4
+              sizeTo: 0
+            }
+            {
+              length: 160
+              line: true
+              lifetime: 60
+              particles: 28
+              lenFrom: 16
+              lenTo: 0
+              strokeFrom: 6
+              strokeTo: 4
+              colorTo: e65555
+            }
+            {
+              type: WaveEffect
+              lifetime: 25
+              sizeFrom: 0
+              sizeTo: 125
+              colorTo: e65555
+              strokeFrom: 6
+              strokeTo: 0
+            }
+          ]
+          hitEffect: blastExplosion
+        }
+        despawnEffect: none
+        hitEffect: blastExplosion
+      }
+      despawnEffect: none
+      hitEffect: blastExplosion
+    }
+    despawnEffect: none
+    hitEffect: blastExplosion
+    trailEffect: {
+      type: ParticleEffect
+      cone: 10
+      particles: 2
+      length: -50
+      sizeFrom: 3
+      sizeTo: 0
+      colorFrom: ffb3b3
+      colorTo: 702b2b
+      interp: pow5Out
+      sizeInterp: pow5In
+    }
     shootEffect: [
       {
         length: 0
@@ -96,11 +728,158 @@ ammoTypes: {
         sizeInterp: pow3In
       }
     ]
+  }
+  renfrien: {
+    damage: 800
+    ammoMultiplier: 1
+    scaleLife: true
+    speed: 3
+    lifetime: 480
+    reflectable: false
+    collidesAir: false
+    collides: false
+    sprite: allure-shell-large
+    width: 28
+    height: 28
+    shrinkY: 0.5
+    shrinkX: 0.5
+    trailLength: 8
+    trailWidth: 7
+    trailColor: 5ebcbf
+    trailInterval: 2
+    trailRotation: true
+    frontColor: 85e2d3
+    backColor: 5ebcbf
+    fragBullets: 250
+    fragBullet: {
+      type: RailBulletType
+      pierceEffect: none
+      damage: 12
+      pierceDamageFactor: 0
+      length: 85
+      collidesAir: false
+    }
+    bulletInterval: 35
+    intervalBullets: 2
+    intervalRandomSpread: 30
+    intervalBullet: {
+      type: MissileBulletType
+      damage: 250
+      ammoMultiplier: 1
+      homingRange: 120
+      homingPower: 0.04
+      scaleLife: true
+      speed: 2
+      lifetime: 480
+      absorbable: false
+      reflectable: false
+      collides: false
+      trailLength: 8
+      trailWidth: 3
+      trailColor: 5ebcbf
+      trailInterval: 2
+      trailRotation: true
+      trailEffect: none
+      frontColor: 85e2d3
+      backColor: 5ebcbf
+      width: 11
+      height: 18
+      hitColor: 5ebcbf
+      hitEffect: hitBulletColor
+      despawnEffect: hitBulletColor
+      bulletInterval: 20
+      intervalBullets: 1
+      intervalRandomSpread: 30
+      intervalBullet: {
+        damage: 100
+        homingRange: 120
+        homingPower: 0.18
+        scaleLife: true
+        speed: 4
+        lifetime: 40
+        splashDamage: 60
+        splashDamageRadius: 14
+        splashDamagePierce: true
+        reflectable: false
+        collidesTiles: false
+        trailLength: 8
+        trailWidth: 1
+        trailColor: 5ebcbf
+        trailRotation: true
+        trailEffect: none
+        frontColor: 85e2d3
+        backColor: 5ebcbf
+        width: 6
+        height: 6
+        hitColor: 5ebcbf
+        hitEffect: flakExplosion
+      }
+    }
+    trailEffect: {
+      type: ParticleEffect
+      cone: 10
+      particles: 2
+      length: -50
+      sizeFrom: 3
+      sizeTo: 0
+      colorFrom: 85e2d3
+      colorTo: 3898a1
+      interp: pow5Out
+      sizeInterp: pow5In
+    }
+    shootEffect: [
+      {
+        length: 0
+        cone: 0
+        lifetime: 35
+        region: allure-shootspike
+        colorTo: 5ebcbf
+        sizeFrom: 75
+        sizeTo: 0
+      }
+      {
+        offset: 90
+        length: 0
+        cone: 0
+        lifetime: 45
+        region: allure-diamond-thin
+        colorTo: 5ebcbf
+        sizeFrom: 70
+        sizeTo: 0
+      }
+    ]
+    smokeEffect: [
+      {
+        particles: 20
+        length: 125
+        lifetime: 180
+        cone: 20
+        sizeFrom: 7
+        sizeTo: 0
+        colorFrom: 5ebcbf
+        colorTo: 656565
+        interp: pow5Out
+        sizeInterp: pow2In
+      }
+      {
+        particles: 20
+        lightOpacity: 0
+        length: 160
+        lifetime: 110
+        cone: 25
+        sizeFrom: 3
+        sizeTo: 0
+        colorFrom: 999999
+        colorTo: 656565
+        interp: pow5Out
+        sizeInterp: pow3In
+      }
+    ]
     despawnEffect: none
     hitEffect: [
       {
-        length: 150
-        lifetime: 150
+        length: 120
+        lifetime: 110
         particles: 115
         colorFrom: 787878
         colorTo: 787878
@@ -110,8 +889,8 @@ ammoTypes: {
         sizeTo: 0
       }
       {
-        length: 190
-        lifetime: 140
+        length: 160
+        lifetime: 90
         particles: 45
         colorFrom: 787878
         colorTo: 787878
@@ -121,8 +900,8 @@ ammoTypes: {
         sizeTo: 0
       }
       {
-        length: 60
-        lifetime: 240
+        length: 45
+        lifetime: 190
         particles: 25
         colorFrom: 787878
         colorTo: 787878
@@ -132,73 +911,40 @@ ammoTypes: {
         sizeTo: 0
       }
       {
-        length: 260
-        lifetime: 80
+        length: 200
+        lifetime: 60
         particles: 22
-        colorFrom: ffb3b3
-        colorTo: e65555
+        colorFrom: 85e2d3
+        colorTo: 5ebcbf
         interp: pow3Out
         sizeInterp: pow10In
         sizeFrom: 4
         sizeTo: 0
       }
       {
-        length: 160
+        length: 120
         line: true
-        lifetime: 60
+        lifetime: 45
         particles: 28
         lenFrom: 16
         lenTo: 0
         strokeFrom: 6
         strokeTo: 4
-        colorTo: e65555
+        colorTo: 5ebcbf
       }
       {
         type: WaveEffect
-        lifetime: 25
+        lifetime: 20
         sizeFrom: 0
-        sizeTo: 125
-        colorTo: e65555
+        sizeTo: 85
+        colorTo: 5ebcbf
         strokeFrom: 6
         strokeTo: 0
       }
     ]
-    trailLength: 8
-    trailWidth: 7
-    trailColor: e65555
-    trailInterval: 2
-    trailRotation: true
-    trailEffect: {
-      type: ParticleEffect
-      cone: 10
-      particles: 2
-      length: -50
-      sizeFrom: 3
-      sizeTo: 0
-      colorFrom: ffb3b3
-      colorTo: 702b2b
-      interp: pow5Out
-      sizeInterp: pow5In
-    }
-    frontColor: ffb3b3
-    backColor: e65555
-    fragBullets: 250
-    fragBullet: {
-      type: RailBulletType
-      pierceEffect: none
-      damage: 20
-      pierceDamageFactor: 0
-      length: 125
-      collidesAir: false
-    }
   }
 }
-drawer: {
-  type: DrawTurret
-  basePrefix: 0r-
-}
 category: turret
-research: 0r-pike
 requirements: [
   anden/2500
   graphite/700

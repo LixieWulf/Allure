@@ -88,7 +88,7 @@ weapons: [
     shootSound: none
     bullet: {
       type: BulletType
-      insteantDisappear: true
+      instantDisappear: true
       lifetime: 0
       shootEffect: none
       smokeEffect: none

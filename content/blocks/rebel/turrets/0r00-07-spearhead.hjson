@@ -375,12 +375,6 @@ drawer: {
   basePrefix: 0r-
 }
 category: turret
-research: {
-  parent: 0r00-01-katana
-  objectives: [
-    0r00-04-flail
-  ]
-}
 requirements: [
   anden/1400
   graphite/500

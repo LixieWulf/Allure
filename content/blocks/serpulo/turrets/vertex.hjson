@@ -256,7 +256,6 @@ ammoTypes: {
     ]
   }
 }
-research: 0r-halberd
 category: turret
 requirements: [
   thorium/2000

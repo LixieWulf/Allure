@@ -22,7 +22,7 @@ drawer: {
 consumes: {
   power: 18
   liquids: [
-    liquid-baenara/1
+    plasma/1
   ]
 }
 coolant: {

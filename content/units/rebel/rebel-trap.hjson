@@ -18,7 +18,6 @@ parts: [
   {
     type: ShapePart
     layer: 105
-    shapes: 1
     sides: 4
     radius: 14
     rotation: 45

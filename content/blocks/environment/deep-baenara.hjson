@@ -8,3 +8,7 @@ cacheLayer: water
 isLiquid: true
 liquidDrop: liquid-baenara
 liquidMultiplier: 1.3
+//I DON'T KNOW WHY THIS DOESN'T WORK
+attributes: {
+  flow: 0.125
+}

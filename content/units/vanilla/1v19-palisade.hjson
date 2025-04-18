@@ -65,7 +65,7 @@ weapons: [
     display: false
     bullet: {
       type: BulletType
-      insteantDisappear: true
+      instantDisappear: true
       lifetime: 0
       shootEffect: none
       smokeEffect: none
@@ -82,9 +82,9 @@ weapons: [
     baseRotation: -90
     repairSpeed: 8
     beamWidth: 1.2
+    pulseRadius: 12
     bullet: {
       maxRange: 170
-      pulseRadius: 12
     }
   }
   {
@@ -97,9 +97,9 @@ weapons: [
     baseRotation: -90
     repairSpeed: 8
     beamWidth: 1.2
+    pulseRadius: 12
     bullet: {
       maxRange: 170
-      pulseRadius: 12
     }
   }
   {
@@ -113,10 +113,10 @@ weapons: [
     repairSpeed: 16
     beamWidth: 1.8
     targetBuildings: true
+    pulseRadius: 18
+    pulseStroke: 2.5
     bullet: {
       maxRange: 140
-      pulseRadius: 18
-      pulseStroke: 2.5
     }
   }
 ]

@@ -1,0 +1,107 @@
+type: GenericCrafter
+squareSprite: false
+customShadow: true
+size: 4
+liquidCapacity: 20
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    ""
+  ]
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: water
+      padding: 12
+    }
+    {
+      type: DrawGlowRegion
+      rotateSpeed: 7.09
+      layer: 30
+      color: 7382f0
+      glowScale: 25
+    }
+    {
+      type: DrawGlowRegion
+      rotateSpeed: 7
+      layer: 30
+      color: 7382f0
+      glowScale: 14
+    }
+    {
+      type: DrawGlowRegion
+      rotateSpeed: 7.5
+      layer: 30
+      color: 90a2fc
+      glowScale: 33
+    }
+    {
+      type: DrawGlowRegion
+      rotateSpeed: 7.216
+      layer: 30
+      color: 90a2fc
+      glowScale: 12
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -top-glow
+      color: feb380
+    }
+  ]
+}
+consumes: {
+  power: 1
+  liquid: {
+    liquid: water
+    amount: 0.2
+  }
+}
+outputLiquids: [
+  plasma/0.25
+]
+ambientSoundVolume: 0
+category: crafting
+research: {
+  parent: 0b06-01-distillery
+  objectives: [
+    0b-basic-infrastructure
+  ]
+}
+requirements: [
+  territe-alloy/400
+  dantrales/100
+  silicon/100
+]
+breakEffect: [
+  {
+    type: WaveEffect
+    rotation: 43
+    lifetime: 20
+    sides: 4
+    sizeFrom: 8
+    sizeTo: 16
+    strokeFrom: 6
+    strokeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 30
+    useRotation: false
+    region: allure-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f0
+    colorTo: 7382f000
+  }
+]

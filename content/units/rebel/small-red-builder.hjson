@@ -6,7 +6,7 @@ health: 1200
 speed: 0
 rotateSpeed: 0
 physics: false
-targettable: false
+targetable: false
 outlines: false
 drawCell: false
 buildRange: 320

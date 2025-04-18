@@ -379,7 +379,6 @@ ammoTypes: {
   }
 }
 category: turret
-research: 0r-cleaver
 requirements: [
   infrastructure/100
   anden/4500

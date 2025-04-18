@@ -9,31 +9,11 @@ iconColor: e38f5b
 orbitRadius: 7
 orbitOffset: 110
 accessible: true
-alwaysUnlocked: true
 allowLaunchToNumbered: false
 sectorSize: 2
 totalRadius: 1.8
 defaultEnv: 17
 icon: terrain
-itemWhitelist: [
-  tungsten, 
-  surge-alloy,
-  silicon,
-  graphite,
-  carbide,
-  phase-fabric,
-  thorium,
-  anden, 
-  ladera, 
-  renfrien,
-  baenite,
-  scilaxa,
-  crystal,
-  amethyst,
-  infrastructure,
-  draconium,
-  shadow
-]
 bloom: true
 mesh: [
   {
@@ -93,9 +73,4 @@ cloudMesh: {
   scl: 0.7
   thresh: 0.43
 }
-research: {
-  parent: {
-    type: SectorComplete
-    preset: origin
-  }
-}
+research: 0r-begin

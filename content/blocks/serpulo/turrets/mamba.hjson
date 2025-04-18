@@ -90,7 +90,7 @@ ammoTypes: {
   }
 }
 category: turret
-research: twin 
+research: wave
 requirements: [
   copper/125
   graphite/60

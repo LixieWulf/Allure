@@ -1,0 +1,22 @@
+type: GenericCrafter
+destructible: false
+hasPower: false
+hasShadow: false
+health: 10000000000
+underBullets: true
+placeableLiquid: true
+forceDark: true
+drawer: []
+drawTeamOverlay: false
+updateEffectSpread: 120
+updateEffect: {
+  particles: 1
+  length: 80
+  baseLength: 80
+  lifetime: 400
+  sizeFrom: 0
+  sizeTo: 100
+  colorFrom: bbbbbb44
+  colorTo: bbbbbb00
+  layer: 60
+}

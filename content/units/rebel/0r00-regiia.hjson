@@ -1,0 +1,225 @@
+type: flying
+lowAltitude: true
+fogRadius: 24
+flying: true
+health: 3500
+speed: 3.4
+accel: 0.14
+drag: 0.05
+hitSize: 11
+range: 330
+maxRange: 350
+rotateSpeed: 5
+drawCell: false
+outlines: false
+faceTarget: false
+engineSize: 0
+lightRadius: 0
+itemCapacity: 0
+parts: [
+  {
+    type: RegionPart
+    layer: 90.04
+    outline: false
+  }
+]
+immunities: [
+  burning,
+  melting,
+  freezing, 
+  wet, 
+  tarred,
+  slow,
+  unmoving, 
+  disarmed,
+  spore-slowed,
+  shocked,
+  blasted,
+  electrified,
+  sapped, 
+  overclock,
+  overdrive,
+  allure-emp,
+  allure-0r-kinetic0,
+  allure-0r-kinetic1,
+  allure-0r-kinetic2,
+  allure-0r-kinetic3,
+  allure-0r-kinetic4,
+]
+weapons: [
+  {
+    x: 0
+    mirror: false
+    reload: 90
+    shootSound: missile
+    shootCone: 360
+    useAttackRange: false
+    parts: [
+      {
+        type: RegionPart
+        name: allure-regiia-missile
+        outline: false
+        y: 2
+        moveY: -2
+        color: ffffff
+        colorTo: ffffff00
+        progress: reload
+      }
+    ]
+    bullet: {
+      spawnUnit: allure-regiia-missile
+      maxRange: 350
+      shootEffect: none
+      smokeEffect: payloadDeposit
+    }
+  }
+  //engines
+  {
+    y: -3.5
+    x: 2
+    shootY: 0
+    baseRotation: 180
+    alwaysShooting: true
+    shootCone: 360
+    continuous: true
+    alternate: false
+    reload: 1
+    shootSound: none
+    shootWarmupSpeed: 0.03
+    minShootVelocity: 1.8
+    recoil: 0
+    display: false
+    parts: [
+      {
+        name: allure-thruster-flare-2
+        y: 1
+        moveY: 1
+        rotation: 180
+        outline: false
+        blending: additive
+        mixColor: e65555
+        color: ffffff44
+        colorTo: ffffff
+        xScl: 0.05
+        yScl: 0.05
+        layer: 90.03
+        progress: warmup
+      }
+    ]
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90.02
+      lifetime: 14
+      collides: false
+      length: 10
+      width: 2
+      colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 1
+      oscMag: 0.1
+      hitEffect: none
+      lightColor: e65555
+      lightStroke: 6
+      lightOpacity: 0.4
+      collidesGround: false
+      damage: 24
+      status: allure-0t-thermal0
+      statusDuration: 30
+    }
+  }
+  {
+    y: -3.5
+    x: 2
+    shootY: 0
+    baseRotation: 180
+    alwaysShooting: true
+    shootCone: 360
+    continuous: true
+    alternate: false
+    reload: 1
+    shootSound: none
+    shootWarmupSpeed: 0.03
+    minShootVelocity: 1.8
+    recoil: 0
+    display: false
+    parts: [
+      {
+        name: allure-thruster-flare-2
+        y: 1
+        moveY: 1
+        rotation: 180
+        outline: false
+        blending: additive
+        mixColor: e65555
+        color: ffffff44
+        colorTo: ffffff
+        xScl: 0.05
+        yScl: 0.05
+        layer: 90.03
+        progress: warmup
+      }
+    ]
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90.02
+      lifetime: 10
+      collides: false
+      length: 10
+      width: 2
+      colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 1
+      oscMag: 0.1
+      hitEffect: none
+      lightColor: e65555
+      lightStroke: 6
+      lightOpacity: 0.4
+      collidesGround: false
+      damage: 24
+      status: allure-0t-thermal0
+      statusDuration: 30
+    }
+  }
+  //idle flames
+  {
+    y: -3.5
+    x: 2
+    baseRotation: 180
+    alwaysShooting: true
+    alwaysContinuous: true
+    shootCone: 360
+    continuous: true
+    alternate: false
+    shootSound: none
+    recoil: 0
+    display: false
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90
+      lifetime: 14
+      collides: false
+      length: 4
+      width: 2
+      colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 2.5
+      oscMag: 0.1
+      hitEffect: none
+      lightColor: e65555
+      lightStroke: 4
+      lightOpacity: 0.25
+    }
+  }
+]
+research: 0r-begin
+envEnabled: -1
+envDisabled: 4

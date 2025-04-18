@@ -1,7 +1,4 @@
 type: flying
-//don't bother trying to attack as the AI
-controller: BuilderAI
-defaultController: BuilderAI
 hitSize: 12
 flying: true
 health: 1300
@@ -10,14 +7,15 @@ speed: 3
 rotateSpeed: 4
 accel: 0.06
 drag: 0.013
-strafePenalty: 0.75
+strafePenalty: 0.2
 shadowElevationScl: 0.45
+range: 145
+maxRange: 160
 lightRadius: 0
 drawCell: false
 lowAltitude: true
 engineSize: 0
 outlines: false
-omniMovement: false
 healColor: 7382f088
 shieldColor: 7382f000
 deathShake: 0
@@ -65,12 +63,12 @@ weapons: [
     alternate: false
     shootY: 2
     shoot: {
-      shots: 3
+      shots: 2
       shotDelay: 1
     }
     shootWarmupSpeed: 0.02
+    linearWarmup: true
     minWarmup: 0.99
-    aiControllable: false
     velocityRnd: 0.25
     inaccuracy: 3
     baseRotation: -40
@@ -78,7 +76,7 @@ weapons: [
     bullet: {
       damage: 14
       speed: 5
-      lifetime: 40
+      lifetime: 60
       drag: 0.03
       width: 7
       height: 14
@@ -157,7 +155,7 @@ weapons: [
   }
   //engines
   {
-    y: -2
+    y: -0.5
     x: 1.5
     baseRotation: 180
     alwaysShooting: true
@@ -193,7 +191,7 @@ weapons: [
         radiusTo: 11.25 
         stroke: 1
         innerRadScl: 0.75
-        y: 2
+        y: 3.5
         progress: heat
         layer: 101
       }
@@ -204,7 +202,7 @@ weapons: [
         radius: 0
         radiusTo: 3
         stroke: 3
-        y: 2
+        y: 3.5
         progress: heat
         layer: 101
       }
@@ -228,7 +226,7 @@ weapons: [
     }
   }
   {
-    y: -2
+    y: -0.5
     x: 1.5
     baseRotation: 180
     alwaysShooting: true
@@ -422,6 +420,7 @@ abilities: [
     percentAmount: 0.01388888888 
   }
 ]
+research: allure-0b07-01-victory-beacon
 createWreck: false
 createScorch: false
 deathSound: none

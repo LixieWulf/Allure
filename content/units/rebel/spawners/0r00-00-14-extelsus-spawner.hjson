@@ -1,7 +1,7 @@
 //Spawn package meant to be used in waves. Handles distancing and visual effects. Not exactly simple, do not reuse as you will break it!
 type: flying
 hittable: false
-targettable: false
+targetable: false
 flying: true
 speed: 0
 rotateSpeed: 360
@@ -16,7 +16,7 @@ engineSize: 0
 physics: true
 shadowElevationScl: 0
 createScorch: false
-IsEnemy: false
+isEnemy: false
 createWreck: false
 bounded: true
 useUnitCap: false
@@ -30,7 +30,6 @@ weapons: [
     mirror: false
     shootCone: 360
     controllable: false
-    instantDisappear: true
     shootSound: none
     bullet: {
       type: BulletType
@@ -40,6 +39,7 @@ weapons: [
       absorbable: false
       speed: 0
       lifetime: 0
+      instantDisappear: true
       fragRandomSpread: 0
       shootEffect: none
       smokeEffect: none
@@ -182,10 +182,8 @@ weapons: [
       length: 8192
       width: 12
       colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
-      drawFlare: false
       shootEffect: none
       smokeEffect: none
-      lengthInterp: pow5Out
       hitEffect: none
       laserAbsorb: false
       lightColor: e65555
@@ -286,10 +284,8 @@ weapons: [
       length: 8192
       width: 6
       colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
-      drawFlare: false
       shootEffect: none
       smokeEffect: none
-      lengthInterp: pow5Out
       hitEffect: none
       laserAbsorb: false
       lightColor: e65555
@@ -390,10 +386,8 @@ weapons: [
       length: 8192
       width: 10
       colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
-      drawFlare: false
       shootEffect: none
       smokeEffect: none
-      lengthInterp: pow5Out
       hitEffect: none
       laserAbsorb: false
       lightColor: e65555

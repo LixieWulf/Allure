@@ -1,6 +1,6 @@
 type: HeatCrafter
 customShadow: true
-heatRequirement: 15
+heatRequirement: 20
 maxEfficiency: 1
 size: 7
 conductivePower: true

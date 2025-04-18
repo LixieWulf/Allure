@@ -1,0 +1,289 @@
+type: missile
+template: MissileUnitType
+speed: 0
+rotateSpeed: 1
+lifetime: 40
+flying: false
+drawBody: false
+drawCell: false
+outlines: false
+groundLayer: 20
+hittable: false
+targetable: false
+weapons: [
+  {
+    x: 0
+    y: 28
+    rotate: true
+    rotateSpeed: 0
+    mirror: false
+    shootOnDeath: true
+    controllable: false
+    shootCone: 360
+    shootSound: shootSmite
+    bullet: {
+      speed: 40
+      lifetime: 15
+      damage: 1200
+      pierceDamageFactor: 0.05
+      pierceCap: 3
+      splashDamage: 200
+      splashDamageRadius: 45
+      status: allure-0b-energy3
+      statusDuration: 2
+      setDefaults: false
+      despawnHit: false
+      hitSound: explosion
+      sprite: allure-diamond-thin
+      width: 96
+      height: 10
+      shrinkY: 1
+      shrinkInterp: pow5Out
+      rotationOffset: 90
+      frontColor: 90a2fc
+      backSprite: clear-effect
+      trailLength: 9
+      trailWidth: 2
+      trailColor: 7382f0
+      bulletInterval: 1
+      intervalRandomSpread: 0
+      intervalDelay: 2
+      intervalBullet: {
+        type: ExplosionBulletType
+        status: allure-0b-energy3
+        statusDuration: 2
+        hitShake: 6
+        hitSound: explosion
+        createChance: 0.2
+        killShooter: false
+        splashDamage: 200
+        splashDamageRadius: 45
+        despawnEffect: none
+        hitEffect: [
+          {
+            particles: 1
+            length: 0
+            lifetime: 40
+            cone: 0
+            offset: 90
+            region: allure-squishwave
+            sizeFrom: 30
+            sizeTo: 60
+            colorFrom: 7382f0
+            colorTo: 7382f000
+            layer: 108
+          }
+          {
+            particles: 1
+            useRotation: false
+            length: 0
+            lifetime: 30
+            cone: 0
+            region: allure-diamond-vthin
+            sizeFrom: 120
+            sizeTo: 60
+            colorFrom: 7382f0
+            colorTo: 7382f000
+            layer: 109
+          }
+          {
+            particles: 1
+            useRotation: false
+            length: 0
+            lifetime: 15
+            cone: 0
+            region: allure-diamond-vthin
+            sizeFrom: 100
+            sizeTo: 0
+            colorTo: ffffff00
+          }
+        ]
+      }
+      hitShake: 6
+      hitEffect: [
+        {
+          particles: 1
+          length: 0
+          lifetime: 40
+          cone: 0
+          offset: 90
+          region: allure-squishwave
+          sizeFrom: 30
+          sizeTo: 60
+          colorFrom: 7382f0
+          colorTo: 7382f000
+          layer: 108
+        }
+        {
+          particles: 1
+          useRotation: false
+          length: 0
+          lifetime: 30
+          cone: 0
+          region: allure-diamond-vthin
+          sizeFrom: 120
+          sizeTo: 60
+          colorFrom: 7382f0
+          colorTo: 7382f000
+          layer: 109
+        }
+        {
+          particles: 1
+          useRotation: false
+          length: 0
+          lifetime: 15
+          cone: 0
+          region: allure-diamond-vthin
+          sizeFrom: 100
+          sizeTo: 0
+          colorTo: ffffff00
+        }
+      ]
+      shootEffect: [
+        {
+          line: true
+          cone: 20
+          particles: 17
+          lifetime: 20
+          length: 70
+          interp: pow3Out
+          sizeInterp: linear
+          lenFrom: 12
+          lenTo: 6
+          strokeFrom: 3
+          strokeTo: 0
+          colorTo: 7382f0
+        }
+        {
+          particles: 1
+          useRotation: false
+          length: 0
+          lifetime: 30
+          cone: 0
+          region: allure-diamond-vthin
+          sizeFrom: 90
+          sizeTo: 45
+          colorFrom: 7382f0
+          colorTo: 7382f000
+          layer: 109
+        }
+        {
+          particles: 1
+          useRotation: false
+          length: 0
+          lifetime: 15
+          cone: 0
+          region: allure-diamond-vthin
+          sizeFrom: 80
+          sizeTo: 0
+          colorTo: ffffff00
+        }
+      ]
+      smokeEffect: [
+        {
+          followParent: false
+          particles: 1
+          length: 8
+          baseLength: 20
+          randLength: false
+          lifetime: 40
+          cone: 0
+          offset: 90
+          region: allure-squishwave
+          sizeFrom: 30
+          sizeTo: 60
+          colorFrom: 7382f0
+          colorTo: 7382f000
+        }
+        {
+          followParent: false
+          particles: 1
+          length: 32
+          baseLength: 30
+          randLength: false
+          lifetime: 30
+          cone: 0
+          offset: 90
+          region: allure-squishwave
+          sizeFrom: 20
+          sizeTo: 40
+          colorFrom: 7382f0
+          colorTo: 7382f000
+        }
+        {
+          followParent: false
+          particles: 1
+          length: 48
+          baseLength: 40
+          randLength: false
+          lifetime: 20
+          cone: 0
+          offset: 90
+          region: allure-squishwave
+          sizeFrom: 10
+          sizeTo: 20
+          colorFrom: 7382f0
+          colorTo: 7382f000
+        }
+      ]
+      despawnEffect: none
+    }
+  }
+  {
+    rotate: true
+    rotateSpeed: 0
+    baseRotation: -90
+    reload: 70
+    x: 3
+    y: 12
+    alwaysShooting: true
+    mirror: false
+    shootSound: none
+    shoot: {
+      type: ShootAlternate
+      barrels: 10
+      shots: 10
+      shotDelay: 4
+      spread: -4
+    }
+    bullet: {
+      type: LightningBulletType
+      lightningColor: 7382f0
+      damage: 25
+      lightningLength: 4
+      lightningLengthRand: 6
+      shootEffect: none
+      smokeEffect: none
+    }
+  }
+  {
+    rotate: true
+    rotateSpeed: 0
+    x: -3
+    y: 12
+    baseRotation: 90
+    reload: 70
+    alwaysShooting: true
+    mirror: false
+    shootSound: none
+    shoot: {
+      type: ShootAlternate
+      barrels: 10
+      shots: 10
+      shotDelay: 4
+      spread: 4
+    }
+    bullet: {
+      type: LightningBulletType
+      lightningColor: 7382f0
+      damage: 25
+      lightningLength: 5
+      lightningLengthRand: 9
+      shootEffect: none
+      smokeEffect: none
+    }
+  }
+]
+deathSound: none
+deathShake: 8
+deathExplosionEffect: none

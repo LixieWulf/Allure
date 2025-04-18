@@ -101,12 +101,6 @@ ammoTypes: {
   }
 }
 category: turret
-research: {
-  parent: 0r00-00-rapier
-  objectives: [
-    0r00-04-flail
-  ]
-}
 drawer: {
   type: DrawTurret
   basePrefix: 0r-

@@ -73,10 +73,10 @@ weapons: [
       pierceCap: 1
       length: 180
       width: 6
-      damage: 0.01
-      buildingDamageMultiplier: 1000
+      damage: 24
+      pierceArmor: false
       status: allure-0t-thermal0
-      statusDuration: 2
+      statusDuration: 15
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       hitEffect: {
         length: 25
@@ -576,4 +576,4 @@ deathSound: none
 deathExplosionEffect: none
 envEnabled: -1
 envDisabled: 0
-research: allure-0b07-01-reckless-beacon
+research: allure-0b07-02-reckless-beacon

@@ -832,7 +832,7 @@ abilities: [
   {
     type: MoveEffectAbility
     y: -16
-    intverval: 1
+    interval: 1
     effect: {
       type: SeqEffect
       effects: [

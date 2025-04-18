@@ -5,3 +5,6 @@ statusDuration: 60
 cacheLayer: water
 liquidDrop: liquid-baenara
 isLiquid: true
+attributes: {
+  flow: 0.0625 
+}

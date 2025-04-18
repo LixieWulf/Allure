@@ -1,31 +1,45 @@
 generator: AsteroidGenerator
-parent: erekir
-orbitRadius: 3
+parent: 0e
+orbitRadius: 1.3
 camRadius: -0.7
 minZoom: 1
 bloom: true
 updateLighting: false
 atmosphereRadIn: 0
 atmosphereRadOut: 0
-drawOrbit: false
-orbitTime: 15
 defaultEnv: 17
 defaultCore: core-citadel
 clearSectorOnLose: true
 //TODO this needs a proper asteroid mesh
-mesh: {
-  type: NoiseMesh
-  divisions: 3
-  radius: 0.1
-  planet: maltranas
-  color1: 60496d
-  color2: 3c4448
-  octaves: 4
-  persistence: 0.2
-  scale: 0.99
-  mag: 5
-  coct: 4
-  cper: 1.4
-  cscl: 0.3
-  cthresh: 0.01
-}
+mesh: [
+  {
+    type: NoiseMesh
+    divisions: 4
+    radius: 0.06
+    color1: d1efff
+    color2: d1efff
+    octaves: 4
+    persistence: 0.2
+    scale: 0.99
+    mag: 5
+    coct: 4
+    cper: 1.4
+    cscl: 0.3
+    cthresh: 0.01
+  }
+  {
+    type: NoiseMesh
+    divisions: 4
+    radius: 0.065
+    color1: f7a7a7
+    color2: f7a7a7
+    octaves: 4
+    persistence: 0.2
+    scale: 0.99
+    mag: 4
+    coct: 4
+    cper: 1.4
+    cscl: 0.3
+    cthresh: 0.01
+  }
+]

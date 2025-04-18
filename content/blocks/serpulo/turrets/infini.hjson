@@ -3766,7 +3766,7 @@ shootType: {
         pierce: true
         pierceBuilding: true
         pierceDamageFactor: 0.2
-        absorbale: false
+        absorbable: false
         hittable: false
         reflectable: false
         despawnEffect: none

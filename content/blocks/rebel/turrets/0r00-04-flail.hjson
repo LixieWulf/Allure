@@ -128,7 +128,6 @@ drawer: {
   basePrefix: 0r-
 }
 category: turret
-research: 0r02-waraxe
 requirements: [
   anden/1500
   graphite/500

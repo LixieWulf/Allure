@@ -1,0 +1,141 @@
+type: PowerTurret
+squareSprite: false
+shootY: 0
+size: 6
+reload: 320
+rotateSpeed: 1
+range: 600
+recoil: 0
+recoilTime: 80
+cooldownTime: 240
+shootSound: lasercharge2
+shootWarmupSpeed: 0.001
+solid: false
+outlineColor: 212229
+predictTarget: false
+liquidCapacity: 40
+//Be REALLY accurate
+shootCone: 0.25
+//Yes, a railgun targets the weakest enemies. This may be considered deranged, but it's not like it does anything to chunkier units.
+unitSort: weakest
+consumes: {
+  power: 21
+  liquids: [
+    plasma/2
+  ]
+}
+coolant: {
+  type: ConsumeLiquid
+  liquid: energia
+  amount: 1.5
+}
+heatColor: 000000
+drawer: {
+  type: DrawTurret
+  basePrefix: 0b-
+  parts: [
+    {
+      suffix: -barrel
+      y: 14
+      moves: [
+        {
+          y: -11
+          progress: {
+            type: recoil
+            ops: [
+              {
+                op: compress
+                start: 0
+                end: 0.5
+              }
+              {
+                op: curve
+                interp: pow3In
+              }
+              {
+                op: inv
+              }
+            ]
+          }
+        }
+        {
+          y: 11
+          progress: {
+            type: recoil
+            ops: [
+              {
+                op: compress
+                start: 0
+                end: 0.4
+              }
+              {
+                op: inv
+              }
+            ]
+          }
+        }
+      ]
+      children: [
+        { 
+          type: RegionPart
+          suffix: -flare
+          outline: false
+          blending: additive
+          color: 7382f0
+        }
+        {
+          suffix: -heat
+          blending: additive
+          outline: false
+          color: 000000
+          colorTo: ab3400
+          progress: {
+            type: warmup
+            op: slope
+          }
+        }
+        {
+          suffix: -heat
+          blending: additive
+          outline: false
+          color: 000000
+          colorTo: 90a2fc
+          progress: warmup
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -upper
+      y: 6  
+    }
+    { 
+      type: RegionPart
+      suffix: -flare
+      y: 19
+      outline: false
+      layer: 140
+      color: 7382f025
+      blending: additive
+    }
+  ]
+}
+coolantMultiplier: 0.66666
+shootType: {
+  spawnUnit: allure-concuss
+  shootEffect: none
+  smokeEffect: none
+}
+category: turret
+research: {
+  parent: 0b-aftershock
+  objectives: [
+    0b-electromagnetic-acceleration
+  ]
+}
+requirements: [
+  territe-alloy/1800
+  dantrales/700
+  silicon/600
+  baenite/350
+]

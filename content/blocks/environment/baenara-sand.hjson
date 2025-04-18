@@ -6,4 +6,5 @@ shallow: true
 cacheLayer: water
 attributes: {
   sand: 2
+  flow: 0.03125
 }

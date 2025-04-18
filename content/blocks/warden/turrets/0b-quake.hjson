@@ -1,0 +1,180 @@
+type: PowerTurret
+squareSprite: false
+size: 4
+reload: 80
+rotateSpeed: 1.6
+range: 480
+recoil: 2
+recoilTime: 40
+shootWarmupSpeed: 0.001
+cooldownTime: 160
+shootSound: considerablyintensepew
+outlineColor: 212229
+shake: 5
+//Be REALLY accurate
+shootCone: 0.25
+//Yes, a railgun targets the weakest enemies. This may be considered deranged, but it's not like it does anything to chunkier units.
+unitSort: weakest
+consumes: {
+  power: 21
+  liquids: [
+    plasma/1
+    energia/2
+  ]
+}
+coolant: {
+  type: ConsumeLiquid
+  liquid: water
+  amount: 1
+}
+heatColor: 000000
+drawer: {
+  type: DrawTurret
+  basePrefix: 0b-
+  parts: [
+    {
+      suffix: -barrel
+      y: 6
+      moveY: -8
+      recoilIndex: 0
+      progress: recoil
+      children: [
+        {
+          suffix: -heat
+          blending: additive
+          outline: false
+          color: 000000
+          colorTo: ab3400
+          progress: {
+            type: heat
+            op: slope
+          }
+        }
+        {
+          suffix: -heat
+          blending: additive
+          outline: false
+          color: 000000
+          colorTo: 90a2fc
+          progress: heat
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -top
+    }
+    {
+      suffix: -radiators
+      blending: additive
+      outline: false
+      color: 000000
+      colorTo: ab3400
+      progress: {
+        type: warmup
+        op: slope
+      }
+      y: 7
+    }
+    {
+      suffix: -radiators
+      blending: additive
+      outline: false
+      color: 000000
+      colorTo: 90a2fc
+      y: 7
+    }
+  ]
+}
+coolantMultiplier: 1
+shootType: {
+  speed: 24
+  lifetime: 20
+  damage: 250
+  status: allure-0b-energy2
+  statusDuration: 2
+  pierceDamageFactor: 0.25
+  pierce: true
+  pierceBuilding: true
+  hittable: false
+  sprite: allure-diamond-thin
+  width: 48
+  height: 8
+  rotationOffset: 90
+  frontColor: 90a2fc
+  backSprite: clear-effect
+  trailLength: 20
+  trailWidth: 2
+  trailColor: 7382f0
+  smokeEffect: none
+  shootEffect: {
+    line: true
+    cone: 20
+    particles: 17
+    lifetime: 20
+    length: 30
+    interp: pow3Out
+    sizeInterp: linear
+    lenFrom: 8
+    lenTo: 4
+    strokeFrom: 2
+    strokeTo: 0
+    colorTo: 7382f0
+  }
+  hitEffect: [
+    {
+      line: true
+      cone: 20
+      particles: 8
+      lifetime: 20
+      length: 45
+      interp: pow3Out
+      sizeInterp: linear
+      lenFrom: 8
+      lenTo: 4
+      strokeFrom: 2
+      strokeTo: 0
+      colorTo: 7382f0
+    }
+    {
+      particles: 1
+      cone: 20
+      particles: 12
+      lifetime: 30
+      length: 35
+      interp: pow2Out
+      sizeInterp: linear
+      sizeFrom: 4
+      sizeTo: 0
+      colorFrom: 7382f0
+      colorTo: 7382f088
+    }
+  ]
+  despawnEffect: {
+    line: true
+    cone: 20
+    particles: 17
+    lifetime: 10
+    length: 30
+    interp: pow3Out
+    sizeInterp: linear
+    lenFrom: 8
+    lenTo: 4
+    strokeFrom: 2
+    strokeTo: 0
+    colorTo: 7382f0
+  }
+}
+category: turret
+research: {
+  parent: 0b-tremor
+  objectives: [
+    0b-electromagnetic-acceleration
+  ]
+}
+requirements: [
+  territe-alloy/1200
+  dantrales/400
+  metaglass/250
+  silicon/100
+]

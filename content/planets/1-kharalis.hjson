@@ -1,7 +1,7 @@
 parent: 0a
 radius: 4
 camRadius: 1
-orbitRadius: 90
+orbitRadius: 70
 orbitOffset: 210
 //broken, will have to ask for a bugfix
 atmosphereRadIn: 0.3

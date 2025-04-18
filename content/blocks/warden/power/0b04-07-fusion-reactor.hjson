@@ -50,8 +50,7 @@ drawer: [
 consumes: {
   power: 48
   liquids: [
-    hydrogen/1
-    ozone/0.66666666666
+    plasma/1.25
   ]
 }
 requirements: [

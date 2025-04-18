@@ -3,7 +3,7 @@ itemCapacity: 40
 liquidCapacity: 120
 size: 4
 heatRequirement: 6
-boostScale: 1.33
+overheatScale: 1.33
 craftTime: 80
 rotateDraw: false
 rotate: true

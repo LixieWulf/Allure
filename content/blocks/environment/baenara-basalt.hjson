@@ -4,3 +4,6 @@ liquidMultiplier: 0.75
 isLiquid: true
 shallow: true
 cacheLayer: water
+attributes: {
+  flow: 0.03125
+}

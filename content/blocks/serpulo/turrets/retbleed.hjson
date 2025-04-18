@@ -7,7 +7,6 @@ cooldownTime: 120
 recoilTime: 80
 heatColor: ff0000
 reload: 150
-shots: 1
 recoil: 8
 ammoUseEffect: casing3
 shootSound: railgun

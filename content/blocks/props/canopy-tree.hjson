@@ -14,7 +14,7 @@ shadowAlpha: 0.33
 solid: true
 destructible: true
 health: 15000
-buildCost: 3600
+buildTime: 3600
 instantDeconstruct: false
 clipSize: 240
 breakSound: plantBreak

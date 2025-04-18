@@ -1649,10 +1649,9 @@ weapons: [
       pierceCap: 5
       length: 1024
       width: 18
-      damage: 1.2
-      buildingDamageMultiplier: 1000
+      damage: 12000
       status: allure-0t-thermal4
-      statusDuration: 2
+      statusDuration: 30
       colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
       oscScl: 84
       oscMag: 0.1

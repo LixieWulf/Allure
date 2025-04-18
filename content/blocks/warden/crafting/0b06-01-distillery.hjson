@@ -62,7 +62,7 @@ consumes: {
   liquids: [
     liquid-baenara/1.2
     energia/0.2
-    hydrogen/0.17
+    plasma/0.25
   ]
 }
 outputLiquid: water/1.2

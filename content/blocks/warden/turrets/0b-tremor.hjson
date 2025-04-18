@@ -17,7 +17,7 @@ unitSort: weakest
 consumes: {
   power: 14
   liquids: [
-    liquid-baenara/1
+    plasma/1
   ]
 }
 coolant: {

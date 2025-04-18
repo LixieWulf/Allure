@@ -3,8 +3,8 @@ template: TankUnitType
 shadowElevation: 0.4
 crushDamage: 5
 hitSize: 72
-health: 500000
-armor: 180
+health: 400000
+armor: 500
 faceTarget: false
 speed: 0.8
 accel: 0.1

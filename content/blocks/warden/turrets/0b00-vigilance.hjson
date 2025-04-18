@@ -687,153 +687,213 @@ ammoTypes: {
     ]
   }
   shadow: {
-    type: RailBulletType
     killShooter: true
-    length: 3600
-    pierceCap: 1
+    speed: 24
+    lifetime: 100
     ammoMultiplier: 1
     reloadMultiplier: 0.333
     //Average antimatter round
     damage: 10000000
     maxDamageFraction: 0.33333
-    splashDamage: 80000
-    splashDamageRadius: 480
     collidesGround: false
+    absorbable: false
+    hittable: false
+    sprite: allure-bolt
+    shrinkY: 0
+    width: 48
+    height: 96
+    frontColor: ffffff
+    backColor: ffffff
+    parts: [
+      {
+        type: RegionPart
+        name: allure-railblast
+        outline: false
+        rotation: 90
+        color: ffffff
+        xScl: 1
+        yScl: 1
+      }
+    ]
     setDefaults: false
     despawnHit: false
-    hitSound: explod
-    fragBullets: 16
+    hitSound: none
+    fragBullets: 1
     fragOffsetMin: 0
     fragOffsetMax: 0
-    fragSpread: 22.5
-    fragRandomSpread: 18
+    fragVelocityMin: 1
+    fragVelocityMax: 1
+    fragRandomSpread: 0
     fragBullet: {
-      type: BulletType
-      createChance: 0.5
-      despawnShake: 95
-      speed: 0
-      lifetime: 0
+      speed: 24
+      pierce: true
+      killShooter: true
+      drag: 0.1
+      lifetime: 35
+      damage: 10000000
+      maxDamageFraction: 0.33333
       collides: false
-      hittable: false
       absorbable: false
-      despawnEffect: {
-        region: allure-flash
-        particles: 1
-        length: 0
-        lifetime: 45
-        spin: 1.4
-        sizeFrom: 0
-        sizeTo: 1600
-        colorTo: ffffff00
-        interp: pow3In 
-        sizeInterp: pow2Out
-        layer: 135
+      hittable: false
+      splashDamage: 40000
+      splashDamageRadius: 280
+      sprite: allure-bolt
+      shrinkY: 0
+      width: 48
+      height: 96
+      frontColor: ffffff
+      backColor: ffffff
+      parts: [
+        {
+          type: RegionPart
+          name: allure-railblast
+          outline: false
+          rotation: 90
+          color: ffffff
+          xScl: 1
+          yScl: 1
+        }
+        {
+          type: FlarePart
+          sides: 4
+          rotation: 45
+          color1: ffffff88
+          radius: 0
+          radiusTo: 200
+          stroke: 18
+          innerRadScl: 0.75
+          progress: {
+            type: life
+            op: curve
+            interp: pow2Out
+          }
+          layer: 101
+        }
+        {
+          type: RegionPart
+          name: circle-shadow
+          outline: false
+          rotation: 90
+          color: 00000044
+          xScl: 0
+          yScl: 0
+          layer: 99
+          moves: [
+            {
+              gx: 30
+              gy: 30
+              progress: {
+                type: life
+                op: curve
+                interp: pow2Out
+              }
+            }
+          ]
+        }
+      ]
+      hitSound: none
+      fragBullets: 480
+      fragOffsetMin: 0
+      fragOffsetMax: 0
+      fragBullet: {
+        type: BulletType
+        damage: 55
+        speed: 48
+        lifetime: 120
+        pierce: true
+        pierceBuilding: true
+        absorbable: false
+        hittable: false
       }
+      despawnEffect: [
+        {
+          type: WaveEffect
+          lifetime: 60
+          sizeFrom: 50
+          sizeTo: 960
+          strokeFrom: 12
+          interp: pow3Out
+        }
+        {
+          type: WaveEffect
+          lifetime: 500
+          sizeFrom: 0
+          sizeTo: 2400
+          strokeFrom: 36
+          layer: 29
+          clip: 4000
+        }
+        {
+          particles: 2
+          length: 0
+          region: circle-shadow
+          lifetime: 45
+          sizeFrom: 0
+          sizeTo: 1200
+          colorTo: ffffff00
+          interp: pow3In
+          sizeInterp: pow2Out
+          layer: 135
+        }
+        {
+          particles: 60
+          length: 600
+          lifetime: 90
+          region: circle-shadow
+          interp: pow3Out
+          sizeInterp: pow2In
+          sizeFrom: 60
+          sizeTo: 0
+        }
+        {
+          particles: 60
+          length: 500
+          lifetime: 120
+          region: circle-shadow
+          interp: pow3Out
+          sizeInterp: pow2In
+          sizeFrom: 120
+          sizeTo: 0
+        }
+        {
+          particles: 1
+          length: 0
+          lifetime: 120
+          region: allure-shield
+          sizeFrom: 0
+          sizeTo: 1440
+          colorTo: ffffff00
+          interp: pow3
+          sizeInterp: linear
+        }
+        {
+          particles: 1
+          length: 0
+          lifetime: 120
+          region: circle-shadow
+          sizeFrom: 1200
+          sizeTo: 0
+          colorFrom: 000000
+          colorTo: 00000000
+          layer: 99
+        }
+      ]
     }
-    pointEffectSpace: 160
-    pointEffect: [
-      {
-        lightOpacity: 0.25
-        lightScl: 1
-        type: ParticleEffect
-        length: 0
-        baseLength: 54
-        randLength: false
-        lifetime: 120
-        particles: 1
-        cone: 0
-        interp: pow3In
-        sizeInterp: linear
-        region: allure-railblast
-        sizeFrom: 30
-        sizeTo: 15
-        colorTo: ffffff00
-      }
-      {
-        lightOpacity: 0.25
-        lightScl: 1
-        type: ParticleEffect
-        length: 0
-        baseLength: 40
-        randLength: false
-        lifetime: 80
-        particles: 1
-        cone: 0
-        interp: pow3In
-        sizeInterp: linear
-        region: allure-railblast
-        sizeFrom: 20
-        sizeTo: 10
-        colorTo: ffffff00
-      }
-      {
-        lightOpacity: 0.4
-        lightScl: 0.65
-        type: ParticleEffect
-        length: 0
-        lifetime: 60
-        layer: 110.001
-        particles: 1
-        cone: 0
-        interp: pow3In
-        sizeInterp: linear
-        region: allure-diamond-thin
-        sizeFrom: 40
-        sizeTo: 20
-        colorTo: ffffff00
-      }
-    ]
-    hitEffect: [
-      {
-        type: WaveEffect
-        lifetime: 60
-        sizeFrom: 50
-        sizeTo: 960
-        strokeFrom: 12
-        interp: pow3Out
-      }
-      {
-        type: WaveEffect
-        lifetime: 500
-        sizeFrom: 0
-        sizeTo: 2400
-        strokeFrom: 36
-        layer: 29
-        clip: 4000
-      }
-      {
-        particles: 2
-        length: 0
-        region: circle-shadow
-        lifetime: 45
-        sizeFrom: 0
-        sizeTo: 1200
-        colorTo: ffffff00
-        interp: pow3In
-        sizeInterp: pow2Out
-        layer: 135
-      }
-      {
-        particles: 60
-        length: 600
-        lifetime: 90
-        region: circle-shadow
-        interp: pow3Out
-        sizeInterp: pow2In
-        sizeFrom: 60
-        sizeTo: 0
-      }
-      {
-        particles: 60
-        length: 500
-        lifetime: 120
-        region: circle-shadow
-        interp: pow3Out
-        sizeInterp: pow2In
-        sizeFrom: 120
-        sizeTo: 0
-      }
-    ]
+    trailInterval: 1
+    trailRotation: true
+    trailEffect: {
+      line: true
+      cone: 0
+      cap: false
+      particles: 1
+      lifetime: 25
+      length: 0.0001
+      lenFrom: 12
+      lenTo: 0
+      strokeFrom: 12
+      strokeTo: 6
+      colorTo: ffffff
+    }
     shootEffect: [
       {
         particles: 60
@@ -906,6 +966,55 @@ ammoTypes: {
             sizeTo: 0
           }
         ]
+      }
+    ]
+    hitEffect: [
+      {
+        followParent: false
+        particles: 1
+        length: 20
+        randLength: false
+        lifetime: 30
+        cone: 0
+        offset: 90
+        region: allure-squishwave
+        sizeFrom: 40
+        sizeTo: 80
+        colorTo: ffffff00
+      }
+      {
+        followParent: false
+        particles: 1
+        length: 60
+        randLength: false
+        lifetime: 30
+        cone: 0
+        offset: 90
+        region: allure-squishwave
+        sizeFrom: 30
+        sizeTo: 60
+        colorTo: ffffff00
+      }
+      {
+        particles: 1
+        length: 0
+        lifetime: 40
+        cone: 0
+        region: allure-shootspike
+        sizeFrom: 120
+        sizeTo: 0
+        interp: pow2In
+      }
+      {
+        particles: 1
+        length: 0
+        lifetime: 40
+        cone: 0
+        region: allure-shootspike
+        sizeFrom: 120
+        sizeTo: 60
+        interp: pow2In
+        colorTo: ffffff00
       }
     ]
   }

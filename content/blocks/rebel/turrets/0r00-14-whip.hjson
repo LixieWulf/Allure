@@ -342,13 +342,6 @@ drawer: {
   basePrefix: 0r-
 }
 category: turret
-research: {
-  parent: 0r00-04-flail
-  objectives: [
-    0r00-07-spearhead,
-    0r00-09-gauntlet
-  ]
-}
 requirements: [
   infrastructure/500
   anden/5000

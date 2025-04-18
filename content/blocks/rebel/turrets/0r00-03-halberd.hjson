@@ -41,7 +41,6 @@ consumes: {
   ]
 }
 category: turret
-research: 0r-waraxe
 requirements: [
   beryllium/1500
   anden/800

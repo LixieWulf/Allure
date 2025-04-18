@@ -1,4 +1,4 @@
-damage: 10
+healthMultiplier: 0.9
 effectChance: 0.25
 effect: [
   {

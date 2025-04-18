@@ -5,3 +5,6 @@ liquidDrop: liquid-baenara
 liquidMultiplier: 0.75
 cacheLayer: water
 variants: 3
+attributes: {
+  flow: 0.03125
+}

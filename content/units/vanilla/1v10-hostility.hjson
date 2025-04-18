@@ -5,7 +5,7 @@ groundLayer: 85
 crushDamage: 12
 hitSize: 96
 health: 940000
-armor: 600
+armor: 1200
 faceTarget: false
 speed: 0.8
 accel: 0.1

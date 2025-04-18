@@ -16,7 +16,6 @@ drawShields: false
 lowAltitude: true
 lightRadius: 110
 lightOpacity: 0.11
-commandLimit: 190
 maxRange: 600
 fallSpeed: 1
 crashDamageMultiplier: 0

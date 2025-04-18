@@ -71,7 +71,7 @@ consumes: {
 outputItem: crystal/50
 outputLiquids: [
   steam/10
-  supercoolant/0.15
+  supercoolant/0.25
 ]
 liquidOutputDirections: [1, 3]
 category: power

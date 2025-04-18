@@ -1,29 +1,73 @@
 type: ItemTurret
 squareSprite: false
 size: 5
-rotateSpeed: 1.5
+rotateSpeed: 1
 shootCone: 360
-range: 0
+range: 64
 liquidCapacity: 1440
-reload: 140
+reload: 280
 shootY: 0
 recoil: 0
 outlineIcon: false
-alwaysShooting: true
 targetGround: false
 targetAir: false
+alwaysShooting: true
+shootSound: lasershoot
 shoot: {
   type: ShootSpread
   shots: 2
   spread: 180
 }
 consumes: {
-  power: 36
+  power: 24
   liquids: [
     liquid-baenara/2
   ]
 }
-ammoPerShot: 6
+shootEffect: [
+  {
+    line: true
+    baseRotation: 90
+    cone: 0
+    length: 0.001
+    particles: 1
+    lifetime: 45
+    sizeInterp: pow3Out
+    cap: false
+    lenFrom: 0
+    lenTo: 224
+    strokeFrom: 144
+    strokeTo: 144
+    colorFrom: 83f793
+    colorTo: 83f79300
+    layer: 84.75
+  }
+]
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    -icon
+  ]
+  drawers: [
+    {
+      type: DrawTurret
+      turretLayer: 85
+      shadowLayer: 84.5
+      parts: [
+        {
+          type: RegionPart
+          name: allure-unusually-organized-rectangle
+          layer: 125
+          outline: false
+          color: 83f793
+          xScl: 4.25
+          yScl: 14
+        }
+      ]
+    }
+  ]
+}
+ammoPerShot: 14
 ammoTypes: {
   baenite: {
     ammoMultiplier: 1
@@ -36,65 +80,16 @@ ammoTypes: {
     lightningType: {
       type: BulletType
       speed: 8
-      lifetime: 26
+      lifetime: 27
       absorbable: false
       hittable: false
       pierce: true
       pierceBuilding: true
       collidesTeam: true
-      healAmount: 50
+      healAmount: 120
       despawnEffect: none
     }
   }
-}
-drawer: {
-  type: DrawMulti
-  iconOverride: [
-    -icon
-  ]
-  drawers: [
-    {
-      type: DrawTurret
-      basePrefix: -zdfgbjhvgjabkhj
-      parts: [
-        {
-          type: RegionPart
-          suffix: -rotator
-          progress: smoothReload
-          moveRot: -90
-          layerOffset: 4
-          color: ffffff
-          outline: false
-          children: [
-            {
-              type: RegionPart
-              suffix: -rotator
-              progress: smoothReload
-              color: ffffff00
-              colorTo: ffffff
-              outline: false
-              rotation: 90
-              layerOffset: 5
-            }
-          ]
-        }
-        {
-          type: RegionPart
-          name: allure-unusually-organized-rectangle
-          layer: 125
-          outline: false
-          color: 83f79344
-          colorTo: 83f793
-          xScl: 4.25
-          yScl: 14
-        }
-      ]
-    }
-    {
-      type: DrawRegion
-      suffix: -bottom
-    }
-  ]
 }
 category: effect
 requirements: [

@@ -16,6 +16,6 @@ consumes: {
     kerosene/0.075
   ]
 }
-buildCost: 151200
+buildTime: 151200
 category: crafting
 buildVisibility: sandboxOnly

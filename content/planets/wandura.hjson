@@ -8,9 +8,9 @@ generator: {
   berylChance: 0.45
   iceChance: 0.15
   ferricChance: 0.55
-  stoneChance: 2
-  radMin: 1500
-  radMax: 1500
+  stoneChance: 0.001
+  radMin: 25
+  radMax: 25
   berylliumScale: 4
   copperScale: 0.6
   scale: 25
@@ -24,7 +24,7 @@ sectorSize: 3.1
 //terrain generation seed the planet uses for its sectors
 sectorSeed: -4
 //sector to start on - probably make this a preset sector
-startSector: 23
+startSector: 10
 //parent to orbit around and follow
 parent: 0a
 //icon colour
@@ -36,7 +36,7 @@ atmosphereRadOut: 0.35
 //colour of the atmosphere
 atmosphereColor: 3898a1
 //orbit radius, measured in units i do not know
-orbitRadius: 39
+orbitRadius: 38
 //angle of the starting position of the orbit, so that all planets are not in the same line 
 orbitOffset: 140
 //time taken to complete one full orbit, in seconds
@@ -46,11 +46,10 @@ rotateTime: 5000
 //add tidalLock: true and updateLighting: false to make a planet's daylight not move
 //whether this planet can be selected, ever
 accessible: true
-alwaysUnlocked: true
 //whether to allow launching to numbered sectors - set to false for erekir sector behaviour
 allowLaunchToNumbered: false
 //planet environmental factors
-defaultEnv: 129
+defaultEnv: 193
 //content unlocked when landing on this planet
 unlockedOnLand: [
   allure-0bc0-nexus,
@@ -77,6 +76,7 @@ defaultCore: 0bc0-nexus
 mesh: [
   {
     type: NoiseMesh
+    seed: -5
     divisions: 5
     radius: 0.943
     color1: 28a699
@@ -92,6 +92,7 @@ mesh: [
   }
   {
     type: NoiseMesh
+    seed: -5
     divisions: 5
     radius: 1.019
     color1: 43baba
@@ -107,6 +108,7 @@ mesh: [
   }
   {
     type: NoiseMesh
+    seed: -5
     divisions: 6
     radius: 1.0088
     color1: 8cb3a3
@@ -125,6 +127,8 @@ mesh: [
     type: NoiseMesh
     //number of hexagons - like sectors, this is exponential, so beware of frying your GPU (although your GPU can handle way more hexagons here)
     divisions: 6
+    //seed - different seeds mean the details of the mesh generate differently
+    seed: -5
     //mesh size - 1 is serpulo
     radius: 0.998
     //first colour to use 
@@ -145,6 +149,7 @@ mesh: [
   {
     type: NoiseMesh
     divisions: 6
+    seed: -5
     radius: 0.945
     color1: 6aa95e
     color2: 80cb71
@@ -160,6 +165,7 @@ mesh: [
   {
     type: NoiseMesh
     divisions: 6
+    seed: -5
     radius: 0.884
     color1: 56c774
     color2: 3e9d6b
@@ -175,6 +181,7 @@ mesh: [
   {
     type: NoiseMesh
     divisions: 6
+    seed: -5
     radius: 0.818
     color1: c1c4cb
     color2: 525252
@@ -190,6 +197,7 @@ mesh: [
   {
     type: NoiseMesh
     divisions: 6
+    seed: -5
     radius: 0.721
     color1: d1efff
     color2: d1efff
@@ -209,6 +217,7 @@ cloudMesh: [
     type: HexSkyMesh
     //rotate speed 
     speed: 3
+    seed: 7
     divisions: 6
     //this radius value is based on the planet "surface", not the "core" of the planet, unlike noise meshes
     radius: 0.1
@@ -222,6 +231,7 @@ cloudMesh: [
   }
   {
     type: HexSkyMesh
+    seed: 5
     speed: 2
     divisions: 6
     radius: 0.11
@@ -243,3 +253,10 @@ cloudMesh: [
     thresh: 0.4
   }
 ]
+//research
+research: {
+  parent: 0b-begin
+  objectives: [
+    interplanetary-accelerator
+  ]
+}
