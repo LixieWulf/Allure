@@ -1,0 +1,9 @@
+consumes: {
+  remove: [
+    items
+  ]
+  items: [
+    thorium/4
+    sand/12
+  ]
+}

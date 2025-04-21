@@ -3,11 +3,11 @@ type: ItemTurret
 liquidCapacity: 20
 size: 2
 health: 800
-range: 140
+range: 160
 targetGround: true
 targetAir: true
 reload: 30
-recoil: 3.2
+recoil: 2.5
 inaccuracy: 2
 shootSound: none //this is handled by the bullets
 shoot: {
@@ -17,13 +17,66 @@ shoot: {
 }
 ammoPerShot: 2
 ammoTypes: {
+  lead: {
+    damage: 14
+    speed: 4
+    lifetime: 40
+    reloadMultiplier: 0.8
+    height: 15
+    width: 10
+    frontColor: b3b7cf
+    backColor: 8c7fa9
+    hitColor: 8c7fa9
+    hitEffect: hitBulletColor
+    despawnEffect: hitBulletColor
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    spawnBullets: [
+      {
+        type: EmptyBulletType
+        lifetime: 0
+        despawnEffect: none
+        despawnSound: shootSnap
+        despawnShake: 0.5
+      }
+    ]
+  }
+  scrap: {
+    damage: 3
+    speed: 5
+    lifetime: 40
+    reloadMultiplier: 1.35
+    ammoMultiplier: 3
+    splashDamage: 29
+    splashDamageRadius: 15
+    inaccuracy: 18
+    rangeChange: 40
+    height: 12
+    width: 9
+    frontColor: f5e0cc
+    backColor: d8887e
+    hitColor: d8887e
+    hitEffect: flakExplosion
+    despawnEffect: hitBulletColor
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    spawnBullets: [
+      {
+        type: EmptyBulletType
+        lifetime: 0
+        despawnEffect: none
+        despawnSound: shootSnap
+        despawnShake: 0.5
+      }
+    ]
+  }
   pyratite: {
-    damage: 32
-    splashDamage: 8
-    splashDamageRadius: 14
-    speed: 2.5
-    lifetime: 50
-    reloadMultiplier: 0.7
+    damage: 14
+    splashDamage: 16
+    splashDamageRadius: 15
+    speed: 4
+    lifetime: 40
+    reloadMultiplier: 0.85
     ammoMultiplier: 7
     height: 12
     width: 8
@@ -39,76 +92,64 @@ ammoTypes: {
     makeFire: true 
     spawnBullets: [
       {
-        spawnUnit: allure-shootUnit
+        type: EmptyBulletType
+        lifetime: 0
+        despawnEffect: none
+        despawnSound: shootSnap
+        despawnShake: 0.5
       }
     ]
   }
   silicon: {
-    damage: 16
+    damage: 19
     speed: 4
-    lifetime: 45
+    lifetime: 40
     reloadMultiplier: 1.8
-    ammoMultiplier: 4
-    rangeChange: 16
+    ammoMultiplier: 6
     height: 12
     width: 8
+    frontColor: 999ba0
+    backColor: 707594
+    hitColor: 707594
+    hitEffect: hitBulletColor
+    despawnEffect: hitBulletColor
     shootEffect: shootSmall
     smokeEffect: shootSmallSmoke
     homingPower: 0.1
+    homingRange: 35
     spawnBullets: [
       {
-        spawnUnit: allure-shootUnit
+        type: EmptyBulletType
+        lifetime: 0
+        despawnEffect: none
+        despawnSound: shootSnap
+        despawnShake: 0.5
       }
     ]
   }
   thorium: {
-    damage: 51
-    speed: 3
-    lifetime: 60
+    damage: 25
+    pierce: true
+    pierceCap: 2
+    speed: 4
+    lifetime: 40
     ammoMultiplier: 3
     height: 22
     width: 13
-    shootEffect: shootSmall
+    frontColor: ffffff
+    backColor: f595be
+    hitColor: f595be
+    hitEffect: hitBulletColor
+    despawnEffect: hitBulletColor
+    shootEffect: shootBig
     smokeEffect: shootSmallSmoke
     spawnBullets: [
       {
-        spawnUnit: allure-shootUnit
-      }
-    ]
-  }
-  scrap: {
-    damage: 3
-    speed: 5
-    lifetime: 40
-    reloadMultiplier: 1.35
-    ammoMultiplier: 3
-    splashDamage: 37
-    splashDamageRadius: 15
-    inaccuracy: 18
-    rangeChange: 60
-    height: 12
-    width: 9
-    shootEffect: shootSmall
-    smokeEffect: shootSmallSmoke
-    hitEffect: flakExplosion
-    spawnBullets: [
-      {
-        spawnUnit: allure-shootUnit
-      }
-    ]
-  }
-  lead: {
-    damage: 28
-    speed: 2.5
-    lifetime: 50
-    reloadMultiplier: 0.8
-    height: 15
-    width: 10
-    shootEffect: shootSmall
-    smokeEffect: shootSmallSmoke
-    spawnBullets: [
-      {
-        spawnUnit: allure-shootUnit
+        type: EmptyBulletType
+        lifetime: 0
+        despawnEffect: none
+        despawnSound: shootBig
+        despawnShake: 1
       }
     ]
   }

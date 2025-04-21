@@ -66,9 +66,9 @@ ammoTypes: {
     sprite: shell
     width: 13
     height: 17
-    frontColor: ffd2ae
-    backColor: e58956
-    trailColor: e58956
+    frontColor: eeab89
+    backColor: e9665b
+    trailColor: e9665b
     trailChance: 0.15
     hitEffect: massiveExplosion
     status: blasted

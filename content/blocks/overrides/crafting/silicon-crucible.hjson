@@ -1,0 +1,11 @@
+consumes: {
+  remove: [
+    items
+  ]
+  items: [
+    pyratite/1
+    coal/3
+    sand/9
+  ]
+}
+outputItem: silicon/9

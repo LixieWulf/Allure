@@ -13,7 +13,6 @@ atmosphereColor: 888888
 orbitRadius: 12
 orbitOffset: 50
 accessible: true
-alwaysUnlocked: true
 icon: command-rally
 iconColor: 787878
 mesh: [

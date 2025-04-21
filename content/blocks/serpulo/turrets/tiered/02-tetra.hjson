@@ -1,7 +1,7 @@
 type: ItemTurret
 liquidCapacity: 30
 size: 4
-range: 140
+range: 240
 health: 1600
 reload: 30
 recoil: 3.2
@@ -25,92 +25,110 @@ shoot: {
 }
 ammoPerShot: 4
 ammoTypes: {
-  pyratite: {
-    damage: 32
-    speed: 2.5
-    lifetime: 50
-    reloadMultiplier: 0.7
-    ammoMultiplier: 7
-    height: 12
-    width: 8
-    frontColor: f8ad42
-    backColor: f68021
-    shootEffect: shootSmall
-    smokeEffect: shootSmallSmoke
-    status: burning
-    makeFire: true 
-    spawnBullets: [
-      {
-        spawnUnit: allure-shootUnit
-      }
-    ]
-  }
-  silicon: {
-    damage: 16
-    speed: 4
-    lifetime: 45
-    reloadMultiplier: 1.8
-    ammoMultiplier: 4
-    rangeChange: 16
-    height: 12
-    width: 8
-    shootEffect: shootSmall
-    smokeEffect: shootSmallSmoke
-    homingPower: 0.1
-    spawnBullets: [
-      {
-        spawnUnit: allure-shootUnit
-      }
-    ]
-  }
-  thorium: {
-    damage: 51
-    speed: 3
-    lifetime: 60
+  titanium: {
+    type: ShrapnelBulletType
+    length: 240
+    width: 12
+    damage: 25
     ammoMultiplier: 3
-    height: 22
-    width: 13
-    shootEffect: shootSmall
-    smokeEffect: shootSmallSmoke
     spawnBullets: [
       {
-        spawnUnit: allure-shootBigUnit
+        type: EmptyBulletType
+        lifetime: 0
+        despawnEffect: none
+        despawnSound: shotgun
+        despawnShake: 1
       }
     ]
   }
-  scrap: {
-    damage: 3
-    speed: 5
-    lifetime: 40
-    reloadMultiplier: 1.35
+  plastanium: {
+    damage: 25
+    splashDamage: 35
+    splashDamageRadius: 25
     ammoMultiplier: 3
-    splashDamage: 37
-    splashDamageRadius: 15
-    inaccuracy: 18
-    rangeChange: 60
-    height: 12
-    width: 9
-    shootEffect: shootSmall
-    smokeEffect: shootSmallSmoke
-    hitEffect: flakExplosion
+    speed: 8
+    lifetime: 30
+    width: 11
+    height: 17
+    frontColor: fffac6
+    backColor: d8d97f
+    trailColor: d8d97f
+    trailChance: 0.15
+    hitEffect: plasticExplosion
+    fragBullets: 12
+    fragLifeMin: 0
+    fragBullet: {
+      collidesGround: false
+      damage: 40
+      speed: 3
+      lifetime: 15
+      width: 6
+      height: 12
+      shrinkY: 1
+      frontColor: fffac6
+      backColor: d8d97f
+      despawnEffect: none
+    }
     spawnBullets: [
       {
-        spawnUnit: allure-shootUnit
+        type: EmptyBulletType
+        lifetime: 0
+        despawnEffect: none
+        despawnSound: shootSnap
+        despawnShake: 0.75
       }
     ]
   }
   coal: {
     type: BulletType
     inaccuracy: 6
-    damage: 32
+    damage: 19
     reloadMultiplier: 5
-    ammoMultiplier: 12
-    rangeChange: -80
-    speed: 3.35
-    lifetime: 18
+    ammoMultiplier: 6
+    rangeChange: -120
+    speed: 6
+    lifetime: 20
     hitSize: 7
     pierce: true
-    shootEffect: shootSmallFlame
+    shootEffect: [
+      {
+        particles: 3
+        cone: 8
+        lifetime: 25
+        length: 120
+        interp: pow3Out
+        sizeInterp: linear
+        sizeFrom: 2
+        sizeTo: 0
+        colorFrom: ffdd55
+        colorTo: db401c
+      }
+      {
+        particles: 3
+        cone: 8
+        lifetime: 30
+        length: 120
+        interp: pow3Out
+        sizeInterp: linear
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: ffdd55
+        colorTo: db401c
+      }
+      {
+        particles: 3
+        cone: 10
+        lifetime: 45
+        length: 120
+        interp: pow2Out
+        sizeInterp: linear
+        sizeFrom: 5
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        layer: 105
+      }
+    ]
     hitEffect: hitFlameSmall
     despawnEffect: none
     status: burning
@@ -118,7 +136,10 @@ ammoTypes: {
     hittable: false
     spawnBullets: [
       {
-        spawnUnit: allure-flameUnit
+        type: EmptyBulletType
+        lifetime: 0
+        despawnEffect: none
+        despawnSound: flame
       }
     ]
   }
@@ -133,6 +154,7 @@ maxAmmo: 40
 category: turret
 research: 01-tri
 requirements: [
-  copper/200
-  graphite/80
+  copper/300
+  graphite/200
+  plastanium/120
 ]

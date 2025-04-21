@@ -1,7 +1,7 @@
 type: ItemTurret
 liquidCapacity: 25
 size: 3
-range: 140
+range: 200
 health: 1200
 reload: 30
 recoil: 3.2
@@ -25,78 +25,113 @@ shoot: {
 ammoPerShot: 3
 ammoTypes: {
   pyratite: {
-    damage: 32
-    speed: 2.5
+    damage: 19
+    splashDamage: 25
+    splashDamageRadius: 15
+    speed: 4
     lifetime: 50
-    reloadMultiplier: 0.7
-    ammoMultiplier: 7
+    reloadMultiplier: 0.85
+    ammoMultiplier: 5
     height: 12
     width: 8
     frontColor: f8ad42
     backColor: f68021
     shootEffect: shootSmall
     smokeEffect: shootSmallSmoke
+    hitEffect: [
+      hitBulletSmall, 
+      fireHit
+    ]
     status: burning
     makeFire: true 
     spawnBullets: [
       {
-        spawnUnit: allure-shootUnit
+        type: EmptyBulletType
+        lifetime: 0
+        despawnEffect: none
+        despawnSound: shootSnap
+        despawnShake: 0.5
       }
     ]
   }
   silicon: {
-    damage: 16
+    damage: 23
     speed: 4
-    lifetime: 45
+    lifetime: 40
     reloadMultiplier: 1.8
     ammoMultiplier: 4
-    rangeChange: 16
     height: 12
     width: 8
+    frontColor: 999ba0
+    backColor: 707594
+    hitColor: 707594
+    hitEffect: hitBulletColor
+    despawnEffect: hitBulletColor
     shootEffect: shootSmall
     smokeEffect: shootSmallSmoke
     homingPower: 0.1
+    homingRange: 35
     spawnBullets: [
       {
-        spawnUnit: allure-shootUnit
+        type: EmptyBulletType
+        lifetime: 0
+        despawnEffect: none
+        despawnSound: shootSnap
+        despawnShake: 0.5
       }
     ]
   }
   thorium: {
-    damage: 51
-    speed: 3
-    lifetime: 60
+    damage: 32
+    pierce: true
+    pierceCap: 3
+    speed: 5
+    lifetime: 40
     ammoMultiplier: 3
     height: 22
     width: 13
-    shootEffect: shootSmall
+    frontColor: ffffff
+    backColor: f595be
+    hitColor: f595be
+    hitEffect: hitBulletColor
+    despawnEffect: hitBulletColor
+    shootEffect: shootBig
     smokeEffect: shootSmallSmoke
     spawnBullets: [
       {
-        spawnUnit: allure-shootBigUnit
+        type: EmptyBulletType
+        lifetime: 0
+        despawnEffect: none
+        despawnSound: shootBig
+        despawnShake: 1
       }
     ]
   }
   blast-compound: {
     damage: 12
     splashDamage: 31
-    splashDamageRadius: 22
+    splashDamageRadius: 34
     inaccuracy: 7
-    speed: 3
-    lifetime: 60
+    speed: 4
+    lifetime: 50
     ammoMultiplier: 6
     height: 20
-    width: 16
-    frontColor: ffd2ae
-    backColor: e58956
+    width: 13
+    frontColor: eeab89
+    backColor: e9665b
+    hitColor: e9665b
     shootEffect: shootSmall
     smokeEffect: shootSmallSmoke
     hitEffect: massiveExplosion
-    despawnEffect: massiveExplosion
+    despawnEffect: hitBulletColor
     status: blasted
     spawnBullets: [
       {
-        spawnUnit: allure-shootUnit
+        type: EmptyBulletType
+        lifetime: 0
+        despawnEffect: none
+        despawnSound: shootSnap
+        despawnShake: 1
       }
     ]
   }
@@ -111,6 +146,7 @@ maxAmmo: 30
 category: turret
 research: 00-twin
 requirements: [
-  copper/150
-  graphite/60
+  copper/250
+  graphite/100
+  titanium/80
 ]
