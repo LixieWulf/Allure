@@ -29,7 +29,7 @@ heatColor: 000000
 recoils: 2
 drawer: {
   type: DrawTurret
-  basePrefix: 0b-
+  basePrefix: 0b0-
   parts: [
     {
       suffix: -barrel-r

@@ -1,0 +1,267 @@
+type: PowerTurret
+squareSprite: false
+size: 6
+reload: 70
+rotateSpeed: 0.9
+range: 540
+recoil: 1
+recoilTime: 280
+shootSound: shootSmite
+chargeSound: lasercharge2
+shootWarmupSpeed: 0.001
+shoot: {
+  type: shootAlternate
+  spread: 0
+  firstShotDelay: 40
+}
+recoils: 2
+outlineColor: 212229
+liquidCapacity: 40
+shake: 5
+//Be REALLY accurate
+shootCone: 0.25
+//Yes, a railgun targets the weakest enemies. This may be considered deranged, but it's not like it does anything to chunkier units.
+unitSort: weakest
+consumes: {
+  power: 17
+  liquids: [
+    plasma/6
+  ]
+}
+coolant: {
+  type: ConsumeLiquid
+  liquid: energia
+  amount: 3
+}
+heatColor: 000000
+drawer: {
+  type: DrawTurret
+  basePrefix: 0b2-
+  parts: [
+    {
+      suffix: -barrel1
+      layer: 49
+      y: 0
+      moveY: -8
+      recoilIndex: 0
+      progress: {
+        type: recoil
+        op: compress
+        start: 0.9
+        end: 1
+      }
+      children: [
+        { 
+          type: RegionPart
+          suffix: -flare1
+          outline: false
+          blending: additive
+          color: 7382f0
+          colorTo: ffffff
+          progress: charge
+        }
+        {
+          suffix: -barrel-heat1
+          blending: additive
+          outline: false
+          color: 000000
+          colorTo: ab3400
+          progress: {
+            type: recoil
+            op: slope
+          }
+          recoilIndex: 0
+        }
+        {
+          suffix: -barrel-heat1
+          blending: additive
+          outline: false
+          color: 000000
+          colorTo: 90a2fc
+          progress: recoil
+          recoilIndex: 0
+        }
+      ]
+    }
+    {
+      suffix: -barrel0
+      y: 6
+      moveY: -8
+      recoilIndex: 1
+      progress: {
+        type: recoil
+        op: compress
+        start: 0.9
+        end: 1
+      }
+      children: [
+        { 
+          type: RegionPart
+          suffix: -flare0
+          outline: false
+          blending: additive
+          color: 7382f0
+          colorTo: ffffff
+          progress: charge
+        }
+        {
+          suffix: -barrel-heat0
+          blending: additive
+          outline: false
+          color: 000000
+          colorTo: ab3400
+          progress: {
+            type: recoil
+            op: slope
+          }
+          recoilIndex: 1
+        }
+        {
+          suffix: -barrel-heat0
+          blending: additive
+          outline: false
+          color: 000000
+          colorTo: 90a2fc
+          progress: recoil
+          recoilIndex: 1
+        }
+      ]
+    }
+    {
+      type: RegionPart
+    }
+    {
+      suffix: -radiators
+      blending: additive
+      outline: false
+      color: 000000
+      colorTo: ab3400
+      progress: {
+        type: warmup
+        op: slope
+      }
+    }
+    {
+      suffix: -radiators
+      blending: additive
+      outline: false
+      color: 000000
+      colorTo: 90a2fc
+    }
+  ]
+}
+coolantMultiplier: 0.66666
+shootType: {
+  type: RailBulletType
+  length: 530
+  damage: 1600
+  status: allure-0b-energy2
+  statusDuration: 3
+  pierceCap: 1
+  pierceEffect: none
+  pointEffectSpace: 4
+  pointEffect: [
+    {
+      line: true
+      particles: 1
+      cone: 0
+      length: 0.01
+      baseLength: 0
+      cap: false
+      lifetime: 30
+      strokeFrom: 7
+      strokeTo: 0
+      lenFrom: 6
+      lenTo: 6
+      colorFrom: 7382f0
+      colorTo: 7382f0
+      layer: 105
+    }
+    {
+      line: true
+      particles: 1
+      cone: 0
+      length: 0.01
+      baseLength: 0
+      cap: false
+      lifetime: 20
+      strokeFrom: 5
+      strokeTo: 0
+      lenFrom: 6
+      lenTo: 6
+    }
+  ]
+  shootEffect: [
+    {
+      line: true
+      cone: 20
+      particles: 17
+      lifetime: 20
+      length: 70
+      interp: pow3Out
+      sizeInterp: linear
+      lenFrom: 12
+      lenTo: 6
+      strokeFrom: 3
+      strokeTo: 0
+      colorTo: 7382f0
+    }
+    {
+      particles: 1
+      length: 20
+      randLength: false
+      lifetime: 30
+      cone: 0
+      offset: 90
+      region: allure-squishwave
+      sizeFrom: 20
+      sizeTo: 40
+      colorFrom: 7382f0
+      colorTo: 7382f000
+      layer: 108
+    }
+  ]
+  hitEffect: [
+    {
+      line: true
+      cone: 20
+      particles: 17
+      lifetime: 20
+      length: 70
+      interp: pow3Out
+      sizeInterp: linear
+      lenFrom: 12
+      lenTo: 6
+      strokeFrom: 3
+      strokeTo: 0
+      colorTo: 7382f0
+    }
+    {
+      particles: 1
+      length: 20
+      randLength: false
+      lifetime: 30
+      cone: 0
+      offset: 90
+      region: allure-squishwave
+      sizeFrom: 20
+      sizeTo: 40
+      colorFrom: 7382f0
+      colorTo: 7382f000
+      layer: 108
+    }
+  ]
+}
+category: turret
+research: {
+  parent: 0b-quake
+  objectives: [
+    0b-electromagnetic-acceleration
+  ]
+}
+requirements: [
+  territe-alloy/1800
+  dantrales/700
+  silicon/600
+  baenite/350
+]

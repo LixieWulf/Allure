@@ -1,0 +1,102 @@
+type: mech
+health: 35000
+armor: 56
+speed: 0.4
+rotateSpeed: 2
+hitSize: 22
+visualElevationScl: 0.3
+mechSideSway: 0.8
+mechStepParticles: true
+weapons: [
+  {
+    name: annihilatron-weapon
+    mirror: false
+    x: 0
+    y: 3
+    reload: 420
+    recoil: 8
+    shootSound: largeCannon
+    bullet: {
+      damage: 200
+      speed: 3
+      width: 30
+      height: 22
+      splashDamageRadius: 80
+      splashDamage: 200
+      hitEffect: sapExplosion
+      hitSound: explosion
+      hitShake: 4
+      frontColor: bf92f9
+      backColor: 6d56bf
+      trailColor: 6d56bf
+      trailLength: 16
+      trailWidth: 5
+      homingPower: 0.08
+      homingRange: 600
+      lifetime: 140
+      fragLifeMax: 1.2
+      fragBullet: {
+        damage: 100
+        speed: 4
+        width: 20
+        height: 14
+        splashDamageRadius: 48
+        splashDamage: 80
+        hitEffect: sapExplosion
+        hitSound: explosion
+        hitShake: 2
+        frontColor: bf92f9
+        backColor: 6d56bf
+        trailColor: 6d56bf
+        trailLength: 10
+        trailWidth: 3
+        homingPower: 0.08
+        homingRange: 360
+        lifetime: 90
+        fragLifeMax: 1.2
+        fragBullet: {
+          damage: 50
+          speed: 5
+          width: 14
+          height: 8
+          splashDamageRadius: 32
+          splashDamage: 50
+          hitEffect: flakExplosion
+          hitSound: explosion
+          hitShake: 1
+          frontColor: bf92f9
+          backColor: 6d56bf
+          trailColor: 6d56bf
+          trailLength: 7
+          trailWidth: 2
+          homingPower: 0.08
+          homingRange: 240
+          lifetime: 140
+          fragLifeMax: 1.2
+          fragBullet: {
+            damage: 25
+            speed: 9
+            width: 7
+            height: 4
+            splashDamageRadius: 8
+            splashDamage: 8
+            hitEffect: hitBulletColor
+            despawnEffect: hitBulletColor
+            frontColor: bf92f9
+            backColor: 6d56bf
+            hitColor: 6d56bf
+            trailColor: 6d56bf
+            trailLength: 5
+            trailWidth: 1
+            homingPower: 0.08
+            homingRange: 240
+            lifetime: 100
+          }
+          fragBullets: 25
+        }
+        fragBullets: 8
+      }
+      fragBullets: 5
+    }
+  }
+]

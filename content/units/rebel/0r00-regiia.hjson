@@ -75,7 +75,7 @@ weapons: [
   }
   //engines
   {
-    y: -3.5
+    y: -6.5
     x: 2
     shootY: 0
     baseRotation: 180
@@ -131,7 +131,7 @@ weapons: [
     }
   }
   {
-    y: -3.5
+    y: -6.5
     x: 2
     shootY: 0
     baseRotation: 180
@@ -188,8 +188,9 @@ weapons: [
   }
   //idle flames
   {
-    y: -3.5
+    y: -6.5
     x: 2
+    shootY: 0
     baseRotation: 180
     alwaysShooting: true
     alwaysContinuous: true
@@ -219,7 +220,28 @@ weapons: [
       lightOpacity: 0.25
     }
   }
+  //death
+  {
+    x: 0
+    rotate: true
+    rotateSpeed: 0
+    controllable: false
+    shootY: 0
+    shootCone: 360
+    shootOnDeath: true
+    shootSound: none
+    bullet: {
+      shootEffect: none
+      smokeEffect: none
+      spawnUnit: allure-0r00-01-00-regiia-deamth
+    }
+  }
 ]
 research: 0r-begin
 envEnabled: -1
 envDisabled: 4
+deathSound: none
+deathExplosionEffect: none
+createWreck: false
+createScorch: false
+crashDamageMultiplier: 0

@@ -1,1 +1,9 @@
 craftTime: 80
+consumes: {
+  remove: [
+    liquid
+  ]
+  liquids: [
+    water/0.4
+  ]
+}

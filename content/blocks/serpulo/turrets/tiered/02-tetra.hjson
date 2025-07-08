@@ -1,33 +1,28 @@
 type: ItemTurret
 liquidCapacity: 30
 size: 4
-range: 240
+range: 200
 health: 1600
 reload: 30
 recoil: 3.2
 inaccuracy: 2
+cooldownTime: 55
 shootSound: none //this is handled by the bullets
 shoot: {
-  type: ShootMulti
-  source: ShootAlternate
-  dest: [
-    {
-      type: ShootBarrel
-      shots: 4
-      barrels: [
-        11, -6, 0
-        6, 0, 0
-        -6, 0, 0
-        -11, -6, 0
-      ]
-    }
+  type: ShootBarrel
+  shots: 4
+  barrels: [
+    11, -6, 0
+    6, 0, 0
+    -6, 0, 0
+    -11, -6, 0
   ]
 }
 ammoPerShot: 4
 ammoTypes: {
   titanium: {
     type: ShrapnelBulletType
-    length: 240
+    length: 200
     width: 12
     damage: 25
     ammoMultiplier: 3
@@ -42,11 +37,12 @@ ammoTypes: {
     ]
   }
   plastanium: {
-    damage: 25
+    damage: 45
     splashDamage: 35
     splashDamageRadius: 25
     ammoMultiplier: 3
-    speed: 8
+    inaccuracy: 6
+    speed: 7
     lifetime: 30
     width: 11
     height: 17
@@ -85,8 +81,8 @@ ammoTypes: {
     damage: 19
     reloadMultiplier: 5
     ammoMultiplier: 6
-    rangeChange: -120
-    speed: 6
+    rangeChange: -100
+    speed: 5
     lifetime: 20
     hitSize: 7
     pierce: true
@@ -144,10 +140,10 @@ ammoTypes: {
     ]
   }
 }
-coolantMultiplier: 5
+coolantMultiplier: 2
 consumes: {
   coolant: {
-    amount: 0.2
+    amount: 0.8
   }
 }
 maxAmmo: 40

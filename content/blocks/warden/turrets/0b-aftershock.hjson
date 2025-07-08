@@ -34,7 +34,7 @@ coolant: {
 heatColor: 000000
 drawer: {
   type: DrawTurret
-  basePrefix: 0b-
+  basePrefix: 0b1-
   parts: [
     {
       suffix: -heat

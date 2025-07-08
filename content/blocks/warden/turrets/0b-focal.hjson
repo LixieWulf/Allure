@@ -21,7 +21,7 @@ shootWarmupSpeed: 0.02
 heatColor: 000000
 drawer: {
   type: DrawTurret
-  basePrefix: 0b-
+  basePrefix: 0b0-
   parts: [
     {
       suffix: -heat

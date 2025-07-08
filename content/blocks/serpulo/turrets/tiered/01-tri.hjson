@@ -1,25 +1,20 @@
 type: ItemTurret
 liquidCapacity: 25
 size: 3
-range: 200
+range: 180
 health: 1200
 reload: 30
 recoil: 3.2
 inaccuracy: 2
+cooldownTime: 45
 shootSound: none //this is handled by the bullets
 shoot: {
-  type: ShootMulti
-  source: ShootAlternate
-  dest: [
-    {
-      type: ShootBarrel
-      shots: 3
-      barrels: [
-        0, 0, 0,
-        6, 2, 0,
-        -6, 2, 0,
-      ]
-    }
+  type: ShootBarrel
+  shots: 3
+  barrels: [
+    0, 0, 0,
+    6, 2, 0,
+    -6, 2, 0,
   ]
 }
 ammoPerShot: 3
@@ -29,7 +24,7 @@ ammoTypes: {
     splashDamage: 25
     splashDamageRadius: 15
     speed: 4
-    lifetime: 50
+    lifetime: 45
     reloadMultiplier: 0.85
     ammoMultiplier: 5
     height: 12
@@ -57,7 +52,7 @@ ammoTypes: {
   silicon: {
     damage: 23
     speed: 4
-    lifetime: 40
+    lifetime: 50
     reloadMultiplier: 1.8
     ammoMultiplier: 4
     height: 12
@@ -86,7 +81,7 @@ ammoTypes: {
     pierce: true
     pierceCap: 3
     speed: 5
-    lifetime: 40
+    lifetime: 35
     ammoMultiplier: 3
     height: 22
     width: 13
@@ -113,7 +108,7 @@ ammoTypes: {
     splashDamageRadius: 34
     inaccuracy: 7
     speed: 4
-    lifetime: 50
+    lifetime: 45
     ammoMultiplier: 6
     height: 20
     width: 13
@@ -136,10 +131,10 @@ ammoTypes: {
     ]
   }
 }
-coolantMultiplier: 10
+coolantMultiplier: 3.75
 consumes: {
   coolant: {
-    amount: 0.15
+    amount: 0.4
   }
 }
 maxAmmo: 30

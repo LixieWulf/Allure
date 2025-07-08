@@ -32,11 +32,11 @@ coolant: {
 heatColor: 000000
 drawer: {
   type: DrawTurret
-  basePrefix: 0b-
+  basePrefix: 0b1-
   parts: [
     {
       suffix: -barrel
-      y: 14
+      y: 8
       moves: [
         {
           y: -11
@@ -107,12 +107,12 @@ drawer: {
     {
       type: RegionPart
       suffix: -upper
-      y: 6  
+      y: 0
     }
     { 
       type: RegionPart
       suffix: -flare
-      y: 19
+      y: 13
       outline: false
       layer: 140
       color: 7382f025

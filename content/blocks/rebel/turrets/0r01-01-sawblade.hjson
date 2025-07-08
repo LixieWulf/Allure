@@ -68,14 +68,14 @@ drawer: {
       growProgress: {
         type: reload
         op: compress
-        start: 0.8
-        end: 0.82
+        start: 0.95
+        end: 0.97
       }
       progress: {
         type: reload
         op: compress
-        start: 0.8
-        end: 0.81
+        start: 0.95
+        end: 0.96
       }
       moves: [
         {
@@ -96,14 +96,14 @@ drawer: {
       growProgress: {
         type: reload
         op: compress
-        start: 0.8
-        end: 0.82
+        start: 0.95
+        end: 0.97
       }
       progress: {
         type: reload
         op: compress
-        start: 0.8
-        end: 0.81
+        start: 0.95
+        end: 0.96
       }
       moves: [
         {
@@ -115,8 +115,8 @@ drawer: {
           progress: {
             type: reload
             op: compress
-            start: 0.8
-            end: 0.82
+            start: 0.95
+            end: 0.97
           }
         }
       ]
@@ -132,14 +132,14 @@ drawer: {
       growProgress: {
         type: reload
         op: compress
-        start: 0.8
-        end: 0.82
+        start: 0.95
+        end: 0.97
       }
       progress: {
         type: reload
         op: compress
-        start: 0.8
-        end: 0.81
+        start: 0.95
+        end: 0.96
       }
       moves: [
         {
@@ -147,8 +147,8 @@ drawer: {
           progress: {
             type: reload
             op: compress
-            start: 0.8
-            end: 0.82
+            start: 0.95
+            end: 0.97
           }
         }
       ]
@@ -274,8 +274,8 @@ drawer: {
           progress: {
             type: reload
             op: compress
-            start: 0.74
-            end: 0.75
+            start: 0.89
+            end: 0.9
           }
         }
       ]
@@ -312,8 +312,8 @@ drawer: {
           progress: {
             type: reload
             op: compress
-            start: 0.74
-            end: 0.75
+            start: 0.89
+            end: 0.9
           }
         }
       ]
@@ -349,8 +349,8 @@ drawer: {
           progress: {
             type: reload
             op: compress
-            start: 0.74
-            end: 0.75
+            start: 0.89
+            end: 0.9
           }
         }
         {
@@ -359,8 +359,8 @@ drawer: {
           progress: {
             type: reload
             op: compress
-            start: 0.75
-            end: 0.75
+            start: 0.9
+            end: 0.9
           }
         }
         {
@@ -398,8 +398,8 @@ drawer: {
           progress: {
             type: reload
             op: compress
-            start: 0.74
-            end: 0.75
+            start: 0.89
+            end: 0.9
           }
         }
         {
@@ -408,8 +408,8 @@ drawer: {
           progress: {
             type: reload
             op: compress
-            start: 0.75
-            end: 0.75
+            start: 0.9
+            end: 0.9
           }
         }
         {
@@ -437,14 +437,14 @@ drawer: {
       growProgress: {
         type: reload
         op: compress
-        start: 0.8
-        end: 0.82
+        start: 0.95
+        end: 0.97
       }
       progress: {
         type: reload
         op: compress
-        start: 0.8
-        end: 0.82
+        start: 0.95
+        end: 0.97
       }
       moves: [
         {

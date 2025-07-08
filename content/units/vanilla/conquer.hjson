@@ -25,9 +25,7 @@ weapons: [
       type: RailBulletType
       length: 360
       damage: 900
-      pierce: false
-      pierceBuilding: false
-      pierceDamageFactor: 10000
+      pierceCap: 1
       pointEffectSpace: 90
       pointEffect: [
         {
@@ -138,7 +136,36 @@ weapons: [
           region: allure-diamond-vthin
         }
       ]
-      shootEffect: instShoot
+      shootEffect: [
+        {
+          line: true
+          cone: 20
+          particles: 17
+          lifetime: 20
+          length: 70
+          interp: pow3Out
+          sizeInterp: linear
+          lenFrom: 12
+          lenTo: 6
+          strokeFrom: 3
+          strokeTo: 0
+          colorTo: feb380
+        }
+        {
+          particles: 1
+          length: 10
+          randLength: false
+          lifetime: 30
+          cone: 0
+          offset: 90
+          region: allure-squishwave
+          sizeFrom: 40
+          sizeTo: 60
+          colorFrom: feb380
+          colorTo: feb38000
+          layer: 108
+        }
+      ]
       setDefaults: false
       despawnHit: false
       fragBullets: 8

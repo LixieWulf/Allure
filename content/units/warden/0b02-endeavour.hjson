@@ -9,7 +9,7 @@ flying: true
 hitSize: 56
 health: 36000
 armor: 22
-shadowElevationScl: 0.9
+shadowElevationScl: 1.2
 range: 416
 maxRange: 416
 lightRadius: 0

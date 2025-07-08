@@ -246,6 +246,7 @@ weapons: [
       shotDelay: 4
       spread: -4
     }
+    shake: 1
     bullet: {
       type: LightningBulletType
       lightningColor: 7382f0
@@ -273,6 +274,7 @@ weapons: [
       shotDelay: 4
       spread: 4
     }
+    shake: 1
     bullet: {
       type: LightningBulletType
       lightningColor: 7382f0

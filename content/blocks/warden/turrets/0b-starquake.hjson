@@ -1,0 +1,709 @@
+type: PowerTurret
+squareSprite: false
+size: 8
+reload: 440
+rotateSpeed: 0.9
+range: 720
+recoil: 1
+recoilTime: 100
+cooldownTime: 300
+shootSound: explod
+shootWarmupSpeed: 0.001
+shoot: {
+  type: shootAlternate
+  spread: 0
+  firstShotDelay: 120
+}
+outlineColor: 212229
+liquidCapacity: 240
+shake: 35
+//Be REALLY accurate
+shootCone: 0.25
+//Yes, a railgun targets the weakest enemies. This may be considered deranged, but it's not like it does anything to chunkier units.
+unitSort: weakest
+consumes: {
+  power: 80
+  liquids: [
+    plasma/12
+    arreacta/1
+  ]
+}
+coolant: {
+  type: ConsumeLiquid
+  liquid: energia
+  amount: 6
+}
+heatColor: 000000
+drawer: {
+  type: DrawTurret
+  basePrefix: 0b1-
+  parts: [
+    {
+      name: allure-0b06-02-ionizer-glow
+      outline: false
+      blending: additive
+      y: -1.25
+      xScl: 0
+      yScl: 0
+      color: 90a2fc
+      moveRot: 720
+      progress: charge
+      moves: [
+        {
+          gx: 1
+          gy: 1
+          progress: {
+            type: charge
+            op: compress
+            start: 0
+            end: 0.1
+          }
+        }
+        {
+          gx: -1
+          gy: -1
+          progress: {
+            type: charge
+            op: compress
+            start: 0.9
+            end: 1
+          }
+        }
+      ]
+    }
+    {
+      name: allure-0b06-02-ionizer-glow
+      outline: false
+      blending: additive
+      y: -1.25
+      xScl: 0
+      yScl: 0
+      color: 90a2fc
+      moveRot: 480
+      progress: charge
+      moves: [
+        {
+          gx: 1
+          gy: 1
+          progress: {
+            type: charge
+            op: compress
+            start: 0
+            end: 0.1
+          }
+        }
+        {
+          gx: -1
+          gy: -1
+          progress: {
+            type: charge
+            op: compress
+            start: 0.9
+            end: 1
+          }
+        }
+      ]
+    }
+    {
+      name: allure-0b06-02-ionizer-glow
+      outline: false
+      blending: additive
+      y: -1.25
+      xScl: 0
+      yScl: 0
+      color: 90a2fc
+      moveRot: 480
+      progress: charge
+      moves: [
+        {
+          gx: 1
+          gy: 1
+          progress: {
+            type: charge
+            op: compress
+            start: 0
+            end: 0.1
+          }
+        }
+        {
+          gx: -1
+          gy: -1
+          progress: {
+            type: charge
+            op: compress
+            start: 0.9
+            end: 1
+          }
+        }
+      ]
+    }
+    {
+      name: particle
+      outline: false
+      y: -9.25
+      moveY: 16
+      progress: {
+        type: charge
+        ops: [
+          {
+            op: compress
+            start: 0.1
+            end: 0.9
+          }
+          {
+            op: curve
+            interp: circle
+          }
+        ]
+      }
+      moves: [
+        {
+          x: -9
+          progress: {
+            type: charge
+            ops: [
+              {
+                op: compress
+                start: 0.1
+                end: 0.5
+              }
+              {
+                op: curve
+                interp: circleOut
+              }
+            ]
+          }
+        }
+        {
+          x: 9
+          progress: {
+            type: charge
+            ops: [
+              {
+                op: compress
+                start: 0.5
+                end: 0.9
+              }
+              {
+                op: curve
+                interp: circleIn
+              }
+            ]
+          }
+        }
+      ]
+      children: [
+        {
+          type: FlarePart
+          sides: 2
+          color1: 7382f0bb
+          radius: 0
+          radiusTo: 100
+          stroke: 3
+          innerRadScl: 0.75
+          progress: charge
+          layer: 101
+        }
+        {
+          type: FlarePart
+          sides: 2
+          color1: 00000000
+          radius: 0
+          radiusTo: 15
+          stroke: 15
+          progress: charge
+          layer: 101
+        }
+      ]
+    }
+    {
+      name: particle
+      outline: false
+      y: -9.25
+      moveY: 16
+      progress: {
+        type: charge
+        ops: [
+          {
+            op: compress
+            start: 0.1
+            end: 0.9
+          }
+          {
+            op: curve
+            interp: circle
+          }
+        ]
+      }
+      moves: [
+        {
+          x: 9
+          progress: {
+            type: charge
+            ops: [
+              {
+                op: compress
+                start: 0.1
+                end: 0.5
+              }
+              {
+                op: curve
+                interp: circleOut
+              }
+            ]
+          }
+        }
+        {
+          x: -9
+          progress: {
+            type: charge
+            ops: [
+              {
+                op: compress
+                start: 0.5
+                end: 0.9
+              }
+              {
+                op: curve
+                interp: circleIn
+              }
+            ]
+          }
+        }
+      ]
+      children: [
+        {
+          type: FlarePart
+          sides: 2
+          color1: 7382f0bb
+          radius: 0
+          radiusTo: 100
+          stroke: 3
+          innerRadScl: 0.75
+          progress: charge
+          layer: 101
+        }
+        {
+          type: FlarePart
+          sides: 2
+          color1: 00000000
+          radius: 0
+          radiusTo: 15
+          stroke: 15
+          progress: charge
+          layer: 101
+        }
+      ]
+    }
+    {
+      suffix: -accelerator
+      y: -1.25
+    }
+    {
+      suffix: -barrel
+      y: 8.5
+      moveY: -11.5
+      progress: recoil
+      heatColor: 000000
+      moves: [
+        {
+          y: 11.5
+          progress: {
+            type: recoil
+            op: curve
+            interp: pow10In
+          }
+        }
+      ]
+      children: [
+        {
+          suffix: -barrel-flare
+          color: 7382f0
+          colorTo: ffffff
+          blending: additive
+          outline: false
+          progress: charge
+        }
+        {
+          suffix: -barrel-heat
+          blending: additive
+          outline: false
+          color: 000000
+          colorTo: ab3400
+          progress: {
+            type: heat
+            op: slope
+          }
+        }
+        {
+          suffix: -barrel-heat
+          blending: additive
+          outline: false
+          color: 000000
+          colorTo: 90a2fc
+          progress: heat
+        }
+      ]
+    }
+    {
+      suffix: -barrel0
+      y: 12.25
+      moves: [
+        {
+          y: 4
+          progress: {
+            type: charge
+            op: compress
+            start: 0
+            end: 0.05
+          }
+        }
+        {
+          y: -4
+          progress: {
+            type: charge
+            op: compress
+            start: 0.95
+            end: 1
+          }
+        }
+      ]
+      children: [
+        {
+          suffix: -barrel0-flare
+          color: 7382f0
+          colorTo: ffffff
+          blending: additive
+          outline: false
+          progress: charge
+        }
+      ]
+    }
+    {
+      suffix: -barrel1
+      y: -0.5
+      moves: [
+        {
+          y: -4
+          progress: {
+            type: charge
+            op: compress
+            start: 0
+            end: 0.05
+          }
+        }
+        {
+          y: 4
+          progress: {
+            type: charge
+            op: compress
+            start: 0.95
+            end: 1
+          }
+        }
+      ]
+      children: [
+        {
+          suffix: -barrel1-flare
+          color: 7382f0
+          colorTo: ffffff
+          blending: additive
+          outline: false
+          progress: charge
+        }
+      ]
+    }
+    {
+      y: 6
+      xScl: 0
+      yScl: 0
+      growX: 4
+      growY: 4
+      color: 00000088
+      name: circle-shadow
+      outline: false
+      layer: 99
+      growProgress: charge
+    }
+    {
+      type: FlarePart
+      sides: 2
+      color1: 7382f0bb
+      radius: 0
+      radiusTo: 200
+      stroke: 8
+      innerRadScl: 0.75
+      y: 6
+      progress: charge
+      layer: 101
+    }
+    {
+      type: FlarePart
+      sides: 2
+      color1: 00000000
+      radius: 0
+      radiusTo: 30
+      stroke: 30
+      y: 6
+      progress: charge
+      layer: 101
+    }
+  ]
+}
+coolantMultiplier: 0.111111
+shootType: {
+  speed: 36
+  lifetime: 20
+  damage: 9000
+  status: allure-0b-energy3
+  statusDuration: 1
+  sprite: allure-diamond-thin
+  width: 96
+  height: 16
+  shrinkY: 1
+  rotationOffset: 90
+  frontColor: 90a2fc
+  backSprite: clear-effect
+  trailLength: 20
+  trailWidth: 2
+  trailColor: 7382f0
+  trailInterval: 1
+  trailRotation: true
+  trailEffect: [
+    {
+      line: true
+      cone: 45
+      particles: 2
+      lifetime: 20
+      length: -10
+      baseLength: -50
+      interp: pow3Out
+      sizeInterp: linear
+      lenFrom: 12
+      lenTo: 6
+      strokeFrom: 3
+      strokeTo: 0
+      colorTo: 7382f0
+    }
+    {
+      particles: 1
+      length: 60
+      randLength: false
+      interp: pow3Out
+      lifetime: 30
+      cone: 0
+      region: allure-railblast
+      sizeFrom: 30
+      sizeTo: 15
+      colorFrom: 7382f0
+      colorTo: 7382f000
+      layer: 108
+    }
+  ]
+  despawnEffect: none
+  shootEffect: [
+    {
+      line: true
+      cone: 20
+      particles: 26
+      lifetime: 30
+      length: 140
+      interp: pow3Out
+      sizeInterp: linear
+      lenFrom: 18
+      lenTo: 6
+      strokeFrom: 4
+      strokeTo: 0
+      colorTo: 7382f0
+    }
+    {
+      particles: 1
+      length: 5
+      baseLength: 40
+      randLength: false
+      lifetime: 45
+      cone: 0
+      offset: 90
+      region: allure-squishwave
+      sizeFrom: 45
+      sizeTo: 60
+      colorFrom: 7382f0
+      colorTo: 7382f000
+      layer: 108
+    }
+    {
+      particles: 1
+      length: 0
+      baseLength: 20
+      randLength: false
+      lifetime: 60
+      cone: 0
+      offset: 90
+      region: allure-squishwave
+      sizeFrom: 60
+      sizeTo: 80
+      colorFrom: 7382f0
+      colorTo: 7382f000
+      layer: 108
+    }
+    {
+      particles: 1
+      useRotation: false
+      length: 0
+      lifetime: 30
+      cone: 0
+      region: allure-diamond-vthin
+      sizeFrom: 180
+      sizeTo: 60
+      colorFrom: 7382f0
+      colorTo: 7382f000
+      layer: 109
+    }
+    {
+      particles: 1
+      useRotation: false
+      length: 0
+      lifetime: 30
+      cone: 0
+      region: allure-diamond-vthin
+      sizeFrom: 160
+      sizeTo: 0
+      colorTo: ffffff00
+    }
+    {
+      particles: 1
+      useRotation: false
+      length: 0
+      lifetime: 30
+      sizeFrom: 20
+      sizeTo: 0
+      colorFrom: 7382f0
+      colorTo: 7382f000
+      layer: 109
+    }
+    {
+      particles: 1
+      useRotation: false
+      length: 0
+      lifetime: 30
+      sizeFrom: 15
+      sizeTo: 0
+      colorTo: ffffff00
+    }
+    {
+      particles: 1
+      useRotation: false
+      length: 0
+      lifetime: 30
+      sizeFrom: 120
+      sizeTo: 0
+      region: circle-shadow
+      colorFrom: 00000088
+      colorTo: 00000044
+      layer: 99
+    }
+  ]
+  hitEffect: [
+    {
+      line: true
+      cone: 20
+      particles: 17
+      lifetime: 20
+      length: 70
+      interp: pow3Out
+      sizeInterp: linear
+      lenFrom: 12
+      lenTo: 6
+      strokeFrom: 3
+      strokeTo: 0
+      colorTo: 7382f0
+    }
+    {
+      particles: 1
+      length: 20
+      randLength: false
+      lifetime: 30
+      cone: 0
+      offset: 90
+      region: allure-squishwave
+      sizeFrom: 20
+      sizeTo: 40
+      colorFrom: 7382f0
+      colorTo: 7382f000
+      layer: 108
+    }
+  ]
+  chargeEffect: {
+    type: SoundEffect
+    sound: lasercharge2
+    startDelay: 40
+    minPitch: 0.5
+    maxPitch: 0.5
+    minVolume: 2
+    maxVolume: 2
+    effect: none
+  }
+  parts: [
+    {
+      type: RegionPart
+      name: allure-railblast
+      outline: false
+      rotation: 90
+      color: 90a2fc
+      xScl: 0
+      yScl: 0
+      moves: [
+        {
+          gx: 1
+          gy: 1
+          progress: {
+            type: life
+            op: slope
+          }
+        }
+      ]
+    }
+  ]
+  setDefaults: false
+  despawnHit: false
+  hitShake: 12
+  hitSound: explosion
+  fragBullets: 32
+  fragRandomSpread: 35
+  fragVelocityMin: 0.5
+  fragLifeMin: 0.5
+  fragBullet: {
+    speed: 30
+    lifetime: 40
+    pierce: true
+    pierceBuilding: true
+    pierceCap: 4
+    drag: 0.05
+    damage: 1600
+    status: allure-0b-energy2
+    statusDuration: 1
+    sprite: allure-diamond-thin
+    width: 4
+    height: 24
+    shrinkY: 0.25
+    shrinkX: 1
+    frontColor: 90a2fc
+    backColor: 00000000
+    hitColor: 7382f0
+    despawnEffect: none
+    hitEffect: hitBulletColor
+  }
+}
+category: turret
+research: {
+  parent: 0b-quake
+  objectives: [
+    0b-electromagnetic-acceleration
+  ]
+}
+requirements: [
+  territe-alloy/1800
+  dantrales/700
+  silicon/600
+  baenite/350
+]

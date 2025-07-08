@@ -7,6 +7,7 @@ lowAltitude: true
 shadowElevationScl: 2.7
 speed: 0
 rotateSpeed: 0
+drag: 0.1
 hittable: false
 targetable: false
 hitSize: 160
@@ -563,7 +564,7 @@ weapons: [
       collides: false 
       speed: 0
       lifetime: 1
-      recoil: -5
+      recoil: -1.75
       shootEffect: none
       smokeEffect: none
       despawnEffect: none

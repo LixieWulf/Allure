@@ -8,11 +8,12 @@ targetable: false
 hittable: false
 physics: false
 hitSize: 160
-speed: 0.2
+speed: 12
+missileAccelTime: 180
 rotateSpeed: 0
 template: MissileUnitType
 lowAltitude: true
-lifetime: 91
+lifetime: 181
 drawBody: false
 drawCell: false
 outlines: false
@@ -1276,6 +1277,325 @@ weapons: [
       lightColor: e65555
       lightStroke: 8
       lightOpacity: 0.25
+    }
+  }
+  //engines
+  {
+    y: -100
+    x: 0
+    shootY: 0
+    baseRotation: 180
+    alwaysShooting: true
+    shootCone: 360
+    continuous: true
+    mirror: false
+    reload: 1
+    shootSound: none
+    shootWarmupSpeed: 0.03
+    minShootVelocity: 0.9
+    recoil: 0
+    display: false
+    parts: [
+      {
+        name: allure-thruster-flare-2
+        y: 8
+        moveY: 8
+        rotation: 180
+        outline: false
+        blending: additive
+        mixColor: e65555
+        color: ffffff44
+        colorTo: ffffff
+        xScl: 1
+        yScl: 1
+        layer: 90.03
+        progress: warmup
+      }
+    ]
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90.02
+      lifetime: 14
+      collides: false
+      length: 50
+      width: 12
+      colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff
+      ]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 1
+      oscMag: 0.1
+      hitEffect: none
+      lightColor: e65555
+      lightStroke: 40
+      lightOpacity: 0.4
+    }
+  }
+  {
+    y: -100
+    x: 0
+    shootY: 0
+    baseRotation: 180
+    alwaysShooting: true
+    shootCone: 360
+    continuous: true
+    mirror: false
+    reload: 1
+    shootSound: none
+    shootWarmupSpeed: 0.03
+    minShootVelocity: 0.9
+    recoil: 0
+    display: false
+    parts: [
+      {
+        name: allure-thruster-flare-2
+        y: 8
+        moveY: 8
+        rotation: 180
+        outline: false
+        blending: additive
+        mixColor: e65555
+        color: ffffff44
+        colorTo: ffffff
+        xScl: 1
+        yScl: 1
+        layer: 90.03
+        progress: warmup
+      }
+    ]
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90.02
+      lifetime: 10
+      collides: false
+      length: 50
+      width: 12
+      colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff
+      ]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 1
+      oscMag: 0.1
+      hitEffect: none
+      lightColor: e65555
+      lightStroke: 34
+      lightOpacity: 0.4
+    }
+  }
+  {
+    y: -97
+    x: 22
+    shootY: 0
+    baseRotation: 180
+    alwaysShooting: true
+    shootCone: 360
+    continuous: true
+    alternate: false
+    reload: 1
+    shootSound: none
+    shootWarmupSpeed: 0.03
+    minShootVelocity: 0.9
+    recoil: 0
+    display: false
+    parts: [
+      {
+        name: allure-thruster-flare-2
+        y: 4
+        moveY: 4
+        rotation: 180
+        outline: false
+        blending: additive
+        mixColor: e65555
+        color: ffffff44
+        colorTo: ffffff
+        xScl: 0.35
+        yScl: 0.35
+        layer: 90.03
+        progress: warmup
+      }
+    ]
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90.02
+      lifetime: 14
+      collides: false
+      length: 25
+      width: 6
+      colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff
+      ]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 1
+      oscMag: 0.1
+      hitEffect: none
+      lightColor: e65555
+      lightStroke: 18
+      lightOpacity: 0.4
+    }
+  }
+  {
+    y: -97
+    x: 22
+    shootY: 0
+    baseRotation: 180
+    alwaysShooting: true
+    shootCone: 360
+    continuous: true
+    alternate: false
+    reload: 1
+    shootSound: none
+    shootWarmupSpeed: 0.03
+    minShootVelocity: 0.9
+    recoil: 0
+    display: false
+    parts: [
+      {
+        name: allure-thruster-flare-2
+        y: 4
+        moveY: 4
+        rotation: 180
+        outline: false
+        blending: additive
+        mixColor: e65555
+        color: ffffff44
+        colorTo: ffffff
+        xScl: 0.35
+        yScl: 0.35
+        layer: 90.03
+        progress: warmup
+      }
+    ]
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90.02
+      lifetime: 10
+      collides: false
+      length: 25
+      width: 6
+      colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff
+      ]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 1
+      oscMag: 0.1
+      hitEffect: none
+      lightColor: e65555
+      lightStroke: 18
+      lightOpacity: 0.4
+    }
+  }
+  {
+    x: 62
+    y: -95
+    shootY: 0
+    baseRotation: 180
+    alwaysShooting: true
+    shootCone: 360
+    continuous: true
+    alternate: false
+    reload: 1
+    shootSound: none
+    shootWarmupSpeed: 0.03
+    minShootVelocity: 0.9
+    recoil: 0
+    display: false
+    parts: [
+      {
+        name: allure-thruster-flare-2
+        y: 6
+        moveY: 6
+        rotation: 180
+        outline: false
+        blending: additive
+        mixColor: e65555
+        color: ffffff44
+        colorTo: ffffff
+        xScl: 0.75
+        yScl: 0.75
+        layer: 90.03
+        progress: warmup
+      }
+    ]
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90.02
+      lifetime: 14
+      collides: false
+      length: 44
+      width: 10
+      colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff
+      ]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 1
+      oscMag: 0.1
+      hitEffect: none
+      lightColor: e65555
+      lightStroke: 30
+      lightOpacity: 0.4
+    }
+  }
+  {
+    x: 62
+    y: -95
+    shootY: 0
+    baseRotation: 180
+    alwaysShooting: true
+    shootCone: 360
+    continuous: true
+    alternate: false
+    reload: 1
+    shootSound: none
+    shootWarmupSpeed: 0.03
+    minShootVelocity: 0.9
+    recoil: 0
+    display: false
+    parts: [
+      {
+        name: allure-thruster-flare-2
+        y: 6
+        moveY: 6
+        rotation: 180
+        outline: false
+        blending: additive
+        mixColor: e65555
+        color: ffffff44
+        colorTo: ffffff
+        xScl: 0.75
+        yScl: 0.75
+        layer: 90.03
+        progress: warmup
+      }
+    ]
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 90.02
+      lifetime: 10
+      collides: false
+      length: 44
+      width: 10
+      colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff
+      ]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 1
+      oscMag: 0.1
+      hitEffect: none
+      lightColor: e65555
+      lightStroke: 30
+      lightOpacity: 0.4
     }
   }
   //lights

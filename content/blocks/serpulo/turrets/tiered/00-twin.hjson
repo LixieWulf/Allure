@@ -9,6 +9,7 @@ targetAir: true
 reload: 30
 recoil: 2.5
 inaccuracy: 2
+cooldownTime: 35
 shootSound: none //this is handled by the bullets
 shoot: {
   type: ShootAlternate
@@ -161,9 +162,9 @@ requirements: [
 maxAmmo: 20
 category: turret
 research: duo
-coolantMultiplier: 15
+coolantMultiplier: 7.5
 consumes: {
   coolant: {
-    amount: 0.1
+    amount: 0.2
   }
 }
