@@ -1,4 +1,6 @@
 type: AttributeCrafter
+customShadow: true
+squareSprite: false
 size: 10
 dumpTime: 1
 itemCapacity: 450
@@ -7,149 +9,157 @@ attribute: heat
 boostScale: 0.0118
 minEfficiency: 0
 baseEfficiency: 0
-liquidCapacity: 45
 consumes: {
-  liquids: [
-    energia/0.4
-    steam/0.25
+  items: [
+    contained-steam/72
+    contained-energia/36
   ]
 }
 drawer: [
   {
   }
+  //main centrifuge
   {
     type: DrawGlowRegion
-    blending: normal
-    alpha: 1
-    glowIntensity: 0
-    suffix: -liquid
-    color: ffa166
+    suffix: -heat
     layer: 30
   }
   {
     type: DrawRegion
-    suffix: -top1
-  }
-  {
-    type: DrawRegion
-    suffix: -top2
-  }
-  {
-    type: DrawRegion
-    suffix: -gear0-teeth
-    rotateSpeed: 10
-    x: 7.75
-    y: 4.25
-  }
-  {
-    type: DrawRegion
-    suffix: -gear0-teeth
-    rotateSpeed: 10
-    rotation: 45
-    x: 7.75
-    y: 4.25
-  }
-  {
-    type: DrawRegion
-    suffix: -gear0
-    rotateSpeed: 10
-    spinSprite: true
-    x: 7.75
-    y: 4.25
-  }
-  {
-    type: DrawRegion
-    suffix: -gear0-teeth
-    rotateSpeed: 10
-    x: -7.75
-    y: 4.25
-  }
-  {
-    type: DrawRegion
-    suffix: -gear0-teeth
-    rotateSpeed: 10
-    rotation: 45
-    x: -7.75
-    y: 4.25
-  }
-  {
-    type: DrawRegion
-    suffix: -gear0
-    rotateSpeed: 10
-    spinSprite: true
-    x: -7.75
-    y: 4.25
-  }
-  {
-    type: DrawRegion
-    suffix: -gear0-teeth
-    rotateSpeed: 10
-    x: 0
-    y: -9
-  }
-  {
-    type: DrawRegion
-    suffix: -gear0-teeth
-    rotateSpeed: 10
-    rotation: 45
-    x: 0
-    y: -9
-  }
-  {
-    type: DrawRegion
-    suffix: -gear0
-    rotateSpeed: 10
-    spinSprite: true
-    x: 0
-    y: -9
-  }
-  {
-    type: DrawRegion
-    suffix: -centrifuge
-    rotateSpeed: 4
+    suffix: -bearing
+    rotateSpeed: -3
     spinSprite: true
   }
   {
     type: DrawRegion
     suffix: -centrifuge
-    rotateSpeed: 4
-    rotation: 15
+    rotateSpeed: -6
     spinSprite: true
   }
   {
     type: DrawRegion
     suffix: -centrifuge
-    rotateSpeed: 4
-    rotation: 30
-    spinSprite: true
-  }
-  {
-    type: DrawRegion
-    suffix: -centrifuge
-    rotateSpeed: 4
+    rotateSpeed: -6
     rotation: 45
     spinSprite: true
   }
   {
     type: DrawRegion
-    suffix: -centrifuge
-    rotateSpeed: 4
-    rotation: 60
-    spinSprite: true
+    suffix: -shade
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -slag
+    alpha: 1
+    glowIntensity: 0
+    blending: normal
+    color: ffffff
+    rotateSpeed: -6
+    layer: 30
   }
   {
     type: DrawRegion
-    suffix: -centrifuge
-    rotateSpeed: 4
-    rotation: 75
+    suffix: -mid
+  }
+  //slag
+  {
+    type: DrawGlowRegion
+    suffix: -liquid
+    glowIntensity: 0
+    alpha: 1
+    color: e28654
+    blending: normal
+    layer: 30
+  }
+  {
+    type: DrawParticles
+    color: ffcd66
+    particles: 75
+    alpha: 1
+    particleSize: 2
+    particleRad: 3
+    particleInterp: slope
+    particleLife: 80
+    x: 19
+    y: 16
+  }
+  {
+    type: DrawParticles
+    color: ffffa3
+    particles: 75
+    alpha: 1
+    particleSize: 1
+    particleRad: 3
+    particleInterp: slope
+    particleLife: 80
+    x: 19
+    y: 16
+  }
+  {
+    type: DrawParticles
+    color: ffcd66
+    particles: 75
+    alpha: 1
+    particleSize: 2
+    particleRad: 3
+    particleInterp: slope
+    particleLife: 80
+    x: -19
+    y: -16
+  }
+  {
+    type: DrawParticles
+    color: ffffa3
+    particles: 75
+    alpha: 1
+    particleSize: 1
+    particleRad: 3
+    particleInterp: slope
+    particleLife: 80
+    x: -19
+    y: -16
+  }
+  //top turbines
+  {
+    type: DrawRegion
+    suffix: -turbine
+    rotateSpeed: -6
     spinSprite: true
+    x: 19
+    y: 16
   }
   {
     type: DrawRegion
-    suffix: -top3
+    suffix: -turbine
+    rotateSpeed: -6
+    rotation: 45
+    spinSprite: true
+    x: 19
+    y: 16
+  }
+  {
+    type: DrawRegion
+    suffix: -turbine
+    rotateSpeed: -6
+    spinSprite: true
+    x: -19
+    y: -16
+  }
+  {
+    type: DrawRegion
+    suffix: -turbine
+    rotateSpeed: -6
+    rotation: 45
+    spinSprite: true
+    x: -19
+    y: -16
+  }
+  {
+    type: DrawRegion
+    suffix: -top
   }
 ]
-craftTime: 400
+craftTime: 360
 outputItem: baenite/100
 category: crafting
 requirements: [

@@ -1,10 +1,65 @@
-type: Pump
-variants: 3
+type: AttributeCrafter
+floating: true
 size: 4
-pumpAmount: 0.05
+craftTime: 5
+itemCapacity: 48
 squareSprite: false
-liquidCapacity: 160
+outputItem: contained-slag/2
+drawer: [
+  {
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -liquid
+    glowIntensity: 0
+    alpha: 1
+    color: e28654
+    blending: normal
+    layer: 30
+  }
+  {
+    type: DrawParticles
+    color: ffcd66
+    particles: 75
+    alpha: 1
+    particleSize: 2
+    particleRad: 3
+    particleInterp: slope
+    particleLife: 80
+  }
+  {
+    type: DrawParticles
+    color: ffffa3
+    particles: 75
+    alpha: 1
+    particleSize: 1
+    particleRad: 3
+    particleInterp: slope
+    particleLife: 80
+  }
+  {
+    type: DrawRegion
+    suffix: -turbine
+    rotateSpeed: -6
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -turbine
+    rotateSpeed: -6
+    rotation: 45
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -top
+  }
+]
 requirements: [
   anden/150
 ]
+dumpTime: 2
+baseEfficiency: 0
+minEfficiency: 0.25
+boostScale: 0.074
 category: liquid

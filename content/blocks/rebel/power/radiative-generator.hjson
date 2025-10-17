@@ -1,8 +1,12 @@
 type: ConsumeGenerator
 size: 4
+itemDuration: 10
+itemCapacity: 120
+liquidCapacity: 60
+lightLiquid: energia
 consumes: {
-  liquids: [
-    slag/0.2
+  items: [
+    contained-slag/1
   ]
 }
 powerProduction: 0.001

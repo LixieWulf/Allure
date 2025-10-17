@@ -15,7 +15,6 @@ physics: false
 range: 90
 maxRange: 360
 lightRadius: 0
-drawCell: false
 outlines: false
 healColor: 7382f088
 shieldColor: 7382f000
@@ -24,7 +23,7 @@ deathShake: 0
 parts: [
   {
     type: RegionPart
-    layer: 97.02
+    layer: 97
     outline: false
   }
   { 
@@ -51,7 +50,7 @@ parts: [
     outline: false
     blending: additive
     color: 7382f088
-    layer: 98.5
+    layer: 88
     xScl: 1.1
     yScl: 1.4
   }
@@ -119,7 +118,7 @@ weapons: [
         innerRadScl: 0.75
         y: 6
         progress: heat
-        layer: 101
+        layer: 88
       }
       {
         type: FlarePart
@@ -177,7 +176,7 @@ weapons: [
         colorTo: ffffff
         xScl: 0.6
         yScl: 0.6
-        layer: 90
+        layer: 88
         progress: warmup
       }
     ]
@@ -224,7 +223,7 @@ weapons: [
         innerRadScl: 0.75
         y: 6
         progress: heat
-        layer: 101
+        layer: 88
       }
       {
         type: FlarePart
@@ -282,7 +281,7 @@ weapons: [
         colorTo: ffffff
         xScl: 0.2
         yScl: 0.2
-        layer: 90.01
+        layer: 88
         progress: warmup
       }
       {
@@ -353,7 +352,7 @@ weapons: [
         colorTo: ffffff
         xScl: 0.2
         yScl: 0.2
-        layer: 90
+        layer: 88
         progress: warmup
       }
     ]
@@ -447,7 +446,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 97
+      layer: 96.1
       collides: false
       length: 18
       width: 9
@@ -477,7 +476,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 97
+      layer: 96.1
       collides: false
       length: 6
       width: 3

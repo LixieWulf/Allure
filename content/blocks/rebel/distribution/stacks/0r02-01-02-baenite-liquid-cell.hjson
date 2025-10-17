@@ -1,9 +1,0 @@
-type: LiquidRouter
-hasShadow: false
-liquidCapacity: 100
-liquidPadding: 2
-placeablePlayer: false
-buildVisibility: shown
-requirements: [
-  baenite/0
-]

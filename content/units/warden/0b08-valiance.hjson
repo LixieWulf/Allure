@@ -13,7 +13,6 @@ shadowElevationScl: 2.1
 range: 351
 maxRange: 351
 lightRadius: 0
-drawCell: false
 outlines: false
 healColor: 7382f088
 shieldColor: 7382f000
@@ -24,13 +23,13 @@ deathShake: 0
 parts: [
   {
     type: RegionPart
-    layer: 90.02
+    layer: 91
     outline: false
   }
   {
     type: RegionPart
     suffix: -top
-    layer: 90.5
+    layer: 93
     outline: false
   }
   { 
@@ -38,7 +37,7 @@ parts: [
     suffix: -flare
     outline: false
     blending: additive
-    layer: 90.3
+    layer: 92
     color: 7382f0
     colorTo: ffffff
     weaponIndex: 0
@@ -48,7 +47,7 @@ parts: [
     suffix: -flare-top
     outline: false
     blending: additive
-    layer: 90.6
+    layer: 94
     color: 7382f0
     colorTo: ffffff
     weaponIndex: 0
@@ -67,7 +66,7 @@ parts: [
     outline: false
     blending: additive
     color: 7382f088
-    layer: 95
+    layer: 88
     xScl: 1.2
     yScl: 1.35
   }
@@ -84,7 +83,7 @@ weapons: [
       {
         type: RegionPart
         name: allure-valiance-launcher
-        layer: 90.4
+        layer: 92.1
         outline: false
         x: -18
         y: -3
@@ -97,7 +96,7 @@ weapons: [
       {
         type: RegionPart
         name: allure-valiance-launcher
-        layer: 90.4
+        layer: 92.1
         outline: false
         x: -12
         y: -3
@@ -110,7 +109,7 @@ weapons: [
       {
         type: RegionPart
         name: allure-valiance-launcher
-        layer: 90.4
+        layer: 92.1
         outline: false
         x: -6
         y: -3
@@ -123,7 +122,7 @@ weapons: [
       {
         type: RegionPart
         name: allure-valiance-launcher
-        layer: 90.4
+        layer: 92.1
         outline: false
         x: 0
         y: -3
@@ -136,7 +135,7 @@ weapons: [
       {
         type: RegionPart
         name: allure-valiance-launcher
-        layer: 90.4
+        layer: 92.1
         outline: false
         x: 6
         y: -3
@@ -149,7 +148,7 @@ weapons: [
       {
         type: RegionPart
         name: allure-valiance-launcher
-        layer: 90.4
+        layer: 92.1
         outline: false
         x: 12
         y: -3
@@ -276,7 +275,7 @@ weapons: [
         colorTo: ffffff
         xScl: 0.55
         yScl: 0.55
-        layer: 90.01
+        layer: 88
         progress: warmup
       }
       {
@@ -347,7 +346,7 @@ weapons: [
         colorTo: ffffff
         xScl: 0.55
         yScl: 0.55
-        layer: 90
+        layer: 88
         progress: warmup
       }
     ]
@@ -385,7 +384,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90
+      layer: 90.1
       collides: false
       length: 16
       width: 8
@@ -415,7 +414,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90
+      layer: 90.1
       collides: false
       length: 12
       width: 6

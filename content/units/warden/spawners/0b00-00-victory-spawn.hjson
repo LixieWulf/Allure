@@ -6,7 +6,7 @@ template: MissileUnitType
 controller: FlyingAI
 defaultController: FlyingAI
 speed: 0
-rotateSpeed: 360
+rotateSpeed: 4
 hittable: false
 targetable: false
 hitSize: 18

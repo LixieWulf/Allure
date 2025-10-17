@@ -1,0 +1,63 @@
+fogRadius: 27
+weapons: [
+  {
+    name: disrupt-weapon
+    layerOffset: -20
+    shootSound: missileSmall
+    x: 19.5 
+    y: -2.5
+    inaccuracy: 5
+    xRand: 12
+    shootCone: 40
+    shoot: {
+      shots: 6
+      shotDelay: 5
+    }
+    reload: 90
+    shootWarmupSpeed: 0.1
+    minWarmup: 0.99
+    shootY: 8
+    parts: [
+      {
+        type: RegionPart
+        suffix: -blade
+        heatProgress: warmup
+        progress: {
+          type: warmup
+          op: blend
+          other: reload
+          amount: 0.15
+        }
+        x: 1.25
+        y: 0
+        moveRot: -33
+        moveX: -1
+        moveY: -1
+        mirror: true
+        //Outline generation for vanilla overrides still doesn't exist, don't bother
+        layerOffset: -0.01
+      }
+    ]
+    bullet: {
+      spawnUnit: disrupt-missile
+      keepVelocity: false
+      shootEffect: sparkShoot
+      smokeEffect: {
+        followParent: false
+        baseRotation: 180
+        lifetime: 40
+        particles: 12
+        cone: 15
+        length: 20
+        baseLength: 30
+        sizeFrom: 2
+        sizeTo: 0
+        colorFrom: b279c2
+        colorTo: b279c2
+        interp: pow3Out
+        sizeInterp: pow2In
+      }
+      hitColor: b279c2
+    }
+  }
+]

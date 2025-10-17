@@ -13,23 +13,22 @@ shadowElevationScl: 1.7
 range: 406
 maxRange: 406
 lightRadius: 0
-drawCell: false
 outlines: false
-healColor: 7382f088
+healColor: 5a58c4
 shieldColor: 7382f000
 engineSize: 0
 deathShake: 0
 parts: [
   {
     type: RegionPart
-    layer: 90.02
+    layer: 91
     outline: false
   }
   {
     type: RegionPart
     suffix: -top
     y: -19.75
-    layer: 91.5
+    layer: 92
     outline: false
   }
   { 
@@ -37,7 +36,7 @@ parts: [
     suffix: -flare
     outline: false
     blending: additive
-    layer: 91
+    layer: 92
     color: 7382f0
     colorTo: ffffff
     weaponIndex: 0
@@ -56,7 +55,7 @@ parts: [
     outline: false
     blending: additive
     color: 7382f088
-    layer: 95
+    layer: 88
     xScl: 1.1
     yScl: 1.4
   }
@@ -465,7 +464,7 @@ weapons: [
   }
   //engines
   {
-    y: -37
+    y: -36
     x: 7
     shootY: 0
     baseRotation: 180
@@ -491,7 +490,7 @@ weapons: [
         colorTo: ffffff
         xScl: 0.35
         yScl: 0.35
-        layer: 90.01
+        layer: 88
         progress: warmup
       }
       {
@@ -537,7 +536,7 @@ weapons: [
     }
   }
   {
-    y: -37
+    y: -36
     x: 7
     shootY: 0
     baseRotation: 180
@@ -563,7 +562,7 @@ weapons: [
         colorTo: ffffff
         xScl: 0.35
         yScl: 0.35
-        layer: 90
+        layer: 88
         progress: warmup
       }
     ]
@@ -612,7 +611,7 @@ weapons: [
         colorTo: ffffff
         xScl: 0.35
         yScl: 0.35
-        layer: 91.01
+        layer: 88
         progress: warmup
       }
       {
@@ -684,7 +683,7 @@ weapons: [
         colorTo: ffffff
         xScl: 0.35
         yScl: 0.35
-        layer: 91
+        layer: 88
         progress: warmup
       }
     ]
@@ -707,8 +706,8 @@ weapons: [
     }
   }
   {
-    x: 24.5
-    y: -23
+    x: 23.5
+    y: -22
     shootY: 0
     baseRotation: -135
     alwaysShooting: true
@@ -733,7 +732,7 @@ weapons: [
         colorTo: ffffff
         xScl: 0.2
         yScl: 0.2
-        layer: 90.01
+        layer: 88
         progress: warmup
       }
       {
@@ -779,8 +778,8 @@ weapons: [
     }
   }
   {
-    x: 24.5
-    y: -23
+    x: 23.5
+    y: -22
     shootY: 0
     baseRotation: -135
     alwaysShooting: true
@@ -805,7 +804,7 @@ weapons: [
         colorTo: ffffff
         xScl: 0.2
         yScl: 0.2
-        layer: 90
+        layer: 88
         progress: warmup
       }
     ]
@@ -829,7 +828,7 @@ weapons: [
   }
   //idle flames
   {
-    y: -37
+    y: -36
     x: 7
     shootY: 0
     baseRotation: 180
@@ -843,7 +842,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90
+      layer: 90.1
       collides: false
       length: 12
       width: 6
@@ -874,7 +873,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 91
+      layer: 91.5
       collides: false
       length: 12
       width: 6
@@ -891,8 +890,8 @@ weapons: [
     }
   }
   {
-    x: 24.5
-    y: -23
+    x: 23.5
+    y: -22
     shootY: 0
     baseRotation: -135
     alwaysShooting: true
@@ -905,7 +904,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90
+      layer: 90.1
       collides: false
       length: 6
       width: 3
@@ -936,7 +935,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 91
+      layer: 91.5
       collides: false
       length: 8
       width: 4

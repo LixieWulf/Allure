@@ -22,7 +22,6 @@ lightRadius: 0
 shadowElevationScl: 1.7
 range: 660
 maxRange: 660
-drawCell: false
 drawBody: false
 outlines: false
 bounded: false
@@ -36,15 +35,9 @@ targetFlags: [
 parts: [
   {
     type: RegionPart
-    layer: 90.02
+    layer: 91
     outline: false
     name: allure-0b05-harmony
-  }
-  { 
-    type: RegionPart
-    name: allure-0b05-harmony-top
-    outline: false
-    layer: 91.5
   }
   { 
     type: RegionPart
@@ -77,7 +70,7 @@ parts: [
     outline: false
     blending: additive
     color: 7382f088
-    layer: 95
+    layer: 88
     xScl: 1.2
     yScl: 1.5
   }
@@ -709,7 +702,7 @@ weapons: [
         yScl: 0.5
         color: ffffff44
         colorTo: ffffff
-        layer: 90.01
+        layer: 88
         progress: heat
       }
       {
@@ -779,7 +772,7 @@ weapons: [
         colorTo: ffffff
         xScl: 0.55
         yScl: 0.55
-        layer: 90
+        layer: 88
         progress: warmup
       }
     ]
@@ -826,7 +819,7 @@ weapons: [
         mixColor: 90a2fc
         color: ffffff44
         colorTo: ffffff
-        layer: 90
+        layer: 88
         progress: warmup
       }
       {
@@ -896,7 +889,7 @@ weapons: [
         mixColor: 90a2fc
         color: ffffff44
         colorTo: ffffff
-        layer: 90
+        layer: 88
         progress: warmup
       }
     ]
@@ -932,7 +925,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90
+      layer: 90.1
       collides: false
       length: 16
       width: 8
@@ -962,7 +955,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90
+      layer: 90.1
       collides: false
       length: 10
       width: 5
@@ -992,7 +985,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90
+      layer: 90.1
       collides: false
       length: 10
       width: 5
@@ -1022,7 +1015,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90
+      layer: 90.1
       collides: false
       length: 10
       width: 5
@@ -1052,7 +1045,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90
+      layer: 90.1
       collides: false
       length: 10
       width: 5

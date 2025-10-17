@@ -1,0 +1,33 @@
+ammoTypes: {
+  coal: {
+    type: BulletType
+    speed: 3.35
+    damage: 17
+    lifetime: 18
+    pierce: true
+    status: burning
+    statusDuration: 120
+    shootEffect: shootSmallFlame
+    hitEffect: hitFlameSmall
+    despawnEffect: none
+    collidesAir: false
+    keepVelocity: false
+    hittable: false
+  }
+  pyratite: {
+    type: BulletType
+    ammoMultiplier: 4
+    speed: 4
+    damage: 32
+    lifetime: 18
+    pierce: true
+    status: burning
+    statusDuration: 240
+    shootEffect: shootPyraFlame
+    hitEffect: hitFlameSmall
+    despawnEffect: none
+    collidesAir: false
+    keepVelocity: false
+    hittable: false
+  }
+}

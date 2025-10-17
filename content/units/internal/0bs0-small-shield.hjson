@@ -2,7 +2,7 @@ type: tether
 controller: MinerAI
 defaultController: MinerAI
 playerControllable: false
-health: 2000
+health: 4000
 hitSize: 180
 drag: 10000
 physics: false

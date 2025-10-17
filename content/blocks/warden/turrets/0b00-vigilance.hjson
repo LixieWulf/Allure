@@ -791,7 +791,8 @@ ammoTypes: {
           ]
         }
       ]
-      hitSound: none
+      hitSound: explod
+      hitSoundVolume: 4
       fragBullets: 480
       fragOffsetMin: 0
       fragOffsetMax: 0

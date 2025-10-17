@@ -4,6 +4,7 @@ baseEfficiency: 0
 minEfficiency: 8.9999
 boostScale: 0.1111111111111
 maxBoost: 2
+dumpTime: 1
 attribute: steam
 squareSprite: false
 size: 8
@@ -20,12 +21,14 @@ drawer: [
   {
   }
   {
-    type: DrawLiquidRegion
-    drawLiquid: slag
-  }
-  {
-    type: DrawRegion
-    suffix: -top1
+    type: DrawGlowRegion
+    suffix: -glow1
+    rotateSpeed: 15
+    alpha: 1
+    glowIntensity: 0
+    blending: normal
+    color: ffffff
+    layer: 30
   }
   //circle shading
   {
@@ -69,21 +72,80 @@ drawer: [
     rotation: 75
     spinSprite: true
   }
-  //blurry bits
+  //middle
   {
     type: DrawBlurSpin
     suffix: -spinner3
     rotateSpeed: 15
   }
   {
+    type: DrawGlowRegion
+    suffix: -glow2
+    color: e65555
+    layer: 30
+  }
+  {
     type: DrawRegion
-    suffix: -top2
+    suffix: -spinner4
+    rotateSpeed: 15
+  }
+  {
+    type: DrawRegion
+    suffix: -spinner4
+    rotation: -120
+    rotateSpeed: 15
+  }
+  {
+    type: DrawRegion
+    suffix: -spinner4
+    rotation: 120
+    rotateSpeed: 15
+  }
+  //top
+  {
+    type: DrawParticles
+    color: e65555
+    particles: 45
+    alpha: 1
+    particleSize: 2
+    particleRad: 24
+    particleInterp: pow2Out
+    particleSizeInterp: slope
+    particleLife: 40
+    rotateScl: 0.6
+    reverse: true
+    blending: additive
+  }
+  {
+    type: DrawRegion
+    suffix: -spinner5
+    rotateSpeed: 15
+    spinSprite: true
+  }
+  {
+    type: DrawRegion
+    suffix: -top1
+  }
+  {
+    type: DrawRegion
+    suffix: -shade
+  }
+  {
+    type: DrawFlame
+    flameColor: e28654
+    flameRadius: 0
+    flameRadiusIn: 0
+    flameRadiusMag: 0
+    flameRadiusInMag: 0
+    lightRadius: 5
+    lightSinMag: 0
+    lightAlpha: 0.65
   }
 ]
 consumes: {
-  liquids: [
-    slag/0.8
-    energia/0.075
+  items: [
+    contained-slag/60
+    contained-energia/15
   ]
 }
 outputItem: anden/50

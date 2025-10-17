@@ -4,28 +4,113 @@ craftTime: 300
 itemCapacity: 400
 liquidCapacity: 20
 consumes: {
-  liquids: [
-    energia/0.2
-    slag/0.4
-  ]
   items: [
     anden/50
     silicon/50
-    ladera/50
+    ladera/100
+    contained-slag/120
+    contained-energia/30
   ]
 }
 drawer: [
   {
-    type: DrawDefault
-  }
-  {
-    type: DrawFlame
-    flameColor: e68585
-    flameRadius: 14
-    flameRadiusIn: 10
   }
   {
     type: DrawGlowRegion
+    suffix: -slag
+    alpha: 1
+    glowIntensity: 0
+    blending: normal
+    color: ffffff
+    layer: 30
+  }
+  {
+    type: DrawParticles
+    color: e28654
+    particles: 75
+    alpha: 1
+    particleSize: 2
+    particleRad: 12
+    particleInterp: pow2Out
+    particleSizeInterp: slope
+    particleLife: 40
+    reverse: true
+  }
+  {
+    type: DrawParticles
+    color: ffffa3
+    particles: 45
+    alpha: 1
+    particleSize: 2
+    particleRad: 9
+    particleInterp: pow2Out
+    particleSizeInterp: slope
+    particleLife: 40
+    reverse: true
+  }
+  {
+    type: DrawArcSmelt
+  }
+  {
+    type: DrawRegion
+    suffix: -top1
+  }
+  {
+    type: DrawRegion
+    suffix: -shade
+  }
+  {
+    type: DrawFlame
+    flameColor: e28654
+    flameRadius: 0
+    flameRadiusIn: 0
+    flameRadiusMag: 0
+    flameRadiusInMag: 0
+    lightRadius: 15
+    lightSinMag: 0
+    lightAlpha: 0.5
+  }
+]
+craftEffect: [
+  {
+    type: RadialEffect
+    rotationSpacing: 180
+    rotationOffset: 45
+    amount: 2
+    lengthOffset: 27
+    effect: [
+      {
+        particles: 12
+        length: 60
+        lifetime: 90
+        cone: 20
+        baseRotation: 32
+        useRotation: false
+        sizeFrom: 0
+        sizeTo: 10
+        colorFrom: 131313
+        colorTo: 13131300
+        sizeInterp: slope
+        interp: pow3Out
+        layer: 95
+        lightScl: 0
+        lightOpacity: 0
+      }
+      {
+        particles: 12
+        length: 20
+        lifetime: 50
+        baseRotation: 90
+        useRotation: false
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: ffcd66
+        colorTo: e28654
+        interp: pow2Out
+        sizeInterp: pow5In
+        layer: 100
+      }
+    ]
   }
 ]
 outputItem: renfrien/50

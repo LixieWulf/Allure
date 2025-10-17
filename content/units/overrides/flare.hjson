@@ -1,0 +1,17 @@
+health: 100
+speed: 2
+omniMovement: false
+weapons: [
+  {
+    x: 2
+    reload: 15
+    ejectEffect: casing1
+    bullet: {
+      speed: 4
+      damage: 9
+      width: 7
+      height: 9
+      lifetime: 50
+    }
+  }
+]

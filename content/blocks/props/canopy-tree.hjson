@@ -7,8 +7,8 @@ allowDerelictRepair: false
 alwaysReplace: false
 buildVisibility: sandboxOnly
 rotationRand: 90
-layer: 89.5
-shadowLayer: 89
+layer: 80
+shadowLayer: 70
 shadowOffset: -32
 shadowAlpha: 0.33
 solid: true
@@ -22,7 +22,7 @@ destroySound: plantBreak
 drawCracks: false
 createRubble: false
 breakEffect: [
-  //What a fucking gongshow
+  //What a gongshow
   {
     type: RadialEffect
     amount: 16

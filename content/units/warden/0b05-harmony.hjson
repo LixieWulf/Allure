@@ -9,8 +9,6 @@ rotateSpeed: 2
 accel: 0.06
 drag: 0.05
 strafePenalty: 0.2
-buildSpeed: 4.5
-buildBeamOffset: 24
 healColor: 7382f088
 shieldColor: 7382f000
 engineSize: 0
@@ -18,25 +16,23 @@ lightRadius: 0
 shadowElevationScl: 1.7
 range: 660
 maxRange: 660
-drawCell: false
 drawBody: false
 outlines: false
 deathShake: 0
+targetFlags: [
+  turret, 
+  core
+]
 parts: [
   {
     type: RegionPart
-    layer: 90.02
+    layer: 91
     outline: false
+    name: allure-0b05-harmony
   }
   { 
     type: RegionPart
-    suffix: -top
-    outline: false
-    layer: 91.5
-  }
-  { 
-    type: RegionPart
-    suffix: -flare
+    name: allure-0b05-harmony-flare
     outline: false
     blending: additive
     layer: 92
@@ -46,7 +42,7 @@ parts: [
   }
   { 
     type: RegionPart
-    suffix: -flare
+    name: allure-0b05-harmony-flare
     outline: false
     layer: 140
     color: 7382f025
@@ -54,7 +50,7 @@ parts: [
   }
   { 
     type: RegionPart
-    suffix: -cover
+    name: allure-0b05-harmony-cover
     outline: false
     layer: 122
     color: 7382f0
@@ -65,7 +61,7 @@ parts: [
     outline: false
     blending: additive
     color: 7382f088
-    layer: 95
+    layer: 88
     xScl: 1.2
     yScl: 1.5
   }
@@ -324,7 +320,7 @@ weapons: [
     shootWarmupSpeed: 0.05
     minWarmup: 0.99
     shootStatus: {
-      name: hiusbgjdfv
+      name: kqieubrfjhqemjvbkqejmfrgjhafnbhvjae
       reloadMultiplier: 3
       healthMultiplier: 0.5
       show: false
@@ -697,7 +693,7 @@ weapons: [
         yScl: 0.5
         color: ffffff44
         colorTo: ffffff
-        layer: 90.01
+        layer: 88
         progress: heat
       }
       {
@@ -767,7 +763,7 @@ weapons: [
         colorTo: ffffff
         xScl: 0.55
         yScl: 0.55
-        layer: 90
+        layer: 88
         progress: warmup
       }
     ]
@@ -814,7 +810,7 @@ weapons: [
         mixColor: 90a2fc
         color: ffffff44
         colorTo: ffffff
-        layer: 90
+        layer: 88
         progress: warmup
       }
       {
@@ -884,7 +880,7 @@ weapons: [
         mixColor: 90a2fc
         color: ffffff44
         colorTo: ffffff
-        layer: 90
+        layer: 88
         progress: warmup
       }
     ]
@@ -920,7 +916,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90
+      layer: 90.1
       collides: false
       length: 16
       width: 8
@@ -950,7 +946,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90
+      layer: 90.1
       collides: false
       length: 10
       width: 5
@@ -980,7 +976,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90
+      layer: 90.1
       collides: false
       length: 10
       width: 5
@@ -1010,7 +1006,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90
+      layer: 90.1
       collides: false
       length: 10
       width: 5
@@ -1040,7 +1036,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90
+      layer: 90.1
       collides: false
       length: 10
       width: 5

@@ -96,38 +96,6 @@ abilities: [
       ]
     }
   }
-  {
-    type: UnitSpawnAbility
-    unit: epsilon
-    spawnX: 48
-    spawnY: -22
-    spawnTime: 25
-    spawnEffect: none
-  }
-  {
-    type: UnitSpawnAbility
-    unit: epsilon
-    spawnX: -48
-    spawnY: -22
-    spawnTime: 25
-    spawnEffect: none
-  }
-  {
-    type: UnitSpawnAbility
-    unit: pi
-    spawnX: 42
-    spawnY: -38
-    spawnTime: 40
-    spawnEffect: none
-  }
-  {
-    type: UnitSpawnAbility
-    unit: pi
-    spawnX: -42
-    spawnY: -38
-    spawnTime: 40
-    spawnEffect: none
-  }
 ]
 deathSound: none
 deathExplosionEffect: {

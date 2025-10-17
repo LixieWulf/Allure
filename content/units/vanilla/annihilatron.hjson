@@ -4,7 +4,7 @@ armor: 56
 speed: 0.4
 rotateSpeed: 2
 hitSize: 22
-visualElevationScl: 0.3
+shadowElevationScl: 0.3
 mechSideSway: 0.8
 mechStepParticles: true
 weapons: [

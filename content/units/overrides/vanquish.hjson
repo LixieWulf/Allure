@@ -1,0 +1,127 @@
+health: 9500
+crushDamage: 5
+weapons: [
+  {
+    name: vanquish-point-weapon
+    controllable: false
+    autoTarget: true
+    targetInterval: 20
+    targetSwitchInterval: 10
+    reload: 20
+    x: 12
+    y: 8.5
+    shootY: 5.5
+    recoil: 2
+    rotate: true
+    rotateSpeed: 2.7
+    shootSound: blaster
+    bullet: {
+      type: RailBulletType
+      length: 90
+      damage: 45
+      pierceDamageFactor: 1
+      shootEffect: sparkShoot
+      smokeEffect: shootBigSmoke
+      hitColor: feb380
+      hitEffect: hitBulletColor
+      pointEffectSpace: 4
+      pointEffect: {
+        line: true
+        particles: 1
+        cone: 0
+        length: 4
+        baseLength: 2
+        cap: false
+        lifetime: 30
+        strokeFrom: 1.2
+        strokeTo: 0
+        lenFrom: 8
+        lenTo: 2
+        colorTo: feb380
+      }
+    }
+  }
+  {
+    name: vanquish-point-weapon
+    controllable: false
+    targetInterval: 20
+    targetSwitchInterval: 10
+    autoTarget: true
+    reload: 20
+    x: 12
+    y: -9
+    shootY: 5.5
+    recoil: 2.7
+    rotate: true
+    rotateSpeed: 2
+    shootSound: blaster
+    bullet: {
+      type: RailBulletType
+      length: 90
+      damage: 45
+      pierceDamageFactor: 1
+      shootEffect: sparkShoot
+      smokeEffect: shootBigSmoke
+      hitColor: feb380
+      hitEffect: hitBulletColor
+      pointEffectSpace: 4
+      pointEffect: {
+        line: true
+        particles: 1
+        cone: 0
+        length: 4
+        baseLength: 2
+        cap: false
+        lifetime: 30
+        strokeFrom: 1.2
+        strokeTo: 0
+        lenFrom: 8
+        lenTo: 2
+        colorTo: feb380
+      }
+    }
+  }
+  {
+    name: vanquish-weapon
+    reload: 90
+    shootY: 17.75
+    shake: 1
+    recoil: 4
+    rotate: true
+    rotateSpeed: 1
+    mirror: false
+    alternate: false
+    x: 0
+    y: 0
+    shadow: 28
+    heatColor: f9350f
+    cooldownTime: 80
+    shootSound: bolt
+    shoot: {
+      shots: 6
+      shotDelay: 3
+    }
+    bullet: {
+      speed: 8
+      damage: 30
+      width: 10
+      height: 14
+      lifetime: 24
+      hitSize: 6
+      shootEffect: shootBig
+      smokeEffect: shootBigSmoke
+      hitColor: feb380
+      backColor: feb380
+      trailColor: feb380
+      frontColor: ffffff
+      trailWidth: 2
+      trailLength: 6
+      hitEffect: blastExplosion
+      despawnEffect: blastExplosion
+      splashDamageRadius: 20
+      splashDamage: 20
+      maxRange: 240
+      despawnSound: dullExplosion
+    }
+  }
+]

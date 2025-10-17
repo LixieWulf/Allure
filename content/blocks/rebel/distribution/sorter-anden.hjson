@@ -1,0 +1,5 @@
+type: Sorter
+invert: true
+requirements: [
+  anden/24
+]

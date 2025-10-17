@@ -1,0 +1,8 @@
+abilities: [
+  {
+    type: RepairFieldAbility
+    reload: 45
+    range: 20
+    amount: 10
+  }
+]

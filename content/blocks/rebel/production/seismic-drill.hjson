@@ -1,5 +1,6 @@
 type: BurstDrill
 canOverdrive: false
+customShadow: true
 size: 12
 squareSprite: false
 drillTime: 340
@@ -7,704 +8,189 @@ invertedTime: 310
 itemCapacity: 500
 dumpTime: 2
 tier: 9
-shake: 36
+shake: 18
 blockedItem: sand
 arrows: 0
+drillSound: none
+drillEffect: [
+  {
+    type: RadialEffect
+    lengthOffset: 48
+    amount: 2
+    rotationSpacing: 180
+    rotationOffset: 0
+    effect: [
+      {
+        type: WaveEffect
+        lifetime: 60
+        interp: pow3Out
+        sizeFrom: 0
+        sizeTo: 32
+        strokeFrom: 4
+        strokeTo: 0
+        colorTo: e65555
+      }
+      {
+        length: 0
+        particles: 1
+        lifetime: 30
+        region: allure-shootspike
+        sizeFrom: 60
+        sizeTo: 0
+        colorTo: e65555
+      }
+      {
+        particles: 18
+        lifetime: 90
+        length: 50
+        cone: 15
+        sizeFrom: 6
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        interp: pow3Out
+        sizeInterp: linear
+        layer: 105
+      }
+    ]
+  }
+  {
+    type: RadialEffect
+    lengthOffset: 24
+    amount: 2
+    rotationSpacing: 180
+    rotationOffset: 90
+    effectRotationOffset: -90
+    effect: [
+      {
+        type: RadialEffect
+        lengthOffset: 48
+        amount: 2
+        rotationSpacing: 180
+        rotationOffset: 0
+        effect: [
+          {
+            type: WaveEffect
+            lifetime: 60
+            interp: pow3Out
+            sizeFrom: 0
+            sizeTo: 32
+            strokeFrom: 4
+            strokeTo: 0
+            colorTo: e65555
+          }
+          {
+            length: 0
+            particles: 1
+            lifetime: 30
+            region: allure-shootspike
+            sizeFrom: 60
+            sizeTo: 0
+            colorTo: e65555
+          }
+          {
+            particles: 18
+            lifetime: 90
+            length: 50
+            cone: 15
+            sizeFrom: 6
+            sizeTo: 0
+            colorFrom: 787878
+            colorTo: 787878
+            interp: pow3Out
+            sizeInterp: linear
+            layer: 105
+          }
+        ]
+      }
+    ]
+  }
+  {
+    particles: 80
+    lifetime: 240
+    length: 50
+    baseLength: 50
+    sizeFrom: 32
+    sizeTo: 0
+    colorFrom: 78787888
+    colorTo: 78787888
+    interp: pow3Out
+    sizeInterp: linear
+    layer: 65
+  }
+  {
+    particles: 30
+    lifetime: 40
+    length: 15
+    baseLength: 15
+    sizeFrom: 0
+    sizeTo: 12
+    colorFrom: ffffff
+    colorTo: ffffff
+    interp: pow3Out
+    sizeInterp: slope
+  }
+  {
+    particles: 30
+    lifetime: 60
+    length: 15
+    baseLength: 15
+    sizeFrom: 0
+    sizeTo: 24
+    colorFrom: e65555
+    colorTo: e65555
+    interp: pow3Out
+    sizeInterp: slope
+    layer: 100
+  }
+  {
+    particles: 30
+    lifetime: 60
+    length: 115
+    baseLength: 15
+    sizeFrom: 0
+    sizeTo: 5
+    colorFrom: e65555
+    colorTo: e65555
+    interp: pow2Out
+    sizeInterp: slope
+    layer: 100
+  }
+  {
+    type: WaveEffect
+    lifetime: 120
+    interp: pow3Out
+    sizeFrom: 0
+    sizeTo: 128
+    strokeFrom: 16
+    strokeTo: 0
+    colorTo: e65555
+  }
+  {
+    type: SoundEffect
+    sound: largeCannon
+    minPitch: 0.5
+    maxPitch: 0.5
+    minVolume: 1
+    maxVolume: 1
+    effect: none
+  }
+  {
+    type: SoundEffect
+    sound: plasmaboom
+    minPitch: 1
+    maxPitch: 1
+    minVolume: 1
+    maxVolume: 1
+    effect: none
+  }
+]
 consumes: {
   liquids: [
     energia/0.2
   ]
 }
 drillSoundVolume: 1.2
-//Yay!
-drillEffect: [
-  {
-    type: RadialEffect
-    amount: 1
-    lengthOffset: -28
-    effect: [
-      {
-        type: RadialEffect
-        amount: 1
-        rotationOffset: 90
-        lengthOffset: 28
-        effect: {
-          type: SoundEffect
-          startDelay: 10
-          sound: drillImpact
-          minPitch: 1
-          maxPitch: 1
-          minVolume: 0.6
-          maxVolume: 0.6
-          effect: [
-            {
-              length: 0
-              useRotation: false
-              particles: 1
-              layer: 35
-              region: allure-seismic-drill-invert0
-              sizeFrom: 12
-              sizeTo: 12
-              lifetime: 240
-              interp: pow2In
-              colorFrom: ffffff
-              colorTo: ffffff00
-              clip: 8192
-              startDelay: 10
-            }
-            {
-              type: WaveEffect
-              lifetime: 45
-              sizeFrom: 0
-              sizeTo: 24
-              colorTo: e65555
-              interp: pow3Out
-              startDelay: 10
-            }
-            {
-              useRotation: false
-              baseRotation: 90
-              particles: 18
-              lifetime: 90
-              length: 50
-              cone: 15
-              sizeFrom: 6
-              sizeTo: 0
-              colorFrom: 787878
-              colorTo: 787878
-              interp: pow3Out
-              sizeInterp: linear
-              layer: 105
-              startDelay: 10
-            }
-            {
-              useRotation: false
-              baseRotation: 90
-              particles: 18
-              lifetime: 60
-              length: 70
-              cone: 20
-              sizeFrom: 3
-              sizeTo: 0
-              colorFrom: 787878
-              colorTo: 787878
-              interp: pow3Out
-              sizeInterp: linear
-              layer: 105
-              startDelay: 10
-            }
-            {
-              useRotation: false
-              baseRotation: 90
-              particles: 18
-              length: 100
-              lifetime: 35
-              cone: 15
-              sizeFrom: 1.5
-              sizeTo: 0
-              colorFrom: 787878
-              colorTo: 787878
-              interp: pow3Out
-              sizeInterp: linear
-              layer: 105
-              startDelay: 10
-            }
-            {
-              useRotation: false
-              baseRotation: 90
-              particles: 1
-              region: allure-shootspike
-              lifetime: 30
-              length: 0
-              cone: 0
-              sizeFrom: 50
-              sizeTo: 0
-              colorTo: e65555
-              interp: pow2In
-              startDelay: 10
-            }
-          ]
-        }
-      }
-      {
-        type: SoundEffect
-        startDelay: 20
-        sound: drillImpact
-        minPitch: 1
-        maxPitch: 1
-        minVolume: 0.6
-        maxVolume: 0.6
-        effect: [
-          {
-            length: 0
-            useRotation: false
-            particles: 1
-            layer: 35
-            region: allure-seismic-drill-invert1
-            sizeFrom: 12
-            sizeTo: 12
-            lifetime: 240
-            interp: pow2In
-            colorFrom: ffffff
-            colorTo: ffffff00
-            clip: 8192
-            startDelay: 20
-          }
-          {
-            type: WaveEffect
-            lifetime: 45
-            sizeFrom: 0
-            sizeTo: 24
-            colorTo: e65555
-            interp: pow3Out
-            startDelay: 20
-          }
-          {
-            useRotation: false
-            baseRotation: 90
-            particles: 18
-            lifetime: 90
-            length: 50
-            cone: 15
-            sizeFrom: 6
-            sizeTo: 0
-            colorFrom: 787878
-            colorTo: 787878
-            interp: pow3Out
-            sizeInterp: linear
-            layer: 105
-            startDelay: 20
-          }
-          {
-            useRotation: false
-            baseRotation: 90
-            particles: 18
-            lifetime: 60
-            length: 70
-            cone: 20
-            sizeFrom: 3
-            sizeTo: 0
-            colorFrom: 787878
-            colorTo: 787878
-            interp: pow3Out
-            sizeInterp: linear
-            layer: 105
-            startDelay: 20
-          }
-          {
-            useRotation: false
-            baseRotation: 90
-            particles: 18
-            length: 100
-            lifetime: 35
-            cone: 15
-            sizeFrom: 1.5
-            sizeTo: 0
-            colorFrom: 787878
-            colorTo: 787878
-            interp: pow3Out
-            sizeInterp: linear
-            layer: 105
-            startDelay: 20
-          }
-          {
-            useRotation: false
-            baseRotation: 90
-            particles: 1
-            region: allure-shootspike
-            lifetime: 30
-            length: 0
-            cone: 0
-            sizeFrom: 50
-            sizeTo: 0
-            colorTo: e65555
-            interp: pow2In
-            startDelay: 20
-          }
-        ]
-      }
-      {
-        type: RadialEffect
-        amount: 1
-        rotationOffset: 90
-        lengthOffset: -28
-        effect: {
-          type: SoundEffect
-          startDelay: 30
-          sound: drillImpact
-          minPitch: 1
-          maxPitch: 1
-          minVolume: 0.6
-          maxVolume: 0.6
-          effect: [
-            {
-              length: 0
-              useRotation: false
-              particles: 1
-              layer: 35
-              region: allure-seismic-drill-invert2
-              sizeFrom: 12
-              sizeTo: 12
-              lifetime: 240
-              interp: pow2In
-              colorFrom: ffffff
-              colorTo: ffffff00
-              clip: 8192
-              startDelay: 30
-            }
-            {
-              type: WaveEffect
-              lifetime: 45
-              sizeFrom: 0
-              sizeTo: 24
-              colorTo: e65555
-              interp: pow3Out
-              startDelay: 30
-            }
-            {
-              useRotation: false
-              baseRotation: 90
-              particles: 18
-              lifetime: 90
-              length: 50
-              cone: 15
-              sizeFrom: 6
-              sizeTo: 0
-              colorFrom: 787878
-              colorTo: 787878
-              interp: pow3Out
-              sizeInterp: linear
-              layer: 105
-              startDelay: 30
-            }
-            {
-              useRotation: false
-              baseRotation: 90
-              particles: 18
-              lifetime: 60
-              length: 70
-              cone: 20
-              sizeFrom: 3
-              sizeTo: 0
-              colorFrom: 787878
-              colorTo: 787878
-              interp: pow3Out
-              sizeInterp: linear
-              layer: 105
-              startDelay: 30
-            }
-            {
-              useRotation: false
-              baseRotation: 90
-              particles: 18
-              length: 100
-              lifetime: 35
-              cone: 15
-              sizeFrom: 1.5
-              sizeTo: 0
-              colorFrom: 787878
-              colorTo: 787878
-              interp: pow3Out
-              sizeInterp: linear
-              layer: 105
-              startDelay: 30
-            }
-            {
-              useRotation: false
-              baseRotation: 90
-              particles: 1
-              region: allure-shootspike
-              lifetime: 30
-              length: 0
-              cone: 0
-              sizeFrom: 50
-              sizeTo: 0
-              colorTo: e65555
-              interp: pow2In
-              startDelay: 30
-            }
-          ]
-        }
-      }
-    ]
-  }
-  {
-    type: RadialEffect
-    amount: 1
-    lengthOffset: 28
-    effect: [
-      {
-        type: RadialEffect
-        amount: 1
-        rotationOffset: 90
-        lengthOffset: 28
-        effect: {
-          type: SoundEffect
-          startDelay: 40
-          sound: drillImpact
-          minPitch: 1
-          maxPitch: 1
-          minVolume: 0.6
-          maxVolume: 0.6
-          effect: [
-            {
-              length: 0
-              useRotation: false
-              particles: 1
-              layer: 35
-              region: allure-seismic-drill-invert3
-              sizeFrom: 12
-              sizeTo: 12
-              lifetime: 240
-              interp: pow2In
-              colorFrom: ffffff
-              colorTo: ffffff00
-              clip: 8192
-              startDelay: 40
-            }
-            {
-              type: WaveEffect
-              lifetime: 45
-              sizeFrom: 0
-              sizeTo: 24
-              colorTo: e65555
-              interp: pow3Out
-              startDelay: 40
-            }
-            {
-              useRotation: false
-              baseRotation: 90
-              particles: 18
-              lifetime: 90
-              length: 50
-              cone: 15
-              sizeFrom: 6
-              sizeTo: 0
-              colorFrom: 787878
-              colorTo: 787878
-              interp: pow3Out
-              sizeInterp: linear
-              layer: 105
-              startDelay: 40
-            }
-            {
-              useRotation: false
-              baseRotation: 90
-              particles: 18
-              lifetime: 60
-              length: 70
-              cone: 20
-              sizeFrom: 3
-              sizeTo: 0
-              colorFrom: 787878
-              colorTo: 787878
-              interp: pow3Out
-              sizeInterp: linear
-              layer: 105
-              startDelay: 40
-            }
-            {
-              useRotation: false
-              baseRotation: 90
-              particles: 18
-              length: 100
-              lifetime: 35
-              cone: 15
-              sizeFrom: 1.5
-              sizeTo: 0
-              colorFrom: 787878
-              colorTo: 787878
-              interp: pow3Out
-              sizeInterp: linear
-              layer: 105
-              startDelay: 40
-            }
-            {
-              useRotation: false
-              baseRotation: 90
-              particles: 1
-              region: allure-shootspike
-              lifetime: 30
-              length: 0
-              cone: 0
-              sizeFrom: 50
-              sizeTo: 0
-              colorTo: e65555
-              interp: pow2In
-              startDelay: 40
-            }
-          ]
-        }
-      }
-      {
-        type: SoundEffect
-        startDelay: 50
-        sound: drillImpact
-        minPitch: 1
-        maxPitch: 1
-        minVolume: 0.6
-        maxVolume: 0.6
-        effect: [
-          {
-            length: 0
-            useRotation: false
-            particles: 1
-            layer: 35
-            region: allure-seismic-drill-invert4
-            sizeFrom: 12
-            sizeTo: 12
-            lifetime: 240
-            interp: pow2In
-            colorFrom: ffffff
-            colorTo: ffffff00
-            clip: 8192
-            startDelay: 50
-          }
-          {
-            type: WaveEffect
-            lifetime: 45
-            sizeFrom: 0
-            sizeTo: 24
-            colorTo: e65555
-            interp: pow3Out
-            startDelay: 50
-          }
-          {
-            useRotation: false
-            baseRotation: 90
-            particles: 18
-            lifetime: 90
-            length: 50
-            cone: 15
-            sizeFrom: 6
-            sizeTo: 0
-            colorFrom: 787878
-            colorTo: 787878
-            interp: pow3Out
-            sizeInterp: linear
-            layer: 105
-            startDelay: 50
-          }
-          {
-            useRotation: false
-            baseRotation: 90
-            particles: 18
-            lifetime: 60
-            length: 70
-            cone: 20
-            sizeFrom: 3
-            sizeTo: 0
-            colorFrom: 787878
-            colorTo: 787878
-            interp: pow3Out
-            sizeInterp: linear
-            layer: 105
-            startDelay: 50
-          }
-          {
-            useRotation: false
-            baseRotation: 90
-            particles: 18
-            length: 100
-            lifetime: 35
-            cone: 15
-            sizeFrom: 1.5
-            sizeTo: 0
-            colorFrom: 787878
-            colorTo: 787878
-            interp: pow3Out
-            sizeInterp: linear
-            layer: 105
-            startDelay: 50
-          }
-          {
-            useRotation: false
-            baseRotation: 90
-            particles: 1
-            region: allure-shootspike
-            lifetime: 30
-            length: 0
-            cone: 0
-            sizeFrom: 50
-            sizeTo: 0
-            colorTo: e65555
-            interp: pow2In
-            startDelay: 50
-          }
-        ]
-      }
-      {
-        type: RadialEffect
-        amount: 1
-        rotationOffset: 90
-        lengthOffset: -28
-        effect: {
-          type: SoundEffect
-          startDelay: 60
-          sound: drillImpact
-          minPitch: 1
-          maxPitch: 1
-          minVolume: 0.6
-          maxVolume: 0.6
-          effect: [
-            {
-              length: 0
-              useRotation: false
-              particles: 1
-              layer: 35
-              region: allure-seismic-drill-invert5
-              sizeFrom: 12
-              sizeTo: 12
-              lifetime: 240
-              interp: pow2In
-              colorFrom: ffffff
-              colorTo: ffffff00
-              clip: 8192
-              startDelay: 60
-            }
-            {
-              type: WaveEffect
-              lifetime: 45
-              sizeFrom: 0
-              sizeTo: 24
-              colorTo: e65555
-              interp: pow3Out
-              startDelay: 60
-            }
-            {
-              useRotation: false
-              baseRotation: 90
-              particles: 18
-              lifetime: 90
-              length: 50
-              cone: 15
-              sizeFrom: 6
-              sizeTo: 0
-              colorFrom: 787878
-              colorTo: 787878
-              interp: pow3Out
-              sizeInterp: linear
-              layer: 105
-              startDelay: 60
-            }
-            {
-              useRotation: false
-              baseRotation: 90
-              particles: 18
-              lifetime: 60
-              length: 70
-              cone: 20
-              sizeFrom: 3
-              sizeTo: 0
-              colorFrom: 787878
-              colorTo: 787878
-              interp: pow3Out
-              sizeInterp: linear
-              layer: 105
-              startDelay: 60
-            }
-            {
-              useRotation: false
-              baseRotation: 90
-              particles: 18
-              length: 100
-              lifetime: 35
-              cone: 15
-              sizeFrom: 1.5
-              sizeTo: 0
-              colorFrom: 787878
-              colorTo: 787878
-              interp: pow3Out
-              sizeInterp: linear
-              layer: 105
-              startDelay: 60
-            }
-            {
-              useRotation: false
-              baseRotation: 90
-              particles: 1
-              region: allure-shootspike
-              lifetime: 30
-              length: 0
-              cone: 0
-              sizeFrom: 50
-              sizeTo: 0
-              colorTo: e65555
-              interp: pow2In
-              startDelay: 60
-            }
-          ]
-        }
-      }
-    ]
-  }
-  {
-    type: WaveEffect
-    lifetime: 45
-    sizeFrom: 0
-    sizeTo: 45
-    colorTo: e65555
-    interp: pow3Out
-  }
-  {
-    useRotation: false
-    baseRotation: 90
-    particles: 24
-    lifetime: 90
-    length: 60
-    cone: 15
-    sizeFrom: 8
-    sizeTo: 0
-    colorFrom: 787878
-    colorTo: 787878
-    interp: pow3Out
-    sizeInterp: linear
-    layer: 105
-  }
-  {
-    useRotation: false
-    baseRotation: 90
-    particles: 18
-    lifetime: 70
-    length: 80
-    cone: 20
-    sizeFrom: 4
-    sizeTo: 0
-    colorFrom: 787878
-    colorTo: 787878
-    interp: pow3Out
-    sizeInterp: linear
-    layer: 105
-  }
-  {
-    useRotation: false
-    baseRotation: 90
-    particles: 18
-    length: 140
-    lifetime: 50
-    cone: 15
-    sizeFrom: 2
-    sizeTo: 0
-    colorFrom: 787878
-    colorTo: 787878
-    interp: pow3Out
-    sizeInterp: linear
-    layer: 105
-  }
-  {
-    useRotation: false
-    baseRotation: 90
-    particles: 1
-    region: allure-shootspike
-    lifetime: 40
-    length: 0
-    cone: 0
-    sizeFrom: 80
-    sizeTo: 0
-    colorTo: e65555
-    interp: pow2In
-  }
-]
 category: production
 requirements: [
   anden/1200

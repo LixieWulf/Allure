@@ -1,0 +1,8 @@
+type: DuctBridge
+itemCapacity: 50
+squareSprite: false
+range: 7
+requirements: [
+  anden/96
+]
+speed: 1

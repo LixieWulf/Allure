@@ -5,6 +5,7 @@ quickRotate: true
 liquidOutputDirections: [0]
 craftTime: 120
 floating: true
+itemCapacity: 96
 liquidCapacity: 180
 liquidPressure: 2.1
 maxBoost: 1
@@ -13,6 +14,8 @@ minEfficiency: 1
 boostScale: 0.011458
 drawer: [
   {
+    type: DrawRegion
+    layer: 29.5
   }
   {
     type: DrawLiquidTile
@@ -22,6 +25,10 @@ drawer: [
   {
     type: DrawRegion
     suffix: -top1
+  }
+  {
+    type: DrawRegion
+    suffix: -shade
   }
   {
     type: DrawRegion
@@ -43,12 +50,6 @@ drawer: [
     suffix: -spin2-shadow
     rotateSpeed: -0.6
     rotation: 60
-    x: -4
-    y: -4
-  }
-  {
-    type: DrawRegion
-    suffix: -top2-shadow
     x: -4
     y: -4
   }
@@ -103,7 +104,7 @@ drawer: [
   {
     type: DrawRegion
     suffix: -transfer-shadow
-    layer: 30.9
+    layer: 29.7
     x: -6
     y: -6
     buildingRotate: true
@@ -111,27 +112,19 @@ drawer: [
   {
     type: DrawRegion
     suffix: -transfer
-    layer: 31
+    layer: 50
     buildingRotate: true
   }
   {
     type: DrawRegion
     suffix: -top2
-    layer: 31.1
-  }
-  {
-    type: DrawRegion
-    suffix: -transfer-top
-    layer: 31.2
-    buildingRotate: true
+    layer: 50
   }
 ]
 consumes: {
-  liquids: [
-    energia/0.8
-  ]
   items: [
     uranium/5
+    contained-energia/48
   ]
 }
 outputLiquid: arreacta/1.2

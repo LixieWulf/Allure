@@ -1,8 +1,9 @@
 type: AttributeCrafter
 size: 12
-craftTime: 120
+craftTime: 5
 floating: true
-liquidCapacity: 180
+itemCapacity: 96
+liquidCapacity: 1296
 liquidPressure: 2.1
 maxBoost: 1
 baseEfficiency: 0
@@ -51,11 +52,13 @@ drawer: [
 ]
 consumes: {
   liquids: [
-    arreacta/0.01
-    slag/1.6
+    arreacta/0.1
+  ]
+  items: [
+    contained-slag/4
   ]
 }
-outputLiquid: crystal-plasma/1
+outputLiquid: crystal-plasma/0.8
 category: crafting
 requirements: [
   anden/1200

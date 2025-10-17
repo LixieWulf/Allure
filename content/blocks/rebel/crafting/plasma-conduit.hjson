@@ -1,0 +1,52 @@
+type: GenericCrafter
+size: 2
+rotate: true
+quickRotate: true
+liquidOutputDirections: [0]
+enableDrawStatus: false
+placeableLiquid: true
+itemCapacity: 100
+liquidCapacity: 80
+liquidPressure: 2.1
+drawer: [
+  {
+    type: DrawRegion
+    layer: 29.5
+  }
+  {
+    type: DrawLiquidTile
+    padding: 4
+    drawLiquid: crystal-plasma
+  }
+  {
+    type: DrawRegion
+    suffix: -transfer-shadow
+    layer: 29.7
+    x: -3.25
+    y: -3.25
+    buildingRotate: true
+  }
+  {
+    type: DrawRegion
+    suffix: -transfer
+    layer: 41
+    buildingRotate: true
+  }
+  {
+    type: DrawRegion
+    suffix: -top
+    layer: 45
+  }
+]
+consumes: {
+  liquids: [
+    crystal-plasma/0.06666666666
+  ]
+}
+outputLiquid: crystal-plasma/0.06666666666
+category: crafting
+requirements: [
+  anden/80
+  graphite/50
+  scilaxa/10
+]

@@ -10,7 +10,7 @@ sparkSpread: 25
 sparkRange: -26
 itemCapacity: 30
 liquidCapacity: 30
-boostHeatColor: e65555
+boostHeatColor: 3bbeff
 consumes: {
   liquids: [
     chlorine/0.05

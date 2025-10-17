@@ -1,0 +1,1200 @@
+localizedName: yet another internal unit
+controller: MinerAI
+defaultController: MinerAI
+playerControllable: false
+hidden: true
+flying: true
+health: 2000000
+hitSize: 0
+drag: 10000
+physics: false
+drawBody: false
+drawCell: false
+drawShields: false
+outlines: false
+hoverable: false
+targetable: false
+hittable: false
+groundLayer: 0
+engineSize: 0
+deathShake: 0
+lightRadius: 0
+clipSize: 8192
+parts: [
+  //inner vortex (damage area)
+  {
+    type: RegionPart
+    xScl: 0
+    yScl: 0
+    moveRot: 7200
+    name: error
+    progress: reload
+    weaponIndex: 0
+    children: [
+      {
+        type: EffectSpawnerPart
+        x: -128
+        effectChance: 0.4
+        rotation: 0
+        width: 48
+        height: 48
+        useProgress: false
+        effect: [
+          {
+            particles: 4
+            cone: 15
+            length: -480
+            baseLength: 480
+            lifetime: 75
+            sizeFrom: 80
+            sizeTo: 0
+            sizeInterp: bounceIn
+            colorFrom: 78787800
+            colorTo: 444444
+            layer: 99.4
+            lightScl: 0
+            lightOpacity: 0
+          }
+          {
+            particles: 1
+            cone: 15
+            length: -320
+            baseLength: 320
+            randLength: false
+            lifetime: 75
+            sizeFrom: 0
+            sizeTo: 60
+            sizeInterp: slope
+            colorFrom: 9f9f9f00
+            colorTo: 9f9f9f
+            layer: 99.6
+            lightScl: 0
+            lightOpacity: 0
+          }
+        ]
+      }
+      {
+        type: EffectSpawnerPart
+        x: 128
+        effectChance: 0.4
+        rotation: 180
+        width: 48
+        height: 48
+        useProgress: false
+        effect: [
+          {
+            particles: 4
+            cone: 15
+            length: -480
+            baseLength: 480
+            lifetime: 75
+            sizeFrom: 80
+            sizeTo: 0
+            sizeInterp: bounceIn
+            colorFrom: 78787800
+            colorTo: 444444
+            layer: 99.4
+            lightScl: 0
+            lightOpacity: 0
+          }
+          {
+            particles: 1
+            cone: 15
+            length: -320
+            baseLength: 320
+            randLength: false
+            lifetime: 75
+            sizeFrom: 0
+            sizeTo: 60
+            sizeInterp: slope
+            colorFrom: 9f9f9f00
+            colorTo: 9f9f9f
+            layer: 99.6
+            lightScl: 0
+            lightOpacity: 0
+          }
+        ]
+      }
+    ]
+  }
+  {
+    type: RegionPart
+    xScl: 0
+    yScl: 0
+    moveRot: -1440
+    name: error
+    progress: reload
+    weaponIndex: 0
+    children: [
+      {
+        type: EffectSpawnerPart
+        x: -480
+        rotation: 0
+        effectChance: 0.2
+        width: 48
+        height: 48
+        useProgress: false
+        effect: [
+          {
+            particles: 1
+            cone: 15
+            length: -400
+            baseLength: 400
+            lifetime: 150
+            sizeFrom: 0
+            sizeTo: 90
+            sizeInterp: slope
+            colorFrom: 66666688
+            colorTo: 66666688
+            layer: 99.4
+            lightScl: 0
+            lightOpacity: 0
+          }
+          {
+            particles: 1
+            baseRotation: 45
+            cone: 15
+            length: -600
+            baseLength: 600
+            lifetime: 200
+            sizeFrom: 0
+            sizeTo: 90
+            sizeInterp: slope
+            colorFrom: 99999988
+            colorTo: 99999988
+            layer: 99.4
+            lightScl: 0
+            lightOpacity: 0
+          }
+        ]
+      }
+      {
+        type: EffectSpawnerPart
+        x: 480
+        rotation: 180
+        width: 48
+        height: 48
+        useProgress: false
+        effect: [
+          {
+            particles: 1
+            cone: 15
+            length: -400
+            baseLength: 400
+            lifetime: 150
+            sizeFrom: 0
+            sizeTo: 90
+            sizeInterp: slope
+            colorFrom: 66666688
+            colorTo: 66666688
+            layer: 99.4
+            lightScl: 0
+            lightOpacity: 0
+          }
+          {
+            particles: 1
+            baseRotation: 45
+            cone: 15
+            length: -600
+            baseLength: 600
+            lifetime: 200
+            sizeFrom: 0
+            sizeTo: 90
+            sizeInterp: slope
+            colorFrom: 99999988
+            colorTo: 99999988
+            layer: 99.4
+            lightScl: 0
+            lightOpacity: 0
+          }
+        ]
+      }
+    ]
+  }
+  {
+    type: RegionPart
+    xScl: 0
+    yScl: 0
+    moveRot: -360
+    name: error
+    progress: reload
+    weaponIndex: 0
+    children: [
+      {
+        type: EffectSpawnerPart
+        x: -360
+        rotation: 0
+        width: 48
+        height: 48
+        useProgress: false
+        effect: [
+          {
+            particles: 4
+            cone: 15
+            length: -800
+            baseLength: 1000
+            lifetime: 360
+            sizeFrom: 120
+            sizeTo: 0
+            interp: pow2In
+            sizeInterp: pow10In
+            colorFrom: 78787800
+            colorTo: 66666688
+            layer: 99.5
+            lightScl: 0
+            lightOpacity: 0
+          }
+          {
+            particles: 15
+            cone: 60
+            length: -600
+            baseLength: 800
+            lifetime: 1000
+            sizeFrom: 120
+            sizeTo: 0
+            interp: pow3In
+            sizeInterp: pow10In
+            colorFrom: 88888800
+            colorTo: 56565688
+            layer: 99.3
+            lightScl: 0
+            lightOpacity: 0
+          }
+        ]
+      }
+      {
+        type: EffectSpawnerPart
+        x: 360
+        rotation: 180
+        width: 48
+        height: 48
+        useProgress: false
+        effect: [
+          {
+            particles: 4
+            cone: 15
+            length: -800
+            baseLength: 1000
+            lifetime: 360
+            sizeFrom: 120
+            sizeTo: 0
+            interp: pow2In
+            sizeInterp: pow10In
+            colorFrom: 78787800
+            colorTo: 66666688
+            layer: 99.5
+            lightScl: 0
+            lightOpacity: 0
+          }
+          {
+            particles: 15
+            cone: 60
+            length: -600
+            baseLength: 800
+            lifetime: 1000
+            sizeFrom: 120
+            sizeTo: 0
+            interp: pow3In
+            sizeInterp: pow10In
+            colorFrom: 88888800
+            colorTo: 56565688
+            layer: 99.3
+            lightScl: 0
+            lightOpacity: 0
+          }
+        ]
+      }
+    ]
+  }
+  {
+    type: RegionPart
+    xScl: 0
+    yScl: 0
+    moveRot: -1440
+    name: error
+    progress: reload
+    weaponIndex: 0
+    children: [
+      {
+        type: EffectSpawnerPart
+        x: -900
+        rotation: 0
+        width: 48
+        height: 48
+        useProgress: false
+        effect: [
+          {
+            particles: 4
+            cone: 15
+            baseRotation: 45
+            length: -800
+            baseLength: 1000
+            lifetime: 360
+            sizeFrom: 120
+            sizeTo: 0
+            interp: pow2In
+            sizeInterp: pow10In
+            colorFrom: 88888800
+            colorTo: 78787888
+            layer: 99.4
+            lightScl: 0
+            lightOpacity: 0
+          }
+          {
+            particles: 10
+            cone: 60
+            length: -600
+            baseLength: 800
+            lifetime: 700
+            sizeFrom: 160
+            sizeTo: 0
+            interp: pow2In
+            sizeInterp: pow10In
+            colorFrom: 99999900
+            colorTo: 88888888
+            layer: 99.2
+            lightScl: 0
+            lightOpacity: 0
+          }
+        ]
+      }
+      {
+        type: EffectSpawnerPart
+        x: 900
+        rotation: 180
+        width: 48
+        height: 48
+        useProgress: false
+        effect: [
+          {
+            particles: 4
+            cone: 15
+            baseRotation: 45
+            length: -800
+            baseLength: 1000
+            lifetime: 360
+            sizeFrom: 120
+            sizeTo: 0
+            interp: pow2In
+            sizeInterp: pow10In
+            colorFrom: 78787800
+            colorTo: 66666688
+            layer: 99.4
+            lightScl: 0
+            lightOpacity: 0
+          }
+          {
+            particles: 10
+            cone: 60
+            length: -600
+            baseLength: 800
+            lifetime: 700
+            sizeFrom: 160
+            sizeTo: 0
+            interp: pow2In
+            sizeInterp: pow10In
+            colorFrom: 99999900
+            colorTo: 88888888
+            layer: 99.2
+            lightScl: 0
+            lightOpacity: 0
+          }
+        ]
+      }
+    ]
+  }
+  {
+    type: RegionPart
+    xScl: 0
+    yScl: 0
+    moveRot: -360
+    name: error
+    progress: reload
+    weaponIndex: 0
+    children: [
+      {
+        type: EffectSpawnerPart
+        x: -1200
+        rotation: 0
+        width: 48
+        height: 48
+        useProgress: false
+        effect: [
+          {
+            particles: 2
+            cone: 45
+            baseRotation: 45
+            length: -600
+            baseLength: 800
+            lifetime: 1000
+            sizeFrom: 190
+            sizeTo: 0
+            interp: pow2In
+            sizeInterp: pow10In
+            colorFrom: bfbfbf00
+            colorTo: 88888888
+            layer: 99.2
+            clip: 8192
+            lightScl: 0
+            lightOpacity: 0
+          }
+          {
+            particles: 3
+            cone: 45
+            baseRotation: 45
+            length: -1800
+            baseLength: 2200
+            lifetime: 700
+            sizeFrom: 0
+            sizeTo: 240
+            interp: pow2In
+            sizeInterp: slope
+            colorFrom: bfbfbf00
+            colorTo: bfbfbf88
+            layer: 99.2
+            clip: 8192
+            lightScl: 0
+            lightOpacity: 0
+          }
+        ]
+      }
+      {
+        type: EffectSpawnerPart
+        x: 1200
+        rotation: 180
+        width: 48
+        height: 48
+        useProgress: false
+        effect: [
+          {
+            particles: 2
+            cone: 45
+            baseRotation: 45
+            length: -600
+            baseLength: 800
+            lifetime: 1000
+            sizeFrom: 190
+            sizeTo: 0
+            interp: pow2In
+            sizeInterp: pow10In
+            colorFrom: bfbfbf00
+            colorTo: 88888888
+            layer: 99.2
+            clip: 8192
+            lightScl: 0
+            lightOpacity: 0
+          }
+          {
+            particles: 3
+            cone: 45
+            baseRotation: 45
+            length: -1800
+            baseLength: 2200
+            lifetime: 700
+            sizeFrom: 0
+            sizeTo: 240
+            interp: pow2In
+            sizeInterp: slope
+            colorFrom: bfbfbf00
+            colorTo: bfbfbf88
+            layer: 99.2
+            clip: 8192
+            lightScl: 0
+            lightOpacity: 0
+          }
+        ]
+      }
+    ]
+  }
+  //rain
+  {
+    type: RegionPart
+    xScl: 0
+    yScl: 0
+    moveRot: -14400
+    name: error
+    progress: reload
+    weaponIndex: 0
+    children: [
+      {
+        type: EffectSpawnerPart
+        x: -300
+        rotation: 0
+        effectChance: 1
+        width: 300
+        height: 48
+        useProgress: false
+        effect: [
+          {
+            particles: 4
+            cone: 10
+            baseRotation: -135
+            length: 200
+            baseLength: 100
+            lifetime: 45
+            lenFrom: 0
+            lenTo: 24
+            strokeFrom: 2
+            strokeTo: 2
+            line: true
+            sizeInterp: slope
+            colorFrom: 46b084
+            colorTo: 46b084
+            layer: 99
+            lightScl: 0
+            lightOpacity: 0
+          }
+          {
+            type: WaveEffect
+            lifetime: 15
+            sizeFrom: 0
+            sizeTo: 12
+            interp: pow3Out
+            colorFrom: 46b084
+            colorTo: 46b084
+            layer: 50
+            lightScl: 0
+            lightOpacity: 0
+          }
+        ]
+      }
+      {
+        type: EffectSpawnerPart
+        y: -300
+        rotation: 90
+        effectChance: 1
+        width: 300
+        height: 48
+        useProgress: false
+        effect: [
+          {
+            particles: 4
+            cone: 10
+            baseRotation: -135
+            length: 200
+            baseLength: 100
+            lifetime: 45
+            lenFrom: 0
+            lenTo: 24
+            strokeFrom: 2
+            strokeTo: 2
+            line: true
+            sizeInterp: slope
+            colorFrom: 46b084
+            colorTo: 46b084
+            layer: 99
+            lightScl: 0
+            lightOpacity: 0
+          }
+          {
+            type: WaveEffect
+            lifetime: 15
+            sizeFrom: 0
+            sizeTo: 12
+            interp: pow3Out
+            colorFrom: 46b084
+            colorTo: 46b084
+            layer: 50
+            lightScl: 0
+            lightOpacity: 0
+          }
+        ]
+      }
+      {
+        type: EffectSpawnerPart
+        x: 300
+        rotation: 180
+        effectChance: 1
+        width: 300
+        height: 48
+        useProgress: false
+        effect: [
+          {
+            particles: 4
+            cone: 10
+            baseRotation: -135
+            baseLength: 100
+            length: 200
+            lifetime: 45
+            lenFrom: 0
+            lenTo: 24
+            strokeFrom: 2
+            strokeTo: 2
+            line: true
+            sizeInterp: slope
+            colorFrom: 46b084
+            colorTo: 46b084
+            layer: 99
+            lightScl: 0
+            lightOpacity: 0
+          }
+          {
+            type: WaveEffect
+            lifetime: 15
+            sizeFrom: 0
+            sizeTo: 12
+            interp: pow3Out
+            colorFrom: 46b084
+            colorTo: 46b084
+            layer: 50
+            lightScl: 0
+            lightOpacity: 0
+          }
+        ]
+      }
+      {
+        type: EffectSpawnerPart
+        y: 300
+        rotation: 270
+        effectChance: 1
+        width: 300
+        height: 48
+        useProgress: false
+        effect: [
+          {
+            particles: 4
+            cone: 10
+            baseRotation: -135
+            length: 200
+            baseLength: 100
+            lifetime: 45
+            lenFrom: 0
+            lenTo: 24
+            strokeFrom: 2
+            strokeTo: 2
+            line: true
+            sizeInterp: slope
+            colorFrom: 46b084
+            colorTo: 46b084
+            layer: 99
+            lightScl: 0
+            lightOpacity: 0
+          }
+          {
+            type: WaveEffect
+            lifetime: 15
+            sizeFrom: 0
+            sizeTo: 12
+            interp: pow3Out
+            colorFrom: 46b084
+            colorTo: 46b084
+            layer: 50
+            lightScl: 0
+            lightOpacity: 0
+          }
+        ]
+      }
+    ]
+  }
+  {
+    type: RegionPart
+    xScl: 0
+    yScl: 0
+    moveRot: -14400
+    name: error
+    progress: reload
+    weaponIndex: 0
+    children: [
+      {
+        type: EffectSpawnerPart
+        x: -500
+        rotation: 0
+        effectChance: 1
+        width: 300
+        height: 48
+        useProgress: false
+        effect: [
+          {
+            particles: 4
+            cone: 10
+            baseRotation: -135
+            length: 100
+            baseLength: 100
+            lifetime: 45
+            lenFrom: 0
+            lenTo: 12
+            strokeFrom: 1.5
+            strokeTo: 1.5
+            line: true
+            sizeInterp: slope
+            colorFrom: 46b084
+            colorTo: 46b084
+            layer: 99
+            lightScl: 0
+            lightOpacity: 0
+          }
+          {
+            type: WaveEffect
+            lifetime: 10
+            sizeFrom: 0
+            sizeTo: 7
+            interp: pow3Out
+            colorFrom: 46b084
+            colorTo: 46b084
+            layer: 50
+            lightScl: 0
+            lightOpacity: 0
+          }
+        ]
+      }
+      {
+        type: EffectSpawnerPart
+        y: -500
+        rotation: 90
+        effectChance: 1
+        width: 150
+        height: 48
+        useProgress: false
+        effect: [
+          {
+            particles: 4
+            cone: 10
+            baseRotation: -135
+            length: 100
+            baseLength: 100
+            lifetime: 45
+            lenFrom: 0
+            lenTo: 12
+            strokeFrom: 1.5
+            strokeTo: 1.5
+            line: true
+            sizeInterp: slope
+            colorFrom: 46b084
+            colorTo: 46b084
+            layer: 99
+            lightScl: 0
+            lightOpacity: 0
+          }
+          {
+            type: WaveEffect
+            lifetime: 10
+            sizeFrom: 0
+            sizeTo: 7
+            interp: pow3Out
+            colorFrom: 46b084
+            colorTo: 46b084
+            layer: 50
+            lightScl: 0
+            lightOpacity: 0
+          }
+        ]
+      }
+      {
+        type: EffectSpawnerPart
+        x: 500
+        rotation: 180
+        effectChance: 1
+        width: 150
+        height: 48
+        useProgress: false
+        effect: [
+          {
+            particles: 4
+            cone: 10
+            baseRotation: -135
+            length: 100
+            baseLength: 100
+            lifetime: 45
+            lenFrom: 0
+            lenTo: 12
+            strokeFrom: 1.5
+            strokeTo: 1.5
+            line: true
+            sizeInterp: slope
+            colorFrom: 46b084
+            colorTo: 46b084
+            layer: 99
+            lightScl: 0
+            lightOpacity: 0
+          }
+          {
+            type: WaveEffect
+            lifetime: 10
+            sizeFrom: 0
+            sizeTo: 7
+            interp: pow3Out
+            colorFrom: 46b084
+            colorTo: 46b084
+            layer: 50
+            lightScl: 0
+            lightOpacity: 0
+          }
+        ]
+      }
+      {
+        type: EffectSpawnerPart
+        y: 500
+        rotation: 270
+        effectChance: 1
+        width: 150
+        height: 48
+        useProgress: false
+        effect: [
+          {
+            particles: 4
+            cone: 10
+            baseRotation: -135
+            length: 100
+            baseLength: 100
+            lifetime: 45
+            lenFrom: 0
+            lenTo: 12
+            strokeFrom: 1.5
+            strokeTo: 1.5
+            line: true
+            sizeInterp: slope
+            colorFrom: 46b084
+            colorTo: 46b084
+            layer: 99
+            lightScl: 0
+            lightOpacity: 0
+          }
+          {
+            type: WaveEffect
+            lifetime: 10
+            sizeFrom: 0
+            sizeTo: 7
+            interp: pow3Out
+            colorFrom: 46b084
+            colorTo: 46b084
+            layer: 50
+            lightScl: 0
+            lightOpacity: 0
+          }
+        ]
+      }
+    ]
+  }
+]
+//reload here basically controls the rotation speed of the vorticies, keeping note for myself
+weapons: [
+  {
+    reload: 2048
+    alwaysShooting: true
+    shootCone: 360
+    controllable: false
+    mirror: false
+    shootSound: none
+    bullet: {
+      type: ExplosionBulletType
+      killShooter: false
+      despawnEffect: none
+      hitEffect: none
+      shootEffect: none
+      smokeEffect: none
+    }
+  }
+  {
+    reload: 5
+    x: 0
+    mirror: false
+    alwaysShooting: true
+    shootSound: none
+    shoot: {
+      type: ShootSummon
+      radius: 1500
+      spread: 200
+      shots: 2
+    }
+    bullet: {
+      type: ExplosionBulletType
+      ignoreSpawnAngle: true
+      killShooter: false
+      shootEffect: none
+      smokeEffect: none
+      despawnEffect: none
+      hitEffect: {
+        particles: 1
+        length: 0
+        lifetime: 10
+        sizeFrom: 200
+        sizeTo: 200
+        colorTo: 7ceeba88
+        layer: 130
+        region: circle-shadow
+        clip: 512
+      }
+      createChance: 0.1
+      fragBullets: 1
+      fragRandomSpread: 0
+      fragBullet: {
+        type: LightningBulletType
+        lightningLength: 14
+        lightningLengthRand: 0
+        angleOffset: -90
+        layer: 99
+        lightningColor: 7ceeba
+        collidesAir: false
+        collidesGround: false
+      }
+    }
+  }
+  {
+    alwaysShooting: true
+    alwaysContinuous: true
+    shootCone: 360
+    controllable: false
+    mirror: false
+    shootSound: none
+    bullet: {
+      type: BulletType
+      recoil: -0.15
+      despawnEffect: none
+      hitEffect: none
+      shootEffect: none
+      smokeEffect: none
+      absorbable: false
+      collides: false
+      hittable: false
+      lightScl: 0
+      lightOpacity: 0
+    }
+  }
+  //one way to do it
+  {
+    reload: 5
+    x: 0
+    rotateSpeed: 0
+    baseRotation: 0
+    shootSound: none
+    rotate: true
+    mirror: false
+    alwaysShooting: true
+    shoot: {
+      type: shootMulti
+      source: {
+        type: ShootAlternate
+        shots: 24
+        barrels: 24
+        spread: 8
+      }
+      dest: [
+        {
+          type: ShootBarrel
+          shots: 2
+          barrels: [
+            -160, 0, 0,
+            160, 0, 180,
+          ]
+        }
+      ]
+    }
+    bullet: {
+      type: RailBulletType
+      createChance: 0.5
+      damage: 4
+      pierceArmor: true
+      pierceCap: 2
+      length: 240
+      knockback: -5
+      lightOpacity: 0
+      absorbable: false
+      hitUnder: true
+      pierceEffect: none
+      smokeEffect: none
+      shootEffect: none
+      hitEffect: {
+        particles: 1
+        cone: 10
+        length: -80
+        sizeFrom: 8
+        sizeTo: 0
+        colorTo: 9f9f9f88
+        interp: pow3Out
+        sizeInterp: pow2In
+        layer: 60
+        lightOpacity: 0
+        lightScl: 0
+      }
+    }
+  }
+  {
+    reload: 5
+    x: 0
+    rotateSpeed: 0
+    baseRotation: 45
+    shootSound: none
+    rotate: true
+    mirror: false
+    alwaysShooting: true
+    shoot: {
+      type: shootMulti
+      source: {
+        type: ShootAlternate
+        shots: 24
+        barrels: 24
+        spread: 8
+      }
+      dest: [
+        {
+          type: ShootBarrel
+          shots: 2
+          barrels: [
+            -160, 0, 0,
+            160, 0, 180,
+          ]
+        }
+      ]
+    }
+    bullet: {
+      type: RailBulletType
+      createChance: 0.5
+      damage: 4
+      pierceArmor: true
+      pierceCap: 2
+      length: 240
+      knockback: -5
+      lightOpacity: 0
+      absorbable: false
+      hitUnder: true
+      pierceEffect: none
+      smokeEffect: none
+      shootEffect: none
+      hitEffect: {
+        particles: 1
+        cone: 10
+        length: -80
+        sizeFrom: 8
+        sizeTo: 0
+        colorTo: 9f9f9f88
+        interp: pow3Out
+        sizeInterp: pow2In
+        layer: 60
+        lightOpacity: 0
+        lightScl: 0
+      }
+    }
+  }
+  {
+    reload: 5
+    x: 0
+    rotateSpeed: 0
+    baseRotation: 90
+    shootSound: none
+    rotate: true
+    mirror: false
+    alwaysShooting: true
+    shoot: {
+      type: shootMulti
+      source: {
+        type: ShootAlternate
+        shots: 24
+        barrels: 24
+        spread: 8
+      }
+      dest: [
+        {
+          type: ShootBarrel
+          shots: 2
+          barrels: [
+            -160, 0, 0,
+            160, 0, 180,
+          ]
+        }
+      ]
+    }
+    bullet: {
+      type: RailBulletType
+      createChance: 0.5
+      damage: 4
+      pierceArmor: true
+      pierceCap: 2
+      length: 240
+      knockback: -5
+      lightOpacity: 0
+      absorbable: false
+      hitUnder: true
+      pierceEffect: none
+      smokeEffect: none
+      shootEffect: none
+      hitEffect: {
+        particles: 1
+        cone: 10
+        length: -80
+        sizeFrom: 8
+        sizeTo: 0
+        colorTo: 9f9f9f88
+        interp: pow3Out
+        sizeInterp: pow2In
+        layer: 60
+        lightOpacity: 0
+        lightScl: 0
+      }
+    }
+  }
+  {
+    reload: 5
+    x: 0
+    rotateSpeed: 0
+    baseRotation: 135
+    shootSound: none
+    rotate: true
+    mirror: false
+    alwaysShooting: true
+    shoot: {
+      type: shootMulti
+      source: {
+        type: ShootAlternate
+        shots: 24
+        barrels: 24
+        spread: 8
+      }
+      dest: [
+        {
+          type: ShootBarrel
+          shots: 2
+          barrels: [
+            -160, 0, 0,
+            160, 0, 180,
+          ]
+        }
+      ]
+    }
+    bullet: {
+      type: RailBulletType
+      createChance: 0.5
+      damage: 4
+      pierceArmor: true
+      pierceCap: 2
+      length: 240
+      knockback: -5
+      lightOpacity: 0
+      absorbable: false
+      hitUnder: true
+      pierceEffect: none
+      smokeEffect: none
+      shootEffect: none
+      hitEffect: {
+        particles: 1
+        cone: 10
+        length: -80
+        sizeFrom: 8
+        sizeTo: 0
+        colorTo: 9f9f9f88
+        interp: pow3Out
+        sizeInterp: pow2In
+        layer: 60
+        lightOpacity: 0
+        lightScl: 0
+      }
+    }
+  }
+]
+abilities: [
+  {
+    type: SuppressionFieldAbility
+    reload: 30
+    maxDelay: 240
+    range: 420
+    color: e6555522
+    orbRadius: 360
+    orbMidScl: 1
+    particles: 50
+    particleSize: 5
+    particleLen: 360
+    rotateScl: 1
+    particleColor: e65555
+    effectColor: e65555
+    layer: 60
+  }
+]

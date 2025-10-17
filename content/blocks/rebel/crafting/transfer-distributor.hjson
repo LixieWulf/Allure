@@ -10,6 +10,12 @@ liquidPressure: 2.1
 drawer: [
   {
     type: DrawRegion
+    layer: 29.5
+  }
+  {
+    type: DrawRegion
+    suffix: -shade
+    layer: 29.6
   }
   {
     type: DrawLiquidTile
@@ -19,27 +25,19 @@ drawer: [
   {
     type: DrawRegion
     suffix: -transfer-shadow
-    layer: 30.9
+    layer: 29.7
     x: -6
     y: -6
-    buildingRotate: true
   }
   {
     type: DrawRegion
     suffix: -transfer
-    layer: 31
-    buildingRotate: true
+    layer: 50
   }
   {
     type: DrawRegion
     suffix: -top
-    layer: 31.1
-  }
-  {
-    type: DrawRegion
-    suffix: -transfer-top
-    layer: 31.2
-    buildingRotate: true
+    layer: 55
   }
 ]
 consumes: {

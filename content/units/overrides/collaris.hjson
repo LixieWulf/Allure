@@ -1,0 +1,249 @@
+targetAir: true
+armor: 16
+weapons: [
+  {
+    name: collaris-weapon
+    rotationLimit: 30
+    rotateSpeed: 2
+    rotate: true
+    x: 12
+    y: -7
+    shootY: 16
+    inaccuracy: 6
+    velocityRnd: 0.1
+    recoil: 2
+    reload: 50
+    cooldownTime: 35
+    shake: 3
+    layerOffset: 0.02
+    shadow: 20
+    heatColor: ff0000
+    minWarmup: 0.75
+    shootSound: shockBlast
+    shoot: {
+      shots: 3
+    }
+    bullet: {
+      type: ArtilleryBulletType
+      speed: 8
+      lifetime: 30
+      damage: 80
+      splashDamage: 35
+      splashDamageRadius: 20
+      collides: true
+      collidesTiles: true
+      shootEffect: shootBigColor
+      smokeEffect: shootSmokeSquareBig
+      width: 15
+      height: 25
+      frontColor: ffffff
+      backColor: 8ca9e8
+      hitColor: 8ca9e8
+      trailColor: 8ca9e8
+      trailWidth: 3
+      trailLength: 9
+      despawnEffect: none
+      hitEffect: {
+        type: ExplosionEffect
+        waveColor: 8ca9e8
+        smokeColor: 8ca9e8
+        sparkColor: 8ca9e8
+        waveLife: 8
+        waveStroke: 2
+        waveRad: 20
+        waveRadBase: 4
+        sparks: 12
+      }
+    }
+    //definitely do this with recursive math in java
+    parts: [
+      {
+        type: RegionPart
+        suffix: -blade
+        outline: false
+        layer: 75.01
+        y: 12
+        x: 2
+        moveX: -3
+        rotation: 90
+        heatProgress: {
+          type: warmup
+          ops: [
+            {
+              op: add
+              amount: 0.3
+            }
+            {
+              op: min
+              other: heat
+            }
+          ]
+        }
+        heatColor: 8ca9e8
+        moves: [
+          {
+            x: 3
+            progress: {
+              type: reload
+              op: compress
+              start: 0.8
+              end: 1
+            }
+          }
+        ]
+      }
+      {
+        type: RegionPart
+        suffix: -blade
+        outline: false
+        layer: 75.01
+        y: 8
+        x: 2
+        moveX: -3
+        rotation: 90
+        heatProgress: {
+          type: warmup
+          ops: [
+            {
+              op: add
+              amount: 0.3
+            }
+            {
+              op: min
+              other: heat
+            }
+          ]
+        }
+        heatColor: 8ca9e8
+        moves: [
+          {
+            x: 3
+            progress: {
+              type: reload
+              op: compress
+              start: 0.6
+              end: 0.8
+            }
+          }
+        ]
+      }
+      {
+        type: RegionPart
+        suffix: -blade
+        outline: false
+        layer: 75.01
+        y: 4
+        x: 2
+        moveX: -3
+        rotation: 90
+        heatProgress: {
+          type: warmup
+          ops: [
+            {
+              op: add
+              amount: 0.3
+            }
+            {
+              op: min
+              other: heat
+            }
+          ]
+        }
+        heatColor: 8ca9e8
+        moves: [
+          {
+            x: 3
+            progress: {
+              type: reload
+              op: compress
+              start: 0.4
+              end: 0.6
+            }
+          }
+        ]
+      }
+      {
+        type: RegionPart
+        suffix: -blade
+        outline: false
+        layer: 75.01
+        y: 0
+        x: 2
+        moveX: -3
+        rotation: 90
+        heatProgress: {
+          type: warmup
+          ops: [
+            {
+              op: add
+              amount: 0.3
+            }
+            {
+              op: min
+              other: heat
+            }
+          ]
+        }
+        heatColor: 8ca9e8
+        moves: [
+          {
+            x: 3
+            progress: {
+              type: reload
+              op: compress
+              start: 0.2
+              end: 0.4
+            }
+          }
+        ]
+      }
+    ]
+  }
+  {
+    name: collaris-point
+    rotateSpeed: 12
+    rotate: true
+    x: 7
+    y: 14
+    controllable: false
+    autoTarget: true
+    targetInterval: 10
+    targetSwitchInterval: 5
+    inaccuracy: 3
+    recoil: 2
+    reload: 5
+    cooldownTime: 35
+    layerOffset: 0.02
+    shadow: 20
+    heatColor: ff0000
+    minWarmup: 0.75
+    shootSound: blaster
+    bullet: {
+      speed: 9
+      lifetime: 25
+      damage: 35
+      homingRange: 40
+      homingPower: 0.03
+      homingDelay: 10
+      splashDamage: 15
+      splashDamageRadius: 10
+      width: 14
+      height: 20
+      frontColor: ffffff
+      backColor: 8ca9e8
+      hitColor: 8ca9e8
+      trailColor: 8ca9e8
+      trailWidth: 2
+      trailLength: 6
+      trailChance: 0
+      despawnEffect: hitBulletColor
+      hitEffect: hitBulletColor
+    }
+  }
+]
+abilities: [
+  {
+    type: ArmorPlateAbility
+    healthMultiplier: 0.25
+  }
+]

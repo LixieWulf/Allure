@@ -1,0 +1,65 @@
+ammoTypes: {
+  graphite: {
+    type: ArtilleryBulletType
+    speed: 3
+    damage: 15
+    lifetime: 80
+    knockback: 0.65
+    inaccuracy: 6
+    ammoMultiplier: 2
+    reloadMultiplier: 1.5
+    width: 11
+    height: 11
+    collidesTiles: false
+    splashDamage: 27
+    splashDamageRadius: 19
+    hitColor: 7d89d8
+    trailColor: 7d89d8
+    backColor: 7d89d8
+    frontColor: dae1ee
+    despawnEffect: hitBulletColor
+  }
+  silicon: {
+    type: ArtilleryBulletType
+    speed: 3
+    damage: 25
+    lifetime: 80
+    knockback: 0.8
+    ammoMultiplier: 1
+    reloadMultiplier: 0.75
+    homingPower: 0.08
+    homingRange: 50
+    width: 11
+    height: 11
+    collidesTiles: false
+    splashDamage: 35
+    splashDamageRadius: 19
+    hitColor: 707594
+    backColor: 707594
+    trailColor: 707594
+    frontColor: 999ba0
+    despawnEffect: hitBulletColor
+  }
+  pyratite: {
+    type: ArtilleryBulletType
+    speed: 3
+    damage: 30
+    lifetime: 80
+    knockback: 0.8
+    inaccuracy: 3
+    ammoMultiplier: 3
+    width: 13
+    height: 13
+    collidesTiles: false
+    splashDamage: 35
+    splashDamageRadius: 19
+    status: burning
+    statusDuration: 120
+    hitColor: f8ad42
+    trailColor: f8ad42
+    backColor: f68021
+    frontColor: f8ad42
+    hitEffect: blastExplosion
+    despawnEffect: hitBulletColor
+  }
+}

@@ -16,7 +16,7 @@ updateEffect: {
   lifetime: 400
   sizeFrom: 0
   sizeTo: 100
-  colorFrom: bbbbbb44
-  colorTo: bbbbbb00
+  colorFrom: 85dcd844
+  colorTo: 83f79300
   layer: 60
 }

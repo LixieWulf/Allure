@@ -1,0 +1,238 @@
+type: missile
+template: MissileUnitType
+speed: 10
+lifetime: 70
+missileAccelTime: 30
+rotateSpeed: 6
+engineSize: 1.25
+engineOffset: -1
+outlines: false
+drawCell: false
+engineLayer: 110
+trailColor: e65555
+trailLength: 9
+range: 350
+maxRange: 350
+parts: [
+  {
+    type: RegionPart
+    outline: false
+    layer: 116
+  }
+]
+weapons: [
+  {
+    x: 0
+    mirror: false
+    shootOnDeath: true
+    controllable: false
+    shootCone: 360
+    reload: 5
+    shootSound: explosion
+    bullet: {
+      type: RailBulletType
+      killShooter: true
+      damage: 10
+      pierceDamageFactor: 0.006
+      splashDamage: 14
+      splashDamageRadius: 28
+      length: 37
+      hitEffect: [
+        {
+          type: WaveEffect
+          lifetime: 10
+          sizeFrom: 0
+          sizeTo: 18
+          strokeFrom: 1
+          strokeTo: 0
+          colorTo: e65555
+        }
+        {
+          particles: 12
+          length: 12
+          lifetime: 25
+          interp: pow3Out
+          sizeInterp: pow2Out
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 3
+          sizeTo: 0
+        }
+      ]
+      shootEffect: [
+        {
+          particles: 1
+          length: 0
+          lifetime: 35
+          sizeFrom: 40
+          sizeTo: 0
+          colorTo: e65555
+          offset: 90
+          region: allure-diamond-vthin
+        }
+        {
+          particles: 24
+          length: -35
+          lifetime: 45
+          cone: 90
+          interp: pow3Out
+          sizeInterp: pow2Out
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 8
+          sizeTo: 0
+        }
+        {
+          particles: 16
+          length: -55
+          lifetime: 30
+          cone: 90
+          interp: pow3Out
+          sizeInterp: linear
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 2
+          sizeTo: 0
+        }
+      ]
+    }
+  }
+  //engines
+  {
+    y: -2
+    x: 0
+    shootY: 0
+    baseRotation: 180
+    alwaysShooting: true
+    shootCone: 360
+    continuous: true
+    mirror: false
+    reload: 1
+    shootSound: none
+    shootWarmupSpeed: 0.03
+    minShootVelocity: 0.9
+    recoil: 0
+    display: false
+    parts: [
+      {
+        name: allure-thruster-flare-2
+        y: 1
+        moveY: 1
+        rotation: 180
+        outline: false
+        blending: additive
+        mixColor: e65555
+        color: ffffff44
+        colorTo: ffffff
+        xScl: 0.02
+        yScl: 0.02
+        layer: 90.03
+        progress: warmup
+      }
+    ]
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 115.02
+      lifetime: 14
+      collides: false
+      length: 10
+      width: 1.5
+      colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 1
+      oscMag: 0.1
+      hitEffect: none
+      lightColor: e65555
+      lightStroke: 4.5
+      lightOpacity: 0.4
+      collidesGround: false
+    }
+  }
+  {
+    y: -2
+    x: 0
+    shootY: 0
+    baseRotation: 180
+    alwaysShooting: true
+    shootCone: 360
+    continuous: true
+    alternate: false
+    reload: 1
+    shootSound: none
+    shootWarmupSpeed: 0.03
+    minShootVelocity: 0.9
+    recoil: 0
+    display: false
+    parts: [
+      {
+        name: allure-thruster-flare-2
+        y: 1
+        moveY: 1
+        rotation: 180
+        outline: false
+        blending: additive
+        mixColor: e65555
+        color: ffffff44
+        colorTo: ffffff
+        xScl: 0.02
+        yScl: 0.02
+        layer: 90.03
+        progress: warmup
+      }
+    ]
+    bullet: {
+      type: ContinuousFlameBulletType
+      layer: 115.02
+      lifetime: 10
+      collides: false
+      length: 10
+      width: 1.5
+      colors: [e6555544, ef848488, f7acacbb, fcd6d6, ffffff]
+      drawFlare: false
+      shootEffect: none
+      smokeEffect: none
+      lengthInterp: pow10Out
+      oscScl: 1
+      oscMag: 0.1
+      hitEffect: none
+      lightColor: e65555
+      lightStroke: 4.5
+      lightOpacity: 0.4
+      collidesGround: false
+    }
+  }
+]
+abilities: [
+  {
+    type: MoveLightningAbility
+    y: -8
+    minSpeed: -1
+    maxSpeed: -1
+    chance: 1
+    length: 0
+    damage: 0
+    shootSound: none
+    shootEffect: none
+    bullet: {
+      type: RailBulletType
+      length: 12
+      damage: 1
+      setDefaults: false
+      despawnHit: false
+      fragBullets: 1
+      fragBullet: {
+        type: BulletType
+        speed: 0
+        lifetime: 0
+        damage: 0
+        hitEffect: none
+        despawnEffect: none
+        killShooter: true
+      }
+    }
+  }
+]
+deathExplosionEffect: none

@@ -2687,7 +2687,6 @@ shootType: {
           absorbable: false
           hitEffect: none
           despawnEffect: none
-          hitSound: spark
           lightning: 1
           lightningLength: 14
           lightningLengthRand: 28
@@ -3793,8 +3792,8 @@ shootType: {
 }
 category: turret
 requirements: [
-  territe-alloy/2400
-  dantrales/1200
+  territe-alloy/24000
+  dantrales/12000
   anden/12000
   renfrien/24000
   crystal/78000

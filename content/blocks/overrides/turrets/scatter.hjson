@@ -1,0 +1,67 @@
+ammoTypes: {
+  scrap: {
+    type: FlakBulletType
+    ammoMultiplier: 1
+    reloadMultiplier: 0.5
+    damage: 5
+    splashDamage: 15
+    splashDamageRadius: 24
+    speed: 4
+    lifetime: 60
+    width: 6
+    height: 8
+    hitEffect: massiveExplosion
+    despawnEffect: hitBulletColor
+    frontColor: f5e0cc
+    backColor: d8887e
+    hitColor: d8887e
+  }
+  lead: {
+    type: FlakBulletType
+    damage: 5
+    splashDamage: 15
+    splashDamageRadius: 15
+    speed: 4.2  
+    lifetime: 60
+    width: 6
+    height: 8
+    hitEffect: flakExplosion
+  }
+  metaglass: {
+    type: FlakBulletType
+    ammoMultiplier: 3
+    reloadMultiplier: 0.75
+    damage: 7
+    splashDamage: 15
+    splashDamageRadius: 24
+    pierceArmor: true
+    speed: 4
+    lifetime: 60
+    width: 6
+    height: 8
+    hitEffect: flakExplosion
+    despawnEffect: hitBulletColor
+    frontColor: ffffff
+    backColor: b9c9df
+    hitColor: ffffff
+    fragBullets: 7
+    fragBullet: {
+      speed: 4
+      damage: 2
+      lifetime: 20
+      drag: 0.03
+      pierceArmor: true
+      pierce: true
+      pierceCap: 2
+      collidesTiles: false
+      width: 5
+      height: 9
+      shrinkY: 1
+      frontColor: ffffff
+      backColor: b9c9df
+      hitColor: ffffff
+      hitEffect: hitBulletColor
+      despawnEffect: none
+    }
+  }
+}

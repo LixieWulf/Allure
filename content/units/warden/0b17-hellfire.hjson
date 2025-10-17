@@ -19,7 +19,6 @@ faceTarget: false
 lightRadius: 0
 buildSpeed: 12.4
 strafePenalty: 0.35
-drawCell: false
 drawBody: false
 outlines: false
 deathShake: 0
@@ -48,7 +47,7 @@ ammoType: {
 parts: [
   {
     type: RegionPart
-    layer: 90.02
+    layer: 91
     outline: false
   }
   { 
@@ -56,7 +55,7 @@ parts: [
     suffix: -flare
     outline: false
     blending: additive
-    layer: 91
+    layer: 92
     color: 7382f0
     colorTo: ffffff
     weaponIndex: 16
@@ -75,7 +74,7 @@ parts: [
     outline: false
     y: 62
     blending: additive
-    layer: 90.6
+    layer: 92
     color: 000000
     colorTo: 7382f0
     weaponIndex: 18
@@ -92,7 +91,7 @@ parts: [
     suffix: -lance
     y: 62
     blending: additive
-    layer: 91
+    layer: 92
     color: 000000
     colorTo: 7382f0
     weaponIndex: 18
@@ -109,7 +108,7 @@ parts: [
     outline: false
     y: 62
     blending: additive
-    layer: 91
+    layer: 92
     color: 000000
     colorTo: ffffff
     weaponIndex: 18
@@ -126,7 +125,7 @@ parts: [
     outline: false
     blending: additive
     color: 7382f088
-    layer: 95
+    layer: 88
     xScl: 2.5
     yScl: 2.8
   }
@@ -137,7 +136,7 @@ weapons: [
   //right side broadside
   {
     name: hellfire-broadside-smol
-    layerOffset: 0.04
+    layerOffset: 2
     controllable: false 
     autoTarget: true
     targetInterval: 10
@@ -161,7 +160,7 @@ weapons: [
         suffix: -flare
         outline: false
         blending: additive
-        layer: 90.05
+        layer: 93
         color: 7382f0bb
       }
     ]
@@ -184,7 +183,7 @@ weapons: [
   }
   {
     name: hellfire-broadside-smol
-    layerOffset: 0.04
+    layerOffset: 2
     controllable: false 
     autoTarget: true
     targetInterval: 10
@@ -209,7 +208,7 @@ weapons: [
         suffix: -flare
         outline: false
         blending: additive
-        layer: 90.05
+        layer: 93
         color: 7382f0bb
       }
     ]
@@ -232,7 +231,7 @@ weapons: [
   }
   {
     name: hellfire-broadside-smol
-    layerOffset: 0.04
+    layerOffset: 2
     controllable: false 
     autoTarget: true
     targetInterval: 10
@@ -257,7 +256,7 @@ weapons: [
         suffix: -flare
         outline: false
         blending: additive
-        layer: 90.05
+        layer: 93
         color: 7382f0bb
       }
     ]
@@ -280,7 +279,7 @@ weapons: [
   }
   {
     name: hellfire-broadside-smol
-    layerOffset: 0.04
+    layerOffset: 2
     controllable: false 
     autoTarget: true
     targetInterval: 10
@@ -305,7 +304,7 @@ weapons: [
         suffix: -flare
         outline: false
         blending: additive
-        layer: 90.05
+        layer: 93
         color: 7382f0bb
       }
     ]
@@ -328,7 +327,7 @@ weapons: [
   }
   {
     name: hellfire-broadside-smol
-    layerOffset: 0.04
+    layerOffset: 2
     controllable: false 
     autoTarget: true
     targetInterval: 10
@@ -353,7 +352,7 @@ weapons: [
         suffix: -flare
         outline: false
         blending: additive
-        layer: 90.05
+        layer: 93
         color: 7382f0bb
       }
     ]
@@ -376,7 +375,7 @@ weapons: [
   }
   {
     name: hellfire-broadside-smol
-    layerOffset: 0.04
+    layerOffset: 2
     controllable: false 
     autoTarget: true
     targetInterval: 10
@@ -401,7 +400,7 @@ weapons: [
         suffix: -flare
         outline: false
         blending: additive
-        layer: 90.05
+        layer: 93
         color: 7382f0bb
       }
     ]
@@ -424,7 +423,7 @@ weapons: [
   }
   {
     name: hellfire-broadside-smol
-    layerOffset: 0.04
+    layerOffset: 2
     controllable: false 
     autoTarget: true
     targetInterval: 10
@@ -449,7 +448,7 @@ weapons: [
         suffix: -flare
         outline: false
         blending: additive
-        layer: 90.05
+        layer: 93
         color: 7382f0bb
       }
     ]
@@ -472,7 +471,7 @@ weapons: [
   }
   {
     name: hellfire-broadside-smol
-    layerOffset: 0.04
+    layerOffset: 2
     controllable: false 
     autoTarget: true
     targetInterval: 10
@@ -497,7 +496,7 @@ weapons: [
         suffix: -flare
         outline: false
         blending: additive
-        layer: 90.05
+        layer: 93
         color: 7382f0bb
       }
     ]
@@ -521,7 +520,7 @@ weapons: [
   //left side broadside
   {
     name: hellfire-broadside-smol
-    layerOffset: 0.04
+    layerOffset: 2
     controllable: false 
     autoTarget: true
     targetInterval: 10
@@ -546,7 +545,7 @@ weapons: [
         suffix: -flare
         outline: false
         blending: additive
-        layer: 90.05
+        layer: 93
         color: 7382f0bb
       }
     ]
@@ -569,7 +568,7 @@ weapons: [
   }
   {
     name: hellfire-broadside-smol
-    layerOffset: 0.04
+    layerOffset: 2
     controllable: false 
     autoTarget: true
     targetInterval: 10
@@ -594,7 +593,7 @@ weapons: [
         suffix: -flare
         outline: false
         blending: additive
-        layer: 90.05
+        layer: 93
         color: 7382f0bb
       }
     ]
@@ -617,7 +616,7 @@ weapons: [
   }
   {
     name: hellfire-broadside-smol
-    layerOffset: 0.04
+    layerOffset: 2
     controllable: false 
     autoTarget: true
     targetInterval: 10
@@ -642,7 +641,7 @@ weapons: [
         suffix: -flare
         outline: false
         blending: additive
-        layer: 90.05
+        layer: 93
         color: 7382f0bb
       }
     ]
@@ -665,7 +664,7 @@ weapons: [
   }
   {
     name: hellfire-broadside-smol
-    layerOffset: 0.04
+    layerOffset: 2
     controllable: false 
     autoTarget: true
     targetInterval: 10
@@ -690,7 +689,7 @@ weapons: [
         suffix: -flare
         outline: false
         blending: additive
-        layer: 90.05
+        layer: 93
         color: 7382f0bb
       }
     ]
@@ -713,7 +712,7 @@ weapons: [
   }
   {
     name: hellfire-broadside-smol
-    layerOffset: 0.04
+    layerOffset: 2
     controllable: false 
     autoTarget: true
     targetInterval: 10
@@ -738,7 +737,7 @@ weapons: [
         suffix: -flare
         outline: false
         blending: additive
-        layer: 90.05
+        layer: 93
         color: 7382f0bb
       }
     ]
@@ -761,7 +760,7 @@ weapons: [
   }
   {
     name: hellfire-broadside-smol
-    layerOffset: 0.04
+    layerOffset: 2
     controllable: false 
     autoTarget: true
     targetInterval: 10
@@ -786,7 +785,7 @@ weapons: [
         suffix: -flare
         outline: false
         blending: additive
-        layer: 90.05
+        layer: 93
         color: 7382f0bb
       }
     ]
@@ -809,7 +808,7 @@ weapons: [
   }
   {
     name: hellfire-broadside-smol
-    layerOffset: 0.04
+    layerOffset: 2
     controllable: false 
     autoTarget: true
     targetInterval: 10
@@ -834,7 +833,7 @@ weapons: [
         suffix: -flare
         outline: false
         blending: additive
-        layer: 90.05
+        layer: 93
         color: 7382f0bb
       }
     ]
@@ -857,7 +856,7 @@ weapons: [
   }
   {
     name: hellfire-broadside-smol
-    layerOffset: 0.04
+    layerOffset: 2
     controllable: false 
     autoTarget: true
     targetInterval: 10
@@ -882,7 +881,7 @@ weapons: [
         suffix: -flare
         outline: false
         blending: additive
-        layer: 90.05
+        layer: 93
         color: 7382f0bb
       }
     ]
@@ -2346,7 +2345,7 @@ weapons: [
         mixColor: 90a2fc
         color: ffffff44
         colorTo: ffffff
-        layer: 90.01
+        layer: 88
         progress: heat
       }
       {
@@ -2415,7 +2414,7 @@ weapons: [
         mixColor: 90a2fc
         color: ffffff44
         colorTo: ffffff
-        layer: 90
+        layer: 88
         progress: heat
       }
     ]
@@ -2462,7 +2461,7 @@ weapons: [
         mixColor: 90a2fc
         color: ffffff44
         colorTo: ffffff
-        layer: 90
+        layer: 88
         progress: heat
       }
       {
@@ -2533,7 +2532,7 @@ weapons: [
         mixColor: 90a2fc
         color: ffffff44
         colorTo: ffffff
-        layer: 90
+        layer: 88
         progress: heat
       }
     ]
@@ -2570,7 +2569,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90
+      layer: 90.1
       collides: false
       length: 30
       width: 15
@@ -2600,7 +2599,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90
+      layer: 90.1
       collides: false
       length: 14
       width: 7
@@ -2630,7 +2629,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90
+      layer: 90.1
       collides: false
       length: 12
       width: 6
@@ -2660,7 +2659,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90
+      layer: 90.1
       collides: false
       length: 12
       width: 6

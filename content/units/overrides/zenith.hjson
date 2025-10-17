@@ -1,0 +1,40 @@
+health: 900
+armor: 6
+speed: 1
+range: 210
+maxRange: 210
+omniMovement: false
+weapons: [
+  {
+    name: zenith-missiles
+    x: 7
+    reload: 40
+    rotate: true
+    xRand: 2
+    shoot: {
+      shots: 3
+    }
+    inaccuracy: 10
+    shootSound: missile
+    bullet: {
+      type: MissileBulletType
+      range: 210
+      damage: 14
+      splashDamage: 15
+      splashDamageRadius: 25
+      speed: 2
+      lifetime: 50
+      drag: -0.025
+      homingRange: 50
+      homingPower: 0.01
+      weaveMag: 1
+      weaveScale: 3
+      keepVelocity: false
+      trailColor: d06b53
+      backColor: d06b53
+      frontColor: ffa665
+      hitEffect: blastExplosion
+      despawnEffect: blastExplosion
+    }
+  }
+]

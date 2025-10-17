@@ -10,7 +10,6 @@ rotateSpeed: 0.7
 omniMovement: false
 accel: 0.02
 drag: 0.03
-drawCell: false
 outlines: false
 shadowElevationScl: 3.5
 lightRadius: 0
@@ -44,14 +43,6 @@ parts: [
     type: RegionPart
     layer: 91.04
     outline: false
-  }
-  {
-    suffix: -spinal
-    weaponIndex: 6
-    progress: recoil
-    moveY: -12
-    y: 106.5
-    layer: 91.04
   }
   {
     suffix: -top
@@ -982,10 +973,13 @@ weapons: [
   }
   //front cannon
   {
+    name: extelsus-spinal
     x: 0
-    y: 120
+    y: 106.5
+    shootY: 0
     rotate: true
     rotateSpeed: 0
+    recoil: 12
     mirror: false
     reload: 370
     shake: 36
@@ -1945,7 +1939,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90
+      layer: 91
       lifetime: 14
       collides: false
       length: 24
@@ -1977,7 +1971,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90
+      layer: 91
       lifetime: 14
       collides: false
       length: 12
@@ -2009,7 +2003,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90
+      layer: 91
       lifetime: 14
       collides: false
       length: 20
@@ -2040,7 +2034,7 @@ weapons: [
     display: false
     bullet: {
       type: ContinuousFlameBulletType
-      layer: 90
+      layer: 91
       lifetime: 14
       collides: false
       length: 14

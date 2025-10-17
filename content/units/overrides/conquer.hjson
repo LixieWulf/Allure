@@ -1,0 +1,329 @@
+fogRadius: 33
+armor: 18
+rotateSpeed: 1.2
+weapons: [
+  {
+    name: conquer-weapon
+    shadow: 70
+    x: 0
+    mirror: false
+    reload: 170
+    rotate: true
+    rotateSpeed: 1.25
+    shoot: {
+      firstShotDelay: 40
+    }
+    shootWarmupSpeed: 0.03
+    minWarmup: 0.9
+    chargeSound: lasercharge2
+    shootSound: shootSmite
+    cooldownTime: 170
+    heatColor: f9350f
+    shake: 8
+    shootY: 36
+    recoil: 8
+    layerOffset: 0.1
+    bullet: {
+      damage: 900
+      speed: 28
+      lifetime: 15
+      hitEffect: [
+        {
+          lightOpacity: 0
+          length: 70
+          lifetime: 40
+          cone: 35
+          particles: 18
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 4
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow2In
+        }
+        {
+          lightOpacity: 0
+          length: 85
+          lifetime: 25
+          cone: 35
+          particles: 10
+          colorFrom: 9f9f9f
+          colorTo: 787878
+          sizeFrom: 3
+          sizeTo: 0
+          interp: pow5Out
+          sizeInterp: pow3In
+        }
+        {
+          length: 110
+          cone: 35
+          line: true
+          lifetime: 30
+          particles: 10
+          colorTo: feb380
+          interp: pow2Out
+          sizeInterp: pow3In
+          lenFrom: 15
+          lenTo: 0
+          strokeFrom: 3
+          strokeTo: 0
+          sizeInterp: pow2In
+        }
+        {
+          lightOpacity: 0.4
+          lightScl: 0.5
+          length: 0
+          cone: 0
+          particles: 1
+          lifetime: 40
+          sizeFrom: 110
+          sizeTo: 0
+          offset: 90
+          colorFrom: feb380
+          colorTo: feb380
+          region: allure-diamond-vthin
+        }
+      ]
+      shootEffect: [
+        {
+          line: true
+          cone: 20
+          particles: 17
+          lifetime: 20
+          length: 70
+          interp: pow3Out
+          sizeInterp: linear
+          lenFrom: 12
+          lenTo: 6
+          strokeFrom: 3
+          strokeTo: 0
+          colorTo: feb380
+        }
+        {
+          particles: 1
+          length: 10
+          randLength: false
+          lifetime: 30
+          cone: 0
+          offset: 90
+          region: allure-squishwave
+          sizeFrom: 50
+          sizeTo: 75
+          colorFrom: ffffff
+          colorTo: feb38000
+          layer: 108
+        }
+      ]
+      trailEffect: [
+        {
+          line: true
+          cone: 25
+          baseRotation: 20
+          length: 20
+          randLength: false
+          lifetime: 25
+          particles: 1
+          lenFrom: 12
+          lenTo: 0
+          strokeFrom: 1
+          strokeTo: 0
+          colorTo: feb380
+          interp: pow2Out
+          sizeInterp: linear
+        }
+        {
+          line: true
+          cone: 25
+          baseRotation: -20
+          length: 20
+          randLength: false
+          lifetime: 25
+          particles: 1
+          lenFrom: 12
+          lenTo: 0
+          strokeFrom: 1
+          strokeTo: 0
+          colorTo: feb380
+          interp: pow2Out
+          sizeInterp: linear
+        }
+      ]
+      sprite: circle-bullet
+      width: 12
+      height: 100
+      frontColor: ffffff
+      backColor: feb380
+      trailColor: feb380
+      trailLength: 7
+      trailWidth: 3.5
+      trailInterval: 1
+      trailRotation: true
+      hitShake: 5
+      setDefaults: false
+      despawnHit: false
+      fragBullets: 12
+      fragRandomSpread: 60
+      fragBullet: {
+        type: RailBulletType
+        damage: 80
+        length: 140
+        pierceDamageFactor: 0.1
+        pointEffectSpace: 4
+        pointEffect: {
+          line: true
+          particles: 1
+          cone: 0
+          length: 4
+          baseLength: 2
+          cap: false
+          lifetime: 25
+          strokeFrom: 0.8
+          strokeTo: 0
+          lenFrom: 8
+          lenTo: 2
+          colorTo: feb380
+        }
+        pierceEffect: flakExplosion
+      }
+    }
+    parts: [
+      {
+        type: RegionPart
+        outline: false
+        suffix: -glow
+        blending: additive
+        color: ff0000
+      }
+      {
+        type: RegionPart
+        suffix: -sinks
+        outline: false
+        mirror: true
+        layer: 60.09
+        x: 4
+        y: -11
+        moveX: 4.5
+        moveY: -4.5
+        heatColor: ff0000
+        heatProgress: warmup
+      }
+      {
+        type: RegionPart
+        suffix: -blade
+        outline: false
+        mirror: true
+        moveRot: -40
+        moveX: 3
+        layer: 60.08
+        x: 6
+        y: -6
+        heatColor: ff0000
+        progress: {
+          type: warmup
+          ops: [
+            {
+              op: delay
+              amount: 0.6
+            }
+            {
+              op: blend
+              amount: 0.3
+              other: recoil
+            }
+          ]
+        }
+        heatProgress: {
+          type: heat
+          ops: [
+            {
+              op: add
+              amount: 0.3
+            }
+            {
+              op: min
+              other: warmup
+            }
+          ]
+        }
+      }
+      {
+        type: RegionPart
+        suffix: -blade
+        outline: false
+        mirror: true
+        moveRot: -80
+        moveX: 3
+        layer: 60.08
+        x: 6
+        y: -6
+        heatColor: ff0000
+        progress: {
+          type: warmup
+          ops: [
+            {
+              op: delay
+              amount: 0.3
+            }
+            {
+              op: blend
+              amount: 0.3
+              other: recoil
+            }
+          ]
+        }
+        heatProgress: {
+          type: heat
+          ops: [
+            {
+              op: add
+              amount: 0.3
+            }
+            {
+              op: min
+              other: warmup
+            }
+          ]
+        }
+      }
+      {
+        type: RegionPart
+        suffix: -blade
+        outline: false
+        mirror: true
+        moveRot: -120
+        moveX: 3
+        layer: 60.08
+        x: 6
+        y: -6
+        heatColor: ff0000
+        progress: {
+          type: warmup
+          ops: [
+            {
+              op: delay
+              amount: 0
+            }
+            {
+              op: blend
+              amount: 0.3
+              other: recoil
+            }
+          ]
+        }
+        heatProgress: {
+          type: heat
+          ops: [
+            {
+              op: add
+              amount: 0.3
+            }
+            {
+              op: min
+              other: warmup
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

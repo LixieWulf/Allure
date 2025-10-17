@@ -15,21 +15,28 @@ drawer: [
     type: DrawDefault
   }
   {
-    type: DrawRegion
-    suffix: -top0
-  }
-  {
     type: DrawLiquidTile
     drawLiquid: energia
-    padding: 24
+    padLeft: 27.75
+    padRight: 27.75
+    padTop: 1.25
+    padBottom: 1.25
+  }
+  {
+    type: DrawRegion
+    suffix: -top0
   }
   {
     type: DrawRegion
     suffix: -top1
   }
   {
+    type: DrawRegion
+    suffix: -shade
+  }
+  {
     type: DrawGlowRegion
-    alpha: 0.75
+    layer: 30
   }
 ]
 outputLiquid: energia/1.6

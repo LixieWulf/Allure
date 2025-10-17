@@ -1,0 +1,3 @@
+type: OverlayFloor
+variants: 3
+needsSurface: false

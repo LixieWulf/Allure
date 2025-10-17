@@ -1,0 +1,15 @@
+type: GenericCrafter
+liquidCapacity: 96
+itemCapacity: 48
+size: 2
+craftTime: 5
+consumes: {
+  liquids: [
+    chlorine/0.8
+  ]
+}
+outputItem: contained-chlorine/2
+category: distribution
+requirements: [
+  anden/96
+]

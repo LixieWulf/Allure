@@ -1,0 +1,15 @@
+type: GenericCrafter
+liquidCapacity: 192
+itemCapacity: 96
+size: 2
+craftTime: 5
+consumes: {
+  liquids: [
+    energia/0.8
+  ]
+}
+outputItem: contained-energia/2
+category: distribution
+requirements: [
+  anden/96
+]

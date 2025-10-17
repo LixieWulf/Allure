@@ -1,0 +1,47 @@
+type: SteamVent
+parent: slag
+blendGroup: slag
+liquidDrop: slag
+isLiquid: true
+variants: 0
+effectSpacing: 15
+effect: [
+  {
+    particles: 2
+    length: 10
+    baseLength: 40
+    lifetime: 120
+    sizeFrom: 0
+    sizeTo: 8
+    sizeInterp: slope
+    colorFrom: ffcd66
+    colorTo: ffcd66
+    layer: 30
+  }
+  {
+    particles: 1
+    length: 10
+    baseLength: 20
+    lifetime: 120
+    sizeFrom: 0
+    sizeTo: 8
+    sizeInterp: slope
+    colorFrom: ffffa3
+    colorTo: ffffa3
+    layer: 31
+  }
+  {
+    particles: 1
+    length: 30
+    baseLength: 0
+    lifetime: 120
+    sizeFrom: 0
+    sizeTo: 2
+    sizeInterp: slope
+    layer: 32
+  }
+]
+attributes: {
+  heat: 0.85
+  corium: 1
+}
