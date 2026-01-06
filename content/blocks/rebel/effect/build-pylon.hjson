@@ -1,16 +1,18 @@
-type: UnitCargoLoader
+type: BuildTurret
 size: 3
-unitType: allure-small-red-builder
-buildTime: 2400
-polyColor: 00000000
+rotateSpeed: 3
+buildTime: 300
+buildSpeed: 0.25
+buildBeamOffset: 12
+buildRange: 120
 category: effect
 consumes: {
   liquids: [
-    energia/0.4
+    energia/0.1
   ]
 }
 requirements: [
-  anden/700
-  graphite/400
-  silicon/600
+  anden/300
+  graphite/50
+  silicon/100
 ]

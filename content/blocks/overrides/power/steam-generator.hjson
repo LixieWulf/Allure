@@ -1,0 +1,4 @@
+powerProduction: 5
+itemDurationMultipliers: {
+  pyratite: 3
+}

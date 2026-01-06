@@ -1,0 +1,30 @@
+type: ItemTurret
+size: 12
+health: 124000
+armor: 600
+reload: 240
+recoil: 14
+rotateSpeed: 0.8
+shake: 24
+shootY: 0
+shootSound: none
+shoot: {
+  firstShotDelay: 80
+}
+consumes: {
+  power: 480
+  liquids: [
+    plasma/48
+    energia/48
+    arreacta/6
+  ]
+}
+liquidCapacity: 1500
+ammoPerShot: 256
+maxAmmo: 256
+ammoTypes: {
+  shadow: {
+    ammoMultiplier: 1
+    spawnUnit: allure-terminate
+  }
+}

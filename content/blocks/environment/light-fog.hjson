@@ -18,5 +18,5 @@ updateEffect: {
   sizeTo: 100
   colorFrom: 85dcd844
   colorTo: 83f79300
-  layer: 60
+  layer: 78
 }

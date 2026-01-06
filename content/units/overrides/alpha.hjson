@@ -10,6 +10,7 @@ weapons: [
     y: 1
     top: false
     ejectEffect: casing1
+    shootSound: shootAlpha
     bullet: {
       speed: 3
       damage: 5

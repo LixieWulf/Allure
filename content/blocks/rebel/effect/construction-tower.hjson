@@ -1,0 +1,18 @@
+type: UnitCargoLoader
+size: 6
+itemCapacity: 0
+unitType: allure-construction-pylon
+buildTime: 600
+unitBuildTime: 300
+polyColor: 00000000
+category: effect
+consumes: {
+  liquids: [
+    energia/0.8
+  ]
+}
+requirements: [
+  anden/600
+  graphite/100
+  silicon/300
+]

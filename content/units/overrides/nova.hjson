@@ -1,3 +1,7 @@
+buildSpeed: 0.125
+boostMultiplier: 2.5
+riseSpeed: 0.02
+fallSpeed: 0.06
 abilities: [
   {
     type: RepairFieldAbility
@@ -5,4 +9,9 @@ abilities: [
     range: 20
     amount: 10
   }
+]
+firstRequirements: [
+  copper/20
+  lead/10
+  silicon/20
 ]

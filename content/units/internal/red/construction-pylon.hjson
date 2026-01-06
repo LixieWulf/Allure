@@ -1,0 +1,140 @@
+type: tether
+controller: FlyingAI
+hitSize: 48
+health: 6000
+speed: 0
+rotateSpeed: 1
+groundLayer: 80
+shadowElevation: 0.5
+shadowElevationScl: 2
+controlSelectGlobal: false
+physics: false
+targetable: false
+outlines: false
+drawCell: false
+buildRange: 480
+buildSpeed: 2
+drawBuildBeam: false
+internal: true
+immunities: [
+  burning,
+  melting
+]
+weapons: [
+  {
+    type: BuildWeapon
+    x: 3
+    y: 17
+  }
+  {
+    type: BuildWeapon
+    x: 6.5
+    y: 17
+  }
+  {
+    type: BuildWeapon
+    x: 10
+    y: 17
+  }
+  {
+    type: PointDefenseBulletWeapon
+    name: construction-pd
+    mirror: false
+    x: 0
+    shootY: 8
+    reload: 5
+    rotateSpeed: 8
+    recoilTime: 30
+    shake: 0.5
+    shootCone: 0.25
+    shootSound: shootAlpha
+    bullet: {
+      type: InterceptorBulletType
+      speed: 24
+      lifetime: 15
+      damage: 5
+      width: 8
+      height: 24
+      frontColor: b3e9ff
+      backColor: 3bbeff
+      hitColor: 3bbeff
+      hitSound: shieldHit
+      hitSoundVolume: 0.2
+      hitEffect: hitBulletColor
+      despawnEffect: hitBulletColor
+    }
+  }
+  {
+    name: construction-cannon
+    mirror: false
+    x: 0
+    y: -28
+    rotate: true
+    rotateSpeed: 0.8
+    rotationLimit: 45
+    shootY: 12
+    reload: 60
+    recoil: 5
+    shake: 1
+    shootCone: 0.25
+    shootSound: shootTank
+    bullet: {
+      speed: 18
+      drag: 0.02
+      lifetime: 50
+      damage: 200
+      splashDamage: 120
+      splashDamageRadius: 19
+      status: allure-0r-kinetic0
+      statusDuration: 30
+      width: 11
+      height: 96
+      frontColor: ffb3b3
+      backColor: e65555
+      hitColor: e65555
+      hitSound: explosion
+      hitEffect: flakExplosion
+      despawnEffect: hitBulletColor
+      shootEffect: {
+        followParent: false
+        particles: 1
+        lifetime: 15
+        length: 0
+        region: allure-shootspike
+        sizeFrom: 30
+        sizeTo: 0
+        colorTo: e65555
+      }
+      smokeEffect: [
+        {
+          followParent: false
+          particles: 16
+          length: 25
+          cone: 30
+          lifetime: 30
+          interp: pow3Out
+          sizeInterp: pow2Out
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 3
+          sizeTo: 0
+        }
+        {
+          followParent: false
+          particles: 12
+          length: 40
+          cone: 50
+          lifetime: 45
+          interp: pow3Out
+          sizeInterp: pow2Out
+          colorFrom: 78787800
+          colorTo: 787878
+          sizeFrom: 6
+          sizeTo: 0
+        }
+      ]
+    }
+  }
+]
+envEnabled: -1
+envDisabled: 0

@@ -1,0 +1,18 @@
+itemDuration: 240
+powerProduction: 12
+liquidCapacity: 24
+consumes: {
+  remove: [
+    liquid
+  ]
+  liquids: [
+    cryofluid/0.05
+  ]
+}
+requirements: [
+  copper/100
+  lead/100
+  metaglass/50
+  plastanium/30
+  silicon/50
+]

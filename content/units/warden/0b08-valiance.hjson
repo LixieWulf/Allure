@@ -20,6 +20,8 @@ engineSize: 0
 //No need to have her turn
 faceTarget: false
 deathShake: 0
+loopSound: loopSmelter
+loopSoundVolume: 0.2
 parts: [
   {
     type: RegionPart
@@ -178,7 +180,7 @@ weapons: [
     recoil: 0
     recoils: 6
     recoilTime: 20
-    shootSound: sap
+    shootSound: shootFlamePlasma
     shake: 1.5
     bullet: {
       damage: 120

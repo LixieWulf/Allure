@@ -3,16 +3,18 @@ lowAltitude: true
 fogRadius: 24
 flying: true
 health: 3500
+hitSize: 20
 speed: 3.4
 accel: 0.14
 drag: 0.05
 hitSize: 11
-range: 330
-maxRange: 350
-rotateSpeed: 5
+range: 420
+maxRange: 420
+rotateSpeed: 3
 drawCell: false
 outlines: false
-faceTarget: false
+omniMovement: false
+shadowElevationScl: 2.2
 engineSize: 0
 lightRadius: 0
 itemCapacity: 0
@@ -44,7 +46,7 @@ immunities: [
   allure-0r-kinetic1,
   allure-0r-kinetic2,
   allure-0r-kinetic3,
-  allure-0r-kinetic4,
+  allure-0r-kinetic4
 ]
 weapons: [
   {
@@ -234,6 +236,46 @@ weapons: [
       shootEffect: none
       smokeEffect: none
       spawnUnit: allure-0r00-01-00-regiia-deamth
+    }
+  }
+]
+abilities: [
+  {
+    type: MoveEffectAbility
+    y: -16.5
+    x: 2
+    minVelocity: 1.8
+    effect: {
+      particles: 1
+      length: 0
+      baseLength: 4
+      lifetime: 20
+      sizeFrom: 0
+      sizeTo: 4
+      layer: 90
+      lightScl: 0
+      colorFrom: 787878
+      colorTo: 78787888
+      sizeInterp: slope
+    }
+  }
+  {
+    type: MoveEffectAbility
+    y: -16.5
+    x: -2
+    minVelocity: 1.8
+    effect: {
+      particles: 1
+      length: 0
+      baseLength: 4
+      lifetime: 20
+      sizeFrom: 0
+      sizeTo: 4
+      layer: 90
+      lightScl: 0
+      colorFrom: 787878
+      colorTo: 78787888
+      sizeInterp: slope
     }
   }
 ]

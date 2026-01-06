@@ -1,0 +1,247 @@
+type: ItemTurret
+size: 12
+health: 124000
+armor: 600
+reload: 120
+recoil: 14
+rotateSpeed: 0.8
+shake: 24
+shootY: 128
+inaccuracy: 5
+shootSound: shootSmite
+shoot: {
+  type: ShootMulti
+  source: {
+    shots: 4
+    shotDelay: 20
+  }
+  dest: [
+    {
+      shots: 4
+      shotDelay: 15
+    }
+  ]
+}
+consumes: {
+  power: 480
+  liquids: [
+    plasma/48
+    energia/48
+    arreacta/6
+  ]
+}
+liquidCapacity: 1500
+ammoPerShot: 256
+maxAmmo: 256
+ammoTypes: {
+  shadow: {
+    speed: 24
+    lifetime: 100
+    ammoMultiplier: 1
+    reloadMultiplier: 0.333
+    damage: 10000000
+    maxDamageFraction: 0.03
+    hittable: false
+    sprite: allure-bolt
+    shrinkY: 0
+    width: 24
+    height: 72
+    frontColor: ffffff
+    backColor: 800080
+    parts: [
+      {
+        type: RegionPart
+        name: allure-railblast
+        outline: false
+        rotation: 90
+        color: 80008088
+        xScl: 0.75
+        yScl: 0.75
+      }
+      {
+        type: RegionPart
+        name: allure-railblast
+        outline: false
+        rotation: 90
+        color: a3a3a3
+        xScl: 0.6
+        yScl: 0.6
+      }
+    ]
+    fragBullets: 120
+    fragOffsetMax: 120
+    fragVelocityMin: 0.5
+    fragVelocityMax: 1
+    fragBullet: {
+      type: BulletType
+      damage: 480
+      speed: 12
+      lifetime: 60
+      drag: 0.04
+      pierce: true
+      pierceBuilding: true
+      pierceDamageFactor: 0.1
+      maxDamageFraction: 0.05
+      hittable: false
+      reflectable: false
+      despawnEffect: none
+      hitEffect: {
+        particles: 1
+        length: 120
+        lifetime: 240
+        cone: 0
+        sizeFrom: 3
+        colorFrom: a3a3a3
+        colorTo: 800080
+        interp: pow3Out
+        sizeInterp: pow2In
+        layer: 109
+      }
+    }
+    hitSound: none
+    trailInterval: 1
+    trailRotation: true
+    trailEffect: {
+      line: true
+      cone: 0
+      cap: false
+      particles: 1
+      lifetime: 25
+      length: 0.0001
+      lenFrom: 32
+      lenTo: 0
+      strokeFrom: 8
+      strokeTo: 4
+      colorTo: 000000
+      layer: 99
+    }
+    hitEffect: [
+      {
+        type: WaveEffect
+        lifetime: 60
+        sizeFrom: 50
+        sizeTo: 300
+        strokeFrom: 12
+        interp: pow3Out
+        colorTo: 800080
+      }
+      {
+        type: WaveEffect
+        lifetime: 90
+        sizeFrom: 0
+        sizeTo: 480
+        strokeFrom: 18
+        layer: 29
+        clip: 4000
+      }
+      {
+        particles: 2
+        length: 0
+        region: circle-shadow
+        lifetime: 20
+        sizeFrom: 0
+        sizeTo: 300
+        colorTo: ffffff00
+        interp: pow3In
+        sizeInterp: pow2Out
+        layer: 135
+      }
+      {
+        particles: 20
+        length: 150
+        lifetime: 90
+        region: circle-shadow
+        interp: pow3Out
+        sizeInterp: pow3In
+        sizeFrom: 30
+        sizeTo: 0
+      }
+      {
+        particles: 60
+        length: 125
+        lifetime: 105
+        region: circle-shadow
+        interp: pow3Out
+        sizeInterp: pow3In
+        sizeFrom: 45
+        sizeTo: 0
+        colorTo: 800080
+        layer: 108
+      }
+      {
+        particles: 60
+        length: 100
+        lifetime: 120
+        region: circle-shadow
+        interp: pow3Out
+        sizeInterp: pow3In
+        sizeFrom: 60
+        sizeTo: 0
+        colorTo: a3a3a3
+        layer: 109
+      }
+      {
+        particles: 1
+        length: 0
+        lifetime: 60
+        region: allure-shield
+        sizeFrom: 0
+        sizeTo: 360
+        colorTo: 80008000
+        interp: pow3
+        sizeInterp: linear
+      }
+      {
+        particles: 1
+        length: 0
+        lifetime: 60
+        region: circle-shadow
+        sizeFrom: 300
+        sizeTo: 0
+        colorFrom: 000000
+        colorTo: 00000000
+        layer: 99
+      }
+    ]
+    shootEffect: [
+      {
+        particles: 6
+        cone: 10
+        length: 80
+        baseLength: 40
+        lifetime: 45
+        sizeFrom: 24
+        region: circle-shadow
+        colorTo: 800080
+        interp: pow3Out
+        sizeInterp: pow2In
+      }
+      {
+        particles: 12
+        cone: 15
+        length: 120
+        baseLength: 40
+        lifetime: 60
+        sizeFrom: 12
+        colorFrom: 800080
+        colorTo: 80008088
+        interp: pow3Out
+        sizeInterp: pow2In
+        layer: 109
+      }
+      {
+        particles: 7
+        cone: 20
+        length: 160
+        baseLength: 40
+        lifetime: 90
+        sizeFrom: 24
+        colorFrom: a3a3a388
+        colorTo: 00000088
+        interp: pow3Out
+        sizeInterp: pow2In
+        layer: 99
+      }
+    ]
+  }
+}

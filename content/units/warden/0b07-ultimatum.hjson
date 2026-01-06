@@ -87,7 +87,7 @@ weapons: [
     ]
     shootWarmupSpeed: 0.02
     minWarmup: 0.9
-    shootSound: laserblast
+    shootSound: explosionReactorNeoplasm
     recoil: 0
     shake: 18
     bullet: {
@@ -142,6 +142,13 @@ weapons: [
         sizeTo: 80
         colorFrom: 7382f0
         colorTo: 7382f000
+      }
+      shootEffect: {
+        type: SoundEffect
+        minVolume: 0.8
+        minPitch: 1
+        sound: blockExplodeElectricBig
+        effect: none
       }
     }
   }

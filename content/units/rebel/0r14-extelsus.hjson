@@ -1228,15 +1228,6 @@ weapons: [
     parts: [
       {
         type: ShapePart
-        radius: 500
-        stroke: 6
-        color: e65555
-        hollow: true
-        circle: true
-        layer: 109
-      }
-      {
-        type: ShapePart
         y: -500
         radius: 24
         color: e65555

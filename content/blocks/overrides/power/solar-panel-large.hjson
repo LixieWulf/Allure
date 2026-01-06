@@ -1,1 +1,6 @@
-powerProduction: 3
+powerProduction: 1
+requirements: [
+  lead/50
+  silicon/50
+  titanium/30
+]

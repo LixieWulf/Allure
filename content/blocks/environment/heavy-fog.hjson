@@ -20,3 +20,6 @@ updateEffect: {
   colorTo: 00000000
   layer: 61
 }
+envEnabled: 0
+envRequired: 0
+envDisabled: 0

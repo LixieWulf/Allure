@@ -19,6 +19,8 @@ maxRange: 660
 drawBody: false
 outlines: false
 deathShake: 0
+loopSound: loopSmelter
+loopSoundVolume: 0.2
 targetFlags: [
   turret, 
   core
@@ -472,7 +474,7 @@ weapons: [
     }
     shootStatusDuration: 190
     reload: 380
-    chargeSound: lasercharge2
+    chargeSound: chargeVela
     shootSound: considerablyintensepew
     shake: 12
     bullet: {

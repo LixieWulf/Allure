@@ -1,0 +1,8 @@
+consumes: {
+  remove: [
+    liquid
+  ]
+  liquids: [
+    oil/0.3
+  ]
+}

@@ -1,0 +1,228 @@
+type: ItemTurret
+size: 12
+health: 124000
+armor: 600
+reload: 120
+recoil: 0
+rotateSpeed: 0
+shake: 12
+shootCone: 45
+shootY: 0
+shootSound: shootSmite
+shoot: {
+  type: ShootSpread
+  spread: 90
+  shots: 3
+}
+drawArrow: true
+consumes: {
+  power: 480
+  liquids: [
+    plasma/48
+    energia/48
+    arreacta/6
+  ]
+}
+liquidCapacity: 1500
+ammoPerShot: 256
+maxAmmo: 256
+ammoTypes: {
+  shadow: {
+    speed: 1
+    lifetime: 210
+    accel: 0.1
+    damage: 10000000
+    maxDamageFraction: 0.15
+    buildingDamageMultiplier: 0.001
+    splashDamage: 40000
+    splashDamageRadius: 480
+    homingPower: 0.02
+    homingRange: 2400
+    homingDelay: 10
+    reflectable: false
+    absorbable: false
+    sprite: missile-large
+    width: 35
+    height: 80
+    shrinkY: 0
+    frontColor: d60270
+    backColor: 9b4f96
+    trailColor: 0038a8
+    lightColor: 9b4f96
+    hitSound: explod
+    hitSoundVolume: 3
+    fragBullets: 480
+    fragOffsetMin: 0
+    fragOffsetMax: 0
+    fragBullet: {
+      type: BulletType
+      damage: 250
+      speed: 48
+      lifetime: 45
+      pierceDamageFactor: 0.01
+      pierce: true
+      pierceBuilding: true
+      absorbable: false
+      hittable: false
+      reflectable: false
+      hitEffect: none
+      despawnEffect: none
+    }
+    parts: [
+      {
+        type: FlarePart
+        sides: 2
+        color1: d60270bb
+        radius: 0
+        radiusTo: 240
+        stroke: 24
+        innerRadScl: 0.75
+        progress: {
+          type: life
+          op: compress
+          start: 0
+          end: 0.75
+        }
+        layer: 101
+      }
+      {
+        type: FlarePart
+        sides: 2
+        color1: 00000000
+        radius: 0
+        radiusTo: 64
+        stroke: 64
+        progress: {
+          type: life
+          op: compress
+          start: 0
+          end: 0.75
+        }
+        layer: 101
+      }
+    ]
+    trailWidth: 12
+    trailLength: 15
+    trailInterval: 2
+    trailEffect: {
+      length: -16
+      baseLength: 16
+      particles: 6
+      lifetime: 30
+      interp: pow2Out
+      sizeInterp: slope
+      sizeFrom: 0
+      sizeTo: 14
+      colorFrom: d60270bb
+      colorTo: 0038a8bb
+    }
+    hitEffect: [
+      {
+        particles: 1
+        length: 0
+        lifetime: 90
+        region: allure-shield
+        sizeFrom: 0
+        sizeTo: 1100
+        colorTo: d6027000
+        layer: 109
+      }
+      {
+        particles: 1
+        length: 0
+        lifetime: 60
+        sizeFrom: 180
+        sizeTo: 0
+        colorFrom: d60270
+        colorTo: 9b4f9688
+        layer: 109
+      }
+      {
+        particles: 1
+        length: 0
+        lifetime: 60
+        sizeFrom: 140
+        sizeTo: 0
+      }
+      {
+        particles: 60
+        length: 550
+        lifetime: 150
+        region: circle-shadow
+        interp: pow3Out
+        sizeInterp: pow3In
+        sizeFrom: 90
+        sizeTo: 0
+        colorTo: 0038a8
+        layer: 108
+      }
+      {
+        particles: 60
+        length: 500
+        lifetime: 120
+        region: circle-shadow
+        interp: pow3Out
+        sizeInterp: pow3In
+        sizeFrom: 120
+        sizeTo: 0
+        colorTo: 9b4f96
+        layer: 109
+      }
+      {
+        particles: 1
+        length: 0
+        region: circle-shadow
+        lifetime: 30
+        sizeFrom: 0
+        sizeTo: 1200
+        colorTo: ffffff00
+        interp: pow3In
+        sizeInterp: pow2Out
+        layer: 135
+      }
+      {
+        particles: 1
+        region: allure-diamond-vthin
+        useRotation: false
+        length: 0
+        lifetime: 30
+        sizeFrom: 960
+        sizeTo: 0
+        colorFrom: 9b4f96
+        colorTo: 9b4f96
+        layer: 109
+      }
+      {
+        particles: 1
+        region: allure-blinding
+        useRotation: false
+        length: 0
+        lifetime: 30
+        sizeFrom: 1200
+        sizeTo: 0
+        layer: 109
+      }
+      {
+        particles: 1
+        region: circle-shadow
+        useRotation: false
+        length: 0
+        lifetime: 30
+        sizeFrom: 1440
+        sizeTo: 0
+        colorFrom: 00000044
+        colorTo: 00000044
+        layer: 99
+      }
+      {
+        type: WaveEffect
+        lifetime: 500
+        sizeFrom: 0
+        sizeTo: 2400
+        strokeFrom: 36
+        layer: 29
+        clip: 4000
+      }
+    ]
+  }
+}

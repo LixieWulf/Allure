@@ -1,2 +1,22 @@
 drillTime: 270
 liquidBoostIntensity: 1.733
+hardnessDrillMultiplier: 67.5
+liquidCapacity: 12
+consumes: {
+  power: 1
+  remove: [
+    liquid
+  ]
+  liquid: {
+    liquid: cryofluid
+    amount: 0.2
+    optional: true
+    booster: true
+  }
+}
+requirements: [
+  graphite/100
+  metaglass/50
+  silicon/120
+  plastanium/100
+]

@@ -1,0 +1,526 @@
+type: ItemTurret
+size: 12
+health: 124000
+armor: 600
+reload: 240
+recoil: 14
+rotateSpeed: 0.8
+shake: 24
+shootY: 128
+shootSound: none
+shoot: {
+  firstShotDelay: 80
+}
+moveWhileCharging: false
+reloadWhileCharging: false
+consumes: {
+  power: 480
+  liquids: [
+    plasma/48
+    energia/48
+    arreacta/6
+  ]
+}
+liquidCapacity: 1500
+ammoPerShot: 256
+maxAmmo: 256
+ammoTypes: {
+  shadow: {
+    type: ContinuousLaserBulletType
+    damage: 10000000
+    maxDamageFraction: 0.05
+    buildingDamageMultiplier: 0.001
+    pierceCap: 12
+    length: 2160
+    width: 64
+    oscMag: 0
+    lifetime: 120
+    fadeTime: 80
+    ammoMultiplier: 1
+    damageInterval: 10
+    frontLength: 360
+    backLength: 64
+    colors: [
+      3d1a7844
+      5049cc66
+      7bade288
+      078d70aa
+      26ceaacc
+      98E8C1
+      ffffff
+    ]
+    largeHit: true
+    laserAbsorb: false
+    fragBullets: 1
+    fragOnHit: false
+    fragBullet: {
+      type: EmptyBulletType
+      killShooter: true
+    }
+    intervalBullets: 1
+    intervalRandomSpread: 0
+    intervalDelay: 40
+    bulletInterval: 10
+    intervalBullet: {
+      type: EmptyBulletType
+      spawnBullets: [
+        {
+          type: EmptyBulletType
+          fragBullets: 1
+          fragRandomSpread: 0
+          fragAngle: 90
+          fragOffsetMin: 12
+          fragOffsetMax: 12
+          fragBullet: {
+            type: RailBulletType
+            damage: 2400
+            length: 1920
+            pierceDamageFactor: 0.2
+            angleOffset: -90
+            pierceCap: 9
+          }
+        }
+        {
+          type: EmptyBulletType
+          fragBullets: 1
+          fragRandomSpread: 0
+          fragAngle: -90
+          fragOffsetMin: 12
+          fragOffsetMax: 12
+          fragBullet: {
+            type: RailBulletType
+            damage: 2400
+            length: 1920
+            pierceDamageFactor: 0.2
+            angleOffset: 90
+            pierceCap: 9
+          }
+        }
+        {
+          type: EmptyBulletType
+          fragBullets: 1
+          fragRandomSpread: 0
+          fragAngle: 90
+          fragOffsetMin: 24
+          fragOffsetMax: 24
+          fragBullet: {
+            type: RailBulletType
+            damage: 1800
+            length: 1780
+            pierceDamageFactor: 0.2
+            angleOffset: -90
+            pierceCap: 6
+          }
+        }
+        {
+          type: EmptyBulletType
+          fragBullets: 1
+          fragRandomSpread: 0
+          fragAngle: -90
+          fragOffsetMin: 24
+          fragOffsetMax: 24
+          fragBullet: {
+            type: RailBulletType
+            damage: 1800
+            length: 1780
+            pierceDamageFactor: 0.2
+            angleOffset: 90
+            pierceCap: 6
+          }
+        }
+      ]
+    }
+    spawnBullets: [
+      {
+        type: EmptyBulletType
+        lifetime: 40
+        fragBullets: 1
+        fragOffsetMin: 0
+        fragOffsetMax: 0
+        fragRandomSpread: 0
+        fragBullet: {
+          type: ContinuousLaserBulletType
+          damage: 10000000
+          maxDamageFraction: 0.1
+          buildingDamageMultiplier: 0.0025
+          pierceCap: 48
+          length: 2400
+          width: 128
+          oscMag: 0
+          lifetime: 120
+          fadeTime: 120
+          ammoMultiplier: 1
+          damageInterval: 100
+          layer: 101
+          frontLength: 560
+          backLength: 128
+          colors: [
+            3d1a7844
+            5049cc66
+            7bade288
+            078d70aa
+            26ceaacc
+            98E8C1
+            ffffff
+          ]
+          largeHit: true
+          laserAbsorb: false
+        }
+      }
+      {
+        type: EmptyBulletType
+        lifetime: 50
+        hittable: false
+        collides: false
+        absorbable: false
+        fragBullets: 1
+        fragOffsetMin: 0
+        fragOffsetMax: 0
+        fragRandomSpread: 0
+        fragBullet: {
+          type: LaserBulletType
+          length: 2160
+          width: 0
+          pierceCap: 12
+          lifetime: 5
+          laserAbsorb: false
+          lightningSpacing: 300
+          lightningDelay: 0
+          lightningLength: 2
+          lightningLengthRand: 0
+          lightningType: {
+            type: EmpBulletType
+            radius: 480
+            damage: 240
+            lifetime: 0
+            splashDamage: 15000
+            splashDamageRadius: 180
+            despawnHit: true
+            collides: false
+            absorbable: false
+            hittable: false
+            laserAbsorb: false
+            status: allure-emp
+            statusDuration: 480
+            hitColor: 7bade2
+            hitEffect: [
+              {
+                particles: 1
+                length: 0
+                lifetime: 60
+                region: allure-squishwave
+                sizeFrom: 120
+                sizeTo: 240
+                colorTo: 7bade200
+                interp: linear
+                sizeInterp: pow3Out
+              }
+              {
+                particles: 1
+                length: 0
+                lifetime: 45
+                region: allure-shield
+                sizeFrom: 120
+                sizeTo: 360
+                colorTo: 26ceaa00
+                interp: linear
+                sizeInterp: pow3Out
+              }
+              {
+                particles: 1
+                region: circle-shadow
+                useRotation: false
+                length: 0
+                lifetime: 15
+                sizeFrom: 0
+                sizeTo: 1400
+                colorFrom: 00000044
+                colorTo: 00000044
+                layer: 99
+              }
+              {
+                particles: 1
+                region: circle-shadow
+                useRotation: false
+                length: 0
+                lifetime: 15
+                startDelay: 15
+                sizeFrom: 1400
+                sizeTo: 0
+                colorFrom: 00000044
+                colorTo: 00000044
+                layer: 99
+              }
+              {
+                particles: 1
+                region: circle-shadow
+                useRotation: false
+                length: 0
+                lifetime: 15
+                sizeFrom: 0
+                sizeTo: 1280
+                colorFrom: ffffff00
+                colorTo: ffffff88
+                layer: 145
+              }
+              {
+                particles: 1
+                region: circle-shadow
+                useRotation: false
+                startDelay: 15
+                length: 0
+                lifetime: 45
+                sizeFrom: 1280
+                sizeTo: 0
+                colorFrom: ffffff88
+                colorTo: ffffff00
+                layer: 145
+              }
+            ]
+          }
+        }
+      }
+    ]
+    chargeEffect: [
+      {
+        type: SoundEffect
+        effect: none
+        sound: lasercharge2
+        minVolume: 1.5
+        maxVolume: 1.5
+        minPitch: 0.5
+        maxPitch: 0.5
+      }
+      {
+        type: SoundEffect
+        effect: none
+        sound: lasercharge
+        minVolume: 1.5
+        maxVolume: 1.5
+        minPitch: 1
+        maxPitch: 1
+      }
+      {
+        type: RadialEffect
+        amount: 7
+        lengthOffset: 57
+        rotationSpacing: 51.4285
+        effect: {
+          line: true
+          cap: false
+          lifetime: 120
+          particles: 1
+          cone: 0
+          length: 0.001
+          lenFrom: 0
+          lenTo: 8
+          strokeFrom: 0
+          strokeTo: 512
+          interp: pow3Out
+          colorTo: 7bade2
+        }
+      }
+    ]
+  }
+}
+shootEffect: [
+  {
+    type: SoundEffect
+    effect: none
+    sound: laserbig
+    minVolume: 1.5
+    maxVolume: 1.5
+  }
+  {
+    type: SoundEffect
+    effect: none
+    sound: plasmaboom
+    minVolume: 1
+    maxVolume: 1
+  }
+  {
+    particles: 1
+    region: allure-squishwave
+    offset: 90
+    cone: 0
+    length: 60
+    randLength: false
+    lifetime: 40
+    sizeFrom: 180
+    sizeTo: 240
+    colorTo: 26ceaa88
+  }
+  {
+    particles: 1
+    length: 0
+    lifetime: 40
+    sizeFrom: 64
+    sizeTo: 32
+    colorFrom: 26ceaa
+    colorTo: 26ceaa88
+    layer: 101
+  }
+  {
+    particles: 1
+    length: 0
+    lifetime: 40
+    sizeFrom: 56
+    sizeTo: 28
+    layer: 102
+  }
+  {
+    particles: 1
+    region: allure-diamond-vthin
+    useRotation: false
+    length: 0
+    lifetime: 60
+    sizeFrom: 640
+    sizeTo: 320
+    colorTo: 7bade2
+  }
+]
+smokeEffect: [
+  {
+    type: SoundEffect
+    effect: none
+    sound: corexplode
+    minVolume: 1
+    maxVolume: 1
+    startDelay: 40
+  }
+  {
+    type: SoundEffect
+    effect: none
+    sound: laserblast
+    minVolume: 2
+    maxVolume: 2
+    startDelay: 40
+  }
+  {
+    particles: 1
+    length: 0
+    lifetime: 60
+    sizeFrom: 96
+    sizeTo: 0
+    colorFrom: 26ceaa
+    colorTo: 26ceaa88
+    startDelay: 40
+    startDelay: 40
+    layer: 101
+  }
+  {
+    particles: 1
+    length: 0
+    lifetime: 60
+    sizeFrom: 80
+    sizeTo: 0
+    startDelay: 40
+    layer: 102
+  }
+  {
+    particles: 1
+    region: allure-diamond-vthin
+    useRotation: false
+    length: 0
+    lifetime: 60
+    sizeFrom: 960
+    sizeTo: 0
+    startDelay: 40
+    colorTo: 7bade244
+  }
+  {
+    particles: 1
+    region: allure-diamond-vthin
+    useRotation: false
+    length: 0
+    lifetime: 60
+    sizeFrom: 720
+    sizeTo: 0
+    startDelay: 40
+    layer: 101
+  }
+  {
+    particles: 1
+    region: allure-squishwave
+    offset: 90
+    cone: 0
+    length: 120
+    randLength: false
+    lifetime: 60
+    sizeFrom: 480
+    sizeTo: 580
+    startDelay: 40
+    colorTo: 7bade200
+  }
+  {
+    type: RadialEffect
+    amount: 7
+    lengthOffset: 115
+    rotationSpacing: 51.4285
+    effect: {
+      line: true
+      cap: false
+      lifetime: 120
+      particles: 1
+      cone: 0
+      length: 0.001
+      lenFrom: 12
+      lenTo: 0
+      strokeFrom: 1024
+      strokeTo: 1024
+      startDelay: 40
+      colorTo: 7bade2
+    }
+  }
+  {
+    line: true
+    cap: false
+    baseRotation: 180
+    lifetime: 150
+    particles: 24
+    cone: 25
+    length: 120
+    baseLength: 120
+    lenFrom: 72
+    lenTo: 72
+    strokeFrom: 30
+    strokeTo: 0
+    startDelay: 40
+    interp: pow3Out
+    colorTo: ffffff
+  }
+  {
+    line: true
+    cap: false
+    baseRotation: 60
+    lifetime: 150
+    particles: 24
+    cone: 15
+    length: 360
+    baseLength: 360
+    lenFrom: 80
+    lenTo: 80
+    strokeFrom: 20
+    strokeTo: 0
+    startDelay: 40
+    interp: pow3Out
+    colorTo: 7bade2
+  }
+  {
+    line: true
+    cap: false
+    baseRotation: -60
+    lifetime: 150
+    particles: 24
+    cone: 15
+    length: 360
+    baseLength: 360
+    lenFrom: 80
+    lenTo: 80
+    strokeFrom: 20
+    strokeTo: 0
+    startDelay: 40
+    interp: pow3Out
+    colorTo: 26ceaa
+  }
+]

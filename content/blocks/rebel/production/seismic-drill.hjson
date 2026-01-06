@@ -168,7 +168,7 @@ drillEffect: [
   }
   {
     type: SoundEffect
-    sound: largeCannon
+    sound: shootConquer
     minPitch: 0.5
     maxPitch: 0.5
     minVolume: 1
@@ -177,7 +177,7 @@ drillEffect: [
   }
   {
     type: SoundEffect
-    sound: plasmaboom
+    sound: explosionQuad
     minPitch: 1
     maxPitch: 1
     minVolume: 1
@@ -187,7 +187,7 @@ drillEffect: [
 ]
 consumes: {
   liquids: [
-    energia/0.2
+    energia/0.4
   ]
 }
 drillSoundVolume: 1.2

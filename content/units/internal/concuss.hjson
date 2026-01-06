@@ -286,6 +286,8 @@ weapons: [
     }
   }
 ]
+envEnabled: -1
+envDisabled: 0
 deathSound: none
 deathShake: 8
 deathExplosionEffect: none

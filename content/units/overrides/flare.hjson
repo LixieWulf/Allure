@@ -1,5 +1,10 @@
 health: 100
+physics: false
 speed: 2
+rotateSpeed: 9
+circleTargetRadius: 40
+range: 120
+maxRange: 160
 omniMovement: false
 weapons: [
   {
@@ -8,10 +13,11 @@ weapons: [
     ejectEffect: casing1
     bullet: {
       speed: 4
-      damage: 9
+      damage: 7
       width: 7
       height: 9
-      lifetime: 50
+      lifetime: 40
+      range: 160
     }
   }
 ]

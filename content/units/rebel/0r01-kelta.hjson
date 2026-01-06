@@ -9,18 +9,20 @@ flying: true
 drag: 0.07
 accel: 0.15
 strafePenalty: 0.25
-rotateSpeed: 5
+rotateSpeed: 0.75
 engineSize: 0
 outlines: false
 drawCell: false
 drawBody: false
 faceTarget: false
+shadowElevationScl: 3
 lightRadius: 45
 lightColor: e65555
+omniMovement: false
 circleTarget: true
 envEnabled: -1
 envDisabled: 4
-fallSpeed: 0.25
+fallSpeed: 0.05
 itemCapacity: 0
 parts: [
   {
@@ -54,7 +56,7 @@ immunities: [
 ]
 weapons: [
   {
-    y: -24
+    y: 0
     x: 0
     shootOnDeath: true
     shootCone: 180
@@ -74,14 +76,15 @@ weapons: [
       fragLifeMin: 0
       fragBullet: {
         type: BulletType
-        damage: 80
-        speed: 1
+        damage: 12
+        speed: 1.5
         drag: 0.01
         lifetime: 120
         pierce: true
         pierceBuilding: true
-        pierceDamageFactor: 8
+        pierceDamageFactor: 0.01
         pierceArmor: true
+        keepVelocity: false
         hittable: false
         absorbable: false
         reflectable: false
@@ -274,7 +277,7 @@ weapons: [
   }
   //kelta explodes violently, so no death package
 ]
-abilities:[
+abilities: [
   {
     type: MoveLightningAbility
     y: -8
@@ -302,6 +305,74 @@ abilities:[
         killShooter: true
       }
     }
+  }
+  {
+    type: MoveEffectAbility
+    y: -16
+    x: 7.5
+    minVelocity: 1.8
+    effect: [
+      {
+        particles: 1
+        length: 0
+        baseLength: 4
+        lifetime: 35
+        sizeFrom: 0
+        sizeTo: 6
+        layer: 90
+        lightScl: 0
+        colorFrom: 787878
+        colorTo: 78787888
+        sizeInterp: slope
+      }
+      {
+        particles: 1
+        length: 0
+        baseLength: 2
+        lifetime: 25
+        sizeFrom: 0
+        sizeTo: 3
+        layer: 100
+        lightScl: 0
+        colorFrom: ffffff
+        colorTo: e65555
+        sizeInterp: slope
+      }
+    ]
+  }
+  {
+    type: MoveEffectAbility
+    y: -16
+    x: -7.5
+    minVelocity: 1.8
+    effect: [
+      {
+        particles: 1
+        length: 0
+        baseLength: 4
+        lifetime: 35
+        sizeFrom: 0
+        sizeTo: 6
+        layer: 90
+        lightScl: 0
+        colorFrom: 787878
+        colorTo: 78787888
+        sizeInterp: slope
+      }
+      {
+        particles: 1
+        length: 0
+        baseLength: 2
+        lifetime: 25
+        sizeFrom: 0
+        sizeTo: 3
+        layer: 100
+        lightScl: 0
+        colorFrom: ffffff
+        colorTo: e65555
+        sizeInterp: slope
+      }
+    ]
   }
 ]
 deathExplosionEffect: [

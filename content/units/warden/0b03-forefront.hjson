@@ -63,7 +63,7 @@ weapons: [
     reload: 120
     x: 0
     y: -18
-    shootSound: none
+    shootSound: beamPlasmaSmall
     bullet: {
       type: BulletType
       collides: false

@@ -1119,7 +1119,7 @@ shootType: {
       absorbable: false
       despawnEffect: [
         {
-          lifetime: 30
+          lifetime: 31
           startDelay: 30
           baseLength: -80
           offset: -90
@@ -1132,10 +1132,11 @@ shootType: {
           sizeFrom: 48
           sizeTo: 48
           colorFrom: ffffff00
+          colorTo: 5bcefa
           clip: 8192
         }
         {
-          lifetime: 360
+          lifetime: 361
           startDelay: 60
           baseLength: -80
           offset: -90
@@ -1147,10 +1148,12 @@ shootType: {
           region: allure-firing
           sizeFrom: 48
           sizeTo: 48
+          colorFrom: 5bcefa
+          colorTo: 5bcefa
           clip: 8192
         }
         {
-          lifetime: 90
+          lifetime: 91
           startDelay: 420
           offset: -90
           baseLength: -80
@@ -1162,11 +1165,12 @@ shootType: {
           region: allure-firing
           sizeFrom: 48
           sizeTo: 48
+          colorFrom: 5bcefa
           colorTo: ffffff00
           clip: 8192
         }
         {
-          lifetime: 60
+          lifetime: 61
           startDelay: 60
           baseLength: -80
           offset: -90
@@ -1179,11 +1183,11 @@ shootType: {
           sizeFrom: 48
           sizeTo: 48
           colorFrom: ffffff00
-          colorTo: e65555
+          colorTo: f5a9b8
           clip: 8192
         }
         {
-          lifetime: 60
+          lifetime: 121
           startDelay: 120
           baseLength: -80
           offset: -90
@@ -1196,28 +1200,12 @@ shootType: {
           sizeFrom: 48
           sizeTo: 48
           colorTo: ffffff00
-          colorFrom: e65555
+          colorFrom: f5a9b8
+          interp: slope
           clip: 8192
         }
         {
-          lifetime: 60
-          startDelay: 180
-          baseLength: -80
-          offset: -90
-          layer: 130.01
-          randLength: false
-          cone: 0
-          particles: 1
-          length: 0
-          region: allure-init
-          sizeFrom: 48
-          sizeTo: 48
-          colorFrom: ffffff00
-          colorTo: e65555
-          clip: 8192
-        }
-        {
-          lifetime: 60
+          lifetime: 121
           startDelay: 240
           baseLength: -80
           offset: -90
@@ -1230,28 +1218,12 @@ shootType: {
           sizeFrom: 48
           sizeTo: 48
           colorTo: ffffff00
-          colorFrom: e65555
+          colorFrom: f5a9b8
+          interp: slope
           clip: 8192
         }
         {
-          lifetime: 60
-          startDelay: 300
-          baseLength: -80
-          offset: -90
-          layer: 130.01
-          randLength: false
-          cone: 0
-          particles: 1
-          length: 0
-          region: allure-init
-          sizeFrom: 48
-          sizeTo: 48
-          colorFrom: ffffff00
-          colorTo: e65555
-          clip: 8192
-        }
-        {
-          lifetime: 60
+          lifetime: 61
           startDelay: 360
           baseLength: -80
           offset: -90
@@ -1264,7 +1236,7 @@ shootType: {
           sizeFrom: 48
           sizeTo: 48
           colorTo: ffffff00
-          colorFrom: e65555
+          colorFrom: f5a9b8
           clip: 8192
         }
       ]
@@ -1286,8 +1258,8 @@ shootType: {
           lifetime: 100
           sizeFrom: 8192
           sizeTo: 8192
-          colorFrom: e6555500
-          colorTo: e6555525
+          colorFrom: 5bcefa00
+          colorTo: f5a9b825
           clip: 8192
         }
         {
@@ -1295,23 +1267,12 @@ shootType: {
           startDelay: 800
           particles: 1
           length: 0
-          lifetime: 100
+          lifetime: 200
           sizeFrom: 8192
           sizeTo: 8192
-          colorTo: e6555500
-          colorFrom: e6555525
-          clip: 8192
-        }
-        {
-          layer: 129
-          startDelay: 900
-          particles: 1
-          length: 0
-          lifetime: 100
-          sizeFrom: 8192
-          sizeTo: 8192
-          colorFrom: e6555500
-          colorTo: e6555525
+          colorTo: 5bcefa25
+          colorFrom: f5a9b825
+          interp: slope
           clip: 8192
         }
         {
@@ -1319,23 +1280,12 @@ shootType: {
           startDelay: 1000
           particles: 1
           length: 0
-          lifetime: 100
+          lifetime: 200
           sizeFrom: 8192
           sizeTo: 8192
-          colorTo: e6555500
-          colorFrom: e6555525
-          clip: 8192
-        }
-        {
-          layer: 129
-          startDelay: 1100
-          particles: 1
-          length: 0
-          lifetime: 100
-          sizeFrom: 8192
-          sizeTo: 8192
-          colorFrom: e6555500
-          colorTo: e6555525
+          colorTo: 5bcefa25
+          colorFrom: f5a9b825
+          interp: slope
           clip: 8192
         }
         {
@@ -1343,23 +1293,12 @@ shootType: {
           startDelay: 1200
           particles: 1
           length: 0
-          lifetime: 100
+          lifetime: 200
           sizeFrom: 8192
           sizeTo: 8192
-          colorTo: e6555500
-          colorFrom: e6555525
-          clip: 8192
-        }
-        {
-          layer: 129
-          startDelay: 1300
-          particles: 1
-          length: 0
-          lifetime: 100
-          sizeFrom: 8192
-          sizeTo: 8192
-          colorFrom: e6555500
-          colorTo: e6555525
+          colorTo: 5bcefa25
+          colorFrom: f5a9b825
+          interp: slope
           clip: 8192
         }
         {
@@ -1367,23 +1306,12 @@ shootType: {
           startDelay: 1400
           particles: 1
           length: 0
-          lifetime: 100
+          lifetime: 200
           sizeFrom: 8192
           sizeTo: 8192
-          colorTo: e6555500
-          colorFrom: e6555525
-          clip: 8192
-        }
-        {
-          layer: 129
-          startDelay: 1500
-          particles: 1
-          length: 0
-          lifetime: 100
-          sizeFrom: 8192
-          sizeTo: 8192
-          colorFrom: e6555500
-          colorTo: e6555525
+          colorTo: 5bcefa25
+          colorFrom: f5a9b825
+          interp: slope
           clip: 8192
         }
         {
@@ -1391,23 +1319,12 @@ shootType: {
           startDelay: 1600
           particles: 1
           length: 0
-          lifetime: 100
+          lifetime: 200
           sizeFrom: 8192
           sizeTo: 8192
-          colorTo: e6555500
-          colorFrom: e6555525
-          clip: 8192
-        }
-        {
-          layer: 129
-          startDelay: 1700
-          particles: 1
-          length: 0
-          lifetime: 100
-          sizeFrom: 8192
-          sizeTo: 8192
-          colorFrom: e6555500
-          colorTo: e6555525
+          colorTo: 5bcefa25
+          colorFrom: f5a9b825
+          interp: slope
           clip: 8192
         }
         {
@@ -1415,23 +1332,12 @@ shootType: {
           startDelay: 1800
           particles: 1
           length: 0
-          lifetime: 100
+          lifetime: 200
           sizeFrom: 8192
           sizeTo: 8192
-          colorTo: e6555500
-          colorFrom: e6555525
-          clip: 8192
-        }
-        {
-          layer: 129
-          startDelay: 1900
-          particles: 1
-          length: 0
-          lifetime: 100
-          sizeFrom: 8192
-          sizeTo: 8192
-          colorFrom: e6555500
-          colorTo: e6555525
+          colorTo: 5bcefa25
+          colorFrom: f5a9b825
+          interp: slope
           clip: 8192
         }
         {
@@ -1439,23 +1345,12 @@ shootType: {
           startDelay: 2000
           particles: 1
           length: 0
-          lifetime: 100
+          lifetime: 200
           sizeFrom: 8192
           sizeTo: 8192
-          colorTo: e6555500
-          colorFrom: e6555525
-          clip: 8192
-        }
-        {
-          layer: 129
-          startDelay: 2100
-          particles: 1
-          length: 0
-          lifetime: 100
-          sizeFrom: 8192
-          sizeTo: 8192
-          colorFrom: e6555500
-          colorTo: e6555525
+          colorTo: 5bcefa25
+          colorFrom: f5a9b825
+          interp: slope
           clip: 8192
         }
         {
@@ -1466,8 +1361,8 @@ shootType: {
           lifetime: 100
           sizeFrom: 8192
           sizeTo: 8192
-          colorTo: e6555500
-          colorFrom: e6555525
+          colorTo: 5bcefa25
+          colorFrom: f5a9b825
           clip: 8192
         }
         {
@@ -1478,8 +1373,8 @@ shootType: {
           lifetime: 100
           sizeFrom: 8192
           sizeTo: 8192
-          colorFrom: e6555500
-          colorTo: e6555575
+          colorFrom: 5bcefa25
+          colorTo: f5a9b888
           clip: 8192
         }
       ]
@@ -1509,6 +1404,60 @@ shootType: {
           sizeFrom: 24
           sizeTo: 0
           colorFrom: ffffff00
+        }
+      }
+    }
+    {
+      lifetime: 600
+      speed: 0
+      fragBullets: 800
+      fragLifeMin: 0
+      fragVelocityMin: 0.2
+      fragBullet: {
+        type: BulletType
+        speed: 0.8
+        lifetime: 1660
+        collides: false
+        absorbable: false
+        hittable: false
+        despawnEffect: {
+          length: 120
+          cone: 0
+          lifetime: 180
+          region: allure-diamond-thin
+          spin: 1
+          particles: 1
+          sizeInterp: pow2Out
+          sizeFrom: 24
+          sizeTo: 0
+          colorFrom: f5a9b800
+        }
+      }
+    }
+    {
+      lifetime: 600
+      speed: 0
+      fragBullets: 800
+      fragLifeMin: 0
+      fragVelocityMin: 0.2
+      fragBullet: {
+        type: BulletType
+        speed: 0.8
+        lifetime: 1660
+        collides: false
+        absorbable: false
+        hittable: false
+        despawnEffect: {
+          length: 120
+          cone: 0
+          lifetime: 180
+          region: allure-diamond-thin
+          spin: 1
+          particles: 1
+          sizeInterp: pow2Out
+          sizeFrom: 24
+          sizeTo: 0
+          colorFrom: 5bcefa00
         }
       }
     }
@@ -1582,8 +1531,8 @@ shootType: {
               strokeTo: 6
               layer: 28.1
               clip: 8192
-              colorFrom: ffffff88
-              colorTo: ffffff88
+              colorFrom: 5bcefa
+              colorTo: 5bcefa
             }
             {
               line: true
@@ -1598,6 +1547,8 @@ shootType: {
               strokeTo: 3
               layer: 28.2
               clip: 8192
+              colorFrom: f5a9b8
+              colorTo: f5a9b8
             }
           ]
           fragBullets: 2
@@ -1647,8 +1598,8 @@ shootType: {
                 strokeTo: 5
                 layer: 28.1
                 clip: 8192
-                colorFrom: ffffff88
-                colorTo: ffffff88
+                colorFrom: 5bcefa
+                colorTo: 5bcefa
               }
               {
                 line: true
@@ -1663,6 +1614,8 @@ shootType: {
                 strokeTo: 2
                 layer: 28.2
                 clip: 8192
+                colorFrom: f5a9b8
+                colorTo: f5a9b8
               }
             ]
             fragBullets: 2
@@ -1712,8 +1665,8 @@ shootType: {
                   strokeTo: 4
                   layer: 28.1
                   clip: 8192
-                  colorFrom: ffffff88
-                  colorTo: ffffff88
+                  colorFrom: 5bcefa
+                  colorTo: 5bcefa
                 }
                 {
                   line: true
@@ -1728,6 +1681,8 @@ shootType: {
                   strokeTo: 1
                   layer: 28.2
                   clip: 8192
+                  colorFrom: f5a9b8
+                  colorTo: f5a9b8
                 }
               ]
               fragBullets: 2
@@ -1777,8 +1732,8 @@ shootType: {
                     strokeTo: 3
                     layer: 28.1
                     clip: 8192
-                    colorFrom: ffffff88
-                    colorTo: ffffff88
+                    colorFrom: 5bcefa
+                    colorTo: 5bcefa
                   }
                 ]
                 fragBullets: 2
@@ -1828,8 +1783,8 @@ shootType: {
                       strokeTo: 2
                       layer: 28.1
                       clip: 8192
-                      colorFrom: ffffff88
-                      colorTo: ffffff88
+                      colorFrom: 5bcefa
+                      colorTo: 5bcefa
                     }
                   ]
                   fragBullets: 2
@@ -1879,8 +1834,8 @@ shootType: {
                         strokeTo: 1
                         layer: 28.1
                         clip: 8192
-                        colorFrom: ffffff88
-                        colorTo: ffffff88
+                        colorFrom: 5bcefa
+                        colorTo: 5bcefa
                       }
                     ]
                     fragBullets: 2
@@ -2103,7 +2058,7 @@ shootType: {
       collides: false
       hittable: false
       absorbable: false
-      fragBullets: 60
+      fragBullets: 70
       fragLifeMin: 0
       fragVelocityMin: 0.2
       fragBullet: {
@@ -2113,17 +2068,43 @@ shootType: {
         collides: false
         absorbable: false
         hittable: false
-        despawnEffect: {
-          particles: 7
-          length: 2100
-          lifetime: 480
-          region: circle-shadow
-          interp: pow3Out
-          sizeInterp: pow2In
-          sizeFrom: 120
-          sizeTo: 0
-          clip: 8192
-        }
+        despawnEffect: [
+          {
+            particles: 2
+            length: 2100
+            lifetime: 480
+            region: circle-shadow
+            interp: pow3Out
+            sizeInterp: pow2In
+            sizeFrom: 120
+            sizeTo: 0
+            clip: 8192
+          }
+          {
+            particles: 2
+            length: 2100
+            lifetime: 480
+            region: circle-shadow
+            interp: pow3Out
+            sizeInterp: pow2In
+            sizeFrom: 120
+            sizeTo: 0
+            colorTo: f5a9b8
+            clip: 8192
+          }
+          {
+            particles: 2
+            length: 2100
+            lifetime: 480
+            region: circle-shadow
+            interp: pow3Out
+            sizeInterp: pow2In
+            sizeFrom: 120
+            sizeTo: 0
+            colorTo: 5bcefa
+            clip: 8192
+          }
+        ]
       }
     }
     {
@@ -2164,12 +2145,12 @@ shootType: {
           lifetime: 200
           startDelay: 200
           sizeFrom: 0
-          sizeTo: 440
+          sizeTo: 330
           interp: pow2Out
           offset: 45
+          colorFrom: f5a9b866
+          colorTo: f5a9b866
           clip: 8192
-          colorFrom: ffffff66
-          colorTo: ffffff66
         }
         {
           particles: 1
@@ -2178,12 +2159,40 @@ shootType: {
           lifetime: 200
           startDelay: 200
           sizeFrom: 0
-          sizeTo: 440
+          sizeTo: 330
           interp: pow2Out
           offset: 135
+          colorFrom: f5a9b866
+          colorTo: f5a9b866
           clip: 8192
-          colorFrom: ffffff66
-          colorTo: ffffff66
+        }
+        {
+          particles: 1
+          length: 0
+          region: allure-diamond-vthin
+          lifetime: 200
+          startDelay: 200
+          sizeFrom: 0
+          sizeTo: 330
+          interp: pow2Out
+          offset: 45
+          colorFrom: 5bcefa66
+          colorTo: 5bcefa66
+          clip: 8192
+        }
+        {
+          particles: 1
+          length: 0
+          region: allure-diamond-vthin
+          lifetime: 200
+          startDelay: 200
+          sizeFrom: 0
+          sizeTo: 330
+          interp: pow2Out
+          offset: 135
+          colorFrom: 5bcefa66
+          colorTo: 5bcefa66
+          clip: 8192
         }
         {
           particles: 45
@@ -2239,6 +2248,7 @@ shootType: {
           sizeTo: 1600
           strokeFrom: 26
           startDelay: 640
+          colorTo: f5a9b8
           clip: 8192
         }
         {
@@ -2249,6 +2259,7 @@ shootType: {
           sizeTo: 1200
           strokeFrom: 22
           startDelay: 760
+          colorTo: 5bcefa
           clip: 8192
         }
         {
@@ -2602,8 +2613,8 @@ shootType: {
           impact: true
           sprite: circle-bullet
           frontColor: ffffff
-          backColor: ffffff
-          trailColor: ffffff
+          backColor: f5a9b8
+          trailColor: 5bcefa
           width: 40
           height: 40
           shrinkY: 0
@@ -2644,6 +2655,7 @@ shootType: {
               strokeTo: 2
               interp: pow3Out
               sizeInterp: pow2In
+              colorTo: f5a9b8
             }
             {
               lifetime: 50
@@ -2657,6 +2669,7 @@ shootType: {
               strokeTo: 2
               interp: pow3Out
               sizeInterp: pow2In
+              colorTo: 5bcefa
             }
           ]
         }
@@ -2669,6 +2682,7 @@ shootType: {
       fragBullets: 240
       fragLifeMin: 0
       fragBullet: {
+        createChance: 0.333
         type: BulletType
         speed: 0
         lifetime: 1640
@@ -2692,6 +2706,72 @@ shootType: {
           lightningLengthRand: 28
           lightningDamage: 3500
           lightningColor: ffffff
+        }
+      }
+    }
+    {
+      lifetime: 760
+      speed: 0
+      fragBullets: 240
+      fragLifeMin: 0
+      fragBullet: {
+        createChance: 0.333
+        type: BulletType
+        speed: 0
+        lifetime: 1640
+        collides: false
+        absorbable: false
+        hittable: false
+        fragOffsetMin: 40
+        fragOffsetMax: 640
+        fragBullets: 1
+        fragBullet: {
+          type: BulletType
+          speed: 0
+          lifetime: 0
+          collides: false
+          hittable: false
+          absorbable: false
+          hitEffect: none
+          despawnEffect: none
+          lightning: 1
+          lightningLength: 14
+          lightningLengthRand: 28
+          lightningDamage: 3500
+          lightningColor: f5a9b8
+        }
+      }
+    }
+    {
+      lifetime: 760
+      speed: 0
+      fragBullets: 240
+      fragLifeMin: 0
+      fragBullet: {
+        createChance: 0.333
+        type: BulletType
+        speed: 0
+        lifetime: 1640
+        collides: false
+        absorbable: false
+        hittable: false
+        fragOffsetMin: 40
+        fragOffsetMax: 640
+        fragBullets: 1
+        fragBullet: {
+          type: BulletType
+          speed: 0
+          lifetime: 0
+          collides: false
+          hittable: false
+          absorbable: false
+          hitEffect: none
+          despawnEffect: none
+          lightning: 1
+          lightningLength: 14
+          lightningLengthRand: 28
+          lightningDamage: 3500
+          lightningColor: 5bcefa
         }
       }
     }
@@ -2740,14 +2820,15 @@ shootType: {
               type: RegionPart
               name: allure-vortex
               outline: false
-              moveRot: 720
+              moveRot: 1800
               progress: life
-              xScl: 0.1
-              yScl: 0.1
+              color: 5bcefa88
+              xScl: 0.14
+              yScl: 0.14
               moves: [
                 {
-                  gx: 1
-                  gy: 1
+                  gx: 1.6
+                  gy: 1.6
                   progress: {
                     type: life
                     ops: [
@@ -2758,14 +2839,14 @@ shootType: {
                       }
                       {
                         op: curve
-                        interp: pow3Out
+                        interp: pow10Out
                       }
                     ]
                   }
                 }
                 {
-                  gx: -1
-                  gy: -1
+                  gx: -1.6
+                  gy: -1.6
                   progress: {
                     type: life
                     ops: [
@@ -2787,10 +2868,155 @@ shootType: {
               type: RegionPart
               name: allure-vortex
               outline: false
-              moveRot: 1260
+              moveRot: 600
               progress: life
-              xScl: 0.1
-              yScl: 0.1
+              color: 5bcefa88
+              xScl: 0.14
+              yScl: 0.14
+              moves: [
+                {
+                  gx: 1.6
+                  gy: 1.6
+                  progress: {
+                    type: life
+                    ops: [
+                      {
+                        op: compress
+                        start: 0
+                        end: 0.8
+                      }
+                      {
+                        op: curve
+                        interp: pow10Out
+                      }
+                    ]
+                  }
+                }
+                {
+                  gx: -1.4
+                  gy: -1.4
+                  progress: {
+                    type: life
+                    ops: [
+                      {
+                        op: compress
+                        start: 0.8
+                        end: 1
+                      }
+                      {
+                        op: curve
+                        interp: pow3In
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+            {
+              type: RegionPart
+              name: allure-vortex
+              color: f5a9b8bb
+              outline: false
+              moveRot: 1400
+              progress: life
+              xScl: 0.13
+              yScl: 0.13
+              moves: [
+                {
+                  gx: 1.3
+                  gy: 1.3
+                  progress: {
+                    type: life
+                    ops: [
+                      {
+                        op: compress
+                        start: 0
+                        end: 0.8
+                      }
+                      {
+                        op: curve
+                        interp: pow10Out
+                      }
+                    ]
+                  }
+                }
+                {
+                  gx: -1.3
+                  gy: -1.3
+                  progress: {
+                    type: life
+                    ops: [
+                      {
+                        op: compress
+                        start: 0.8
+                        end: 1
+                      }
+                      {
+                        op: curve
+                        interp: pow3In
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+            {
+              type: RegionPart
+              name: allure-vortex
+              color: f5a9b8bb
+              outline: false
+              moveRot: 450
+              progress: life
+              xScl: 0.13
+              yScl: 0.13
+              moves: [
+                {
+                  gx: 1.3
+                  gy: 1.3
+                  progress: {
+                    type: life
+                    ops: [
+                      {
+                        op: compress
+                        start: 0
+                        end: 0.8
+                      }
+                      {
+                        op: curve
+                        interp: pow10Out
+                      }
+                    ]
+                  }
+                }
+                {
+                  gx: -1.3
+                  gy: -1.3
+                  progress: {
+                    type: life
+                    ops: [
+                      {
+                        op: compress
+                        start: 0.8
+                        end: 1
+                      }
+                      {
+                        op: curve
+                        interp: pow3In
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+            {
+              type: RegionPart
+              name: allure-vortex
+              color: ffffff88
+              outline: false
+              moveRot: 1000
+              progress: life
+              xScl: 0.2
+              yScl: 0.2
               moves: [
                 {
                   gx: 1
@@ -2805,7 +3031,7 @@ shootType: {
                       }
                       {
                         op: curve
-                        interp: pow3Out
+                        interp: pow10Out
                       }
                     ]
                   }
@@ -2835,109 +3061,14 @@ shootType: {
               name: allure-vortex
               color: ffffff88
               outline: false
-              moveRot: 1800
-              progress: life
-              xScl: 0.14
-              yScl: 0.14
-              moves: [
-                {
-                  gx: 1.6
-                  gy: 1.6
-                  progress: {
-                    type: life
-                    ops: [
-                      {
-                        op: compress
-                        start: 0
-                        end: 0.8
-                      }
-                      {
-                        op: curve
-                        interp: pow3Out
-                      }
-                    ]
-                  }
-                }
-                {
-                  gx: -1.6
-                  gy: -1.6
-                  progress: {
-                    type: life
-                    ops: [
-                      {
-                        op: compress
-                        start: 0.8
-                        end: 1
-                      }
-                      {
-                        op: curve
-                        interp: pow3In
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
-            {
-              type: RegionPart
-              name: allure-vortex
-              outline: false
-              moveRot: 360
-              progress: life
-              xScl: 0.13
-              yScl: 0.13
-              moves: [
-                {
-                  gx: 1.3
-                  gy: 1.3
-                  progress: {
-                    type: life
-                    ops: [
-                      {
-                        op: compress
-                        start: 0
-                        end: 0.8
-                      }
-                      {
-                        op: curve
-                        interp: pow3Out
-                      }
-                    ]
-                  }
-                }
-                {
-                  gx: -1.3
-                  gy: -1.3
-                  progress: {
-                    type: life
-                    ops: [
-                      {
-                        op: compress
-                        start: 0.8
-                        end: 1
-                      }
-                      {
-                        op: curve
-                        interp: pow3In
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
-            {
-              type: RegionPart
-              name: allure-vortex
-              color: ffffff60
-              outline: false
-              moveRot: 360
+              moveRot: 330
               progress: life
               xScl: 0.2
               yScl: 0.2
               moves: [
                 {
-                  gx: 2
-                  gy: 2
+                  gx: 1
+                  gy: 1
                   progress: {
                     type: life
                     ops: [
@@ -2948,14 +3079,14 @@ shootType: {
                       }
                       {
                         op: curve
-                        interp: pow3Out
+                        interp: pow10Out
                       }
                     ]
                   }
                 }
                 {
-                  gx: -2
-                  gy: -2
+                  gx: -1
+                  gy: -1
                   progress: {
                     type: life
                     ops: [
@@ -3030,12 +3161,12 @@ shootType: {
               outline: false
               moveRot: 720
               progress: life
-              xScl: 0.2
-              yScl: 0.2
+              xScl: 0.15
+              yScl: 0.15
               moves: [
                 {
-                  gx: 2
-                  gy: 2
+                  gx: 1.5
+                  gy: 1.5
                   progress: {
                     type: life
                     ops: [
@@ -3052,8 +3183,8 @@ shootType: {
                   }
                 }
                 {
-                  gx: -2
-                  gy: -2
+                  gx: -1.5
+                  gy: -1.5
                   progress: {
                     type: life
                     ops: [
@@ -3090,103 +3221,9 @@ shootType: {
                 type: RegionPart
                 name: allure-vortex
                 outline: false
-                moveRot: 720
-                progress: life
-                xScl: 0.1
-                yScl: 0.1
-                moves: [
-                  {
-                    gx: 1
-                    gy: 1
-                    progress: {
-                      type: life
-                      ops: [
-                        {
-                          op: compress
-                          start: 0
-                          end: 0.8
-                        }
-                        {
-                          op: curve
-                          interp: pow10Out
-                        }
-                      ]
-                    }
-                  }
-                  {
-                    gx: -1
-                    gy: -1
-                    progress: {
-                      type: life
-                      ops: [
-                        {
-                          op: compress
-                          start: 0.8
-                          end: 1
-                        }
-                        {
-                          op: curve
-                          interp: pow3In
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-              {
-                type: RegionPart
-                name: allure-vortex
-                outline: false
-                moveRot: 1260
-                progress: life
-                xScl: 0.1
-                yScl: 0.1
-                moves: [
-                  {
-                    gx: 1
-                    gy: 1
-                    progress: {
-                      type: life
-                      ops: [
-                        {
-                          op: compress
-                          start: 0
-                          end: 0.8
-                        }
-                        {
-                          op: curve
-                          interp: pow10Out
-                        }
-                      ]
-                    }
-                  }
-                  {
-                    gx: -1
-                    gy: -1
-                    progress: {
-                      type: life
-                      ops: [
-                        {
-                          op: compress
-                          start: 0.8
-                          end: 1
-                        }
-                        {
-                          op: curve
-                          interp: pow3In
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-              {
-                type: RegionPart
-                name: allure-vortex
-                color: ffffff88
-                outline: false
                 moveRot: 1800
                 progress: life
+                color: 5bcefa88
                 xScl: 0.14
                 yScl: 0.14
                 moves: [
@@ -3232,7 +3269,56 @@ shootType: {
                 type: RegionPart
                 name: allure-vortex
                 outline: false
-                moveRot: 360
+                moveRot: 600
+                progress: life
+                color: 5bcefa88
+                xScl: 0.14
+                yScl: 0.14
+                moves: [
+                  {
+                    gx: 1.6
+                    gy: 1.6
+                    progress: {
+                      type: life
+                      ops: [
+                        {
+                          op: compress
+                          start: 0
+                          end: 0.8
+                        }
+                        {
+                          op: curve
+                          interp: pow10Out
+                        }
+                      ]
+                    }
+                  }
+                  {
+                    gx: -1.4
+                    gy: -1.4
+                    progress: {
+                      type: life
+                      ops: [
+                        {
+                          op: compress
+                          start: 0.8
+                          end: 1
+                        }
+                        {
+                          op: curve
+                          interp: pow3In
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+              {
+                type: RegionPart
+                name: allure-vortex
+                color: f5a9b8bb
+                outline: false
+                moveRot: 1400
                 progress: life
                 xScl: 0.13
                 yScl: 0.13
@@ -3278,16 +3364,16 @@ shootType: {
               {
                 type: RegionPart
                 name: allure-vortex
-                color: ffffff60
+                color: f5a9b8bb
                 outline: false
-                moveRot: 360
+                moveRot: 450
                 progress: life
-                xScl: 0.2
-                yScl: 0.2
+                xScl: 0.13
+                yScl: 0.13
                 moves: [
                   {
-                    gx: 2
-                    gy: 2
+                    gx: 1.3
+                    gy: 1.3
                     progress: {
                       type: life
                       ops: [
@@ -3304,8 +3390,104 @@ shootType: {
                     }
                   }
                   {
-                    gx: -2
-                    gy: -2
+                    gx: -1.3
+                    gy: -1.3
+                    progress: {
+                      type: life
+                      ops: [
+                        {
+                          op: compress
+                          start: 0.8
+                          end: 1
+                        }
+                        {
+                          op: curve
+                          interp: pow3In
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+              {
+                type: RegionPart
+                name: allure-vortex
+                color: ffffff88
+                outline: false
+                moveRot: 1000
+                progress: life
+                xScl: 0.2
+                yScl: 0.2
+                moves: [
+                  {
+                    gx: 1
+                    gy: 1
+                    progress: {
+                      type: life
+                      ops: [
+                        {
+                          op: compress
+                          start: 0
+                          end: 0.8
+                        }
+                        {
+                          op: curve
+                          interp: pow10Out
+                        }
+                      ]
+                    }
+                  }
+                  {
+                    gx: -1
+                    gy: -1
+                    progress: {
+                      type: life
+                      ops: [
+                        {
+                          op: compress
+                          start: 0.8
+                          end: 1
+                        }
+                        {
+                          op: curve
+                          interp: pow3In
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+              {
+                type: RegionPart
+                name: allure-vortex
+                color: ffffff88
+                outline: false
+                moveRot: 330
+                progress: life
+                xScl: 0.2
+                yScl: 0.2
+                moves: [
+                  {
+                    gx: 1
+                    gy: 1
+                    progress: {
+                      type: life
+                      ops: [
+                        {
+                          op: compress
+                          start: 0
+                          end: 0.8
+                        }
+                        {
+                          op: curve
+                          interp: pow10Out
+                        }
+                      ]
+                    }
+                  }
+                  {
+                    gx: -1
+                    gy: -1
                     progress: {
                       type: life
                       ops: [
@@ -3326,7 +3508,6 @@ shootType: {
               {
                 type: RegionPart
                 name: allure-diamond-thin
-                rotation: 90
                 layer: 99
                 color: 000000
                 outline: false
@@ -3379,12 +3560,12 @@ shootType: {
                 color: 000000
                 outline: false
                 progress: life
-                xScl: 0.15
-                yScl: 0.15
+                xScl: 0.1
+                yScl: 0.1
                 moves: [
                   {
-                    gx: 1.5
-                    gy: 1.5
+                    gx: 2
+                    gy: 2
                     progress: {
                       type: life
                       ops: [
@@ -3401,8 +3582,8 @@ shootType: {
                     }
                   }
                   {
-                    gx: -1.5
-                    gy: -1.5
+                    gx: -2
+                    gy: -2
                     progress: {
                       type: life
                       ops: [
@@ -3465,7 +3646,6 @@ shootType: {
                   absorbable: false
                   hitEffect: none
                   despawnEffect: none
-                  hitSound: shockBlast
                   fragBullets: 1
                   fragOffsetMin: 0
                   fragOffsetMax: 0
@@ -3507,6 +3687,7 @@ shootType: {
                         lenTo: 60
                         strokeFrom: 4
                         strokeTo: 0
+                        colorTo: 5bcefa
                       }
                       fragBullets: 2
                       fragRandomSpread: 45
@@ -3534,6 +3715,7 @@ shootType: {
                           lenTo: 60
                           strokeFrom: 3.5
                           strokeTo: 0
+                          colorTo: 5bcefa
                         }
                         fragBullets: 2
                         fragRandomSpread: 45
@@ -3561,6 +3743,7 @@ shootType: {
                             lenTo: 60
                             strokeFrom: 3
                             strokeTo: 0
+                            colorTo: f5a9b8
                           }
                           fragBullets: 2
                           fragRandomSpread: 45
@@ -3642,6 +3825,7 @@ shootType: {
                                   lenTo: 60
                                   strokeFrom: 1.5
                                   strokeTo: 0
+                                  colorTo: f5a9b8
                                 }
                                 fragBullets: 2
                                 fragRandomSpread: 45
@@ -3669,6 +3853,7 @@ shootType: {
                                     lenTo: 60
                                     strokeFrom: 1
                                     strokeTo: 0
+                                    colorTo: 5bcefa
                                   }
                                 }
                               }
@@ -3696,6 +3881,7 @@ shootType: {
                 fragLifeMin: 0
                 fragBullet: {
                   type: BulletType
+                  createChance: 0.333
                   speed: 0.001
                   lifetime: 640
                   homingPower: 360
@@ -3728,7 +3914,111 @@ shootType: {
                     serrations: 0
                     width: 14
                     length: 240
-                    toColor: ffffff00
+                    toColor: ffffff
+                  }
+                }
+              }
+              {
+                type: BulletType
+                speed: 0
+                lifetime: 0
+                collides: false
+                hittable: false
+                absorbable: false
+                hitEffect: none
+                despawnEffect: none
+                fragBullets: 50
+                fragOffsetMin: 0
+                fragOffsetMax: 0
+                fragLifeMin: 0
+                fragBullet: {
+                  type: BulletType
+                  createChance: 0.333
+                  speed: 0.001
+                  lifetime: 640
+                  homingPower: 360
+                  homingRange: 360
+                  collides: false
+                  hittable: false
+                  absorbable: false
+                  hitSound: explosion
+                  hitEffect: none
+                  despawnEffect: {
+                    particles: 3
+                    length: -160
+                    baseLength: 160
+                    lifetime: 45
+                    region: circle-shadow
+                    interp: pow3In
+                    sizeInterp: pow2Out
+                    sizeFrom: 0
+                    sizeTo: 12
+                    colorTo: 000000
+                  }
+                  fragBullets: 1
+                  fragRandomSpread: 22.5
+                  fragOffsetMin: 20
+                  fragOffsetMax: 20
+                  fragBullet: {
+                    type: ShrapnelBulletType
+                    lifetime: 120
+                    damage: 5600
+                    serrations: 0
+                    width: 14
+                    length: 240
+                    toColor: f5a9b8
+                  }
+                }
+              }
+              {
+                type: BulletType
+                speed: 0
+                lifetime: 0
+                collides: false
+                hittable: false
+                absorbable: false
+                hitEffect: none
+                despawnEffect: none
+                fragBullets: 50
+                fragOffsetMin: 0
+                fragOffsetMax: 0
+                fragLifeMin: 0
+                fragBullet: {
+                  type: BulletType
+                  createChance: 0.333
+                  speed: 0.001
+                  lifetime: 640
+                  homingPower: 360
+                  homingRange: 360
+                  collides: false
+                  hittable: false
+                  absorbable: false
+                  hitSound: explosion
+                  hitEffect: none
+                  despawnEffect: {
+                    particles: 3
+                    length: -160
+                    baseLength: 160
+                    lifetime: 45
+                    region: circle-shadow
+                    interp: pow3In
+                    sizeInterp: pow2Out
+                    sizeFrom: 0
+                    sizeTo: 12
+                    colorTo: 000000
+                  }
+                  fragBullets: 1
+                  fragRandomSpread: 22.5
+                  fragOffsetMin: 20
+                  fragOffsetMax: 20
+                  fragBullet: {
+                    type: ShrapnelBulletType
+                    lifetime: 120
+                    damage: 5600
+                    serrations: 0
+                    width: 14
+                    length: 240
+                    toColor: 5bcefa
                   }
                 }
               }

@@ -1,0 +1,220 @@
+type: naval
+lowAltitude: true
+flyingLayer: 70
+health: 10000
+armor: 200
+hitSize: 24
+speed: 2
+drag: 0.05
+accel: 0.025
+rotateSpeed: 2.2
+engineSize: 0
+shadowElevation: 0.25
+shadowElevationScl: 0.25
+canBoost: true
+boostMultiplier: 0.333
+riseSpeed: 0.01
+aimDst: 80
+outlines: false
+waveTrailX: 12
+waveTrailY: -16
+trailLength: 70
+trailScl: 2.5
+engines: [
+  {
+    x: -6
+    y: 14
+    rotation: 157.5
+    radius: 2
+  }
+  {
+    x: 6
+    y: 14
+    rotation: 22.5
+    radius: 2
+  }
+  {
+    x: -8
+    y: 10
+    rotation: 157.5
+    radius: 2
+  }
+  {
+    x: 8
+    y: 10
+    rotation: 22.5
+    radius: 2
+  }
+  {
+    x: -6
+    y: -16
+    rotation: -135
+    radius: 3
+  }
+  {
+    x: 6
+    y: -16
+    rotation: -45
+    radius: 3
+  }
+]
+immunities: [
+  burning, 
+  melting, 
+  shocked,
+  electrified,
+  unmoving,
+  allure-emp
+]
+weapons: [
+  {
+    name: 2v04-cutter-jet
+    x: 0
+    mirror: false
+    rotate: true
+    rotateSpeed: 3
+    reload: 5
+    recoil: 3
+    recoilTime: 45
+    inaccuracy: 1
+    xRand: 2
+    velocityRnd: 0.05
+    shoot: {
+      shots: 4
+      shotDelay: 1
+    }
+    shootY: 16
+    shootStatus: slow
+    shootStatusDuration: 20
+    activeSound: loopSpray
+    shootSound: none
+    bullet: {
+      collides: false
+      scaleLife: true
+      damage: 15
+      speed: 5
+      drag: 0.008
+      lifetime: 80
+      sprite: circle-small
+      backSprite: clear-effect
+      width: 9
+      height: 9
+      shrinkInterp: slope
+      shrinkX: 0.5
+      shrinkY: 0.5
+      frontColor: ffa166
+      hitColor: ffa166
+      puddles: 1
+      puddleAmount: 3
+      puddleLiquid: slag
+      status: melting
+      statusDuration: 600
+      shootEffect: shootLiquid
+      hitEffect: none
+      despawnEffect: hitLiquid
+      fragBullets: 1
+      fragOffsetMin: 0
+      fragOffsetMax: 0
+      fragBullet: {
+        createChance: 0.1
+        type: BulletType
+        keepVelocity: false
+        speed: 0
+        lifetime: 182
+        damage: 0
+        collides: false
+        hittable: false
+        hitEffect: none
+        despawnEffect: none
+        bulletInterval: 30
+        intervalBullets: 1
+        intervalBullet: {
+          type: BulletType
+          keepVelocity: false
+          speed: 0
+          lifetime: 5
+          damage: 10
+          status: allure-0t-thermal1
+          statusDuration: 600
+          pierceArmor: true
+          hittable: false
+          despawnHit: true
+          hitEffect: {
+            particles: 6
+            lifetime: 90
+            length: 10
+            layer: 60
+            sizeFrom: 0
+            sizeTo: 4
+            sizeInterp: slope
+            colorFrom: ffa166
+            colorTo: ffa166
+          }
+          despawnEffect: none
+        }
+      }
+    }
+  }
+  {
+    x: 0
+    reload: 25
+    continuous: true
+    mirror: false
+    alwaysShooting: true
+    useAttackRange: false
+    minShootVelocity: 1.7
+    shootStatus: {
+      name: cutter-dash
+      show: false
+      speedMultiplier: 1.5
+    }
+    shootStatusDuration: 30
+    controllable: false
+    shootSound: none
+    bullet: {
+      type: EmptyBulletType
+      lifetime: 30
+      hittable: false
+      collides: false
+      absorbable: false
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+    }
+  }
+]
+abilities: [
+  {
+    type: EnergyFieldAbility
+    damage: 5
+    reload: 30
+    range: 96
+    healEffect: none
+    hitEffect: {
+      particles: 3
+      lifetime: 45
+      length: 10
+      sizeFrom: 0
+      sizeTo: 1.5
+      sizeInterp: slope
+      colorFrom: ffb855
+      colorTo: db661c
+    }
+    damageEffect: none
+    shootSound: none
+    status: allure-0t-thermal0
+    statusDuration: 120
+    maxTargets: 300
+    healPercent: 0
+    effectRadius: 0
+    rotateSpeed: 0.2
+    sectors: 36
+    sectorRad: 0.024
+    layer: 122
+    color: e65555
+  }
+]
+createWreck: false
+envRequired: 1
+envDisabled: 6

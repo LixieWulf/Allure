@@ -18,6 +18,8 @@ healColor: 7382f088
 shieldColor: 7382f000
 engineSize: 0
 deathShake: 0
+loopSound: loopSmelter
+loopSoundVolume: 0.1
 parts: [
   {
     type: RegionPart
@@ -63,7 +65,7 @@ weapons: [
     rotationLimit: 15
     alternate: false
     reload: 20
-    inaccuracy: 8
+    inaccuracy: 25
     parts: [
       {
         type: ShapePart
@@ -90,26 +92,31 @@ weapons: [
     }
     shootWarmupSpeed: 0.05
     minWarmup: 0.9
-    shootSound: laser
+    shootSound: explosionAfflict
+    shootSoundVolume: 0.75
     shake: 3
     recoil: 0
     bullet: {
       shootEffect: none
       smokeEffect: none
       damage: 45
-      splashDamage: 20
+      splashDamage: 30
       splashDamageRadius: 16
-      speed: 7
-      lifetime: 60
+      speed: 14
+      lifetime: 30
       pierce: true
       pierceBuilding: true
       pierceCap: 3
       status: allure-0b-energy0
       statusDuration: 5
+      hitSound: shootDuo
+      despawnSound: shootMissile
       sprite: allure-torpedo
-      width: 28
-      height: 48
+      width: 15
+      height: 78
       shrinkY: 0
+      homingPower: 0.04
+      homingRange: 60
       frontColor: 7382f0
       backColor: 000000
       hitColor: 7382f0
@@ -154,7 +161,7 @@ weapons: [
         }
         {
           line: true
-          length: 12
+          length: 36
           lifetime: 30
           particles: 9
           lenFrom: 6
@@ -162,6 +169,7 @@ weapons: [
           strokeFrom: 2
           strokeTo: 0
           colorTo: 7382f0
+          interp: pow3Out
         }
       ]
       despawnEffect: {

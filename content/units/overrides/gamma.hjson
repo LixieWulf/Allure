@@ -1,0 +1,4 @@
+speed: 7
+rotateSpeed: 9
+accel: 0.07
+strafePenalty: 0.33

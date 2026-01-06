@@ -1,2 +1,3 @@
-speedBoostPhase: 1
+speedBoost: 1.25
+speedBoostPhase: 0.25
 useTime: 240

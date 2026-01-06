@@ -1,0 +1,297 @@
+type: ItemTurret
+targetInterval: 2
+size: 6
+health: 2400
+armor: 50
+reload: 6
+recoil: 0
+recoilTime: 25
+rotateSpeed: 1.7
+inaccuracy: 1
+velocityRnd: 0.05
+range: 560
+shake: 1
+shootWarmupSpeed: 0.002
+shootY: 15
+shootSound: shootReign
+targetGround: false
+outlineIcon: false
+outlineColor: ffffff00
+heatColor: 00000000
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    -icon
+  ]
+  drawers: [
+    {
+      type: DrawRegion
+      name: allure-0r-offense-block-6-top
+      layer: 39
+    }
+    {
+      type: DrawTurret
+      basePrefix: 0r-offense-
+      shadowLayer: 38
+      parts: [
+        {
+          name: allure-0r-offense-block-6-gear
+          layer: 37
+          outline: false
+          moveRot: 1800
+          progress: {
+            type: warmup
+            ops: [
+              {
+                op: curve 
+                interp: pow2
+              }
+            ]
+          }
+        }
+        {
+          suffix: -up
+          layer: 51
+          turretHeatLayer: 51.1
+          outline: false
+          moveY: -2
+          heatColor: feb380
+          progress: recoil
+          heatProgress: warmup
+          children: [
+            {
+              suffix: -down
+              outline: false
+              layer: 50.01
+            }
+            {
+              suffix: -barrel
+              layer: 50.1
+              outline: false
+              layerOffset: -0.001
+              y: 5.5
+              moveY: -1.25
+              heatColor: e65555
+              turretHeatLayer: 50.11
+              heatProgress: warmup
+              progress: reload
+              moves: [
+                {
+                  x: -2.25
+                  progress: {
+                    type: reload
+                    op: curve
+                    interp: pow2Out
+                  }
+                }
+              ]
+            }
+            {
+              suffix: -barrel
+              layer: 50.2
+              outline: false
+              layerOffset: -0.001
+              x: -2.25
+              y: 4.25
+              moveX: 2.25
+              heatColor: e65555
+              turretHeatLayer: 50.21
+              heatProgress: warmup
+              progress: reload
+              moves: [
+                {
+                  y: -1.25
+                  progress: {
+                    type: reload
+                    op: curve
+                    interp: pow2Out
+                  }
+                }
+              ]
+            }
+            {
+              suffix: -barrel
+              layer: 50.2
+              outline: false
+              layerOffset: -0.001
+              x: 2.25
+              y: 4.25
+              moveX: -2.25
+              heatColor: e65555
+              turretHeatLayer: 50.21
+              heatProgress: warmup
+              progress: reload
+              moves: [
+                {
+                  y: 1.25
+                  progress: {
+                    type: reload
+                    op: curve
+                    interp: pow2Out
+                  }
+                }
+              ]
+            }
+            {
+              suffix: -barrel
+              layer: 50.4
+              outline: false
+              layerOffset: -0.001
+              y: 3
+              moveY: 1.25
+              heatColor: e65555
+              turretHeatLayer: 50.41
+              heatProgress: warmup
+              progress: reload
+              moves: [
+                {
+                  x: 2.25
+                  progress: {
+                    type: reload
+                    op: curve
+                    interp: pow2Out
+                  }
+                }
+              ]
+            }
+            {
+              type: EffectSpawnerPart
+              x: 10
+              y: -5
+              width: 4
+              height: 22
+              mirror: true
+              debugDraw: false
+              effect: fuelburn
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+maxAmmo: 240
+ammoPerShot: 4
+ammoTypes: {
+  anden: {
+    speed: 18
+    drag: 0.02
+    lifetime: 60
+    damage: 75
+    width: 7
+    height: 48
+    splashDamage: 75
+    splashDamageRadius: 80
+    ammoMultiplier: 1
+    collidesGround: false
+    status: allure-0r-kinetic1
+    statusDuration: 3
+    frontColor: ffb3b3
+    backColor: e65555
+    hitColor: e65555
+    hitSound: shootArtillerySmall
+    hitShake: 1
+    hitEffect: [
+      blastExplosion
+      {
+        particles: 24
+        length: 100
+        lifetime: 25
+        sizeFrom: 2.5
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        interp: pow2Out
+        sizeInterp: linear
+        lightScl: 0
+      }
+    ]
+    despawnEffect: pulverizeRed
+    shootEffect: {
+      followParent: false
+      particles: 1
+      lifetime: 15
+      length: 0
+      region: allure-shootspike
+      sizeFrom: 30
+      sizeTo: 0
+      colorTo: e65555
+      layer: 105
+    }
+  }
+  tungsten: {
+    speed: 18
+    drag: 0.02
+    lifetime: 60
+    damage: 150
+    width: 7
+    height: 48
+    pierce: true
+    pierceDamageFactor: 0.7
+    ammoMultiplier: 1
+    collidesGround: false
+    status: allure-0r-kinetic1
+    statusDuration: 2
+    frontColor: ffffff
+    backColor: 768a9a
+    hitColor: 768a9a
+    hitSound: wreckFall
+    hitSoundVolume: 0.5
+    hitEffect: [
+      hitBulletColor
+      shootBigSmoke
+    ]
+    despawnEffect: [
+      fuelburn
+      shootBigSmoke
+    ]
+    shootEffect: {
+      followParent: false
+      particles: 1
+      lifetime: 15
+      length: 0
+      region: allure-shootspike
+      sizeFrom: 30
+      sizeTo: 0
+      colorTo: feb380
+      layer: 105
+    }
+  }
+}
+smokeEffect: [
+  {
+    followParent: false
+    particles: 16
+    length: 25
+    cone: 15
+    lifetime: 15
+    interp: pow3Out
+    sizeInterp: pow2Out
+    colorFrom: 787878
+    colorTo: 787878
+    sizeFrom: 2
+    sizeTo: 0
+    layer: 104
+  }
+  {
+    followParent: false
+    particles: 12
+    length: 40
+    cone: 25
+    lifetime: 30
+    interp: pow3Out
+    sizeInterp: pow2Out
+    colorFrom: 78787800
+    colorTo: 787878
+    sizeFrom: 4
+    sizeTo: 0
+    layer: 104
+  }
+]
+category: turret
+buildTime: 900
+requirements: [
+  anden/1800
+  graphite/300
+  silicon/900
+]

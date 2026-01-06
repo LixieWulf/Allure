@@ -3,20 +3,20 @@ displayName: Allure
 author: Elixias Adrys
 description:
   '''
-  WARNING: Not supported on low-end devices.
+Contributors: Sh1penfire (world logic)
 
-  World logic contributed by Sh1penfire (@sh1penfire). Much thanks!
-  
-  An attempt at an immersive content mod.
+⚠ PERFORMANCE WARNING: This mod may crash or misbehave on weaker PCs and phones.
+Best played with a completely fresh campaign save. 
 
-  HJSON at its core, Allure seeks to do what no other mod has ever done. With RTS-centered gameplay and a focus on combat diversity, this hardcore mod aims to put difficulty and replayability onto the table. Fight enemies as two factions, each with their own unique design and weapon trees. 
-  Wage a new type of war on the existing planets, with much more simple yet dynamic balance of vanilla content. Does change vanilla ratios.
+Currently in development. Description will try to increase player engagement later.
+Allure is a large RTS mod that attempts to bring a true start-to-finish storyline to the table. And also hardcore gameplay. Enjoy being swarmed by the bee legion. 
 
-  [accent]!!![] Allure isn't meant to be played with other mods! Expect balancing issues in a multi-mod playthrough. [accent]!!![]
+This mod is planned to introduce an overhauled vanilla experience, with sweeping changes across every aspect of Serpulo. Maps are redone, tutorials added.
+What comes after? Well, I guess we'll have to find out. I'm not giving you any spoilers. You'll find out if you're curious.
 
-  This mod may cause rage-quits and you may get stuck at any point in progression. Skill is required. Follow the tutorials provided.
+Enabling this mod will break every Serpulo schematic until disabled. Be careful, well, if you like yours. 
 
-  THIS UPDATE IS STILL IN EARLY DEV - PLEASE DON'T MAKE BUG REPORTS
+Also, I know the mod's bugs. Please don't report them, it saves me time.
   '''
 version: 0.8-dev
-minGameVersion: 147
+minGameVersion: 154

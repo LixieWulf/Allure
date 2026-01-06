@@ -21,6 +21,7 @@ loopSound: none
 deathExplosionEffect: none
 deathSound: none
 engineSize: 0
+shadowElevationScl: 2.2
 parts: [
   {
     type: RegionPart

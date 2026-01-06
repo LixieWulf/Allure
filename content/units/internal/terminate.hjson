@@ -1,0 +1,562 @@
+type: missile
+template: MissileUnitType
+speed: 0
+rotateSpeed: 0.8
+lifetime: 1800
+flying: false
+drawBody: false
+drawCell: false
+outlines: false
+groundLayer: 20
+hittable: false
+targetable: false
+parts: [
+  {
+    type: RegionPart
+    name: circle
+    outline: false
+    y: 128
+    xScl: 0
+    yScl: 0
+    growX: 1.8
+    growY: 1.8
+    color: bbbbbb
+    layer: 109
+    weaponIndex: 1
+    growProgress: {
+      type: charge
+      op: curve
+      interp: pow2Out
+    }
+    moves: [
+      {
+        gx: -1.8
+        gy: -1.8
+        progress: {
+          type: charge
+          op: compress
+          start: 0.9
+          end: 1
+        }
+      }
+    ]
+  }
+  {
+    type: RegionPart
+    name: circle
+    outline: false
+    y: 128
+    xScl: 0
+    yScl: 0
+    growX: 2
+    growY: 2
+    color: 2c2c2c88
+    layer: 99
+    weaponIndex: 1
+    growProgress: {
+      type: charge
+      op: curve
+      interp: pow2Out
+    }
+    moves: [
+      {
+        gx: -2
+        gy: -2
+        progress: {
+          type: charge
+          op: compress
+          start: 0.9
+          end: 1
+        }
+      }
+    ]
+  }
+]
+weapons: [
+  {
+    x: 0
+    y: 128
+    mirror: false
+    inaccuracy: 360
+    shootY: 0
+    reload: 14000
+    shoot: {
+      shots: 24
+      shotDelay: 5
+    }
+    alwaysShooting: true
+    linearWarmup: true
+    shootSound: none
+    bullet: {
+      type: EmptyBulletType
+      shootEffect: [
+        {
+          line: true
+          particles: 2
+          lifetime: 80
+          length: -180
+          baseLength: 180
+          lenFrom: 0
+          lenTo: 24
+          strokeFrom: 3
+          strokeTo: 3
+          sizeInterp: slope
+          colorTo: fcf434
+          layer: 108
+          cap: false
+          rotWithParent: true
+        }
+        {
+          line: true
+          particles: 2
+          lifetime: 80
+          length: -120
+          baseLength: 120
+          lenFrom: 0
+          lenTo: 12
+          strokeFrom: 4.5
+          strokeTo: 4.5
+          sizeInterp: slope
+          colorTo: fcf434
+          layer: 108
+          cap: false
+          rotWithParent: true
+        }
+        {
+          line: true
+          particles: 2
+          lifetime: 80
+          length: -60
+          baseLength: 60
+          lenFrom: 0
+          lenTo: 6
+          strokeFrom: 6
+          strokeTo: 6
+          sizeInterp: slope
+          colorTo: fcf434
+          cap: false
+          rotWithParent: true
+        }
+        {
+          particles: 1
+          lifetime: 45
+          length: 0
+          sizeFrom: 0
+          sizeTo: 900
+          layer: 140
+          region: allure-flash
+          colorFrom: ffffff00
+          interp: slope
+          sizeInterp: linear
+        }
+      ]
+    }
+  }
+  {
+    x: 0
+    y: 128
+    mirror: false
+    rotate: true
+    rotateSpeed: 0
+    shootY: 0
+    reload: 14000
+    continuous: true
+    shoot: {
+      firstShotDelay: 180
+    }
+    shootStatus: unmoving
+    shootStatusDuration: 180
+    alwaysShooting: true
+    shootSound: none
+    bullet: {
+      type: ContinuousLaserBulletType
+      damage: 10000000
+      maxDamageFraction: 0.01
+      buildingDamageMultiplier: 0.001
+      pierceCap: 1
+      length: 2160
+      width: 128
+      oscMag: 0
+      lifetime: 900
+      fadeTime: 120
+      ammoMultiplier: 1
+      frontLength: 64
+      backLength: 64
+      colors: [
+        ffffff22
+        ffffff33
+        ffffff44
+        2c2c2c
+        9c59d188
+        fcf434bb
+        ffffff
+      ]
+      largeHit: true
+      laserAbsorb: false
+      intervalBullets: 1
+      bulletInterval: 60
+      intervalRandomSpread: 0
+      intervalBullet: {
+        type: BulletType
+        speed: 12
+        lifetime: 180
+        collides: false
+        hittable: false
+        absorbable: false
+        reflectable: false
+        bulletInterval: 5
+        intervalRandomSpread: 0
+        intervalBullets: 1
+        intervalBullet: {
+          type: EmptyBulletType
+          lifetime: 0
+          hitSound: whoosh
+          hitSoundVolume: 2
+          hitEffect: none
+          fragSpread: 1
+          fragRandomSpread: 0
+          fragBullets: 90
+          fragOffsetMin: 360
+          fragOffsetMax: 360
+          fragBullet: {
+            createChance: 0.5
+            type: RailBulletType
+            length: 72
+            damage: 20
+            pierceEffect: none
+            despawnEffect: {
+              particles: 1
+              cone: 10
+              length: 80
+              lifetime: 45
+              sizeFrom: 12
+              sizeTo: 0
+              layer: 80
+              colorFrom: 9c59d1
+              colorTo: 2c2c2c
+              interp: pow3Out
+              sizeInterp: linear
+            }
+          }
+        }
+        parts: [
+          {
+            name: allure-halfshield
+            outline: false
+            rotation: 90
+            y: 300
+            xScl: 2.5
+            yScl: 5
+            color: ffffff
+            colorTo: 9c59d100
+            progress: life
+          }
+        ]
+        hitEffect: none
+        despawnEffect: none
+      }
+      chargeEffect: [
+        {
+          line: true
+          cap: false
+          particles: 1
+          cone: 0
+          length: 0.001
+          lifetime: 60
+          startDelay: 120
+          lenFrom: 0
+          lenTo: 2400
+          strokeFrom: 0
+          strokeTo: 128
+          colorFrom: 9c59d1
+          colorTo: fcf43400
+          interp: bounce
+          sizeInterp: linear
+        }
+        {
+          type: RadialEffect
+          amount: 2
+          rotationOffset: 90
+          rotationSpacing: 180
+          lengthOffset: 90
+          effect: [
+            {
+              line: true
+              particles: 1
+              lifetime: 120
+              startDelay: 60
+              cone: 0
+              baseRotation: 90
+              length: 0
+              baseLength: 15
+              lenFrom: 0
+              lenTo: -30
+              strokeFrom: 0
+              strokeTo: 6
+              clip: 8192
+              randLength: false
+              interp: pow3Out
+            }
+            {
+              line: true
+              particles: 1
+              lifetime: 120
+              startDelay: 60
+              cone: 0
+              baseRotation: 180
+              length: 0
+              baseLength: 90
+              lenFrom: 0
+              lenTo: -90
+              strokeFrom: 0
+              strokeTo: 6
+              clip: 8192
+              randLength: false
+              interp: pow3Out
+            }
+          ]
+        }
+        {
+          type: RadialEffect
+          amount: 3
+          rotationOffset: 90
+          rotationSpacing: 120
+          lengthOffset: 180
+          effect: {
+            line: true
+            particles: 1
+            lifetime: 180
+            cone: 0
+            baseRotation: 120
+            length: 0
+            baseLength: 360
+            lenFrom: 0
+            lenTo: -540
+            strokeFrom: 0
+            strokeTo: 6
+            clip: 8192
+            colorFrom: 2c2c2c
+            randLength: false
+            interp: pow3Out
+          }
+        }
+        {
+          type: WaveEffect
+          lifetime: 180
+          sizeFrom: 160
+          sizeTo: 200
+          strokeFrom: 0
+          strokeTo: 6
+          interp: pow3Out
+        }
+      ]
+      shootEffect: [
+        {
+          type: WaveEffect
+          lifetime: 180
+          sizeFrom: 200
+          sizeTo: 200
+          strokeFrom: 6
+          strokeTo: 0
+          interp: pow3Out
+        }
+        {
+          type: WaveEffect
+          baseRotation: 180
+          lifetime: 180
+          sizeFrom: 300
+          sizeTo: 300
+          sides: 3
+          strokeFrom: 6
+          strokeTo: 0
+          interp: pow3Out
+        }
+      ]
+      hitEffect: [
+        {
+          particles: 1
+          region: allure-diamond-vthin
+          useRotation: false
+          length: 0
+          lifetime: 20
+          sizeFrom: 1280
+          sizeTo: 640
+          colorFrom: 2c2c2c
+          colorTo: 2c2c2c00
+          layer: 105
+        }
+        {
+          particles: 1
+          region: allure-diamond-vthin
+          useRotation: false
+          length: 0
+          lifetime: 20
+          sizeFrom: 1000
+          sizeTo: 500
+          colorFrom: ffffff
+          colorTo: ffffff00
+        }
+        {
+          particles: 1
+          region: allure-unusually-organized-rectangle
+          offset: 45
+          useRotation: false
+          length: 0
+          lifetime: 20
+          sizeFrom: 128
+          sizeTo: 64
+          colorFrom: 2c2c2c
+          colorTo: 2c2c2c00
+          layer: 105
+        }
+        {
+          particles: 1
+          region: allure-unusually-organized-rectangle
+          offset: 45
+          useRotation: false
+          length: 0
+          lifetime: 20
+          sizeFrom: 100
+          sizeTo: 50
+          colorFrom: ffffff
+          colorTo: ffffff00
+        }
+        {
+          line: true
+          particles: 12
+          cone: 100
+          lifetime: 60
+          length: -720
+          lenFrom: 48
+          lenTo: 0
+          strokeFrom: 6
+          strokeTo: 6
+          colorTo: fcf434
+          layer: 108
+          cap: false
+        }
+        {
+          particles: 12
+          cone: 100
+          lifetime: 120
+          length: -480
+          sizeFrom: 64
+          sizeTo: 0
+          region: particle
+          interp: pow3Out
+          sizeInterp: linear
+          colorTo: 9c59d1
+          layer: 108
+        }
+        {
+          particles: 1
+          length: 0
+          lifetime: 30
+          sizeFrom: 960
+          sizeTo: 0
+          layer: 140
+          region: circle-shadow
+          colorFrom: ffffff00
+          colorTo: ffffff44
+          interp: slope
+          sizeInterp: linear
+        }
+      ]
+    }
+  }
+  {
+    x: 0
+    y: 128
+    mirror: false
+    rotate: true
+    rotateSpeed: 0
+    shootY: 0
+    reload: 14000
+    continuous: true
+    shoot: {
+      type: ShootMulti
+      source: {
+        type: ShootAlternate
+        spread: 16
+        shots: 18
+        barrels: 18
+        firstShotDelay: 120
+      }
+      dest: [
+        {
+          shots: 180
+          shotDelay: 5
+        }
+      ]
+    }
+    alwaysShooting: true
+    shootSound: none
+    bullet: {
+      type: EmptyBulletType
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
+      lifetime: 0
+      fragBullets: 1
+      fragRandomSpread: 0
+      fragBullet: {
+        type: RailBulletType
+        createChance: 0.5
+        length: 2400
+        damage: 2000
+        buildingDamageMultiplier: 0.001
+        pierceDamageFactor: 0
+        pierceEffect: none
+        hitEffect: none
+        setDefaults: false
+        despawnHit: false
+        fragBullets: 1
+        fragRandomSpread: 0
+        fragOffsetMin: 0
+        fragOffsetMax: 0
+        fragBullet: {
+          createChance: 0.2
+          type: BulletType
+          speed: 0
+          lifetime: 5
+          damage: 10
+          hittable: false
+          absorbable: false
+          reflectable: false
+          despawnEffect: none
+          hitEffect: [
+            {
+              particles: 1
+              cone: 0
+              length: 160
+              randLength: false
+              lifetime: 45
+              sizeFrom: 0
+              sizeTo: 12
+              layer: 80
+              colorTo: 9c59d188
+              colorFrom: fcf434
+              sizeInterp: slope
+            }
+            {
+              particles: 1
+              length: 0
+              lifetime: 30
+              sizeFrom: 240
+              sizeTo: 0
+              layer: 140
+              region: circle-shadow
+              colorFrom: ffffff00
+              colorTo: ffffff11
+              interp: slope
+              sizeInterp: linear
+            }
+          ]
+        }
+      }
+    }
+  }
+]
+envEnabled: -1
+envDisabled: 0

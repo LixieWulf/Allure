@@ -1,0 +1,104 @@
+type: LiquidTurret
+reload: 15
+range: 0
+targetGround: false
+targetAir: false
+liquidCapacity: 48
+rotateSpeed: 0
+recoil: 0
+size: 3
+health: 6000
+buildTime: 3600
+alwaysShooting: true
+shootSound: none
+shoot: {
+  firstShotDelay: 25
+}
+shootY: 0
+outlineIcon: false
+fullOverride: allure-0r01-kelta-full
+drawer: [
+  {
+    type: DrawRegion
+    suffix: -construct
+    buildingRotate: true
+  }
+  {
+    type: DrawTurret
+    basePrefix: 0r07-
+    parts: [
+      {
+        type: RegionPart 
+        name: allure-0r01-kelta-full
+        y: 0
+        layer: 60
+        outline: false
+      }
+    ]
+  }
+]
+ammoTypes: {
+  energia: {
+    type: EmptyBulletType
+    lifetime: 0
+    despawnUnit: allure-0r01-kelta
+    killShooter: true
+    chargeEffect: [
+      {
+        type: WaveEffect
+        lifetime: 45
+        sizeFrom: 0
+        sizeTo: 45
+        strokeFrom: 4
+        colorTo: e65555
+        interp: pow3Out
+      }
+      {
+        particles: 20
+        lifetime: 45
+        length: 35
+        sizeFrom: 8
+        sizeTo: 0
+        layer: 58
+        colorFrom: 787878
+        colorTo: 787878
+        interp: pow3Out
+        sizeInterp: pow2In
+      }
+      {
+        particles: 15
+        lifetime: 35
+        length: 70
+        sizeFrom: 3
+        sizeTo: 0
+        layer: 58
+        colorFrom: 787878
+        colorTo: 787878
+        interp: pow3Out
+        sizeInterp: pow2In
+      }
+      {
+        line: true
+        particles: 20
+        lifetime: 120
+        length: 40
+        baseLength: 8
+        lenFrom: 0
+        lenTo: 15
+        strokeFrom: 2
+        strokeTo: 0
+        interp: pow2Out
+        sizeInterp: linear
+        colorTo: e65555
+        layer: 59
+      }
+    ]
+  }
+}
+requirements: [
+  anden/1200
+  silicon/600
+]
+createRubble: false
+destroySound: none
+destroyEffect: none

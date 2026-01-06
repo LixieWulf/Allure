@@ -1,0 +1,16 @@
+liquidCapacity: 600
+consumes: {
+  remove: [
+    liquid
+  ]
+  liquids: [
+    water/1
+  ]
+}
+requirements: [
+  graphite/200
+  metaglass/200
+  plastanium/100
+  thorium/100
+  phase-fabric/50
+]

@@ -1,2 +1,24 @@
 drillTime: 240
 liquidBoostIntensity: 1.733
+hardnessDrillMultiplier: 30
+consumes: {
+  remove: [
+    liquid
+  ]
+  liquid: {
+    liquid: cryofluid
+    amount: 0.4
+    optional: true
+    booster: true
+  }
+  liquids: [
+    oil/0.15
+  ]
+}
+requirements: [
+  graphite/250
+  silicon/100
+  thorium/100
+  plastanium/50
+  phase-fabric/50
+]

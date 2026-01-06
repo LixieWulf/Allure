@@ -1,5 +1,8 @@
 {
   "editor.formatOnPaste": false,
   "editor.defaultFormatter": null,
-  "editor.autoIndentOnPaste": true
+  "editor.autoIndentOnPaste": true,
+  "files.exclude": {
+    "**/.json": true
+  }
 }

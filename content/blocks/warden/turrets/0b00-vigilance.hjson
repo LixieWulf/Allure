@@ -703,14 +703,14 @@ ammoTypes: {
     width: 48
     height: 96
     frontColor: ffffff
-    backColor: ffffff
+    backColor: d162a4
     parts: [
       {
         type: RegionPart
         name: allure-railblast
         outline: false
         rotation: 90
-        color: ffffff
+        color: ef7627
         xScl: 1
         yScl: 1
       }
@@ -742,14 +742,14 @@ ammoTypes: {
       width: 48
       height: 96
       frontColor: ffffff
-      backColor: ffffff
+      backColor: d162a4
       parts: [
         {
           type: RegionPart
           name: allure-railblast
           outline: false
           rotation: 90
-          color: ffffff
+          color: ef7627
           xScl: 1
           yScl: 1
         }
@@ -814,6 +814,7 @@ ammoTypes: {
           sizeTo: 960
           strokeFrom: 12
           interp: pow3Out
+          colorTo: d162a4
         }
         {
           type: WaveEffect
@@ -837,24 +838,38 @@ ammoTypes: {
           layer: 135
         }
         {
-          particles: 60
+          particles: 20
           length: 600
-          lifetime: 90
+          lifetime: 180
           region: circle-shadow
           interp: pow3Out
-          sizeInterp: pow2In
+          sizeInterp: pow3In
           sizeFrom: 60
           sizeTo: 0
         }
         {
           particles: 60
-          length: 500
-          lifetime: 120
+          length: 550
+          lifetime: 210
           region: circle-shadow
           interp: pow3Out
-          sizeInterp: pow2In
+          sizeInterp: pow3In
+          sizeFrom: 90
+          sizeTo: 0
+          colorTo: d162a4
+          layer: 108
+        }
+        {
+          particles: 60
+          length: 500
+          lifetime: 240
+          region: circle-shadow
+          interp: pow3Out
+          sizeInterp: pow3In
           sizeFrom: 120
           sizeTo: 0
+          colorTo: ef7627
+          layer: 109
         }
         {
           particles: 1
@@ -863,7 +878,7 @@ ammoTypes: {
           region: allure-shield
           sizeFrom: 0
           sizeTo: 1440
-          colorTo: ffffff00
+          colorTo: ef762700
           interp: pow3
           sizeInterp: linear
         }
@@ -981,7 +996,7 @@ ammoTypes: {
         region: allure-squishwave
         sizeFrom: 40
         sizeTo: 80
-        colorTo: ffffff00
+        colorTo: ef762700
       }
       {
         followParent: false
@@ -994,7 +1009,7 @@ ammoTypes: {
         region: allure-squishwave
         sizeFrom: 30
         sizeTo: 60
-        colorTo: ffffff00
+        colorTo: d162a400
       }
       {
         particles: 1
@@ -1015,7 +1030,7 @@ ammoTypes: {
         sizeFrom: 120
         sizeTo: 60
         interp: pow2In
-        colorTo: ffffff00
+        colorTo: d162a400
       }
     ]
   }

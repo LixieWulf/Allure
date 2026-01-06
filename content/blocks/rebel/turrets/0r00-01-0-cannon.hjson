@@ -1,0 +1,401 @@
+type: ItemTurret
+size: 6
+health: 4000
+armor: 50
+reload: 90
+recoil: 0
+recoilTime: 150
+cooldownTime: 180
+rotateSpeed: 0.8
+inaccuracy: 1
+velocityRnd: 0.05
+range: 800
+minRange: 160
+shake: 8
+shootWarmupSpeed: 0.001
+shootY: 38
+shootCone: 0.25
+shootSound: none
+targetAir: false
+outlineIcon: false
+outlineColor: ffffff00
+heatColor: 00000000
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    -icon
+  ]
+  drawers: [
+    {
+      type: DrawRegion
+      name: allure-0r-offense-block-6-top
+      layer: 39
+    }
+    {
+      type: DrawTurret
+      basePrefix: 0r-offense-
+      shadowLayer: 60
+      parts: [
+        {
+          name: allure-0r-offense-block-6-gear
+          layer: 37
+          outline: false
+          moveRot: 3600
+          progress: {
+            type: warmup
+            ops: [
+              {
+                op: curve 
+                interp: pow2
+              }
+            ]
+          }
+        }
+        {
+          suffix: -up
+          layer: 65
+          outline: false
+          y: 12
+          moveY: -6
+          growY: -0.1
+          turretHeatLayer: 66
+          heatColor: e65555
+          progress: {
+            type: recoil
+            op: curve
+            interp: pow5In
+          }
+          growProgress: {
+            type: recoil
+            op: curve
+            interp: pow5In
+          }
+          children: [
+            {
+              suffix: -up-heat2
+              layer: 66
+              outline: false
+              y: -13
+              blending: additive
+              color: e6555500
+              colorTo: feb380
+              progress: warmup
+            }
+            {
+              type: EffectSpawnerPart
+              x: 12
+              y: -13
+              width: 7
+              height: 24
+              mirror: true
+              debugDraw: false
+              effect: fuelburn
+            }
+            {
+              type: EffectSpawnerPart
+              x: 0
+              y: -16
+              width: 3
+              height: 16
+              debugDraw: false
+              effect: fuelburn
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+maxAmmo: 240
+ammoPerShot: 60
+ammoTypes: {
+  anden: {
+    speed: 20
+    drag: 0.01
+    lifetime: 70
+    damage: 500
+    ammoMultiplier: 1
+    width: 20
+    height: 120
+    splashDamage: 500
+    splashDamageRadius: 80
+    scaleLife: true
+    collidesAir: false
+    status: allure-0r-kinetic1
+    statusDuration: 60
+    frontColor: ffb3b3
+    backColor: e65555
+    hitColor: e65555
+    trailColor: e65555
+    trailInterval: 1
+    hitSound: unitExplode2
+    hitShake: 8
+    shootEffect: {
+      followParent: false
+      particles: 1
+      lifetime: 25
+      length: 0
+      region: allure-shootspike
+      sizeFrom: 60
+      sizeTo: 0
+      colorTo: e65555
+    }
+    despawnEffect: none
+    hitEffect: [
+      {
+        type: WaveEffect
+        sizeFrom: 20
+        sizeTo: 80
+        strokeFrom: 4
+        lifetime: 15
+        colorTo: e65555
+        interp: pow3Out
+        layer: 100
+      }
+      {
+        line: true
+        particles: 20
+        lifetime: 45
+        length: 80
+        baseLength: 30
+        lenFrom: 0
+        lenTo: 8
+        strokeFrom: 0.75
+        strokeTo: 1.5
+        interp: pow2Out
+        sizeInterp: slope
+        colorTo: e65555
+        layer: 110
+      }
+      {
+        line: true
+        particles: 20
+        lifetime: 45
+        length: 40
+        baseLength: 15
+        lenFrom: 0
+        lenTo: 4
+        strokeFrom: 1
+        strokeTo: 2
+        interp: pow2Out
+        sizeInterp: slope
+        colorTo: e65555
+        layer: 110
+      }
+      {
+        particles: 18
+        length: 18
+        lifetime: 35
+        sizeFrom: 0
+        sizeTo: 10
+        colorFrom: ffffff
+        colorTo: e65555
+        interp: pow2Out
+        sizeInterp: slope
+        lightScl: 0
+        layer: 110
+      }
+      {
+        particles: 48
+        length: 20
+        baseLength: 60
+        lifetime: 25
+        sizeFrom: 2
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        interp: pow5Out
+        sizeInterp: linear
+        lightScl: 0
+        layer: 105 
+      }
+      {
+        particles: 36
+        length: 18
+        baseLength: 18
+        lifetime: 45
+        sizeFrom: 10
+        sizeTo: 0
+        colorFrom: 787878
+        colorTo: 787878
+        interp: pow2Out
+        sizeInterp: linear
+        lightScl: 0
+        layer: 105
+      }
+    ]
+  }
+  graphite: {
+    speed: 20
+    drag: 0.01
+    inaccuracy: 1
+    lifetime: 70
+    damage: 750
+    pierce: true
+    pierceBuilding: true
+    pierceDamageFactor: 1
+    ammoMultiplier: 2
+    reloadMultiplier: 2
+    width: 15
+    height: 100
+    scaleLife: true
+    collidesAir: false
+    status: allure-0r-kinetic1
+    statusDuration: 30
+    hitColor: 707594
+    backColor: 707594
+    trailColor: 707594
+    frontColor: 999ba0
+    hitSound: shootMerui
+    despawnHit: true
+    trailInterval: 1
+    hitEffect: shootBigSmoke2
+    despawnEffect: hitLancer
+    shootEffect: {
+      followParent: false
+      particles: 1
+      lifetime: 25
+      length: 0
+      region: allure-shootspike
+      sizeFrom: 60
+      sizeTo: 0
+      colorTo: feb380
+    }
+  }
+  thorium: {
+    speed: 18
+    drag: 0.01
+    lifetime: 72
+    damage: 1000
+    pierce: true
+    pierceBuilding: true
+    pierceDamageFactor: 0.05
+    pierceCap: 3
+    ammoMultiplier: 1
+    reloadMultiplier: 0.75
+    width: 20
+    height: 120
+    scaleLife: true
+    collidesAir: false
+    status: allure-0r-kinetic2
+    statusDuration: 10
+    hitColor: f595be
+    backColor: f595be
+    trailColor: f595be
+    frontColor: ffffff
+    hitSound: explosion
+    despawnHit: true
+    trailInterval: 1
+    shootEffect: {
+      followParent: false
+      particles: 1
+      lifetime: 25
+      length: 0
+      region: allure-shootspike
+      sizeFrom: 75
+      sizeTo: 0
+      colorTo: f595be
+    }
+    despawnEffect: none
+    hitEffect: [
+      flakExplosion
+      {
+        followParent: false
+        particles: 12
+        length: 60
+        cone: 25
+        lifetime: 30
+        interp: pow3Out
+        sizeInterp: slope
+        colorFrom: 78787800
+        colorTo: 787878
+        sizeFrom: 0
+        sizeTo: 6
+        lightScl: 0
+        layer: 105
+      }
+      {
+        followParent: false
+        particles: 24
+        length: 80
+        cone: 15
+        lifetime: 50
+        interp: pow3Out
+        sizeInterp: pow2Out
+        colorFrom: 787878
+        colorTo: 787878
+        sizeFrom: 4
+        sizeTo: 0
+        lightScl: 0
+      }
+    ]
+  }
+}
+smokeEffect: [
+  {
+    type: SoundEffect
+    sound: explosionCrawler
+    minVolume: 0.8
+    maxVolume: 1
+    minPitch: 0.8
+    maxPitch: 1
+    effect: {
+      type: SoundEffect
+      sound: explosionNavanax
+      minVolume: 0.8
+      maxVolume: 1
+      minPitch: 0.8
+      maxPitch: 1
+      effect: none
+    }
+  }
+  {
+    followParent: false
+    particles: 24
+    length: 60
+    cone: 15
+    lifetime: 45
+    interp: pow3Out
+    sizeInterp: pow2Out
+    colorFrom: 787878
+    colorTo: 787878
+    sizeFrom: 6
+    sizeTo: 0
+    lightScl: 0
+  }
+  {
+    followParent: false
+    particles: 24
+    length: 80
+    cone: 25
+    lifetime: 25
+    interp: pow3Out
+    sizeInterp: pow2Out
+    colorFrom: 78787800
+    colorTo: 787878
+    sizeFrom: 3
+    sizeTo: 0
+    lightScl: 0
+  }
+  {
+    followParent: false
+    particles: 12
+    length: 50
+    cone: 25
+    lifetime: 60
+    interp: pow3Out
+    sizeInterp: slope
+    colorFrom: 78787800
+    colorTo: 787878
+    sizeFrom: 0
+    sizeTo: 6
+    lightScl: 0
+  }
+]
+category: turret
+buildTime: 1200
+requirements: [
+  anden/2400
+  graphite/900
+  silicon/300
+]

@@ -5,12 +5,14 @@ drillTime: 30
 output: silicon
 consumes: {
   liquids: [
-    energia/0.125
+    energia/0.2
   ]
 }
 rotateSpeed: 4
 dumpTime: 2
 itemCapacity: 100
+ambientSound: loopGrind
+ambientSoundVolume: 0.5
 category: production
 research: 0r06-00-extractor
 requirements: [

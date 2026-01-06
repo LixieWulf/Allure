@@ -1,24 +1,24 @@
 health: 9500
-crushDamage: 5
+armor: 25
 weapons: [
   {
     name: vanquish-point-weapon
     controllable: false
     autoTarget: true
-    targetInterval: 20
-    targetSwitchInterval: 10
-    reload: 20
+    targetInterval: 10
+    targetSwitchInterval: 0
+    reload: 15
     x: 12
     y: 8.5
     shootY: 5.5
     recoil: 2
     rotate: true
     rotateSpeed: 2.7
-    shootSound: blaster
+    shootSound: shootLocus
     bullet: {
       type: RailBulletType
       length: 90
-      damage: 45
+      damage: 40
       pierceDamageFactor: 1
       shootEffect: sparkShoot
       smokeEffect: shootBigSmoke
@@ -44,21 +44,21 @@ weapons: [
   {
     name: vanquish-point-weapon
     controllable: false
-    targetInterval: 20
-    targetSwitchInterval: 10
+    targetInterval: 10
+    targetSwitchInterval: 0
     autoTarget: true
-    reload: 20
+    reload: 15
     x: 12
     y: -9
     shootY: 5.5
     recoil: 2.7
     rotate: true
     rotateSpeed: 2
-    shootSound: blaster
+    shootSound: shootLocus
     bullet: {
       type: RailBulletType
       length: 90
-      damage: 45
+      damage: 40
       pierceDamageFactor: 1
       shootEffect: sparkShoot
       smokeEffect: shootBigSmoke
@@ -83,12 +83,12 @@ weapons: [
   }
   {
     name: vanquish-weapon
-    reload: 90
+    reload: 120
     shootY: 17.75
     shake: 1
     recoil: 4
     rotate: true
-    rotateSpeed: 1
+    rotateSpeed: 1.5
     mirror: false
     alternate: false
     x: 0
@@ -96,18 +96,21 @@ weapons: [
     shadow: 28
     heatColor: f9350f
     cooldownTime: 80
-    shootSound: bolt
+    shootSound: shootReign
     shoot: {
       shots: 6
       shotDelay: 3
     }
     bullet: {
       speed: 8
-      damage: 30
+      damage: 20
       width: 10
       height: 14
       lifetime: 24
       hitSize: 6
+      pierce: true
+      pierceBuilding: true
+      pierceCap: 2
       shootEffect: shootBig
       smokeEffect: shootBigSmoke
       hitColor: feb380
@@ -121,7 +124,7 @@ weapons: [
       splashDamageRadius: 20
       splashDamage: 20
       maxRange: 240
-      despawnSound: dullExplosion
+      despawnSound: explosion
     }
   }
 ]

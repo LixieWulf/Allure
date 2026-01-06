@@ -1,0 +1,16 @@
+pumpAmount: 0.30000167
+itemUseTime: 30
+consumes: {
+  remove: [
+    liquid
+  ]
+  liquids: [
+    water/0.2
+  ]
+}
+requirements: [
+  lead/150
+  graphite/200
+  titanium/150
+  silicon/50
+]

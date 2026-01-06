@@ -1,0 +1,19 @@
+drillTime: 240
+hardnessDrillMultiplier: 80
+liquidBoostIntensity: 1.4143
+liquidCapacity: 18
+consumes: {
+  remove: [
+    liquid
+  ]
+  liquid: {
+    liquid: water
+    amount: 0.3
+    optional: true
+    booster: true
+  }
+}
+requirements: [
+  copper/40
+  graphite/20
+]

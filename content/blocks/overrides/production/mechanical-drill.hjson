@@ -1,0 +1,15 @@
+liquidBoostIntensity: 1.4143
+drillTime: 480
+hardnessDrillMultiplier: 80
+liquidCapacity: 6
+consumes: {
+  remove: [
+    liquid
+  ]
+  liquid: {
+    liquid: water
+    amount: 0.1
+    optional: true
+    booster: true
+  }
+}

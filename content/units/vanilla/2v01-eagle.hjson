@@ -1,0 +1,245 @@
+type: flying
+flying: true
+lowAltitude: true
+health: 6000
+armor: 50
+hitSize: 24
+speed: 6
+drag: 0.03
+strafePenalty: 0.25
+accel: 0.01
+rotateSpeed: 3
+engineSize: 0
+shadowElevationScl: 2
+drawBody: false
+range: 400
+maxRange: 400
+targetFlags: [
+  turret, 
+  factory,
+  core
+]
+outlines: false
+immunities: [
+  burning, 
+  melting, 
+  shocked,
+  electrified,
+  slow,
+  unmoving,
+  allure-emp
+]
+parts: [
+  {
+    type: RegionPart
+    suffix: -outline
+    outline: false
+  }
+  {
+    type: RegionPart
+    suffix: -turbine
+    outline: false
+    y: 5.5
+    moveRot: 7200
+    weaponIndex: 0
+    progress: reload
+  }
+  {
+    type: RegionPart
+    suffix: -turbine-blur
+    outline: false
+    y: 5.5
+    moveRot: 360
+    weaponIndex: 0
+    color: ffffffbb
+    progress: reload
+  }
+  {
+    type: RegionPart
+    suffix: -turbine
+    outline: false
+    y: -6.5
+    moveRot: 7200
+    weaponIndex: 0
+    progress: reload
+  }
+  {
+    type: RegionPart
+    suffix: -turbine-blur
+    outline: false
+    y: -6.5
+    moveRot: 360
+    weaponIndex: 0
+    color: ffffffbb
+    progress: reload
+  }
+  {
+    type: RegionPart
+    suffix: -wing
+    mirror: true
+    outline: false
+    x: 12.75
+    y: -3
+    moveX: -3
+    growX: -1
+    weaponIndex: 1
+    progress: {
+      type: heat
+      op: blend
+      other: charge
+      amount: 0.5
+    }
+    growProgress: {
+      type: heat
+      op: blend
+      other: charge
+      amount: 0.5
+    }
+  }
+  {
+    outline: false
+    layer: 91
+  }
+]
+weapons: [
+  {
+    x: 0
+    name: eagle
+    layerOffset: 2
+    reload: 120
+    recoil: 0
+    mirror: false
+    alwaysShooting: true
+    controllable: false
+    useAttackRange: false
+    shootSound: none
+    bullet: {
+      type: EmptyBulletType
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+    }
+  }
+  {
+    x: 0
+    reload: 1
+    continuous: true
+    mirror: false
+    alwaysShooting: true
+    useAttackRange: false
+    minShootVelocity: 1.5
+    shootWarmupSpeed: 0.01
+    shoot: {
+      firstShotDelay: 20
+    }
+    shootStatus: {
+      name: eagle-dash
+      show: false
+      disarm: true
+      dragMultiplier: 0.25
+    }
+    shootStatusDuration: 3
+    controllable: false
+    shootSound: none
+    bullet: {
+      type: EmptyBulletType
+      lifetime: 2
+      hittable: false
+      collides: false
+      absorbable: false
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+    }
+  }
+  {
+    x: 6
+    y: -15
+    shootY: 0
+    alternate: false
+    alwaysShooting: true
+    alwaysContinuous: true
+    useAttackRange: false
+    shootSound: none
+    bullet: {
+      type: EmptyBulletType
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      trailLength: 25
+      trailWidth: 2
+      trailColor: 787878
+    }
+  }
+  {
+    x: 6
+    y: -15
+    shootY: 0
+    alternate: false
+    alwaysShooting: true
+    alwaysContinuous: true
+    useAttackRange: false
+    shootSound: none
+    bullet: {
+      type: EmptyBulletType
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      layer: 105
+      trailLength: 10
+      trailWidth: 1.5
+      trailColor: fc81dd
+    }
+  }
+  {
+    x: 6
+    y: 12
+    reload: 45
+    shootSound: missileSmall
+    bullet: {
+      damage: 40
+      speed: 0.5
+      accel: 0.35
+      drag: 0.02
+      lifetime: 70
+      range: 330
+      maxRange: 400
+      width: 9
+      height: 36
+      shrinkY: 0
+      splashDamage: 120
+      splashDamageRadius: 24
+      trailLength: 8
+      trailWidth: 1.7
+      keepVelocity: false
+      hitSound: bang
+      hitColor: 707594
+      backColor: 707594
+      trailColor: fc81dd
+      frontColor: 999ba0
+      hitEffect: massiveExplosion
+      despawnEffect: hitBulletColor
+      smokeEffect: {
+        //Sometimes I feel like I'm losing my mind... again
+        type: SeqEffect
+        followParent: false
+        effects: [
+          shootBigSmoke
+        ]
+      }
+      shootEffect: {
+        type: RadialEffect
+        rotationOffset: 180
+        amount: 1
+        lengthOffset: 19
+        effect: shootPyraFlame
+      }
+    }
+  }
+]
+envRequired: 1
+envDisabled: 6

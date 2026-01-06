@@ -1,0 +1,10 @@
+itemDuration: 45
+powerProduction: 145
+consumes: {
+  remove: [
+    liquid
+  ]
+  liquids: [
+    cryofluid/0.4
+  ]
+}

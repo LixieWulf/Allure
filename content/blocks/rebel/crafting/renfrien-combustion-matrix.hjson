@@ -5,11 +5,11 @@ itemCapacity: 400
 liquidCapacity: 20
 consumes: {
   items: [
-    anden/50
-    silicon/50
-    ladera/100
+    anden/100
+    silicon/60
+    ladera/75
     contained-slag/120
-    contained-energia/30
+    contained-energia/120
   ]
 }
 drawer: [
@@ -71,6 +71,8 @@ drawer: [
     lightAlpha: 0.5
   }
 ]
+ambientSound: beamLustre
+ambientSoundVolume: 0.25
 craftEffect: [
   {
     type: RadialEffect

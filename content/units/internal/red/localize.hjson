@@ -1,0 +1,68 @@
+type: legs
+localizedName: yet another internal unit
+speed: 0
+rotateSpeed: 0
+health: 5400
+armor: 55
+physics: false 
+hittable: false 
+targetable: false
+buildSpeed: 2
+buildRange: 480
+isEnemy: false
+faceTarget: false
+healFlash: false
+fullOverride: allure-0rc0-localize-full
+engineSize: 0
+fallSpeed: 0
+drawMinimap: false
+drawBuildBeam: false
+drawCell: false
+itemCapacity: 0
+drawShields: false
+drawBody: false
+internal: true
+outlines: false
+groundLayer: 25
+immunities: [
+  burning,
+  melting
+]
+legCount: 0
+weapons: [
+  {
+    type: BuildWeapon
+    layerOffset: 6
+    name: localize-build
+    mirror: false
+    x: 0
+    y: 12
+    shootY: 8
+    rotate: true
+    rotateSpeed: 1.5
+  }
+  {
+    type: BuildWeapon
+    layerOffset: 6
+    name: localize-build
+    x: -12
+    shootY: 8
+    baseRotation: 90
+    rotate: true
+    rotateSpeed: 1.5
+  }
+  {
+    type: BuildWeapon
+    layerOffset: 6
+    name: localize-build
+    mirror: false
+    x: 0
+    y: -12
+    shootY: 8
+    baseRotation: 180
+    rotate: true
+    rotateSpeed: 1.5
+  }
+]
+envEnabled: -1
+envDisabled: 0

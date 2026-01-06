@@ -8,7 +8,7 @@ alwaysReplace: false
 buildVisibility: sandboxOnly
 rotationRand: 90
 layer: 80
-shadowLayer: 70
+shadowLayer: 79
 shadowOffset: -32
 shadowAlpha: 0.33
 solid: true

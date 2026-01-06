@@ -1,15 +1,18 @@
 type: ConsumeGenerator
 size: 8
+buildTime: 1200
+health: 6000
+armor: 50
 powerProduction: 0.001
 itemCapacity: 40
 liquidCapacity: 320
 consumes: {
   items: [
-    uranium/5
-    graphite/1
+    uranium/4
+    graphite/2
   ]
 }
-itemDuration: 240
+itemDuration: 120
 drawer: [
   {
     type: DrawDefault
@@ -44,8 +47,7 @@ category: power
 requirements: [
   anden/2400
   silicon/1200
-  ladera/400
-  renfrien/600
+  ladera/1200
 ]
 destroySound: explosionbig
 destroyBullet: {

@@ -1,0 +1,62 @@
+buildSpeed: 0.25
+boostMultiplier: 2.5
+riseSpeed: 0.02
+fallSpeed: 0.06
+weapons: [
+  {
+    name: heal-shotgun-weapon
+    top: false
+    x: 5
+    y: 0.5
+    shootY: 2.5
+    shake: 2
+    reload: 36
+    recoil: 2.5
+    inaccuracy: 35
+    shoot: {
+      shots: 3
+      shotDelay: 0.5
+    }
+    shootSound: spark
+    bullet: {
+      type: LightningBulletType
+      damage: 6
+      lightningLength: 10
+      lightningLengthRand: 12
+      lightningColor: 98ffa9
+      hitColor: 98ffa9
+      healAmount: 15
+      shootEffect: shootHeal
+      lightningType: {
+        type: BulletType
+        lifetime: 15
+        damage: 0.0001
+        speed: 0
+        healAmount: 15
+        status: shocked
+        statusDuration: 10
+        hittable: false
+        collidesTeam: true
+        hitEffect: hitLancer
+        despawnEffect: none
+      }
+    }
+  }
+  {
+    type: PointDefenseWeapon
+    name: tiny-point-mount
+    x: 0
+    mirror: false
+    reload: 15
+    recoil: 0.25
+    targetInterval: 15
+    targetSwitchInterval: 0
+    shootY: 1
+    shootSound: shootSegment
+    bullet: {
+      damage: 5
+      maxRange: 120
+    }
+  }
+]
+abilities: []

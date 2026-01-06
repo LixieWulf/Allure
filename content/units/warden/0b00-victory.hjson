@@ -18,6 +18,8 @@ outlines: false
 healColor: 7382f088
 shieldColor: 7382f000
 deathShake: 0
+loopSound: loopSmelter
+loopSoundVolume: 0.05
 parts: [
   {
     type: RegionPart
@@ -71,7 +73,7 @@ weapons: [
     velocityRnd: 0.25
     inaccuracy: 3
     baseRotation: -40
-    shootSound: lasershoot
+    shootSound: shootLaser
     bullet: {
       damage: 14
       speed: 5

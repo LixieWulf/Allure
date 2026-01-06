@@ -1,4 +1,6 @@
-craftTime: 80
+floating: true
+craftTime: 120
+liquidCapacity: 48
 consumes: {
   remove: [
     liquid

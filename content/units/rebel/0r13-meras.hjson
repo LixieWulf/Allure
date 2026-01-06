@@ -1,12 +1,15 @@
 type: flying
-flying: true
+canBoost: true
 hitSize: 90
 health: 1250000
 armor: 800
-speed: 10
+speed: 2
+boostMultiplier: 5
 accel: 0.01
-drag: 0.05
+drag: 0.04
 strafePenalty: 0.25
+riseSpeed: 0.02
+fallSpeed: 0.25
 rotateSpeed: 1.3
 circleTarget: true
 faceTarget: false
@@ -22,6 +25,7 @@ parts: [
     y: 20
   }
 ]
+shadowElevation: 0.1
 shadowElevationScl: 3.4
 immunities: [
   burning,

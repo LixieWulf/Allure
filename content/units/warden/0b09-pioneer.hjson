@@ -68,7 +68,8 @@ weapons: [
       shots: 5
       shotDelay: 2
     }
-    shootSound: bolt
+    shootSound: explosionCleroi
+    shootSoundVolume: 0.5
     bullet: {
       speed: 18
       lifetime: 25
@@ -103,8 +104,6 @@ weapons: [
     x: 24
     y: 14
     rotate: true
-    rotationLimit: 130
-    baseRotation: -50
     autoTarget: true
     controllable: false
     targetInterval: 5
@@ -113,7 +112,9 @@ weapons: [
     rotateSpeed: 360
     continuous: true
     alwaysContinuous: true
-    shootSound: torch
+    shootSound: beamPlasmaSmall
+    shootSoundVolume: 0.15
+    initialShootSound: explosionArtilleryShockBig
     bullet: {
       type: ContinuousLaserBulletType
       shake: 0
@@ -128,7 +129,7 @@ weapons: [
         7382f045,
         90a2fc90, a0aaf4aa, d0d4f8dd, ffffff
       ]
-      frontLength: 0
+      frontLength: 2
       shootEffect: none
       smokeEffect: none
       hitEffect: [
@@ -168,7 +169,7 @@ weapons: [
     shootCone: 35
     reload: 320
     alternate: false
-    shootSound: missileLarge
+    shootSound: shootMissileLong
     bullet: {
       keepVelocity: false
       speed: 1
@@ -176,7 +177,7 @@ weapons: [
       lifetime: 80
       damage: 400
       sprite: missile-large
-      hitSound: largeExplosion
+      hitSound: explosionReactor
       hitShake: 3
       homingRange: 240
       homingPower: 0.02

@@ -1,0 +1,8 @@
+powerProduction: 3
+itemDuration: 600
+requirements: [
+  copper/100
+  lead/50
+  titanium/50
+  thorium/25
+]

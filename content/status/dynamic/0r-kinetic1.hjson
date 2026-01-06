@@ -1,1 +1,25 @@
 damage: 10
+effectChance: 0.1
+effect: [
+  {
+    particles: 5
+    length: 5
+    lifetime: 40
+    sizeFrom: 0
+    sizeTo: 2.5
+    colorFrom: 787878
+    colorTo: 787878
+    sizeInterp: slope
+    layer: 109
+  }
+  {
+    particles: 2
+    length: 2
+    lifetime: 25
+    sizeFrom: 0
+    sizeTo: 2
+    colorFrom: e65555
+    colorTo: e65555
+    sizeInterp: slope
+  }
+]

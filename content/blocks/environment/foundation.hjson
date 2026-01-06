@@ -3,3 +3,7 @@ variants: 3
 attributes: {
   water: -1
 }
+floating: true
+requirements: [
+  territe-alloy/50
+]
