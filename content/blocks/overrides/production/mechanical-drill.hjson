@@ -13,3 +13,7 @@ consumes: {
     booster: true
   }
 }
+drillMultipliers: {
+  copper: 1.058
+  lead: 1.058
+}

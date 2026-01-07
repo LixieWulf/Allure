@@ -1,0 +1,19 @@
+consumes: {
+  remove: [
+    items
+  ]
+  items: [
+    silicon/180
+    metaglass/60
+    plastanium/60
+  ]
+  liquids: [
+    water/1.5
+  ]
+}
+requirements: [
+  lead/750
+  graphite/500
+  plastanium/500
+  silicon/300
+]

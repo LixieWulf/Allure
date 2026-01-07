@@ -1,7 +1,7 @@
+mineSpeed: 0.5
 buildSpeed: 0.25
 boostMultiplier: 2.5
 riseSpeed: 0.02
-fallSpeed: 0.06
 weapons: [
   {
     name: heal-shotgun-weapon

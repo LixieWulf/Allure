@@ -14,6 +14,12 @@ consumes: {
     booster: true
   }
 }
+drillMultipliers: {
+  copper: 1.04167
+  lead: 1.04167
+  titanium: 1.02
+  beryllium: 1.02
+}
 requirements: [
   graphite/100
   metaglass/50

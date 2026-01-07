@@ -1,5 +1,5 @@
 drillTime: 240
-liquidBoostIntensity: 1.733
+liquidBoostIntensity: 1.7327
 hardnessDrillMultiplier: 30
 consumes: {
   remove: [
@@ -14,6 +14,14 @@ consumes: {
   liquids: [
     oil/0.15
   ]
+}
+drillMultipliers: {
+  copper: 1.0312
+  lead: 1.0312
+  coal: 1.0412
+  titanium: 1.0315
+  beryllium: 1.0315
+  tungsten: 0.8125
 }
 requirements: [
   graphite/250

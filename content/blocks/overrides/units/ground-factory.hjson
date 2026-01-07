@@ -1,0 +1,32 @@
+plans: [
+  {
+    unit: dagger
+    time: 1200
+    requirements: [
+      lead/40
+      graphite/15
+    ]
+  }
+  {
+    unit: crawler
+    time: 600
+    requirements: [
+      coal/10
+      graphite/10
+    ]
+  }
+  {
+    unit: nova
+    time: 1800
+    requirements: [
+      copper/15
+      lead/60
+      silicon/15
+    ]
+  }
+]
+requirements: [
+  copper/50
+  lead/100
+  graphite/50
+]

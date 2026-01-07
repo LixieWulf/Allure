@@ -1,0 +1,25 @@
+plans: [
+  {
+    unit: risso
+    time: 2400
+    requirements: [
+      copper/40
+      graphite/30
+      metaglass/60
+    ]
+  }
+  {
+    unit: retusa
+    time: 1800
+    requirements: [
+      lead/30
+      silicon/30
+      metaglass/30
+    ]
+  }
+]
+requirements: [
+  copper/250
+  graphite/100
+  metaglass/50
+]

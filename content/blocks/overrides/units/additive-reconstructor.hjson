@@ -1,0 +1,17 @@
+constructTime: 900
+consumes: {
+  remove: [
+    items
+  ]
+  items: [
+    titanium/15
+    graphite/15
+    silicon/75
+  ]
+}
+requirements: [
+  copper/100
+  lead/50
+  silicon/200
+  titanium/50
+]

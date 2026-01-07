@@ -17,3 +17,6 @@ requirements: [
   copper/40
   graphite/20
 ]
+drillMultipliers: {
+  coal: 1.04167
+}

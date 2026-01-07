@@ -1,0 +1,18 @@
+constructTime: 3600
+consumes: {
+  remove: [
+    items
+  ]
+  items: [
+    silicon/720
+    thorium/540
+    plastanium/600
+  ]
+}
+requirements: [
+  graphite/1500
+  metaglass/2000
+  thorium/1000
+  plastanium/750
+  silicon/1500
+]

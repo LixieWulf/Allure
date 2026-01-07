@@ -1,0 +1,12 @@
+constructTime: 7200
+consumes: {
+  remove: [
+    items
+  ]
+  items: [
+    silicon/1440
+    plastanium/720
+    phase-fabric/360
+    surge-alloy/240
+  ]
+}

@@ -1,1 +1,7 @@
 craftTime: 60
+requirements: [
+  copper/150
+  titanium/100
+  plastanium/50
+  phase-fabric/100
+]
