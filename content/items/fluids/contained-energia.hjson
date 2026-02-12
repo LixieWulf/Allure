@@ -1,1 +1,5 @@
 color: b3e9ff
+shownPlanets: [
+  allure-genaise,
+  allure-lus
+]

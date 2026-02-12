@@ -1,0 +1,84 @@
+type: flying
+flying: true
+health: 600
+controller: RepairAI
+defaultController: RepairAI
+range: 100
+speed: 5
+accel: 0.02
+drag: 0.03
+rotateSpeed: 3
+strafePenalty: 0
+wobble: false
+outlines: false
+drawCell: false
+engineSize: 0
+engineColor: e65555bb
+engines: [
+  {
+    x: -4.5
+    y: 4.5
+    radius: 2
+    rotation: 135
+  }
+  {
+    x: 4.5
+    y: 4.5
+    radius: 2
+    rotation: 45
+  }
+  {
+    x: 4.5
+    y: -4.5
+    radius: 2
+    rotation: -45
+  }
+  {
+    x: -4.5
+    y: -4.5
+    radius: 2
+    rotation: -135
+  }
+]
+immunities: [
+  melting
+]
+weapons: [
+  {
+    x: 0
+    shootY: 0
+    mirror: false
+    rotate: true
+    rotateSpeed: 10
+    reload: 30
+    shootSound: shootLaser
+    shootStatus: {
+      name: repair-decay
+      show: false
+      damage: 0.3
+    }
+    shootStatusDuration: 31
+    bullet: {
+      type: LaserBulletType
+      pierceCap: 1
+      damage: 0.001
+      length: 60
+      width: 8
+      lengthFalloff: 0.75
+      sideLength: 0
+      collidesTeam: true
+      healAmount: 15
+      shootEffect: hitLancer
+      laserEffect: none
+      hitColor: e65555
+      healColor: e6555506
+      colors: [
+        e6555544
+        e65555
+        ffffff
+      ]
+    }
+  }
+]
+envEnabled: -1
+envDisabled: 4

@@ -1,0 +1,6 @@
+speed: 0.7
+health: 200
+armor: 3
+stances: [
+  stop
+]

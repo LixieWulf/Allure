@@ -1,0 +1,22 @@
+accurateDelay: true
+shootType: {
+  type: LaserBulletType
+  collidesAir: false
+  damage: 35
+  length: 173
+  lifetime: 20
+  pierceCap: 8
+  ammoMultiplier: 1
+  drawSize: 400
+  hitSize: 4
+  hitEffect: hitLancer
+  chargeEffect: [
+    lancerLaserCharge
+    lancerLaserChargeBegin
+  ]
+  colors: [
+    a9d8ff44
+    a9d8ff
+    ffffff
+  ]
+}

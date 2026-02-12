@@ -1,0 +1,31 @@
+type: GenericCrafter
+group: walls
+priority: -2
+hasItems: false
+solid: true
+update: true
+rotate: true
+drawArrow: false
+size: 2
+health: 3000
+armor: 100
+baseExplosiveness: 50
+ambientSound: none
+drawer: [
+  {
+    type: DrawRegion
+    layer: 29.9
+  }
+  {
+    type: DrawRegion
+    suffix: -shade
+    layer: 29.9
+  }
+  {
+    type: DrawSideRegion
+  }
+]
+requirements: [
+  anden/100
+]
+category: defense

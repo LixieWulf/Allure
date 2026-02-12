@@ -1,0 +1,64 @@
+health: 250
+armor: 3
+speed: 0.8
+weapons: [
+  {
+    name: missiles-mount
+    mirror: false
+    rotate: true
+    rotateSpeed: 4
+    x: 0
+    y: -4
+    shootY: 2
+    reload: 45
+    shootSound: shootMissile
+    bullet: {
+      type: MissileBulletType
+      damage: 10
+      splashDamage: 15
+      splashDamageRadius: 20
+      homingPower: 0
+      speed: 0.5
+      accel: 0.15
+      lifetime: 58
+      maxRange: 240
+      weaveMag: 0
+      trailColor: 787878
+      hitEffect: flakExplosion
+      keepVelocity: false
+    }
+  }
+  {
+    name: fire-mount
+    mirror: false
+    rotate: true
+    rotateSpeed: 12
+    x: 0
+    y: 4
+    reload: 15
+    shootSound: shootScatter
+    bullet: {
+      speed: 4
+      damage: 10
+      width: 7
+      height: 11
+      lifetime: 45
+      hitColor: f8ad42
+      backColor: f68021
+      frontColor: f8ad42
+      hitEffect: [
+        hitBulletSmall
+        fireHit
+      ]
+      despawnEffect: [
+        hitBulletSmall
+        fireHit
+      ]
+      incendAmount: 1
+      incendSpread: 4
+      incendChance: 0.1
+      status: burning
+      statusDuration: 15
+    }
+  }
+]

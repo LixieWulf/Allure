@@ -1,0 +1,8 @@
+difficulty: 3
+sector: 6
+research: {
+  parent: fungalPass
+  objectives: [
+    air-factory
+  ]
+}

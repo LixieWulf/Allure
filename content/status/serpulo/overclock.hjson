@@ -1,0 +1,5 @@
+reloadMultiplier: 1.5
+speedMultiplier: 1.2
+buildSpeedMultiplier: 1.25
+damageMultiplier: 1
+damage: -0.1

@@ -72,6 +72,78 @@ drawer: {
           }
           children: [
             {
+              suffix: -front
+              layer: 65.5
+              outline: false
+              y: 29.25
+              moveY: -3
+              growY: 0.75
+              progress: {
+                type: recoil
+                op: curve
+                interp: pow5In
+              }
+              growProgress: {
+                type: recoil
+                op: curve
+                interp: pow5In
+              }
+            }
+            {
+              suffix: -ring
+              layer: 65.5
+              outline: false
+              y: 19.75
+              moveY: -2.5
+              growY: 0.25
+              progress: {
+                type: recoil
+                op: curve
+                interp: pow5In
+              }
+              growProgress: {
+                type: recoil
+                op: curve
+                interp: pow5In
+              }
+            }
+            {
+              suffix: -ring
+              layer: 65.5
+              outline: false
+              y: 10
+              moveY: -1.5
+              growY: 0.25
+              progress: {
+                type: recoil
+                op: curve
+                interp: pow5In
+              }
+              growProgress: {
+                type: recoil
+                op: curve
+                interp: pow5In
+              }
+            }
+            {
+              suffix: -ring
+              layer: 65.5
+              outline: false
+              y: 0.25
+              moveY: -0.5
+              growY: 0.25
+              progress: {
+                type: recoil
+                op: curve
+                interp: pow5In
+              }
+              growProgress: {
+                type: recoil
+                op: curve
+                interp: pow5In
+              }
+            }
+            {
               suffix: -up-heat2
               layer: 66
               outline: false

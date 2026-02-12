@@ -6,3 +6,8 @@ explosiveness: 2
 effect: allure-vapourizing
 color: 87b7ff
 research: energia
+shownPlanets: [
+  allure-wandura,
+  allure-genaise,
+  allure-lus
+]

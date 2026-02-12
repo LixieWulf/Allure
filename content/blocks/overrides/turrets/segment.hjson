@@ -1,0 +1,7 @@
+reload: 10
+bulletDamage: 15
+requirements: [
+  copper/100
+  lead/50
+  graphite/20
+]

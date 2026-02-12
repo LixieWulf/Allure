@@ -1,1 +1,5 @@
 color: ffa166
+shownPlanets: [
+  allure-genaise,
+  allure-lus
+]

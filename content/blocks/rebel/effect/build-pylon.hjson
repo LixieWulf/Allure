@@ -1,4 +1,5 @@
 type: BuildTurret
+outlineIcon: false
 size: 3
 rotateSpeed: 3
 buildTime: 300

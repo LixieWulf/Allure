@@ -1,0 +1,23 @@
+type: UnitFactory
+size: 4
+payloadSpeed: 5
+plans: [
+  {
+    unit: 0r-repair-drone
+    time: 300
+    requirements: [
+      anden/300
+    ]
+  }
+]
+consumes: {
+  liquids: [
+    energia/0.4
+  ]
+}
+category: effect
+requirements: [
+  anden/300
+  silicon/300
+  graphite/100
+]

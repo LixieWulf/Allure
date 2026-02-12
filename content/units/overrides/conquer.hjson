@@ -15,8 +15,7 @@ weapons: [
     }
     shootWarmupSpeed: 0.03
     minWarmup: 0.9
-    chargeSound: lasercharge2
-    shootSound: shootSmite
+    shootSound: explosionNavanax
     cooldownTime: 170
     heatColor: f9350f
     shake: 8
@@ -84,7 +83,21 @@ weapons: [
           region: allure-diamond-vthin
         }
       ]
+      chargeEffect: {
+        type: SoundEffect
+        minPitch: 1.3
+        maxPitch: 1.3
+        effect: none
+        sound: chargeVela
+      }
       shootEffect: [
+        {
+          type: SoundEffect
+          minPitch: 1.5
+          maxPitch: 1.5
+          effect: none
+          sound: explosionArtilleryShockBig
+        }
         {
           line: true
           cone: 20
@@ -121,14 +134,14 @@ weapons: [
           baseRotation: 20
           length: 20
           randLength: false
-          lifetime: 25
+          lifetime: 35
           particles: 1
           lenFrom: 12
           lenTo: 0
           strokeFrom: 1
           strokeTo: 0
           colorTo: feb380
-          interp: pow2Out
+          interp: pow3Out
           sizeInterp: linear
         }
         {
@@ -137,14 +150,14 @@ weapons: [
           baseRotation: -20
           length: 20
           randLength: false
-          lifetime: 25
+          lifetime: 35
           particles: 1
           lenFrom: 12
           lenTo: 0
           strokeFrom: 1
           strokeTo: 0
           colorTo: feb380
-          interp: pow2Out
+          interp: pow3Out
           sizeInterp: linear
         }
       ]

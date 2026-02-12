@@ -1,0 +1,26 @@
+health: 800
+armor: 5
+speed: 0.7
+weapons: [
+  {
+    name: atrax-weapon
+    x: 7
+    reload: 8
+    top: false
+    shootSound: shootAtrax
+    bullet: {
+      type: LiquidBulletType
+      liquid: slag
+      damage: 4
+      speed: 2.5
+      lifetime: 60
+      drag: 0.009
+      shootEffect: shootSmall
+      collidesAir: false
+      collidesTiles: false
+      hittable: false
+      scaleLife: true
+      despawnHit: true
+    }
+  }
+]

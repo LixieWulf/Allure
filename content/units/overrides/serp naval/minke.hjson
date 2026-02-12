@@ -1,0 +1,67 @@
+speed: 0.8
+weapons: [
+  {
+    name: large-artillery
+    mirror: false
+    rotate: true
+    rotateSpeed: 4
+    x: 0
+    y: -8
+    shootY: 4
+    reload: 75
+    shootSound: shootArtillerySmall
+    bullet: {
+      type: ArtilleryBulletType
+      damage: 10
+      splashDamage: 30
+      splashDamageRadius: 30
+      homingPower: 0
+      speed: 3.75
+      lifetime: 60
+      width: 15
+      height: 18
+      hitShake: 2
+      backColor: f68021
+      frontColor: f8ad42
+      trailColor: f68021
+      smokeEffect: shootBigSmoke
+      hitEffect: blastExplosion
+      despawnEffect: fireHit
+      keepVelocity: false
+      collidesAir: false
+      collides: true
+      collidesTiles: true
+      incendAmount: 4
+      incendSpread: 24
+      incendChance: 0.25
+      status: burning
+      statusDuration: 30
+    }
+  }
+  {
+    name: mount-weapon
+    mirror: true
+    rotate: true
+    rotateSpeed: 12
+    x: 7
+    y: -1
+    reload: 15
+    inaccuracy: 10
+    shoot: {
+      shots: 2
+      shotDelay: 2
+    }
+    shootSound: shootScatter
+    bullet: {
+      speed: 6
+      damage: 5
+      splashDamage: 10
+      splashDamageRadius: 24
+      width: 7
+      height: 11
+      lifetime: 35
+      collidesGround: false
+      despawnEffect: flakExplosion
+    }
+  }
+]

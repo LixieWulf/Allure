@@ -12,7 +12,7 @@ plans: [
     time: 600
     requirements: [
       coal/10
-      graphite/10
+      graphite/5
     ]
   }
   {

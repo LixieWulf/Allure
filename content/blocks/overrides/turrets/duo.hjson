@@ -1,10 +1,12 @@
+targetInterval: 5
+newTargetInterval: 30
 ammoTypes: {
   copper: {
     speed: 3
     damage: 10
     width: 7
     height: 9
-    lifetime: 50
+    lifetime: 53
     hitColor: d39169
     backColor: d39169
     frontColor: eac1a8

@@ -1,0 +1,26 @@
+type: PointDefenseTurret
+group: walls
+priority: -1
+outlineIcon: false
+size: 4
+range: 160
+health: 6000
+armor: 150
+reload: 5
+retargetTime: 0
+color: 3bbeff
+beamEffect: chainLightning
+shootSound: explosionArtilleryShock
+shootCone: 10
+shootLength: 8
+bulletDamage: 10
+category: defense
+consumes: {
+  liquids: [
+    energia/0.5
+  ]
+}
+requirements: [
+  anden/300
+  silicon/200
+]

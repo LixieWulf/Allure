@@ -12,5 +12,5 @@ maxAlpha: 0.2
 sound: none
 baseSpeed: 0.25
 density: 14000
-status: allure-healing-wind
+status: none
 noisePath: fog

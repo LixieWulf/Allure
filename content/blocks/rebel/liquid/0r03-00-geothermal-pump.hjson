@@ -1,8 +1,8 @@
 type: AttributeCrafter
 floating: true
 size: 4
-craftTime: 5
-itemCapacity: 48
+craftTime: 6
+itemCapacity: 50
 squareSprite: false
 outputItem: contained-slag/2
 drawer: [

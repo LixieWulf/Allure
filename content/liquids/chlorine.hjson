@@ -1,2 +1,6 @@
 gas: true
 color: 798e48
+shownPlanets: [
+  allure-genaise,
+  allure-lus
+]

@@ -1,0 +1,33 @@
+health: 500
+armor: 10
+speed: 0.5
+rotateSpeed: 2.5
+targetAir: false
+weapons: [
+  {
+    name: flamethrower
+    top: false
+    shootSound: shootFlame
+    shootY: 2
+    reload: 5
+    bullet: {
+      type: BulletType
+      damage: 17
+      speed: 4
+      lifetime: 20
+      hitSize: 7
+      pierce: true
+      pierceBuilding: true
+      pierceCap: 2
+      pierceDamageFactor: 0.01
+      status: burning
+      statusDuration: 30
+      shootEffect: shootPyraFlame
+      hitEffect: hitFlameSmall
+      despawnEffect: none
+      collidesAir: false
+      keepVelocity: false
+      hittable: false
+    }
+  }
+]

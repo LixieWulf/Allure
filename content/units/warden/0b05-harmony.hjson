@@ -1,22 +1,23 @@
 type: flying
 flying: true
 lowAltitude: true
-hitSize: 85
+wobble: false
+hitSize: 75
 health: 150000
 armor: 60
-speed: 2.4
+speed: 2.5
 rotateSpeed: 2
-accel: 0.06
-drag: 0.05
+accel: 0.04
+drag: 0.04
 strafePenalty: 0.2
 healColor: 7382f088
 shieldColor: 7382f000
 engineSize: 0
 lightRadius: 0
-shadowElevationScl: 1.7
-range: 660
+shadowElevationScl: 4
+range: 600
 maxRange: 660
-drawBody: false
+drawCell: false
 outlines: false
 deathShake: 0
 loopSound: loopSmelter
@@ -36,9 +37,8 @@ parts: [
     type: RegionPart
     name: allure-0b05-harmony-flare
     outline: false
-    blending: additive
     layer: 92
-    color: 7382f0
+    color: ffffff88
     colorTo: ffffff
     weaponIndex: 1
   }
@@ -47,7 +47,7 @@ parts: [
     name: allure-0b05-harmony-flare
     outline: false
     layer: 140
-    color: 7382f025
+    color: 7382f011
     blending: additive
   }
   { 
@@ -318,6 +318,8 @@ weapons: [
   {
     x: 0
     shootY: 35
+    shootCone: 0.25
+    cooldownTime: 45
     mirror: false
     shootWarmupSpeed: 0.05
     minWarmup: 0.99
@@ -355,12 +357,52 @@ weapons: [
               interp: pow3Out
             }
           }
+          {
+            y: 14
+            gy: 1.8
+            progress: heat
+          }
+        ]
+      }
+      {
+        type: RegionPart
+        mirror: true
+        x: 18
+        y: -4
+        layer: 91
+        name: allure-unusually-organized-rectangle
+        xScl: 0.25
+        yScl: 0.35
+        color: 131316
+        progress: {
+          type: charge
+          op: compress
+          start: 0.2
+          end: 1
+        }
+        moves: [
+          {
+            y: 40
+            progress: {
+              type: charge
+              op: curve
+              interp: pow3Out
+            }
+          }
+          {
+            y: 40
+            progress: {
+              type: heat
+              op: curve
+              interp: pow3In
+            }
+          }
         ]
       }
       //just stop Lixie it's fine you don't need to add this pls no stop it stop it stop it stop it JUST PUT IT DOWN LIXIE NOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
       {
         type: RegionPart
-        y: 16
+        y: 17
         layer: 110
         name: allure-unusually-organized-rectangle
         xScl: 0.2
@@ -517,6 +559,18 @@ weapons: [
         }
       ]
       shootEffect: [
+        {
+          type: SoundEffect
+          minPitch: 1.5
+          maxPitch: 1.5
+          effect: none
+          sound: explosionArtilleryShockBig
+        }
+        {
+          type: SoundEffect
+          effect: none
+          sound: explosionNavanax
+        }
         {
           followParent: false
           length: 0

@@ -1,0 +1,46 @@
+mineSpeed: 0.5
+buildSpeed: 0.05
+itemCapacity: 10
+crashDamageMultiplier: 0
+targetGround: false
+weapons: [
+  {
+    name: heal-weapon
+    top: false
+    y: -2
+    x: 3
+    reload: 30
+    velocityRnd: 0.1
+    inaccuracy: 10
+    shootSound: shootMissilePlasmaShort
+    bullet: {
+      type: MissileBulletType
+      collidesGround: false
+      collidesTeam: true
+      healAmount: 15
+      damage: 5
+      speed: 2
+      lifetime: 60
+      accel: 0.05
+      maxRange: 240
+      splashDamage: 10
+      splashDamageRadius: 24
+      homingPower: 0.05
+      homingRange: 40
+      frontColor: ffffff
+      backColor: 83f793
+      trailColor: 83f793
+      smokeEffect: heal
+      hitEffect: flakExplosion
+      despawnEffect: heal
+    }
+  }
+]
+abilities: [
+  {
+    type: RepairFieldAbility
+    reload: 30
+    range: 12
+    amount: 5
+  }
+]

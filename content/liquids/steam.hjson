@@ -10,3 +10,8 @@ research: {
     }
   ]
 }
+shownPlanets: [
+  allure-wandura,
+  allure-genaise,
+  allure-lus
+]

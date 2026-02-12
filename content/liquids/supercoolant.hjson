@@ -6,3 +6,7 @@ explosiveness: 0
 effect: freezing
 color: a36ad5
 research: crystal-plasma
+shownPlanets: [
+  allure-wandura,
+  allure-lus
+]

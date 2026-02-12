@@ -1,3 +1,5 @@
+targetInterval: 5
+newTargetInterval: 5
 ammoTypes: {
   coal: {
     type: BulletType
@@ -16,10 +18,11 @@ ammoTypes: {
   }
   pyratite: {
     type: BulletType
-    ammoMultiplier: 4
+    ammoMultiplier: 8
     speed: 4
-    damage: 32
+    damage: 21
     lifetime: 18
+    rangeChange: 12
     pierce: true
     status: burning
     statusDuration: 240

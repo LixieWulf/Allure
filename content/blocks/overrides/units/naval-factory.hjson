@@ -1,11 +1,11 @@
 plans: [
   {
     unit: risso
-    time: 2400
+    time: 1200
     requirements: [
       copper/40
-      graphite/30
-      metaglass/60
+      pyratite/15
+      metaglass/10
     ]
   }
   {

@@ -1,10 +1,12 @@
+targetInterval: 5
+newTargetInterval: 60
 ammoTypes: {
   scrap: {
     type: FlakBulletType
     ammoMultiplier: 1
     reloadMultiplier: 0.5
     damage: 5
-    splashDamage: 15
+    splashDamage: 10
     splashDamageRadius: 24
     speed: 4
     lifetime: 60
@@ -19,7 +21,7 @@ ammoTypes: {
   lead: {
     type: FlakBulletType
     damage: 5
-    splashDamage: 15
+    splashDamage: 10
     splashDamageRadius: 15
     speed: 4.2  
     lifetime: 60

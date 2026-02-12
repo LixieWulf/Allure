@@ -1,0 +1,72 @@
+health: 150
+armor: 3
+speed: 0.8
+weapons: [
+  {
+    type: RepairBeamWeapon
+    name: small-regen-mount
+    targetBuildings: true
+    mirror: false
+    rotate: true
+    rotateSpeed: 4
+    x: 0
+    y: -5
+    shootY: 6
+    beamWidth: 0.9
+    bullet: {
+      maxRange: 100
+    }
+  }
+  {
+    x: 0
+    shootY: 0
+    mirror: false
+    rotate: true
+    reload: 120
+    shoot: {
+      type: ShootSpread
+      shots: 3
+      shotDelay: 5
+      spread: 60
+    }
+    shootSound: shootElude
+    bullet: {
+      speed: 4
+      drag: 0.1
+      accel: 0.15
+      lifetime: 120
+      damage: 15
+      splashDamage: 10
+      splashDamageRadius: 24
+      maxRange: 240
+      homingRange: 240
+      homingPower: 0.08
+      layer: 10
+      underwater: true
+      collideFloor: true
+      keepVelocity: false
+      absorbable: false
+      hittable: false
+      collidesTeam: true
+      healAmount: 40
+      sprite: missile-large
+      width: 6
+      height: 11
+      shrinkY: 0
+      frontColor: ffffff
+      backColor: 83f793
+      trailColor: 83f793
+      trailLength: 30
+      trailWidth: 1.5
+      hitSound: explosion
+      hitShake: 1
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: [
+        flakExplosion
+        heal
+      ]
+      despawnEffect: hitLancer
+    }
+  }
+]

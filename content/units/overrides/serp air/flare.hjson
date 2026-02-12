@@ -1,0 +1,52 @@
+health: 150
+hitSize: 5
+speed: 2
+rotateSpeed: 9
+circleTargetRadius: 40
+range: 120
+maxRange: 160
+omniMovement: false
+controller: FlyingAI
+defaultController: FlyingAI
+targetFlags: [
+  drill
+  generator
+  battery
+  shield
+  factory
+  storage
+  turret
+]
+weapons: [
+  {
+    x: 3
+    reload: 15
+    ejectEffect: casing1
+    bullet: {
+      speed: 4
+      damage: 7
+      width: 7
+      height: 9
+      lifetime: 40
+      range: 160
+      hittable: false
+    }
+  }
+]
+crashDamageMultiplier: 0
+wreckHealthMultiplier: 0.5
+itemCapacity: 0
+research: {
+  parent: air-factory
+  objectives: [
+    ground-factory
+    {
+      type: SectorCompete
+      preset: fungalPass
+    }
+  ]
+  requirements: [
+    copper/1000
+    graphite/250
+  ]
+}

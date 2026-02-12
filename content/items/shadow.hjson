@@ -4,5 +4,7 @@ color: 000000
 research: inseltiene
 healthScaling: 5
 shownPlanets: [
+  allure-wandura,
+  allure-genaise,
   allure-lus
 ]

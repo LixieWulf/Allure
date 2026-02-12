@@ -1,0 +1,58 @@
+speed: 0.8 
+weapons: [
+  {
+    name: heal-weapon
+    x: 5.5
+    y: 5
+    rotate: true
+    reload: 30
+    inaccuracy: 8
+    shoot: {
+      shots: 3
+      shotDelay: 2
+    }
+    shootSound: shootLaser
+    bullet: {
+      type: LaserBoltBulletType
+      laserAbsorb: true
+      damage: 6
+      speed: 5
+      lifetime: 30
+      pierce: true
+      pierceBuilding: true
+      pierceCap: 2
+      collidesTeam: true
+      healAmount: 20
+      width: 2
+      height: 9
+      frontColor: ffffff
+      backColor: 83f793
+    }
+  }
+  {
+    type: PointDefenseWeapon
+    name: point-defense-mount
+    targetSwitchInterval: 10
+    x: 0
+    y: 0
+    mirror: false
+    reload: 25
+    shootCone: 10
+    beamEffect: chainLightning
+    color: 83f793
+    bullet: {
+      damage: 10
+      maxRange: 160
+      hitEffect: hitLancer
+    }
+  }
+]
+abilities: [
+  {
+    type: StatusFieldAbility
+    effect: overclock
+    reload: 1800
+    duration: 600
+    range: 60
+  }
+]

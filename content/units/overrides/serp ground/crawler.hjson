@@ -1,0 +1,74 @@
+armor: 2
+health: 175
+speed: 0.85
+stances: [
+  ram
+]
+weapons: [
+  {
+    x: 0
+    shootY: 0
+    mirror: false
+    shootOnDeath: true
+    controllable: false
+    reload: 5
+    shake: 4
+    shootCone: 360
+    shootSound: explosionCrawler
+    bullet: {
+      type: ExplosionBulletType
+      splashDamage: 60
+      splashDamageRadius: 50
+      shootEffect: pulverizeRed
+      smokeEffect: sapExplosion
+      hitEffect: none
+      despawnEffect: none
+    }
+  }
+  {
+    x: 0
+    shootY: 0
+    mirror: false
+    display: false
+    useAttackRange: false
+    reload: 300
+    shoot: {
+      firstShotDelay: 300
+    }
+    shootSound: none
+    bullet: {
+      type: ExplosionBulletType
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      range: 30
+      maxRange: 30
+    }
+    parts: [
+      {
+        type: EffectSpawnerPart
+        effect: pulverize
+        width: 6
+        height: 6
+        progress: {
+          type: charge
+          op: compress
+          start: 0.01
+          end: 0.01
+        }
+      }
+    ]
+  }
+]
+research: {
+  parent: ground-factory
+  objectives: [
+    ground-factory
+    {
+      type: OnSector
+      preset: fungalPass
+    }
+  ]
+  requirements: []
+}

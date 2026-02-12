@@ -1,25 +1,27 @@
 type: flying
 flying: true
 envEnabled: -1
-shadowElevationScl: 3.2
+shadowElevationScl: 9
 range: 240
 maxRange: 1316
-hitSize: 180
+hitSize: 240
 health: 1000000
-armor: 1150
-speed: 2.4
-rotateSpeed: 0.9
-drag: 0.05
-accel: 0.1
+armor: 1500
+speed: 3
+rotateSpeed: 0.7
+drag: 0.015
+accel: 0.015
 forceMultiTarget: true
+rotateToBuilding: false
 fogRadius: 120
 lowAltitude: true
 fallSpeed: 1
-faceTarget: false
 lightRadius: 0
-buildSpeed: 12.4
-strafePenalty: 0.35
+buildSpeed: 10
+buildRange: 640
+strafePenalty: 0.1
 drawBody: false
+drawCell: false
 outlines: false
 deathShake: 0
 immunities: [
@@ -58,7 +60,7 @@ parts: [
     layer: 92
     color: 7382f0
     colorTo: ffffff
-    weaponIndex: 16
+    weaponIndex: 0
   }
   { 
     type: RegionPart
@@ -70,2645 +72,3810 @@ parts: [
   }
   {
     type: RegionPart
-    suffix: -lance2
-    outline: false
-    y: 62
-    blending: additive
-    layer: 92
-    color: 000000
-    colorTo: 7382f0
-    weaponIndex: 18
-    progress: {
-      type: warmup
-      op: compress
-      start: 0
-      end: 0.5
-    }
-  }
-  {
-    type: RegionPart
-    outline: false
-    suffix: -lance
-    y: 62
-    blending: additive
-    layer: 92
-    color: 000000
-    colorTo: 7382f0
-    weaponIndex: 18
-    progress: {
-      type: warmup
-      op: compress
-      start: 0
-      end: 0.5
-    }
-  }
-  {
-    type: RegionPart
-    suffix: -lance
-    outline: false
-    y: 62
-    blending: additive
-    layer: 92
-    color: 000000
-    colorTo: ffffff
-    weaponIndex: 18
-    progress: {
-      type: warmup
-      op: compress
-      start: 0.5
-      end: 1
-    }
-  }
-  {
-    type: RegionPart
     name: allure-shield
     outline: false
     blending: additive
     color: 7382f088
     layer: 88
-    xScl: 2.5
-    yScl: 2.8
+    xScl: 5
+    yScl: 6
+  }
+  //heat
+  {
+    type: RegionPart
+    x: 41
+    y: 109
+    layer: 91.6
+    suffix: -burn
+    outline: false
+    mirror: true
+    blending: additive
+    progress: smoothReload
+    weaponIndex: 0
+    color: e6555500
+    colorTo: e65555
+  }
+  //draw it twice for good measure
+  {
+    type: RegionPart
+    x: 41
+    y: 109
+    layer: 91.6
+    suffix: -burn
+    outline: false
+    mirror: true
+    blending: additive
+    progress: smoothReload
+    weaponIndex: 0
+    color: e6555500
+    colorTo: feb38088
+  }
+  //vanes
+  {
+    type: RegionPart
+    x: 116.25
+    y: -65.25
+    layer: 91.6
+    suffix: -vanes
+    outline: false
+    mirror: true
+    blending: additive
+    progress: smoothReload
+    weaponIndex: 0
+    color: e6555500
+    colorTo: e6555588
+  }
+  //extra thrusters (side)
+  {
+    name: allure-shootspike
+    x: 82
+    y: 91
+    layer: 90
+    rotation: 0
+    outline: false
+    mirror: true
+    clampProgress: false
+    color: 7382f0
+    blending: additive
+    xScl: 0.4
+    yScl: 1.75
+    growX: 0.1
+    growProgress: {
+      type: time
+      ops: [
+        {
+          op: loop
+          time: 15
+        }
+        {
+          op: slope
+        }
+      ]
+    }
+  }
+  {
+    name: allure-shootspike
+    x: 82
+    y: 60.25
+    layer: 90
+    rotation: 0
+    outline: false
+    mirror: true
+    clampProgress: false
+    color: 7382f0
+    blending: additive
+    xScl: 0.4
+    yScl: 1.75
+    growX: 0.1
+    growProgress: {
+      type: time
+      ops: [
+        {
+          op: loop
+          time: 15
+        }
+        {
+          op: slope
+        }
+      ]
+    }
+  }
+  {
+    name: allure-shootspike
+    x: 89
+    y: -71
+    layer: 93
+    rotation: 0
+    outline: false
+    mirror: true
+    clampProgress: false
+    color: 7382f0
+    blending: additive
+    xScl: 0.15
+    yScl: 0.9
+    growX: 0.05
+    growProgress: {
+      type: time
+      ops: [
+        {
+          op: loop
+          time: 15
+        }
+        {
+          op: slope
+        }
+      ]
+    }
+  }
+  {
+    name: allure-shootspike
+    x: 105
+    y: -131.25
+    layer: 93
+    rotation: 0
+    outline: false
+    mirror: true
+    clampProgress: false
+    color: 7382f0
+    blending: additive
+    xScl: 0.15
+    yScl: 0.9
+    growX: 0.05
+    growProgress: {
+      type: time
+      ops: [
+        {
+          op: loop
+          time: 15
+        }
+        {
+          op: slope
+        }
+      ]
+    }
+  }
+  {
+    name: allure-shootspike
+    x: 105
+    y: -148.5
+    layer: 93
+    rotation: 0
+    outline: false
+    mirror: true
+    clampProgress: false
+    color: 7382f0
+    blending: additive
+    xScl: 0.15
+    yScl: 0.9
+    growX: 0.05
+    growProgress: {
+      type: time
+      ops: [
+        {
+          op: loop
+          time: 15
+        }
+        {
+          op: slope
+        }
+      ]
+    }
+  }
+  //extra thrusters (top)
+  {
+    name: allure-unusually-organized-rectangle
+    x: 107
+    y: -106.5
+    layer: 93
+    rotation: 45
+    outline: false
+    mirror: true
+    clampProgress: false
+    color: 7382f0
+    blending: additive
+    xScl: 0.25
+    yScl: 0.25
+    growX: 0.05
+    growY: 0.05
+    growProgress: {
+      type: time
+      ops: [
+        {
+          op: loop
+          time: 15
+        }
+        {
+          op: slope
+        }
+      ]
+    }
+  }
+  {
+    name: allure-unusually-organized-rectangle
+    x: 100.5
+    y: -37
+    layer: 93
+    rotation: 45
+    outline: false
+    mirror: true
+    clampProgress: false
+    color: 7382f0
+    blending: additive
+    xScl: 0.25
+    yScl: 0.25
+    growX: 0.05
+    growY: 0.05
+    growProgress: {
+      type: time
+      ops: [
+        {
+          op: loop
+          time: 15
+        }
+        {
+          op: slope
+        }
+      ]
+    }
+  }
+  {
+    name: allure-unusually-organized-rectangle
+    x: 100.5
+    y: -52
+    layer: 93
+    rotation: 45
+    outline: false
+    mirror: true
+    clampProgress: false
+    color: 7382f0
+    blending: additive
+    xScl: 0.25
+    yScl: 0.25
+    growX: 0.05
+    growY: 0.05
+    growProgress: {
+      type: time
+      ops: [
+        {
+          op: loop
+          time: 15
+        }
+        {
+          op: slope
+        }
+      ]
+    }
+  }
+  {
+    name: allure-unusually-organized-rectangle
+    x: 61
+    y: 106.25
+    layer: 93
+    rotation: 45
+    outline: false
+    mirror: true
+    clampProgress: false
+    color: 7382f0
+    blending: additive
+    xScl: 0.25
+    yScl: 0.25
+    growX: 0.05
+    growY: 0.05
+    growProgress: {
+      type: time
+      ops: [
+        {
+          op: loop
+          time: 15
+        }
+        {
+          op: slope
+        }
+      ]
+    }
+  }
+  {
+    name: allure-unusually-organized-rectangle
+    x: 61
+    y: 92.25
+    layer: 93
+    rotation: 45
+    outline: false
+    mirror: true
+    clampProgress: false
+    color: 7382f0
+    blending: additive
+    xScl: 0.25
+    yScl: 0.25
+    growX: 0.05
+    growY: 0.05
+    growProgress: {
+      type: time
+      ops: [
+        {
+          op: loop
+          time: 15
+        }
+        {
+          op: slope
+        }
+      ]
+    }
+  }
+  {
+    name: allure-unusually-organized-rectangle
+    x: 61
+    y: 78.25
+    layer: 93
+    rotation: 45
+    outline: false
+    mirror: true
+    clampProgress: false
+    color: 7382f0
+    blending: additive
+    xScl: 0.25
+    yScl: 0.25
+    growX: 0.05
+    growY: 0.05
+    growProgress: {
+      type: time
+      ops: [
+        {
+          op: loop
+          time: 15
+        }
+        {
+          op: slope
+        }
+      ]
+    }
   }
 ]
 healColor: 7382f088
 shieldColor: 7382f000
+loopSound: loopSmelter
+loopSoundVolume: 0.5
+moveSound: loopSmelter
 weapons: [
-  //right side broadside
+  //the beam finally displayed in its true glory
   {
-    name: hellfire-broadside-smol
-    layerOffset: 2
-    controllable: false 
-    autoTarget: true
-    targetInterval: 10
-    targetSwitchInterval: 10
-    otherSide: 1
-    mirror: false
-    alternate: true
-    x: 36
-    y: 60
-    rotate: true
-    rotateSpeed: 14
-    baseRotation: -90
-    reload: 5
-    recoil: 3
-    recoilTime: 30
-    shootY: 2
-    shootSound: lasershoot
-    parts: [
-      { 
-        type: RegionPart
-        suffix: -flare
-        outline: false
-        blending: additive
-        layer: 93
-        color: 7382f0bb
-      }
-    ]
-    bullet: {
-      type: ContinuousFlameBulletType
-      drawFlare: false
-      lifetime: 15
-      pierceCap: 1
-      length: 240
-      width: 4
-      damage: 0.15
-      buildingDamageMultiplier: 1000
-      status: allure-0t-thermal2
-      statusDuration: 1
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      hitEffect: none
-      shootEffect: none 
-      smokeEffect: none 
-    }
-  }
-  {
-    name: hellfire-broadside-smol
-    layerOffset: 2
-    controllable: false 
-    autoTarget: true
-    targetInterval: 10
-    targetSwitchInterval: 10
-    otherSide: 2
-    flipSprite: true
-    mirror: false
-    alternate: true
-    x: 36
-    y: 48
-    rotate: true
-    rotateSpeed: 14
-    baseRotation: -90
-    reload: 5
-    recoil: 3
-    recoilTime: 30
-    shootY: 2
-    shootSound: lasershoot
-    parts: [
-      { 
-        type: RegionPart
-        suffix: -flare
-        outline: false
-        blending: additive
-        layer: 93
-        color: 7382f0bb
-      }
-    ]
-    bullet: {
-      type: ContinuousFlameBulletType
-      drawFlare: false
-      lifetime: 15
-      pierceCap: 1
-      length: 240
-      width: 4
-      damage: 0.15
-      buildingDamageMultiplier: 1000
-      status: allure-0t-thermal2
-      statusDuration: 1
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      hitEffect: none
-      shootEffect: none 
-      smokeEffect: none 
-    }
-  }
-  {
-    name: hellfire-broadside-smol
-    layerOffset: 2
-    controllable: false 
-    autoTarget: true
-    targetInterval: 10
-    targetSwitchInterval: 10
-    otherSide: 3
-    flipSprite: true
-    mirror: false
-    alternate: true
-    x: 36
-    y: 36
-    rotate: true
-    rotateSpeed: 14
-    baseRotation: -90
-    reload: 5
-    recoil: 3
-    recoilTime: 30
-    shootY: 2
-    shootSound: lasershoot
-    parts: [
-      { 
-        type: RegionPart
-        suffix: -flare
-        outline: false
-        blending: additive
-        layer: 93
-        color: 7382f0bb
-      }
-    ]
-    bullet: {
-      type: ContinuousFlameBulletType
-      drawFlare: false
-      lifetime: 15
-      pierceCap: 1
-      length: 240
-      width: 4
-      damage: 0.15
-      buildingDamageMultiplier: 1000
-      status: allure-0t-thermal2
-      statusDuration: 1
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      hitEffect: none
-      shootEffect: none 
-      smokeEffect: none 
-    }
-  }
-  {
-    name: hellfire-broadside-smol
-    layerOffset: 2
-    controllable: false 
-    autoTarget: true
-    targetInterval: 10
-    targetSwitchInterval: 10
-    flipSprite: true
-    otherSide: 4
-    mirror: false
-    alternate: true
-    x: 38
-    y: 10
-    rotate: true
-    rotateSpeed: 14
-    baseRotation: -90
-    reload: 5
-    recoil: 3
-    recoilTime: 30
-    shootY: 2
-    shootSound: lasershoot
-    parts: [
-      { 
-        type: RegionPart
-        suffix: -flare
-        outline: false
-        blending: additive
-        layer: 93
-        color: 7382f0bb
-      }
-    ]
-    bullet: {
-      type: ContinuousFlameBulletType
-      drawFlare: false
-      lifetime: 15
-      pierceCap: 1
-      length: 240
-      width: 4
-      damage: 0.15
-      buildingDamageMultiplier: 1000
-      status: allure-0t-thermal2
-      statusDuration: 1
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      hitEffect: none
-      shootEffect: none 
-      smokeEffect: none 
-    }
-  }
-  {
-    name: hellfire-broadside-smol
-    layerOffset: 2
-    controllable: false 
-    autoTarget: true
-    targetInterval: 10
-    targetSwitchInterval: 10
-    flipSprite: true
-    otherSide: 5
-    mirror: false
-    alternate: true
-    x: 48
-    y: 0
-    rotate: true
-    rotateSpeed: 14
-    baseRotation: -90
-    reload: 5
-    recoil: 3
-    recoilTime: 30
-    shootY: 2
-    shootSound: lasershoot
-    parts: [
-      { 
-        type: RegionPart
-        suffix: -flare
-        outline: false
-        blending: additive
-        layer: 93
-        color: 7382f0bb
-      }
-    ]
-    bullet: {
-      type: ContinuousFlameBulletType
-      drawFlare: false
-      lifetime: 15
-      pierceCap: 1
-      length: 240
-      width: 4
-      damage: 0.15
-      buildingDamageMultiplier: 1000
-      status: allure-0t-thermal2
-      statusDuration: 1
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      hitEffect: none
-      shootEffect: none 
-      smokeEffect: none 
-    }
-  }
-  {
-    name: hellfire-broadside-smol
-    layerOffset: 2
-    controllable: false 
-    autoTarget: true
-    targetInterval: 10
-    targetSwitchInterval: 10
-    flipSprite: true
-    otherSide: 6
-    mirror: false
-    alternate: true
-    x: 48
-    y: -20
-    rotate: true
-    rotateSpeed: 14
-    baseRotation: -90
-    reload: 5
-    recoil: 3
-    recoilTime: 30
-    shootY: 2
-    shootSound: lasershoot
-    parts: [
-      { 
-        type: RegionPart
-        suffix: -flare
-        outline: false
-        blending: additive
-        layer: 93
-        color: 7382f0bb
-      }
-    ]
-    bullet: {
-      type: ContinuousFlameBulletType
-      drawFlare: false
-      lifetime: 15
-      pierceCap: 1
-      length: 240
-      width: 4
-      damage: 0.15
-      buildingDamageMultiplier: 1000
-      status: allure-0t-thermal2
-      statusDuration: 1
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      hitEffect: none
-      shootEffect: none 
-      smokeEffect: none 
-    }
-  }
-  {
-    name: hellfire-broadside-smol
-    layerOffset: 2
-    controllable: false 
-    autoTarget: true
-    targetInterval: 10
-    targetSwitchInterval: 10
-    flipSprite: true
-    otherSide: 7
-    mirror: false
-    alternate: true
-    x: 48
-    y: -44
-    rotate: true
-    rotateSpeed: 14
-    baseRotation: -90
-    reload: 5
-    recoil: 3
-    recoilTime: 30
-    shootY: 2
-    shootSound: lasershoot
-    parts: [
-      { 
-        type: RegionPart
-        suffix: -flare
-        outline: false
-        blending: additive
-        layer: 93
-        color: 7382f0bb
-      }
-    ]
-    bullet: {
-      type: ContinuousFlameBulletType
-      drawFlare: false
-      lifetime: 15
-      pierceCap: 1
-      length: 240
-      width: 4
-      damage: 0.15
-      buildingDamageMultiplier: 1000
-      status: allure-0t-thermal2
-      statusDuration: 1
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      hitEffect: none
-      shootEffect: none 
-      smokeEffect: none 
-    }
-  }
-  {
-    name: hellfire-broadside-smol
-    layerOffset: 2
-    controllable: false 
-    autoTarget: true
-    targetInterval: 10
-    targetSwitchInterval: 10
-    flipSprite: true
-    otherSide: 0
-    mirror: false
-    alternate: true
-    x: 48
-    y: -52
-    rotate: true
-    rotateSpeed: 14
-    baseRotation: -90
-    reload: 5
-    recoil: 3
-    recoilTime: 30
-    shootY: 2
-    shootSound: lasershoot
-    parts: [
-      { 
-        type: RegionPart
-        suffix: -flare
-        outline: false
-        blending: additive
-        layer: 93
-        color: 7382f0bb
-      }
-    ]
-    bullet: {
-      type: ContinuousFlameBulletType
-      drawFlare: false
-      lifetime: 15
-      pierceCap: 1
-      length: 240
-      width: 4
-      damage: 0.15
-      buildingDamageMultiplier: 1000
-      status: allure-0t-thermal2
-      statusDuration: 1
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      hitEffect: none
-      shootEffect: none 
-      smokeEffect: none 
-    }
-  }
-  //left side broadside
-  {
-    name: hellfire-broadside-smol
-    layerOffset: 2
-    controllable: false 
-    autoTarget: true
-    targetInterval: 10
-    targetSwitchInterval: 10
-    otherSide: 9
-    mirror: false
-    alternate: true
-    flipSprite: false
-    x: -36
-    y: 60
-    rotate: true
-    rotateSpeed: 14
-    baseRotation: 90
-    reload: 5
-    recoil: 3
-    recoilTime: 30
-    shootY: 2
-    shootSound: lasershoot
-    parts: [
-      { 
-        type: RegionPart
-        suffix: -flare
-        outline: false
-        blending: additive
-        layer: 93
-        color: 7382f0bb
-      }
-    ]
-    bullet: {
-      type: ContinuousFlameBulletType
-      drawFlare: false
-      lifetime: 15
-      pierceCap: 1
-      length: 240
-      width: 4
-      damage: 0.15
-      buildingDamageMultiplier: 1000
-      status: allure-0t-thermal2
-      statusDuration: 1
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      hitEffect: none
-      shootEffect: none 
-      smokeEffect: none 
-    }
-  }
-  {
-    name: hellfire-broadside-smol
-    layerOffset: 2
-    controllable: false 
-    autoTarget: true
-    targetInterval: 10
-    targetSwitchInterval: 10
-    otherSide: 10
-    flipSprite: true
-    mirror: false
-    alternate: true
-    x: -36
-    y: 48
-    rotate: true
-    rotateSpeed: 14
-    baseRotation: 90
-    reload: 5
-    recoil: 3
-    recoilTime: 30
-    shootY: 2
-    shootSound: lasershoot
-    parts: [
-      { 
-        type: RegionPart
-        suffix: -flare
-        outline: false
-        blending: additive
-        layer: 93
-        color: 7382f0bb
-      }
-    ]
-    bullet: {
-      type: ContinuousFlameBulletType
-      drawFlare: false
-      lifetime: 15
-      pierceCap: 1
-      length: 240
-      width: 4
-      damage: 0.15
-      buildingDamageMultiplier: 1000
-      status: allure-0t-thermal2
-      statusDuration: 1
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      hitEffect: none
-      shootEffect: none 
-      smokeEffect: none 
-    }
-  }
-  {
-    name: hellfire-broadside-smol
-    layerOffset: 2
-    controllable: false 
-    autoTarget: true
-    targetInterval: 10
-    targetSwitchInterval: 10
-    otherSide: 11
-    flipSprite: true
-    mirror: false
-    alternate: true
-    x: -36
-    y: 36
-    rotate: true
-    rotateSpeed: 14
-    baseRotation: 90
-    reload: 5
-    recoil: 3
-    recoilTime: 30
-    shootY: 2
-    shootSound: lasershoot
-    parts: [
-      { 
-        type: RegionPart
-        suffix: -flare
-        outline: false
-        blending: additive
-        layer: 93
-        color: 7382f0bb
-      }
-    ]
-    bullet: {
-      type: ContinuousFlameBulletType
-      drawFlare: false
-      lifetime: 15
-      pierceCap: 1
-      length: 240
-      width: 4
-      damage: 0.15
-      buildingDamageMultiplier: 1000
-      status: allure-0t-thermal2
-      statusDuration: 1
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      hitEffect: none
-      shootEffect: none 
-      smokeEffect: none 
-    }
-  }
-  {
-    name: hellfire-broadside-smol
-    layerOffset: 2
-    controllable: false 
-    autoTarget: true
-    targetInterval: 10
-    targetSwitchInterval: 10
-    flipSprite: true
-    otherSide: 12
-    mirror: false
-    alternate: true
-    x: -38
-    y: 10
-    rotate: true
-    rotateSpeed: 14
-    baseRotation: 90
-    reload: 5
-    recoil: 3
-    recoilTime: 30
-    shootY: 2
-    shootSound: lasershoot
-    parts: [
-      { 
-        type: RegionPart
-        suffix: -flare
-        outline: false
-        blending: additive
-        layer: 93
-        color: 7382f0bb
-      }
-    ]
-    bullet: {
-      type: ContinuousFlameBulletType
-      drawFlare: false
-      lifetime: 15
-      pierceCap: 1
-      length: 240
-      width: 4
-      damage: 0.15
-      buildingDamageMultiplier: 1000
-      status: allure-0t-thermal2
-      statusDuration: 1
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      hitEffect: none
-      shootEffect: none 
-      smokeEffect: none 
-    }
-  }
-  {
-    name: hellfire-broadside-smol
-    layerOffset: 2
-    controllable: false 
-    autoTarget: true
-    targetInterval: 10
-    targetSwitchInterval: 10
-    flipSprite: true
-    otherSide: 13
-    mirror: false
-    alternate: true
-    x: -48
-    y: 0
-    rotate: true
-    rotateSpeed: 14
-    baseRotation: 90
-    reload: 5
-    recoil: 3
-    recoilTime: 30
-    shootY: 2
-    shootSound: lasershoot
-    parts: [
-      { 
-        type: RegionPart
-        suffix: -flare
-        outline: false
-        blending: additive
-        layer: 93
-        color: 7382f0bb
-      }
-    ]
-    bullet: {
-      type: ContinuousFlameBulletType
-      drawFlare: false
-      lifetime: 15
-      pierceCap: 1
-      length: 240
-      width: 4
-      damage: 0.15
-      buildingDamageMultiplier: 1000
-      status: allure-0t-thermal2
-      statusDuration: 1
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      hitEffect: none
-      shootEffect: none 
-      smokeEffect: none 
-    }
-  }
-  {
-    name: hellfire-broadside-smol
-    layerOffset: 2
-    controllable: false 
-    autoTarget: true
-    targetInterval: 10
-    targetSwitchInterval: 10
-    flipSprite: true
-    otherSide: 14
-    mirror: false
-    alternate: true
-    x: -48
-    y: -20
-    rotate: true
-    rotateSpeed: 14
-    baseRotation: 90
-    reload: 5
-    recoil: 3
-    recoilTime: 30
-    shootY: 2
-    shootSound: lasershoot
-    parts: [
-      { 
-        type: RegionPart
-        suffix: -flare
-        outline: false
-        blending: additive
-        layer: 93
-        color: 7382f0bb
-      }
-    ]
-    bullet: {
-      type: ContinuousFlameBulletType
-      drawFlare: false
-      lifetime: 15
-      pierceCap: 1
-      length: 240
-      width: 4
-      damage: 0.15
-      buildingDamageMultiplier: 1000
-      status: allure-0t-thermal2
-      statusDuration: 1
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      hitEffect: none
-      shootEffect: none 
-      smokeEffect: none 
-    }
-  }
-  {
-    name: hellfire-broadside-smol
-    layerOffset: 2
-    controllable: false 
-    autoTarget: true
-    targetInterval: 10
-    targetSwitchInterval: 10
-    flipSprite: true
-    otherSide: 15
-    mirror: false
-    alternate: true
-    x: -48
-    y: -44
-    rotate: true
-    rotateSpeed: 14
-    baseRotation: 90
-    reload: 5
-    recoil: 3
-    recoilTime: 30
-    shootY: 2
-    shootSound: lasershoot
-    parts: [
-      { 
-        type: RegionPart
-        suffix: -flare
-        outline: false
-        blending: additive
-        layer: 93
-        color: 7382f0bb
-      }
-    ]
-    bullet: {
-      type: ContinuousFlameBulletType
-      drawFlare: false
-      lifetime: 15
-      pierceCap: 1
-      length: 240
-      width: 4
-      damage: 0.15
-      buildingDamageMultiplier: 1000
-      status: allure-0t-thermal2
-      statusDuration: 1
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      hitEffect: none
-      shootEffect: none 
-      smokeEffect: none 
-    }
-  }
-  {
-    name: hellfire-broadside-smol
-    layerOffset: 2
-    controllable: false 
-    autoTarget: true
-    targetInterval: 10
-    targetSwitchInterval: 10
-    flipSprite: true
-    otherSide: 8
-    mirror: false
-    alternate: true
-    x: -48
-    y: -52
-    rotate: true
-    rotateSpeed: 14
-    baseRotation: 90
-    reload: 5
-    recoil: 3
-    recoilTime: 30
-    shootY: 2
-    shootSound: lasershoot
-    parts: [
-      { 
-        type: RegionPart
-        suffix: -flare
-        outline: false
-        blending: additive
-        layer: 93
-        color: 7382f0bb
-      }
-    ]
-    bullet: {
-      type: ContinuousFlameBulletType
-      drawFlare: false
-      lifetime: 15
-      pierceCap: 1
-      length: 240
-      width: 4
-      damage: 0.15
-      buildingDamageMultiplier: 1000
-      status: allure-0t-thermal2
-      statusDuration: 1
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      hitEffect: none
-      shootEffect: none 
-      smokeEffect: none 
-    }
-  }
-  //left broadside piercing shrapnel
-  {
-    x: 56
-    y: 12
-    baseRotation: -75
-    shootCone: 22.5
-    reload: 300
-    mirror: false
-    otherSide: 17
-    shootSound: laser
-    shoot: {
-      type: ShootAlternate
-      shots: 8
-      shotDelay: 10
-      barrels: 8
-      spread: -24
-    }
-    shootStatus: slow
-    shootStatusDuration: 300
-    bullet: {
-      type: LaserBulletType
-      damage: 1000
-      length: 350
-      width: 56
-      lifetime: 120
-      status: allure-0b-energy4
-      statusDuration: 1
-      colors: [
-        90a2fc40,
-        90a2fc, ffffff
-      ]
-      lightningSpacing: 28
-      lightningLength: 2
-      lightningColor: 90a2fc
-      lightningDelay: 2
-      lightningType: {
-        type: ShrapnelBulletType
-        damage: 100
-        length: 18
-        width: 8
-        lifetime: 35
-        serrations: 0
-        fromColor: 90a2fc
-        toColor: 90a2fc
-        status: allure-0b-energy3
-        statusDuration: 2
-      }
-    }
-  }
-  {
-    x: 56
-    y: 12
-    baseRotation: -75
-    shootCone: 22.5
-    reload: 300
-    mirror: false
-    otherSide: 18
-    flipSprite: true
-    shootSound: missile
-    shoot: {
-      type: ShootAlternate
-      shots: 32
-      shotDelay: 2
-      barrels: 16
-      spread: -12
-    }
-    shootStatus: slow
-    shootStatusDuration: 300
-    bullet: {
-      keepVelocity: false
-      damage: 2500
-      speed: 1
-      drag: -0.03
-      lifetime: 110
-      status: allure-0b-energy3
-      statusDuration: 2
-      homingPower: 0.02
-      homingRange: 240
-      width: 12
-      height: 36
-      frontColor: ffffff
-      backColor: 7382f0
-      hitColor: 7382f0
-      trailColor: 7382f0
-      trailWidth: 2
-      trailLength: 18
-      weaveScale: 6
-      weaveMag: 3.6
-      hitEffect: hitBulletColor
-      despawnEffect: hitBulletColor
-      smokeEffect: hitBulletColor
-      shootEffect: {
-        layer: 105
-        lightOpacity: 0.25
-        lightScl: 1
-        length: 0
-        lifetime: 10
-        particles: 1
-        cone: 0
-        region: allure-shootspike
-        sizeFrom: 20
-        sizeTo: 0
-        colorFrom: ffffff
-        colorTo: 7382f0
-      }
-    }
-  }
-  {
-    x: 56
-    y: 12
-    baseRotation: -75
-    shootCone: 22.5
-    reload: 300
-    mirror: false
-    otherSide: 16
-    flipSprite: true
-    shootSound: sap
-    shoot: {
-      type: ShootMulti
-      source: {
-        type: ShootAlternate
-        spread: -36
-        shots: 6
-        barrels: 6
-      }
-      dest: [
-        {
-          type: ShootHelix
-          shots: 12
-          shotDelay: 2
-          scl: 8
-          mag: 3
-        }
-      ]
-    }
-    shootStatus: slow
-    shootStatusDuration: 300
-    bullet: {
-      speed: 6
-      lifetime: 90
-      damage: 100
-      homingPower: 0.05
-      homingRange: 80
-      pierce: true
-      pierceBuilding: true
-      pierceCap: 2
-      status: allure-0b-energy2
-      statusDuration: 1
-      sprite: circle-bullet
-      shrinkY: 0
-      width: 4
-      height: 10
-      frontColor: 90a2fc
-      backColor: 7382f0
-      hitColor: 7382f0
-      trailColor: 90a2fc
-      trailLength: 14
-      trailWidth: 1.4
-      hitEffect: hitBulletColor
-      despawnEffect: hitBulletColor
-      smokeEffect: none
-      shootEffect: {
-        layer: 105
-        lightOpacity: 0.25
-        lightScl: 1
-        length: 0
-        lifetime: 10
-        particles: 1
-        cone: 0
-        region: allure-shootspike
-        sizeFrom: 20
-        sizeTo: 0
-        colorFrom: ffffff
-        colorTo: 7382f0
-      }
-    }
-  }
-  //left broadside piercing shrapnel
-  {
-    x: -56
-    y: 12
-    baseRotation: 75
-    shootCone: 22.5
-    reload: 300
-    mirror: false
-    otherSide: 20
-    shootSound: laser
-    shoot: {
-      type: ShootAlternate
-      shots: 8
-      shotDelay: 10
-      barrels: 8
-      spread: 24
-    }
-    shootStatus: slow
-    shootStatusDuration: 300
-    bullet: {
-      type: LaserBulletType
-      damage: 1000
-      length: 350
-      width: 56
-      lifetime: 120
-      status: allure-0b-energy4
-      statusDuration: 1
-      colors: [
-        90a2fc40,
-        90a2fc, ffffff
-      ]
-      lightningSpacing: 28
-      lightningLength: 2
-      lightningColor: 90a2fc
-      lightningDelay: 2
-      lightningType: {
-        type: ShrapnelBulletType
-        damage: 100
-        length: 18
-        width: 8
-        lifetime: 35
-        serrations: 0
-        fromColor: 90a2fc
-        toColor: 90a2fc
-        status: allure-0b-energy3
-        statusDuration: 2
-      }
-    }
-  }
-  {
-    x: -56
-    y: 12
-    baseRotation: 75
-    shootCone: 22.5
-    reload: 300
-    mirror: false
-    otherSide: 21
-    flipSprite: true
-    shootSound: missile
-    shoot: {
-      type: ShootAlternate
-      shots: 32
-      shotDelay: 2
-      barrels: 16
-      spread: 12
-    }
-    shootStatus: slow
-    shootStatusDuration: 300
-    bullet: {
-      keepVelocity: false
-      damage: 2500
-      speed: 1
-      drag: -0.03
-      lifetime: 110
-      status: allure-0b-energy3
-      statusDuration: 2
-      homingPower: 0.02
-      homingRange: 240
-      width: 12
-      height: 36
-      frontColor: ffffff
-      backColor: 7382f0
-      hitColor: 7382f0
-      trailColor: 7382f0
-      trailWidth: 2
-      trailLength: 18
-      weaveScale: 6
-      weaveMag: 3.6
-      hitEffect: hitBulletColor
-      despawnEffect: hitBulletColor
-      smokeEffect: hitBulletColor
-      shootEffect: {
-        layer: 105
-        lightOpacity: 0.25
-        lightScl: 1
-        length: 0
-        lifetime: 10
-        particles: 1
-        cone: 0
-        region: allure-shootspike
-        sizeFrom: 20
-        sizeTo: 0
-        colorFrom: ffffff
-        colorTo: 7382f0
-      }
-    }
-  }
-  {
-    x: -56
-    y: 12
-    baseRotation: 75
-    shootCone: 22.5
-    reload: 300
-    mirror: false
-    otherSide: 19
-    flipSprite: true
-    shootSound: sap
-    shoot: {
-      type: ShootMulti
-      source: {
-        type: ShootAlternate
-        spread: 36
-        shots: 6
-        barrels: 6
-      }
-      dest: [
-        {
-          type: ShootHelix
-          shots: 12
-          shotDelay: 2
-          scl: 8
-          mag: 3
-        }
-      ]
-    }
-    shootStatus: slow
-    shootStatusDuration: 300
-    bullet: {
-      speed: 6
-      lifetime: 90
-      damage: 100
-      homingPower: 0.05
-      homingRange: 80
-      pierce: true
-      pierceBuilding: true
-      pierceCap: 2
-      status: allure-0b-energy2
-      statusDuration: 1
-      sprite: circle-bullet
-      shrinkY: 0
-      width: 4
-      height: 10
-      frontColor: 90a2fc
-      backColor: 7382f0
-      hitColor: 7382f0
-      trailColor: 90a2fc
-      trailLength: 14
-      trailWidth: 1.4
-      hitEffect: hitBulletColor
-      despawnEffect: hitBulletColor
-      smokeEffect: none
-      shootEffect: {
-        layer: 105
-        lightOpacity: 0.25
-        lightScl: 1
-        length: 0
-        lifetime: 10
-        particles: 1
-        cone: 0
-        region: allure-shootspike
-        sizeFrom: 20
-        sizeTo: 0
-        colorFrom: ffffff
-        colorTo: 7382f0
-      }
-    }
-  }
-  //top railgun
-  {
-    name: hellfire-spinal-upper
-    shadow: 210
-    mirror: false
-    alternate: true
-    otherSide: 23
     x: 0
-    y: -40
-    shootY: 64
-    layerOffset: 7
-    rotate: true
-    rotateSpeed: 0.6
-    reload: 110
-    recoil: 24
-    recoilTime: 100
+    y: 0
+    shootY: 0
+    reload: 450
+    shootCone: 45
+    shake: 16
     shoot: {
-      firstShotDelay: 40
+      firstShotDelay: 150
     }
-    shootWarmupSpeed: 0.008
-    shootSound: shootSmite
-    chargeSound: lasercharge2
-    cooldownTime: 220
-    minWarmup: 0.999
-    linearWarmup: true 
-    shake: 12
-    parts: [
-      {
-        //still no -outline support...
-        type: RegionPart
-        suffix: -line
-        layer: 95
-        outline: false
-      }
-      {
-        type: RegionPart
-        suffix: -barrel
-        outline: false
-        under: true
-        y: 67
-        progress: recoil
-        moveY: -36
-        layer: 96
-        heatColor: 90a2fc
-      }
-      { 
-        type: RegionPart
-        suffix: -flare2
-        outline: false
-        layer: 97.07
-        color: 00000000
-        colorTo: 7382f0
-      }
-      { 
-        type: RegionPart
-        suffix: -flare
-        outline: false
-        blending: additive
-        layer: 97.08
-        color: 00000000
-        colorTo: 7382f0
-      }
-      { 
-        type: RegionPart
-        suffix: -flare
-        outline: false
-        blending: additive
-        layer: 97.08
-        color: 00000000
-        colorTo: 7382f015
-        heatLight: true
-      }
-      { 
-        type: RegionPart
-        suffix: -flare
-        outline: false
-        blending: additive
-        layer: 95.07
-        color: 000000
-        colorTo: ffffff
-        progress: {
-          type: heat
-          ops: [
+    shootStatus: slow
+    shootStatusDuration: 465
+    shootSoundVolume: 1.5
+    shootSound: beamPlasma
+    shootWarmupSpeed: 0.01
+    smoothReloadSpeed: 0.00333
+    minWarmup: 0.9
+    mirror: false
+    continuous: true
+    rotate: true
+    rotateSpeed: 0
+    bullet: {
+      type: ContinuousLaserBulletType
+      shake: 8
+      damage: 100
+      hitEffect: hitLancer
+      fadeTime: 5
+      length: 640
+      width: 32
+      lifetime: 300
+      laserAbsorb: false
+      colors: [
+        7382f044
+        7382f0
+        ffffff
+      ]
+      chargeEffect: [
+        {
+          particles: 16
+          length: 100
+          baseLength: 15
+          cone: 25
+          lifetime: 80
+          sizeFrom: 24
+          sizeTo: 0
+          colorFrom: 7382f000
+          colorTo: 7382f088
+          interp: pow2Out
+          sizeInterp: linear
+        }
+        {
+          type: SoundEffect
+          minVolume: 1.5
+          maxVolume: 1.5
+          minPitch: 1.25
+          maxPitch: 1.25
+          sound: coreLaunch
+          effect: {
+            type: SoundEffect
+            minVolume: 3
+            maxVolume: 3
+            minPitch: 0.33
+            maxPitch: 0.33
+            sound: chargeVela
+            effect: [
+              {
+                type: SoundEffect
+                minVolume: 3
+                maxVolume: 3
+                minPitch: 0.5
+                maxPitch: 0.5
+                sound: chargeLancer
+                effect: none
+              }
+              {
+                type: SoundEffect
+                startDelay: 40
+                minVolume: 3
+                maxVolume: 3
+                minPitch: 0.75
+                maxPitch: 0.75
+                sound: chargeLancer
+                effect: none
+              }
+              {
+                type: SoundEffect
+                startDelay: 80
+                minVolume: 3
+                maxVolume: 3
+                minPitch: 1
+                maxPitch: 1
+                sound: chargeLancer
+                effect: none
+              }
+            ]
+          }
+        }
+      ]
+      shootEffect: [
+        {
+          followParent: false
+          particles: 1
+          cone: 0
+          length: 0
+          lifetime: 60
+          sizeFrom: 480
+          sizeTo: 0
+          colorTo: 7382f000
+          region: allure-shootspike
+        }
+        {
+          rotWithParent: true
+          particles: 1
+          cone: 0
+          length: 0
+          lifetime: 360
+          sizeFrom: 360
+          sizeTo: 0
+          layer: 130
+          colorFrom: ffffff88
+          colorTo: 7382f044
+          region: circle-shadow
+          interp: pow3In
+        }
+        {
+          line: true
+          particles: 20
+          cone: 25
+          length: 360
+          lifetime: 60
+          interp: pow3Out
+          sizeInterp: linear
+          colorTo: 7382f088
+          lenFrom: 32
+          lenTo: 0
+          strokeFrom: 8
+          strokeTo: 4
+        }
+        {
+          type: WaveEffect
+          lifetime: 15
+          sizeFrom: 80
+          sizeTo: 240
+          strokeFrom: 32
+          colorTo: 7382f0
+          interp: pow2Out
+        }
+        {
+          type: SoundEffect
+          minVolume: 3
+          maxVolume: 3
+          minPitch: 1
+          maxPitch: 1
+          sound: shootMeltdown
+          effect: none
+        }
+        {
+          type: SoundEffect
+          minVolume: 2
+          maxVolume: 2
+          minPitch: 1
+          maxPitch: 1
+          sound: explosionReactorNeoplasm
+          effect: none
+        }
+      ]
+      status: allure-emp
+      statusDuration: 6
+      incendChance: 0
+      bulletInterval: 3
+      intervalBullets: 3
+      intervalRandomSpread: 0
+      intervalBullet: {
+        type: EmptyBulletType
+        lifetime: 0
+        hitEffect: none
+        despawnEffect: {
+          type: RadialEffect
+          amount: 1
+          lengthOffset: -30
+          effect: [
             {
-              op: compress
-              start: 0.75
-              end: 1
+              type: RadialEffect
+              amount: 1
+              lengthOffset: 30
+              rotationOffset: -90
+              effect: {
+                rotWithParent: true
+                line: true
+                particles: 2
+                cone: 0
+                baseRotation: 90
+                length: 360
+                lifetime: 40
+                interp: pow3In
+                sizeInterp: pow5In
+                colorTo: 7382f088
+                lenFrom: 32
+                lenTo: 0
+                strokeFrom: 8
+                strokeTo: 2
+                layer: 93
+              }
             }
             {
-              op: blend
-              other: charge
-              amount: 0.5
+              type: RadialEffect
+              amount: 1
+              lengthOffset: -30
+              rotationOffset: -90
+              effect: {
+                rotWithParent: true
+                line: true
+                particles: 2
+                cone: 0
+                baseRotation: 90
+                length: 360
+                lifetime: 40
+                interp: pow3In
+                sizeInterp: pow5In
+                colorTo: 7382f088
+                lenFrom: 32
+                lenTo: 0
+                strokeFrom: 8
+                strokeTo: 2
+                layer: 93
+              }
             }
           ]
         }
-      }
-      {
-        type: HaloPart
-        tri: true
-        x: 12
-        y: 30
-        triLength: 0
-        triLengthTo: 18
-        shapes: 1
-        radius: 0
-        radiusTo: 6
-        color: 7382f0
-        shapeRotation: 90
-        layer: 100
-        progress: {
-          type: charge 
-          op: compress
-          start: 0
-          end: 0.5
-        }
-      }
-      {
-        type: HaloPart
-        tri: true
-        x: -12
-        y: 30
-        triLength: 0
-        triLengthTo: 18
-        shapes: 1
-        radius: 0
-        radiusTo: 6
-        color: 7382f0
-        shapeRotation: -90
-        layer: 100
-        progress: {
-          type: charge 
-          op: compress
-          start: 0
-          end: 0.5
-        }
-      }
-      {
-        type: HaloPart
-        tri: true
-        x: 12
-        y: 48
-        triLength: 0
-        triLengthTo: 12
-        shapes: 1
-        radius: 0
-        radiusTo: 4
-        color: 7382f0
-        shapeRotation: 90
-        layer: 100
-        progress: {
-          type: charge 
-          op: compress
-          start: 0.25
-          end: 0.75
-        }
-      }
-      {
-        type: HaloPart
-        tri: true
-        x: -12
-        y: 48
-        triLength: 0
-        triLengthTo: 12
-        shapes: 1
-        radius: 0
-        radiusTo: 4
-        color: 7382f0
-        shapeRotation: -90
-        layer: 100
-        progress: {
-          type: charge 
-          op: compress
-          start: 0.25
-          end: 0.75
-        }
-      }
-      {
-        type: HaloPart
-        tri: true
-        x: 12
-        y: 60
-        triLength: 0
-        triLengthTo: 6
-        shapes: 1
-        radius: 0
-        radiusTo: 2
-        color: 7382f0
-        shapeRotation: 90
-        layer: 100
-        progress: {
-          type: charge 
-          op: compress
-          start: 0.5
-          end: 1
-        }
-      }
-      {
-        type: HaloPart
-        tri: true
-        x: -12
-        y: 60
-        triLength: 0
-        triLengthTo: 6
-        shapes: 1
-        radius: 0
-        radiusTo: 2
-        color: 7382f0
-        shapeRotation: -90
-        layer: 100
-        progress: {
-          type: charge 
-          op: compress
-          start: 0.5
-          end: 1
-        }
-      }
-    ]
-    bullet: {
-      pierce: true 
-      pierceBuilding: true
-      pierceDamageFactor: 0.01
-      hitSize: 24
-      speed: 30
-      drag: 0.01
-      lifetime: 60
-      damage: 1100
-      status: allure-0b-energy3
-      statusDuration: 8
-      sprite: allure-bolt
-      width: 60
-      height: 60
-      layer: 110
-      frontColor: ffffff
-      backColor: 7382f0
-      shrinkY: 0
-      trailLength: 30 
-      trailWidth: 5
-      trailColor: 7382f0
-      trailChance: 0
-      trailInterval: 1
-      trailRotation: true
-      trailEffect: [
-        {
-          line: true
-          cone: 0
-          baseRotation: 135
-          length: 60
-          randLength: false
-          lifetime: 45
-          particles: 1
-          lenFrom: 24
-          lenTo: 0
-          strokeFrom: 3
-          strokeTo: 3
-          colorTo: 7382f0
-          interp: pow2Out
-          sizeInterp: linear
-        }
-        {
-          line: true
-          cone: 0
-          baseRotation: -135
-          length: 60
-          randLength: false
-          lifetime: 45
-          particles: 1
-          lenFrom: 24
-          lenTo: 0
-          strokeFrom: 3
-          strokeTo: 3
-          colorTo: 7382f0
-          interp: pow2Out
-          sizeInterp: linear
-        }
-      ]
-      smokeEffect: none
-      shootEffect: [
-        {
-          layer: 105
-          lightOpacity: 0.25
-          lightScl: 1
-          type: ParticleEffect
-          length: 0
-          baseLength: 30
-          randLength: false
-          baseRotation: 30
-          lifetime: 45
-          particles: 1
-          cone: 0
-          region: allure-shootspike
-          sizeFrom: 60
-          sizeTo: 30
-          colorFrom: 7382f0
-          colorTo: 7382f000
-        }
-        {
-          layer: 105
-          lightOpacity: 0.25
-          lightScl: 1
-          type: ParticleEffect
-          length: 0
-          baseLength: 30
-          randLength: false
-          baseRotation: -30
-          lifetime: 45
-          particles: 1
-          cone: 0
-          region: allure-shootspike
-          sizeFrom: 60
-          sizeTo: 30
-          colorFrom: 7382f0
-          colorTo: 7382f000
-        }
-        {
-          layer: 109
-          lightOpacity: 0.25
-          lightScl: 1
-          type: ParticleEffect
-          length: 0
-          baseLength: 30
-          randLength: false
-          baseRotation: 30
-          lifetime: 45
-          particles: 1
-          cone: 0
-          region: allure-shootspike
-          sizeFrom: 30
-          sizeTo: 15
-          colorFrom: 000000
-          colorTo: 000000
-        }
-        {
-          layer: 109
-          lightOpacity: 0.25
-          lightScl: 1
-          type: ParticleEffect
-          length: 0
-          baseLength: 30
-          randLength: false
-          baseRotation: -30
-          lifetime: 45
-          particles: 1
-          cone: 0
-          region: allure-shootspike
-          sizeFrom: 30
-          sizeTo: 15
-          colorFrom: 000000
-          colorTo: 000000
-        }
-        {
-          lightOpacity: 0.25
-          lightScl: 1
-          type: ParticleEffect
-          length: 0
-          baseLength: 20
-          randLength: false
-          lifetime: 45
-          particles: 1
-          cone: 0
-          region: allure-shootspike
-          sizeFrom: 130
-          sizeTo: 60
-          colorFrom: 7382f0
-          colorTo: 7382f000
-        }
-        {
-          type: RadialEffect
-          amount: 1
-          lengthOffset: -40
-          effect: {
-            type: RadialEffect
-            amount: 1
-            lengthOffset: 8
-            rotationOffset: -90
-            effect: {
-              line: true
-              particles: 20
-              cone: 0
-              baseRotation: 90
-              length: 100
-              lifetime: 35
-              interp: pow3Out
-              sizeInterp: pow2In
+        hitSound: blockExplode3
+        hitSoundVolume: 0.334
+        fragBullets: 2
+        fragRandomSpread: 4
+        fragOffsetMin: 500
+        fragOffsetMax: 600
+        fragVelocityMin: 1
+        fragVelocityMax: 1.1
+        fragBullet: {
+          speed: 12
+          lifetime: 100
+          drag: 0.01
+          damage: 20
+          pierce: true
+          pierceBuilding: true
+          pierceCap: 20
+          homingRange: 40
+          homingDelay: 20
+          homingPower: 0.04
+          status: allure-0b-energy3
+          statusDuration: 5
+          hittable: false
+          absorbable: false
+          reflectable: false
+          sprite: circle-bullet
+          width: 18
+          height: 96
+          shrinkY: 1
+          frontColor: ffffff
+          backColor: 7382f0
+          trailColor: 7382f0
+          trailLength: 30
+          trailWidth: 8
+          despawnEffect: none
+          hitEffect: {
+            particles: 3
+            length: 6
+            lifetime: 25
+            sizeFrom: 3
+            sizeTo: 0
+            colorFrom: ffffff
+            colorTo: 7382f0
+            sizeInterp: pow2In
+          }
+          bulletInterval: 10
+          intervalBullets: 1
+          intervalRandomSpread: 15
+          intervalDelay: 50
+          intervalBullet: {
+            createChance: 0.33
+            speed: 6
+            lifetime: 100
+            drag: 0.01
+            damage: 10
+            pierce: true
+            pierceBuilding: true
+            pierceCap: 20
+            homingRange: 80
+            homingPower: 0.08
+            status: allure-0b-energy2
+            statusDuration: 10
+            hittable: false
+            absorbable: false
+            reflectable: false
+            sprite: circle-bullet
+            width: 9
+            height: 48
+            shrinkY: 1
+            frontColor: ffffff
+            backColor: 7382f0
+            trailColor: 7382f0
+            trailLength: 20
+            trailWidth: 4
+            despawnEffect: none
+            hitEffect: {
+              particles: 1
+              length: 6
+              lifetime: 25
+              sizeFrom: 3
+              sizeTo: 0
+              colorFrom: ffffff
               colorTo: 7382f0
-              lenFrom: 8
-              lenTo: 0
-              strokeFrom: 2
-              strokeTo: 1
+              sizeInterp: pow2In
             }
           }
         }
-        {
-          type: RadialEffect
-          amount: 1
-          lengthOffset: -40
-          effect: {
-            type: RadialEffect
-            amount: 1
-            lengthOffset: -8
-            rotationOffset: -90
-            effect: {
-              line: true
-              particles: 20
-              cone: 0
-              baseRotation: 90
-              length: 100
-              lifetime: 35
-              interp: pow3Out
-              sizeInterp: pow2In
-              colorTo: 7382f0
-              lenFrom: 8
-              lenTo: 0
-              strokeFrom: 2
-              strokeTo: 1
-            }
-          }
-        }
-        {
-          type: WaveEffect
-          lifetime: 50
-          interp: pow5Out
-          sizeFrom: 0
-          sizeTo: 80
-          strokeFrom: 4
-          strokeTo: 0
-          colorTo: 7382f0
-        }
-      ]
-      fragOnHit: false 
-      setDefaults: false 
-      despawnHit: false 
-      fragBullets: 3
-      fragRandomSpread: 0
-      fragSpread: 35
-      fragBullet: {
-        type: ShrapnelBulletType 
-        lifetime: 120
-        damage: 1250 
-        length: 120
-        width: 18
-        serrations: 0
-        status: allure-0b-energy4 
-        statusDuration: 3
-        toColor: 7382f0
       }
     }
+    parts: [
+      {
+        type: FlarePart
+        sides: 2
+        color1: 7382f0bb
+        radius: 0
+        radiusTo: 360
+        stroke: 24
+        innerRadScl: 0.75
+        y: 6
+        progress: {
+          type: heat
+          op: blend
+          other: charge
+          amount: 0.1
+        }
+        layer: 101
+      }
+      {
+        type: FlarePart
+        sides: 2
+        color1: 00000000
+        radius: 0
+        radiusTo: 96
+        stroke: 96
+        y: 6
+        progress: {
+          type: heat
+          op: blend
+          other: charge
+          amount: 0.1
+        }
+        layer: 101
+      }
+      //flames
+      {
+        name: allure-shootspike
+        outline: false
+        blending: additive
+        color: 7382f088
+        rotation: 90
+        x: -12
+        moveX: 24
+        xScl: 0.2
+        yScl: 1.5
+        growX: -0.2
+        growY: -0.2
+        progress: {
+          type: time
+          ops: [
+            {
+              op: loop
+              time: 16
+            }
+            {
+              op: curve
+              interp: pow2
+            }
+          ]
+        }
+        growProgress: {
+          type: time
+          ops: [
+            {
+              op: loop
+              time: 16
+            }
+            {
+              op: curve
+              interp: pow2
+            }
+            {
+              op: slope
+            }
+          ]
+        }
+        moves: [
+          {
+            gx: 3
+            progress: {
+              type: charge
+              ops: [
+                {
+                  op: compress
+                  start: 0
+                  end: 0.1
+                }
+                {
+                  op: curve
+                  interp: slope
+                }
+              ]
+            }
+          }
+          {
+            gx: 8
+            progress: {
+              type: charge
+              ops: [
+                {
+                  op: compress
+                  start: 0.1
+                  end: 1
+                }
+                {
+                  op: curve
+                  interp: pow5In
+                }
+              ]
+            }
+          }
+        ]
+        children: [
+          {
+            name: allure-shootspike
+            layer: 94
+            outline: false
+            blending: additive
+            xScl: 0
+            growX: 0.75
+            growY: 0.5
+            growProgress: {
+              type: charge
+              op: curve
+              interp: pow3In
+            }
+          }
+          {
+            type: FlarePart
+            sides: 2
+            color1: 7382f0bb
+            radius: 0
+            radiusTo: 120
+            stroke: 8
+            innerRadScl: 0.75
+            progress: charge
+            layer: 101
+          }
+          {
+            type: FlarePart
+            sides: 2
+            color1: 00000000
+            radius: 0
+            radiusTo: 24
+            stroke: 24
+            progress: charge
+            layer: 102
+          }
+        ]
+      }
+      {
+        name: allure-shootspike
+        outline: false
+        blending: additive
+        color: 7382f088
+        rotation: 90
+        x: 12
+        moveX: -24
+        xScl: 0.2
+        yScl: 1.5
+        growX: 0.2
+        growY: 0.2
+        progress: {
+          type: time
+          ops: [
+            {
+              op: loop
+              time: 16
+            }
+            {
+              op: curve
+              interp: pow2
+            }
+          ]
+        }
+        growProgress: {
+          type: time
+          ops: [
+            {
+              op: loop
+              time: 16
+            }
+            {
+              op: curve
+              interp: pow2
+            }
+            {
+              op: slope
+            }
+          ]
+        }
+        moves: [
+          {
+            gx: 3
+            progress: {
+              type: charge
+              ops: [
+                {
+                  op: compress
+                  start: 0
+                  end: 0.1
+                }
+                {
+                  op: curve
+                  interp: slope
+                }
+              ]
+            }
+          }
+          {
+            gx: 8
+            progress: {
+              type: charge
+              ops: [
+                {
+                  op: compress
+                  start: 0.1
+                  end: 1
+                }
+                {
+                  op: curve
+                  interp: pow5In
+                }
+              ]
+            }
+          }
+        ]
+        children: [
+          {
+            name: allure-shootspike
+            layer: 94
+            outline: false
+            blending: additive
+            xScl: 0
+            growX: 0.75
+            growY: 0.5
+            growProgress: {
+              type: charge
+              op: curve
+              interp: pow3In
+            }
+          }
+          {
+            type: FlarePart
+            sides: 2
+            color1: 7382f0bb
+            radius: 0
+            radiusTo: 120
+            stroke: 8
+            innerRadScl: 0.75
+            progress: charge
+            layer: 101
+          }
+          {
+            type: FlarePart
+            sides: 2
+            color1: 00000000
+            radius: 0
+            radiusTo: 24
+            stroke: 24
+            progress: charge
+            layer: 102
+          }
+        ]
+      }
+      {
+        name: allure-shootspike
+        outline: false
+        blending: additive
+        color: 7382f088
+        rotation: 90
+        x: 0
+        moveX: -12
+        xScl: 0.4
+        yScl: 1.5
+        growX: -0.2
+        growY: -0.2
+        progress: {
+          type: time
+          ops: [
+            {
+              op: loop
+              time: 16
+            }
+            {
+              op: compress
+              start: 0
+              end: 0.5
+            }
+            {
+              op: curve
+              interp: pow2Out
+            }
+          ]
+        }
+        growProgress: {
+          type: time
+          ops: [
+            {
+              op: loop
+              time: 16
+            }
+            {
+              op: compress
+              start: 0
+              end: 0.5
+            }
+            {
+              op: curve
+              interp: pow2Out
+            }
+          ]
+        }
+        moves: [
+          {
+            x: 12
+            gx: -0.2
+            progress: {
+              type: time
+              ops: [
+                {
+                  op: loop
+                  time: 16
+                }
+                {
+                  op: compress
+                  start: 0.5
+                  end: 1
+                }
+                {
+                  op: curve
+                  interp: pow2In
+                }
+              ]
+            }
+          }
+          {
+            gx: 3
+            progress: {
+              type: charge
+              ops: [
+                {
+                  op: compress
+                  start: 0
+                  end: 0.1
+                }
+                {
+                  op: curve
+                  interp: slope
+                }
+              ]
+            }
+          }
+          {
+            gx: 8
+            progress: {
+              type: charge
+              ops: [
+                {
+                  op: compress
+                  start: 0.1
+                  end: 1
+                }
+                {
+                  op: curve
+                  interp: pow5In
+                }
+              ]
+            }
+          }
+        ]
+        children: [
+          {
+            name: allure-shootspike
+            layer: 94
+            outline: false
+            blending: additive
+            xScl: 0
+            growX: 0.75
+            growY: 0.5
+            growProgress: {
+              type: charge
+              op: curve
+              interp: pow3In
+            }
+          }
+          {
+            type: FlarePart
+            sides: 2
+            color1: 7382f0bb
+            radius: 0
+            radiusTo: 120
+            stroke: 8
+            innerRadScl: 0.75
+            progress: charge
+            layer: 101
+          }
+          {
+            type: FlarePart
+            sides: 2
+            color1: 00000000
+            radius: 0
+            radiusTo: 24
+            stroke: 24
+            progress: charge
+            layer: 102
+          }
+        ]
+      }
+      {
+        name: allure-shootspike
+        outline: false
+        blending: additive
+        color: 7382f088
+        rotation: 90
+        x: 0
+        moveX: 12
+        xScl: 0
+        yScl: 1.5
+        growX: 0.2
+        growY: 0.2
+        progress: {
+          type: time
+          ops: [
+            {
+              op: loop
+              time: 16
+            }
+            {
+              op: compress
+              start: 0
+              end: 0.5
+            }
+            {
+              op: curve
+              interp: pow2Out
+            }
+          ]
+        }
+        growProgress: {
+          type: time
+          ops: [
+            {
+              op: loop
+              time: 16
+            }
+            {
+              op: compress
+              start: 0
+              end: 0.5
+            }
+            {
+              op: curve
+              interp: pow2Out
+            }
+          ]
+        }
+        moves: [
+          {
+            x: -12
+            gx: 0.2
+            progress: {
+              type: time
+              ops: [
+                {
+                  op: loop
+                  time: 16
+                }
+                {
+                  op: compress
+                  start: 0.5
+                  end: 1
+                }
+                {
+                  op: curve
+                  interp: pow2In
+                }
+              ]
+            }
+          }
+          {
+            gx: 3
+            progress: {
+              type: charge
+              ops: [
+                {
+                  op: compress
+                  start: 0
+                  end: 0.1
+                }
+                {
+                  op: curve
+                  interp: slope
+                }
+              ]
+            }
+          }
+          {
+            gx: 8
+            progress: {
+              type: charge
+              ops: [
+                {
+                  op: compress
+                  start: 0.1
+                  end: 1
+                }
+                {
+                  op: curve
+                  interp: pow5In
+                }
+              ]
+            }
+          }
+        ]
+        children: [
+          {
+            name: allure-shootspike
+            layer: 94
+            outline: false
+            blending: additive
+            xScl: 0
+            growX: 0.75
+            growY: 0.5
+            growProgress: {
+              type: charge
+              op: curve
+              interp: pow3In
+            }
+          }
+          {
+            type: FlarePart
+            sides: 2
+            color1: 7382f0bb
+            radius: 0
+            radiusTo: 120
+            stroke: 8
+            innerRadScl: 0.75
+            progress: charge
+            layer: 101
+          }
+          {
+            type: FlarePart
+            sides: 2
+            color1: 00000000
+            radius: 0
+            radiusTo: 24
+            stroke: 24
+            progress: charge
+            layer: 102
+          }
+        ]
+      }
+    ]
   }
-  //bot railgun
+  //railguns
   {
-    name: hellfire-spinal-upper
-    shadow: 160
-    mirror: false
-    alternate: true
-    otherSide: 22
-    flipSprite: true
+    name: hellfire-railgun
+    layerOffset: 3
     x: 0
-    y: -40
-    shootY: 64
-    layerOffset: -5
+    y: -50
+    mirror: false
     rotate: true
-    rotateSpeed: 0.6
-    reload: 110
-    recoil: 24
-    recoilTime: 100
-    shoot: {
-      firstShotDelay: 40
-    }
-    shootWarmupSpeed: 0.008
-    shootSound: shootSmite
-    chargeSound: lasercharge2
-    cooldownTime: 220
-    minWarmup: 0.999
-    linearWarmup: true 
-    shake: 9
+    rotateSpeed: 0.5
+    reload: 240
+    recoil: 32
+    recoilTime: 120
+    cooldownTime: 360
+    otherSide: 2
+    shake: 32
+    shadow: 240
+    shootY: 32
+    shootCone: 1
+    shootWarmupSpeed: 0.01
+    smoothReloadSpeed: 0.05
+    shootSound: shootConquer
     parts: [
       {
-        //still no -outline support...
-        type: RegionPart
-        suffix: -line
-        layer: 82.5
+        suffix: -upper
         outline: false
+        y: 30
+        layer: 95
+      }
+      {
+        suffix: -rails
+        outline: false
+        mirror: true
+        x: 27
+        y: 50
+        moveY: -75
+        layer: 95
+        progress: smoothReload
+      }
+      { 
+        type: RegionPart
+        suffix: -flare
+        outline: false
+        blending: additive
+        y: -15
+        layer: 96
+        color: 7382f0
+        colorTo: ffffff
       }
       {
         type: RegionPart
-        suffix: -barrel
+        x: 45.5
+        y: 8.5
+        layer: 95.5
+        suffix: -burn
         outline: false
-        layer: 83
-        y: 67
-        progress: recoil
-        moveY: -36
-        heatColor: 7382f0
+        mirror: true
+        blending: additive
+        progress: smoothReload
+        color: e6555500
+        colorTo: e65555
+      }
+      {
+        type: RegionPart
+        x: 45.5
+        y: 8.5
+        layer: 95.5
+        suffix: -burn
+        outline: false
+        mirror: true
+        blending: additive
+        progress: smoothReload
+        color: e6555500
+        colorTo: feb38088
       }
     ]
     bullet: {
-      pierce: true 
-      pierceBuilding: true
-      pierceDamageFactor: 0.01
-      hitSize: 24
+      damage: 25000
       speed: 30
+      lifetime: 120
       drag: 0.01
-      lifetime: 60
-      damage: 1100
-      status: allure-0b-energy3
-      statusDuration: 8
+      pierce: true
+      pierceBuilding: true
+      pierceCap: 15
+      pierceDamageFactor: 0.75
+      splashDamage: 500
+      splashDamageRadius: 24
+      status: allure-0b-energy4
+      statusDuration: 1
+      hitShake: 5
       sprite: allure-bolt
       width: 60
-      height: 60
+      height: 100
       frontColor: ffffff
       backColor: 7382f0
-      shrinkY: 0
-      trailLength: 30 
-      trailWidth: 5
       trailColor: 7382f0
-      trailChance: 0
+      trailLength: 7
+      trailWidth: 8
       trailInterval: 1
       trailRotation: true
       trailEffect: [
         {
-          line: true
+          particles: 5
+          length: 0
+          baseLength: -30
           cone: 0
-          baseRotation: 135
-          length: 60
-          randLength: false
           lifetime: 45
-          particles: 1
-          lenFrom: 24
-          lenTo: 0
-          strokeFrom: 3
-          strokeTo: 3
-          colorTo: 7382f0
-          interp: pow2Out
-          sizeInterp: linear
-          layer: 100
+          sizeFrom: 3
+          sizeTo: 0
+          colorFrom: ffffff88
+          colorTo: 7382f088
+        }
+        {
+          particles: 5
+          length: 0
+          baseLength: -30
+          cone: 0
+          lifetime: 45
+          sizeFrom: 8
+          sizeTo: 0
+          colorFrom: 7382f088
+          colorTo: 7382f088
+          layer: 105
         }
         {
           line: true
-          cone: 0
-          baseRotation: -135
-          length: 60
-          randLength: false
-          lifetime: 45
+          cap: false
           particles: 1
-          lenFrom: 24
+          baseRotation: 90
+          cone: 0
+          length: 0
+          baseLength: 10
+          randLength: false
+          lifetime: 30
+          lenFrom: 2
           lenTo: 0
-          strokeFrom: 3
-          strokeTo: 3
-          colorTo: 7382f0
-          interp: pow2Out
-          sizeInterp: linear
-          layer: 100
+          strokeFrom: 48
+          strokeTo: 24
+          colorFrom: 7382f0
+          colorTo: 7382f088
+        }
+        {
+          line: true
+          cap: false
+          particles: 1
+          baseRotation: 90
+          cone: 0
+          length: 0
+          baseLength: -10
+          randLength: false
+          lifetime: 30
+          lenFrom: 2
+          lenTo: 0
+          strokeFrom: 48
+          strokeTo: 24
+          colorFrom: 7382f0
+          colorTo: 7382f088
+        }
+        {
+          line: true
+          cap: false
+          particles: 1
+          baseRotation: 45
+          cone: 0
+          length: 48
+          baseLength: 24
+          randLength: false
+          lifetime: 15
+          lenFrom: 3
+          lenTo: 3
+          strokeFrom: 0
+          strokeTo: 64
+          colorFrom: ffffff
+          colorTo: 5a58c488
+          interp: pow3In
+          sizeInterp: slope
+        }
+        {
+          line: true
+          cap: false
+          particles: 1
+          baseRotation: -45
+          cone: 0
+          length: 48
+          baseLength: 24
+          randLength: false
+          lifetime: 15
+          lenFrom: 3
+          lenTo: 3
+          strokeFrom: 0
+          strokeTo: 64
+          colorFrom: ffffff
+          colorTo: 5a58c488
+          interp: pow3In
+          sizeInterp: slope
         }
       ]
-      smokeEffect: none
       shootEffect: [
         {
-          layer: 105
-          lightOpacity: 0.25
-          lightScl: 1
-          type: ParticleEffect
-          length: 0
-          baseLength: 30
-          randLength: false
-          baseRotation: 30
-          lifetime: 45
+          followParent: false
           particles: 1
           cone: 0
-          region: allure-shootspike
-          sizeFrom: 60
-          sizeTo: 30
-          colorFrom: 7382f0
+          length: 0
+          lifetime: 45
+          sizeFrom: 240
+          sizeTo: 0
           colorTo: 7382f000
+          region: allure-shootspike
         }
         {
-          layer: 105
-          lightOpacity: 0.25
-          lightScl: 1
-          type: ParticleEffect
-          length: 0
-          baseLength: 30
-          randLength: false
-          baseRotation: -30
-          lifetime: 45
+          followParent: false
           particles: 1
           cone: 0
-          region: allure-shootspike
-          sizeFrom: 60
-          sizeTo: 30
-          colorFrom: 7382f0
+          length: 0
+          lifetime: 45
+          sizeFrom: 240
+          sizeTo: 120
+          layer: 130
+          colorFrom: ffffffbb
           colorTo: 7382f000
+          region: circle-shadow
         }
         {
-          layer: 109
-          lightOpacity: 0.25
-          lightScl: 1
-          type: ParticleEffect
-          length: 0
-          baseLength: 30
-          randLength: false
-          baseRotation: 30
-          lifetime: 45
-          particles: 1
-          cone: 0
-          region: allure-shootspike
-          sizeFrom: 30
-          sizeTo: 15
-          colorFrom: 000000
-          colorTo: 000000
+          type: SoundEffect
+          minVolume: 6
+          maxVolume: 6
+          minPitch: 0.5
+          maxPitch: 0.5
+          effect: none
+          sound: shootReign
         }
         {
-          layer: 109
-          lightOpacity: 0.25
-          lightScl: 1
-          type: ParticleEffect
-          length: 0
-          baseLength: 30
-          randLength: false
-          baseRotation: -30
-          lifetime: 45
-          particles: 1
-          cone: 0
-          region: allure-shootspike
-          sizeFrom: 30
-          sizeTo: 15
-          colorFrom: 000000
-          colorTo: 000000
+          type: SoundEffect
+          minVolume: 1
+          maxVolume: 1
+          minPitch: 0.8
+          maxPitch: 1
+          effect: none
+          sound: explosionAfflict
         }
+      ]
+      smokeEffect: [
         {
-          lightOpacity: 0.25
-          lightScl: 1
-          type: ParticleEffect
-          length: 0
-          baseLength: 20
-          randLength: false
-          lifetime: 45
+          followParent: false
           particles: 1
           cone: 0
-          region: allure-shootspike
-          sizeFrom: 130
-          sizeTo: 60
-          colorFrom: 7382f0
+          length: 40
+          baseLength: 180
+          randLength: false
+          lifetime: 60
+          sizeFrom: 120
+          sizeTo: 160
+          offset: 90
+          layer: 94
+          colorFrom: 7382f088
           colorTo: 7382f000
+          region: allure-squishwave
         }
         {
-          type: RadialEffect
-          amount: 1
-          lengthOffset: -40
-          effect: {
-            type: RadialEffect
-            amount: 1
-            lengthOffset: 8
-            rotationOffset: -90
-            effect: {
-              line: true
-              particles: 20
-              cone: 0
-              baseRotation: 90
-              length: 100
-              lifetime: 35
-              interp: pow3Out
-              sizeInterp: pow2In
-              colorTo: 7382f0
-              lenFrom: 8
-              lenTo: 0
-              strokeFrom: 2
-              strokeTo: 1
-            }
-          }
-        }
-        {
-          type: RadialEffect
-          amount: 1
-          lengthOffset: -40
-          effect: {
-            type: RadialEffect
-            amount: 1
-            lengthOffset: -8
-            rotationOffset: -90
-            effect: {
-              line: true
-              particles: 20
-              cone: 0
-              baseRotation: 90
-              length: 100
-              lifetime: 35
-              interp: pow3Out
-              sizeInterp: pow2In
-              colorTo: 7382f0
-              lenFrom: 8
-              lenTo: 0
-              strokeFrom: 2
-              strokeTo: 1
-            }
-          }
-        }
-        {
-          type: WaveEffect
-          lifetime: 50
-          interp: pow5Out
-          sizeFrom: 0
-          sizeTo: 80
+          line: true
+          particles: 20
+          cone: 15
+          length: 360
+          lifetime: 45
+          interp: pow3Out
+          sizeInterp: pow2In
+          colorTo: 7382f088
+          lenFrom: 16
+          lenTo: 0
           strokeFrom: 4
+          strokeTo: 2
+        }
+        {
+          type: RadialEffect
+          amount: 1
+          lengthOffset: -30
+          effect: [
+            {
+              type: RadialEffect
+              amount: 1
+              lengthOffset: 20
+              rotationOffset: -90
+              effect: {
+                rotWithParent: true
+                line: true
+                particles: 20
+                cone: 0
+                baseRotation: 90
+                length: 180
+                lifetime: 45
+                interp: pow3Out
+                sizeInterp: pow2In
+                colorTo: 7382f0
+                lenFrom: 16
+                lenTo: 0
+                strokeFrom: 4
+                strokeTo: 2
+              }
+            }
+            {
+              type: RadialEffect
+              amount: 1
+              lengthOffset: -20
+              rotationOffset: -90
+              effect: {
+                rotWithParent: true
+                line: true
+                particles: 20
+                cone: 0
+                baseRotation: 90
+                length: 180
+                lifetime: 45
+                interp: pow3Out
+                sizeInterp: pow2In
+                colorTo: 7382f0
+                lenFrom: 16
+                lenTo: 0
+                strokeFrom: 4
+                strokeTo: 2
+              }
+            }
+          ]
+        }
+      ]
+      hitEffect: [
+        {
+          particles: 6
+          length: 20
+          lifetime: 60
+          sizeFrom: 0
+          sizeTo: 12
+          layer: 116
+          colorFrom: 78787888
+          colorTo: 78787888
+          interp: pow3Out
+          sizeInterp: slope
+        }
+        {
+          particles: 12
+          length: 15
+          baseLength: 15
+          lifetime: 50
+          sizeFrom: 0
+          sizeTo: 24
+          colorFrom: 7382f088
+          colorTo: 7382f000
+          interp: pow2Out
+        }
+        {
+          particles: 12
+          length: 60
+          baseLength: 15
+          lifetime: 35
+          sizeFrom: 3
+          sizeTo: 0
+          colorTo: 7382f0
+          interp: pow3Out
+          sizeInterp: linear
+        }
+      ]
+    }
+  }
+  {
+    name: hellfire-railgun
+    layerOffset: -0.5
+    x: 0
+    y: -60
+    mirror: false
+    flipSprite: true
+    rotate: true
+    rotateSpeed: 0.5
+    reload: 240
+    recoil: 32
+    recoilTime: 120
+    cooldownTime: 360
+    otherSide: 1
+    shake: 32
+    shadow: 240
+    shootY: 96
+    shootCone: 1
+    shootWarmupSpeed: 0.01
+    shootSound: shootConquer
+    parts: [
+      {
+        suffix: -upper
+        outline: false
+        y: 30
+        xScl: 0.95
+        yScl: 0.95
+      }
+    ]
+    bullet: {
+      damage: 25000
+      speed: 30
+      lifetime: 120
+      drag: 0.01
+      pierce: true
+      pierceBuilding: true
+      pierceCap: 15
+      pierceDamageFactor: 0.75
+      splashDamage: 500
+      splashDamageRadius: 24
+      status: allure-0b-energy4
+      statusDuration: 1
+      hitShake: 5
+      sprite: allure-bolt
+      width: 60
+      height: 100
+      frontColor: ffffff
+      backColor: 7382f0
+      trailColor: 7382f0
+      trailLength: 7
+      trailWidth: 8
+      trailInterval: 1
+      trailRotation: true
+      trailEffect: [
+        {
+          particles: 5
+          length: 0
+          baseLength: -30
+          cone: 0
+          lifetime: 45
+          sizeFrom: 3
+          sizeTo: 0
+          colorFrom: ffffff88
+          colorTo: 7382f088
+        }
+        {
+          particles: 5
+          length: 0
+          baseLength: -30
+          cone: 0
+          lifetime: 45
+          sizeFrom: 8
+          sizeTo: 0
+          colorFrom: 7382f088
+          colorTo: 7382f088
+          layer: 105
+        }
+        {
+          line: true
+          cap: false
+          particles: 1
+          baseRotation: 90
+          cone: 0
+          length: 0
+          baseLength: 10
+          randLength: false
+          lifetime: 30
+          lenFrom: 2
+          lenTo: 0
+          strokeFrom: 48
+          strokeTo: 24
+          colorFrom: 7382f0
+          colorTo: 7382f088
+        }
+        {
+          line: true
+          cap: false
+          particles: 1
+          baseRotation: 90
+          cone: 0
+          length: 0
+          baseLength: -10
+          randLength: false
+          lifetime: 30
+          lenFrom: 2
+          lenTo: 0
+          strokeFrom: 48
+          strokeTo: 24
+          colorFrom: 7382f0
+          colorTo: 7382f088
+        }
+        {
+          line: true
+          cap: false
+          particles: 1
+          baseRotation: 45
+          cone: 0
+          length: 48
+          baseLength: 24
+          randLength: false
+          lifetime: 15
+          lenFrom: 3
+          lenTo: 3
+          strokeFrom: 0
+          strokeTo: 64
+          colorFrom: ffffff
+          colorTo: 5a58c488
+          interp: pow3In
+          sizeInterp: slope
+        }
+        {
+          line: true
+          cap: false
+          particles: 1
+          baseRotation: -45
+          cone: 0
+          length: 48
+          baseLength: 24
+          randLength: false
+          lifetime: 15
+          lenFrom: 3
+          lenTo: 3
+          strokeFrom: 0
+          strokeTo: 64
+          colorFrom: ffffff
+          colorTo: 5a58c488
+          interp: pow3In
+          sizeInterp: slope
+        }
+      ]
+      shootEffect: [
+        {
+          followParent: false
+          particles: 1
+          cone: 0
+          length: 0
+          lifetime: 45
+          sizeFrom: 180
+          sizeTo: 0
+          layer: 90
+          colorTo: 7382f000
+          region: allure-shootspike
+        }
+        {
+          followParent: false
+          particles: 1
+          cone: 0
+          length: 0
+          lifetime: 45
+          sizeFrom: 180
+          sizeTo: 90
+          layer: 89
+          colorFrom: ffffff88
+          colorTo: 7382f000
+          region: circle-shadow
+        }
+        {
+          type: SoundEffect
+          minVolume: 6
+          maxVolume: 6
+          minPitch: 0.5
+          maxPitch: 0.5
+          effect: none
+          sound: shootReign
+        }
+        {
+          type: SoundEffect
+          minVolume: 1
+          maxVolume: 1
+          minPitch: 0.8
+          maxPitch: 1
+          effect: none
+          sound: explosionAfflict
+        }
+      ]
+      smokeEffect: [
+        {
+          followParent: false
+          particles: 1
+          cone: 0
+          length: 40
+          baseLength: 100
+          randLength: false
+          lifetime: 60
+          sizeFrom: 120
+          sizeTo: 160
+          offset: 90
+          layer: 88
+          colorFrom: 7382f088
+          colorTo: 7382f000
+          region: allure-squishwave
+        }
+        {
+          line: true
+          particles: 20
+          cone: 15
+          length: 360
+          lifetime: 45
+          interp: pow3Out
+          sizeInterp: pow2In
+          colorTo: 7382f088
+          lenFrom: 16
+          lenTo: 0
+          strokeFrom: 4
+          strokeTo: 2
+          layer: 88
+        }
+      ]
+      hitEffect: [
+        {
+          particles: 6
+          length: 20
+          lifetime: 60
+          sizeFrom: 0
+          sizeTo: 12
+          layer: 116
+          colorFrom: 78787888
+          colorTo: 78787888
+          interp: pow3Out
+          sizeInterp: slope
+        }
+        {
+          particles: 12
+          length: 15
+          baseLength: 15
+          lifetime: 50
+          sizeFrom: 0
+          sizeTo: 24
+          colorFrom: 7382f088
+          colorTo: 7382f000
+          interp: pow2Out
+        }
+        {
+          particles: 12
+          length: 60
+          baseLength: 15
+          lifetime: 35
+          sizeFrom: 3
+          sizeTo: 0
+          colorTo: 7382f0
+          interp: pow3Out
+          sizeInterp: linear
+        }
+      ]
+    }
+  }
+  //a bunch of PD
+  {
+    type: PointDefenseBulletWeapon
+    name: hellfire-pd
+    layerOffset: 3.5
+    rotateSpeed: 6
+    targetInterval: 5
+    shadow: 24
+    shootY: 12
+    x: 50
+    y: 180
+    reload: 10
+    recoil: 2
+    shoot: {
+      type: ShootAlternate
+      shots: 2
+    }
+    parts: [
+      { 
+        type: RegionPart
+        suffix: -flare
+        outline: false
+        blending: additive
+        layer: 94
+        color: 7382f0
+        colorTo: ffffff
+      }
+    ]
+    shootSound: shootCleroi
+    shootSoundVolume: 0.5
+    bullet: {
+      type: InterceptorBulletType
+      speed: 40
+      lifetime: 20
+      damage: 100
+      hittable: false
+      absorbable: false
+      reflectable: false
+      sprite: circle-bullet
+      width: 6
+      height: 24
+      frontColor: ffffff
+      backColor: 7382f0
+      hitCOlor: 7382f0
+      trailColor: 7382f0
+      trailLength: 5
+      trailWidth: 2
+      despawnEffect: hitBulletColor
+      hitEffect: hitBulletColor
+      shootEffect: hitLancer
+      smokeEffect: lightningShoot
+    }
+  }
+  {
+    type: PointDefenseBulletWeapon
+    name: hellfire-pd
+    layerOffset: 3.5
+    rotateSpeed: 6
+    targetInterval: 5
+    shadow: 24
+    shootY: 12
+    x: 50
+    y: 130
+    baseRotation: -90
+    reload: 10
+    recoil: 2
+    shoot: {
+      type: ShootAlternate
+      shots: 2
+    }
+    parts: [
+      { 
+        type: RegionPart
+        suffix: -flare
+        outline: false
+        blending: additive
+        layer: 94
+        color: 7382f0
+        colorTo: ffffff
+      }
+    ]
+    shootSound: shootCleroi
+    shootSoundVolume: 0.5
+    bullet: {
+      type: InterceptorBulletType
+      speed: 40
+      lifetime: 20
+      damage: 100
+      hittable: false
+      absorbable: false
+      reflectable: false
+      sprite: circle-bullet
+      width: 6
+      height: 24
+      frontColor: ffffff
+      backColor: 7382f0
+      hitCOlor: 7382f0
+      trailColor: 7382f0
+      trailLength: 5
+      trailWidth: 2
+      despawnEffect: hitBulletColor
+      hitEffect: hitBulletColor
+      shootEffect: hitLancer
+      smokeEffect: lightningShoot
+    }
+  }
+  {
+    type: PointDefenseBulletWeapon
+    name: hellfire-pd
+    layerOffset: 3.5
+    rotateSpeed: 6
+    targetInterval: 5
+    shadow: 24
+    shootY: 12
+    x: 50
+    y: 40
+    baseRotation: -90
+    reload: 10
+    recoil: 2
+    shoot: {
+      type: ShootAlternate
+      shots: 2
+    }
+    parts: [
+      { 
+        type: RegionPart
+        suffix: -flare
+        outline: false
+        blending: additive
+        layer: 94
+        color: 7382f0
+        colorTo: ffffff
+      }
+    ]
+    shootSound: shootCleroi
+    shootSoundVolume: 0.5
+    bullet: {
+      type: InterceptorBulletType
+      speed: 40
+      lifetime: 20
+      damage: 100
+      hittable: false
+      absorbable: false
+      reflectable: false
+      sprite: circle-bullet
+      width: 6
+      height: 24
+      frontColor: ffffff
+      backColor: 7382f0
+      hitCOlor: 7382f0
+      trailColor: 7382f0
+      trailLength: 5
+      trailWidth: 2
+      despawnEffect: hitBulletColor
+      hitEffect: hitBulletColor
+      shootEffect: hitLancer
+      smokeEffect: lightningShoot
+    }
+  }
+  {
+    type: PointDefenseBulletWeapon
+    name: hellfire-pd
+    layerOffset: 3.5
+    rotateSpeed: 6
+    targetInterval: 5
+    shadow: 24
+    shootY: 12
+    x: 40
+    y: -40
+    baseRotation: -90
+    reload: 10
+    recoil: 2
+    shoot: {
+      type: ShootAlternate
+      shots: 2
+    }
+    parts: [
+      { 
+        type: RegionPart
+        suffix: -flare
+        outline: false
+        blending: additive
+        layer: 94
+        color: 7382f0
+        colorTo: ffffff
+      }
+    ]
+    shootSound: shootCleroi
+    shootSoundVolume: 0.5
+    bullet: {
+      type: InterceptorBulletType
+      speed: 40
+      lifetime: 20
+      damage: 100
+      hittable: false
+      absorbable: false
+      reflectable: false
+      sprite: circle-bullet
+      width: 6
+      height: 24
+      frontColor: ffffff
+      backColor: 7382f0
+      hitCOlor: 7382f0
+      trailColor: 7382f0
+      trailLength: 5
+      trailWidth: 2
+      despawnEffect: hitBulletColor
+      hitEffect: hitBulletColor
+      shootEffect: hitLancer
+      smokeEffect: lightningShoot
+    }
+  }
+  {
+    type: PointDefenseBulletWeapon
+    name: hellfire-pd
+    layerOffset: 3.5
+    rotateSpeed: 6
+    targetInterval: 5
+    shadow: 24
+    shootY: 12
+    x: 60
+    y: -100
+    baseRotation: 180
+    reload: 10
+    recoil: 2
+    shoot: {
+      type: ShootAlternate
+      shots: 2
+    }
+    parts: [
+      { 
+        type: RegionPart
+        suffix: -flare
+        outline: false
+        blending: additive
+        layer: 94
+        color: 7382f0
+        colorTo: ffffff
+      }
+    ]
+    shootSound: shootCleroi
+    shootSoundVolume: 0.5
+    bullet: {
+      type: InterceptorBulletType
+      speed: 40
+      lifetime: 20
+      damage: 100
+      hittable: false
+      absorbable: false
+      reflectable: false
+      sprite: circle-bullet
+      width: 6
+      height: 24
+      frontColor: ffffff
+      backColor: 7382f0
+      hitCOlor: 7382f0
+      trailColor: 7382f0
+      trailLength: 5
+      trailWidth: 2
+      despawnEffect: hitBulletColor
+      hitEffect: hitBulletColor
+      shootEffect: hitLancer
+      smokeEffect: lightningShoot
+    }
+  }
+  //NUMEROUS point lasers
+  {
+    x: 78
+    y: 46.5
+    rotate: true
+    autoTarget: true
+    controllable: false
+    useAttackRange: false
+    baseRotation: -90
+    rotationLimit: 180
+    targetInterval: 20
+    targetSwitchInterval: 60
+    alternate: false
+    rotateSpeed: 360
+    shootCone: 0.25
+    continuous: true
+    alwaysContinuous: true
+    shootSound: loopSmelter
+    shootSoundVolume: 0.5
+    initialShootSound: explosionArtilleryShockBig
+    bullet: {
+      type: ContinuousLaserBulletType
+      shake: 0
+      length: 480
+      width: 1
+      damage: 20
+      lifetime: 20
+      pierceCap: 1
+      status: allure-0b-energy2
+      statusDuration: 1
+      colors: [
+        7382f088,
+        ffffff
+      ]
+      layer: 93
+      oscScl: 0
+      frontLength: 2
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: [
+        {
+          length: 0
+          offset: 90
+          cone: 0
+          region: allure-diamond-vthin
+          particles: 1
+          lifetime: 25
+          colorTo: 90a2fc
+          sizeFrom: 20
+          sizeTo: 0
+        }
+        {
+          baseRotation: 180
+          line: true
+          particles: 4
+          cone: 45
+          length: -20
+          lifetime: 20
+          interp: pow2Out
+          sizeInterp: linear
+          lenFrom: 4
+          lenTo: 2
+          strokeFrom: 1
           strokeTo: 0
           colorTo: 7382f0
         }
       ]
-      fragOnHit: false 
-      setDefaults: false 
-      despawnHit: false 
-      fragBullets: 3
-      fragRandomSpread: 0
-      fragSpread: 35
-      fragBullet: {
-        type: ShrapnelBulletType 
-        lifetime: 120
-        damage: 1250 
-        length: 120
-        width: 18
-        serrations: 0
-        status: allure-0b-energy4 
-        statusDuration: 3
-        toColor: 7382f0
-      }
     }
   }
-  //lance (I will come back to you later)
   {
-    mirror: false
-    shootCone: 20
-    x: 0
-    y: 0
-    shootY: 36
+    x: 78
+    y: 37
+    rotate: true
+    autoTarget: true
+    controllable: false
+    useAttackRange: false
+    display: false
+    baseRotation: -90
+    rotationLimit: 180
+    targetInterval: 20
+    targetSwitchInterval: 60
+    alternate: false
+    rotateSpeed: 360
+    shootCone: 0.25
+    continuous: true
     alwaysContinuous: true
-    shootStatus: slow
-    shootStatusDuration: 2
-    shootSound: none
-    shootWarmupSpeed: 0.019
-    shake: 4
+    shootSound: loopSmelter
+    shootSoundVolume: 0.5
+    initialShootSound: explosionArtilleryShockBig
     bullet: {
-      type: ContinuousFlameBulletType
-      layer: 105.1
-      lifetime: 210
-      pierceCap: 5
-      length: 1024
-      width: 18
-      damage: 12000
-      status: allure-0t-thermal4
-      statusDuration: 30
+      type: ContinuousLaserBulletType
+      shake: 0
+      length: 480
+      width: 1
+      damage: 20
+      lifetime: 20
+      pierceCap: 1
+      status: allure-0b-energy2
+      statusDuration: 1
       colors: [
-        7382f045,
-        90a2fc90, a0aaf4aa, d0d4f8dd, ffffff
+        7382f088,
+        ffffff
       ]
-      oscScl: 84
-      oscMag: 0.1
-      drawFlare: false
-      hitEffect: {
-        length: 65
-        particles: 5
-        cone: 40
-        line: true
-        lifetime: 35
-        lenFrom: 4
-        lenTo: 0
-        strokeFrom: 2
-        strokeTo: 1
-        interp: pow3Out
-        sizeInterp: pow2In
-        colorTo: 7382f050
-      }
-    }
-  }
-  //point defense
-  {
-    type: PointDefenseWeapon
-    name: hellfire-pd
-    x: 24
-    y: 20
-    shootSound: lasershoot
-    parts: [
-      {
-        outline: false
-        suffix: -a
-        layerOffset: -0.01
-        xScl: 0.001
-        yScl: 0.001
-        y: 7
-        mixColor: 7382f0
-        mixColorTo: ffffff
-        progress: {
-          type: warmup
-          op: compress
-          start: 0
-          end: 0.4
+      layer: 93
+      oscScl: 0
+      frontLength: 2
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: [
+        {
+          length: 0
+          offset: 90
+          cone: 0
+          region: allure-diamond-vthin
+          particles: 1
+          lifetime: 25
+          colorTo: 90a2fc
+          sizeFrom: 20
+          sizeTo: 0
         }
-        moves: [
-          {
-            gx: 1
-            gy: 1
-            progress: {
-              type: warmup
-              ops: [
-                {
-                  op: compress
-                  start: 0
-                  end: 0.4
-                }
-                {
-                  op: curve
-                  interp: pow3Out
-                }
-              ]
-            }
-          }
-        ]
-      }
-      {
-        outline: false
-        suffix: -a
-        xScl: 0.001
-        yScl: 0.001
-        y: 7
-        color: ffffff00
-        colorTo: ffffff
-        progress: {
-          type: warmup
-          op: compress
-          start: 0.4
-          end: 0.5
+        {
+          baseRotation: 180
+          line: true
+          particles: 4
+          cone: 45
+          length: -20
+          lifetime: 20
+          interp: pow2Out
+          sizeInterp: linear
+          lenFrom: 4
+          lenTo: 2
+          strokeFrom: 1
+          strokeTo: 0
+          colorTo: 7382f0
         }
-        moves: [
-          {
-            gx: 1
-            gy: 1
-            progress: {
-              type: warmup
-              op: compress
-              start: 0.4
-              end: 0.4
-            }
-          }
-        ]
-      }
-      {
-        outline: false
-        suffix: -glow
-        xScl: 0.001
-        yScl: 0.001
-        y: 7
-        color: ffffff00
-        colorTo: ffffff
-        blending: additive
-        progress: {
-          type: warmup
-          op: compress
-          start: 0.4
-          end: 0.5
-        }
-        moves: [
-          {
-            gx: 1
-            gy: 1
-            progress: {
-              type: warmup
-              op: compress
-              start: 0.4
-              end: 0.4
-            }
-          }
-        ]
-      }
-    ]
-    layerOffset: 4.5
-    reload: 2
-    alternate: false
-    linearWarmup: true
-    minWarmup: 0.5
-    shootWarmupSpeed: 0.02
-    shootY: 19
-    recoil: 4
-    recoilTime: 45
-    targetInterval: 4
-    targetSwitchInterval: 4
-    beamEffect: {
-      randLength: false
-      cone: 0
-      lifetime: 30
-      length: 360
-      followParent: false
-      offset: 180
-      region: allure-shootspike
-      particles: 1
-      interp: pow3Out
-      sizeInterp: linear
-      colorTo: 7382f0
-      sizeFrom: 24
-      sizeTo: 0
-    }
-    bullet: {
-      damage: 125
-      maxRange: 360
-      shootEffect: {
-        line: true
-        cone: 25
-        particles: 3
-        interp: pow3Out
-        sizeInterp: linear
-        followParent: false
-        length: 28
-        lifetime: 20
-        colorTo: 7382f0
-        lenFrom: 5
-        lenTo: 0
-        strokeFrom: 2
-        strokeTo: 1
-        cap: false
-      }
+      ]
     }
   }
   {
-    type: PointDefenseWeapon
-    name: hellfire-pd
-    x: 30
-    y: -36
-    shootSound: lasershoot
-    layerOffset: 4.5
-    parts: [
-      {
-        outline: false
-        suffix: -a
-        layerOffset: -0.01
-        xScl: 0.001
-        yScl: 0.001
-        y: 7
-        mixColor: 7382f0
-        mixColorTo: ffffff
-        progress: {
-          type: warmup
-          op: compress
-          start: 0
-          end: 0.4
-        }
-        moves: [
-          {
-            gx: 1
-            gy: 1
-            progress: {
-              type: warmup
-              ops: [
-                {
-                  op: compress
-                  start: 0
-                  end: 0.4
-                }
-                {
-                  op: curve
-                  interp: pow3Out
-                }
-              ]
-            }
-          }
-        ]
-      }
-      {
-        outline: false
-        suffix: -a
-        xScl: 0.001
-        yScl: 0.001
-        y: 7
-        color: ffffff00
-        colorTo: ffffff
-        progress: {
-          type: warmup
-          op: compress
-          start: 0.4
-          end: 0.5
-        }
-        moves: [
-          {
-            gx: 1
-            gy: 1
-            progress: {
-              type: warmup
-              op: compress
-              start: 0.4
-              end: 0.4
-            }
-          }
-        ]
-      }
-      {
-        outline: false
-        suffix: -glow
-        xScl: 0.001
-        yScl: 0.001
-        y: 7
-        color: ffffff00
-        colorTo: ffffff
-        blending: additive
-        progress: {
-          type: warmup
-          op: compress
-          start: 0.4
-          end: 0.5
-        }
-        moves: [
-          {
-            gx: 1
-            gy: 1
-            progress: {
-              type: warmup
-              op: compress
-              start: 0.4
-              end: 0.4
-            }
-          }
-        ]
-      }
-    ]
-    layerOffset: 5
-    reload: 2
+    x: 78
+    y: 11.75
+    rotate: true
+    autoTarget: true
+    controllable: false
+    useAttackRange: false
+    display: false
+    baseRotation: -90
+    rotationLimit: 180
+    targetInterval: 20
+    targetSwitchInterval: 60
     alternate: false
-    linearWarmup: true
-    minWarmup: 0.5
-    shootWarmupSpeed: 0.02
-    shootY: 19
-    recoil: 4
-    recoilTime: 45
-    targetInterval: 4
-    targetSwitchInterval: 4
-    beamEffect: {
-      randLength: false
-      cone: 0
-      lifetime: 30
-      length: 360
-      followParent: false
-      offset: 180
-      region: allure-shootspike
-      particles: 1
-      interp: pow3Out
-      sizeInterp: linear
-      colorTo: 7382f0
-      sizeFrom: 24
-      sizeTo: 0
-    }
+    rotateSpeed: 360
+    shootCone: 0.25
+    continuous: true
+    alwaysContinuous: true
+    shootSound: loopSmelter
+    shootSoundVolume: 0.5
+    initialShootSound: explosionArtilleryShockBig
     bullet: {
-      damage: 125
-      maxRange: 360
-      shootEffect: {
-        line: true
-        cone: 25
-        particles: 3
-        interp: pow3Out
-        sizeInterp: linear
-        followParent: false
-        length: 28
-        lifetime: 20
-        colorTo: 7382f0
-        lenFrom: 5
-        lenTo: 0
-        strokeFrom: 2
-        strokeTo: 1
-        cap: false
-      }
+      type: ContinuousLaserBulletType
+      shake: 0
+      length: 480
+      width: 1
+      damage: 20
+      lifetime: 20
+      pierceCap: 1
+      status: allure-0b-energy2
+      statusDuration: 1
+      colors: [
+        7382f088,
+        ffffff
+      ]
+      layer: 93
+      oscScl: 0
+      frontLength: 2
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: [
+        {
+          length: 0
+          offset: 90
+          cone: 0
+          region: allure-diamond-vthin
+          particles: 1
+          lifetime: 25
+          colorTo: 90a2fc
+          sizeFrom: 20
+          sizeTo: 0
+        }
+        {
+          baseRotation: 180
+          line: true
+          particles: 4
+          cone: 45
+          length: -20
+          lifetime: 20
+          interp: pow2Out
+          sizeInterp: linear
+          lenFrom: 4
+          lenTo: 2
+          strokeFrom: 1
+          strokeTo: 0
+          colorTo: 7382f0
+        }
+      ]
     }
+  }
+  {
+    x: 78
+    y: 2.25
+    rotate: true
+    autoTarget: true
+    controllable: false
+    useAttackRange: false
+    display: false
+    baseRotation: -90
+    rotationLimit: 180
+    targetInterval: 20
+    targetSwitchInterval: 60
+    alternate: false
+    rotateSpeed: 360
+    shootCone: 0.25
+    continuous: true
+    alwaysContinuous: true
+    shootSound: loopSmelter
+    shootSoundVolume: 0.5
+    initialShootSound: explosionArtilleryShockBig
+    bullet: {
+      type: ContinuousLaserBulletType
+      shake: 0
+      length: 480
+      width: 1
+      damage: 20
+      lifetime: 20
+      pierceCap: 1
+      status: allure-0b-energy2
+      statusDuration: 1
+      colors: [
+        7382f088,
+        ffffff
+      ]
+      layer: 93
+      oscScl: 0
+      frontLength: 2
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: [
+        {
+          length: 0
+          offset: 90
+          cone: 0
+          region: allure-diamond-vthin
+          particles: 1
+          lifetime: 25
+          colorTo: 90a2fc
+          sizeFrom: 20
+          sizeTo: 0
+        }
+        {
+          baseRotation: 180
+          line: true
+          particles: 4
+          cone: 45
+          length: -20
+          lifetime: 20
+          interp: pow2Out
+          sizeInterp: linear
+          lenFrom: 4
+          lenTo: 2
+          strokeFrom: 1
+          strokeTo: 0
+          colorTo: 7382f0
+        }
+      ]
+    }
+  }
+  {
+    x: 78
+    y: -7.25
+    rotate: true
+    autoTarget: true
+    controllable: false
+    useAttackRange: false
+    display: false
+    baseRotation: -90
+    rotationLimit: 180
+    targetInterval: 20
+    targetSwitchInterval: 60
+    alternate: false
+    rotateSpeed: 360
+    shootCone: 0.25
+    continuous: true
+    alwaysContinuous: true
+    shootSound: loopSmelter
+    shootSoundVolume: 0.5
+    initialShootSound: explosionArtilleryShockBig
+    bullet: {
+      type: ContinuousLaserBulletType
+      shake: 0
+      length: 480
+      width: 1
+      damage: 20
+      lifetime: 20
+      pierceCap: 1
+      status: allure-0b-energy2
+      statusDuration: 1
+      colors: [
+        7382f088,
+        ffffff
+      ]
+      layer: 93
+      oscScl: 0
+      frontLength: 2
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: [
+        {
+          length: 0
+          offset: 90
+          cone: 0
+          region: allure-diamond-vthin
+          particles: 1
+          lifetime: 25
+          colorTo: 90a2fc
+          sizeFrom: 20
+          sizeTo: 0
+        }
+        {
+          baseRotation: 180
+          line: true
+          particles: 4
+          cone: 45
+          length: -20
+          lifetime: 20
+          interp: pow2Out
+          sizeInterp: linear
+          lenFrom: 4
+          lenTo: 2
+          strokeFrom: 1
+          strokeTo: 0
+          colorTo: 7382f0
+        }
+      ]
+    }
+  }
+  {
+    x: 83.5
+    y: -41
+    rotate: true
+    autoTarget: true
+    controllable: false
+    useAttackRange: false
+    display: false
+    baseRotation: -90
+    rotationLimit: 180
+    targetInterval: 20
+    targetSwitchInterval: 60
+    alternate: false
+    rotateSpeed: 360
+    shootCone: 0.25
+    continuous: true
+    alwaysContinuous: true
+    shootSound: loopSmelter
+    shootSoundVolume: 0.5
+    initialShootSound: explosionArtilleryShockBig
+    bullet: {
+      type: ContinuousLaserBulletType
+      shake: 0
+      length: 480
+      width: 1
+      damage: 20
+      lifetime: 20
+      pierceCap: 1
+      status: allure-0b-energy2
+      statusDuration: 1
+      colors: [
+        7382f088,
+        ffffff
+      ]
+      layer: 93
+      oscScl: 0
+      frontLength: 2
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: [
+        {
+          length: 0
+          offset: 90
+          cone: 0
+          region: allure-diamond-vthin
+          particles: 1
+          lifetime: 25
+          colorTo: 90a2fc
+          sizeFrom: 20
+          sizeTo: 0
+        }
+        {
+          baseRotation: 180
+          line: true
+          particles: 4
+          cone: 45
+          length: -20
+          lifetime: 20
+          interp: pow2Out
+          sizeInterp: linear
+          lenFrom: 4
+          lenTo: 2
+          strokeFrom: 1
+          strokeTo: 0
+          colorTo: 7382f0
+        }
+      ]
+    }
+  }
+  {
+    x: 83.5
+    y: -50.5
+    rotate: true
+    autoTarget: true
+    controllable: false
+    useAttackRange: false
+    display: false
+    baseRotation: -90
+    rotationLimit: 180
+    targetInterval: 20
+    targetSwitchInterval: 60
+    alternate: false
+    rotateSpeed: 360
+    shootCone: 0.25
+    continuous: true
+    alwaysContinuous: true
+    shootSound: loopSmelter
+    shootSoundVolume: 0.5
+    initialShootSound: explosionArtilleryShockBig
+    bullet: {
+      type: ContinuousLaserBulletType
+      shake: 0
+      length: 480
+      width: 1
+      damage: 20
+      lifetime: 20
+      pierceCap: 1
+      status: allure-0b-energy2
+      statusDuration: 1
+      colors: [
+        7382f088,
+        ffffff
+      ]
+      layer: 93
+      oscScl: 0
+      frontLength: 2
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: [
+        {
+          length: 0
+          offset: 90
+          cone: 0
+          region: allure-diamond-vthin
+          particles: 1
+          lifetime: 25
+          colorTo: 90a2fc
+          sizeFrom: 20
+          sizeTo: 0
+        }
+        {
+          baseRotation: 180
+          line: true
+          particles: 4
+          cone: 45
+          length: -20
+          lifetime: 20
+          interp: pow2Out
+          sizeInterp: linear
+          lenFrom: 4
+          lenTo: 2
+          strokeFrom: 1
+          strokeTo: 0
+          colorTo: 7382f0
+        }
+      ]
+    }
+  }
+  {
+    x: 100.75
+    y: -111.25
+    rotate: true
+    autoTarget: true
+    controllable: false
+    useAttackRange: false
+    display: false
+    baseRotation: -90
+    rotationLimit: 180
+    targetInterval: 20
+    targetSwitchInterval: 60
+    alternate: false
+    rotateSpeed: 360
+    shootCone: 0.25
+    continuous: true
+    alwaysContinuous: true
+    shootSound: loopSmelter
+    shootSoundVolume: 0.5
+    initialShootSound: explosionArtilleryShockBig
+    bullet: {
+      type: ContinuousLaserBulletType
+      shake: 0
+      length: 480
+      width: 1
+      damage: 20
+      lifetime: 20
+      pierceCap: 1
+      status: allure-0b-energy2
+      statusDuration: 1
+      colors: [
+        7382f088,
+        ffffff
+      ]
+      layer: 93
+      oscScl: 0
+      frontLength: 2
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: [
+        {
+          length: 0
+          offset: 90
+          cone: 0
+          region: allure-diamond-vthin
+          particles: 1
+          lifetime: 25
+          colorTo: 90a2fc
+          sizeFrom: 20
+          sizeTo: 0
+        }
+        {
+          baseRotation: 180
+          line: true
+          particles: 4
+          cone: 45
+          length: -20
+          lifetime: 20
+          interp: pow2Out
+          sizeInterp: linear
+          lenFrom: 4
+          lenTo: 2
+          strokeFrom: 1
+          strokeTo: 0
+          colorTo: 7382f0
+        }
+      ]
+    }
+  }
+  {
+    x: 100.75
+    y: -120.75
+    rotate: true
+    autoTarget: true
+    controllable: false
+    useAttackRange: false
+    display: false
+    baseRotation: -90
+    rotationLimit: 180
+    targetInterval: 20
+    targetSwitchInterval: 60
+    alternate: false
+    rotateSpeed: 360
+    shootCone: 0.25
+    continuous: true
+    alwaysContinuous: true
+    shootSound: loopSmelter
+    shootSoundVolume: 0.5
+    initialShootSound: explosionArtilleryShockBig
+    bullet: {
+      type: ContinuousLaserBulletType
+      shake: 0
+      length: 480
+      width: 1
+      damage: 20
+      lifetime: 20
+      pierceCap: 1
+      status: allure-0b-energy2
+      statusDuration: 1
+      colors: [
+        7382f088,
+        ffffff
+      ]
+      layer: 93
+      oscScl: 0
+      frontLength: 2
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: [
+        {
+          length: 0
+          offset: 90
+          cone: 0
+          region: allure-diamond-vthin
+          particles: 1
+          lifetime: 25
+          colorTo: 90a2fc
+          sizeFrom: 20
+          sizeTo: 0
+        }
+        {
+          baseRotation: 180
+          line: true
+          particles: 4
+          cone: 45
+          length: -20
+          lifetime: 20
+          interp: pow2Out
+          sizeInterp: linear
+          lenFrom: 4
+          lenTo: 2
+          strokeFrom: 1
+          strokeTo: 0
+          colorTo: 7382f0
+        }
+      ]
+    }
+  }
+  {
+    x: 100.75
+    y: -140.5
+    rotate: true
+    autoTarget: true
+    controllable: false
+    useAttackRange: false
+    display: false
+    baseRotation: -90
+    rotationLimit: 180
+    targetInterval: 20
+    targetSwitchInterval: 60
+    alternate: false
+    rotateSpeed: 360
+    shootCone: 0.25
+    continuous: true
+    alwaysContinuous: true
+    shootSound: loopSmelter
+    shootSoundVolume: 0.5
+    initialShootSound: explosionArtilleryShockBig
+    bullet: {
+      type: ContinuousLaserBulletType
+      shake: 0
+      length: 480
+      width: 1
+      damage: 20
+      lifetime: 20
+      pierceCap: 1
+      status: allure-0b-energy2
+      statusDuration: 1
+      colors: [
+        7382f088,
+        ffffff
+      ]
+      layer: 93
+      oscScl: 0
+      frontLength: 2
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: [
+        {
+          length: 0
+          offset: 90
+          cone: 0
+          region: allure-diamond-vthin
+          particles: 1
+          lifetime: 25
+          colorTo: 90a2fc
+          sizeFrom: 20
+          sizeTo: 0
+        }
+        {
+          baseRotation: 180
+          line: true
+          particles: 4
+          cone: 45
+          length: -20
+          lifetime: 20
+          interp: pow2Out
+          sizeInterp: linear
+          lenFrom: 4
+          lenTo: 2
+          strokeFrom: 1
+          strokeTo: 0
+          colorTo: 7382f0
+        }
+      ]
+    }
+  }
+  //EVEN MORE point lasers
+  {
+    x: 78
+    y: 36.5
+    rotate: true
+    autoTarget: true
+    controllable: false
+    useAttackRange: false
+    baseRotation: -90
+    rotationLimit: 180
+    targetInterval: 20
+    targetSwitchInterval: 60
+    alternate: false
+    rotateSpeed: 360
+    shootCone: 0.25
+    continuous: true
+    alwaysContinuous: true
+    shootSound: loopSmelter
+    shootSoundVolume: 0.5
+    initialShootSound: explosionArtilleryShockBig
+    bullet: {
+      type: ContinuousLaserBulletType
+      shake: 0
+      length: 480
+      width: 1
+      damage: 20
+      lifetime: 20
+      pierceCap: 1
+      status: allure-0b-energy2
+      statusDuration: 1
+      colors: [
+        7382f088,
+        ffffff
+      ]
+      layer: 90
+      oscScl: 0
+      frontLength: 2
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: [
+        {
+          length: 0
+          offset: 90
+          cone: 0
+          region: allure-diamond-vthin
+          particles: 1
+          lifetime: 25
+          colorTo: 90a2fc
+          sizeFrom: 20
+          sizeTo: 0
+        }
+        {
+          baseRotation: 180
+          line: true
+          particles: 4
+          cone: 45
+          length: -20
+          lifetime: 20
+          interp: pow2Out
+          sizeInterp: linear
+          lenFrom: 4
+          lenTo: 2
+          strokeFrom: 1
+          strokeTo: 0
+          colorTo: 7382f0
+        }
+      ]
+    }
+  }
+  {
+    x: 78
+    y: 27
+    rotate: true
+    autoTarget: true
+    controllable: false
+    useAttackRange: false
+    display: false
+    baseRotation: -90
+    rotationLimit: 180
+    targetInterval: 20
+    targetSwitchInterval: 60
+    alternate: false
+    rotateSpeed: 360
+    shootCone: 0.25
+    continuous: true
+    alwaysContinuous: true
+    shootSound: loopSmelter
+    shootSoundVolume: 0.5
+    initialShootSound: explosionArtilleryShockBig
+    bullet: {
+      type: ContinuousLaserBulletType
+      shake: 0
+      length: 480
+      width: 1
+      damage: 20
+      lifetime: 20
+      pierceCap: 1
+      status: allure-0b-energy2
+      statusDuration: 1
+      colors: [
+        7382f088,
+        ffffff
+      ]
+      layer: 90
+      oscScl: 0
+      frontLength: 2
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: [
+        {
+          length: 0
+          offset: 90
+          cone: 0
+          region: allure-diamond-vthin
+          particles: 1
+          lifetime: 25
+          colorTo: 90a2fc
+          sizeFrom: 20
+          sizeTo: 0
+        }
+        {
+          baseRotation: 180
+          line: true
+          particles: 4
+          cone: 45
+          length: -20
+          lifetime: 20
+          interp: pow2Out
+          sizeInterp: linear
+          lenFrom: 4
+          lenTo: 2
+          strokeFrom: 1
+          strokeTo: 0
+          colorTo: 7382f0
+        }
+      ]
+    }
+  }
+  {
+    x: 78
+    y: 1.75
+    rotate: true
+    autoTarget: true
+    controllable: false
+    useAttackRange: false
+    display: false
+    baseRotation: -90
+    rotationLimit: 180
+    targetInterval: 20
+    targetSwitchInterval: 60
+    alternate: false
+    rotateSpeed: 360
+    shootCone: 0.25
+    continuous: true
+    alwaysContinuous: true
+    shootSound: loopSmelter
+    shootSoundVolume: 0.5
+    initialShootSound: explosionArtilleryShockBig
+    bullet: {
+      type: ContinuousLaserBulletType
+      shake: 0
+      length: 480
+      width: 1
+      damage: 20
+      lifetime: 20
+      pierceCap: 1
+      status: allure-0b-energy2
+      statusDuration: 1
+      colors: [
+        7382f088,
+        ffffff
+      ]
+      layer: 90
+      oscScl: 0
+      frontLength: 2
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: [
+        {
+          length: 0
+          offset: 90
+          cone: 0
+          region: allure-diamond-vthin
+          particles: 1
+          lifetime: 25
+          colorTo: 90a2fc
+          sizeFrom: 20
+          sizeTo: 0
+        }
+        {
+          baseRotation: 180
+          line: true
+          particles: 4
+          cone: 45
+          length: -20
+          lifetime: 20
+          interp: pow2Out
+          sizeInterp: linear
+          lenFrom: 4
+          lenTo: 2
+          strokeFrom: 1
+          strokeTo: 0
+          colorTo: 7382f0
+        }
+      ]
+    }
+  }
+  {
+    x: 78
+    y: -7.25
+    rotate: true
+    autoTarget: true
+    controllable: false
+    useAttackRange: false
+    display: false
+    baseRotation: -90
+    rotationLimit: 180
+    targetInterval: 20
+    targetSwitchInterval: 60
+    alternate: false
+    rotateSpeed: 360
+    shootCone: 0.25
+    continuous: true
+    alwaysContinuous: true
+    shootSound: loopSmelter
+    shootSoundVolume: 0.5
+    initialShootSound: explosionArtilleryShockBig
+    bullet: {
+      type: ContinuousLaserBulletType
+      shake: 0
+      length: 480
+      width: 1
+      damage: 20
+      lifetime: 20
+      pierceCap: 1
+      status: allure-0b-energy2
+      statusDuration: 1
+      colors: [
+        7382f088,
+        ffffff
+      ]
+      layer: 90
+      oscScl: 0
+      frontLength: 2
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: [
+        {
+          length: 0
+          offset: 90
+          cone: 0
+          region: allure-diamond-vthin
+          particles: 1
+          lifetime: 25
+          colorTo: 90a2fc
+          sizeFrom: 20
+          sizeTo: 0
+        }
+        {
+          baseRotation: 180
+          line: true
+          particles: 4
+          cone: 45
+          length: -20
+          lifetime: 20
+          interp: pow2Out
+          sizeInterp: linear
+          lenFrom: 4
+          lenTo: 2
+          strokeFrom: 1
+          strokeTo: 0
+          colorTo: 7382f0
+        }
+      ]
+    }
+  }
+  {
+    x: 78
+    y: -17.25
+    rotate: true
+    autoTarget: true
+    controllable: false
+    useAttackRange: false
+    display: false
+    baseRotation: -90
+    rotationLimit: 180
+    targetInterval: 20
+    targetSwitchInterval: 60
+    alternate: false
+    rotateSpeed: 360
+    shootCone: 0.25
+    continuous: true
+    alwaysContinuous: true
+    shootSound: loopSmelter
+    shootSoundVolume: 0.5
+    initialShootSound: explosionArtilleryShockBig
+    bullet: {
+      type: ContinuousLaserBulletType
+      shake: 0
+      length: 480
+      width: 1
+      damage: 20
+      lifetime: 20
+      pierceCap: 1
+      status: allure-0b-energy2
+      statusDuration: 1
+      colors: [
+        7382f088,
+        ffffff
+      ]
+      layer: 90
+      oscScl: 0
+      frontLength: 2
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: [
+        {
+          length: 0
+          offset: 90
+          cone: 0
+          region: allure-diamond-vthin
+          particles: 1
+          lifetime: 25
+          colorTo: 90a2fc
+          sizeFrom: 20
+          sizeTo: 0
+        }
+        {
+          baseRotation: 180
+          line: true
+          particles: 4
+          cone: 45
+          length: -20
+          lifetime: 20
+          interp: pow2Out
+          sizeInterp: linear
+          lenFrom: 4
+          lenTo: 2
+          strokeFrom: 1
+          strokeTo: 0
+          colorTo: 7382f0
+        }
+      ]
+    }
+  }
+  {
+    x: 83.5
+    y: -51
+    rotate: true
+    autoTarget: true
+    controllable: false
+    useAttackRange: false
+    display: false
+    baseRotation: -90
+    rotationLimit: 180
+    targetInterval: 20
+    targetSwitchInterval: 60
+    alternate: false
+    rotateSpeed: 360
+    shootCone: 0.25
+    continuous: true
+    alwaysContinuous: true
+    shootSound: loopSmelter
+    shootSoundVolume: 0.5
+    initialShootSound: explosionArtilleryShockBig
+    bullet: {
+      type: ContinuousLaserBulletType
+      shake: 0
+      length: 480
+      width: 1
+      damage: 20
+      lifetime: 20
+      pierceCap: 1
+      status: allure-0b-energy2
+      statusDuration: 1
+      colors: [
+        7382f088,
+        ffffff
+      ]
+      layer: 90
+      oscScl: 0
+      frontLength: 2
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: [
+        {
+          length: 0
+          offset: 90
+          cone: 0
+          region: allure-diamond-vthin
+          particles: 1
+          lifetime: 25
+          colorTo: 90a2fc
+          sizeFrom: 20
+          sizeTo: 0
+        }
+        {
+          baseRotation: 180
+          line: true
+          particles: 4
+          cone: 45
+          length: -20
+          lifetime: 20
+          interp: pow2Out
+          sizeInterp: linear
+          lenFrom: 4
+          lenTo: 2
+          strokeFrom: 1
+          strokeTo: 0
+          colorTo: 7382f0
+        }
+      ]
+    }
+  }
+  {
+    x: 83.5
+    y: -60.5
+    rotate: true
+    autoTarget: true
+    controllable: false
+    useAttackRange: false
+    display: false
+    baseRotation: -90
+    rotationLimit: 180
+    targetInterval: 20
+    targetSwitchInterval: 60
+    alternate: false
+    rotateSpeed: 360
+    shootCone: 0.25
+    continuous: true
+    alwaysContinuous: true
+    shootSound: loopSmelter
+    shootSoundVolume: 0.5
+    initialShootSound: explosionArtilleryShockBig
+    bullet: {
+      type: ContinuousLaserBulletType
+      shake: 0
+      length: 480
+      width: 1
+      damage: 20
+      lifetime: 20
+      pierceCap: 1
+      status: allure-0b-energy2
+      statusDuration: 1
+      colors: [
+        7382f088,
+        ffffff
+      ]
+      layer: 90
+      oscScl: 0
+      frontLength: 2
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: [
+        {
+          length: 0
+          offset: 90
+          cone: 0
+          region: allure-diamond-vthin
+          particles: 1
+          lifetime: 25
+          colorTo: 90a2fc
+          sizeFrom: 20
+          sizeTo: 0
+        }
+        {
+          baseRotation: 180
+          line: true
+          particles: 4
+          cone: 45
+          length: -20
+          lifetime: 20
+          interp: pow2Out
+          sizeInterp: linear
+          lenFrom: 4
+          lenTo: 2
+          strokeFrom: 1
+          strokeTo: 0
+          colorTo: 7382f0
+        }
+      ]
+    }
+  }
+  {
+    x: 100.75
+    y: -121.25
+    rotate: true
+    autoTarget: true
+    controllable: false
+    useAttackRange: false
+    display: false
+    baseRotation: -90
+    rotationLimit: 180
+    targetInterval: 20
+    targetSwitchInterval: 60
+    alternate: false
+    rotateSpeed: 360
+    shootCone: 0.25
+    continuous: true
+    alwaysContinuous: true
+    shootSound: loopSmelter
+    shootSoundVolume: 0.5
+    initialShootSound: explosionArtilleryShockBig
+    bullet: {
+      type: ContinuousLaserBulletType
+      shake: 0
+      length: 480
+      width: 1
+      damage: 20
+      lifetime: 20
+      pierceCap: 1
+      status: allure-0b-energy2
+      statusDuration: 1
+      colors: [
+        7382f088,
+        ffffff
+      ]
+      layer: 90
+      oscScl: 0
+      frontLength: 2
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: [
+        {
+          length: 0
+          offset: 90
+          cone: 0
+          region: allure-diamond-vthin
+          particles: 1
+          lifetime: 25
+          colorTo: 90a2fc
+          sizeFrom: 20
+          sizeTo: 0
+        }
+        {
+          baseRotation: 180
+          line: true
+          particles: 4
+          cone: 45
+          length: -20
+          lifetime: 20
+          interp: pow2Out
+          sizeInterp: linear
+          lenFrom: 4
+          lenTo: 2
+          strokeFrom: 1
+          strokeTo: 0
+          colorTo: 7382f0
+        }
+      ]
+    }
+  }
+  {
+    x: 100.75
+    y: -130.75
+    rotate: true
+    autoTarget: true
+    controllable: false
+    useAttackRange: false
+    display: false
+    baseRotation: -90
+    rotationLimit: 180
+    targetInterval: 20
+    targetSwitchInterval: 60
+    alternate: false
+    rotateSpeed: 360
+    shootCone: 0.25
+    continuous: true
+    alwaysContinuous: true
+    shootSound: loopSmelter
+    shootSoundVolume: 0.5
+    initialShootSound: explosionArtilleryShockBig
+    bullet: {
+      type: ContinuousLaserBulletType
+      shake: 0
+      length: 480
+      width: 1
+      damage: 20
+      lifetime: 20
+      pierceCap: 1
+      status: allure-0b-energy2
+      statusDuration: 1
+      colors: [
+        7382f088,
+        ffffff
+      ]
+      layer: 90
+      oscScl: 0
+      frontLength: 2
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: [
+        {
+          length: 0
+          offset: 90
+          cone: 0
+          region: allure-diamond-vthin
+          particles: 1
+          lifetime: 25
+          colorTo: 90a2fc
+          sizeFrom: 20
+          sizeTo: 0
+        }
+        {
+          baseRotation: 180
+          line: true
+          particles: 4
+          cone: 45
+          length: -20
+          lifetime: 20
+          interp: pow2Out
+          sizeInterp: linear
+          lenFrom: 4
+          lenTo: 2
+          strokeFrom: 1
+          strokeTo: 0
+          colorTo: 7382f0
+        }
+      ]
+    }
+  }
+  {
+    x: 100.75
+    y: -150.5
+    rotate: true
+    autoTarget: true
+    controllable: false
+    useAttackRange: false
+    display: false
+    baseRotation: -90
+    rotationLimit: 180
+    targetInterval: 20
+    targetSwitchInterval: 60
+    alternate: false
+    rotateSpeed: 360
+    shootCone: 0.25
+    continuous: true
+    alwaysContinuous: true
+    shootSound: loopSmelter
+    shootSoundVolume: 0.5
+    initialShootSound: explosionArtilleryShockBig
+    bullet: {
+      type: ContinuousLaserBulletType
+      shake: 0
+      length: 480
+      width: 1
+      damage: 20
+      lifetime: 20
+      pierceCap: 1
+      status: allure-0b-energy2
+      statusDuration: 1
+      colors: [
+        7382f088,
+        ffffff
+      ]
+      layer: 90
+      oscScl: 0
+      frontLength: 2
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: [
+        {
+          length: 0
+          offset: 90
+          cone: 0
+          region: allure-diamond-vthin
+          particles: 1
+          lifetime: 25
+          colorTo: 90a2fc
+          sizeFrom: 20
+          sizeTo: 0
+        }
+        {
+          baseRotation: 180
+          line: true
+          particles: 4
+          cone: 45
+          length: -20
+          lifetime: 20
+          interp: pow2Out
+          sizeInterp: linear
+          lenFrom: 4
+          lenTo: 2
+          strokeFrom: 1
+          strokeTo: 0
+          colorTo: 7382f0
+        }
+      ]
+    }
+  }
+  //AND SOME BUILD BEAMS TOO
+  {
+    type: BuildWeapon
+    x: 78
+    y: 46.5
+    shootY: 0
+  }
+  {
+    type: BuildWeapon
+    x: 78
+    y: 37
+    shootY: 0
+  }
+  {
+    type: BuildWeapon
+    x: 78
+    y: 11.75
+    shootY: 0
+  }
+  {
+    type: BuildWeapon
+    x: 78
+    y: 2.25
+    shootY: 0
+  }
+  {
+    type: BuildWeapon
+    x: 78
+    y: -7.25
+    shootY: 0
+  }
+  {
+    type: BuildWeapon
+    x: 83.5
+    y: -41
+    shootY: 0
+  }
+  {
+    type: BuildWeapon
+    x: 83.5
+    y: -50.5
+    shootY: 0
+  }
+  {
+    type: BuildWeapon
+    x: 100.75
+    y: -111.5
+    shootY: 0
+  }
+  {
+    type: BuildWeapon
+    x: 100.75
+    y: -120.75
+    shootY: 0
+  }
+  {
+    type: BuildWeapon
+    x: 100.75
+    y: -140.5
+    shootY: 0
   }
   //engines
   {
+    y: -195
     x: 0
-    y: -75
-    baseRotation: 180
-    alwaysShooting: true
-    shootCone: 360
-    continuous: true
-    mirror: false
-    reload: 1
-    shootSound: none
-    shootWarmupSpeed: 0.1
-    minShootVelocity: 1.8
-    recoil: 0
-    display: false
-    parts: [
-      {
-        name: allure-thruster-flare
-        y: 46
-        rotation: 180
-        outline: false
-        blending: additive
-        mixColor: 90a2fc
-        color: ffffff44
-        colorTo: ffffff
-        layer: 88
-        progress: heat
-      }
-      {
-        type: FlarePart
-        sides: 2
-        color1: 7382f0bb
-        radius: 0
-        radiusTo: 100
-        stroke: 6
-        innerRadScl: 0.75
-        y: 6
-        progress: heat
-        layer: 101
-      }
-      {
-        type: FlarePart
-        sides: 2
-        color1: 00000000
-        radius: 0
-        radiusTo: 40
-        stroke: 40
-        y: 6
-        progress: heat
-        layer: 101
-      }
-    ]
-    bullet: {
-      type: ContinuousFlameBulletType
-      lifetime: 14
-      collides: false
-      length: 100
-      width: 15
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      drawFlare: false
-      shootEffect: none
-      smokeEffect: none
-      lengthInterp: pow10Out
-      oscScl: 1
-      oscMag: 0.1
-      hitEffect: none
-      lightOpacity: 0.4
-    }
-  }
-  {
-    x: 0
-    y: -75
-    baseRotation: 180
-    alwaysShooting: true
-    shootCone: 360
-    continuous: true
-    mirror: false
-    reload: 1
-    shootSound: none
-    shootWarmupSpeed: 0.1
-    minShootVelocity: 1.8
-    cooldownTime: 15
-    recoil: 0
-    display: false
-    parts: [
-      {
-        name: allure-thruster-flare
-        y: 46
-        rotation: 180
-        outline: false
-        blending: additive
-        mixColor: 90a2fc
-        color: ffffff44
-        colorTo: ffffff
-        layer: 88
-        progress: heat
-      }
-    ]
-    bullet: {
-      type: ContinuousFlameBulletType
-      lifetime: 10
-      collides: false
-      length: 100
-      width: 15
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      drawFlare: false
-      shootEffect: none
-      smokeEffect: none
-      lengthInterp: pow10Out
-      oscScl: 1
-      oscMag: 0.1
-      hitEffect: none
-      lightOpacity: 0.4
-    }
-  }
-  {
-    x: 42
-    y: -86
-    baseRotation: 180
-    alwaysShooting: true
-    shootCone: 360
-    continuous: true
-    alternate: false
-    reload: 1
-    shootSound: none
-    shootWarmupSpeed: 0.1
-    minShootVelocity: 1.8
-    recoil: 0
-    display: false
-    parts: [
-      {
-        name: allure-thruster-flare
-        y: 20
-        xScl: 0.45
-        yScl: 0.45
-        rotation: 180
-        outline: false
-        blending: additive
-        mixColor: 90a2fc
-        color: ffffff44
-        colorTo: ffffff
-        layer: 88
-        progress: heat
-      }
-      {
-        type: FlarePart
-        sides: 2
-        color1: 7382f0bb
-        radius: 0
-        radiusTo: 45
-        stroke: 4
-        innerRadScl: 0.75
-        y: 4
-        progress: heat
-        layer: 101
-      }
-      {
-        type: FlarePart
-        sides: 2
-        color1: 00000000
-        radius: 0
-        radiusTo: 18
-        stroke: 18
-        y: 4
-        progress: heat
-        layer: 101
-      }
-    ]
-    bullet: {
-      type: ContinuousFlameBulletType
-      lifetime: 14
-      collides: false
-      length: 47
-      width: 7
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      drawFlare: false
-      shootEffect: none
-      smokeEffect: none
-      lengthInterp: pow10Out
-      oscScl: 1
-      oscMag: 0.1
-      hitEffect: none
-      lightStroke: 20
-      lightOpacity: 0.4
-    }
-  }
-  {
-    x: 42
-    y: -86
-    baseRotation: 180
-    alwaysShooting: true
-    shootCone: 360
-    continuous: true
-    alternate: false
-    reload: 1
-    shootSound: none
-    shootWarmupSpeed: 0.03
-    minShootVelocity: 1.8
-    recoil: 0
-    display: false
-    parts: [
-      {
-        name: allure-thruster-flare
-        y: 20
-        xScl: 0.45
-        yScl: 0.45
-        rotation: 180
-        outline: false
-        blending: additive
-        mixColor: 90a2fc
-        color: ffffff44
-        colorTo: ffffff
-        layer: 88
-        progress: heat
-      }
-    ]
-    bullet: {
-      type: ContinuousFlameBulletType
-      lifetime: 10
-      collides: false
-      length: 47
-      width: 7
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      drawFlare: false
-      shootEffect: none
-      smokeEffect: none
-      lengthInterp: pow10Out
-      oscScl: 1
-      oscMag: 0.1
-      hitEffect: none
-      lightStroke: 20
-      lightOpacity: 0.4
-    }
-  }
-  //idle flames
-  {
-    x: 0
-    y: -66
-    baseRotation: 180
-    alwaysShooting: true
-    alwaysContinuous: true
-    shootCone: 360
-    continuous: true
-    mirror: false
-    shootSound: none
-    recoil: 0
-    display: false
-    bullet: {
-      type: ContinuousFlameBulletType
-      layer: 90.1
-      collides: false
-      length: 30
-      width: 15
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      drawFlare: false
-      shootEffect: none
-      smokeEffect: none
-      lengthInterp: pow10Out
-      oscScl: 2.5
-      oscMag: 0.1
-      hitEffect: none
-      lightStroke: 20
-      lightOpacity: 0.25
-    }
-  }
-  {
-    x: 42
-    y: -86
-    baseRotation: 180
-    alwaysShooting: true
-    alwaysContinuous: true
-    shootCone: 360
-    continuous: true
-    alternate: false
-    shootSound: none
-    recoil: 0
-    display: false
-    bullet: {
-      type: ContinuousFlameBulletType
-      layer: 90.1
-      collides: false
-      length: 14
-      width: 7
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      drawFlare: false
-      shootEffect: none
-      smokeEffect: none
-      lengthInterp: pow10Out
-      oscScl: 2.5
-      oscMag: 0.1
-      hitEffect: none
-      lightStroke: 10
-      lightOpacity: 0.25
-    }
-  }
-  {
-    x: 42
-    y: 16
-    baseRotation: -90
-    alwaysShooting: true
-    alwaysContinuous: true
-    shootCone: 360
-    continuous: true
-    alternate: false
-    shootSound: none
-    recoil: 0
-    display: false
-    bullet: {
-      type: ContinuousFlameBulletType
-      layer: 90.1
-      collides: false
-      length: 12
-      width: 6
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      drawFlare: false
-      shootEffect: none
-      smokeEffect: none
-      lengthInterp: pow10Out
-      oscScl: 2.5
-      oscMag: 0.1
-      hitEffect: none
-      lightStroke: 10
-      lightOpacity: 0.25
-    }
-  }
-  {
-    x: 36
-    y: 43
-    baseRotation: -90
-    alwaysShooting: true
-    alwaysContinuous: true
-    shootCone: 360
-    continuous: true
-    alternate: false
-    shootSound: none
-    recoil: 0
-    display: false
-    bullet: {
-      type: ContinuousFlameBulletType
-      layer: 90.1
-      collides: false
-      length: 12
-      width: 6
-      colors: [7382f045, 90a2fc90, a0aaf4aa, d0d4f8dd, ffffff]
-      drawFlare: false
-      shootEffect: none
-      smokeEffect: none
-      lengthInterp: pow10Out
-      oscScl: 2.5
-      oscMag: 0.1
-      hitEffect: none
-      lightStroke: 10
-      lightOpacity: 0.25
-    }
-  }
-  //temporary Harmony summons
-  {
-    alwaysShooting: true
-    controllable: false
+    shootY: 0
     rotate: true
     rotateSpeed: 0
-    x: 0
+    baseRotation: 180
+    alwaysShooting: true
+    continuous: true
+    alternate: false
     mirror: false
-    reload: 1500
+    reload: 3
+    xRand: 48
     shootSound: none
-    shoot: {
-      type: ShootBarrel
-      firstShotDelay: 1100
-      shots: 2
-      shotDelay: 100
-      barrels: [
-        -240, 0, 0,
-        240, 0, 0
-      ]
-    }
+    shootWarmupSpeed: 0.03
+    minShootVelocity: 2.75
+    recoil: 0
+    display: false
+    parts: [
+      {
+        name: allure-thruster-flare
+        layer: 90.6
+        y: 50
+        outline: false
+        color: 7382f000
+        colorTo: 7382f0
+        blending: additive
+        xScl: 3
+        yScl: 3
+      }
+      {
+        name: allure-shootspike
+        layer: 90.4
+        rotation: 90
+        outline: false
+        clampProgress: false
+        color: 7382f000
+        colorTo: 7382f088
+        blending: additive
+        xScl: 0
+        yScl: 7
+        growX: 6
+        progress: heat
+        growProgress: {
+          type: heat
+          op: sin
+          scl: 3
+          mag: 0.1
+        }
+      }
+      {
+        name: allure-shootspike
+        layer: 90.4
+        rotation: 90
+        outline: false
+        clampProgress: false
+        color: 7382f0
+        colorTo: ffffff
+        blending: additive
+        xScl: 2
+        yScl: 7
+        growX: 2
+        progress: heat
+        growProgress: {
+          type: heat
+          op: sin
+          scl: 3
+          mag: 0.1
+        }
+      }
+      {
+        type: FlarePart
+        y: 40
+        sides: 2
+        color1: 7382f0bb
+        radius: 0
+        radiusTo: 480
+        stroke: 24
+        innerRadScl: 0.75
+        progress: heat
+        layer: 101
+      }
+      {
+        type: FlarePart
+        y: 40
+        sides: 2
+        color1: 00000000
+        radius: 0
+        radiusTo: 128
+        stroke: 128
+        progress: heat
+        layer: 101
+      }
+    ]
     bullet: {
-      spawnUnit: allure-temp-harmony-spawn
+      type: EmptyBulletType
+      lifetime: 2
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: {
+        rotWithParent: true
+        line: true
+        particles: 1
+        cone: 0
+        length: 90
+        layer: 90.5
+        lifetime: 25
+        lenFrom: 30
+        lenTo: 0
+        strokeFrom: 3
+        strokeTo: 3
+        colorTo: 7382f0
+        interp: pow2Out
+      }
     }
   }
-  //death
   {
-    shootOnDeath: true
-    controllable: false
-    reload: 15
-    x: 0
-    shootCone: 360
+    y: -180
+    x: 85
+    shootY: 0
+    rotate: true
+    rotateSpeed: 0
+    baseRotation: 180
+    alwaysShooting: true
+    continuous: true
+    alternate: false
+    mirror: true
+    reload: 2
+    xRand: 24
     shootSound: none
+    shootWarmupSpeed: 0.03
+    minShootVelocity: 2.75
+    recoil: 0
+    display: false
+    parts: [
+      {
+        name: allure-thruster-flare
+        layer: 90.6
+        y: 30
+        outline: false
+        color: 7382f000
+        colorTo: 7382f0
+        blending: additive
+        xScl: 1.5
+        yScl: 1.5
+      }
+      {
+        name: allure-shootspike
+        layer: 90.4
+        rotation: 90
+        outline: false
+        clampProgress: false
+        color: 7382f000
+        colorTo: 7382f088
+        blending: additive
+        xScl: 0
+        yScl: 3
+        growX: 3
+        progress: heat
+        growProgress: {
+          type: heat
+          op: sin
+          scl: 3
+          mag: 0.1
+        }
+      }
+      {
+        name: allure-shootspike
+        layer: 90.4
+        rotation: 90
+        outline: false
+        clampProgress: false
+        color: 7382f0
+        colorTo: ffffff
+        blending: additive
+        xScl: 1
+        yScl: 3
+        growX: 1
+        progress: heat
+        growProgress: {
+          type: heat
+          op: sin
+          scl: 3
+          mag: 0.1
+        }
+      }
+      {
+        type: FlarePart
+        y: 20
+        sides: 2
+        color1: 7382f0bb
+        radius: 0
+        radiusTo: 240
+        stroke: 12
+        innerRadScl: 0.75
+        progress: heat
+        layer: 101
+      }
+      {
+        type: FlarePart
+        y: 20
+        sides: 2
+        color1: 00000000
+        radius: 0
+        radiusTo: 64
+        stroke: 64
+        progress: heat
+        layer: 101
+      }
+    ]
     bullet: {
-      spawnUnit: allure-0b00-17-hellfire-transit
+      type: EmptyBulletType
+      lifetime: 2
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: {
+        rotWithParent: true
+        line: true
+        particles: 1
+        cone: 0
+        length: 45
+        layer: 90.5
+        lifetime: 25
+        lenFrom: 15
+        lenTo: 0
+        strokeFrom: 2
+        strokeTo: 2
+        colorTo: 7382f0
+        interp: pow2Out
+      }
     }
   }
 ]
@@ -2716,109 +3883,109 @@ abilities: [
   //segmented shield layer
   {
     type: ShieldArcAbility
-    regen: 50
-    max: 120000
-    angle: 55
-    radius: 115
-    cooldown: 90
+    regen: 100
+    max: 500000
+    angle: 65
+    radius: 220
+    cooldown: 180
     whenShooting: false
     angleOffset: 0
-    y: 23
-    width: 3
+    y: 60
+    width: 32
   }
   {
     type: ShieldArcAbility
-    regen: 50
-    max: 120000
-    angle: 55
-    radius: 115
-    cooldown: 90
+    regen: 100
+    max: 500000
+    angle: 65
+    radius: 220
+    cooldown: 180
     whenShooting: false
     angleOffset: 180
-    y: -23
-    width: 3
+    y: -60
+    width: 32
     display: false
   }
   {
     type: ShieldArcAbility
-    regen: 50
-    max: 120000
+    regen: 100
+    max: 500000
     angle: 35
-    radius: 171
-    cooldown: 90
+    radius: 282
+    cooldown: 180
     whenShooting: false
     angleOffset: 90
     x: 49
-    width: 3
+    width: 32
     display: false
   }
   {
     type: ShieldArcAbility
-    regen: 50
-    max: 120000
+    regen: 100
+    max: 500000
     angle: 35
-    radius: 171
-    cooldown: 90
+    radius: 282
+    cooldown: 180
     whenShooting: false
     angleOffset: -90
     x: -49
-    width: 3
+    width: 32
     display: false
   }
   {
     type: ShieldArcAbility
-    regen: 50
-    max: 120000
-    angle: 54
-    radius: 109
-    cooldown: 90
+    regen: 100
+    max: 500000
+    angle: 50
+    radius: 220
+    cooldown: 180
     whenShooting: false
-    angleOffset: 50.5
-    y: 26
-    x: -8
-    width: 3
+    angleOffset: 58
+    y: 58
+    x: 0
+    width: 32
     display: false
   }
   {
     type: ShieldArcAbility
-    regen: 50
-    max: 120000
-    angle: 54
-    radius: 109
-    cooldown: 90
+    regen: 100
+    max: 500000
+    angle: 50
+    radius: 220
+    cooldown: 180
     whenShooting: false
-    angleOffset: 129.5
-    y: -26
-    x: -8
-    width: 3
+    angleOffset: -58
+    y: 58
+    x: 0
+    width: 32
     display: false
   }
   {
     type: ShieldArcAbility
-    regen: 50
-    max: 120000
-    angle: 54
-    radius: 109
-    cooldown: 90
+    regen: 100
+    max: 500000
+    angle: 50
+    radius: 220
+    cooldown: 180
     whenShooting: false
-    angleOffset: -50.5
-    y: 26
-    x: 8
-    width: 3
+    angleOffset: 122
+    y: -58
+    x: 0
+    width: 32
     display: false
   }
   {
     type: ShieldArcAbility
-    regen: 50
-    max: 120000
-    angle: 54
-    radius: 109
-    cooldown: 90
+    regen: 100
+    max: 500000
+    angle: 50
+    radius: 220
+    cooldown: 180
     whenShooting: false
-    angleOffset: -129.5
-    y: -26
-    x: 8
-    width: 3
+    angleOffset: -122
+    y: -58
+    x: 0
+    width: 32
     display: false
   }
   //all warden ships regenerate slowly

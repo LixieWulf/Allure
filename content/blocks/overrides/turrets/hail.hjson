@@ -1,3 +1,5 @@
+targetInterval: 30
+newTargetInterval: 120
 reload: 120
 range: 480
 minRange: 240
@@ -7,7 +9,7 @@ ammoTypes: {
   graphite: {
     type: ArtilleryBulletType
     speed: 3
-    damage: 15
+    damage: 10
     lifetime: 160
     knockback: 0.65
     inaccuracy: 9
@@ -18,8 +20,8 @@ ammoTypes: {
     width: 22
     height: 22
     collidesTiles: false
-    splashDamage: 27
-    splashDamageRadius: 24
+    splashDamage: 15
+    splashDamageRadius: 32
     hitColor: 7d89d8
     trailColor: 7d89d8
     backColor: 7d89d8
@@ -43,8 +45,8 @@ ammoTypes: {
     width: 22
     height: 22
     collidesTiles: false
-    splashDamage: 35
-    splashDamageRadius: 24
+    splashDamage: 25
+    splashDamageRadius: 32
     hitColor: 707594
     backColor: 707594
     trailColor: 707594
@@ -55,7 +57,7 @@ ammoTypes: {
   pyratite: {
     type: ArtilleryBulletType
     speed: 3
-    damage: 30
+    damage: 15
     lifetime: 160
     knockback: 0.8
     inaccuracy: 5
@@ -80,3 +82,4 @@ ammoTypes: {
     despawnEffect: hitBulletColor
   }
 }
+maxAmmo: 6

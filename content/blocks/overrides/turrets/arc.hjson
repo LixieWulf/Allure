@@ -1,0 +1,19 @@
+targetInterval: 20
+newTargetInterval: 30
+shootCone: 3
+inaccuracy: 3
+range: 120
+shootType: {
+  type: RailBulletType
+  collidesAir: false
+  damage: 12
+  length: 120
+  ammoMultiplier: 1
+  pierceCap: 3
+  pierceEffect: hitLancer
+  shootEffect: lightningShoot
+  smokeEffect: none
+  lineEffect: chainLightning
+  hitColor: a9d8ff
+  status: shocked
+}

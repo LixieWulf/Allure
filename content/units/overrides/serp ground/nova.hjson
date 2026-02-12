@@ -1,0 +1,50 @@
+health: 130
+armor: 0
+speed: 0.7
+buildSpeed: 0.05
+boostMultiplier: 2.5
+riseSpeed: 0.02
+weapons: [
+  {
+    name: heal-weapon
+    top: false
+    alternate: false
+    x: 4
+    y: 0.75
+    reload: 30
+    shootSound: shootLaser
+    bullet: {
+      type: LaserBoltBulletType
+      damage: 5
+      speed: 5
+      lifetime: 40
+      pierce: true
+      pierceBuilding: true
+      pierceDamageFactor: 0.005
+      pierceCap: 3
+      collidesTeam: true
+      healAmount: 30
+      frontColor: ffffff
+      backColor: 98ffa9
+    }
+  }
+]
+abilities: [
+  {
+    type: RepairFieldAbility
+    reload: 45
+    range: 20
+    amount: 10
+  }
+]
+research: {
+  parent: dagger
+  objectives: [
+    ground-factory
+    {
+      type: OnSector
+      preset: plaguedIslands
+    }
+  ]
+  requirements: []
+}

@@ -11,3 +11,7 @@ research: {
   ]
 }
 effect: allure-healing-flood
+shownPlanets: [
+  allure-wandura,
+  allure-lus
+]

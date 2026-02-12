@@ -1,0 +1,5 @@
+sector: 125
+difficulty: 4
+research: {
+  parent: overgrownBasin
+}

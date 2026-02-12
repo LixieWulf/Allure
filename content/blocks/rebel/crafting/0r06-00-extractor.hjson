@@ -9,8 +9,8 @@ attribute: steam
 squareSprite: false
 size: 8
 warmupSpeed: 0.005
-itemCapacity: 400
-liquidCapacity: 200
+itemCapacity: 200
+liquidCapacity: 20
 hasLiquids: true
 craftTime: 300
 ignoreLiquidFullness: true
@@ -146,13 +146,13 @@ drawer: [
 ]
 consumes: {
   items: [
-    contained-slag/60
-    contained-energia/15
+    contained-slag/50
+    contained-energia/10
   ]
 }
 outputItem: anden/50
 outputLiquids: [
-  chlorine/0.05
+  chlorine/0.03334
 ]
 updateEffect: none
 category: crafting

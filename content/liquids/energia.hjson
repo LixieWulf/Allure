@@ -13,3 +13,8 @@ research: {
 }
 color: b3e9ff
 lightColor: b3e9ff44
+shownPlanets: [
+  allure-wandura,
+  allure-genaise,
+  allure-lus
+]

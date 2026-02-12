@@ -10,7 +10,11 @@ reload: 30
 recoil: 2.5
 inaccuracy: 2
 cooldownTime: 35
-shootSound: none //this is handled by the bullets
+targetInterval: 5
+newTargetInterval: 60
+smokeEffect: shootSmallSmoke
+shootEffect: shootBig
+shootSound: shootScatter
 shoot: {
   type: ShootAlternate
   shots: 2
@@ -22,7 +26,12 @@ ammoTypes: {
     damage: 14
     speed: 4
     lifetime: 40
-    reloadMultiplier: 0.8
+    reloadMultiplier: 0.75
+    ammoMultiplier: 1
+    pierce: true
+    pierceBuilding: true
+    pierceCap: 2
+    pierceDamageFactor: 0.001
     height: 15
     width: 10
     frontColor: b3b7cf
@@ -30,17 +39,6 @@ ammoTypes: {
     hitColor: 8c7fa9
     hitEffect: hitBulletColor
     despawnEffect: hitBulletColor
-    shootEffect: shootSmall
-    smokeEffect: shootSmallSmoke
-    spawnBullets: [
-      {
-        type: EmptyBulletType
-        lifetime: 0
-        despawnEffect: none
-        despawnSound: shootSnap
-        despawnShake: 0.5
-      }
-    ]
   }
   scrap: {
     damage: 3
@@ -59,17 +57,6 @@ ammoTypes: {
     hitColor: d8887e
     hitEffect: flakExplosion
     despawnEffect: hitBulletColor
-    shootEffect: shootSmall
-    smokeEffect: shootSmallSmoke
-    spawnBullets: [
-      {
-        type: EmptyBulletType
-        lifetime: 0
-        despawnEffect: none
-        despawnSound: shootSnap
-        despawnShake: 0.5
-      }
-    ]
   }
   pyratite: {
     damage: 14
@@ -83,23 +70,12 @@ ammoTypes: {
     width: 8
     frontColor: f8ad42
     backColor: f68021
-    shootEffect: shootSmall
-    smokeEffect: shootSmallSmoke
     hitEffect: [
       hitBulletSmall, 
       fireHit
     ]
     status: burning
     makeFire: true 
-    spawnBullets: [
-      {
-        type: EmptyBulletType
-        lifetime: 0
-        despawnEffect: none
-        despawnSound: shootSnap
-        despawnShake: 0.5
-      }
-    ]
   }
   silicon: {
     damage: 19
@@ -114,19 +90,8 @@ ammoTypes: {
     hitColor: 707594
     hitEffect: hitBulletColor
     despawnEffect: hitBulletColor
-    shootEffect: shootSmall
-    smokeEffect: shootSmallSmoke
     homingPower: 0.1
     homingRange: 35
-    spawnBullets: [
-      {
-        type: EmptyBulletType
-        lifetime: 0
-        despawnEffect: none
-        despawnSound: shootSnap
-        despawnShake: 0.5
-      }
-    ]
   }
   thorium: {
     damage: 25
@@ -142,17 +107,7 @@ ammoTypes: {
     hitColor: f595be
     hitEffect: hitBulletColor
     despawnEffect: hitBulletColor
-    shootEffect: shootBig
-    smokeEffect: shootSmallSmoke
-    spawnBullets: [
-      {
-        type: EmptyBulletType
-        lifetime: 0
-        despawnEffect: none
-        despawnSound: shootBig
-        despawnShake: 1
-      }
-    ]
+    shootSound: shootSpectre
   }
 }
 requirements: [

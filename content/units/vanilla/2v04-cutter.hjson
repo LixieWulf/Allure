@@ -73,7 +73,7 @@ weapons: [
     mirror: false
     rotate: true
     rotateSpeed: 3
-    reload: 5
+    reload: 7
     recoil: 3
     recoilTime: 45
     inaccuracy: 1
@@ -81,7 +81,7 @@ weapons: [
     velocityRnd: 0.05
     shoot: {
       shots: 4
-      shotDelay: 1
+      shotDelay: 1.5
     }
     shootY: 16
     shootStatus: slow
@@ -112,6 +112,9 @@ weapons: [
       shootEffect: shootLiquid
       hitEffect: none
       despawnEffect: hitLiquid
+      setDefaults: false
+      despawnHit: false
+      fragOnHit: false
       fragBullets: 1
       fragOffsetMin: 0
       fragOffsetMax: 0

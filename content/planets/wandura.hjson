@@ -62,7 +62,6 @@ icon: terrain
 //various rules
 allowLaunchSchematics: false
 allowLaunchLoadout: false
-allowWaveSimulation: false
 allowSectorInvasion: false
 clearSectorOnLose: true
 prebuildBase: true
@@ -72,7 +71,7 @@ enemyBuildSpeedMultiplier: 1
 //default core to launch with
 defaultCore: 0bc0-nexus
 //visual mesh made of hexagons - note that JSON only supports NoiseMesh and HexSkyMesh
-//use objects {} to make a single mesh, and the below format to create multiple
+//use objects {} to make a single mesh, and the format below to create multiple
 mesh: [
   {
     type: NoiseMesh
