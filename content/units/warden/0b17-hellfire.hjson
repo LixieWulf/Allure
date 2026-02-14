@@ -4,7 +4,7 @@ envEnabled: -1
 shadowElevationScl: 9
 range: 240
 maxRange: 1316
-hitSize: 240
+hitSize: 360
 health: 1000000
 armor: 1500
 speed: 3
@@ -434,7 +434,7 @@ parts: [
 healColor: 7382f088
 shieldColor: 7382f000
 loopSound: loopSmelter
-loopSoundVolume: 0.5
+loopSoundVolume: 1
 moveSound: loopSmelter
 weapons: [
   //the beam finally displayed in its true glory
@@ -1556,7 +1556,7 @@ weapons: [
           particles: 1
           cone: 0
           length: 40
-          baseLength: 180
+          baseLength: 100
           randLength: false
           lifetime: 60
           sizeFrom: 120
@@ -1687,9 +1687,10 @@ weapons: [
     otherSide: 1
     shake: 32
     shadow: 240
-    shootY: 96
+    shootY: 32
     shootCone: 1
     shootWarmupSpeed: 0.01
+    smoothReloadSpeed: 0.05
     shootSound: shootConquer
     parts: [
       {
@@ -1698,6 +1699,21 @@ weapons: [
         y: 30
         xScl: 0.95
         yScl: 0.95
+      }
+      {
+        type: RegionPart
+        layer: 90.001
+        name: circle-shadow
+        outline: false
+        blending: additive
+        progress: smoothReload
+        growProgress: smoothReload
+        color: e6555500
+        colorTo: e6555544
+        xScl: 0
+        yScl: 0
+        growX: 10
+        growY: 10
       }
     ]
     bullet: {
@@ -1735,6 +1751,7 @@ weapons: [
           sizeTo: 0
           colorFrom: ffffff88
           colorTo: 7382f088
+          layer: 90
         }
         {
           particles: 5
@@ -1746,7 +1763,7 @@ weapons: [
           sizeTo: 0
           colorFrom: 7382f088
           colorTo: 7382f088
-          layer: 105
+          layer: 89
         }
         {
           line: true
@@ -1764,6 +1781,7 @@ weapons: [
           strokeTo: 24
           colorFrom: 7382f0
           colorTo: 7382f088
+          layer: 89
         }
         {
           line: true
@@ -1781,6 +1799,7 @@ weapons: [
           strokeTo: 24
           colorFrom: 7382f0
           colorTo: 7382f088
+          layer: 89
         }
         {
           line: true
@@ -1840,10 +1859,10 @@ weapons: [
           cone: 0
           length: 0
           lifetime: 45
-          sizeFrom: 180
-          sizeTo: 90
-          layer: 89
-          colorFrom: ffffff88
+          sizeFrom: 200
+          sizeTo: 100
+          layer: 90
+          colorFrom: ffffffbb
           colorTo: 7382f000
           region: circle-shadow
         }
