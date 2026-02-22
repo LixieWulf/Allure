@@ -21,3 +21,17 @@ requirements: [
   copper/150
   graphite/50
 ]
+research: {
+  parent: ground-factory
+  objectives: [
+    {
+      type: SectorComplete
+      preset: fungalPass
+    }
+  ]
+  requirements: [
+    copper/1000
+    lead/500
+    graphite/500
+  ]
+}

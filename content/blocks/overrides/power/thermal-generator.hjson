@@ -1,0 +1,10 @@
+powerProduction: 0.5
+research: {
+  parent: steam-generator
+  objectives: [
+    {
+      type: onSector
+      preset: powerResearchOutpost
+    }
+  ]
+}

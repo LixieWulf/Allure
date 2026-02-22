@@ -62,3 +62,12 @@ weapons: [
     }
   }
 ]
+research: {
+  parent: naval-factory
+  objectives: [
+    {
+      type: SectorComplete
+      preset: ruinousShores
+    }
+  ]
+}

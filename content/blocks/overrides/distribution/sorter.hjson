@@ -1,0 +1,9 @@
+research: {
+  parent: router
+  objectives: [
+    {
+      type: SectorComplete
+      preset: groundZero
+    }
+  ]
+}

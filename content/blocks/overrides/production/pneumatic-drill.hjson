@@ -8,7 +8,7 @@ consumes: {
   ]
   liquid: {
     liquid: water
-    amount: 0.3
+    amount: 0.2
     optional: true
     booster: true
   }
@@ -17,6 +17,15 @@ requirements: [
   copper/40
   graphite/20
 ]
+research: {
+  parent: mechanical-drill
+  objectives: [
+    {
+      type: SectorComplete
+      preset: jaggedHeights
+    }
+  ]
+}
 drillMultipliers: {
   coal: 1.04167
 }

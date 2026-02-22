@@ -1,3 +1,18 @@
 health: 4000
 unitCapModifier: 24
 itemCapacity: 8000
+requirements: [
+  copper/3000
+  lead/3000
+  silicon/2000
+  titanium/1500
+]
+research: {
+  parent: core-shard
+  requirements: [
+    copper/200000
+    lead/200000
+    silicon/125000
+    titanium/50000
+  ]
+}

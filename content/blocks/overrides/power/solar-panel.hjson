@@ -1,1 +1,10 @@
-powerProduction: 0.25
+powerProduction: 0.2
+research: {
+  parent: battery\
+  objectives: [
+    {
+      type: onSector
+      preset: powerResearchOutpost
+    }
+  ]
+}

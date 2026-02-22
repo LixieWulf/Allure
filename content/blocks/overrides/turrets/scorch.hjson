@@ -34,3 +34,12 @@ ammoTypes: {
     hittable: false
   }
 }
+research: {
+  parent: duo
+  objectives: [
+    {
+      type: onSector
+      preset: ruinousShores
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+research: {
+  parent: sorter
+  objectives: [
+    {
+      type: SectorComplete
+      preset: groundZero
+    }
+  ]
+}

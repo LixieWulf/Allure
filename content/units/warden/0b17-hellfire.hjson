@@ -667,8 +667,8 @@ weapons: [
             }
           ]
         }
-        hitSound: blockExplode3
-        hitSoundVolume: 0.334
+        hitSound: blockExplode2
+        hitSoundVolume: 0.5
         fragBullets: 2
         fragRandomSpread: 4
         fragOffsetMin: 500
@@ -1313,7 +1313,7 @@ weapons: [
   //railguns
   {
     name: hellfire-railgun
-    layerOffset: 3
+    layerOffset: 0.9
     x: 0
     y: -50
     mirror: false
@@ -1325,7 +1325,7 @@ weapons: [
     cooldownTime: 360
     otherSide: 2
     shake: 32
-    shadow: 240
+    shadow: 360
     shootY: 32
     shootCone: 1
     shootWarmupSpeed: 0.01
@@ -1999,7 +1999,7 @@ weapons: [
       height: 24
       frontColor: ffffff
       backColor: 7382f0
-      hitCOlor: 7382f0
+      hitColor: 7382f0
       trailColor: 7382f0
       trailLength: 5
       trailWidth: 2
@@ -2052,7 +2052,7 @@ weapons: [
       height: 24
       frontColor: ffffff
       backColor: 7382f0
-      hitCOlor: 7382f0
+      hitColor: 7382f0
       trailColor: 7382f0
       trailLength: 5
       trailWidth: 2
@@ -2105,7 +2105,7 @@ weapons: [
       height: 24
       frontColor: ffffff
       backColor: 7382f0
-      hitCOlor: 7382f0
+      hitColor: 7382f0
       trailColor: 7382f0
       trailLength: 5
       trailWidth: 2
@@ -2158,7 +2158,7 @@ weapons: [
       height: 24
       frontColor: ffffff
       backColor: 7382f0
-      hitCOlor: 7382f0
+      hitColor: 7382f0
       trailColor: 7382f0
       trailLength: 5
       trailWidth: 2
@@ -2211,7 +2211,7 @@ weapons: [
       height: 24
       frontColor: ffffff
       backColor: 7382f0
-      hitCOlor: 7382f0
+      hitColor: 7382f0
       trailColor: 7382f0
       trailLength: 5
       trailWidth: 2

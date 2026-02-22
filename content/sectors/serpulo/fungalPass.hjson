@@ -1,5 +1,13 @@
 sector: 124
+planet: serpulo
 research: {
   parent: frozenForest
-
+  objectives: [
+    {
+      type: SectorComplete
+      preset: frozenForest
+    }
+    ground-factory
+    dagger
+  ]
 }

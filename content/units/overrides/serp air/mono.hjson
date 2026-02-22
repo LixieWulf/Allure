@@ -1,2 +1,11 @@
 mineSpeed: 0.5
 itemCapacity: 10
+research: {
+  parent: air-factory
+  objectives: [
+    {
+      type: onSector
+      preset: jaggedHeights
+    }
+  ]
+}

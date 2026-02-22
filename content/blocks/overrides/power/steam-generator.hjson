@@ -1,4 +1,14 @@
 powerProduction: 5
+itemDuration: 60
 itemDurationMultipliers: {
-  pyratite: 3
+  pyratite: 4
+}
+research: {
+  parent: combustion-generator
+  objectives: [
+    {
+      type: onSector
+      preset: powerResearchOutpost
+    }
+  ]
 }

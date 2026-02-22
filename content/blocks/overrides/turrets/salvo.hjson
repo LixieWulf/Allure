@@ -4,7 +4,7 @@ ammoTypes: {
   copper: {
     speed: 4
     damage: 15
-    ammoMultiplier: 4
+    ammoMultiplier: 8
     width: 7
     height: 9
     lifetime: 45
@@ -19,7 +19,7 @@ ammoTypes: {
     damage: 20
     width: 7
     height: 9
-    ammoMultiplier: 6
+    ammoMultiplier: 12
     reloadMultiplier: 1.5
     lifetime: 50
     inaccuracy: 7

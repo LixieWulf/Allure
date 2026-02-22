@@ -1,3 +1,17 @@
 consumes: {
   power: 1
 }
+research: {
+  parent: graphite-press
+  objectives: [
+    {
+      type: onSector
+      preset: craters
+    }
+  ]
+  requirements: [
+    copper/1000
+    lead/500
+    graphite/1000
+  ]
+}

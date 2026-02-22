@@ -17,3 +17,12 @@ shootType: {
   hitColor: a9d8ff
   status: shocked
 }
+research: {
+  parent: duo
+  objectives: [
+    {
+      type: onSector
+      preset: powerResearchOutpost
+    }
+  ]
+}

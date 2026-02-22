@@ -1,4 +1,4 @@
-health: 150
+health: 120
 hitSize: 5
 speed: 2
 rotateSpeed: 9
@@ -8,6 +8,7 @@ maxRange: 160
 omniMovement: false
 controller: FlyingAI
 defaultController: FlyingAI
+playerControllable: false
 targetFlags: [
   drill
   generator
@@ -41,7 +42,7 @@ research: {
   objectives: [
     ground-factory
     {
-      type: SectorCompete
+      type: SectorComplete
       preset: fungalPass
     }
   ]

@@ -25,6 +25,20 @@ plans: [
     ]
   }
 ]
+research: {
+  parent: core-shard
+  objectives: [
+    {
+      type: SectorComplete
+      preset: frozenForest
+    }
+  ]
+  requirements: [
+    copper/200
+    lead/1000
+    graphite/500
+  ]
+}
 requirements: [
   copper/50
   lead/100

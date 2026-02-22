@@ -1,5 +1,4 @@
-armor: 2
-health: 175
+health: 150
 speed: 0.85
 stances: [
   ram
@@ -17,7 +16,7 @@ weapons: [
     shootSound: explosionCrawler
     bullet: {
       type: ExplosionBulletType
-      splashDamage: 60
+      splashDamage: 45
       splashDamageRadius: 50
       shootEffect: pulverizeRed
       smokeEffect: sapExplosion
@@ -67,8 +66,10 @@ research: {
     ground-factory
     {
       type: OnSector
-      preset: fungalPass
+      preset: overgrownBasin
     }
   ]
-  requirements: []
+  requirements: [
+    graphite/2000
+  ]
 }

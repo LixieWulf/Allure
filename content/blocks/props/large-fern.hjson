@@ -1,4 +1,5 @@
 type: TreeBlock
+shadowOffset: -8
 update: true
 customShadow: true
 drawTeamOverlay: false

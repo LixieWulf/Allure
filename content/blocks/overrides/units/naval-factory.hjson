@@ -23,3 +23,12 @@ requirements: [
   graphite/100
   metaglass/50
 ]
+research: {
+  parent: ground-factory
+  objectives: [
+    {
+      type: onSector
+      preset: ruinousShores
+    }
+  ]
+}

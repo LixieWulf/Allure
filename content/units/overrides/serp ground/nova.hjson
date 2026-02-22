@@ -38,7 +38,7 @@ abilities: [
   }
 ]
 research: {
-  parent: dagger
+  parent: ground-factory
   objectives: [
     ground-factory
     {

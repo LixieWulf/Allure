@@ -1,5 +1,5 @@
 targetInterval: 30
-newTargetInterval: 120
+newTargetInterval: 30
 reload: 120
 range: 480
 minRange: 240
@@ -12,7 +12,7 @@ ammoTypes: {
     damage: 10
     lifetime: 160
     knockback: 0.65
-    inaccuracy: 9
+    inaccuracy: 4
     ammoMultiplier: 2
     reloadMultiplier: 1.5
     shrinkY: 0.75
@@ -83,3 +83,12 @@ ammoTypes: {
   }
 }
 maxAmmo: 6
+research: {
+  parent: scorch
+  objectives: [
+    {
+      type: onSector
+      preset: ruinousShores
+    }
+  ]
+}

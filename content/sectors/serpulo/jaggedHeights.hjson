@@ -1,0 +1,13 @@
+sector: 218
+difficulty: 6
+research: {
+  parent: craters
+  objectives: [
+    {
+      type: SectorComplete
+      preset: craters
+    }
+    flare
+    nova
+  ]
+}

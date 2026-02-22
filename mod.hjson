@@ -20,3 +20,8 @@ Also, I know the mod's bugs. Please don't report them, it saves me time.
   '''
 version: 0.8-dev
 minGameVersion: 154
+contentOrder: [
+  air-factory
+  ground-factory
+  naval-factory
+]

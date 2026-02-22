@@ -1,1 +1,10 @@
 speed: 66
+research: {
+  parent: router
+  objectives: [
+    {
+      type: SectorComplete
+      preset: groundZero
+    }
+  ]
+}

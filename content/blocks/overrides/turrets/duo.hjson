@@ -7,6 +7,7 @@ ammoTypes: {
     width: 7
     height: 9
     lifetime: 53
+    ammoMultiplier: 4
     hitColor: d39169
     backColor: d39169
     frontColor: eac1a8
@@ -18,7 +19,7 @@ ammoTypes: {
     damage: 12
     width: 7
     height: 9
-    ammoMultiplier: 3
+    ammoMultiplier: 8
     reloadMultiplier: 1.5
     lifetime: 60
     rangeChange: 16

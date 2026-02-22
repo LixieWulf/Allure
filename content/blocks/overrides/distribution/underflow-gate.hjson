@@ -1,0 +1,9 @@
+research: {
+  parent: overflow-gate
+  objectives: [
+    {
+      type: SectorComplete
+      preset: groundZero
+    }
+  ]
+}

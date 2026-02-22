@@ -1,5 +1,5 @@
-type: Seaweed
-variants: 4
+type: WobbleProp
+variants: 3
 update: false
 solid: false
 breakable: true

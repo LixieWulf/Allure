@@ -4,3 +4,16 @@ armor: 3
 stances: [
   stop
 ]
+research: {
+  parent: ground-factory
+  objectives: [
+    {
+      type: SectorComplete
+      preset: frozenForest
+    }
+  ]
+  requirements: [
+    lead/200
+    graphite/50
+  ]
+}

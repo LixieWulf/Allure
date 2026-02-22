@@ -1,0 +1,16 @@
+sector: 175
+difficulty: 6
+captureWave: 20
+research: {
+  parent: craters
+  objectives: [
+    {
+      type: SectorComplete
+      preset: craters
+    }
+    {
+      type: SectorComplete
+      preset: plaguedIslands
+    }
+  ]
+}

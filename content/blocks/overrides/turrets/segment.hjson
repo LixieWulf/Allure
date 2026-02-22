@@ -1,7 +1,19 @@
 reload: 10
 bulletDamage: 15
+consumes: {
+  power: 2
+}
 requirements: [
   copper/100
   lead/50
   graphite/20
 ]
+research: {
+  parent: hail
+  objectives: [
+    {
+      type: onSector
+      preset: ruinousShores
+    }
+  ]
+}

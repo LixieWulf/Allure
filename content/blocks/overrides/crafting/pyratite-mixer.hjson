@@ -1,0 +1,9 @@
+research: {
+  parent: graphite-press
+  objectives: [
+    {
+      type: onSector
+      preset: ruinousShores
+    }
+  ]
+}

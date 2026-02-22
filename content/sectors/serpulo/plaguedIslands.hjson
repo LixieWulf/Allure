@@ -2,4 +2,10 @@ sector: 125
 difficulty: 4
 research: {
   parent: overgrownBasin
+  objectives: [
+    {
+      type: SectorComplete
+      preset: overgrownBasin
+    }
+  ]
 }
