@@ -6,7 +6,7 @@ research: {
   objectives: [
     {
       type: onSector
-      preset: craters
+      preset: crateredBattleground
     }
   ]
   requirements: [

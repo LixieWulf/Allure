@@ -1,3 +1,6 @@
+consumes: {
+  power: 12
+}
 accurateDelay: true
 shootType: {
   type: LaserBulletType
@@ -20,3 +23,8 @@ shootType: {
     ffffff
   ]
 }
+requirements: [
+  lead/60
+  silicon/60
+  titanium/30
+]

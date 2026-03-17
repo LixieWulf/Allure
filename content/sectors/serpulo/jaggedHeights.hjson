@@ -1,11 +1,11 @@
 sector: 218
 difficulty: 6
 research: {
-  parent: craters
+  parent: crateredBattleground
   objectives: [
     {
       type: SectorComplete
-      preset: craters
+      preset: crateredBattleground
     }
     flare
     nova

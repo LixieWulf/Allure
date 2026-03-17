@@ -2,11 +2,11 @@ sector: 175
 difficulty: 6
 captureWave: 20
 research: {
-  parent: craters
+  parent: crateredBattleground
   objectives: [
     {
       type: SectorComplete
-      preset: craters
+      preset: crateredBattleground
     }
     {
       type: SectorComplete
