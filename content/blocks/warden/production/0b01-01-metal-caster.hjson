@@ -1,0 +1,198 @@
+type: GenericCrafter
+dumpTime: 2
+squareSprite: false
+customShadow: true
+craftTime: 30
+itemCapacity: 50
+size: 8
+liquidCapacity: 120
+drawLiquidLight: false
+ignoreLiquidFullness: true
+ambientSound: beamLustre
+ambientSoundVolume: 0.25
+updateEffectSpread: 1.5
+updateEffectChance: 0.25
+updateEffect: {
+  particles: 2
+  length: 100
+  lifetime: 240
+  cone: 12
+  baseRotation: 32
+  sizeFrom: 0
+  sizeTo: 16
+  colorFrom: 90a2fc88
+  colorTo: 78787800
+  sizeInterp: pow2Out
+  interp: pow2Out
+}
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    -icon
+  ]
+  drawers: [
+    {
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: water
+      padLeft: 36
+      padRight: 12
+      padTop: 6
+      padBottom: 48
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: slag
+      padLeft: 36
+      padRight: 20
+      padTop: 48
+      padBottom: 6
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: energia
+      padLeft: 44
+      padRight: 12
+      padTop: 48
+      padBottom: 6
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+    {
+      type: DrawGlowRegion
+      alpha: 0.75
+      layer: 30
+      color: ffb380
+    }
+    {
+      type: DrawGlowRegion
+      alpha: 0.75
+      layer: 30
+      color: 7382f0
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -glow2
+      alpha: 1
+      layer: 30
+      color: 7382f0
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -flare
+      alpha: 0.9
+      layer: 30
+      glowIntensity: 0.1
+      color: ffffff
+    }
+  ]
+}
+craftEffect: none
+consumes: {
+  liquids: [
+    water/2
+    slag/2
+  ]
+  liquid: {
+    liquid: energia
+    amount: 0
+    optional: true
+  }
+}
+outputLiquid: energia/0
+outputItems: [
+  dantrales/10
+  territe-alloy/25
+]
+category: production
+research: {
+  parent: 0b01-00-rudimentary-fuser
+  objectives: [
+    0b-basic-infrastructure
+  ]
+  requirements: [
+    dantrales/700
+    territe-alloy/2500
+  ]
+}
+requirements: [
+  dantrales/50
+  territe-alloy/800
+]
+breakEffect: [
+  {
+    type: WaveEffect
+    rotation: 41
+    lifetime: 20
+    sides: 4
+    sizeFrom: 16
+    sizeTo: 32
+    strokeFrom: 12
+    strokeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 11
+    useRotation: false
+    region: allure-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f000
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 30
+    startDelay: 10
+    useRotation: false
+    region: allure-warden-icon
+    sizeFrom: 8
+    sizeTo: 8
+    colorFrom: 7382f0
+    colorTo: 7382f000
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    randLength: false
+    length: 0
+    baseLength: 12
+    lifetime: 35
+    useRotation: false
+    region: allure-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+  {
+    type: ParticleEffect
+    particles: 1
+    cone: 0
+    baseRotation: 180
+    randLength: false
+    length: 0
+    baseLength: 12
+    lifetime: 35
+    useRotation: false
+    region: allure-energy-arrow
+    interp: pow3Out
+    sizeInterp: pow2In
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 7382f0
+    colorTo: 7382f0
+  }
+]

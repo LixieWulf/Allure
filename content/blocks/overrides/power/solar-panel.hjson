@@ -1,6 +1,6 @@
 powerProduction: 0.2
 research: {
-  parent: battery\
+  parent: battery
   objectives: [
     {
       type: onSector

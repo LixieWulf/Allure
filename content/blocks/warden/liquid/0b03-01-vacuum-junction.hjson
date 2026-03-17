@@ -1,5 +1,6 @@
 type: LiquidJunction
 squareSprite: false
+customShadow: true
 category: liquid
 research: {
   parent: 0b03-00-vacuum-conduit
@@ -10,9 +11,7 @@ research: {
   ]
 }
 requirements: [
-  metaglass/25
-  dantrales/50
-  territe-alloy/25
+  dantrales/10
 ]
 placeEffect: [
   {

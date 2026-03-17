@@ -1,8 +1,9 @@
 type: ConsumeGenerator
-size: 3
+size: 2
 liquidCapacity: 150
 squareSprite: false 
-effectChance: 0.5
+customShadow: true
+effectChance: 0.05
 warmupSpeed: 0.01
 generateEffectRange: 8
 generateEffect: {
@@ -12,7 +13,8 @@ generateEffect: {
   cone: 12
   baseRotation: 32
   sizeFrom: 0
-  sizeTo: 6
+  sizeTo: 16
+  colorFrom: ffffff88
   colorTo: ffffff00
   sizeInterp: pow2Out
   interp: pow2Out
@@ -25,27 +27,23 @@ drawer: {
   drawers: [
     {
       type: DrawRegion
-      suffix: -bottom
     }
     {
       type: DrawRegion
-    }
-    {
-      type: DrawRegion
-      suffix: -blades
+      suffix: -fan
       rotateSpeed: 8
       spinSprite: true
     }
     {
       type: DrawRegion
-      suffix: -blades
+      suffix: -fan
       rotateSpeed: 8
       spinSprite: true
       rotation: 30
     }
     {
       type: DrawRegion
-      suffix: -blades
+      suffix: -fan
       rotateSpeed: 8
       spinSprite: true
       rotation: 60
@@ -57,9 +55,10 @@ drawer: {
   ]
 }
 consumes: {
-  liquid: steam/0.625
+  liquid: steam/0.83334
 }
-powerProduction: 7.5
+outputLiquid: steam/0
+powerProduction: 2
 category: power
 research: {
   parent: 0b04-01-solar-heater
@@ -68,8 +67,8 @@ research: {
   ]
 }
 requirements: [
-  dantrales/120
-  territe-alloy/300
+  dantrales/50
+  territe-alloy/125
 ]
 breakEffect: [
   {

@@ -1,7 +1,7 @@
 type: Floor
-blendGroup: basalt
+cacheLayer: cryofluid
 attributes: {
-  heat: 0.3
+  heat: 0.175
   water: -0.55
 }
 liquidDrop: energia

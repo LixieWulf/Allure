@@ -1,7 +1,7 @@
 type: AttributeCrafter
-customShadow: true
 squareSprite: false
-craftTime: 51
+customShadow: true
+craftTime: 30
 itemCapacity: 120
 size: 8
 attribute: sand
@@ -12,7 +12,6 @@ warmupSpeed: 0.005
 minEfficiency: 0.01
 liquidCapacity: 120
 drawLiquidLight: false
-//i feel pain.
 drawer: {
   type: DrawMulti
   iconOverride: [
@@ -20,191 +19,113 @@ drawer: {
   ]
   drawers: [
     {
-      type: DrawPistons
-      sides: 1
-      sinScl: 3
-      lenOffset: -21
-      angleOffset: 90
-      suffix: -piston1
-      sinOffset: 6
-    }
-    {
-      type: DrawPistons
-      sides: 1
-      sinScl: 3
-      lenOffset: -21
-      angleOffset: 90
-      suffix: -piston2
-      sinOffset: 12
-    }
-    {
-      type: DrawPistons
-      sides: 1
-      sinScl: 3
-      lenOffset: -21
-      angleOffset: 90
-      suffix: -piston3
-      sinOffset: 18
-    }
-    {
-      type: DrawPistons
-      sides: 1
-      sinScl: 3
-      lenOffset: -21
-      angleOffset: 90
-      suffix: -piston4
-      sinOffset: 24
+      type: DrawRegion
+      suffix: -drill1
+      rotation: 0
+      rotateSpeed: -8
+      spinSprite: true
     }
     {
       type: DrawRegion
-      suffix: -drill
-      rotateSpeed: -6
+      suffix: -drill1
+      rotation: 15
+      rotateSpeed: -8
       spinSprite: true
-      x: 8
-      y: 16
     }
     {
       type: DrawRegion
-      suffix: -gear-small
-      rotateSpeed: -6
-      spinSprite: true
-      x: -12.5
-      y: 20.5
-    }
-    {
-      type: DrawRegion
-      suffix: -gear-small
-      rotateSpeed: 6
-      spinSprite: true
-      x: -4
-      y: 14
-    }
-    {
-      type: DrawRegion
-      suffix: -gear-small
-      rotateSpeed: -6
-      spinSprite: true
-      x: -2
-      y: 3.5
-    }
-    {
-      type: DrawRegion
-      suffix: -gear-small
-      rotateSpeed: -6
-      spinSprite: true
-      x: 8
-      y: 16
-    }
-    {
-      type: DrawRegion
-      suffix: -gear-teeth
-      rotateSpeed: 3
-      spinSprite: true
-      x: -16
-      y: -4
-    }
-    {
-      type: DrawRegion
-      suffix: -gear-teeth
-      rotateSpeed: 3
-      spinSprite: true
-      x: -16
-      y: -4
-      rotation: 60
-    }
-    {
-      type: DrawRegion
-      suffix: -gear-teeth
-      rotateSpeed: 3
-      spinSprite: true
-      x: -16
-      y: -4
+      suffix: -drill1
       rotation: 30
+      rotateSpeed: -8
+      spinSprite: true
     }
     {
       type: DrawRegion
-      suffix: -gear-large
-      rotateSpeed: 3
+      suffix: -drill0
+      rotation: 45
+      rotateSpeed: -8
       spinSprite: true
-      x: -16
-      y: -4
+    }
+    {
+      type: DrawRegion
+      suffix: -drill0
+      rotation: 60
+      rotateSpeed: -8
+      spinSprite: true
+    }
+    {
+      type: DrawRegion
+      suffix: -drill0
+      rotation: 75
+      rotateSpeed: -8
+      spinSprite: true
+    }
+    {
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: water
+      padLeft: 55.5
+      padRight: 0.25
+      padTop: 7.75
+      padBottom: 39.75
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: water
+      padLeft: 0.25
+      padRight: 55.5
+      padTop: 7.75
+      padBottom: 39.75
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: energia
+      padLeft: 55.5
+      padRight: 0.25
+      padTop: 39.75
+      padBottom: 7.75
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: energia
+      padLeft: 0.25
+      padRight: 55.5
+      padTop: 39.75
+      padBottom: 7.75
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+      layer: 35
     }
     {
       type: DrawGlowRegion
+      alpha: 0.75
+      layer: 36
       color: ffb380
-      glowScale: 3
     }
     {
       type: DrawGlowRegion
-      suffix: -heat
-      alpha: 0.7
-      color: ffb380
-      glowScale: 14
-    }
-    {
+      suffix: -flare
+      alpha: 0.9
+      layer: 36
+      glowIntensity: 0.1
+      color: ffffff
     }
   ]
 }
-craftEffect: [
-  {
-    type: RadialEffect
-    amount: 1
-    lengthOffset: 8
-    effect: {
-      type: RadialEffect
-      amount: 1
-      rotationOffset: 90
-      lengthOffset: 16
-      effect: {
-        interp: pow3Out
-        sizeInterp: linear
-        region: allure-wide-case-back
-        offset: 45
-        lifetime: 55
-        length: 12
-        particles: 16
-        sizeFrom: 2
-        sizeTo: 0
-        colorFrom: f7cba4
-        colorTo: 787878
-      }
-    }
-  }
-  {
-    type: RadialEffect
-    amount: 1
-    lengthOffset: -12.5
-    effect: {
-      type: RadialEffect
-      amount: 1
-      rotationOffset: 90
-      lengthOffset: 20.5
-      effect: {
-        interp: pow3Out
-        sizeInterp: linear
-        region: allure-wide-case-back
-        offset: 45
-        lifetime: 45
-        length: 8
-        particles: 16
-        sizeFrom: 1
-        sizeTo: 0
-        colorFrom: f7cba4
-        colorTo: 787878
-      }
-    }
-  }
-]
+craftEffect: pulverizeRed
+updateEffect: fuelburn
+updateEffectSpread: 1.5
+updateEffectChance: 0.25
 consumes: {
   liquids: [
     water/0.4
     energia/0.1
   ]
 }
-outputItems: [
-  silicon/1
-  metaglass/2
-]
+outputItem: silicon/6
 category: production
 research: {
   parent: 0b01-00-rudimentary-fuser
@@ -220,5 +141,5 @@ requirements: [
   dantrales/150
   territe-alloy/900
 ]
-ambientSound: crack
+ambientSound: tankMove
 ambientSoundVolume: 0.1

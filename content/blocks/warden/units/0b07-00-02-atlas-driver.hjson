@@ -1,5 +1,5 @@
 type: PayloadMassDriver
-size: 4
+size: 2
 category: units
 range: 240
 maxPayloadSize: 2

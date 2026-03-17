@@ -11,6 +11,10 @@ shoot: {
   shotDelay: 3
   radius: 48
 }
+//decommission until redo
+consumes: {
+  power: 1
+}
 reload: 36
 recoil: 0 
 rotateSpeed: 0

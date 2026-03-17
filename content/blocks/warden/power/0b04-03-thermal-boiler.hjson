@@ -1,25 +1,15 @@
 type: AttributeCrafter
 size: 2
-floating: true
 hasLiquids: true 
-squareSprite: false 
-liquidOutputDirections: [0]
-liquidCapacity: 600
+squareSprite: false
+customShadow: true
+liquidOutputDirections: [0, 2]
+liquidCapacity: 100
 baseEfficiency: 0
-boostScale: 0.5
-maxBoost: 6
+minEfficiency: 0.25
+maxBoost: 10
 drawer: [
   {
-    type: DrawDefault
-  }
-  {
-    type: DrawLiquidOutputs
-  }
-  {
-    type: DrawGlowRegion
-    suffix: -transfer
-    layer: 30
-    color: feb380
   }
   {
     type: DrawLiquidTile
@@ -27,9 +17,14 @@ drawer: [
     padding: 2
   }
   {
+    type: DrawGlowRegion
+    color: feb380
+    layer: 30
+  }
+  {
     type: DrawBubbles
-    color: 7693e3
-    timeScl: 35
+    color: "7693e3"
+    timeScl: 30
     sides: 12
     recurrence: 6
     spread: 6
@@ -48,13 +43,22 @@ drawer: [
   }
 ]
 consumes: {
+  liquids: [
+    water/0.83334
+  ]
   liquid: {
-    liquid: water 
-    amount: 0.625
+    liquid: steam
+    amount: 0
+    optional: true
   }
 }
-ambientSoundVolume: 0
-outputLiquid: steam/0.625
+outputLiquids: [
+  water/0
+  water/0
+  steam/0.83334
+]
+ambientSound: loopHum
+ambientSoundVolume: 0.05
 category: power
 research: {
   parent: 0b04-01-solar-heater
@@ -63,11 +67,9 @@ research: {
   ]
 }
 requirements: [
-  dantrales/75
-  territe-alloy/300
+  dantrales/120
+  territe-alloy/100
 ]
-ambientSound: steam
-ambientSoundVolume: 0.05
 breakEffect: [
   {
     type: WaveEffect

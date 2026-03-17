@@ -1,5 +1,5 @@
 type: PayloadUnloader
-size: 4
+size: 2
 squareSprite: false
 hasPower: true
 hasItems: true

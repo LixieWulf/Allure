@@ -1,7 +1,6 @@
 type: Floor
-blendGroup: basalt
 attributes: {
-  heat: 0.15
+  heat: 0.25
   water: -0.4
 }
 liquidDrop: energia

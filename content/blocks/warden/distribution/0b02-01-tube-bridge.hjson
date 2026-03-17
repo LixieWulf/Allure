@@ -1,12 +1,13 @@
 type: DuctBridge
 squareSprite: false
-range: 2
+customShadow: true
+range: 3
+itemCapacity: 12
 requirements: [
-  dantrales/6
   territe-alloy/12
 ]
 category: distribution
-speed: 7.5
+speed: 4.9
 research: 0b02-00-tube
 placeEffect: [
   {

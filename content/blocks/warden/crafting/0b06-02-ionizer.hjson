@@ -1,8 +1,10 @@
 type: GenericCrafter
 squareSprite: false
 customShadow: true
+conductivePower: true
 size: 4
-liquidCapacity: 20
+liquidCapacity: 90
+liquidOutputDirections: [0, 2]
 drawer: {
   type: DrawMulti
   iconOverride: [
@@ -15,7 +17,7 @@ drawer: {
     {
       type: DrawLiquidTile
       drawLiquid: water
-      padding: 12
+      padding: 6
     }
     {
       type: DrawGlowRegion
@@ -48,25 +50,42 @@ drawer: {
     {
       type: DrawRegion
       suffix: -top
+      layer: 31
     }
     {
       type: DrawGlowRegion
       suffix: -top-glow
       color: feb380
+      layer: 32
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -flare
+      alpha: 0.9
+      layer: 32
+      glowIntensity: 0.1
+      color: ffffff
     }
   ]
 }
 consumes: {
   power: 1
+  liquids: [
+    water/0.5
+  ]
   liquid: {
-    liquid: water
-    amount: 0.2
+    liquid: plasma
+    amount: 0
+    optional: true
   }
 }
 outputLiquids: [
+  water/0
+  water/0
   plasma/0.25
 ]
-ambientSoundVolume: 0
+ambientSound: loopThoriumReactor
+ambientSoundVolume: 0.025
 category: crafting
 research: {
   parent: 0b06-01-distillery

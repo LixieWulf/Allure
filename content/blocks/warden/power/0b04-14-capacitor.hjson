@@ -1,6 +1,6 @@
 type: Battery
 conductivePower: true
-size: 4
+size: 2
 consumes: {
   powerBuffered: 8000
 }
@@ -21,16 +21,10 @@ drawer: [
   {
   }
   {
-    type: DrawPower
-    mixcol: false
-  }
-  {
-    type: DrawRegion
-    suffix: -top
-  }
-  {
     type: DrawGlowRegion
-    color: 7382f0
+    color: 90a2fc
+    alpha: 0.9
+    glowIntensity: 0.1
   }
 ]
 breakEffect: [

@@ -1,11 +1,10 @@
 type: Duct
 requirements: [
-  dantrales/1
-  territe-alloy/5
+  territe-alloy/2
 ]
 bridgeReplacement: 0b02-01-tube-bridge
 category: distribution
-speed: 7.5
+speed: 4.9
 research: 0b-begin
 placeEffect: [
   {

@@ -1,67 +1,63 @@
 type: AttributeCrafter
+hasPower: true
+conductivePower: true
 squareSprite: false
+customShadow: true
 scaledHealth: 15
 armor: 26
-size: 6
-maxBoost: 3.5
+size: 4
+maxBoost: 5
 attribute: light
 liquidCapacity: 150
+liquidOutputDirections: [0, 2]
 hasLiquids: true
 drawer: [
   {
     type: DrawDefault 
   }
   {
-    type: DrawGlowRegion
-    suffix: -transfer
-    layer: 30
-    color: ffb380bb
-  }
-  {
     type: DrawLiquidTile
     drawLiquid: water
-    alpha: 0.4
-    padding: 3
-  }
-  {
-    type: DrawBubbles
-    color: 7693e3
-    timeScl: 35
-    sides: 12
-    recurrence: 6
-    spread: 16
-    radius: 2
-    amount: 200 
-    strokeMin: 0
+    padLeft: 3
+    padRight: 3
+    padTop: 5
+    padBottom: 5
   }
   {
     type: DrawLiquidTile
     drawLiquid: steam
-    padding: 3
-  }
-  {
-    type: DrawRegion
-    suffix: -top0
+    padLeft: 3
+    padRight: 3
+    padTop: 5
+    padBottom: 5
   }
   {
     type: DrawGlowRegion
-    suffix: -heat
+    color: feb380
     layer: 30
-    color: ffb380bb
   }
   {
     type: DrawRegion
-    suffix: -top1
+    suffix: -top
   }
 ]
 consumes: {
+  liquids: [
+    water/0.83334
+  ]
   liquid: {
-    liquid: water
-    amount: 0.625
+    liquid: steam
+    amount: 0
+    optional: true
   }
 }
-outputLiquid: steam/0.625
-ambientSoundVolume: 0
+outputLiquids: [
+  water/0
+  water/0
+  steam/0.83334
+]
+ambientSound: loopHum
+ambientSoundVolume: 0.05
 category: power
 research: {
   parent: 0b-begin
@@ -70,9 +66,8 @@ research: {
   ]
 }
 requirements: [
-  metaglass/50
-  dantrales/60
-  territe-alloy/240
+  dantrales/20
+  territe-alloy/200
 ]
 breakEffect: [
   {

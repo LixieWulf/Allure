@@ -2,11 +2,18 @@ type: Pump
 size: 2
 pumpAmount: 0.1
 squareSprite: false
-liquidCapacity: 25
+customShadow: true
+liquidCapacity: 48
+consumes: {
+  liquidFlammable: {
+    minFlammability: -1000
+    amount: 0
+    optional: true
+  }
+}
 requirements: [
-  metaglass/25
-  dantrales/100
-  territe-alloy/150
+  dantrales/50
+  territe-alloy/20
 ]
 category: liquid
 research: {

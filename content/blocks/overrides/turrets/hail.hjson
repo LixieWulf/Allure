@@ -12,7 +12,7 @@ ammoTypes: {
     damage: 10
     lifetime: 160
     knockback: 0.65
-    inaccuracy: 4
+    inaccuracy: 3
     ammoMultiplier: 2
     reloadMultiplier: 1.5
     shrinkY: 0.75
@@ -60,7 +60,6 @@ ammoTypes: {
     damage: 15
     lifetime: 160
     knockback: 0.8
-    inaccuracy: 5
     ammoMultiplier: 3
     shrinkY: 0.75
     shrinkX: 0.5
@@ -70,7 +69,7 @@ ammoTypes: {
     splashDamage: 15
     splashDamageRadius: 19
     status: burning
-    statusDuration: 60
+    statusDuration: 150
     hitColor: f8ad42
     trailColor: f8ad42
     backColor: f68021

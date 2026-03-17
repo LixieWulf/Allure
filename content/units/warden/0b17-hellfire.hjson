@@ -76,7 +76,7 @@ parts: [
     outline: false
     blending: additive
     color: 7382f088
-    layer: 88
+    layer: 93
     xScl: 5
     yScl: 6
   }
@@ -115,7 +115,7 @@ parts: [
     type: RegionPart
     x: 116.25
     y: -65.25
-    layer: 91.6
+    layer: 93
     suffix: -vanes
     outline: false
     mirror: true
@@ -123,7 +123,103 @@ parts: [
     progress: smoothReload
     weaponIndex: 0
     color: e6555500
-    colorTo: e6555588
+    colorTo: ffffff
+  }
+  {
+    type: RegionPart
+    x: 72
+    y: 121
+    layer: 93
+    suffix: -sinks
+    outline: false
+    mirror: true
+    blending: additive
+    progress: smoothReload
+    weaponIndex: 0
+    color: e6555500
+    colorTo: ffffff
+  }
+  //flames
+  {
+    type: EffectSpawnerPart
+    x: 118
+    y: -50
+    rotation: -90
+    width: 12
+    height: 12
+    debugDraw: false
+    mirror: true
+    effect: fuelburn
+    progress: heat
+    weaponIndex: 0
+    effectChance: 0.25
+    effect: {
+      followParent: false
+      particles: 3
+      length: 24
+      cone: 0
+      lifetime: 60
+      sizeFrom: 3
+      sizeTo: 0
+      colorFrom: ffffff
+      colorTo: 7382f088
+      interp: pow5Out
+      sizeInterp: linear
+    }
+  }
+  {
+    type: EffectSpawnerPart
+    x: 118
+    y: -78
+    rotation: -90
+    width: 24
+    height: 24
+    debugDraw: false
+    mirror: true
+    effect: fuelburn
+    progress: heat
+    weaponIndex: 0
+    effectChance: 0.5
+    effect: {
+      followParent: false
+      particles: 3
+      length: 36
+      cone: 0
+      lifetime: 75
+      sizeFrom: 4
+      sizeTo: 0
+      colorFrom: ffffff
+      colorTo: 7382f088
+      interp: pow5Out
+      sizeInterp: linear
+    }
+  }
+  {
+    type: EffectSpawnerPart
+    x: 72
+    y: 121
+    rotation: -90
+    width: 36
+    height: 16
+    debugDraw: false
+    mirror: true
+    effect: fuelburn
+    progress: heat
+    weaponIndex: 0
+    effectChance: 0.5
+    effect: {
+      followParent: false
+      particles: 3
+      length: 36
+      cone: 0
+      lifetime: 75
+      sizeFrom: 4
+      sizeTo: 0
+      colorFrom: ffffff
+      colorTo: 7382f088
+      interp: pow5Out
+      sizeInterp: linear
+    }
   }
   //extra thrusters (side)
   {
@@ -451,7 +547,7 @@ weapons: [
     shootStatus: slow
     shootStatusDuration: 465
     shootSoundVolume: 1.5
-    shootSound: beamPlasma
+    shootSound: shootSublimate
     shootWarmupSpeed: 0.01
     smoothReloadSpeed: 0.00333
     minWarmup: 0.9
@@ -492,9 +588,9 @@ weapons: [
           type: SoundEffect
           minVolume: 1.5
           maxVolume: 1.5
-          minPitch: 1.25
-          maxPitch: 1.25
-          sound: coreLaunch
+          minPitch: 1
+          maxPitch: 1
+          sound: blockExplodeExplosiveAlt
           effect: {
             type: SoundEffect
             minVolume: 3
@@ -503,6 +599,16 @@ weapons: [
             maxPitch: 0.33
             sound: chargeVela
             effect: [
+              {
+                type: SoundEffect
+                startDelay: 40
+                minVolume: 1
+                maxVolume: 1
+                minPitch: 1.1
+                maxPitch: 1.1
+                sound: chargeCorvus
+                effect: none
+              }
               {
                 type: SoundEffect
                 minVolume: 3
@@ -591,7 +697,7 @@ weapons: [
           maxVolume: 3
           minPitch: 1
           maxPitch: 1
-          sound: shootMeltdown
+          sound: explosionReactor2
           effect: none
         }
         {
@@ -613,7 +719,26 @@ weapons: [
       intervalBullet: {
         type: EmptyBulletType
         lifetime: 0
-        hitEffect: none
+        hitEffect: [
+          {
+            type: SoundEffect
+            minVolume: 1.25
+            maxVolume: 1.25
+            minPitch: 0.75
+            maxPitch: 0.75
+            sound: shootFlame
+            effect: none
+          }
+          {
+            type: SoundEffect
+            minVolume: 0.5
+            maxVolume: 0.5
+            minPitch: 0.9
+            maxPitch: 0.9
+            sound: shootLancer
+            effect: none
+          }
+        ]
         despawnEffect: {
           type: RadialEffect
           amount: 1
@@ -1675,7 +1800,7 @@ weapons: [
     name: hellfire-railgun
     layerOffset: -0.5
     x: 0
-    y: -60
+    y: -70
     mirror: false
     flipSprite: true
     rotate: true
@@ -1697,8 +1822,6 @@ weapons: [
         suffix: -upper
         outline: false
         y: 30
-        xScl: 0.95
-        yScl: 0.95
       }
       {
         type: RegionPart

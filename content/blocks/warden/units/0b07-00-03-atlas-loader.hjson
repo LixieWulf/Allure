@@ -4,7 +4,7 @@ squareSprite: false
 consumes: {
   power: 3
 }
-size: 4
+size: 2
 payloadSpeed: 2
 maxBlockSize: 2
 liquidCapacity: 700

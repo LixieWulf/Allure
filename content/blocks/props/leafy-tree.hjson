@@ -1,5 +1,4 @@
 type: SeaBush
-update: true
 customShadow: true
 lobesMin: 6
 lobesMax: 8
@@ -9,21 +8,9 @@ sclMax: 85
 magMin: 2
 magMax: 4
 botAngle: 90
-drawTeamOverlay: false
-allowDerelictRepair: false
-alwaysReplace: false
-buildVisibility: sandboxOnly
-solid: true
-destructible: true
-health: 800
-buildTime: 360
-instantDeconstruct: false
 clipSize: 60
-underBullets: true
 breakSound: plantBreak
 destroySound: plantBreak
-drawCracks: false
-createRubble: false
 breakEffect: {
   particles: 24
   baseLength: 24

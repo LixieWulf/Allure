@@ -1,6 +1,7 @@
 type: CoreBlock
 enableDrawStatus: false
 squareSprite: false
+customShadow: true
 health: 1600
 armor: 30
 itemCapacity: 1200

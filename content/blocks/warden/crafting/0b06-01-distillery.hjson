@@ -1,10 +1,11 @@
 type: GenericCrafter
 squareSprite: false
 size: 6
-craftTime: 140
+craftTime: 60
 hasLiquids: true
-liquidCapacity: 120
-itemCapacity: 25
+conductivePower: true
+liquidCapacity: 1200
+itemCapacity: 32
 ignoreLiquidFullness: true
 drawer: {
   type: DrawMulti
@@ -17,56 +18,62 @@ drawer: {
     {
       type: DrawLiquidTile
       drawLiquid: liquid-baenara
-      padding: 3
-    }
-    {
-      type: DrawBubbles
-      amount: 150
-      sides: 6
-      spread: 20
-      strokeMin: 0
-      color: 70d4af
-    }
-    {
-      type: DrawRegion
-      suffix: -top
+      padLeft: 18
+      padRight: 3.5
+      padTop: 22
+      padBottom: 6
     }
     {
       type: DrawRegion
       suffix: -reservior
+      x: -8
+      y: 8
     }
     {
-      type: DrawLiquidRegion
-      drawLiquid: water
-      alpha: 0.6
-    }
-    {
-      type: DrawParticles
-      color: 596ab888
-      alpha: 0.5
-      reverse: true
-    }
-    {
-      type: DrawRegion
-      suffix: -reservior-top
+      type: DrawLiquidTile
+      drawLiquid: steam
+      padLeft: 1.5
+      padRight: 16
+      padTop: 5
+      padBottom: 21
     }
     {
       type: DrawGlowRegion
-      suffix: -glow
       color: feb380
+      layer: 30
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -flare
+      alpha: 0.9
+      glowIntensity: 0.1
+      color: ffffff
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+      layer: 32
     }
   ]
 }
 consumes: {
-  power: 2
+  power: 12
   liquids: [
-    liquid-baenara/1.2
-    energia/0.2
-    plasma/0.25
+    liquid-baenara/10
+    plasma/1
   ]
+  liquid: {
+    liquid: steam
+    amount: 0
+    optional: true
+  }
 }
-outputLiquid: water/1.2
-outputItem: baenite/7
+outputLiquids: [
+  steam/5
+  liquid-baenara/0
+  plasma/0
+]
+outputItem: baenite/8
 category: crafting
 research: {
   parent: 0b-begin

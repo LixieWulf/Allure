@@ -1,8 +1,9 @@
 type: LiquidRouter
 squareSprite: false
-size: 3
-liquidCapacity: 1200
-liquidPadding: 2
+customShadow: true
+size: 4
+liquidCapacity: 2000
+liquidPadding: 2.75
 category: liquid
 research: {
   parent: 0b03-00-vacuum-conduit
@@ -13,9 +14,7 @@ research: {
   ]
 }
 requirements: [
-  metaglass/60
-  dantrales/75
-  territe-alloy/500
+  dantrales/50
 ]
 breakEffect: [
   {

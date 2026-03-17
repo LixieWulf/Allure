@@ -1,18 +1,19 @@
 type: ConsumeGenerator
 size: 2
-liquidCapacity: 600
+liquidCapacity: 300
 squareSprite: false 
+customShadow: true
 effectChance: 0.1
 warmupSpeed: 0.01
 generateEffectRange: 3
 generateEffect: {
   particles: 1
-  length: 50
-  lifetime: 240
+  length: 15
+  lifetime: 120
   cone: 12
   baseRotation: 32
   sizeFrom: 0
-  sizeTo: 4
+  sizeTo: 2
   colorTo: ffffff00
   sizeInterp: pow2Out
   interp: pow2Out
@@ -24,26 +25,77 @@ drawer: {
   ]
   drawers: [
     {
-      type: DrawDefault
     }
     {
-      type: DrawBlurSpin
+      type: DrawRegion
       suffix: -fan
-      blurThresh: 0.4
-      rotateSpeed: 120
+      spinSprite: true
+      rotateSpeed: 12
+    }
+    {
+      type: DrawRegion
+      suffix: -fan
+      spinSprite: true
+      rotateSpeed: 12
+      rotation: 45
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: steam
+      padLeft: 0.75
+      padRight: 12
+      padTop: 9
+      padBottom: 3.75
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: steam
+      padLeft: 12
+      padRight: 0.75
+      padTop: 3.75
+      padBottom: 9
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: water
+      padLeft: 0.75
+      padRight: 12
+      padTop: 3.75
+      padBottom: 9
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: water
+      padLeft: 12
+      padRight: 0.75
+      padTop: 9
+      padBottom: 3.75
     }
     {
       type: DrawRegion
       suffix: -top
     }
+    {
+      type: DrawGlowRegion
+      suffix: -flare
+      alpha: 0.9
+      glowIntensity: 0.1
+      color: ffffff
+    }
   ]
 }
 consumes: {
-  liquid: steam/2.5
+  liquids: [
+    steam/2.5
+  ]
+  liquid: {
+    liquid: water
+    amount: 0
+    optional: true
+  }
 }
-powerProduction: 15
-
-outputLiquid: water/2.3
+powerProduction: 2
+outputLiquid: water/2.083334
 category: power
 research: {
   parent:  0b04-00-03-industrial-turbine
@@ -52,9 +104,9 @@ research: {
   ]
 }
 requirements: [
-  dantrales/140
-  territe-alloy/400
-  baenite/50
+  dantrales/60
+  territe-alloy/200
+  silicon/60
 ]
 breakEffect: [
   {
