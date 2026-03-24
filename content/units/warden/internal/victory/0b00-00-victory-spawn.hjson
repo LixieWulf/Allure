@@ -1,0 +1,62 @@
+//Spawn package intended for beacons and waves. Do not attempt to copy this!
+type: missile
+hidden: false
+template: MissileUnitType
+//Allows lockon and prevents exploding 
+controller: FlyingAI
+defaultController: FlyingAI
+speed: 0
+rotateSpeed: 360
+hittable: false
+targetable: false
+physics: true
+hitSize: 24
+lifetime: 55
+drawBody: false
+drawCell: false
+outlines: false
+range: 8192
+maxRange: 8192
+engineSize: 0
+deathShake: 0
+shadowElevationScl: 0
+immunities: [
+  allure-permaslide
+  disarmed
+]
+weapons: [
+  {
+    alwaysShooting: true
+    mirror: false
+    x: 0
+    reload: 80
+    shoot: {
+      firstShotDelay: 15
+    }
+    shootSound: none
+    bullet: {
+      spawnUnit: allure-victory-wormhole
+    }
+  }
+  {
+    alwaysShooting: true
+    mirror: false
+    x: 0
+    y: 0
+    reload: 80
+    shoot: {
+      firstShotDelay: 45
+    }
+    shootStatus: unmoving
+    shootSound: none
+    bullet: {
+      spawnUnit: allure-0b00-victory
+    }
+  }
+]
+createWreck: false
+createScorch: false
+deathSound: none
+deathExplosionEffect: none
+envEnabled: -1
+envDisabled: 0

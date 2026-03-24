@@ -1,0 +1,81 @@
+//Spawn package intended for beacons and waves. Do not attempt to copy this!
+type: missile
+hidden: false
+template: MissileUnitType
+//Allows lockon and prevents exploding 
+controller: FlyingAI
+defaultController: FlyingAI
+speed: 0
+rotateSpeed: 360
+hittable: false
+targetable: false
+physics: true
+hitSize: 480
+lifetime: 55
+drawBody: false
+drawCell: false
+outlines: false
+range: 8192
+maxRange: 8192
+engineSize: 0
+deathShake: 0
+immunities: [
+  allure-permaslide
+  disarmed
+]
+weapons: [
+  {
+    alwaysShooting: true
+    mirror: false
+    x: 0
+    reload: 80
+    shoot: {
+      firstShotDelay: 15
+    }
+    shootSound: none
+    bullet: {
+      spawnUnit: allure-hellfire-wormhole
+    }
+  }
+  {
+    alwaysShooting: true
+    mirror: false
+    x: 0
+    y: 0
+    reload: 80
+    shoot: {
+      firstShotDelay: 45
+    }
+    shootStatus: unmoving
+    shootSound: none
+    bullet: {
+      spawnUnit: allure-0b17-hellfire
+    }
+  }
+]
+abilities: [
+  {
+    type: StatusFieldAbility
+    reload: 1
+    effect: allure-permaslide
+    range: 6
+    duration: 200
+    activeEffect: none
+    applyEffect: none
+  }
+  {
+    type: StatusFieldAbility
+    reload: 1
+    effect: disarmed
+    range: 6
+    duration: 120
+    activeEffect: none
+    applyEffect: none
+  }
+]
+createWreck: false
+createScorch: false
+deathSound: none
+deathExplosionEffect: none
+envEnabled: -1
+envDisabled: 0

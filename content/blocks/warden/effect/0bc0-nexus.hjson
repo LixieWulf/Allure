@@ -8,7 +8,7 @@ itemCapacity: 1200
 size: 4
 category: effect
 unitType: 0bc0-construct
-unitCapModifier: 6
+unitCapModifier: 7
 thrusterLength: 15
 hasPower: true
 conductivePower: true

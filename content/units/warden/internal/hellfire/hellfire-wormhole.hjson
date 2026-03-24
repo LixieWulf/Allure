@@ -1,0 +1,445 @@
+//Wormhole unit entity.
+type: missile
+template: MissileUnitType
+//Allows lockon and prevents exploding 
+controller: FlyingAI
+defaultController: FlyingAI
+fullOverride: particle
+speed: 0
+rotateSpeed: 0
+hittable: false
+targetable: false
+lifetime: 360
+drawBody: false
+drawCell: false
+outlines: false
+wobble: false
+engineSize: 0
+deathShake: 32
+loopSound: loopThoriumReactor
+loopSoundVolume: 1
+immunities: [
+  allure-permaslide
+  disarmed
+]
+parts: [
+  {
+    type: RegionPart
+    name: clear-effect
+    outline: false
+    xScl: 1.7
+    yScl: 1.7
+    children: [
+      {
+        type: RegionPart
+        name: circle
+        outline: false
+        xScl: 0.001
+        yScl: 0.001
+        growX: 8.6
+        growY: 8.6
+        color: 000000
+        layer: 85
+      }
+      {
+        type: RegionPart
+        name: allure-shield
+        outline: false
+        xScl: 0.001
+        yScl: 0.001
+        growX: 4.4
+        growY: 4.4
+        blending: additive
+        color: 90a2fc88
+        layer: 95
+        weaponIndex: 0
+      }
+      {
+        type: RegionPart
+        name: allure-vortex
+        outline: false
+        mirror: true
+        xScl: 0.001
+        yScl: 0.001
+        growX: 6
+        growY: 6
+        color: 90a2fc66
+        layer: 90
+        moveRot: 360
+        progress: reload
+        weaponIndex: 0
+      }
+      {
+        type: RegionPart
+        name: circle-shadow
+        outline: false
+        xScl: 0.001
+        yScl: 0.001
+        growX: 10.1
+        growY: 10.1
+        color: 000000
+        layer: 99
+        weaponIndex: 0
+      }
+      {
+        type: RegionPart
+        name: allure-singularity-ring
+        outline: false
+        mirror: true
+        xScl: 0.001
+        yScl: 0.001
+        growX: 2.5
+        growY: 2.5
+        blending: additive
+        mixColor: 90a2fc
+        color: ffffff88
+        layer: 99
+        moveRot: -360
+        progress: reload
+        weaponIndex: 0
+      }
+      {
+        type: RegionPart
+        name: allure-singularity-ring
+        outline: false
+        mirror: true
+        xScl: 0.001
+        yScl: 0.001
+        growX: 2.5
+        growY: 2.5
+        blending: additive
+        mixColor: 90a2fc
+        color: ffffff88
+        layer: 99
+        moveRot: 720
+        progress: reload
+        weaponIndex: 0
+      }
+      {
+        type: RegionPart
+        name: circle-shadow
+        outline: false
+        mirror: true
+        xScl: 0.001
+        yScl: 0.001
+        growX: 8
+        growY: 8
+        color: 000000
+        layer: 99
+        weaponIndex: 0
+      }
+      {
+        type: RegionPart
+        name: allure-wormhole-stars
+        outline: false
+        xScl: 0.001
+        yScl: 0.001
+        growX: 4.2
+        growY: 4.2
+        layer: 99
+        weaponIndex: 0
+      }
+      //brackets
+      {
+        type: EffectSpawnerPart
+        rotation: 90
+        x: 350
+        width: 300
+        height: 0
+        effectChance: 1
+        effect: {
+          line: true
+          layer: 109
+          particles: 1
+          cone: 0
+          lifetime: 60
+          length: 700
+          randLength: false
+          lenFrom: 0
+          lenTo: 150
+          strokeFrom: 18
+          strokeTo: 24
+          colorFrom: 7382f088
+          colorTo: 7382f088
+          interp: pow2
+          sizeInterp: slope
+        }
+      }
+      {
+        type: EffectSpawnerPart
+        rotation: -90
+        x: -350
+        width: 300
+        height: 0
+        effectChance: 1
+        effect: {
+          line: true
+          layer: 85
+          particles: 1
+          cone: 0
+          lifetime: 60
+          length: 700
+          randLength: false
+          lenFrom: 0
+          lenTo: 150
+          strokeFrom: 18
+          strokeTo: 12
+          colorFrom: 7382f088
+          colorTo: 7382f088
+          interp: pow2
+          sizeInterp: slope
+        }
+      }
+      {
+        type: EffectSpawnerPart
+        rotation: 90
+        x: 450
+        width: 200
+        height: 0
+        effectChance: 0.5
+        effect: {
+          line: true
+          particles: 1
+          cone: 0
+          lifetime: 60
+          length: 900
+          randLength: false
+          lenFrom: 0
+          lenTo: 150
+          strokeFrom: 15
+          strokeTo: 21
+          interp: pow2
+          sizeInterp: slope
+        }
+      }
+      {
+        type: EffectSpawnerPart
+        rotation: -90
+        x: -450
+        width: 200
+        height: 0
+        effectChance: 0.5
+        effect: {
+          line: true
+          layer: 85
+          particles: 1
+          cone: 0
+          lifetime: 60
+          length: 900
+          randLength: false
+          lenFrom: 0
+          lenTo: 150
+          strokeFrom: 15
+          strokeTo: 9
+          colorFrom: 7382f0
+          colorTo: 7382f0
+          interp: pow2
+          sizeInterp: slope
+        }
+      }
+    ]
+    moves: [
+      {
+        gx: -1.7
+        gy: -1.7
+        progress: {
+          type: life
+          ops: [
+            {
+              op: compress
+              start: 0.9
+              end: 1
+            }
+            {
+              op: curve
+              interp: pow5
+            }
+          ]
+        }
+      }
+    ]
+  }
+]
+weapons: [
+  {
+    alwaysShooting: true
+    controllable: false
+    mirror: false
+    x: 0
+    shootY: 0
+    shootSound: none
+    reload: 430
+    bullet: {
+      type: RailBulletType
+      shootEffect: {
+        type: SoundEffect
+        effect: none
+        sound: massdriverReceive
+        minVolume: 1.25
+        maxVolume: 1.25
+        minPitch: 0.9
+        maxPitch: 0.9
+      }
+      smokeEffect: [
+        {
+          useRotation: false
+          particles: 1
+          lifetime: 301
+          length: 0
+          offsetX: -256
+          offsetY: -256
+          region: circle-shadow
+          colorFrom: 00000088
+          colorTo: 00000088
+          layer: 80
+          sizeFrom: 0
+          sizeTo: 300
+          interp: pow10Out
+        }
+        {
+          useRotation: false
+          particles: 1
+          lifetime: 60
+          startDelay: 300
+          length: 0
+          offsetX: -256
+          offsetY: -256
+          region: circle-shadow
+          colorFrom: 00000088
+          colorTo: 00000088
+          layer: 80
+          sizeFrom: 300
+          sizeTo: 0
+          interp: pow5In
+        }
+      ]
+    }
+  }
+]
+deathSound: walkerStep
+deathExplosionEffect: [
+  {
+    particles: 1
+    length: 0
+    layer: 106
+    region: allure-diamond-vthin
+    sizeFrom: 0
+    sizeTo: 480
+    lifetime: 20
+    interp: pow3Out
+    useRotation: false
+    clip: 8192
+  }
+  {
+    particles: 1
+    length: 0
+    layer: 105
+    region: allure-diamond-vthin
+    colorFrom: 7382f0
+    colorTo: 7382f0
+    sizeFrom: 0
+    sizeTo: 600
+    lifetime: 20
+    interp: pow3Out
+    useRotation: false
+    clip: 8192
+  }
+  {
+    particles: 1
+    length: 0
+    layer: 105
+    colorFrom: 7382f0
+    colorTo: 7382f0
+    sizeFrom: 0
+    sizeTo: 48
+    lifetime: 20
+    interp: pow3Out
+    clip: 8192
+  }
+  {
+    particles: 1
+    length: 0
+    layer: 110
+    colorFrom: 000000
+    colorTo: 000000
+    sizeFrom: 0
+    sizeTo: 40
+    lifetime: 20
+    interp: pow3Out
+    clip: 8192
+  }
+  {
+    particles: 1
+    length: 0
+    layer: 99
+    colorFrom: 000000
+    colorTo: 000000
+    sizeFrom: 0
+    sizeTo: 40
+    lifetime: 20
+    interp: pow3Out
+    clip: 8192
+  }
+  {
+    particles: 1
+    length: 0
+    layer: 106
+    region: allure-diamond-vthin
+    sizeFrom: 480
+    sizeTo: 0
+    lifetime: 80
+    startDelay: 20
+    useRotation: false
+    clip: 8192
+  }
+  {
+    particles: 1
+    length: 0
+    layer: 105
+    region: allure-diamond-vthin
+    colorFrom: 7382f0
+    colorTo: 7382f0
+    sizeFrom: 600
+    sizeTo: 0
+    lifetime: 80
+    startDelay: 20
+    useRotation: false
+    clip: 8192
+  }
+  {
+    particles: 1
+    length: 0
+    layer: 105
+    colorFrom: 7382f0
+    colorTo: 7382f0
+    sizeFrom: 48
+    sizeTo: 0
+    lifetime: 80
+    startDelay: 20
+    clip: 8192
+  }
+  {
+    particles: 1
+    length: 0
+    layer: 110
+    colorFrom: 000000
+    colorTo: 000000
+    sizeFrom: 40
+    sizeTo: 0
+    lifetime: 80
+    startDelay: 20
+    clip: 8192
+  }
+  {
+    particles: 1
+    length: 0
+    layer: 99
+    colorFrom: 000000
+    colorTo: 000000
+    sizeFrom: 40
+    sizeTo: 0
+    lifetime: 80
+    startDelay: 20
+    clip: 8192
+  }
+]

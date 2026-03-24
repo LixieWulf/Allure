@@ -8,7 +8,7 @@ size: 8
 hasPower: true
 category: effect
 unitType: 0bc0-construct
-unitCapModifier: 36
+unitCapModifier: 21
 thrusterLength: 15
 hasPower: true
 conductivePower: true

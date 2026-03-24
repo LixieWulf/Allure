@@ -1,0 +1,804 @@
+type: missile
+template: MissileUnitType
+//Allows lockon and prevents exploding 
+controller: FlyingAI
+defaultController: FlyingAI
+fullOverride: circle
+speed: 0
+rotateSpeed: 0
+hittable: false
+targetable: false
+lifetime: 300
+drawBody: false
+drawCell: false
+outlines: false
+engineSize: 0
+deathShake: 0
+immunities: [
+  disarmed
+]
+parts: [
+  //Add the entire draw to a part, as to sync coordinates
+  {
+    type: RegionPart
+    layer: 91
+    outline: false
+    name: allure-0b17-hellfire
+    y: -900
+    moveY: 900
+    progress: {
+      type: life
+      op: curve
+      interp: pow2OutInverse
+    }
+    children: [
+      { 
+        type: RegionPart
+        name: allure-0b17-hellfire-flare
+        outline: false
+        blending: additive
+        layer: 92
+        color: 7382f0
+        colorTo: ffffff
+        weaponIndex: 0
+      }
+      { 
+        type: RegionPart
+        name: allure-0b17-hellfire-flare
+        outline: false
+        layer: 141
+        color: 7382f015
+        blending: additive
+      }
+      {
+        type: RegionPart
+        name: allure-shield
+        outline: false
+        blending: additive
+        color: 7382f088
+        layer: 93
+        xScl: 5
+        yScl: 6
+      }
+      //vanes
+      {
+        type: RegionPart
+        x: 116.25
+        y: -65.25
+        layer: 93
+        name: allure-0b17-hellfire-vanes
+        outline: false
+        mirror: true
+        blending: additive
+        progress: heat
+        weaponIndex: 0
+        color: e6555500
+        colorTo: ffffff
+      }
+      {
+        type: RegionPart
+        x: 72
+        y: 121
+        layer: 93
+        name: allure-0b17-hellfire-sinks
+        outline: false
+        mirror: true
+        blending: additive
+        progress: heat
+        weaponIndex: 0
+        color: e6555500
+        colorTo: ffffff
+      }
+      {
+        type: RegionPart
+        x: -116.25
+        y: -65.25
+        xScl: -1
+        layer: 93
+        name: allure-0b17-hellfire-vanes
+        outline: false
+        mirror: true
+        blending: additive
+        progress: heat
+        weaponIndex: 0
+        color: e6555500
+        colorTo: ffffff
+      }
+      {
+        type: RegionPart
+        x: -72
+        y: 121
+        xScl: -1
+        layer: 93
+        name: allure-0b17-hellfire-sinks
+        outline: false
+        mirror: true
+        blending: additive
+        progress: heat
+        weaponIndex: 0
+        color: e6555500
+        colorTo: ffffff
+      }
+      //flames
+      {
+        type: EffectSpawnerPart
+        x: 118
+        y: -50
+        rotation: -90
+        width: 12
+        height: 12
+        debugDraw: false
+        mirror: true
+        effect: fuelburn
+        progress: heat
+        weaponIndex: 0
+        effectChance: 0.25
+        effect: {
+          followParent: false
+          particles: 3
+          length: 24
+          cone: 0
+          lifetime: 60
+          sizeFrom: 3
+          sizeTo: 0
+          colorFrom: ffffff
+          colorTo: 7382f088
+          interp: pow5Out
+          sizeInterp: linear
+        }
+      }
+      {
+        type: EffectSpawnerPart
+        x: 118
+        y: -78
+        rotation: -90
+        width: 24
+        height: 24
+        debugDraw: false
+        mirror: true
+        effect: fuelburn
+        progress: heat
+        weaponIndex: 0
+        effectChance: 0.5
+        effect: {
+          followParent: false
+          particles: 3
+          length: 36
+          cone: 0
+          lifetime: 75
+          sizeFrom: 4
+          sizeTo: 0
+          colorFrom: ffffff
+          colorTo: 7382f088
+          interp: pow5Out
+          sizeInterp: linear
+        }
+      }
+      {
+        type: EffectSpawnerPart
+        x: 72
+        y: 121
+        rotation: -90
+        width: 36
+        height: 16
+        debugDraw: false
+        mirror: true
+        effect: fuelburn
+        progress: heat
+        weaponIndex: 0
+        effectChance: 0.5
+        effect: {
+          followParent: false
+          particles: 3
+          length: 36
+          cone: 0
+          lifetime: 75
+          sizeFrom: 4
+          sizeTo: 0
+          colorFrom: ffffff
+          colorTo: 7382f088
+          interp: pow5Out
+          sizeInterp: linear
+        }
+      }
+      //engines
+      {
+        type: RegionPart
+        name: clear-effect
+        y: -195
+        rotation: 180
+        children: [
+          {
+            name: allure-thruster-flare
+            layer: 90.6
+            y: 50
+            outline: false
+            color: 7382f000
+            colorTo: 7382f0
+            blending: additive
+            xScl: 3
+            yScl: 3
+          }
+          {
+            name: allure-shootspike
+            layer: 90.4
+            rotation: 90
+            outline: false
+            clampProgress: false
+            color: 7382f000
+            colorTo: 7382f088
+            blending: additive
+            xScl: 0
+            yScl: 7
+            growX: 6
+            progress: heat
+            growProgress: {
+              type: heat
+              op: sin
+              scl: 3
+              mag: 0.1
+            }
+          }
+          {
+            name: allure-shootspike
+            layer: 90.4
+            rotation: 90
+            outline: false
+            clampProgress: false
+            color: 7382f0
+            colorTo: ffffff
+            blending: additive
+            xScl: 2
+            yScl: 7
+            growX: 2
+            progress: heat
+            growProgress: {
+              type: heat
+              op: sin
+              scl: 3
+              mag: 0.1
+            }
+          }
+          {
+            type: FlarePart
+            y: 40
+            sides: 2
+            color1: 7382f0bb
+            radius: 0
+            radiusTo: 480
+            stroke: 24
+            innerRadScl: 0.75
+            progress: heat
+            layer: 101
+          }
+          {
+            type: FlarePart
+            y: 40
+            sides: 2
+            color1: 00000000
+            radius: 0
+            radiusTo: 128
+            stroke: 128
+            progress: heat
+            layer: 101
+          }
+        ]
+      }
+      {
+        type: RegionPart
+        name: clear-effect
+        x: 85
+        y: -180
+        rotation: 180
+        children: [
+          {
+            name: allure-thruster-flare
+            layer: 90.6
+            y: 30
+            outline: false
+            color: 7382f000
+            colorTo: 7382f0
+            blending: additive
+            xScl: 1.5
+            yScl: 1.5
+          }
+          {
+            name: allure-shootspike
+            layer: 90.4
+            rotation: 90
+            outline: false
+            clampProgress: false
+            color: 7382f000
+            colorTo: 7382f088
+            blending: additive
+            xScl: 0
+            yScl: 3
+            growX: 3
+            progress: heat
+            growProgress: {
+              type: heat
+              op: sin
+              scl: 3
+              mag: 0.1
+            }
+          }
+          {
+            name: allure-shootspike
+            layer: 90.4
+            rotation: 90
+            outline: false
+            clampProgress: false
+            color: 7382f0
+            colorTo: ffffff
+            blending: additive
+            xScl: 1
+            yScl: 3
+            growX: 1
+            progress: heat
+            growProgress: {
+              type: heat
+              op: sin
+              scl: 3
+              mag: 0.1
+            }
+          }
+          {
+            type: FlarePart
+            y: 20
+            sides: 2
+            color1: 7382f0bb
+            radius: 0
+            radiusTo: 240
+            stroke: 12
+            innerRadScl: 0.75
+            progress: heat
+            layer: 101
+          }
+          {
+            type: FlarePart
+            y: 20
+            sides: 2
+            color1: 00000000
+            radius: 0
+            radiusTo: 64
+            stroke: 64
+            progress: heat
+            layer: 101
+          }
+        ]
+      }
+      {
+        type: RegionPart
+        name: clear-effect
+        x: -85
+        y: -180
+        rotation: 180
+        children: [
+          {
+            name: allure-thruster-flare
+            layer: 90.6
+            y: 30
+            outline: false
+            color: 7382f000
+            colorTo: 7382f0
+            blending: additive
+            xScl: 1.5
+            yScl: 1.5
+          }
+          {
+            name: allure-shootspike
+            layer: 90.4
+            rotation: 90
+            outline: false
+            clampProgress: false
+            color: 7382f000
+            colorTo: 7382f088
+            blending: additive
+            xScl: 0
+            yScl: 3
+            growX: 3
+            progress: heat
+            growProgress: {
+              type: heat
+              op: sin
+              scl: 3
+              mag: 0.1
+            }
+          }
+          {
+            name: allure-shootspike
+            layer: 90.4
+            rotation: 90
+            outline: false
+            clampProgress: false
+            color: 7382f0
+            colorTo: ffffff
+            blending: additive
+            xScl: 1
+            yScl: 3
+            growX: 1
+            progress: heat
+            growProgress: {
+              type: heat
+              op: sin
+              scl: 3
+              mag: 0.1
+            }
+          }
+          {
+            type: FlarePart
+            y: 20
+            sides: 2
+            color1: 7382f0bb
+            radius: 0
+            radiusTo: 240
+            stroke: 12
+            innerRadScl: 0.75
+            progress: heat
+            layer: 101
+          }
+          {
+            type: FlarePart
+            y: 20
+            sides: 2
+            color1: 00000000
+            radius: 0
+            radiusTo: 64
+            stroke: 64
+            progress: heat
+            layer: 101
+          }
+        ]
+      }
+      //extra thrusters (side)
+      {
+        name: allure-shootspike
+        x: 82
+        y: 91
+        layer: 90
+        rotation: 0
+        outline: false
+        mirror: true
+        clampProgress: false
+        color: 7382f0
+        blending: additive
+        xScl: 0.4
+        yScl: 1.75
+        growX: 0.1
+        growProgress: {
+          type: time
+          ops: [
+            {
+              op: loop
+              time: 15
+            }
+            {
+              op: slope
+            }
+          ]
+        }
+      }
+      {
+        name: allure-shootspike
+        x: 82
+        y: 60.25
+        layer: 90
+        rotation: 0
+        outline: false
+        mirror: true
+        clampProgress: false
+        color: 7382f0
+        blending: additive
+        xScl: 0.4
+        yScl: 1.75
+        growX: 0.1
+        growProgress: {
+          type: time
+          ops: [
+            {
+              op: loop
+              time: 15
+            }
+            {
+              op: slope
+            }
+          ]
+        }
+      }
+      {
+        name: allure-shootspike
+        x: 89
+        y: -71
+        layer: 93
+        rotation: 0
+        outline: false
+        mirror: true
+        clampProgress: false
+        color: 7382f0
+        blending: additive
+        xScl: 0.15
+        yScl: 0.9
+        growX: 0.05
+        growProgress: {
+          type: time
+          ops: [
+            {
+              op: loop
+              time: 15
+            }
+            {
+              op: slope
+            }
+          ]
+        }
+      }
+      {
+        name: allure-shootspike
+        x: 105
+        y: -131.25
+        layer: 93
+        rotation: 0
+        outline: false
+        mirror: true
+        clampProgress: false
+        color: 7382f0
+        blending: additive
+        xScl: 0.15
+        yScl: 0.9
+        growX: 0.05
+        growProgress: {
+          type: time
+          ops: [
+            {
+              op: loop
+              time: 15
+            }
+            {
+              op: slope
+            }
+          ]
+        }
+      }
+      {
+        name: allure-shootspike
+        x: 105
+        y: -148.5
+        layer: 93
+        rotation: 0
+        outline: false
+        mirror: true
+        clampProgress: false
+        color: 7382f0
+        blending: additive
+        xScl: 0.15
+        yScl: 0.9
+        growX: 0.05
+        growProgress: {
+          type: time
+          ops: [
+            {
+              op: loop
+              time: 15
+            }
+            {
+              op: slope
+            }
+          ]
+        }
+      }
+      //extra thrusters (top)
+      {
+        name: allure-unusually-organized-rectangle
+        x: 107
+        y: -106.5
+        layer: 93
+        rotation: 45
+        outline: false
+        mirror: true
+        clampProgress: false
+        color: 7382f0
+        blending: additive
+        xScl: 0.25
+        yScl: 0.25
+        growX: 0.05
+        growY: 0.05
+        growProgress: {
+          type: time
+          ops: [
+            {
+              op: loop
+              time: 15
+            }
+            {
+              op: slope
+            }
+          ]
+        }
+      }
+      {
+        name: allure-unusually-organized-rectangle
+        x: 100.5
+        y: -37
+        layer: 93
+        rotation: 45
+        outline: false
+        mirror: true
+        clampProgress: false
+        color: 7382f0
+        blending: additive
+        xScl: 0.25
+        yScl: 0.25
+        growX: 0.05
+        growY: 0.05
+        growProgress: {
+          type: time
+          ops: [
+            {
+              op: loop
+              time: 15
+            }
+            {
+              op: slope
+            }
+          ]
+        }
+      }
+      {
+        name: allure-unusually-organized-rectangle
+        x: 100.5
+        y: -52
+        layer: 93
+        rotation: 45
+        outline: false
+        mirror: true
+        clampProgress: false
+        color: 7382f0
+        blending: additive
+        xScl: 0.25
+        yScl: 0.25
+        growX: 0.05
+        growY: 0.05
+        growProgress: {
+          type: time
+          ops: [
+            {
+              op: loop
+              time: 15
+            }
+            {
+              op: slope
+            }
+          ]
+        }
+      }
+      {
+        name: allure-unusually-organized-rectangle
+        x: 61
+        y: 106.25
+        layer: 93
+        rotation: 45
+        outline: false
+        mirror: true
+        clampProgress: false
+        color: 7382f0
+        blending: additive
+        xScl: 0.25
+        yScl: 0.25
+        growX: 0.05
+        growY: 0.05
+        growProgress: {
+          type: time
+          ops: [
+            {
+              op: loop
+              time: 15
+            }
+            {
+              op: slope
+            }
+          ]
+        }
+      }
+      {
+        name: allure-unusually-organized-rectangle
+        x: 61
+        y: 92.25
+        layer: 93
+        rotation: 45
+        outline: false
+        mirror: true
+        clampProgress: false
+        color: 7382f0
+        blending: additive
+        xScl: 0.25
+        yScl: 0.25
+        growX: 0.05
+        growY: 0.05
+        growProgress: {
+          type: time
+          ops: [
+            {
+              op: loop
+              time: 15
+            }
+            {
+              op: slope
+            }
+          ]
+        }
+      }
+      {
+        name: allure-unusually-organized-rectangle
+        x: 61
+        y: 78.25
+        layer: 93
+        rotation: 45
+        outline: false
+        mirror: true
+        clampProgress: false
+        color: 7382f0
+        blending: additive
+        xScl: 0.25
+        yScl: 0.25
+        growX: 0.05
+        growY: 0.05
+        growProgress: {
+          type: time
+          ops: [
+            {
+              op: loop
+              time: 15
+            }
+            {
+              op: slope
+            }
+          ]
+        }
+      }
+    ]
+  }
+]
+weapons: [
+  {
+    y: 0
+    x: 0
+    shootY: 0
+    rotate: true
+    rotateSpeed: 0
+    baseRotation: 180
+    alwaysShooting: true
+    continuous: true
+    alternate: false
+    mirror: false
+    reload: 3
+    shootSound: none
+    recoil: 0
+    display: false
+    bullet: {
+      type: RailBulletType
+      shootEffect: none
+      smokeEffect: none
+    }
+  }
+  {
+    alwaysShooting: true
+    mirror: false
+    x: 0
+    rotate: true
+    rotateSpeed: 0
+    reload: 400
+    shoot: {
+      firstShotDelay: 90
+    }
+    shootSound: none
+    bullet: {
+      spawnUnit: allure-hellfire-wormhole
+    }
+  }
+]
+createWreck: false
+createScorch: false
+deathSound: none
+deathExplosionEffect: none
+envEnabled: -1
+envDisabled: 0

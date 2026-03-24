@@ -34,7 +34,6 @@ immunities: [
   electrified,
   freezing,
   unmoving,
-  disarmed,
   allure-0b-energy0,
   allure-0b-energy1,
   allure-0b-energy2,
@@ -4018,6 +4017,24 @@ weapons: [
         colorTo: 7382f0
         interp: pow2Out
       }
+    }
+  }
+  //death
+  {
+    x: 0
+    rotate: true
+    rotateSpeed: 0
+    shootY: 900
+    mirror: false
+    shootOnDeath: true
+    reload: 15
+    shootCone: 360
+    controllable: false
+    shootSound: none
+    bullet: {
+      shootEffect: none
+      smokeEffect: none
+      spawnUnit: allure-hellfire-death
     }
   }
 ]
