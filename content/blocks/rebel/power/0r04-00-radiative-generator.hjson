@@ -3,14 +3,14 @@ size: 4
 itemDuration: 12
 itemCapacity: 100
 liquidCapacity: 50
-lightLiquid: energia
+lightLiquid: fluid-energy
 consumes: {
   items: [
     contained-slag/1
   ]
 }
 powerProduction: 0.001
-outputLiquid: energia/0.06667
+outputLiquid: fluid-energy/0.06667
 drawer: {
   type: DrawMulti
   iconOverride: [

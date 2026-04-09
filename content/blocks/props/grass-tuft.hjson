@@ -1,4 +1,5 @@
 type: SeaBush
+customShadow: true
 lobesMin: 8
 lobesMax: 10
 timeRange: 50
@@ -6,4 +7,4 @@ sclMin: 35
 sclMax: 45
 magMin: 5
 magMax: 7.5
-buildVisibility: sandboxOnly
+buildVisibility: editorOnly

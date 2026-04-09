@@ -5,10 +5,10 @@ size: 2
 craftTime: 5
 consumes: {
   items: [
-    contained-energia/2
+    contained-fluid-energy/2
   ]
 }
-outputLiquid: energia/0.8
+outputLiquid: fluid-energy/0.8
 category: distribution
 requirements: [
   anden/96

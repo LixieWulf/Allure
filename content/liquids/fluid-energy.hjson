@@ -1,4 +1,4 @@
-heatCapacity: 0
+heatCapacity: 0.25
 //As it turns out, this exploding violently at the slightest inconvenience is a slight issue for all types of base
 //explosiveness: 0.45
 flammability: 0.2
@@ -7,7 +7,7 @@ research: {
   objectives: [
     {
       type: Produce
-      content: allure-energia
+      content: allure-fluid-energy
     }
   ]
 }

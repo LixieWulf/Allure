@@ -2,10 +2,10 @@ type: GenericCrafter
 size: 3
 consumes: {
   liquids: [
-    energia/0.001
+    fluid-energy/0.001
   ]
 }
-outputLiquid: energia/0.001
+outputLiquid: fluid-energy/0.001
 liquidCapacity: 1200
 drawer: [
   {
@@ -14,7 +14,7 @@ drawer: [
   {
     type: DrawLiquidTile
     padding: 3
-    drawLiquid: energia
+    drawLiquid: fluid-energy
   }
   {
     type: DrawRegion

@@ -13,7 +13,7 @@ consumes: {
   power: 12
   liquids: [
     {
-      liquid: energia
+      liquid: fluid-energy
       amount: 0.25
       optional: true
       booster: true

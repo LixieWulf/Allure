@@ -19,7 +19,7 @@ drawer: [
   }
   {
     type: DrawLiquidTile
-    drawLiquid: energia
+    drawLiquid: fluid-energy
     padLeft: 27.75
     padRight: 27.75
     padTop: 1.25
@@ -42,7 +42,7 @@ drawer: [
     layer: 30
   }
 ]
-outputLiquid: energia/1.6
+outputLiquid: fluid-energy/1.6
 category: power
 requirements: [
   anden/2400

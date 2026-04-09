@@ -1,96 +1,14 @@
 type: LiquidRouter
+health: 1000, armor: 50
+size: 4, liquidCapacity: 2000, liquidPadding: 2.75
 squareSprite: false
 customShadow: true
-size: 4
-liquidCapacity: 2000
-liquidPadding: 2.75
 category: liquid
 research: {
   parent: 0b03-00-vacuum-conduit
   requirements: [
-    metaglass/200
-    dantrales/300
-    territe-alloy/1500
   ]
 }
 requirements: [
-  dantrales/50
+  territe-alloy/36
 ]
-breakEffect: [
-  {
-    type: WaveEffect
-    rotation: 41
-    lifetime: 20
-    sides: 4
-    sizeFrom: 12
-    sizeTo: 24
-    strokeFrom: 9
-    strokeTo: 0
-    colorFrom: 7382f0
-    colorTo: 7382f0
-  }
-  {
-    type: ParticleEffect
-    particles: 1
-    length: 0
-    lifetime: 11
-    useRotation: false
-    region: allure-warden-icon
-    sizeFrom: 8
-    sizeTo: 8
-    colorFrom: 7382f000
-    colorTo: 7382f0
-  }
-  {
-    type: ParticleEffect
-    particles: 1
-    length: 0
-    lifetime: 30
-    startDelay: 10
-    useRotation: false
-    region: allure-warden-icon
-    sizeFrom: 8
-    sizeTo: 8
-    colorFrom: 7382f0
-    colorTo: 7382f000
-  }
-]
-destroyBullet: {
-  type: BulletType
-  speed: 0
-  lifetime: 0
-  collides: false
-  absorbable: false
-  hittable: false
-  hitEffect: none
-  despawnEffect: none
-  fragBullets: 12
-  fragLifeMin: 0.01
-  fragBullet: {
-    type: BulletType
-    damage: 0
-    collides: false
-    absorbable: false
-    hittable: false
-    reflectable: false
-    hitEffect: none
-    despawnEffect: none
-    speed: 0.01
-    lifetime: 12
-    lightning: 1
-    lightningLength: 8
-    lightningLengthRand: 16
-    lightningCone: 0
-    lightningColor: 7382f0
-    lightningDamage: 35
-  }
-}
-destroyEffect: {
-  particles: 1
-  length: 0
-  lifetime: 35
-  interp: pow2In
-  sizeFrom: 24
-  sizeTo: 0
-  colorTo: 7382f0
-}

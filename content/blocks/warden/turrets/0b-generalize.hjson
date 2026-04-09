@@ -1,23 +1,43 @@
 type: PowerTurret
 squareSprite: false
+rotate: false
 size: 4
-reload: 150
+reload: 360
 rotateSpeed: 0
-range: 440
+range: 480
+inaccuracy: 5
 recoil: 0
 shootY: 0
 shootCone: 360
-shootSound: sap
+shootSound: shootMissilePlasmaShort
 outlineIcon: false
 unitSort: strongest
+shootEffect: none
+smokeEffect: none
 shoot: {
-  type: ShootSpread
-  spread: 45
-  shots: 8
-  shotDelay: 2
+  type: ShootBarrel
+  shots: 14
+  shotDelay: 5
+  barrels: [
+    -1.5, 5.5, 15,
+    1.5, -5.5, -165,
+    2, 3.75, -25,
+    -2, -3.75, 155,
+    5, 2, -80,
+    -5, 2, 80,
+    5, -2, -100,
+    -5, -2, 100,
+    8, 0, -90,
+    -8, 0, 90,
+    5.5, 5.5, -30,
+    -5.5, -5.5, 150,
+    2, 7.75, -15,
+    -2, -7.75, 165,
+  ]
 }
 drawer: {
-  type: DrawRegion
+  type: DrawTurret
+  basePrefix: 0b0-
 }
 consumes: {
   power: 18
@@ -27,30 +47,113 @@ consumes: {
 }
 coolant: {
   type: ConsumeLiquid
-  liquid: energia
+  liquid: fluid-energy
   amount: 1.5
 }
 coolantMultiplier: 1.111111
 shootType: {
-  speed: 2
-  drag: -0.07
-  lifetime: 45
-  damage: 45
-  status: allure-0b-energy1
-  statusDuration: 4
-  homingPower: 0.11
-  homingRange: 480
-  width: 11
-  height: 18
-  frontColor: 90a2fc
-  backColor: 7382f0
-  trailLength: 5
-  trailWidth: 1.5
+  type: BulletType
+  lifetime: 120
+  speed: 1
+  damage: 50
+  splashDamage: 50
+  splashDamageRadius: 24
+  drag: 0.002
+  accel: 0.06
+  weaveScale: 6
+  weaveMag: 4.5
+  homingPower: 0.045
+  homingRange: 240
+  hittable: false
+  hitSound: explosion
+  despawnEffect: none
+  parts: [
+    {
+      type: FlarePart
+      sides: 2
+      color1: 7382f0bb
+      radius: 0
+      radiusTo: 50
+      stroke: 4
+      innerRadScl: 0.75
+      progress: {
+        type: life
+        op: slope
+      }
+      layer: 101
+    }
+    {
+      type: FlarePart
+      sides: 2
+      color1: 00000000
+      radius: 0
+      radiusTo: 10
+      stroke: 10
+      progress: {
+        type: life
+        op: slope
+      }
+      layer: 101
+    }
+  ]
+  trailLength: 15
+  trailWidth: 1.2
   trailColor: 7382f0
-  hitColor: 7382f0
-  hitEffect: hitBulletColor
-  despawnEffect: hitBulletColor
-  smokeEffect: none
+  hitEffect: [
+    {
+      type: WaveEffect
+      interp: pow3Out
+      lifetime: 25
+      sizeFrom: 0
+      sizeTo: 25
+      strokeFrom: 4
+      colorTo: 7382f0
+    }
+    {
+      length: 16
+      particles: 6
+      lifetime: 30
+      interp: pow2Out
+      sizeInterp: pow3In
+      sizeFrom: 12
+      sizeTo: 0
+      colorFrom: 7382f0bb
+      colorTo: 7382f0bb
+    }
+    {
+      line: true
+      length: 36
+      lifetime: 30
+      particles: 9
+      lenFrom: 6
+      lenTo: 4
+      strokeFrom: 2
+      strokeTo: 0
+      colorTo: 7382f0
+      interp: pow3Out
+    }
+  ]
+  spawnBullets: [
+    {
+      type: EmptyBulletType
+      lifetime: 0
+      despawnEffect: {
+        line: true
+        particles: 8
+        length: 30
+        cone: 25
+        lifetime: 50
+        lenFrom: 5
+        lenTo: 0
+        strokeFrom: 1
+        strokeTo: 2
+        colorTo: 7382f0
+        cap: false
+        interp: pow2Out
+        sizeInterp: pow2In
+      }
+    }
+  ]
 }
 category: turret
 research: {

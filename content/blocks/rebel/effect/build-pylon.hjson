@@ -9,7 +9,7 @@ buildRange: 120
 category: effect
 consumes: {
   liquids: [
-    energia/0.1
+    fluid-energy/0.1
   ]
 }
 requirements: [

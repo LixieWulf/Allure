@@ -1,111 +1,21 @@
 type: GenericCrafter
-dumpTime: 2
+health: 4500, armor: 50
+size: 8, itemCapacity: 50, liquidCapacity: 120
+craftTime: 60, dumpTime: 2
 squareSprite: false
 customShadow: true
-craftTime: 30
-itemCapacity: 50
-size: 8
-liquidCapacity: 120
 drawLiquidLight: false
 ignoreLiquidFullness: true
-ambientSound: beamLustre
-ambientSoundVolume: 0.25
-updateEffectSpread: 1.5
-updateEffectChance: 0.25
-updateEffect: {
-  particles: 2
-  length: 100
-  lifetime: 240
-  cone: 12
-  baseRotation: 32
-  sizeFrom: 0
-  sizeTo: 16
-  colorFrom: 90a2fc88
-  colorTo: 78787800
-  sizeInterp: pow2Out
-  interp: pow2Out
-}
-drawer: {
-  type: DrawMulti
-  iconOverride: [
-    -icon
-  ]
-  drawers: [
-    {
-    }
-    {
-      type: DrawLiquidTile
-      drawLiquid: water
-      padLeft: 36
-      padRight: 12
-      padTop: 6
-      padBottom: 48
-    }
-    {
-      type: DrawLiquidTile
-      drawLiquid: slag
-      padLeft: 36
-      padRight: 20
-      padTop: 48
-      padBottom: 6
-    }
-    {
-      type: DrawLiquidTile
-      drawLiquid: energia
-      padLeft: 44
-      padRight: 12
-      padTop: 48
-      padBottom: 6
-    }
-    {
-      type: DrawRegion
-      suffix: -top
-    }
-    {
-      type: DrawGlowRegion
-      alpha: 0.75
-      layer: 30
-      color: ffb380
-    }
-    {
-      type: DrawGlowRegion
-      alpha: 0.75
-      layer: 30
-      color: 7382f0
-    }
-    {
-      type: DrawGlowRegion
-      suffix: -glow2
-      alpha: 1
-      layer: 30
-      color: 7382f0
-    }
-    {
-      type: DrawGlowRegion
-      suffix: -flare
-      alpha: 0.9
-      layer: 30
-      glowIntensity: 0.1
-      color: ffffff
-    }
-  ]
-}
-craftEffect: none
 consumes: {
   liquids: [
-    water/2
-    slag/2
+    water/2, slag/2, fluid-energy/0.1
   ]
-  liquid: {
-    liquid: energia
-    amount: 0
-    optional: true
-  }
 }
-outputLiquid: energia/0
+outputLiquids: [
+  fluid-energy/0, slag/0
+]
 outputItems: [
-  dantrales/10
-  territe-alloy/25
+  territe-alloy/18, crystal/42
 ]
 category: production
 research: {
@@ -114,85 +24,1701 @@ research: {
     0b-basic-infrastructure
   ]
   requirements: [
-    dantrales/700
-    territe-alloy/2500
+    dantrales/700, territe-alloy/2500
   ]
 }
 requirements: [
-  dantrales/50
-  territe-alloy/800
+  territe-alloy/36, crystal/840
 ]
-breakEffect: [
+ambientSoundVolume: 0.25, ambientSound: beamLustre
+craftEffect: none
+updateEffectSpread: 0.9, updateEffectChance: 0.4, updateEffect: [
   {
-    type: WaveEffect
-    rotation: 41
-    lifetime: 20
-    sides: 4
-    sizeFrom: 16
-    sizeTo: 32
-    strokeFrom: 12
-    strokeTo: 0
-    colorFrom: 7382f0
-    colorTo: 7382f0
+    particles: 4, lifetime: 240, layer: 80
+    length: 100, cone: 12, baseRotation: 45, offsetX: -6, offsetY: 6
+    sizeFrom: 0, sizeTo: 16
+    colorFrom: 78787844, colorTo: 78787800
+    sizeInterp: pow2Out, interp: pow2Out
   }
   {
-    type: ParticleEffect
-    particles: 1
-    length: 0
-    lifetime: 11
-    useRotation: false
-    region: allure-warden-icon
-    sizeFrom: 8
-    sizeTo: 8
-    colorFrom: 7382f000
-    colorTo: 7382f0
+    particles: 4, lifetime: 60, layer: 99.99
+    length: 30, cone: 12, baseRotation: 45, offsetX: -6, offsetY: 6
+    sizeFrom: 16, sizeTo: 0
+    colorFrom: 7382f000, colorTo: feb38088
+    sizeInterp: pow2Out, interp: pow2Out
+  }
+]
+drawer: [
+  {
+    type: DrawBlockParts
+    parts: [
+      {
+        outline: false
+        layer: 30, rotation: 90
+      }
+      {
+        outline: false
+        suffix: -top
+        layer: 50, rotation: 90
+      }
+      //territe chunks NW (I regret my decisions)
+      {
+        suffix: -territe
+        outline: false
+        x: -22, y: -18.75, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0, end: 0.6
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -territe
+        outline: false
+        x: -16, y: -18.75, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.1, end: 0.7
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -territe
+        outline: false
+        x: -19, y: -13.5, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.1, end: 0.7
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -territe
+        outline: false
+        x: -10, y: -18.75, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.2, end: 0.8
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -territe
+        outline: false
+        x: -13, y: -13.5, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.15, end: 0.75
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -territe
+        outline: false
+        x: -16, y: -8.25, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.2, end: 0.8
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      //territe chunks SW (I regret my decisions a bit more)
+      {
+        suffix: -territe
+        outline: false
+        x: 22, y: -18.75, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0, end: 0.6
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -territe
+        outline: false
+        x: 16, y: -18.75, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.1, end: 0.7
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -territe
+        outline: false
+        x: 19, y: -13.5, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.1, end: 0.7
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -territe
+        outline: false
+        x: 10, y: -18.75, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.2, end: 0.8
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -territe
+        outline: false
+        x: 13, y: -13.5, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.2, end: 0.8
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -territe
+        outline: false
+        x: 16, y: -8.25, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.2, end: 0.8
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      //territe chunks E (help)
+      {
+        suffix: -territe
+        outline: false
+        x: -6, y: 8.75, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.25, end: 0.85
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -territe
+        outline: false
+        x: 0, y: 8.75, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.2, end: 0.8
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -territe
+        outline: false
+        x: 6, y: 8.75, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.25, end: 0.85
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -territe
+        outline: false
+        x: -3, y: 14, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.3, end: 0.9
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -territe
+        outline: false
+        x: 3, y: 14, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.35, end: 0.95
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -territe
+        outline: false
+        x: 0, y: 19.25, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.4, end: 1
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      //crystal chunks NW (IT GETS WORSE)
+      {
+        suffix: -crystal
+        outline: false
+        x: -13, y: -22.25, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0, end: 0.5
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: -14.5, y: -24.75, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.01, end: 0.51
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: -17.5, y: -24.75, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.02, end: 0.52
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: -19, y: -22.25, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.03, end: 0.53
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: -20.5, y: -24.75, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.04, end: 0.54
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: -23.5, y: -24.75, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.05, end: 0.55
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: -25, y: -22.25, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.06, end: 0.56
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: -26.5, y: -19.5, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.07, end: 0.57
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: -28, y: -17, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.08, end: 0.58
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: -26.5, y: -14.25, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.09, end: 0.59
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: -23.5, y: -14.25, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.1, end: 0.6
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: -25, y: -11.75, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.11, end: 0.61
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: -23.5, y: -9, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.12, end: 0.62
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: -20.5, y: -9, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.13, end: 0.63
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      //crystal chunks E
+      {
+        suffix: -crystal
+        outline: false
+        x: -7.5, y: 13.25, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.16, end: 0.66
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: -9, y: 15.75, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.17, end: 0.67
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: -7.5, y: 18.5, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.18, end: 0.68
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: -4.5, y: 18.5, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.19, end: 0.69
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: -6, y: 21, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.2, end: 0.7
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: -4.5, y: 23.75, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.21, end: 0.71
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: -1.5, y: 23.75, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.23, end: 0.73
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: 1.5, y: 23.75, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.24, end: 0.74
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: 4.5, y: 23.75, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.25, end: 0.75
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: 6, y: 21, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.26, end: 0.76
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: 4.5, y: 18.5, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.27, end: 0.77
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: 7.5, y: 18.5, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.28, end: 0.78
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: 9, y: 15.75, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.29, end: 0.79
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: 7.5, y: 13.25, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.3, end: 0.8
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      //crystal chunks SW (WE'RE SO HERE)
+      {
+        suffix: -crystal
+        outline: false
+        x: 20.5, y: -9, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.33, end: 0.83
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: 23.5, y: -9, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.34, end: 0.84
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: 25, y: -11.75, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.35, end: 0.85
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: 23.5, y: -14.25, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.36, end: 0.86
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: 26.5, y: -14.25, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.37, end: 0.87
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: 28, y: -17, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.38, end: 0.88
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: 26.5, y: -19.5, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.39, end: 0.89
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: 25, y: -22.25, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.4, end: 0.9
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: 23.5, y: -24.75, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.41, end: 0.91
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: 20.5, y: -24.75, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.42, end: 0.92
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: 19, y: -22.25, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.43, end: 0.93
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: 17.5, y: -24.75, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.44, end: 0.94
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: 14.5, y: -24.75, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.45, end: 0.95
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+      {
+        suffix: -crystal
+        outline: false
+        x: 13, y: -22.25, xScl: 0, yScl: 0, rotation: 90, layer: 51
+        moves: [
+          {
+            gx: 1, gy: 1
+            progress: {
+              type: reload
+              ops: [
+                {
+                  op: compress, start: 0.46, end: 0.96
+                }
+                {
+                  op: slope
+                }
+                {
+                  op: mul, amount: 4
+                }
+                {
+                  op: clamp
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
   }
   {
-    type: ParticleEffect
-    particles: 1
-    length: 0
-    lifetime: 30
-    startDelay: 10
-    useRotation: false
-    region: allure-warden-icon
-    sizeFrom: 8
-    sizeTo: 8
-    colorFrom: 7382f0
-    colorTo: 7382f000
+    type: DrawLiquidTile
+    drawLiquid: water
+    padLeft: 29, padRight: 11, padTop: 3, padBottom: 55
   }
   {
-    type: ParticleEffect
-    particles: 1
-    cone: 0
-    randLength: false
-    length: 0
-    baseLength: 12
-    lifetime: 35
-    useRotation: false
-    region: allure-energy-arrow
-    interp: pow3Out
-    sizeInterp: pow2In
-    sizeFrom: 4
-    sizeTo: 0
-    colorFrom: 7382f0
-    colorTo: 7382f0
+    type: DrawLiquidTile
+    drawLiquid: slag
+    padLeft: 29, padRight: 21.5, padTop: 55, padBottom: 3
   }
   {
-    type: ParticleEffect
-    particles: 1
-    cone: 0
-    baseRotation: 180
-    randLength: false
-    length: 0
-    baseLength: 12
-    lifetime: 35
-    useRotation: false
-    region: allure-energy-arrow
-    interp: pow3Out
-    sizeInterp: pow2In
-    sizeFrom: 4
-    sizeTo: 0
-    colorFrom: 7382f0
-    colorTo: 7382f0
+    type: DrawLiquidTile
+    drawLiquid: fluid-energy
+    padLeft: 42.5, padRight: 11, padTop: 55, padBottom: 3
+  }
+  {
+    type: DrawGlowRegion
+    color: ffffff
+    layer: 52, alpha: 1, glowIntensity: 0.15
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -flare1
+    color: 7382f0
+    layer: 52, alpha: 1, glowIntensity: 0.15
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -flare2
+    color: ffffff
+    layer: 52, alpha: 1, glowIntensity: 0.15
   }
 ]

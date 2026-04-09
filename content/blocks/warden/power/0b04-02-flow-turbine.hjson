@@ -39,6 +39,12 @@ drawer: [
   }
   {
   }
+  {
+    type: DrawGlowRegion
+    suffix: -flare2
+    color: ffffff
+    layer: 48, alpha: 1, glowIntensity: 0.15
+  }
 ]
 category: power
 research: 0b04-01-solar-heater

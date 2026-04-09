@@ -1,5 +1,5 @@
 type: Prop
 variants: 3
 customShadow: true
-buildVisibility: shown
+buildVisibility: editorOnly
 layer: 50

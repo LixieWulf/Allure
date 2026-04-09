@@ -48,7 +48,7 @@ drawer: [
   }
   {
     type: DrawLiquidTile
-    drawLiquid: energia
+    drawLiquid: fluid-energy
     padding: 9.5
   }
   {
@@ -62,7 +62,7 @@ drawer: [
 ]
 consumes: {
   liquids: [
-    energia/0.5
+    fluid-energy/0.5
     water/15
   ]
 }

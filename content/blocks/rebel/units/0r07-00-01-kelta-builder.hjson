@@ -38,7 +38,7 @@ drawer: [
   }
 ]
 ammoTypes: {
-  energia: {
+  fluid-energy: {
     type: EmptyBulletType
     lifetime: 0
     despawnUnit: allure-0r01-kelta

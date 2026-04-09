@@ -12,7 +12,7 @@ plans: [
 ]
 consumes: {
   liquids: [
-    energia/0.4
+    fluid-energy/0.4
   ]
 }
 category: effect

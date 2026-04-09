@@ -16,7 +16,7 @@ shoot: {
 }
 consumes: {
   liquids: [
-    energia/0.5
+    fluid-energy/0.5
   ]
 }
 drawer: {

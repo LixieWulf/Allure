@@ -14,7 +14,7 @@ recoil: 0
 loopSound: none
 outlineIcon: false
 ammoTypes: {
-  energia: {
+  fluid-energy: {
     ammoMultiplier: 0.032
     spawnUnit: allure-discharge-energia
   }

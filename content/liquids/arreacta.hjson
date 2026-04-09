@@ -3,7 +3,7 @@ color: ab68b3
 flammability: 0
 explosiveness: 1.4
 research: {
-  parent: energia
+  parent: fluid-energy
   objectives: [
     {
       type: Produce

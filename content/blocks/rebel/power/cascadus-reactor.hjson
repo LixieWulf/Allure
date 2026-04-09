@@ -14,7 +14,7 @@ drawer: {
     {
       type: DrawLiquidRegion
       suffix: -liquid
-      drawLiquid: energia
+      drawLiquid: fluid-energy
     }
     {
       type: DrawRegion
@@ -41,7 +41,7 @@ drawer: {
 }
 consumes: {
   liquid: {
-    liquid: energia
+    liquid: fluid-energy
     amount: 3
   }
   items: {

@@ -9,6 +9,7 @@ magMin: 2
 magMax: 4
 botAngle: 90
 clipSize: 60
+buildVisibility: editorOnly
 breakSound: plantBreak
 destroySound: plantBreak
 breakEffect: {

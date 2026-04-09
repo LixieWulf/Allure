@@ -31,26 +31,36 @@ drawer: {
     {
       type: DrawRegion
       suffix: -fan
-      rotateSpeed: 8
+      rotateSpeed: 8, rotation: 0
       spinSprite: true
     }
     {
       type: DrawRegion
       suffix: -fan
-      rotateSpeed: 8
+      rotateSpeed: 8, rotation: 30
       spinSprite: true
-      rotation: 30
     }
     {
       type: DrawRegion
       suffix: -fan
-      rotateSpeed: 8
+      rotateSpeed: 8, rotation: 60
       spinSprite: true
-      rotation: 60
     }
     {
       type: DrawRegion
       suffix: -top
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -flare1
+      color: 7382f0
+      layer: 46, alpha: 1, glowIntensity: 0.15
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -flare2
+      color: ffffff
+      layer: 46, alpha: 1, glowIntensity: 0.15
     }
   ]
 }

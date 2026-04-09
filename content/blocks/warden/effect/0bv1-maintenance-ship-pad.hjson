@@ -10,7 +10,7 @@ polyColor: 7382f0
 consumes: {
   liquids: [
     liquid-baenara/0.8
-    energia/0.1
+    fluid-energy/0.1
     arreacta/2
   ]
 }

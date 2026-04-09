@@ -124,7 +124,7 @@ drawer: [
 consumes: {
   items: [
     uranium/5
-    contained-energia/48
+    contained-fluid-energy/48
   ]
 }
 outputLiquid: arreacta/1.2

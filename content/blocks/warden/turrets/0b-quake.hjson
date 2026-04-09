@@ -19,7 +19,7 @@ consumes: {
   power: 21
   liquids: [
     plasma/1
-    energia/2
+    fluid-energy/2
   ]
 }
 coolant: {

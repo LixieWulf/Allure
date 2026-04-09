@@ -12,7 +12,7 @@ baseEfficiency: 0
 consumes: {
   items: [
     contained-steam/72
-    contained-energia/36
+    contained-fluid-energy/36
   ]
 }
 drawer: [

@@ -1,48 +1,33 @@
-type: ItemTurret
+type: PowerTurret
 squareSprite: false
-size: 5
+customShadow: true
+size: 4
 rotateSpeed: 1
 shootCone: 360
-range: 64
+range: 240
 liquidCapacity: 1440
-reload: 280
+reload: 30
 shootY: 0
 recoil: 0
 outlineIcon: false
 targetGround: false
 targetAir: false
+rotate: false
 alwaysShooting: true
 shootSound: lasershoot
 shoot: {
   type: ShootSpread
-  shots: 2
-  spread: 180
+  shots: 6
+  spread: 60
 }
+inaccuracy: 180
 consumes: {
   power: 24
   liquids: [
     liquid-baenara/2
   ]
 }
-shootEffect: [
-  {
-    line: true
-    baseRotation: 90
-    cone: 0
-    length: 0.001
-    particles: 1
-    lifetime: 45
-    sizeInterp: pow3Out
-    cap: false
-    lenFrom: 0
-    lenTo: 224
-    strokeFrom: 144
-    strokeTo: 144
-    colorFrom: 83f793
-    colorTo: 83f79300
-    layer: 84.75
-  }
-]
+shootEffect: none
 drawer: {
   type: DrawMulti
   iconOverride: [
@@ -51,44 +36,49 @@ drawer: {
   drawers: [
     {
       type: DrawTurret
-      turretLayer: 85
-      shadowLayer: 84.5
-      parts: [
-        {
-          type: RegionPart
-          name: allure-unusually-organized-rectangle
-          layer: 125
-          outline: false
-          color: 83f793
-          xScl: 4.25
-          yScl: 14
-        }
-      ]
     }
   ]
 }
 ammoPerShot: 14
-ammoTypes: {
-  baenite: {
-    ammoMultiplier: 1
-    type: LaserBulletType
-    length: 64
-    width: 0
-    lightningDelay: 0
-    lightningLength: 2
-    lightningSpacing: 8
-    lightningType: {
-      type: BulletType
-      speed: 8
-      lifetime: 27
-      absorbable: false
-      hittable: false
-      pierce: true
-      pierceBuilding: true
-      collidesTeam: true
-      healAmount: 120
-      despawnEffect: none
-    }
+shootType: {
+  type: BulletType
+  createChance: 0.75
+  speed: 3
+  lifetime: 80
+  weaveMag: 4
+  weaveScale: 20
+  collidesTeam: true
+  collides: false
+  healAmount: 12
+  shootEffect: none
+  smokeEffect: none
+  hitEffect: none
+  despawnEffect: none
+  trailEffect: regenParticle
+  trailChance: 0.075
+  homingPower: 0.1
+  homingRange: 240
+  bulletInterval: 5
+  intervalBullets: 1
+  intervalBullet: {
+    type: BulletType
+    createChance: 0.05
+    speed: 2
+    lifetime: 80
+    weaveMag: 2
+    weaveScale: 20
+    pierce: true
+    pierceBuilding: true
+    pierceDamageFactor: 1
+    collidesTeam: true
+    healAmount: 120
+    trailLength: 12
+    trailWidth: 0.5
+    trailColor: 7382f0
+    hitEffect: none
+    despawnEffect: none
+    homingPower: 0.15
+    homingRange: 60
   }
 }
 category: effect

@@ -1,9 +1,10 @@
 type: GenericCrafter
+size: 4, liquidCapacity: 90
 squareSprite: false
 customShadow: true
 conductivePower: true
-size: 4
-liquidCapacity: 90
+dumpExtraLiquid: false
+hasLiquids: true
 liquidOutputDirections: [0, 2]
 drawer: {
   type: DrawMulti
@@ -54,17 +55,15 @@ drawer: {
     }
     {
       type: DrawGlowRegion
-      suffix: -top-glow
-      color: feb380
-      layer: 32
+      suffix: -flare1
+      color: 7382f0
+      layer: 48, alpha: 1, glowIntensity: 0.15
     }
     {
       type: DrawGlowRegion
-      suffix: -flare
-      alpha: 0.9
-      layer: 32
-      glowIntensity: 0.1
+      suffix: -flare2
       color: ffffff
+      layer: 48, alpha: 1, glowIntensity: 0.15
     }
   ]
 }

@@ -1,96 +1,17 @@
 type: AttributeCrafter
+health: 2000
+size: 4, itemCapacity: 50, liquidCapacity: 60
+craftTime: 8
+baseEfficiency: 0, minEfficiency: 0.01, maxBoost: 2, boostScale: 0.0625
+attribute: gravel
 squareSprite: false
 customShadow: true
-craftTime: 15
-itemCapacity: 50
-size: 4
-attribute: gravel
-baseEfficiency: 0
-minEfficiency: 0.01
-maxBoost: 2
-boostScale: 0.0625
-liquidCapacity: 60
 drawLiquidLight: false
-drawer: {
-  type: DrawMulti
-  iconOverride: [
-    -icon
-  ]
-  drawers: [
-    {
-      type: DrawRegion
-      layer: 45
-    }
-    {
-      type: DrawRegion
-      suffix: -drill
-      rotateSpeed: 1
-      layer: 45
-    }
-    {
-      type: DrawRegion
-      suffix: -drill
-      rotation: 60
-      rotateSpeed: 1
-      layer: 45
-    }
-    {
-      type: DrawRegion
-      suffix: -drill
-      rotation: 120
-      rotateSpeed: 1
-      layer: 45
-    }
-    {
-      type: DrawGlowRegion
-      alpha: 0.75
-      rotateSpeed: 5
-      color: ffb380
-      layer: 45
-    }
-    {
-      type: DrawGlowRegion
-      suffix: -flare
-      alpha: 0.9
-      glowIntensity: 0.25
-      color: ffffff
-      layer: 45
-    }
-    {
-      type: DrawRegion
-      suffix: -top
-      layer: 45
-    }
-  ]
-}
-craftEffect: [
-  {
-    interp: pow3Out
-    sizeInterp: slope
-    lifetime: 90
-    length: 32
-    particles: 1
-    sizeFrom: 0
-    sizeTo: 6
-    layer: 20
-    colorFrom: 787878
-    colorTo: 787878
-  }
-  {
-    interp: pow3Out
-    sizeInterp: slope
-    lifetime: 60
-    length: 16
-    particles: 4
-    sizeFrom: 0
-    sizeTo: 3
-    colorFrom: f7cba4
-    colorTo: 787878
-  }
-]
+dumpExtraLiquid: false
+hasItems: false
 consumes: {
   liquids: [
-    energia/0.066666666
+    fluid-energy/0.066666666
   ]
   liquid: {
     liquid: slag
@@ -99,8 +20,7 @@ consumes: {
   }
 }
 outputLiquids: [
-  slag/0.1
-  energia/0
+  slag/0.1, fluid-energy/0
 ]
 category: production
 research: {
@@ -114,82 +34,88 @@ research: {
   ]
 }
 requirements: [
-  dantrales/20
-  territe-alloy/150
+  territe-alloy/18, crystal/126
 ]
-ambientSound: crack
-ambientSoundVolume: 0.01
-breakEffect: [
+ambientSoundVolume: 0.05, ambientSound: loopMineBeam
+craftEffect: [
   {
-    type: WaveEffect
-    rotation: 41
-    lifetime: 20
-    sides: 4
-    sizeFrom: 16
-    sizeTo: 32
-    strokeFrom: 12
-    strokeTo: 0
-    colorFrom: 7382f0
-    colorTo: 7382f0
+    type: RadialEffect
+    amount: 6, lengthOffset: 0.5, rotationSpacing: 60
+    effect: {
+      line: true
+      particles: 1, lifetime: 20
+      cone: 0, length: 0, baseLength: 1, randLength: false
+      lenFrom: 3.5, lenTo: 3.5
+      strokeFrom: 1, strokeTo: 0
+      colorTo: 7382f0
+    }
   }
   {
-    type: ParticleEffect
-    particles: 1
-    length: 0
-    lifetime: 11
-    useRotation: false
-    region: allure-warden-icon
-    sizeFrom: 8
-    sizeTo: 8
-    colorFrom: 7382f000
-    colorTo: 7382f0
+    particles: 3, lifetime: 60, layer: 46.5
+    length: 5, baseLength: 3, randLength: false
+    sizeFrom: 0, sizeTo: 3
+    colorFrom: 78787888, colorTo: feb380
+    interp: pow2
+    sizeInterp: slope
   }
   {
-    type: ParticleEffect
-    particles: 1
-    length: 0
-    lifetime: 30
-    startDelay: 10
-    useRotation: false
-    region: allure-warden-icon
-    sizeFrom: 8
-    sizeTo: 8
-    colorFrom: 7382f0
-    colorTo: 7382f000
+    particles: 1, lifetime: 50, layer: 46
+    cone: 0, length: 0, offset: 90
+    sizeFrom: 0, sizeTo: 18
+    colorFrom: 7382f000, colorTo: ffffff66
+    interp: slope
+    region: circle-shadow
   }
   {
-    type: ParticleEffect
-    particles: 1
-    cone: 0
-    randLength: false
-    length: 0
-    baseLength: 12
-    lifetime: 35
-    useRotation: false
-    region: allure-energy-arrow
-    interp: pow3Out
-    sizeInterp: pow2In
-    sizeFrom: 4
-    sizeTo: 0
-    colorFrom: 7382f0
-    colorTo: 7382f0
-  }
-  {
-    type: ParticleEffect
-    particles: 1
-    cone: 0
-    baseRotation: 180
-    randLength: false
-    length: 0
-    baseLength: 12
-    lifetime: 35
-    useRotation: false
-    region: allure-energy-arrow
-    interp: pow3Out
-    sizeInterp: pow2In
-    sizeFrom: 4
-    sizeTo: 0
-    colorFrom: 7382f0
-    colorTo: 7382f0
+    particles: 1, lifetime: 25, layer: 46
+    cone: 0, length: 0, offset: 90
+    sizeFrom: 0, sizeTo: 12
+    colorFrom: 7382f000, colorTo: ffffff66
+    interp: slope
+    region: circle-shadow
   }
 ]
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    -icon
+  ]
+  drawers: [
+    {
+      type: DrawRegion
+      layer: 45
+    }
+    {
+      type: DrawRegion
+      suffix: -shadow2
+      layer: 46
+    }
+    {
+      type: DrawGlowRegion
+      layer: 46, alpha: 1, glowIntensity: 0.25
+      color: 7382f0
+    }
+    {
+      type: DrawArcSmelt
+      particles: 0
+      flameColor: 7382f0, midColor: ffffff
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+      layer: 47
+    }
+    {
+      type: DrawGlowRegion
+      layer: 48, alpha: 1, glowIntensity: 0.1
+      suffix: -flare1
+      color: 7382f0
+    }
+    {
+      type: DrawGlowRegion
+      layer: 48, alpha: 1, glowIntensity: 0.1
+      suffix: -flare2
+      color: ffffff
+    }
+  ]
+}

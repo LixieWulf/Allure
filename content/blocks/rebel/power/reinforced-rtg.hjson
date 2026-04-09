@@ -1,7 +1,7 @@
 type: ConsumeGenerator
 size: 4
 powerProduction: 0.001
-outputLiquid: energia/0.1
+outputLiquid: fluid-energy/0.1
 requirements: [
   anden/600
   silicon/100

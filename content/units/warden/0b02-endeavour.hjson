@@ -597,7 +597,7 @@ weapons: [
           interp: pow3Out
           sizeInterp: linear
         }
-        hitSound: blockExplode3
+        hitSound: shootLancer
         hitSoundVolume: 0.334
         fragBullets: 2
         fragRandomSpread: 3

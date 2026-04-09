@@ -636,19 +636,18 @@ weapons: [
       ]
       smokeEffect: [
         {
-          followParent: false
+          line: true
+          lifetime: 30
+          startDelay: 5
           particles: 1
-          length: 8
-          baseLength: 20
           randLength: false
-          lifetime: 40
+          length: -0.001
           cone: 0
-          offset: 90
-          region: allure-squishwave
-          sizeFrom: 30
-          sizeTo: 60
-          colorFrom: 7382f0
-          colorTo: 7382f000
+          lenFrom: 8
+          lenTo: 8
+          strokeFrom: 8
+          strokeTo: 0
+          colorTo: 7382f0
         }
         {
           followParent: false

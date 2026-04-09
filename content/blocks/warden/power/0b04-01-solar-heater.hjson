@@ -3,6 +3,7 @@ hasPower: true
 conductivePower: true
 squareSprite: false
 customShadow: true
+dumpExtraLiquid: false
 scaledHealth: 15
 armor: 26
 size: 4
@@ -16,12 +17,34 @@ drawer: [
     type: DrawDefault 
   }
   {
+    type: DrawBubbles
+    color: 7382f0
+    timeScl: 15
+    sides: 12
+    recurrence: 3
+    spread: 12
+    radius: 1
+    amount: 100
+    strokeMin: 0
+  }
+  {
     type: DrawLiquidTile
     drawLiquid: water
     padLeft: 3
     padRight: 3
     padTop: 5
     padBottom: 5
+  }
+  {
+    type: DrawBubbles
+    color: 5a58c4
+    timeScl: 30
+    sides: 12
+    recurrence: 3
+    spread: 12
+    radius: 3
+    amount: 40
+    strokeMin: 0
   }
   {
     type: DrawLiquidTile
@@ -39,6 +62,13 @@ drawer: [
   {
     type: DrawRegion
     suffix: -top
+    layer: 47
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -lens
+    color: ffffff
+    layer: 48
   }
 ]
 consumes: {

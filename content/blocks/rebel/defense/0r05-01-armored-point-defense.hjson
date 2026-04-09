@@ -17,7 +17,7 @@ bulletDamage: 10
 category: defense
 consumes: {
   liquids: [
-    energia/0.5
+    fluid-energy/0.5
   ]
 }
 requirements: [

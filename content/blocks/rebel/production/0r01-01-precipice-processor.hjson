@@ -5,7 +5,7 @@ drillTime: 24
 output: silicon
 consumes: {
   liquids: [
-    energia/0.133334
+    fluid-energy/0.133334
   ]
 }
 rotateSpeed: 4

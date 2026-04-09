@@ -8,7 +8,7 @@ polyColor: 00000000
 category: effect
 consumes: {
   liquids: [
-    energia/0.8
+    fluid-energy/0.8
   ]
 }
 requirements: [

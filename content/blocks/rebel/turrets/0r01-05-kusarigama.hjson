@@ -13,7 +13,7 @@ liquidCapacity: 300
 consumes: {
   power: 8
   liquids: [
-    energia/1
+    fluid-energy/1
     arreacta/5
   ]
 }

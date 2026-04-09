@@ -7,7 +7,7 @@ liquidCapacity: 60
 itemDuration: 120
 consumes: {
   liquid: {
-    liquid: energia
+    liquid: fluid-energy
     amount: 0.5
   }
   items: {
@@ -25,7 +25,7 @@ drawer: {
     {
       type: DrawLiquidRegion
       suffix: "-liquid"
-      drawLiquid: energia
+      drawLiquid: fluid-energy
     }
     {
       type: DrawRegion

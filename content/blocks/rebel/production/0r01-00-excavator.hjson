@@ -17,7 +17,7 @@ ambientSoundVolume: 0.25
 consumes: {
   liquids: [
     chlorine/0.033334
-    energia/0.133334
+    fluid-energy/0.133334
   ]
 }
 requirements: [

@@ -104,7 +104,7 @@ liquidCapacity: 60
 consumes: {
   power: 6
   liquids: [
-    energia/0.5
+    fluid-energy/0.5
   ]
 }
 shootType: {

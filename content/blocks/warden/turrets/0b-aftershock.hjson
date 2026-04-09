@@ -28,7 +28,7 @@ consumes: {
 }
 coolant: {
   type: ConsumeLiquid
-  liquid: energia
+  liquid: fluid-energy
   amount: 1.5
 }
 heatColor: 000000

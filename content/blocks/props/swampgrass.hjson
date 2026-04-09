@@ -9,7 +9,7 @@ health: 200
 customShadow: true
 targetable: false
 underBullets: true
-buildVisibility: sandboxOnly
+buildVisibility: editorOnly
 instantDeconstruct: true
 breakSound: plantBreak
 breakEffect: breakProp

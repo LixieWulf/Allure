@@ -5,7 +5,7 @@ customShadow: true
 drawTeamOverlay: false
 allowDerelictRepair: false
 alwaysReplace: false
-buildVisibility: sandboxOnly
+buildVisibility: editorOnly
 solid: true
 destructible: true
 health: 2400

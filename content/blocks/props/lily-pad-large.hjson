@@ -10,7 +10,7 @@ armor: 50
 customShadow: true
 targetable: false
 underBullets: true
-buildVisibility: sandboxOnly
+buildVisibility: editorOnly
 instantDeconstruct: true
 alwaysReplace: true
 breakSound: plantBreak

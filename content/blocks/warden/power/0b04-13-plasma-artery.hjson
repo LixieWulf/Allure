@@ -1,18 +1,21 @@
-type: PayloadLoader
-rotate: false
+type: GenericCrafter
+rotate: true
+drawArrow: true
 hasItems: false
-hasLiquids: false
-size: 2
-maxBlockSize: 0
 hasPower: true
+size: 2, liquidCapacity: 50, liquidPressure: 4
 conductivePower: true
-consumesPower: true
-outputsPower: true
-consumes: {
-  powerBuffered: 250
-}
 canOverdrive: false
 category: power
+consumes: {
+  liquids: [
+    plasma/0, fluid-energy/0
+  ]
+}
+liquidOutputDirections: [0, 1, 3, 0, 1, 3]
+outputLiquids: [
+  plasma/0, plasma/0, plasma/0, fluid-energy/0, fluid-energy/0, fluid-energy/0
+]
 research: {
   parent: 0b04-11-plasma-beacon
   objectives: [
@@ -20,9 +23,13 @@ research: {
   ]
 }
 requirements: [
-  dantrales/150
-  territe-alloy/200
-  crystal/100
+  territe-alloy/18
+  crystal/42
+]
+drawer: [
+  {
+    type: DrawRegion
+  }
 ]
 breakEffect: [
   {

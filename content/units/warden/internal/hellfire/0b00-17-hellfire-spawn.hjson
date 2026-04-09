@@ -9,7 +9,7 @@ speed: 0
 rotateSpeed: 360
 hittable: false
 targetable: false
-physics: true
+physics: false
 hitSize: 480
 lifetime: 55
 drawBody: false

@@ -2,7 +2,7 @@ type: Pump
 size: 5
 hasPower: true
 consumes: {
-  liquid: energia/0.35
+  liquid: fluid-energy/0.35
   power: 5.1
 }
 drawer: [
@@ -13,7 +13,7 @@ drawer: [
   }
   {
     type: DrawLiquidTile
-    drawLiquid: energia
+    drawLiquid: fluid-energy
     padding: 11
   }
   {

@@ -9,7 +9,7 @@ consumes: {
     silicon/60
     ladera/75
     contained-slag/120
-    contained-energia/120
+    contained-fluid-energy/120
   ]
 }
 drawer: [

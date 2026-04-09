@@ -16,11 +16,11 @@ What comes after? Well, I guess we'll have to find out. I'm not giving you any s
 
 Enabling this mod will break every Serpulo schematic until disabled. Be careful, well, if you like yours. 
 
-Works on beta build 156. Edit the mod.hjson's minGameVersion to use. 
+Works on beta build 157. Edit the mod.hjson's minGameVersion to use. 
   '''
 subtitle: "Please wait for a proper release"
 version: 0.8-dev
-minGameVersion: 157
+minGameVersion: 158
 contentOrder: [
   air-factory
   ground-factory

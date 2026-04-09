@@ -1,7 +1,7 @@
 research: {
   parent: 0b-basic-infrastructure
   objectives: [
-    energia
+    fluid-energy
   ]
   requirements: [
     dantrales/500

@@ -9,7 +9,7 @@ polySides: 6
 polyColor: 7382f0
 consumes: {
   liquids: [
-    energia/2
+    fluid-energy/2
   ]
 }
 category: effect

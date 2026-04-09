@@ -5,7 +5,7 @@ heatCapacity: 0
 explosiveness: 2
 effect: allure-vapourizing
 color: 87b7ff
-research: energia
+research: fluid-energy
 shownPlanets: [
   allure-wandura,
   allure-genaise,

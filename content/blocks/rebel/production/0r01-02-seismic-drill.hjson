@@ -187,7 +187,7 @@ drillEffect: [
 ]
 consumes: {
   liquids: [
-    energia/0.266667
+    fluid-energy/0.266667
   ]
 }
 drillSoundVolume: 1.2

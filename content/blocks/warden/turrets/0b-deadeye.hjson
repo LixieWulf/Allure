@@ -17,7 +17,7 @@ consumes: {
   power: 480
   liquids: [
     plasma/48
-    energia/48
+    fluid-energy/48
     arreacta/6
   ]
 }

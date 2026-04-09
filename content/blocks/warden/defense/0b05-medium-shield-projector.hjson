@@ -8,7 +8,7 @@ polySides: 0
 consumes: {
   liquids: [
     liquid-baenara/3
-    energia/2
+    fluid-energy/2
     arreacta/1
   ]
 }

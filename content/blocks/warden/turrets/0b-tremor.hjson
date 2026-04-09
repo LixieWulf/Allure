@@ -1,105 +1,215 @@
 type: PowerTurret
-squareSprite: false
-size: 4
-reload: 190
-rotateSpeed: 1.6
-range: 440
-recoil: 2
-recoilTime: 80
-cooldownTime: 160
-shootSound: considerablyintensepew
-outlineColor: 212229
-shake: 4
-//Be REALLY accurate
-shootCone: 0.25
+health: 3000, armor: 50
+size: 4, liquidCapacity: 60, buildTime: 300
+reload: 180, range: 480, rotateSpeed: 0.8
+shake: 4, 
+recoil: 6, recoilTime: 90, cooldownTime: 180
+shootWarmupSpeed: 0.05, minWarmup: 0.5, warmupMaintainTime: 300
+elevation: 6
+squareSprite: false, customShadow: true
+outlineIcon: false
+outlineColor: ffffff00
 //Yes, a railgun targets the weakest enemies. This may be considered deranged, but it's not like it does anything to chunkier units.
 unitSort: weakest
+category: turret
+requirements: [
+  territe-alloy/180, crystal/420, silicon/150
+]
 consumes: {
-  power: 14
+  power: 12
   liquids: [
-    plasma/1
+    plasma/0.33334
   ]
 }
-coolant: {
+coolantMultiplier: 2, coolant: {
   type: ConsumeLiquid
-  liquid: energia
-  amount: 1
+  liquid: fluid-energy
+  amount: 0.33334
 }
-heatColor: 000000
-drawer: {
-  type: DrawTurret
-  basePrefix: 0b0-
-  parts: [
-    {
-      suffix: -barrel
-      y: 4
-      moveY: -8
-      recoilIndex: 0
-      progress: recoil
-      children: [
-        {
-          suffix: -heat
-          blending: additive
-          outline: false
-          color: 000000
-          colorTo: ab3400
-          progress: {
-            type: heat
-            op: slope
-          }
-        }
-        {
-          suffix: -heat
-          blending: additive
-          outline: false
-          color: 000000
-          colorTo: 90a2fc
-          progress: heat
-        }
-      ]
-    }
-    {
-      type: RegionPart
-      suffix: -top
-    }
+research: {
+  parent: 0b05-00-shock-wall
+  objectives: [
+    0b-electromagnetic-acceleration
   ]
 }
-coolantMultiplier: 1.6666666
-shootType: {
-  speed: 22
-  lifetime: 20
-  damage: 150
-  status: allure-0b-energy2
-  statusDuration: 2
-  pierceDamageFactor: 0.33
-  pierce: true
-  pierceBuilding: true
-  hittable: false
-  sprite: allure-diamond-thin
-  width: 48
-  height: 8
-  rotationOffset: 90
-  frontColor: 90a2fc
-  backSprite: clear-effect
-  trailLength: 20
-  trailWidth: 2
-  trailColor: 7382f0
-  smokeEffect: none
-  shootEffect: {
-    line: true
-    cone: 20
-    particles: 17
-    lifetime: 20
-    length: 30
-    interp: pow3Out
-    sizeInterp: linear
-    lenFrom: 8
-    lenTo: 4
-    strokeFrom: 2
-    strokeTo: 0
-    colorTo: 7382f0
+drawer: [
+  {
+    type: DrawTurret
+    basePrefix: 0b0-
+    parts: [
+      {
+        suffix: -barrel-flare1
+        outline: false, blending: additive
+        color: 000000, colorTo: 7382f0
+        progress: {
+          type: warmup
+          op: compress
+          start: 0, end: 0.5
+        }
+      }
+      {
+        suffix: -barrel-flare2
+        outline: false, blending: additive
+        color: 000000, colorTo: ffffff
+        progress: {
+          type: warmup
+          op: compress
+          start: 0, end: 0.5
+        }
+      }
+      {
+        suffix: -barrel-heat
+        outline: false, blending: additive
+        color: 000000, colorTo: e65555
+        progress: heat
+      }
+      {
+        suffix: -barrel-heat
+        outline: false, blending: additive
+        color: 000000, colorTo: feb38088
+        progress: heat
+      }
+      {
+        outline: false, suffix: -upper
+        moveY: 2, progress: recoil
+        children: [
+          {
+            suffix: -upper-glow
+            outline: false, blending: additive
+            color: 7382f0, colorTo: 000000
+            progress: smoothReload
+          }
+          {
+            type: EffectSpawnerPart
+            x: 8, y: 1.5, width: 6, height: 4
+            effectChance: 0.05
+            mirror: true, debugDraw: false
+            progress: {
+              type: smoothReload
+              op: inv
+            }
+            effect: {
+              line: true
+              particles: 2, length: 0.001, lifetime: 10
+              lenFrom: 2, lenTo: 3
+              strokeFrom: 0.5, strokeTo: 0
+              colorTo: 7382f0
+            }
+          }
+          {
+            type: EffectSpawnerPart
+            x: 9, y: -2.75, width: 4, height: 4
+            effectChance: 0.05
+            mirror: true, debugDraw: false
+            progress: {
+              type: smoothReload
+              op: inv
+            }
+            effect: {
+              line: true
+              particles: 2, length: 0.001, lifetime: 10
+              lenFrom: 2, lenTo: 3
+              strokeFrom: 0.5, strokeTo: 0
+              colorTo: 7382f0
+            }
+          }
+        ]
+      }
+    ]
   }
-  hitEffect: [
+  {
+    type: DrawGlowRegion
+    color: 7382f0
+    layer: 49.7, alpha: 1, glowIntensity: 0.15
+  }
+]
+shootSoundVolume: 0.5, shootSound: shootOmura
+smokeEffect: {
+  type: SoundEffect
+  minPitch: 0.5, maxPitch: 0.55, minVolume: 2.2, maxVolume: 2.2, sound: shootReign
+  effect: none
+}
+shootCone: 0.25, shootY: 18, shootType: {
+  type: RailBulletType
+  length: 462, damage: 500
+  pierceDamageFactor: 1, ammoMultiplier: 1
+  statusDuration: 90, status: allure-0b-energy0
+  shootEffect: [
+    {
+      particles: 1, length: 5
+      lifetime: 30, cone: 0, offset: 90
+      randLength: false, followParent: false
+      region: allure-squishwave
+      sizeFrom: 20, sizeTo: 25
+      colorFrom: 7382f0, colorTo: 7382f000
+    }
+    {
+      particles: 1, length: 0
+      lifetime: 35, cone: 0
+      followParent: false
+      region: allure-shootspike
+      sizeFrom: 60, sizeTo: 0
+      colorFrom: ffffff, colorTo: 7382f0
+    }
+    {
+      particles: 17, length: 30
+      lifetime: 20, cone: 20
+      lenFrom: 8, lenTo: 4, strokeFrom: 2, strokeTo: 0
+      line: true
+      interp: pow3Out, sizeInterp: linear
+      colorTo: 7382f0
+    }
+    {
+      particles: 35, lifetime: 45, cone: 45
+      length: 10, baseLength: 50
+      interp: pow3Out, sizeInterp: linear
+      sizeFrom: 2, sizeTo: 0
+      colorFrom: 78787888, colorTo: 78787800
+      layer: 20
+    }
+  ]
+  pointEffectSpace: 3, pointEffect: [
+    {
+      particles: 1, lifetime: 30, length: 0, layer: 105, offset: 90
+      sizeFrom: 2.5, sizeTo: 2.5
+      colorFrom: 7382f0, colorTo: ffffff00
+      region: allure-rsinusoid
+    }
+    {
+      particles: 1, lifetime: 30, length: 0, offset: 90
+      sizeFrom: 2.5, sizeTo: 2.5
+      colorFrom: 90a2fc, colorTo: ffffff00
+      region: allure-sinusoid
+    }
+    {
+      line: true
+      randLength: false
+      particles: 1, lifetime: 20, length: -0.001, cone: 0
+      lenFrom: 4, lenTo: 4
+      strokeFrom: 3, strokeTo: 0
+      colorTo: 7382f0
+    }
+  ]
+  pierceEffect: [
+    {
+      type: WaveEffect
+      lifetime: 10, sizeFrom: 0, sizeTo: 15
+      colorTo: 7382f0
+    }
+    {
+      followParent: false
+      particles: 1
+      length: 0
+      randLength: false
+      lifetime: 20
+      cone: 0
+      offset: 90
+      region: allure-squishwave
+      sizeFrom: 10
+      sizeTo: 12
+      colorFrom: 7382f0
+      colorTo: 7382f000
+    }
     {
       line: true
       cone: 20
@@ -128,31 +238,4 @@ shootType: {
       colorTo: 7382f088
     }
   ]
-  despawnEffect: {
-    line: true
-    cone: 20
-    particles: 17
-    lifetime: 10
-    length: 30
-    interp: pow3Out
-    sizeInterp: linear
-    lenFrom: 8
-    lenTo: 4
-    strokeFrom: 2
-    strokeTo: 0
-    colorTo: 7382f0
-  }
 }
-category: turret
-research: {
-  parent: 0b05-00-shock-wall
-  objectives: [
-    0b-electromagnetic-acceleration
-  ]
-}
-requirements: [
-  territe-alloy/1200
-  dantrales/400
-  metaglass/250
-  silicon/100
-]

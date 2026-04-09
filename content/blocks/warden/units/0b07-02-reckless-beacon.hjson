@@ -1,120 +1,22 @@
 type: PowerTurret
+rotate: false
 squareSprite: false
-size: 3
+size: 4
 reload: 240
 alwaysShooting: true
+shootWarmupSpeed: 0.001
 shootY: 0
-shootWarmupSpeed: 0.0025
-minWarmup: 0.99
-linearWarmup: true
 outlineIcon: false
 rotateSpeed: 0
 customShadow: true
-range: 240
+range: 80
 recoil: 0
 shoot: {
-  firstShotDelay: 120
+  firstShotDelay: 300
 }
 consumes: {
   liquids: [
-    energia/0.5
-  ]
-}
-shootSound: none
-shootType: {
-  type: BulletType
-  lifetime: 0
-  killShooter: true
-  speed: 0
-  collides: false
-  hittable: false
-  absorbable: false
-  shootEffect: none
-  smokeEffect: none
-  hitEffect: none
-  despawnEffect: none
-  chargeEffect: [
-    {
-      type: WaveEffect
-      lifetime: 45
-      interp: pow3Out
-      strokeFrom: 6
-      strokeTo: 0
-      sizeFrom: 0
-      sizeTo: 120
-      colorFrom: feb380
-      colorTo: 7382f0
-    }
-    {
-      type: WaveEffect
-      lifetime: 45
-      interp: pow3Out
-      strokeFrom: 6
-      strokeTo: 0
-      sizeFrom: 0
-      sizeTo: 120
-      colorFrom: feb380
-      colorTo: 7382f0
-      startDelay: 60
-    }
-    {
-      type: WaveEffect
-      lifetime: 45
-      interp: pow3Out
-      strokeFrom: 6
-      strokeTo: 0
-      sizeFrom: 0
-      sizeTo: 120
-      colorFrom: feb380
-      colorTo: 7382f0
-      startDelay: 120
-    }
-  ]
-  fragBullets: 12
-  fragOffsetMin: 0
-  fragOffsetMax: 0
-  fragLifeMin: 0
-  fragBullet: {
-    type: BulletType
-    lifetime: 30
-    speed: 0
-    collides: false
-    hittable: false
-    absorbable: false
-    shootEffect: none
-    smokeEffect: none
-    despawnEffect: {
-      length: 80
-      lifetime: 120
-      particles: 2
-      interp: pow2Out
-      sizeInterp: linear
-      sizeFrom: 12
-      sizeTo: 0
-      colorFrom: feb380
-      colorTo: 787878
-    }
-  }
-  spawnBullets: [
-    {
-      type: BulletType
-      lifetime: 0
-      killShooter: true
-      speed: 0
-      collides: false
-      hittable: false
-      absorbable: false
-      shootEffect: none
-      smokeEffect: none
-      hitEffect: none
-      despawnEffect: none
-      fragBullets: 1
-      fragOffsetMin: 120
-      fragOffsetMax: 240
-      fragBullet: {
-        spawnUnit: allure-0b00-01-reckless-spawn
-      }
-    }
+    fluid-energy/0.5
   ]
 }
 drawer: {
@@ -122,267 +24,215 @@ drawer: {
   parts: [
     {
       type: RegionPart
-      name: clear-effect
-      moveRot: 120
-      progress: {
-        type: warmup
-        op: curve
-        interp: circle
-      }
-      children: [
-        //inner antenna bits
+      blending: additive
+      suffix: -base
+      outline: false
+      color: ffffff00
+      colorTo: ffffff
+      mixColor: e65555
+      progress: warmup
+    }
+    {
+      type: RegionPart
+      blending: additive
+      suffix: -glow
+      outline: false
+      color: ffffff00
+      colorTo: ffffff
+      mixColor: feb380
+      progress: warmup
+    }
+  ]
+}
+shootSound: none
+shootType: {
+  type: BulletType
+  lifetime: 0
+  hittable: false
+  absorbable: false
+  collides: false
+  hitEffect: none
+  despawnEffect: none
+  shootEffect: none
+  smokeEffect: none
+  fragBullets: 1
+  fragOffsetMin: 24
+  fragOffsetMax: 120
+  fragBullet: {
+    type: BulletType
+    hittable: false
+    absorbable: false
+    collides: false
+    lifetime: 120
+    speed: 1
+    homingPower: 360
+    homingRange: 1024
+    despawnUnit: allure-0b00-01-reckless-spawn
+    hitEffect: none
+    despawnEffect: none
+    fragBullets: 1
+    fragBullet: {
+      type: EmptyBulletType
+      lifetime: 0
+      killShooter: true
+      despawnEffect: none
+    }
+  }
+  spawnBullets: [
+    {
+      type: EmptyBulletType
+      ignoreSpawnAngle: true
+      lifetime: 0
+      despawnEffect: none
+      hitShake: 4
+      hitEffect: [
         {
-          type: HaloPart
-          tri: true
-          triLength: 3
-          triLengthTo: 0
-          shapes: 1
-          radius: 6
-          radiusTo: 6
-          haloRadius: 3
-          haloRadiusTo: 3.75
-          shapeRotation: 180
-          color: feb380
-          colorTo: bc5452
-          progress: {
-            type: warmup
-            op: compress
-            start: 0
-            end: 0.25
+          type: SoundEffect
+          sound: shootCollaris
+          minPitch: 0.5
+          maxPitch: 0.6
+          minVolume: 0.35
+          maxVolume: 0.35
+          effect: {
+            type: SoundEffect
+            sound: massdriverReceive
+            minPitch: 0.5
+            maxPitch: 0.6
+            minVolume: 0.5
+            maxVolume: 0.5
+            effect: none
           }
         }
         {
-          type: HaloPart
-          tri: true
-          triLength: 0
-          triLengthTo: 3
-          shapes: 1
-          radius: 6
-          radiusTo: 6
-          haloRadius: 3.75
-          haloRadiusTo: 6
-          shapeRotation: 180
-          color: bc5452
-          colorTo: ea8878
-          progress: {
-            type: warmup
-            op: compress
-            start: 0.25
-            end: 1
-          }
+          type: WaveEffect
+          lifetime: 30
+          sizeFrom: 25
+          sizeTo: 35
+          strokeFrom: 6
+          colorFrom: ffffff
+          colorTo: 7382f0
+          interp: pow3Out
         }
         {
-          type: HaloPart
-          tri: true
-          triLength: 3
-          triLengthTo: 0
-          shapes: 1
-          radius: 6
-          radiusTo: 6
-          haloRadius: 3
-          haloRadiusTo: 3.75
-          shapeRotation: 180
-          haloRotation: 90
-          color: bc5452
-          colorTo: bc5452
-          progress: {
-            type: warmup
-            op: compress
-            start: 0
-            end: 0.25
-          }
+          type: WaveEffect
+          lifetime: 30
+          sizeFrom: 20
+          sizeTo: 25
+          strokeFrom: 6
+          colorFrom: ffffff
+          colorTo: 7382f0
+          interp: pow3Out
         }
         {
-          type: HaloPart
-          tri: true
-          triLength: 0
-          triLengthTo: 3
-          shapes: 1
-          radius: 6
-          radiusTo: 6
-          haloRadius: 3.75
-          haloRadiusTo: 6
-          shapeRotation: 180
-          haloRotation: 90
-          color: bc5452
-          colorTo: ea8878
-          progress: {
-            type: warmup
-            op: compress
-            start: 0.25
-            end: 1
-          }
+          line: true
+          particles: 14
+          length: 20
+          lifetime: 40
+          lenFrom: 4
+          lenTo: 0
+          strokeFrom: 1
+          strokeTo: 2
+          colorTo: 7382f0
+          cap: false
         }
         {
-          type: HaloPart
-          tri: true
-          triLength: 3
-          triLengthTo: 0
-          shapes: 1
-          radius: 6
-          radiusTo: 6
-          haloRadius: 3
-          haloRadiusTo: 3.75
-          shapeRotation: 180
-          haloRotation: 180
-          color: bc5452
+          particles: 1
+          lifetime: 120
+          length: 0
+          sizeFrom: 4
+          sizeTo: 3
+          colorFrom: 7382f0
+          colorTo: feb38000
+          interp: pow10In
+          sizeInterp: linear
+          layer: 105
+        }
+        {
+          type: WaveEffect
+          lifetime: 120
+          sizeFrom: 0
+          sizeTo: 25
+          strokeFrom: 8
+          colorFrom: ffffff
           colorTo: feb380
-          progress: {
-            type: warmup
-            op: compress
-            start: 0
-            end: 0.25
-          }
-        }
-        {
-          type: HaloPart
-          tri: true
-          triLength: 0
-          triLengthTo: 3
-          shapes: 1
-          radius: 6
-          radiusTo: 6
-          haloRadius: 3.75
-          haloRadiusTo: 6
-          shapeRotation: 180
-          haloRotation: 180
-          color: feb380
-          colorTo: ea8878
-          progress: {
-            type: warmup
-            op: compress
-            start: 0.25
-            end: 1
-          }
-        }
-        {
-          type: HaloPart
-          tri: true
-          triLength: 3
-          triLengthTo: 0
-          shapes: 1
-          radius: 6
-          radiusTo: 6
-          haloRadius: 3
-          haloRadiusTo: 3.75
-          shapeRotation: 180
-          haloRotation: 270
-          color: feb380
-          colorTo: feb380
-          progress: {
-            type: warmup
-            op: compress
-            start: 0
-            end: 0.25
-          }
-        }
-        {
-          type: HaloPart
-          tri: true
-          triLength: 0
-          triLengthTo: 3
-          shapes: 1
-          radius: 6
-          radiusTo: 6
-          haloRadius: 3.75
-          haloRadiusTo: 6
-          shapeRotation: 180
-          haloRotation: 270
-          color: feb380
-          colorTo: ea8878
-          progress: {
-            type: warmup
-            op: compress
-            start: 0.25
-            end: 1
-          }
-        }
-        {
-          type: HaloPart
-          tri: true
-          triLength: 3
-          shapes: 4
-          radius: 6
-          haloRadius: 6
-          shapeRotation: 180
-          color: ffffff00
-          colorTo: ffffff
-          progress: charge
-          layer: 100
-        }
-        //outer antenna bits
-        {
-          type: HaloPart
-          tri: true
-          triLength: -6
-          triLengthTo: 24
-          shapes: 1
-          radius: 6
-          radiusTo: 6
-          haloRadius: 3
-          haloRadiusTo: 6
-          color: feb380
-          colorTo: feb380
-          progress: warmup
-        }
-        {
-          type: HaloPart
-          haloRotation: 90
-          tri: true
-          triLength: -6
-          triLengthTo: 24
-          shapes: 1
-          radius: 6
-          radiusTo: 6
-          haloRadius: 3
-          haloRadiusTo: 6
-          color: bc5452
-          colorTo: ea8878
-          progress: warmup
-        }
-        {
-          type: HaloPart
-          haloRotation: 180
-          tri: true
-          triLength: -6
-          triLengthTo: 24
-          shapes: 1
-          radius: 6
-          radiusTo: 6
-          haloRadius: 3
-          haloRadiusTo: 6
-          color: bc5452
-          colorTo: bc5452
-          progress: warmup
-        }
-        {
-          type: HaloPart
-          haloRotation: 270
-          tri: true
-          triLength: -6
-          triLengthTo: 24
-          shapes: 1
-          radius: 6
-          radiusTo: 6
-          haloRadius: 3
-          haloRadiusTo: 6
-          color: feb380
-          colorTo: ea8878
-          progress: warmup
-        }
-        {
-          type: HaloPart
-          tri: true
-          triLength: 24
-          shapes: 4
-          radius: 6
-          haloRadius: 6
-          color: ffffff00
-          colorTo: ffffff
-          layer: 100
-          progress: charge
         }
       ]
+      fragBullets: 1
+      fragRandomSpread: 45
+      fragAngle: 45
+      fragVelocityMin: 0.5
+      fragBullet: {
+        type: BulletType
+        lifetime: 120
+        speed: 4
+        drag: 0.025
+        hittable: false
+        absorbable: false
+        collides: false
+        despawnEffect: none
+        parts: [
+          {
+            type: FlarePart
+            sides: 2
+            color1: 7382f0bb
+            radius: 0
+            radiusTo: 240
+            stroke: 12
+            innerRadScl: 0.75
+            progress: {
+              type: life
+              ops: [
+                {
+                  op: curve
+                  interp: pow4In
+                }
+                {
+                  op: slope
+                }
+              ]
+            }
+            layer: 101
+          }
+          {
+            type: FlarePart
+            sides: 2
+            color1: 00000000
+            radius: 0
+            radiusTo: 36
+            stroke: 36
+            progress: {
+              type: life
+              ops: [
+                {
+                  op: curve
+                  interp: pow4In
+                }
+                {
+                  op: slope
+                }
+              ]
+            }
+            layer: 101
+          }
+        ]
+        trailInterval: 130
+        trailRotation: true
+        trailEffect: {
+          line: true
+          particles: 12
+          length: 60
+          cone: 25
+          lifetime: 80
+          lenFrom: 10
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 4
+          colorTo: 7382f0
+          cap: false
+          interp: pow2Out
+          sizeInterp: pow2In
+        }
+      }
     }
   ]
 }
@@ -394,53 +244,101 @@ research: {
     0b-wormhole-beacons
   ]
   requirements: [
-    territe-alloy/2200
-    dantrales/1000
-    silicon/400
+    territe-alloy/1800
+    dantrales/800
+    silicon/300
   ]
 }
 requirements: [
-  territe-alloy/1200
-  dantrales/400
-  silicon/200
+  territe-alloy/1500
+  dantrales/500
+  silicon/300
 ]
 destroySound: explosion
 destroyEffect: [
   {
     type: WaveEffect
-    lifetime: 80
-    interp: pow3Out
+    lifetime: 45
+    sizeFrom: 30
+    sizeTo: 36
     strokeFrom: 6
-    strokeTo: 0
-    sizeFrom: 0
-    sizeTo: 55
-    colorFrom: feb380
-    colorTo: 7382f0
-  }
-  {
-    length: 45
-    lifetime: 120
-    particles: 24
-    interp: pow2Out
-    sizeInterp: linear
-    sizeFrom: 6
-    sizeTo: 0
-    colorFrom: feb380
-    colorTo: 787878
-  }
-  {
-    length: 70
-    lifetime: 120
-    particles: 24
-    interp: pow2Out
-    sizeInterp: linear
-    sizeFrom: 9
-    sizeTo: 0
-    colorFrom: ffffff
+    colorFrom: ffffff88
     colorTo: 7382f088
-    layer: 105
+  }
+  {
+    type: WaveEffect
+    lifetime: 60
+    sizeFrom: 20
+    sizeTo: 30
+    strokeFrom: 6
+    colorFrom: ffffff88
+    colorTo: 7382f088
   }
 ]
+destroyBullet: {
+  type: BulletType
+  collides: false
+  absorbable: false
+  hittable: false
+  ignoreSpawnAngle: true
+  speed: 0
+  lifetime: 45
+  trailInterval: 5
+  trailEffect: [
+    {
+      particles: 5
+      length: 24
+      baseLength: 12
+      lifetime: 60
+      sizeFrom: 8
+      sizeTo: 0
+      colorFrom: ffffa3
+      colorTo: e28654
+      interp: pow2Out
+      sizeInterp: pow2In
+      layer: 35
+    }
+    {
+      particles: 5
+      length: 0
+      baseLength: 24
+      lifetime: 80
+      sizeFrom: 0
+      sizeTo: 8
+      colorFrom: ffffa3
+      colorTo: e28654
+      sizeInterp: slope
+      layer: 35
+    }
+  ]
+  despawnEffect: none
+  parts: [
+    {
+      type: RegionPart
+      rotation: 90
+      name: allure-0b07-02-reckless-beacon-base
+      outline: false
+      color: ffffff
+      colorTo: ffffff00
+      mixColor: ffffff
+      mixColorTo: feb380
+      progress: {
+        type: life
+        op: curve
+        interp: pow3In
+      }
+    }
+    {
+      type: RegionPart
+      rotation: 90
+      name: allure-0b07-02-reckless-beacon-shadow
+      outline: false
+      color: ffffff
+      colorTo: ffffff00
+      progress: life
+    }
+  ]
+}
 breakEffect: [
   {
     type: WaveEffect

@@ -1,128 +1,15 @@
 type: AttributeCrafter
+health: 6000, armor: 50
+size: 8, itemCapacity: 120, liquidCapacity: 120
+craftTime: 30, warmupSpeed: 0.005
+minEfficiency: 0.01, baseEfficiency: 0, maxBoost: 2, boostScale: 0.015625
+attribute: sand
+drawLiquidLight: false
 squareSprite: false
 customShadow: true
-craftTime: 30
-itemCapacity: 120
-size: 8
-attribute: sand
-baseEfficiency: 0
-maxBoost: 2
-boostScale: 0.015625
-warmupSpeed: 0.005
-minEfficiency: 0.01
-liquidCapacity: 120
-drawLiquidLight: false
-drawer: {
-  type: DrawMulti
-  iconOverride: [
-    -icon
-  ]
-  drawers: [
-    {
-      type: DrawRegion
-      suffix: -drill1
-      rotation: 0
-      rotateSpeed: -8
-      spinSprite: true
-    }
-    {
-      type: DrawRegion
-      suffix: -drill1
-      rotation: 15
-      rotateSpeed: -8
-      spinSprite: true
-    }
-    {
-      type: DrawRegion
-      suffix: -drill1
-      rotation: 30
-      rotateSpeed: -8
-      spinSprite: true
-    }
-    {
-      type: DrawRegion
-      suffix: -drill0
-      rotation: 45
-      rotateSpeed: -8
-      spinSprite: true
-    }
-    {
-      type: DrawRegion
-      suffix: -drill0
-      rotation: 60
-      rotateSpeed: -8
-      spinSprite: true
-    }
-    {
-      type: DrawRegion
-      suffix: -drill0
-      rotation: 75
-      rotateSpeed: -8
-      spinSprite: true
-    }
-    {
-    }
-    {
-      type: DrawLiquidTile
-      drawLiquid: water
-      padLeft: 55.5
-      padRight: 0.25
-      padTop: 7.75
-      padBottom: 39.75
-    }
-    {
-      type: DrawLiquidTile
-      drawLiquid: water
-      padLeft: 0.25
-      padRight: 55.5
-      padTop: 7.75
-      padBottom: 39.75
-    }
-    {
-      type: DrawLiquidTile
-      drawLiquid: energia
-      padLeft: 55.5
-      padRight: 0.25
-      padTop: 39.75
-      padBottom: 7.75
-    }
-    {
-      type: DrawLiquidTile
-      drawLiquid: energia
-      padLeft: 0.25
-      padRight: 55.5
-      padTop: 39.75
-      padBottom: 7.75
-    }
-    {
-      type: DrawRegion
-      suffix: -top
-      layer: 35
-    }
-    {
-      type: DrawGlowRegion
-      alpha: 0.75
-      layer: 36
-      color: ffb380
-    }
-    {
-      type: DrawGlowRegion
-      suffix: -flare
-      alpha: 0.9
-      layer: 36
-      glowIntensity: 0.1
-      color: ffffff
-    }
-  ]
-}
-craftEffect: pulverizeRed
-updateEffect: fuelburn
-updateEffectSpread: 1.5
-updateEffectChance: 0.25
 consumes: {
   liquids: [
-    water/0.4
-    energia/0.1
+    water/0.4, fluid-energy/0.1
   ]
 }
 outputItem: silicon/6
@@ -133,13 +20,132 @@ research: {
     0b-basic-infrastructure
   ]
   requirements: [
-    dantrales/1200
-    territe-alloy/6000
+    dantrales/1200, territe-alloy/6000
   ]
 }
 requirements: [
-  dantrales/150
-  territe-alloy/900
+  territe-alloy/180, crystal/840
 ]
-ambientSound: tankMove
-ambientSoundVolume: 0.1
+ambientSoundVolume: 0.2, ambientSound: tankMove
+craftEffect: [
+  {
+    particles: 6, lifetime: 240, layer: 80
+    length: 100, cone: 12, baseRotation: 45, offsetX: 11, offsetY: 11
+    sizeFrom: 0, sizeTo: 12
+    colorFrom: 7382f044, colorTo: 78787800
+    sizeInterp: pow2Out, interp: pow2Out
+  }
+  {
+    particles: 6, lifetime: 240, layer: 80
+    length: 100, cone: 12, baseRotation: 45, offsetX: -6, offsetY: 15
+    sizeFrom: 0, sizeTo: 12
+    colorFrom: 7382f044, colorTo: 78787800
+    sizeInterp: pow2Out, interp: pow2Out
+  }
+  {
+    particles: 6, lifetime: 240, layer: 80
+    length: 100, cone: 12, baseRotation: 45, offsetX: 15, offsetY: -6
+    sizeFrom: 0, sizeTo: 12
+    colorFrom: 7382f044, colorTo: 78787800
+    sizeInterp: pow2Out, interp: pow2Out
+  }
+]
+updateEffectChance: 0.25, updateEffectSpread: 1.5, updateEffect: {
+  particles: 4, lifetime: 70, layer: 48
+  length: 0, baseLength: 6
+  sizeFrom: 0, sizeTo: 4
+  colorFrom: 78787888, colorTo: 78787888
+  interp: slope
+}
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    -icon
+  ]
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -drill1
+      rotation: 0, rotateSpeed: -8, spinSprite: true
+    }
+    {
+      type: DrawRegion
+      suffix: -drill1
+      rotation: 15, rotateSpeed: -8, spinSprite: true
+    }
+    {
+      type: DrawRegion
+      suffix: -drill1
+      rotation: 30, rotateSpeed: -8, spinSprite: true
+    }
+    {
+      type: DrawRegion
+      suffix: -drill0
+      rotation: 45, rotateSpeed: -8, spinSprite: true
+    }
+    {
+      type: DrawRegion
+      suffix: -drill0
+      rotation: 60, rotateSpeed: -8, spinSprite: true
+    }
+    {
+      type: DrawRegion
+      suffix: -drill0
+      rotation: 75, rotateSpeed: -8, spinSprite: true
+    }
+    {
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: water
+      padLeft: 55.5, padRight: 0.25, padTop: 7.75, padBottom: 39.75
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: water
+      padLeft: 0.25, padRight: 55.5, padTop: 7.75, padBottom: 39.75
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: fluid-energy
+      padLeft: 55.5, padRight: 0.25, padTop: 39.75, padBottom: 7.75
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: fluid-energy
+      padLeft: 0.25, padRight: 55.5, padTop: 39.75, padBottom: 7.75
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+      layer: 49
+    }
+    {
+      type: DrawRegion
+      suffix: -ring-shadow
+      layer: 49
+    }
+    {
+      type: DrawRegion
+      suffix: -top-shadow
+      layer: 50
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -flare1
+      color: 7382f0
+      layer: 52, alpha: 1, glowIntensity: 0.15
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -flare2
+      color: ffffff
+      layer: 52, alpha: 1, glowIntensity: 0.15
+    }
+    {
+      type: DrawGlowRegion
+      layer: 52
+      color: feb380
+    }
+  ]
+}

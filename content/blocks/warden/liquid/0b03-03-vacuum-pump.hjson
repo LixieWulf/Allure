@@ -1,162 +1,20 @@
 type: Pump
-size: 2
+health: 400, armor: 50
+size: 2, liquidCapacity: 48
 pumpAmount: 0.1
 squareSprite: false
 customShadow: true
-liquidCapacity: 48
 consumes: {
   liquidFlammable: {
-    minFlammability: -1000
-    amount: 0
-    optional: true
+    minFlammability: -1000, amount: 0, optional: true
   }
 }
 requirements: [
-  dantrales/50
-  territe-alloy/20
+  territe-alloy/18, crystal/24
 ]
 category: liquid
 research: {
   parent: 0b03-00-vacuum-conduit
   requirements: [
-    metaglass/300
-    dantrales/600
-    territe-alloy/1000
   ]
-}
-placeEffect: [
-  {
-    particles: 1
-    length: 0
-    lifetime: 30
-    region: allure-unusually-organized-rectangle
-    useRotation: false
-    sizeFrom: 8
-    sizeTo: 12
-    colorFrom: 7382f0
-    colorTo: 7382f000
-  }
-  {
-    type: WaveEffect
-    rotation: 43
-    lifetime: 30
-    sides: 4
-    sizeFrom: 8
-    sizeTo: 16
-    strokeFrom: 3
-    strokeTo: 0
-    colorFrom: 7382f0
-    colorTo: 7382f0
-  }
-]
-breakEffect: [
-  {
-    type: WaveEffect
-    rotation: 43
-    lifetime: 60
-    sides: 4
-    sizeFrom: 10
-    sizeTo: 12
-    strokeFrom: 2
-    strokeTo: 0
-    colorFrom: 7382f0
-    colorTo: 7382f0
-  }
-  {
-    type: RadialEffect
-    rotationOffset: -2
-    lengthOffset: 8
-    amount: 4
-    effect: {
-      line: true
-      particles: 1
-      baseRotation: 180
-      lifetime: 30
-      length: 16
-      cone: 0
-      randLength: false
-      cap: false
-      lenFrom: 16
-      lenTo: 0
-      strokeFrom: 1
-      strokeTo: 1
-      colorFrom: 7382f0
-      colorTo: 7382f0
-    }
-  }
-  {
-    type: RadialEffect
-    rotationOffset: -24.5
-    lengthOffset: 8.66
-    amount: 4
-    effect: {
-      line: true
-      particles: 1
-      baseRotation: 202.5 
-      lifetime: 30
-      length: 16
-      cone: 0
-      randLength: false
-      cap: false
-      lenFrom: 16
-      lenTo: 0
-      strokeFrom: 1
-      strokeTo: 1
-      colorFrom: 7382f0
-      colorTo: 7382f0
-    }
-  }
-  {
-    type: ParticleEffect
-    startDelay: 30
-    particles: 1
-    length: 0
-    lifetime: 30
-    useRotation: false
-    region: allure-warden-icon
-    sizeFrom: 6
-    sizeTo: 6
-    interp: slope
-    colorFrom: 7382f000
-    colorTo: 7382f0
-  }
-]
-destroyBullet: {
-  type: BulletType
-  speed: 0
-  lifetime: 0
-  collides: false
-  absorbable: false
-  hittable: false
-  hitEffect: none
-  despawnEffect: none
-  fragBullets: 8
-  fragLifeMin: 0.01
-  fragBullet: {
-    type: BulletType
-    damage: 0
-    collides: false
-    absorbable: false
-    hittable: false
-    reflectable: false
-    hitEffect: none
-    despawnEffect: none
-    speed: 0.01
-    lifetime: 12
-    lightning: 1
-    lightningLength: 6
-    lightningLengthRand: 12
-    lightningCone: 0
-    lightningColor: 7382f0
-    lightningDamage: 30
-  }
-}
-destroyEffect: {
-  particles: 1
-  length: 0
-  lifetime: 35
-  interp: pow2In
-  sizeFrom: 16
-  sizeTo: 0
-  colorTo: 7382f0
 }

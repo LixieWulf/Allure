@@ -7,7 +7,7 @@ alwaysShooting: true
 consumes: {
   power: 4
   liquids: [
-    energia/0.25
+    fluid-energy/0.25
   ]
 }
 shootY: 0

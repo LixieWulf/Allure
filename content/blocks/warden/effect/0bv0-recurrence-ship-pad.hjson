@@ -9,7 +9,7 @@ polyColor: 7382f0
 consumes: {
   liquids: [
     liquid-baenara/0.4
-    energia/0.2
+    fluid-energy/0.2
   ]
 }
 category: effect

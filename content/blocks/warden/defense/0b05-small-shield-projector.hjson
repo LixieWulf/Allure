@@ -8,7 +8,7 @@ polySides: 0
 consumes: {
   liquids: [
     liquid-baenara/2
-    energia/1
+    fluid-energy/1
   ]
 }
 category: defense

@@ -147,7 +147,7 @@ drawer: [
 consumes: {
   items: [
     contained-slag/50
-    contained-energia/10
+    contained-fluid-energy/10
   ]
 }
 outputItem: anden/50

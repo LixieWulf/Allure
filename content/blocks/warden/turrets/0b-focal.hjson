@@ -6,111 +6,168 @@ rotateSpeed: 2
 range: 310
 recoil: 0
 recoilTime: 30
-shootSound: laser
-loopSound: hum
+shootSound: explosionArtilleryShockBig
+shootSoundVolume: 0.25
+loopSound: loopMineBeam
 loopSoundVolume: 1
-outlineColor: 212229
-shootY: 30
+outlineColor: ffffff00
+shootY: 19
+shake: 2
 consumes: {
   power: 10
   liquids: [
-    energia/0.66666
+    fluid-energy/0.66666
   ]
 }
-shootWarmupSpeed: 0.02
+minWarmup: 0.75
+warmupMaintainTime: 300
 heatColor: 000000
 drawer: {
   type: DrawTurret
   basePrefix: 0b0-
   parts: [
     {
-      suffix: -heat
-      blending: additive
-      color: 000000
-      colorTo: ab3400
-      progress: {
-        type: warmup
-        op: slope
-      }
-    }
-    {
-      suffix: -heat2
+      suffix: -barrel-flare1
       blending: additive
       outline: false
       color: 000000
-      colorTo: ab3400
+      colorTo: 7382f0
+      progress: warmup
     }
     {
-      suffix: -heat
+      suffix: -barrel-flare2
       blending: additive
+      outline: false
       color: 000000
-      colorTo: 90a2fc
+      colorTo: ffffff
+      progress: warmup
     }
   ]
 }
 coolantMultiplier: 1.414
 ammoTypes: {
-  energia: {
+  fluid-energy: {
     type: ContinuousLaserBulletType
     damage: 40
-    status: allure-0b-energy2
+    status: allure-0b-energy1
     statusDuration: 1
-    damageInterval: 7
+    damageInterval: 5
     setDefaults: false
     despawnHit: false
+    fragOnDespawn: false
     largeHit: true
     lifetime: 30
     frontLength: 0
     backLength: 12
-    shake: 0.5
+    shake: 0.1
     length: 290
-    width: 3
+    width: 1
     pierceCap: 1
+    fadeTime: 5
+    incendChance: 0
+    oscMag: 0
+    backLength: 0
     colors: [
       7382f088,
       7382f0,
       90a2fc,
       ffffff
     ]
-    hitEffect: none
-    fragBullets: 1
-    fragRandomSpread: 180
-    fragBullet: {
-      type: BulletType
-      collides: false
-      hittable: false
-      absorbable: false
-      lifetime: 0
-      damage: 0
-      despawnEffect: [
-        {
-          baseRotation: 180
-          length: 30
-          cone: 0
-          region: allure-shootspike
-          particles: 1
-          lifetime: 40
-          colorFrom: 90a2fc
-          colorTo: 7382f0
-          sizeFrom: 20
-          sizeTo: 0
-        }
-        {
-          length: 0
-          cone: 0
-          region: allure-diamond-thin
-          offset: 90
-          particles: 1
-          lifetime: 25
-          colorFrom: ffffff
-          colorTo: 90a2fc
-          sizeFrom: 25
-          sizeTo: 0
-        }
-      ]
+    hitEffect: [
+      {
+        length: 0
+        cone: 0
+        region: circle-shadow
+        offset: 90
+        particles: 1
+        lifetime: 25
+        colorFrom: ffffff33
+        colorTo: 90a2fc00
+        sizeFrom: 0
+        sizeTo: 50
+        sizeInterp: slope
+      }
+      {
+        line: true
+        cone: 20
+        particles: 1
+        lifetime: 20
+        length: -30
+        interp: pow2Out
+        sizeInterp: linear
+        lenFrom: 8
+        lenTo: 4
+        strokeFrom: 2
+        strokeTo: 0
+        colorTo: 7382f0
+      }
+    ]
+    despawnEffect: {
+      type: SoundEffect
+      minPitch: 0.5
+      maxPitch: 0.6
+      minVolume: 2
+      maxVolume: 2
+      effect: none
+      sound: walkerStepTiny
     }
-    shootEffect: none
     smokeEffect: none
+    spawnBullets: [
+      {
+        type: EmptyBulletType
+        lifetime: 0
+        despawnEffect: [
+          {
+            type: WaveEffect
+            lifetime: 10
+            sizeFrom: 0
+            sizeTo: 15
+            colorTo: 7382f0
+          }
+          {
+            followParent: false
+            particles: 1
+            length: 0
+            randLength: false
+            lifetime: 20
+            cone: 0
+            offset: 90
+            region: allure-squishwave
+            sizeFrom: 10
+            sizeTo: 12
+            colorFrom: 7382f0
+            colorTo: 7382f000
+          }
+          {
+            line: true
+            cone: 20
+            particles: 8
+            lifetime: 20
+            length: 45
+            interp: pow3Out
+            sizeInterp: linear
+            lenFrom: 8
+            lenTo: 4
+            strokeFrom: 2
+            strokeTo: 0
+            colorTo: 7382f0
+          }
+          {
+            particles: 1
+            cone: 20
+            particles: 12
+            lifetime: 30
+            length: 35
+            interp: pow2Out
+            sizeInterp: linear
+            sizeFrom: 4
+            sizeTo: 0
+            colorFrom: 7382f0
+            colorTo: 7382f088
+          }
+        ]
+      }
+    ]
   }
 }
 category: turret
