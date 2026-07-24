@@ -1,4 +1,5 @@
 powerProduction: 0.2
+baseExplosiveness: 7
 research: {
   parent: battery
   objectives: [

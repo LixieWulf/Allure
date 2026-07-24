@@ -1,0 +1,68 @@
+reload: 300
+consumeAmmoOnce: true
+ammoPerShot: 10
+maxAmmo: 20
+inaccuracy: 15
+shootEffect: none
+recoil: 3
+shoot: {
+  type: ShootAlternate
+  barrels: 3
+  shots: 30
+  shotDelay: 2
+}
+ammoTypes: {
+  blast-compound: {
+    type: MissileBulletType
+    ammoMultiplier: 1
+    damage: 15
+    splashDamage: 30
+    splashDamageRadius: 24
+    speed: 2
+    accel: 0.04
+    lifetime: 75
+    homingPower: 0.1
+    homingRange: 15
+    trailChance: 0.05
+    weaveScale: 4
+    weaveMag: 3
+    hitEffect: flakExplosion
+    despawnEffect: blastExplosion
+    frontColor: eeab89
+    backColor: e9665b
+    trailColor: e9665b
+    hitShake: 1
+  }
+  phase-fabric: {
+    type: MissileBulletType
+    ammoMultiplier: 4
+    reloadMultiplier: 2
+    damage: 30
+    splashDamage: 25
+    splashDamageRadius: 48
+    speed: 2
+    accel: 0.04
+    inaccuracy: 15
+    lifetime: 75
+    homingPower: 0.1
+    homingRange: 50
+    homingDelay: 45
+    trailChance: -1
+    trailWidth: 1
+    trailLength: 5
+    weaveScale: 4
+    weaveMag: 4
+    hitEffect: flakExplosion
+    despawnEffect: flakExplosion
+    frontColor: 'fff8e8'
+    backColor: f9c27a
+    trailColor: f9c27a
+    hitShake: 0.5
+  }
+}
+requirements: [
+  silicon/100
+  graphite/50
+  titanium/80
+  plastanium/50
+]

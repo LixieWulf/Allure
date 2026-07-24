@@ -1,11 +1,11 @@
-craftTime: 80
+craftTime: 160
 consumes: {
   remove: [
     items
   ]
   items: [
-    pyratite/1
-    coal/4
+    pyratite/2
+    graphite/1
     sand/8
   ]
 }

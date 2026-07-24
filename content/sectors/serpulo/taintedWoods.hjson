@@ -1,0 +1,9 @@
+sector: 146
+research: {
+  parent: 'infestedCanyons', objectives: [
+    {
+      type: 'sectorComplete', preset: 'infestedCanyons'
+    }
+    'salvo', 'steam-generator'
+  ]
+}

@@ -1,7 +1,6 @@
 powerProduction: 5
-itemDuration: 60
-itemDurationMultipliers: {
-  pyratite: 4
+itemDuration: 60, itemDurationMultipliers: {
+  spore-pod: 1.5
 }
 research: {
   parent: combustion-generator
@@ -12,3 +11,6 @@ research: {
     }
   ]
 }
+requirements: [
+  lead/40, graphite/20, silicon/40
+]

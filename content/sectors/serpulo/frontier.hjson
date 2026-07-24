@@ -1,0 +1,9 @@
+sector: 145
+research: {
+  parent: 'infestedCanyons', objectives: [
+    {
+      type: 'sectorComplete', preset: 'infestedCanyons'
+    }
+    'cryofluid', 'additive-reconstructor'
+  ]
+}

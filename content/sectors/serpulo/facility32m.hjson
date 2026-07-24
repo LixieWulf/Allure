@@ -1,0 +1,9 @@
+sector: 86
+research: {
+  parent: 'taintedWoods', objectives: [
+    {
+      type: 'sectorComplete', preset: 'taintedWoods'
+    }
+    'mace', 'pulsar', 'atrax', 'ripple'
+  ]
+}

@@ -1,6 +1,5 @@
-itemDuration: 240
-powerProduction: 12
 liquidCapacity: 24
+itemDuration: 120, powerProduction: 12
 consumes: {
   remove: [
     liquid

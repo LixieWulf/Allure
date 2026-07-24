@@ -1,0 +1,8 @@
+research: {
+  parent: 'stainedMountains', objectives: [
+    {
+      type: 'sectorComplete', preset: 'stainedMountains'
+    }
+    titanium
+  ]
+}

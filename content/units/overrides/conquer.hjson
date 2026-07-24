@@ -16,7 +16,7 @@ weapons: [
     shootWarmupSpeed: 0.03
     minWarmup: 0.9
     shootSound: explosionNavanax
-    cooldownTime: 170
+    cooldownTime: 170 
     heatColor: f9350f
     shake: 8
     shootY: 36

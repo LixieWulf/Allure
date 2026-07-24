@@ -1,9 +1,8 @@
+outputItem: pyratite/2
 research: {
-  parent: graphite-press
-  objectives: [
+  parent: 'graphite-press', objectives: [
     {
-      type: onSector
-      preset: ruinousShores
+      type: 'onSector', preset: 'ruinousShores'
     }
   ]
 }

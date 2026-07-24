@@ -32,9 +32,9 @@ weapons: [
 abilities: [
   {
     type: RepairFieldAbility
-    reload: 45
+    reload: 60
     range: 20
-    amount: 10
+    amount: 15
   }
 ]
 research: {

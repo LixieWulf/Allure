@@ -1,1 +1,4 @@
 pumpAmount: 0.10000167
+requirements: [
+  copper/10, metaglass/10
+]

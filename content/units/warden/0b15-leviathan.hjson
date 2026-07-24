@@ -8,13 +8,14 @@ rotateSpeed: 1
 drag: 0.05
 accel: 0.1
 strafePenalty: 0.2
-shadowElevationScl: 2.4
+shadowElevationScl: 5
 range: 145
 maxRange: 160
 lightRadius: 0
 lowAltitude: true
 engineSize: 0
 outlines: false
+drawCell: false
 healColor: 7382f088
 shieldColor: 7382f000
 deathShake: 0
@@ -38,137 +39,26 @@ immunities: [
 ]
 parts: [
   {
-    type: RegionPart
-    layer: 91
-    outline: false
+    type: 'RegionPart', layer: 91, outline: false
   }
   { 
-    type: RegionPart
-    suffix: -flare
-    outline: false
-    blending: additive
-    layer: 92
-    color: 7382f0
-    colorTo: ffffff
-    weaponIndex: 0
+    type: 'RegionPart', suffix: '-flare'
+    outline: false, blending: 'additive'
+    layer: 92, weaponIndex: 1
+    color: '7382f0', colorTo: 'ffffff'
   }
   { 
-    type: RegionPart
-    suffix: -flare
-    outline: false
+    type: 'RegionPart', suffix: '-flare'
+    outline: false, blending: 'additive'
     layer: 140
-    color: 7382f025
-    blending: additive
+    color: '7382f025'
   }
   {
-    type: RegionPart
-    name: allure-shield
-    outline: false
-    blending: additive
-    color: 7382f088
-    layer: 88
-    xScl: 1.75
-    yScl: 2.45
-  }
-  {
-    type: RegionPart
-    name: circle
-    blending: additive
-    outline: false
-    layer: 90
-    color: 7382f0
-    growProgress: recoil
-    xScl: 1
-    yScl: 1
-    growX: -1
-    growY: -1
-    y: 66
-    weaponIndex: 0
-  }
-  {
-    type: RegionPart
-    name: circle
-    blending: additive
-    outline: false
-    layer: 90
-    color: ffffff
-    growProgress: recoil
-    xScl: 0.9
-    yScl: 0.9
-    growX: -0.9
-    growY: -0.9
-    y: 66
-    weaponIndex: 0
-  }
-  {
-    type: FlarePart
-    sides: 2
-    color1: 7382f0bb
-    radius: 200
-    radiusTo: 0
-    stroke: 8
-    innerRadScl: 0.75
-    y: 66
-    progress: recoil
-    layer: 101
-    weaponIndex: 0
-  }
-  {
-    type: FlarePart
-    sides: 2
-    color1: 00000000
-    radius: 48
-    radiusTo: 0
-    stroke: 48
-    y: 66
-    progress: recoil
-    layer: 101
-    weaponIndex: 0
-  }
-  {
-    suffix: -heat-flare2
-    blending: additive
-    outline: false
-    color: 000000
-    colorTo: 7382f0
-    progress: recoil
-    weaponIndex: 0
-    layer: 95
-    y: 59
-  }
-  {
-    suffix: -heat-flare
-    blending: additive
-    outline: false
-    color: 000000
-    colorTo: ab3400
-    progress: {
-      type: charge
-      ops: [
-        {
-          op: blend
-          amount: 0.5
-          other: recoil
-        }
-        {
-          op: slope
-        }
-      ]
-    }
-    weaponIndex: 0
-    layer: 95
-    y: 59
-  }
-  {
-    suffix: -heat-flare
-    blending: additive
-    outline: false
-    color: 000000
-    colorTo: 90a2fc
-    progress: recoil
-    weaponIndex: 0
-    layer: 95
-    y: 59
+    type: 'RegionPart', name: 'allure-shield'
+    outline: false, blending: 'additive'
+    color: '7382f088'
+    layer: 93
+    xScl: 2, yScl: 4
   }
 ]
 weapons: [

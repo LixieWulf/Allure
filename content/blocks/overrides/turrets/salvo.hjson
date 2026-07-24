@@ -62,7 +62,7 @@ ammoTypes: {
     inaccuracy: 2
     width: 9
     height: 12
-    ammoMultiplier: 12
+    ammoMultiplier: 6
     lifetime: 45
     hitColor: f8ad42
     backColor: f68021
@@ -82,6 +82,7 @@ ammoTypes: {
     statusDuration: 15
   }
 }
+research: duo
 requirements: [
   copper/80
   graphite/20

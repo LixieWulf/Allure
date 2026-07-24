@@ -1,93 +1,60 @@
-targetInterval: 30
-newTargetInterval: 30
+targetInterval: 30, newTargetInterval: 30
 reload: 120
-range: 480
-minRange: 240
+range: 480, minRange: 240
 drawMinRange: true
-unitSort: strongest
+unitSort: 'strongest'
+shootEffect: 'shootBig'
 ammoTypes: {
   graphite: {
-    type: ArtilleryBulletType
-    speed: 3
-    damage: 10
-    lifetime: 160
+    type: 'ArtilleryBulletType'
+    speed: 3, damage: 10, lifetime: 160
     knockback: 0.65
     inaccuracy: 3
-    ammoMultiplier: 2
-    reloadMultiplier: 1.5
-    shrinkY: 0.75
-    shrinkX: 0.5
-    width: 22
-    height: 22
+    ammoMultiplier: 2, reloadMultiplier: 1.5
+    shrinkY: 0.75, shrinkX: 0.5
+    width: 22, height: 22
     collidesTiles: false
-    splashDamage: 15
-    splashDamageRadius: 32
-    hitColor: 7d89d8
-    trailColor: 7d89d8
-    backColor: 7d89d8
-    frontColor: dae1ee
-    hitEffect: massiveExplosion
-    despawnEffect: hitBulletColor
+    splashDamage: 15, splashDamageRadius: 32
+    frontColor: 'dae1ee', backColor: '7d89d8', trailColor: 7d89d8', hitColor: '7d89d8'
+    hitEffect: 'massiveExplosion', despawnEffect: 'hitBulletColor'
   }
   silicon: {
-    type: ArtilleryBulletType
-    speed: 3
-    damage: 25
-    lifetime: 160
+    type: 'ArtilleryBulletType'
+    speed: 3, damage: 25, lifetime: 160
     knockback: 1
     inaccuracy: 5
-    ammoMultiplier: 2
-    reloadMultiplier: 0.75
-    homingPower: 0.02
-    homingRange: 120
-    shrinkY: 0.75
-    shrinkX: 0.5
-    width: 22
-    height: 22
+    ammoMultiplier: 2, reloadMultiplier: 0.75
+    homingPower: 0.02, homingRange: 120
+    shrinkY: 0.75, shrinkX: 0.5
+    width: 22, height: 22
     collidesTiles: false
-    splashDamage: 25
-    splashDamageRadius: 32
-    hitColor: 707594
-    backColor: 707594
-    trailColor: 707594
-    frontColor: 999ba0
-    hitEffect: massiveExplosion
-    despawnEffect: hitBulletColor
+    splashDamage: 25, splashDamageRadius: 32
+    frontColor: '999ba0', backColor: '707594', trailColor: '707594', hitColor: '707594'
+    hitEffect: 'massiveExplosion', despawnEffect: 'hitBulletColor'
   }
   pyratite: {
-    type: ArtilleryBulletType
-    speed: 3
-    damage: 15
-    lifetime: 160
+    type: 'ArtilleryBulletType'
+    speed: 3, damage: 15, lifetime: 160
     knockback: 0.8
     ammoMultiplier: 3
-    shrinkY: 0.75
-    shrinkX: 0.5
-    width: 26
-    height: 26
+    shrinkY: 0.75, shrinkX: 0.5
+    width: 26, height: 26
     collidesTiles: false
-    splashDamage: 15
-    splashDamageRadius: 19
-    status: burning
-    statusDuration: 150
-    hitColor: f8ad42
-    trailColor: f8ad42
-    backColor: f68021
-    frontColor: f8ad42
+    splashDamage: 15, splashDamageRadius: 19
+    status: 'burning', statusDuration: 150
+    frontColor: 'f8ad42', backColor: 'f68021', trailColor: 'f8ad42', hitColor: 'f8ad42'
     hitEffect: [
-      blastExplosion,
-      fireHit
+      'blastExplosion', 'fireHit'
     ]
-    despawnEffect: hitBulletColor
+    despawnEffect: 'hitBulletColor'
   }
 }
 maxAmmo: 6
 research: {
-  parent: scorch
+  parent: 'scorch'
   objectives: [
     {
-      type: onSector
-      preset: ruinousShores
+      type: 'onSector', preset: 'ruinousShores'
     }
   ]
 }

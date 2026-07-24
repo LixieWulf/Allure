@@ -1,2 +1,7 @@
-speedBoost: 1.3333334
-useTime: 480
+speedBoost: 1.5
+useTime: 300
+range: 240
+consumes: {
+  remove: ['items']
+  items: ['phase-fabric/1', 'surge-alloy/1']
+}

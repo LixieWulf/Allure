@@ -1,8 +1,14 @@
+outputItem: plastanium/2
+craftTime: 240
 consumes: {
   remove: [
-    liquid
+    'liquid', 'items'
+  ]
+  items: [
+    titanium/3
   ]
   liquids: [
-    oil/0.3
+    oil/0.15
+    water/0.25
   ]
 }

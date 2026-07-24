@@ -1,6 +1,4 @@
 heatCapacity: 0
-explosiveness: 0.2
-flammability: 1
 temperature: 2.4
 gas: true
 research: {

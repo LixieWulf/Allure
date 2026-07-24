@@ -1,12 +1,12 @@
 consumes: {
-  power: 12
+  power: 8
 }
 accurateDelay: true
 shootType: {
   type: LaserBulletType
   collidesAir: false
   damage: 35
-  length: 173
+  length: 213
   lifetime: 20
   pierceCap: 8
   ammoMultiplier: 1

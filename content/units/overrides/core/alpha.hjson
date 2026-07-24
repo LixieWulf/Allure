@@ -17,7 +17,7 @@ weapons: [
       width: 7
       height: 9
       lifetime: 45
-      buildingDamageMultiplier: 0.5
+      buildingDamageMultiplier: 0
     }
   }
 ]

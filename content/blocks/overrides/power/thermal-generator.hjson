@@ -8,3 +8,6 @@ research: {
     }
   ]
 }
+requirements: [
+  copper/10, lead/30, graphite/30, silicon/20, metaglass/10
+]

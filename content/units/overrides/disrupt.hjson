@@ -6,14 +6,14 @@ weapons: [
     shootSound: missileSmall
     x: 19.5 
     y: -2.5
-    inaccuracy: 5
-    xRand: 12
+    inaccuracy: 25
+    xRand: 6
     shootCone: 40
     shoot: {
-      shots: 6
+      shots: 10
       shotDelay: 5
     }
-    reload: 90
+    reload: 180
     shootWarmupSpeed: 0.1
     minWarmup: 0.99
     shootY: 8

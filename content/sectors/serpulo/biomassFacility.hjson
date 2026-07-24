@@ -1,0 +1,9 @@
+sector: 222
+research: {
+  parent: 'stainedMountains', objectives: [
+    {
+      type: 'SectorComplete', preset: 'stainedMountains'
+    }
+    'salvo', 'pyratite-mixer'
+  ]
+}

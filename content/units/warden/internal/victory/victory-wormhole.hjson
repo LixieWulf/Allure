@@ -1,4 +1,4 @@
-//Wormhole unit entity.
+//Wormhole unit entity
 type: missile
 template: MissileUnitType
 //Allows lockon and prevents exploding 

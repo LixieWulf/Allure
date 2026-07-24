@@ -1,5 +1,5 @@
 viscosity: 0.5
-heatCapacity: 0.6
+heatCapacity: 0.5
 color: 46b084
 research: {
   parent: 0b-begin

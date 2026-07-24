@@ -10,6 +10,7 @@ outlineIcon: false
 rotateSpeed: 0
 customShadow: true
 range: 80
+elevation: 4
 recoil: 0
 shoot: {
   firstShotDelay: 300

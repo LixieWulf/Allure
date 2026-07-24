@@ -1,0 +1,175 @@
+type: PowerTurret
+squareSprite: false
+rotate: false
+size: 4
+reload: 360
+rotateSpeed: 0
+range: 480
+inaccuracy: 5
+recoil: 0
+shootY: 0
+shootCone: 360
+shootSound: shootMissilePlasmaShort
+outlineIcon: false
+unitSort: strongest
+shootEffect: none
+smokeEffect: none
+shoot: {
+  type: ShootBarrel
+  shots: 14
+  shotDelay: 5
+  barrels: [
+    -1.5, 5.5, 15,
+    1.5, -5.5, -165,
+    2, 3.75, -25,
+    -2, -3.75, 155,
+    5, 2, -80,
+    -5, 2, 80,
+    5, -2, -100,
+    -5, -2, 100,
+    8, 0, -90,
+    -8, 0, 90,
+    5.5, 5.5, -30,
+    -5.5, -5.5, 150,
+    2, 7.75, -15,
+    -2, -7.75, 165,
+  ]
+}
+drawer: {
+  type: 'drawMulti', iconOverride: ['-icon'], drawers: [
+    {
+      type: 'DrawRegion', name: 'allure-0b0-block-4-shadow', layer: 29.99, color: ffffffbb
+    }
+    {
+      type: 'DrawTurret', basePrefix: '0b0-'
+    }
+  ]
+}
+consumes: {
+  power: 7.5
+  liquids: [
+    plasma/1
+  ]
+}
+coolant: {
+  type: ConsumeLiquid
+  liquid: fluid-energy
+  amount: 1
+}
+coolantMultiplier: 4
+shootType: {
+  type: BulletType
+  lifetime: 120
+  speed: 1
+  damage: 100
+  splashDamage: 100
+  splashDamageRadius: 24
+  drag: 0.002
+  accel: 0.06
+  weaveScale: 9
+  weaveMag: 3.5
+  homingPower: 0.045
+  homingRange: 400
+  statusDuration: 10, status: allure-0b-energy1
+  hittable: false
+  hitSound: explosion
+  despawnEffect: none
+  parts: [
+    {
+      type: 'FlarePart', followRotation: false
+      sides: 2, layer: 101, stroke: 8, radius: 0, radiusTo: 8
+      color1: '90a2fc44', color2: 'ffffff'
+      progress: {type: 'life', op: 'slope'}
+    }
+    {
+      type: 'FlarePart', followRotation: false
+      sides: 2, layer: 101, stroke: 2, radius: 0, radiusTo: 50
+      innerScl: 0.75, innerRadScl: 0.9
+      color1: '90a2fc88', color2: 'ffffffbb'
+      progress: {type: 'life', op: 'slope'}
+    }
+    {
+      type: 'FlarePart', followRotation: false
+      sides: 2, layer: 101, stroke: 15, radius: 0, radiusTo: 1
+      innerScl: 0.75, innerRadScl: 0.9
+      color1: '90a2fc88', color2: 'ffffffbb'
+      progress: {type: 'life', op: 'slope'}
+    }
+  ]
+  trailLength: 15
+  trailWidth: 1.2
+  trailColor: 7382f0
+  hitEffect: [
+    {
+      type: WaveEffect
+      interp: pow3Out
+      lifetime: 25
+      sizeFrom: 0
+      sizeTo: 25
+      strokeFrom: 4
+      colorTo: 7382f0
+    }
+    {
+      length: 16
+      particles: 6
+      lifetime: 30
+      interp: pow2Out
+      sizeInterp: pow3In
+      sizeFrom: 6
+      sizeTo: 0
+      colorFrom: 7382f088
+      colorTo: 78787888
+    }
+    {
+      line: true
+      length: 36
+      lifetime: 30
+      particles: 9
+      lenFrom: 6
+      lenTo: 4
+      strokeFrom: 2
+      strokeTo: 0
+      colorFrom: 90a2fc
+      colorTo: feb380
+      interp: pow3Out
+    }
+    {
+      particles: 1, length: 0, lifetime: 20, layer: 116
+      region: 'circle-shadow', sizeFrom: 60, sizeTo: 0
+      colorFrom: 'ffffff44', colorTo: '90a2fc44'
+    }
+  ]
+  spawnBullets: [
+    {
+      type: EmptyBulletType
+      lifetime: 0
+      despawnEffect: {
+        line: true
+        particles: 8
+        length: 30
+        cone: 25
+        lifetime: 50
+        lenFrom: 5
+        lenTo: 0
+        strokeFrom: 1
+        strokeTo: 2
+        colorTo: 7382f0
+        cap: false
+        interp: pow2Out
+        sizeInterp: pow2In
+      }
+    }
+  ]
+}
+category: turret
+research: {
+  parent: 0b05-00-shock-wall
+  objectives: [
+    0b-guided-plasma-weaponry
+  ]
+}
+requirements: [
+  territe-alloy/360
+  crystal/630
+  silicon/180
+]

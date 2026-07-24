@@ -1,0 +1,139 @@
+type: 'ContinuousLiquidTurret'
+health: 2000, armor: 50
+size: 4, liquidCapacity: 80, buildTime: 450
+range: 310, rotateSpeed: 1
+recoil: 0, recoilTime: 30
+shootWarmupSpeed: 0.05, minWarmup: 0.75, warmupMaintainTime: 300
+shootY: 19, shake: 2, elevation: 6
+squareSprite: false, hasShadow: false
+outlineIcon: false, outlineColor: 'ffffff00', heatColor: '000000'
+coolantMultiplier: 1.414
+shootSoundVolume: 0.25, shootSound: 'explosionArtilleryShockBig'
+loopSoundVolume: 1, loopSound: 'loopMineBeam'
+category: 'turret'
+consumes: {
+  power: 10
+}
+research: {
+  parent: '0b05-00-shock-wall'
+  objectives: [
+    '0b-beam-weaponry'
+  ]
+}
+requirements: [
+  territe-alloy/36
+  crystal/840
+  silicon/200
+]
+drawer: {
+  type: 'drawMulti', iconOverride: ['-icon'], drawers: [
+    {
+      type: 'DrawRegion', name: 'allure-0b0-block-4-shadow', layer: 29.99, color: ffffffbb
+    }
+    {
+      type: 'DrawTurret', basePrefix: '0b0-', parts: [
+        {
+          suffix: '-barrel-flare1', outline: false, blending: 'additive'
+          color: '000000', colorTo: '7382f0'
+          progress: {
+            type: 'warmup', op: 'compress', start: 0, end: 0.5
+          }
+        }
+        {
+          suffix: '-barrel-flare2', outline: false, blending: 'additive'
+          color: '000000', colorTo: 'ffffff'
+          progress: {
+            type: 'warmup', op: 'compress', start: 0, end: 0.5
+          }
+        }
+      ]
+    }
+  ]
+}
+ammoTypes: {
+  'fluid-energy': {
+    type: 'ContinuousLaserBulletType'
+    ammoMultiplier: 0.025
+    damage: 40, length: 290, width: 1, lifetime: 10
+    statusDuration: 1, status: 'allure-0b-energy1'
+    setDefaults: false, despawnHit: false, fragOnDespawn: false, largeHit: true
+    frontLength: 1, backLength: 0, oscMag: 0, fadeTime: 5
+    shake: 0.1, pierceCap: 1, incendChance: 0
+    colors: [
+      '7382f088', '7382f0', '90a2fc', 'ffffff'
+    ]
+    hitEffect: [
+      {
+        particles: 1, lifetime: 25, length: 0, cone: 0, offset: 90
+        region: 'circle-shadow'
+        sizeFrom: 0, sizeTo: 50
+        sizeInterp: 'slope'
+        colorFrom: 'ffffff33', colorTo: '90a2fc00'
+      }
+      {
+        line: true
+        particles: 1, lifetime: 20, length: -30, cone: 20
+        lenFrom: 8, lenTo: 4, strokeFrom: 2, strokeTo: 0
+        colorTo: '7382f0'
+        interp: 'pow2Out', sizeInterp: 'linear'
+      }
+    ]
+    despawnEffect: {
+      type: 'SoundEffect', sound: 'walkerStepTiny'
+      minPitch: 0.5, maxPitch: 0.6, minVolume: 2, maxVolume: 2
+      effect: 'none'
+    }
+    smokeEffect: none
+    spawnBullets: [
+      {
+        type: 'EmptyBulletType', lifetime: 0, despawnEffect: [
+          {
+            type: 'WaveEffect', lifetime: 10, sizeFrom: 0, sizeTo: 15, colorTo: '7382f0'
+          }
+          {
+            particles: 1, length: 0, lifetime: 20, cone: 0, offset: 90
+            randLength: false, followParent: false
+            region: 'allure-squishwave'
+            sizeFrom: 10, sizeTo: 12
+            colorFrom: '7382f0', colorTo: '7382f000'
+          }
+          {
+            line: true
+            cone: 20
+            particles: 8
+            lifetime: 20
+            length: 45
+            interp: pow3Out
+            sizeInterp: linear
+            lenFrom: 8
+            lenTo: 4
+            strokeFrom: 2
+            strokeTo: 0
+            colorTo: 7382f0
+          }
+          {
+            particles: 1
+            cone: 20
+            particles: 12
+            lifetime: 30
+            length: 35
+            interp: pow2Out
+            sizeInterp: linear
+            sizeFrom: 4
+            sizeTo: 0
+            colorFrom: 7382f0
+            colorTo: 7382f088
+          }
+        ]
+      }
+    ]
+    intervalBullets: 1, bulletInterval: 5, intervalRandomSpread: 0, intervalBullet: {
+      type: 'EmptyBulletType', lifetime: 0, despawnEffect: {
+        particles: 8, lifetime: 20, length: 24, cone: 5
+        sizeFrom: 4, sizeTo: 0
+        colorFrom: 'ffffff00', colorTo: '7382f088'
+        interp: 'pow2In', sizeInterp: 'linear'
+      }
+    }
+  }
+}

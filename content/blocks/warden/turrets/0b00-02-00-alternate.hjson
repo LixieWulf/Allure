@@ -1,0 +1,226 @@
+type: PowerTurret
+squareSprite: false
+size: 4
+reload: 16
+rotateSpeed: 1.5
+range: 320
+recoil: 0.5
+recoilTime: 20
+shootSound: none
+shootY: 18
+outlineColor: ffffff00
+shake: 1
+elevation: 4
+shoot: {
+  type: ShootAlternate
+  spread: 6
+}
+consumes: {
+  power: 12
+  liquids: [
+    plasma/0.33334
+  ]
+}
+coolant: {
+  type: ConsumeLiquid
+  liquid: fluid-energy
+  amount: 0.33334
+}
+minWarmup: 0, shootWarmupSpeed: 0.001
+warmupMaintainTime: 300
+heatColor: 000000
+recoils: 2
+drawer: {
+  type: 'DrawMulti', iconOverride: ['-icon'], drawers: [
+    {
+      type: 'DrawRegion', name: 'allure-0b0-block-4-shadow', layer: 29.99, color: ffffffbb
+    }
+    {
+      type: DrawTurret
+      basePrefix: 0b0-
+      parts: [
+        {
+          suffix: -barrel
+          x: 3
+          y: 11.5
+          moveY: -3
+          recoilIndex: 1
+          heatProgress: warmup
+          progress: recoil
+          children: [
+            {
+              type: RegionPart
+              suffix: -barrel-heat
+              xScl: -1
+              outline: false
+              blending: additive
+              progress: warmup
+              recoilIndex: 1
+              color: e6555500
+              colorTo: e65555
+            }
+            {
+              type: RegionPart
+              suffix: -barrel-heat
+              xScl: -1
+              outline: false
+              blending: additive
+              progress: warmup
+              recoilIndex: 1
+              color: e6555500
+              colorTo: feb38088
+            }
+          ]
+        }
+        {
+          suffix: -barrel
+          x: -3
+          y: 11.5
+          moveY: -3
+          recoilIndex: 0
+          heatProgress: warmup
+          progress: recoil
+          children: [
+            {
+              type: RegionPart
+              suffix: -barrel-heat
+              outline: false
+              blending: additive
+              progress: warmup
+              recoilIndex: 0
+              color: e6555500
+              colorTo: e65555
+            }
+            {
+              type: RegionPart
+              suffix: -barrel-heat
+              outline: false
+              blending: additive
+              progress: warmup
+              recoilIndex: 0
+              color: e6555500
+              colorTo: feb38088
+            }
+          ]
+        }
+        {suffix: '', outline: false, layer: 51}
+        {
+          type: RegionPart
+          suffix: -upper-heat
+          layer: 52
+          outline: false
+          blending: additive
+          progress: warmup
+          color: e6555500
+          colorTo: feb380
+        }
+        {
+          suffix: '-flare1', outline: false, blending: 'additive'
+          x: -2.5, y: -2.25, layer: 52
+          color: '000000', colorTo: '7382f0'
+          progress: {
+            type: 'warmup', op: 'compress', start: 0, end: 0.05
+          }
+        }
+        {
+          suffix: '-flare1', outline: false, blending: 'additive'
+          x: 2.5, y: -2.25, layer: 52, xScl: -1
+          color: '000000', colorTo: '7382f0'
+          progress: {
+            type: 'warmup', op: 'compress', start: 0, end: 0.05
+          }
+        }
+        {
+          suffix: '-flare2', outline: false, blending: 'additive'
+          x: -2.5, y: -2.25, layer: 52
+          color: '000000', colorTo: 'ffffff'
+          progress: 'recoil', recoilIndex: 0
+        }
+        {
+          suffix: '-flare2', outline: false, blending: 'additive'
+          x: 2.5, y: -2.25, layer: 52, xScl: -1
+          color: '000000', colorTo: 'ffffff'
+          progress: 'recoil', recoilIndex: 1
+        }
+      ]
+    }
+  ]
+}
+coolantMultiplier: 12
+shootType: {
+  speed: 15
+  lifetime: 20
+  damage: 50
+  status: allure-0b-energy1
+  statusDuration: 10
+  sprite: circle-bullet
+  width: 5
+  height: 24
+  frontColor: ffffff
+  backColor: 7382f0
+  trailLength: 5
+  trailWidth: 2
+  trailColor: 7382f0
+  hitColor: 7382f0
+  hitEffect: hitBulletColor
+  despawnEffect: hitBulletColor
+  smokeEffect: {
+    type: SoundEffect
+    minPitch: 1
+    maxPitch: 1.2
+    minVolume: 0.3
+    maxVolume: 0.3
+    effect: none
+    sound: shootNavanax
+  }
+  shootEffect: [
+    {
+      line: true
+      cone: 20
+      particles: 5
+      lifetime: 10
+      length: 18
+      interp: pow3Out
+      sizeInterp: linear
+      lenFrom: 4
+      lenTo: 2
+      strokeFrom: 1
+      strokeTo: 0
+      colorTo: 7382f0
+    }
+    {
+      line: true
+      cone: 120
+      particles: 5
+      lifetime: 10
+      length: 10
+      interp: pow3Out
+      sizeInterp: linear
+      lenFrom: 3
+      lenTo: 1
+      strokeFrom: 1
+      strokeTo: 0
+      colorTo: 7382f0
+    }
+    {
+      particles: 1, length: 0
+      lifetime: 15, cone: 0
+      followParent: false
+      region: 'allure-shootspike'
+      sizeFrom: 15, sizeTo: 0
+      colorFrom: 'ffffff', colorTo: '7382f0'
+    }
+  ]
+}
+category: turret
+research: {
+  parent: 0b05-00-shock-wall
+  objectives: [
+    0b-rapid-fire-plasma
+  ]
+}
+requirements: [
+  territe-alloy/180
+  crystal/420
+  silicon/150
+]

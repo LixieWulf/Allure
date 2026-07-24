@@ -9,18 +9,12 @@ Contributors: Sh1penfire (world logic)
 Best played with a completely fresh campaign save. 
 
 Currently in development. Description will try to increase player engagement later.
-Allure is a large RTS mod that attempts to bring a true start-to-finish storyline to the table. And also hardcore gameplay. Enjoy being swarmed by the bee legion. 
-
-This mod is planned to introduce an overhauled vanilla experience, with sweeping changes across every aspect of Serpulo. Maps are redone, tutorials added.
-What comes after? Well, I guess we'll have to find out. I'm not giving you any spoilers. You'll find out if you're curious.
-
-Enabling this mod will break every Serpulo schematic until disabled. Be careful, well, if you like yours. 
-
-Works on beta build 157. Edit the mod.hjson's minGameVersion to use. 
+A budding flower of an RTS overhaul mod. Not ready to play yet.
+Enabling this mod will change most Serpulo blocks. Schematics may malfunction, and most blocks are more expensive. Please wait for a proper release.
   '''
-subtitle: "Please wait for a proper release"
+subtitle: "I smell a snooper!"
 version: 0.8-dev
-minGameVersion: 158
+minGameVersion: 160
 contentOrder: [
   air-factory
   ground-factory

@@ -3,12 +3,6 @@ research: {
   planet: wandura
   name: Warden
   requiresUnlock: true
-  objectives: [
-    {
-      type: SectorComplete
-      preset: allure-glisteningOcean
-    }
-  ]
 }
 alwaysUnlocked: true
 show: false

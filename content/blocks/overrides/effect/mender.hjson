@@ -1,0 +1,5 @@
+reload: 180, range: 32, healPercent: 2
+phaseBoost: 1, phaseRangeBoost: 32
+consumes: {
+  power: 0.5
+}

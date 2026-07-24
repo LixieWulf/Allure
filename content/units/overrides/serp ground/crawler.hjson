@@ -1,4 +1,4 @@
-health: 150
+health: 100
 speed: 0.85
 stances: [
   ram
@@ -16,7 +16,7 @@ weapons: [
     shootSound: explosionCrawler
     bullet: {
       type: ExplosionBulletType
-      splashDamage: 45
+      splashDamage: 30
       splashDamageRadius: 50
       shootEffect: pulverizeRed
       smokeEffect: sapExplosion

@@ -15,7 +15,6 @@ range: 164
 maxRange: 261
 lightRadius: 0
 outlines: false
-drawCell: false
 healColor: 7382f088
 shieldColor: 7382f000
 deathShake: 0
@@ -149,16 +148,16 @@ weapons: [
     alwaysContinuous: true
     shootStatus: slow
     shootStatusDuration: 2
-    shootSound: shootSublimate
-    shootSoundVolume: 0.5
+    shootSound: beamPlasma
+    shootSoundVolume: 0.1
     shake: 0.7
     bullet: {
       type: ContinuousFlameBulletType
       drawFlare: false
-      lifetime: 100
+      lifetime: 20
       pierceCap: 3
       length: 180
-      width: 5
+      width: 3
       damage: 12
       status: allure-0t-thermal0
       statusDuration: 15
@@ -183,8 +182,8 @@ weapons: [
     }
   }
   {
-    x: 3
-    y: -8
+    x: 7
+    y: 0
     alternate: false
     shootCone: 360
     reload: 90
@@ -193,6 +192,7 @@ weapons: [
       shots: 12
       shotDelay: 3
     }
+    xRand: 3
     shootSound: shootAvert
     bullet: {
       keepVelocity: false

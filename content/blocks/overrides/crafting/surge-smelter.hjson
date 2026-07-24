@@ -1,4 +1,16 @@
-craftTime: 60
+craftTime: 600
+outputItem: surge-alloy/4
+consumes: {
+  remove: [
+    'items'
+  ]
+  items: [
+    copper/4
+    silicon/6
+    titanium/2
+    phase-fabric/1
+  ]
+}
 requirements: [
   copper/150
   titanium/100

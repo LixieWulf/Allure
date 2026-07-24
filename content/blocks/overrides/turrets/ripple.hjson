@@ -1,0 +1,64 @@
+targetInterval: 30, newTargetInterval: 30
+range: 640, minRange: 320
+inaccuracy: 3
+drawMinRange: true
+unitSort: 'strongest'
+shootEffect: 'shootBig', smokeEffect: 'shootBigSmoke'
+ammoTypes: {
+  silicon: {
+    type: 'ArtilleryBulletType'
+    speed: 4, damage: 30, lifetime: 160
+    knockback: 1
+    inaccuracy: 5
+    ammoMultiplier: 1, reloadMultiplier: 0.75
+    homingPower: 0.02, homingRange: 120
+    shrinkY: 0.75, shrinkX: 0.5
+    width: 23, height: 25
+    collidesTiles: false
+    splashDamage: 30, splashDamageRadius: 32
+    frontColor: '999ba0', backColor: '707594', trailColor: '707594', hitColor: '707594'
+    hitEffect: 'massiveExplosion', despawnEffect: 'hitBulletColor'
+  }
+  blast-compound: {
+    type: 'ArtilleryBulletType'
+    speed: 4, damage: 30, lifetime: 160
+    knockback: 1.2
+    ammoMultiplier: 6
+    shrinkY: 0.75, shrinkX: 0.5
+    width: 25, height: 25
+    collidesTiles: false
+    status: 'blasted'
+    splashDamage: 30, splashDamageRadius: 48
+    frontColor: 'eeab89', backColor: 'e9665b', trailColor: 'e9665b', hitColor: 'e9665b'
+    hitEffect: 'shockwave', despawnEffect: 'blastExplosion'
+  }
+  plastanium: {
+    type: 'ArtilleryBulletType'
+    speed: 4, damage: 60, lifetime: 160
+    knockback: 1
+    inaccuracy: 3
+    ammoMultiplier: 2
+    shrinkY: 0.75, shrinkX: 0.5
+    width: 26, height: 29
+    collidesTiles: false
+    splashDamage: 50, splashDamageRadius: 40
+    frontColor: 'fffac6', backColor: 'd8d97f', trailColor: 'd8d97f', hitColor: 'd8d97f'
+    hitEffect: 'plasticExplosion', despawnEffect: 'massiveExplosion'
+    fragBullets: 12, fragBullet: {
+      speed: 2, damage: 25, lifetime: 20
+      knockback: 0.5
+      shrinkY: 1
+      frontColor: 'fffac6', backColor: 'd8d97f', hitColor: 'd8d97f'
+      hitEffect: 'hitBulletColor', despawnEffect: 'none'
+    }
+  }
+}
+maxAmmo: 12, ammoPerShot: 4
+research: {
+  parent: 'hail'
+  objectives: [
+    {
+      type: 'onSector', preset: 'ruinousShores'
+    }
+  ]
+}

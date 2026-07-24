@@ -8,7 +8,7 @@ ammoTypes: {
     lifetime: 18
     pierce: true
     status: burning
-    statusDuration: 120
+    statusDuration: 240
     shootEffect: shootSmallFlame
     hitEffect: hitFlameSmall
     despawnEffect: none
@@ -18,7 +18,7 @@ ammoTypes: {
   }
   pyratite: {
     type: BulletType
-    ammoMultiplier: 8
+    ammoMultiplier: 4
     speed: 4
     damage: 21
     lifetime: 18

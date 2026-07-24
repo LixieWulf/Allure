@@ -9,3 +9,8 @@ consumes: {
     water/0.4
   ]
 }
+requirements: [
+  copper/20
+  silicon/30
+  titanium/10
+]

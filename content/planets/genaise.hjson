@@ -3,12 +3,13 @@ parent: 1-kharalis
 radius: 0.7
 minZoom: 0.9
 atmosphereRadIn: 0
-atmosphereRadOut: 0.2
-atmosphereColor: e38f5baa
+atmosphereRadOut: 0.25
+atmosphereColor: 5a58c488
 iconColor: e38f5b
 orbitRadius: 7
 orbitOffset: 110
 accessible: true
+alwaysUnlocked: true
 allowLaunchToNumbered: false
 sectorSize: 2
 totalRadius: 1.8
@@ -38,7 +39,7 @@ mesh: [
     color1: e3b15b
     color2: f06c6c
     octaves: 4.6
-    persistence: 0.9
+    persistence: 0.98
     scale: 0.7
     mag: 1.1
     coct: 4
@@ -53,7 +54,7 @@ mesh: [
     color1: 4a4b53
     color2: 4a4b53
     octaves: 4.6
-    persistence: 0.9
+    persistence: 0.98
     scale: 0.7
     mag: 1.5
     coct: 4
@@ -62,15 +63,50 @@ mesh: [
     cthresh: 1
   }
 ]
-cloudMesh: {
-  type: HexSkyMesh
-  speed: -2.8
-  divisions: 5
-  radius: 0.15
-  color: e3b578bb
-  octaves: 3
-  persistence: 0.5
-  scl: 0.7
-  thresh: 0.43
-}
+cloudMesh: [
+  {
+    type: HexSkyMesh
+    speed: -3
+    divisions: 4
+    radius: 0.13
+    color: ff6802bb
+    octaves: 2
+    persistence: 0.5
+    scl: 0.6
+    thresh: 0.6
+  }
+  {
+    type: HexSkyMesh
+    speed: -2.5
+    divisions: 4
+    radius: 0.14
+    color: ff5f3688
+    octaves: 4
+    persistence: 0.5
+    scl: 0.8
+    thresh: 1
+  }
+  {
+    type: HexSkyMesh
+    speed: -2.8
+    divisions: 5
+    radius: 0.15
+    color: ff3e02
+    octaves: 3
+    persistence: 0.5
+    scl: 0.7
+    thresh: 0.43
+  }
+  {
+    type: HexSkyMesh
+    speed: -2
+    divisions: 5
+    radius: 0.16
+    color: ff680288
+    octaves: 4
+    persistence: 0.2
+    scl: 0.8
+    thresh: 0.5
+  }
+]
 research: 0r-begin

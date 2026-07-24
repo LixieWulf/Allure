@@ -1,0 +1,8 @@
+research: {
+  parent: 'jaggedHeights', objectives: [
+    {
+      type: 'SectorComplete', preset: 'jaggedHeights'
+    }
+    'pneumatic-drill', 'silicon-smelter', 'kiln'
+  ]
+}

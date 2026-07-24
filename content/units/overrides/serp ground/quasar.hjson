@@ -2,3 +2,12 @@ mineSpeed: 1
 buildSpeed: 0.5
 boostMultiplier: 2.5
 riseSpeed: 0.01
+
+abilities: [
+  {
+    type: ForceFieldAbility
+    regen: 2
+    health: 500
+    cooldown: 120
+  }
+]
