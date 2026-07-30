@@ -8,7 +8,6 @@ recoil: 3
 shoot: {
   type: ShootBarrel
   shots: 2
-  barrels: 2
   barrels: [
     6, 0, 0,
     -6, 0, 0
